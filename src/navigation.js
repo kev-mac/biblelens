@@ -74,17 +74,20 @@
 
 // Track scroll direction for the reader controls.
 (() => {
- let lastY=window.scrollY;
+ let lastY=window.scrollY,compactTimer=0;
  function update(){
   if(document.body.classList.contains('dialog-scroll-locked'))return;
   const y=Math.max(0,window.scrollY),delta=y-lastY;
+  clearTimeout(compactTimer);
+  document.body.classList.toggle('reader-scrolling-down',y>20&&delta>=4);
+  compactTimer=setTimeout(()=>document.body.classList.remove('reader-scrolling-down'),250);
   document.body.classList.toggle('reader-scrolled',y>=20);
   if(y<20)document.body.classList.remove('navigation-enlarged');
   else if(Math.abs(delta)>=4)document.body.classList.toggle('navigation-enlarged',delta<0);
   lastY=y;
  }
  window.addEventListener('scroll',update,{passive:true});
- window.addEventListener('viewchange',()=>{document.body.classList.remove('navigation-enlarged');lastY=window.scrollY;});
+ window.addEventListener('viewchange',()=>{clearTimeout(compactTimer);document.body.classList.remove('navigation-enlarged','reader-scrolling-down');lastY=window.scrollY;});
  document.querySelector('#nav-colors').addEventListener('click',()=>{
   readerPreferences.navColors=state.readerPreferences?.navColors==='off'?'on':'off';state.readerPreferences=readerPreferences;
   applyNavigationAppearance();persist();

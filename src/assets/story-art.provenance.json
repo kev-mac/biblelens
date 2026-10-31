@@ -2768,5 +2768,210 @@
         "original": "output/imagegen/jonah-complete/jonah-s-anger.png"
       }
     ]
+  },
+  "matthew": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/matthew-complete/",
+    "assets": {
+      "The Birth of Jesus and the Magi": {
+        "src": "/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "alt": "Mary holds her infant as travelers bring gifts inside a modest house.",
+        "width": 1200,
+        "height": 675
+      },
+      "Flight to Egypt and Return to Nazareth": {
+        "src": "/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+        "alt": "Joseph leads a donkey carrying Mary and her infant toward green Egyptian fields.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Baptism and Temptation of Jesus": {
+        "src": "/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "alt": "John stands beside Jesus in the Jordan as a dove passes above the reeds.",
+        "width": 1200,
+        "height": 675
+      },
+      "Calling the First Disciples": {
+        "src": "/assets/story-calling-the-first-disciples-v1.webp",
+        "alt": "Jesus speaks to fishermen beside their boat and nets on the Galilean shore.",
+        "width": 1200,
+        "height": 675
+      },
+      "Healings and Calming the Storm": {
+        "src": "/assets/story-healings-and-calming-the-storm-v1.webp",
+        "alt": "Jesus stands in a fishing boat as the disciples watch storm waves settle.",
+        "width": 1200,
+        "height": 675
+      },
+      "Sending Out the Twelve": {
+        "src": "/assets/story-sending-out-the-twelve-v1.webp",
+        "alt": "Jesus speaks with the twelve disciples as they prepare to travel.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jesus and John the Baptist": {
+        "src": "/assets/story-jesus-and-john-the-baptist-v1.webp",
+        "alt": "Two messengers speak with Jesus beside a shaded village doorway.",
+        "width": 1200,
+        "height": 675
+      },
+      "Sabbath Controversies and the Sign of Jonah": {
+        "src": "/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+        "alt": "Jesus and his disciples speak with teachers beside a ripe barley field.",
+        "width": 1200,
+        "height": 675
+      },
+      "Feeding the Five Thousand and Walking on Water": {
+        "src": "/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+        "alt": "Jesus breaks bread as disciples carry baskets to families seated on a green hillside.",
+        "width": 1200,
+        "height": 675
+      },
+      "Peter's Confession and the Transfiguration": {
+        "src": "/assets/story-peter-s-confession-and-the-transfiguration-v1.webp",
+        "alt": "Three disciples watch Jesus and two robed figures on a misty mountain ridge.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Rich Young Man": {
+        "src": "/assets/story-the-rich-young-man-v1.webp",
+        "alt": "A young man listens to Jesus beside a vineyard path with a pouch in his hand.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Triumphal Entry and Temple Cleansing": {
+        "src": "/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+        "alt": "Jesus rides a donkey toward Jerusalem as people spread cloaks and branches along the road.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Last Supper and Gethsemane": {
+        "src": "/assets/story-the-last-supper-and-gethsemane-v1.webp",
+        "alt": "Jesus prays beside an olive tree while three disciples rest farther away.",
+        "width": 1200,
+        "height": 675
+      },
+      "Trial, Crucifixion and Burial": {
+        "src": "/assets/story-trial-crucifixion-and-burial-v1.webp",
+        "alt": "Jesus stands before Pilate in a quiet stone courtyard at early morning.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Resurrection and the Great Commission": {
+        "src": "/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+        "alt": "Jesus speaks to eleven disciples on a green hillside above the lake.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "The Birth of Jesus and the Magi",
+        "alt": "Mary holds her infant as travelers bring gifts inside a modest house.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Mary, an adult Jewish mother, holds her fully swaddled infant inside a modest Judean house as traveling magi present small covered gift vessels. Joseph stands nearby. Cool morning through the doorway with a warm clay lamp, intimate human encounter, no halos, crowns on child or Christian symbols. Narrative basis: Joseph learns in a dream that Mary's child is from the Holy Spirit. Magi, or wise men, follow a star to Bethlehem and bring gifts to the child.",
+        "original": "output/imagegen/matthew-complete/the-birth-of-jesus-and-the-magi.png"
+      },
+      {
+        "index": 1,
+        "title": "Flight to Egypt and Return to Nazareth",
+        "alt": "Joseph leads a donkey carrying Mary and her infant toward green Egyptian fields.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Joseph leads a donkey carrying adult Mary and her swaddled infant along a road into green Egyptian fields. Pale predawn and river mist, palms and low mudbrick houses, family traveling quietly with a small bundle, no violence or pursuit pictured. Narrative basis: Warned in a dream, Joseph takes the family to Egypt while Herod kills Bethlehem's boys. After Herod dies they return and settle in Nazareth.",
+        "original": "output/imagegen/matthew-complete/flight-to-egypt-and-return-to-nazareth.png"
+      },
+      {
+        "index": 2,
+        "title": "The Baptism and Temptation of Jesus",
+        "alt": "John stands beside Jesus in the Jordan as a dove passes above the reeds.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus stands waist-deep in the Jordan as John gently lowers his hand after the baptism, a single ordinary dove overhead. Reed-lined river in soft overcast daylight, a few listeners on shore, no divine face or beam of light, both men clothed in simple wet tunics. Narrative basis: John baptizes Jesus in the Jordan, and a voice from heaven speaks. Jesus fasts forty days in the wilderness and answers the devil's three temptations with scripture.",
+        "original": "output/imagegen/matthew-complete/the-baptism-and-temptation-of-jesus.png"
+      },
+      {
+        "index": 3,
+        "title": "Calling the First Disciples",
+        "alt": "Jesus speaks to fishermen beside their boat and nets on the Galilean shore.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus speaks with Simon and Andrew beside a wooden fishing boat as James and John mend nets nearby on the Galilean shore. Clear cool dawn, silver lake, dark basalt stones, close hands and attentive faces, no modern tackle. Narrative basis: Jesus begins preaching in Galilee and calls Simon, Andrew, James and John to follow him. Crowds come for healing.",
+        "original": "output/imagegen/matthew-complete/calling-the-first-disciples.png"
+      },
+      {
+        "index": 4,
+        "title": "Healings and Calming the Storm",
+        "alt": "Jesus stands in a fishing boat as the disciples watch storm waves settle.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus stands steadily in a low wooden boat, hand extended toward receding storm waves; disciples sit and brace against wet timbers. Cool slate-green lake with a break in rain clouds, believable sailing rig and movement, no walking figure or supernatural glow. Narrative basis: Jesus heals a leper, a centurion's servant, Peter's mother-in-law and a paralytic, calms a storm, and sends demons into pigs. He calls Matthew and raises a girl and heals a woman who touched his cloak.",
+        "original": "output/imagegen/matthew-complete/healings-and-calming-the-storm.png"
+      },
+      {
+        "index": 5,
+        "title": "Sending Out the Twelve",
+        "alt": "Jesus speaks with the twelve disciples as they prepare to travel.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus addresses twelve adult disciples preparing modest sandals, walking staffs and shoulder bags in a shaded village courtyard. High noon reflected light, individualized brown faces and varied natural hair, no written list or excess props, attentive serious departure. Narrative basis: Jesus calls his twelve disciples, gives them authority over unclean spirits and disease, and sends them out. The account names the twelve, including Judas Iscariot, who later betrays him.",
+        "original": "output/imagegen/matthew-complete/sending-out-the-twelve.png"
+      },
+      {
+        "index": 6,
+        "title": "Jesus and John the Baptist",
+        "alt": "Two messengers speak with Jesus beside a shaded village doorway.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Two of John the Baptist's disciples speak with Jesus beside a shaded village doorway while other people rest nearby. Fresh green hillside after rain, quiet compassionate exchange, no prison bars in same scene or magic effects. Narrative basis: John, in prison, sends disciples to ask whether Jesus is the one to come. Jesus answers with his works and invites the weary to come to him.",
+        "original": "output/imagegen/matthew-complete/jesus-and-john-the-baptist.png"
+      },
+      {
+        "index": 7,
+        "title": "Sabbath Controversies and the Sign of Jonah",
+        "alt": "Jesus and his disciples speak with teachers beside a ripe barley field.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus and his disciples walk beside ripe barley fields, one disciple rubs grain heads between his hands while several respectfully questioning teachers stand near the path. Bright windy morning, Mediterranean hills, no maize or hostile caricatures. Narrative basis: Jesus defends his disciples plucking grain on the Sabbath and heals a man's hand. When asked for a sign, he points to the sign of Jonah.",
+        "original": "output/imagegen/matthew-complete/sabbath-controversies-and-the-sign-of-jonah.png"
+      },
+      {
+        "index": 8,
+        "title": "Feeding the Five Thousand and Walking on Water",
+        "alt": "Jesus breaks bread as disciples carry baskets to families seated on a green hillside.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus breaks coarse barley bread while disciples distribute food from woven baskets to families seated on green grass above the lake. Soft cloudy late afternoon, wide layers of seated listeners, five small loaves and two fish near the foreground, generous human action without glowing effects. Narrative basis: John the Baptist is beheaded by Herod. Jesus feeds five thousand with five loaves and two fish and walks on the sea, and Peter briefly walks toward him.",
+        "original": "output/imagegen/matthew-complete/feeding-the-five-thousand-and-walking-on-water.png"
+      },
+      {
+        "index": 9,
+        "title": "Peter's Confession and the Transfiguration",
+        "alt": "Three disciples watch Jesus and two robed figures on a misty mountain ridge.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus stands in pale ordinary linen on a misty mountain ridge between two distant older robed figures, with Peter James and John seated lower on the rocks watching in wonder. Silver dawn filters through cloud, no halos, divine face, supernatural body glow or text. Literary vision conveyed by atmosphere. Narrative basis: Peter says Jesus is the Christ, and Jesus foretells his death and rising from the dead. Six days later his appearance is changed before Peter, James and John.",
+        "original": "output/imagegen/matthew-complete/peter-s-confession-and-the-transfiguration.png"
+      },
+      {
+        "index": 10,
+        "title": "The Rich Young Man",
+        "alt": "A young man listens to Jesus beside a vineyard path with a pouch in his hand.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. A richly but simply dressed young adult stands thoughtfully before Jesus beside a vineyard path, one hand resting on a small leather money pouch. Cool late autumn light, workers and low stone vineyard walls recede behind, quiet difficult choice, no condemnation or caricature. Narrative basis: A rich young man cannot give up his possessions to follow Jesus. Jesus tells the parable of the workers in the vineyard and heals two blind men near Jericho.",
+        "original": "output/imagegen/matthew-complete/the-rich-young-man.png"
+      },
+      {
+        "index": 11,
+        "title": "The Triumphal Entry and Temple Cleansing",
+        "alt": "Jesus rides a donkey toward Jerusalem as people spread cloaks and branches along the road.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus rides a small donkey toward Jerusalem while a varied crowd lays plain woven cloaks and leafy branches on the road. Bright spring morning, distant ancient city gates, hopeful yet grounded expressions, palms and olives, no banners or legible text. Narrative basis: Jesus rides into Jerusalem on a donkey, drives the merchants from the temple, curses a fig tree, and answers challenges to his authority.",
+        "original": "output/imagegen/matthew-complete/the-triumphal-entry-and-temple-cleansing.png"
+      },
+      {
+        "index": 12,
+        "title": "The Last Supper and Gethsemane",
+        "alt": "Jesus prays beside an olive tree while three disciples rest farther away.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Jesus prays alone beside a gnarled olive tree in Gethsemane, three disciples rest at a respectful distance. Deep indigo night, cool moonlit leaves and a small distant amber lantern glow, fully clothed, no blood or supernatural figure. Emphasize quiet human strain. Narrative basis: A woman anoints Jesus, Judas agrees to betray him, and Jesus shares a Passover meal with the twelve. In Gethsemane he prays, and Judas arrives with an armed crowd.",
+        "original": "output/imagegen/matthew-complete/the-last-supper-and-gethsemane.png"
+      },
+      {
+        "index": 13,
+        "title": "Trial, Crucifixion and Burial",
+        "alt": "Jesus stands before Pilate in a quiet stone courtyard at early morning.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. Fully clothed Jesus stands calmly before seated Pilate in a pale stone audience courtyard at early morning. Attendants and guards keep respectful distance, hands empty or lowered. Focus on the trial named in this story, no crucifixion, wounds, thorns, corpse, threats or ethnic caricature. Narrative basis: Jesus is tried before Caiaphas and Pilate, Peter denies him, and Judas dies. Jesus is crucified, dies, and is buried in Joseph of Arimathea's tomb.",
+        "original": "output/imagegen/matthew-complete/trial-crucifixion-and-burial.png"
+      },
+      {
+        "index": 14,
+        "title": "The Resurrection and the Great Commission",
+        "alt": "Jesus speaks to eleven disciples on a green hillside above the lake.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. Matthew. On a green Galilean hillside, Jesus speaks to eleven adult disciples gathered in a loose semicircle. Fresh clear morning after rain, distant lake and clouds, gentle open-handed gesture, ordinary human appearance without halos, no ascending body or readable words. Narrative basis: Women find the tomb empty and meet the risen Jesus. The guards are paid to spread a false account, and Jesus sends the eleven to make disciples of all nations.",
+        "original": "output/imagegen/matthew-complete/the-resurrection-and-the-great-commission.png"
+      }
+    ]
   }
 }

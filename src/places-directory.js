@@ -17,7 +17,7 @@ const node=(tag,className,text)=>{const el=document.createElement(tag);el.classN
 function placeCard(place, duplicate){
  const card=node('article','character-card place-profile-card');
  const heading=node('h2','character-name',place.name+(duplicate&&(place.region||place.refs?.[0])?' ('+(place.region||(books[place.refs[0][0]].code+' '+place.refs[0][1]+':'+place.refs[0][2]))+')':''));card.append(heading);card.id='place-'+place.id;card.dataset.placeCard=place.id;
- const open=node('button','ux-place-open place-map-action','View place →');open.type='button';open.dataset.expandPlace=place.id;open.setAttribute('aria-expanded','false');open.setAttribute('aria-controls','place-details-'+place.id);open.setAttribute('aria-label','Open '+place.name);
+ const open=node('button','ux-place-open place-map-action','View place');open.type='button';open.dataset.expandPlace=place.id;open.setAttribute('aria-expanded','false');open.setAttribute('aria-controls','place-details-'+place.id);open.setAttribute('aria-label','Open '+place.name);
 
  if(place.refs?.length){const [book,chapter,verse]=place.refs[0],pill=node('span','passage-badge',books[book].name+' '+chapter+':'+verse+(place.refs.length>1?' +'+(place.refs.length-1).toLocaleString():''));card.prepend(pill);}
  const description=place.summary;
@@ -33,7 +33,7 @@ function placeCard(place, duplicate){
  const details=node('div','place-details');details.id='place-details-'+place.id;details.inert=true;details.setAttribute('aria-hidden','true');
  const inner=node('div','place-details-inner');details.append(inner);card.append(details);
  let filled=false;
- open.onclick=()=>{const expanded=open.getAttribute('aria-expanded')!=='true';open.setAttribute('aria-expanded',String(expanded));open.textContent=expanded?'Hide details':'View place →';open.setAttribute('aria-label',(expanded?'Hide details for ':'Open ')+place.name);details.inert=!expanded;details.setAttribute('aria-hidden',String(!expanded));details.classList.toggle('open',expanded);
+ open.onclick=()=>{const expanded=open.getAttribute('aria-expanded')!=='true';open.setAttribute('aria-expanded',String(expanded));open.textContent=expanded?'Hide details':'View place';open.setAttribute('aria-label',(expanded?'Hide details for ':'Open ')+place.name);details.inert=!expanded;details.setAttribute('aria-hidden',String(!expanded));details.classList.toggle('open',expanded);
   if(!expanded||filled)return;filled=true;
   const map=node('figure','place-inline-map');
   if(place.coordinates){map.innerHTML=placePreviewSVG(place);const caption=node('figcaption','','Modern geographical context · Dataset reference point; identification may be uncertain.');map.append(caption);const external=node('a','','Open map ↗');external.href='https://www.openstreetmap.org/?mlat='+place.coordinates.latitude+'&mlon='+place.coordinates.longitude+'#map=8/'+place.coordinates.latitude+'/'+place.coordinates.longitude;external.target='_blank';external.rel='noopener';map.append(external);}else map.append(node('p','','Location unknown. No map reference point is available.'));

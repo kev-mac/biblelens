@@ -452,7 +452,7 @@ $('#lens-settings').onclick=()=>{
  readerSheet.showModal();$('#lens-settings').setAttribute('aria-expanded','true');
 };
 $('#reader-settings-close').onclick=()=>readerSheet.close();
-readerSheet.addEventListener('close',()=>{$('#lens-settings').setAttribute('aria-expanded','false');$('#lens-settings').focus({preventScroll:true});});
+readerSheet.addEventListener('close',()=>{$('#lens-settings').setAttribute('aria-expanded','false');(readerSheet.biblelensOpener?.isConnected?readerSheet.biblelensOpener:$('#lens-settings')).focus({preventScroll:true});});
 readerSheet.querySelector('.settings-notebook-link').addEventListener('click',()=>readerSheet.close());
 // Sync and release modules add their panels later. Keep those live nodes and handlers
 // in their appropriate settings section, rather than duplicating their controls.

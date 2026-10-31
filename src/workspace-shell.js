@@ -40,7 +40,8 @@
  document.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();routeTo('#search');}if(event.key==='Tab')document.body.classList.add('keyboard-navigation');});
  document.addEventListener('pointerdown',()=>document.body.classList.remove('keyboard-navigation'));
  const masthead = el('lensMasthead');
- el('reader-settings').addEventListener('close', () => el('lens-settings').focus({preventScroll:true}));
+ el('reader-settings').addEventListener('close', () => (el('reader-settings').biblelensOpener?.isConnected?el('reader-settings').biblelensOpener:el('lens-settings')).focus({preventScroll:true}));
+ document.addEventListener('click',event=>{const opener=event.target.closest('[data-open-settings],#lens-settings');if(opener&&(opener.id!=='lens-settings'||event.isTrusted))el('reader-settings').biblelensOpener=opener;},true);
  // Top-layer source panels must stay outside the collapsed legacy headings.
  for(const id of ['ux-commandment-info','ux-timeline-info']){const panel=el(id);if(panel)document.body.append(panel);}
  const main = el('main');
@@ -190,6 +191,10 @@
  function enhance(){
   mount('characters-view','people');mount('places-view','places');mount('commandments-view','commandments');mount('debates-view','evidence');
   if(/^#evidence\//.test(location.hash))mount('evidence-view','evidence');
+  for(const header of document.querySelectorAll('.stories-header,.lens-page-heading,#lensReadingBar')){
+   if(header.querySelector(':scope > [data-open-settings]'))continue;
+   const settings=document.createElement('button');settings.type='button';settings.className='directory-settings-open';settings.dataset.openSettings='';settings.setAttribute('aria-label','Settings');settings.setAttribute('aria-haspopup','dialog');settings.setAttribute('aria-controls','reader-settings');settings.innerHTML=document.querySelector('#lens-settings').innerHTML;header.append(settings);
+  }
   for(const host of document.querySelectorAll('.directory-hub')){
    for(const box of host.querySelectorAll('.stories-search-box')){const input=box.querySelector('input'),clear=box.querySelector('.directory-search-clear');if(input&&clear)clear.hidden=!input.value;}
    for(const chip of host.querySelectorAll('.filter-carousel button')){chip.classList.add('filter-pill');chip.classList.toggle('active',chip.getAttribute('aria-pressed')==='true');}

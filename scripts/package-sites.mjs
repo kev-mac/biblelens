@@ -20,6 +20,7 @@ export function packageSites(source, destination) {
   // Validate before replacing an existing staging directory.
   const worker = fs.readFileSync(path.join(source, 'server/index.js'), 'utf8');
   if (!worker.includes('const COMPRESSED_ASSETS=')) throw Error('Missing embedded asset fallback');
+  if (Buffer.byteLength(worker)>63*1024*1024) throw Error('Sites Worker exceeds the 63 MiB release budget; reduce duplicate payloads before publication.');
   fs.rmSync(destination, {recursive: true, force: true});
   fs.mkdirSync(destination, {recursive: true});
   for (const name of ['server', '.openai']) fs.cpSync(path.join(source, name), path.join(destination, name), {recursive: true});

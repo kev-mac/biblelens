@@ -40,7 +40,7 @@ function namedBooks(message){
  return found;
 }
 const termCache=new Map();
-const searchWordFamilies=[['forgiveness','forgive','forgiven','forgives','forgiving','forgave']];
+const searchWordFamilies=[['forgiveness','forgive','forgiven','forgives','forgiving','forgave'],['bear','bears'],['attack','attacks','attacked','attacking','assault','assailed','tare','tore','torn','maul','mauled','mauling'],['child','children','youth','youths','boy','boys']];
 const tunedVariants=[...searchWordFamilies,['anxiety','anxious','worry','worried','care','careful'],['slave','slaves','slavery','servitude','servant','servants','bondman','bondmen','bondage'],['tomb','tombs','sepulchre','sepulchres'],['story','stories','account','accounts','narrative','narratives']];
 const correctionWords=()=>Object.keys(SEARCH);
 function spellingCorrections(word){
@@ -195,7 +195,7 @@ async function workspaceSearch(message,edition='kjv',includeLost=false){
   let verses;
   if('first' in ref)verses=data.verses.filter(verse=>(ref.first===null||verse.n>=ref.first&&verse.n<=(ref.last??ref.first))&&scriptureText(verse,textEdition));
   else verses=data.verses.filter(verse=>Math.abs(verse.n-ref.verse)<=2&&scriptureText(verse,textEdition)).map(verse=>({verse,score:groups.filter(group=>groupMatches(group,scriptureText(verse,textEdition))).length})).sort((a,b)=>b.score-a.score||Math.abs(a.verse.n-ref.verse)-Math.abs(b.verse.n-ref.verse)).slice(0,1).map(row=>row.verse);
-  if(!refs.length&&!bookOnly)verses=verses.filter(verse=>enoughMatches(groups,scriptureText(verse,textEdition)));
+  if(!refs.length&&!bookOnly)verses=verses.filter(verse=>enoughMatches(groups,data.verses.filter(nearby=>Math.abs(nearby.n-verse.n)<=2).map(nearby=>scriptureText(nearby,textEdition)).join(' ')));
   const allowance=refs.length?Math.max(1,Math.floor(24/refs.length)):24;
   if(verses.length>allowance)result.limited=true;
   for(const verse of verses.slice(0,allowance)){

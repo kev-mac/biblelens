@@ -103,11 +103,25 @@ async function prepareAssets(request,env){
     fs.writeFileSync(file, asset.encoding === 'base64' ? Buffer.from(asset.body, 'base64') : asset.body);
   }
   const splitBytes = Buffer.byteLength(source) + Buffer.byteLength('const EMBEDDED_ASSETS=null;\n');
-  const compressed = Object.fromEntries(Object.entries(assets).map(([url, asset]) => [url==='/'?'/index.html':url, gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}).toString('base64')]));
+  // The offline corpus and individual chapter routes share one encoded copy.
+  // Keeping both compressed representations embedded doubled the Bible bytes.
+  const chapterPaths=new Map(Object.keys(data.CHAPTERS).map(key=>[prefix+'chapters/'+key.replace(':','-')+'.json',key]));
+  const compressed={},aliases={},bodies=new Map();
+  for(const [url,asset]of Object.entries(assets)){
+    if(!external&&(url===offline||chapterPaths.has(url)))continue;
+    const route=url==='/'?'/index.html':url;
+    const body=gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}).toString('base64');
+    if(bodies.has(body))aliases[route]=bodies.get(body);
+    else {bodies.set(body,route);compressed[route]=body;}
+  }
   const embedded = external ? 'const EMBEDDED_ASSETS=null;\n' : `
 const COMPRESSED_ASSETS=${JSON.stringify(compressed)};
+const ASSET_ALIASES=${JSON.stringify(aliases)},CHAPTER_PACKS=${JSON.stringify(data.CHAPTERS)},CHAPTER_PATHS=${JSON.stringify(Object.fromEntries(chapterPaths))};
 const EMBEDDED_ASSETS={async fetch(request){
- const encoded=COMPRESSED_ASSETS[new URL(request.url).pathname];
+ const path=new URL(request.url).pathname;
+ if(path===${JSON.stringify(offline)})return new Response(JSON.stringify(CHAPTER_PACKS));
+ if(CHAPTER_PATHS[path])return new Response(JSON.stringify(CHAPTER_PACKS[CHAPTER_PATHS[path]]));
+ const encoded=COMPRESSED_ASSETS[path]||COMPRESSED_ASSETS[ASSET_ALIASES[path]];
  if(!encoded)return new Response('Not found',{status:404});
  const bytes=Uint8Array.from(atob(encoded),c=>c.charCodeAt(0));
  return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip')));

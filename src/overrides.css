@@ -3141,3 +3141,22 @@ html body.lens-app #chapter-text .chapter-subtitle:has(+.story-illustration){mar
  html body.lens-app #main .directory-hub .ux-letter-heading{top:calc(var(--app-safe-top) + 52px)}
  html body.lens-app #chapter-text :is(.verse,.chapter-heading-row){scroll-margin-top:calc(var(--app-safe-top) + 64px)}
 }
+/* Shared controls use the search field's corner shape throughout the app. */
+html body.lens-app{--control-radius:12px}
+html body.lens-app :is(.filter-pill,.chip,.lens-button,.secondary,.glass-pill,.story-card,.commandment-card,.lens-note,.directory-filter-open,.directory-settings-open,.stories-search-box,.directory-search,input[type=search],dialog){border-radius:var(--control-radius)!important}
+/* Passage references retain their collection colors as plain text. */
+html body.lens-app :is(.passage-badge,.verse-citation,.chat-citation,.story-passage,.story-reference,.character-passage,.commandment-passage,.prophecy-passage,.timeline-passage,.citation-chip,.ref-button){background:none!important;border:0!important;box-shadow:none!important;padding-inline:0!important}
+html body.lens-app .verse-citation[data-tone]{color:var(--tone-bright,var(--lens-link))}
+html body.lens-app:not(.dark) .verse-citation[data-tone]{color:color-mix(in srgb,var(--tone-bright,var(--lens-link)) 60%,#000)}
+html body.lens-app .directory-settings-open{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:10px;border:1px solid var(--lens-rule);background:none;color:var(--lens-muted)}
+html body.lens-app .directory-settings-open svg{width:20px;height:20px;display:block}
+html body.lens-app .stories-header>.directory-settings-open{position:absolute;right:60px;top:4px}
+html body.lens-app #main .directory-hub .header-center-title{max-width:calc(100% - 190px)}
+html body.lens-app .lens-page-heading{position:relative;padding-right:52px}
+html body.lens-app .lens-page-heading>.directory-settings-open{position:absolute;right:0;top:0}
+@media(max-width:767px){
+ html body.lens-app #lensReadingBar #ux-chapter-picker{font-size:1.125rem;gap:6px}
+ html body.lens-app.reader-scrolling-down #lensReadingBar #ux-chapter-picker{font-size:.85rem}
+ html body.lens-app #lensReadingBar #ux-chapter-picker .ux-picker-book{min-width:0;overflow:hidden;text-overflow:ellipsis}
+ html body.lens-app #lensReadingBar .directory-settings-open{border:0;padding:8px}
+}

@@ -43,6 +43,11 @@ try{
  const missingVerse=await search('Acts 8:37','web');assert.equal(missingVerse.passages.length,0,'Never substitute KJV for an absent WEB verse');
  const webReply=await ask('Explain Acts 8:37','web');assert.equal(webReply.mode,'missing');assert.equal(webReply.sources.length,0);
  const topic=await search('forgiveness');assert(topic.passages.length>0);assert(topic.passages.every(p=>p.text&&p.label&&p.url.startsWith('#read/')));
+ for(const edition of ['kjv','web','asv'])for(const query of ['bear attack','Elisha bears','bears attack 42 children']){
+  const result=await search(query,edition);
+  assert(result.passages.some(p=>p.book===11&&p.chapter===2&&p.verse>=23&&p.verse<=24),query+' must retrieve Elisha’s bear account in '+edition);
+  assert(!result.terms.find(group=>group.includes('bears'))?.includes('born'),'Animal bears must not expand into childbirth');
+ }
  assert.equal((await worker.fetch(new Request('https://scripture.test/api/search?q=x',{method:'POST'}),{},{})).status,405);
  assert.equal((await worker.fetch(new Request('https://scripture.test/api/search?q='+'x'.repeat(2501)),{},{})).status,400);
  assert.equal(externalCalls,0);

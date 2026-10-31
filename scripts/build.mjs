@@ -62,7 +62,8 @@ const assets={};for(const name of applicationStylesheets)assets['/'+name]={type:
 for(const name of ['offline-app','feature-loader','reader-state','reader-data','workspace-shell','debate-ui'])assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/'+name+'.js','utf8')};
 assets['/reader-state.js'].body=assets['/reader-state.js'].body.replace('/*__BOOK_CATALOG__*/[]',JSON.stringify(readerBooks));
 for(const name of fs.readdirSync('src/assets/fonts'))assets['/assets/fonts/'+name]={type:'font/woff2',encoding:'base64',body:fs.readFileSync('src/assets/fonts/'+name).toString('base64')};
-for(const name of ['beginnings-landscape.svg','beginnings-landscape.provenance.json'])assets['/assets/'+name]={type:name.endsWith('.svg')?'image/svg+xml':'application/json; charset=utf-8',body:fs.readFileSync('src/assets/'+name,'utf8')};
+// The original landscape remains in source history; no screen references its
+// large, raster-embedded SVG now that the approved WebP illustrations are used.
 // Raster illustrations stay separate from startup JavaScript and decode only
 // when requested. The same bytes are written directly into the native bundle.
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
