@@ -3305,5 +3305,197 @@
         "original": "output/imagegen/luke-complete/the-ascension.png"
       }
     ]
+  },
+  "john": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/john-complete/",
+    "assets": {
+      "The First Disciples and the Wedding at Cana": {
+        "src": "/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        "alt": "Jesus speaks with servants beside large stone water jars at a wedding.",
+        "width": 1200,
+        "height": 675
+      },
+      "Cleansing the Temple and Nicodemus": {
+        "src": "/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+        "alt": "Nicodemus speaks with Jesus on a rooftop terrace by lamplight.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Woman at the Well": {
+        "src": "/assets/story-the-woman-at-the-well-v1.webp",
+        "alt": "A Samaritan woman holding a water jar speaks with Jesus beside a well.",
+        "width": 1200,
+        "height": 675
+      },
+      "Healing at Bethesda": {
+        "src": "/assets/story-healing-at-bethesda-v1.webp",
+        "alt": "A man holds his rolled sleeping mat beside Jesus at the pool of Bethesda.",
+        "width": 1200,
+        "height": 675
+      },
+      "Bread of Life": {
+        "src": "/assets/story-bread-of-life-v1.webp",
+        "alt": "Jesus teaches listeners seated on stone benches in Capernaum.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Woman Caught in Adultery": {
+        "src": "/assets/story-the-woman-caught-in-adultery-v1.webp",
+        "alt": "A woman stands before Jesus in a quiet courtyard as others walk away.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Man Born Blind": {
+        "src": "/assets/story-the-man-born-blind-v1.webp",
+        "alt": "A man washes his face at a stone pool beneath Jerusalem’s terraces.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jesus at the Feast of Dedication": {
+        "src": "/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+        "alt": "Jesus speaks with listeners beneath a temple portico on a cool winter day.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Raising of Lazarus": {
+        "src": "/assets/story-the-raising-of-lazarus-v1.webp",
+        "alt": "Lazarus stands with his sisters and Jesus outside a garden tomb.",
+        "width": 1200,
+        "height": 675
+      },
+      "Anointing and Triumphal Entry": {
+        "src": "/assets/story-anointing-and-triumphal-entry-v1.webp",
+        "alt": "Mary brings a small perfume jar to Jesus during a meal at Bethany.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jesus Washes the Disciples' Feet": {
+        "src": "/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "alt": "Jesus kneels beside a basin and washes Peter’s feet as disciples watch.",
+        "width": 1200,
+        "height": 675
+      },
+      "Arrest, Trial and Crucifixion": {
+        "src": "/assets/story-arrest-trial-and-crucifixion-v1.webp",
+        "alt": "Joseph and Nicodemus carry linen and spice jars toward a garden tomb.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Resurrection Appearances": {
+        "src": "/assets/story-the-resurrection-appearances-v1.webp",
+        "alt": "Mary Magdalene turns toward Jesus in a quiet garden beside the tomb.",
+        "width": 1200,
+        "height": 675
+      },
+      "Breakfast by the Sea of Tiberias": {
+        "src": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+        "alt": "Jesus prepares fish and bread as fishermen come ashore beside the lake.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "The First Disciples and the Wedding at Cana",
+        "alt": "Jesus speaks with servants beside large stone water jars at a wedding.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the wedding at Cana, single uninterrupted scene: shaded village courtyard during a wedding meal, Jesus quietly gestures to servants pouring water from a clay pitcher into one of six large stone water jars; guests converse in background, bright spring daylight, blue fabric awnings. No other narrative moments. Narrative basis: Andrew and another disciple follow Jesus, and Philip and Nathanael join them. At a wedding in Cana Jesus turns water into wine.",
+        "original": "output/imagegen/john-complete/the-first-disciples-and-the-wedding-at-cana.png"
+      },
+      {
+        "index": 1,
+        "title": "Cleansing the Temple and Nicodemus",
+        "alt": "Nicodemus speaks with Jesus on a rooftop terrace by lamplight.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only Nicodemus visiting by night: Jesus and an older Jewish teacher sit facing one another on a rooftop terrace, a small clay oil lamp between them, deep blue Jerusalem night with simple stone houses beyond. Quiet thoughtful conversation, no other scenes. Narrative basis: Jesus drives merchants from the temple at Passover. Nicodemus visits by night and hears that one must be born again.",
+        "original": "output/imagegen/john-complete/cleansing-the-temple-and-nicodemus.png"
+      },
+      {
+        "index": 2,
+        "title": "The Woman at the Well",
+        "alt": "A Samaritan woman holding a water jar speaks with Jesus beside a well.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the conversation at the well: Jesus sits beside a stone village well at midday while a Samaritan woman stands holding a clay water jar and listens, green Samarian hills beyond, cool shade in foreground, dignified open interaction. Narrative basis: Jesus asks a Samaritan woman for water and speaks of living water. Many Samaritans in her town believe.",
+        "original": "output/imagegen/john-complete/the-woman-at-the-well.png"
+      },
+      {
+        "index": 3,
+        "title": "Healing at Bethesda",
+        "alt": "A man holds his rolled sleeping mat beside Jesus at the pool of Bethesda.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the healed man at Bethesda: adult man stands with his rolled woven sleeping mat over one arm beside Jesus, a colonnaded pool and seated visitors behind, diffuse morning light reflected from water, no magical glow or wounds. Narrative basis: Jesus heals a man who had been ill thirty-eight years at the pool of Bethesda on a Sabbath. He then speaks of his relationship to the Father.",
+        "original": "output/imagegen/john-complete/healing-at-bethesda.png"
+      },
+      {
+        "index": 4,
+        "title": "Bread of Life",
+        "alt": "Jesus teaches listeners seated on stone benches in Capernaum.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only Jesus teaching in Capernaum synagogue: Jesus sits speaking to listeners on simple low stone benches, a basket with a barley loaf near a doorway, cool indirect daylight, some listeners thoughtful and others turning away, no other scenes. Narrative basis: Jesus feeds the five thousand, walks on the sea, and teaches in Capernaum that he is the bread of life. Many disciples leave him.",
+        "original": "output/imagegen/john-complete/bread-of-life.png"
+      },
+      {
+        "index": 5,
+        "title": "The Woman Caught in Adultery",
+        "alt": "A woman stands before Jesus in a quiet courtyard as others walk away.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the quiet end of the courtyard encounter: a fully clothed adult woman in an earth-red mantle stands at a respectful distance before Jesus; departing adults visible beyond the courtyard doorway, a few stones left on paving. No crowd threatening her, no violence, gentle overcast light. Narrative basis: Scribes and Pharisees bring a woman caught in adultery and ask whether she should be stoned. Jesus tells the one without sin to throw the first stone, and he sends her away.",
+        "original": "output/imagegen/john-complete/the-woman-caught-in-adultery.png"
+      },
+      {
+        "index": 6,
+        "title": "The Man Born Blind",
+        "alt": "A man washes his face at a stone pool beneath Jerusalem’s terraces.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the man washing at Siloam: a clothed adult man kneels at a stone pool washing water across his face with both hands, early morning reflected blue-green water and ancient city stone terraces behind, another traveler at a distance, dignified natural depiction. Narrative basis: Jesus gives sight to a man born blind. The Pharisees question him and his parents and cast the man out.",
+        "original": "output/imagegen/john-complete/the-man-born-blind.png"
+      },
+      {
+        "index": 7,
+        "title": "Jesus at the Feast of Dedication",
+        "alt": "Jesus speaks with listeners beneath a temple portico on a cool winter day.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the discussion at Dedication: Jesus speaks with a group of Jewish listeners under Solomon’s temple portico in winter, damp stone columns and grey skies, practical wool mantles against cold, earnest varied expressions, no stones held, no villains. Narrative basis: At the Feast of Dedication in Jerusalem, Jesus is asked whether he is the Christ. Some take up stones after his answer and try to seize him. But he escapes and goes beyond Jordan, where many believe in him.",
+        "original": "output/imagegen/john-complete/jesus-at-the-feast-of-dedication.png"
+      },
+      {
+        "index": 8,
+        "title": "The Raising of Lazarus",
+        "alt": "Lazarus stands with his sisters and Jesus outside a garden tomb.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the moment after Lazarus comes out: fully clothed living adult Lazarus stands outside a rock-cut tomb while his sisters carefully loosen linen wrapping from his shoulders; Jesus stands nearby, daylight in a green garden, no body or gore or supernatural glow. Narrative basis: Jesus raises Lazarus of Bethany after four days in the tomb. The council then resolves to put Jesus to death.",
+        "original": "output/imagegen/john-complete/the-raising-of-lazarus.png"
+      },
+      {
+        "index": 9,
+        "title": "Anointing and Triumphal Entry",
+        "alt": "Mary brings a small perfume jar to Jesus during a meal at Bethany.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only Mary anointing at Bethany: intimate domestic meal, Mary tips a small alabaster perfume jar near Jesus’s feet as he reclines at a low table, Martha serving and Lazarus seated nearby, afternoon window light, no entry procession or other scene. Narrative basis: Mary anoints Jesus six days before Passover. He enters Jerusalem on a donkey, and some Greeks ask to see him.",
+        "original": "output/imagegen/john-complete/anointing-and-triumphal-entry.png"
+      },
+      {
+        "index": 10,
+        "title": "Jesus Washes the Disciples' Feet",
+        "alt": "Jesus kneels beside a basin and washes Peter’s feet as disciples watch.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only the footwashing: Jesus kneels wearing a linen tunic and towel tied at the waist, gently pours water from a clay jug over Peter’s feet into a simple basin; disciples watch nearby from low seats in an upper room. Subdued evening light, fully clothed. Narrative basis: During supper Jesus washes his disciples’ feet and tells them to serve one another. He identifies his betrayer with a morsel given to Judas, who leaves, and foretells that Peter will deny him three times.",
+        "original": "output/imagegen/john-complete/jesus-washes-the-disciples-feet.png"
+      },
+      {
+        "index": 11,
+        "title": "Arrest, Trial and Crucifixion",
+        "alt": "Joseph and Nicodemus carry linen and spice jars toward a garden tomb.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only burial preparations outside the tomb: Joseph of Arimathea and Nicodemus carry folded clean linen and jars of spices toward a new rock-cut garden tomb, quiet late-afternoon grey light, olive trees; no body, crucifixion, guards or other scenes. Narrative basis: Jesus is arrested in a garden, questioned by Annas and Pilate, crucified, and buried by Joseph of Arimathea and Nicodemus.",
+        "original": "output/imagegen/john-complete/arrest-trial-and-crucifixion.png"
+      },
+      {
+        "index": 12,
+        "title": "The Resurrection Appearances",
+        "alt": "Mary Magdalene turns toward Jesus in a quiet garden beside the tomb.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only Mary meeting Jesus in the garden: Mary Magdalene turns toward Jesus beside flowering herbs and an olive tree near an empty rock-cut tomb, fresh cool morning light, both fully clothed, natural human recognition, no touching wounds or glow. Narrative basis: Mary Magdalene finds the tomb empty and sees the risen Jesus. He appears to the disciples, and Thomas believes after seeing his wounds.",
+        "original": "output/imagegen/john-complete/the-resurrection-appearances.png"
+      },
+      {
+        "index": 13,
+        "title": "Breakfast by the Sea of Tiberias",
+        "alt": "Jesus prepares fish and bread as fishermen come ashore beside the lake.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body outside earthly human scenes. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes.  When Jesus appears as a human in the earthly narrative, show an adult first-century Jewish Galilean with medium-deep brown skin, dark tightly curled hair, a short beard, undyed linen tunic and blue-gray woven mantle. No European features, flowing straight hair, halos or supernatural glow. Infants and children use age-appropriate natural brown features. John. Only breakfast at Tiberias: Jesus tends a small charcoal fire with fish and bread on the pebbled lakeshore; Peter and several fishermen arrive from a wooden boat pulling a net, pale misty morning, calm blue lake, no other scenes. Narrative basis: Jesus appears to seven disciples after a night of fishing, eats with them, and asks Peter three times whether he loves him.",
+        "original": "output/imagegen/john-complete/breakfast-by-the-sea-of-tiberias.png"
+      }
+    ]
   }
 }
