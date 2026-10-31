@@ -3123,3 +3123,5 @@ html body.lens-app #verse-preview .preview-text :is(.person-chip,.location-chip)
 html body.lens-app #lensInspector .ux-verse-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%}
 html body.lens-app #lensInspector .ux-verse-actions button{width:100%;min-width:0;height:60px;min-height:44px;border:0;box-shadow:none;background:transparent}
 html body.lens-app #lensInspector .lens-evidence>details>summary{text-decoration:none}
+/* Keep the active dot close to desktop navigation content. */
+@media(min-width:768px){html body.lens-app #lensMasthead .lens-primary a[aria-current=page]::after{bottom:calc(50% - 15px)}}
