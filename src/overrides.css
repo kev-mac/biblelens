@@ -3114,3 +3114,9 @@ html body.lens-app:not(.dark):is([data-topic=history],[data-topic=science],[data
 html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) :is(.directory-hub,.stories-filter-sheet,.phase2-page,#timeline-view){--directory-rgb:var(--tile-rgb);--directory-accent:var(--inspect-accent);--accent-purple:var(--inspect-accent);--accent-purple-soft:rgba(var(--tile-rgb),.16);--accent-purple-border:rgba(var(--tile-rgb),.35);--accent:var(--inspect-accent);--ui-link:var(--inspect-accent)}
 html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) #main :is(#debates-view,#debate-view,#timeline-view,#evidence-view) :is(h1,.directory-heading){color:var(--inspect-accent)}
 html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=timeline],[data-topic=text],[data-topic=translation],[data-topic=questions]) #timeline-view :is(.timeline-card,.timeline-event-card){border-color:rgba(var(--tile-rgb),.35)}
+/* Inline links must not enlarge the verse preview's line boxes. */
+html body.lens-app #verse-preview .preview-text{line-height:1.6}
+html body.lens-app #verse-preview .preview-text :is(a,button.person-chip,button.location-chip){display:inline;position:relative;min-height:0;min-width:0;height:auto;padding:0;margin:0;border:0;background:none;border-radius:0;font:inherit;line-height:inherit;vertical-align:baseline;text-decoration:none}
+html body.lens-app #verse-preview .preview-text .person-chip{font-weight:700;color:var(--topic-people)}
+html body.lens-app #verse-preview .preview-text .location-chip{font-weight:700;color:var(--topic-places)}
+html body.lens-app #verse-preview .preview-text :is(.person-chip,.location-chip) svg{display:none}
