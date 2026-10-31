@@ -3094,7 +3094,7 @@ html body.lens-app[data-topic=questions],html body.lens-app :is([data-topic=ques
 html body.lens-app #explore-view a.ux-topic{--topic:rgb(var(--tile-rgb));--category-border:rgba(var(--tile-rgb),.45);--category-glow:rgba(var(--tile-rgb),.25);background:rgba(var(--tile-rgb),.1);border-color:var(--category-border)}
 html body.lens-app:not(.dark) #explore-view a.ux-topic{--topic:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
 html body.lens-app #explore-view .ux-count{color:var(--topic);background:rgba(var(--tile-rgb),.15)}
-html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:28px 0 24px;padding-top:8px;text-align:center}
+html body.lens-app #chapter-text .reader-event-title{font:700 1.35rem/1.4 var(--ui-font);color:var(--lens-ink);margin:24px 0;padding-top:0;text-align:center}
 html body.lens-app .comparison-topic-passages{margin:20px 0;padding:16px;border:1px solid var(--lens-rule);border-radius:8px}
 html body.lens-app .comparison-topic-passages nav{display:flex;flex-wrap:wrap;gap:8px}
 html body.lens-app #lensMasthead nav.lens-primary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -3102,9 +3102,9 @@ html body.lens-app #explore-view .ux-evidence-category{color:rgb(var(--tile-rgb)
 html body.lens-app:not(.dark) #explore-view .ux-evidence-category{color:color-mix(in srgb,rgb(var(--tile-rgb)) 60%,#000)}
 /* Keep chapter topics separate and restore discoverable entity links. */
 html body.lens-app #chapter-text .chapter-title-part{display:block}
-html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part{margin-top:16px}
-html body.lens-app #chapter-text .verse-body .person-chip{font-weight:700;color:var(--topic-people);text-decoration-color:currentColor}
-html body.lens-app #chapter-text .verse-body .location-chip{font-weight:700;color:var(--topic-places);text-decoration-color:currentColor}
+html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part{margin-top:24px}
+html body.lens-app #chapter-text .verse-body .person-chip{font-weight:700;color:var(--topic-people);text-decoration:none}
+html body.lens-app #chapter-text .verse-body .location-chip{font-weight:700;color:var(--topic-places);text-decoration:none}
 /* Keep both discovery grids equally wide when only Inspect needs scrolling. */
 html:has(body.lens-app #explore-view:not([hidden])){scrollbar-gutter:stable}
 @supports not (scrollbar-gutter:stable){html:has(body.lens-app #explore-view:not([hidden])){overflow-y:scroll}}
