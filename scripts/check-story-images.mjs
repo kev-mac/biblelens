@@ -5,11 +5,11 @@ import worker from '../dist/server/index.js';
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
-const illustratedBooks=['Genesis','Exodus','Leviticus'];
+const illustratedBooks=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy'];
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 assert.deepEqual(Object.keys(images),catalog.filter(group=>illustratedBooks.includes(group.book)).flatMap(group=>group.stories).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
- assert.match(art.src,/^\/assets\/story-[a-z-]+-v[12]\.webp$/);
+ assert.match(art.src,/^\/assets\/story-[a-z0-9-]+-v[12]\.webp$/);
  assert(art.alt.length>20);
  const response=await get(art.src);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/webp');
  const bytes=Buffer.from(await response.arrayBuffer());assert(bytes.length<250000);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,16),'WEBPVP8 ');
