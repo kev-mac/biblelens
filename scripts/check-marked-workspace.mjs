@@ -94,7 +94,7 @@ console.log('PASS: zero-result draft filters respect categories, chapters, perso
 const question=context.markedCategoryProfileCard({summary:'Genesis 1 leaves a question open.',text:'Quoted evidence',scope:'Interpretation limits',sources:[{url:'https://example.com/source',label:'Edition source'}],reasoning:'Reasoned comparison'}, {}, 'question-test', 'A question?', [{label:'Genesis 1:3',quotes:['Let there be light']}], '<div>Secondary References</div>');
 assert(question.includes('category-profile-card'));
 assert.equal((question.match(/data-comparison-inspect/g)||[]).length,1);
-assert(question.includes('View record →'));assert(question.includes('<details class="comparison-details" hidden>'));
+assert(question.includes('View record'));assert(question.includes('<details class="comparison-details" hidden>'));
 assert(question.includes('Let there be light'));assert(question.includes('Secondary References'));
 assert(question.includes('Interpretation limits'));assert(question.includes('Edition source'));
 assert(!question.includes('data-summary-toggle'));

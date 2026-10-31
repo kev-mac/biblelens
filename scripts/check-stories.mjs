@@ -136,7 +136,7 @@ console.log('PASS: 24-story pages, page bounds, next/previous state, result rang
 // Stories expose the passage action directly while retaining their complete range.
 const sectionCard=c.storyCard(genesis.stories[0]);
 assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'));
-assert(sectionCard.includes('Read story →</button>'));
+assert(sectionCard.includes('Read story</button>'));
 assert(!sectionCard.includes('data-story-section'));
 assert(sectionCard.includes('<div class="story-summary"><p>'+genesis.stories[0].summary.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')+'</p></div>'));
 console.log('PASS: Full-range story anchors, direct reader action and unchanged narrative summary.');
