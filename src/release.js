@@ -1,11 +1,15 @@
 'use strict';
 const PACKAGED_RELEASE=/*__RELEASE_INFO__*/null;
 async function refreshBibleLensAppFiles(){
+ async function bounded(operation){
+  let timer;try{return await Promise.race([operation,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('App refresh timed out')),10000);})]);}finally{clearTimeout(timer);}
+ }
  const latest=await(await fetch('/release.json',{cache:'no-store',credentials:'omit',signal:AbortSignal.timeout(8000)})).json();
  if(!Number.isSafeInteger(latest.buildNumber)||typeof latest.sourceHash!=='string')throw Error('Latest app files are unavailable');
- const registrations=await navigator.serviceWorker?.getRegistrations()||[];
- for(const registration of registrations)if(new URL(registration.scope).origin===location.origin)await registration.unregister();
- if(globalThis.caches)for(const name of await caches.keys())if(name.startsWith('biblelens-shell-'))await caches.delete(name);
+ // Drop public files before waiting on a worker's outstanding install job.
+ if(globalThis.caches)for(const name of await bounded(caches.keys()))if(name.startsWith('biblelens-shell-'))await bounded(caches.delete(name));
+ const registrations=await bounded(navigator.serviceWorker?.getRegistrations()||Promise.resolve([]));
+ for(const registration of registrations)if(new URL(registration.scope).origin===location.origin)await bounded(registration.unregister());
  const url=new URL(location.href);url.searchParams.delete('build');
  location.replace(url.href);
 }

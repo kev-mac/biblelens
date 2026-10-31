@@ -6,7 +6,7 @@ const source=fs.readFileSync('src/release.js','utf8');
 const latest={version:'1.1.0',buildNumber:305,sourceHash:'current-source'};
 function fixture({offline=false}={}){
  const actions=[];
- const context={URL,AbortSignal,document:{addEventListener(){}},navigator:{serviceWorker:{getRegistrations:async()=>[
+ const context={URL,AbortSignal,setTimeout,clearTimeout,document:{addEventListener(){}},navigator:{serviceWorker:{getRegistrations:async()=>[
   {scope:'https://biblelens.test/',unregister:async()=>actions.push('unregister')},
   {scope:'https://other.test/',unregister:async()=>{throw Error('Foreign worker touched');}}
  ]}},location:{href:'https://biblelens.test/?build=303&edition=kjv#read/8/1',origin:'https://biblelens.test',replace:url=>actions.push(['navigate',url])},
@@ -18,8 +18,10 @@ function fixture({offline=false}={}){
  return {context,actions};
 }
 const online=fixture();await online.context.refreshBibleLensAppFiles();
-assert.deepEqual(online.actions,['unregister',['delete','biblelens-shell-old'],['navigate','https://biblelens.test/?edition=kjv#read/8/1']]);
+assert.deepEqual(online.actions,[['delete','biblelens-shell-old'],'unregister',['navigate','https://biblelens.test/?edition=kjv#read/8/1']]);
 const offline=fixture({offline:true});await assert.rejects(offline.context.refreshBibleLensAppFiles(),/Offline/);assert.deepEqual(offline.actions,[]);
+const blocked=fixture();blocked.context.navigator.serviceWorker.getRegistrations=()=>new Promise(()=>{});blocked.context.setTimeout=fn=>setTimeout(fn,1);
+await assert.rejects(blocked.context.refreshBibleLensAppFiles(),/timed out/);assert.deepEqual(blocked.actions,[['delete','biblelens-shell-old']]);
 
 // The loaded bundle's identity must win over newer metadata returned by the server.
 let ready;const version={},status={},footer={},button={};

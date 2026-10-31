@@ -2321,5 +2321,452 @@
         "original": "output/imagegen/job-complete/job-restored.png"
       }
     ]
+  },
+  "isaiah": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/isaiah-complete/",
+    "assets": {
+      "Isaiah's Call": {
+        "src": "/assets/story-isaiah-s-call-v1.webp",
+        "alt": "Isaiah kneels in a smoke-filled temple as glowing tongs approach his lips.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ahaz and the Sign of Immanuel": {
+        "src": "/assets/story-ahaz-and-the-sign-of-immanuel-v1.webp",
+        "alt": "Isaiah speaks with King Ahaz beside a stone water channel outside Jerusalem.",
+        "width": 1200,
+        "height": 675
+      },
+      "Sennacherib's Threat and Hezekiah": {
+        "src": "/assets/story-sennacherib-s-threat-and-hezekiah-v1.webp",
+        "alt": "Hezekiah kneels beside an opened letter at a quiet sanctuary doorway.",
+        "width": 1200,
+        "height": 675
+      },
+      "Hezekiah's Illness": {
+        "src": "/assets/story-hezekiah-s-illness-v1.webp",
+        "alt": "Hezekiah turns toward the wall from his bed in a quiet palace chamber.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Isaiah's Call",
+        "alt": "Isaiah kneels in a smoke-filled temple as glowing tongs approach his lips.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Isaiah. Isaiah kneels at the edge of a vast temple hall filled with pale smoke, his face lit by reflected ember light, a small glowing coal held in bronze tongs near his lips by an indistinct winged messenger, no human-like deity on the throne. Empty throne obscured in brilliant light. Restrained visionary painterly atmosphere, blue charcoal and red accents. Narrative basis: In the year King Uzziah died, Isaiah sees the LORD on a throne. A seraph touches his lips with a coal. He is sent to a people who will not understand.",
+        "original": "output/imagegen/isaiah-complete/isaiah-s-call.png"
+      },
+      {
+        "index": 1,
+        "title": "Ahaz and the Sign of Immanuel",
+        "alt": "Isaiah speaks with King Ahaz beside a stone water channel outside Jerusalem.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Isaiah. Isaiah speaks to King Ahaz beside a stone aqueduct outside Jerusalem while two attendants wait at a distance. Cool gray morning, practical Iron Age tunics, king modest circlet, water and sparse olive trees. Concentrate on the conversation, no mother and infant or Christian symbols invented into the scene. Narrative basis: Syria and Israel threaten Judah. Isaiah tells King Ahaz to stand firm. When Ahaz refuses to ask for a sign, Isaiah announces that a virgin will become pregnant. She will bear a son called Immanuel.",
+        "original": "output/imagegen/isaiah-complete/ahaz-and-the-sign-of-immanuel.png"
+      },
+      {
+        "index": 2,
+        "title": "Sennacherib's Threat and Hezekiah",
+        "alt": "Hezekiah kneels beside an opened letter at a quiet sanctuary doorway.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Isaiah. Hezekiah kneels before a sanctuary doorway and spreads an unlettered rolled parchment on a low stone surface. Early morning blue light and warm single oil lamp, hands open in appeal. Do not show divine body, defeated armies, gore, corpses or readable writing. Narrative basis: The Assyrian field commander demands Jerusalem's surrender. Hezekiah spreads Sennacherib's letter before the LORD, Isaiah promises deliverance, and the Assyrian camp is struck down.",
+        "original": "output/imagegen/isaiah-complete/sennacherib-s-threat-and-hezekiah.png"
+      },
+      {
+        "index": 3,
+        "title": "Hezekiah's Illness",
+        "alt": "Hezekiah turns toward the wall from his bed in a quiet palace chamber.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Isaiah. Ill Hezekiah reclines fully clothed on a low linen-covered bed and turns toward the wall to pray, a cup of water and small clay lamp near him. Quiet rain-dimmed palace chamber, intimate horizontal composition, dignified adult face, no wounds or magical effects. Narrative basis: Hezekiah is told to prepare to die, prays, and is given fifteen more years. He shows Babylonian envoys his treasures, and Isaiah foretells that they will be carried to Babylon.",
+        "original": "output/imagegen/isaiah-complete/hezekiah-s-illness.png"
+      }
+    ]
+  },
+  "jeremiah": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/jeremiah-complete/",
+    "assets": {
+      "Jeremiah's Call": {
+        "src": "/assets/story-jeremiah-s-call-v1.webp",
+        "alt": "Young Jeremiah stands beside flowering almond branches near a steaming clay pot.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Potter's House and the Broken Jar": {
+        "src": "/assets/story-the-potter-s-house-and-the-broken-jar-v1.webp",
+        "alt": "Jeremiah watches a potter reshape wet clay in a shaded workshop.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jeremiah and Pashhur": {
+        "src": "/assets/story-jeremiah-and-pashhur-v1.webp",
+        "alt": "Jeremiah stands beside empty wooden stocks as Pashhur listens near a temple gate.",
+        "width": 1200,
+        "height": 675
+      },
+      "Hananiah's False Prophecy": {
+        "src": "/assets/story-hananiah-s-false-prophecy-v1.webp",
+        "alt": "Hananiah holds a broken wooden yoke before Jeremiah and a listening crowd.",
+        "width": 1200,
+        "height": 675
+      },
+      "New Covenant": {
+        "src": "/assets/story-new-covenant-v1.webp",
+        "alt": "Jeremiah speaks to families beneath olive trees overlooking Jerusalem.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Scroll Burned": {
+        "src": "/assets/story-the-scroll-burned-v1.webp",
+        "alt": "Baruch writes on a scroll as Jeremiah dictates beside a winter hearth.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jeremiah in the Cistern": {
+        "src": "/assets/story-jeremiah-in-the-cistern-v1.webp",
+        "alt": "Ebed-melech and helpers lift Jeremiah from a cistern with cloth-padded ropes.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Fall of Jerusalem and Flight to Egypt": {
+        "src": "/assets/story-the-fall-of-jerusalem-and-flight-to-egypt-v1.webp",
+        "alt": "Jeremiah walks with displaced families and loaded donkeys toward green lowlands.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Jeremiah's Call",
+        "alt": "Young Jeremiah stands beside flowering almond branches near a steaming clay pot.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Young adult Jeremiah stands alone among almond branches flowering beside an ancient village lane, looking up with hesitant attention. A dark cooking pot simmers over a small hearth behind him, composition clear symbolic literary detail with no visible divine figure. Cool early spring dawn, white petals, muted green, dignified medium brown skin and tightly curled hair. Narrative basis: The LORD calls Jeremiah as a young man to be a prophet to the nations. He is shown an almond branch and a boiling pot and told not to fear.",
+        "original": "output/imagegen/jeremiah-complete/jeremiah-s-call.png"
+      },
+      {
+        "index": 1,
+        "title": "The Potter's House and the Broken Jar",
+        "alt": "Jeremiah watches a potter reshape wet clay in a shaded workshop.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Jeremiah watches a potter reshape a collapsed clay vessel on a simple hand-turned wheel in a shaded mudbrick workshop. Wet clay hands clearly visible, filtered noon light from a high opening, terracotta and cool shadows. No modern machinery or legible decoration. Narrative basis: Jeremiah watches a potter remake a spoiled vessel, then breaks a clay jar in the Valley of Hinnom to announce coming destruction.",
+        "original": "output/imagegen/jeremiah-complete/the-potter-s-house-and-the-broken-jar.png"
+      },
+      {
+        "index": 2,
+        "title": "Jeremiah and Pashhur",
+        "alt": "Jeremiah stands beside empty wooden stocks as Pashhur listens near a temple gate.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Jeremiah after release stands beside empty wooden stocks near the temple gate, visibly weary but fully clothed and uninjured in depiction. Pashhur and a guard listen several steps away. Overcast winter light, restrained disagreement, no blows, wounds or humiliation spectacle. Narrative basis: The priest Pashhur has Jeremiah beaten and put in the stocks. After his release Jeremiah announces judgment on Pashhur and complains bitterly about his calling.",
+        "original": "output/imagegen/jeremiah-complete/jeremiah-and-pashhur.png"
+      },
+      {
+        "index": 3,
+        "title": "Hananiah's False Prophecy",
+        "alt": "Hananiah holds a broken wooden yoke before Jeremiah and a listening crowd.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Hananiah has just broken the wooden ox-yoke Jeremiah wore; two pieces now held separately between the two men in a temple courtyard. Gathered adults watch, firm faces without caricature. Windy bright afternoon, simple linen robes, no metal shackles or modern harnesses. Narrative basis: Hananiah breaks the yoke, a frame for carrying a load, that Jeremiah wears. He says Babylon's rule will end in two years. Jeremiah answers that the yoke will be iron, and Hananiah dies that year.",
+        "original": "output/imagegen/jeremiah-complete/hananiah-s-false-prophecy.png"
+      },
+      {
+        "index": 4,
+        "title": "New Covenant",
+        "alt": "Jeremiah speaks to families beneath olive trees overlooking Jerusalem.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Jeremiah, an older man in a simple woven mantle, speaks to a listening group of families beside an olive grove overlooking distant Jerusalem. An adult rests one hand over the chest while listening. Soft green spring light after rain, understated hope and renewal, no glowing hearts, no Christian symbols, no written words. Narrative basis: Jeremiah describes a new covenant with God's law written in people's hearts. Jesus links the cup to a new covenant, and Hebrews quotes Jeremiah's promise.",
+        "original": "output/imagegen/jeremiah-complete/new-covenant.png"
+      },
+      {
+        "index": 5,
+        "title": "The Scroll Burned",
+        "alt": "Baruch writes on a scroll as Jeremiah dictates beside a winter hearth.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Baruch carefully writes with a reed pen on a scroll turned away from the viewer while Jeremiah dictates in a sheltered stone room. Winter light, small brazier safely apart from scroll, a small stack of rolled parchment. Focus on rewriting the text, no readable letters and no signature. Narrative basis: Baruch writes down Jeremiah's words and reads them in the temple. King Jehoiakim cuts the scroll and burns it, and Jeremiah dictates it again with additions.",
+        "original": "output/imagegen/jeremiah-complete/the-scroll-burned.png"
+      },
+      {
+        "index": 6,
+        "title": "Jeremiah in the Cistern",
+        "alt": "Ebed-melech and helpers lift Jeremiah from a cistern with cloth-padded ropes.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Ebed-melech, a dignified Cushite man with deep brown skin and tightly curled hair, and two helpers pull Jeremiah up from a stone cistern using ropes padded with cloth under his arms. Cloudy morning, careful supportive hands, Jeremiah fully clothed, safe rescue moment, no wounds. Narrative basis: During the army’s blockade, Jeremiah is arrested and lowered into a muddy cistern, a pit for storing water. Ebed-melech the Cushite pulls him out, and Zedekiah consults him in private.",
+        "original": "output/imagegen/jeremiah-complete/jeremiah-in-the-cistern.png"
+      },
+      {
+        "index": 7,
+        "title": "The Fall of Jerusalem and Flight to Egypt",
+        "alt": "Jeremiah walks with displaced families and loaded donkeys toward green lowlands.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jeremiah. Jeremiah walks reluctantly among refugee families with donkeys and wrapped belongings on a road toward Egypt, distant green Nile floodplain at the horizon. Hazy white morning, weary but dignified men women children varied brown skin, no corpses or battle spectacle, ancient travel clothing. Narrative basis: Babylon captures Jerusalem and Jeremiah is freed. After Gedaliah is killed, the survivors ignore Jeremiah's warning and flee to Egypt, taking him with them.",
+        "original": "output/imagegen/jeremiah-complete/the-fall-of-jerusalem-and-flight-to-egypt.png"
+      }
+    ]
+  },
+  "ezekiel": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/ezekiel-complete/",
+    "assets": {
+      "Ezekiel's Vision and Commission": {
+        "src": "/assets/story-ezekiel-s-vision-and-commission-v1.webp",
+        "alt": "Ezekiel kneels by a canal beneath a vision of winged creatures and turning wheels.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Glory Leaves the Temple": {
+        "src": "/assets/story-the-glory-leaves-the-temple-v1.webp",
+        "alt": "Ezekiel watches a luminous cloud move beyond an empty temple gate toward distant hills.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Death of Ezekiel's Wife": {
+        "src": "/assets/story-the-death-of-ezekiel-s-wife-v1.webp",
+        "alt": "Ezekiel stands quietly beside an empty chair and folded shawl as a neighbor listens.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Valley of Dry Bones": {
+        "src": "/assets/story-the-valley-of-dry-bones-v1.webp",
+        "alt": "Ezekiel holds two wooden sticks together before a gathering in a mist-filled valley.",
+        "width": 1200,
+        "height": 675
+      },
+      "Ezekiel Is Shown the Temple in a Vision": {
+        "src": "/assets/story-ezekiel-is-shown-the-temple-in-a-vision-v1.webp",
+        "alt": "Ezekiel listens to a guide holding a measuring reed beside a broad temple gate.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Ezekiel's Vision and Commission",
+        "alt": "Ezekiel kneels by a canal beneath a vision of winged creatures and turning wheels.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezekiel. Ezekiel kneels beside a Mesopotamian irrigation canal, looking toward a visionary arrangement of four winged living creatures and interlocking bronze-like wheels emerging within a storm cloud over the water. A blank scroll rests near his hands. Cool turquoise river, silver cloud, restrained symbolic vision. No human-like deity, no grotesque horror, no readable letters. Narrative basis: By the Chebar canal Ezekiel sees four living creatures and wheels. He is given a scroll to eat and is made a lookout for Israel.",
+        "original": "output/imagegen/ezekiel-complete/ezekiel-s-vision-and-commission.png"
+      },
+      {
+        "index": 1,
+        "title": "The Glory Leaves the Temple",
+        "alt": "Ezekiel watches a luminous cloud move beyond an empty temple gate toward distant hills.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezekiel. Ezekiel stands at an empty Jerusalem temple gate in a visionary scene, watching a soft cloud of light move east above the city toward distant hills. Foreground still shadowed, pale dawn at the horizon, no visible divine body, no modern architecture, reverent literary imagery. Narrative basis: In a vision Ezekiel is shown idolatry in the temple. The glory of the LORD departs the city, and God promises to gather the exiles and give them a new heart.",
+        "original": "output/imagegen/ezekiel-complete/the-glory-leaves-the-temple.png"
+      },
+      {
+        "index": 2,
+        "title": "The Death of Ezekiel's Wife",
+        "alt": "Ezekiel stands quietly beside an empty chair and folded shawl as a neighbor listens.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezekiel. Ezekiel, a fully clothed brown-skinned man in a plain linen robe, stands quietly in a modest home beside an empty woven chair and a folded woman's shawl. A neighbor listens at the doorway. Blue evening, single clay lamp, quiet restrained grief; no body, no deathbed or harmful act, no supernatural figure. Narrative basis: The LORD tells Ezekiel that the desire of his eyes will be taken away. He commands him not to perform the usual acts of mourning. His wife dies that evening. He explains his actions to the people as a sign about the sacred place and their families.",
+        "original": "output/imagegen/ezekiel-complete/the-death-of-ezekiel-s-wife.png"
+      },
+      {
+        "index": 3,
+        "title": "The Valley of Dry Bones",
+        "alt": "Ezekiel holds two wooden sticks together before a gathering in a mist-filled valley.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezekiel. Ezekiel stands in a wide dry valley holding two plain wooden sticks together before a crowd of fully clothed living adults emerging through early morning mist in the middle distance. Select the restoration sign after the literary vision, no skeletons, bodies, wounds or literal resurrection imagery. Cool mauve and green-gray valley, hopeful restrained expression. Narrative basis: Ezekiel sees a valley of dry bones come to life at God's word and is told it pictures Israel's restoration. He joins two sticks as a sign that Judah and Israel will be one kingdom.",
+        "original": "output/imagegen/ezekiel-complete/the-valley-of-dry-bones.png"
+      },
+      {
+        "index": 4,
+        "title": "Ezekiel Is Shown the Temple in a Vision",
+        "alt": "Ezekiel listens to a guide holding a measuring reed beside a broad temple gate.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Ezekiel. From a high ridge Ezekiel listens to a guide holding a measuring reed beside a broad ancient temple gate. Bright clear noon, pale stone and blue sky, strong geometric composition with large doors and human figures small. This is a literary vision, no modern temple, no readable architectural labels, no divine body. Narrative basis: In a vision Ezekiel is brought to the land of Israel and set on a high mountain. He sees a man with a measuring reed at a gate and is told to observe what he is shown and declare it to the house of Israel.",
+        "original": "output/imagegen/ezekiel-complete/ezekiel-is-shown-the-temple-in-a-vision.png"
+      }
+    ]
+  },
+  "daniel": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/daniel-complete/",
+    "assets": {
+      "Daniel and His Friends in Babylon": {
+        "src": "/assets/story-daniel-and-his-friends-in-babylon-v1.webp",
+        "alt": "Daniel and three companions share vegetables and water in a Babylonian courtyard.",
+        "width": 1200,
+        "height": 675
+      },
+      "Nebuchadnezzar's Dream of the Statue": {
+        "src": "/assets/story-nebuchadnezzar-s-dream-of-the-statue-v1.webp",
+        "alt": "Daniel speaks to Nebuchadnezzar beside a dreamlike image of a towering statue.",
+        "width": 1200,
+        "height": 675
+      },
+      "The Fiery Furnace": {
+        "src": "/assets/story-the-fiery-furnace-v1.webp",
+        "alt": "Three men emerge unharmed from a brick furnace as the king watches.",
+        "width": 1200,
+        "height": 675
+      },
+      "Nebuchadnezzar's Humbling": {
+        "src": "/assets/story-nebuchadnezzar-s-humbling-v1.webp",
+        "alt": "Nebuchadnezzar kneels in wet grass beneath a spreading tree at dawn.",
+        "width": 1200,
+        "height": 675
+      },
+      "Belshazzar's Feast": {
+        "src": "/assets/story-belshazzar-s-feast-v1.webp",
+        "alt": "Daniel addresses Belshazzar as guests turn toward a bright palace wall.",
+        "width": 1200,
+        "height": 675
+      },
+      "Daniel in the Lions' Den": {
+        "src": "/assets/story-daniel-in-the-lions-den-v1.webp",
+        "alt": "Daniel stands calmly among resting lions as daylight enters the stone enclosure.",
+        "width": 1200,
+        "height": 675
+      },
+      "Daniel's Visions": {
+        "src": "/assets/story-daniel-s-visions-v1.webp",
+        "alt": "Daniel watches a dreamlike ram and goat beyond a lamplit window.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Daniel and His Friends in Babylon",
+        "alt": "Daniel and three companions share vegetables and water in a Babylonian courtyard.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Daniel and three adult companions share bowls of lentils, herbs and water in a Babylonian palace courtyard while a steward listens to them. Cool shaded midday, blue glazed brick, each distinct brown face, natural curls, simple robes. No maize or modern food. Narrative basis: Nebuchadnezzar takes Daniel, Hananiah, Mishael and Azariah to Babylon for training. They refuse the king's food, thrive on vegetables and water, and enter his service.",
+        "original": "output/imagegen/daniel-complete/daniel-and-his-friends-in-babylon.png"
+      },
+      {
+        "index": 1,
+        "title": "Nebuchadnezzar's Dream of the Statue",
+        "alt": "Daniel speaks to Nebuchadnezzar beside a dreamlike image of a towering statue.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Daniel explains a dream to seated Nebuchadnezzar in an ancient Babylonian audience hall. Behind them a faint dreamlike distant statue with gold head and silver bronze iron and clay body stands on a windswept plain within a clouded opening, literary symbolism clearly painterly, no writing. Narrative basis: Nebuchadnezzar demands that his wise men tell him both his dream and its meaning. God reveals it to Daniel. A stone strikes a statue of gold, silver, brass, iron and clay. Daniel explains this as God’s kingdom defeating the kingdoms shown by the statue.",
+        "original": "output/imagegen/daniel-complete/nebuchadnezzar-s-dream-of-the-statue.png"
+      },
+      {
+        "index": 2,
+        "title": "The Fiery Furnace",
+        "alt": "Three men emerge unharmed from a brick furnace as the king watches.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Three fully clothed men step safely out of an ancient brick furnace doorway, a fourth distant luminous clothed figure indistinct within the warm haze. King and attendants watch at a respectful distance. Dark blue night contrasts furnace amber, no burning bodies, injury, gore or nudity. Narrative basis: Shadrach, Meshach and Abednego refuse to worship Nebuchadnezzar's golden image and are thrown into a furnace. A fourth figure walks with them, and they come out unharmed.",
+        "original": "output/imagegen/daniel-complete/the-fiery-furnace.png"
+      },
+      {
+        "index": 3,
+        "title": "Nebuchadnezzar's Humbling",
+        "alt": "Nebuchadnezzar kneels in wet grass beneath a spreading tree at dawn.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Nebuchadnezzar, fully clothed in a worn plain robe, kneels in dew-covered grass looking upward as reason returns. Quiet dawn, old spreading tree and Babylon distant. Dignified vulnerable person, no animalistic caricature, madness stereotype or bodily exposure. Narrative basis: Daniel interprets a dream of a great tree cut down. The king loses his sanity for seven periods, then recovers and praises God.",
+        "original": "output/imagegen/daniel-complete/nebuchadnezzar-s-humbling.png"
+      },
+      {
+        "index": 4,
+        "title": "Belshazzar's Feast",
+        "alt": "Daniel addresses Belshazzar as guests turn toward a bright palace wall.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Daniel stands before a startled Belshazzar at a low royal banquet table; people look toward an unoccupied bright patch of plaster wall where candlelight flares. Depict the reaction to the literary sign without any letters, words, detached hand, readable symbols, violence or caricature. Narrative basis: A hand writes on the wall during Belshazzar’s feast, and Daniel reads it as a sentence on the kingdom. Belshazzar is killed that night, and Darius the Median receives the kingdom.",
+        "original": "output/imagegen/daniel-complete/belshazzar-s-feast.png"
+      },
+      {
+        "index": 5,
+        "title": "Daniel in the Lions' Den",
+        "alt": "Daniel stands calmly among resting lions as daylight enters the stone enclosure.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Older Daniel stands calmly in a stone enclosure with several resting lions as pale first daylight enters from a round opening above. Darius looks down from the rim. Emphasize distance and calm animals, no attack or wounds, cool moss-gray stone and warm tawny fur. Narrative basis: Jealous officials trick Darius into a decree against prayer to anyone but him. Daniel keeps praying, is thrown to lions, and is found unharmed.",
+        "original": "output/imagegen/daniel-complete/daniel-in-the-lions-den.png"
+      },
+      {
+        "index": 6,
+        "title": "Daniel's Visions",
+        "alt": "Daniel watches a dreamlike ram and goat beyond a lamplit window.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Daniel. Daniel sits at a low desk beside an open window at night, a blank scroll and small lamp before him. Beyond the window a painterly symbolic vision of a ram and a goat on distant rocky hills beneath storm-blue clouds. Reflective literary scene, no readable text, no grotesque beasts or human deity. Narrative basis: Daniel sees four beasts and a son of man, a ram and a goat. He receives the answer to prayer about seventy weeks and a final vision of kings and the end.",
+        "original": "output/imagegen/daniel-complete/daniel-s-visions.png"
+      }
+    ]
+  },
+  "hosea": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/hosea-complete/",
+    "assets": {
+      "Hosea's Marriage to Gomer": {
+        "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+        "alt": "Hosea and Gomer share a quiet courtyard meal with their three children.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Hosea's Marriage to Gomer",
+        "alt": "Hosea and Gomer share a quiet courtyard meal with their three children.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Hosea. Hosea and Gomer, both adult brown-skinned people with natural dark curls, sit with three young children at a modest family meal under a vine-covered courtyard. Quiet overcast daylight, clay cups and simple bread, thoughtful faces, equal dignity. No sexualized depiction, coercion, stigma, labels or legible names. Narrative basis: At the LORD’s command Hosea marries Gomer, the daughter of Diblaim. The births and symbolic names of Jezreel, Lo-ruhamah and Lo-ammi accompany messages about Israel and Judah.",
+        "original": "output/imagegen/hosea-complete/hosea-s-marriage-to-gomer.png"
+      }
+    ]
+  },
+  "amos": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/amos-complete/",
+    "assets": {
+      "Amaziah Opposes Amos": {
+        "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+        "alt": "Amos speaks with Amaziah at a sanctuary gate while holding a shepherd’s staff.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Amaziah Opposes Amos",
+        "alt": "Amos speaks with Amaziah at a sanctuary gate while holding a shepherd’s staff.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Amos. Amos in a rough herdsman's mantle speaks firmly with priest Amaziah at the outer gate of a northern Israelite sanctuary. A shepherd's staff rests in Amos's hand, distant grazing sheep, fresh windy highland morning, differing views without hostile caricatures, no written signs. Narrative basis: The priest Amaziah tells Amos to leave Bethel and prophesy in Judah. Amos answers that he was a herdsman called by the LORD and announces judgment on Amaziah.",
+        "original": "output/imagegen/amos-complete/amaziah-opposes-amos.png"
+      }
+    ]
+  },
+  "jonah": {
+    "date": "2026-10-31",
+    "method": "Built-in image_gen imagegen",
+    "authorization": "Owner requested continued creation and addition through remaining books, with periodic releases. No further iPhone installs until explicitly requested.",
+    "originals": "output/imagegen/jonah-complete/",
+    "assets": {
+      "Jonah Flees and Is Swallowed": {
+        "src": "/assets/story-jonah-flees-and-is-swallowed-v1.webp",
+        "alt": "Jonah rests on a wet shore as storm clouds clear above the sea.",
+        "width": 1200,
+        "height": 675
+      },
+      "Nineveh Repents": {
+        "src": "/assets/story-nineveh-repents-v1.webp",
+        "alt": "Jonah speaks to Nineveh’s people as the king sets aside his royal mantle.",
+        "width": 1200,
+        "height": 675
+      },
+      "Jonah's Anger": {
+        "src": "/assets/story-jonah-s-anger-v1.webp",
+        "alt": "Jonah sits beside a withered vine outside Nineveh under bright midday light.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    "prompts": [
+      {
+        "index": 0,
+        "title": "Jonah Flees and Is Swallowed",
+        "alt": "Jonah rests on a wet shore as storm clouds clear above the sea.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jonah. Jonah lies fully clothed and safe on a wet pebbled shore after being cast onto land. He props himself on his hands and looks toward the receding sea, a vast dark fish shape just below the distant water surface, fading storm clouds and silver-green morning light. No vomiting, distress injury, nudity or monstrous teeth. Narrative basis: Jonah boards a ship to Tarshish instead of going to Nineveh. A storm leads the sailors to throw him overboard, and a great fish swallows him; he prays and is cast onto land.",
+        "original": "output/imagegen/jonah-complete/jonah-flees-and-is-swallowed.png"
+      },
+      {
+        "index": 1,
+        "title": "Nineveh Repents",
+        "alt": "Jonah speaks to Nineveh’s people as the king sets aside his royal mantle.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jonah. Jonah speaks in a broad ancient Assyrian street in Nineveh, adults wearing simple sackcloth listen, the king steps down from a low platform with royal mantle set aside. Cool dusty noon and pale relief-carved walls, diverse dignified brown faces, quiet reflection, no inscriptions or modern clothing. Narrative basis: Jonah preaches in Nineveh, and the king and people repent in sackcloth. God relents from the disaster.",
+        "original": "output/imagegen/jonah-complete/nineveh-repents.png"
+      },
+      {
+        "index": 2,
+        "title": "Jonah's Anger",
+        "alt": "Jonah sits beside a withered vine outside Nineveh under bright midday light.",
+        "prompt": "Use case: illustration-story. Create ONE landscape 16:9 cinematic, naturalistic painterly illustration for BibleLens Story cards and matching Read banners. Sophisticated fine brush texture, believable anatomy, tactile ancient materials. Imagined literary scene, not historical evidence or real portraits. Dignified ancient Near Eastern and Northeast African people with varied medium-to-deep brown skin and natural dark curly or tightly curled hair. Practical period linen and wool, no medieval or modern costume. Compose clear crop-safe focal subjects for phone screens. No modern objects, maize, glass lanterns, halos, fantasy armor, legible text, lettering, signatures, watermarks, borders, collage, nudity, gore, corpses or visible divine body. Use visible fine painterly brushwork and tactile ancient materials. Select the stated moment within the literary account; no invented narrative outcome. No medieval or modern costume or architecture. Keep every community equally dignified, with no visual villain stereotypes. Jonah. Jonah sits beside a makeshift shade shelter outside Nineveh, one withered broad-leaved vine beside him. Wide landscape, harsh clear noon, sunlit city in the distance, his posture frustrated and weary but not caricatured. Dry hills with a patch of green leaves, no deity or readable words. Narrative basis: Jonah is angry that God spared Nineveh. A plant shades him and then withers; the LORD contrasts Jonah’s pity for the plant with his own pity for the great city.",
+        "original": "output/imagegen/jonah-complete/jonah-s-anger.png"
+      }
+    ]
   }
 }
