@@ -35,7 +35,7 @@ function applyTextSize(){
  state.textScale=scale;
  // Scale the shared rem base so every section follows the same control.
  // Scripture already uses that base; it must not receive a second multiplier.
- document.documentElement.style.setProperty('--text-scale',String(scale));
+ document.documentElement.style.setProperty('--text-scale',String(scale/1.2));
  const percent=Math.round(scale/1.2*100),slider=$('#reader-font');
  slider.value=String(percent);slider.setAttribute('aria-valuetext',percent+' percent');
  $('#reader-font-value').textContent=percent+'%';
