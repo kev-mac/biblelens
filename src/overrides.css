@@ -3191,7 +3191,7 @@ html body.lens-app #lensMasthead nav.lens-primary{grid-template-columns:repeat(3
 html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:clamp(150px,calc((100vw - 74px)/2),175px);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
 html body.lens-app.dark #explore-view{--lane-surface:rgba(20,26,35,.72);--lane-copy:#AAB6C8;--lane-ink:#F8FAFC;--lane-glass:rgba(255,255,255,.04)}
 html body.lens-app #explore-view>h1{border-left-width:4px;border-radius:2px}
-html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:x proximity;margin:12px calc(-1 * var(--lane-gutter)) 24px 0;padding:8px var(--lane-gutter) 12px 0}
+html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:none;margin:12px calc(-1 * var(--lane-gutter)) 24px 0;padding:8px var(--lane-gutter) 12px 0}
 html body.lens-app #explore-view .ux-explore-filters::-webkit-scrollbar,
 html body.lens-app #explore-view .ux-topic-row::-webkit-scrollbar{display:none}
 html body.lens-app #explore-view .ux-explore-filters button{flex:0 0 auto;min-width:76px;min-height:44px;padding:9px 16px;scroll-snap-align:start;border:1px solid var(--lens-rule);border-radius:24px;background:var(--lane-surface);color:var(--lane-ink);font:500 .85rem/1.4 var(--ui-font);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:background .18s,box-shadow .18s,transform .18s}
