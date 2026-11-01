@@ -122,6 +122,14 @@
       "chapter": 9,
       "existing": [
         {
+          "beforeVerse": 8,
+          "title": "Noahic Covenant",
+          "src": "/assets/story-noahic-covenant-v1.webp",
+          "alt": "Noah’s family watches a rainbow above rain-washed wetlands.",
+          "width": 1200,
+          "height": 675
+        },
+        {
           "beforeVerse": 18,
           "title": "The Family of Noah",
           "src": "/assets/story-the-family-of-noah-v1.webp",
@@ -160,7 +168,7 @@
           "beforeVerse": 27,
           "title": "The Call of Abram",
           "src": "/assets/story-the-call-of-abram-v1.webp",
-          "alt": "Abram\u2019s household travels through rocky highlands before dawn.",
+          "alt": "Abram’s household travels through rocky highlands before dawn.",
           "width": 1200,
           "height": 675
         }
@@ -169,7 +177,16 @@
     },
     {
       "chapter": 12,
-      "existing": [],
+      "existing": [
+        {
+          "beforeVerse": 1,
+          "title": "Abrahamic Covenant",
+          "src": "/assets/story-abrahamic-covenant-v1.webp",
+          "alt": "Abram looks up at a star-filled sky beside a lamplit tent.",
+          "width": 1200,
+          "height": 675
+        }
+      ],
       "added": [
         {
           "afterVerse": 6,
@@ -209,7 +226,16 @@
     },
     {
       "chapter": 15,
-      "existing": [],
+      "existing": [
+        {
+          "beforeVerse": 1,
+          "title": "Abrahamic Covenant",
+          "src": "/assets/story-abrahamic-covenant-v1.webp",
+          "alt": "Abram looks up at a star-filled sky beside a lamplit tent.",
+          "width": 1200,
+          "height": 675
+        }
+      ],
       "added": [
         {
           "afterVerse": 5,
@@ -239,7 +265,15 @@
       "existing": [
         {
           "beforeVerse": 1,
-          "title": "Abraham and Sarah\u2019s Covenant",
+          "title": "Abrahamic Covenant",
+          "src": "/assets/story-abrahamic-covenant-v1.webp",
+          "alt": "Abram looks up at a star-filled sky beside a lamplit tent.",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "beforeVerse": 1,
+          "title": "Abraham and Sarah’s Covenant",
           "src": "/assets/story-abraham-and-sarahs-covenant-v1.webp",
           "alt": "Sarah listens from a shaded tent as Abraham serves three visitors.",
           "width": 1200,
@@ -344,7 +378,7 @@
           "beforeVerse": 1,
           "title": "Isaac and Rebekah",
           "src": "/assets/story-isaac-and-rebekah-v1.webp",
-          "alt": "Rebekah pours water for a camel while Abraham\u2019s servant watches beside a village well.",
+          "alt": "Rebekah pours water for a camel while Abraham’s servant watches beside a village well.",
           "width": 1200,
           "height": 675
         }
@@ -409,9 +443,9 @@
       "existing": [
         {
           "beforeVerse": 1,
-          "title": "Jacob\u2019s Household",
+          "title": "Jacob’s Household",
           "src": "/assets/story-jacobs-household-v1.webp",
-          "alt": "Jacob\u2019s household tends children and sheep beneath sunlit linen awnings.",
+          "alt": "Jacob’s household tends children and sheep beneath sunlit linen awnings.",
           "width": 1200,
           "height": 675
         }
@@ -500,7 +534,7 @@
           "beforeVerse": 1,
           "title": "The Death of Rachel",
           "src": "/assets/story-the-death-of-rachel-v1.webp",
-          "alt": "Jacob mourns beside Rachel\u2019s grave as a woman holds a newborn.",
+          "alt": "Jacob mourns beside Rachel’s grave as a woman holds a newborn.",
           "width": 1200,
           "height": 675
         }
