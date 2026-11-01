@@ -3247,3 +3247,6 @@ html body.lens-app #main #characters-list .person-section-toggle :is(.person-sec
 /* Keep touch targets and keyboard focus, without decorative header borders. */
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header :is(.directory-filter-open,.directory-settings-open),
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header .directory-filter-open>span{border:0;background:none;box-shadow:none}
+
+/* Untitled chapter artwork follows complete verses without changing Story figures. */
+html body.lens-app #chapter-text .chapter-illustration-reader{max-width:860px;margin:20px auto 24px}

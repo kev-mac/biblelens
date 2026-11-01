@@ -1,3 +1,4 @@
+import {validateChapterImages} from './chapter-images.mjs';
 import {validateQuestionPassages} from './question-passages.mjs';
 import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
 import {eventHeadings} from './event-headings.mjs';
@@ -119,7 +120,10 @@ const categoryReferenceIds=JSON.parse(releaseContent('src/data/character-referen
 const categorySummaries=Object.fromEntries(JSON.parse(releaseContent('src/data/characters.json')).filter(p=>categoryReferenceIds[p.id]).map(p=>[categoryReferenceIds[p.id],p.summary]));
 const referenceChapter=readerReferences(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')),JSON.parse(fs.readFileSync('data/reference/places.json','utf8')));
 const readerEventHeadings=eventHeadings(JSON.parse(assets['/stories.json'].body),readerBooks);
-const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,eventHeadings:readerEventHeadings[chapter.book+':'+chapter.chapter]||{},chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
+const chapterImages=JSON.parse(fs.readFileSync('data/chapter-images.json','utf8'));
+validateChapterImages(chapterImages,JSON.parse(fs.readFileSync('data/chapters.json','utf8')),readerEventHeadings,storyImages);
+for(const art of Object.values(chapterImages).flat())assets[art.src]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src'+art.src).toString('base64')};
+const decorateChapter=chapter=>{const linked=referenceChapter(chapter);return {...linked,...(chapterImages[chapter.book+':'+chapter.chapter]?{chapterImages:chapterImages[chapter.book+':'+chapter.chapter]}:{}),eventHeadings:readerEventHeadings[chapter.book+':'+chapter.chapter]||{},chapterName:chapterNames[chapter.name][chapter.chapter],verses:linked.verses.map(verse=>({...verse,redLetters:redLetters[chapter.book+':'+chapter.chapter]?.[verse.n]||{}}))};};
 const linkedChapters=Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync('data/chapters.json','utf8'))).map(([key,encoded])=>[key,zlib.gzipSync(JSON.stringify(decorateChapter(JSON.parse(zlib.gunzipSync(Buffer.from(encoded,'base64')))))).toString('base64')]));
 for(const [key,chapter] of Object.entries(lostChapters))linkedChapters[key]=zlib.gzipSync(JSON.stringify(chapter)).toString('base64');
 assets['/lost-books.json']={type:'application/json; charset=utf-8',body:JSON.stringify(lostBooks)};
