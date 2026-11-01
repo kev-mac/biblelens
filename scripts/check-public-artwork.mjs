@@ -16,7 +16,8 @@ assert.equal((await publicArtworkResponse(new Request(url,{method:'HEAD'}),art,{
 assert.equal((await publicArtworkResponse(new Request(url,{headers:{'if-none-match':'"'+art.sha256+'"'}}),art,{}, {fetcher})).status,304);assert.equal(reads,1);
 assert.equal((await publicArtworkResponse(new Request(url,{method:'POST'}),art,{}, {fetcher})).status,405);assert.equal(reads,1);
 for(const bad of [async()=>new Response('wrong bytes'),async()=>new Response(new Uint8Array(bytes.length)),async()=>new Response('unavailable',{status:404}),async()=>{throw Error('offline');}]){
- result=await publicArtworkResponse(request,art,{}, {cache:false,fetcher:bad});assert.equal(result.status,503);assert.equal(result.headers.get('cache-control'),'no-store');
+ result=await publicArtworkResponse(request,art,{}, {cache:false,fetcher:bad});assert.equal(result.status,302);assert.equal(result.headers.get('location'),art.url);assert.equal(result.headers.get('referrer-policy'),'no-referrer');
+ assert(!result.headers.get('location').includes('private-query'));assert(!result.headers.has('set-cookie'));
 }
 result=await publicArtworkResponse(request,art,{}, {cache:{async match(){throw Error('cache down');},async put(){throw Error('cache down');}},fetcher});assert.equal(result.status,200,'Cache failures do not hide valid artwork');
-console.log('PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, origin failures and no forwarded credentials or private query data.');
+console.log('PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.');

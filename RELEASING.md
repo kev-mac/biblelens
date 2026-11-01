@@ -26,6 +26,9 @@ commit; the build records each file's byte length and SHA-256 hash. Commit and
 push those public assets before deploying a release that references them.
 Never put user notes, credentials, or private material in that manifest. The
 image handler forwards no request cookies, authorization, or query data.
+If the host cannot proxy an image, it redirects to that same immutable public
+file with a no-referrer policy. Only the public image origin is permitted by
+the image policy; remote scripts remain blocked.
 
 Use versioned filenames and a new source pin for future artwork changes. Keep
 every image in the shared source and native bundle so iPhone reading remains

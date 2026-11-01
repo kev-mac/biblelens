@@ -8,8 +8,9 @@ export async function publicArtworkResponse(request,art,ctx={},dependencies={}) 
  const cache=dependencies.cache??globalThis.caches?.default,fetcher=dependencies.fetcher??fetch;
  const key=new URL(request.url);key.search='?art='+art.sha256;key.hash='';const cacheKey=new Request(key,{method:'GET'});
  try{const cached=await cache?.match(cacheKey);if(cached)return cached;}catch{}
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
  try{
-  const response=await fetcher(art.url,{method:'GET',headers:{accept:'image/webp'},credentials:'omit',redirect:'error',signal:AbortSignal.timeout(12000)});
+  const response=await fetcher(art.url,{method:'GET',headers:{accept:'image/webp'},credentials:'omit',redirect:'error',signal:controller.signal});
   if(!response.ok||(!response.headers.get('content-encoding')&&Number(response.headers.get('content-length')||0)>art.bytes))throw Error('Artwork unavailable');
   const bytes=await response.arrayBuffer();if(bytes.byteLength!==art.bytes||bytes.byteLength>250000)throw Error('Artwork length mismatch');
   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
@@ -17,5 +18,9 @@ export async function publicArtworkResponse(request,art,ctx={},dependencies={}) 
   const result=new Response(bytes,{headers});
   if(cache){const save=cache.put(cacheKey,result.clone()).catch(()=>{});if(ctx.waitUntil)ctx.waitUntil(save);else await save;}
   return result;
- }catch{return new Response('Artwork unavailable. Reading remains available.',{status:503,headers:{'content-type':'text/plain; charset=utf-8','cache-control':'no-store'}});}
+ }catch{
+  // Some hosts cannot proxy public binary origins. The exact immutable source
+  // remains available to the browser; no private request data enters the URL.
+  return new Response(null,{status:302,headers:{location:art.url,'referrer-policy':'no-referrer','cache-control':'public, max-age=300','x-content-type-options':'nosniff'}});
+ }finally{clearTimeout(timer);}
 }
