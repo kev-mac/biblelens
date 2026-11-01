@@ -10,7 +10,10 @@ export async function publicArtworkResponse(request,art,ctx={},dependencies={}) 
  try{const cached=await cache?.match(cacheKey);if(cached)return cached;}catch{}
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
  try{
-  const response=await fetcher(art.url,{method:'GET',headers:{accept:'image/webp'},credentials:'omit',redirect:'error',signal:controller.signal});
+  // Workers has no browser cookie jar and does not implement credentials or
+  // redirect:error. Explicit headers omit all private input; manual rejects
+  // redirects below without forwarding anything to another origin.
+  const response=await fetcher(art.url,{method:'GET',headers:{accept:'image/webp'},redirect:'manual',signal:controller.signal});
   if(!response.ok||(!response.headers.get('content-encoding')&&Number(response.headers.get('content-length')||0)>art.bytes))throw Error('Artwork unavailable');
   const bytes=await response.arrayBuffer();if(bytes.byteLength!==art.bytes||bytes.byteLength>250000)throw Error('Artwork length mismatch');
   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');

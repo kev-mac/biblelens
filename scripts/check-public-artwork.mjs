@@ -6,11 +6,11 @@ const art={url:'https://raw.githubusercontent.com/kev-mac/biblelens/'+'a'.repeat
 const url='https://biblelens.test/assets/chapter-exodus-06-v1.webp?private-query=never-forward';
 let reads=0,puts=0,fetchOptions;const jobs=[],saved=new Map();
 const cache={async match(key){assert(!key.url.includes('private-query'));return saved.get(key.url)?.clone();},async put(key,response){puts++;saved.set(key.url,response);}};
-const fetcher=async(origin,options)=>{reads++;assert.equal(origin,art.url);fetchOptions=options;return new Response(bytes,{headers:{'content-length':String(bytes.length)}});};
+const fetcher=async(origin,options)=>{reads++;assert.equal(origin,art.url);assert(!('credentials'in options),'Workers rejects the browser-only credentials option');assert.equal(options.redirect,'manual','Workers does not implement redirect:error');fetchOptions=options;return new Response(bytes,{headers:{'content-length':String(bytes.length)}});};
 const request=new Request(url,{headers:{cookie:'private-cookie',authorization:'Bearer private-device-token','x-user-id':'private-user'}});
 let result=await publicArtworkResponse(request,art,{waitUntil:job=>jobs.push(job)},{cache,fetcher});
 assert.equal(result.status,200);assert.deepEqual(new Uint8Array(await result.arrayBuffer()),bytes);await Promise.all(jobs);
-assert.equal(puts,1);assert.deepEqual(fetchOptions.headers,{accept:'image/webp'});assert.equal(fetchOptions.credentials,'omit');assert.equal(fetchOptions.redirect,'error');
+assert.equal(puts,1);assert.deepEqual(fetchOptions.headers,{accept:'image/webp'});assert(!('credentials'in fetchOptions));assert.equal(fetchOptions.redirect,'manual');
 result=await publicArtworkResponse(request,art,{}, {cache,fetcher});assert.equal(result.status,200);assert.equal(reads,1,'Verified cache hits need no origin request');
 assert.equal((await publicArtworkResponse(new Request(url,{method:'HEAD'}),art,{}, {fetcher})).headers.get('content-length'),String(bytes.length));assert.equal(reads,1);
 assert.equal((await publicArtworkResponse(new Request(url,{headers:{'if-none-match':'"'+art.sha256+'"'}}),art,{}, {fetcher})).status,304);assert.equal(reads,1);
