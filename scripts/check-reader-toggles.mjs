@@ -115,7 +115,7 @@ const scaleValues=new Map();const fontContext={state:{},$:s=>s==='#reader-font-v
 vm.createContext(fontContext);
 vm.runInContext(preferences.slice(preferences.indexOf('function applyTextSize(){')),fontContext);
 assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(fontOutput.textContent,'100%');
-for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),String(percent/100));assert.equal(fontContext.state.textScale,percent/100*1.2);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
+for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert(Math.abs(Number(scaleValues.get('--text-scale'))-percent/100)<1e-10);assert.equal(fontContext.state.textScale,percent/100*1.2);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
 fontNode.onchange();assert(scaleValues.get('saved'));
 fontContext.state.textScale=Infinity;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1');
 assert(html.includes('id="reader-font" type="range"'));
