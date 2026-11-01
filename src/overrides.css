@@ -3247,8 +3247,14 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 /* Untitled chapter artwork follows complete verses without changing Story figures. */
 html body.lens-app #chapter-text .chapter-illustration-reader{max-width:860px;margin:20px auto 24px}
 
-/* Main copy shares a 16px default and follows the app text-size setting. */
+/* Main copy shares an 18px default and follows the app text-size setting. */
 html body.lens-app #main :is(p,.story-summary,.character-profile-biography,.person-section-panel p,.marked-verse-text,.comparison-summary,.message-body,.chat-reasoning),
 html body.lens-app :is(.character-sheet,.phase2-sheet,.comparison-context-content) p {
  font-size:1rem;
+}
+
+/* Navigation icon labels were 12px; keep them 14px at the default size. */
+html body.lens-app #lensMasthead .lens-primary a,
+html body.lens-app #lensMasthead .lens-primary a > span {
+ font-size:calc(14rem / 18);
 }

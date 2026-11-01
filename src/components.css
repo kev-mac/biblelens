@@ -216,7 +216,7 @@ mark.side-quote[data-tone="question"]{background:#e4ebcb}
 mark.side-quote[data-tone="context"]{background:#e5edf3}
 
 /* A+ scales typography across the application without scaling the layout. */
-html{font-size:calc(16px * var(--text-scale,1))}
+html{font-size:calc(18px * var(--text-scale,1))}
 
 .selection-bar>div{display:flex;align-items:center;gap:8px}
 .chapter-round{display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:var(--green);color:var(--panel);font:1.1875rem/1.6 var(--ui-font)}
