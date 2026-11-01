@@ -1,7 +1,9 @@
 'use strict';
 let books=/*__BOOK_CATALOG__*/[],reading=null,readingBook=Number(state.reading?.book)||0,readingChapter=Number(state.reading?.chapter)||1;
-const readerPreferences=state.readerPreferences||{edition:'kjv',compare:'on',commentary:'context'};
-if(state.readerEditionDefault!=='kjv-v1'){readerPreferences.edition='kjv';state.readerEditionDefault='kjv-v1';state.readerPreferences=readerPreferences;persist();}
+const readerPreferences=state.readerPreferences||{edition:'web',compare:'on',commentary:'context'};
+// Default only a missing or invalid choice. Never migrate an existing reader's edition.
+if(!['kjv','web','asv'].includes(readerPreferences.edition))readerPreferences.edition='web';
+if(state.readerEditionDefault!=='web-new-v1'){state.readerEditionDefault='web-new-v1';state.readerPreferences=readerPreferences;persist();}
 if(state.readerCompareDefault!=='toggle-v1'){readerPreferences.compare='on';state.readerCompareDefault='toggle-v1';state.readerPreferences=readerPreferences;persist();}
 if(!['none','on'].includes(readerPreferences.compare))readerPreferences.compare='on';
 if(readerPreferences.commentary==='sab')readerPreferences.commentary='context';

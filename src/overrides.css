@@ -3184,3 +3184,34 @@ html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part{margin:
 html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part::before{content:" · "}
 html body.lens-app #chapter-text .reader-event-title{font:700 .975rem/1.4 var(--ui-font);margin:24px 0 14px}
 html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){margin-bottom:14px}
+
+/* Approved mobile review: retain the palette and collection tiles. */
+html body.lens-app #lensMasthead nav.lens-primary{grid-template-columns:repeat(3,minmax(0,1fr))}
+html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px}
+html body.lens-app #explore-view .ux-explore-filters button{min-height:44px;padding:8px 14px;border:1px solid var(--lens-rule);border-radius:12px;background:var(--lens-control-bg);color:var(--lens-ink);font:500 .82rem/1.4 var(--ui-font)}
+html body.lens-app #explore-view .ux-explore-filters button[aria-pressed=true]{background:var(--lens-link-soft);border-color:var(--lens-link)}
+html body.lens-app #explore-view .ux-topic-section h2{margin:0 0 12px;font:600 1rem/1.4 var(--ui-font);color:var(--lens-ink)}
+html body.lens-app #explore-view a.ux-topic{height:154px;padding:14px 10px}
+html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:768px){html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+html body.lens-app #chapter-text .verse-body .lens-verse-evidence{margin-left:6px}
+html body.lens-app #ux-empty-verse-actions{width:360px;padding:10px 12px;max-height:calc(100dvh - 180px);overflow:auto}
+html body.lens-app #ux-empty-verse-actions #ux-empty-verse-toast{margin:0 0 4px;font-size:.76rem;line-height:1.45}
+html body.lens-app #ux-empty-verse-actions .ux-verse-actions button{width:100%;height:52px;font-size:11px;border:0;background:transparent}
+html body.lens-app #ux-empty-verse-actions .ux-context-action{width:100%;min-height:44px;margin-top:6px;color:var(--lens-link);border:1px solid var(--lens-rule);border-radius:12px;background:var(--lens-control-bg)}
+html body.lens-app #lensInspector .lens-context-scope{font-size:.85rem;color:var(--lens-muted);line-height:1.5;margin:12px 0}
+html body.lens-app #main #commandments-view .commandment-topic{font:500 .76rem/1.4 var(--ui-font);color:var(--directory-accent);margin:0}
+html body.lens-app #main #commandments-view .commandment-number{font:400 .74rem/1.4 var(--ui-font);color:var(--ux13-muted);background:none;border:0}
+/* Full detail titles belong in the body; the header names the collection. */
+html body.lens-app #main :is(#debate-view,#study-view).ux-compact-interior>h1{display:block;font:700 1.4rem/1.35 var(--ui-font);margin:20px 0;overflow-wrap:anywhere}
+html body.lens-app #main .lens-context h1{min-width:0;font-size:clamp(14px,4vw,18px);line-height:1.4;overflow-wrap:anywhere}
+html body.lens-app .editorial-status-info{margin:12px 0;font-size:.85rem;color:var(--lens-muted)}
+html body.lens-app .editorial-status-info summary{min-height:44px;display:flex;align-items:center;color:var(--lens-link);text-decoration:underline}
+/* Available People actions read white in dark mode; unavailable actions follow the card tint. */
+html body.lens-app #main #characters-list .person-section-toggle:not(:disabled){color:var(--ux13-ink);opacity:1}
+html body.lens-app.dark #main #characters-list .person-section-toggle:not(:disabled){color:#fff}
+html body.lens-app #main #characters-list .person-section-toggle:disabled{color:color-mix(in srgb,var(--directory-accent) 60%,transparent);opacity:1}
+html body.lens-app #main #characters-list .person-section-toggle :is(.person-section-icon,.person-section-label){color:inherit}
+/* Keep touch targets and keyboard focus, without decorative header borders. */
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header :is(.directory-filter-open,.directory-settings-open),
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header .directory-filter-open>span{border:0;background:none;box-shadow:none}

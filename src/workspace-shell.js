@@ -48,11 +48,10 @@
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
  const labels={read:'Read',explore:'Explore',inspect:'Inspect',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',lost:'Lost Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
- const roots={read:'#read',explore:'#discover',inspect:'#discover?section=evidence',debates:'#questions',notebook:'#notebook'};
+ const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
   if(['read','notebook'].includes(view))return view;
-  if(['debates','debate','timeline','prophecies','evidence'].includes(view)||view==='explore'&&new URLSearchParams(location.hash.split('?')[1]).get('section')==='evidence')return 'inspect';
   return 'explore';
  }
  function back(fallback){if(history.state?.biblelens?.from&&history.state.biblelens.from!==location.hash)history.back();else routeTo(fallback);}
@@ -74,12 +73,11 @@
   contextNav.hidden=top;
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
-   const questions=view==='debate'||view==='debates'&&(location.hash==='#questions'||location.hash.includes('draft=1'));
-   const detail=questions?'<a href="#discover?section=evidence">Inspect</a><span aria-hidden="true">›</span>'+(view==='debate'?'<a href="#questions">Questions</a><span aria-hidden="true">›</span>':''):'';
-   const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(title)+'</h1>';
+   const headerTitle=view==='debate'?({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Contradictions'}[document.body.dataset.topic]||'Research Record'):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
+   const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
    const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
    host.classList.add('ux-compact-interior');
-   if(!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==title)contextNav.innerHTML=html;
+   if(!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==headerTitle)contextNav.innerHTML=html;
    if(headingHadFocus)contextNav.querySelector('h1').focus({preventScroll:true});
    contextNav.dataset.fallback=rootHash;
   }

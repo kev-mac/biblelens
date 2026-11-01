@@ -12,7 +12,7 @@
  // Indicator visibility is a local display choice, independent of record availability.
  function displayChoice(key,fallback){try{return localStorage.getItem(key)||fallback;}catch{return fallback;}}
  function saveDisplayChoice(key,value){try{localStorage.setItem(key,value);}catch{}}
- let evidenceVisible=displayChoice('biblelens-evidence-visible','false')==='true';
+ let evidenceVisible=displayChoice('biblelens-evidence-visible','true')==='true';
  let compareLayout=displayChoice('biblelens-compare-layout',innerWidth<600?'stacked':'side');
  const icon = paths => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
  const icons = {
@@ -42,24 +42,29 @@
  layout.before(readingBar);
  const inspector = document.createElement('aside'); inspector.id='lensInspector'; inspector.className='lens-inspector'; inspector.setAttribute('aria-label','Passage evidence and notes'); layout.append(inspector);
  const inspectorSheet=document.createElement('dialog');inspectorSheet.id='lens-inspector-sheet';inspectorSheet.className='lens-inspector-sheet';inspectorSheet.setAttribute('aria-label','Passage evidence');inspectorSheet.innerHTML='<div class="sheet-handle" aria-hidden="true"></div><button type="button" class="lens-inspector-sheet-close lens-button" aria-label="Close passage evidence">Close <span aria-hidden="true">×</span></button>';document.body.append(inspectorSheet);
- // Set false to offer the empty-verse toast alone. No record or note data changes.
- const EMPTY_VERSE_ACTIONS = true;
+ // One nonmodal action bar for every verse, independent of evidence coverage.
  const emptyStrip=document.createElement('aside');emptyStrip.id='ux-empty-verse-actions';emptyStrip.hidden=true;emptyStrip.setAttribute('aria-label','Verse Actions');document.body.append(emptyStrip);
  const emptyToast=document.createElement('div');emptyToast.id='ux-empty-verse-toast';emptyToast.setAttribute('role','status');emptyToast.hidden=true;document.body.append(emptyToast);
- let emptyToastTimer,emptyRequest=0;
- function dismissEmpty(){emptyStrip.hidden=true;}
- function showEmpty(){
+ let emptyRequest=0,actionScroll=0;
+ function dismissEmpty(){emptyStrip.hidden=true;if(!inspectorSheet.open)document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));}
+ function showVerseActions(){
   if(inspectorSheet.open)inspectorSheet.close();
-  emptyToast.textContent='Nothing linked to '+refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+' yet.';emptyToast.hidden=false;
-  clearTimeout(emptyToastTimer);emptyToastTimer=setTimeout(()=>{emptyToast.hidden=true;},2200);
-  emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true));emptyStrip.hidden=!EMPTY_VERSE_ACTIONS;
+  const ready=comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready');
+  const failed=comparisonModes.some(mode=>comparisonCache.get(comparisonKey(mode))?.status==='error');
+  const count=uniqueRecords(verseComparisons(activeVerse).filter(item=>item.mode!=='bookmark')).length;
+  emptyToast.textContent=refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+(ready?count?` · ${count} linked ${count===1?'record':'records'}`:' · No records linked to this verse.':failed?' · Some evidence could not load.':' · Loading linked records…');emptyToast.hidden=false;
+  const context=document.createElement('button');context.type='button';context.className='lens-button ux-context-action';
+  context.dataset.contextEvidence='';context.textContent=ready&&count?'✦ View evidence':'Explore chapter context';
+  emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true),context);emptyStrip.hidden=false;
+  actionScroll=window.scrollY;
+  el('verse-'+activeVerse)?.classList.add('lens-active-verse');
  }
- document.addEventListener('pointerdown',event=>{if(!event.target.closest('#ux-empty-verse-actions,#chapter-text .verse'))dismissEmpty();});
- window.addEventListener('scroll',dismissEmpty,{passive:true});
+ document.addEventListener('pointerdown',event=>{if(!event.target.closest('#ux-empty-verse-actions,#chapter-text .verse')){++emptyRequest;dismissEmpty();}});
+ window.addEventListener('scroll',()=>{if(!emptyStrip.hidden&&Math.abs(window.scrollY-actionScroll)>20){++emptyRequest;dismissEmpty();}},{passive:true});
  window.addEventListener('hashchange',()=>{++emptyRequest;dismissEmpty();emptyToast.hidden=true;});
- document.addEventListener('keydown',event=>{if(event.key==='Escape')dismissEmpty();});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'){++emptyRequest;dismissEmpty();}});
  let inspectorOpener=null;
- function showInspectorSheet(opener){inspectorOpener=opener||el('lens-focus');inspector.hidden=false;compare.hidden=true;compare.open=false;inspectorSheet.append(inspector);if(activeVerse&&innerWidth<1024&&!inspectorSheet.open){const row=el('verse-'+activeVerse);if(row)window.scrollTo({top:window.scrollY+row.getBoundingClientRect().top-64,behavior:'instant'});}if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,inspectorOpener);document.getElementById('verse-'+activeVerse)?.classList.add('lens-active-verse');inspectorSheet.scrollTop=0;inspector.querySelector('[data-context-close]')?.focus({preventScroll:true});}
+ function showInspectorSheet(opener){inspectorOpener=opener?.isConnected&&opener.getClientRects().length?opener:el('verse-'+activeVerse)?.querySelector('.verse-num')||el('lens-focus');inspector.hidden=false;compare.hidden=true;compare.open=false;inspectorSheet.append(inspector);if(activeVerse&&innerWidth<1024&&!inspectorSheet.open){const row=el('verse-'+activeVerse);if(row)window.scrollTo({top:window.scrollY+row.getBoundingClientRect().top-64,behavior:'instant'});}if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,inspectorOpener);document.getElementById('verse-'+activeVerse)?.classList.add('lens-active-verse');inspectorSheet.scrollTop=0;inspector.querySelector('[data-context-close]')?.focus({preventScroll:true});}
  inspectorSheet.querySelector('button').onclick=()=>inspectorSheet.close();
  inspectorSheet.addEventListener('close',()=>{layout.append(inspector);inspector.hidden=true;document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));inspectorOpener?.focus({preventScroll:true});});
  function showComparison(){inspector.hidden=true;compare.hidden=false;compare.open=true;if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,el('lens-compare'));}
@@ -80,7 +85,7 @@
  el('lens-edition').onchange=()=>{el('reader-edition').value=el('lens-edition').value; el('reader-edition').dispatchEvent(new Event('change')); if(comparison&&!compare.hidden)runComparison(comparison.left,comparison.right);};
  el('lens-compare').onclick=()=>openCompare();
  el('lens-compare-close').onclick=()=>compare.close();
- inspectorSheet.addEventListener('close',()=>{compare.hidden=true;compare.open=false;document.body.classList.remove('lens-comparing'); ++compareVersion; if(location.hash.startsWith('#compare')||location.hash.startsWith('#investigation'))navigateHash(refHash({book:readingBook,chapter:readingChapter})); el('lens-compare').focus();});
+ inspectorSheet.addEventListener('close',()=>{const wasComparing=compare.open;compare.hidden=true;compare.open=false;document.body.classList.remove('lens-comparing'); ++compareVersion; if(location.hash.startsWith('#compare')||location.hash.startsWith('#investigation'))navigateHash(refHash({book:readingBook,chapter:readingChapter})); if(wasComparing)el('lens-compare').focus({preventScroll:true});});
  function uniqueRecords(items) {return items.filter((item,index,all)=>all.findIndex(other=>(other.id||other.title+other.summary)===(item.id||item.title+item.summary))===index);}
  function sourceLink(source){const url=source.url||''; return /^https:\/\//.test(url)?`<a class="lens-source-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(source.label||'Source')}</a>`:'';}
  function evidenceHtml(item) {
@@ -104,41 +109,45 @@
   const records=uniqueRecords((activeVerse?verseComparisons(activeVerse):reading.verses.flatMap(v=>verseComparisons(v.n))).filter(item=>item.mode!=='bookmark'));
   el('lens-reading-meta').classList.remove('loading-state');el('lens-reading-meta').textContent=`${reading.verses.length} verses · ${reading.editionLabel||edition().toUpperCase()}`;
   el('lens-edition').value=edition();
-  document.querySelectorAll('#chapter-text .verse').forEach(node=>node.classList.toggle('lens-active-verse',inspectorSheet.open&&node.id===`verse-${activeVerse}`));
+  document.querySelectorAll('#chapter-text .verse').forEach(node=>node.classList.toggle('lens-active-verse',(inspectorSheet.open||!emptyStrip.hidden)&&node.id===`verse-${activeVerse}`));
   // Evidence indicators are real buttons, separate from the reader's bookmark actions.
   for(const marker of document.querySelectorAll('[data-lens-inspect]'))marker.remove();
   document.querySelectorAll('.ux-has-records').forEach(row=>row.classList.remove('ux-has-records'));
-  for(const verse of reading.verses){if(!evidenceVisible)break;const row=el('verse-'+verse.n);if(!row||row.querySelector('[data-lens-inspect]'))continue;const count=uniqueRecords(verseComparisons(verse.n).filter(item=>item.mode!=='bookmark')).length;if(!count)continue;const button=document.createElement('button');button.type='button';button.className='lens-verse-evidence verse-study-pip';button.dataset.lensInspect=verse.n;button.innerHTML='<span class="verse-study-pill" aria-hidden="true">✦ '+count+'</span>';button.setAttribute('aria-label',`${count} linked ${count===1?'record':'records'}`);button.setAttribute('aria-pressed',String(activeVerse===verse.n));row.querySelector('.verse-body').append(button);row.classList.add('ux-has-records');}
+  for(const verse of reading.verses){if(!evidenceVisible)break;const row=el('verse-'+verse.n);if(!row||row.querySelector('[data-lens-inspect]'))continue;const count=uniqueRecords(verseComparisons(verse.n).filter(item=>item.mode!=='bookmark')).length;if(!count)continue;const button=document.createElement('button');button.type='button';button.className='lens-verse-evidence verse-study-pip';button.dataset.lensInspect=verse.n;button.innerHTML='<span class="verse-study-pill" aria-hidden="true">✦ '+count+'</span>';button.setAttribute('aria-label',`${count} linked ${count===1?'record':'records'}`);button.setAttribute('aria-pressed',String(activeVerse===verse.n));row.querySelector('[data-scripture]').append(button);row.classList.add('ux-has-records');}
   for(const marker of document.querySelectorAll('[data-lens-inspect]'))marker.setAttribute('aria-pressed',String(Number(marker.dataset.lensInspect)===activeVerse));
   if(inspector.contains(document.activeElement)&&/^(TEXTAREA|INPUT)$/.test(document.activeElement.tagName))return;
-  const linked=activeVerse?[...el('verse-'+activeVerse)?.querySelectorAll('[data-person-id],[data-place-id]')||[]]:[];
+  const linked=[...(activeVerse?el('verse-'+activeVerse):el('chapter-text'))?.querySelectorAll('[data-person-id],[data-place-id]')||[]].filter((node,index,all)=>all.findIndex(other=>other.dataset.personId===node.dataset.personId&&other.dataset.placeId===node.dataset.placeId)===index);
   const openDetails=[...inspector.querySelectorAll('details[open]')].map(node=>node.closest('.lens-evidence')?.querySelector('h3')?.textContent);
   const ref={book:readingBook,chapter:readingChapter,...(activeVerse?{verse:activeVerse}:{})};
   const key=activeVerse?`${chapter}:${activeVerse}`:chapter, registry=activeVerse?state.verseNotes:state.passageNotes;
-  inspector.innerHTML=`<div class="lens-inspector-header"><button type="button" class="lens-button" data-lens-return aria-label="Back to verse">‹</button><h2 class="lens-inspector-title" tabindex="-1">${esc(refLabel(ref))}</h2><button type="button" class="lens-button" data-context-close aria-label="Close passage evidence">×</button></div>${!ready?`<p class="lens-coverage" role="status">${failed?'Some evidence could not load.':'Loading attached evidence…'}</p>`:''}${activeVerse?`<div class="ux-verse-actions"><button class="lens-button" data-context-bookmark aria-pressed="${!!state.verseBookmarks?.[key]}" aria-label="Bookmark verse" title="Bookmark verse">${icon('<path d="m19 21-7-4-7 4V3h14z"/>')}<span>Save</span></button><button class="lens-button" data-context-copy aria-label="Copy verse" title="Copy verse">${icon('<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/>')}<span>Copy</span></button><button class="lens-button" data-context-compare aria-label="Compare Passages" ${books[ref.book]?.collection?'disabled title="Comparisons are not available for these books yet."':'title="Compare Passages"'}>${icons.compare}<span>Compare</span></button><button class="lens-button" data-context-note aria-label="Write a note" title="Write a note">${icon('<path d="M4 20h4L21 7l-4-4L4 16zM14 6l4 4"/>')}<span>Note</span></button></div>`:''}<div class="lens-evidence-list" id="ux-context-panel" role="region" aria-label="Verse evidence">${records.slice(0,activeVerse?records.length:8).map(evidenceHtml).join('')}${evidenceEnabled&&ready&&!records.length?'<p class="lens-empty">Nothing linked to this verse yet.</p>':''}${!activeVerse&&records.length>8?'<p class="lens-collection-meta">Showing 8 records. Choose a verse to see its full set.</p>':''}</div>${activeVerse&&alternativeReadings(activeVerse)?`<details class="lens-alternative-readings"><summary>Context & Other Readings</summary>${alternativeReadings(activeVerse)}</details>`:''}${linked.length?`<section class="ux-context-links"><h3>People and Places</h3>${linked.map(node=>node.outerHTML).join('')}</section>`:''}<button class="lens-button" data-lens-chapter>Whole Chapter</button><section class="lens-note-editor" hidden><h3>Your Margin Note</h3><label class="sr-only" for="lens-margin-note">Private note on ${esc(refLabel(ref))}</label><textarea id="lens-margin-note" maxlength="100000" rows="4" placeholder="What do you notice? What needs more evidence?">${esc(registry?.[key]?.text||'')}</textarea><p class="lens-collection-meta" id="lens-margin-status">Private · saved on this device${globalThis.BibleLensCloud?' · sync follows Settings':''}</p><a href="#notebook">Open Saved</a></section>`;
+  inspector.innerHTML=`<div class="lens-inspector-header"><button type="button" class="lens-button" data-lens-return aria-label="Back to verse">‹</button><h2 class="lens-inspector-title" tabindex="-1">${esc(refLabel(ref))}</h2><button type="button" class="lens-button" data-context-close aria-label="Close passage evidence">×</button></div>${!activeVerse?'<p class="lens-context-scope"><b>Chapter context</b> · These records relate to the chapter, not a single verse.</p>':''}${!ready?`<p class="lens-coverage" role="status">${failed?'Some evidence could not load.':'Loading attached evidence…'}</p>`:''}${activeVerse?`<div class="ux-verse-actions"><button class="lens-button" data-context-bookmark aria-pressed="${!!state.verseBookmarks?.[key]}" aria-label="Bookmark verse" title="Bookmark verse">${icon('<path d="m19 21-7-4-7 4V3h14z"/>')}<span>Save</span></button><button class="lens-button" data-context-copy aria-label="Copy verse" title="Copy verse">${icon('<rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/>')}<span>Copy</span></button><button class="lens-button" data-context-compare aria-label="Compare Passages" ${books[ref.book]?.collection?'disabled title="Comparisons are not available for these books yet."':'title="Compare Passages"'}>${icons.compare}<span>Compare</span></button><button class="lens-button" data-context-note aria-label="Write a note" title="Write a note">${icon('<path d="M4 20h4L21 7l-4-4L4 16zM14 6l4 4"/>')}<span>Note</span></button></div>`:''}<div class="lens-evidence-list" id="ux-context-panel" role="region" aria-label="Verse evidence">${records.slice(0,activeVerse?records.length:8).map(evidenceHtml).join('')}${evidenceEnabled&&ready&&!records.length?`<p class="lens-empty">No research records linked to this ${activeVerse?'verse':'chapter'} yet.</p>`:''}${!activeVerse&&records.length>8?'<p class="lens-collection-meta">Showing 8 records. Choose a verse to see its full set.</p>':''}</div>${activeVerse&&alternativeReadings(activeVerse)?`<details class="lens-alternative-readings"><summary>Context & Other Readings</summary>${alternativeReadings(activeVerse)}</details>`:''}${linked.length?`<section class="ux-context-links"><h3>People and Places</h3>${linked.map(node=>node.outerHTML).join('')}</section>`:''}<button class="lens-button" data-lens-chapter>Whole Chapter</button><section class="lens-note-editor" hidden><h3>Your Margin Note</h3><label class="sr-only" for="lens-margin-note">Private note on ${esc(refLabel(ref))}</label><textarea id="lens-margin-note" maxlength="100000" rows="4" placeholder="What do you notice? What needs more evidence?">${esc(registry?.[key]?.text||'')}</textarea><p class="lens-collection-meta" id="lens-margin-status">Private · saved on this device${globalThis.BibleLensCloud?' · sync follows Settings':''}</p><a href="#notebook">Open Saved</a></section>`;
   for(const details of inspector.querySelectorAll('details'))if(openDetails.includes(details.closest('.lens-evidence')?.querySelector('h3')?.textContent))details.open=true;
   el('lens-margin-note').oninput=event=>{const target=ref.verse?state.verseNotes:state.passageNotes;target[key]={...target[key],book:ref.book,chapter:ref.chapter,name:books[ref.book].name,...(ref.verse?{verse:ref.verse}:{}),text:event.target.value};persist();el('lens-margin-status').textContent=storageAvailable?'Saved on this device.':'Storage unavailable — export your notebook to keep this note.';};
  }
- async function inspectVerse(verse,focus=false,opener=null){
+ async function inspectVerse(verse,focus=false,opener=null,openEvidence=false){
   const request=++emptyRequest;activeVerse=verse;dismissEmpty();setFocus(false);renderInspector();updateEvidenceControl();
   if(!focus)return;
+  inspectorOpener=opener||el('verse-'+verse)?.querySelector('.verse-num');
+  if(!openEvidence)showVerseActions();
   // Wait for actual records; an unavailable response must never be called empty.
   await ensureComparisons();
   if(request!==emptyRequest||activeVerse!==verse)return;
   renderInspector();
   const ready=comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready');
   const records=uniqueRecords(verseComparisons(verse).filter(item=>item.mode!=='bookmark'));
-  if(ready&&!records.length){showEmpty();return;}
-  showInspectorSheet(opener||el('verse-'+verse)?.querySelector('.verse-num'));
+  if(!openEvidence){showVerseActions();return;}
+  if(ready&&!records.length)activeVerse=null;
+  dismissEmpty();renderInspector();showInspectorSheet(inspectorOpener);
  }
  document.addEventListener('click',event=>{
-  if(event.target.closest('[data-context-bookmark]')){toggleVerseMark('bookmark',readingBook,readingChapter,activeVerse);renderInspector();if(!emptyStrip.hidden)emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true));return;}
+  if(event.target.closest('[data-context-bookmark]')){toggleVerseMark('bookmark',readingBook,readingChapter,activeVerse);renderInspector();if(!emptyStrip.hidden)showVerseActions();return;}
+  if(event.target.closest('[data-context-evidence]')){inspectVerse(activeVerse,true,el('verse-'+activeVerse)?.querySelector('.verse-num'),true);return;}
   if(event.target.closest('[data-context-close]')){inspectorSheet.close();return;}
   if(event.target.closest('[data-context-note]')){dismissEmpty();showInspectorSheet(event.target.closest('button'));const editor=inspector.querySelector('.lens-note-editor');editor.hidden=false;el('lens-margin-note').focus();return;}
   if(event.target.closest('[data-search-cancel]')){clearTimeout(inputTimer);searchDialog.close();return;}
   if(event.target.closest('[data-context-copy]')){Promise.resolve().then(()=>navigator.clipboard.writeText(refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+' '+plain(reading.verses.find(v=>v.n===activeVerse)?.[edition()]))).then(()=>toast('Verse copied.')).catch(()=>toast('Copy unavailable on this device.'));return;}
   if(event.target.closest('[data-context-compare]')){dismissEmpty();const verse=activeVerse;openCompare();el('lens-compare-left').value=refLabel({book:readingBook,chapter:readingChapter,verse});return;}
-  const marker=event.target.closest('[data-lens-inspect]');if(marker){inspectVerse(Number(marker.dataset.lensInspect),true);return;}
+  const marker=event.target.closest('[data-lens-inspect]');if(marker){inspectVerse(Number(marker.dataset.lensInspect),true,marker,true);return;}
   if(event.target.closest('[data-lens-return]')){if(inspectorSheet.open)inspectorSheet.close();const target=el('verse-'+activeVerse);target?.scrollIntoView({block:'center'});target?.querySelector('[data-lens-inspect]')?.focus({preventScroll:true});return;}
   const jump=event.target.closest('[data-lens-jump]');if(jump){el(jump.dataset.lensJump)?.scrollIntoView({block:'start'});return;}
   if(event.target.closest('[data-lens-chapter]')){activeVerse=null;renderInspector();return;}
@@ -150,14 +159,16 @@
  document.addEventListener('click',event=>{
   const verse=event.target.closest('#chapter-text .verse');if(!verse||window.getSelection()?.toString())return;
   if(event.target.closest('input,textarea'))return;
+  // Entity links and evidence badges keep their own explicit actions.
+  if(event.target.closest('a,button:not(.verse-num)'))return;
   event.preventDefault();event.stopImmediatePropagation();
   const opener=event.target.closest('button,a')||verse.querySelector('.verse-num');
   inspectVerse(Number(verse.id.replace('verse-','')),true,opener);
  },true);
  window.addEventListener('biblelens:readerchange',renderInspector);
  window.addEventListener('biblelens:readererror',()=>{el('lens-focus').classList.remove('loading-state');el('lens-focus').setAttribute('aria-busy','false');el('lens-reading-meta').classList.remove('loading-state');el('lens-reading-meta').textContent='Passage unavailable';inspector.innerHTML='<p>Passage evidence is unavailable until the chapter loads.</p>';});
- window.addEventListener('biblelens:readerloading',()=>{el('lens-reading-meta').textContent='Loading passage…';inspector.innerHTML='<p class="loading-state" role="status">Opening passage evidence…</p>';});
- window.addEventListener('viewchange',event=>{if(event.detail!=='read'&&inspectorSheet.open)inspectorSheet.close();document.body.classList.remove('lens-comparing');const primary=event.detail==='debate'?'debates':event.detail==='chat'?'explore':event.detail==='bookmarks'?'notebook':['read','debates','notebook'].includes(event.detail)?event.detail:'explore';for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===primary)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}if(event.detail==='notebook')renderNotebook();if(event.detail!=='read'){if(compare.open)compare.close();compare.hidden=true;}});
+ window.addEventListener('biblelens:readerloading',()=>{++emptyRequest;dismissEmpty();el('lens-reading-meta').textContent='Loading passage…';inspector.innerHTML='<p class="loading-state" role="status">Opening passage evidence…</p>';});
+ window.addEventListener('viewchange',event=>{if(event.detail!=='read'&&inspectorSheet.open)inspectorSheet.close();document.body.classList.remove('lens-comparing');const primary=event.detail==='bookmarks'?'notebook':['read','notebook'].includes(event.detail)?event.detail:'explore';for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===primary)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}if(event.detail==='notebook')renderNotebook();if(event.detail!=='read'){if(compare.open)compare.close();compare.hidden=true;dismissEmpty();}});
  window.addEventListener('biblelens:statechange',event=>{
   if(event.detail?.source!=='local'&&event.detail?.before&&event.detail?.data){
    const {before,data}=event.detail;
