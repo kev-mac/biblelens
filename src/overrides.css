@@ -3262,7 +3262,7 @@ html body.lens-app #lensMasthead .lens-primary a > span {
 /* Fit both Explore lanes above phone navigation at the default text size.
    Larger accessibility text can grow the cards and scroll the page normally. */
 @media(max-width:767px){
- html body.lens-app #explore-view>h1{margin:8px 0;}
+ html body.lens-app #main #explore-view>h1{margin:8px 0;}
  html body.lens-app #explore-view .ux-explore-filters{margin-top:0;margin-bottom:8px;padding-top:4px;padding-bottom:4px;}
  html body.lens-app #explore-view .ux-topic-section{margin-bottom:4px;}
  html body.lens-app #explore-view .ux-lane-heading{min-height:24px;margin-bottom:4px;}
