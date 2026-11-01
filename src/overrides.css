@@ -3191,9 +3191,14 @@ html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:wrap
 html body.lens-app #explore-view .ux-explore-filters button{min-height:44px;padding:8px 14px;border:1px solid var(--lens-rule);border-radius:12px;background:var(--lens-control-bg);color:var(--lens-ink);font:500 .82rem/1.4 var(--ui-font)}
 html body.lens-app #explore-view .ux-explore-filters button[aria-pressed=true]{background:var(--lens-link-soft);border-color:var(--lens-link)}
 html body.lens-app #explore-view .ux-topic-section h2{margin:0 0 12px;font:600 1rem/1.4 var(--ui-font);color:var(--lens-ink)}
-html body.lens-app #explore-view a.ux-topic{height:154px;padding:14px 10px}
-html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media(min-width:768px){html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(3,minmax(0,1fr))}}
+html body.lens-app #explore-view a.ux-topic{height:140px;padding:12px 8px;gap:8px}
+html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+html body.lens-app #explore-view .ux-topic>svg{width:22px;height:22px;margin:0 0 4px}
+html body.lens-app #explore-view .ux-tile-copy{gap:4px}
+html body.lens-app #explore-view .ux-tile-copy strong{font-size:clamp(12px,2.85vw,14px);line-height:1.3;letter-spacing:-.2px;white-space:normal}
+html body.lens-app #explore-view .ux-tile-copy small{font-size:.72rem;line-height:1.4;white-space:normal}
+html body.lens-app #explore-view .ux-count{top:10px;right:8px;font-size:11px;padding:2px 5px}
+@media(max-width:359px){html body.lens-app #explore-view .ux-topic-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence{margin-left:6px}
 html body.lens-app #ux-empty-verse-actions{width:360px;padding:10px 12px;max-height:calc(100dvh - 180px);overflow:auto}
 html body.lens-app #ux-empty-verse-actions #ux-empty-verse-toast{margin:0 0 4px;font-size:.76rem;line-height:1.45}
