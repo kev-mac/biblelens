@@ -14,7 +14,7 @@ export function validateChapterImages(images, chapters, storyHeadings, storyImag
    placements.add(art.afterVerse);
    assert.match(art.src,/^\/assets\/chapter-[a-z0-9-]+-v\d+\.webp$/);
    assert(art.alt.startsWith('Imagined scene: ')&&art.alt.length>30, 'Describe imagined artwork: '+key);
-   assert.equal(art.width,1200);assert.equal(art.height,675);
+   assert.equal(art.width,960);assert.equal(art.height,540);
   }
  }
  for(let chapter=1;chapter<=50;chapter++) {
