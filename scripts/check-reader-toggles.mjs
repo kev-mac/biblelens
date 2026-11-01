@@ -114,10 +114,10 @@ const fontNode={attrs:{},setAttribute(k,v){this.attrs[k]=v;}},fontOutput={};
 const scaleValues=new Map();const fontContext={state:{},$:s=>s==='#reader-font-value'?fontOutput:fontNode,document:{documentElement:{style:{setProperty:(k,v)=>scaleValues.set(k,v)}}},persist(){scaleValues.set('saved',true);}};
 vm.createContext(fontContext);
 vm.runInContext(preferences.slice(preferences.indexOf('function applyTextSize(){')),fontContext);
-assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(fontOutput.textContent,'100%');
-for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),'1');assert.equal(scaleValues.get('--reader-text-scale'),String(percent/100*1.2));assert.equal(fontContext.state.textScale,percent/100*1.2);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
+assert.equal(scaleValues.get('--text-scale'),'1.2');assert.equal(fontOutput.textContent,'100%');
+for(const percent of [85,95,100,115,130,150]){fontNode.oninput({target:{value:String(percent)}});assert.equal(scaleValues.get('--text-scale'),String(percent/100*1.2));assert.equal(fontContext.state.textScale,percent/100*1.2);assert.equal(fontOutput.textContent,percent+'%');assert.equal(fontNode.attrs['aria-valuetext'],percent+' percent');}
 fontNode.onchange();assert(scaleValues.get('saved'));
-fontContext.state.textScale=Infinity;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1');
+fontContext.state.textScale=Infinity;fontContext.applyTextSize();assert.equal(scaleValues.get('--text-scale'),'1.2');
 assert(html.includes('id="reader-font" type="range"'));
 console.log('PASS: text-size slider scales live from 85 to 150 percent, labels values and persists on change.');
 
@@ -227,4 +227,4 @@ vm.runInContext("comparisonRecordSelections.set('dual-language-fixture:H',true);
 const onlyH=context.render(1);assert(onlyH.includes('comparison-panel-1-contradictions-0-H" aria-labelledby="comparison-tab-1-contradictions-0-H" >'));assert(onlyH.includes('comparison-panel-1-contradictions-0-G" aria-labelledby="comparison-tab-1-contradictions-0-G" hidden'));
 console.log('PASS: H/G codes retained; Academic/Translation cards and independent toggle groups; Q display name.');
 
-for(const physical of [.85,1,1.2,1.5]){fontContext.state.textScaleBaseline='110-v2';fontContext.state.textScale=physical;fontContext.applyTextSize();assert.equal(fontContext.state.textScale,physical);assert.equal(Number(scaleValues.get('--reader-text-scale')),physical);}
+for(const physical of [.85,1,1.2,1.5]){fontContext.state.textScaleBaseline='110-v2';fontContext.state.textScale=physical;fontContext.applyTextSize();assert.equal(fontContext.state.textScale,physical);assert.equal(Number(scaleValues.get('--text-scale')),physical);}

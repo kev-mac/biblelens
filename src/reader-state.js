@@ -33,8 +33,9 @@ function applyTextSize(){
  }
  const raw=Number(state.textScale),scale=Number.isFinite(raw)?Math.max(.85,Math.min(1.8,raw)):1.2;
  state.textScale=scale;
- document.documentElement.style.setProperty('--text-scale','1');
- document.documentElement.style.setProperty('--reader-text-scale',String(scale));
+ // Scale the shared rem base so every section follows the same control.
+ // Scripture already uses that base; it must not receive a second multiplier.
+ document.documentElement.style.setProperty('--text-scale',String(scale));
  const percent=Math.round(scale/1.2*100),slider=$('#reader-font');
  slider.value=String(percent);slider.setAttribute('aria-valuetext',percent+' percent');
  $('#reader-font-value').textContent=percent+'%';

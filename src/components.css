@@ -216,7 +216,7 @@ mark.side-quote[data-tone="question"]{background:#e4ebcb}
 mark.side-quote[data-tone="context"]{background:#e5edf3}
 
 /* A+ scales typography across the application without scaling the layout. */
-html{font-size:calc(16px * var(--text-scale,1))}
+html{font-size:calc(1rem * var(--text-scale,1.2))}
 
 .selection-bar>div{display:flex;align-items:center;gap:8px}
 .chapter-round{display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;background:var(--green);color:var(--panel);font:1.1875rem/1.6 var(--ui-font)}
@@ -1502,9 +1502,9 @@ body dialog.atlas-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(10
 #atlas-status,.atlas-attribution{font-size:.8rem;color:var(--muted)}
 .atlas-external{display:inline-flex;align-items:center;min-height:48px}
 .atlas-external[hidden]{display:none}
-.atlas-pin{font-size:32px;text-align:center;filter:drop-shadow(0 3px 3px #0005)}
+.atlas-pin{font-size:2rem;text-align:center;filter:drop-shadow(0 3px 3px #0005)}
 body .atlas-sheet .leaflet-control-zoom a{width:48px;height:48px;line-height:48px;color:#17212b}
-body .atlas-sheet .leaflet-control-attribution{font:11px/1.5 system-ui,sans-serif;background:#ffffffe6;color:#24303d;max-width:100%;white-space:normal}
+body .atlas-sheet .leaflet-control-attribution{font:0.6875rem/1.5 system-ui,sans-serif;background:#ffffffe6;color:#24303d;max-width:100%;white-space:normal}
 body .atlas-sheet .leaflet-control-attribution a{color:#005477}
 
 .atlas-pin svg{display:block;margin:0 auto}
@@ -1532,12 +1532,12 @@ body :is(.timeline-passage,.character-name){padding-inline:0;text-underline-offs
 body :is(p,q,blockquote,.verse-body,.message-body,.comparison-summary-text) :is(a,button[data-cite],.location-chip,.person-chip),body :is(.location-chip,.person-chip){display:inline;min-width:0;min-height:0;width:auto;height:auto;margin:0;padding:0;font:inherit;line-height:inherit;text-decoration:none;text-underline-offset:3px;vertical-align:baseline}
 body :is(.location-chip,.person-chip)>span[aria-hidden]{display:none}
 /* D4 search and composer share one whole-field focus boundary. */
-body input[type=search],body .characters-search-box,body #chat-form{min-height:48px;border-radius:24px;border:1px solid var(--line);background:var(--panel);font-size:16px}
+body input[type=search],body .characters-search-box,body #chat-form{min-height:48px;border-radius:24px;border:1px solid var(--line);background:var(--panel);font-size:1rem}
 body input[type=search]{padding:10px 16px}
 body .characters-search-box{padding:0 16px}
-body #characters-search{font-size:16px;min-height:46px}
+body #characters-search{font-size:1rem;min-height:46px}
 body #chat-form{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;padding:2px 4px 2px 16px}
-body #chat-input{flex:1;min-width:0;width:100%;min-height:44px;height:auto;border:0;background:none;font-size:16px;padding:8px 0;box-shadow:none}
+body #chat-input{flex:1;min-width:0;width:100%;min-height:44px;height:auto;border:0;background:none;font-size:1rem;padding:8px 0;box-shadow:none}
 body #chat-send{flex:0 0 44px;width:44px;height:44px;min-height:44px;padding:10px;border-radius:50%}
 /* D5/6 compact filters: no synthetic enlarged hit boxes or checkmarks. */
 body :is(.commandment-facet-toggle,.prophecy-toggle,.prophecy-facet,.story-theme,.character-badge,.character-story-chip,.character-relative-chip,.characters-filter,.characters-women,.glass-pill,.chip){font-size:.875rem;line-height:1.4;white-space:normal;border:1px solid rgba(var(--theme-rgb,99,102,241),.4)}
@@ -1552,7 +1552,7 @@ body.merge-picker-inputs #passage-picker .passage-book-grid .passage-number span
 body #passage-picker .passage-number-grid{grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
 body #passage-picker .passage-number-grid .passage-number span{border-radius:8px;min-height:40px;aspect-ratio:auto}
 body :is(.passage-steps,.tabs,.character-profile-tabs){gap:8px}
-body :is(.passage-steps,.tabs,.character-profile-tabs) button{font-size:14px;min-height:34px;padding:6px 12px;border-radius:999px}
+body :is(.passage-steps,.tabs,.character-profile-tabs) button{font-size:0.875rem;min-height:34px;padding:6px 12px;border-radius:999px}
 body select{border:1px solid var(--line);border-radius:12px;min-height:40px;padding:6px 30px 6px 12px;color:var(--ink);background-color:var(--panel)}
 body .passage-heading-picker::after{content:none}
 /* D9/10 quiet icons; disclosure controls activate through their existing single-click handlers. */
@@ -1576,9 +1576,9 @@ body dialog::backdrop{background:#08111c99}
 body :is(.atlas-scroll,.story-topic-body,.character-sheet-body){min-height:0;overflow:auto}
 body :is(.notes-area,#verse-note-text,#passage-note,#study-note-title,#verse-note-title-input,#passage-note-title-input){font-size:1rem;line-height:1.6;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
 body #verse-note-form{min-width:0}
-body .verse-preview,body #citation-preview{font-size:18px}
+body .verse-preview,body #citation-preview{font-size:1.125rem}
 body #atlas-map{height:52dvh;min-height:320px;max-height:560px;background:#dce9f1;color:#172033;border:1px solid var(--line);border-radius:16px}
-body .atlas-place-label{border:1px solid #526578;background:#fff;color:#172033;font:500 13px/1.4 var(--ui-font);box-shadow:none}
+body .atlas-place-label{border:1px solid #526578;background:#fff;color:#172033;font:500 0.8125rem/1.4 var(--ui-font);box-shadow:none}
 body .atlas-place-label::before{display:none}
 /* D16: selection never substitutes for keyboard focus. Fields remain focused while typing. */
 /* D17 */
@@ -1636,7 +1636,7 @@ body span.character-badge{border:0;padding:0;min-height:0}
  body :is(p,q,blockquote,.verse-body,.message-body) :is(button[data-cite],.location-chip,.person-chip){min-width:0;min-height:0}
 }
 body .passage-saved-card{border-radius:22px;background:radial-gradient(ellipse at top left,rgba(var(--theme-rgb,99,102,241),var(--surface-gradient)),transparent 75%),rgba(var(--theme-rgb,99,102,241),var(--surface-base));padding:18px}
-body .verse-preview,body.dark .verse-preview{border:1px solid var(--line);border-radius:24px;font-size:18px}
+body .verse-preview,body.dark .verse-preview{border:1px solid var(--line);border-radius:24px;font-size:1.125rem}
 body :is(.verse-citation,.chat-citation){border-radius:999px;box-shadow:none;background:rgba(var(--theme-rgb,99,102,241),var(--surface-base));color:var(--ink)}
 /* Quiet and consistent floating Chat and close controls. */
 body #clear-chat{width:48px;height:48px;min-width:48px;min-height:48px;padding:12px}
@@ -1685,7 +1685,7 @@ body .skip{display:inline-flex;align-items:center;min-height:44px}
 /* Owner browser follow-up: shared sizes, readable menus and restrained link styling. */
 body .passage-picker-trigger svg{width:1em;height:1em;flex-shrink:0}
 body #chat-view #clear-chat svg{width:24px;height:24px}
-body .passage-picker-trigger{font-size:28px}
+body .passage-picker-trigger{font-size:1.75rem}
 body #reader-font,body .surface-settings input[type=range]{accent-color:var(--focus-blue)}
 body #reader-compare[aria-checked=true] .switch-track{background:var(--focus-blue);border-color:var(--focus-blue)}
 body .results-line{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -1693,23 +1693,23 @@ body .results-line>*{margin-top:0;margin-bottom:0}
 body #commandments-search-box{padding:0;border:0;background:none}
 body #commandments-search{height:auto;min-height:48px;border:1px solid var(--line);border-radius:24px;padding:10px 16px 10px 40px;background-color:var(--panel)}
 body .navigation-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-body #navigation-sheet .navigation-grid button{width:100%;min-width:0;min-height:112px;padding:14px 6px;font-size:14px;line-height:1.4;white-space:normal;overflow:visible}
+body #navigation-sheet .navigation-grid button{width:100%;min-width:0;min-height:112px;padding:14px 6px;font-size:0.875rem;line-height:1.4;white-space:normal;overflow:visible}
 body #navigation-sheet .navigation-grid button span{max-width:100%;overflow-wrap:anywhere}
 body #navigation-sheet .navigation-grid svg{width:28px;height:28px;flex-shrink:0}
-@media(max-width:900px){body .stories-filters{grid-template-columns:repeat(2,minmax(0,1fr))}body .stories-filters label:first-child,body .stories-filters button{grid-column:1/-1}body .stories-filters select{font-size:16px;min-height:48px}}
-@media(max-width:480px){body .stories-filters{grid-template-columns:minmax(0,1fr)}body #navigation-sheet{padding-left:12px;padding-right:12px}body .navigation-grid{gap:10px}body #navigation-sheet .navigation-grid button{font-size:13px}}
+@media(max-width:900px){body .stories-filters{grid-template-columns:repeat(2,minmax(0,1fr))}body .stories-filters label:first-child,body .stories-filters button{grid-column:1/-1}body .stories-filters select{font-size:1rem;min-height:48px}}
+@media(max-width:480px){body .stories-filters{grid-template-columns:minmax(0,1fr)}body #navigation-sheet{padding-left:12px;padding-right:12px}body .navigation-grid{gap:10px}body #navigation-sheet .navigation-grid button{font-size:0.8125rem}}
 body #atlas-map{height:42dvh;min-height:260px;max-height:420px}
 body #atlas-map .maplibregl-ctrl-group button{width:44px;height:44px;min-width:44px;min-height:44px;border-radius:0;padding:0;color:#172033}
-body #atlas-map .maplibregl-ctrl-attrib{background:#fff;color:#172033;font:11px/1.6 var(--ui-font)}
+body #atlas-map .maplibregl-ctrl-attrib{background:#fff;color:#172033;font:0.6875rem/1.6 var(--ui-font)}
 body #atlas-map .maplibregl-ctrl-scale{background:#fff;color:#172033;border-color:#526578}
 body .atlas-map-notice:empty{display:none}
 body .atlas-map-notice{color:var(--muted);font-size:.875rem}
-.atlas-reference-pin{display:flex;flex-direction:column;align-items:center;gap:5px;pointer-events:none;color:#172033;font:500 12px/1.4 var(--ui-font)}
+.atlas-reference-pin{display:flex;flex-direction:column;align-items:center;gap:5px;pointer-events:none;color:#172033;font:500 0.75rem/1.4 var(--ui-font)}
 .atlas-reference-pin>span:first-child{background:#fff;border:1px solid #526578;border-radius:5px;padding:3px 6px;max-width:190px;text-align:center}
 .atlas-reference-dot{width:16px;height:16px;border:3px solid #fff;border-radius:50%;background:#b6284e;outline:1px solid #702139}
 body .dock-pagination{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 8px;padding:0}
 body .dock-pagination[hidden]{display:none}
-body .dock-pagination button{min-height:44px;min-width:100px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-size:14px}
+body .dock-pagination button{min-height:44px;min-width:100px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-size:0.875rem}
 body .dock-pagination button:disabled{opacity:.45;cursor:default}
 body .comparison-dock:has(.dock-pagination:not([hidden])){border-radius:24px;padding-top:8px}
 body #navigation-sheet .navigation-grid button{padding-inline:2px}

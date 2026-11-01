@@ -717,7 +717,7 @@ body.lens-app .lens-alternative-readings > summary { color: var(--lens-copper); 
 /* Retired glass and icon-tint controls do not govern the new workspace surface. */
 @media (max-width: 360px) {
   body.lens-app #lensMasthead .lens-brand small { display: none; }
-  body.lens-app #lensMasthead .lens-primary a span { font-size: clamp(12px, .6875rem, 16px); white-space: nowrap; }
+  body.lens-app #lensMasthead .lens-primary a span { font-size: clamp(0.75rem, .6875rem, 1rem); white-space: nowrap; }
 }
 /*
   system.css
@@ -809,7 +809,7 @@ html body.lens-app :is(#main, dialog) :is(input:not([type="checkbox"]):not([type
   border-radius: 12px;
   background-color: var(--lens-surface);
   color: var(--lens-ink);
-  font-size: max(1rem, 16px);
+  font-size: max(1rem, 1rem);
   line-height: 1.5;
 }
 html body.lens-app :is(input, textarea)::placeholder { color: var(--lens-muted); opacity: 1; }
