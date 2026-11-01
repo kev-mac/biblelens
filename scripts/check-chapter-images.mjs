@@ -3,7 +3,16 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import zlib from 'node:zlib';
 import worker from '../dist/server/index.js';
-import {validateChapterImages} from './chapter-images.mjs';
+import {validateChapterImages,illustratedBooks} from './chapter-images.mjs';
+const originFetch=globalThis.fetch;
+const pinned=JSON.parse(fs.readFileSync('data/hosted-artwork.json'));
+globalThis.fetch=async(url,options)=>{
+ const prefix='https://raw.githubusercontent.com/kev-mac/biblelens/'+pinned.sourceCommit+'/src';
+ assert(String(url).startsWith(prefix),'Only pinned public artwork reaches the origin');
+ const src=String(url).slice(prefix.length);assert(pinned.assets.includes(src));
+ assert.deepEqual(options.headers,{accept:'image/webp'});
+ return new Response(fs.readFileSync('src'+src),{headers:{'content-type':'image/webp'}});
+};
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/chapter-images.json'));
 const stories=JSON.parse(fs.readFileSync('data/story-images.json'));
@@ -12,13 +21,13 @@ const source=fs.readFileSync('src/reader.js','utf8');
 const context={esc:value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')};
 vm.createContext(context);vm.runInContext(source.slice(0,source.indexOf('let selectedVerses=')),context);
 let existingChapters=0,newChapters=0;
-for(let chapter=1;chapter<=50;chapter++){
- const key='0:'+chapter, response=await get('/api/chapter?book=0&chapter='+chapter);
+try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=1;chapter<=count;chapter++){
+ const key=book+':'+chapter, response=await get('/api/chapter?book='+book+'&chapter='+chapter);
  assert.equal(response.status,200);const data=await response.json();
  const existing=Object.values(data.eventHeadings).flat().some(title=>stories[title]);
  if(existing)existingChapters++;
  const additions=data.chapterImages||[];if(additions.length)newChapters++;
- assert(existing||additions.length,'Genesis '+chapter+' has an image');
+ assert(existing||additions.length,name+' '+chapter+' has an image');
  assert.deepEqual(additions,images[key]||[],'Packaged image placement matches source');
  const raw=JSON.parse(zlib.gunzipSync(Buffer.from(original[key],'base64')));
  for(const verse of data.verses)for(const edition of ['kjv','asv','web'])assert.equal(verse[edition],raw.verses.find(v=>v.n===verse.n)[edition],'Scripture stays untouched');
@@ -33,13 +42,14 @@ for(let chapter=1;chapter<=50;chapter++){
  }
  assert.equal(context.readerChapterIllustrations(data,0),'');
 }
+}finally{globalThis.fetch=originFetch;}
 assert.equal(context.readerChapterIllustrations({},1),'');
 // Missing or misspelled placements must fail the build rather than silently lose coverage.
-const headings={};for(let chapter=1;chapter<=50;chapter++)if(!images['0:'+chapter])headings['0:'+chapter]={1:[Object.keys(stories)[0]]};
+const headings={};for(const [book,[,count]] of illustratedBooks.entries())for(let chapter=1;chapter<=count;chapter++)if(!images[book+':'+chapter])headings[book+':'+chapter]={1:[Object.keys(stories)[0]]};
 validateChapterImages(images,original,headings,stories);
 const missing=structuredClone(images);delete missing['0:2'];
 assert.throws(()=>validateChapterImages(missing,original,headings,stories),/Genesis 2 needs/);
 const invalid=structuredClone(images);invalid['0:2'][0].afterVerse=999;
 assert.throws(()=>validateChapterImages(invalid,original,headings,stories),/Unknown image verse/);
 assert(source.includes('${readerChapterIllustrations(reading,v.n)}'),'Artwork follows a complete verse');
-console.log(`PASS: all 50 Genesis chapters illustrated; ${existingChapters} keep Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, title-free accessible art, packaged image parity and fail-closed coverage.`);
+console.log(`PASS: all 211 Genesis–Joshua chapters illustrated; ${existingChapters} have existing Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, title-free accessible art, packaged image parity and fail-closed coverage.`);

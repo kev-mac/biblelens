@@ -32,6 +32,11 @@ try{
  const illustrated=await (await target.fetch('/api/chapter?book=0&chapter=2')).json();
  assert.equal(illustrated.chapterImages[0].afterVerse,10,'Offline reading retains verse-aligned chapter art');
  assert.equal(illustrated.chapterImages[0].src,'/assets/chapter-genesis-02-v1.webp');
+ for(const [book,chapter]of [[1,6],[2,1],[3,2],[4,2],[5,4]]){
+  const illustrated=await (await target.fetch('/api/chapter?book='+book+'&chapter='+chapter)).json();
+  assert(illustrated.chapterImages.length,'Next-five chapter artwork is available offline');
+  for(const art of illustrated.chapterImages)assert(fs.existsSync('www'+art.src),'Native artwork stays bundled');
+ }
  const comparison=await (await target.fetch('/api/comparisons?book=0&chapter=1&mode=questions')).json();assert(Array.isArray(comparison.items));
  const categories=await (await target.fetch('/api/categories?book=all&kind=T')).json();assert.equal(categories.records.length,24);assert(categories.total>24);const next=await (await target.fetch('/api/categories?book=all&kind=T&page=1')).json();assert.equal(next.records.length,24);assert.notEqual(next.records[0].key,categories.records[0].key);
  for(const [kind,minimum] of [['stories',1],['characters',3000],['prophecies',3]]){const page=await (await target.fetch('/api/categories?book=all&kind='+kind)).json();assert(page.total>=minimum,kind);assert(page.records.length<=24);assert(page.records.every(record=>record.mode===kind));}

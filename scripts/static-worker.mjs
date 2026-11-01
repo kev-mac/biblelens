@@ -7,7 +7,7 @@ import {encodeEmbeddedAsset,decodeEmbeddedAsset} from './embedded-encoding.mjs';
 
 // Default: compressed lazy assets preserve the existing Sites ESM contract.
 // Opt-in static mode removes their bytes and needs Cloudflare's ASSETS binding.
-export function splitWorker(source, output = 'dist', external = false) {
+export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}) {
   const context = {Response, Blob, DecompressionStream, Uint8Array, atob};
   vm.createContext(context);
   vm.runInContext(source.slice(0, source.indexOf('async function chat(')) +
@@ -109,7 +109,7 @@ async function prepareAssets(request,env){
   const chapterPaths=new Map(Object.keys(data.CHAPTERS).map(key=>[prefix+'chapters/'+key.replace(':','-')+'.json',key]));
   const compressed={},aliases={},bodies=new Map();
   for(const [url,asset]of Object.entries(assets)){
-    if(!external&&(url===offline||chapterPaths.has(url)))continue;
+    if(!external&&(url===offline||chapterPaths.has(url)||publicArtwork[url]))continue;
     const route=url==='/'?'/index.html':url;
     const body=encodeEmbeddedAsset(gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}));
     if(bodies.has(body))aliases[route]=bodies.get(body);
@@ -132,15 +132,19 @@ const EMBEDDED_ASSETS={async fetch(request){
   source=source.replace('export default {async fetch',()=>embedded+'\nexport default {async fetch');
   // Keep the response policy on every route, including release and lazy APIs.
   source=source.replace('export default {async fetch', 'const packagedWorker={async fetch');
-  source+=`\nexport default {async fetch(request,env,ctx){
- const response=await packagedWorker.fetch(request,env,ctx);
+  const artworkLoader=fs.readFileSync('worker/public-artwork.mjs','utf8').replace('export async function','async function');
+  source+=`\nconst PUBLIC_ARTWORK=${JSON.stringify(external?{}:publicArtwork)};
+${artworkLoader}
+export default {async fetch(request,env,ctx){
+ const art=PUBLIC_ARTWORK[new URL(request.url).pathname];
+ const response=art?await publicArtworkResponse(request,art,ctx):await packagedWorker.fetch(request,env,ctx);
  const headers=new Headers(response.headers);
  headers.set('content-security-policy-report-only',ASSETS['/'].csp);
  headers.set('content-security-policy',"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'");
  return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
 }};\n`;
   const sizes = Object.fromEntries(Object.entries(data).map(([key, value]) => [key, Buffer.byteLength(JSON.stringify(value))]));
-  fs.writeFileSync(path.join(output, 'asset-manifest.json'), JSON.stringify({mode:external?'static':'compressed',prefix, parts, index, sizes, splitBytes, before: Buffer.byteLength(fs.readFileSync(path.join(output, 'server/index.js'))), after: Buffer.byteLength(source)}, null, 2));
+  fs.writeFileSync(path.join(output, 'asset-manifest.json'), JSON.stringify({mode:external?'static':'compressed',prefix, parts, index, sizes, splitBytes, publicArtwork:Object.keys(publicArtwork), before: Buffer.byteLength(fs.readFileSync(path.join(output, 'server/index.js'))), after: Buffer.byteLength(source)}, null, 2));
   fs.writeFileSync(path.join(output, 'server/index.js'), source);
   // Standard Cloudflare contract, deliberately separate from Sites metadata.
   fs.writeFileSync(path.join(output, 'wrangler.json'), JSON.stringify({name:'biblelens', main:'server/index.js', compatibility_date:'2026-10-28', assets:{directory:'client',binding:'ASSETS',run_worker_first:true}}, null, 2));

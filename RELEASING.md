@@ -17,6 +17,21 @@ The shared build number is `package.json` → `buildNumber` (currently 222). It 
 
 Settings → App version shows the version, build number and source fingerprint on both platforms. The iPhone checks the website and reports mismatches; it cannot install a native update automatically. Website publication does not update an installed iPhone binary. TestFlight/App Store distribution requires a separate Apple distribution setup.
 
+## Chapter artwork
+
+Keep existing Story and Genesis artwork embedded and unchanged. New Exodus–Joshua
+chapter images use the same-origin image paths through a checked public GitHub
+source and an edge cache. `data/hosted-artwork.json` pins the exact public asset
+commit; the build records each file's byte length and SHA-256 hash. Commit and
+push those public assets before deploying a release that references them.
+Never put user notes, credentials, or private material in that manifest. The
+image handler forwards no request cookies, authorization, or query data.
+
+Use versioned filenames and a new source pin for future artwork changes. Keep
+every image in the shared source and native bundle so iPhone reading remains
+offline. Run `check:images` after `build:mobile`, and verify live images against
+the signed assets. Reading, search, and sync do not depend on the image origin.
+
 ## Cloud sync
 
 On the website, open Settings → Cloud sync, sign in with ChatGPT, and enable sync. Select **Connect iPhone** to create a one-time, ten-minute code. In the native app's Settings → Cloud sync, enter the code and select Connect. The device credential expires after 90 days and can be revoked from the website. Codes and device credentials are stored only as hashes in D1.
