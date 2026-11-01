@@ -3160,3 +3160,17 @@ html body.lens-app .lens-page-heading>.directory-settings-open{position:absolute
  html body.lens-app #lensReadingBar #ux-chapter-picker .ux-picker-book{min-width:0;overflow:hidden;text-overflow:ellipsis}
  html body.lens-app #lensReadingBar .directory-settings-open{border:0;padding:8px}
 }
+/* Verse numbers occupy their own gutter; wrapped scripture keeps one left edge. */
+html body.lens-app #chapter-text .verse-body,
+html body.lens-app #chapter-text:has([data-lens-inspect]) .verse-body {
+ display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:8px;align-items:start;padding-left:0;
+}
+html body.lens-app #chapter-text .verse-body > [data-scripture] { display:block;min-width:0; }
+html body.lens-app #chapter-text .verse-num,
+html body.lens-app #chapter-text .verse-num[data-digits="3"] {
+ display:flex;position:relative;inset:auto;transform:translateX(-16px);box-sizing:border-box;
+ width:44px;min-width:44px;min-height:44px;height:44px;margin:0;padding:2px 0 0 16px;
+ justify-content:flex-start;align-items:flex-start;line-height:1.75;vertical-align:baseline;
+}
+html body.lens-app #chapter-text .verse-num::before { content:none; }
+html body.lens-app #chapter-text .verse-num .verse-label { line-height:1.75;vertical-align:baseline; }
