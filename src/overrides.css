@@ -2611,7 +2611,7 @@ html body.lens-app .ux-topic>svg{padding:0;background:none;border-radius:0;filte
 html body.lens-app :is(.story-card,.ux-contact,.place-profile-card,.commandment-card,.phase2-debate-card,.ux-evidence-article){border:1px solid var(--category-border);border-radius:12px}
 html body.lens-app .lens-context{border-bottom:1px solid var(--category-border)}
 html body.lens-app .lens-context h1{color:var(--topic)}
-html body.lens-app #main #stories-view .story-summary{font-size:.82rem;line-height:1.55;color:var(--lens-muted);white-space:normal;margin:6px 0}
+html body.lens-app #main #stories-view .story-summary{font-size:1rem;line-height:1.55;color:var(--lens-muted);white-space:normal;margin:6px 0}
 html body.lens-app.dark #main #stories-view .story-summary{color:#CBD5E1}
 html body.lens-app :is(.stories-filters,#debates-view .ux-interior-chips){display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:8px;max-width:100%;padding:4px 0 8px}
 html body.lens-app .stories-filters>label{flex:0 0 auto;margin:0}
@@ -2715,7 +2715,7 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .passage-badge{font-size:.74rem;line-height:1.5;font-weight:700;color:var(--accent-purple);background:var(--accent-purple-soft);padding:2px 8px;border-radius:8px;letter-spacing:.02em}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .read-badge{font-size:.7rem;color:var(--ux13-subtle);font-weight:500;white-space:nowrap}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-title{font:700 1.15rem/1.3 var(--ui-font);letter-spacing:-.01em;color:var(--ux13-white);margin:0;padding:0}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-summary{font-size:.84rem;line-height:1.55;color:var(--ux13-copy);white-space:normal;margin:0;max-width:none;overflow:visible}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-summary{font-size:1rem;line-height:1.55;color:var(--ux13-copy);white-space:normal;margin:0;max-width:none;overflow:visible}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-summary p{font:inherit;color:inherit;margin:0 0 6px;padding:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-summary p:last-child{margin-bottom:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:10px;border-top:1px solid var(--border-subtle);font-size:.76rem;line-height:1.5;color:var(--ux13-muted);margin-top:2px}
@@ -2749,7 +2749,7 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card{position:relative;inset:auto;height:auto;min-height:0;overflow:visible;backdrop-filter:none;--theme-rgb:var(--directory-rgb);background:var(--ux13-card);border-radius:16px}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card::before,html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card::after{display:none}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card .story-title{font:700 1.15rem/1.3 var(--ui-font);color:var(--ux13-white);margin:0;padding:0;min-height:0}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card .story-summary{display:block;font:400 .84rem/1.55 var(--ui-font);color:var(--ux13-copy);margin:0;padding:0}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card .story-summary{display:block;font:400 1rem/1.55 var(--ui-font);color:var(--ux13-copy);margin:0;padding:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-footer{flex-wrap:wrap}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-linked-meta{flex-basis:100%;white-space:nowrap;font-size:.7rem}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub :is(.person-section-controls,.place-map-actions){display:flex;gap:8px;justify-content:flex-end;margin:0;padding:10px 0 0;border-top:1px solid var(--ux13-rule);width:100%}
@@ -2759,7 +2759,7 @@ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#comman
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .story-card>.directory-save{position:absolute;top:8px;right:8px;width:44px;height:44px;margin:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .ux-letter-heading{position:sticky;top:52px;z-index:10;background:var(--ux13-base);color:var(--directory-accent);margin:0;padding:6px 0;font-size:.8rem;border-bottom:1px solid var(--ux13-rule)}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub :is(.comparison-summary,.commandment-summary){display:contents}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .commandment-summary p{font:400 .84rem/1.55 var(--ui-font);color:var(--ux13-copy);margin:0}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .commandment-summary p{font:400 1rem/1.55 var(--ui-font);color:var(--ux13-copy);margin:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .commandment-summary q{display:block;font:inherit;margin:0}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .category-results{order:-1;margin:0;color:var(--ux13-subtle);font-size:.74rem}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .ux-contact .character-card-header{display:contents}
@@ -2831,7 +2831,7 @@ html body.lens-app #main #debates-view.directory-hub :is(#debate-results,.accept
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card{container-type:normal;text-decoration:none}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .story-title{font:700 1.15rem/1.3 var(--ui-font);margin:0;color:var(--ux13-white)}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card>.story-top-row{margin:0;display:flex;justify-content:space-between}
-html body.lens-app #main #debates-view.directory-hub .phase2-debate-card>.story-summary{font:400 .84rem/1.55 var(--ui-font);margin:0;color:var(--ux13-copy)}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card>.story-summary{font:400 1rem/1.55 var(--ui-font);margin:0;color:var(--ux13-copy)}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card>.story-footer{margin-top:2px;display:flex;justify-content:space-between}
 html body.lens-app #main #debates-view.directory-hub .phase2-verdict{font:400 .74rem/1.5 var(--ui-font);color:var(--ux13-muted);background:none;border:0;padding:0;max-width:100%}
 html body.lens-app #main #debates-view.directory-hub .action-link{display:inline-flex;align-items:center}
@@ -3056,7 +3056,7 @@ html body.lens-app .story-passages button{display:block;min-height:44px;backgrou
 /* Profile details expand within the person's contact card. */
 html body.lens-app #main #characters-list .character-contact-body{width:100%;min-width:0}
 html body.lens-app #main #characters-list .character-profile-context{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:4px 0 12px;font-size:.76rem;color:var(--lens-muted)}
-html body.lens-app #main #characters-list .character-profile-biography{margin:0 0 16px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;font:400 .94rem/1.65 var(--ui-font);color:var(--lens-ink);overflow-wrap:anywhere}
+html body.lens-app #main #characters-list .character-profile-biography{margin:0 0 16px;padding:0;border:0;border-radius:0;background:none;box-shadow:none;font:400 1rem/1.65 var(--ui-font);color:var(--lens-ink);overflow-wrap:anywhere}
 html body.lens-app #main #characters-list .character-contact-body .person-sections{display:block}
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .character-card-header{display:flex;align-items:center;gap:12px}
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .ux-person-open{flex:1;min-width:0;padding:0}
