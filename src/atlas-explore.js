@@ -12,11 +12,9 @@
  const reducedMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
  function connectLane(section){
   const row=section.querySelector('.ux-topic-row'),cards=[...row.querySelectorAll('.ux-topic')],pager=section.querySelector('.ux-lane-pages');
-  const previous=section.querySelector('[data-lane-previous]'),next=section.querySelector('[data-lane-next]');
   let stops=[],active=0;
   function sync(){
    active=stops.reduce((best,value,index)=>Math.abs(value-row.scrollLeft)<Math.abs(stops[best]-row.scrollLeft)?index:best,0);
-   previous.disabled=row.scrollLeft<2;next.disabled=row.scrollLeft>=row.scrollWidth-row.clientWidth-2;
    for(const [index,button] of [...pager.children].entries())button.setAttribute('aria-current',String(index===active));
   }
   function move(index){row.scrollTo({left:stops[Math.max(0,Math.min(stops.length-1,index))]||0,behavior:reducedMotion()?'instant':'smooth'});}
@@ -26,7 +24,6 @@
    pager.replaceChildren(...stops.map((stop,index)=>{const button=document.createElement('button');button.type='button';button.className='ux-lane-page';button.setAttribute('aria-label','Show '+cards[index].querySelector('strong').textContent+' and following collections');button.innerHTML='<span aria-hidden="true"></span>';button.onclick=()=>move(index);return button;}));
    pager.hidden=stops.length<=1;sync();
   }
-  previous.onclick=()=>move(active-1);next.onclick=()=>move(active+1);
   row.addEventListener('scroll',sync,{passive:true});
   row.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();move(event.key==='Home'?0:event.key==='End'?stops.length-1:active+(event.key==='ArrowRight'?1:-1));});
   const observer=new ResizeObserver(measure);observer.observe(row);observers.push(observer);measure();
@@ -38,7 +35,7 @@
   if(rendered===view)return;rendered=view;
   observers.forEach(observer=>observer.disconnect());observers=[];
   const arrow=direction=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${direction==='left'?'m14 6-6 6 6 6':'m10 6 6 6-6 6'}"/></svg>`;
-  const group=(id,name,rows)=>`<section class="ux-topic-section" aria-label="${name}"><div class="ux-lane-heading"><h2 id="ux-lane-${id}-title">${name}</h2><div class="ux-lane-arrows"><button type="button" data-lane-previous aria-label="Scroll ${name} left" aria-controls="ux-lane-${id}">${arrow('left')}</button><button type="button" data-lane-next aria-label="Scroll ${name} right" aria-controls="ux-lane-${id}">${arrow('right')}</button></div></div><div class="ux-topic-row" id="ux-lane-${id}" role="group" aria-roledescription="carousel" aria-labelledby="ux-lane-${id}-title" tabindex="0">${rows.map(([key,label,subtitle,url])=>`<a class="ux-topic" id="ux-topic-${key}" data-topic="${key}" href="${url}" aria-label="${label}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[key]}"/></svg><span class="ux-count" aria-label="${counts?counts[key].toLocaleString()+' records':'Loading count'}">${counts?counts[key].toLocaleString():'…'}</span><div class="ux-tile-copy"><strong>${label}</strong><small>${subtitle}</small></div><span class="ux-browse" aria-hidden="true">Browse collection ${arrow('right')}</span></a>`).join('')}</div><div class="ux-lane-pages" role="group" aria-label="${name} positions"></div></section>`;
+  const group=(id,name,rows)=>`<section class="ux-topic-section" aria-label="${name}"><div class="ux-lane-heading"><h2 id="ux-lane-${id}-title">${name}</h2></div><div class="ux-topic-row" id="ux-lane-${id}" role="group" aria-roledescription="carousel" aria-labelledby="ux-lane-${id}-title" tabindex="0">${rows.map(([key,label,subtitle,url])=>`<a class="ux-topic" id="ux-topic-${key}" data-topic="${key}" href="${url}" aria-label="${label}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[key]}"/></svg><span class="ux-count" aria-label="${counts?counts[key].toLocaleString()+' records':'Loading count'}">${counts?counts[key].toLocaleString():'…'}</span><div class="ux-tile-copy"><strong>${label}</strong><small>${subtitle}</small></div><span class="ux-browse" aria-hidden="true">Browse collection ${arrow('right')}</span></a>`).join('')}</div><div class="ux-lane-pages" role="group" aria-label="${name} positions"></div></section>`;
   const textTools=evidence.filter(([key])=>['text','translation'].includes(key));
   host.innerHTML=`<h1 tabindex="-1">Explore</h1><nav class="ux-explore-filters" aria-label="Explore collections">${filters.map(([key,label])=>`<button type="button" class="filter-pill" data-explore-filter="${key}" aria-pressed="${filter===key}">${label}</button>`).join('')}</nav>${['all','topics'].includes(filter)?group('topics','People, Places & Texts',topics):''}${['all','evidence'].includes(filter)?group('evidence','Evidence & Interpretations',evidence.filter(([key])=>key!=='prophecies')):''}${filter==='manuscripts'?'<p class="ux-manuscripts-intro">Explore ancient copies with these text and translation tools.</p>'+group('manuscripts','Text & Translation Tools',textTools):''}`;
   host.querySelectorAll('.ux-topic-section').forEach(connectLane);
