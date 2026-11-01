@@ -72,7 +72,7 @@
     if (typeof reading === 'undefined' || !reading) return;
     const row=chapter.querySelector('.chapter-heading-row');
     if(row&&!row.querySelector('.ux-reader-eyebrow')){
-      const eyebrow=document.createElement('p');eyebrow.className='ux-reader-eyebrow';
+      const eyebrow=document.createElement('h1');eyebrow.className='ux-reader-eyebrow';
       eyebrow.textContent=reading.name+' '+reading.chapter;row.prepend(eyebrow);
     }
     const heading = chapter.querySelector('.passage-heading');

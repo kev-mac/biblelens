@@ -3174,3 +3174,13 @@ html body.lens-app #chapter-text .verse-num[data-digits="3"] {
 }
 html body.lens-app #chapter-text .verse-num::before { content:none; }
 html body.lens-app #chapter-text .verse-num .verse-label { line-height:1.75;vertical-align:baseline; }
+
+/* Chapter overview stays compact; each story starts beside its own verse. */
+html body.lens-app #chapter-text .chapter-heading-row{margin:8px 0 24px}
+html body.lens-app #chapter-text .ux-reader-eyebrow{display:block;margin:0 0 8px;font:700 1.1625rem/1.4 var(--ui-font);color:var(--lens-ink);text-transform:none;letter-spacing:0;text-shadow:none}
+html body.lens-app #chapter-text .chapter-subtitle{display:block;margin:0;font:400 .85rem/1.5 var(--ui-font);color:var(--lens-muted);text-shadow:none;-webkit-line-clamp:unset;overflow:visible}
+html body.lens-app #chapter-text .chapter-title-part{display:inline}
+html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part{margin:0}
+html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part::before{content:" · "}
+html body.lens-app #chapter-text .reader-event-title{font:700 .975rem/1.4 var(--ui-font);margin:24px 0 14px}
+html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){margin-bottom:14px}
