@@ -3199,10 +3199,6 @@ html body.lens-app #explore-view .ux-explore-filters button[aria-pressed=true]{b
 html body.lens-app #explore-view .ux-topic-section{min-width:0;margin:0 0 18px}
 html body.lens-app #explore-view .ux-lane-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px;margin:0 0 4px}
 html body.lens-app #explore-view .ux-lane-heading h2{margin:0;min-width:0;font:600 .78rem/1.45 var(--ui-font);letter-spacing:.045em;text-transform:uppercase;color:var(--lane-copy)}
-html body.lens-app #explore-view .ux-lane-arrows{display:flex;flex:none;gap:0}
-html body.lens-app #explore-view .ux-lane-arrows button{display:grid;place-items:center;width:36px;min-width:36px;height:44px;padding:6px;border:0;border-radius:12px;background:transparent;color:var(--lane-copy)}
-html body.lens-app #explore-view .ux-lane-arrows button:disabled{opacity:.3}
-html body.lens-app #explore-view .ux-lane-arrows svg{width:19px;height:19px}
 html body.lens-app #explore-view .ux-topic-row{position:relative;display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:0;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 calc(-1 * var(--lane-gutter)) 0 0;padding:10px var(--lane-gutter) 18px 0}
 html body.lens-app #explore-view a.ux-topic{flex:0 0 var(--lane-card-width);width:var(--lane-card-width);min-width:0;height:210px;padding:16px 14px;gap:10px;scroll-snap-align:start;scroll-snap-stop:normal;border:1px solid rgba(var(--tile-rgb),.35);border-radius:19px;background:radial-gradient(ellipse at 12% 0%,rgba(var(--tile-rgb),.19),transparent 75%),linear-gradient(var(--lane-glass),var(--lane-glass)),var(--lane-surface);color:var(--lane-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 14px rgba(var(--tile-rgb),.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .18s,box-shadow .18s,border-color .18s}
 html body.lens-app #explore-view a.ux-topic:hover{border-color:rgba(var(--tile-rgb),.65);box-shadow:0 0 20px rgba(var(--tile-rgb),.17),inset 0 0 20px rgba(var(--tile-rgb),.06);transform:translateY(-2px)}
@@ -3224,7 +3220,7 @@ html body.lens-app #explore-view .ux-manuscripts-intro{font:400 .85rem/1.5 var(-
 html body.lens-app #explore-view [data-topic=text]{--tile-rgb:129,140,248}
 html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(246,247,251,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 html body.lens-app.dark:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(11,14,20,.76);border-top-color:rgba(255,255,255,.08)}
-@media(pointer:coarse){html body.lens-app #explore-view :is(.ux-lane-arrows button,.ux-lane-page){width:44px;min-width:44px}}
+@media(pointer:coarse){html body.lens-app #explore-view .ux-lane-page{width:44px;min-width:44px}}
 @media(prefers-reduced-motion:reduce){html body.lens-app #explore-view :is(a.ux-topic,.ux-lane-page span,.ux-explore-filters button){transition:none}html body.lens-app #explore-view a.ux-topic:is(:hover,:active){transform:none}}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence{margin-left:6px}
 html body.lens-app #ux-empty-verse-actions{width:360px;padding:10px 12px;max-height:calc(100dvh - 180px);overflow:auto}

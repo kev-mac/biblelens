@@ -19,6 +19,7 @@ try{
     await page.goto(base+'/#discover');await page.locator('#ux-topic-questions').waitFor();
     await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);await page.evaluate(()=>document.fonts.ready);
     assert.equal(await page.locator('.ux-topic').count(),11);
+    assert.equal(await page.locator('.ux-lane-arrows,[data-lane-previous],[data-lane-next]').count(),0);
     assert.equal(await page.locator('.ux-daily-question,#ux-topic-prophecies').count(),0);
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'only lanes may overflow');
     const lane=page.locator('#ux-lane-topics');
@@ -27,12 +28,9 @@ try{
     const overflow=await page.locator('.ux-topic').evaluateAll(ns=>ns.filter(n=>n.scrollHeight>n.clientHeight+1||n.scrollWidth>n.clientWidth+1).map(n=>n.textContent));assert.deepEqual(overflow,[],'card contents fit');
     if(width<768){
      const section=page.locator('.ux-topic-section').first();
-     assert(await section.locator('[data-lane-previous]').isDisabled());
-     await section.locator('[data-lane-next]').click();await page.waitForFunction(()=>document.querySelector('#ux-lane-topics').scrollLeft>10);
-     await page.waitForFunction(()=>!document.querySelector('#ux-lane-topics').parentElement.querySelector('[data-lane-previous]').disabled);
+     await section.locator('.ux-lane-page').nth(1).click();await page.waitForFunction(()=>document.querySelector('#ux-lane-topics').scrollLeft>10);
      await lane.focus();await page.keyboard.press('End');
      await page.waitForFunction(()=>{const n=document.querySelector('#ux-lane-topics');return Math.abs(n.scrollWidth-n.clientWidth-n.scrollLeft)<2;});
-     await page.waitForFunction(()=>document.querySelector('#ux-lane-topics').parentElement.querySelector('[data-lane-next]').disabled);
      const last=await page.locator('#ux-topic-lost').boundingBox(),row=await lane.boundingBox();assert(last.x>=row.x-1&&last.x+last.width<=row.x+row.width+1,'last collection is reachable');
      assert.equal(await section.locator('.ux-lane-page[aria-current=true]').count(),1);
      await section.locator('.ux-lane-page').first().click();await page.waitForFunction(()=>document.querySelector('#ux-lane-topics').scrollLeft<2);
