@@ -80,7 +80,7 @@
  function setFocus(on) {
   document.body.classList.toggle('lens-focus-mode',on); inspector.hidden=on; updateEvidenceControl();
  }
- el('lens-focus').onclick=()=>{evidenceVisible=!evidenceVisible;saveDisplayChoice('biblelens-evidence-visible',String(evidenceVisible));renderInspector();updateEvidenceControl();};updateEvidenceControl();
+ el('lens-focus').onclick=()=>{evidenceVisible=!evidenceVisible;saveDisplayChoice('biblelens-evidence-visible',String(evidenceVisible));updateEvidenceControl();refreshVerseHighlights();renderInspector();};updateEvidenceControl();
  el('lens-edition').value=edition();
  el('lens-edition').onchange=()=>{el('reader-edition').value=el('lens-edition').value; el('reader-edition').dispatchEvent(new Event('change')); if(comparison&&!compare.hidden)runComparison(comparison.left,comparison.right);};
  el('lens-compare').onclick=()=>openCompare();
