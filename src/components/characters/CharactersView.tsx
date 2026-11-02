@@ -81,8 +81,12 @@ function mountCharacters(): void {
     const index=candidates.findIndex(person=>person.name.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').charAt(0).toUpperCase()===name);
     if(index<0)return;
     letter=name;page=Math.floor(index/CHARACTER_PAGE_SIZE);render();
-    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.focus({preventScroll:true});
-    list.querySelector<HTMLElement>('[data-letter="'+name+'"]')?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(host.hidden)return;
+      const target=list.querySelector<HTMLElement>('[data-letter="'+name+'"]');
+      target?.focus({preventScroll:true});
+      target?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+    }));
   }
   searchBox.classList.add('directory-filters');
   searchBox.append(label, search, categories);

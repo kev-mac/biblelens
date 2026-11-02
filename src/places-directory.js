@@ -61,9 +61,12 @@ export function mountPlacesDirectory(){
   const index=matchingPlaces().findIndex(place=>directoryInitial(place.name)===letter);
   if(index<0)return;
   page=Math.floor(index/24);render();
-  const target=list.querySelector('[data-directory-letter="'+letter+'"]');
-  target?.focus({preventScroll:true});
-  target?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(host.hidden)return;
+   const target=list.querySelector('[data-directory-letter="'+letter+'"]');
+   target?.focus({preventScroll:true});
+   target?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  }));
  });
  host.append(letterRail.element);
  function render(){
