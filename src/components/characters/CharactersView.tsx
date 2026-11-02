@@ -6,6 +6,7 @@ export { characters } from './directory';
 import { CharacterCard, CharacterNameCard, PersonContact, ProfileBiography, profileDisplayName, element } from './CharacterCard';
 import {loadCharacterGraph} from '../../character-connections.js';
 import {FamilyConnections, connectionProfile, referenceId} from './Connections';
+import {createDirectoryLetterRail} from '../../directory-letter-rail.js';
 
 export function filterCharacters(query: string, era: string = 'All Eras', womenOnly = false): CharacterProfile[] {
   const normalized = query.trim().toLocaleLowerCase();
@@ -97,7 +98,8 @@ function mountCharacters(): void {
   alphabetSheet.addEventListener('click',event=>{if(event.target===alphabetSheet){const r=alphabetSheet.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)alphabetSheet.close();}});
   window.addEventListener('viewchange',()=>{if(alphabetSheet.open)alphabetSheet.close();});
   searchBox.append(alphabetOpen);
-  host.append(heading, searchBox, count, list);
+  const letterRail = createDirectoryLetterRail(host, list, 'People', jump);
+  host.append(heading, searchBox, count, list, letterRail.element);
   function updateVisibleLetter():void {
     if(host.hidden)return;
     const headings=[...list.querySelectorAll<HTMLElement>('.ux-letter-heading')];
@@ -125,6 +127,7 @@ function mountCharacters(): void {
   function render(): void {
     renderCategories();
     const candidates = findPeople(search.value).filter(person => inCategory(person,category));
+    letterRail.update(candidates.map(person => person.name));
     const initial = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').charAt(0).toUpperCase();
     const matches = candidates;
     for (const button of alphabet.querySelectorAll('button')) {

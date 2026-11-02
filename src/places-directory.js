@@ -3,6 +3,7 @@ import {directorySaveButton} from './directory-save.js';
 import books from '../data/books.json' with {type:'json'};
 import {loadPlaces,directoryPlaces} from './places-core.js';
 import {regionCoverage,inWindow,usableRegionPoint} from './place-regions.js';
+import {createDirectoryLetterRail,directoryInitial} from './directory-letter-rail.js';
 
 const normalize=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().replace(/['’]s\b/g,'');
 export function searchPlaces(places,query=''){
@@ -55,14 +56,25 @@ export function mountPlacesDirectory(){
  const search=host.querySelector('input'),count=host.querySelector('#places-count'),list=host.querySelector('ul'),pagination=host.querySelector('nav');
  const previous=host.querySelector('[data-places-previous]'),next=host.querySelector('[data-places-next]'),retry=host.querySelector('[data-places-retry]');
  let region=null,places=new Map(),page=0,loaded=false,loading=false,failed=false;
+ const matchingPlaces=()=>searchPlaces(places,search.value).filter(place=>!region||usableRegionPoint(place)&&inWindow(place,region));
+ const letterRail=createDirectoryLetterRail(host,list,'Places',letter=>{
+  const index=matchingPlaces().findIndex(place=>directoryInitial(place.name)===letter);
+  if(index<0)return;
+  page=Math.floor(index/24);render();
+  const target=list.querySelector('[data-directory-letter="'+letter+'"]');
+  target?.focus({preventScroll:true});
+  target?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+ });
+ host.append(letterRail.element);
  function render(){
-  const matches=searchPlaces(places,search.value).filter(place=>!region||usableRegionPoint(place)&&inWindow(place,region)),pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
+  const matches=matchingPlaces(),pages=Math.ceil(matches.length/24);page=Math.min(page,Math.max(0,pages-1));
+  letterRail.update(matches.map(place=>place.name));
   count.className=loading?'loading-state':'directory-results';
   search.placeholder=`Search ${searchPlaces(places).length.toLocaleString()} places, names, aliases…`;
   count.textContent=loading?'Loading places…':failed?'Places could not be loaded.':`${(matches.length?page*24+1:0).toLocaleString()}–${Math.min((page+1)*24,matches.length).toLocaleString()} of ${matches.length.toLocaleString()} ${matches.length===1?'place':'places'}`;
   list.replaceChildren();list.setAttribute('aria-busy',String(loading));
   for(const place of matches.slice(page*24,(page+1)*24)){
-   const row=document.createElement('li');row.append(placeCard(place,[...places.values()].filter(other=>normalize(other.name)===normalize(place.name)).length>1));list.append(row);
+   const row=document.createElement('li');row.dataset.directoryLetter=directoryInitial(place.name);row.tabIndex=-1;row.append(placeCard(place,[...places.values()].filter(other=>normalize(other.name)===normalize(place.name)).length>1));list.append(row);
   }
   if(loaded&&!matches.length){const empty=document.createElement('li');empty.textContent='No places match. Try another name or alias.';list.append(empty);}
   previous.disabled=page===0;next.disabled=page+1>=pages;pagination.hidden=!loaded||pages<=1;retry.hidden=!failed;
