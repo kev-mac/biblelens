@@ -5,7 +5,7 @@ async function initializeChips(){
  let match=()=>[],matchPeople=()=>[],placesReady=false,peopleReady=false,loading=null;
  const scopes='.verse-body,.story-card p,.category-profile-card[data-profile-people="true"] .comparison-summary>p,.category-profile-card[data-profile-people="true"] .category-profile-panel p';
  function decorate(root){
-  if(root.matches?.('.verse-body[data-inline-references="ready"]'))return;
+  if(root.matches?.('.verse-body')&&(root.dataset.inlineReferences==='ready'||document.querySelector('#reader-compare')?.value==='none'))return;
   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),nodes=[];let leadingText='';
   while(walker.nextNode()){
    const node=walker.currentNode;

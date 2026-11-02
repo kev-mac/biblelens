@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const source=fs.readFileSync('src/feature-loader.js','utf8');
+const nodes=[],timers=new Map(),replacements=[];let timerId=0;
+const context={URL,Map,Set,Error,Promise,setTimeout:fn=>{timers.set(++timerId,fn);return timerId;},clearTimeout:id=>timers.delete(id),fetch:async()=>({ok:true,json:async()=>({css:{path:'/assets/app.new.css',sha256:'new-version'}})}),location:{href:'https://example.com/?keep=1#read/0/1',replace:url=>replacements.push(url)},document:{currentScript:null,querySelector:()=>null,getElementById:()=>({getAttribute:()=>'/assets/app.old.css'}),createElement:tag=>({tag,dataset:{},remove(){this.removed=true;}}),head:{append:node=>nodes.push(node)}}};
+vm.createContext(context);
+vm.runInContext(source.slice(source.indexOf(' const manifest='),source.indexOf(' function requirements(')).replace('/*__FEATURES__*/{}',JSON.stringify({studyStyles:'/study.css',styles:'/views.css',study:'/study.js'}))+'\nglobalThis.api={load,style,recoverVersion};',context);
+const tick=async()=>{for(let i=0;i<8;i++)await Promise.resolve();};
+const first=context.api.load('study'),second=context.api.load('study');
+assert.equal(nodes.length,1);assert.equal(nodes[0].tag,'link','Do not execute reader code before its styles arrive');
+nodes[0].onerror();assert(nodes[0].removed);const retry=[...timers.values()][0];timers.clear();retry();assert.equal(nodes.at(-1).href,'/study.css?retry=1');
+nodes.at(-1).onload();await tick();assert.equal(nodes.filter(n=>n.tag==='script').length,1,'Concurrent routes share the script');
+const script=nodes.at(-1);script.dataset.biblelensReady='true';script.onload();await Promise.all([first,second]);
+await context.api.load('study');assert.equal(nodes.length,3,'Loaded routes reuse their working CSS and script');
+await context.api.recoverVersion();assert.equal(replacements.length,1);const url=new URL(replacements[0]);assert.equal(url.searchParams.get('keep'),'1');assert.equal(url.hash,'#read/0/1');assert.equal(url.searchParams.get('build'),'new-version');
+console.log('PASS: stylesheet failures retry without partial reader execution; concurrent loads share assets; stale builds retain the route and refresh only public files.');

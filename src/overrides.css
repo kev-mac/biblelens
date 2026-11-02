@@ -3103,8 +3103,8 @@ html body.lens-app:not(.dark) #explore-view .ux-evidence-category{color:color-mi
 /* Keep chapter topics separate and restore discoverable entity links. */
 html body.lens-app #chapter-text .chapter-title-part{display:block}
 html body.lens-app #chapter-text .chapter-title-part+.chapter-title-part{margin-top:24px}
-html body.lens-app #chapter-text .verse-body .person-chip{font-weight:700;color:var(--topic-people);text-decoration:none}
-html body.lens-app #chapter-text .verse-body .location-chip{font-weight:700;color:var(--topic-places);text-decoration:none}
+html body.lens-app #chapter-text .verse-body .person-chip{font-weight:400;color:var(--topic-people);text-decoration:none}
+html body.lens-app #chapter-text .verse-body .location-chip{font-weight:400;color:var(--topic-places);text-decoration:none}
 /* Keep both discovery grids equally wide when only Inspect needs scrolling. */
 html:has(body.lens-app #explore-view:not([hidden])){scrollbar-gutter:stable}
 @supports not (scrollbar-gutter:stable){html:has(body.lens-app #explore-view:not([hidden])){overflow-y:scroll}}
@@ -3117,8 +3117,8 @@ html body.lens-app:is([data-topic=history],[data-topic=science],[data-topic=time
 /* Inline links must not enlarge the verse preview's line boxes. */
 html body.lens-app #verse-preview .preview-text{line-height:1.6}
 html body.lens-app #verse-preview .preview-text :is(a,button.person-chip,button.location-chip){display:inline;position:relative;min-height:0;min-width:0;height:auto;padding:0;margin:0;border:0;background:none;border-radius:0;font:inherit;line-height:inherit;vertical-align:baseline;text-decoration:none}
-html body.lens-app #verse-preview .preview-text .person-chip{font-weight:700;color:var(--topic-people)}
-html body.lens-app #verse-preview .preview-text .location-chip{font-weight:700;color:var(--topic-places)}
+html body.lens-app #verse-preview .preview-text .person-chip{font-weight:400;color:var(--topic-people)}
+html body.lens-app #verse-preview .preview-text .location-chip{font-weight:400;color:var(--topic-places)}
 html body.lens-app #verse-preview .preview-text :is(.person-chip,.location-chip) svg{display:none}
 html body.lens-app #lensInspector .ux-verse-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%}
 html body.lens-app #lensInspector .ux-verse-actions button{width:100%;min-width:0;height:60px;min-height:44px;border:0;box-shadow:none;background:transparent}

@@ -2,25 +2,52 @@
 (() => {
  const manifest=/*__FEATURES__*/{},pending=new Map(),loaded=new Set(),styles=new Map();
  const nonce=document.currentScript?.nonce||'';
+ async function recoverVersion(){
+  // Cached pages can reference files from a release that has since changed.
+  // Refresh only public app files; saved notes and sign-in are untouched.
+  if(document.querySelector('script[src*="device-bootstrap"]'))return;
+  try{
+   const response=await fetch('/assets/startup-manifest.json',{cache:'no-store'});
+   if(!response.ok)return;
+   const latest=await response.json(),current=document.getElementById('biblelens-app-styles')?.getAttribute('href');
+   if(latest.css?.path&&current&&latest.css.path!==current){
+    const url=new URL(location.href),build=latest.css.sha256;
+    if(build&&url.searchParams.get('build')!==build){url.searchParams.set('build',build);location.replace(url.href);}
+   }
+  }catch{/* Offline readers retain their data and can use Retry. */}
+ }
  function style(path){
   if(!styles.has(path))styles.set(path,new Promise((resolve,reject)=>{
-   const link=document.createElement('link');link.rel='stylesheet';link.href=path;
-   const fail=()=>{clearTimeout(timer);link.remove();styles.delete(path);reject(Error('Styles could not load. Check your connection and retry.'));};
-   const timer=setTimeout(fail,20000);
-   link.onload=()=>{clearTimeout(timer);resolve();};link.dataset.featureStyle=path;link.onerror=fail;const full=document.querySelector('link[data-feature-style="'+manifest.styles+'"]');if(path===manifest.studyStyles&&full)full.before(link);else document.head.append(link);
+   let attempt=0;
+   function request(){
+    const link=document.createElement('link');link.rel='stylesheet';link.href=path+(attempt?'?retry='+attempt:'');
+    let finished=false;
+    const fail=()=>{
+     if(finished)return;finished=true;clearTimeout(timer);link.remove();
+     if(++attempt<3){setTimeout(request,300*attempt);return;}
+     styles.delete(path);void recoverVersion();reject(Error('Styles could not load. Check your connection and retry.'));
+    };
+    const timer=setTimeout(fail,20000);
+    link.onload=()=>{if(finished)return;finished=true;clearTimeout(timer);resolve();};link.dataset.featureStyle=path;link.onerror=fail;
+    const full=document.querySelector('link[data-feature-style="'+manifest.styles+'"]');if(path===manifest.studyStyles&&full)full.before(link);else document.head.append(link);
+   }
+   request();
   }));
   return styles.get(path);
  }
- function load(name){
+ async function load(name){
   const stylesheet=name==='study'?manifest.studyStyles:manifest.styles;
-  if(loaded.has(name))return style(stylesheet);
+  // A failed stylesheet must not expose a partly initialized, unstyled reader.
+  await style(stylesheet);
+  if(loaded.has(name))return;
   if(!pending.has(name))pending.set(name,new Promise((resolve,reject)=>{
-   const script=document.createElement('script');const timer=setTimeout(()=>{script.remove();reject(Error('This screen could not start. Reload BibleLens to retry.'));},20000);script.src=manifest[name];if(nonce)script.nonce=nonce;
-   script.onload=()=>{clearTimeout(timer);script.remove();if(script.dataset.biblelensReady!=='true'){reject(Error('This screen could not start. Reload BibleLens to retry.'));return;}resolve();};
-   script.onerror=()=>{clearTimeout(timer);script.remove();pending.delete(name);reject(Error('This screen could not load. Check your connection and retry.'));};
-   document.head.append(script);
+   const script=document.createElement('script');
+   const fail=message=>{clearTimeout(timer);script.remove();pending.delete(name);void recoverVersion();reject(Error(message));};
+   const timer=setTimeout(()=>fail('This screen could not start. Reload BibleLens to retry.'),20000);script.src=manifest[name];if(nonce)script.nonce=nonce;
+   script.onload=()=>{clearTimeout(timer);script.remove();if(script.dataset.biblelensReady!=='true'){pending.delete(name);reject(Error('This screen could not start. Reload BibleLens to retry.'));return;}resolve();};
+   script.onerror=()=>fail('This screen could not load. Check your connection and retry.');document.head.append(script);
   }));
-  return Promise.all([pending.get(name),style(stylesheet)]).then(()=>{loaded.add(name);});
+  await pending.get(name);loaded.add(name);
  }
  function requirements(hash){
   const path=hash.split('?')[0];
