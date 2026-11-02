@@ -129,7 +129,7 @@ function toggleReaderVerseMark(book,chapter,verse,refresh=()=>{}){
    verseBookmarkActions.set(key,(verseBookmarkActions.get(key)||0)+1);
    persist();renderReader(true);renderPassageSaved();refresh();toast('Mark and note restored');return true;
   }});
- });
+ },{title:'Unmark verse?',accept:'Unmark'});
 }
 let activePassageKey=null;
 function passageKey(){return readingBook+':'+readingChapter;}

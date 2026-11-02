@@ -87,8 +87,9 @@ function toast(msg,{undo}={}){
  actionToastTimer=setTimeout(dismiss,typeof undo==='function'?12000:6000);
 }
 window.addEventListener('hashchange',()=>{clearTimeout(actionToastTimer);const notice=document.querySelector('#lens-action-toast');if(notice)notice.hidden=true;});
-function confirmNoteAction(message,action){
+function confirmNoteAction(message,action,{title='Delete Note?',accept='Delete Note'}={}){
  const dialog=$('#note-confirm-dialog');if(dialog.open)return null;
+ $('#note-confirm-title').textContent=title;$('#note-confirm-accept').textContent=accept;
  $('#note-confirm-message').textContent=message;
  let settled=false;
  function finish(confirmed){if(settled)return;settled=true;dialog.close();if(confirmed)action();}
