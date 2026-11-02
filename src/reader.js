@@ -223,8 +223,9 @@ document.addEventListener('click',ev=>{
 });
 function citationButton(ref,item){const p=typeof ref==='string'?readRef(ref):ref;if(!p)return '';const label=typeof ref==='string'?ref:ref.label||`${books[p.book]?.name||reading.name} ${p.chapter}:${p.verse}`;return `<button type="button" class="verse-citation"${item?` data-tone="${comparisonTone(item)}"`:``} data-cite="${p.book}/${p.chapter}/${p.verse}" data-cite-label="${esc(label)}"${item&&witnessLabel(item)?` data-cite-witness="${esc(item.witness)}" data-cite-summary="${esc(item.summary||item.text)}"`:``} aria-label="${esc(label)}" title="${esc(label)}" aria-haspopup="dialog">${esc(compactCitation(p,label))}</button>`;}
 function comparisonCitations(verse,items){const quoted=new Set(items.flatMap(item=>comparisonSides(item).map(side=>side.ref)));const refs=[{book:readingBook,chapter:readingChapter,verse,label:`${reading.name} ${readingChapter}:${verse}`},...items.flatMap(i=>i.refs||[])];return `<div class="summary-citations">${refs.filter((r,i)=>!quoted.has(r.label||`${books[r.book]?.name||reading.name} ${r.chapter}:${r.verse}`)&&refs.findIndex(other=>other.book===r.book&&other.chapter===r.chapter&&other.verse===r.verse)===i ).map(r=>citationButton(r,items[0])).join('')}</div>`;}
-function readerReferenceLinksEnabled(){return $('#reader-compare').value!=='none'&&document.querySelector?.('#lens-focus')?.getAttribute('aria-pressed')!=='false';}
 function scriptureHtml(v,edition,book=readingBook,ch=readingChapter){
+ function readerReferenceLinksEnabled(){return $('#reader-compare').value!=='none'&&globalThis.document?.querySelector?.('#lens-focus')?.getAttribute('aria-pressed')!=='false';}
+
  const text=v[edition]||'',red=v.redLetters?.[edition]||RED_LETTERS[`${book}:${ch}`]?.[v.n]?.[edition]||[];
  const ref=`${books[book]?.name||reading?.name} ${ch}:${v.n}`;
  const targets=edition==='kjv'&&book===readingBook&&ch===readingChapter&&readerReferenceLinksEnabled()?verseComparisons(v.n).flatMap(item=>{
