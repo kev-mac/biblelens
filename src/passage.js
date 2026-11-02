@@ -85,7 +85,9 @@ state.verseNotes=normalizeVerseRecords(state.verseNotes);
 for(const [key,item]of Object.entries(legacyVerseHighlights)){if(item.text||item.title)state.verseNotes[key]=mergePersonalNote(state.verseNotes[key],item);}
 if(hadLegacyVerseHighlights)persist();
 const verseBookmarkActions=new Map();
+const readerUnmarkActions=new Map();
 if(typeof window!=='undefined')window.addEventListener('biblelens:statechange',event=>{
+ for(const [key,action]of readerUnmarkActions)if(state.verseBookmarks[key]||state.verseNotes[key])readerUnmarkActions.delete(key);
  const {before,data}=event.detail||{};if(!before||!data)return;
  for(const [key,revision]of verseBookmarkActions)if(JSON.stringify(before.verseBookmarks?.[key])!==JSON.stringify(data.verseBookmarks?.[key]))verseBookmarkActions.set(key,revision+1);
 });
@@ -108,6 +110,26 @@ function toggleVerseMark(kind,book,chapter,verse){
   persist();renderReader(true);renderPassageSaved();toast(saved?'Bookmark removed. Notes kept.':'Bookmark restored');return true;
  }});
  return saved;
+}
+function toggleReaderVerseMark(book,chapter,verse,refresh=()=>{}){
+ const key=`${book}:${chapter}:${verse}`;
+ if(!state.verseBookmarks[key]){toggleVerseMark('bookmark',book,chapter,verse);refresh();return;}
+ const originalMark=JSON.stringify(state.verseBookmarks[key]),originalNote=JSON.stringify(state.verseNotes[key]);
+ const hasHighlights=normalizeTextHighlights(state.verseBookmarks[key].highlights).length>0;
+ confirmNoteAction(hasHighlights?'Unmark this verse? Its note and highlights will also be removed.':'Unmark this verse? Its note will also be removed.',()=>{
+  if(JSON.stringify(state.verseBookmarks[key])!==originalMark||JSON.stringify(state.verseNotes[key])!==originalNote){toast('This verse changed while the warning was open. Review it and try again.');return;}
+  const action={};readerUnmarkActions.set(key,action);
+  verseBookmarkActions.set(key,(verseBookmarkActions.get(key)||0)+1);
+  delete state.verseBookmarks[key];delete state.verseNotes[key];
+  persist();renderReader(true);renderPassageSaved();refresh();
+  toast('Verse unmarked. Note removed.',{undo:()=>{
+   if(readerUnmarkActions.get(key)!==action||state.verseBookmarks[key]||state.verseNotes[key]){toast('This verse changed since that action. Nothing was undone.');return false;}
+   readerUnmarkActions.delete(key);state.verseBookmarks[key]=JSON.parse(originalMark);
+   if(originalNote!==undefined)state.verseNotes[key]=JSON.parse(originalNote);
+   verseBookmarkActions.set(key,(verseBookmarkActions.get(key)||0)+1);
+   persist();renderReader(true);renderPassageSaved();refresh();toast('Mark and note restored');return true;
+  }});
+ });
 }
 let activePassageKey=null;
 function passageKey(){return readingBook+':'+readingChapter;}

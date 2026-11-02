@@ -1,4 +1,16 @@
 import acceptedRulings from '../data/rc1-rulings.json' with {type:'json'};
+import books from '../data/books.json' with {type:'json'};
+const bookOrder=new Map(books.flatMap(book=>[[book.name.toLowerCase(),book.id],...(book.name==='Psalms'?[['psalm',book.id]]:[])]));
+export function evidenceReferenceKey(record){
+ for(const ref of [record.ref,...(record.refs||[])]){
+  if(ref&&typeof ref==='object'&&Number.isInteger(ref.book))return [ref.book,ref.chapter||0,ref.verse||ref.first||0];
+  const match=/^(.+?)\s+(\d+)(?::(\d+))?/.exec(typeof ref==='string'?ref:ref?.label||'');
+  const book=match&&bookOrder.get(match[1].toLowerCase());
+  if(book!==undefined&&book!==null)return [book,Number(match[2]),Number(match[3]||0)];
+ }
+ return [Number.MAX_SAFE_INTEGER,0,0];
+}
+export function compareEvidenceReferences(a,b){const x=evidenceReferenceKey(a),y=evidenceReferenceKey(b);return x[0]-y[0]||x[1]-y[1]||x[2]-y[2]||String(a.id||a.title||'').localeCompare(String(b.id||b.title||''));}
 const rulings=new Map(acceptedRulings.rulings.map(row=>[row.id,row.label]));
 // Only explicit owner-accepted rulings override the original status display.
 export function debateVerdict(record) {
@@ -39,6 +51,7 @@ export function debatePage(records, params) {
   if(pool.length){const index=Math.floor(stamp/86400000);rows=[pool[((index%pool.length)+pool.length)%pool.length]];}
  }
  const ids=params.getAll('id');if(ids.length)rows=rows.filter(record=>ids.includes(record.id));
+ rows.sort(compareEvidenceReferences);
  const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil(rows.length/24)-1)));
  return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts, translationTotal:records.filter(record=>(record.tags||[record.tag]).includes('T')).length};
 }

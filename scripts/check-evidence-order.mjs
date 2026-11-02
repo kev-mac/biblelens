@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {debatePage,compareEvidenceReferences,evidenceReferenceKey} from '../worker/debates.mjs';
+const records=Array.from({length:30},(_,i)=>({id:'genesis-'+i,ref:'Genesis '+(30-i)+':2',mode:'science',status:'Context',title:'A question'}));
+records.push(...['1 Samuel 1:1','2 Samuel 1:1','Psalms 2:3','Matthew 1:1','Genesis 2:10','Genesis 2:3','Unknown reference'].map((ref,i)=>({id:'other-'+i,ref,mode:'science',status:'Context'})));
+const pages=[0,1].flatMap(page=>debatePage(records,new URLSearchParams({mode:'science',page:String(page)})).records);
+assert.equal(pages.length,records.length);assert.equal(new Set(pages.map(row=>row.id)).size,records.length);
+for(let i=1;i<pages.length;i++)assert(compareEvidenceReferences(pages[i-1],pages[i])<=0,'Ordering remains canonical across page boundaries');
+assert.deepEqual(pages.slice(1,4).map(row=>row.ref),['Genesis 2:2','Genesis 2:3','Genesis 2:10']);
+assert(pages.findIndex(row=>row.ref.startsWith('1 Samuel'))<pages.findIndex(row=>row.ref.startsWith('2 Samuel')));
+assert.equal(pages.at(-1).ref,'Unknown reference');
+assert.deepEqual(evidenceReferenceKey({ref:{book:42,chapter:3,first:16}}),[42,3,16]);
+assert.deepEqual(evidenceReferenceKey({ref:'Psalm 2:3'}),[18,2,3]);
+console.log('PASS: numeric book/chapter/verse ordering before pagination, numbered books, Psalm alias, structured references and unknown references last.');

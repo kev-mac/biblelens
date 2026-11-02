@@ -186,10 +186,27 @@
   }
   oldHeading.remove();for(const child of [...host.children])content.append(child);host.replaceChildren(header,content);
  }
+ function evidenceCollectionLinks(){
+  const collections=[['History','#questions?mode=history'],['Science','#questions?mode=science'],['Text Comparisons','#questions?mode=text'],['Translations','#questions?filter=T'],['Timeline','#timeline'],['Contradictions','#questions']];
+  const debates=document.querySelector('#debates-view.directory-hub .filter-carousel');
+  if(debates)for(const [name,href]of collections.slice(4)){
+   if(debates.querySelector('[data-evidence-collection="'+name+'"]'))continue;
+   const link=document.createElement('a');link.className='filter-pill';link.dataset.evidenceCollection=name;link.href=href;link.textContent=name;
+   if(location.hash===href){link.classList.add('active');link.setAttribute('aria-current','page');}
+   debates.append(link);
+  }
+  const timeline=document.querySelector('#timeline-view .timeline-controls');
+  if(timeline&&!document.getElementById('timeline-collection-links')){
+   const row=document.createElement('nav');row.id='timeline-collection-links';row.className='evidence-collection-links';row.setAttribute('aria-label','Evidence collections');
+   for(const [name,href]of collections){const link=document.createElement('a');link.href=href;link.textContent=name;if(name==='Timeline')link.setAttribute('aria-current','page');row.append(link);}
+   timeline.after(row);
+  }
+ }
  function enhance(){
   mount('characters-view','people');mount('places-view','places');mount('commandments-view','commandments');mount('debates-view','evidence');
   if(/^#evidence\//.test(location.hash))mount('evidence-view','evidence');
   for(const header of document.querySelectorAll('.stories-header,.lens-page-heading,#lensReadingBar')){
+   if(header.closest('#notebook-view')){header.querySelector(':scope > [data-open-settings]')?.remove();continue;}
    if(header.querySelector(':scope > [data-open-settings]'))continue;
    const settings=document.createElement('button');settings.type='button';settings.className='directory-settings-open';settings.dataset.openSettings='';settings.setAttribute('aria-label','Settings');settings.setAttribute('aria-haspopup','dialog');settings.setAttribute('aria-controls','reader-settings');settings.innerHTML=document.querySelector('#lens-settings').innerHTML;header.append(settings);
   }
@@ -205,6 +222,7 @@
     card.querySelector('.commandment-number')?.classList.add('passage-badge');
    }
   }
+  evidenceCollectionLinks();
   // Keep the real footer within the People scroller, outside its alphabet dock.
   const footer=document.querySelector('footer'),people=document.getElementById('characters-view');
   const destination=people&&!people.hidden&&people.classList.contains('directory-hub')?people.querySelector('.stories-content'):null;
