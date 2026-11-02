@@ -2,7 +2,7 @@ import {neutralTree} from './b4-neutral.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-import {debatePage,debateVerdict} from '../worker/debates.mjs';
+import {debatePage,debateVerdict,compareEvidenceReferences} from '../worker/debates.mjs';
 import {exploreFeed} from './explore-feed.mjs';
 const records=JSON.parse(fs.readFileSync('data/evidence.json'));
 const original=JSON.stringify(records);
@@ -11,7 +11,7 @@ for(const record of records){const expected=['science','history'].includes(recor
 for(const mode of ['text','science','history']){
  const included=records.filter(record=>mode==='text'?!['science','history'].includes(record.mode):record.mode===mode);
  const rows=[];for(let page=0;page<Math.ceil(included.length/24);page++)rows.push(...debatePage(records,new URLSearchParams({mode,page})).records);
- assert.deepEqual(rows.map(row=>row.id),included.map(row=>row.id),'Pagination loses no records');
+ assert.deepEqual(rows.map(row=>row.id),[...included].sort(compareEvidenceReferences).map(row=>row.id),'Pagination preserves every record in canonical scripture order');
  for(const status of new Set(included.map(record=>record.status))){const page=debatePage(records,new URLSearchParams({mode,status}));assert.equal(page.total,included.filter(record=>record.status===status).length);assert(page.records.every(record=>record.status===status));}
 }
 for(const filter of ['Q','T','commandments'])assert(debatePage(records,new URLSearchParams({filter})).total>0,filter);
