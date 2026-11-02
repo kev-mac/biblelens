@@ -19,8 +19,8 @@
   }
   function move(index){row.scrollTo({left:stops[Math.max(0,Math.min(stops.length-1,index))]||0,behavior:reducedMotion()?'instant':'smooth'});}
   function measure(){
-   const max=Math.max(0,row.scrollWidth-row.clientWidth),first=cards[0]?.offsetLeft||0;
-   stops=[...new Set(cards.map(card=>Math.min(max,Math.max(0,card.offsetLeft-first))))];
+   const max=Math.max(0,row.scrollWidth-row.clientWidth),first=cards[0]?.getBoundingClientRect().left||0;
+   stops=[...new Set(cards.map(card=>Math.min(max,Math.max(0,card.getBoundingClientRect().left-first))))];
    pager.replaceChildren(...stops.map((stop,index)=>{const button=document.createElement('button');button.type='button';button.className='ux-lane-page';button.setAttribute('aria-label','Show '+cards[index].querySelector('strong').textContent+' and following collections');button.innerHTML='<span aria-hidden="true"></span>';button.onclick=()=>move(index);return button;}));
    pager.hidden=stops.length<=1;sync();
   }

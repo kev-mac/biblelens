@@ -3266,7 +3266,8 @@ html body.lens-app #lensMasthead .lens-primary a > span {
  html body.lens-app #explore-view .ux-explore-filters{margin-top:0;margin-bottom:8px;padding-top:4px;padding-bottom:4px;}
  html body.lens-app #explore-view .ux-topic-section{margin-bottom:4px;}
  html body.lens-app #explore-view .ux-lane-heading{min-height:24px;margin-bottom:4px;}
- html body.lens-app #explore-view .ux-topic-row{padding-top:4px;padding-bottom:8px;}
+ /* Let the last tile reach the same left snap line as the first. */
+ html body.lens-app #explore-view .ux-topic-row{padding-top:4px;padding-bottom:8px;padding-right:max(var(--lane-gutter),calc(100% + var(--lane-gutter) - var(--lane-card-width)));}
  html body.lens-app #explore-view a.ux-topic{
   height:auto;min-height:max(9.6rem,clamp(172px,calc((100svh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 423px)/2),210px));
   padding:12px;gap:8px;
