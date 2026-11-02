@@ -29,10 +29,11 @@ export function createDirectoryLetterRail(host, list, label, onJump) {
   const top = Math.max(64, ...[...controls].map(node => node.getBoundingClientRect().bottom)) + 8;
   rail.style.setProperty('--letter-rail-top', top + 'px');
   const jumpTop = Math.max(64, host.querySelector('.stories-header')?.getBoundingClientRect().bottom || 0) + 8;
-  host.style.setProperty('--directory-letter-top', jumpTop + 'px');
+  const pageOffset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+  host.style.setProperty('--directory-letter-top', Math.max(0, jumpTop - pageOffset) + 'px');
   if (pointer !== null) return;
   const sections = [...list.querySelectorAll('[data-directory-letter],.ux-letter-heading[data-letter]')];
-  const current = sections.filter(node => node.getBoundingClientRect().top <= top + 16).at(-1) || sections[0];
+  const current = sections.filter(node => node.getBoundingClientRect().top <= top + 24).at(-1) || sections[0];
   if (current) setActive(current.dataset.directoryLetter || current.dataset.letter);
  }
  const schedule = () => { if (!frame) frame = requestAnimationFrame(measure); };
