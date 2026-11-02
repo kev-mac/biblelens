@@ -52,6 +52,8 @@
  const emptyToast=document.createElement('div');emptyToast.id='ux-empty-verse-toast';emptyToast.setAttribute('role','status');emptyToast.hidden=true;document.body.append(emptyToast);
  let emptyRequest=0,actionScroll=0;
  function dismissEmpty(){emptyStrip.hidden=true;if(!inspectorSheet.open)document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));}
+ const emptyClose=document.createElement('button');emptyClose.type='button';emptyClose.className='ux-verse-actions-close';emptyClose.setAttribute('aria-label','Close verse actions');emptyClose.title='Close verse actions';emptyClose.innerHTML='<span aria-hidden="true">×</span>';
+ emptyClose.onclick=()=>{++emptyRequest;dismissEmpty();el('verse-'+activeVerse)?.querySelector('.verse-num')?.focus({preventScroll:true});};
  function showVerseActions(){
   if(inspectorSheet.open)inspectorSheet.close();
   const ready=comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready');
@@ -60,7 +62,7 @@
   emptyToast.textContent=refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+(ready?count?` · ${count} linked ${count===1?'record':'records'}`:'':failed?' · Some evidence could not load.':' · Loading linked records…');emptyToast.hidden=false;
   const context=document.createElement('button');context.type='button';context.className='lens-button ux-context-action';
   context.dataset.contextEvidence='';context.textContent=ready&&count?'✦ View evidence':'Explore chapter context';
-  emptyStrip.replaceChildren(emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true),context);emptyStrip.hidden=false;
+  emptyStrip.replaceChildren(emptyClose,emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true),context);emptyStrip.hidden=false;
   actionScroll=window.scrollY;
   el('verse-'+activeVerse)?.classList.add('lens-active-verse');
  }
