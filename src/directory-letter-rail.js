@@ -28,7 +28,8 @@ export function createDirectoryLetterRail(host, list, label, onJump) {
   const controls = host.querySelectorAll('.stories-header,.characters-search-box,.filter-carousel');
   const top = Math.max(64, ...[...controls].map(node => node.getBoundingClientRect().bottom)) + 8;
   rail.style.setProperty('--letter-rail-top', top + 'px');
-  host.style.setProperty('--directory-letter-top', top + 'px');
+  const jumpTop = Math.max(64, host.querySelector('.stories-header')?.getBoundingClientRect().bottom || 0) + 8;
+  host.style.setProperty('--directory-letter-top', jumpTop + 'px');
   if (pointer !== null) return;
   const sections = [...list.querySelectorAll('[data-directory-letter],.ux-letter-heading[data-letter]')];
   const current = sections.filter(node => node.getBoundingClientRect().top <= top + 16).at(-1) || sections[0];
@@ -43,7 +44,7 @@ export function createDirectoryLetterRail(host, list, label, onJump) {
   if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = enabled[Math.max(0, index - 1)];
   if (event.key === 'Home') next = enabled[0];
   if (event.key === 'End') next = enabled.at(-1);
-  if (next) { event.preventDefault(); next.focus({preventScroll:true}); next.click(); }
+  if (next) { event.preventDefault(); next.click(); next.focus({preventScroll:true}); }
  };
  function drag(event) {
   const button = buttons.find(button => {

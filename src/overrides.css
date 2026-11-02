@@ -3284,9 +3284,9 @@ html body.lens-app #chapter-text .story-illustration figcaption{display:block;ma
 /* Keep letter browsing beside both directories without covering their cards. */
 html body.lens-app #main :is(#characters-view,#places-view).directory-hub .stories-content{padding-right:52px;}
 html body.lens-app .directory-letter-rail{position:fixed;z-index:45;top:var(--letter-rail-top,180px);bottom:calc(92px + env(safe-area-inset-bottom,0px));right:max(env(safe-area-inset-right,0px),calc((100vw - 960px)/2));width:44px;max-height:572px;display:flex;flex-direction:column;gap:0;margin:0;padding:0;border:0;background:var(--lens-paper);border-radius:12px;touch-action:none;user-select:none;-webkit-user-select:none;}
-html body.lens-app .directory-letter-rail button{display:grid;place-items:center;flex:1;min-width:44px;width:44px;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:5px;background:none;color:var(--directory-accent,var(--lens-link));font:600 .7rem/1 var(--ui-font);touch-action:none;}
+html body.lens-app #main .directory-letter-rail button{display:grid;place-items:center;flex:1;min-width:44px;width:44px;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:5px;background:none;color:var(--directory-accent,var(--lens-link));font:600 .7rem/1 var(--ui-font);touch-action:none;}
 html body.lens-app .directory-letter-rail button:disabled{opacity:.25;}
 html body.lens-app .directory-letter-rail button[aria-pressed=true]{background:var(--lens-link-soft);font-weight:800;}
 html body.lens-app .directory-letter-rail button:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-2px;}
-html body.lens-app #places-view [data-directory-letter]{scroll-margin-top:var(--directory-letter-top,180px);}
+html body.lens-app #main :is(#characters-view,#places-view) :is(.ux-letter-heading,[data-directory-letter]){scroll-margin-top:var(--directory-letter-top,72px);}
 html body.lens-app :is(#characters-view,#places-view)[hidden] .directory-letter-rail{display:none;}
