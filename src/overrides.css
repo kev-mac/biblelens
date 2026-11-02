@@ -3277,5 +3277,6 @@ html body.lens-app #lensMasthead .lens-primary a > span {
 }
 
 /* Chapter names identify the chapter; artwork labels belong below the image. */
-html body.lens-app #chapter-text h2.chapter-subtitle{font:600 1.15rem/1.45 var(--ui-font);color:var(--lens-ink);margin:0;}
+html body.lens-app #chapter-text .ux-reader-eyebrow{font:700 .875rem/1.5 var(--ui-font);color:var(--lens-muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 8px;}
+html body.lens-app #chapter-text h2.chapter-subtitle{font:400 .85rem/1.5 var(--ui-font);color:var(--lens-muted);margin:0;}
 html body.lens-app #chapter-text .story-illustration figcaption{display:block;margin:8px 0 0;font:italic 400 .85rem/1.5 var(--ui-font);color:var(--lens-muted);text-align:center;overflow-wrap:anywhere;}
