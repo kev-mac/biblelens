@@ -3188,7 +3188,7 @@ html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){m
 /* Approved mobile review: retain the palette and collection tiles. */
 html body.lens-app #lensMasthead nav.lens-primary{grid-template-columns:repeat(3,minmax(0,1fr))}
 /* Explore swimlanes: readable cards and a visible next-card edge invite browsing. */
-html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:clamp(150px,calc((100vw - 74px)/2),175px);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
+html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:max(190px,11rem);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
 html body.lens-app.dark #explore-view{--lane-surface:rgba(20,26,35,.72);--lane-copy:#AAB6C8;--lane-ink:#F8FAFC;--lane-glass:rgba(255,255,255,.04)}
 html body.lens-app #explore-view>h1{border-left-width:4px;border-radius:2px}
 html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:none;margin:12px calc(-1 * var(--lane-gutter)) 24px 0;padding:8px var(--lane-gutter) 12px 0}
@@ -3206,21 +3206,21 @@ html body.lens-app #explore-view a.ux-topic:active{transform:scale(.975)}
 html body.lens-app #explore-view a.ux-topic:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-3px}
 html body.lens-app #explore-view .ux-topic>svg{box-sizing:border-box;flex:none;width:38px;height:38px;padding:8px;margin:0;border-radius:12px;background:rgba(var(--tile-rgb),.12);color:var(--topic);filter:none;box-shadow:0 0 18px rgba(var(--tile-rgb),.12)}
 html body.lens-app #explore-view .ux-tile-copy{gap:7px}
-html body.lens-app #explore-view .ux-tile-copy strong{font:700 1.125rem/1.25 var(--ui-font);letter-spacing:-.4px;color:var(--lane-ink);white-space:normal;overflow-wrap:normal}
+html body.lens-app #explore-view .ux-tile-copy strong{font:700 1.125rem/1.25 var(--ui-font);letter-spacing:-.4px;color:var(--lane-ink);white-space:normal;overflow-wrap:anywhere}
 html body.lens-app #explore-view .ux-tile-copy small{font:400 0.75rem/1.45 var(--ui-font);letter-spacing:0;white-space:normal;color:var(--lane-copy);margin:0}
 html body.lens-app #explore-view .ux-count{top:18px;right:12px;max-width:calc(100% - 60px);font:500 0.6875rem/1.4 var(--ui-font);padding:3px 6px;background:rgba(var(--tile-rgb),.17);color:var(--topic);border-radius:20px}
 html body.lens-app #explore-view .ux-browse{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;margin-top:auto;font:400 0.6875rem/1.4 var(--ui-font);color:var(--lane-copy)}
 html body.lens-app #explore-view .ux-browse svg{width:14px;height:14px;flex:none}
 html body.lens-app #explore-view .ux-lane-pages{display:flex;justify-content:center;align-items:center;gap:0;min-height:32px;margin-top:-12px}
 html body.lens-app #explore-view .ux-lane-pages[hidden]{display:none}
-html body.lens-app #explore-view .ux-lane-page{display:grid;place-items:center;width:36px;min-width:36px;min-height:44px;padding:0;border:0;background:none;color:var(--lane-copy)}
+html body.lens-app #explore-view .ux-lane-page{display:grid;place-items:center;width:24px;min-width:24px;min-height:44px;padding:0;border:0;background:none;color:var(--lane-copy)}
 html body.lens-app #explore-view .ux-lane-page span{width:5px;height:5px;border-radius:8px;background:currentColor;opacity:.4;transition:width .18s,opacity .18s}
 html body.lens-app #explore-view .ux-lane-page[aria-current=true] span{width:18px;opacity:1}
 html body.lens-app #explore-view .ux-manuscripts-intro{font:400 .85rem/1.5 var(--ui-font);color:var(--lane-copy);margin:0 0 14px}
 html body.lens-app #explore-view [data-topic=text]{--tile-rgb:129,140,248}
 html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(246,247,251,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 html body.lens-app.dark:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(11,14,20,.76);border-top-color:rgba(255,255,255,.08)}
-@media(pointer:coarse){html body.lens-app #explore-view .ux-lane-page{width:44px;min-width:44px}}
+@media(pointer:coarse){html body.lens-app #explore-view .ux-lane-page{width:24px;min-width:24px}}
 @media(prefers-reduced-motion:reduce){html body.lens-app #explore-view :is(a.ux-topic,.ux-lane-page span,.ux-explore-filters button){transition:none}html body.lens-app #explore-view a.ux-topic:is(:hover,:active){transform:none}}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence{margin-left:6px}
 html body.lens-app #ux-empty-verse-actions{width:360px;padding:10px 12px;max-height:calc(100dvh - 180px);overflow:auto}
