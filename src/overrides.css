@@ -3163,7 +3163,7 @@ html body.lens-app .lens-page-heading>.directory-settings-open{position:absolute
 /* Verse numbers occupy their own gutter; wrapped scripture keeps one left edge. */
 html body.lens-app #chapter-text .verse-body,
 html body.lens-app #chapter-text:has([data-lens-inspect]) .verse-body {
- display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:8px;align-items:start;padding-left:0;
+ display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:4px;align-items:start;padding-left:0;
 }
 html body.lens-app #chapter-text .verse-body > [data-scripture] { display:block;min-width:0; }
 html body.lens-app #chapter-text .verse-num,
