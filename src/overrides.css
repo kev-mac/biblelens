@@ -3282,11 +3282,26 @@ html body.lens-app #chapter-text h2.chapter-subtitle{font:400 .85rem/1.5 var(--u
 html body.lens-app #chapter-text .story-illustration figcaption{display:block;margin:8px 0 0;font:italic 400 .85rem/1.5 var(--ui-font);color:var(--lens-muted);text-align:center;overflow-wrap:anywhere;}
 
 /* Keep letter browsing beside both directories without covering their cards. */
-html body.lens-app #main :is(#characters-view,#places-view).directory-hub .stories-content{padding-right:52px;}
+html body.lens-app #main :is(#characters-view,#places-view).directory-hub .stories-content{padding-right:16px;}
+html body.lens-app .directory-letter-control{display:contents;}
+html body.lens-app #main .directory-letter-edge{position:fixed;z-index:44;top:var(--letter-rail-top,180px);bottom:calc(92px + env(safe-area-inset-bottom,0px));right:max(env(safe-area-inset-right,0px),calc((100vw - 960px)/2));width:22px;min-width:22px;height:auto;margin:0;padding:0;border:0;background:transparent;box-shadow:none;touch-action:none;user-select:none;-webkit-user-select:none;}
+html body.lens-app .directory-letter-edge:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-3px;background:var(--lens-link-soft);}
 html body.lens-app .directory-letter-rail{position:fixed;z-index:45;top:var(--letter-rail-top,180px);bottom:calc(92px + env(safe-area-inset-bottom,0px));right:max(env(safe-area-inset-right,0px),calc((100vw - 960px)/2));width:44px;max-height:572px;display:flex;flex-direction:column;gap:0;margin:0;padding:0;border:0;background:var(--lens-paper);border-radius:12px;touch-action:none;user-select:none;-webkit-user-select:none;}
 html body.lens-app #main .directory-letter-rail button{display:grid;place-items:center;flex:1;min-width:44px;width:44px;min-height:0;height:auto;margin:0;padding:0;border:0;border-radius:5px;background:none;color:var(--directory-accent,var(--lens-link));font:600 .7rem/1 var(--ui-font);touch-action:none;}
 html body.lens-app .directory-letter-rail button:disabled{opacity:.25;}
 html body.lens-app .directory-letter-rail button[aria-pressed=true]{background:var(--lens-link-soft);font-weight:800;}
 html body.lens-app .directory-letter-rail button:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-2px;}
+html body.lens-app .directory-letter-rail[hidden],html body.lens-app .directory-letter-preview[hidden]{display:none;}
+html body.lens-app .directory-letter-preview{position:fixed;z-index:46;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:96px;height:96px;border:1px solid var(--lens-rule);border-radius:24px;background:var(--lens-paper);color:var(--directory-accent,var(--lens-link));box-shadow:0 8px 32px #0005;font:700 3rem/1 var(--ui-font);pointer-events:none;}
 html body.lens-app #main :is(#characters-view,#places-view) :is(.ux-letter-heading,[data-directory-letter]){scroll-margin-top:var(--directory-letter-top,72px);}
 html body.lens-app :is(#characters-view,#places-view)[hidden] .directory-letter-rail{display:none;}
+html body.lens-app :is(#characters-view,#places-view)[hidden] :is(.directory-letter-edge,.directory-letter-preview){display:none;}
+
+/* Saved passages show their text before the note and compact labeled actions. */
+html body.lens-app #notebook-view .lens-note-heading{display:block;}
+html body.lens-app #notebook-view .lens-note-heading .marked-verse-text{margin:12px 0 0;font:400 1rem/1.65 var(--ui-font);color:var(--lens-ink);}
+html body.lens-app #notebook-view .lens-note-save-status{display:block;margin:0;font-size:.75rem;}
+html body.lens-app #notebook-view .lens-note-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:8px;margin-top:12px;}
+html body.lens-app #notebook-view .lens-note-actions .lens-note-action{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:6px;min-width:0;min-height:60px;height:auto;margin:0;padding:6px 2px;border:0;background:none;box-shadow:none;color:var(--lens-muted);font:500 .72rem/1.35 var(--ui-font);text-align:center;text-decoration:none;}
+html body.lens-app #notebook-view .lens-note-action svg{display:block;flex:none;width:22px;height:22px;}
+html body.lens-app #notebook-view .lens-note-actions [data-lens-delete-note]{color:var(--lens-danger,#f5a5a0);}
