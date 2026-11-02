@@ -11,6 +11,7 @@ const original=globalThis.fetch;let calls=0;
 globalThis.fetch=async()=>{calls++;throw Error('Must stay offline');};
 async function ask(message,history=[]){const response=await worker.fetch(new Request('https://scripture.test/api/chat',{method:'POST',body:JSON.stringify({message,history})}),{},{});assert.equal(response.status,200);return response.json();}
 try{
+ const location=await ask('in what verse is cain and abel');assert.equal(location.mode,'named-passage');assert.match(location.answer,/Genesis 4/);assert(location.sources.some(source=>source.url==='#read/0/4/2'));assert(!location.answer.includes('Cain says'));
  for(const question of ['can we eat shark','Can I eat salmon?','Is tuna kosher?','Can we eat shrimp?','Can I eat catfish?']){
   const result=await ask(question);assert.equal(result.mode,'dietary',question);assert.match(result.answer,/both fins and scales/);assert.match(result.answer,/Torah/);assert.match(result.answer,/Christians/);assert.equal(result.modelEligible,false);assert(result.sources.some(s=>s.url==='#read/2/11/9'));assert(result.sources.some(s=>s.url==='#read/4/14/10'));assert(!result.answer.includes('honey'));assert(result.details.includes('classification'));
  }

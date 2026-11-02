@@ -34,7 +34,7 @@ try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=
  for(const art of additions){
   const html=context.readerChapterIllustrations(data,art.afterVerse);
   assert(html.includes(art.src));assert(html.includes('loading="lazy"'));assert(html.includes('Imagined scene: '));
-  assert(!/<h[1-6]|<figcaption|title=/.test(html),'Chapter art has no visible title or caption');
+  assert(!/<h[1-6]|title=/.test(html),'Chapter art has no heading above the image');assert(html.indexOf('<figcaption>')>html.indexOf('<img'),'The description follows the image');
   const result=await get(art.src);assert.equal(result.status,200);assert.equal(result.headers.get('content-type'),'image/webp');
   const bytes=Buffer.from(await result.arrayBuffer());assert(bytes.length<250000,'Keep phone downloads small');
   assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
@@ -52,4 +52,4 @@ assert.throws(()=>validateChapterImages(missing,original,headings,stories),/Gene
 const invalid=structuredClone(images);invalid['0:2'][0].afterVerse=999;
 assert.throws(()=>validateChapterImages(invalid,original,headings,stories),/Unknown image verse/);
 assert(source.includes('${readerChapterIllustrations(reading,v.n)}'),'Artwork follows a complete verse');
-console.log(`PASS: all 211 Genesis–Joshua chapters illustrated; ${existingChapters} have existing Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, title-free accessible art, packaged image parity and fail-closed coverage.`);
+console.log(`PASS: all 211 Genesis–Joshua chapters illustrated; ${existingChapters} have existing Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, captioned accessible art, packaged image parity and fail-closed coverage.`);

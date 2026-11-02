@@ -146,6 +146,23 @@ async function violenceReply(message,edition='kjv'){
  return referenceResponse('No. Do not hit or abuse another person. A narrative describing violence does not give you permission to do it.',primary.slice(0,3),reference,{mode:'permission'});
 }
 
+// Location questions use the story catalog's passage instead of an unrelated annotation.
+async function namedStoryReply(message,edition='kjv'){
+ if(!/\b(?:what|which)\s+(?:verse|chapter|book)|\bwhere\b/i.test(message))return null;
+ const text=normalizedName(message),scope=namedBooks(message).map(book=>book.id);
+ const matches=CATEGORY_STORIES.flatMap(group=>group.stories.map(story=>({...story,book:BOOKS.find(book=>book.name===group.book)?.id}))).filter(story=>{
+  const title=normalizedName(story.title).replace(/^the /,'');
+  return title.split(' ').length>=2&&new RegExp('\\b'+escapedPattern(title)+'\\b').test(text)&&(!scope.length||scope.includes(story.book));
+ }).sort((a,b)=>b.title.length-a.title.length);
+ if(!matches.length)return null;
+ const story=matches[0],refs=queryReferences(story.passage),primary=[];
+ for(const ref of refs){const data=await chapter(ref.book,ref.chapter);if(!data)continue;const first=ref.first||1,last=ref.last||first;
+  for(const verse of data.verses.filter(verse=>verse.n>=first&&verse.n<=Math.min(last,first+2)))if(scriptureText(verse,edition))primary.push({label:data.name+' '+ref.chapter+':'+verse.n,text:scriptureText(verse,edition),url:'#read/'+ref.book+'/'+ref.chapter+'/'+verse.n,kind:scriptureKind(edition)});
+ }
+ if(!primary.length)return null;
+ return referenceResponse(story.title+' is found in '+story.passage+'.',primary,[],{mode:'named-passage'});
+}
+
 // Named sections need their indexed location, rather than literal word matches.
 async function namedPassageReply(message,edition='kjv'){
  if(!/\bsermon\s+on\s+(?:the\s+)?mount\b/i.test(message))return null;
@@ -164,7 +181,7 @@ async function answerIntent(message,previous,edition='kjv'){
  const intent=questionIntent(message);
  if(intent.violence)return violenceReply(message,edition);
  const family=familyQuestion(message,previous);if(family)return familyReply(family,edition);
- if(!queryReferences(message).length){const named=await namedPassageReply(message,edition);if(named)return named;}
+ if(!queryReferences(message).length){const named=await namedStoryReply(message,edition)||await namedPassageReply(message,edition);if(named)return named;}
  // Explicit passages retain priority over topic routing. Carry the food subject
  // only through a short dependent follow-up, never into a new named subject.
  if(!queryReferences(message).length){

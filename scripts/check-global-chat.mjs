@@ -38,3 +38,12 @@ console.log('PASS: unique source chips appear with the answer; repeated excerpts
 assert(linked.includes('class="verse-link"'));assert(!linked.includes('class="verse-citation'));assert(c.sourceLinkHtml({url:'#read/1/8/3'}).includes('>Exo 8:3</a>'));
 
 assert(c.chatTextHtml('Exodus 8:3: “Quoted text”').includes('href="#read/1/8/3"'));
+
+// A host challenge or expired page can return HTML to the JSON endpoint.
+const nodes=new Map();const nodeFor=selector=>{if(!nodes.has(selector))nodes.set(selector,{value:'',disabled:false,setAttribute(){},focus(){}});return nodes.get(selector);};
+nodeFor('#chat-input').value='in what verse is cain and abel';nodeFor('#reader-edition').value='kjv';let parsedHtml=false;
+const failure={$:nodeFor,chatBusy:false,chatMessages:[],readingBook:0,readingChapter:1,view:'chat',renderChat(){},AbortSignal,fetch:async()=>({ok:true,headers:{get:()=> 'text/html'},json:async()=>{parsedHtml=true;throw Error('Unexpected token <');}}),document:{querySelector:()=>null},window:{matchMedia:()=>({matches:true})}};
+vm.createContext(failure);vm.runInContext(source.split('\n').find(line=>line.startsWith("$('#chat-form').onsubmit=")),failure);
+await nodeFor('#chat-form').onsubmit({preventDefault(){}});
+assert.equal(parsedHtml,false);assert.equal(nodeFor('#chat-input').value,'in what verse is cain and abel');assert.match(nodeFor('#chat-status').textContent,/question is preserved/);assert.equal(nodeFor('#chat-send').disabled,false);
+console.log('PASS: non-JSON answer responses preserve the question and show a readable retry message.');
