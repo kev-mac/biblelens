@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-03",
+  "tool": "image_gen.imagegen",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "policy": "Actual approved identity files supplied for the Saul edit; other two scenes contain no identifiable recurring people. Genesis 7 is style only. Superseded assets retained.",
+  "images": [
+    {
+      "src": "src/assets/story-saul-and-the-medium-at-endor-saul-s-death-v2.webp",
+      "supersedes": "src/assets/story-saul-and-the-medium-at-endor-saul-s-death-v1.webp",
+      "original": "/workspace/generated_images/exec-a7f2fe68-e2b7-4295-ba41-ecf554dde20e.png",
+      "inputs": [
+        "src/assets/story-saul-and-the-medium-at-endor-saul-s-death-v1.webp",
+        "src/assets/story-saul-rejected-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "purpose": "Remove royal circlet for the disguise at 1 Samuel 28:8; preserve all visible identities and composition.",
+      "review": "Original and 1200×675 packaged version inspected at full native resolution. Circlet removed. Saul remains recognizable against the Endor v1 and rejection references; woman and two companions preserved. No clear malformed visible anatomy. Hidden limbs remain unverified.",
+      "bytes": 100782,
+      "sha256": "2bfa894d423e1361c6d2068b549d76ef3d3e81ed02c82e61f3b70c0402d879f9"
+    },
+    {
+      "src": "src/assets/chapter-1-samuel-07-opening-v2.webp",
+      "supersedes": "src/assets/chapter-1-samuel-07-opening-v1.webp",
+      "original": "/workspace/generated_images/exec-19448b8d-f986-4c4d-9752-27e6ef4b4edc.png",
+      "inputs": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "purpose": "Introduce the house at Kiriath Jearim in 7:1–2 rather than repeat the existing Ebenezer scene at 7:2.",
+      "review": "Original and 960×540 packaged version inspected at full native resolution. Empty courtyard/closed house, no people or standing stone. Existing Samuel Story image and verse placement retained.",
+      "bytes": 153000,
+      "sha256": "6b639673656c5911550b2c9bd570aa2c8f4b4944b0ad39b941aba1bfbbf3af4a"
+    },
+    {
+      "src": "src/assets/chapter-2-samuel-23-opening-v2.webp",
+      "supersedes": "src/assets/chapter-2-samuel-23-opening-v1.webp",
+      "original": "/workspace/generated_images/exec-250e0389-8335-4af6-a550-71880ac8ffce.png",
+      "inputs": [
+        "src/assets/chapter-2-samuel-23-opening-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "purpose": "Replace oversized pea-like crop with fine compound leaves and small short lentil pods consistent with 23:11.",
+      "source": "https://corn.agronomy.wisc.edu/Crops/Lentil.aspx",
+      "review": "Original and 960×540 packaged version inspected at full native resolution. Fine paired leaflets and small pods replace the broad leaves and swollen pods. No people or animals; shield and field role retained. Imagined crop, not a species-identification photograph.",
+      "bytes": 155206,
+      "sha256": "054e27428e1b9a37764524e6af112b1da6075ef5556c2a9e8a36264b35697a0a"
+    }
+  ]
+}

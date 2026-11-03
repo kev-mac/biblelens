@@ -1,0 +1,991 @@
+{
+  "main": "82a91ed4697c7e6836f0e56f341998de244df461",
+  "branches": {
+    "github/artwork/ruth-cloud-2026-11-03": "d455bbd6494f032f9a9b9cf8a0bed34a0929d3c9",
+    "github/artwork/1-samuel-cloud-2026-11-03": "c0a7b9e280e5b5c6350a96adc9c32d2a54ee1076",
+    "github/artwork/2-samuel-cloud-2026-11-03": "564868f05de856e82bde366cc878811fca4b61c5"
+  },
+  "changed": {
+    "github/artwork/ruth-cloud-2026-11-03": [],
+    "github/artwork/1-samuel-cloud-2026-11-03": [
+      "data/chapter-images.json:8:2",
+      "data/chapter-images.json:8:3",
+      "data/chapter-images.json:8:5",
+      "data/chapter-images.json:8:6",
+      "data/chapter-images.json:8:7",
+      "data/chapter-images.json:8:9",
+      "data/chapter-images.json:8:10",
+      "data/chapter-images.json:8:11",
+      "data/chapter-images.json:8:12",
+      "data/chapter-images.json:8:14",
+      "data/chapter-images.json:8:15",
+      "data/chapter-images.json:8:19",
+      "data/chapter-images.json:8:20",
+      "data/chapter-images.json:8:21",
+      "data/chapter-images.json:8:23",
+      "data/chapter-images.json:8:24",
+      "data/chapter-images.json:8:25",
+      "data/chapter-images.json:8:26",
+      "data/chapter-images.json:8:27",
+      "data/chapter-images.json:8:29",
+      "data/chapter-images.json:8:30",
+      "data/chapter-images.json:8:31"
+    ],
+    "github/artwork/2-samuel-cloud-2026-11-03": [
+      "data/chapter-images.json:9:2",
+      "data/chapter-images.json:9:3",
+      "data/chapter-images.json:9:4",
+      "data/chapter-images.json:9:5",
+      "data/chapter-images.json:9:6",
+      "data/chapter-images.json:9:9",
+      "data/chapter-images.json:9:10",
+      "data/chapter-images.json:9:12",
+      "data/chapter-images.json:9:14",
+      "data/chapter-images.json:9:16",
+      "data/chapter-images.json:9:17",
+      "data/chapter-images.json:9:18",
+      "data/chapter-images.json:9:19",
+      "data/chapter-images.json:9:21",
+      "data/chapter-images.json:9:22",
+      "data/chapter-images.json:9:23",
+      "data/story-images.json:Amnon, Tamar and Absalom"
+    ]
+  },
+  "semanticKeyConflicts": [],
+  "coverageCount": 59,
+  "coverage": [
+    {
+      "key": "7:1",
+      "opener": "/assets/story-naomi-and-ruth-return-to-bethlehem-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "7:2",
+      "opener": "/assets/story-ruth-gleans-in-boaz-s-field-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "7:3",
+      "opener": "/assets/story-the-threshing-floor-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "7:4",
+      "opener": "/assets/story-boaz-redeems-and-marries-ruth-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:1",
+      "opener": "/assets/story-hannah-and-the-birth-of-samuel-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:2",
+      "opener": "/assets/chapter-1-samuel-02-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:3",
+      "opener": "/assets/chapter-1-samuel-03-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:4",
+      "opener": "/assets/story-the-ark-captured-and-returned-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:5",
+      "opener": "/assets/chapter-1-samuel-05-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:6",
+      "opener": "/assets/chapter-1-samuel-06-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:7",
+      "opener": "/assets/chapter-1-samuel-07-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:8",
+      "opener": "/assets/story-israel-demands-a-king-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:9",
+      "opener": "/assets/chapter-1-samuel-09-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:10",
+      "opener": "/assets/chapter-1-samuel-10-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:11",
+      "opener": "/assets/chapter-1-samuel-11-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:12",
+      "opener": "/assets/chapter-1-samuel-12-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:13",
+      "opener": "/assets/story-saul-rejected-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:14",
+      "opener": "/assets/chapter-1-samuel-14-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:15",
+      "opener": "/assets/chapter-1-samuel-15-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:16",
+      "opener": "/assets/story-david-anointed-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:17",
+      "opener": "/assets/story-david-and-goliath-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:18",
+      "opener": "/assets/story-saul-s-jealousy-and-david-s-flight-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:19",
+      "opener": "/assets/chapter-1-samuel-19-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:20",
+      "opener": "/assets/chapter-1-samuel-20-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:21",
+      "opener": "/assets/chapter-1-samuel-21-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:22",
+      "opener": "/assets/story-david-in-the-wilderness-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:23",
+      "opener": "/assets/chapter-1-samuel-23-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:24",
+      "opener": "/assets/chapter-1-samuel-24-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:25",
+      "opener": "/assets/chapter-1-samuel-25-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:26",
+      "opener": "/assets/chapter-1-samuel-26-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:27",
+      "opener": "/assets/chapter-1-samuel-27-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:28",
+      "opener": "/assets/story-saul-and-the-medium-at-endor-saul-s-death-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "8:29",
+      "opener": "/assets/chapter-1-samuel-29-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:30",
+      "opener": "/assets/chapter-1-samuel-30-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "8:31",
+      "opener": "/assets/chapter-1-samuel-31-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:1",
+      "opener": "/assets/story-david-becomes-king-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:2",
+      "opener": "/assets/chapter-2-samuel-02-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:3",
+      "opener": "/assets/chapter-2-samuel-03-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:4",
+      "opener": "/assets/chapter-2-samuel-04-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:5",
+      "opener": "/assets/chapter-2-samuel-05-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:6",
+      "opener": "/assets/chapter-2-samuel-06-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:7",
+      "opener": "/assets/story-the-davidic-covenant-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:8",
+      "opener": "/assets/story-david-and-mephibosheth-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:9",
+      "opener": "/assets/chapter-2-samuel-09-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:10",
+      "opener": "/assets/chapter-2-samuel-10-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:11",
+      "opener": "/assets/story-david-bathsheba-and-uriah-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:12",
+      "opener": "/assets/chapter-2-samuel-12-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:13",
+      "opener": "/assets/story-amnon-tamar-and-absalom-v2.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:14",
+      "opener": "/assets/chapter-2-samuel-14-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:15",
+      "opener": "/assets/story-absalom-s-rebellion-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:16",
+      "opener": "/assets/chapter-2-samuel-16-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:17",
+      "opener": "/assets/chapter-2-samuel-17-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:18",
+      "opener": "/assets/chapter-2-samuel-18-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:19",
+      "opener": "/assets/chapter-2-samuel-19-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:20",
+      "opener": "/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+      "kind": "Story"
+    },
+    {
+      "key": "9:21",
+      "opener": "/assets/chapter-2-samuel-21-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:22",
+      "opener": "/assets/chapter-2-samuel-22-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:23",
+      "opener": "/assets/chapter-2-samuel-23-opening-v1.webp",
+      "kind": "chapter"
+    },
+    {
+      "key": "9:24",
+      "opener": "/assets/story-the-census-and-the-plague-v1.webp",
+      "kind": "Story"
+    }
+  ],
+  "inventoryCount": 63,
+  "inventory": [
+    {
+      "key": "7:1",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Naomi and Ruth Return to Bethlehem",
+      "path": "/assets/story-naomi-and-ruth-return-to-bethlehem-v1.webp",
+      "bytes": 175448,
+      "sha256": "dcf02cd79287f78078d2fab82961e4c4d0470e400cc22587769ed2830af182ab"
+    },
+    {
+      "key": "7:2",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Ruth Gleans in Boaz's Field",
+      "path": "/assets/story-ruth-gleans-in-boaz-s-field-v1.webp",
+      "bytes": 138080,
+      "sha256": "6df20fa052ca641d7afc2b4cd93d84532724af7605e76d51c3e14966fb1257d4"
+    },
+    {
+      "key": "7:3",
+      "verse": 1,
+      "kind": "Story",
+      "title": "The Threshing Floor",
+      "path": "/assets/story-the-threshing-floor-v1.webp",
+      "bytes": 89790,
+      "sha256": "a465e168619959f4c0fe218081de9c005b6e32b93c8ce697af940ea94181f086"
+    },
+    {
+      "key": "7:4",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Boaz Redeems and Marries Ruth",
+      "path": "/assets/story-boaz-redeems-and-marries-ruth-v1.webp",
+      "bytes": 108290,
+      "sha256": "2b3186fe2c197657b97f00fb8cdb82842c9173e66be78da89019ea4fef4fbdbd"
+    },
+    {
+      "key": "8:1",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Hannah and the Birth of Samuel",
+      "path": "/assets/story-hannah-and-the-birth-of-samuel-v1.webp",
+      "bytes": 111148,
+      "sha256": "b813fb010bb578b81005505b8830c99e8341387ec9f714580f442ff1ef182db4"
+    },
+    {
+      "key": "8:2",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-02-opening-v1.webp",
+      "bytes": 175950,
+      "sha256": "a9cd23b856653a7fbe0ab04fa9401f651420962788c27ffff3bc54bb9f801b4e"
+    },
+    {
+      "key": "8:2",
+      "verse": 12,
+      "kind": "Story",
+      "title": "Eli's Sons and Samuel's Call",
+      "path": "/assets/story-eli-s-sons-and-samuel-s-call-v1.webp",
+      "bytes": 69034,
+      "sha256": "2b9dd080334c60e81b8d0070d7d460558b0f21e72dd31199a3cb69acf2ced385"
+    },
+    {
+      "key": "8:3",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-03-opening-v1.webp",
+      "bytes": 119162,
+      "sha256": "453ccb20d2748c196a26111ef09d9309f5ffeca0d286c3050b560cfbfe75d3ae"
+    },
+    {
+      "key": "8:4",
+      "verse": 1,
+      "kind": "Story",
+      "title": "The Ark Captured and Returned",
+      "path": "/assets/story-the-ark-captured-and-returned-v1.webp",
+      "bytes": 177758,
+      "sha256": "fbd2b81c9596ee1283e21ea2ef4a39cf3f1f6dc0884d06dbf9de0539b839ae2e"
+    },
+    {
+      "key": "8:5",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-05-opening-v1.webp",
+      "bytes": 118144,
+      "sha256": "b4d53afb78365090030fd4974151ae742637c31ca61b84306e1024fbf5b41d8c"
+    },
+    {
+      "key": "8:6",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-06-opening-v1.webp",
+      "bytes": 173430,
+      "sha256": "f6003d4d294dce842075f18cb158f5755ece97576bae828930234680ed3f7ba2"
+    },
+    {
+      "key": "8:7",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-07-opening-v1.webp",
+      "bytes": 151732,
+      "sha256": "e0cbf3b8b2a908f56e39a8535080499919ba3577dd2b2102ddf5d1e7aa6ab191"
+    },
+    {
+      "key": "8:7",
+      "verse": 2,
+      "kind": "Story",
+      "title": "Samuel Judges Israel",
+      "path": "/assets/story-samuel-judges-israel-v1.webp",
+      "bytes": 105570,
+      "sha256": "6cfd7df93475e0a202307b7a4822b64dea6844144d7a91bd360d34a0874c17ad"
+    },
+    {
+      "key": "8:8",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Israel Demands a King",
+      "path": "/assets/story-israel-demands-a-king-v1.webp",
+      "bytes": 136780,
+      "sha256": "7d56688cb323fa9c28a419b9580a57aa95629b5982f1f4f1c639cd3889790b59"
+    },
+    {
+      "key": "8:9",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-09-opening-v1.webp",
+      "bytes": 182094,
+      "sha256": "5ff708a43774d667d635a3f0ffddd749f5bd96014fe2d45fae82ca89628d9e18"
+    },
+    {
+      "key": "8:10",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-10-opening-v1.webp",
+      "bytes": 168198,
+      "sha256": "6cdb5303088ee8e281374a472286abf4353a561fc9e3658496b50d58305eff86"
+    },
+    {
+      "key": "8:11",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-11-opening-v1.webp",
+      "bytes": 134492,
+      "sha256": "913e8201133225184c3098f4cfdf0fef84fa0727eceb30fc953f801a6a694afb"
+    },
+    {
+      "key": "8:12",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-12-opening-v1.webp",
+      "bytes": 115144,
+      "sha256": "00257676ae04535cbbaaebae094944fa9d31b0b63e8a140ced4c96db176fe626"
+    },
+    {
+      "key": "8:13",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Saul Rejected",
+      "path": "/assets/story-saul-rejected-v1.webp",
+      "bytes": 100780,
+      "sha256": "addc83908c499f2071f076d64a3daab3ebf0495fd27870c8f2a1b9abebca37ce"
+    },
+    {
+      "key": "8:14",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-14-opening-v1.webp",
+      "bytes": 144650,
+      "sha256": "325cf2289500e683b6e2a509c32d1db52ed36f465583fa7c9c53db0925c3de8f"
+    },
+    {
+      "key": "8:15",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-15-opening-v1.webp",
+      "bytes": 142446,
+      "sha256": "74c3aed86cf998a9a932b6509cd23c9626c31e8db8e7fceb1f3dc7b3002c616f"
+    },
+    {
+      "key": "8:16",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David Anointed",
+      "path": "/assets/story-david-anointed-v1.webp",
+      "bytes": 119956,
+      "sha256": "7e1de27ebbbeaa8f4b9755110a305bea974676d502b58f67632113457b45a79c"
+    },
+    {
+      "key": "8:17",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David and Goliath",
+      "path": "/assets/story-david-and-goliath-v1.webp",
+      "bytes": 131434,
+      "sha256": "6b117546a13831f42bf6accf699e3077b23557e74d454fb2b01f42274f361738"
+    },
+    {
+      "key": "8:18",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Saul's Jealousy and David's Flight",
+      "path": "/assets/story-saul-s-jealousy-and-david-s-flight-v1.webp",
+      "bytes": 142134,
+      "sha256": "998ebfb9faba393b6e8206b312a7d64afe8c3b343167062507f02a506d4f718e"
+    },
+    {
+      "key": "8:19",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-19-opening-v1.webp",
+      "bytes": 127604,
+      "sha256": "e31fb060e21a5004fb195eb90f24b8fc580ede5078e43497a311e2c1dc999e8b"
+    },
+    {
+      "key": "8:20",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-20-opening-v1.webp",
+      "bytes": 152344,
+      "sha256": "0424dfd625ce58829876df931f201bd08b8f85c761676bf5bea33465615e4c9a"
+    },
+    {
+      "key": "8:21",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-21-opening-v1.webp",
+      "bytes": 113986,
+      "sha256": "017bfb3cbd30debe2919ebfa3a3b65f0de681f2d68b5a19781169f81ba90609c"
+    },
+    {
+      "key": "8:22",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David in the Wilderness",
+      "path": "/assets/story-david-in-the-wilderness-v1.webp",
+      "bytes": 133732,
+      "sha256": "4c0652724638f3568fad13a2a44283639cc68014e2cac9ff24ec8ceb53985a36"
+    },
+    {
+      "key": "8:23",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-23-opening-v1.webp",
+      "bytes": 188920,
+      "sha256": "e96150d532e9c11c47221d8f1e054278ba0f2560e9e2d2a276f7d6dbe7bbae00"
+    },
+    {
+      "key": "8:24",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-24-opening-v1.webp",
+      "bytes": 124292,
+      "sha256": "b725ac4eecce11850e7c9236e4a99bd5eb86d8e9c484c5f9d021805f63b2fb93"
+    },
+    {
+      "key": "8:25",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-25-opening-v1.webp",
+      "bytes": 169276,
+      "sha256": "f9fa7097f7491860bf3d982c1a0f0897f15a9078d5e6bb1b81abbaa65ed3b0c8"
+    },
+    {
+      "key": "8:26",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-26-opening-v1.webp",
+      "bytes": 92804,
+      "sha256": "54e4acb2fee1c63bbfab543902ab9159dd36fb3531f231b4fc3def87bfece36e"
+    },
+    {
+      "key": "8:27",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-27-opening-v1.webp",
+      "bytes": 146784,
+      "sha256": "6d70c575303f86f20d4905d4913af48b57de803cf0abcbc0161193f16cda352f"
+    },
+    {
+      "key": "8:28",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Saul and the Medium at Endor; Saul's Death",
+      "path": "/assets/story-saul-and-the-medium-at-endor-saul-s-death-v1.webp",
+      "bytes": 71586,
+      "sha256": "65eafa5a0f8b0227b0f950f94efdf8c79fc15174b245ce913eb9fcf06badb972"
+    },
+    {
+      "key": "8:29",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-29-opening-v1.webp",
+      "bytes": 122588,
+      "sha256": "f9efb3d17fd60d0679a9f39758a4653d679e0baa9f0533bf9784d3fecb00ac3c"
+    },
+    {
+      "key": "8:30",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-30-opening-v1.webp",
+      "bytes": 120048,
+      "sha256": "ff0529fe03a9564d6067e38e956fd172dfe0a1dee2008e24d119f55359bb0fad"
+    },
+    {
+      "key": "8:31",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-1-samuel-31-opening-v1.webp",
+      "bytes": 115880,
+      "sha256": "6a53b289dfbcfdc42244334316eab89827cd4a7588b765f17520a9853578f28f"
+    },
+    {
+      "key": "9:1",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David Becomes King",
+      "path": "/assets/story-david-becomes-king-v1.webp",
+      "bytes": 103572,
+      "sha256": "81085259ead36e1e18654e032f86933908680428077f29c47c0ba5b2073b8e0b"
+    },
+    {
+      "key": "9:2",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-02-opening-v1.webp",
+      "bytes": 167446,
+      "sha256": "74089870cfec129e4bb148bd5f59f843d2c77d6cb5a7b8fde690d71d0134f75f"
+    },
+    {
+      "key": "9:3",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-03-opening-v1.webp",
+      "bytes": 142822,
+      "sha256": "e0d3823e85316aaa4cbe278040a6be2f06c5cd2c0d767de4cc7d5582f8d2426c"
+    },
+    {
+      "key": "9:4",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-04-opening-v1.webp",
+      "bytes": 155618,
+      "sha256": "5849634584c50d3389b315ed3dead4e72e7893303d9ffe9e834510924b0321ff"
+    },
+    {
+      "key": "9:5",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-05-opening-v1.webp",
+      "bytes": 148184,
+      "sha256": "6f1d4eaaaadcb4dabc22c16bac2d18d6a25e4f565298d930f376cdc062553511"
+    },
+    {
+      "key": "9:5",
+      "verse": 6,
+      "kind": "Story",
+      "title": "Jerusalem and the Ark",
+      "path": "/assets/story-jerusalem-and-the-ark-v1.webp",
+      "bytes": 172782,
+      "sha256": "d29271c604aabef71ff784611bf5d0508965a12e2afc254f75eed15064a04fb5"
+    },
+    {
+      "key": "9:6",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-06-opening-v1.webp",
+      "bytes": 130668,
+      "sha256": "621ddb6e446f42e3513f341e293a439c80181bd9917036380deed9beab704440"
+    },
+    {
+      "key": "9:7",
+      "verse": 1,
+      "kind": "Story",
+      "title": "The Davidic Covenant",
+      "path": "/assets/story-the-davidic-covenant-v1.webp",
+      "bytes": 85630,
+      "sha256": "819879cb6b3c40f62565c88adc0080ceb7f223f981a4e6053ff5cd91a7270e13"
+    },
+    {
+      "key": "9:8",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David and Mephibosheth",
+      "path": "/assets/story-david-and-mephibosheth-v1.webp",
+      "bytes": 89404,
+      "sha256": "3b13c4b98e1ccef56fad6797068cdafa2975a78b2d1f631b6fd6119874082d4e"
+    },
+    {
+      "key": "9:9",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-09-opening-v1.webp",
+      "bytes": 123138,
+      "sha256": "14153036e4bbbf166ab27d4bd5af49b9eb8709598794de44277a551f5dd1bda6"
+    },
+    {
+      "key": "9:10",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-10-opening-v1.webp",
+      "bytes": 98662,
+      "sha256": "6827f0411d133c53eda1574e8a2c2c2699b27da82ee1aa494fd2f41ba94a07f1"
+    },
+    {
+      "key": "9:11",
+      "verse": 1,
+      "kind": "Story",
+      "title": "David, Bathsheba and Uriah",
+      "path": "/assets/story-david-bathsheba-and-uriah-v1.webp",
+      "bytes": 87284,
+      "sha256": "0dfbf7f93a6c56b256397a23650ebb8a9960136f85e7c69df17bf3737363f764"
+    },
+    {
+      "key": "9:12",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-12-opening-v1.webp",
+      "bytes": 113144,
+      "sha256": "fe366d7ff2d54a40ae308748d163120bd153751c2e6abb1a2cac1d422f888fef"
+    },
+    {
+      "key": "9:13",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Amnon, Tamar and Absalom",
+      "path": "/assets/story-amnon-tamar-and-absalom-v2.webp",
+      "bytes": 126048,
+      "sha256": "7cb77f26ae643f99771048451b2482b7f6ee28ef804d918b2180c194ae0a7b60"
+    },
+    {
+      "key": "9:14",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-14-opening-v1.webp",
+      "bytes": 151062,
+      "sha256": "eaf772362e7c0f0e7dce37b844a0c77123b6a7b86a504ece5d7b8bcd02da29a6"
+    },
+    {
+      "key": "9:15",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Absalom's Rebellion",
+      "path": "/assets/story-absalom-s-rebellion-v1.webp",
+      "bytes": 145444,
+      "sha256": "9b846135227372d724d8b33ea92717c179db79e95f237cc233d3a7f3459a6a04"
+    },
+    {
+      "key": "9:16",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-16-opening-v1.webp",
+      "bytes": 179482,
+      "sha256": "7e3b13c99e89ad10eb21ef834acea4739f37ed0fcd4f9f22da2ba6580171dd98"
+    },
+    {
+      "key": "9:17",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-17-opening-v1.webp",
+      "bytes": 115266,
+      "sha256": "916797caf7cac7f8a11c58c8ee72b87501acdb1d0fc74973818824bc5e3a75a1"
+    },
+    {
+      "key": "9:18",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-18-opening-v1.webp",
+      "bytes": 182240,
+      "sha256": "086a9ee409996f9a503ddf446775f2efd131fac7d0b213aa275c04ebe9d30245"
+    },
+    {
+      "key": "9:19",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-19-opening-v1.webp",
+      "bytes": 121222,
+      "sha256": "dec22d0d9b3c453aaf8cba6240fc30c872086fc2f5d672ec96dda7f20f36f879"
+    },
+    {
+      "key": "9:20",
+      "verse": 1,
+      "kind": "Story",
+      "title": "Sheba's Revolt and the Gibeonites",
+      "path": "/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+      "bytes": 105688,
+      "sha256": "77d9678b6af5ef178206eb640f76b8c69748b0b00c501fd0e4139f69263bf21b"
+    },
+    {
+      "key": "9:21",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-21-opening-v1.webp",
+      "bytes": 151472,
+      "sha256": "1dbb2046061bc3d6caf5412830bb44c5cbf8a7cedb69674da35c63decee42140"
+    },
+    {
+      "key": "9:22",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-22-opening-v1.webp",
+      "bytes": 119564,
+      "sha256": "6e27fada57f4c457b42f03c123f989c5facef16e11f4dbc2c44647de925bf095"
+    },
+    {
+      "key": "9:23",
+      "verse": 0,
+      "kind": "chapter",
+      "path": "/assets/chapter-2-samuel-23-opening-v1.webp",
+      "bytes": 166156,
+      "sha256": "c5aec6757ae35d109864f96d5d138c7d6b5481a1965094cc6e8cbe06f8e6cbe2"
+    },
+    {
+      "key": "9:23",
+      "verse": 8,
+      "kind": "Story",
+      "title": "The Exploits of David's Mighty Men",
+      "path": "/assets/story-the-exploits-of-david-s-mighty-men-v1.webp",
+      "bytes": 100794,
+      "sha256": "0a0594f8e52bce81a181950c3b778b1e86f62d48188f7011ecfc61e82eb0b781"
+    },
+    {
+      "key": "9:24",
+      "verse": 1,
+      "kind": "Story",
+      "title": "The Census and the Plague",
+      "path": "/assets/story-the-census-and-the-plague-v1.webp",
+      "bytes": 131596,
+      "sha256": "1d91561c4a8a29b6d22c527bacf673d563ecdd982d77bb04566bcf2547bc2f00"
+    }
+  ],
+  "closePairs": [
+    {
+      "a": {
+        "book": 8,
+        "chapter": 7,
+        "verse": 0,
+        "position": 843,
+        "src": "/assets/chapter-1-samuel-07-opening-v1.webp",
+        "kind": "chapter"
+      },
+      "b": {
+        "book": 8,
+        "chapter": 7,
+        "verse": 2,
+        "position": 845,
+        "src": "/assets/story-samuel-judges-israel-v1.webp",
+        "title": "Samuel Judges Israel",
+        "kind": "Story"
+      },
+      "gap": 2
+    }
+  ],
+  "boundaries": [
+    {
+      "a": {
+        "book": 6,
+        "chapter": 21,
+        "verse": 0,
+        "position": 593,
+        "src": "/assets/chapter-judges-21-opening-v1.webp",
+        "kind": "chapter"
+      },
+      "b": {
+        "book": 7,
+        "chapter": 1,
+        "verse": 1,
+        "position": 619,
+        "src": "/assets/story-naomi-and-ruth-return-to-bethlehem-v1.webp",
+        "title": "Naomi and Ruth Return to Bethlehem",
+        "kind": "Story"
+      },
+      "gap": 26
+    },
+    {
+      "a": {
+        "book": 7,
+        "chapter": 4,
+        "verse": 1,
+        "position": 682,
+        "src": "/assets/story-boaz-redeems-and-marries-ruth-v1.webp",
+        "title": "Boaz Redeems and Marries Ruth",
+        "kind": "Story"
+      },
+      "b": {
+        "book": 8,
+        "chapter": 1,
+        "verse": 1,
+        "position": 704,
+        "src": "/assets/story-hannah-and-the-birth-of-samuel-v1.webp",
+        "title": "Hannah and the Birth of Samuel",
+        "kind": "Story"
+      },
+      "gap": 22
+    },
+    {
+      "a": {
+        "book": 8,
+        "chapter": 31,
+        "verse": 0,
+        "position": 1500,
+        "src": "/assets/chapter-1-samuel-31-opening-v1.webp",
+        "kind": "chapter"
+      },
+      "b": {
+        "book": 9,
+        "chapter": 1,
+        "verse": 1,
+        "position": 1514,
+        "src": "/assets/story-david-becomes-king-v1.webp",
+        "title": "David Becomes King",
+        "kind": "Story"
+      },
+      "gap": 14
+    },
+    {
+      "a": {
+        "book": 9,
+        "chapter": 24,
+        "verse": 1,
+        "position": 2184,
+        "src": "/assets/story-the-census-and-the-plague-v1.webp",
+        "title": "The Census and the Plague",
+        "kind": "Story"
+      },
+      "b": {
+        "book": 10,
+        "chapter": 1,
+        "verse": 1,
+        "position": 2209,
+        "src": "/assets/story-solomon-becomes-king-v1.webp",
+        "title": "Solomon Becomes King",
+        "kind": "Story"
+      },
+      "gap": 25
+    }
+  ]
+}
