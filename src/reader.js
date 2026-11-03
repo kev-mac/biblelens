@@ -2,7 +2,7 @@
 function readerStoryIllustration(title){return typeof storyIllustration==='function'?storyIllustration(title,'reader'):'';}
 function readerStoryEvent(title){const image=readerStoryIllustration(title);return image||`<h3 class="reader-event-title">${esc(title)}</h3>`;}
 function readerChapterIllustrations(chapter,afterVerse){
- return (chapter.chapterImages||[]).filter(art=>art.afterVerse===afterVerse).map(art=>`<figure class="story-illustration chapter-illustration-reader" data-after-verse="${art.afterVerse}"><img src="${esc(art.src)}" alt="${esc(art.alt)}" width="${art.width}" height="${art.height}" loading="lazy" decoding="async"><figcaption>${esc(art.alt)}</figcaption></figure>`).join('');
+ return (chapter.chapterImages||[]).filter(art=>art.afterVerse===afterVerse).map(art=>`<figure class="story-illustration chapter-illustration-reader" data-after-verse="${art.afterVerse}"><img src="${esc(art.src)}" alt="${esc(art.alt)}" width="${art.width}" height="${art.height}" loading="lazy" decoding="async"></figure>`).join('');
 }
 let selectedVerses=new Set(),loadVersion=0,readingScroll=0,lastView='read',chatBusy=false;
 const chatMessages=[];
