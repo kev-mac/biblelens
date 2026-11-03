@@ -21,9 +21,10 @@ const source=fs.readFileSync('src/reader.js','utf8');
 const context={esc:value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')};
 vm.createContext(context);vm.runInContext(source.slice(0,source.indexOf('let selectedVerses=')),context);
 let existingChapters=0,newChapters=0;
+const headings={};
 try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=1;chapter<=count;chapter++){
  const key=book+':'+chapter, response=await get('/api/chapter?book='+book+'&chapter='+chapter);
- assert.equal(response.status,200);const data=await response.json();
+ assert.equal(response.status,200);const data=await response.json();headings[key]=data.eventHeadings;
  const existing=Object.values(data.eventHeadings).flat().some(title=>stories[title]);
  if(existing)existingChapters++;
  const additions=data.chapterImages||[];if(additions.length)newChapters++;
@@ -40,12 +41,13 @@ try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=
   assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');
   assert.deepEqual(bytes,fs.readFileSync('src'+art.src));assert.deepEqual(bytes,fs.readFileSync('www'+art.src),'Native and web image bytes match');
  }
- assert.equal(context.readerChapterIllustrations(data,0),'');
+ const opener=additions.find(art=>art.afterVerse===0);
+ if(opener)assert(context.readerChapterIllustrations(data,0).includes(opener.src),'Chapter opener appears before verse 1');
+ else assert.equal(context.readerChapterIllustrations(data,0),'');
 }
 }finally{globalThis.fetch=originFetch;}
 assert.equal(context.readerChapterIllustrations({},1),'');
 // Missing or misspelled placements must fail the build rather than silently lose coverage.
-const headings={};for(const [book,[,count]] of illustratedBooks.entries())for(let chapter=1;chapter<=count;chapter++)if(!images[book+':'+chapter])headings[book+':'+chapter]={1:[Object.keys(stories)[0]]};
 validateChapterImages(images,original,headings,stories);
 const missing=structuredClone(images);delete missing['0:2'];
 assert.throws(()=>validateChapterImages(missing,original,headings,stories),/Genesis 2 needs/);

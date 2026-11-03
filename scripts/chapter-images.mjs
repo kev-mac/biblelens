@@ -12,7 +12,7 @@ export function validateChapterImages(images, chapters, storyHeadings, storyImag
   assert(Array.isArray(entries)&&entries.length, 'Missing chapter artwork: '+key);
   const placements=new Set();
   for (const art of entries) {
-   assert(Number.isInteger(art.afterVerse)&&chapter.verses.some(v=>v.n===art.afterVerse), 'Unknown image verse: '+key);
+   assert(Number.isInteger(art.afterVerse)&&(art.afterVerse===0||chapter.verses.some(v=>v.n===art.afterVerse)), 'Unknown image verse: '+key);
    assert(!placements.has(art.afterVerse), 'Duplicate image placement: '+key);
    placements.add(art.afterVerse);
    assert.match(art.src,/^\/assets\/chapter-[a-z0-9-]+-v\d+\.webp$/);
@@ -24,6 +24,7 @@ export function validateChapterImages(images, chapters, storyHeadings, storyImag
   const key=book+':'+chapter;
   const existing=Object.values(storyHeadings[key]||{}).flat().some(title=>storyImages[title]);
   assert(existing||images[key]?.length, name+' '+chapter+' needs at least one image');
+  if(book===0)assert((storyHeadings[key]?.[1]||[]).some(title=>storyImages[title])||images[key]?.some(art=>art.afterVerse===0), name+' '+chapter+' needs an opening image');
   if(chapterSpecific[book]?.includes(chapter))assert(images[key]?.length, name+' '+chapter+' needs chapter-specific art beside its later Story scene');
  }
  return Object.keys(images).length;

@@ -30,8 +30,8 @@ try{
  for(const book of books.filter(b=>b.collection)){const lost=await (await target.fetch('/api/chapter?book='+book.id+'&chapter=1')).json();assert.equal(lost.editionLabel,book.collection+' · '+book.edition);assert(lost.verses.length);}
  const lostSearch=await (await target.fetch('/api/search?lost=1&q=hidden%20sayings')).json();assert(lostSearch.passages.some(p=>p.collection==='Gnostic'));
  const illustrated=await (await target.fetch('/api/chapter?book=0&chapter=2')).json();
- assert.equal(illustrated.chapterImages[0].afterVerse,10,'Offline reading retains verse-aligned chapter art');
- assert.equal(illustrated.chapterImages[0].src,'/assets/chapter-genesis-02-v1.webp');
+ assert(illustrated.chapterImages.some(art=>art.afterVerse===0&&art.src==='/assets/chapter-genesis-02-opening-v1.webp'),'Offline reading retains the chapter opener');
+ assert(illustrated.chapterImages.some(art=>art.afterVerse===10&&art.src==='/assets/chapter-genesis-02-v1.webp'),'Offline reading retains verse-aligned chapter art');
  for(const [book,chapter]of [[1,6],[2,1],[3,2],[4,2],[5,4]]){
   const illustrated=await (await target.fetch('/api/chapter?book='+book+'&chapter='+chapter)).json();
   assert(illustrated.chapterImages.length,'Next-five chapter artwork is available offline');
