@@ -24,7 +24,7 @@ export function validateChapterImages(images, chapters, storyHeadings, storyImag
   const key=book+':'+chapter;
   const existing=Object.values(storyHeadings[key]||{}).flat().some(title=>storyImages[title]);
   assert(existing||images[key]?.length, name+' '+chapter+' needs at least one image');
-  if(book===0)assert((storyHeadings[key]?.[1]||[]).some(title=>storyImages[title])||images[key]?.some(art=>art.afterVerse===0), name+' '+chapter+' needs an opening image');
+  if(book<=1)assert((storyHeadings[key]?.[1]||[]).some(title=>storyImages[title])||images[key]?.some(art=>art.afterVerse===0), name+' '+chapter+' needs an opening image');
   if(chapterSpecific[book]?.includes(chapter))assert(images[key]?.length, name+' '+chapter+' needs chapter-specific art beside its later Story scene');
  }
  return Object.keys(images).length;

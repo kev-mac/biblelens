@@ -7,7 +7,7 @@ export function hostedArtwork() {
  const result={};
  assert.match(manifest.sourceCommit,/^[a-f0-9]{40}$/,'Pin public artwork to an immutable source commit');
  for(const src of manifest.assets){
-  assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua)-\d{2}-v\d+)\.webp$/);
+  assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua)-\d{2}-(?:opening-)?v\d+)\.webp$/);
   assert(!result[src],'Duplicate hosted artwork');
   const bytes=fs.readFileSync('src'+src);assert(bytes.length>0&&bytes.length<250000);
   result[src]={url:'https://raw.githubusercontent.com/kev-mac/biblelens/'+manifest.sourceCommit+'/src'+src,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};
