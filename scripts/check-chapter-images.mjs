@@ -44,7 +44,7 @@ try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=
  const opener=additions.find(art=>art.afterVerse===0);
  if(opener){
   assert(context.readerChapterIllustrations(data,0).includes(opener.src),'Chapter opener appears before verse 1');
-  if(book===0||book===2||book===3)assert(!(data.eventHeadings?.[1]||[]).some(title=>stories[title]),'Do not crowd a Story image at the start of '+name+' '+chapter);
+  if(book===0||book===2||book===3||book===4)assert(!(data.eventHeadings?.[1]||[]).some(title=>stories[title]),'Do not crowd a Story image at the start of '+name+' '+chapter);
  }else assert.equal(context.readerChapterIllustrations(data,0),'');
 }
 }finally{globalThis.fetch=originFetch;}
