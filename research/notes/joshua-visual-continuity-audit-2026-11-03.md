@@ -26,3 +26,7 @@ Joshua 16's existing verse 1 art was moved to opening position, removing its one
 ## Verification limits
 
 The new images were reviewed as a contact sheet for repetition and adjacent visual continuity; scenes with visible people were also inspected at full size for anatomy and story role. New art is imagined, not historical evidence. Phone and iPad layout, signed device assets, live image bytes, and installed builds require release verification after publication and installation.
+
+## Published build 338 verification
+
+The live Site, canonical source, Sites mirror, and mobile assets passed `release:verify` with source fingerprint `737fc5043ce8`. `check:readability` and `check:images` passed after the mobile build. All 37 Joshua chapter and Story image URLs returned bytes identical to the signed iOS app. The signed app's `public` directory matches `www`; Capacitor adds only its two Cordova bridge files. The installed iPad and iPhone apps both report build 338. The iPad launched. The iPhone launch was attempted but refused because the phone was locked. Browser checks visited all 24 chapters at 390px phone and 768px iPad widths; each showed an alt-labeled image before verse 1 with no horizontal overflow. These checks do not replace a visual inspection on the unlocked iPhone screen.
