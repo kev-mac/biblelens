@@ -1,7 +1,12 @@
 import assert from 'node:assert/strict';
 import zlib from 'node:zlib';
 
-export const illustratedBooks=[['Genesis',50],['Exodus',40],['Leviticus',27],['Numbers',36],['Deuteronomy',34],['Joshua',24],['Judges',21]];
+// Explicit reader book IDs allow independent book branches to finish out of order.
+export const illustratedBooks=new Map([
+ [0,['Genesis',50]],[1,['Exodus',40]],[2,['Leviticus',27]],
+ [3,['Numbers',36]],[4,['Deuteronomy',34]],[5,['Joshua',24]],
+ [6,['Judges',21]],[9,['2 Samuel',24]]
+]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
 // Artwork is editorial metadata; scripture and existing Story placements stay intact.
@@ -24,7 +29,7 @@ export function validateChapterImages(images, chapters, storyHeadings, storyImag
   const key=book+':'+chapter;
   const existing=Object.values(storyHeadings[key]||{}).flat().some(title=>storyImages[title]);
   assert(existing||images[key]?.length, name+' '+chapter+' needs at least one image');
-  if(book<=6)assert((storyHeadings[key]?.[1]||[]).some(title=>storyImages[title])||images[key]?.some(art=>art.afterVerse===0), name+' '+chapter+' needs an opening image');
+  assert((storyHeadings[key]?.[1]||[]).some(title=>storyImages[title])||images[key]?.some(art=>art.afterVerse===0), name+' '+chapter+' needs an opening image');
   if(chapterSpecific[book]?.includes(chapter))assert(images[key]?.length, name+' '+chapter+' needs chapter-specific art beside its later Story scene');
  }
  return Object.keys(images).length;
