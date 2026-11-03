@@ -25,4 +25,4 @@ Joshua 16's existing verse 1 art was moved to opening position, removing its one
 
 ## Verification limits
 
-The new images were reviewed at original size for visible anatomy and story role, and as a contact sheet for repetition and adjacent visual continuity. New art is imagined, not historical evidence. Phone and iPad layout, signed device assets, live image bytes, and installed builds require release verification after publication and installation.
+The new images were reviewed as a contact sheet for repetition and adjacent visual continuity; scenes with visible people were also inspected at full size for anatomy and story role. New art is imagined, not historical evidence. Phone and iPad layout, signed device assets, live image bytes, and installed builds require release verification after publication and installation.
