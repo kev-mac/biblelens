@@ -12,4 +12,4 @@ The approved Genesis 7 ark art was supplied as a style input, never as identity.
 
 ## Verification
 
-Pending: complete build and checks, hosted source pin, signed device comparison, phone and iPad layout inspection, live image bytes, and installed builds. Do not call this a synchronized release until these pass. Some new landscapes still share hill-country scenery; chapter subjects, framing, time of day, and prominent objects differ, but the composition should receive a final phone-size review.
+The 14 assets were pinned to public GitHub commit `05b8a5a0c729c1e5d9cdc577d6b7a2fb9c5dd492`. `build:mobile`, `check:images`, and `check:readability` passed. Pending: release checks, signed device comparison, phone and iPad layout inspection, live image bytes, and installed builds. Do not call this a synchronized release until these pass. Some new landscapes still share hill-country scenery; chapter subjects, framing, time of day, and prominent objects differ, but the composition should receive a final phone-size review.
