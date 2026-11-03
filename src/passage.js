@@ -158,21 +158,36 @@ function mergePassageBackup(backup){
 }
 const markedChapterCache=new Map();
 let markedRenderGeneration=0;
+async function markedChapter(book,chapter){
+ if(book===readingBook&&chapter===readingChapter&&reading?.verses)return reading;
+ const key=book+':'+chapter;let request=markedChapterCache.get(key);
+ if(!request){request=fetch(`/api/chapter?book=${book}&chapter=${chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();});markedChapterCache.set(key,request);request.catch(()=>markedChapterCache.delete(key));if(markedChapterCache.size>64)markedChapterCache.delete(markedChapterCache.keys().next().value);}
+ return request;
+}
+async function toggleSavedVerseHighlight(book,chapter,verse,edition){
+ const key=`${book}:${chapter}:${verse}`,bookmark=state.verseBookmarks[key];
+ if(!bookmark&&!state.verseNotes[key])return false;
+ if(normalizeTextHighlights(bookmark?.highlights).length){
+  state.verseBookmarks[key]={...bookmark,highlights:[]};persist();renderPassageSaved();renderReader(true);
+  toast('Highlight removed. Bookmark and note kept.');return true;
+ }
+ const before=JSON.stringify(bookmark),chapterData=await markedChapter(book,chapter);
+ // A pending chapter request must not revive a removed or changed saved item.
+ if(JSON.stringify(state.verseBookmarks[key])!==before||!state.verseBookmarks[key]&&!state.verseNotes[key]){toast('This saved verse changed. Review it and try again.');return false;}
+ const item=chapterData.verses?.find(item=>item.n===verse),used=['kjv','web','asv'].includes(edition)&&item?.[edition]?edition:'kjv',text=item?.[used];
+ if(!text?.trim()){toast('This verse is unavailable. Open the passage to try again.');return false;}
+ const changed=saveTextHighlights([{book,chapter,verse,highlights:[{edition:used,start:0,end:text.length,text,color:'yellow'}]}]);
+ if(changed)renderReader(true);return changed;
+}
 async function hydrateMarkedVerseTexts(generation=markedRenderGeneration){
  if(typeof document.querySelectorAll!=='function')return;
  const fields=[...document.querySelectorAll('[data-marked-verse-text]')],groups=new Map();
  const requested=$('#reader-edition')?.value,edition=['kjv','web','asv'].includes(requested)?requested:'kjv';
  for(const field of fields){const [book,chapter,verse]=field.dataset.markedVerseText.split('/').map(Number),key=book+':'+chapter;if(!groups.has(key))groups.set(key,{book,chapter,fields:[]});groups.get(key).fields.push({field,verse});}
  const pending=[...groups.values()];let next=0;
- async function hydrateGroup(){while(generation===markedRenderGeneration&&next<pending.length){const group=pending[next++],key=group.book+':'+group.chapter;
+ async function hydrateGroup(){while(generation===markedRenderGeneration&&next<pending.length){const group=pending[next++];
   try{
-   let chapterData;
-   if(group.book===readingBook&&group.chapter===readingChapter&&reading?.verses)chapterData=reading;
-   else{
-    let request=markedChapterCache.get(key);
-    if(!request){request=fetch(`/api/chapter?book=${group.book}&chapter=${group.chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();});markedChapterCache.set(key,request);request.catch(()=>markedChapterCache.delete(key));if(markedChapterCache.size>64)markedChapterCache.delete(markedChapterCache.keys().next().value);}
-    chapterData=await request;
-   }
+   const chapterData=await markedChapter(group.book,group.chapter);
    if(generation!==markedRenderGeneration)return;
    for(const {field,verse}of group.fields){const item=chapterData.verses?.find(item=>item.n===verse),chosen=field.dataset.markedEdition||edition,used=item?.[chosen]?chosen:'kjv',value=item?.[used];if(value)fillMarkedVerseText(field,value,used,group.book,group.chapter,verse);else field.textContent='This verse is unavailable in the supplied edition. Open the passage to read it.';field.setAttribute('aria-busy','false');}
   }catch{if(generation!==markedRenderGeneration)return;for(const {field}of group.fields){field.textContent='Verse text could not load. Open this verse to read it.';field.setAttribute('aria-busy','false');}}

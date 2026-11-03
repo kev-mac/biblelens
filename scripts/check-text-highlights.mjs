@@ -45,6 +45,34 @@ assert(context.state.verseBookmarks['0:1:1']);assert.equal(context.state.verseNo
 assert(!context.editTextHighlight(0,1,1,first,'not-a-color'));
 console.log('PASS: context menu recoloring and removal affect only the matching highlight and preserve its bookmark and private note.');
 
+// The Saved action changes only highlighting, using exact source offsets.
+{
+ const key='0:6:7',note={text:'Keep my note'},record={book:0,chapter:6,verse:7,name:'Genesis'},text='And the Lord said.';
+ let resolveChapter;
+ const saved={...context,state:{verseBookmarks:{[key]:{...record}},verseNotes:{[key]:note}},readingBook:0,readingChapter:6,reading:{verses:[{n:7,kjv:text,web:'The Lord said.'}]},fetch:()=>new Promise(resolve=>{resolveChapter=resolve;})};
+ vm.createContext(saved);
+ vm.runInContext(source.slice(source.indexOf('const markedChapterCache='),source.indexOf('async function hydrateMarkedVerseTexts')),saved);
+ // Rebind the shared storage helpers to this isolated state.
+ vm.runInContext(source.slice(source.indexOf('function normalizeTextHighlights'),source.indexOf('function normalizeVerseRecords')),saved);
+ assert(await saved.toggleSavedVerseHighlight(0,6,7,'web'));
+ assert.equal(saved.state.verseBookmarks[key].highlights[0].text,'The Lord said.');
+ assert.equal(saved.state.verseBookmarks[key].highlights[0].edition,'web');
+ assert.equal(saved.state.verseBookmarks[key].highlights[0].color,'yellow');
+ assert(await saved.toggleSavedVerseHighlight(0,6,7,'web'));
+ assert.equal(saved.state.verseBookmarks[key].highlights.length,0);
+ assert(saved.state.verseBookmarks[key]);assert.equal(saved.state.verseNotes[key],note);
+ saved.state.verseBookmarks[key].highlights=[{...first},{...first,edition:'web'}];
+ assert(await saved.toggleSavedVerseHighlight(0,6,7,'kjv'));
+ assert.equal(saved.state.verseBookmarks[key].highlights.length,0,'Unhighlight clears saved ranges across editions');
+ saved.readingChapter=1;
+ const pending=saved.toggleSavedVerseHighlight(0,6,7,'kjv');
+ delete saved.state.verseBookmarks[key];delete saved.state.verseNotes[key];
+ resolveChapter({ok:true,json:async()=>({verses:[{n:7,kjv:text}]})});
+ assert.equal(await pending,false);
+ assert.equal(saved.state.verseBookmarks[key],undefined,'A late fetch must not revive a deleted saved item');
+ console.log('PASS: Saved Highlight/Unhighlight preserves notes and bookmarks, uses the chosen edition and ignores a deleted item during loading.');
+}
+
 // Bookmarks render one whole verse per saved edition, with source-positioned
 // highlights rather than a duplicate excerpt below the verse.
 const rawVerse='And God made the firmament, and divided the waters which were under the firmament from the waters which were above the firmament: and it was so.';

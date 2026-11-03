@@ -25,6 +25,8 @@
  const savedActionIcons = {
   target: icon('<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/>'),
   trash: icon('<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/>'),
+  highlight: icon('<path d="m14 3 7 7-9 9-7-7zM5 12l-2 7 7-2M2 22h20"/>'),
+  unhighlight: icon('<path d="m14 3 7 7-4 4M12 19l-2-2-7 2 2-7M2 22h20M3 3l18 18"/>'),
   unbookmark: icon('<path d="M6 4V3h12v14M6 9v12l6-4 6 4v-1M3 3l18 18"/>')
  };
  const masthead=el('lensMasthead'), main=el('main');
@@ -193,7 +195,7 @@
  function noteRows(){
   const rows=[];
   for(const [kind,notes,marks] of [['passage',state.passageNotes,state.passageBookmarks],['verse',state.verseNotes,state.verseBookmarks]]){
-   for(const [key,record]of Object.entries({...marks,...notes})){const note=notes?.[key];rows.push({kind,key,record,text:note?.text||'',title:note?.title||'',label:`${record.name} ${record.chapter}${record.verse?':'+record.verse:''}`,marked:!!marks?.[key],url:refHash(record)});}
+   for(const [key,record]of Object.entries({...marks,...notes})){const note=notes?.[key];rows.push({kind,key,record,text:note?.text||'',title:note?.title||'',label:`${record.name} ${record.chapter}${record.verse?':'+record.verse:''}`,marked:!!marks?.[key],highlighted:kind==='verse'&&normalizeTextHighlights(marks?.[key]?.highlights).length>0,url:refHash(record)});}
   }
   for(const entry of ENTRIES){if(state.notes[entry.id]||state.noteTitles[entry.id]||state.bookmarks.includes(entry.id))rows.push({kind:'study',key:entry.id,text:state.notes[entry.id]||'',title:state.noteTitles[entry.id]||'',label:entry.title,marked:state.bookmarks.includes(entry.id),url:'#study/'+entry.id});}
   for(const [key,record]of Object.entries(state.investigations||{}))rows.push({kind:'investigation',key,record,title:record.title||'',text:record.note||'',label:`${refLabel(record.left)} / ${refLabel(record.right)}`,url:'#investigation/'+encodeURIComponent(key)});
@@ -261,7 +263,7 @@
   if(notebookFilter==='saved'){renderSaved(renderId);return;}
   const all=noteRows(),rows=all.filter(note=>notebookFilter==='all'||notebookFilter==='investigations'&&note.kind==='investigation'||notebookFilter==='bookmarks'&&note.marked||notebookFilter==='notes'&&note.kind!=='investigation'&&!!(note.text?.trim()||note.title?.trim()));
   el('lens-notebook-status').textContent=`${rows.length} saved ${rows.length===1?'item':'items'} · Stored on this device`;
-  el('lens-notebook-list').innerHTML=rows.length?rows.map(note=>`<article class="lens-note" data-lens-note="${esc(note.kind+':'+note.key)}"><div class="lens-note-heading"><div>${note.marked&&['verse','passage'].includes(note.kind)?'':`<span class="lens-kicker">${note.kind==='investigation'?'Saved comparison':notebookFilter==='notes'?'Private note':note.marked?'Bookmarked '+(note.kind==='study'?'record':'passage'):'Private note'}</span>`}<h2><a href="${esc(note.url)}">${esc(note.label)}</a></h2></div>${note.kind==='verse'?bookmarkVerseTextHtml(note.record.book,note.record.chapter,note.record.verse):''}</div><label class="sr-only">Note Title</label><input aria-label="Note title for ${esc(note.label)}" data-lens-note-title maxlength="160" value="${esc(note.title)}" placeholder="Add a title"><label class="sr-only">Your Note</label><textarea aria-label="Private note for ${esc(note.label)}" data-lens-note-text maxlength="100000" rows="3" placeholder="Keep a thought, a question, or a source…">${esc(note.text)}</textarea><span class="lens-note-save-status" role="status"></span><div class="lens-note-actions"><a class="lens-button lens-note-action" href="${esc(note.url)}" aria-label="${note.kind==='verse'?'Go to verse in Read':note.kind==='passage'?'Read chapter':note.kind==='investigation'?'Resume comparison':'Open record'}">${savedActionIcons.target}<span>${note.kind==='verse'?'Go to verse':note.kind==='passage'?'Read chapter':note.kind==='investigation'?'Resume':'Open record'}</span></a><button type="button" class="lens-button lens-note-action" data-lens-delete-note>${savedActionIcons.trash}<span>${note.kind==='investigation'?'Delete comparison':'Delete Note'}</span></button>${note.marked?`<button type="button" class="lens-button lens-note-action" data-lens-remove-bookmark>${savedActionIcons.unbookmark}<span>Remove Bookmark</span></button>`:''}</div></article>`).join(''):'<div class="lens-empty"><span class="lens-kicker">A Place to Return To</span><h2>Give a Thought Somewhere to Live.</h2><p>Write a margin note while reading, mark a verse, or save a comparison. It will be waiting here.</p><a class="lens-button lens-button-primary" href="#read">Return to reading</a></div>';
+  el('lens-notebook-list').innerHTML=rows.length?rows.map(note=>`<article class="lens-note" data-lens-note="${esc(note.kind+':'+note.key)}"><div class="lens-note-heading"><div>${note.marked&&['verse','passage'].includes(note.kind)?'':`<span class="lens-kicker">${note.kind==='investigation'?'Saved comparison':notebookFilter==='notes'?'Private note':note.marked?'Bookmarked '+(note.kind==='study'?'record':'passage'):'Private note'}</span>`}<h2><a href="${esc(note.url)}">${esc(note.label)}</a></h2></div>${note.kind==='verse'?bookmarkVerseTextHtml(note.record.book,note.record.chapter,note.record.verse):''}</div><label class="sr-only">Note Title</label><input aria-label="Note title for ${esc(note.label)}" data-lens-note-title maxlength="160" value="${esc(note.title)}" placeholder="Add a title"><label class="sr-only">Your Note</label><textarea aria-label="Private note for ${esc(note.label)}" data-lens-note-text maxlength="100000" rows="3" placeholder="Keep a thought, a question, or a source…">${esc(note.text)}</textarea><span class="lens-note-save-status" role="status"></span><div class="lens-note-actions"><a class="lens-button lens-note-action" href="${esc(note.url)}" aria-label="${note.kind==='verse'?'Go to verse in Read':note.kind==='passage'?'Read chapter':note.kind==='investigation'?'Resume comparison':'Open record'}">${savedActionIcons.target}<span>${note.kind==='verse'?'Go to verse':note.kind==='passage'?'Read chapter':note.kind==='investigation'?'Resume':'Open record'}</span></a>${note.kind==='verse'?`<button type="button" class="lens-button lens-note-action" data-lens-toggle-highlight aria-label="${note.highlighted?'Unhighlight':'Highlight'} verse" aria-pressed="${!!note.highlighted}">${savedActionIcons[note.highlighted?'unhighlight':'highlight']}<span>${note.highlighted?'Unhighlight':'Highlight'}</span></button>`:''}<button type="button" class="lens-button lens-note-action" data-lens-delete-note>${savedActionIcons.trash}<span>${note.kind==='investigation'?'Delete comparison':'Delete Note'}</span></button>${note.marked?`<button type="button" class="lens-button lens-note-action" data-lens-remove-bookmark>${savedActionIcons.unbookmark}<span>Remove Bookmark</span></button>`:''}</div></article>`).join(''):'<div class="lens-empty"><span class="lens-kicker">A Place to Return To</span><h2>Give a Thought Somewhere to Live.</h2><p>Write a margin note while reading, mark a verse, or save a comparison. It will be waiting here.</p><a class="lens-button lens-button-primary" href="#read">Return to reading</a></div>';
   if(rows.some(note=>note.kind==='verse'))hydrateMarkedVerseTexts(++markedRenderGeneration);
   if(notebookFilter==='all'&&savedCount)renderSaved(renderId,rows.length?el('lens-notebook-list').innerHTML:'',rows.length);
  }
@@ -282,10 +284,18 @@
  el('lens-notebook-list').addEventListener('click',event=>{
   const remove=event.target.closest('[data-directory-remove]');if(remove)window.BibleLensDebateStore.write(remove.dataset.directoryRemove,{saved:false});
  });
- el('notebook-view').addEventListener('click',event=>{
+ el('notebook-view').addEventListener('click',async event=>{
   const filter=event.target.closest('[data-lens-filter]');if(filter){routeTo('#notebook?section='+filter.dataset.lensFilter);return;}
-  const action=event.target.closest('[data-lens-delete-note],[data-lens-remove-bookmark]'),row=action?.closest('[data-lens-note]');if(!row)return;
+  const action=event.target.closest('[data-lens-delete-note],[data-lens-remove-bookmark],[data-lens-toggle-highlight]'),row=action?.closest('[data-lens-note]');if(!row)return;
   const [kind,...parts]=row.dataset.lensNote.split(':'),key=parts.join(':'),removeMark=action.hasAttribute('data-lens-remove-bookmark');
+  if(action.hasAttribute('data-lens-toggle-highlight')){
+   if(kind!=='verse'||action.disabled)return;
+   action.disabled=true;action.setAttribute('aria-busy','true');
+   try{await toggleSavedVerseHighlight(...parts.map(Number),edition());renderNotebook();}
+   catch{toast('Highlight could not be saved. Try again.');}
+   finally{action.disabled=false;action.removeAttribute('aria-busy');}
+   return;
+  }
   if(removeMark&&kind==='verse'){if(state.verseBookmarks[key]){const [book,chapter,verse]=parts.map(Number);toggleVerseMark('bookmark',book,chapter,verse);renderNotebook();}return;}
   confirmNoteAction(removeMark?'Remove this bookmark? Your note will be kept.':kind==='investigation'?'Delete this saved comparison and its private note?':'Delete this note? Any bookmark will be kept.',()=>{
    if(kind==='investigation')delete state.investigations[key];else if(kind==='study'){if(removeMark)state.bookmarks=state.bookmarks.filter(id=>id!==key);else{delete state.notes[key];delete state.noteTitles[key];}}else delete state[kind+(removeMark?'Bookmarks':'Notes')][key];persist();renderNotebook();

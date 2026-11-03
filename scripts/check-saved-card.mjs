@@ -14,8 +14,8 @@ assert(card.innerHTML.indexOf('data-marked-verse-text')<card.innerHTML.indexOf('
 assert(!card.innerHTML.includes('>Open</a>'),'The old header Open button is gone');
 assert(!card.innerHTML.includes('Bookmarked passage'),'The saved passage label is omitted');
 assert(card.innerHTML.includes('href="#read/0/6/22" aria-label="Go to verse in Read"'));
-for(const label of ['Go to verse','Delete Note','Remove Bookmark'])assert(card.innerHTML.includes('<span>'+label+'</span>'));
-assert.equal((card.innerHTML.match(/class="lens-button lens-note-action"/g)||[]).length,3);
+for(const label of ['Go to verse','Highlight','Delete Note','Remove Bookmark'])assert(card.innerHTML.includes('<span>'+label+'</span>'));
+assert.equal((card.innerHTML.match(/class="lens-button lens-note-action"/g)||[]).length,4);
 assert(card.innerHTML.includes('&lt;private title&gt;')&&card.innerHTML.includes('&lt;private note&gt;'),'Private content remains escaped');
 assert.equal(hydrated,1);
-console.log('PASS: saved verse preview, exact Read target, three labeled icon actions, no header Open button and escaped private drafts.');
+console.log('PASS: saved verse preview, exact Read target, four labeled icon actions, no header Open button and escaped private drafts.');

@@ -3302,6 +3302,8 @@ html body.lens-app #notebook-view .lens-note-heading{display:block;}
 html body.lens-app #notebook-view .lens-note-heading .marked-verse-text{margin:12px 0 0;font:400 1rem/1.65 var(--ui-font);color:var(--lens-ink);}
 html body.lens-app #notebook-view .lens-note-save-status{display:block;margin:0;font-size:.75rem;}
 html body.lens-app #notebook-view .lens-note-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:8px;margin-top:12px;}
+html body.lens-app #notebook-view .lens-note-actions:has([data-lens-toggle-highlight]){grid-template-columns:repeat(4,minmax(0,1fr));}
+html body.lens-app #notebook-view [data-lens-toggle-highlight][aria-pressed=true]{color:var(--lens-link);}
 html body.lens-app #notebook-view .lens-note-actions .lens-note-action{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:6px;min-width:0;min-height:60px;height:auto;margin:0;padding:6px 2px;border:0;background:none;box-shadow:none;color:var(--lens-muted);font:500 .72rem/1.35 var(--ui-font);text-align:center;text-decoration:none;}
 html body.lens-app #notebook-view .lens-note-action svg{display:block;flex:none;width:22px;height:22px;}
 html body.lens-app #notebook-view .lens-note-actions [data-lens-delete-note]{color:var(--lens-danger,#f5a5a0);}
