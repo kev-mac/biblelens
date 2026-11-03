@@ -1,0 +1,50 @@
+{
+  "method": "Built-in image generation",
+  "styleReference": "chapter-genesis-07-opening-v1.webp",
+  "characterContinuityReference": "Owner-provided Exodus gathering image",
+  "openingPromptTemplate": "One 16:9 landscape chapter opening illustration for BibleLens, Leviticus {chapter}. {scene} Match the approved Genesis 7 style: grounded directional natural light, believable anatomy and tactile ancient materials, restrained painterly finish, natural varied colors, softly realistic faces, no gloss or heavy oil paint. Ancient Near Eastern and Northeast African people with varied plausible brown skin and natural curls. No modern objects, writing, border, watermark or text. Clear focal subject for phones. Imagined literary illustration.",
+  "openingScenes": {
+    "1": "A young unblemished bull stands at the entrance to the portable wilderness sanctuary, led by an anonymous adult worshipper, late morning pale limestone and indigo curtains. No sacrifice depicted.",
+    "2": "Still life of fine flour in a shallow bowl, a small jar of olive oil and pale frankincense resin on woven cloth, cool slanting morning light. No bread.",
+    "3": "Healthy cattle in a rocky pasture, framed in green and blue by a strip of wild grasses, a young heifer foremost, a distant tent camp. The cattle offering in verses 1–5, before any ritual.",
+    "4": "A young unblemished bull stands just outside the linen courtyard of the tent sanctuary. A linen-clad priest seen from behind stands at the entrance, gauzy gray cloud, violet textiles. Verses 3–4, before sacrifice.",
+    "5": "An empty bronze measuring bowl and a small linen bag of fine flour beside the tent sanctuary, olive-gray and indigo shadows. Offering of flour in verse 11, no oil or incense.",
+    "6": "One landscape 16:9 BibleLens illustration, Leviticus 6:6. A single anatomically correct unblemished ram with curved horns stands on sandy ground just outside a portable linen sanctuary courtyard. No people or silver, and no other animals. Low view with pale linen in softly lit afternoon and a muted crimson woven stripe in the background. Subtle naturalistic Genesis 7 finish, tactile wool and cloth, grounded diffuse light, no text or gloss.",
+    "7": "An altar fire quietly burning in the empty tabernacle courtyard, horned bronze altar, no bodies or food, cool blue dawn, pale gray linen, low viewpoint. The guilt-offering instructions, verses 1–5.",
+    "9": "At the portable wilderness sanctuary on the eighth morning, Aaron, older brother of Moses, stands in blue priestly garments and linen turban near a live young calf and ram. Early scene from verses 1–2, before any ritual. Only Aaron in foreground, hands naturally hidden by sleeves, dawn pink and cool ivory.",
+    "11": "A wild rock hyrax on a sunny boulder, olive desert shrubs with blue and gray shade, anatomically accurate compact mammal with rounded ears and virtually no visible tail. One animal only, verses 4–5.",
+    "12": "Two turtledoves with barred neck patches in a shallow open wicker carrying basket beside the pale linen sanctuary entrance. No humans. Verse 8. Dusty rose and ivory in soft morning shade.",
+    "13": "Close-up of a brown-skinned adult's bare forearm showing a small pale patch, a linen-sleeved priest looking attentively from behind, inspection scene in verses 1–3, no sores or graphic injury. Hands out of frame. Pale blue reflected daylight.",
+    "14": "Two small live wild birds in an open shallow wicker basket beside a clay vessel of spring water, cedar wood, a strip of scarlet yarn, and a few small green hyssop sprigs, dry hills outside the camp. Verses 4–6 before ritual. No people or violence.",
+    "15": "An unoccupied ancient camp interior, with a woven sleeping mat, pottery vessel and folded linen near a blue woven tent wall. Side light in soft violet and sandy tones. Objects from verses 4–12.",
+    "16": "Folded plain white linen garments, sash and turban laid on a reed mat beside a bronze wash basin inside the portable sanctuary. Early scene of the Day of Atonement, verse 4. Cool reflected light, muted crimson textile, no people.",
+    "17": "A flock of goats and sheep filing toward the white linen courtyard of the portable sanctuary in the distance, golden rocky foreground in neutral afternoon light and blue hillside shadows. Verse 3–5. No sacrifice or people.",
+    "18": "Tent camp among pale Sinai foothills with distant adults seated in a loose circle listening to Moses, weathered lean elder with medium-deep brown complexion and short salt-and-pepper tightly curled hair and full gray beard, rust red wrap, cream tunic. Broad panorama, group small in frame, afternoon mountain wind and indigo textiles, verses 1–5.",
+    "19": "Adult neighbors in an ancient Levantine vineyard leaving part of the crop behind, a woman gathering fallen clusters from the ground, subdued purple fruit and leafy green shade. Verse 10. Unposed medium brown and dark brown adults, simple period linen, hands hidden by foliage where possible.",
+    "20": "Wide view of wilderness tents and the community gathered well outside the sanctuary to listen to Moses. Moses seen from behind in a rust red wrap, short tightly curled gray hair, lean elder in cream linen. Early morning blue-gray hills and light tent canvas. Verses 1–2, no punishment depicted.",
+    "21": "A pair of simple clean folded linen priestly tunics and a fabric sash at the threshold of the portable sanctuary, cool cream and blue fabric in afternoon light. Evokes the priestly rules in verses 1–8, no people.",
+    "22": "In the shade of a white linen tent, a clay bowl with a small piece of unleavened bread on a woven mat near folded blue linen. No people. The priestly food rules in verses 10–13. Cool neutral midday light.",
+    "23": "A quiet Sabbath morning in the Sinai camp, two small groups resting in the shade of woven tent awnings, no one working, adults in natural linen and blue and plum, varied brown complexions and natural dark curled hair. Wide composition with small figures, verse 3, cool light.",
+    "24": "A gold seven-branched oil lamp burns outside the inner veil of the portable sanctuary. A small oil flask sits beside it in blue dusk and amber flame light.",
+    "25": "An unsown fallow field in the ancient Levant with volunteer grasses and a vine along a low rough stone boundary, rolling green hills and cloudy sky, no harvest or people. Verses 2–5, the land's sabbath.",
+    "26": "A spring-fed valley of the ancient Levant, healthy green vineyards and orchards, high rocky blue hills in morning light, a few humble mudbrick homes in the distance. Peace and fruitfulness in verses 4–6. No people or rain.",
+    "27": "A simple balance scale and several irregular unminted pieces of silver on a woven table inside a linen tent, cool light and muted burgundy cloth. Verses 2–8 and 25, valuation by weight. No modern coins, writing or people."
+  },
+  "openingRevisions": {
+    "9": "Close the sanctuary curtain to conceal all furnishings while preserving Aaron and both animals.",
+    "12": "Conceal the Ark behind a closed curtain while preserving the doves, basket and setting.",
+    "16": "Conceal the Ark behind a closed curtain while preserving the linen and basin."
+  },
+  "inlineReplacements": {
+    "3": "Keep the family leading a sheep and the priest receiving them. Replace the monumental masonry entrance, stairs, paving and gilded door completely with a portable tent sanctuary of wooden posts, woven linen hangings and packed earth in a wilderness camp. Grounded natural light and restrained illustration, anatomically correct hands and sheep.",
+    "4": "Keep the existing man, his priest interlocutor and their conversation. Show a visibly female goat, with small natural horns and no prominent beard, for Leviticus 4:28. Replace the paving, masonry staircase and fixed columns with packed earth and wooden tent posts of a portable wilderness sanctuary. Preserve recognizable faces and clothing. The inner sanctuary stays concealed.",
+    "5": "Keep the existing worshipper and priest and the basket of two living doves. Replace the stone staircase and permanent-looking columns in the background with linen tent hangings and slender wood tent posts on compact earth. Preserve faces, complexion and gesture, with hands correctly gripping the basket. No ark or interior visible.",
+    "6": "Keep the restitution encounter and returning adult and recipient. Replace all stacked minted coins with a few clearly irregular pieces of weighed silver. Replace the stone building background with Sinai camp tents and linen, and simplify the chest into a woven bundle. Grounded natural light, hands clearly anatomically correct.",
+    "21": "Preserve the linen-clad priests preparing their garments and bronze washing basin. Replace the fixed limestone temple and staircase completely with a portable ancient sanctuary of tentcloth, white linen screens and slender wooden posts. Set the figures on packed earth in shade. Keep bodies and hands anatomically correct.",
+    "22": "Keep the two men respectfully inspecting the healthy sheep, from same side angle. Replace the stone temple, masonry and paving completely with a portable tent sanctuary, pale linen hangings and packed earth. Anatomically correct men and sheep with four normal legs, no merging limbs.",
+    "26": "Keep the figures and rain and fruit trees exactly as composed. Replace the broad-leaved row crops that resemble maize with low fields of recognizable bearded ancient barley, varied greens and rain-darkened soil. Preserve believable hands and faces, a restrained naturalistic finish, and a lush ancient Levantine setting."
+  },
+  "inlineRevisions": {
+    "21": "Edit this specific illustration. Keep all the priests, garments, washing basin and layout, but close the sanctuary doorway entirely with opaque indigo and muted crimson woven fabric. The Ark and all interior furniture must be completely concealed. Maintain lifelike hands and natural warm brown complexions and curls. 16:9."
+  }
+}
