@@ -44,7 +44,7 @@ try{for(const [book,[name,count]] of illustratedBooks.entries())for(let chapter=
  const opener=additions.find(art=>art.afterVerse===0);
  if(opener){
   assert(context.readerChapterIllustrations(data,0).includes(opener.src),'Chapter opener appears before verse 1');
-  if(book===0||book===2||book===3||book===4||book===5)assert(!(data.eventHeadings?.[1]||[]).some(title=>stories[title]),'Do not crowd a Story image at the start of '+name+' '+chapter);
+  if(book===0||book===2||book===3||book===4||book===5||book===6)assert(!(data.eventHeadings?.[1]||[]).some(title=>stories[title]),'Do not crowd a Story image at the start of '+name+' '+chapter);
  }else assert.equal(context.readerChapterIllustrations(data,0),'');
 }
 }finally{globalThis.fetch=originFetch;}
@@ -56,4 +56,4 @@ assert.throws(()=>validateChapterImages(missing,original,headings,stories),/Gene
 const invalid=structuredClone(images);invalid['0:2'][0].afterVerse=999;
 assert.throws(()=>validateChapterImages(invalid,original,headings,stories),/Unknown image verse/);
 assert(source.includes('${readerChapterIllustrations(reading,v.n)}'),'Artwork follows a complete verse');
-console.log(`PASS: all 211 Genesis–Joshua chapters illustrated; ${existingChapters} have existing Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.`);
+console.log(`PASS: all 232 Genesis–Judges chapters illustrated; ${existingChapters} have existing Story coverage, ${newChapters} gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.`);
