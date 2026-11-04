@@ -22,7 +22,8 @@ export const illustratedBooks=new Map([
  [16,['Esther',10]],
  [17,['Job',42]],
  [18,['Psalms',150]],
- [19,['Proverbs',31]]
+ [19,['Proverbs',31]],
+ [23,['Jeremiah',52]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
