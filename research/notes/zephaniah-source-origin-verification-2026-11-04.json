@@ -1,0 +1,33 @@
+{
+  "base": "8217c57c591928653b7bd452ba5b21b79e4cc3f6",
+  "publicAssetCommit": "2c4a6f1d71e862a8b4ef4b5a39b8d32a9519b1c3",
+  "hostedAssetCount": 846,
+  "baselineAssetCount": 1215,
+  "baselineAssetsUnchanged": true,
+  "allManifestMembersAtPin": true,
+  "baselineChapterMetadataUnchanged": true,
+  "scriptureStoryReaderAndLockfilesUnchanged": true,
+  "records": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-zephaniah-01-opening-v1.webp",
+      "bytes": 130608,
+      "sha256": "f7c012fed15efa9afc9a7c0972a6dfaf387485af015cc305eb04cf39ff9ce05a",
+      "publicOrigin": "byte-exact"
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-zephaniah-02-opening-v1.webp",
+      "bytes": 144736,
+      "sha256": "1b71389fb495b0e7eaf5a6f38a12fb34a9c498c8a14fb55bf720c073241b7ef9",
+      "publicOrigin": "byte-exact"
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-zephaniah-03-opening-v1.webp",
+      "bytes": 151364,
+      "sha256": "94b8369d07c0d98bce278956c0ace8c57bd4bb1ef981ca7ef53c0c64e6d9b0f5",
+      "publicOrigin": "byte-exact"
+    }
+  ]
+}
