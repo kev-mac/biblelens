@@ -1,5 +1,7 @@
 # Ezekiel artwork audit — 2026-11-04
 
+Follow-up verification: locked dependencies were restored with authorization. Web/mobile build, image, mobile, release and all-48-chapter offline checks now pass. Worker size is 64,548,108 bytes, leaving 1,512,180 bytes below the Sites limit. This supersedes the initial missing-dependency and absent-bundle blockers recorded below. Rendered phone/iPad, physical-device and live Site checks remain unavailable. Full follow-up evidence is in `ezekiel-restored-validation-2026-11-04.json`.
+
 Ezekiel only, reader book ID 25, 48 chapters. Branch `artwork/ezekiel-2026-11-04` starts at freshly fetched GitHub main `846ba46`, the build 341 release checkpoint. The original `/workspace/biblelens` checkout is preserved; work uses `/workspace/ezekiel`. Read AGENTS.md, RELEASING.md, build 341 verification, and the relevant Kings/Proverbs continuity reviews first. No other session's branch or unapproved art was used.
 
 ## Source and release comparison
@@ -58,3 +60,17 @@ Merge chapter metadata by keys and hosted assets by union; preserve other sessio
 - This managed environment exposes no callable `cua_repl.js`. Per Sites guidance, no substitute browser was installed and no preview server was started. Phone/iPad layouts, browser image decoding, physical devices, signed assets, offline runtime and live Site byte checks remain pending in the integration/release environment.
 
 No automatic approval denial occurred. The HTTP 403 on the live endpoint was respected. There is no pending named-person continuity dependency; the remaining blockers concern environment/build and release verification. Stop after Ezekiel.
+
+## Follow-up: locked dependencies and packaged verification
+
+The follow-up instruction authorized restoring documented locked dependencies from the official registry. `npm ci --registry=https://registry.npmjs.org --cache=/workspace/.npm-ezekiel-cache --no-audit --no-fund` restored 152 packages successfully. Every resolved lockfile URL uses `registry.npmjs.org`. Package and lockfile bytes are unchanged. Existing proxy and TLS trust were preserved; no new credential, paid API, access bypass, browser installation or native device installation was used.
+
+- `NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile`: passed, producing both the web Worker and offline native bundle. Packaged retrieval, reference answers, startup asset ordering and recovery checks passed as part of the build.
+- `npm run check:images`: passed all 707 registered chapters and the existing Story-image checks. It verifies placement, alt text, hidden generic captions, unchanged scripture, packaged image bytes, native/web parity and missing-opener failures.
+- `npm run check:mobile`: passed mobile chrome, packaged worker reading, comparisons, chat, concurrent calls, citations, abort handling and zero external requests. Native inference is not simulated or verified.
+- `npm run check:release`: passed release identity, Sites packaging/CSP, cache refresh, embedded encoding and public-artwork privacy/cache/fallback checks. The build-219 text in one test's output is its fixture, not this candidate's build number.
+- `node research/notes/ezekiel-offline-check-2026-11-04.mjs`: passed all 48 Ezekiel chapters through the actual packaged device worker with network disabled. All three scripture editions are present, every chapter has exactly one opener, and all 49 image placements—including the inline Story—match native/source bytes. Zero network calls occurred.
+- Web and native `release.json` match: version 1.1.0, build 341, source fingerprint `bc63d73f209bd7c9e28045194547dacc7df6e440807c2c643aab8637344b60d7`.
+- Production Worker: 64,548,108 bytes against the 66,060,288-byte Sites limit, with 1,512,180 bytes of headroom. This measures Ezekiel plus its main baseline; the combined ten-book integration still needs its own build and source pin.
+
+The initial failed checks and source-only audit limits remain historical evidence. The follow-up validation JSON records their superseding results and log hashes. No main merge, publication, build-number change, signed build or physical installation occurred. Remaining limits are rendered phone/iPad layouts, physical/signed-device checks, the earlier blocked live endpoint, and integration of the parallel artwork branches.
