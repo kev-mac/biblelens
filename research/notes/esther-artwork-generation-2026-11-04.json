@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-04",
+  "generatedCount": 5,
+  "retainedStoryCount": 5,
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "images": [
+    {
+      "chapter": 4,
+      "tool": "image_gen.imagegen",
+      "actualInputs": [
+        {
+          "path": "src/assets/story-haman-s-plot-v1.webp",
+          "role": "Mordecai identity and gate/guards",
+          "sha256": "90699e07304bd518118fc3b054285684e4d40c9050e55368e3b5b3253d42364f"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "originalLocalPath": "/workspace/generated_images/exec-f7b2f42a-66a8-4c58-b53d-b63356958a4b.png",
+      "originalSha256": "22ed0676dbdbec5313ffda72eb0811e6760e7535fb809edde5040e379c7e6b05",
+      "output": "src/assets/chapter-esther-04-opening-v1.webp",
+      "sha256": "bc435b56769d8dedc95c37a8932f21263ee6d4ed756251a3a0866f805703f7fa",
+      "bytes": 126226,
+      "width": 960,
+      "height": 540,
+      "webpQuality": 86,
+      "review": "Original full scene and final WebP inspected at native size. No clear malformed visible anatomy. Mordecai/Ahasuerus compared with actual approved references and neighboring depictions; no clear identity break. Hidden parts and distant crowd details cannot be fully verified."
+    },
+    {
+      "chapter": 6,
+      "tool": "image_gen.imagegen",
+      "actualInputs": [
+        {
+          "path": "src/assets/story-esther-becomes-queen-v1.webp",
+          "role": "Ahasuerus identity",
+          "sha256": "923d15ac5644e43a4f5ced4764f3cd005661306d329039fafcf2989c583867f2"
+        },
+        {
+          "path": "src/assets/story-esther-s-banquets-v1.webp",
+          "role": "Ahasuerus identity",
+          "sha256": "6f41b1c706c2a15164f627f579af33ab3f52751d8752d7cc429418838fef0f79"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "originalLocalPath": "/workspace/generated_images/exec-68e08b4c-9519-4bf0-9fd0-7cb30a5fe779.png",
+      "originalSha256": "ea0be5e7efc8a16f73d89f8f7f4ec7194bd2eced3d244cae1756911a34bfedc0",
+      "output": "src/assets/chapter-esther-06-opening-v1.webp",
+      "sha256": "399fbd319ade5d47495758eae339f491bed0bea6c49da2bd13dfb7f710e65281",
+      "bytes": 89840,
+      "width": 960,
+      "height": 540,
+      "webpQuality": 86,
+      "review": "Original full scene and final WebP inspected at native size. No clear malformed visible anatomy. Mordecai/Ahasuerus compared with actual approved references and neighboring depictions; no clear identity break. Hidden parts and distant crowd details cannot be fully verified."
+    },
+    {
+      "chapter": 7,
+      "tool": "image_gen.imagegen",
+      "actualInputs": [
+        {
+          "path": "src/assets/story-esther-s-banquets-v1.webp",
+          "role": "setting only; no people",
+          "sha256": "6f41b1c706c2a15164f627f579af33ab3f52751d8752d7cc429418838fef0f79"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "originalLocalPath": "/workspace/generated_images/exec-21da240b-b656-4dae-9689-fac63e70f718.png",
+      "originalSha256": "1f242fe0666c701b944f4b69933b6ebce90ae5b72928ea51a9b59973d4d438f9",
+      "output": "src/assets/chapter-esther-07-opening-v1.webp",
+      "sha256": "8ed378010db88eaa9a0ceab1327c8f1e4334a3f8f0cfcb15cf4135ddee53e10d",
+      "bytes": 138922,
+      "width": 960,
+      "height": 540,
+      "webpQuality": 86,
+      "review": "Original full scene and final WebP inspected at native size. No clear malformed visible anatomy. Mordecai/Ahasuerus compared with actual approved references and neighboring depictions; no clear identity break. Hidden parts and distant crowd details cannot be fully verified."
+    },
+    {
+      "chapter": 9,
+      "tool": "image_gen.imagegen",
+      "actualInputs": [
+        {
+          "path": "src/assets/story-the-jews-delivered-and-purim-v1.webp",
+          "role": "food and setting only; no people",
+          "sha256": "cef8fa9ccbdda1543df4c02bf2f5c85109785a7ecf372f4ec73970d680111fb1"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "originalLocalPath": "/workspace/generated_images/exec-b1626f3e-6fb5-4c03-a67e-604befe9ac9f.png",
+      "originalSha256": "d9f7edfc0b1f46ab00e171d3dae016b32e23fcb4aeed636a5133e7d13426730d",
+      "output": "src/assets/chapter-esther-09-opening-v1.webp",
+      "sha256": "9dff4767af28c04cc86f946fa3b073c361294c1747eb3d5ba202f26546aa70c2",
+      "bytes": 170908,
+      "width": 960,
+      "height": 540,
+      "webpQuality": 86,
+      "review": "Original full scene and final WebP inspected at native size. No clear malformed visible anatomy. Mordecai/Ahasuerus compared with actual approved references and neighboring depictions; no clear identity break. Hidden parts and distant crowd details cannot be fully verified."
+    },
+    {
+      "chapter": 10,
+      "tool": "image_gen.imagegen",
+      "actualInputs": [
+        {
+          "path": "src/assets/story-haman-s-plot-v1.webp",
+          "role": "approved Mordecai identity anchor",
+          "sha256": "90699e07304bd518118fc3b054285684e4d40c9050e55368e3b5b3253d42364f"
+        },
+        {
+          "path": "/workspace/generated_images/exec-f7b2f42a-66a8-4c58-b53d-b63356958a4b.png",
+          "role": "supporting same-session likeness, never sole anchor",
+          "sha256": "22ed0676dbdbec5313ffda72eb0811e6760e7535fb809edde5040e379c7e6b05"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "originalLocalPath": "/workspace/generated_images/exec-554e5c91-b7d2-4f99-abbf-79e7fb438a98.png",
+      "originalSha256": "6cd60a5db32fe95b217789f7e57691ec8fbf2dbe88d6ec32fa31e4b06e0b5720",
+      "output": "src/assets/chapter-esther-10-opening-v1.webp",
+      "sha256": "cc53cc5f2b7295c17d69b84b164f0a860fa4fc91911d5dd56b91235ed18ab340",
+      "bytes": 153908,
+      "width": 960,
+      "height": 540,
+      "webpQuality": 86,
+      "review": "Original full scene and final WebP inspected at native size. No clear malformed visible anatomy. Mordecai/Ahasuerus compared with actual approved references and neighboring depictions; no clear identity break. Hidden parts and distant crowd details cannot be fully verified."
+    }
+  ]
+}
