@@ -111,7 +111,7 @@
     "hostedManifest": true
   },
   "limitations": [
-    "Built web/native parity, Worker size and offline execution unverified: esbuild and other project dependencies absent; installation forbidden by session scope.",
+    "Built web/native parity, Worker size and offline execution are verified separately by ecclesiastes-build-verification-2026-11-04.mjs and its JSON ledger.",
     "Phone/iPad layouts unavailable: managed browser tool absent.",
     "Live release GET denied HTTP 403; no retry or bypass.",
     "Recheck spacing against Song of Solomon branch at integration."
