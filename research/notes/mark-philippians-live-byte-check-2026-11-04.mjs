@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+const pickVerse=v=>Object.fromEntries(['n','kjv','asv','web'].filter(k=>Object.hasOwn(v,k)).map(k=>[k,v[k]]));
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 const expected=JSON.parse(fs.readFileSync('/tmp/biblelens344-live-expected.json','utf8'));
@@ -22,7 +23,7 @@ async function get(path){
  }
 }
 async function pool(rows,fn){let next=0;const out=[],errors=[];await Promise.all(Array.from({length:6},async()=>{while(next<rows.length&&!failed){const i=next++;try{out[i]=await fn(rows[i]);if(i%20===0)flush();}catch(error){failed||={error:error.message};errors.push(error);}}}));flush();if(errors.length)throw errors[0];return out;}
-async function chapter(c){const key=c.book+':'+c.chapter;if(cache.chapters[key])return cache.chapters[key];const response=await get('/api/chapter?book='+c.book+'&chapter='+c.chapter),data=await response.json();assert.deepEqual(data.chapterImages||[],c.chapterImages);assert.deepEqual(data.eventHeadings||{},c.eventHeadings);assert.deepEqual(data.verses.map(v=>({n:v.n,kjv:v.kjv,asv:v.asv,web:v.web})),c.verses);return cache.chapters[key]={book:c.book,chapter:c.chapter,verses:c.verses.length};}
+async function chapter(c){const key=c.book+':'+c.chapter;if(cache.chapters[key])return cache.chapters[key];const response=await get('/api/chapter?book='+c.book+'&chapter='+c.chapter),data=await response.json();assert.deepEqual(data.chapterImages||[],c.chapterImages);assert.deepEqual(data.eventHeadings||{},c.eventHeadings);assert.deepEqual(data.verses.map(pickVerse),c.verses);return cache.chapters[key]={book:c.book,chapter:c.chapter,verses:c.verses.length};}
 async function asset(src){if(cache.images[src])return cache.images[src];const response=await get(src);assert(response.headers.get('content-type')?.includes('image/webp'));const bytes=Buffer.from(await response.arrayBuffer());for(const prefix of ['src','www',signed])assert.deepEqual(bytes,fs.readFileSync(prefix+src),src+' '+prefix);return cache.images[src]={src,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),finalOrigin:new URL(response.url).origin};}
 try{
  // Establish success on one chapter and one image before starting a bounded batch.

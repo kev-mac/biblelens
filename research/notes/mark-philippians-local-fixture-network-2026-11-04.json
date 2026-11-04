@@ -1,0 +1,117 @@
+{
+  "reason": "Local layout handler has empty environment, so optional cloud session endpoint returns 503. No image/chapter failures occurred. Retry indicator was allowed to complete before final screenshots; no product behavior or security response was changed.",
+  "observations": [
+    {
+      "engine": "chromium",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "chromium",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "engine": "chromium",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "chromium",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "engine": "chromium",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "chromium",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "chromium",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "engine": "chromium",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "chromium",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "failure": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    },
+    {
+      "engine": "chromium",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "phone",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    },
+    {
+      "engine": "webkit",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "failure": {
+        "errorText": "cancelled"
+      }
+    },
+    {
+      "engine": "webkit",
+      "label": "ipad",
+      "url": "http://127.0.0.1:54661/api/sync/session",
+      "status": 503
+    }
+  ]
+}
