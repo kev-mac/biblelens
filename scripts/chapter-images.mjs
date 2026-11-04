@@ -14,7 +14,8 @@ export const illustratedBooks=new Map([
  [8,['1 Samuel',31]],
  [9,['2 Samuel',24]],
  [10,['1 Kings',22]],
- [11,['2 Kings',25]]
+ [11,['2 Kings',25]],
+ [12,['1 Chronicles',29]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
