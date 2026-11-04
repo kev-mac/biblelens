@@ -5,6 +5,12 @@ The Creation pilot is approved, but **is not active or published** in this check
 pending until a reviewed frame poster and its text description are available. Pending entries
 render the existing Story image without a disabled player or remote requests.
 
+The parent selected a clean frame from the approved video's day-three land-and-plants
+shot and supplied `biblelens-creation-poster.jpg`, Library file
+`libfile_fdc0ee5748308191a9f040624d0ae9ba`. The manifest records that derivative's
+Library ID. Its transfer failed in this executor, so `poster` remains null and
+the video remains pending; no pixels were available for local inspection.
+
 Kevin chose YouTube and approved an unlisted Creation upload. The parent verified
 the upload on KVN MCGWN with embedding enabled:
 https://www.youtube.com/watch?v=BDNJ8-wtaeA. No YouTube upload, publication,
@@ -53,7 +59,9 @@ Only the small poster and player assets are packaged locally.
 
 1. The parent confirmed the unlisted upload ID `BDNJ8-wtaeA` with embedding
    enabled. Verify actual playback in an official embed when browser access is available.
-2. Use the verified upload's thumbnail or actual video through supported normal
+2. Prefer the parent-selected day-three frame in Library file
+   `libfile_fdc0ee5748308191a9f040624d0ae9ba` once supported materialization is available.
+   Otherwise use the verified upload's thumbnail or actual video through supported normal
    access, or materialize Library file `libfile_2ca1b9220b2c81919acbd60a7943453f` in the
    consuming executor using the current Library skill. Verify readable local
    bytes, inspect actual frames, select a relevant one and save a compressed WebP at
@@ -98,6 +106,17 @@ poster selection and live embedded playback remain blocked in this executor.
 The user-message history was checked after the denial; it confirms the upload
 authorization and channel choice, but contains no changed network configuration.
 
+The parent later supplied the new 120,694-byte JPEG derivative named above. Using
+the current Library skill, `prepare_materialize` returned a signed transfer for
+that exact file (version 0, transfer ID `materialize-1`). The current supported
+helper was invoked once with consumer-local destination
+`/workspace/creation-poster-input/biblelens-creation-poster.jpg`. It exited 1 with
+exact output `library file transfer failed: download failed`. The destination
+does not exist and is not readable. This was a distinct derivative transfer,
+not a retry of the video. As instructed, that path stopped after this result:
+no retry, alternate URL, executor switch or access workaround was attempted.
+Local pixel review, poster suitability confirmation and activation remain blocked.
+
 Managed browser tooling (`cua_repl.js`) is absent in this executor. Per the Sites
 skill, browser previews and phone/iPad visual QA cannot run here; no replacement
 browser was installed. Automated state/API fixtures verify controller behavior,
@@ -112,9 +131,9 @@ private-note preservation, sync security and release packaging. Readability ran
 successfully in its existing report-only mode. The managed-browser-dependent
 `scripts/check-release-smoke.mjs` was explicitly skipped; `check:ui` and physical
 phone/iPad playback were not run. Source syntax and `git diff --check` passed.
-After the follow-up ID change, both generated release records match the current
+After recording the verified ID and selected poster reference, both generated release records match the current
 local source fingerprint:
-`86539c6f6f0823854819f2e23b475d582cf7e8f399c69cb37805706791cfdc7a`.
+`b220bc9777ae3c2e004b6c095ed020fd2fa6de1d8c82c28d73e4280fe8d64874`.
 Build number 346 is unchanged because this work has not been released.
 Internal build/check logs are in `outputs/creation-video-integration/` (ignored).
 
