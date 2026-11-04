@@ -59,6 +59,8 @@ const missingFirstSamuel=structuredClone(images);delete missingFirstSamuel['8:2'
 assert.throws(()=>validateChapterImages(missingFirstSamuel,original,headings,stories),/1 Samuel 2 needs/);
 const missingRuthHeadings=structuredClone(headings);delete missingRuthHeadings['7:1'];
 assert.throws(()=>validateChapterImages(images,original,missingRuthHeadings,stories),/Ruth 1 needs/);
+const missingEsther=structuredClone(images);delete missingEsther['16:4'];
+assert.throws(()=>validateChapterImages(missingEsther,original,headings,stories),/Esther 4 needs/);
 const invalid=structuredClone(images);invalid['0:2'][0].afterVerse=999;
 assert.throws(()=>validateChapterImages(invalid,original,headings,stories),/Unknown image verse/);
 assert(source.includes('${readerChapterIllustrations(reading,v.n)}'),'Artwork follows a complete verse');
