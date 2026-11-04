@@ -38,6 +38,10 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.locator('#ux-empty-verse-actions [data-context-bookmark]').click();
    assert.equal(await page.locator('#ux-empty-verse-actions [data-context-bookmark]').getAttribute('aria-pressed'),'true');
    assert(await page.evaluate(key=>!!state.verseBookmarks[key],key));
+   // Bookmark rendering restores scroll on the next frame; reopen the normal
+   // verse controls after that restoration before choosing the next action.
+   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+   await page.locator(`#verse-${verse} .verse-num`).click();
    await page.locator('#ux-empty-verse-actions [data-context-note]').click();
    await page.locator('#lens-margin-note:visible').fill('Private UX verification note');
    assert.equal(await page.evaluate(key=>state.verseNotes[key].text,key),'Private UX verification note');
