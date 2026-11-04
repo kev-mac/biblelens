@@ -40,5 +40,6 @@
     "Compare fresh Sites mirror for independent changes",
     "Increment combined build, rebuild, actual origin/live checks, viewport QA, sign, publish, install, launch, release verify"
   ],
-  "noMainMergePublishInstall": true
+  "noMainMergePublishInstall": true,
+  "browserRecovery": "Investigated: repository setup unavailable; pinned CLI dry-run succeeded; managed browser tool missing and official download hosts outside enforced allowlist. Installation/smoke rerun not attempted, not denied by auto-review. See browser-recovery.json."
 }
