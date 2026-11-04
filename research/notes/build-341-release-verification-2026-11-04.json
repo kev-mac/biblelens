@@ -1,0 +1,42 @@
+{
+  "version": "1.1.0",
+  "buildNumber": 341,
+  "sourceHash": "e349a6e2440fa87b2b455f91bcfb5654b33cbf9e10cb9e0b6713d6274aedaa0d",
+  "sitesVersion": 330,
+  "sitesSourceCommit": "6489207c16040f17c2247db76080520fc6f422b0",
+  "deploymentId": "appgdep_6aea9b1c8ea08191bbbc59c684512e10",
+  "deploymentStatus": "succeeded",
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "archiveSha256": "8afc29c3f4bb99dc7a731d7f9fdf3b91d582186d41a2bb2687470d7982208f2f",
+  "workerBytes": 64747604,
+  "workerBudgetBytes": 66060288,
+  "workerHeadroomBytes": 1312684,
+  "signedFilesMatchingWww": 1045,
+  "strictCodesign": "passed",
+  "releaseVerify": "passed",
+  "devices": {
+    "iphone": {
+      "version": "1.1.0",
+      "buildNumber": 341,
+      "install": "success",
+      "launch": "success",
+      "runningAfterLaunch": true
+    },
+    "ipad": {
+      "version": "1.1.0",
+      "buildNumber": 341,
+      "install": "success",
+      "launch": "success",
+      "runningAfterLaunch": true
+    }
+  },
+  "status": "complete",
+  "liveChaptersVerified": 659,
+  "batchChaptersVerified": 368,
+  "liveImagesVerified": 936,
+  "liveImageBytesCompared": 113975480,
+  "allImagesServedFromSiteOrigin": true,
+  "sitesSavedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f0e585cbbed8819183a805cc6a0ff521",
+  "sitesArchiveContentHash": "sha256:f4de56b04670abe2818c7ea5ee0f2120bb52dd404c013c857b1bc8ae4d30ab88",
+  "remainingBlockers": []
+}
