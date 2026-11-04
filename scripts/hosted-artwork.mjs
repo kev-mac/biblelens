@@ -33,13 +33,13 @@ export function hostedArtwork() {
  const images=JSON.parse(fs.readFileSync('data/chapter-images.json','utf8'));
  const expected=Object.entries(images).flatMap(([key,entries])=>{
   const book=Number(key.split(':')[0]);
-  if(book>=1&&book<=49)return entries.map(art=>art.src);
+  if((book>=1&&book<=49)||book===56)return entries.map(art=>art.src);
   if(book===0)return entries.filter(art=>art.afterVerse===0||/-v[2-9]\d*\.webp$/.test(art.src)).map(art=>art.src);
   return [];
  });
  const storyImages=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
  const activeStorySources=new Set(Object.values(storyImages).map(art=>art.src));
  for(const src of hostedStoryReplacements){assert(activeStorySources.has(src),'Hosted Story replacement must remain active: '+src);expected.push(src);}
- assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every new Genesis and Exodus–Philippians chapter image uses the checked public source');
+ assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every new Genesis and explicitly registered chapter image uses the checked public source');
  return result;
 }
