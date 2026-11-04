@@ -1,0 +1,21 @@
+{
+  "activeImages": 1316,
+  "bytes": 165749738,
+  "sourceOfflineParity": true,
+  "webMobileRelease": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "dbe0357405acf93e87cd8399011119a0f90fdd8b213a124209b747041adbd465"
+  },
+  "workerBytes": 63922492,
+  "workerLimit": 66060288,
+  "stagedFiles": [
+    ".openai/drizzle/0000_loose_bug.sql",
+    ".openai/drizzle/meta/0000_snapshot.json",
+    ".openai/drizzle/meta/_journal.json",
+    ".openai/hosting.json",
+    "server/index.js"
+  ],
+  "browserLayouts": "never run",
+  "signingDevicesPublication": "coordinator scope, not attempted"
+}

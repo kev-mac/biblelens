@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:images"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 6.59,
+    "log": "/tmp/james-check-0.log",
+    "tail": "\n> scripture-lens@1.1.0 check:images\n> node scripts/check-story-images.mjs && node scripts/check-chapter-images.mjs && node scripts/check-1-samuel-artwork.mjs\n\nPASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.\nPASS: all 1112 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, James); 272 have existing Story coverage, 899 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.\nCLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]\nPASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:mobile"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 1.94,
+    "log": "/tmp/james-check-1.log",
+    "tail": "\n> scripture-lens@1.1.0 check:mobile\n> node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs\n\nPASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.\nPASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:release"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 9.49,
+    "log": "/tmp/james-check-2.log",
+    "tail": "\n> scripture-lens@1.1.0 check:release\n> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs\n\nPASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.\nPASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.\nPASS: local browser previews make no published-release request, while native localhost still checks for updates.\nPASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.\nPASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.\nPASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.\nPASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/check-james-artwork.mjs",
+      "--offline"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 9.49,
+    "log": "/tmp/james-check-3.log",
+    "tail": "PASS: James 5/5 single openers, renderer/alt/captions, exact baseline preservation, hosting union, complete-canon spacing.\nPASS: all 5 actual offline-engine chapters, 108 verses in all editions, source/web/offline image parity, zero network calls.\n"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "release:sites",
+      "--",
+      "/tmp/james-sites-stage/dist"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 0.49,
+    "log": "/tmp/james-check-4.log",
+    "tail": "\n> scripture-lens@1.1.0 release:sites\n> node scripts/package-sites.mjs /tmp/james-sites-stage/dist\n\nSites Worker-only package ready: /tmp/james-sites-stage/dist\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "seconds": 0.01,
+    "log": "/tmp/james-check-5.log",
+    "tail": ""
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 1,
+    "status": "failed at browser startup after preceding content/readability/search checks passed",
+    "browserError": "Chromium executable absent at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "browserSmoke": "never ran; engine launch failed before server creation",
+    "log": "/tmp/james-content-check.log",
+    "readability": "Inherited corpus report-only results, not a strict pass"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build:mobile"
+    ],
+    "exitCode": 0,
+    "status": "passed",
+    "log": "/tmp/james-build-mobile-final.log"
+  },
+  {
+    "action": "Live Site release metadata HEAD",
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "status": "denied",
+    "reason": "Environment proxy CONNECT HTTP 403; no retry or bypass"
+  },
+  {
+    "action": "Phone/iPad browser layouts",
+    "status": "never run",
+    "reason": "Managed runtime has no cua_repl.js; Chromium/WebKit unavailable; no substitute installation attempted"
+  }
+]

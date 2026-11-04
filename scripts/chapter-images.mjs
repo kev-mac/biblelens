@@ -61,6 +61,7 @@ export const illustratedBooks=new Map([
  [55,['Titus',3]],
  [56,['Philemon',1]],
  [57,['Hebrews',13]],
+ [58,['James',5]],
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
