@@ -1,0 +1,113 @@
+{
+  "branch": "artwork/ezekiel-2026-11-04",
+  "validatedSourceCommit": "d697dbb",
+  "dependencyRestore": {
+    "command": "npm ci --registry=https://registry.npmjs.org --cache=/workspace/.npm-ezekiel-cache --no-audit --no-fund",
+    "exitCode": 0,
+    "packagesAdded": 152,
+    "allLockfileResolvedHosts": [
+      "registry.npmjs.org"
+    ],
+    "packageAndLockfileUnchanged": true,
+    "noCredentialsCreated": true
+  },
+  "checks": [
+    {
+      "check": "build-mobile",
+      "exitCode": 0,
+      "log": "/tmp/ezekiel-restored-build-mobile.log",
+      "logSha256": "1e68e9f3a11655a71b1be644e494be96a63265434ec1b1459a80e7d7e49d2359",
+      "passEvidence": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+        "Mobile web bundle ready: /workspace/ezekiel/www (offline reading/search; optional cloud sync)"
+      ]
+    },
+    {
+      "check": "images",
+      "exitCode": 0,
+      "log": "/tmp/ezekiel-restored-images.log",
+      "logSha256": "84dca678ab198970754254b19aa8219506828280723acb1912ca55484d14516d",
+      "passEvidence": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 707 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ezekiel); 182 have existing Story coverage, 563 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    {
+      "check": "mobile",
+      "exitCode": 0,
+      "log": "/tmp/ezekiel-restored-mobile.log",
+      "logSha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "passEvidence": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    {
+      "check": "release",
+      "exitCode": 0,
+      "log": "/tmp/ezekiel-restored-release.log",
+      "logSha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "passEvidence": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    {
+      "check": "ezekiel-offline",
+      "exitCode": 0,
+      "log": "/tmp/ezekiel-restored-ezekiel-offline.log",
+      "logSha256": "1e6812120e2272f9c652f0fd41a9eb671d0083870b61a834271c9692bf14533f",
+      "passEvidence": [
+        "PASS: 48 Ezekiel chapters from packaged offline engine, 49 image placements match native/source bytes, three scripture editions, exactly one opener per chapter, zero network calls."
+      ]
+    }
+  ],
+  "webRelease": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "bc63d73f209bd7c9e28045194547dacc7df6e440807c2c643aab8637344b60d7"
+  },
+  "mobileRelease": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "bc63d73f209bd7c9e28045194547dacc7df6e440807c2c643aab8637344b60d7"
+  },
+  "worker": {
+    "bytes": 64548108,
+    "limitBytes": 66060288,
+    "headroomBytes": 1512180
+  },
+  "offlineEzekiel": {
+    "chapters": 48,
+    "imagePlacements": 49,
+    "networkCalls": 0,
+    "editions": [
+      "KJV",
+      "ASV",
+      "WEB"
+    ]
+  },
+  "remainingLimits": [
+    "No callable cua_repl.js; rendered phone/iPad layout checks unavailable.",
+    "Physical devices, signed-asset comparison and installation not performed.",
+    "Earlier live HTTP 403 remains; no retry or bypass.",
+    "Combined parallel-branch artwork union pin and Worker size require integration."
+  ],
+  "supersedes": "Missing-dependency and absent dist/www blockers in the initial check results and source audit limits. Original failed attempts remain as historical evidence."
+}

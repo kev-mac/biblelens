@@ -1,0 +1,52 @@
+[
+  {
+    "check": "check:readability",
+    "exitCode": 0,
+    "log": "/tmp/ezekiel-check-readability.log",
+    "detail": "Report-only inherited findings"
+  },
+  {
+    "check": "check:images",
+    "exitCode": 1,
+    "log": "/tmp/ezekiel-check-images.log",
+    "detail": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/workspace/ezekiel/dist/server/index.js' imported from /workspace/ezekiel/scripts/check-story-images.mjs"
+  },
+  {
+    "check": "check:mobile",
+    "exitCode": 1,
+    "log": "/tmp/ezekiel-check-mobile.log",
+    "detail": "Error: ENOENT: no such file or directory, open 'www/index.html'"
+  },
+  {
+    "check": "check:release",
+    "exitCode": 1,
+    "log": "/tmp/ezekiel-check-release.log",
+    "detail": "Error: ENOENT: no such file or directory, open 'dist/asset-manifest.json'"
+  },
+  {
+    "check": "new active source WebP decoding, native dimensions and byte budget",
+    "exitCode": 0,
+    "detail": "All 45 files decode; chapter 960x540, Story 1200x675, each below 250000 bytes."
+  },
+  {
+    "check": "build:mobile",
+    "exitCode": 1,
+    "log": "/tmp/ezekiel-build-mobile.log",
+    "detail": "ERR_MODULE_NOT_FOUND: Cannot find package esbuild imported from scripts/build-mobile.mjs; installation excluded."
+  },
+  {
+    "check": "source coverage, preservation, renderer markup, spacing and hosted manifest",
+    "exitCode": 0,
+    "detail": "48 Ezekiel openers, 707 registered chapters, no close pair; minimum eight verses."
+  },
+  {
+    "check": "node scripts/check-public-artwork.mjs",
+    "exitCode": 0,
+    "detail": "Privacy, hashes, cache and immutable fallback fixtures pass."
+  },
+  {
+    "check": "direct immutable public origin",
+    "exitCode": 0,
+    "detail": "45/45 active new assets match source bytes and SHA-256 after an initial HTTP 502."
+  }
+]
