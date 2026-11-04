@@ -1,0 +1,63 @@
+{
+  "commands": [
+    {
+      "name": "build-mobile",
+      "log": "/tmp/obadiah-build-mobile.log",
+      "status": "passed",
+      "sha256": "586b5fffd6b1d7bfa34be26ef9e51c0a36d79f63cdac7da478da8ddb1e8231fb"
+    },
+    {
+      "name": "readability",
+      "log": "/tmp/obadiah-readability.log",
+      "status": "passed",
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    },
+    {
+      "name": "images",
+      "log": "/tmp/obadiah-images.log",
+      "status": "passed",
+      "sha256": "ac8ca874cb69eb338e17474cf04e21146d5447851a4a565324bef9d3268fbe4c"
+    },
+    {
+      "name": "mobile",
+      "log": "/tmp/obadiah-mobile.log",
+      "status": "passed",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    {
+      "name": "release",
+      "log": "/tmp/obadiah-release.log",
+      "status": "passed",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    {
+      "name": "offline",
+      "log": "/tmp/obadiah-offline.log",
+      "status": "passed",
+      "sha256": "3c4054b7220174211a5ba86479a4063057fbd6b0eeb375a44b5d772af2bddfbb"
+    }
+  ],
+  "npmInstall": {
+    "command": "npm ci --registry=https://registry.npmjs.org --cache=/tmp/obadiah-npm-cache --no-audit --no-fund",
+    "status": "passed",
+    "packages": 152,
+    "packageInputsUnchanged": true
+  },
+  "worker": {
+    "bytes": 64425214,
+    "limit": 66060288,
+    "headroom": 1635074
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "541e651d1cefdf4ea1e6a91cfc2dbe5fa6d1ca468da6056945144566100ee6a9"
+  },
+  "pending": [
+    "phone/iPad rendered viewport QA: no callable cua_repl.js; no substitute browser installed or preview started",
+    "signed-device assets and installs: combined release scope",
+    "live release and image audit: direct Site request denied proxy CONNECT 403; not retried",
+    "combined 10-book union/pin, continuity/spacing and packaging recheck"
+  ],
+  "publicOrigin": "new immutable asset passed; prior 843 origin assets not refetched"
+}

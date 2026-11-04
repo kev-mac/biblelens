@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "cba2f4443e0ad6682a56ad151aaebd58efff6a48",
+  "completeSourceUnion": true,
+  "assets": 844,
+  "newAsset": "/assets/chapter-obadiah-01-opening-v1.webp",
+  "bytes": 157098,
+  "sha256": "10282b1e7e680ec4affedca3e59626b8635d6b121e64b1a884b1c8042c24cb90",
+  "match": true,
+  "earlierOriginAssets": "843 verified in build 342; unchanged source blobs preserved; not refetched here",
+  "attempts": [
+    "Node fetch EAI_AGAIN (no proxy selected)",
+    "curl mistyped SHA 404; corrected with git rev-parse",
+    "curl through configured proxy exact immutable SHA passed"
+  ]
+}
