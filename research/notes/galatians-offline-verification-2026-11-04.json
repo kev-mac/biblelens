@@ -1,0 +1,57 @@
+{
+  "chapters": 6,
+  "verseCount": 149,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "exactScripture": true,
+  "sourceBlanks": [],
+  "networkCalls": 0,
+  "results": [
+    {
+      "key": "47:1",
+      "verses": 24,
+      "src": "/assets/chapter-galatians-01-opening-v1.webp",
+      "bytes": 143330,
+      "sha256": "997ff9411677afdec7440fb1eeb2afa9e77854f478d36f056a8d72aef1047e34"
+    },
+    {
+      "key": "47:2",
+      "verses": 21,
+      "src": "/assets/chapter-galatians-02-opening-v1.webp",
+      "bytes": 183168,
+      "sha256": "1e07015bd4159948d50971d986c710bbe2292c436ee52c524d5a50f009402863"
+    },
+    {
+      "key": "47:3",
+      "verses": 29,
+      "src": "/assets/chapter-galatians-03-opening-v1.webp",
+      "bytes": 108242,
+      "sha256": "3a8927f9baef17e1791175e07f83188634567e5d6dd959c6e8c901a2b542171c"
+    },
+    {
+      "key": "47:4",
+      "verses": 31,
+      "src": "/assets/chapter-galatians-04-opening-v1.webp",
+      "bytes": 145744,
+      "sha256": "53c1d049afbba52ba9239010415653b2d668a65ceb239872e4b3603d01c6f839"
+    },
+    {
+      "key": "47:5",
+      "verses": 26,
+      "src": "/assets/chapter-galatians-05-opening-v1.webp",
+      "bytes": 170026,
+      "sha256": "b19455a9f167bf7b16ba26ff3cb2e524c82c39b2c2540418e431aefd3351cf34"
+    },
+    {
+      "key": "47:6",
+      "verses": 18,
+      "src": "/assets/chapter-galatians-06-opening-v1.webp",
+      "bytes": 176336,
+      "sha256": "f9c55ea65be22884c5e689d373de4cec7e01e892489760b064c79a5acc68e243"
+    }
+  ],
+  "webOrigin": "Local generated Worker fixture with pinned source-origin byte responses; not live/public-origin verification"
+}
