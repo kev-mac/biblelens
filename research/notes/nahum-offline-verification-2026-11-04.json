@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "networkRequests": 0,
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": 15,
+      "opener": "/assets/chapter-nahum-01-opening-v1.webp"
+    },
+    {
+      "chapter": 2,
+      "verses": 13,
+      "opener": "/assets/chapter-nahum-02-opening-v1.webp"
+    },
+    {
+      "chapter": 3,
+      "verses": 19,
+      "opener": "/assets/chapter-nahum-03-opening-v1.webp"
+    }
+  ],
+  "initialHarnessFailure": "The ad hoc stdin Node module passed --input-type=module into a CommonJS eval worker, which stopped. Running the same documented adapter from an .mjs file resolves the harness issue; application source was unchanged."
+}

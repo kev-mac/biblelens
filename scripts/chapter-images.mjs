@@ -35,7 +35,8 @@ export const illustratedBooks=new Map([
  [29,['Amos',9]],
  [30,['Obadiah',1]],
  [31,['Jonah',4]],
- [32,['Micah',7]]
+ [32,['Micah',7]],
+ [33,['Nahum',3]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
