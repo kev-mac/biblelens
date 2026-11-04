@@ -1,0 +1,50 @@
+{
+  "chapters": 5,
+  "verseCount": 108,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "exactScripture": true,
+  "sourceBlanks": [],
+  "networkCalls": 0,
+  "results": [
+    {
+      "key": "58:1",
+      "verses": 27,
+      "src": "/assets/chapter-james-01-opening-v1.webp",
+      "bytes": 90490,
+      "sha256": "b0ec7b0d8f68810ba1f743a377bf59a3e74bbc3f12240274ce142b45be8cbe64"
+    },
+    {
+      "key": "58:2",
+      "verses": 26,
+      "src": "/assets/chapter-james-02-opening-v1.webp",
+      "bytes": 113480,
+      "sha256": "5a63a12115cb5bb2af96800bfa7bae6252451908f492f05efadb30d1077368b1"
+    },
+    {
+      "key": "58:3",
+      "verses": 18,
+      "src": "/assets/chapter-james-03-opening-v1.webp",
+      "bytes": 139982,
+      "sha256": "af0694b846387204ed03a9c1ce0314c2505d4cf7bb454e97c41316383c214f99"
+    },
+    {
+      "key": "58:4",
+      "verses": 17,
+      "src": "/assets/chapter-james-04-opening-v1.webp",
+      "bytes": 113392,
+      "sha256": "a72e76c5bb3770b0e308a4db6bd490d6a1ffd27f5ccb95ed2f8fb90133cbb30f"
+    },
+    {
+      "key": "58:5",
+      "verses": 20,
+      "src": "/assets/chapter-james-05-opening-v1.webp",
+      "bytes": 144580,
+      "sha256": "91e9855930d0f2af2f9803835604b15df3f15715656bcf6551ba34f23f8b9e2b"
+    }
+  ],
+  "webOrigin": "Local generated Worker fixture with pinned source-origin byte responses; not live/public-origin verification"
+}
