@@ -1,0 +1,53 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "b94b3cabf8a66b9d1493f207ec5b3bf8c1cdb28be5b036cdf6e95aeec064297e"
+  },
+  "boundaries": [
+    {
+      "from": "50:4",
+      "to": "51:1",
+      "fromVerses": 18,
+      "fromImages": [],
+      "toImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-1-thessalonians-01-opening-v1.webp",
+          "alt": "Imagined scene: A coastal road leads through green hills beside a blue sea.",
+          "width": 960,
+          "height": 540
+        }
+      ],
+      "coordinate0": {
+        "gapFromPriorOpenerToNextChapterOpener": 18
+      },
+      "coordinate1": {
+        "gapFromPriorOpenerToNextChapterOpener": 18
+      },
+      "status": "Parallel neighboring book coverage missing from baseline. This is a chapter-boundary distance, not a currently existing image pair. Recheck union after merge."
+    },
+    {
+      "from": "51:5",
+      "to": "52:1",
+      "fromVerses": 28,
+      "fromImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-1-thessalonians-05-opening-v1.webp",
+          "alt": "Imagined scene: Dawn light fills a stone doorway beside a lamp at rest.",
+          "width": 960,
+          "height": 540
+        }
+      ],
+      "toImages": [],
+      "coordinate0": {
+        "gapFromPriorOpenerToNextChapterOpener": 28
+      },
+      "coordinate1": {
+        "gapFromPriorOpenerToNextChapterOpener": 28
+      },
+      "status": "Parallel neighboring book coverage missing from baseline. This is a chapter-boundary distance, not a currently existing image pair. Recheck union after merge."
+    }
+  ]
+}
