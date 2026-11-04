@@ -1,0 +1,85 @@
+{
+  "identity": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "91aa4e4e057532ccb3f85e55f535c6d135107bed6ca1bfc69f50583fd9d4950a"
+  },
+  "assetPin": "7bb56be3e707faf470ce658ab0fbb024c0014180",
+  "checks": [
+    {
+      "name": "locked dependency install",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-npm-install.log"
+    },
+    {
+      "name": "web and mobile build",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-build.log"
+    },
+    {
+      "name": "source preservation, coverage and spacing",
+      "outcome": "passed",
+      "evidence": "research/notes/matthew-artwork-audit-2026-11-04.json"
+    },
+    {
+      "name": "all registered chapter and Story images",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-images.log"
+    },
+    {
+      "name": "mobile behavior and offline engine",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-mobile.log"
+    },
+    {
+      "name": "all Matthew chapters through offline engine",
+      "outcome": "passed",
+      "evidence": "research/notes/matthew-offline-verification-2026-11-04.json"
+    },
+    {
+      "name": "release safety and packaging fixtures",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-release.log"
+    },
+    {
+      "name": "Worker-only local release staging",
+      "outcome": "passed",
+      "evidence": "/tmp/matthew-package.log"
+    },
+    {
+      "name": "readability",
+      "outcome": "passed, inherited report-only findings",
+      "evidence": "/tmp/matthew-readability-final.log"
+    },
+    {
+      "name": "actual immutable public origins",
+      "outcome": "passed",
+      "evidence": "research/notes/matthew-public-origin-verification-2026-11-04.json"
+    },
+    {
+      "name": "managed browser layouts and full browser smoke",
+      "outcome": "not run; no cua_repl.js tool",
+      "evidence": null
+    },
+    {
+      "name": "live release.json",
+      "outcome": "blocked; proxy CONNECT HTTP 403; no retry/bypass",
+      "evidence": null
+    },
+    {
+      "name": "release:verify, signing, installation and physical-device screens",
+      "outcome": "not run; delegated feature-branch scope",
+      "evidence": null
+    }
+  ],
+  "workerBytes": 64299525,
+  "limit": 66060288,
+  "headroom": 1760763,
+  "generated": 19,
+  "newChapterOpeners": 18,
+  "retainedStoryImages": 14,
+  "replacedStoryImages": 1,
+  "chapterCoverage": "28/28 exactly one opener",
+  "packagingFiles": 5,
+  "automaticApprovalRejection": false
+}
