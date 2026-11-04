@@ -57,6 +57,8 @@ const missingSamuel=structuredClone(images);delete missingSamuel['9:2'];
 assert.throws(()=>validateChapterImages(missingSamuel,original,headings,stories),/2 Samuel 2 needs/);
 const missingFirstSamuel=structuredClone(images);delete missingFirstSamuel['8:2'];
 assert.throws(()=>validateChapterImages(missingFirstSamuel,original,headings,stories),/1 Samuel 2 needs/);
+const missingNehemiah=structuredClone(images);delete missingNehemiah['15:2'];
+assert.throws(()=>validateChapterImages(missingNehemiah,original,headings,stories),/Nehemiah 2 needs/);
 const missingRuthHeadings=structuredClone(headings);delete missingRuthHeadings['7:1'];
 assert.throws(()=>validateChapterImages(images,original,missingRuthHeadings,stories),/Ruth 1 needs/);
 const invalid=structuredClone(images);invalid['0:2'][0].afterVerse=999;
