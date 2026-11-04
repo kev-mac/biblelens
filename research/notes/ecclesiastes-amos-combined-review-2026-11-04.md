@@ -23,3 +23,13 @@ No new verified continuity defect requiring regeneration was found. Accepted bra
 ## Release verification
 
 Combined coverage/spacing, immutable-origin hashes, Worker budget, web/offline/image/mobile/release checks, phone/iPad rendered layout, signed asset parity, live publication and physical install/version/launch verification are pending execution. Do not infer their results from earlier branch or build-341 records.
+
+## Combined-source and origin checks
+
+The combined audit passed: 229/229 batch chapters have exactly one opener, 888 registered chapters are covered, all 991 baseline asset blobs and earlier chapter metadata are unchanged, scripture/Story prose/reader/lockfile bytes are unchanged, and only the three expected Story mappings changed. All 1,352 production files in the freshly opened Sites mirror match the baseline; there is no newer mirror application work. There are no image pairs below five verse positions involving this batch. The full neighboring-book spacing ledger is in ecclesiastes-amos-combined-source-verification-2026-11-04.json.
+
+Combined immutable pin: 58743958ba0553db3c9dec7b317fe065bec6deb7. All 843 hosted files were fetched from their exact public immutable origin and compared byte-for-byte with source: 106,757,698 bytes. No credentials, query data or user notes were forwarded. See build-342-public-origin-verification-2026-11-04.json. The combined compressed Worker measures 64,472,233 bytes against 66,060,288, leaving 1,588,055 bytes headroom.
+
+Additional original-resolution integration inspection covered the actual Genesis 7 style target, Ecclesiastes 3 v2, Song 4, Isaiah 30 v2, Jeremiah 15 v2, Lamentations 1, Ezekiel 48 v2, Daniel 12, Hosea 5 v4, Joel 3 and Amos 3/9 v2. The corrections show narrow young grain, crushed potsherds, simple iron bars, exactly three visible city gates, no faint corner signature, broken altar horns and plausible herbs/greens respectively. No definite new defect found; exact architecture/botanical species remain illustrative. Branch audits retain the per-file full-size review and generation evidence.
+
+The first task-created Documents checkout suffered stalled macOS file-synchronization reads. Its attempted rename was cancelled and verified not to have moved the directory; the already-pushed integration history and local audit were restored into /tmp/biblelens342-local. Only the first task-created checkout's generated dist/www outputs were removed. Original canonical checkout, previous releases, user files and stashes were preserved. Interrupted checks are not treated as passes. Full release checks are rerun in the local checkout with a 4096 MB Node heap.

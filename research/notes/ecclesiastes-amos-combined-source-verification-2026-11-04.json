@@ -1,0 +1,1371 @@
+{
+  "baseline": "846ba467f3094e065d5d3489c5bb897908f2bf79",
+  "preservedAssets": 991,
+  "mirrorProductionFiles": 1352,
+  "changedStories": [
+    {
+      "title": "Ezekiel's Vision and Commission",
+      "before": {
+        "src": "/assets/story-ezekiel-s-vision-and-commission-v1.webp",
+        "alt": "Ezekiel kneels by a canal beneath a vision of winged creatures and turning wheels.",
+        "width": 1200,
+        "height": 675
+      },
+      "after": {
+        "src": "/assets/story-ezekiel-s-vision-and-commission-v2.webp",
+        "alt": "Ezekiel kneels by a canal as a bright storm cloud approaches.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "title": "Belshazzar's Feast",
+      "before": {
+        "src": "/assets/story-belshazzar-s-feast-v1.webp",
+        "alt": "Daniel addresses Belshazzar as guests turn toward a bright palace wall.",
+        "width": 1200,
+        "height": 675
+      },
+      "after": {
+        "src": "/assets/story-belshazzar-s-feast-v2.webp",
+        "alt": "Gold and silver vessels stand beside a lit plaster wall at a palace feast.",
+        "width": 1200,
+        "height": 675
+      }
+    },
+    {
+      "title": "Daniel's Visions",
+      "before": {
+        "src": "/assets/story-daniel-s-visions-v1.webp",
+        "alt": "Daniel watches a dreamlike ram and goat beyond a lamplit window.",
+        "width": 1200,
+        "height": 675
+      },
+      "after": {
+        "src": "/assets/story-daniel-s-visions-v2.webp",
+        "alt": "Wind stirs deep blue sea waves beneath storm clouds.",
+        "width": 1200,
+        "height": 675
+      }
+    }
+  ],
+  "batchChapters": 229,
+  "registeredChapters": 888,
+  "hostedAssets": 843,
+  "pin": "58743958ba0553db3c9dec7b317fe065bec6deb7",
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "key": "19:31",
+        "verse": 0,
+        "pos": 17286,
+        "src": "/assets/chapter-proverbs-31-opening-v1.webp"
+      },
+      "b": {
+        "key": "20:1",
+        "verse": 0,
+        "pos": 17317,
+        "src": "/assets/chapter-ecclesiastes-01-opening-v1.webp"
+      },
+      "distance": 31
+    },
+    {
+      "a": {
+        "key": "20:12",
+        "verse": 0,
+        "pos": 17525,
+        "src": "/assets/chapter-ecclesiastes-12-opening-v1.webp"
+      },
+      "b": {
+        "key": "21:1",
+        "verse": 0,
+        "pos": 17539,
+        "src": "/assets/chapter-song-of-solomon-01-opening-v1.webp"
+      },
+      "distance": 14
+    },
+    {
+      "a": {
+        "key": "21:8",
+        "verse": 0,
+        "pos": 17642,
+        "src": "/assets/chapter-song-of-solomon-08-opening-v1.webp"
+      },
+      "b": {
+        "key": "22:1",
+        "verse": 0,
+        "pos": 17656,
+        "src": "/assets/chapter-isaiah-01-opening-v1.webp"
+      },
+      "distance": 14
+    },
+    {
+      "a": {
+        "key": "22:66",
+        "verse": 0,
+        "pos": 18924,
+        "src": "/assets/chapter-isaiah-66-opening-v1.webp"
+      },
+      "b": {
+        "key": "23:1",
+        "verse": 1,
+        "pos": 18948,
+        "src": "/assets/story-jeremiah-s-call-v1.webp"
+      },
+      "distance": 24
+    },
+    {
+      "a": {
+        "key": "23:52",
+        "verse": 0,
+        "pos": 20278,
+        "src": "/assets/chapter-jeremiah-52-opening-v1.webp"
+      },
+      "b": {
+        "key": "24:1",
+        "verse": 0,
+        "pos": 20312,
+        "src": "/assets/chapter-lamentations-01-opening-v1.webp"
+      },
+      "distance": 34
+    },
+    {
+      "a": {
+        "key": "24:5",
+        "verse": 0,
+        "pos": 20444,
+        "src": "/assets/chapter-lamentations-05-opening-v1.webp"
+      },
+      "b": {
+        "key": "25:1",
+        "verse": 1,
+        "pos": 20466,
+        "src": "/assets/story-ezekiel-s-vision-and-commission-v2.webp"
+      },
+      "distance": 22
+    },
+    {
+      "a": {
+        "key": "25:48",
+        "verse": 0,
+        "pos": 21704,
+        "src": "/assets/chapter-ezekiel-48-opening-v2.webp"
+      },
+      "b": {
+        "key": "26:1",
+        "verse": 1,
+        "pos": 21739,
+        "src": "/assets/story-daniel-and-his-friends-in-babylon-v1.webp"
+      },
+      "distance": 35
+    },
+    {
+      "a": {
+        "key": "26:12",
+        "verse": 0,
+        "pos": 22083,
+        "src": "/assets/chapter-daniel-12-opening-v1.webp"
+      },
+      "b": {
+        "key": "27:1",
+        "verse": 1,
+        "pos": 22096,
+        "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp"
+      },
+      "distance": 13
+    },
+    {
+      "a": {
+        "key": "27:14",
+        "verse": 0,
+        "pos": 22284,
+        "src": "/assets/chapter-hosea-14-opening-v1.webp"
+      },
+      "b": {
+        "key": "28:1",
+        "verse": 0,
+        "pos": 22293,
+        "src": "/assets/chapter-joel-01-opening-v1.webp"
+      },
+      "distance": 9
+    },
+    {
+      "a": {
+        "key": "28:3",
+        "verse": 0,
+        "pos": 22345,
+        "src": "/assets/chapter-joel-03-opening-v1.webp"
+      },
+      "b": {
+        "key": "29:1",
+        "verse": 0,
+        "pos": 22366,
+        "src": "/assets/chapter-amos-01-opening-v1.webp"
+      },
+      "distance": 21
+    },
+    {
+      "a": {
+        "key": "29:9",
+        "verse": 0,
+        "pos": 22497,
+        "src": "/assets/chapter-amos-09-opening-v2.webp"
+      },
+      "b": {
+        "key": "31:1",
+        "verse": 1,
+        "pos": 22533,
+        "src": "/assets/story-jonah-flees-and-is-swallowed-v1.webp"
+      },
+      "distance": 36
+    }
+  ],
+  "chapters": [
+    {
+      "key": "20:1",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "20:2",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "20:3",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "20:4",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "20:5",
+      "openers": 1,
+      "verses": 20
+    },
+    {
+      "key": "20:6",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "20:7",
+      "openers": 1,
+      "verses": 29
+    },
+    {
+      "key": "20:8",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "20:9",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "20:10",
+      "openers": 1,
+      "verses": 20
+    },
+    {
+      "key": "20:11",
+      "openers": 1,
+      "verses": 10
+    },
+    {
+      "key": "20:12",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "21:1",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "21:2",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "21:3",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "21:4",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "21:5",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "21:6",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "21:7",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "21:8",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "22:1",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "22:2",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:3",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "22:4",
+      "openers": 1,
+      "verses": 6
+    },
+    {
+      "key": "22:5",
+      "openers": 1,
+      "verses": 30
+    },
+    {
+      "key": "22:6",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "22:7",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:8",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:9",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "22:10",
+      "openers": 1,
+      "verses": 34
+    },
+    {
+      "key": "22:11",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "22:12",
+      "openers": 1,
+      "verses": 6
+    },
+    {
+      "key": "22:13",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:14",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "22:15",
+      "openers": 1,
+      "verses": 9
+    },
+    {
+      "key": "22:16",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "22:17",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "22:18",
+      "openers": 1,
+      "verses": 7
+    },
+    {
+      "key": "22:19",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:20",
+      "openers": 1,
+      "verses": 6
+    },
+    {
+      "key": "22:21",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "22:22",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:23",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "22:24",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "22:25",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "22:26",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "22:27",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "22:28",
+      "openers": 1,
+      "verses": 29
+    },
+    {
+      "key": "22:29",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "22:30",
+      "openers": 1,
+      "verses": 33
+    },
+    {
+      "key": "22:31",
+      "openers": 1,
+      "verses": 9
+    },
+    {
+      "key": "22:32",
+      "openers": 1,
+      "verses": 20
+    },
+    {
+      "key": "22:33",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "22:34",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "22:35",
+      "openers": 1,
+      "verses": 10
+    },
+    {
+      "key": "22:36",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:37",
+      "openers": 1,
+      "verses": 38
+    },
+    {
+      "key": "22:38",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:39",
+      "openers": 1,
+      "verses": 8
+    },
+    {
+      "key": "22:40",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "22:41",
+      "openers": 1,
+      "verses": 29
+    },
+    {
+      "key": "22:42",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:43",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "22:44",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "22:45",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:46",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "22:47",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "22:48",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:49",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "22:50",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "22:51",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "22:52",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "22:53",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "22:54",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "22:55",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "22:56",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "22:57",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "22:58",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "22:59",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "22:60",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "22:61",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "22:62",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "22:63",
+      "openers": 1,
+      "verses": 19
+    },
+    {
+      "key": "22:64",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "22:65",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "22:66",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "23:1",
+      "openers": 1,
+      "verses": 19
+    },
+    {
+      "key": "23:2",
+      "openers": 1,
+      "verses": 37
+    },
+    {
+      "key": "23:3",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "23:4",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "23:5",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "23:6",
+      "openers": 1,
+      "verses": 30
+    },
+    {
+      "key": "23:7",
+      "openers": 1,
+      "verses": 34
+    },
+    {
+      "key": "23:8",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "23:9",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "23:10",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "23:11",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "23:12",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "23:13",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "23:14",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "23:15",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "23:16",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "23:17",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "23:18",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "23:19",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "23:20",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "23:21",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "23:22",
+      "openers": 1,
+      "verses": 30
+    },
+    {
+      "key": "23:23",
+      "openers": 1,
+      "verses": 40
+    },
+    {
+      "key": "23:24",
+      "openers": 1,
+      "verses": 10
+    },
+    {
+      "key": "23:25",
+      "openers": 1,
+      "verses": 38
+    },
+    {
+      "key": "23:26",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "23:27",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "23:28",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "23:29",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "23:30",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "23:31",
+      "openers": 1,
+      "verses": 40
+    },
+    {
+      "key": "23:32",
+      "openers": 1,
+      "verses": 44
+    },
+    {
+      "key": "23:33",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "23:34",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "23:35",
+      "openers": 1,
+      "verses": 19
+    },
+    {
+      "key": "23:36",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "23:37",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "23:38",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "23:39",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "23:40",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "23:41",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "23:42",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "23:43",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "23:44",
+      "openers": 1,
+      "verses": 30
+    },
+    {
+      "key": "23:45",
+      "openers": 1,
+      "verses": 5
+    },
+    {
+      "key": "23:46",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "23:47",
+      "openers": 1,
+      "verses": 7
+    },
+    {
+      "key": "23:48",
+      "openers": 1,
+      "verses": 47
+    },
+    {
+      "key": "23:49",
+      "openers": 1,
+      "verses": 39
+    },
+    {
+      "key": "23:50",
+      "openers": 1,
+      "verses": 46
+    },
+    {
+      "key": "23:51",
+      "openers": 1,
+      "verses": 64
+    },
+    {
+      "key": "23:52",
+      "openers": 1,
+      "verses": 34
+    },
+    {
+      "key": "24:1",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "24:2",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "24:3",
+      "openers": 1,
+      "verses": 66
+    },
+    {
+      "key": "24:4",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "24:5",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "25:1",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "25:2",
+      "openers": 1,
+      "verses": 10
+    },
+    {
+      "key": "25:3",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "25:4",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "25:5",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "25:6",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "25:7",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "25:8",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "25:9",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "25:10",
+      "openers": 1,
+      "verses": 22
+    },
+    {
+      "key": "25:11",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "25:12",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "25:13",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "25:14",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "25:15",
+      "openers": 1,
+      "verses": 8
+    },
+    {
+      "key": "25:16",
+      "openers": 1,
+      "verses": 63
+    },
+    {
+      "key": "25:17",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "25:18",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "25:19",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "25:20",
+      "openers": 1,
+      "verses": 49
+    },
+    {
+      "key": "25:21",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "25:22",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "25:23",
+      "openers": 1,
+      "verses": 49
+    },
+    {
+      "key": "25:24",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "25:25",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "25:26",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "25:27",
+      "openers": 1,
+      "verses": 36
+    },
+    {
+      "key": "25:28",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "25:29",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "25:30",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "25:31",
+      "openers": 1,
+      "verses": 18
+    },
+    {
+      "key": "25:32",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "25:33",
+      "openers": 1,
+      "verses": 33
+    },
+    {
+      "key": "25:34",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "25:35",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "25:36",
+      "openers": 1,
+      "verses": 38
+    },
+    {
+      "key": "25:37",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "25:38",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "25:39",
+      "openers": 1,
+      "verses": 29
+    },
+    {
+      "key": "25:40",
+      "openers": 1,
+      "verses": 49
+    },
+    {
+      "key": "25:41",
+      "openers": 1,
+      "verses": 26
+    },
+    {
+      "key": "25:42",
+      "openers": 1,
+      "verses": 20
+    },
+    {
+      "key": "25:43",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "25:44",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "25:45",
+      "openers": 1,
+      "verses": 25
+    },
+    {
+      "key": "25:46",
+      "openers": 1,
+      "verses": 24
+    },
+    {
+      "key": "25:47",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "25:48",
+      "openers": 1,
+      "verses": 35
+    },
+    {
+      "key": "26:1",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "26:2",
+      "openers": 1,
+      "verses": 49
+    },
+    {
+      "key": "26:3",
+      "openers": 1,
+      "verses": 30
+    },
+    {
+      "key": "26:4",
+      "openers": 1,
+      "verses": 37
+    },
+    {
+      "key": "26:5",
+      "openers": 1,
+      "verses": 31
+    },
+    {
+      "key": "26:6",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "26:7",
+      "openers": 1,
+      "verses": 28
+    },
+    {
+      "key": "26:8",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "26:9",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "26:10",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "26:11",
+      "openers": 1,
+      "verses": 45
+    },
+    {
+      "key": "26:12",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "27:1",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "27:2",
+      "openers": 1,
+      "verses": 23
+    },
+    {
+      "key": "27:3",
+      "openers": 1,
+      "verses": 5
+    },
+    {
+      "key": "27:4",
+      "openers": 1,
+      "verses": 19
+    },
+    {
+      "key": "27:5",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "27:6",
+      "openers": 1,
+      "verses": 11
+    },
+    {
+      "key": "27:7",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "27:8",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "27:9",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "27:10",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "27:11",
+      "openers": 1,
+      "verses": 12
+    },
+    {
+      "key": "27:12",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "27:13",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "27:14",
+      "openers": 1,
+      "verses": 9
+    },
+    {
+      "key": "28:1",
+      "openers": 1,
+      "verses": 20
+    },
+    {
+      "key": "28:2",
+      "openers": 1,
+      "verses": 32
+    },
+    {
+      "key": "28:3",
+      "openers": 1,
+      "verses": 21
+    },
+    {
+      "key": "29:1",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "29:2",
+      "openers": 1,
+      "verses": 16
+    },
+    {
+      "key": "29:3",
+      "openers": 1,
+      "verses": 15
+    },
+    {
+      "key": "29:4",
+      "openers": 1,
+      "verses": 13
+    },
+    {
+      "key": "29:5",
+      "openers": 1,
+      "verses": 27
+    },
+    {
+      "key": "29:6",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "29:7",
+      "openers": 1,
+      "verses": 17
+    },
+    {
+      "key": "29:8",
+      "openers": 1,
+      "verses": 14
+    },
+    {
+      "key": "29:9",
+      "openers": 1,
+      "verses": 15
+    }
+  ]
+}
