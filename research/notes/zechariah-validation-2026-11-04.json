@@ -1,0 +1,116 @@
+[
+  {
+    "command": [
+      "node",
+      "/tmp/zechariah-source-audit.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-zechariah-source-audit.log"
+  },
+  {
+    "command": [
+      "node",
+      "/tmp/zechariah-offline-audit.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-zechariah-offline-audit.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:images"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-check-images.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:mobile"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-check-mobile.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:release"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-check-release.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check:readability"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-check-readability.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "release:sites",
+      "--",
+      "/tmp/zechariah-sites-package"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-final-release-sites.log"
+  },
+  {
+    "command": [
+      "npm",
+      "ci",
+      "--ignore-scripts",
+      "--no-audit",
+      "--no-fund",
+      "--fetch-retries=0",
+      "--registry=https://registry.npmjs.org",
+      "--cache=/tmp/zechariah-npm-cache"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "build:mobile"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-build-mobile-final.log"
+  },
+  {
+    "command": [
+      "python",
+      "/tmp/zechariah-origin-audit.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/zechariah-origin-audit.log"
+  },
+  {
+    "command": [
+      "npm",
+      "run",
+      "check"
+    ],
+    "exitCode": 1,
+    "log": "/tmp/zechariah-check-full.log",
+    "reason": "All preceding non-browser components passed; check-release-smoke.mjs cannot launch absent Chromium headless shell at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell. Browser smoke never ran. No browser installation or replacement control path attempted."
+  },
+  {
+    "command": [
+      "curl",
+      "-I",
+      "--max-time",
+      "20",
+      "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json"
+    ],
+    "exitCode": 56,
+    "reason": "Proxy CONNECT denied HTTP 403. Not retried or bypassed."
+  }
+]
