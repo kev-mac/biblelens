@@ -1,0 +1,85 @@
+{
+  "source": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "9b896ceac68abdfeecb0d56d3536f9d19193cef0f9a7da7db23e587f05debcd4"
+  },
+  "webOfflineSourceMatch": true,
+  "workerBytes": 64702929,
+  "workerLimit": 66060288,
+  "headroom": 1357359,
+  "checks": {
+    "build:mobile": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-build-mobile-final.log",
+      "evidence": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "Lazy Worker: 64702929 bytes; assets: dist/client",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+        "Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)"
+      ]
+    },
+    "check:images": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-check-images-final.log",
+      "evidence": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 664 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Lamentations); 177 have existing Story coverage, 524 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    "check:mobile": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-check-mobile.log",
+      "evidence": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    "check:release": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-check-release-final.log",
+      "evidence": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    "check:readability": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-readability.log",
+      "evidence": [
+        "Report-only mode: items need review."
+      ]
+    },
+    "additionalOfflineLamentations": {
+      "exitCode": 0,
+      "log": "/tmp/lamentations-check-offline-final.log",
+      "evidence": [
+        "PASS: all five Lamentations openers resolve from the actual offline engine with zero network calls and exact local image bytes.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    }
+  },
+  "unavailable": [
+    "Managed phone/iPad browser layouts: no callable cua_repl.js tool",
+    "Physical iPhone/iPad and signed app verification: no connected devices; install outside scope",
+    "Live release.json: environment proxy CONNECT 403, not retried"
+  ],
+  "continuityDependencies": [],
+  "assetCommit": "fd7758d4196a7596528d4addc0498cd9edae3fca",
+  "branch": "art/lamentations-openers-2026-11-04"
+}

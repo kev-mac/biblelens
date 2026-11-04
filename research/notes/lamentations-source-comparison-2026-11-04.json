@@ -1,0 +1,14 @@
+{
+  "baseline": "846ba467f3094e065d5d3489c5bb897908f2bf79",
+  "mirrorCommit": "6489207c16040f17c2247db76080520fc6f422b0",
+  "sharedDifferences": [],
+  "mirrorOnly": [],
+  "missingProduction": [],
+  "missingResearchCount": 387,
+  "liveCheck": {
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "outcome": "denied",
+    "reason": "Environment proxy CONNECT 403",
+    "retried": false
+  }
+}
