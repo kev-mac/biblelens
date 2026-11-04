@@ -1,6 +1,6 @@
 # Daniel artwork audit — 2026-11-04
 
-Daniel only. Branch: `artwork/daniel-openers-2026-11-04`, based on canonical GitHub main `846ba46` after fetching. Read AGENTS.md, RELEASING.md, CLAUDE.md, the combined ten-book review, build 341 release verification and the relevant 2 Kings continuity audit before editing. No main push, merge, publication, installation, build-number change, paid API call or API-key creation occurred. Existing Sites source access was refreshed for the mirror inspection workflow. The seven images were made with the provided image tool.
+Daniel only. Branch: `artwork/daniel-openers-2026-11-04`, based on canonical GitHub main `846ba46` after fetching. Read AGENTS.md, RELEASING.md, CLAUDE.md, the combined ten-book review, build 341 release verification and the relevant 2 Kings continuity audit before editing. No main push, merge, publication, device installation, build-number change, paid API call or API-key creation occurred. Existing Sites source access was refreshed for the mirror inspection workflow. The seven images were made with the provided image tool.
 
 ## Opening coverage
 
@@ -68,3 +68,22 @@ Integration must union concurrent chapter keys, illustrated-book IDs, Story mapp
 Evidence: `daniel-artwork-generation-2026-11-04.json`, `daniel-artwork-source-evidence-2026-11-04.json`, and `daniel-public-source-verification-2026-11-04.json`. Local logs: `/tmp/daniel-readability.log`, `/tmp/daniel-build-mobile.log`, `/tmp/daniel-images.log`, `/tmp/daniel-mobile.log`.
 
 The authenticated GitHub profile is `kev-mac`, numeric ID 2168970; commits use verified privacy-safe `kev-mac <2168970+kev-mac@users.noreply.github.com>`. No automatic approval review rejection occurred. Work stops after Daniel.
+
+
+## Dependency restoration and completed build checks
+
+Following explicit authorization to restore the documented locked dependencies, `npm ci --registry=https://registry.npmjs.org --no-audit --no-fund --cache=/tmp/daniel-npm-cache` succeeded, adding 152 packages. Every lockfile resolved host is `registry.npmjs.org`. The existing locked lifecycle scripts ran normally; no credential, proxy, TLS, network-policy or package-version changes were made. `package.json` and `package-lock.json` remain byte-identical. Deprecation notices were informational; no dependency upgrade was attempted. No access denial occurred in this follow-up.
+
+The missing-dependency, unbuilt bundle and offline-parity blockers documented above are now resolved:
+
+- `NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile`: **passed**, including web packaging, build-time content checks, startup and offline asset generation.
+- `npm run check:images`: **passed**, all 276 Story records, all 671 registered illustrated chapters, source/web/native byte parity, alt text, captions, correct verse placement and fail-closed coverage. The existing 1 Samuel 7 close pair remains disclosed and untouched; no Daniel pair is below five verses.
+- `npm run check:mobile`: **passed**, mobile chrome and actual generated offline worker reading, comparisons, chat, citations, concurrency and zero network access. This uses the project's Node adapter, not a physical native device.
+- Focused Daniel offline check: **passed**, all 12 chapters, all 357 verses in KJV/ASV/WEB unchanged, exactly one opener per chapter, all 12 opener files matching source and www, zero network requests. The real generated mobile worker was exercised through the same Node adapter pattern as the project mobile check.
+- `npm run check:release`: **passed**, shared release identity, Sites package/CSP contract, safe refresh, embedded image encoding and pinned public-artwork handler/cache/fallback protections. No publication occurred.
+- Final compressed Worker: **64,492,496 bytes**, under the **66,060,288-byte** limit by **1,567,792 bytes**. This is the Daniel branch size; concurrent branches still need their own combined build and budget check.
+- Web `dist/client/release.json` and offline `www/release.json` match exactly: version **1.1.0**, unchanged build **341**, source fingerprint **e7ab700d626ec72ebda3305706ab46439b1377fa339ee1700f92707aee958162**. This is an unpublished candidate fingerprint, not a claim to match the existing published build 341 contents.
+
+Evidence: `daniel-restored-validation-2026-11-04.json`. Logs: `/tmp/daniel-npm-ci.log`, `/tmp/daniel-build-mobile-restored.log`, `/tmp/daniel-images-restored.log`, `/tmp/daniel-mobile-restored.log`, `/tmp/daniel-offline-restored.log`, `/tmp/daniel-release-restored.log`. Focused check script: `/tmp/daniel-offline-check.mjs`.
+
+Still unavailable: rendered phone/iPad layouts, physical devices/signed app checks, fresh Sites source-tree comparison and live verification. The prior live CONNECT 403 denial was not retried. No main merge/push, publication or device installation occurred; only this feature branch is updated.
