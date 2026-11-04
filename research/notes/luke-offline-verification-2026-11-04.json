@@ -1,0 +1,26 @@
+{
+  "chapters": 24,
+  "imagePlacements": 33,
+  "networkCalls": 0,
+  "sourceBlanks": [
+    {
+      "book": 41,
+      "chapter": 17,
+      "verse": 36,
+      "edition": "asv"
+    },
+    {
+      "book": 41,
+      "chapter": 17,
+      "verse": 36,
+      "edition": "web"
+    },
+    {
+      "book": 41,
+      "chapter": 23,
+      "verse": 17,
+      "edition": "asv"
+    }
+  ],
+  "scripture": "all KJV/ASV/WEB fields are strings and exactly equal source, including blanks"
+}

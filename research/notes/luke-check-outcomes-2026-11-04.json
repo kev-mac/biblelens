@@ -1,0 +1,51 @@
+{
+  "buildMobile": "passed",
+  "images": "passed: 981 registered chapters, 276 Stories",
+  "mobile": "passed, actual packaged worker engine; not physical layout",
+  "release": "passed",
+  "packaging": {
+    "status": "passed",
+    "workerBytes": 64330571,
+    "limit": 66060288,
+    "headroom": 1729717,
+    "files": [
+      ".openai/drizzle/0000_loose_bug.sql",
+      ".openai/drizzle/meta/0000_snapshot.json",
+      ".openai/drizzle/meta/_journal.json",
+      ".openai/hosting.json",
+      "server/index.js"
+    ]
+  },
+  "offline": "passed: 24 chapters, 33 placements, three editions, zero network calls",
+  "content": [
+    "check-stories.mjs passed",
+    "check-chapter-names.mjs passed",
+    "check-story-topics.mjs passed"
+  ],
+  "readability": "report-only command exited 0 with inherited corpus findings; new alt mean 6.0431 with no length/jargon flags",
+  "sourceHash": "f96763f27f7c175c757f31b382111cdfdf82cc63d22248b184178efe92a909a0",
+  "build": 343,
+  "version": "1.1.0",
+  "productionCatalogEqualsBuild343": true,
+  "publicOrigin": {
+    "status": "passed",
+    "pin": "504dbc3b7db4df274953c4179233dc89a0c4c8ba",
+    "files": 920,
+    "bytes": 117338752
+  },
+  "browser": {
+    "status": "never run",
+    "reason": "Managed Linux, no callable cua_repl.js tool; no substitute browser or preview server used"
+  },
+  "liveRelease": {
+    "status": "denied",
+    "action": "HEAD https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json through normal environment proxy",
+    "reason": "CONNECT HTTP 403",
+    "retried": false,
+    "bypassed": false
+  },
+  "signingDevicesPublication": {
+    "status": "not run in individual artwork scope; pending coordinated release"
+  },
+  "autoReviewRejection": false
+}
