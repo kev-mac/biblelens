@@ -1,0 +1,19 @@
+{
+  "build:mobile": "PASS",
+  "check:images": "PASS: 1129 registered chapters and all 276 Story records",
+  "check:mobile": "PASS: generated engine, not physical devices",
+  "check:release": "PASS",
+  "release:sites": "PASS: five-file Worker-only package /tmp/revelation-worker-only",
+  "npm run check": "BLOCKED at final scripts/check-release-smoke.mjs: missing Chromium headless shell; preceding content/search checks passed",
+  "check:readability": "REPORT ONLY: inherited findings remain",
+  "newAltScreen": {
+    "meanGrade": 5.609628099173554,
+    "overlong": 0,
+    "unexplainedJargon": 0
+  },
+  "revelationOffline": "PASS:22 chapters,404 verses, exact n/kjv/asv/web field presence and values; zero network calls",
+  "publicOrigins": "PASS:1037/1037 actual immutable URLs,133566598 bytes",
+  "browserPhoneIpad": "UNAVAILABLE: cua_repl.js and Playwright Chromium executable absent; no browser installed",
+  "publicationSigningInstall": "DEFERRED TO PARENT: isolated scope; no action attempted",
+  "initialAuditCorrection": "Whole verse-object comparison initially rejected expected redLetters/referenceLinks enrichment. Corrected audit projects exact scripture fields and checks own-property presence; no app data changed."
+}
