@@ -1,0 +1,48 @@
+
+> scripture-lens@1.1.0 check:readability
+> node scripts/check-readability.mjs
+
+| Collection | Lines | Average FK grade | Over length limits | Unexplained jargon lines |
+| --- | ---: | ---: | ---: | ---: |
+| Lost Books — Apocrypha (visible) | 28 | 7.65 | 0.0% (0) | 0 |
+| Lost Books — Gnostic (visible) | 12 | 7.31 | 0.0% (0) | 0 |
+| RC1 accepted imports (visible) | 604 | 7.49 | 0.2% (1) | 7 |
+| RC1 accepted notes (detail) | 181 | 6.99 | 0.0% (0) | 0 |
+| Evidence (visible) | 3871 | 4.74 | 20.4% (788) | 1871 |
+| Evidence notes (detail) | 5666 | 9.80 | 18.3% (1036) | 3669 |
+| UX13 place summaries (visible) | 1298 | 7.66 | 0.0% (0) | 0 |
+| UX13 Events (visible) | 7 | 6.45 | 0.0% (0) | 0 |
+| Events (visible) | 552 | 7.06 | 13.9% (77) | 2 |
+| People (visible) | 96 | 7.88 | 16.7% (16) | 1 |
+| Timeline (visible) | 10 | 7.89 | 0.0% (0) | 0 |
+| Prophecies (visible) | 6 | 7.05 | 0.0% (0) | 0 |
+| Explore cards (visible) | 19 | 11.88 | 0.0% (0) | 1 |
+| Explore visible text (visible) | 19 | 11.88 | 0.0% (0) | 1 |
+| Phase 2 interface (visible) | 9 | 5.54 | 0.0% (0) | 0 |
+
+Lost Books — Apocrypha — top jargon: none
+Lost Books — Gnostic — top jargon: none
+RC1 accepted imports — top jargon: Tischendorf: 5, Brenton: 2
+RC1 accepted notes — top jargon: none
+Evidence — top jargon: Brenton: 1152, Tischendorf: 981, Textus Receptus: 496, Septuagint: 43, witness: 8
+Evidence notes — top jargon: Brenton: 3104, manuscript: 2559, Septuagint: 1992, Textus Receptus: 1950, Tischendorf: 1929, witness: 977, WLC: 961, ordinal: 8, harmoniz: 3, calibration: 1
+UX13 place summaries — top jargon: none
+UX13 Events — top jargon: none
+Events — top jargon: witness: 2
+People — top jargon: witness: 1
+Timeline — top jargon: none
+Prophecies — top jargon: none
+Explore cards — top jargon: manuscript: 1
+Explore visible text — top jargon: manuscript: 1
+Phase 2 interface — top jargon: none
+
+Estimated English syllables; each nonempty field line counts once. FK grades are averaged per line.
+Length limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6–8; detail grades at most 10. Quoted spans are excluded.
+Jargon screening uses the listed terms and plain equivalents by first use; review context manually.
+
+Report-only mode: items need review.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -1,0 +1,90 @@
+{
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "version": "1.1.0",
+  "build": 344,
+  "sourceFingerprint": "8d89ae72ca9ed39bf70eb465d485a481ad26e029d7d87e1ffbbb530f5be212f0",
+  "workerBytes": 63922373,
+  "workerLimit": 66060288,
+  "workerRemaining": 2137915,
+  "checks": [
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "build.log"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "images.log"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "mobile.log"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "release.log"
+    },
+    {
+      "command": "node scripts/check-1-peter-artwork.mjs",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "book.log"
+    },
+    {
+      "command": "npm run check:readability",
+      "exitCode": 0,
+      "outcome": "completed in inherited report-only mode; not strict corpus pass",
+      "evidence": "readability.log"
+    },
+    {
+      "command": "npm run release:sites -- /tmp/1-peter-sites-stage/dist",
+      "exitCode": 0,
+      "outcome": "passed",
+      "evidence": "packaging.log"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "outcome": "failed: final browser smoke could not launch absent Chromium; preceding content/search checks passed",
+      "evidence": "content.log"
+    }
+  ],
+  "publicOrigin": {
+    "pin": "f713563f9c300b561da5e519c4a2b574bee9f3f5",
+    "matched": 1020,
+    "bytes": 131902764,
+    "outcome": "passed actual remote origin requests",
+    "evidence": "public-origin-verification.json"
+  },
+  "remaining": [
+    {
+      "action": "GET/HEAD live release.json",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "state": "denied",
+      "reason": "Proxy CONNECT HTTP 403; stopped without retry/bypass"
+    },
+    {
+      "action": "browser release smoke",
+      "target": "scripts/check-release-smoke.mjs:31",
+      "state": "failed before browser launch",
+      "reason": "Chromium executable absent at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell"
+    },
+    {
+      "action": "phone/iPad browser layout QA",
+      "state": "never run",
+      "reason": "No callable supported cua_repl.js in managed Linux"
+    },
+    {
+      "action": "combined integration, publication, live parity, signing, signed parity, installs/launches",
+      "state": "pending with coordinated release owner",
+      "reason": "Outside this per-book session boundary"
+    }
+  ]
+}
