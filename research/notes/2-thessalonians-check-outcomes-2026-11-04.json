@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "name": "build",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-build.log",
+      "logSHA256": "edf3e71d1fbb2932d0fc094207c324b8e10c2bc00f9a943232c382101a17a5f6",
+      "outcome": "Passed"
+    },
+    {
+      "name": "images",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-images.log",
+      "logSHA256": "cf3050e31ee613036431751ca069f3aefe239197f7df72fc051dffb58ce548a6",
+      "outcome": "Passed"
+    },
+    {
+      "name": "mobile",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-mobile.log",
+      "logSHA256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "outcome": "Passed"
+    },
+    {
+      "name": "release",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-release.log",
+      "logSHA256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "outcome": "Passed"
+    },
+    {
+      "name": "package",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-package.log",
+      "logSHA256": "b6cbd8378dd15536dc44a393dc7698859fa6d5861c33d9e8903634a0ba2b67ec",
+      "outcome": "Passed"
+    },
+    {
+      "name": "offline",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-offline.log",
+      "logSHA256": "617977808a07a1533e5188a857451f11ec10d39e1c1768d3e00d29a8015afd05",
+      "outcome": "Passed"
+    },
+    {
+      "name": "content",
+      "exitCode": 1,
+      "log": "/tmp/2-thess-content.log",
+      "logSHA256": "538c6e7175d6b52a1e513d68807f44b680e0f9349b7806c35e544edaf10ef64d",
+      "outcome": "Content/readability report/search passed through final browser smoke; Chromium executable unavailable"
+    }
+  ],
+  "workerBytes": 63921491,
+  "workerLimit": 66060288,
+  "workerHeadroom": 2138797,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "ea2e94519976b0e9c2ddbdb508f38580d90f121249a3edbebf2ba172fdb7f5ae"
+  },
+  "browserQA": "Not run: no supported cua_repl.js or browser-control tool; aggregate browser smoke failed before launch because executable is absent. No browser installed.",
+  "liveQA": "Denied: ordinary inherited-proxy curl HEAD to https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json received CONNECT HTTP 403; stopped without retry/bypass.",
+  "signedNativeAndDevices": "Not attempted; coordinated release responsibility. Build 344 lock blockers unchanged.",
+  "readability": "Inherited corpus report-only exited zero; three new descriptions average FK grade 7.8725, no overlong sentences or screened unexplained jargon."
+}
