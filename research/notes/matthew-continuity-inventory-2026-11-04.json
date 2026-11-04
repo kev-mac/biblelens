@@ -1,0 +1,690 @@
+{
+  "current": [
+    {
+      "title": "The Birth of Jesus and the Magi",
+      "passage": "Matthew 1:18 - 2:12",
+      "src": "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Flight to Egypt and Return to Nazareth",
+      "passage": "Matthew 2:13 - 2:23",
+      "src": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "The Baptism and Temptation of Jesus",
+      "passage": "Matthew 3:1 - 4:11",
+      "src": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Calling the First Disciples",
+      "passage": "Matthew 4:12 - 4:25",
+      "src": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Healings and Calming the Storm",
+      "passage": "Matthew 8:1 - 9:38",
+      "src": "src/assets/story-healings-and-calming-the-storm-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Sending Out the Twelve",
+      "passage": "Matthew 10:1 - 10:5",
+      "src": "src/assets/story-sending-out-the-twelve-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Jesus and John the Baptist",
+      "passage": "Matthew 11:1 - 11:30",
+      "src": "src/assets/story-jesus-and-john-the-baptist-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "passage": "Matthew 12:1 - 12:50",
+      "src": "src/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "passage": "Matthew 14:1 - 14:36",
+      "src": "src/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration",
+      "passage": "Matthew 16:13 - 17:27",
+      "src": "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+      "decision": "replace v1 with v2 cloud-only scene"
+    },
+    {
+      "title": "The Rich Young Man",
+      "passage": "Matthew 19:1 - 20:34",
+      "src": "src/assets/story-the-rich-young-man-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "The Triumphal Entry and Temple Cleansing",
+      "passage": "Matthew 21:1 - 21:46",
+      "src": "src/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "The Last Supper and Gethsemane",
+      "passage": "Matthew 26:1 - 26:56",
+      "src": "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "Trial, Crucifixion and Burial",
+      "passage": "Matthew 26:57 - 27:66",
+      "src": "src/assets/story-trial-crucifixion-and-burial-v1.webp",
+      "decision": "retain current approved-main image"
+    },
+    {
+      "title": "The Resurrection and the Great Commission",
+      "passage": "Matthew 28:1 - 28:20",
+      "src": "src/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+      "decision": "retain current approved-main image"
+    }
+  ],
+  "earlierStoryCandidates": [
+    {
+      "book": "Exodus",
+      "title": "The Birth and Rescue of Moses",
+      "passage": "Exodus 2:1 - 2:10",
+      "src": "src/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Moses Flees to Midian",
+      "passage": "Exodus 2:11 - 2:25",
+      "src": "src/assets/story-moses-flees-to-midian-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Burning Bush",
+      "passage": "Exodus 3:1 - 4:17",
+      "src": "src/assets/story-the-burning-bush-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Moses Returns to Egypt",
+      "passage": "Exodus 4:18 - 4:31",
+      "src": "src/assets/story-moses-returns-to-egypt-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Moses and Aaron Before Pharaoh",
+      "passage": "Exodus 5:1 - 6:13",
+      "src": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Plagues of Egypt",
+      "passage": "Exodus 7:14 - 10:29",
+      "src": "src/assets/story-the-plagues-of-egypt-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Passover and the Death of the Firstborn",
+      "passage": "Exodus 11:1 - 12:36",
+      "src": "src/assets/story-the-passover-and-the-death-of-the-firstborn-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Exodus from Egypt",
+      "passage": "Exodus 12:37 - 13:22",
+      "src": "src/assets/story-the-exodus-from-egypt-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Crossing the Sea",
+      "passage": "Exodus 14:1 - 15:21",
+      "src": "src/assets/story-crossing-the-sea-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Bitter Water, Manna and Quail",
+      "passage": "Exodus 15:22 - 16:36",
+      "src": "src/assets/story-bitter-water-manna-and-quail-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Water from the Rock and the Battle with Amalek",
+      "passage": "Exodus 17:1 - 17:16",
+      "src": "src/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Jethro Advises Moses",
+      "passage": "Exodus 18:1 - 18:27",
+      "src": "src/assets/story-jethro-advises-moses-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Covenant and Ten Commandments at Sinai",
+      "passage": "Exodus 19:1 - 20:21",
+      "src": "src/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Covenant Is Sealed at Sinai",
+      "passage": "Exodus 24:1 - 24:18",
+      "src": "src/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "The Golden Calf",
+      "passage": "Exodus 32:1 - 32:35",
+      "src": "src/assets/story-the-golden-calf-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Moses Sees God's Glory",
+      "passage": "Exodus 33:1 - 34:35",
+      "src": "src/assets/story-moses-sees-gods-glory-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Exodus",
+      "title": "Building the Tabernacle",
+      "passage": "Exodus 35:1 - 40:38",
+      "src": "src/assets/story-building-the-tabernacle-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Leviticus",
+      "title": "Aaron and His Sons Are Ordained",
+      "passage": "Leviticus 8:1 - 9:24",
+      "src": "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Leviticus",
+      "title": "Nadab and Abihu",
+      "passage": "Leviticus 10:1 - 10:20",
+      "src": "src/assets/story-nadab-and-abihu-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Counting the Camp",
+      "passage": "Numbers 1:1 - 1:54",
+      "src": "src/assets/story-counting-the-camp-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Leaving Sinai and the Complaints",
+      "passage": "Numbers 10:11 - 11:35",
+      "src": "src/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Miriam and Aaron Speak Against Moses",
+      "passage": "Numbers 12:1 - 12:16",
+      "src": "src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Korah's Rebellion",
+      "passage": "Numbers 16:1 - 17:13",
+      "src": "src/assets/story-korah-s-rebellion-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Water from the Rock at Meribah",
+      "passage": "Numbers 20:1 - 20:13",
+      "src": "src/assets/story-water-from-the-rock-at-meribah-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "The Bronze Serpent",
+      "passage": "Numbers 21:4 - 21:9",
+      "src": "src/assets/story-the-bronze-serpent-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "A New Census and Joshua Appointed",
+      "passage": "Numbers 26:1 - 27:23",
+      "src": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Vengeance on Midian",
+      "passage": "Numbers 31:1 - 31:54",
+      "src": "src/assets/story-vengeance-on-midian-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Numbers",
+      "title": "Tribes Settle East of the Jordan",
+      "passage": "Numbers 32:1 - 32:42",
+      "src": "src/assets/story-tribes-settle-east-of-the-jordan-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "Moses Recalls the Wilderness Years",
+      "passage": "Deuteronomy 1:1 - 3:29",
+      "src": "src/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "Moses Sets Apart Three Cities of Refuge",
+      "passage": "Deuteronomy 4:41 - 4:43",
+      "src": "src/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "Moses Recalls the Golden Calf",
+      "passage": "Deuteronomy 9:7 - 9:29",
+      "src": "src/assets/story-moses-recalls-the-golden-calf-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "Moses Recalls the Second Tablets",
+      "passage": "Deuteronomy 10:1 - 10:11",
+      "src": "src/assets/story-moses-recalls-the-second-tablets-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "Joshua Commissioned and the Law Entrusted",
+      "passage": "Deuteronomy 31:1 - 31:30",
+      "src": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Deuteronomy",
+      "title": "The Death of Moses",
+      "passage": "Deuteronomy 34:1 - 34:12",
+      "src": "src/assets/story-the-death-of-moses-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Joshua",
+      "title": "Joshua Commissioned",
+      "passage": "Joshua 1:1 - 1:18",
+      "src": "src/assets/story-joshua-commissioned-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "Joshua",
+      "title": "Caleb Receives Hebron",
+      "passage": "Joshua 14:6 - 14:15",
+      "src": "src/assets/story-caleb-receives-hebron-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "1 Kings",
+      "title": "Elijah and the Drought",
+      "passage": "1 Kings 17:1 - 17:24",
+      "src": "src/assets/story-elijah-and-the-drought-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "1 Kings",
+      "title": "Elijah on Mount Carmel",
+      "passage": "1 Kings 18:1 - 18:46",
+      "src": "src/assets/story-elijah-on-mount-carmel-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "1 Kings",
+      "title": "Elijah at Horeb",
+      "passage": "1 Kings 19:1 - 19:21",
+      "src": "src/assets/story-elijah-at-horeb-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "1 Kings",
+      "title": "Naboth's Vineyard",
+      "passage": "1 Kings 21:1 - 21:29",
+      "src": "src/assets/story-naboth-s-vineyard-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    },
+    {
+      "book": "2 Kings",
+      "title": "Elijah Taken Up",
+      "passage": "2 Kings 1:1 - 2:25",
+      "src": "src/assets/story-elijah-taken-up-v1.webp",
+      "status": "Candidate only; textual mention does not certify a visible identity. Earlier approved anchors are recorded in people references."
+    }
+  ],
+  "earlierChapterCandidates": [
+    {
+      "chapter": "1:4",
+      "src": "src/assets/chapter-exodus-04-opening-v1.webp",
+      "alt": "Imagined scene: Moses speaks with Jethro before returning to Egypt.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:6",
+      "src": "src/assets/chapter-exodus-06-opening-v1.webp",
+      "alt": "Imagined scene: Moses and Aaron speak with workers near a mudbrick yard.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:6",
+      "src": "src/assets/chapter-exodus-06-v1.webp",
+      "alt": "Imagined scene: Moses speaks with tired workers beside stacks of mud bricks.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:7",
+      "src": "src/assets/chapter-exodus-07-opening-v1.webp",
+      "alt": "Imagined scene: Moses and Aaron stand beside the Nile as its water turns red.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:7",
+      "src": "src/assets/chapter-exodus-07-v1.webp",
+      "alt": "Imagined scene: Moses and Aaron stand beside red water as people hold empty jars.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:9",
+      "src": "src/assets/chapter-exodus-09-opening-v1.webp",
+      "alt": "Imagined scene: Moses raises his hand as hail falls over Egyptian fields.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:10",
+      "src": "src/assets/chapter-exodus-10-opening-v1.webp",
+      "alt": "Imagined scene: Moses and Aaron speak before Pharaoh as locusts cover fields.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:11",
+      "src": "src/assets/chapter-exodus-11-v1.webp",
+      "alt": "Imagined scene: Moses leaves Pharaoh's hall after delivering his warning.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:20",
+      "src": "src/assets/chapter-exodus-20-opening-v1.webp",
+      "alt": "Imagined scene: Moses and the people stand before Mount Sinai.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:29",
+      "src": "src/assets/chapter-exodus-29-v1.webp",
+      "alt": "Imagined scene: Moses arranges linen garments for Aaron and his sons.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:31",
+      "src": "src/assets/chapter-exodus-31-opening-v1.webp",
+      "alt": "Imagined scene: Moses speaks with Bezalel and Oholiab about their work.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:34",
+      "src": "src/assets/chapter-exodus-34-opening-v1.webp",
+      "alt": "Imagined scene: Moses climbs a mountain carrying two plain stone tablets.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "1:34",
+      "src": "src/assets/chapter-exodus-34-v1.webp",
+      "alt": "Imagined scene: Moses carries two stone tablets down the mountain toward the people.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "2:9",
+      "src": "src/assets/chapter-leviticus-09-v1.webp",
+      "alt": "Imagined scene: Moses and Aaron stand before people gathered at the sanctuary.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "2:18",
+      "src": "src/assets/chapter-leviticus-18-opening-v1.webp",
+      "alt": "Imagined scene: People sit among the tents and listen to Moses.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "2:18",
+      "src": "src/assets/chapter-leviticus-18-v1.webp",
+      "alt": "Imagined scene: Adults listen as Moses speaks about laws for their community.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "2:20",
+      "src": "src/assets/chapter-leviticus-20-opening-v1.webp",
+      "alt": "Imagined scene: Moses faces a gathering among tents in the wilderness.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "2:20",
+      "src": "src/assets/chapter-leviticus-20-v1.webp",
+      "alt": "Imagined scene: Elders and families listen to Moses at the camp's edge.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "3:11",
+      "src": "src/assets/chapter-numbers-11-opening-v1.webp",
+      "alt": "Imagined scene: Moses speaks with elders beside the tent of meeting.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "3:16",
+      "src": "src/assets/chapter-numbers-16-v1.webp",
+      "alt": "Imagined scene: Leaders face Moses and Aaron near the sanctuary.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "3:26",
+      "src": "src/assets/chapter-numbers-26-v1.webp",
+      "alt": "Imagined scene: Moses and Eleazar oversee a count of people near the Jordan.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "3:27",
+      "src": "src/assets/chapter-numbers-27-opening-v2.webp",
+      "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "3:27",
+      "src": "src/assets/chapter-numbers-27-v1.webp",
+      "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:3",
+      "src": "src/assets/chapter-deuteronomy-03-opening-v1.webp",
+      "alt": "Imagined scene: Elderly Moses looks across the Jordan valley from a ridge.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:3",
+      "src": "src/assets/chapter-deuteronomy-03-v1.webp",
+      "alt": "Imagined scene: Moses looks across the Jordan valley from a high ridge.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:5",
+      "src": "src/assets/chapter-deuteronomy-05-v1.webp",
+      "alt": "Imagined scene: Families gather on the plains to hear Moses speak.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:11",
+      "src": "src/assets/chapter-deuteronomy-11-opening-v1.webp",
+      "alt": "Imagined scene: People gather near a river as Moses speaks.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:13",
+      "src": "src/assets/chapter-deuteronomy-13-v1.webp",
+      "alt": "Imagined scene: Elders and families listen carefully as Moses speaks.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:27",
+      "src": "src/assets/chapter-deuteronomy-27-opening-v1.webp",
+      "alt": "Imagined scene: Moses and elders speak before the gathered community.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:29",
+      "src": "src/assets/chapter-deuteronomy-29-v1.webp",
+      "alt": "Imagined scene: Elders, workers, women, children and travelers gather before Moses.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:30",
+      "src": "src/assets/chapter-deuteronomy-30-v1.webp",
+      "alt": "Imagined scene: Moses speaks to households beside green fields and a branching path.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:32",
+      "src": "src/assets/chapter-deuteronomy-32-opening-v1.webp",
+      "alt": "Imagined scene: Moses sings before the gathered community with Joshua nearby.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:32",
+      "src": "src/assets/chapter-deuteronomy-32-v1.webp",
+      "alt": "Imagined scene: Moses and Joshua speak to people gathered beside a rocky valley.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:33",
+      "src": "src/assets/chapter-deuteronomy-33-v1.webp",
+      "alt": "Imagined scene: Moses blesses tribal representatives gathered on the plains.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:4",
+      "src": "src/assets/chapter-deuteronomy-04-opening-v1.webp",
+      "alt": "Imagined scene: Moses addresses the gathered people beyond the Jordan.",
+      "status": "Candidate only; not used as a generation identity input."
+    },
+    {
+      "chapter": "4:9",
+      "src": "src/assets/chapter-deuteronomy-09-opening-v1.webp",
+      "alt": "Imagined scene: Moses speaks to listeners under a stormy sky.",
+      "status": "Candidate only; not used as a generation identity input."
+    }
+  ],
+  "people": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp"
+      ],
+      "stableFeatures": "Medium-brown complexion, dark natural curls around ears/nape, full dark beard, prominent straight/angular nose, lean adult build. Beige tunic and blue mantle recur but clothing is not identity.",
+      "age": "Adult, visually around thirty; Matthew does not fix an exact age. Ministry scenes span a few years, not decades.",
+      "result": "Compatible through retained Matthew scenes and current-main Mark 1 baptism. No new portrait generated."
+    },
+    {
+      "person": "Mary, mother of Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Young adult woman, medium-brown complexion, dark tight/wavy curls at forehead, oval face, slender build, pale head covering.",
+      "age": "Young adult; exact age unspecified. Birth and flight scenes near in narrative time.",
+      "result": "Retained pair compatible; no new portrait generated."
+    },
+    {
+      "person": "Joseph of Nazareth",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Adult man with dark natural curls, dark beard, strong nose, medium-brown skin, lean build.",
+      "age": "Adult, exact age unspecified; no unsupported large aging between scenes.",
+      "result": "Retained pair compatible. Not Joseph son of Jacob or Joseph of Arimathea."
+    },
+    {
+      "person": "Infant/young Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Swaddled young child with dark hair and brown complexion; face small and partly obscured.",
+      "age": "Infant/young child; Matthew calls him a young child and does not fix exact age.",
+      "result": "Limited detail compatible; no precise portrait anchor certified from tiny face. Not compared with Joseph as the same adult."
+    },
+    {
+      "person": "John the Baptist",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp"
+      ],
+      "stableFeatures": "Medium-brown skin, full dark/gray beard, dense longer dark curls, robust lean adult build, coarse hair garment.",
+      "age": "Adult, visually thirties or forties; same baptism event in Mark does not justify aging.",
+      "result": "Current-main Matthew/Mark baptism pair compatible; Matthew 11 foreground figures are messengers, not John. No new portrait generated."
+    },
+    {
+      "person": "Twelve disciples / eleven after Judas",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v1.webp",
+        "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+        "src/assets/story-the-resurrection-and-the-great-commission-v1.webp"
+      ],
+      "stableFeatures": "Varied brown complexions, natural dark curls, adult bearded men with varied builds, simple woven garments. Some recurring brown/cream headbands.",
+      "age": "Adults, mostly young to middle adult. No broad aging across ministry.",
+      "result": "Retained group compatible; occluded/off-frame men are not counted as absent. Exact name-to-face assignment is not secure and is not invented."
+    },
+    {
+      "person": "Moses and Elijah",
+      "references": [
+        "src/assets/story-the-death-of-moses-v1.webp",
+        "src/assets/story-elijah-on-mount-carmel-v1.webp",
+        "src/assets/story-peter-s-confession-and-the-transfiguration-v1.webp"
+      ],
+      "stableFeatures": "Earlier Moses: older medium-brown man, gray curls, full white/gray beard, weathered face. Earlier Elijah: lean medium-brown man, angular nose, gray-black natural curls/beard. See prior Numbers/Deuteronomy and Kings audits.",
+      "age": "Earlier narratives and later vision are not a basis for inventing ordinary centuries of aging.",
+      "result": "The two older Transfiguration v1 figures cannot be securely assigned to these approved anchors; rejected as continuity input and replaced by a cloud-only scene. No new recognizable Moses or Elijah generated."
+    },
+    {
+      "person": "Magi / Pilate / local crowds",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-v1.webp"
+      ],
+      "stableFeatures": "Single-local-scene figures or anonymous crowds; no repeated identity asserted.",
+      "age": "Adults with local narrative roles; no unsupported cross-name assignment.",
+      "result": "Retained. Newly generated scenes contain no people or identifiable group."
+    }
+  ],
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "newGenerationIdentityInputs": [],
+  "reason": "Every new scene avoids identifiable recurring people or groups; Genesis 7 is supplied for style only.",
+  "laterBookBoundary": "Mark 1 current published-main baptism was directly viewed; parallel Malachi images not assumed approved."
+}
