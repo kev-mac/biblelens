@@ -1,0 +1,57 @@
+{
+  "chapters": 6,
+  "verseCount": 113,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "exactScripture": true,
+  "sourceBlanks": [],
+  "networkCalls": 0,
+  "results": [
+    {
+      "key": "53:1",
+      "verses": 20,
+      "src": "/assets/chapter-1-timothy-01-opening-v1.webp",
+      "bytes": 138880,
+      "sha256": "18a06964ffdc8bcddb3216d3b4a8df12d804977506eb1a1de308622d5df86cc7"
+    },
+    {
+      "key": "53:2",
+      "verses": 15,
+      "src": "/assets/chapter-1-timothy-02-opening-v1.webp",
+      "bytes": 159924,
+      "sha256": "694365b40a55ca70f22d5db54f9f58e47f588d15c7169f605f2964d6cc23374c"
+    },
+    {
+      "key": "53:3",
+      "verses": 16,
+      "src": "/assets/chapter-1-timothy-03-opening-v1.webp",
+      "bytes": 160304,
+      "sha256": "7df2d1526eb373406094a1c9c5a05fe5b413fed6f22aa61842c655c8ea1f206c"
+    },
+    {
+      "key": "53:4",
+      "verses": 16,
+      "src": "/assets/chapter-1-timothy-04-opening-v1.webp",
+      "bytes": 153346,
+      "sha256": "62624f2f065e35d3f4608d29a3a1ac995dfe0aa78a3bab4757e171a88d978fad"
+    },
+    {
+      "key": "53:5",
+      "verses": 25,
+      "src": "/assets/chapter-1-timothy-05-opening-v1.webp",
+      "bytes": 170412,
+      "sha256": "4b8309b737d59cfcb4e43616542b3b9fe31f30aed0b58a3b2c7619acc6780b2a"
+    },
+    {
+      "key": "53:6",
+      "verses": 21,
+      "src": "/assets/chapter-1-timothy-06-opening-v1.webp",
+      "bytes": 131794,
+      "sha256": "de1bdaf7914d14ffd464f6f07c9a58dc2c049d5546b1e1bd36970d019884032b"
+    }
+  ],
+  "webOrigin": "Local generated Worker fixture with pinned source-origin byte responses; not live/public-origin verification"
+}
