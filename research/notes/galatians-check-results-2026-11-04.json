@@ -1,0 +1,142 @@
+{
+  "baseline": "6bd1f514ed876677ab0762695176dfb9d64dfa2e",
+  "source": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "55b28d87d8b8cc6f4d73a5a0224e838cebb533b9a6662aeb0b307c016d9a30fc"
+  },
+  "native": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "55b28d87d8b8cc6f4d73a5a0224e838cebb533b9a6662aeb0b307c016d9a30fc"
+  },
+  "web": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "55b28d87d8b8cc6f4d73a5a0224e838cebb533b9a6662aeb0b307c016d9a30fc"
+  },
+  "identical": true,
+  "workerBytes": 64323326,
+  "workerBudget": 66060288,
+  "headroom": 1736962,
+  "sitePackageFiles": [
+    ".openai",
+    "server"
+  ],
+  "pin": "b6ad042bc2e4589331d06ba87f71d0f61e9e9c89",
+  "passedChecks": [
+    "buildMobile",
+    "images",
+    "mobile",
+    "release",
+    "galatiansOffline",
+    "chapterNames",
+    "stories",
+    "readability",
+    "sitesStaging"
+  ],
+  "logEvidence": {
+    "buildMobile": {
+      "path": "/tmp/galatians-build-mobile.log",
+      "passLines": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "Lazy Worker: 64323326 bytes; assets: dist/client",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+        "Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)"
+      ]
+    },
+    "images": {
+      "path": "/tmp/galatians-images.log",
+      "passLines": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 963 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Galatians); 220 have existing Story coverage, 787 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    "mobile": {
+      "path": "/tmp/galatians-mobile.log",
+      "passLines": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    "release": {
+      "path": "/tmp/galatians-release.log",
+      "passLines": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    "galatiansOffline": {
+      "path": "/tmp/galatians-audit.log",
+      "passLines": [
+        "PASS: Galatians 6/6 single openers, renderer/alt/captions, exact baseline preservation, hosting union, complete-canon spacing.",
+        "PASS: all 6 actual offline-engine chapters, 149 verses in all editions, source/web/offline image parity, zero network calls."
+      ]
+    },
+    "chapterNames": {
+      "path": "/tmp/galatians-chapter-names.log",
+      "passLines": [
+        "PASS: all 1,189 packaged chapter names, every original verse in all editions, on-demand link/red-letter metadata, and missing/empty rejection."
+      ]
+    },
+    "stories": {
+      "path": "/tmp/galatians-stories.log",
+      "passLines": [
+        "PASS: 276 stories in canon order, unique titles/slugs, reference bounds, topic vocabulary, per-book/all-book selection, empty search, passage navigation and stale-response protection.",
+        "PASS: Topic pivot filters, origin exclusion, empty results, closing and escaped themes.",
+        "PASS: 24-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.",
+        "PASS: Full-range story anchors, direct reader action and unchanged narrative summary."
+      ]
+    },
+    "readability": {
+      "path": "/tmp/galatians-readability.log",
+      "passLines": []
+    },
+    "sitesStaging": {
+      "path": "/tmp/galatians-sites-stage.log",
+      "passLines": [
+        "Sites Worker-only package ready: /tmp/galatians-sites-stage/dist"
+      ]
+    }
+  },
+  "readability": "Inherited report-only corpus findings remain; new alt text mean FK 4.78, zero overlong/jargon lines.",
+  "neverRun": [
+    "Browser smoke",
+    "Phone/iPad layouts",
+    "release:verify actual live/source/signed comparison",
+    "iOS signing",
+    "Device installs/version/launch",
+    "Physical device screens"
+  ],
+  "blocked": [
+    {
+      "action": "Read live /release.json HEAD",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "state": "denied",
+      "reason": "Enforced environment proxy CONNECT HTTP 403",
+      "retried": false
+    },
+    {
+      "action": "Managed browser QA",
+      "state": "unavailable / never run",
+      "reason": "No callable cua_repl.js or supported browser tool; no substitute installed."
+    }
+  ],
+  "publicOriginReport": "galatians-public-origin-verification-2026-11-04.json",
+  "offlineReport": "galatians-offline-verification-2026-11-04.json"
+}
