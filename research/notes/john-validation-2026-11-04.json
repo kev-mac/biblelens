@@ -1,0 +1,93 @@
+{
+  "baseline": "6bd1f514ed876677ab0762695176dfb9d64dfa2e",
+  "branch": "artwork/john-2026-11-04",
+  "identity": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "2512e2fce5d14c6f2241f32f2ca542ce31b9244ec0d7e25de45331b88e9468f1"
+  },
+  "assetPin": "c5908c3d71fd5ce8f4c00c6bba75eb991d2a4633",
+  "newFiles": 11,
+  "retainedStoryFiles": 14,
+  "replacedPublishedFiles": 0,
+  "chapters": 21,
+  "placements": 25,
+  "newImageBytes": 1936646,
+  "workerBytes": 64325914,
+  "workerLimit": 66060288,
+  "checks": [
+    {
+      "name": "locked install",
+      "outcome": "passed",
+      "evidence": "/tmp/john-install.log"
+    },
+    {
+      "name": "web/native build",
+      "outcome": "passed",
+      "evidence": "/tmp/john-build.log"
+    },
+    {
+      "name": "images",
+      "outcome": "passed",
+      "evidence": "/tmp/john-images.log"
+    },
+    {
+      "name": "mobile/release checks",
+      "outcome": "passed",
+      "evidence": "/tmp/john-mobile-release.log"
+    },
+    {
+      "name": "nonbrowser content and search",
+      "outcome": "passed",
+      "evidence": "/tmp/john-content.log"
+    },
+    {
+      "name": "John source/spacing",
+      "outcome": "passed",
+      "evidence": "/tmp/john-source-final.log"
+    },
+    {
+      "name": "John offline engine",
+      "outcome": "passed",
+      "evidence": "/tmp/john-offline-final.log"
+    },
+    {
+      "name": "corpus readability (report only)",
+      "outcome": "passed",
+      "evidence": "/tmp/john-readability.log"
+    },
+    {
+      "name": "Worker-only staging",
+      "outcome": "passed",
+      "evidence": "/tmp/john-package.log"
+    },
+    {
+      "name": "all immutable public-origin bytes/hashes",
+      "outcome": "passed",
+      "evidence": "research/notes/john-public-origin-verification-2026-11-04.json"
+    },
+    {
+      "name": "live release.json",
+      "outcome": "denied",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "reason": "Environment proxy CONNECT HTTP 403; stopped without retry/bypass."
+    },
+    {
+      "name": "browser smoke and phone/iPad layouts",
+      "outcome": "never run",
+      "reason": "Managed Sites environment has no callable cua_repl.js; no preview/browser substitute attempted."
+    },
+    {
+      "name": "signing, signed asset parity and device installs",
+      "outcome": "not in per-book scope",
+      "reason": "Owned by coordinated release."
+    }
+  ],
+  "integration": [
+    "Union manifests and explicit coverage by key/set across all ten branches.",
+    "Push complete combined asset union and repin.",
+    "Review John 7:53 \u2192 John 8 opener boundary gap 0 or 1 under stated conventions.",
+    "Recheck both spacing conventions and all cross-book continuity after integration.",
+    "Run actual live/browser/signing/device checks from shared final source."
+  ]
+}
