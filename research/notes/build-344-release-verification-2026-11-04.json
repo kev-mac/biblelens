@@ -1,0 +1,93 @@
+{
+  "version": "1.1.0",
+  "buildNumber": 344,
+  "sourceHash": "5d6e4c943bf74b3bf8e1c182baaf0e2caf6d99e5931897e924241b1f3032906f",
+  "status": "published and installed; device launches pending",
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "sitesVersion": 333,
+  "sitesSourceCommit": "8c9650c1d31364a2f573f1de390e085c9503b134",
+  "canonicalSourceCommit": "911fc4c5a342870964aefe11648eb747f1e623ac",
+  "sitesSavedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_fc1756b970388191ba8786a4e8206d65",
+  "deploymentId": "appgdep_6aead31152f0819199a536b5f1f0f7a9",
+  "deploymentStatus": "succeeded",
+  "archiveSha256": "40313627237fd51fdbda93249c01e8b4abb6af4e00768a54916f75b207836713",
+  "sitesArchiveContentHash": "sha256:11fb60c9a8906e248bcb9b3374be173abd8fe694f70aab6baacd866f94ad9416",
+  "workerBytes": 63967306,
+  "workerBudgetBytes": 66060288,
+  "workerHeadroomBytes": 2092982,
+  "checks": {
+    "releasePrepare": true,
+    "releaseVerify": true,
+    "fullLayouts": true,
+    "focusedLayouts": true,
+    "offlineBatch": true,
+    "publicOrigin": true
+  },
+  "viewportRenders": 600,
+  "focusedViewportRenders": 20,
+  "publicOriginAssetsVerified": 1015,
+  "liveChaptersVerified": 1107,
+  "batchChaptersVerified": 150,
+  "liveImagesVerified": 1311,
+  "liveImageBytesCompared": 165147814,
+  "allImagesServedFromSiteOrigin": true,
+  "strictCodesign": "passed",
+  "signedFilesMatchingWww": 1419,
+  "preservedBaselineAssets": 1274,
+  "preservedStashes": 4,
+  "devices": {
+    "iphone": {
+      "model": "iPhone 16 Pro",
+      "version": "1.1.0",
+      "buildNumber": 344,
+      "install": "success",
+      "activatedLaunch": "denied: device locked",
+      "runningAfterLaunch": "not verified"
+    },
+    "ipad": {
+      "model": "iPad mini (A17 Pro)",
+      "version": "1.1.0",
+      "buildNumber": 344,
+      "install": "success",
+      "activatedLaunch": "denied: device locked",
+      "runningAfterLaunch": "not verified"
+    }
+  },
+  "remainingBlockers": [
+    {
+      "action": "Launch com.scripturelens.app",
+      "target": "iPhone 16 Pro",
+      "outcome": "denied",
+      "reason": "iOS SBMainWorkspace: Locked; unable to launch because the device was not, or could not be, unlocked.",
+      "pending": "Manual device unlock and fresh launch/process verification. Build 344 is already installed."
+    },
+    {
+      "action": "Launch com.scripturelens.app",
+      "target": "iPad mini (A17 Pro)",
+      "outcome": "denied",
+      "reason": "iOS SBMainWorkspace: Locked; unable to launch because the device was not, or could not be, unlocked.",
+      "pending": "Manual device unlock and fresh launch/process verification. Build 344 is already installed."
+    }
+  ],
+  "limits": [
+    "Physical-device screens were not directly inspected. Responsive browser layouts and native installed versions are verified; launch/process outcomes are stated separately.",
+    "Inherited corpus readability findings remain report-only. The 115 new image descriptions average grade 6.23 with no sentence-length or flagged-jargon findings.",
+    "The necessary John 7:53/8 opener pair and Luke 1 opener/verse-5 Story pair remain disclosed; no scripture or original Story placement was moved.",
+    "Paul reference precision is limited by angle, hair length and partially identified groups. Definite first-journey reversal was removed; retained scenes are not unconditional future generation anchors."
+  ],
+  "recovery": [
+    "Versioned built-in image_gen repair removed faint Acts 23 corner lettering; original remains.",
+    "The raw mirror audit initially compared Git clean-filter hashes; correcting it to no-filters proved identical CRLF bytes without changing source.",
+    "Focused layout snapshots waited for the optional local sync-session 503 retries to finish; empty fixture environment is documented, and no image/reading request failed.",
+    "The first iPhone install connection was interrupted. Read-only metadata proved build 343 remained; an ordinary retry then installed 344 successfully.",
+    "Disposable prior task compiler caches were removed for signing space; original source, stashes, signed apps, release archives and reports were preserved."
+  ],
+  "finalReadOnlyLockState": {
+    "iphone": {
+      "passcodeRequired": true
+    },
+    "ipad": {
+      "passcodeRequired": true
+    }
+  }
+}
