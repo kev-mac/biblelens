@@ -1,0 +1,22 @@
+{
+  "buildMobile": "passed",
+  "checkImages": "passed; 1111 registered chapters",
+  "checkMobile": "passed; engine/chrome fixtures",
+  "checkRelease": "passed",
+  "releaseSites": "passed; five Worker-only files",
+  "workerBytes": 63921934,
+  "workerLimit": 66060288,
+  "offline": "passed; 4 chapters, 83 verses, zero network calls, exact edition field presence/values",
+  "sourceWebOffline": "passed; 1315 active images, 165601806 bytes",
+  "publicOrigin": "passed; 1019 files, 131697952 bytes",
+  "readability": "report-only exit 0; inherited corpus findings",
+  "newAltMeanGrade": 6.021185070519438,
+  "newAltTooLong": 0,
+  "newAltJargon": 0,
+  "aggregateCheck": "failed at missing Chromium browser executable in final browser smoke; earlier nonbrowser checks passed",
+  "browserLayouts": "not run; no managed cua_repl.js and Chromium absent",
+  "liveSite": "denied; proxy CONNECT HTTP 403, not retried",
+  "signingDevicesPublish": "not performed; delegated to combined release",
+  "initialBuild": "failed pre-manifest completeness; corrected sequencing then full mobile/web build passed",
+  "diffCheck": "passed"
+}
