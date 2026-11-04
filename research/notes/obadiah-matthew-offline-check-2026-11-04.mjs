@@ -23,22 +23,25 @@ const storyImages=JSON.parse(fs.readFileSync('data/story-images.json'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json'));
 const counts=[1,4,7,3,3,3,2,14,4,28];
 let openers=0,images=0;
+const sourceBlanks=[];
 try {
  for(let book=30;book<=39;book++)for(let chapter=1;chapter<=counts[book-30];chapter++){
   const response=await target.fetch('/api/chapter?book='+book+'&chapter='+chapter);
   assert.equal(response.status,200);
   const data=await response.json();
-  assert(data.verses.length&&data.verses.every(v=>v.kjv&&v.asv&&v.web));
+  assert(data.verses.length&&data.verses.every(v=>['kjv','asv','web'].every(e=>typeof v[e]==='string')));
   assert.deepEqual(data.chapterImages||[],chapterImages[book+':'+chapter]||[]);
   const atOne=(data.eventHeadings?.[1]||[]).filter(title=>storyImages[title]);
   const additions=(data.chapterImages||[]).filter(a=>a.afterVerse===0);
   assert.equal(atOne.length+additions.length,1,'Exactly one offline opener: '+book+':'+chapter);
   const raw=JSON.parse(zlib.gunzipSync(Buffer.from(chapters[book+':'+chapter],'base64')));
-  for(const v of data.verses)for(const edition of ['kjv','asv','web'])assert.equal(v[edition],raw.verses.find(x=>x.n===v.n)[edition]);
+  for(const v of data.verses)for(const edition of ['kjv','asv','web']){assert.equal(v[edition],raw.verses.find(x=>x.n===v.n)[edition]);if(!v[edition])sourceBlanks.push({book,chapter,verse:v.n,edition});}
   openers++;
   const sources=[...(data.chapterImages||[]).map(a=>a.src),...Object.values(data.eventHeadings||{}).flat().filter(title=>storyImages[title]).map(title=>storyImages[title].src)];
   for(const src of sources){assert.deepEqual(fs.readFileSync('www'+src),fs.readFileSync('src'+src),'Bundled offline artwork matches shared source: '+src);images++;}
  }
  assert.equal(networkCalls,0);
+ assert.deepEqual(sourceBlanks,[{book:39,chapter:17,verse:21,edition:'asv'},{book:39,chapter:18,verse:11,edition:'asv'},{book:39,chapter:23,verse:14,edition:'asv'}]);
+ console.log('Preserved exact source ASV blanks:',JSON.stringify(sourceBlanks));
  console.log(`PASS: ${openers} batch chapters from packaged offline engine, ${images} image placements match native/source bytes, three scripture editions, exactly one opener per chapter, zero network calls.`);
 } finally {restore();}
