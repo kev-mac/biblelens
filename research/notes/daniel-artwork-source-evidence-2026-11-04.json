@@ -1,0 +1,373 @@
+{
+  "base": "846ba46",
+  "coverage": [
+    {
+      "chapter": 1,
+      "story": [
+        "Daniel and His Friends in Babylon"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 2,
+      "story": [
+        "Nebuchadnezzar's Dream of the Statue"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 3,
+      "story": [
+        "The Fiery Furnace"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 4,
+      "story": [
+        "Nebuchadnezzar's Humbling"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 5,
+      "story": [
+        "Belshazzar's Feast"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 6,
+      "story": [
+        "Daniel in the Lions' Den"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 7,
+      "story": [
+        "Daniel's Visions"
+      ],
+      "chapterImages": []
+    },
+    {
+      "chapter": 8,
+      "story": [],
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A quiet canal runs between reeds and clay banks near distant buildings.",
+          "src": "/assets/chapter-daniel-08-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "story": [],
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An open scroll, a clay lamp and rough cloth rest on a low table.",
+          "src": "/assets/chapter-daniel-09-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "story": [],
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Blue river water flows past a stony bank and green reeds.",
+          "src": "/assets/chapter-daniel-10-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "story": [],
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An earth ramp rises toward the walls of a distant hill town.",
+          "src": "/assets/chapter-daniel-11-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "story": [],
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A tied scroll rests beside a window beneath a starry night sky.",
+          "src": "/assets/chapter-daniel-12-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "from": {
+        "book": 25,
+        "chapter": 40,
+        "verse": 1,
+        "title": "Ezekiel Is Shown the Temple in a Vision",
+        "src": "/assets/story-ezekiel-is-shown-the-temple-in-a-vision-v1.webp",
+        "position": 21479
+      },
+      "to": {
+        "book": 26,
+        "chapter": 1,
+        "verse": 1,
+        "title": "Daniel and His Friends in Babylon",
+        "src": "/assets/story-daniel-and-his-friends-in-babylon-v1.webp",
+        "position": 21739
+      },
+      "gap": 260
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 1,
+        "verse": 1,
+        "title": "Daniel and His Friends in Babylon",
+        "src": "/assets/story-daniel-and-his-friends-in-babylon-v1.webp",
+        "position": 21739
+      },
+      "to": {
+        "book": 26,
+        "chapter": 2,
+        "verse": 1,
+        "title": "Nebuchadnezzar's Dream of the Statue",
+        "src": "/assets/story-nebuchadnezzar-s-dream-of-the-statue-v1.webp",
+        "position": 21760
+      },
+      "gap": 21
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 2,
+        "verse": 1,
+        "title": "Nebuchadnezzar's Dream of the Statue",
+        "src": "/assets/story-nebuchadnezzar-s-dream-of-the-statue-v1.webp",
+        "position": 21760
+      },
+      "to": {
+        "book": 26,
+        "chapter": 3,
+        "verse": 1,
+        "title": "The Fiery Furnace",
+        "src": "/assets/story-the-fiery-furnace-v1.webp",
+        "position": 21809
+      },
+      "gap": 49
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 3,
+        "verse": 1,
+        "title": "The Fiery Furnace",
+        "src": "/assets/story-the-fiery-furnace-v1.webp",
+        "position": 21809
+      },
+      "to": {
+        "book": 26,
+        "chapter": 4,
+        "verse": 1,
+        "title": "Nebuchadnezzar's Humbling",
+        "src": "/assets/story-nebuchadnezzar-s-humbling-v1.webp",
+        "position": 21839
+      },
+      "gap": 30
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 4,
+        "verse": 1,
+        "title": "Nebuchadnezzar's Humbling",
+        "src": "/assets/story-nebuchadnezzar-s-humbling-v1.webp",
+        "position": 21839
+      },
+      "to": {
+        "book": 26,
+        "chapter": 5,
+        "verse": 1,
+        "title": "Belshazzar's Feast",
+        "src": "/assets/story-belshazzar-s-feast-v2.webp",
+        "position": 21876
+      },
+      "gap": 37
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 5,
+        "verse": 1,
+        "title": "Belshazzar's Feast",
+        "src": "/assets/story-belshazzar-s-feast-v2.webp",
+        "position": 21876
+      },
+      "to": {
+        "book": 26,
+        "chapter": 6,
+        "verse": 1,
+        "title": "Daniel in the Lions' Den",
+        "src": "/assets/story-daniel-in-the-lions-den-v1.webp",
+        "position": 21907
+      },
+      "gap": 31
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 6,
+        "verse": 1,
+        "title": "Daniel in the Lions' Den",
+        "src": "/assets/story-daniel-in-the-lions-den-v1.webp",
+        "position": 21907
+      },
+      "to": {
+        "book": 26,
+        "chapter": 7,
+        "verse": 1,
+        "title": "Daniel's Visions",
+        "src": "/assets/story-daniel-s-visions-v2.webp",
+        "position": 21935
+      },
+      "gap": 28
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 7,
+        "verse": 1,
+        "title": "Daniel's Visions",
+        "src": "/assets/story-daniel-s-visions-v2.webp",
+        "position": 21935
+      },
+      "to": {
+        "book": 26,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-08-opening-v1.webp",
+        "position": 21962
+      },
+      "gap": 27
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-08-opening-v1.webp",
+        "position": 21962
+      },
+      "to": {
+        "book": 26,
+        "chapter": 9,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-09-opening-v1.webp",
+        "position": 21989
+      },
+      "gap": 27
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 9,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-09-opening-v1.webp",
+        "position": 21989
+      },
+      "to": {
+        "book": 26,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-10-opening-v1.webp",
+        "position": 22016
+      },
+      "gap": 27
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-10-opening-v1.webp",
+        "position": 22016
+      },
+      "to": {
+        "book": 26,
+        "chapter": 11,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-11-opening-v1.webp",
+        "position": 22037
+      },
+      "gap": 21
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 11,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-11-opening-v1.webp",
+        "position": 22037
+      },
+      "to": {
+        "book": 26,
+        "chapter": 12,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-12-opening-v1.webp",
+        "position": 22082
+      },
+      "gap": 45
+    },
+    {
+      "from": {
+        "book": 26,
+        "chapter": 12,
+        "verse": 0,
+        "src": "/assets/chapter-daniel-12-opening-v1.webp",
+        "position": 22082
+      },
+      "to": {
+        "book": 27,
+        "chapter": 1,
+        "verse": 1,
+        "title": "Hosea's Marriage to Gomer",
+        "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+        "position": 22096
+      },
+      "gap": 14
+    }
+  ],
+  "closePairs": [],
+  "minimumGap": 14,
+  "hostedAssets": 641,
+  "registeredChapters": 671,
+  "preservedBaselineAssets": 991,
+  "preservedEarlierChapterKeys": 519,
+  "preservedFiles": [
+    "data/chapters.json",
+    "data/stories.json",
+    "package.json",
+    "src/reader.js",
+    "src/stories.js",
+    "scripts/offline-app.mjs",
+    "scripts/build-mobile.mjs"
+  ]
+}

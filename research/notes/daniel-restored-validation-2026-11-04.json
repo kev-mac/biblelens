@@ -1,0 +1,75 @@
+{
+  "dependencyRestore": {
+    "command": "npm ci --registry=https://registry.npmjs.org --no-audit --no-fund --cache=/tmp/daniel-npm-cache",
+    "resolvedHosts": [
+      "registry.npmjs.org"
+    ],
+    "packagesAdded": 152,
+    "lockfileChanged": false
+  },
+  "checks": {
+    "build:mobile": "pass",
+    "check:images": "pass",
+    "check:mobile": "pass",
+    "check:release": "pass",
+    "focusedDanielOffline": {
+      "status": "pass",
+      "chapters": 12,
+      "checkedVerses": 357,
+      "checkedImages": 12,
+      "networkCalls": 0,
+      "method": "Real generated mobile worker through Node adapter; physical device not tested"
+    }
+  },
+  "worker": {
+    "bytes": 64492496,
+    "budget": 66060288,
+    "headroom": 1567792
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "e7ab700d626ec72ebda3305706ab46439b1377fa339ee1700f92707aee958162"
+  },
+  "logs": {
+    "npm-ci": {
+      "path": "/tmp/daniel-npm-ci.log",
+      "sha256": "1ac7341eddf5549ddbae10ec2449109334ca354eed6792d1da9b5e196163c1f6",
+      "exitCode": 0
+    },
+    "build-mobile-restored": {
+      "path": "/tmp/daniel-build-mobile-restored.log",
+      "sha256": "a9fb0510d948b99ef50bee16458b009b29de7823eebae5911e0771b939e42447",
+      "exitCode": 0
+    },
+    "images-restored": {
+      "path": "/tmp/daniel-images-restored.log",
+      "sha256": "aa8636e02d10c58758b9d07671aa8a5b960b158e6e07c8cc0035a851b0954c8f",
+      "exitCode": 0
+    },
+    "mobile-restored": {
+      "path": "/tmp/daniel-mobile-restored.log",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "exitCode": 0
+    },
+    "offline-restored": {
+      "path": "/tmp/daniel-offline-restored.log",
+      "sha256": "73279ceb7a3bc2989cc82a410ae1549617c6ef6f5b5dc88947831f638ee6cf06",
+      "exitCode": 0
+    },
+    "release-restored": {
+      "path": "/tmp/daniel-release-restored.log",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "exitCode": 0
+    }
+  },
+  "remainingLimits": [
+    "No callable rendered layout tool",
+    "Physical devices/signed app unavailable",
+    "Fresh Sites source-tree comparison pending",
+    "Prior live CONNECT 403 denied; not retried"
+  ],
+  "publication": false,
+  "mainMerge": false,
+  "deviceInstallation": false
+}
