@@ -1,0 +1,100 @@
+{
+  "commands": [
+    {
+      "command": "npm ci --ignore-scripts --no-audit --no-fund --fetch-retries=0 --registry=https://registry.npmjs.org --cache=/tmp/2-john-npm-cache",
+      "exitCode": 0,
+      "log": "/tmp/2-john-npm-install.log",
+      "logSHA256": "42dbb6d54d4a7dfecd51179efd410926b5d6ae746951bc26b7d86db73a2d73f6",
+      "lastOutput": "npm warn deprecated uuid@7.0.3: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).\nnpm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.hirok.io\nnpm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.hirok.io\n\nadded 152 packages in 3s\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "log": "/tmp/2-john-build-mobile.log",
+      "logSHA256": "a39e00381618cd54f74dcf29177f91706a627dda65a8cfc059c271fe22ccfa70",
+      "lastOutput": "ASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.\nPASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.\nPASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.\nPASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.\nPASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.\nPASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.\nPASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.\nPASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.\nPASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.\nPASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.\nMobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run check:readability",
+      "exitCode": 0,
+      "log": "/tmp/2-john-readability.log",
+      "logSHA256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0",
+      "lastOutput": "(visible) | 552 | 7.06 | 13.9% (77) | 2 |\n| People (visible) | 96 | 7.88 | 16.7% (16) | 1 |\n| Timeline (visible) | 10 | 7.89 | 0.0% (0) | 0 |\n| Prophecies (visible) | 6 | 7.05 | 0.0% (0) | 0 |\n| Explore cards (visible) | 19 | 11.88 | 0.0% (0) | 1 |\n| Explore visible text (visible) | 19 | 11.88 | 0.0% (0) | 1 |\n| Phase 2 interface (visible) | 9 | 5.54 | 0.0% (0) | 0 |\n\nLost Books \u2014 Apocrypha \u2014 top jargon: none\nLost Books \u2014 Gnostic \u2014 top jargon: none\nRC1 accepted imports \u2014 top jargon: Tischendorf: 5, Brenton: 2\nRC1 accepted notes \u2014 top jargon: none\nEvidence \u2014 top jargon: Brenton: 1152, Tischendorf: 981, Textus Receptus: 496, Septuagint: 43, witness: 8\nEvidence notes \u2014 top jargon: Brenton: 3104, manuscript: 2559, Septuagint: 1992, Textus Receptus: 1950, Tischendorf: 1929, witness: 977, WLC: 961, ordinal: 8, harmoniz: 3, calibration: 1\nUX13 place summaries \u2014 top jargon: none\nUX13 Events \u2014 top jargon: none\nEvents \u2014 top jargon: witness: 2\nPeople \u2014 top jargon: witness: 1\nTimeline \u2014 top jargon: none\nProphecies \u2014 top jargon: none\nExplore cards \u2014 top jargon: manuscript: 1\nExplore visible text \u2014 top jargon: manuscript: 1\nPhase 2 interface \u2014 top jargon: none\n\nEstimated English syllables; each nonempty field line counts once. FK grades are averaged per line.\nLength limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6\u20138; detail grades at most 10. Quoted spans are excluded.\nJargon screening uses the listed terms and plain equivalents by first use; review context manually.\n\nReport-only mode: items need review.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "log": "/tmp/2-john-images.log",
+      "logSHA256": "c19a3b695281cf4abec5368dc9a36570abcd98920d827b7990a595f50ab5e478",
+      "lastOutput": "er-images.mjs && node scripts/check-1-samuel-artwork.mjs\n\nPASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.\nPASS: all 1108 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, 2 John); 272 have existing Story coverage, 895 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.\nCLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]\nPASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "log": "/tmp/2-john-mobile.log",
+      "logSHA256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "lastOutput": "\n> scripture-lens@1.1.0 check:mobile\n> node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs\n\nPASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.\nPASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "log": "/tmp/2-john-release.log",
+      "logSHA256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "lastOutput": "\n> scripture-lens@1.1.0 check:release\n> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs\n\nPASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.\nPASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.\nPASS: local browser previews make no published-release request, while native localhost still checks for updates.\nPASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.\nPASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.\nPASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.\nPASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "npm run release:sites -- /tmp/2-john-worker-stage",
+      "exitCode": 0,
+      "log": "/tmp/2-john-worker-package.log",
+      "logSHA256": "d1c8140b0c501d93433d7eaec21d6c079d66cceb18145199b6faa0115cce8df0",
+      "lastOutput": "\n> scripture-lens@1.1.0 release:sites\n> node scripts/package-sites.mjs /tmp/2-john-worker-stage\n\nSites Worker-only package ready: /tmp/2-john-worker-stage\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n"
+    },
+    {
+      "command": "node research/notes/2-john-artwork-audit-2026-11-04.mjs",
+      "exitCode": 0,
+      "log": "/tmp/2-john-audit.log",
+      "logSHA256": "cdb821cb6e543355135785632952bab6f6601b13147ff06619ba7f0bbdb3c249",
+      "lastOutput": "{\n  \"baseline\": \"5a33980ae6e7e25ad9b0dfb345d8da52229226d9\",\n  \"preservedAssets\": 1394,\n  \"mirrorComparison\": {\n    \"baseline\": \"5a33980ae6e7e25ad9b0dfb345d8da52229226d9\",\n    \"mirrorCommit\": \"8c9650c1d31364a2f573f1de390e085c9503b134\",\n    \"siteVersion\": 333,\n    \"comparedProductionFiles\": 1762,\n    \"differences\": []\n  },\n  \"changedStories\": [],\n  \"batchChapters\": 1,\n  \"registeredChapters\": 1108,\n  \"hostedAssets\": 1016,\n  \"pin\": \"eceffbd69bc1b273fabb4b96649c220de02e0626\",\n  \"spacing\": {\n    \"openerAtVerse0\": {\n      \"baselineAdjacent\": 64,\n      \"currentAdjacent\": 64,\n      \"baselineAll\": 65,\n      \"currentAll\": 65,\n      \"batchClosePairs\": [],\n      \"boundaries\": [\n        {\n          \"a\": {\n            \"key\": \"57:8\",\n            \"verse\": 6,\n            \"pos\": 30102,\n            \"src\": \"/assets/story-new-covenant-v1.webp\"\n          },\n          \"b\": {\n            \"key\": \"62:1\",\n            \"verse\": 0,\n            \"pos\": 30649,\n            \"src\": \"/assets/chapter-2-john-01-opening-v1.webp\"\n          },\n          \"distance\": 547\n        }\n      ]\n    },\n    \"openerAtVerse1\": {\n      \"baselineAdjacent\": 69,\n      \"currentAdjacent\": 69,\n      \"baselineAll\": 70,\n      \"currentAll\": 70,\n      \"batchClosePairs\": [],\n      \"boundaries\": [\n        {\n          \"a\": {\n            \"key\": \"57:8\",\n            \"verse\": 6,\n            \"pos\": 30102,\n            \"src\": \"/assets/story-new-covenant-v1.webp\"\n          },\n          \"b\": {\n            \"key\": \"62:1\",\n            \"verse\": 0,\n            \"pos\": 30650,\n            \"src\": \"/assets/chapter-2-john-01-opening-v1.webp\"\n          },\n          \"distance\": 548\n        }\n      ]\n    }\n  }\n}\n"
+    },
+    {
+      "command": "node research/notes/2-john-offline-check-2026-11-04.mjs",
+      "exitCode": 0,
+      "log": "/tmp/2-john-offline.log",
+      "logSHA256": "92d303aa4130b83e9b1bd366242c50bfadac399b6f22747b104ed8c3c9cbeda9",
+      "lastOutput": "Preserved exact source blanks and field presence: []\nPASS: 1 batch chapters from packaged offline engine, 1 image placements match native/source bytes, three scripture editions, exactly one opener per chapter, zero network calls.\n"
+    },
+    {
+      "command": "python research/notes/2-john-public-origin-check-2026-11-04.py",
+      "exitCode": 0,
+      "log": "/tmp/2-john-origin.log",
+      "logSHA256": "0db547058d3eaec1ca27b0c4bb3da94e0277ede175eea8d821344252b73e59cf",
+      "lastOutput": "{'pin': 'eceffbd69bc1b273fabb4b96649c220de02e0626', 'assets': 1016, 'bytes': 131363090, 'passed': True}\n"
+    }
+  ],
+  "workerBytes": 63920230,
+  "workerLimit": 66060288,
+  "workerRemaining": 2140058,
+  "workerPackageFiles": [
+    "server/index.js",
+    ".openai/hosting.json",
+    ".openai/drizzle/0000_loose_bug.sql",
+    ".openai/drizzle/meta/0000_snapshot.json",
+    ".openai/drizzle/meta/_journal.json"
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "17615e7602cbe632293d934084928f1a0d1085fec5ab8985c0cfe549a537aa2a"
+  },
+  "liveRequest": {
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "status": "denied",
+    "reason": "HTTP proxy CONNECT 403 Forbidden",
+    "retriesAfterDenial": 0
+  },
+  "browser": {
+    "status": "not run",
+    "reason": "No callable managed browser tool or cua_repl.js supplied. No preview, alternate browser or download attempted."
+  },
+  "publicationSigningInstall": "Not performed: delegated feature-branch-only scope. Parent coordinates."
+}

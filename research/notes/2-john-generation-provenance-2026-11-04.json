@@ -1,0 +1,39 @@
+{
+  "tool": "image_gen.imagegen",
+  "book": 62,
+  "chapter": 1,
+  "textReference": "2 John 1:12",
+  "styleOnlyInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "identityInputs": [],
+  "identityDecision": "No people, animals or recognizable recurring group; no attribution of the elder to an apostle or visionary John. No unpublished sibling reference.",
+  "original": "/workspace/generated_images/exec-057201e2-3fd9-46e6-94c0-73ff9c38a5b1.png",
+  "originalSHA256": "126b9b50a6ae42af5bc092dd0bc48db993f77a8b3c37ef1efee88468e70efe05",
+  "asset": "src/assets/chapter-2-john-01-opening-v1.webp",
+  "bytes": 119130,
+  "sha256": "4762de8589b128bc1638a0d1560d549d9c660fbd15674e3a5c55642a5acc1d1e",
+  "conversion": "Pillow RGB, Lanczos 960x540, WebP quality=86 method=6; original preserved",
+  "review": "Viewed original 1672x941 and final 960x540 individually at full size, and compared with actual Genesis 7 reference. Grounded light, blue cloth, green courtyard, believable wood/clay/papyrus; no visible lettering/signature or definite object defect. Reed pen, pot and sheet inspected. No visible anatomy to certify. Setting is imagined, not historical evidence.",
+  "prompt": "Create a 16:9 landscape BibleLens chapter illustration for 2 John 1, specifically the paper and ink and hoped-for face-to-face conversation in verse 12. The supplied actual Genesis 7 image is STYLE ONLY, never identity or subject. Match its grounded natural light, believable materials and restrained illustrative realism, not glossy photography or thick oil paint. Scene: quiet unoccupied first-century eastern Mediterranean household interior, a small low weathered wooden writing table beside an open shaded doorway, a single unlettered sheet of pale papyrus, a simple small ceramic ink pot and one reed pen resting on the table. Pale cool morning daylight from doorway, muted blue woven cloth, a glimpse of green courtyard outside. Thoughtful intimate eye-level composition, enough depth and quiet atmosphere. No people or body parts, no statues, no animals, no cross, no symbolic hearts, no modern furnishings, no writing or letters of any kind, no signature or watermark. This is an imagined literary illustration, not a reconstructed location or portrait. Make simple coherent objects, especially a credible reed pen and small ink pot. One image.",
+  "counts": {
+    "generated": 1,
+    "retainedExistingBookImages": 0,
+    "replaced": 0
+  },
+  "dependencies": [
+    "Recompute 1 John/2 John/3 John boundaries with final-six accepted union.",
+    "Combine previous Colossians\u20131 Peter branch assets and final-six assets, push union commit and repin before release."
+  ],
+  "preservedApprovedReferences": [
+    "story-pentecost-v2.webp",
+    "story-paul-s-first-journey-v2.webp",
+    "chapter-acts-23-opening-v2.webp",
+    "chapter-luke-20-opening-v2.webp",
+    "chapter-2-corinthians-11-opening-v2.webp"
+  ],
+  "identityReferenceAudits": [
+    "research/notes/matthew-continuity-inventory-2026-11-04.json",
+    "research/notes/matthew-visual-continuity-audit-2026-11-04.md",
+    "research/notes/acts-visual-continuity-audit-2026-11-04.md",
+    "research/notes/mark-philippians-combined-review-2026-11-04.md"
+  ]
+}
