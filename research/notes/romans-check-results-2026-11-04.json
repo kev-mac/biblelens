@@ -1,0 +1,61 @@
+{
+  "source": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "ea0e8db598b1649de12f791053e9dacc4b0170fd97b77de27f4bb48341d64b92"
+  },
+  "workerBytes": 64328531,
+  "workerLimit": 66060288,
+  "headroom": 1731757,
+  "pin": "aefeae7462abe0b63b1b4844fc2211f3d7bc9c2a",
+  "hostedAssets": 916,
+  "publicOriginPassed": 916,
+  "publicOriginBytes": 116384402,
+  "passed": [
+    "locked npm ci",
+    "source/coverage/captions/spacing/preservation audit",
+    "build:mobile (final source)",
+    "check:images (973 registered chapters)",
+    "check:mobile",
+    "check:release",
+    "check:readability (report only)",
+    "check-stories.mjs",
+    "check-chapter-names.mjs",
+    "16-chapter actual offline engine audit",
+    "release:sites Worker-only staging",
+    "git diff --check"
+  ],
+  "notRun": [
+    "managed browser smoke",
+    "phone/iPad browser layouts",
+    "aggregate npm run check (includes browser-dependent release smoke)",
+    "release:prepare (release coordinator scope)",
+    "release:verify (live denied; release coordinator scope)",
+    "live candidate images/chapters",
+    "signing and signed native comparison",
+    "device install/version/launch",
+    "physical-screen inspection"
+  ],
+  "denied": [
+    {
+      "action": "curl -I",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "reason": "inherited HTTP proxy CONNECT 403",
+      "status": "denied; stopped, no retry or bypass"
+    }
+  ],
+  "recovered": [
+    {
+      "check": "initial offline audit",
+      "reason": "incorrect universal string-field assumption; inherited WEB fields absent at Romans 16:26–27",
+      "resolution": "assert exact source presence/type/value, eight existing empty strings and two exact absent fields; source unchanged; final check passed"
+    }
+  ],
+  "browserLimit": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js; no substitute installed or preview server started",
+  "coordinatedRechecks": [
+    "Union and repin all ten branches",
+    "recompute Acts/Romans/1 Corinthians spacing",
+    "review inherited Paul first-journey hairline discrepancy in Acts",
+    "rebuild common source and repeat browser/live/signed/device checks"
+  ]
+}
