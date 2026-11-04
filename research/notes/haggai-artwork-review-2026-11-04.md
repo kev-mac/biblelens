@@ -1,0 +1,47 @@
+# Haggai artwork review — 2026-11-04
+
+Scope: Haggai only, reader book 36, two chapters. Generated 2; retained existing Haggai images 0; replaced 0. Exactly one chapter opener each, directly under the chapter heading before verse 1; no Story duplication. No scripture, Story prose, earlier image mappings, reader UI, release/build number, dependencies or lockfile changed. This feature session does not publish or install.
+
+## Baseline and source comparison
+
+Freshly fetched canonical main: 8217c57c591928653b7bd452ba5b21b79e4cc3f6. Original saved checkout was stale (846ba467); it remains untouched with its own source/stashes. Work is isolated at /workspace/haggai, branch artwork/haggai-2026-11-04. AGENTS.md, RELEASING.md, CLAUDE.md, build-342 verification, Ecclesiastes–Amos combined review and Obadiah handoff were read. No repository .agents/skills directory or installed Sites source helper exists in this cloud image. The cloud-environment and Sites skill instructions were read. Authorized read-only Sites source access used the fresh short-lived credential through hidden stdin and a command-scoped Git authorization header; no credential was persisted. Ordinary Git opened /workspace/haggai-sites-mirror at ca12233182d18ffcb68960c469dac0722fd93b85. Its src/data/scripts/worker/db/drizzle production files match fresh main byte-for-byte. Sites reports public version 331 and https://scripture-lens.kvn-mcgwn.chatgpt.site. No Site source was pushed.
+
+## Inventory and visual review
+
+The Story catalog contains no Haggai group; neither Haggai chapter had chapter art or Story art. Both chapters and all three editions were read before selecting scenes. Haggai 1:4,8,14 provides the unfinished temple foundation and waiting timber. Haggai 2:19 provides the unfruitful vine, fig, pomegranate and olive. These scenes illustrate the chapter as a whole; they do not purport to depict verse 1 literally.
+
+The actual approved src/assets/chapter-genesis-07-opening-v1.webp was inspected and supplied as a file input to both image_gen.imagegen calls. It supplies grounded natural light, believable materials and a restrained illustrative finish only. New files: src/assets/chapter-haggai-01-opening-v1.webp (154330 bytes) and chapter-haggai-02-opening-v1.webp (167484 bytes), 960×540. Original generated PNGs remain under /workspace/generated_images. Per-file hashes, source paths, tool and textual anchors are in src/assets/haggai-chapter-art.provenance.json.
+
+Recurring-person/group inventory: Haggai, Zerubbabel, Joshua/Jeshua the high priest, Darius and the returned Judean community are named in the text or related earlier books. Earlier Ezra Story metadata for Cyrus's Decree and the Return, Rebuilding the Altar and Foundation, Opposition and Delay and The Temple Completed was inventoried. The latter three actual artwork files were inspected at full size together with the approved style and both final Haggai files. They contain unassigned builders, officials, musicians, priests and families. Their metadata does not establish a specific approved Haggai/Zerubbabel/Joshua portrait. Joshua the high priest is not Joshua son of Nun; Darius is not assigned a Daniel portrait by name alone. No earlier image is silently promoted to an identity anchor. Later Zechariah art is parallel and unapproved here.
+
+Both new images deliberately contain no identifiable person or recurring group, no people at all and no animals. Thus no character identity image is needed and no unsupported identity/aging relationship is introduced. There is no face, hand, finger, limb or animal anatomy to certify in these new assets. Full-size original and final WebP review found coherent masonry, timber, rope and landscape; chapter 2 has distinct bare vine, lobed fig, narrow-leaf shrub and olive forms without visible fruit. Pale stone/blue daylight and cool purple-gray/green orchard vary the palette. The distant town wall, exact foundation layout and botanical species are illustrative rather than claimed reconstructions. No new text-fit or visual defect was found. Earlier Ezra artwork is unchanged; its tiny/occluded anatomy is not newly certified by this review.
+
+Alt text begins “Imagined scene:” and states concrete visible content. Generic chapter captions remain hidden through the unchanged reader. Existing Story captions and inline placements remain untouched and retain their existing small italic styling.
+
+## Coverage, spacing and preservation
+
+research/notes/haggai-artwork-audit-2026-11-04.mjs verifies both openers and preserves all 1215 baseline asset blobs, all earlier chapter mappings, Story image mappings, scripture, Story prose, reader source, package.json and lockfile. Machine ledger: haggai-artwork-verification-2026-11-04.json. Coverage extends only explicit book ID 36; registered chapter total is 890.
+
+Consecutive Haggai openers are 15 verse positions apart. No new pair below five positions involves Haggai. The full corpus ledger lists 67 inherited close pairs (using opener at verse-1 position), including early-book and Psalm pairs outside this session; it does not claim these were repaired. The established 1 Samuel check separately retains its inherited chapter-7 opener/verse-2 distance of two using opener position zero. Counting conventions are disclosed, not silently equated.
+
+Zephaniah and Zechariah have no artwork in this baseline. The current nearest illustrated neighbors are Jonah 4 and Matthew 1, with distances 272 and 306 in the ledger. Combined integration MUST recalculate Zephaniah 3 → Haggai 1, Haggai 1 → 2, and Haggai 2 → Zechariah 1 after accepting the parallel branches, and inspect any identifiable neighboring depictions. Parallel work is not approved by assumption.
+
+## Hosting and integration
+
+Immutable public artwork pin: fbf9ddeb2a1fdb2f17f24072785b00ae0db86ce1, pushed to this feature branch before pinning. It contains the full previous source asset union plus both Haggai WebPs. All 845 pinned assets were fetched through the configured proxy from actual raw.githubusercontent.com immutable URLs and matched source bytes; see haggai-public-origin-verification-2026-11-04.json. A first Node fetch audit hung without results in this proxy environment and was stopped; it is not a passed check. The completed standard proxy-aware Python audit had no failures or denials. No identity/header/proxy change was used to evade a denial.
+
+The allowlist adds only haggai filenames and explicit book ID 36; earlier 843 manifest members remain. All assets remain in shared source and full offline native output. Combined integration must union every accepted branch's mappings, explicit IDs, hosting allowlist and asset list, push one public asset commit containing that complete union, then replace sourceCommit with that exact commit before publishing. This Haggai pin cannot be reused for images that exist only on sibling branches. Worker handler privacy, hashes, size checks and origins are unchanged.
+
+## Checks and limits
+
+Locked npm ci used the official registry and --ignore-scripts. The first attempt failed because its default cache was outside the writable sandbox; a /tmp task-specific cache succeeded without dependency-file changes. No paid API calls, API key provisioning, security change or device action occurred.
+
+Web build and mobile build passed, including their built-in content, reliability, vocabulary, reference, understanding and startup checks. npm run check:readability passed in report-only mode with inherited findings. npm run check:images passed for all 890 registered chapters, preserved Story artwork and native/web/source byte parity. npm run check:mobile passed actual offline worker reading/chat/comparison and mobile chrome checks. npm run check:release passed identity, Worker-only Sites packaging, CSP/auth/sync guards, app-refresh and public-origin privacy/hash fixtures. Controlled fixtures are not presented as public network checks; the separate 845-file public audit provides that evidence.
+
+Final Worker size: 64425735 bytes against 66060288 (1634553 bytes headroom). Full final shared build and Haggai-specific offline checks are recorded in the companion final-checks JSON. Logs remain /tmp/haggai-*.log. Build 342 is intentionally unchanged: these outputs are feature verification artifacts, not a new published release.
+
+Not run: phone/iPad viewport browser QA (managed environment has no cua_repl.js/browser-control tool; no substitute browser path or preview was started), live Site HTTP chapter/image checks (Site origin is outside the enforced cloud network allowlist), signed-device byte parity, Xcode signing/install, physical screens and release:verify against a newly published candidate. Current Site metadata/source were checked; no candidate publication exists. These are explicitly pending integration, not claimed passes. No permission denial or uncertain mutation remains.
+
+## Next-book and release handoff
+
+Stop after Haggai. Zechariah, reader ID 37, 14 chapters, belongs to its separate session; do not start it here. Its integrator should read this audit and recheck Ezra/Haggai/Zechariah person references using actual approved images. Do not infer Haggai/Zerubbabel/Joshua faces from these person-free scenes or unapproved concurrent work. Combined release owns final pin reconciliation, browser viewport review, build increment, publication, signed parity, installs, launches and release:verify.
