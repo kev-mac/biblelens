@@ -7,13 +7,36 @@ import {encodeEmbeddedAsset,decodeEmbeddedAsset} from './embedded-encoding.mjs';
 
 // Default: compressed lazy assets preserve the existing Sites ESM contract.
 // Opt-in static mode removes their bytes and needs Cloudflare's ASSETS binding.
-export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}) {
+export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}, preparedAssets) {
+  // Reuse the build's asset table without allocating and parsing another full
+  // artwork payload. Stream the same JSON bytes to preserve immutable prefixes.
+  const assetBounds = text => {
+    const start = text.indexOf('const ASSETS=');
+    const ends = [text.indexOf(';\nconst SEARCH=', start), text.indexOf(';\nlet SEARCH=', start)].filter(end => end >= 0);
+    const end = ends.length ? Math.min(...ends) : -1;
+    if (start < 0 || end < 0) throw Error('Missing asset declaration boundary');
+    return {start, value: start + 'const ASSETS='.length, end};
+  };
+  const fingerprint = createHash('sha256');
+  let beforeBytes = 0;
+  const hash = text => {fingerprint.update(text); beforeBytes += Buffer.byteLength(text);};
+  if (preparedAssets) {
+    const bounds = assetBounds(source);
+    hash(source.slice(0, bounds.value)); hash('{');
+    let first = true;
+    for (const [url, asset] of Object.entries(preparedAssets)) {
+      if (!first) hash(','); first = false;
+      hash(JSON.stringify(url)); hash(':'); hash(JSON.stringify(asset));
+    }
+    hash('}'); hash(source.slice(bounds.end));
+  } else hash(source);
   const context = {Response, Blob, DecompressionStream, Uint8Array, atob};
   vm.createContext(context);
   vm.runInContext(source.slice(0, source.indexOf('async function chat(')) +
     '\nthis.data={BOOKS,CHAPTERS,STUDIES,EVIDENCE,ASSETS,SEARCH,MINI_INDEX,VOCABULARY,PEOPLE,TOPICS};', context);
   const data = context.data;
-  const prefix = '/_biblelens/' + createHash('sha256').update(source).digest('hex').slice(0, 16) + '/';
+  if (preparedAssets) data.ASSETS = preparedAssets;
+  const prefix = '/_biblelens/' + fingerprint.digest('hex').slice(0, 16) + '/';
   const assets = {...data.ASSETS};
   const pack = (name, value) => {
     const url = prefix + name + '.json';
@@ -55,7 +78,8 @@ export function splitWorker(source, output = 'dist', external = false, publicArt
   // Hosting owns HTTP compression. Keep storage compressed below, but expose
   // only identity asset bodies and omit negotiation metadata from the handler.
   const metadata = Object.fromEntries(Object.entries(data.ASSETS).map(([url, {body,gzip,...meta}]) => [url,meta]));
-  source = source.replace('const ASSETS=' + JSON.stringify(data.ASSETS), 'const ASSETS=' + JSON.stringify(metadata));
+  const bounds = assetBounds(source);
+  source = source.slice(0, bounds.start) + 'const ASSETS=' + JSON.stringify(metadata) + source.slice(bounds.end);
   source = source.replace("new Response(ASSETS['/release.json'].body,", "new Response(await assetBody('/release.json'),");
   source = source.replace("asset.encoding==='base64'?Uint8Array.from(atob(asset.body),char=>char.charCodeAt(0)):asset.body", "await assetBody(url.pathname==='/index.html'?'/':url.pathname)");
   const loader = `
@@ -144,7 +168,7 @@ export default {async fetch(request,env,ctx){
  return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
 }};\n`;
   const sizes = Object.fromEntries(Object.entries(data).map(([key, value]) => [key, Buffer.byteLength(JSON.stringify(value))]));
-  fs.writeFileSync(path.join(output, 'asset-manifest.json'), JSON.stringify({mode:external?'static':'compressed',prefix, parts, index, sizes, splitBytes, publicArtwork:Object.keys(publicArtwork), before: Buffer.byteLength(fs.readFileSync(path.join(output, 'server/index.js'))), after: Buffer.byteLength(source)}, null, 2));
+  fs.writeFileSync(path.join(output, 'asset-manifest.json'), JSON.stringify({mode:external?'static':'compressed',prefix, parts, index, sizes, splitBytes, publicArtwork:Object.keys(publicArtwork), before: beforeBytes, after: Buffer.byteLength(source)}, null, 2));
   fs.writeFileSync(path.join(output, 'server/index.js'), source);
   // Standard Cloudflare contract, deliberately separate from Sites metadata.
   fs.writeFileSync(path.join(output, 'wrangler.json'), JSON.stringify({name:'biblelens', main:'server/index.js', compatibility_date:'2026-10-28', assets:{directory:'client',binding:'ASSETS',run_worker_first:true}}, null, 2));

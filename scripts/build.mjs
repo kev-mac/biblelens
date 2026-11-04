@@ -170,9 +170,10 @@ worker=worker.replace('/*__SEARCH__*/{}',()=>JSON.stringify(searchIndex));
 // The mobile target uses the same API and corpus inside a device Web Worker.
 // UI assets are separate files, so avoid duplicating them in worker memory.
 export const mobileBundle={assets,engine:worker.replace('/*__STUDIES__*/[]',()=>JSON.stringify(context.studies)).replace('/*__ASSETS__*/{}','{}')};
-worker=worker.replace('/*__STUDIES__*/[]',()=>JSON.stringify(context.studies)).replace('/*__ASSETS__*/{}',()=>JSON.stringify(assets));if(worker.includes('/*__'))throw Error('Unresolved build placeholder');fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});fs.writeFileSync('dist/server/index.js',worker);fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');if(fs.existsSync('drizzle'))fs.cpSync('drizzle','dist/.openai/drizzle',{recursive:true});console.log('Built Worker:',Buffer.byteLength(worker),'bytes');
-
-splitWorker(worker,'dist',process.env.BIBLELENS_STATIC_ASSETS==='1',hostedArtwork());console.log('Lazy Worker:',fs.statSync('dist/server/index.js').size,'bytes; assets: dist/client');
+// Reuse prepared assets instead of writing and reparsing a full artwork Worker.
+worker=mobileBundle.engine;if(worker.includes('/*__'))throw Error('Unresolved build placeholder');
+fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');if(fs.existsSync('drizzle'))fs.cpSync('drizzle','dist/.openai/drizzle',{recursive:true});
+splitWorker(worker,'dist',process.env.BIBLELENS_STATIC_ASSETS==='1',hostedArtwork(),assets);console.log('Lazy Worker:',fs.statSync('dist/server/index.js').size,'bytes; assets: dist/client');
 
 // Every build checks packaged retrieval and conversational responses without external requests.
 await import('./check-chat-reliability.mjs');
