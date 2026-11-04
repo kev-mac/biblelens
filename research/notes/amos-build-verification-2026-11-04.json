@@ -1,0 +1,56 @@
+{
+  "sourceCommit": "d53e824466cfb010f13b50dfbca1744a2cf9347b",
+  "dependencyCause": "node_modules absent",
+  "packageAndLockUnchanged": true,
+  "officialLockedRegistry": "https://registry.npmjs.org/",
+  "commands": [
+    {
+      "command": "npm ci --registry=https://registry.npmjs.org --cache=/tmp/amos-npm-cache --no-audit --no-fund",
+      "exitCode": 0,
+      "logPath": "/tmp/amos-npm-ci.log",
+      "logSha256": "c2021262ebe37131c4a8c9757db6e2501b47ade2a69eff8124d3cdcd58ba33f2"
+    },
+    {
+      "command": "NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile",
+      "exitCode": 0,
+      "logPath": "/tmp/amos-build-mobile-followup.log",
+      "logSha256": "ac40ef4abd9a7ae6ccb82b48a91f82ad37e4cbb769d1e143f0afe3309f3afe50"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "logPath": "/tmp/amos-images-followup.log",
+      "logSha256": "78066744bf3b9cf3a434119a22d9589b2e48291e672d33a5df83c2af4ec07a3b"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "logPath": "/tmp/amos-mobile-followup.log",
+      "logSha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "logPath": "/tmp/amos-release-followup.log",
+      "logSha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "1f3e877265e00ff170c74f9697b9fdd0db1493557c142bbec7928d7c1155a6f5"
+  },
+  "workerBytes": 64704835,
+  "workerLimit": 66060288,
+  "workerHeadroom": 1355453,
+  "storyCount": 276,
+  "registeredChapterCount": 668,
+  "remainingUnverified": [
+    "phone/iPad browser layouts",
+    "signed/device installation and rendering",
+    "live assets and release verification",
+    "combined ten-session budget and integration"
+  ],
+  "denialsDuringFollowup": [],
+  "earlierLiveAccess": "Denied by HTTP policy (403), not retried."
+}

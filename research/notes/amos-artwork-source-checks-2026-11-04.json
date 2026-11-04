@@ -4,7 +4,7 @@
   "amosOpeners": 9,
   "retainedStory": {
     "src": "/assets/story-amaziah-opposes-amos-v1.webp",
-    "alt": "Amos speaks with Amaziah at a sanctuary gate while holding a shepherd’s staff.",
+    "alt": "Amos speaks with Amaziah at a sanctuary gate while holding a shepherd\u2019s staff.",
     "width": 1200,
     "height": 675
   },
@@ -18,7 +18,7 @@
     {
       "chapter": 1,
       "afterVerse": 0,
-      "alt": "Imagined scene: Sheep graze on rocky hills beside a shepherd’s staff near Tekoa.",
+      "alt": "Imagined scene: Sheep graze on rocky hills beside a shepherd\u2019s staff near Tekoa.",
       "src": "/assets/chapter-amos-01-opening-v1.webp",
       "width": 960,
       "height": 540,
@@ -300,10 +300,9 @@
     "boundaryRecheck": "Repeat after concurrent Joel and Obadiah/other branch integration."
   },
   "unverified": [
-    "built web/offline parity",
-    "Worker size",
     "phone/iPad rendering",
     "signed devices",
     "live assets"
-  ]
+  ],
+  "packagedVerification": "Passed build:mobile, check:images, check:mobile and check:release; see amos-build-verification-2026-11-04.json."
 }
