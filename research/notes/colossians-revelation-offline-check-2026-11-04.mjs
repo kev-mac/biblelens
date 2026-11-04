@@ -43,5 +43,6 @@ try {
  assert.equal(networkCalls,0);
  assert.deepEqual(sourceBlanks,[]);fs.writeFileSync('research/notes/colossians-revelation-offline-source-blanks-2026-11-04.json',JSON.stringify(sourceBlanks,null,2)+'\n');
  console.log('Preserved exact source blanks and field presence:',JSON.stringify(sourceBlanks));
+ fs.writeFileSync('research/notes/colossians-revelation-offline-verification-2026-11-04.json',JSON.stringify({chaptersVerified:openers,imagePlacementsVerified:images,networkCalls,editionEmptyFields:sourceBlanks.filter(x=>x.present).length,editionMissingFields:sourceBlanks.filter(x=>!x.present).length},null,2)+'\n');
  console.log(`PASS: ${openers} batch chapters from packaged offline engine, ${images} image placements match native/source bytes, three scripture editions, exactly one opener per chapter, zero network calls.`);
 } finally {restore();}
