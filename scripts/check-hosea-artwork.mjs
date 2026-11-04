@@ -45,3 +45,33 @@ for(let i=1;i<positions.length;i++){const a=positions[i-1],b=positions[i];if((a.
 const report={chapters:14,retainedStories:1,newOpeners:13,records,closePairs,boundaries:'Daniel 12 through Joel 1; recheck after parallel integration',verification:'Source metadata and renderer only; no built Worker, offline byte parity, browser or device claim'};
 fs.writeFileSync('research/notes/hosea-artwork-audit-2026-11-04.json',JSON.stringify(report,null,2)+'\n');
 console.log('PASS: Hosea 14/14 openers; 13 hosted versioned additions; Story retained; source renderer, alt text, captions, coverage failure case and boundaries checked. Close pairs:',closePairs.length);
+
+if(process.argv.includes('--offline')){
+ const {Worker}=await import('node:worker_threads');
+ const {installDeviceApi}=await import('../src/device-api.js');
+ class DeviceWorker{
+  constructor(){
+   this.worker=new Worker(`const {parentPort}=require('node:worker_threads');globalThis.fetch=()=>{throw Error('Network forbidden');};globalThis.self={postMessage:data=>parentPort.postMessage(data)};import(${JSON.stringify(new URL('../www/device-api-worker.js',import.meta.url).href)}).then(()=>parentPort.on('message',data=>self.onmessage({data})));`,{eval:true});
+   this.worker.on('message',data=>this.onmessage?.({data}));
+   this.worker.on('error',error=>this.onerror?.(error));
+  }
+  postMessage(data){this.worker.postMessage(data);}
+  terminate(){this.worker.terminate();}
+ }
+ let networkCalls=0;
+ const target={Worker:DeviceWorker,location:{href:'https://device.test/',origin:'https://device.test'},fetch:async()=>{networkCalls++;throw Error('Network forbidden');}};
+ const restore=installDeviceApi(target);
+ try{
+  for(let c=1;c<=14;c++){
+   const response=await target.fetch('/api/chapter?book=27&chapter='+c);
+   assert.equal(response.status,200);const data=await response.json();
+   assert.deepEqual(data.chapterImages||[],images['27:'+c]||[],'Offline Hosea placement matches source');
+   const original=JSON.parse(zlib.gunzipSync(Buffer.from(chapters['27:'+c],'base64')));
+   for(const verse of data.verses)for(const edition of ['kjv','asv','web'])assert.equal(verse[edition],original.verses.find(v=>v.n===verse.n)[edition]);
+   for(const art of data.chapterImages||[])assert.deepEqual(fs.readFileSync('www'+art.src),fs.readFileSync('src'+art.src),'Offline art bytes match source');
+   if(c===1){assert(data.eventHeadings[1].includes("Hosea's Marriage to Gomer"));assert.deepEqual(fs.readFileSync('www'+stories["Hosea's Marriage to Gomer"].src),fs.readFileSync('src'+stories["Hosea's Marriage to Gomer"].src));}
+  }
+  assert.equal(networkCalls,0);
+  console.log('PASS: all 14 Hosea chapters through the actual offline engine, unchanged scripture, retained Story, exact image metadata and bundled bytes; zero network calls.');
+ }finally{restore();}
+}

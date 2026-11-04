@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-04",
+  "branch": "artwork/hosea-2026-11-04",
+  "previousCommit": "7e5f4e9cd99d04206f15fc6aae2592f7c22df5b5",
+  "dependencies": {
+    "command": "npm ci --ignore-scripts --registry=https://registry.npmjs.org --cache=/tmp/hosea-npm-cache --no-audit --no-fund",
+    "exitCode": 0,
+    "restoredPackages": 152,
+    "lockfileVersion": 3,
+    "allResolvedHttpDependenciesUseOfficialNpmRegistry": true,
+    "packageAndLockUnchanged": true,
+    "lifecycleScriptsSkipped": true
+  },
+  "identity": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "6dd3805c0d0ab24d8cee06f37bc6c4e9c68991936c73ed8d0f0c2796c8528bfc"
+  },
+  "sourceWebMobileFingerprintsMatch": true,
+  "worker": {
+    "bytes": 64706907,
+    "limitBytes": 66060288,
+    "headroomBytes": 1353381,
+    "sha256": "09d25e53a98d895bf1fced82e3a26de68b7d276a89a948d485950f45d40e9cd5",
+    "mode": "compressed; existing immutable hosted artwork architecture"
+  },
+  "checks": [
+    {
+      "command": "NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile",
+      "exitCode": 0,
+      "passEvidence": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "Lazy Worker: 64706907 bytes; assets: dist/client",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+        "Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)"
+      ]
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "passEvidence": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 673 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Hosea); 178 have existing Story coverage, 532 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "CLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "passEvidence": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "passEvidence": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    {
+      "command": "node scripts/check-hosea-artwork.mjs --offline",
+      "exitCode": 0,
+      "passEvidence": [
+        "PASS: Hosea 14/14 openers; 13 hosted versioned additions; Story retained; source renderer, alt text, captions, coverage failure case and boundaries checked. Close pairs: 0",
+        "PASS: all 14 Hosea chapters through the actual offline engine, unchanged scripture, retained Story, exact image metadata and bundled bytes; zero network calls."
+      ]
+    },
+    {
+      "command": "npm run release:sites -- /tmp/hosea-final-sites-validation/dist",
+      "exitCode": 0,
+      "passEvidence": [
+        "Sites Worker-only package ready: /tmp/hosea-final-sites-validation/dist"
+      ]
+    }
+  ],
+  "offline": {
+    "hoseaChapters": 14,
+    "newImageFiles": 13,
+    "retainedStoryFiles": 1,
+    "networkCalls": 0,
+    "rejectedChapter5VersionsAbsent": true
+  },
+  "remainingLimits": [
+    "Managed browser tool cua_repl.js unavailable: phone/iPad viewport layouts unverified.",
+    "No physical-device signing, installation or appearance check.",
+    "Earlier live release endpoint access denied with proxy CONNECT 403; no retry or bypass.",
+    "Concurrent branch integration still needs unioned metadata, combined immutable public pin and combined budget/QA checks."
+  ],
+  "operations": {
+    "mainMerged": false,
+    "mainPushed": false,
+    "published": false,
+    "installedOnDevice": false,
+    "buildNumberChanged": false,
+    "newCredentials": false,
+    "paidApiUsed": false
+  }
+}
