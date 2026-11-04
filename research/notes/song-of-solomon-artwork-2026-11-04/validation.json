@@ -2,7 +2,7 @@
   "base": "846ba467f3094e065d5d3489c5bb897908f2bf79",
   "book": 21,
   "name": "Song of Solomon",
-  "sourceCoverage": "8/8; registry scoped to Song for source-only validation; built global checks unavailable",
+  "sourceCoverage": "8/8 Song openers; standard packaged global validation passes all 667 registered chapters",
   "sourceRenderer": "pass: opener before verse mapping, alt text, lazy loading, dimensions, hidden generic captions",
   "preservation": "all baseline chapter metadata, scripture, Story catalog/mappings, hosted pin and package identity unchanged",
   "images": [
@@ -106,11 +106,28 @@
   "totalBytes": 1187734,
   "closePairs": [],
   "boundaries": "Current metadata for Ecclesiastes, Song and Isaiah examined; repeat after parallel integration",
-  "buildMobile": "blocked: esbuild absent; no dependency installation authorized",
-  "imageChecks": "blocked: dist/server/index.js absent",
-  "mobileChecks": "mobile chrome pass; packaged-mobile check blocked: www/index.html absent",
+  "buildMobile": "PASS after authorized locked dependency restoration",
+  "imageChecks": "PASS: all 667 registered chapters and 276 Story records, source/web/native byte parity, scripture preservation, accessible placement and fail-closed coverage",
+  "mobileChecks": "PASS: chrome and packaged offline worker reading/search/comparisons/chat checks, zero network requests; no native inference or visual layout claim",
   "browserQA": "Unavailable: managed Linux without cua_repl.js; no preview server started",
   "live": "CONNECT denied HTTP 403; no retry or bypass",
   "physicalDevices": "Unavailable; no signed native build or device check",
-  "hosting": "Integration must extend hosted-artwork.mjs allowlist for song-of-solomon and add eight images to hosted-artwork.json union using a pushed public commit; do not publish before rebuilt Worker size and native byte-parity checks"
+  "hosting": "Required before publication: extend allowlist for song-of-solomon, add eight paths to combined hosted manifest, pin a pushed public commit containing the union; current embedded Worker exceeds Sites budget by 127815 bytes",
+  "dependencyRestoration": {
+    "authorization": "Parent follow-up explicitly authorized restoring documented locked dependencies from official registry",
+    "command": "npm ci --cache /tmp/song-npm-cache --registry=https://registry.npmjs.org --no-audit --no-fund",
+    "exitCode": 0,
+    "packagesAdded": 152,
+    "node": "v24.22.1",
+    "esbuild": "0.28.2",
+    "lockfileSha256": "56ce8eb7bc98a0ce48264f4f8377450284cdd009167a693f34f031806f4cf508",
+    "packageAndLockfileUnchanged": true,
+    "denials": null
+  },
+  "workerBudget": {
+    "bytes": 66188103,
+    "limit": 66060288,
+    "excess": 127815
+  },
+  "inheritedClosePair": "1 Samuel 7:0 -> 7:2; unchanged, reported by standard checker"
 }
