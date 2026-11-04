@@ -1,0 +1,55 @@
+{
+  "book": "Philemon",
+  "readerId": 56,
+  "chapterCount": 1,
+  "existingChapterImages": [],
+  "existingStoryImages": [],
+  "newIdentifiablePeople": [],
+  "identityInputs": [],
+  "styleOnly": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "namedTextReferences": [
+    "Paul/Saul of Tarsus",
+    "Timothy",
+    "Philemon",
+    "Apphia",
+    "Archippus",
+    "Onesimus",
+    "Epaphras",
+    "Mark/Marcus",
+    "Aristarchus",
+    "Demas",
+    "Luke/Lucas",
+    "Jesus Christ"
+  ],
+  "decision": "No human portrayal generated. Names do not establish a face; neither epistle heading nor topical cross-reference assigns an identity. No dependency on parallel artwork.",
+  "priorInventorySources": [
+    "research/notes/acts-continuity-inventory-2026-11-04.json",
+    "research/notes/matthew-continuity-inventory-2026-11-04.json",
+    "research/notes/mark-philippians-combined-review-2026-11-04.md"
+  ],
+  "priorInventoryKeys": {
+    "Acts": [
+      "baseline",
+      "styleOnly",
+      "currentActs",
+      "corpusTextCandidates",
+      "confirmedInspectedEarlierReferences",
+      "stableTraits",
+      "newIdentityInputs",
+      "reason",
+      "integrationDependencies"
+    ],
+    "Matthew": [
+      "current",
+      "earlierStoryCandidates",
+      "earlierChapterCandidates",
+      "people",
+      "styleReference",
+      "newGenerationIdentityInputs",
+      "reason",
+      "laterBookBoundary"
+    ]
+  },
+  "continuity": "Preserve active Pentecost v2, first-journey v2, Acts23 v2, Luke20 v2, 2Cor11 v2, Matthew Transfiguration v2. No retained Paul scene is promoted to unconditional anchor. No disciple name-to-face map invented.",
+  "guestRoom": "Verse22 requests preparation in hope; room is imagined, no claim of release, completed visit or emancipation. Request is depicted as atmosphere rather than proven reconstruction."
+}
