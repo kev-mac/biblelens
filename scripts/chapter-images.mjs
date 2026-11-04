@@ -57,6 +57,7 @@ export const illustratedBooks=new Map([
  [51,['1 Thessalonians',5]],
  [52,['2 Thessalonians',3]],
  [53,['1 Timothy',6]],
+ [54,['2 Timothy',4]],
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
