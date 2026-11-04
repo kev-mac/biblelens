@@ -1,0 +1,32 @@
+
+> scripture-lens@1.1.0 build:mobile
+> node scripts/build-mobile.mjs
+
+Validated question passages: 30 questions: reading books, references and exact KJV passage text
+PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.
+Validated UX13 content: 1298 place summaries, refs and KJV source quotes; 7 events (6 covenants)
+Validated people roles: { people: 3067, tags: 199 }
+Validated commandment catalog: 613
+Validated characters: 48
+Validated stories: 276
+Validated chapter names: 1189
+Startup assets: 5 styles and 21 scripts consolidated into two fingerprinted requests
+Search vocabulary: 82201 entries; MiniSearch documents: 37321
+Built Worker: 285771392 bytes
+Lazy Worker: 63922961 bytes; assets: dist/client
+PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.
+PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.
+PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.
+PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.
+PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.
+PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.
+PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.
+PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.
+PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.
+PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.
+Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

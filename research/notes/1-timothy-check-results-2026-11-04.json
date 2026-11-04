@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "lockedInstall": "passed; official npm registry, writable /tmp cache, ignore-scripts; manifests unchanged",
+    "buildMobile": "passed",
+    "images": "passed; 1113 registered chapters, source/web/offline parity",
+    "mobile": "passed; mobile chrome and actual offline engine",
+    "release": "passed; Worker packaging, encoding, CSP/privacy/hash fixtures",
+    "perBookSourceAndSpacing": "passed; six single openers, all baseline assets/scripture/prose/mappings unchanged",
+    "perBookActualOfflineEngine": "passed; 6 chapters, 113 verses, exact KJV/ASV/WEB values AND field presence, 6 image placements, zero network calls",
+    "readabilityCorpus": "completed exit 0 in report-only mode, inherited findings remain",
+    "newAltText": "mean estimated grade 3.2736; simple descriptions below grade-8 ceiling, zero overlong sentences/jargon",
+    "aggregateCheck": "FAILED at final check-release-smoke: missing Chromium executable; preceding content/readability and non-browser search checks passed (50/50 useful hits)",
+    "supportedBrowserSmokeAndPhoneTabletLayouts": "NOT RUN; managed environment, no callable browser tool/cua_repl.js; aggregate browser step failed missing executable; no browser installed or substitute improvised",
+    "workerPackage": "passed; five files under server and .openai only",
+    "actualPublicOrigin": "passed; 1021/1021 assets, 132158620 bytes, source bytes and SHA-256 match",
+    "liveSite": "DENIED; ordinary proxy HTTPS CONNECT 403 for Site release.json, no retry or bypass",
+    "publicationSignedInstallDevices": "NOT RUN; explicitly deferred to coordinated release"
+  },
+  "buildNumber": 344,
+  "version": "1.1.0",
+  "sourceHash": "c24780ca5757a483d4bd962b7206b59db57e1e54963d3960b569db9dfd024ab7",
+  "workerBytes": 63922961,
+  "workerLimit": 66060288,
+  "workerRemaining": 2137327,
+  "pin": "cb94ea91a14c471f386c7a97831c91e9f4ab373e",
+  "baselineAssetsPreserved": 1394,
+  "chapterCounts": {
+    "new": 6,
+    "retained1Timothy": 0,
+    "replaced": 0
+  },
+  "logs": {
+    "install": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/install.log",
+      "sha256": "07011b5c8f54ead31b0d82d191178d2ac4e7cb9274d13636569752795ff2fc88"
+    },
+    "build": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/build.log",
+      "sha256": "8cbbda0ef84ab6b57a34cf83a69aad070c7ccf2ccc80763fc0ff10e8e12ee0bc"
+    },
+    "images": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/images.log",
+      "sha256": "cd59c57eff7dc96d2735db574e20db5ef8efb39f5caf67e3d9dfdd8e42b55196"
+    },
+    "mobile": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/mobile.log",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    "release": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/release.log",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    "offline": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/offline.log",
+      "sha256": "2f202d1d24500717c0b3779ea2915caed0f4c5c875002d7bbb3ed5b6331c7323"
+    },
+    "readability": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/readability.log",
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    },
+    "check": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/check.log",
+      "sha256": "e2fe1edad22c7e36eb163b8e9b23358b814e0fe21511a35e6f53b8e42c531b4f"
+    },
+    "package": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/package.log",
+      "sha256": "1acd4caea886444c8e201d78fe9d2f3e6810ddced6a68f7094519f1548ed45f8"
+    },
+    "public": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/public.log",
+      "sha256": "5b7d8d0983a20931f78c5d24afb927f051bcd605fb374ef55829ed62e9ac1980"
+    },
+    "audit": {
+      "path": "research/notes/1-timothy-checks-2026-11-04/audit.log",
+      "sha256": "9154e2c25241c05be21feccd7c358feb0510b557593c99fb9663a8a76dcace7e"
+    }
+  },
+  "initialCheckRetry": "check:images was initially started before build:mobile finished and failed on not-yet-copied www Story asset; rerun after confirmed build completion passed. No source fix or art loss."
+}
