@@ -11,7 +11,23 @@ if(fs.existsSync('dist/asset-manifest.json'))assert(fs.readdirSync('dist/client'
 assert.deepEqual(syncProbeHeaders, {'X-BibleLens-Sync': '1'});
 assertPolicy([{disposition: 'report', violatedDirective: 'script-src-elem', blockedURI: 'inline'}]);
 assert.throws(() => assertPolicy([{disposition: 'report'}, {disposition: 'enforce'}]), /Enforced CSP/);
-for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
+// The service worker preloads public artwork during installation. Serve its
+// immutable origin from source so hundreds of downloads cannot starve the
+// controlled search probes. The real handler still verifies bytes and hashes;
+// the release's separate public-origin audit checks actual remote availability.
+const pinned = JSON.parse(fs.readFileSync('data/hosted-artwork.json', 'utf8'));
+const originFetch = globalThis.fetch;
+let artworkOriginRequests = 0;
+globalThis.fetch = async (input, options) => {
+  const prefix = 'https://raw.githubusercontent.com/kev-mac/biblelens/' + pinned.sourceCommit + '/src';
+  assert(String(input).startsWith(prefix), 'Smoke fixture permits only pinned public artwork at the origin');
+  const src = String(input).slice(prefix.length);
+  assert(pinned.assets.includes(src));
+  assert.deepEqual(options.headers, {accept: 'image/webp'});
+  artworkOriginRequests++;
+  return new Response(fs.readFileSync('src' + src), {headers: {'content-type': 'image/webp'}});
+};
+try { for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
   const browser = await engine.launch({headless: true});
   const failures = [], requests = [];
   let mode = 'healthy', searchCount = 0;
@@ -89,4 +105,6 @@ for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
     await context.close(); await browser.close();
     await new Promise(resolve => { server.close(resolve); server.closeAllConnections(); });
   }
-}
+} } finally { globalThis.fetch = originFetch; }
+assert(artworkOriginRequests > 0, 'Smoke fixture exercises hosted artwork through the production handler');
+console.log(`PASS: ${artworkOriginRequests} pinned artwork origin requests served locally; no remote download dependency in controlled browser probes.`);
