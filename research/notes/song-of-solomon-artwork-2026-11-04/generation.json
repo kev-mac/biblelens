@@ -1,0 +1,76 @@
+{
+  "generations": [
+    {
+      "chapter": 1,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-51845404-0e34-48da-9a21-aaaf807680c3.png",
+      "output": "src/assets/chapter-song-of-solomon-01-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 2,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-e370542b-72b2-4338-9ff4-32fec15762a5.png",
+      "output": "src/assets/chapter-song-of-solomon-02-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 3,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-a968d9be-c24f-4e05-b82d-f32ee07ff3ac.png",
+      "output": "src/assets/chapter-song-of-solomon-03-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 4,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-99073a3c-2660-413c-861c-32131d4242ed.png",
+      "output": "src/assets/chapter-song-of-solomon-04-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 5,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-a7932d0d-ef52-424a-9948-2ab123e9edcd.png",
+      "output": "src/assets/chapter-song-of-solomon-05-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 6,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-23a0beec-3501-4167-bd45-213589ac87dd.png",
+      "output": "src/assets/chapter-song-of-solomon-06-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 7,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-9296d50b-02a4-44f2-b762-2cc901f3a0d4.png",
+      "output": "src/assets/chapter-song-of-solomon-07-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    },
+    {
+      "chapter": 8,
+      "tool": "image_gen.imagegen",
+      "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "generatedFile": "/workspace/generated_images/exec-e3ceafe2-11bc-4084-be8d-a49ccbd91f1a.png",
+      "output": "src/assets/chapter-song-of-solomon-08-opening-v1.webp",
+      "conversion": "ImageMagick resize to 960x540 and WebP quality 84; no compositional edits",
+      "accepted": true
+    }
+  ]
+}

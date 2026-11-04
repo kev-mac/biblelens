@@ -1,0 +1,133 @@
+{
+  "base": "846ba467f3094e065d5d3489c5bb897908f2bf79",
+  "book": 21,
+  "name": "Song of Solomon",
+  "sourceCoverage": "8/8 Song openers; standard packaged global validation passes all 667 registered chapters",
+  "sourceRenderer": "pass: opener before verse mapping, alt text, lazy loading, dimensions, hidden generic captions",
+  "preservation": "all baseline chapter metadata, scripture, Story catalog/mappings, hosted pin and package identity unchanged",
+  "images": [
+    {
+      "chapter": 1,
+      "verses": 17,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An oil flask, myrrh and pale blossoms rest beside a window overlooking vineyards.",
+      "src": "/assets/chapter-song-of-solomon-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 133720,
+      "sha256": "fe12d91dd20a4d24de10beb9c8b148093b96efd0a16d10e89aef04995bb62aec",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 2,
+      "verses": 17,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Wildflowers, green figs and flowering vines grow on a fresh spring hillside.",
+      "src": "/assets/chapter-song-of-solomon-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 174644,
+      "sha256": "1d882486c3c65319de399f23c99be5ebdef0337c896149da8402e8b9d19271d8",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 3,
+      "verses": 11,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moonlight falls along an empty stone street between closed wooden doors.",
+      "src": "/assets/chapter-song-of-solomon-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 117070,
+      "sha256": "8c390fd76af7093b069648941d0d5ac5fe3bb06b42e1fdce2d59007c435a4974",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 4,
+      "verses": 16,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A closed garden gate stands before pomegranate trees, herbs and a spring.",
+      "src": "/assets/chapter-song-of-solomon-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 187428,
+      "sha256": "63d9a08140fca16ac75da62b028c34ad70d0ad7e9f21844e04f13ad0833c55f4",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 5,
+      "verses": 16,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A wooden door and simple latch catch soft light on a dewy night.",
+      "src": "/assets/chapter-song-of-solomon-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 135502,
+      "sha256": "c1269f53987148dbc0bc1e4277d9791ac167953e66c47100b0ae5318226d179a",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 6,
+      "verses": 13,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Nut trees shade young vines and pomegranate blossoms in a green valley.",
+      "src": "/assets/chapter-song-of-solomon-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 171734,
+      "sha256": "a3fd1c6743493b55c9d96e7acf8a13791f1fa53cd6549ae935c4ec8bf809b3bf",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 7,
+      "verses": 13,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A path leads through budding vineyards toward a village at dawn.",
+      "src": "/assets/chapter-song-of-solomon-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 152974,
+      "sha256": "60534ec729da9f5039ae08b131aadd27680e733f27dc6ab44f9e65c154bc489a",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    },
+    {
+      "chapter": 8,
+      "verses": 14,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A clay jug and cups sit beside an opened pomegranate in a stone home.",
+      "src": "/assets/chapter-song-of-solomon-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 114662,
+      "sha256": "9c858af7bbfc0281aee7898372fa05fa71b9f714137bfb3a018f4c59da14905c",
+      "review": "Final 960x540 image inspected at full native size. No people or animals; no visible human or animal anatomy to validate."
+    }
+  ],
+  "totalBytes": 1187734,
+  "closePairs": [],
+  "boundaries": "Current metadata for Ecclesiastes, Song and Isaiah examined; repeat after parallel integration",
+  "buildMobile": "PASS after authorized locked dependency restoration",
+  "imageChecks": "PASS: all 667 registered chapters and 276 Story records, source/web/native byte parity, scripture preservation, accessible placement and fail-closed coverage",
+  "mobileChecks": "PASS: chrome and packaged offline worker reading/search/comparisons/chat checks, zero network requests; no native inference or visual layout claim",
+  "browserQA": "Unavailable: managed Linux without cua_repl.js; no preview server started",
+  "live": "CONNECT denied HTTP 403; no retry or bypass",
+  "physicalDevices": "Unavailable; no signed native build or device check",
+  "hosting": "Required before publication: extend allowlist for song-of-solomon, add eight paths to combined hosted manifest, pin a pushed public commit containing the union; current embedded Worker exceeds Sites budget by 127815 bytes",
+  "dependencyRestoration": {
+    "authorization": "Parent follow-up explicitly authorized restoring documented locked dependencies from official registry",
+    "command": "npm ci --cache /tmp/song-npm-cache --registry=https://registry.npmjs.org --no-audit --no-fund",
+    "exitCode": 0,
+    "packagesAdded": 152,
+    "node": "v24.22.1",
+    "esbuild": "0.28.2",
+    "lockfileSha256": "56ce8eb7bc98a0ce48264f4f8377450284cdd009167a693f34f031806f4cf508",
+    "packageAndLockfileUnchanged": true,
+    "denials": null
+  },
+  "workerBudget": {
+    "bytes": 66188103,
+    "limit": 66060288,
+    "excess": 127815
+  },
+  "inheritedClosePair": "1 Samuel 7:0 -> 7:2; unchanged, reported by standard checker"
+}
