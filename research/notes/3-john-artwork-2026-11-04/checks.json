@@ -1,0 +1,21 @@
+{
+  "webBuild": "passed",
+  "mobileBuild": "passed",
+  "contentChecks": "All nonbrowser checks from npm run check passed, including search vocabulary/workspace; browser release smoke omitted because supported browser tool is absent.",
+  "readabilityCorpus": "report-only; inherited findings remain",
+  "newDescription": "grade 4.964; no overlong sentences or unexplained screened jargon",
+  "mobileEngineAndChrome": "passed",
+  "imageChecks": "passed, all 1108 explicitly registered chapters",
+  "releasePrivacyHashPackaging": "passed",
+  "sourceAndSpacing": "passed; all 1394 baseline assets preserved; 64/65 and 69/70 inherited pairs intact",
+  "offlineBook": "passed: 1 chapter, 14 verses, exact edition presence/values, 1 image, zero network",
+  "publicOrigin": "1016/1016 actual network hashes matched, 131379866 bytes",
+  "localWebNativeParity": "passed; separate controlled fixture, no live certification",
+  "workerOnlyStaging": "passed: 5 files, no client/static bypass",
+  "workerBytes": 63920251,
+  "limitBytes": 66060288,
+  "browserSmokeAndLayouts": "not run: managed environment lacks callable cua_repl.js; no download or substitute attempted",
+  "liveSite": "denied: proxy CONNECT 403 for release.json; no retry",
+  "initialCheckAttempt": "npm run check initially failed ENOENT at check-search-vocabulary while mobile build replaced dist. Sequential final nonbrowser checks passed. No source change was needed.",
+  "scope": "No merge/main push/publication/signing/install/release number change/other book"
+}
