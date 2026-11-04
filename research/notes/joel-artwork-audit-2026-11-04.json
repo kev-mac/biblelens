@@ -1,0 +1,335 @@
+{
+  "baseline": "846ba46",
+  "book": "Joel",
+  "bookId": 28,
+  "chapterCount": 3,
+  "generated": 3,
+  "retainedInJoel": 0,
+  "entries": [
+    {
+      "chapter": 1,
+      "key": "28:1",
+      "anchor": "Joel 1:10-12",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Withered vines, a dry tree and bent grain stand in a wasted field.",
+      "src": "/assets/chapter-joel-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 155422,
+      "sha256": "c8481dca3593b8f5470b7542dc992d67f5e54032cb0a3db13b8e62165baa6b90",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-1919900c-b2dd-4e76-a39a-056cdd60d3eb.png",
+        "rawSha256": "b2f10f2fe074ce58929d97df969d87aaca1e93dc9d9483618c88a9e749f55a11",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    },
+    {
+      "chapter": 2,
+      "key": "28:2",
+      "anchor": "Joel 2:22-24",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Figs and grapes ripen beside harvested grain as rain crosses green hills.",
+      "src": "/assets/chapter-joel-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 170834,
+      "sha256": "777d2049b037758048e7ec63535a49a9dabdaee36153ad791fa2568addf81372",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-cb43e4a2-541a-48b1-a6ac-28fc4d01b681.png",
+        "rawSha256": "4001799cf96d2146e1d62cb948fbcaa2d481c5ad2d941b372747337fc87ab053",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    },
+    {
+      "chapter": 3,
+      "key": "28:3",
+      "anchor": "Joel 3:18",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A spring flows from a stone sanctuary into a dry valley.",
+      "src": "/assets/chapter-joel-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 173490,
+      "sha256": "7fd9d188c11a12fc113cd2c7f6f782148f3e06e99d2b16aa9c261cfd417cca42",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-fd5c20d2-dba5-4412-a5ab-9cec41cbcbe4.png",
+        "rawSha256": "05a73693565068672354a6f3dc0ea45f526b99399fca5967cb3eb0784d82b296",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    }
+  ],
+  "registeredChapterCount": 662,
+  "hostedAssetCount": 637,
+  "hostedPin": "bf8044a020960e0b854b87d4b507456eec3e8f5d",
+  "preservation": "All prior image metadata and source assets, scripture, Story placements/prose, reader renderer and package identity unchanged.",
+  "coverage": "3/3 openers at afterVerse 0; missing each opener fails validation",
+  "sourceRenderer": "heading before opener before scripture; alt text present; no generic caption",
+  "spacing": {
+    "closePairs": [],
+    "relevantPairs": [
+      {
+        "previous": {
+          "key": "27:1",
+          "position": 22096,
+          "afterVerse": 1,
+          "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+          "title": "Hosea's Marriage to Gomer",
+          "kind": "Story"
+        },
+        "next": {
+          "key": "28:1",
+          "position": 22292,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-01-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 196
+      },
+      {
+        "previous": {
+          "key": "28:1",
+          "position": 22292,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-01-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "28:2",
+          "position": 22312,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-02-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 20
+      },
+      {
+        "previous": {
+          "key": "28:2",
+          "position": 22312,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-02-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "28:3",
+          "position": 22344,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-03-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 32
+      },
+      {
+        "previous": {
+          "key": "28:3",
+          "position": 22344,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-03-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "29:7",
+          "position": 22475,
+          "afterVerse": 10,
+          "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+          "title": "Amaziah Opposes Amos",
+          "kind": "Story"
+        },
+        "gap": 131
+      }
+    ],
+    "needsIntegrationRerun": true,
+    "immediateBookBoundaries": [
+      {
+        "previous": "Hosea 14 (9 verses)",
+        "next": "Joel 1",
+        "currentPreviousImage": null,
+        "gapIfBoundaryOpenerAdded": 9
+      },
+      {
+        "previous": "Joel 3 (21 verses)",
+        "next": "Amos 1",
+        "currentNextImage": null,
+        "gapIfBoundaryOpenerAdded": 21
+      }
+    ]
+  },
+  "offline": "Verified source, web static output and www bytes match for every Joel image; full image suite verifies prior source/web/native parity; mobile worker check passes with zero network calls.",
+  "checks": {
+    "readability": "exit 0, inherited report-only corpus findings",
+    "mobileChrome": "passed",
+    "publicArtworkPrivacy": "passed",
+    "sourceCoverageAndRenderer": "passed",
+    "buildMobile": "passed after authorized locked dependency installation",
+    "images": "passed: 276 Story records; all 662 registered chapters; source/web/offline parity; inherited 1 Samuel 7 close pair reported",
+    "mobile": "passed: mobile chrome and offline worker reading/search/chat with zero external network calls",
+    "browserAndDevice": "unavailable: managed cua_repl.js absent; no connected physical devices",
+    "live": "CONNECT 403 destination-policy denial; not retried or bypassed",
+    "sitesMirror": "not opened: no existing checkout/credential, new credentials prohibited",
+    "release": "passed: release identity, Sites packaging/CSP, refresh preservation, embedded encoding and public-artwork privacy"
+  },
+  "budget": {
+    "build341WorkerBytes": 64747604,
+    "limit": 66060288,
+    "baselineHeadroom": 1312684,
+    "newArtworkBytes": 499746,
+    "newWorkerBytes": 64701734,
+    "note": "Current default compressed Worker is under budget. Recheck after integration of concurrent branches.",
+    "currentHeadroom": 1358554
+  },
+  "publicOriginVerification": [
+    {
+      "src": "/assets/chapter-joel-01-opening-v1.webp",
+      "bytes": 155422,
+      "sha256": "c8481dca3593b8f5470b7542dc992d67f5e54032cb0a3db13b8e62165baa6b90",
+      "status": "matched"
+    },
+    {
+      "src": "/assets/chapter-joel-02-opening-v1.webp",
+      "bytes": 170834,
+      "sha256": "777d2049b037758048e7ec63535a49a9dabdaee36153ad791fa2568addf81372",
+      "status": "matched"
+    },
+    {
+      "src": "/assets/chapter-joel-03-opening-v1.webp",
+      "bytes": 173490,
+      "sha256": "7fd9d188c11a12fc113cd2c7f6f782148f3e06e99d2b16aa9c261cfd417cca42",
+      "status": "matched"
+    }
+  ],
+  "validationFollowup": {
+    "authorization": "Parent follow-up explicitly requested investigation and checks using documented locked dependencies and official registry. No denial occurred.",
+    "sourceCommitTested": "e07c55e1bc7223b3cf6b20917e659f9d97b40cb3",
+    "dependencyResolution": "npm ci succeeded from official registry.npmjs.org; all lockfile URLs use that host; lifecycle scripts disabled; existing esbuild 0.28.2 Linux binary verified; no package.json or lockfile changes.",
+    "commands": [
+      {
+        "command": "npm ci --ignore-scripts --no-audit --no-fund --fetch-retries=0 --registry=https://registry.npmjs.org --cache=/tmp/joel-npm-cache",
+        "exitCode": 0,
+        "localLog": "/tmp/joel-npm-ci.log",
+        "logSha256": "a154cc5d05048f435d2adffc836ac7e854b575b556bba92a2b6f6841976c7918",
+        "evidence": [
+          "added 152 packages in 8s"
+        ]
+      },
+      {
+        "command": "NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile",
+        "exitCode": 0,
+        "localLog": "/tmp/joel-build-mobile-followup.log",
+        "logSha256": "1ff94bb12d67efd69713f677a6507359e324828b650cff9050bbc548f24969ef",
+        "evidence": [
+          "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+          "Lazy Worker: 64701734 bytes; assets: dist/client",
+          "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+          "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+          "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+          "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+          "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+          "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+          "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+          "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+          "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+          "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+          "Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)"
+        ]
+      },
+      {
+        "command": "npm run check:images",
+        "exitCode": 0,
+        "localLog": "/tmp/joel-check-images-followup.log",
+        "logSha256": "6645f895adda87c0bf548185abd5333751daf1fe155c3c98b9f9d5f007e46529",
+        "evidence": [
+          "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+          "PASS: all 662 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Joel); 177 have existing Story coverage, 522 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+          "CLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]",
+          "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+        ]
+      },
+      {
+        "command": "npm run check:mobile",
+        "exitCode": 0,
+        "localLog": "/tmp/joel-check-mobile-followup.log",
+        "logSha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+        "evidence": [
+          "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+          "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+        ]
+      },
+      {
+        "command": "npm run check:release",
+        "exitCode": 0,
+        "localLog": "/tmp/joel-check-release-followup.log",
+        "logSha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+        "evidence": [
+          "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+          "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+          "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+          "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+          "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+          "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+          "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+        ]
+      }
+    ],
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 341,
+      "sourceHash": "0265035d263021d12e827fbfb6967f35432d221cfa1698a003b5160d98626dd4"
+    },
+    "assetParity": [
+      {
+        "src": "/assets/chapter-joel-01-opening-v1.webp",
+        "sourceWebOfflineExactMatch": true,
+        "sha256": "c8481dca3593b8f5470b7542dc992d67f5e54032cb0a3db13b8e62165baa6b90",
+        "bytes": 155422
+      },
+      {
+        "src": "/assets/chapter-joel-02-opening-v1.webp",
+        "sourceWebOfflineExactMatch": true,
+        "sha256": "777d2049b037758048e7ec63535a49a9dabdaee36153ad791fa2568addf81372",
+        "bytes": 170834
+      },
+      {
+        "src": "/assets/chapter-joel-03-opening-v1.webp",
+        "sourceWebOfflineExactMatch": true,
+        "sha256": "7fd9d188c11a12fc113cd2c7f6f782148f3e06e99d2b16aa9c261cfd417cca42",
+        "bytes": 173490
+      }
+    ],
+    "remainingLimits": [
+      "Sites mirror not compared; no new credentials requested",
+      "Live CONNECT 403 remains respected; not retried",
+      "Managed browser tool and physical devices unavailable; no viewport/native signing/install tests",
+      "Combined-branch hosting pin, Worker budget and boundary spacing require integration recheck"
+    ]
+  }
+}

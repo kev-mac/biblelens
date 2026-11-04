@@ -30,7 +30,8 @@ export const illustratedBooks=new Map([
  [24,['Lamentations',5]],
  [25,['Ezekiel',48]],
  [26,['Daniel',12]],
- [27,['Hosea',14]]
+ [27,['Hosea',14]],
+ [28,['Joel',3]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
