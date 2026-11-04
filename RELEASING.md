@@ -21,8 +21,11 @@ Settings → App version shows the version, build number and source fingerprint 
 
 Keep existing Story and legacy Genesis artwork embedded. New Genesis opening images,
 selected versioned Genesis replacements, and Exodus–2 Samuel chapter images use
-the same-origin image paths through a checked public GitHub source and an edge cache. `data/hosted-artwork.json` pins the exact public asset
-commit; the build records each file's byte length and SHA-256 hash. Commit and
+the same-origin image paths through a checked public GitHub source and an edge cache.
+The separately reviewed 2 Kings openers use that same checked path; its explicit
+book ID allows integration independently of the 1 Kings artwork session.
+`data/hosted-artwork.json` pins the exact public asset commit; the build records
+each file's byte length and SHA-256 hash. Commit and
 push those public assets before deploying a release that references them.
 Never put user notes, credentials, or private material in that manifest. The
 image handler forwards no request cookies, authorization, or query data.
