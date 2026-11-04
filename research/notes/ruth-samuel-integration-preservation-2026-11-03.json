@@ -1,0 +1,48 @@
+{
+  "latestMain": "d884175d0b934d7efeb0df69720b9ecbb0b8ccd3",
+  "interveningPaths": [
+    "research/notes/judges-visual-continuity-audit-2026-11-03.md"
+  ],
+  "sources": [
+    {
+      "ref": "d884175d0b934d7efeb0df69720b9ecbb0b8ccd3",
+      "ancestor": true,
+      "retainedAssetCount": 627,
+      "allAssetBlobsByteIdentical": true
+    },
+    {
+      "ref": "github/artwork/ruth-cloud-2026-11-03",
+      "ancestor": true,
+      "retainedAssetCount": 627,
+      "allAssetBlobsByteIdentical": true
+    },
+    {
+      "ref": "github/artwork/1-samuel-cloud-2026-11-03",
+      "ancestor": true,
+      "retainedAssetCount": 649,
+      "allAssetBlobsByteIdentical": true
+    },
+    {
+      "ref": "github/artwork/2-samuel-cloud-2026-11-03",
+      "ancestor": true,
+      "retainedAssetCount": 645,
+      "allAssetBlobsByteIdentical": true
+    }
+  ],
+  "judgesMetadata": {
+    "chaptersWithChapterEntries": 14,
+    "activeChapterImages": 14,
+    "allUnchanged": true
+  },
+  "unchangedFromLatestMain": [
+    "data/chapters.json",
+    "data/stories.json",
+    "data/hosted-artwork.json"
+  ],
+  "sitesMetadata": {
+    "version": 328,
+    "sourceCommit": "e47d263295f3e7baf48491b9432c9dda9a4f1d3e",
+    "liveBytesVerified": false,
+    "currentMirrorContentsRecompared": false
+  }
+}
