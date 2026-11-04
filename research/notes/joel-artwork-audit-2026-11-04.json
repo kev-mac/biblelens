@@ -1,0 +1,228 @@
+{
+  "baseline": "846ba46",
+  "book": "Joel",
+  "bookId": 28,
+  "chapterCount": 3,
+  "generated": 3,
+  "retainedInJoel": 0,
+  "entries": [
+    {
+      "chapter": 1,
+      "key": "28:1",
+      "anchor": "Joel 1:10-12",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Withered vines, a dry tree and bent grain stand in a wasted field.",
+      "src": "/assets/chapter-joel-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 155422,
+      "sha256": "c8481dca3593b8f5470b7542dc992d67f5e54032cb0a3db13b8e62165baa6b90",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-1919900c-b2dd-4e76-a39a-056cdd60d3eb.png",
+        "rawSha256": "b2f10f2fe074ce58929d97df969d87aaca1e93dc9d9483618c88a9e749f55a11",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    },
+    {
+      "chapter": 2,
+      "key": "28:2",
+      "anchor": "Joel 2:22-24",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Figs and grapes ripen beside harvested grain as rain crosses green hills.",
+      "src": "/assets/chapter-joel-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 170834,
+      "sha256": "777d2049b037758048e7ec63535a49a9dabdaee36153ad791fa2568addf81372",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-cb43e4a2-541a-48b1-a6ac-28fc4d01b681.png",
+        "rawSha256": "4001799cf96d2146e1d62cb948fbcaa2d481c5ad2d941b372747337fc87ab053",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    },
+    {
+      "chapter": 3,
+      "key": "28:3",
+      "anchor": "Joel 3:18",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A spring flows from a stone sanctuary into a dry valley.",
+      "src": "/assets/chapter-joel-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 173490,
+      "sha256": "7fd9d188c11a12fc113cd2c7f6f782148f3e06e99d2b16aa9c261cfd417cca42",
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "rawPath": "/workspace/generated_images/exec-fd5c20d2-dba5-4412-a5ab-9cec41cbcbe4.png",
+        "rawSha256": "05a73693565068672354a6f3dc0ea45f526b99399fca5967cb3eb0784d82b296",
+        "actualVisualInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "inputRole": "style only"
+      },
+      "review": {
+        "nativeSize": "960x540",
+        "fullSizeScene": "passed",
+        "people": false,
+        "animals": false,
+        "visibleAnatomy": "none",
+        "continuityDependency": null
+      }
+    }
+  ],
+  "registeredChapterCount": 662,
+  "hostedAssetCount": 637,
+  "hostedPin": "bf8044a020960e0b854b87d4b507456eec3e8f5d",
+  "preservation": "All prior image metadata and source assets, scripture, Story placements/prose, reader renderer and package identity unchanged.",
+  "coverage": "3/3 openers at afterVerse 0; missing each opener fails validation",
+  "sourceRenderer": "heading before opener before scripture; alt text present; no generic caption",
+  "spacing": {
+    "closePairs": [],
+    "relevantPairs": [
+      {
+        "previous": {
+          "key": "27:1",
+          "position": 22096,
+          "afterVerse": 1,
+          "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+          "title": "Hosea's Marriage to Gomer",
+          "kind": "Story"
+        },
+        "next": {
+          "key": "28:1",
+          "position": 22292,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-01-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 196
+      },
+      {
+        "previous": {
+          "key": "28:1",
+          "position": 22292,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-01-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "28:2",
+          "position": 22312,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-02-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 20
+      },
+      {
+        "previous": {
+          "key": "28:2",
+          "position": 22312,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-02-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "28:3",
+          "position": 22344,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-03-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "gap": 32
+      },
+      {
+        "previous": {
+          "key": "28:3",
+          "position": 22344,
+          "afterVerse": 0,
+          "src": "/assets/chapter-joel-03-opening-v1.webp",
+          "kind": "chapter"
+        },
+        "next": {
+          "key": "29:7",
+          "position": 22475,
+          "afterVerse": 10,
+          "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+          "title": "Amaziah Opposes Amos",
+          "kind": "Story"
+        },
+        "gap": 131
+      }
+    ],
+    "needsIntegrationRerun": true,
+    "immediateBookBoundaries": [
+      {
+        "previous": "Hosea 14 (9 verses)",
+        "next": "Joel 1",
+        "currentPreviousImage": null,
+        "gapIfBoundaryOpenerAdded": 9
+      },
+      {
+        "previous": "Joel 3 (21 verses)",
+        "next": "Amos 1",
+        "currentNextImage": null,
+        "gapIfBoundaryOpenerAdded": 21
+      }
+    ]
+  },
+  "offline": "All three assets registered in the unchanged shared build loops; packaged offline byte verification blocked by missing build dependencies.",
+  "checks": {
+    "readability": "exit 0, inherited report-only corpus findings",
+    "mobileChrome": "passed",
+    "publicArtworkPrivacy": "passed",
+    "sourceCoverageAndRenderer": "passed",
+    "buildMobile": "blocked: esbuild dependency missing; no installation authorized",
+    "images": "blocked: no dist/server/index.js",
+    "mobile": "blocked after chrome pass: no www/index.html",
+    "browserAndDevice": "unavailable: managed cua_repl.js absent; no connected physical devices",
+    "live": "CONNECT 403 destination-policy denial; not retried or bypassed",
+    "sitesMirror": "not opened: no existing checkout/credential, new credentials prohibited"
+  },
+  "budget": {
+    "build341WorkerBytes": 64747604,
+    "limit": 66060288,
+    "baselineHeadroom": 1312684,
+    "newArtworkBytes": 499746,
+    "newWorkerBytes": null,
+    "note": "New images hosted using established pin/hash handler, not embedded in web Worker. Remeasure combined Worker during integration."
+  },
+  "publicOriginVerification": [
+    {
+      "src": "/assets/chapter-joel-01-opening-v1.webp",
+      "bytes": 155422,
+      "sha256": "c8481dca3593b8f5470b7542dc992d67f5e54032cb0a3db13b8e62165baa6b90",
+      "status": "matched"
+    },
+    {
+      "src": "/assets/chapter-joel-02-opening-v1.webp",
+      "bytes": 170834,
+      "sha256": "777d2049b037758048e7ec63535a49a9dabdaee36153ad791fa2568addf81372",
+      "status": "matched"
+    },
+    {
+      "src": "/assets/chapter-joel-03-opening-v1.webp",
+      "bytes": 173490,
+      "sha256": "7fd9d188c11a12fc113cd2c7f6f782148f3e06e99d2b16aa9c261cfd417cca42",
+      "status": "matched"
+    }
+  ]
+}
