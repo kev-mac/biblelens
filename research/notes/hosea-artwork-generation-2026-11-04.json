@@ -1,0 +1,108 @@
+[
+  {
+    "chapter": 2,
+    "output": "/workspace/generated_images/exec-8faf2c7c-e38c-4ffd-8c5c-d27a38722cf6.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 3,
+    "output": "/workspace/generated_images/exec-a6656370-9df3-437c-9574-86279853a77c.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 4,
+    "output": "/workspace/generated_images/exec-7d76c944-f6d1-4b27-aefd-0c24d9092fe3.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 5,
+    "output": "/workspace/generated_images/exec-fb8ebdb6-80a4-4e5b-98b9-db9a7e2bd85b.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false,
+    "status": "rejected: faint signature-like corner marks"
+  },
+  {
+    "chapter": 6,
+    "output": "/workspace/generated_images/exec-67908669-fd51-49bb-9c44-58325e4220ae.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 7,
+    "output": "/workspace/generated_images/exec-c3aac3b2-4e0d-4673-8b05-da66a009e8f1.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 8,
+    "output": "/workspace/generated_images/exec-aaac5915-9c2f-4395-a543-8f99b421f9aa.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 9,
+    "output": "/workspace/generated_images/exec-e848a292-f128-4514-84b8-04056b503bb1.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 10,
+    "output": "/workspace/generated_images/exec-74a112f0-60e2-4bb1-b277-cbe94706c1a8.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 11,
+    "output": "/workspace/generated_images/exec-6820dd03-85c9-4e31-8bd4-9b9bd5a33e38.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 12,
+    "output": "/workspace/generated_images/exec-7303f17e-2c12-4c43-b347-68a058c247ba.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 13,
+    "output": "/workspace/generated_images/exec-924dd2cd-9f4f-4b37-a564-97e1082e91de.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 14,
+    "output": "/workspace/generated_images/exec-5ccd8fd2-d873-4bd3-9cfe-632e92cd9a44.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInputRequired": false
+  },
+  {
+    "chapter": 5,
+    "version": 2,
+    "output": "/workspace/generated_images/exec-f0bdfe8b-681d-402e-8e24-8c3d68f2a4c2.png",
+    "actualInputs": [
+      "/workspace/generated_images/exec-fb8ebdb6-80a4-4e5b-98b9-db9a7e2bd85b.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "status": "rejected: corner marks remain uncertain"
+  },
+  {
+    "chapter": 5,
+    "version": 3,
+    "output": "/workspace/generated_images/exec-cd7925c7-b375-43f4-ab71-0f4c1de44b64.png",
+    "actualInputs": [
+      "/workspace/generated_images/exec-f0bdfe8b-681d-402e-8e24-8c3d68f2a4c2.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "status": "rejected: corner marks remain uncertain"
+  },
+  {
+    "chapter": 5,
+    "version": 4,
+    "output": "/workspace/generated_images/exec-42137b60-3ea2-4889-bc24-d14aa8107b0a.png",
+    "actualStyleInput": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+    "status": "accepted: Hosea 5:10 boundary-stone scene; no corner lettering visible"
+  }
+]
