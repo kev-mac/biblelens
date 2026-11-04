@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "log": "/tmp/zephaniah-build-final.log",
+      "sha256": "ab7c197054b6564dbc8654d99d849d5725a1cb368309015e430be5e56e5afdd7"
+    },
+    {
+      "command": "npm run build:mobile",
+      "status": "passed",
+      "log": "/tmp/zephaniah-mobile-build-final.log",
+      "sha256": "16a1ffe3ce185c55bd8c6dd77e94cfc51dea777d8de5c78623a21949ea2f51b8"
+    },
+    {
+      "command": "npm run check:readability",
+      "status": "passed",
+      "log": "/tmp/zephaniah-readability.log",
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    },
+    {
+      "command": "npm run check:images",
+      "status": "passed",
+      "log": "/tmp/zephaniah-images-final.log",
+      "sha256": "306ff16324a730d451c23011af851faee73872df3dde86d38f496addba66d334"
+    },
+    {
+      "command": "npm run check:mobile",
+      "status": "passed",
+      "log": "/tmp/zephaniah-mobile-final.log",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    {
+      "command": "npm run check:release",
+      "status": "passed",
+      "log": "/tmp/zephaniah-release-final.log",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    {
+      "command": "node scripts/check-zephaniah-artwork.mjs --offline",
+      "status": "passed",
+      "log": "/tmp/zephaniah-offline-final.log",
+      "sha256": "10657515761430e3d10b9f37473853ec42d50f5536a0ff42dcae90ab939a3685"
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "e0f16adfb122913370ddeb7e7617dc5f496051b25d7141e78737ff459a1152fc"
+  },
+  "workerBytes": 64426300,
+  "workerLimit": 66060288,
+  "sourceWebMobileFingerprintMatches": true,
+  "readability": "Exit 0; inherited report-only findings remain",
+  "initialFailures": [
+    {
+      "action": "npm ci --ignore-scripts --registry=https://registry.npmjs.org",
+      "reason": "ENOENT creating default /home/agent/.npm/_cacache outside writable roots",
+      "recoveredBy": "Official-registry locked install with /tmp/zephaniah-npm-cache, lifecycle scripts disabled"
+    },
+    {
+      "action": "Initial npm run build",
+      "reason": "Overlapping web/mobile builds replaced shared generated output, causing ENOENT for a generated search index",
+      "recoveredBy": "Sequential web rebuild and final build:mobile after all script edits; final fingerprints and checks pass"
+    }
+  ],
+  "neverRun": [
+    "Full npm run check umbrella",
+    "Rendered phone/iPad browser viewport QA: no cua_repl tool",
+    "Signed iOS build and signed asset comparison",
+    "Device install/launch and physical screen inspection",
+    "Publication and live release:verify"
+  ],
+  "blockedChecks": [
+    {
+      "action": "Open current Sites source using supported helper",
+      "target": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "state": "unavailable, not denied",
+      "reason": "No local site-workflow.mjs and cloud skill helper resource could not be read",
+      "completed": "Native metadata confirms version 331 / ca12233182d18ffcb68960c469dac0722fd93b85 matches build342 evidence"
+    },
+    {
+      "action": "Normal Node fetch /release.json",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "state": "failed connection; no successful content read",
+      "reason": "fetch failed; live Site host is not listed in configured HTTP allowlist",
+      "completed": "No headers, proxy, credentials or security settings changed; actual public GitHub origin verification succeeded for all846 assets"
+    }
+  ]
+}

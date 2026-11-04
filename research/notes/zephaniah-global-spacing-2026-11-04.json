@@ -1,0 +1,1233 @@
+{
+  "placements": 1150,
+  "positionConvention": "Continuous verse indices; opener and before-verse-1 Story anchored to 1; chapter image anchored at afterVerse. All pairs below five, including nonconsecutive and across every chapter/book boundary.",
+  "inheritedCount": 68,
+  "newCount": 0,
+  "neighborBranchArtworkIncluded": false,
+  "closePairs": [
+    {
+      "from": {
+        "book": 0,
+        "chapter": 4,
+        "verse": 25,
+        "src": "/assets/story-the-line-of-seth-v2.webp",
+        "position": 105
+      },
+      "to": {
+        "book": 0,
+        "chapter": 5,
+        "verse": 0,
+        "src": "/assets/chapter-genesis-05-opening-v1.webp",
+        "position": 107
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 5,
+        "verse": 32,
+        "src": "/assets/chapter-genesis-05-v1.webp",
+        "position": 138
+      },
+      "to": {
+        "book": 0,
+        "chapter": 6,
+        "verse": 0,
+        "src": "/assets/chapter-genesis-06-opening-v1.webp",
+        "position": 139
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 10,
+        "verse": 32,
+        "src": "/assets/chapter-genesis-10-v1.webp",
+        "position": 267
+      },
+      "to": {
+        "book": 0,
+        "chapter": 11,
+        "verse": 1,
+        "src": "/assets/story-the-tower-of-babel-v1.webp",
+        "position": 268
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 15,
+        "verse": 1,
+        "src": "/assets/story-abrahamic-covenant-v1.webp",
+        "position": 362
+      },
+      "to": {
+        "book": 0,
+        "chapter": 15,
+        "verse": 5,
+        "src": "/assets/chapter-genesis-15-v1.webp",
+        "position": 366
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 1,
+        "src": "/assets/story-abraham-and-sarahs-covenant-v1.webp",
+        "position": 399
+      },
+      "to": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 1,
+        "src": "/assets/story-abrahamic-covenant-v1.webp",
+        "position": 399
+      },
+      "gap": 0,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 1,
+        "src": "/assets/story-abraham-and-sarahs-covenant-v1.webp",
+        "position": 399
+      },
+      "to": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 5,
+        "src": "/assets/chapter-genesis-17-v1.webp",
+        "position": 403
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 1,
+        "src": "/assets/story-abrahamic-covenant-v1.webp",
+        "position": 399
+      },
+      "to": {
+        "book": 0,
+        "chapter": 17,
+        "verse": 5,
+        "src": "/assets/chapter-genesis-17-v1.webp",
+        "position": 403
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 23,
+        "verse": 19,
+        "src": "/assets/chapter-genesis-23-v1.webp",
+        "position": 591
+      },
+      "to": {
+        "book": 0,
+        "chapter": 24,
+        "verse": 1,
+        "src": "/assets/story-isaac-and-rebekah-v1.webp",
+        "position": 593
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 30,
+        "verse": 40,
+        "src": "/assets/chapter-genesis-30-v1.webp",
+        "position": 871
+      },
+      "to": {
+        "book": 0,
+        "chapter": 31,
+        "verse": 1,
+        "src": "/assets/story-jacob-returns-to-canaan-v1.webp",
+        "position": 875
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 33,
+        "verse": 0,
+        "src": "/assets/chapter-genesis-33-opening-v1.webp",
+        "position": 962
+      },
+      "to": {
+        "book": 0,
+        "chapter": 33,
+        "verse": 4,
+        "src": "/assets/chapter-genesis-33-v1.webp",
+        "position": 965
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 39,
+        "verse": 20,
+        "src": "/assets/chapter-genesis-39-v1.webp",
+        "position": 1170
+      },
+      "to": {
+        "book": 0,
+        "chapter": 40,
+        "verse": 0,
+        "src": "/assets/chapter-genesis-40-opening-v1.webp",
+        "position": 1174
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 0,
+        "chapter": 43,
+        "verse": 34,
+        "src": "/assets/chapter-genesis-43-v2.webp",
+        "position": 1325
+      },
+      "to": {
+        "book": 0,
+        "chapter": 44,
+        "verse": 0,
+        "src": "/assets/chapter-genesis-44-opening-v1.webp",
+        "position": 1326
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 11,
+        "verse": 8,
+        "src": "/assets/chapter-exodus-11-v1.webp",
+        "position": 1815
+      },
+      "to": {
+        "book": 1,
+        "chapter": 12,
+        "verse": 0,
+        "src": "/assets/chapter-exodus-12-opening-v1.webp",
+        "position": 1818
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 13,
+        "verse": 21,
+        "src": "/assets/chapter-exodus-13-v1.webp",
+        "position": 1889
+      },
+      "to": {
+        "book": 1,
+        "chapter": 14,
+        "verse": 1,
+        "src": "/assets/story-crossing-the-sea-v1.webp",
+        "position": 1891
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 15,
+        "verse": 20,
+        "src": "/assets/chapter-exodus-15-v1.webp",
+        "position": 1941
+      },
+      "to": {
+        "book": 1,
+        "chapter": 15,
+        "verse": 22,
+        "src": "/assets/story-bitter-water-manna-and-quail-v1.webp",
+        "position": 1943
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 19,
+        "verse": 0,
+        "src": "/assets/chapter-exodus-19-opening-v1.webp",
+        "position": 2028
+      },
+      "to": {
+        "book": 1,
+        "chapter": 19,
+        "verse": 3,
+        "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+        "position": 2030
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 23,
+        "verse": 0,
+        "src": "/assets/chapter-exodus-23-opening-v1.webp",
+        "position": 2146
+      },
+      "to": {
+        "book": 1,
+        "chapter": 23,
+        "verse": 5,
+        "src": "/assets/chapter-exodus-23-v1.webp",
+        "position": 2150
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 24,
+        "verse": 1,
+        "src": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+        "position": 2179
+      },
+      "to": {
+        "book": 1,
+        "chapter": 24,
+        "verse": 3,
+        "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+        "position": 2181
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 1,
+        "chapter": 31,
+        "verse": 0,
+        "src": "/assets/chapter-exodus-31-opening-v1.webp",
+        "position": 2422
+      },
+      "to": {
+        "book": 1,
+        "chapter": 31,
+        "verse": 5,
+        "src": "/assets/chapter-exodus-31-v1.webp",
+        "position": 2426
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 2,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-02-opening-v1.webp",
+        "position": 2764
+      },
+      "to": {
+        "book": 2,
+        "chapter": 2,
+        "verse": 4,
+        "src": "/assets/chapter-leviticus-02-v1.webp",
+        "position": 2767
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 3,
+        "verse": 16,
+        "src": "/assets/chapter-leviticus-03-v2.webp",
+        "position": 2795
+      },
+      "to": {
+        "book": 2,
+        "chapter": 4,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-04-opening-v1.webp",
+        "position": 2797
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 6,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-06-opening-v1.webp",
+        "position": 2851
+      },
+      "to": {
+        "book": 2,
+        "chapter": 6,
+        "verse": 5,
+        "src": "/assets/chapter-leviticus-06-v2.webp",
+        "position": 2855
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 9,
+        "verse": 23,
+        "src": "/assets/chapter-leviticus-09-v1.webp",
+        "position": 2977
+      },
+      "to": {
+        "book": 2,
+        "chapter": 10,
+        "verse": 1,
+        "src": "/assets/story-nadab-and-abihu-v1.webp",
+        "position": 2979
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 11,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-11-opening-v1.webp",
+        "position": 2999
+      },
+      "to": {
+        "book": 2,
+        "chapter": 11,
+        "verse": 3,
+        "src": "/assets/chapter-leviticus-11-v1.webp",
+        "position": 3001
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 12,
+        "verse": 6,
+        "src": "/assets/chapter-leviticus-12-v1.webp",
+        "position": 3051
+      },
+      "to": {
+        "book": 2,
+        "chapter": 13,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-13-opening-v1.webp",
+        "position": 3054
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 17,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-17-opening-v1.webp",
+        "position": 3237
+      },
+      "to": {
+        "book": 2,
+        "chapter": 17,
+        "verse": 5,
+        "src": "/assets/chapter-leviticus-17-v1.webp",
+        "position": 3241
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 18,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-18-opening-v1.webp",
+        "position": 3253
+      },
+      "to": {
+        "book": 2,
+        "chapter": 18,
+        "verse": 5,
+        "src": "/assets/chapter-leviticus-18-v1.webp",
+        "position": 3257
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 23,
+        "verse": 42,
+        "src": "/assets/chapter-leviticus-23-v1.webp",
+        "position": 3445
+      },
+      "to": {
+        "book": 2,
+        "chapter": 24,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-24-opening-v1.webp",
+        "position": 3448
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 26,
+        "verse": 0,
+        "src": "/assets/chapter-leviticus-26-opening-v1.webp",
+        "position": 3526
+      },
+      "to": {
+        "book": 2,
+        "chapter": 26,
+        "verse": 4,
+        "src": "/assets/chapter-leviticus-26-v2.webp",
+        "position": 3529
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 2,
+        "chapter": 27,
+        "verse": 32,
+        "src": "/assets/chapter-leviticus-27-v1.webp",
+        "position": 3603
+      },
+      "to": {
+        "book": 3,
+        "chapter": 1,
+        "verse": 1,
+        "src": "/assets/story-counting-the-camp-v1.webp",
+        "position": 3606
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 2,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-02-opening-v1.webp",
+        "position": 3660
+      },
+      "to": {
+        "book": 3,
+        "chapter": 2,
+        "verse": 2,
+        "src": "/assets/chapter-numbers-02-v1.webp",
+        "position": 3661
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-08-opening-v1.webp",
+        "position": 3941
+      },
+      "to": {
+        "book": 3,
+        "chapter": 8,
+        "verse": 2,
+        "src": "/assets/chapter-numbers-08-v1.webp",
+        "position": 3942
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-10-opening-v1.webp",
+        "position": 3990
+      },
+      "to": {
+        "book": 3,
+        "chapter": 10,
+        "verse": 2,
+        "src": "/assets/chapter-numbers-10-v1.webp",
+        "position": 3991
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 15,
+        "verse": 38,
+        "src": "/assets/chapter-numbers-15-v1.webp",
+        "position": 4192
+      },
+      "to": {
+        "book": 3,
+        "chapter": 16,
+        "verse": 1,
+        "src": "/assets/story-korah-s-rebellion-v1.webp",
+        "position": 4196
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 16,
+        "verse": 1,
+        "src": "/assets/story-korah-s-rebellion-v1.webp",
+        "position": 4196
+      },
+      "to": {
+        "book": 3,
+        "chapter": 16,
+        "verse": 3,
+        "src": "/assets/chapter-numbers-16-v1.webp",
+        "position": 4198
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 21,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-21-opening-v1.webp",
+        "position": 4342
+      },
+      "to": {
+        "book": 3,
+        "chapter": 21,
+        "verse": 4,
+        "src": "/assets/story-the-bronze-serpent-v1.webp",
+        "position": 4345
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 24,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-24-opening-v1.webp",
+        "position": 4448
+      },
+      "to": {
+        "book": 3,
+        "chapter": 24,
+        "verse": 5,
+        "src": "/assets/chapter-numbers-24-v1.webp",
+        "position": 4452
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 26,
+        "verse": 1,
+        "src": "/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+        "position": 4491
+      },
+      "to": {
+        "book": 3,
+        "chapter": 26,
+        "verse": 4,
+        "src": "/assets/chapter-numbers-26-v1.webp",
+        "position": 4494
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 28,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-28-opening-v1.webp",
+        "position": 4579
+      },
+      "to": {
+        "book": 3,
+        "chapter": 28,
+        "verse": 4,
+        "src": "/assets/chapter-numbers-28-v1.webp",
+        "position": 4582
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 29,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-29-opening-v1.webp",
+        "position": 4610
+      },
+      "to": {
+        "book": 3,
+        "chapter": 29,
+        "verse": 1,
+        "src": "/assets/chapter-numbers-29-v1.webp",
+        "position": 4610
+      },
+      "gap": 0,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 30,
+        "verse": 0,
+        "src": "/assets/chapter-numbers-30-opening-v1.webp",
+        "position": 4650
+      },
+      "to": {
+        "book": 3,
+        "chapter": 30,
+        "verse": 2,
+        "src": "/assets/chapter-numbers-30-v1.webp",
+        "position": 4651
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 3,
+        "chapter": 36,
+        "verse": 12,
+        "src": "/assets/chapter-numbers-36-v1.webp",
+        "position": 4892
+      },
+      "to": {
+        "book": 4,
+        "chapter": 1,
+        "verse": 1,
+        "src": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+        "position": 4894
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 3,
+        "verse": 27,
+        "src": "/assets/chapter-deuteronomy-03-v1.webp",
+        "position": 5003
+      },
+      "to": {
+        "book": 4,
+        "chapter": 4,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-04-opening-v1.webp",
+        "position": 5006
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 7,
+        "verse": 25,
+        "src": "/assets/chapter-deuteronomy-07-v1.webp",
+        "position": 5137
+      },
+      "to": {
+        "book": 4,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-08-opening-v1.webp",
+        "position": 5139
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 13,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-13-opening-v1.webp",
+        "position": 5274
+      },
+      "to": {
+        "book": 4,
+        "chapter": 13,
+        "verse": 4,
+        "src": "/assets/chapter-deuteronomy-13-v1.webp",
+        "position": 5277
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 17,
+        "verse": 18,
+        "src": "/assets/chapter-deuteronomy-17-v1.webp",
+        "position": 5383
+      },
+      "to": {
+        "book": 4,
+        "chapter": 18,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-18-opening-v1.webp",
+        "position": 5386
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 18,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-18-opening-v1.webp",
+        "position": 5386
+      },
+      "to": {
+        "book": 4,
+        "chapter": 18,
+        "verse": 3,
+        "src": "/assets/chapter-deuteronomy-18-v1.webp",
+        "position": 5388
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 19,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-19-opening-v1.webp",
+        "position": 5408
+      },
+      "to": {
+        "book": 4,
+        "chapter": 19,
+        "verse": 3,
+        "src": "/assets/chapter-deuteronomy-19-v1.webp",
+        "position": 5410
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 20,
+        "verse": 19,
+        "src": "/assets/chapter-deuteronomy-20-v1.webp",
+        "position": 5447
+      },
+      "to": {
+        "book": 4,
+        "chapter": 21,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-21-opening-v1.webp",
+        "position": 5449
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 23,
+        "verse": 24,
+        "src": "/assets/chapter-deuteronomy-23-v1.webp",
+        "position": 5525
+      },
+      "to": {
+        "book": 4,
+        "chapter": 24,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-24-opening-v1.webp",
+        "position": 5527
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 24,
+        "verse": 19,
+        "src": "/assets/chapter-deuteronomy-24-v1.webp",
+        "position": 5545
+      },
+      "to": {
+        "book": 4,
+        "chapter": 25,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-25-opening-v1.webp",
+        "position": 5549
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 27,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-27-opening-v1.webp",
+        "position": 5587
+      },
+      "to": {
+        "book": 4,
+        "chapter": 27,
+        "verse": 4,
+        "src": "/assets/chapter-deuteronomy-27-v1.webp",
+        "position": 5590
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 28,
+        "verse": 0,
+        "src": "/assets/chapter-deuteronomy-28-opening-v1.webp",
+        "position": 5613
+      },
+      "to": {
+        "book": 4,
+        "chapter": 28,
+        "verse": 3,
+        "src": "/assets/chapter-deuteronomy-28-v1.webp",
+        "position": 5615
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 4,
+        "chapter": 30,
+        "verse": 19,
+        "src": "/assets/chapter-deuteronomy-30-v1.webp",
+        "position": 5728
+      },
+      "to": {
+        "book": 4,
+        "chapter": 31,
+        "verse": 1,
+        "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v1.webp",
+        "position": 5730
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 8,
+        "verse": 34,
+        "src": "/assets/chapter-joshua-08-v1.webp",
+        "position": 6037
+      },
+      "to": {
+        "book": 5,
+        "chapter": 9,
+        "verse": 1,
+        "src": "/assets/story-the-gibeonite-deception-v1.webp",
+        "position": 6039
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 12,
+        "verse": 24,
+        "src": "/assets/chapter-joshua-12-v2.webp",
+        "position": 6155
+      },
+      "to": {
+        "book": 5,
+        "chapter": 13,
+        "verse": 0,
+        "src": "/assets/chapter-joshua-13-opening-v1.webp",
+        "position": 6156
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 17,
+        "verse": 0,
+        "src": "/assets/chapter-joshua-17-opening-v1.webp",
+        "position": 6277
+      },
+      "to": {
+        "book": 5,
+        "chapter": 17,
+        "verse": 4,
+        "src": "/assets/chapter-joshua-17-v2.webp",
+        "position": 6280
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 19,
+        "verse": 49,
+        "src": "/assets/chapter-joshua-19-v2.webp",
+        "position": 6371
+      },
+      "to": {
+        "book": 5,
+        "chapter": 20,
+        "verse": 0,
+        "src": "/assets/chapter-joshua-20-opening-v1.webp",
+        "position": 6374
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 20,
+        "verse": 0,
+        "src": "/assets/chapter-joshua-20-opening-v1.webp",
+        "position": 6374
+      },
+      "to": {
+        "book": 5,
+        "chapter": 20,
+        "verse": 4,
+        "src": "/assets/chapter-joshua-20-v1.webp",
+        "position": 6377
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 5,
+        "chapter": 21,
+        "verse": 42,
+        "src": "/assets/chapter-joshua-21-v1.webp",
+        "position": 6424
+      },
+      "to": {
+        "book": 5,
+        "chapter": 22,
+        "verse": 1,
+        "src": "/assets/story-the-altar-by-the-jordan-v1.webp",
+        "position": 6428
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 8,
+        "chapter": 7,
+        "verse": 0,
+        "src": "/assets/chapter-1-samuel-07-opening-v2.webp",
+        "position": 7354
+      },
+      "to": {
+        "book": 8,
+        "chapter": 7,
+        "verse": 2,
+        "src": "/assets/story-samuel-judges-israel-v1.webp",
+        "position": 7355
+      },
+      "gap": 1,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 16,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-esther-10-opening-v1.webp",
+        "position": 12868
+      },
+      "to": {
+        "book": 17,
+        "chapter": 1,
+        "verse": 1,
+        "src": "/assets/story-job-s-testing-v1.webp",
+        "position": 12871
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 89,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-089-opening-v1.webp",
+        "position": 15328
+      },
+      "to": {
+        "book": 18,
+        "chapter": 89,
+        "verse": 3,
+        "src": "/assets/story-davidic-covenant-v1.webp",
+        "position": 15330
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 117,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-117-opening-v1.webp",
+        "position": 15869
+      },
+      "to": {
+        "book": 18,
+        "chapter": 118,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-118-opening-v1.webp",
+        "position": 15871
+      },
+      "gap": 2,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 123,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-123-opening-v1.webp",
+        "position": 16100
+      },
+      "to": {
+        "book": 18,
+        "chapter": 124,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-124-opening-v1.webp",
+        "position": 16104
+      },
+      "gap": 4,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 131,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-131-opening-v1.webp",
+        "position": 16150
+      },
+      "to": {
+        "book": 18,
+        "chapter": 132,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-132-opening-v1.webp",
+        "position": 16153
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 133,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-133-opening-v1.webp",
+        "position": 16171
+      },
+      "to": {
+        "book": 18,
+        "chapter": 134,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-134-opening-v1.webp",
+        "position": 16174
+      },
+      "gap": 3,
+      "inherited": true
+    },
+    {
+      "from": {
+        "book": 18,
+        "chapter": 134,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-134-opening-v1.webp",
+        "position": 16174
+      },
+      "to": {
+        "book": 18,
+        "chapter": 135,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-135-opening-v1.webp",
+        "position": 16177
+      },
+      "gap": 3,
+      "inherited": true
+    }
+  ]
+}
