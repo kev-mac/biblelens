@@ -26,11 +26,11 @@ async function chapter(c){const key=c.book+':'+c.chapter;if(cache.chapters[key])
 async function asset(src){if(cache.images[src])return cache.images[src];const response=await get(src);assert(response.headers.get('content-type')?.includes('image/webp'));const bytes=Buffer.from(await response.arrayBuffer());for(const prefix of ['src','www',signed])assert.deepEqual(bytes,fs.readFileSync(prefix+src),src+' '+prefix);return cache.images[src]={src,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),finalOrigin:new URL(response.url).origin};}
 try{
  // Establish success on one chapter and one image before starting a bounded batch.
- await chapter(expected.chapters.find(c=>c.book===20&&c.chapter===1));
- await asset('/assets/chapter-ecclesiastes-01-opening-v1.webp');
- const ordered=[...expected.chapters].sort((a,b)=>Number(b.book>=20)-Number(a.book>=20)||a.book-b.book||a.chapter-b.chapter);
+ await chapter(expected.chapters.find(c=>c.book===30&&c.chapter===1));
+ await asset('/assets/chapter-obadiah-01-opening-v1.webp');
+ const ordered=[...expected.chapters].sort((a,b)=>Number(b.book>=30)-Number(a.book>=30)||a.book-b.book||a.chapter-b.chapter);
  const chapters=await pool(ordered,chapter);console.log('PASS live metadata and KJV/ASV/WEB text:',chapters.length,'chapters');
  const images=await pool(expected.sources,asset);
- const report={release:expected.release,identityEvidence:'/tmp/biblelens343-release-verify.log',chaptersVerified:chapters.length,batchChaptersVerified:chapters.filter(c=>c.book>=20&&c.book<=29).length,imagesVerified:images.length,totalImageBytes:images.reduce((n,a)=>n+a.bytes,0),allImagesServedFromSiteOrigin:images.every(a=>a.finalOrigin===base),recoveredTransientResponses:recovered,deniedPythonProbe:{url:base+'/release.json',status:403,retried:false},chapters,images};
- fs.writeFileSync('research/notes/build-342-live-asset-verification-2026-11-04.json',JSON.stringify(report,null,2)+'\n');console.log('PASS live/source/www/signed bytes:',images.length,'images',report.totalImageBytes,'bytes');
+ const report={release:expected.release,identityEvidence:'/tmp/biblelens343-release-verify.log',chaptersVerified:chapters.length,batchChaptersVerified:chapters.filter(c=>c.book>=30&&c.book<=39).length,imagesVerified:images.length,totalImageBytes:images.reduce((n,a)=>n+a.bytes,0),allImagesServedFromSiteOrigin:images.every(a=>a.finalOrigin===base),recoveredTransientResponses:recovered,chapters,images};
+ fs.writeFileSync('research/notes/build-343-live-asset-verification-2026-11-04.json',JSON.stringify(report,null,2)+'\n');console.log('PASS live/source/www/signed bytes:',images.length,'images',report.totalImageBytes,'bytes');
 }catch(error){flush();fs.writeFileSync('/tmp/biblelens343-live-byte-blocker.json',JSON.stringify({failed,error:error.message},null,2));throw error;}
