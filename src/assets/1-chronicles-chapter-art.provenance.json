@@ -1,0 +1,420 @@
+{
+  "date": "2026-11-04",
+  "tool": "image_gen.imagegen",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "styleReferenceRole": "Style only; no character identities copied",
+  "identityInputs": "None required: all new scenes avoid identifiable people and groups",
+  "review": "Generated originals inspected at full size, then resized and encoded to WebP; no new human or animal anatomy",
+  "assets": [
+    {
+      "chapter": 1,
+      "original": "/workspace/generated_images/exec-35226556-3a30-4355-8ae4-b4a5a1eac2fb.png",
+      "src": "/assets/chapter-1-chronicles-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 130014,
+      "sha256": "139bd65b4a32484346976a754ef7fc3ac9a8bf32f4e237b8450ca7a8ec665dcc",
+      "alt": "Imagined scene: Branching paths cross green hills beneath a blue sky.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 2,
+      "original": "/workspace/generated_images/exec-6749b041-42d5-430e-927e-d153e4a92b0c.png",
+      "src": "/assets/chapter-1-chronicles-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 172108,
+      "sha256": "1a630a4390172eadbf0f6ff8d4b6f576fc8a372b61ce6d1b8344a36d35e8ec2f",
+      "alt": "Imagined scene: Olive terraces surround a small village in the Judean hills.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 3,
+      "original": "/workspace/generated_images/exec-b402c487-8912-429b-8e05-ac741d3725d2.png",
+      "src": "/assets/chapter-1-chronicles-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 153266,
+      "sha256": "be9e8a5dc0c15c1a5fe77c5f153167284c6e056c0a2187197793fcdcbe56ce74",
+      "alt": "Imagined scene: Doorways open onto a shaded stone courtyard beneath a fig tree.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 4,
+      "original": "/workspace/generated_images/exec-d628764d-7421-43d8-b058-b8ecfde02385.png",
+      "src": "/assets/chapter-1-chronicles-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 122088,
+      "sha256": "700558c8c54a214a38d3ebfa097673153a85841f5c524607cea2395f423e5be0",
+      "alt": "Imagined scene: A wooden loom and clay vessels stand in an empty workshop.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 5,
+      "original": "/workspace/generated_images/exec-eaa37fbc-8d27-4821-8aa0-91e11cb9eaaa.png",
+      "src": "/assets/chapter-1-chronicles-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 138298,
+      "sha256": "e44c768e0e81fcdd75ccca5b93e44e9b0873ca1db4b4905725f34217eef64d7a",
+      "alt": "Imagined scene: A woven shelter overlooks green pasture east of the Jordan.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 6,
+      "original": "/workspace/generated_images/exec-a0f01e61-fe26-4e2f-bf9c-69c590164606.png",
+      "src": "/assets/chapter-1-chronicles-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 135934,
+      "sha256": "d8b34c2f86a20d6f1a7a9e0d57b828b464a40dad3f7ab5c3d6a1cbb394e3751f",
+      "alt": "Imagined scene: A walled village overlooks grazing fields at dawn.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "editInputFiles": [
+        "/workspace/generated_images/exec-f219015f-9437-4743-b401-c06721be754b.png"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 7,
+      "original": "/workspace/generated_images/exec-76be1f30-3724-40e7-b114-cf7989095398.png",
+      "src": "/assets/chapter-1-chronicles-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 180470,
+      "sha256": "ba3d7f5f336b686f727866395edcece22545fa67e50571a607c96e8244b0a762",
+      "alt": "Imagined scene: Olive groves and grain fields fill a northern hill valley.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 8,
+      "original": "/workspace/generated_images/exec-a1f2d059-5e4b-4790-bfd9-f7cf72f7b535.png",
+      "src": "/assets/chapter-1-chronicles-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 143572,
+      "sha256": "dc728a0a7f2619298a1d271cd6c64a957ec7c218393612eb5c376a193f279b4c",
+      "alt": "Imagined scene: A stone path and water cistern sit among hillside homes.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 9,
+      "original": "/workspace/generated_images/exec-65225880-fb7d-48b6-8f57-00b73a2799c0.png",
+      "src": "/assets/chapter-1-chronicles-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 131020,
+      "sha256": "109400b1398105d171c637f8b66d50a88614c6cdd5128de00681a2d4328b5cf5",
+      "alt": "Imagined scene: Clay jars and flour stand beside an open timber gateway.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "editInputFiles": [
+        "/workspace/generated_images/exec-8e085a22-de42-4dfa-a076-d485a9f87cce.png"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 12,
+      "original": "/workspace/generated_images/exec-070ff224-b6d1-4097-9816-17ab16445655.png",
+      "src": "/assets/chapter-1-chronicles-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 128056,
+      "sha256": "f87d64a388d95c0fa37b4b04e98df60f9c914cb8236a3883f9571714c6cbf7d7",
+      "alt": "Imagined scene: A shield, spear and bow rest outside an empty tent.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 14,
+      "original": "/workspace/generated_images/exec-ac2600d9-89af-47a0-9bf5-2e499a74bdf6.png",
+      "src": "/assets/chapter-1-chronicles-14-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 161518,
+      "sha256": "523c2f518bb14083c4e839d13c69d60f2b47566ad55f22cebb7a4fb11092d39d",
+      "alt": "Imagined scene: Cedar beams and stone blocks wait in a quiet courtyard.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "editInputFiles": [
+        "/workspace/generated_images/exec-3c26e9da-cf30-4efa-b804-62a26b610b91.png"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 15,
+      "original": "/workspace/generated_images/exec-a17c8815-5215-4409-8ec9-d98b75035eef.png",
+      "src": "/assets/chapter-1-chronicles-15-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 121184,
+      "sha256": "288be8bef7d6da6aa10c377e07c2526d88eadd736d7ceae1b9f936387cfd02c2",
+      "alt": "Imagined scene: A newly pitched linen tent stands on a stone terrace.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 16,
+      "original": "/workspace/generated_images/exec-38933df0-d408-4ecd-a31b-a0fd44e515e8.png",
+      "src": "/assets/chapter-1-chronicles-16-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 150838,
+      "sha256": "ac6b5140586487b8141f913610c63ec06b356ee5373ae92ba739788e0fc1272c",
+      "alt": "Imagined scene: Flatbread and fruit rest on a table beside a linen tent.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 18,
+      "original": "/workspace/generated_images/exec-64b14d62-39b2-4976-be99-ef7653589abb.png",
+      "src": "/assets/chapter-1-chronicles-18-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 106304,
+      "sha256": "ca9f9582f648753c480b9a13b99730fbf98a2a3d035ad4e58b6741b332fd3723",
+      "alt": "Imagined scene: Metal vessels and a shield stand in a stone storeroom.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 19,
+      "original": "/workspace/generated_images/exec-0d2a71a0-938e-4bd3-a76e-d5765941d7d8.png",
+      "src": "/assets/chapter-1-chronicles-19-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 115922,
+      "sha256": "e2d03842c9d4c54bad99c41471f2c5056b2d5d7f61225257c28943214accd6c7",
+      "alt": "Imagined scene: A winding road approaches a fortified hill town beside an encampment.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 20,
+      "original": "/workspace/generated_images/exec-0091d81d-cdfd-445b-a98b-23f7b44fe1da.png",
+      "src": "/assets/chapter-1-chronicles-20-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 110188,
+      "sha256": "2e4f8c05333c70ed70bb6f277f3a24442863e7eccc01da1bf02bb4d41ce7d4d8",
+      "alt": "Imagined scene: Shields rest beside tents outside a distant fortified town.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 22,
+      "original": "/workspace/generated_images/exec-acaaa169-4f22-4df6-8bdd-7ad6379cda81.png",
+      "src": "/assets/chapter-1-chronicles-22-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 125896,
+      "sha256": "b7304e9bb8000664e9c1768302cfa2b3c91f91d0aa67d36c320ebbc5e8b3c1a8",
+      "alt": "Imagined scene: Timber, stone blocks and iron nails await temple construction.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 23,
+      "original": "/workspace/generated_images/exec-292e3f13-0c47-4ad1-b8ed-e9c97052105b.png",
+      "src": "/assets/chapter-1-chronicles-23-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 107560,
+      "sha256": "bd559e97c7e4c173339fb7eab3a700c417bf407b8a15b5d0f525e7c3e18155da",
+      "alt": "Imagined scene: Folded linen, lamps and bowls fill a quiet storeroom.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "editInputFiles": [
+        "/workspace/generated_images/exec-b744ff5b-019b-44c0-a1cf-f54a9b65acc8.png"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 24,
+      "original": "/workspace/generated_images/exec-f82eaf4a-ab92-47f0-9092-99d57f1b3bee.png",
+      "src": "/assets/chapter-1-chronicles-24-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 103622,
+      "sha256": "cd05abfa317057f75a241fabfd964edcff57b0c5752441d3d9c24498d29a1d8a",
+      "alt": "Imagined scene: Unmarked clay lots lie beside linen and a rolled parchment.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 25,
+      "original": "/workspace/generated_images/exec-cb853e26-2802-4ee1-9cc2-034511806709.png",
+      "src": "/assets/chapter-1-chronicles-25-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 141016,
+      "sha256": "e4b4be8f579d46d2cf8fda069235425bbe1f6392311bd6947a3b424d8aea4b01",
+      "alt": "Imagined scene: A lyre, cymbals and drum rest on blue and burgundy cloth.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 26,
+      "original": "/workspace/generated_images/exec-c8b0f9aa-c987-4aab-a435-333e5274175b.png",
+      "src": "/assets/chapter-1-chronicles-26-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 118040,
+      "sha256": "9eb4979991ea8ba1b2c5d936dd4f3507e4c273103a989f5bee12332fc875f695",
+      "alt": "Imagined scene: Sealed clay jars sit beside closed timber gates.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "editInputFiles": [
+        "/workspace/generated_images/exec-f7ad0d5e-1a63-4741-a231-7e6c80c2507b.png"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 27,
+      "original": "/workspace/generated_images/exec-afa3db2a-9ccb-4ba7-a5dd-573d11219a96.png",
+      "src": "/assets/chapter-1-chronicles-27-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 185988,
+      "sha256": "9fecddf96959e54752d9210d9750dcf3a43c38bcd837343b532f85e7207556b6",
+      "alt": "Imagined scene: Olive groves and vineyards surround a storehouse of clay jars.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "chapter": 29,
+      "original": "/workspace/generated_images/exec-95e5e0c6-162f-42d8-9fde-80376c6ee110.png",
+      "src": "/assets/chapter-1-chronicles-29-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 146380,
+      "sha256": "396b3b4c36afeced85b7a0385c418f1bd3a27ceffef0ea7ea8f1b481659eade4",
+      "alt": "Imagined scene: Gold, silver, stones and bronze vessels rest on woven cloth.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "title": "The Death of Saul",
+      "original": "/workspace/generated_images/exec-fd09955a-ef93-4b6a-871c-43e23cc17398.png",
+      "src": "/assets/story-the-death-of-saul-v2.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 237786,
+      "sha256": "52c56bcbf7ac22cffc22ea6e838428524805d1e9e199fafe11de30622a8c51be",
+      "alt": "A quiet burial place beneath a broad oak tree overlooks green hills.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    },
+    {
+      "title": "The Census and the Temple Site",
+      "original": "/workspace/generated_images/exec-93468fb1-50f0-4c02-acc4-210104e26a8d.png",
+      "src": "/assets/story-the-census-and-the-temple-site-v2.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 188194,
+      "sha256": "119950e6017378efde2818549819b6fcfccf897fda80329659a924a83278018d",
+      "alt": "Straw, grain baskets and a wooden sledge lie on an empty threshing floor.",
+      "generationInputFiles": [
+        "/workspace/1-chronicles/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reviewResult": "Accepted after full-size scene and object inspection; no identifiable people or animals"
+    }
+  ],
+  "rejectedDrafts": {
+    "6": "Signature removed by imagegen edit",
+    "9": "Modern-looking metal key removed by imagegen edit",
+    "14": "Modern carpentry tools removed by imagegen edit",
+    "23": "Modern garment hangers removed by imagegen edit",
+    "26": "Metal key removed by imagegen edit"
+  },
+  "retainedOriginals": "Generated PNGs remain in /workspace/generated_images; previous active WebP versions preserved",
+  "repairInputs": {
+    "6": {
+      "original": "/workspace/generated_images/exec-f219015f-9437-4743-b401-c06721be754b.png",
+      "referenceInputs": [
+        "/workspace/generated_images/exec-f219015f-9437-4743-b401-c06721be754b.png"
+      ],
+      "accepted": "/workspace/generated_images/exec-a0f01e61-fe26-4e2f-bf9c-69c590164606.png"
+    },
+    "9": {
+      "original": "/workspace/generated_images/exec-8e085a22-de42-4dfa-a076-d485a9f87cce.png",
+      "referenceInputs": [
+        "/workspace/generated_images/exec-8e085a22-de42-4dfa-a076-d485a9f87cce.png"
+      ],
+      "accepted": "/workspace/generated_images/exec-65225880-fb7d-48b6-8f57-00b73a2799c0.png"
+    },
+    "14": {
+      "original": "/workspace/generated_images/exec-3c26e9da-cf30-4efa-b804-62a26b610b91.png",
+      "referenceInputs": [
+        "/workspace/generated_images/exec-3c26e9da-cf30-4efa-b804-62a26b610b91.png"
+      ],
+      "accepted": "/workspace/generated_images/exec-ac2600d9-89af-47a0-9bf5-2e499a74bdf6.png"
+    },
+    "23": {
+      "original": "/workspace/generated_images/exec-b744ff5b-019b-44c0-a1cf-f54a9b65acc8.png",
+      "referenceInputs": [
+        "/workspace/generated_images/exec-b744ff5b-019b-44c0-a1cf-f54a9b65acc8.png"
+      ],
+      "accepted": "/workspace/generated_images/exec-292e3f13-0c47-4ad1-b8ed-e9c97052105b.png"
+    },
+    "26": {
+      "original": "/workspace/generated_images/exec-f7ad0d5e-1a63-4741-a231-7e6c80c2507b.png",
+      "referenceInputs": [
+        "/workspace/generated_images/exec-f7ad0d5e-1a63-4741-a231-7e6c80c2507b.png"
+      ],
+      "accepted": "/workspace/generated_images/exec-c8b0f9aa-c987-4aab-a435-333e5274175b.png"
+    }
+  }
+}
