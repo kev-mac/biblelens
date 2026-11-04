@@ -1,0 +1,96 @@
+{
+  "branch": "artwork/hebrews-2026-11-04",
+  "assetCommit": "3a0ce8165080807d58b3d915b259e0c35a83e110",
+  "checks": [
+    {
+      "command": "npm ci --registry=https://registry.npmjs.org --cache=/tmp/biblelens-hebrews-npm-cache --ignore-scripts",
+      "status": "passed",
+      "detail": "Locked official-registry install, manifests/lock unchanged"
+    },
+    {
+      "command": "npm run build:mobile",
+      "status": "passed",
+      "detail": "Final source/web/offline fingerprint identical"
+    },
+    {
+      "command": "node scripts/check-hebrews-artwork.mjs",
+      "status": "passed",
+      "detail": "13 chapters,14 placements,909 edition presence/value checks,zero network,baseline assets and spacing"
+    },
+    {
+      "command": "npm run check:images",
+      "status": "passed",
+      "detail": "1120 registered chapters"
+    },
+    {
+      "command": "npm run check:mobile",
+      "status": "passed",
+      "detail": "Mobile chrome and actual offline engine tests"
+    },
+    {
+      "command": "npm run check:release",
+      "status": "passed",
+      "detail": "Release/source/packaging/privacy/hash fixtures"
+    },
+    {
+      "command": "npm run check",
+      "status": "failed",
+      "detail": "Content/API/offline search checks passed; terminal check-release-smoke.mjs fails at Chromium launch because executable is absent. No browser suite ran."
+    },
+    {
+      "command": "npm run check:readability",
+      "status": "report-only",
+      "detail": "Inherited findings; ran via aggregate. New alt descriptions independently grade5.74; no sentence/jargon flags"
+    },
+    {
+      "command": "npm run release:sites -- /tmp/hebrews-sites-final/dist",
+      "status": "passed",
+      "detail": "Worker-only staging, five files, no static/client bypass"
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed",
+      "detail": "No whitespace errors"
+    },
+    {
+      "command": "Actual immutable public-origin audit",
+      "status": "passed",
+      "detail": "1028/1028 source bytes/SHA256;132882204 bytes"
+    },
+    {
+      "command": "Live Site release.json",
+      "status": "denied",
+      "detail": "Normal proxy CONNECT HTTP403; no retry/bypass"
+    },
+    {
+      "command": "Browser smoke and phone/iPad layouts",
+      "status": "not run",
+      "detail": "No supported browser tool/cua_repl.js; aggregate launch failed before browser started"
+    },
+    {
+      "command": "Publication/signing/signed byte parity/install/device launch/release:verify",
+      "status": "not run",
+      "detail": "Coordinated release scope; build344 device lock blockers remain with coordinator"
+    }
+  ],
+  "worker": {
+    "bytes": 63926591,
+    "limit": 66060288,
+    "remaining": 2133697,
+    "stagedFiles": [
+      ".openai/drizzle/0000_loose_bug.sql",
+      ".openai/drizzle/meta/0000_snapshot.json",
+      ".openai/drizzle/meta/_journal.json",
+      ".openai/hosting.json",
+      "server/index.js"
+    ],
+    "stageExactWorkerBytes": true
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "9e2908ad312d237ecc32ded2a0d403249d47f88b59c3c048337b705befdd7773"
+  },
+  "logs": "research/notes/hebrews-checks-2026-11-04/",
+  "automaticApprovalReviewRejections": []
+}

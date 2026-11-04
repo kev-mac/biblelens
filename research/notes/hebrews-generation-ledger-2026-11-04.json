@@ -3,7 +3,7 @@
     {
       "chapter": 1,
       "original": "/workspace/generated_images/exec-0a6ebd95-478b-4794-925e-aef70c853d96.png",
-      "prompt": "See exact first-generation prompt in session: Hebrews 1 deserted royal hall, empty throne, morning light; Genesis 7 style-only.",
+      "prompt": "Create one new landscape 16:9 chapter opener for BibleLens Hebrews 1. Use the supplied Genesis ark image ONLY as a style reference, never its people or narrative. Grounded natural light, believable ancient materials, restrained illustrative realism, subtle texture. Scene: a deserted ancient stone royal hall in morning light; a simple empty throne sits in deep background, with a shaft of clear daylight across the floor. A literary symbol of the Son's royal status in Hebrews 1:8, NOT a depiction of heaven or God or an archaeological reconstruction. Cool blue shadows and muted red textile, varied natural palette. No people, no faces, no divine body, no angels, no halos, no fantasy, no readable letters, no marks, signatures, watermarks or borders. Clear phone composition. Save the generated image into the workspace.",
       "inputs": [
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
@@ -221,5 +221,9 @@
       "prompt": "Edit the supplied sanctuary image only to correct its bread count: there must be exactly TWELVE round bread loaves, arranged as two clearly countable stacks of SIX separate loaves each. Currently it has five in each stack. Add one coherent loaf in each stack. Retain the seven-flame lampstand, table, no people, natural material, all lighting and composition. Actual Genesis image is style-only, do not introduce its people/ark. No writing, signatures, watermarks. BibleLens Hebrews 9:2 earthly sanctuary, imagined literary illustration.",
       "reason": "Incorrect bread count; rejected before activation."
     }
-  ]
+  ],
+  "generatedOutputs": 15,
+  "acceptedOutputs": 13,
+  "rejectedOutputs": 2,
+  "encoding": "Pillow 13.0.0: ImageOps.fit 960x540 Lanczos, WebP quality82 method6; originals preserved"
 }
