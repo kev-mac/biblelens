@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "command": "NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-build-mobile.log",
+      "sha256": "6b22a74649c3d53f08576281029d7aa07c545ba595c0afe54aaa86889880ab37"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-images.log",
+      "sha256": "29b7a547c36691aa4f89a843f1b6abd35ff87517099c27d1315394787d3d8d65"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-mobile.log",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-release.log",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    {
+      "command": "npm run check:readability",
+      "exitCode": 0,
+      "status": "completed report-only; inherited findings remain",
+      "log": "/tmp/nahum-readability.log",
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    },
+    {
+      "command": "node /tmp/nahum-tools/offline.mjs",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-offline.log",
+      "sha256": "83327af1171030de1f575f4b1e7fd42c2622645738b21d8c640b733debbdfb97"
+    },
+    {
+      "command": "npm run release:sites -- /tmp/nahum-sites-package",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/nahum-package.log",
+      "sha256": "8f136e990e0945ca6040d752f2254893b9e63f1a97119b1cacb30a93bcc86ac6"
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "acc333b22a385944038fd1c38e3b3898ce787ae396a87ae6dec7a79122af5900"
+  },
+  "workerBytes": 64426246,
+  "budget": 66060288,
+  "headroom": 1634042,
+  "neverRun": [
+    "Browser phone/iPad viewport rendering",
+    "signed iOS build and signed asset parity",
+    "new release live/source/mirror/mobile verification",
+    "device installation and launch",
+    "physical screens"
+  ],
+  "liveProbe": "TypeError: fetch failed via required inherited proxy; status unavailable; no retry",
+  "initialOfflineHarness": "Failed due stdin --input-type module inheritance to CommonJS eval worker; corrected file-based harness passed without application changes"
+}

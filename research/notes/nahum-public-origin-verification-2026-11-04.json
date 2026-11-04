@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "2aca4bd44e55fde1b8df83cfce64976d848138ff",
+  "initialFailure": "Node default fetch did not use required proxy: EAI_AGAIN raw.githubusercontent.com. Repeated with NODE_USE_ENV_PROXY=1 to use inherited approved proxy.",
+  "verified": [
+    {
+      "src": "/assets/chapter-nahum-01-opening-v1.webp",
+      "status": 200,
+      "bytes": 111860,
+      "sha256": "8945fdb0c44213bdb09909c035229b9bdfd8e27dc30b372f01ef2bc0fcc064c0"
+    },
+    {
+      "src": "/assets/chapter-nahum-02-opening-v1.webp",
+      "status": 200,
+      "bytes": 146130,
+      "sha256": "7fe6c3fd2668ba26082146bb4dc91c1f8cf8bfaabdc10fc64b44960028128bc5"
+    },
+    {
+      "src": "/assets/chapter-nahum-03-opening-v1.webp",
+      "status": 200,
+      "bytes": 125488,
+      "sha256": "4a71eb57f677c77f5352a8735551a80f3584c8f29ddeb9d1aa9110ee593e125a"
+    }
+  ],
+  "liveStatus": "TypeError: fetch failed"
+}

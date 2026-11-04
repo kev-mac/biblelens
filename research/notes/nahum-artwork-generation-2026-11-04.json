@@ -1,0 +1,65 @@
+{
+  "generated": 3,
+  "retained": 0,
+  "replaced": 0,
+  "rejected": 0,
+  "images": [
+    {
+      "chapter": 1,
+      "tool": "image_gen.imagegen",
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "inputRole": "Style only; no identity reference required because no people or animals are portrayed",
+      "anchor": "Nahum 1:3\u20136",
+      "original": "/workspace/generated_images/exec-f2480543-9846-4acc-b2be-5067940871d5.png",
+      "output": "src/assets/chapter-nahum-01-opening-v1.webp",
+      "bytes": 111860,
+      "sha256": "8945fdb0c44213bdb09909c035229b9bdfd8e27dc30b372f01ef2bc0fcc064c0",
+      "dimensions": [
+        960,
+        540
+      ],
+      "review": "Original and final reviewed full-size; accepted; no visible humans, animals, text or signature",
+      "status": "accepted"
+    },
+    {
+      "chapter": 2,
+      "tool": "image_gen.imagegen",
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "inputRole": "Style only; no identity reference required because no people or animals are portrayed",
+      "anchor": "Nahum 2:6\u201310",
+      "original": "/workspace/generated_images/exec-8ff48528-399f-4136-a625-1cdac735300d.png",
+      "output": "src/assets/chapter-nahum-02-opening-v1.webp",
+      "bytes": 146130,
+      "sha256": "7fe6c3fd2668ba26082146bb4dc91c1f8cf8bfaabdc10fc64b44960028128bc5",
+      "dimensions": [
+        960,
+        540
+      ],
+      "review": "Original and final reviewed full-size; accepted; no visible humans, animals, text or signature",
+      "status": "accepted"
+    },
+    {
+      "chapter": 3,
+      "tool": "image_gen.imagegen",
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "inputRole": "Style only; no identity reference required because no people or animals are portrayed",
+      "anchor": "Nahum 3:7,13\u201315",
+      "original": "/workspace/generated_images/exec-e98890fb-5f8c-4aa5-95cc-9e360aa0ab05.png",
+      "output": "src/assets/chapter-nahum-03-opening-v1.webp",
+      "bytes": 125488,
+      "sha256": "4a71eb57f677c77f5352a8735551a80f3584c8f29ddeb9d1aa9110ee593e125a",
+      "dimensions": [
+        960,
+        540
+      ],
+      "review": "Original and final reviewed full-size; accepted; no visible humans, animals, text or signature",
+      "status": "accepted"
+    }
+  ]
+}
