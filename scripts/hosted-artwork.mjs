@@ -7,7 +7,7 @@ export function hostedArtwork() {
  const result={};
  assert.match(manifest.sourceCommit,/^[a-f0-9]{40}$/,'Pin public artwork to an immutable source commit');
  for(const src of manifest.assets){
-  assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges)-\d{2}-(?:opening-)?v\d+)\.webp$/);
+  assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges|1-samuel|2-samuel)-\d{2}-(?:opening-)?v\d+)\.webp$/);
   assert(!result[src],'Duplicate hosted artwork');
   const bytes=fs.readFileSync('src'+src);assert(bytes.length>0&&bytes.length<250000);
   result[src]={url:'https://raw.githubusercontent.com/kev-mac/biblelens/'+manifest.sourceCommit+'/src'+src,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};
@@ -15,10 +15,10 @@ export function hostedArtwork() {
  const images=JSON.parse(fs.readFileSync('data/chapter-images.json','utf8'));
  const expected=Object.entries(images).flatMap(([key,entries])=>{
   const book=Number(key.split(':')[0]);
-  if(book>=1&&book<=6)return entries.map(art=>art.src);
+  if(book>=1&&book<=9)return entries.map(art=>art.src);
   if(book===0)return entries.filter(art=>art.afterVerse===0||/-v[2-9]\d*\.webp$/.test(art.src)).map(art=>art.src);
   return [];
  });
- assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every new Genesis and Exodus–Judges chapter image uses the checked public source');
+ assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every new Genesis and Exodus–2 Samuel chapter image uses the checked public source');
  return result;
 }

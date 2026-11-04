@@ -17,7 +17,13 @@ const source=fs.readFileSync('src/stories.js','utf8');
 vm.runInContext(source.slice(0,source.indexOf('let storiesActive=')).replace('/*__STORY_IMAGES__*/{}',JSON.stringify(stories)),context);
 vm.runInContext(reader.slice(0,reader.indexOf('let selectedVerses=')),context);
 const originFetch=globalThis.fetch;
-globalThis.fetch=async()=>{throw Error('1 Samuel artwork must be available without external image fetches');};
+const pinned=json('data/hosted-artwork.json');
+globalThis.fetch=async(url,options)=>{
+ const prefix='https://raw.githubusercontent.com/kev-mac/biblelens/'+pinned.sourceCommit+'/src';
+ assert(String(url).startsWith(prefix));const src=String(url).slice(prefix.length);assert(pinned.assets.includes(src));
+ assert.deepEqual(options.headers,{accept:'image/webp'});
+ return new Response(fs.readFileSync('src'+src),{headers:{'content-type':'image/webp'}});
+};
 let openers=0,storyOpeners=0;
 try {
  for(let chapter=1;chapter<=31;chapter++){
