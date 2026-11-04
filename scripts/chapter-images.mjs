@@ -5,7 +5,8 @@ import zlib from 'node:zlib';
 export const illustratedBooks=new Map([
  [0,['Genesis',50]],[1,['Exodus',40]],[2,['Leviticus',27]],
  [3,['Numbers',36]],[4,['Deuteronomy',34]],[5,['Joshua',24]],
- [6,['Judges',21]],[7,['Ruth',4]],[8,['1 Samuel',31]],[9,['2 Samuel',24]]
+ [6,['Judges',21]],[7,['Ruth',4]],[8,['1 Samuel',31]],[9,['2 Samuel',24]],
+ [14,['Ezra',10]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 

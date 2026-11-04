@@ -1,0 +1,105 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-11-04",
+  "accepted": [
+    {
+      "output": "story-cyrus-s-decree-and-the-return-v2.webp",
+      "original": "/workspace/generated_images/exec-e6c4d4d7-d3b7-4ee5-8484-ebaac23e5689.png",
+      "review": "Native-resolution original and final reviewed against v1. Foreground faces, curly hair, complexions, builds, travel relationships, hands, limbs and visible donkey anatomy remain compatible; the completed distant temple is replaced by ruins. No new named portrait.",
+      "bytes": 197002,
+      "sha256": "e47394390e424df1021a4beaa9925f0d7f401b98ec5ed688ab1a5eafb889a6bb",
+      "actualFilesSuppliedToImageTool": true,
+      "referenceRoles": [
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/story-cyrus-s-decree-and-the-return-v1.webp",
+          "role": "existing scene/people/setting continuity"
+        },
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only"
+        }
+      ]
+    },
+    {
+      "output": "chapter-ezra-02-opening-v1.webp",
+      "original": "/workspace/generated_images/exec-9e87af70-e31f-4793-a0e3-f0ca2af1799b.png",
+      "review": "No people or animals. Returning household possessions and rebuilding gifts are grounded in Ezra 2:68-70. Imagined objects, not an exact inventory.",
+      "bytes": 120382,
+      "sha256": "cf96760cd3faed78336c645b880523d815e88f5ecb7a33731c83625b0847b216",
+      "actualFilesSuppliedToImageTool": true,
+      "referenceRoles": [
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only"
+        }
+      ]
+    },
+    {
+      "output": "chapter-ezra-06-opening-v1.webp",
+      "original": "/workspace/generated_images/exec-a6c72de2-6266-4ad9-8a4c-723a1e59327f.png",
+      "review": "No people or animals. Archive record illustrates Ezra 6:1-5. Blank parchment avoids fabricated legible source text; room is imagined.",
+      "bytes": 111780,
+      "sha256": "caa0dd16859e52445239ed7a32f5b60165405423a1d2103a3441ef55840c0a02",
+      "actualFilesSuppliedToImageTool": true,
+      "referenceRoles": [
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only"
+        }
+      ]
+    },
+    {
+      "output": "chapter-ezra-08-opening-v1.webp",
+      "original": "/workspace/generated_images/exec-0dd958e6-d2c9-4c24-824a-bccb0d1b3f45.png",
+      "review": "No people or animals. Balance, sample vessels and packing introduce Ezra 8:24-30; image does not enumerate the total offering or imply these few vessels are all the gifts.",
+      "bytes": 161266,
+      "sha256": "73276f046dea9a549ff8f13469b3bd501df79cd31a3eccc5a513cdc972493fed",
+      "actualFilesSuppliedToImageTool": true,
+      "referenceRoles": [
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only"
+        }
+      ]
+    },
+    {
+      "output": "chapter-ezra-10-opening-v2.webp",
+      "original": "/workspace/generated_images/exec-957732b6-edf9-4eec-ba58-920dbc44ff41.png",
+      "review": "Native-resolution original and final reviewed. Seated rear-view rain assembly matches Ezra 10:9; no identifiable named portrait or new face assignment. No clear visible malformed anatomy; covered hands and seated legs cannot be inspected. Simple edge-of-frame temple doorway is compatible with retained completed-temple art.",
+      "bytes": 135260,
+      "sha256": "1f4ae4b37af3afbefcbc5ea767370e3083be73a7dbbd69b459cd58c8ec75b18d",
+      "actualFilesSuppliedToImageTool": true,
+      "referenceRoles": [
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-ezra-10-opening-v1.webp",
+          "role": "rejected draft to edit"
+        },
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/story-ezra-and-mixed-marriages-v1.webp",
+          "role": "existing scene/people/setting continuity"
+        },
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/story-the-temple-completed-v1.webp",
+          "role": "existing scene/people/setting continuity"
+        },
+        {
+          "path": "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "style only"
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "original": "/workspace/generated_images/exec-03744037-08ac-4d5e-a706-1addc92122e3.png",
+      "temporaryWebP": "/workspace/biblelens-ezra/src/assets/chapter-ezra-10-opening-v1.webp",
+      "inputs": [
+        "/workspace/biblelens-ezra/src/assets/story-ezra-and-mixed-marriages-v1.webp",
+        "/workspace/biblelens-ezra/src/assets/story-ezra-comes-to-jerusalem-v1.webp",
+        "/workspace/biblelens-ezra/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "reason": "Dominant monumental colonnaded temple changed setting scale. Replaced with v2; temporary untracked WebP removed after image tool used it, generated original retained."
+    }
+  ],
+  "processing": "Pillow used only for final Lanczos sizing and WebP encoding at quality 83; all artwork generation and edits used image_gen.imagegen. Chapter files 960x540; Story file 1200x675. No paid API calls or new credentials."
+}
