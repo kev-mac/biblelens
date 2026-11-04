@@ -1,0 +1,16 @@
+
+> scripture-lens@1.1.0 check:release
+> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs
+
+PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.
+PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.
+PASS: local browser previews make no published-release request, while native localhost still checks for updates.
+PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.
+PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.
+PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.
+PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
