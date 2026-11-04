@@ -45,6 +45,7 @@ export const illustratedBooks=new Map([
  [39,['Matthew',28]],
  [40,['Mark',16]],
  [41,['Luke',24]],
+ [42,['John',21]],
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
