@@ -66,6 +66,7 @@ export const illustratedBooks=new Map([
  [60,['2 Peter',3]],
  [61,['1 John',5]],
  [62,['2 John',1]],
+ [63,['3 John',1]],
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 

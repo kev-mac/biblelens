@@ -1,0 +1,17 @@
+{
+  "chapter": "63:1",
+  "verses": 14,
+  "editionPresenceAndValues": "exact KJV/ASV/WEB",
+  "hostedSourceNativeParity": 1016,
+  "fixtureCalls": 1,
+  "newImageSha256": "e0a7943fa470c8654c6ccb407e9f2f6baa202cdde071d83d8e21ae7c6ad9d5d6",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "403996b097157a7865d9bad96e5e915e4c26e52c12bf55b8abcc6c1715317169"
+  },
+  "workerBytes": 63920251,
+  "workerLimit": 66060288,
+  "actualNetworkCalls": 0,
+  "note": "Controlled local Worker fixture; actual immutable-origin network hashes are in public-origin.json. Candidate live Site not verified."
+}

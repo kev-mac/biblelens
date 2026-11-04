@@ -1,0 +1,113 @@
+{
+  "book": "3 John",
+  "readerId": 63,
+  "chapters": 1,
+  "generated": 1,
+  "retained": 0,
+  "replaced": 0,
+  "priorChapterImages": [],
+  "priorStoryPlacements": [],
+  "scene": {
+    "text": "3 John 1:5–8",
+    "theme": "Hospitality and support for travelers",
+    "image": "src/assets/chapter-3-john-01-opening-v1.webp",
+    "original": "/workspace/generated_images/exec-aab50dd0-1812-46fb-9fe7-729bd8b3381a.png",
+    "tool": "image_gen.imagegen",
+    "actualInputs": [
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "role": "style only, never identity"
+      }
+    ],
+    "people": [],
+    "identityReferences": [],
+    "review": "Original 1672×941 PNG and final 960×540 WebP inspected at original size; full-size side-by-side Genesis style comparison. Coherent bread, pottery handles/rims, door, bench, table, baskets and folded linen. No visible text/signature, people or animals. Imagined hospitality motif, not a reconstruction of Gaius’s home. No hidden anatomy certified.",
+    "sha256": "e0a7943fa470c8654c6ccb407e9f2f6baa202cdde071d83d8e21ae7c6ad9d5d6",
+    "bytes": 135906
+  },
+  "newAlt": "Imagined scene: Bread and water await guests beside an open door. A green path leads toward distant hills.",
+  "readability": {
+    "grade": 4.964444444444446,
+    "tooLong": false,
+    "unexplained": false,
+    "counts": [
+      {
+        "term": "Brenton",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "Septuagint",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "WLC",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "Masoretic",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "Tischendorf",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "Textus Receptus",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "manuscript",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "witness",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "harmoniz",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "recension",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "ordinal",
+        "count": 0,
+        "unexplained": false
+      },
+      {
+        "term": "calibration",
+        "count": 0,
+        "unexplained": false
+      }
+    ]
+  },
+  "crossBatchDependencies": [
+    "No new portrait depends on unpublished artwork.",
+    "Recompute 2 John/3 John/Jude spacing and visual boundaries after final-six union; sibling art absent here.",
+    "Union preceding Colossians–1 Peter branches and final-six metadata/assets; push complete union commit, repin, rerun every hash.",
+    "Build 344 device launches remain locked/pending in inherited report."
+  ],
+  "browser": {
+    "status": "not run",
+    "reason": "Managed environment lacks callable cua_repl.js; no substitute browser or download used"
+  },
+  "live": {
+    "status": "denied",
+    "action": "GET https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "reason": "Environment proxy CONNECT HTTP 403",
+    "retried": false
+  },
+  "scope": "Branch only, no main merge/publication/signing/install/build increment"
+}
