@@ -49,6 +49,7 @@ export const illustratedBooks=new Map([
  [43,['Acts',28]],
  [44,['Romans',16]],
  [45,['1 Corinthians',16]],
+ [46,['2 Corinthians',13]],
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 

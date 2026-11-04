@@ -1,0 +1,64 @@
+{
+  "book": "2 Corinthians",
+  "readerId": 46,
+  "chapters": 13,
+  "acceptedNewImages": 13,
+  "retainedBookImages": 0,
+  "replacedExistingImages": 0,
+  "inactiveRejectedNewVersions": 1,
+  "branch": "artwork/2-corinthians-2026-11-04",
+  "baseline": "6bd1f514ed876677ab0762695176dfb9d64dfa2e",
+  "publicPin": "da7f1bd2d8286f6fb4bd12d2d9a698a22daede05",
+  "hostedUnion": 913,
+  "publicBytes": 116280250,
+  "publicAllHashesMatch": true,
+  "workerBytes": 64327344,
+  "workerLimit": 66060288,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "fccf0b96792ef835285dc58cd05568d055f89b2532abb737560aa4aa8b265ce4"
+  },
+  "passed": [
+    "locked-install",
+    "build:mobile",
+    "check:images",
+    "check:mobile",
+    "check:release",
+    "check:readability (report-only)",
+    "book alt readability",
+    "check-stories",
+    "check-chapter-names",
+    "check-annotations",
+    "full-canon spacing both conventions",
+    "source and prior asset preservation",
+    "13-chapter actual offline engine with zero network",
+    "public-origin 913/913 exact bytes/hash",
+    "release:sites local packaging",
+    "git diff --check"
+  ],
+  "neverRun": [
+    "managed browser smoke",
+    "phone/iPad viewport QA",
+    "release:verify",
+    "signed-app comparison",
+    "physical-device install/launch",
+    "physical-screen inspection"
+  ],
+  "blocked": [
+    {
+      "action": "Read live release identity",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "reason": "Proxy CONNECT HTTP 403 network-policy denial",
+      "outcome": "denied; stopped without retry or bypass"
+    },
+    {
+      "action": "Browser smoke and responsive layouts",
+      "target": "Managed Linux browser route",
+      "reason": "No callable supported cua_repl.js tool supplied",
+      "outcome": "never run; no alternate control path attempted"
+    }
+  ],
+  "continuity": "No new identifiable people/groups or animals; no parallel portrait dependency",
+  "integration": "Union ten branches and create/push/verify a new immutable asset union pin before publication; recheck adjacent book boundaries."
+}
