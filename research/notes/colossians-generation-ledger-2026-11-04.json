@@ -1,0 +1,114 @@
+[
+  {
+    "chapter": 1,
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-2b955f02-a15f-40a0-9f7b-633c51545f1b.png",
+    "originalSize": [
+      1672,
+      941
+    ],
+    "actualStyleInput": "/workspace/colossians/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInput": null,
+    "accepted": true,
+    "src": "src/assets/chapter-colossians-01-opening-v1.webp",
+    "sha256": "1830479a70238d8cfdb03d3f3e73e462bd57ab852cc80cbd94796a7a8413292c",
+    "bytes": 148908,
+    "conversion": "Pillow LANCZOS 960x540, WebP quality 83 method 6; no content edits",
+    "textAnchor": "Colossians 1:6,10 — bearing fruit",
+    "originalSha256": "b17041de3c6634ec77ec3d06bf0fbeff7ebcc0687328d0cabd732678ca77cd24",
+    "review": {
+      "originalResolutionViewed": true,
+      "actualStyleReferenceComparedSideBySide": true,
+      "neighboringActiveImagesCompared": true,
+      "namedPeople": 0,
+      "animals": 0,
+      "handsLimbs": "No people present; no anatomy claim needed",
+      "visibleObjects": "Coherent branches, roots, garments, pottery and salt; no definite lettering/signature or object defect found",
+      "comparisonEvidence": "/workspace/colossians-evidence/compare-style-1.png"
+    }
+  },
+  {
+    "chapter": 2,
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-5b5a586c-4f4d-40f3-b4a9-089cfa0be5b6.png",
+    "originalSize": [
+      1672,
+      941
+    ],
+    "actualStyleInput": "/workspace/colossians/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInput": null,
+    "accepted": true,
+    "src": "src/assets/chapter-colossians-02-opening-v1.webp",
+    "sha256": "cb5d8e65375472b77379d5d27b8bd12387a40676756d6b6a8abfafe22b5c8fd9",
+    "bytes": 166854,
+    "conversion": "Pillow LANCZOS 960x540, WebP quality 83 method 6; no content edits",
+    "textAnchor": "Colossians 2:7 — rooted and built up",
+    "originalSha256": "1fd2f5da5da3e60773a4feeb278e1f706d4a958b26e68c29c20cbd91a0cc9b5e",
+    "review": {
+      "originalResolutionViewed": true,
+      "actualStyleReferenceComparedSideBySide": true,
+      "neighboringActiveImagesCompared": true,
+      "namedPeople": 0,
+      "animals": 0,
+      "handsLimbs": "No people present; no anatomy claim needed",
+      "visibleObjects": "Coherent branches, roots, garments, pottery and salt; no definite lettering/signature or object defect found",
+      "comparisonEvidence": "/workspace/colossians-evidence/compare-style-2.png"
+    }
+  },
+  {
+    "chapter": 3,
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-6c0635b2-7b94-4e93-860a-ff32e50408b9.png",
+    "originalSize": [
+      1672,
+      941
+    ],
+    "actualStyleInput": "/workspace/colossians/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInput": null,
+    "accepted": true,
+    "src": "src/assets/chapter-colossians-03-opening-v1.webp",
+    "sha256": "3a33967473e9d3c54c7f1e143b9d5a77df248aac825909aed7148240910b8fd9",
+    "bytes": 91312,
+    "conversion": "Pillow LANCZOS 960x540, WebP quality 83 method 6; no content edits",
+    "textAnchor": "Colossians 3:10–14 — put on kindness/love; clothing as visual metaphor",
+    "originalSha256": "346a06a84771f67ab30057aabf4a652accf8144772d6de794af68122ed49ebe1",
+    "review": {
+      "originalResolutionViewed": true,
+      "actualStyleReferenceComparedSideBySide": true,
+      "neighboringActiveImagesCompared": true,
+      "namedPeople": 0,
+      "animals": 0,
+      "handsLimbs": "No people present; no anatomy claim needed",
+      "visibleObjects": "Coherent branches, roots, garments, pottery and salt; no definite lettering/signature or object defect found",
+      "comparisonEvidence": "/workspace/colossians-evidence/compare-style-3.png"
+    }
+  },
+  {
+    "chapter": 4,
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-bfbfb02f-de96-4e6d-b75d-e1fdc64002e7.png",
+    "originalSize": [
+      1672,
+      941
+    ],
+    "actualStyleInput": "/workspace/colossians/src/assets/chapter-genesis-07-opening-v1.webp",
+    "identityInput": null,
+    "accepted": true,
+    "src": "src/assets/chapter-colossians-04-opening-v1.webp",
+    "sha256": "0d2b72b8379a137555dbcb0139fc6ff18b80dc670bf47a0973979a8f8a044464",
+    "bytes": 90166,
+    "conversion": "Pillow LANCZOS 960x540, WebP quality 83 method 6; no content edits",
+    "textAnchor": "Colossians 4:6 — speech seasoned with salt; no literal event claimed",
+    "originalSha256": "9a33c84131c4523bb158d7f0d52ad4f367a4b4274c7c421c81cc28f60ba4150f",
+    "review": {
+      "originalResolutionViewed": true,
+      "actualStyleReferenceComparedSideBySide": true,
+      "neighboringActiveImagesCompared": true,
+      "namedPeople": 0,
+      "animals": 0,
+      "handsLimbs": "No people present; no anatomy claim needed",
+      "visibleObjects": "Coherent branches, roots, garments, pottery and salt; no definite lettering/signature or object defect found",
+      "comparisonEvidence": "/workspace/colossians-evidence/compare-style-4.png"
+    }
+  }
+]

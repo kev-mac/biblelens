@@ -1,0 +1,36 @@
+{
+  "buildMobile": "passed",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "c44f94b0984b3bc4950f6cafe197c977b8e3c86ab2598c1b912c6db680fd130b"
+  },
+  "workerBytes": 63921868,
+  "workerLimit": 66060288,
+  "workerHeadroom": 2138420,
+  "newImageBytes": 497240,
+  "registeredChapters": 1111,
+  "checks": {
+    "passed": 61,
+    "not-run": 1,
+    "completed-report-only": 1
+  },
+  "liveAccess": {
+    "action": "HEAD request",
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "status": "denied",
+    "reason": "Network proxy CONNECT HTTP 403",
+    "retried": false,
+    "autoApprovalReviewRejection": false
+  },
+  "browser": {
+    "status": "not-run",
+    "reason": "Managed Linux with no supported callable cua_repl.js; no substitute browser or preview server used"
+  },
+  "publicationSigningDevices": {
+    "status": "not-run",
+    "reason": "Reserved for coordinated release by delegation scope; old locked build-344 launches remain with coordinator"
+  },
+  "altMeanGrade": 3.1513636363636373,
+  "evidenceRoot": "/workspace/colossians-evidence"
+}
