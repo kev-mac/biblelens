@@ -1,6 +1,6 @@
 # Daniel artwork audit — 2026-11-04
 
-Daniel only. Branch: `artwork/daniel-openers-2026-11-04`, based on canonical GitHub main `846ba46` after fetching. Read AGENTS.md, RELEASING.md, CLAUDE.md, the combined ten-book review, build 341 release verification and the relevant 2 Kings continuity audit before editing. No main push, merge, publication, installation, build-number change, paid API call or credential creation occurred. The seven images were made with the provided image tool.
+Daniel only. Branch: `artwork/daniel-openers-2026-11-04`, based on canonical GitHub main `846ba46` after fetching. Read AGENTS.md, RELEASING.md, CLAUDE.md, the combined ten-book review, build 341 release verification and the relevant 2 Kings continuity audit before editing. No main push, merge, publication, installation, build-number change, paid API call or API-key creation occurred. Existing Sites source access was refreshed for the mirror inspection workflow. The seven images were made with the provided image tool.
 
 ## Opening coverage
 
