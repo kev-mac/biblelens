@@ -1,0 +1,45 @@
+{
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "book": 64,
+  "name": "Jude",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": 25,
+      "existingChapterImages": [],
+      "existingStoryPlacements": [],
+      "newOpener": "/assets/chapter-jude-01-opening-v1.webp",
+      "afterVerse": 0,
+      "anchor": "Jude 1:12\u201313 literary reefs/waves"
+    }
+  ],
+  "recurringPortraitsAdded": [],
+  "excludedNamedPortrayals": [
+    "Jude",
+    "James",
+    "Jesus",
+    "Moses",
+    "Michael",
+    "devil",
+    "Cain",
+    "Balaam",
+    "Korah",
+    "Enoch"
+  ],
+  "identityConclusion": "Names and references are not visible identities. No new human or group is portrayed. No unpublished sibling asset used.",
+  "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "continuitySources": [
+    "research/notes/build-344-release-verification-2026-11-04.md",
+    "research/notes/mark-philippians-combined-review-2026-11-04.md",
+    "research/notes/matthew-visual-continuity-audit-2026-11-04.md",
+    "research/notes/matthew-continuity-inventory-2026-11-04.json",
+    "research/notes/acts-visual-continuity-audit-2026-11-04.md",
+    "research/notes/acts-continuity-inventory-2026-11-04.json"
+  ],
+  "boundaryDependencies": {
+    "3 John/Jude": "No 3 John image present on published main; pending final-six union",
+    "Jude/Revelation": "No Revelation image present on published main; pending final-six union",
+    "previousBatch": "Colossians\u20131 Peter 49 unpublished chapters remain external; no coverage imported",
+    "nearestAvailable": "Hebrews 8:6 topical Jeremiah Story \u2192 Jude opener, distance 574/575; no active following image on current main"
+  }
+}
