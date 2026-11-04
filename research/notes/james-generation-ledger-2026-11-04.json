@@ -1,0 +1,101 @@
+{
+  "tool": "image_gen.imagegen",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "identityInputs": [],
+  "generatedCalls": 8,
+  "accepted": 5,
+  "records": [
+    {
+      "chapter": 1,
+      "path": "/workspace/generated_images/exec-6a82262b-3164-464b-9c5c-6a72c4597334.png",
+      "original": "/workspace/generated_images/exec-6a82262b-3164-464b-9c5c-6a72c4597334.png",
+      "prompt": "James 1 wind-driven waves; actual Genesis 7 style-only reference supplied",
+      "repairs": [],
+      "src": "/assets/chapter-james-01-opening-v1.webp",
+      "bytes": 90490,
+      "sha256": "b0ec7b0d8f68810ba1f743a377bf59a3e74bbc3f12240274ce142b45be8cbe64",
+      "dimensions": [
+        960,
+        540
+      ],
+      "fullSizeReview": "Accepted after original-resolution review; no visible identifiable people or animals; no remaining lettering/signature found."
+    },
+    {
+      "chapter": 2,
+      "path": "/workspace/generated_images/exec-ed60effe-32ee-40fa-be52-94fa93141c53.png",
+      "original": "/workspace/generated_images/exec-8739d9a2-f8a9-4910-8372-f271be04d6b1.png",
+      "prompt": "Create a new BibleLens chapter opener, widescreen 16:9. Supplied Genesis 7 image is ONLY the style reference: grounded natural light, believable materials, restrained illustrative finish. Do not copy its people, ark or animals. James 2:15\u201316: a still-life of a simple folded wool cloak, a few barley flatbreads and a clay water jug on a low wooden bench beside an open stone doorway. Soft green courtyard light and muted red cloth. The objects evoke practical care for people lacking clothes and daily food; no people visible. No identifiable recurring figures, letters, text, signatures, numbers or watermarks. Natural varied color, not cartoon or glossy photographic. Imagined literary motif, not an exact archaeological reconstruction.",
+      "repairs": [
+        {
+          "path": "/workspace/generated_images/exec-a40ada39-0c14-4f77-b6f1-9f63b80ec26b.png",
+          "prompt": "Edit this illustration only to remove the faint signature-like white scribble at the extreme bottom-left corner. Restore the underlying natural surface in that tiny region. Preserve every other object, geometry, lighting, color and composition. No text, lettering, signature or watermark anywhere. Actual Genesis 7 second input is style-only, not identity.",
+          "input": "/workspace/generated_images/exec-8739d9a2-f8a9-4910-8372-f271be04d6b1.png"
+        },
+        {
+          "path": "/workspace/generated_images/exec-ed60effe-32ee-40fa-be52-94fa93141c53.png",
+          "prompt": "Remove the entire pale scribbled signature at coordinates approximately x=15..75, y=900..933 in this 1672x941 image, bottom left on the grey stone floor. Paint that complete small region with plain grey stone texture matching the adjacent floor. This is mandatory: no white scribble or watermark must remain. Keep bread, cloak, jug, doorway and bench. No other text or signature.",
+          "input": "/workspace/generated_images/exec-a40ada39-0c14-4f77-b6f1-9f63b80ec26b.png"
+        }
+      ],
+      "src": "/assets/chapter-james-02-opening-v1.webp",
+      "bytes": 113480,
+      "sha256": "5a63a12115cb5bb2af96800bfa7bae6252451908f492f05efadb30d1077368b1",
+      "dimensions": [
+        960,
+        540
+      ],
+      "fullSizeReview": "Accepted after original-resolution review; no visible identifiable people or animals; no remaining lettering/signature found."
+    },
+    {
+      "chapter": 3,
+      "path": "/workspace/generated_images/exec-1b8f0461-8457-40bd-b922-8098c7604574.png",
+      "original": "/workspace/generated_images/exec-d35bd76d-9ff4-477b-adee-6e3eb7a928f5.png",
+      "prompt": "Create a new BibleLens chapter opener, widescreen 16:9. Supplied Genesis 7 image is ONLY the style reference: grounded natural light, believable materials, restrained illustrative finish. Do not copy its people, ark or animals. James 3:4\u20135: close view of a small wooden steering rudder fixed coherently to the stern of an ancient Mediterranean merchant vessel, ropes and weathered timber, blue sea beyond in clear daylight. Most of the vessel is off-frame. No people or animals. Focus on the small rudder steering a vessel, not a modern wheel or engine. No identifiable recurring figures, letters, text, signatures, numbers or watermarks. Natural varied color, not cartoon or glossy photographic. Imagined literary motif, not an exact archaeological reconstruction.",
+      "repairs": [
+        {
+          "path": "/workspace/generated_images/exec-1b8f0461-8457-40bd-b922-8098c7604574.png",
+          "prompt": "Edit this illustration only to remove the faint signature-like white scribble at the extreme bottom-left corner. Restore the underlying natural surface in that tiny region. Preserve every other object, geometry, lighting, color and composition. No text, lettering, signature or watermark anywhere. Actual Genesis 7 second input is style-only, not identity.",
+          "input": "/workspace/generated_images/exec-d35bd76d-9ff4-477b-adee-6e3eb7a928f5.png"
+        }
+      ],
+      "src": "/assets/chapter-james-03-opening-v1.webp",
+      "bytes": 139982,
+      "sha256": "af0694b846387204ed03a9c1ce0314c2505d4cf7bb454e97c41316383c214f99",
+      "dimensions": [
+        960,
+        540
+      ],
+      "fullSizeReview": "Accepted after original-resolution review; no visible identifiable people or animals; no remaining lettering/signature found."
+    },
+    {
+      "chapter": 4,
+      "path": "/workspace/generated_images/exec-a765add9-4f54-492a-979b-361fa2e09658.png",
+      "original": "/workspace/generated_images/exec-a765add9-4f54-492a-979b-361fa2e09658.png",
+      "prompt": "Create a new BibleLens chapter opener, widescreen 16:9. Supplied Genesis 7 image is ONLY the style reference: grounded natural light, believable materials, restrained illustrative finish. Do not copy its people, ark or animals. James 4:14: a thin veil of pale morning mist rises over a quiet valley and begins to vanish as dawn light touches terraced hills and an empty winding path. Cool lavender shadows and fresh green plants. No people, buildings or animals. A restrained metaphor for life as brief vapor. No identifiable recurring figures, letters, text, signatures, numbers or watermarks. Natural varied color, not cartoon or glossy photographic. Imagined literary motif, not an exact archaeological reconstruction.",
+      "repairs": [],
+      "src": "/assets/chapter-james-04-opening-v1.webp",
+      "bytes": 113392,
+      "sha256": "a72e76c5bb3770b0e308a4db6bd490d6a1ffd27f5ccb95ed2f8fb90133cbb30f",
+      "dimensions": [
+        960,
+        540
+      ],
+      "fullSizeReview": "Accepted after original-resolution review; no visible identifiable people or animals; no remaining lettering/signature found."
+    },
+    {
+      "chapter": 5,
+      "path": "/workspace/generated_images/exec-6bf3b74f-2905-4e50-94e4-e4cf5a0ff419.png",
+      "original": "/workspace/generated_images/exec-6bf3b74f-2905-4e50-94e4-e4cf5a0ff419.png",
+      "prompt": "Create a new BibleLens chapter opener, widescreen 16:9. Supplied Genesis 7 image is ONLY the style reference: grounded natural light, believable materials, restrained illustrative finish. Do not copy its people, ark or animals. James 5:7: a small ancient grain field after rain, young grain plants with droplets, dark wet soil and distant olive-covered hills under a clearing blue-grey sky. No people or animals. Evokes patient waiting for rain and harvest, not a portrayal of Elijah or Job. No identifiable recurring figures, letters, text, signatures, numbers or watermarks. Natural varied color, not cartoon or glossy photographic. Imagined literary motif, not an exact archaeological reconstruction.",
+      "repairs": [],
+      "src": "/assets/chapter-james-05-opening-v1.webp",
+      "bytes": 144580,
+      "sha256": "91e9855930d0f2af2f9803835604b15df3f15715656bcf6551ba34f23f8b9e2b",
+      "dimensions": [
+        960,
+        540
+      ],
+      "fullSizeReview": "Accepted after original-resolution review; no visible identifiable people or animals; no remaining lettering/signature found."
+    }
+  ]
+}
