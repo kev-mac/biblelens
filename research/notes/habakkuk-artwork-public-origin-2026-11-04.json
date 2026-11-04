@@ -1,0 +1,31 @@
+{
+  "sourceCommit": "2dc6dc203184acb417407653e8befa511f5ccd44",
+  "images": [
+    {
+      "src": "/assets/chapter-habakkuk-01-opening-v1.webp",
+      "status": 200,
+      "bytes": 158382,
+      "sha256": "2495d73be7299007871600786f68e4c0eb020119c9e44de97f7a2069ed29efd0",
+      "sourceMatch": true,
+      "method": "curl via inherited HTTPS proxy; no cookies, credentials or private headers supplied"
+    },
+    {
+      "src": "/assets/chapter-habakkuk-02-opening-v1.webp",
+      "status": 200,
+      "bytes": 107918,
+      "sha256": "ebb621848a883838255960584c78bfe26d7c333bf942400cd8d19ef87bb46ee1",
+      "sourceMatch": true,
+      "method": "curl via inherited HTTPS proxy; no cookies, credentials or private headers supplied"
+    },
+    {
+      "src": "/assets/chapter-habakkuk-03-opening-v1.webp",
+      "status": 200,
+      "bytes": 164002,
+      "sha256": "f5afff2db85bcd7432a2204da4a636ae7d69a979c463ac98b98df56642ba7f03",
+      "sourceMatch": true,
+      "method": "curl via inherited HTTPS proxy; no cookies, credentials or private headers supplied"
+    }
+  ],
+  "nodeFetch": "Failed with fetch failed; curl through configured proxy succeeded.",
+  "liveRelease": "Direct Node fetch failed; ordinary curl via proxy returned HTTP 403; not retried or bypassed."
+}
