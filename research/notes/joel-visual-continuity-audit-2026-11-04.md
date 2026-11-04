@@ -1,6 +1,6 @@
 # Joel chapter artwork — 2026-11-04
 
-Joel only: reader book ID 28, three chapters. Branch `artwork/joel-2026-11-04` starts from freshly fetched GitHub main `846ba46` (build 341). Read AGENTS.md, RELEASING.md, CLAUDE.md, the Psalms/Proverbs continuity audits, the combined ten-book review and the final build 341 release audit before editing. The task's explicit prohibition on publication, installation and new credentials overrides the ordinary release workflow. No merge, main push, build-number change, dependency/device installation, paid API call or new credential occurred.
+Joel only: reader book ID 28, three chapters. Branch `artwork/joel-2026-11-04` starts from freshly fetched GitHub main `846ba46` (build 341). Read AGENTS.md, RELEASING.md, CLAUDE.md, the Psalms/Proverbs continuity audits, the combined ten-book review and the final build 341 release audit before editing. The task's explicit prohibition on publication, installation and new credentials overrides the ordinary release workflow. No merge, main push, build-number change, device installation, paid API call or new credential occurred. A later parent follow-up explicitly authorized investigating and completing checks using locked dependencies from the official registry; that validation is recorded below.
 
 ## Coverage and scene review
 
@@ -39,7 +39,7 @@ Sites metadata confirms public version 330, consistent with the build 341 releas
 
 The live `/release.json` HEAD request failed with a destination-policy CONNECT 403. It was not retried or bypassed. That denial does not prevent the separate, permitted immutable GitHub-origin checks above. No current live byte, layout or release verification is claimed.
 
-`npm run build:mobile` failed before building: `ERR_MODULE_NOT_FOUND` for `esbuild`; this checkout has no `node_modules`. No dependency installation was attempted under the explicit no-install instruction. `npm run check:images` cannot start without `dist/server/index.js`. `npm run check:mobile` passes its chrome check, then cannot start its offline worker test without `www/index.html`. Web/mobile packaging, offline packaged-byte parity, the full image suite and a new Worker-size measurement remain pending in an authorized build environment.
+`npm run build:mobile` failed before building: `ERR_MODULE_NOT_FOUND` for `esbuild`; this checkout has no `node_modules`. No dependency installation was attempted under the explicit no-install instruction. `npm run check:images` cannot start without `dist/server/index.js`. `npm run check:mobile` passes its chrome check, then cannot start its offline worker test without `www/index.html`. These were the initial results; the authorized validation follow-up below resolves the dependency, build and packaged-check blockers.
 
 The environment reports `SITES_MANAGED_LINUX_CONTAINER=1`, but `cua_repl.js` is unavailable. The [Sites skill](skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/SKILL.md) explicitly says: “If `cua_repl.js` is unavailable, skip browser QA: do not start a preview server, install a browser, or improvise another browser-control path.” Consequently no preview server or alternate browser was launched. Phone/iPad viewport rendering, physical devices, signed assets and native install/launch checks remain unavailable.
 
@@ -47,8 +47,28 @@ The environment reports `SITES_MANAGED_LINUX_CONTAINER=1`, but `cua_repl.js` is 
 
 Asset commit `bf8044a020960e0b854b87d4b507456eec3e8f5d` is pushed only to this dedicated feature branch and supplies the immutable hosted-artwork pin. Its tree contains every previously hosted file plus the three new Joel files. The hosted allowlist and explicit book-ID coverage map add Joel only; IDs 20–27 and other sessions remain untouched. The unchanged shared build loops include these same assets in native output while the web Worker uses the established same-origin pinned public-image handler.
 
-Build 341's verified Worker was 64,747,604 bytes against 66,060,288 (1,312,684 bytes headroom). New images are hosted rather than embedded in that Worker. A current size has not been measured. Preserve the compressed self-contained Worker contract and recheck the budget after combining all sessions. Keep all images in shared source and the native offline bundle.
+Build 341's verified Worker was 64,747,604 bytes against 66,060,288 (1,312,684 bytes headroom). New images are hosted rather than embedded in that Worker. The authorized follow-up measured the current Worker at 64,701,734 bytes, leaving 1,358,554 bytes of headroom. Preserve the compressed self-contained Worker contract and recheck the budget after combining all sessions. Keep all images in shared source and the native offline bundle.
 
-Integrate chapter metadata by key, coverage entries by explicit ID, hosted filenames by set union, and all allowlist changes. Re-pin once to a pushed public commit containing the complete combined asset set; this branch's pin does not contain future parallel assets. Rebuild both outputs, run the complete image/mobile/release suites, verify offline bytes and layouts, and compare the Sites mirror/live release before any authorized publication. No new continuity blocker remains for the selected unpopulated scenes. Build, mirror, live and device verification are the remaining limits.
+Integrate chapter metadata by key, coverage entries by explicit ID, hosted filenames by set union, and all allowlist changes. Re-pin once to a pushed public commit containing the complete combined asset set; this branch's pin does not contain future parallel assets. Rebuild both outputs, run the complete image/mobile/release suites, verify offline bytes and layouts, and compare the Sites mirror/live release before any authorized publication. No new continuity blocker remains for the selected unpopulated scenes. Mirror, live and device verification remain unavailable; build, packaged image and offline mobile checks subsequently passed below.
 
 Git identity was verified against recent public repository history and set locally to `kev-mac <2168970+kev-mac@users.noreply.github.com>`. The inherited personal email was not used for commits. No automatic approval rejection occurred.
+
+
+## Authorized dependency and validation follow-up
+
+The parent requested: “Please investigate missing esbuild and finish available build/image/mobile checks if safely possible using documented locked dependencies and official registry.” No earlier installation denial had occurred. The environment's enforced policy allows `registry.npmjs.org`; every package URL in the version 3 lockfile uses that official host.
+
+`npm ci --ignore-scripts --no-audit --no-fund --fetch-retries=0 --registry=https://registry.npmjs.org --cache=/tmp/joel-npm-cache` succeeded. Lifecycle scripts were disabled. The locked esbuild 0.28.2 optional Linux binary successfully transformed a test input without an additional installation script. Neither `package.json` nor `package-lock.json` changed. No new credentials, network-policy change, browser installation or access bypass was used.
+
+All requested available suites now pass, with exit code 0:
+
+- `NODE_OPTIONS=--max-old-space-size=4096 npm run build:mobile`: shared web and offline mobile build, packaged retrieval, vocabulary/reference answers, chat understanding and startup/recovery checks passed.
+- `npm run check:images`: 276 Story records and all 662 registered chapters passed, including Joel 3/3, source/web/native bytes, placement, alt text, hidden generic captions, unchanged scripture and missing-opener failure cases. The inherited 1 Samuel 7 opener → verse 2 Story close pair is reported and unchanged; it does not involve Joel.
+- `npm run check:mobile`: mobile chrome behavior and real packaged offline worker reading, comparisons, chat, citation provenance, abort/concurrent handling passed with zero external network calls. Native inference remains outside this check.
+- `npm run check:release`: release identity, Sites packaging and CSP, refresh/data preservation, embedded byte encoding and pinned public-artwork privacy/failure fallback passed.
+
+The final default compressed Worker is **64,701,734 bytes**, under the **66,060,288-byte** budget by **1,358,554 bytes**. All three Joel images match `src`, `dist/client` and `www` exactly. Generated web and mobile release metadata both report version 1.1.0, build 341, source fingerprint `0265035d263021d12e827fbfb6967f35432d221cfa1698a003b5160d98626dd4`. This fingerprint identifies the unpublished feature source; it is not a claim that live or installed devices match it.
+
+The JSON audit includes every command, exit code, local log path/hash, PASS output, asset hashes and release metadata. Initial failure logs remain under `/tmp`; follow-up logs have the `-followup.log` suffix. Generated build outputs and installed dependencies remain ignored local files. No application changes were needed to resolve the missing dependency.
+
+Still unavailable: Sites mirror comparison, live bytes after the respected CONNECT 403, managed-browser phone/iPad viewports, physical devices, native signing/install/launch. These are not implied by the successful offline worker or packaging tests. Combined-branch integration still requires a union asset pin, a new budget measurement and a spacing rerun. No publication or main merge/push occurred.
