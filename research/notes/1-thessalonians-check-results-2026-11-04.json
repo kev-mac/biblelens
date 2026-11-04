@@ -1,0 +1,103 @@
+{
+  "book": "1 Thessalonians",
+  "branch": "artwork/1-thessalonians-2026-11-04",
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "b94b3cabf8a66b9d1493f207ec5b3bf8c1cdb28be5b036cdf6e95aeec064297e"
+  },
+  "counts": {
+    "generated": 5,
+    "accepted": 5,
+    "replaced": 0,
+    "rejected": 0,
+    "retainedBookImages": 0,
+    "baselineAssetsPreserved": 1394,
+    "chapterOpeners": 5,
+    "chapters": 5,
+    "verses": 89,
+    "newBytes": 697150,
+    "registeredChapters": 1112,
+    "hostedAssets": 1020
+  },
+  "checks": {
+    "lockedRegistryInstall": "passed; 152 packages, unchanged manifests/lockfile",
+    "buildMobile": "passed",
+    "images": "passed",
+    "mobile": "passed",
+    "release": "passed",
+    "bookAudit": "passed",
+    "offlineEngine": "passed; zero network calls; exact source/web/offline edition presence and values",
+    "sourceWebOfflineImageBytes": "passed; web Worker image route exercised through controlled origin fixture; real immutable public origin separately passed",
+    "readability": "report-only exit 0 with inherited findings; not a strict corpus pass",
+    "newAlts": {
+      "averageFK": 4.4052527472527485,
+      "overlong": 0,
+      "jargon": 0,
+      "note": "Below 6–8 target band; retained plain accessible wording"
+    },
+    "aggregateContent": {
+      "exitCode": 1,
+      "status": "preceding content/readability/search checks passed; browser smoke infrastructure failure",
+      "target": "scripts/check-release-smoke.mjs Chromium launch",
+      "reason": "Missing chromium_headless_shell-1248 executable; no browser launched or preview server started"
+    },
+    "storyContent": "passed",
+    "storyTopics": "passed",
+    "workerPackaging": "passed",
+    "diffWhitespace": "passed",
+    "publicOrigin": {
+      "passed": true,
+      "pin": "8effd68a174b631c8ba402372070a63688b8e82c",
+      "matched": 1020,
+      "bytes": 131941110
+    },
+    "mirrorComparison": {
+      "passed": true,
+      "comparedProductionFiles": 1761,
+      "mirrorCommit": "8c9650c1d31364a2f573f1de390e085c9503b134"
+    },
+    "worker": {
+      "bytes": 63922515,
+      "limit": 66060288
+    },
+    "sourceBuiltReleaseIdentity": "passed"
+  },
+  "spacing": {
+    "coordinate0": {
+      "adjacent": 64,
+      "all": 65
+    },
+    "coordinate1": {
+      "adjacent": 69,
+      "all": 70
+    },
+    "newClosePairs": 0,
+    "neighborUnionReviewPending": true
+  },
+  "limits": [
+    {
+      "action": "Live release metadata request",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "state": "denied",
+      "reason": "Proxy CONNECT HTTP 403; stopped without retry/bypass"
+    },
+    {
+      "action": "Browser smoke and phone/iPad layout",
+      "state": "not run",
+      "reason": "No supported cua_repl.js/browser tool; aggregate smoke launch failed before browser creation"
+    },
+    {
+      "action": "Combined boundary/continuity review, union repin, publication, signing, installation and actual live/signed comparison",
+      "state": "pending coordinator",
+      "reason": "Intentional individual artwork-session boundary"
+    },
+    {
+      "action": "Build 344 physical-device launch",
+      "state": "left with coordinator",
+      "reason": "Inherited device-lock blocker; no device actions attempted here"
+    }
+  ],
+  "evidencePrefix": "research/notes/1-thessalonians-"
+}
