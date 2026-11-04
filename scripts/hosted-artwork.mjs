@@ -25,7 +25,7 @@ export function hostedArtwork() {
  const result={};
  assert.match(manifest.sourceCommit,/^[a-f0-9]{40}$/,'Pin public artwork to an immutable source commit');
  for(const src of manifest.assets){
-  if(!hostedStoryReplacements.includes(src))assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges|1-samuel|2-samuel|1-kings|2-kings|1-chronicles|2-chronicles|ezra|nehemiah|esther|job|proverbs|ecclesiastes|song-of-solomon|isaiah|jeremiah|lamentations|ezekiel|daniel|hosea|joel|amos|obadiah|jonah|micah|nahum|habakkuk|zephaniah|haggai|zechariah|malachi|matthew|mark|luke|john|acts|romans|1-corinthians|2-corinthians|galatians|ephesians|philippians)-\d{2}-(?:opening-)?v\d+|psalms-\d{3}-opening-v\d+)\.webp$/);
+  if(!hostedStoryReplacements.includes(src))assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges|1-samuel|2-samuel|1-kings|2-kings|1-chronicles|2-chronicles|ezra|nehemiah|esther|job|proverbs|ecclesiastes|song-of-solomon|isaiah|jeremiah|lamentations|ezekiel|daniel|hosea|joel|amos|obadiah|jonah|micah|nahum|habakkuk|zephaniah|haggai|zechariah|malachi|matthew|mark|luke|john|acts|romans|1-corinthians|2-corinthians|galatians|ephesians|philippians|philemon)-\d{2}-(?:opening-)?v\d+|psalms-\d{3}-opening-v\d+)\.webp$/);
   assert(!result[src],'Duplicate hosted artwork');
   const bytes=fs.readFileSync('src'+src);assert(bytes.length>0&&bytes.length<250000);
   result[src]={url:'https://raw.githubusercontent.com/kev-mac/biblelens/'+manifest.sourceCommit+'/src'+src,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};
