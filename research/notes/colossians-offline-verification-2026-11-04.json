@@ -1,0 +1,43 @@
+{
+  "chapters": 4,
+  "verseCount": 95,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "exactScripture": true,
+  "sourceBlanks": [],
+  "networkCalls": 0,
+  "results": [
+    {
+      "key": "50:1",
+      "verses": 29,
+      "src": "/assets/chapter-colossians-01-opening-v1.webp",
+      "bytes": 148908,
+      "sha256": "1830479a70238d8cfdb03d3f3e73e462bd57ab852cc80cbd94796a7a8413292c"
+    },
+    {
+      "key": "50:2",
+      "verses": 23,
+      "src": "/assets/chapter-colossians-02-opening-v1.webp",
+      "bytes": 166854,
+      "sha256": "cb5d8e65375472b77379d5d27b8bd12387a40676756d6b6a8abfafe22b5c8fd9"
+    },
+    {
+      "key": "50:3",
+      "verses": 25,
+      "src": "/assets/chapter-colossians-03-opening-v1.webp",
+      "bytes": 91312,
+      "sha256": "3a33967473e9d3c54c7f1e143b9d5a77df248aac825909aed7148240910b8fd9"
+    },
+    {
+      "key": "50:4",
+      "verses": 18,
+      "src": "/assets/chapter-colossians-04-opening-v1.webp",
+      "bytes": 90166,
+      "sha256": "0d2b72b8379a137555dbcb0139fc6ff18b80dc670bf47a0973979a8f8a044464"
+    }
+  ],
+  "webOrigin": "Local generated Worker fixture with pinned source-origin byte responses; not live/public-origin verification"
+}
