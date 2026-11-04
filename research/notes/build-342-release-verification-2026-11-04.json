@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "buildNumber": 342,
+  "sourceHash": "e82366ea9caf6c5f5afedfae277d349c6a0b161298693bcc23dd2f6937fc0051",
+  "sitesVersion": 331,
+  "sitesSourceCommit": "ca12233182d18ffcb68960c469dac0722fd93b85",
+  "canonicalSourceCommit": "49b8e9d14710cf2f1747263eeb8d66cf5f680b6c",
+  "deploymentId": "appgdep_6aeab13aebc88191acfb3b46cc0baa1e",
+  "deploymentStatus": "succeeded",
+  "sitesSavedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_71b85b09ae748191981eda0e4ba10374",
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "archiveSha256": "3bb53511a7429bc58b03c0e5cb231fb060ce79a0af3c3e184275a1789a294cac",
+  "sitesArchiveContentHash": "sha256:9e6db09221ee73f24b33240e59fd3dd2623b66f2f1f0fd21376c8a9f5d106104",
+  "workerBytes": 64472233,
+  "workerBudgetBytes": 66060288,
+  "workerHeadroomBytes": 1588055,
+  "signedFilesMatchingWww": 1251,
+  "strictCodesign": "passed",
+  "releaseVerify": "passed",
+  "viewportRenders": 504,
+  "publicOriginAssetsVerified": 843,
+  "liveChaptersVerified": 888,
+  "batchChaptersVerified": 229,
+  "liveImagesVerified": 1142,
+  "liveImageBytesCompared": 141138892,
+  "allImagesServedFromSiteOrigin": true,
+  "preservedBaselineAssets": 991,
+  "preservedStashes": 4,
+  "devices": {
+    "iphone": {
+      "model": "iPhone 16 Pro",
+      "version": "1.1.0",
+      "buildNumber": 342,
+      "install": "success",
+      "activatedLaunch": "success",
+      "runningAfterLaunch": true
+    },
+    "ipad": {
+      "model": "iPad mini (A17 Pro)",
+      "version": "1.1.0",
+      "buildNumber": 342,
+      "install": "success",
+      "activatedLaunch": "success",
+      "runningAfterLaunch": true
+    }
+  },
+  "status": "complete",
+  "remainingBlockers": [],
+  "limits": [
+    "Physical-device screen appearance was not directly inspected; responsive browser viewports and device launch/process checks passed.",
+    "Inherited readability findings remain report-only; existing 1 Samuel 7 close pair is preserved."
+  ],
+  "recovery": [
+    "macOS Documents read stalls resolved with isolated local checkout; no original source/stashes erased.",
+    "Interrupted build/diagnostic outcomes were checked and resumed.",
+    "Smoke fixture remote-artwork download contention fixed with pinned local bytes while retaining all search/security assertions; real public-origin verification remained separate.",
+    "The separate Python release.json probe returned HTTP 403 and was not retried. The documented release:verify succeeded, and independent Node chapter/image endpoint reads verified the complete live bytes without identity/header/bypass changes.",
+    "An initial live Numbers 13 read returned HTTP 500; bounded transient-error retry/resume completed the audit.",
+    "iPad launch was initially denied while locked. Read-only lock state then showed passcodeRequired false, and Kevin requested a retry; activation and running-process verification passed."
+  ]
+}
