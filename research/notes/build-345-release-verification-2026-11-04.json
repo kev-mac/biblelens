@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "buildNumber": 345,
+  "sourceHash": "ce07e66d251cb6a48c2a3956037afbb359cfcd87fcfd276f62b5d4d9465e9aed",
+  "status": "published and installed; unlocked-device launch verification pending",
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "sitesVersion": 334,
+  "sitesSourceCommit": "9b06fc437075f04620f661f5d5aaa8045b67ba61",
+  "canonicalReleaseSourceCommit": "ec82a5790ada69d62756846378412865fd01f0b3",
+  "sitesSavedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_2baf6fe9be708191bdeeb04a8e6ba5ae",
+  "deploymentId": "appgdep_6aeae8c8a2d48191820436a363687054",
+  "deploymentStatus": "succeeded",
+  "archiveSha256": "42cbc687f82089b0cf72c62652f2767c8b37b4ecdb8e9eb4a52c2482e47d4574",
+  "archiveStorage": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_00000000290481fd84cb4e081458006c",
+    "content_hash": "sha256:5419a12a9c6cbb57ac003cd0824cbdbe17f8a8ebbcf7cb4dbfff2cd9259ac4ed",
+    "size_bytes": 64020480,
+    "file_count": 5
+  },
+  "workerBytes": 64011816,
+  "workerBudgetBytes": 66060288,
+  "workerHeadroomBytes": 2048472,
+  "booksWithOpeningCoverage": 66,
+  "chaptersWithOpeningCoverage": 1189,
+  "newBooks": 16,
+  "newOpeners": 82,
+  "remainingBooksToIllustrate": 0,
+  "hostedAssetsVerified": 1097,
+  "publicOriginBytes": 141322700,
+  "preservedBaselineAssetFiles": 1394,
+  "currentSourceAssetFiles": 1476,
+  "preservedStashes": 4,
+  "checks": {
+    "releasePrepare": true,
+    "releaseVerify": true,
+    "imageCoverage": true,
+    "layouts": true,
+    "offlineCompleteCanon": true,
+    "publicOrigin": true,
+    "strictCodesign": true
+  },
+  "viewportRenders": 328,
+  "offline": {
+    "chaptersVerified": 1189,
+    "imagePlacementsVerified": 1398,
+    "networkCalls": 0,
+    "multipleExistingOpeners": [
+      {
+        "book": 0,
+        "chapter": 17,
+        "openerCount": 2,
+        "storyTitles": [
+          "Abrahamic Covenant",
+          "Abraham and Sarah\u2019s Covenant"
+        ]
+      }
+    ],
+    "editionEmptyFields": 27,
+    "editionMissingFields": 2
+  },
+  "offlineBatch": {
+    "chaptersVerified": 82,
+    "imagePlacementsVerified": 83,
+    "networkCalls": 0,
+    "editionEmptyFields": 0,
+    "editionMissingFields": 0
+  },
+  "liveChaptersVerified": 1189,
+  "liveImagesVerified": 1393,
+  "liveImageBytesCompared": 175226554,
+  "allImagesServedFromSiteOrigin": true,
+  "signedFilesMatchingWww": 1501,
+  "devices": {
+    "iphone": {
+      "model": "iPhone 16 Pro",
+      "install": "success",
+      "version": "1.1.0",
+      "buildNumber": 345,
+      "passcodeRequired": true,
+      "launch": "pending manual unlock; not retried while the known lock persists",
+      "launchAttemptThisBuild": false,
+      "runningAfterLaunch": "not verified"
+    },
+    "ipad": {
+      "model": "iPad mini (A17 Pro)",
+      "install": "success",
+      "version": "1.1.0",
+      "buildNumber": 345,
+      "passcodeRequired": true,
+      "launch": "pending manual unlock; not retried while the known lock persists",
+      "launchAttemptThisBuild": false,
+      "runningAfterLaunch": "not verified"
+    }
+  },
+  "remainingBlockers": [
+    {
+      "action": "Launch and verify com.scripturelens.app build 345",
+      "target": "iPhone 16 Pro",
+      "outcome": "pending; blocked by current device lock",
+      "reason": "Read-only device lockState reports passcodeRequired true. The prior build-344 launch was denied by SBMainWorkspace: Locked. No new evidence of unlock was received, so the known-denied operation was not repeated.",
+      "completed": "Build 345 installed successfully and installed version verified.",
+      "nextStep": "Manually unlock the device, then launch once with activation and verify its process."
+    },
+    {
+      "action": "Launch and verify com.scripturelens.app build 345",
+      "target": "iPad mini (A17 Pro)",
+      "outcome": "pending; blocked by current device lock",
+      "reason": "Read-only device lockState reports passcodeRequired true. The prior build-344 launch was denied by SBMainWorkspace: Locked. No new evidence of unlock was received, so the known-denied operation was not repeated.",
+      "completed": "Build 345 installed successfully and installed version verified.",
+      "nextStep": "Manually unlock the device, then launch once with activation and verify its process."
+    }
+  ],
+  "limits": [
+    "Physical-device screens were not directly inspected. Responsive browser rendering and native installed versions are verified separately from launch/process outcomes.",
+    "Inherited corpus readability remains report-only. New 82 alt descriptions average FK grade 5.856, zero overlong sentences and zero screened unexplained jargon.",
+    "Inherited near-pair ledgers remain 64 adjacent/65 all at opener coordinate 0, and 69/70 at coordinate 1. Genesis 17 retains its two verse-1 Story headings. No scripture or Story placement was moved.",
+    "The prior combined Gospel/Acts portrait reference limits remain; no new human portrait was generated or made an unconditional anchor."
+  ],
+  "recovery": [
+    "Initial release:prepare failed at native packaging with ENOSPC. Removed only previous task-generated dist/www/native copied public outputs and compiler caches; retained original source, four stashes, signed apps, exact archives and reports. Full release:prepare retry passed.",
+    "The expanded full-canon offline audit initially assumed exactly one opener globally. It found the inherited Genesis 17 two-Story pair. Corrected only the audit to preserve baseline pairs and require exactly one opener in all 82 new chapters; all 1189 chapter checks then passed.",
+    "The first live heading wait expired during page reload; a fresh state read verified the loaded build 345, decoded seven-seal image and subsequent real search navigation to Revelation 22. No application change or access bypass was required."
+  ]
+}
