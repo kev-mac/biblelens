@@ -1,0 +1,36 @@
+{
+  "chapters": 3,
+  "verseCount": 47,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "exactScripture": true,
+  "sourceBlanks": [],
+  "networkCalls": 0,
+  "results": [
+    {
+      "key": "52:1",
+      "verses": 12,
+      "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp",
+      "bytes": 163546,
+      "sha256": "ce1f53b952bfa1bf1cd28e5858aa7ae4f133b3e1dbcce44f9cd69e0a9a7f9532"
+    },
+    {
+      "key": "52:2",
+      "verses": 17,
+      "src": "/assets/chapter-2-thessalonians-02-opening-v1.webp",
+      "bytes": 101072,
+      "sha256": "33aa78c3b1157e667cad9eebbfc541805d9a0946f1a6f05314245ecad1e05ead"
+    },
+    {
+      "key": "52:3",
+      "verses": 18,
+      "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp",
+      "bytes": 107306,
+      "sha256": "b83c5d83845a72c154cbd405eb4fd446ab9c9f6ee7c84d9da574b7a9ea984105"
+    }
+  ],
+  "webOrigin": "Local generated Worker fixture with pinned source-origin byte responses; not live/public-origin verification"
+}
