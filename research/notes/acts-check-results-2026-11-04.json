@@ -1,0 +1,38 @@
+{
+  "baseline": "6bd1f514ed876677ab0762695176dfb9d64dfa2e",
+  "assetPin": "3c8bc0cbfc946b48fa6d401e32578f4a8f5c475b",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "684015643fe6f98452ffa836a386830f4de5e5f5d7439741cc5144c09eb3cd3f"
+  },
+  "checks": {
+    "lockedInstall": "passed",
+    "buildMobile": "passed",
+    "images": "passed",
+    "mobile": "passed",
+    "release": "passed",
+    "actsAllChaptersOfflineSourceWebParity": "passed",
+    "productionCatalogAndSpacing": "passed",
+    "publicOrigin": "914/914 exact bytes and SHA256; 116190936 bytes",
+    "readability": "exit 0; inherited report-only findings remain",
+    "newAltReadability": "grade 6.72749; no overlong sentences/jargon",
+    "workerOnlyPackaging": "passed",
+    "diffCheck": "passed",
+    "browserSmoke": "not run: no callable managed cua_repl.js",
+    "phoneIPadBrowserLayout": "not run: no callable managed cua_repl.js",
+    "liveCandidate": "denied: proxy CONNECT HTTP 403 at live release.json; no retry/bypass",
+    "signingDevices": "out of branch scope; pending coordinated release"
+  },
+  "workerBytes": 63864997,
+  "workerBudget": 66060288,
+  "workerHeadroom": 2195291,
+  "acceptedNewImages": 14,
+  "generatedDrafts": 15,
+  "rejectedDrafts": 1,
+  "retainedStoryImages": 15,
+  "replacedStoryImages": 2,
+  "chapterOpeners": 12,
+  "storyOpeners": 16,
+  "totalActsPlacements": 29
+}
