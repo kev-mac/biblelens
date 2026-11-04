@@ -3129,6 +3129,14 @@ html body.lens-app #lensInspector .lens-evidence>details>summary{text-decoration
 /* The same imagined scene accompanies its Story card and Read heading. */
 html body.lens-app .story-illustration{display:block;width:100%;margin:4px 0 16px;padding:0}
 html body.lens-app .story-illustration img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--lens-surface)}
+html body.lens-app .story-video-stage{position:relative;aspect-ratio:16/9;min-height:200px;border-radius:10px;overflow:hidden;background:#10151c}
+html body.lens-app .story-video-stage>img,html body.lens-app .story-video-stage>[data-video-frame],html body.lens-app .story-video-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;min-width:200px;min-height:200px}
+html body.lens-app .story-video-stage>[hidden],html body.lens-app .story-video [hidden]{display:none!important}
+html body.lens-app .story-video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-height:48px;padding:10px 20px;background:#10151c;color:#fff;border:2px solid #fff;cursor:pointer}
+html body.lens-app .story-video-actions{display:flex;gap:12px;flex-wrap:wrap}
+html body.lens-app .story-video-actions button,html body.lens-app .story-video-description summary{min-height:44px;cursor:pointer}
+html body.lens-app .story-video :is(button,summary):focus-visible{outline:3px solid var(--lens-copper)!important;outline-offset:3px;box-shadow:0 0 0 2px var(--lens-surface)!important}
+html body.lens-app .story-video-status:empty{display:none}
 html body.lens-app .story-illustration figcaption{display:block;margin:6px 0 0;font:400 .7rem/1.4 var(--ui-font);color:var(--lens-muted);text-align:right}
 html body.lens-app #chapter-text .story-illustration-reader{max-width:860px;margin:0 auto 24px}
 html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){margin-bottom:16px}

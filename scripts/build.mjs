@@ -1,4 +1,5 @@
 import {hostedArtwork} from './hosted-artwork.mjs';
+import {storyVideos} from './story-videos.mjs';
 import {validateChapterImages} from './chapter-images.mjs';
 import {validateQuestionPassages} from './question-passages.mjs';
 import {addUX13Events,validateUX13Content} from './ux13-content.mjs';
@@ -72,6 +73,13 @@ for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.we
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const uxRead=name=>JSON.parse(releaseContent(name));
 const storyImages=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
+const videos=storyVideos(JSON.parse(fs.readFileSync('data/story-videos.json','utf8')),storyImages);
+assets['/story-video.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',()=>JSON.stringify(videos))};
+for(const name of ['story-video-player.html','story-video-player.css','story-video-player.js'])assets['/'+name]={type:name.endsWith('.html')?'text/html; charset=utf-8':name.endsWith('.css')?'text/css; charset=utf-8':'application/javascript; charset=utf-8',body:fs.readFileSync('src/'+name,'utf8').replace('/*__STORY_VIDEO_IDS__*/[]',JSON.stringify(Object.values(videos).map(v=>v.videoId)))};
+const playerPolicy="default-src 'none'; script-src 'self' https://www.youtube.com https://s.ytimg.com; style-src 'self'; frame-src https://www.youtube-nocookie.com https://www.youtube.com; img-src 'self'; connect-src https://www.youtube.com; base-uri 'none'; object-src 'none'; form-action 'none'";
+assets['/story-video-player.html'].csp=playerPolicy;
+assets['/story-video-player.html'].body=assets['/story-video-player.html'].body.replace('<meta charset="utf-8">','<meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="'+playerPolicy+'">');
+for(const video of Object.values(videos))assets[video.poster]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src'+video.poster).toString('base64')};
 for(const art of Object.values(storyImages))assets[art.src]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src'+art.src).toString('base64')};
 assets['/stories.js'].body=assets['/stories.js'].body.replace('/*__STORY_IMAGES__*/{}',JSON.stringify(storyImages));
 

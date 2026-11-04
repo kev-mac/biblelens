@@ -83,7 +83,7 @@ export function consolidateStartupAssets(assets,{minify=false,cssOverride}={}) {
   const hashes = [...new Set([...inline.map(scriptHash), ...classicScriptHashes(jsSources,{minify}), ...Object.values(assets).flatMap(asset=>asset.scriptHashes||[])])];
   // Inline styles support existing layout controls. Scripts use only exact build
   // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
-  const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'none'", "form-action 'self'",
+  const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site", "form-action 'self'",
     "script-src 'self' " + hashes.join(' '), "script-src-attr 'none'", "style-src 'self' 'unsafe-inline'",
     "manifest-src 'self'", "font-src 'self' data:", "img-src 'self' data: blob: https://raw.githubusercontent.com", "worker-src 'self' blob:",
     "connect-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site https://tiles.openfreemap.org"].join('; ');

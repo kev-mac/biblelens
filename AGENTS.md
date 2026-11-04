@@ -26,6 +26,10 @@ Prophecies and Method & Sources are deferred as Explore gallery cards. Keep Meth
 - Keep each record's scholarly limits, but say them plainly. Never add claims, motives or certainty the record doesn't state.
 - Run `npm run check:readability` after content changes.
 
+## Story videos
+
+Kevin approved the Creation pilot's realism as the video standard on 2026-11-04. Keep recurring characters recognizable. Videos belong on Stories and use an online player with the existing image offline or on playback failure; choose a relevant actual video frame as the idle poster. Use YouTube for the Creation pilot, with its upload and visibility approved separately. Runtime follows the story: 15 or 30 seconds is enough when it tells the story; aim below one minute, allowing a few seconds over only when needed. Add no filler or fixed runtime requirement. See `docs/story-videos.md` for implementation, activation and verification requirements. The Fall of Man follows after Creation integration.
+
 ## Chapter and story artwork
 
 Work through the 66 books one book per Codex session. Complete and verify the current book, then commit, push, publish, install on the connected iPhone and iPad, and provide a handoff prompt for the next book in a new session. Do not begin the next book in the current session.

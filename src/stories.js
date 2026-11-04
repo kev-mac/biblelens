@@ -35,14 +35,15 @@ function storyCard(story, pivot=false){
  const candidates=[ranked.slice(0,2).map(label).join(' · ')+(ranked.length>2?` · +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:''),ranked.slice(0,1).map(label).join('')+(ranked.length>1?` · +${ranked.slice(1).reduce((n,[count])=>n+count,0)} more`:'')];
  const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}><div class="story-summary">${storyIllustration(story.title)}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}<div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
+ const media=(!pivot&&window.BibleLensStoryVideo?.render(story.title,STORY_IMAGES[story.title]))||storyIllustration(story.title);
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}><div class="story-summary">${media}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}<div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
  const generation=++storiesGeneration;
  section.hidden=!storiesActive;
  $('#stories-pagination').hidden=true;
- if(!storiesActive)return;
+ if(!storiesActive){window.BibleLensStoryVideo?.stop();return;}
  const route=typeof location==='undefined'?null:storyRoute();
  if(route?.[2]==='parallel-accounts-in-genesis'){location.replace('#debate/woman-made-with-man-or-after-the-animals');return;}
  const list=$('#stories-list');list.setAttribute('aria-busy','true');if(!storiesCatalog)list.innerHTML='<p class="loading-state" role="status">Loading stories…</p>';
@@ -70,7 +71,9 @@ async function renderStoriesView(){
   $('#stories-pagination').hidden=pages<=1;
   $('#stories-previous').disabled=storiesPage===0;$('#stories-next').disabled=storiesPage>=pages-1;
   $('#stories-page-status').textContent=pages>1?`${storiesPage+1} / ${pages}`:'';
+  window.BibleLensStoryVideo?.unmount(list);
   list.innerHTML=stories.length?visible.map(story=>storyCard(story)).join(''):'<p class="empty">No stories match these filters. Try another book or theme, or clear your search.</p>';
+  window.BibleLensStoryVideo?.mount(list);
   if(route){const selected=stories.find(story=>storySlug(story.title)===route[2]);if(selected){const card=document.getElementById('story-'+route[2]);card?.classList.add('story-linked');card?.focus({preventScroll:true});card?.scrollIntoView({block:'nearest'});}else list.innerHTML='<p class="empty">Story not found. Clear Filters to explore other stories.</p>';}
  }catch{if(generation===storiesGeneration)list.innerHTML='<p>Could not load stories. <button type="button" data-stories-retry>Retry</button></p>';}finally{if(generation===storiesGeneration)list.setAttribute('aria-busy','false');}
 }
