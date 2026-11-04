@@ -1,0 +1,86 @@
+{
+  "tool": "image_gen.imagegen",
+  "styleInput": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "identityInputs": [],
+  "generations": [
+    {
+      "chapter": 1,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-87f90900-ac16-451e-b721-928c8215e54e.png"
+    },
+    {
+      "chapter": 2,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-5909e013-e368-4b1b-bd1a-5e82047dbd53.png"
+    },
+    {
+      "chapter": 3,
+      "version": 1,
+      "accepted": false,
+      "generatedFile": "/workspace/generated_images/exec-58dc81ba-9db6-40f7-b87d-3d1601704866.png"
+    },
+    {
+      "chapter": 4,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-cded3dd1-abf3-4a08-8687-3baa94fc4914.png"
+    },
+    {
+      "chapter": 5,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-36acbcb9-62cc-4d6e-b9aa-57760cce3655.png"
+    },
+    {
+      "chapter": 6,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-fd914de7-8c2c-494c-914d-3ad691ebbea2.png"
+    },
+    {
+      "chapter": 7,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-ab84608a-e6a3-49f7-a112-6b37f3a1c2b4.png"
+    },
+    {
+      "chapter": 8,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-a9d64677-c449-4853-9baf-a3a45c0a5d0d.png"
+    },
+    {
+      "chapter": 9,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-f2d505a8-e7f8-40b1-ae2c-3ada8ee7b439.png"
+    },
+    {
+      "chapter": 10,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-b0b98b28-19bb-4aad-bff4-795a87544af9.png"
+    },
+    {
+      "chapter": 11,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-2f2b805b-7001-4f1f-a59a-08c9b6619c35.png"
+    },
+    {
+      "chapter": 12,
+      "version": 1,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-d67969c9-b1d8-4cea-a3de-74e5409da871.png"
+    },
+    {
+      "chapter": 3,
+      "version": 2,
+      "accepted": true,
+      "generatedFile": "/workspace/generated_images/exec-d27bf0ea-a179-43d6-93f3-0c79fe1a0602.png",
+      "editInput": "/workspace/generated_images/exec-58dc81ba-9db6-40f7-b87d-3d1601704866.png"
+    }
+  ]
+}

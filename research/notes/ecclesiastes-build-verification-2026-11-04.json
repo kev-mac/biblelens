@@ -1,0 +1,125 @@
+{
+  "workerBytes": 64706758,
+  "budgetBytes": 66060288,
+  "headroomBytes": 1353530,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "8258d34f7ff5ac7713030fa80d9e4ef36d2f1cbe6ac17565cc0dbc1cbce430e8"
+  },
+  "offlineNetworkCalls": 0,
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-ecclesiastes-01-opening-v1.webp",
+      "bytes": 124220,
+      "sha256": "f3f26648518fbe653e319d7a326fcd3b0f02b2f0cc80b0488e8d9bcc11329f17",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-ecclesiastes-02-opening-v1.webp",
+      "bytes": 180758,
+      "sha256": "c38e21e5f15c2101c84fa7e8fd02e2d07349928a7c3afd5ff397572b47416061",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-ecclesiastes-03-opening-v2.webp",
+      "bytes": 165890,
+      "sha256": "9ce261ed39aacdfb7ce561d6978153b86a5f2bafb9cdf54237cdcd0cad659927",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-ecclesiastes-04-opening-v1.webp",
+      "bytes": 125304,
+      "sha256": "4f6491d1d02967eee3e9dde0b7c07d7af95e4b8d990f7a0c12ef50347ef0cdd1",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-ecclesiastes-05-opening-v1.webp",
+      "bytes": 81470,
+      "sha256": "6136d7f0985f853152814a0966d7155ad899be5ef4365c2ae0e020852808f5fd",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-ecclesiastes-06-opening-v1.webp",
+      "bytes": 110048,
+      "sha256": "dc02081dc54aa29c8063343178b039fe08d0d42e747595d68565ad11ff70d252",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 7,
+      "src": "/assets/chapter-ecclesiastes-07-opening-v1.webp",
+      "bytes": 131088,
+      "sha256": "ac4089359565f70a5e4801bdbd2e6447a2c8e71b71b6ce5071329b03ceceb3bb",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 8,
+      "src": "/assets/chapter-ecclesiastes-08-opening-v1.webp",
+      "bytes": 131532,
+      "sha256": "e4baf83b0647362866e8e8406880e6f8ea8141dd551b04396251802012b173f4",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 9,
+      "src": "/assets/chapter-ecclesiastes-09-opening-v1.webp",
+      "bytes": 154670,
+      "sha256": "3b7115ff2f96b847731a67e8895906e95628b4b34d76b40bc1a41716cd09e7a8",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 10,
+      "src": "/assets/chapter-ecclesiastes-10-opening-v1.webp",
+      "bytes": 133626,
+      "sha256": "b522cc9b870f66c23db9d89896da1a4ff79bce1797c3f640db8a944aa87265cb",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 11,
+      "src": "/assets/chapter-ecclesiastes-11-opening-v1.webp",
+      "bytes": 108498,
+      "sha256": "3f000c07f5fdb71ccee4062b52f9d166c0767cc697aa4705ffc392d7eaab1868",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    },
+    {
+      "chapter": 12,
+      "src": "/assets/chapter-ecclesiastes-12-opening-v1.webp",
+      "bytes": 113544,
+      "sha256": "1d75981dae66b41d380d2f1ce90806d8077f2546012a2538e5e01fa61078b06d",
+      "offlineChapterLoaded": true,
+      "webNativeMetadataAndScriptureMatch": true,
+      "offlineImageBytesMatch": true
+    }
+  ],
+  "limits": [
+    "Node adapter verifies bundled offline engine and image bytes; physical device and phone/iPad browser layout remain unverified.",
+    "Live release GET remains denied HTTP 403 and was not retried."
+  ]
+}
