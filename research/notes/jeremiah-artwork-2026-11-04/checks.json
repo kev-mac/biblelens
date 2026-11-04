@@ -1,0 +1,44 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 341,
+    "sourceHash": "606f74a2f9a0d6417f19b077720ab262ca25404a51cb851f38b6dcde8a9ec117"
+  },
+  "workerBytes": 64724676,
+  "sitesBudgetBytes": 66060288,
+  "headroomBytes": 1335612,
+  "commands": [
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:readability",
+      "exitCode": 0
+    }
+  ],
+  "publicPin": "08703a8cc86a4674d95d771a69dcbeaaddafbaec",
+  "hostedAssets": 679,
+  "newPublicOriginFilesVerified": 45,
+  "deviceChecks": "Unavailable: no Mac, signing or connected devices; none attempted",
+  "browserLayouts": "Unavailable: managed Linux has no callable cua_repl.js; no browser installed or improvised",
+  "liveAccess": {
+    "action": "HEAD https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "outcome": "denied",
+    "reason": "Proxy CONNECT HTTP 403",
+    "retried": false
+  },
+  "readability": "Inherited report-only findings remain; exit 0 is not zero findings"
+}
