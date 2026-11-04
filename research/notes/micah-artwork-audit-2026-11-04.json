@@ -1,0 +1,152 @@
+{
+  "chapters": 7,
+  "retainedStories": 0,
+  "newOpeners": 7,
+  "records": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Rubble and exposed foundations cover a hill above a green valley.",
+      "src": "/assets/chapter-micah-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 142026,
+      "sha256": "a544741664d0afe4e1276012b64031ed835cda5efdb59fead9d9478f557c3861"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A measuring cord and wooden stakes lie beside a house and divided fields.",
+      "src": "/assets/chapter-micah-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 159240,
+      "sha256": "5e8f3ab58c0953e1486a592d7f32ed6f12820e228c8a8e719c2c592df1191eb6"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Fresh furrows cross a hill among broken stone walls.",
+      "src": "/assets/chapter-micah-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 112364,
+      "sha256": "ee71cd0ad0903299ed7f3f4b097e069dd4ff23b0ad329e706c86443f884b4032"
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A shaded seat and farm tools stand beneath a vine and fig tree.",
+      "src": "/assets/chapter-micah-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 202546,
+      "sha256": "aa29461a1b397ebcc537c8783b22763f54944640c8096851fa8fb56a897b9bc9"
+    },
+    {
+      "chapter": 5,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Small stone houses stand on a terraced ridge among Judean hills.",
+      "src": "/assets/chapter-micah-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 158802,
+      "sha256": "2f36349fbe3f3607b636f1c9a95b74217b5ccea3cd1742f50e2c44fdc4e36c03"
+    },
+    {
+      "chapter": 6,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A balance, stone weights and an open pouch rest beside grain.",
+      "src": "/assets/chapter-micah-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 93064,
+      "sha256": "282e8532084883400c7efba6df7f3f54c10e34dab865e194356435427d97beb0"
+    },
+    {
+      "chapter": 7,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty harvest basket rests beneath vines and fig branches without ripe fruit.",
+      "src": "/assets/chapter-micah-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 165060,
+      "sha256": "f15fca398c96c85e678aecadaced0be93095c51c34380fa14ee171bb531776e3"
+    }
+  ],
+  "positions": [
+    {
+      "book": 31,
+      "chapter": 1,
+      "verse": 1,
+      "src": "/assets/story-jonah-flees-and-is-swallowed-v1.webp",
+      "position": 1
+    },
+    {
+      "book": 31,
+      "chapter": 3,
+      "verse": 1,
+      "src": "/assets/story-nineveh-repents-v1.webp",
+      "position": 28
+    },
+    {
+      "book": 31,
+      "chapter": 4,
+      "verse": 1,
+      "src": "/assets/story-jonah-s-anger-v1.webp",
+      "position": 38
+    },
+    {
+      "book": 32,
+      "chapter": 1,
+      "verse": 0,
+      "src": "/assets/chapter-micah-01-opening-v1.webp",
+      "position": 49
+    },
+    {
+      "book": 32,
+      "chapter": 2,
+      "verse": 0,
+      "src": "/assets/chapter-micah-02-opening-v1.webp",
+      "position": 65
+    },
+    {
+      "book": 32,
+      "chapter": 3,
+      "verse": 0,
+      "src": "/assets/chapter-micah-03-opening-v1.webp",
+      "position": 78
+    },
+    {
+      "book": 32,
+      "chapter": 4,
+      "verse": 0,
+      "src": "/assets/chapter-micah-04-opening-v1.webp",
+      "position": 90
+    },
+    {
+      "book": 32,
+      "chapter": 5,
+      "verse": 0,
+      "src": "/assets/chapter-micah-05-opening-v1.webp",
+      "position": 103
+    },
+    {
+      "book": 32,
+      "chapter": 6,
+      "verse": 0,
+      "src": "/assets/chapter-micah-06-opening-v1.webp",
+      "position": 118
+    },
+    {
+      "book": 32,
+      "chapter": 7,
+      "verse": 0,
+      "src": "/assets/chapter-micah-07-opening-v1.webp",
+      "position": 134
+    }
+  ],
+  "closePairs": [],
+  "boundaries": "Jonah through Nahum; recheck after parallel integration",
+  "verification": "Source metadata and renderer; --offline separately checks actual packaged engine and byte parity; browser and devices separate"
+}

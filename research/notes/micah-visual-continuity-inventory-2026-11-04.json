@@ -1,0 +1,940 @@
+{
+  "scope": "Micah only, reader book 32, chapters 1–7",
+  "styleInput": "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp",
+  "styleInputRole": "Actual image input in each of seven image_gen requests; style only, never a character identity",
+  "identifiablePeopleGroupsOrAnimalsInNewArt": [],
+  "inventory": [
+    {
+      "name": "Micah",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Micah's Idols and the Danites",
+          "path": "src/assets/story-micah-s-idols-and-the-danites-v1.webp",
+          "alt": "Micah speaks with a linen-clothed man beside a small household shrine."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Judges' Micah is a different person; not the prophet's identity reference."
+    },
+    {
+      "name": "Jotham",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Abimelech",
+          "path": "src/assets/story-abimelech-v1.webp",
+          "alt": "Jotham speaks from a rocky ledge above Shechem."
+        },
+        {
+          "title": "Amaziah, Uzziah and Jotham",
+          "path": "src/assets/story-amaziah-uzziah-and-jotham-v1.webp",
+          "alt": "A king holding an incense bowl faces priests with raised open hands."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Ahaz",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Ahaz and Hezekiah's Reforms",
+          "path": "src/assets/story-ahaz-and-hezekiah-s-reforms-v1.webp",
+          "alt": "People clean a temple courtyard and carry vessels through open doors."
+        },
+        {
+          "title": "Ahaz and the Sign of Immanuel",
+          "path": "src/assets/story-ahaz-and-the-sign-of-immanuel-v1.webp",
+          "alt": "Isaiah speaks with King Ahaz beside a stone water channel outside Jerusalem."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Hezekiah",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Hezekiah and Sennacherib",
+          "path": "src/assets/story-hezekiah-and-sennacherib-v1.webp",
+          "alt": "Hezekiah spreads a letter before a sanctuary curtain while Isaiah stands nearby."
+        },
+        {
+          "title": "Hezekiah's Illness and the Babylonian Envoys",
+          "path": "src/assets/story-hezekiah-s-illness-and-the-babylonian-envoys-v1.webp",
+          "alt": "Hezekiah and Isaiah watch a shadow falling across plain stone steps."
+        },
+        {
+          "title": "Ahaz and Hezekiah's Reforms",
+          "path": "src/assets/story-ahaz-and-hezekiah-s-reforms-v1.webp",
+          "alt": "People clean a temple courtyard and carry vessels through open doors."
+        },
+        {
+          "title": "Sennacherib's Invasion and Hezekiah's Pride",
+          "path": "src/assets/story-sennacherib-s-invasion-and-hezekiah-s-pride-v1.webp",
+          "alt": "Workers shape a stone water channel as Hezekiah watches the flow."
+        },
+        {
+          "title": "Sennacherib's Threat and Hezekiah",
+          "path": "src/assets/story-sennacherib-s-threat-and-hezekiah-v1.webp",
+          "alt": "Hezekiah kneels beside an opened letter at a quiet sanctuary doorway."
+        },
+        {
+          "title": "Hezekiah's Illness",
+          "path": "src/assets/story-hezekiah-s-illness-v1.webp",
+          "alt": "Hezekiah turns toward the wall from his bed in a quiet palace chamber."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Moses",
+      "earlierMetadataCandidates": [
+        {
+          "title": "The Birth and Rescue of Moses",
+          "path": "src/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+          "alt": "Pharaoh’s daughter opens a basket holding baby Moses among Nile reeds."
+        },
+        {
+          "title": "Moses Flees to Midian",
+          "path": "src/assets/story-moses-flees-to-midian-v1.webp",
+          "alt": "Young Moses waters sheep while Zipporah and her sisters stand beside a well."
+        },
+        {
+          "title": "The Burning Bush",
+          "path": "src/assets/story-the-burning-bush-v1.webp",
+          "alt": "Barefoot Moses faces a living bush surrounded by flame at twilight."
+        },
+        {
+          "title": "Moses Returns to Egypt",
+          "path": "src/assets/story-moses-returns-to-egypt-v1.webp",
+          "alt": "Moses walks beside a donkey carrying Zipporah and their children toward Egypt."
+        },
+        {
+          "title": "Moses and Aaron Before Pharaoh",
+          "path": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "alt": "Moses and Aaron stand before Pharaoh in a columned Egyptian hall."
+        },
+        {
+          "title": "Crossing the Sea",
+          "path": "src/assets/story-crossing-the-sea-v1.webp",
+          "alt": "Moses leads families through a path between towering waters under moonlight."
+        },
+        {
+          "title": "Water from the Rock and the Battle with Amalek",
+          "path": "src/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+          "alt": "Moses stands by flowing rock water as families fill jars and drink."
+        },
+        {
+          "title": "Jethro Advises Moses",
+          "path": "src/assets/story-jethro-advises-moses-v1.webp",
+          "alt": "Jethro advises Moses beneath a woven awning while elders hear people nearby."
+        },
+        {
+          "title": "Sinai / Mosaic Covenant",
+          "path": "src/assets/story-sinai-mosaic-covenant-v1.webp",
+          "alt": "Moses holds a scroll before an attentive assembly near the wilderness camp."
+        },
+        {
+          "title": "The Covenant Is Sealed at Sinai",
+          "path": "src/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+          "alt": "Moses and elders gather at a stone altar surrounded by upright stones."
+        },
+        {
+          "title": "The Golden Calf",
+          "path": "src/assets/story-the-golden-calf-v1.webp",
+          "alt": "Moses holds stone tablets while people gather around a small golden calf."
+        },
+        {
+          "title": "Moses Sees God's Glory",
+          "path": "src/assets/story-moses-sees-gods-glory-v1.webp",
+          "alt": "Moses shelters in a rock cleft with a veil as bright light passes outside."
+        },
+        {
+          "title": "Aaron and His Sons Are Ordained",
+          "path": "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+          "alt": "Imagined scene: Moses pours oil on Aaron's head while Aaron's sons stand nearby."
+        },
+        {
+          "title": "The Blasphemer Stoned",
+          "path": "src/assets/story-the-blasphemer-stoned-v1.webp",
+          "alt": "Imagined scene: A man faces Moses and a group of elders among the tents."
+        },
+        {
+          "title": "Counting the Camp",
+          "path": "src/assets/story-counting-the-camp-v1.webp",
+          "alt": "Moses and Aaron oversee groups of men as elders count pebbles beside the camp."
+        },
+        {
+          "title": "Leaving Sinai and the Complaints",
+          "path": "src/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+          "alt": "Travelers pause with their belongings as Moses speaks with elders and quail fly nearby."
+        },
+        {
+          "title": "Miriam and Aaron Speak Against Moses",
+          "path": "src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+          "alt": "Miriam and Aaron speak with Moses outside the tent of meeting."
+        },
+        {
+          "title": "Korah's Rebellion",
+          "path": "src/assets/story-korah-s-rebellion-v1.webp",
+          "alt": "Aaron holds a flowering almond staff before Moses and gathered elders."
+        },
+        {
+          "title": "Water from the Rock at Meribah",
+          "path": "src/assets/story-water-from-the-rock-at-meribah-v1.webp",
+          "alt": "Moses and Aaron stand beside flowing water while families fill jars."
+        },
+        {
+          "title": "Edom Refuses Passage and Aaron Dies",
+          "path": "src/assets/story-edom-refuses-passage-and-aaron-dies-v1.webp",
+          "alt": "Aaron hands a folded blue robe to Eleazar as Moses stands nearby."
+        },
+        {
+          "title": "The Bronze Serpent",
+          "path": "src/assets/story-the-bronze-serpent-v1.webp",
+          "alt": "People look toward a bronze snake raised on a wooden pole beside Moses."
+        },
+        {
+          "title": "A New Census and Joshua Appointed",
+          "path": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+          "alt": "Five sisters present their claim before Moses and Eleazar."
+        },
+        {
+          "title": "Vengeance on Midian",
+          "path": "src/assets/story-vengeance-on-midian-v1.webp",
+          "alt": "Officers place gold ornaments in bowls before Moses and Eleazar."
+        },
+        {
+          "title": "Tribes Settle East of the Jordan",
+          "path": "src/assets/story-tribes-settle-east-of-the-jordan-v1.webp",
+          "alt": "Leaders speak with Moses while families build stone walls near grazing sheep."
+        },
+        {
+          "title": "Moses Recalls the Wilderness Years",
+          "path": "src/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+          "alt": "Moses recounts the journey to families and younger elders on the plains of Moab."
+        },
+        {
+          "title": "Moses Sets Apart Three Cities of Refuge",
+          "path": "src/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+          "alt": "A traveler reaches a stone gateway where elders wait to hear him."
+        },
+        {
+          "title": "Moses Recalls the Golden Calf",
+          "path": "src/assets/story-moses-recalls-the-golden-calf-v1.webp",
+          "alt": "Moses speaks to listeners beside broken stone slabs and a small calf figure."
+        },
+        {
+          "title": "Moses Recalls the Second Tablets",
+          "path": "src/assets/story-moses-recalls-the-second-tablets-v1.webp",
+          "alt": "Moses lowers two stone tablets into a plain wooden chest inside a tent."
+        },
+        {
+          "title": "Joshua Commissioned and the Law Entrusted",
+          "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v1.webp",
+          "alt": "Moses gives a rolled scroll to priests while Joshua and the people stand nearby."
+        },
+        {
+          "title": "The Death of Moses",
+          "path": "src/assets/story-the-death-of-moses-v1.webp",
+          "alt": "Moses stands on a rocky height and looks across the Jordan valley."
+        },
+        {
+          "chapter": "1:4",
+          "path": "src/assets/chapter-exodus-04-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks with Jethro before returning to Egypt."
+        },
+        {
+          "chapter": "1:6",
+          "path": "src/assets/chapter-exodus-06-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak with workers near a mudbrick yard."
+        },
+        {
+          "chapter": "1:6",
+          "path": "src/assets/chapter-exodus-06-v1.webp",
+          "alt": "Imagined scene: Moses speaks with tired workers beside stacks of mud bricks."
+        },
+        {
+          "chapter": "1:7",
+          "path": "src/assets/chapter-exodus-07-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside the Nile as its water turns red."
+        },
+        {
+          "chapter": "1:7",
+          "path": "src/assets/chapter-exodus-07-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside red water as people hold empty jars."
+        },
+        {
+          "chapter": "1:9",
+          "path": "src/assets/chapter-exodus-09-opening-v1.webp",
+          "alt": "Imagined scene: Moses raises his hand as hail falls over Egyptian fields."
+        },
+        {
+          "chapter": "1:10",
+          "path": "src/assets/chapter-exodus-10-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak before Pharaoh as locusts cover fields."
+        },
+        {
+          "chapter": "1:11",
+          "path": "src/assets/chapter-exodus-11-v1.webp",
+          "alt": "Imagined scene: Moses leaves Pharaoh's hall after delivering his warning."
+        },
+        {
+          "chapter": "1:20",
+          "path": "src/assets/chapter-exodus-20-opening-v1.webp",
+          "alt": "Imagined scene: Moses and the people stand before Mount Sinai."
+        },
+        {
+          "chapter": "1:29",
+          "path": "src/assets/chapter-exodus-29-v1.webp",
+          "alt": "Imagined scene: Moses arranges linen garments for Aaron and his sons."
+        },
+        {
+          "chapter": "1:31",
+          "path": "src/assets/chapter-exodus-31-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks with Bezalel and Oholiab about their work."
+        },
+        {
+          "chapter": "1:34",
+          "path": "src/assets/chapter-exodus-34-opening-v1.webp",
+          "alt": "Imagined scene: Moses climbs a mountain carrying two plain stone tablets."
+        },
+        {
+          "chapter": "1:34",
+          "path": "src/assets/chapter-exodus-34-v1.webp",
+          "alt": "Imagined scene: Moses carries two stone tablets down the mountain toward the people."
+        },
+        {
+          "chapter": "2:9",
+          "path": "src/assets/chapter-leviticus-09-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand before people gathered at the sanctuary."
+        },
+        {
+          "chapter": "2:18",
+          "path": "src/assets/chapter-leviticus-18-opening-v1.webp",
+          "alt": "Imagined scene: People sit among the tents and listen to Moses."
+        },
+        {
+          "chapter": "2:18",
+          "path": "src/assets/chapter-leviticus-18-v1.webp",
+          "alt": "Imagined scene: Adults listen as Moses speaks about laws for their community."
+        },
+        {
+          "chapter": "2:20",
+          "path": "src/assets/chapter-leviticus-20-opening-v1.webp",
+          "alt": "Imagined scene: Moses faces a gathering among tents in the wilderness."
+        },
+        {
+          "chapter": "2:20",
+          "path": "src/assets/chapter-leviticus-20-v1.webp",
+          "alt": "Imagined scene: Elders and families listen to Moses at the camp's edge."
+        },
+        {
+          "chapter": "3:11",
+          "path": "src/assets/chapter-numbers-11-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks with elders beside the tent of meeting."
+        },
+        {
+          "chapter": "3:16",
+          "path": "src/assets/chapter-numbers-16-v1.webp",
+          "alt": "Imagined scene: Leaders face Moses and Aaron near the sanctuary."
+        },
+        {
+          "chapter": "3:26",
+          "path": "src/assets/chapter-numbers-26-v1.webp",
+          "alt": "Imagined scene: Moses and Eleazar oversee a count of people near the Jordan."
+        },
+        {
+          "chapter": "3:27",
+          "path": "src/assets/chapter-numbers-27-opening-v2.webp",
+          "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar."
+        },
+        {
+          "chapter": "3:27",
+          "path": "src/assets/chapter-numbers-27-v1.webp",
+          "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar."
+        },
+        {
+          "chapter": "4:3",
+          "path": "src/assets/chapter-deuteronomy-03-opening-v1.webp",
+          "alt": "Imagined scene: Elderly Moses looks across the Jordan valley from a ridge."
+        },
+        {
+          "chapter": "4:3",
+          "path": "src/assets/chapter-deuteronomy-03-v1.webp",
+          "alt": "Imagined scene: Moses looks across the Jordan valley from a high ridge."
+        },
+        {
+          "chapter": "4:5",
+          "path": "src/assets/chapter-deuteronomy-05-v1.webp",
+          "alt": "Imagined scene: Families gather on the plains to hear Moses speak."
+        },
+        {
+          "chapter": "4:11",
+          "path": "src/assets/chapter-deuteronomy-11-opening-v1.webp",
+          "alt": "Imagined scene: People gather near a river as Moses speaks."
+        },
+        {
+          "chapter": "4:13",
+          "path": "src/assets/chapter-deuteronomy-13-v1.webp",
+          "alt": "Imagined scene: Elders and families listen carefully as Moses speaks."
+        },
+        {
+          "chapter": "4:27",
+          "path": "src/assets/chapter-deuteronomy-27-opening-v1.webp",
+          "alt": "Imagined scene: Moses and elders speak before the gathered community."
+        },
+        {
+          "chapter": "4:29",
+          "path": "src/assets/chapter-deuteronomy-29-v1.webp",
+          "alt": "Imagined scene: Elders, workers, women, children and travelers gather before Moses."
+        },
+        {
+          "chapter": "4:30",
+          "path": "src/assets/chapter-deuteronomy-30-v1.webp",
+          "alt": "Imagined scene: Moses speaks to households beside green fields and a branching path."
+        },
+        {
+          "chapter": "4:32",
+          "path": "src/assets/chapter-deuteronomy-32-opening-v1.webp",
+          "alt": "Imagined scene: Moses sings before the gathered community with Joshua nearby."
+        },
+        {
+          "chapter": "4:32",
+          "path": "src/assets/chapter-deuteronomy-32-v1.webp",
+          "alt": "Imagined scene: Moses and Joshua speak to people gathered beside a rocky valley."
+        },
+        {
+          "chapter": "4:33",
+          "path": "src/assets/chapter-deuteronomy-33-v1.webp",
+          "alt": "Imagined scene: Moses blesses tribal representatives gathered on the plains."
+        },
+        {
+          "chapter": "4:4",
+          "path": "src/assets/chapter-deuteronomy-04-opening-v1.webp",
+          "alt": "Imagined scene: Moses addresses the gathered people beyond the Jordan."
+        },
+        {
+          "chapter": "4:9",
+          "path": "src/assets/chapter-deuteronomy-09-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks to listeners under a stormy sky."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Aaron",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Moses and Aaron Before Pharaoh",
+          "path": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "alt": "Moses and Aaron stand before Pharaoh in a columned Egyptian hall."
+        },
+        {
+          "title": "Aaron and His Sons Are Ordained",
+          "path": "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+          "alt": "Imagined scene: Moses pours oil on Aaron's head while Aaron's sons stand nearby."
+        },
+        {
+          "title": "Counting the Camp",
+          "path": "src/assets/story-counting-the-camp-v1.webp",
+          "alt": "Moses and Aaron oversee groups of men as elders count pebbles beside the camp."
+        },
+        {
+          "title": "Aaronic Blessing",
+          "path": "src/assets/story-aaronic-blessing-v1.webp",
+          "alt": "Aaron raises his hands before families gathered near the tabernacle."
+        },
+        {
+          "title": "Miriam and Aaron Speak Against Moses",
+          "path": "src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+          "alt": "Miriam and Aaron speak with Moses outside the tent of meeting."
+        },
+        {
+          "title": "Korah's Rebellion",
+          "path": "src/assets/story-korah-s-rebellion-v1.webp",
+          "alt": "Aaron holds a flowering almond staff before Moses and gathered elders."
+        },
+        {
+          "title": "Water from the Rock at Meribah",
+          "path": "src/assets/story-water-from-the-rock-at-meribah-v1.webp",
+          "alt": "Moses and Aaron stand beside flowing water while families fill jars."
+        },
+        {
+          "title": "Edom Refuses Passage and Aaron Dies",
+          "path": "src/assets/story-edom-refuses-passage-and-aaron-dies-v1.webp",
+          "alt": "Aaron hands a folded blue robe to Eleazar as Moses stands nearby."
+        },
+        {
+          "chapter": "1:6",
+          "path": "src/assets/chapter-exodus-06-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak with workers near a mudbrick yard."
+        },
+        {
+          "chapter": "1:7",
+          "path": "src/assets/chapter-exodus-07-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside the Nile as its water turns red."
+        },
+        {
+          "chapter": "1:7",
+          "path": "src/assets/chapter-exodus-07-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside red water as people hold empty jars."
+        },
+        {
+          "chapter": "1:10",
+          "path": "src/assets/chapter-exodus-10-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak before Pharaoh as locusts cover fields."
+        },
+        {
+          "chapter": "1:29",
+          "path": "src/assets/chapter-exodus-29-v1.webp",
+          "alt": "Imagined scene: Moses arranges linen garments for Aaron and his sons."
+        },
+        {
+          "chapter": "2:9",
+          "path": "src/assets/chapter-leviticus-09-opening-v1.webp",
+          "alt": "Imagined scene: Aaron stands near a calf and a ram at the sanctuary."
+        },
+        {
+          "chapter": "2:9",
+          "path": "src/assets/chapter-leviticus-09-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand before people gathered at the sanctuary."
+        },
+        {
+          "chapter": "3:8",
+          "path": "src/assets/chapter-numbers-08-opening-v1.webp",
+          "alt": "Imagined scene: Aaron tends the seven lamps inside the sanctuary."
+        },
+        {
+          "chapter": "3:16",
+          "path": "src/assets/chapter-numbers-16-v1.webp",
+          "alt": "Imagined scene: Leaders face Moses and Aaron near the sanctuary."
+        },
+        {
+          "chapter": "3:17",
+          "path": "src/assets/chapter-numbers-17-opening-v1.webp",
+          "alt": "Imagined scene: Aaron holds a budding almond staff beside plain staffs."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Miriam",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Miriam and Aaron Speak Against Moses",
+          "path": "src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+          "alt": "Miriam and Aaron speak with Moses outside the tent of meeting."
+        },
+        {
+          "chapter": "1:15",
+          "path": "src/assets/chapter-exodus-15-opening-v1.webp",
+          "alt": "Imagined scene: Miriam leads women in song beside the sea."
+        },
+        {
+          "chapter": "1:15",
+          "path": "src/assets/chapter-exodus-15-v1.webp",
+          "alt": "Imagined scene: Miriam and other women play hand drums beside the sea."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Balak",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Balaam and Balak",
+          "path": "src/assets/story-balaam-and-balak-v1.webp",
+          "alt": "Balaam turns on his stopped donkey toward a messenger in a narrow vineyard lane."
+        },
+        {
+          "chapter": "3:23",
+          "path": "src/assets/chapter-numbers-23-opening-v1.webp",
+          "alt": "Imagined scene: Balaam and Balak look down toward the distant camp."
+        },
+        {
+          "chapter": "3:23",
+          "path": "src/assets/chapter-numbers-23-v1.webp",
+          "alt": "Imagined scene: Balaam and Balak look toward the distant camp from a rocky height."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Balaam",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Balaam and Balak",
+          "path": "src/assets/story-balaam-and-balak-v1.webp",
+          "alt": "Balaam turns on his stopped donkey toward a messenger in a narrow vineyard lane."
+        },
+        {
+          "chapter": "3:23",
+          "path": "src/assets/chapter-numbers-23-opening-v1.webp",
+          "alt": "Imagined scene: Balaam and Balak look down toward the distant camp."
+        },
+        {
+          "chapter": "3:23",
+          "path": "src/assets/chapter-numbers-23-v1.webp",
+          "alt": "Imagined scene: Balaam and Balak look toward the distant camp from a rocky height."
+        },
+        {
+          "chapter": "3:24",
+          "path": "src/assets/chapter-numbers-24-opening-v1.webp",
+          "alt": "Imagined scene: Balaam surveys green valleys and Israelite tents."
+        },
+        {
+          "chapter": "3:24",
+          "path": "src/assets/chapter-numbers-24-v1.webp",
+          "alt": "Imagined scene: Balaam looks across tents, green valleys and river groves."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Omri",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Zimri's Coup and Omri's Rise",
+          "path": "src/assets/story-zimri-s-coup-and-omri-s-rise-v1.webp",
+          "alt": "Omri speaks with workers laying stone foundations on a green hill."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Ahab",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Naboth's Vineyard",
+          "path": "src/assets/story-naboth-s-vineyard-v1.webp",
+          "alt": "Elijah addresses Ahab among vineyard terraces and grapevines."
+        },
+        {
+          "title": "Ahab and Micaiah",
+          "path": "src/assets/story-ahab-and-micaiah-v1.webp",
+          "alt": "Micaiah speaks before two seated kings and their advisors."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Nimrod",
+      "earlierMetadataCandidates": [],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Abraham",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Abraham and Sarah’s Covenant",
+          "path": "src/assets/story-abraham-and-sarahs-covenant-v1.webp",
+          "alt": "Sarah listens from a shaded tent as Abraham serves three visitors."
+        },
+        {
+          "title": "The Binding of Isaac",
+          "path": "src/assets/story-the-binding-of-isaac-v1.webp",
+          "alt": "Abraham and Isaac stand beside a stone altar and a ram caught in thorn scrub."
+        },
+        {
+          "title": "Isaac and Rebekah",
+          "path": "src/assets/story-isaac-and-rebekah-v1.webp",
+          "alt": "Rebekah pours water for a camel while Abraham’s servant watches beside a village well."
+        },
+        {
+          "chapter": "0:17",
+          "path": "src/assets/chapter-genesis-17-v1.webp",
+          "alt": "Imagined scene: Abraham kneels outside his household's tents beneath the dawn sky."
+        },
+        {
+          "chapter": "0:18",
+          "path": "src/assets/chapter-genesis-18-opening-v1.webp",
+          "alt": "Imagined scene: Abraham rises to greet three visitors near his tent."
+        },
+        {
+          "chapter": "0:18",
+          "path": "src/assets/chapter-genesis-18-v1.webp",
+          "alt": "Imagined scene: Abraham serves food to three visitors beneath a tree."
+        },
+        {
+          "chapter": "0:20",
+          "path": "src/assets/chapter-genesis-20-opening-v1.webp",
+          "alt": "Imagined scene: Abraham and Sarah travel toward the city of Gerar with their household."
+        },
+        {
+          "chapter": "0:20",
+          "path": "src/assets/chapter-genesis-20-v1.webp",
+          "alt": "Imagined scene: Sarah stands beside Abraham as Abimelech speaks with them."
+        },
+        {
+          "chapter": "0:23",
+          "path": "src/assets/chapter-genesis-23-opening-v1.webp",
+          "alt": "Imagined scene: Abraham mourns Sarah beside an empty chair near their tent."
+        },
+        {
+          "chapter": "0:23",
+          "path": "src/assets/chapter-genesis-23-v1.webp",
+          "alt": "Imagined scene: Abraham's household gathers at Sarah's burial cave."
+        },
+        {
+          "chapter": "0:25",
+          "path": "src/assets/chapter-genesis-25-opening-v1.webp",
+          "alt": "Imagined scene: Isaac and Ishmael carry Abraham’s wrapped body toward a burial cave."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    },
+    {
+      "name": "Jacob",
+      "earlierMetadataCandidates": [
+        {
+          "title": "Jacob and Esau",
+          "path": "src/assets/story-jacob-and-esau-v1.webp",
+          "alt": "Jacob offers a bowl of stew to Esau beside a cooking fire."
+        },
+        {
+          "title": "Jacob’s Household",
+          "path": "src/assets/story-jacobs-household-v1.webp",
+          "alt": "Jacob’s household tends children and sheep beneath sunlit linen awnings."
+        },
+        {
+          "title": "Jacob Returns to Canaan",
+          "path": "src/assets/story-jacob-returns-to-canaan-v1.webp",
+          "alt": "Jacob and Esau embrace beside a river after rain."
+        },
+        {
+          "title": "The Death of Rachel",
+          "path": "src/assets/story-the-death-of-rachel-v1.webp",
+          "alt": "Jacob mourns beside Rachel’s grave as a woman holds a newborn."
+        },
+        {
+          "title": "Jacob Blesses His Family",
+          "path": "src/assets/story-jacob-blesses-his-family-v1.webp",
+          "alt": "Elderly Jacob blesses two boys while Joseph watches beside his bed."
+        },
+        {
+          "chapter": "0:27",
+          "path": "src/assets/chapter-genesis-27-v1.webp",
+          "alt": "Imagined scene: Isaac touches Jacob's covered arm beside a dish of food."
+        },
+        {
+          "chapter": "0:28",
+          "path": "src/assets/chapter-genesis-28-opening-v1.webp",
+          "alt": "Imagined scene: Jacob sets out toward Haran with a travel bundle."
+        },
+        {
+          "chapter": "0:28",
+          "path": "src/assets/chapter-genesis-28-v1.webp",
+          "alt": "Imagined scene: Jacob sleeps as a stairway and figures appear in his dream."
+        },
+        {
+          "chapter": "0:30",
+          "path": "src/assets/chapter-genesis-30-opening-v1.webp",
+          "alt": "Imagined scene: Rachel speaks with Jacob inside their tent."
+        },
+        {
+          "chapter": "0:30",
+          "path": "src/assets/chapter-genesis-30-v1.webp",
+          "alt": "Imagined scene: Jacob tends spotted sheep and goats beside watering troughs."
+        },
+        {
+          "chapter": "0:31",
+          "path": "src/assets/chapter-genesis-31-v1.webp",
+          "alt": "Imagined scene: Jacob's household crosses a river with bundles, animals and flocks."
+        },
+        {
+          "chapter": "0:32",
+          "path": "src/assets/chapter-genesis-32-opening-v1.webp",
+          "alt": "Imagined scene: Jacob sends messengers toward Esau from his camp by the river."
+        },
+        {
+          "chapter": "0:32",
+          "path": "src/assets/chapter-genesis-32-v1.webp",
+          "alt": "Imagined scene: Jacob wrestles with a man beside the river before dawn."
+        },
+        {
+          "chapter": "0:33",
+          "path": "src/assets/chapter-genesis-33-opening-v1.webp",
+          "alt": "Imagined scene: Jacob bows as Esau approaches across a green valley."
+        },
+        {
+          "chapter": "0:33",
+          "path": "src/assets/chapter-genesis-33-v1.webp",
+          "alt": "Imagined scene: Jacob and Esau embrace while their households wait nearby."
+        },
+        {
+          "chapter": "0:43",
+          "path": "src/assets/chapter-genesis-43-opening-v1.webp",
+          "alt": "Imagined scene: Jacob watches his adult sons leave for Egypt with Benjamin and gifts."
+        },
+        {
+          "chapter": "0:46",
+          "path": "src/assets/chapter-genesis-46-opening-v1.webp",
+          "alt": "Imagined scene: Jacob and his household pause at a stone altar before traveling to Egypt."
+        },
+        {
+          "chapter": "0:46",
+          "path": "src/assets/chapter-genesis-46-v1.webp",
+          "alt": "Imagined scene: Joseph embraces Jacob beside a chariot in green fields."
+        },
+        {
+          "chapter": "0:47",
+          "path": "src/assets/chapter-genesis-47-opening-v1.webp",
+          "alt": "Imagined scene: Joseph introduces his elderly father Jacob to Pharaoh."
+        },
+        {
+          "chapter": "0:49",
+          "path": "src/assets/chapter-genesis-49-opening-v1.webp",
+          "alt": "Imagined scene: Jacob gathers his adult sons around his bed to speak."
+        },
+        {
+          "chapter": "0:49",
+          "path": "src/assets/chapter-genesis-49-v1.webp",
+          "alt": "Imagined scene: Jacob speaks to his adult sons gathered around his bed."
+        },
+        {
+          "chapter": "0:50",
+          "path": "src/assets/chapter-genesis-50-opening-v1.webp",
+          "alt": "Imagined scene: Joseph mourns beside the body of his father Jacob."
+        },
+        {
+          "chapter": "0:50",
+          "path": "src/assets/chapter-genesis-50-v1.webp",
+          "alt": "Imagined scene: Jacob's sons carry his wrapped body toward the burial cave."
+        }
+      ],
+      "portrayedInNewMicahArt": false,
+      "identityReferenceSelected": null,
+      "stableFeaturesAndAge": "Not applicable: no identifiable portrayal. Candidate mentions are not approved identity assignments.",
+      "notes": "Textual recall, ruler names and national metaphors do not require inserting a portrait."
+    }
+  ],
+  "generation": [
+    {
+      "chapter": 1,
+      "anchor": "Micah 1:6",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-29f111ee-6ec7-46c6-a877-0435b9594fa3.png",
+      "activePath": "src/assets/chapter-micah-01-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 2,
+      "anchor": "Micah 2:2–5",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-4f6797f1-3133-4c4e-b07c-3626ed119b64.png",
+      "activePath": "src/assets/chapter-micah-02-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 3,
+      "anchor": "Micah 3:12",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-2bdf4842-0983-4029-a4a7-54b1614a6b35.png",
+      "activePath": "src/assets/chapter-micah-03-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 4,
+      "anchor": "Micah 4:3–4",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-dc929da9-592c-4d58-83cf-cfcf3374774d.png",
+      "activePath": "src/assets/chapter-micah-04-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 5,
+      "anchor": "Micah 5:2",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-b2e1d615-beab-470d-ba69-4a487a05a9c5.png",
+      "activePath": "src/assets/chapter-micah-05-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 6,
+      "anchor": "Micah 6:10–11",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-f22bba3c-6660-4921-ae1b-3dff4bc8837e.png",
+      "activePath": "src/assets/chapter-micah-06-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    },
+    {
+      "chapter": 7,
+      "anchor": "Micah 7:1",
+      "tool": "image_gen.imagegen",
+      "actualReferencedImagePaths": [
+        "/workspace/micah/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "identityInputs": [],
+      "originalLocalOutput": "/workspace/generated_images/exec-19284d01-673b-4fec-9ad2-d8fd1ded96a0.png",
+      "activePath": "src/assets/chapter-micah-07-opening-v1.webp",
+      "review": "Original generated image and native 960×540 export visually inspected. Accepted; no human/animal anatomy or identity introduced. No signature seen."
+    }
+  ],
+  "comparisonEvidence": [
+    "/tmp/micah-native-comparison.webp (Genesis 7 and all seven native exports, each tile at native pixel dimensions)",
+    "/tmp/micah-jonah-boundary.webp (actual approved main Jonah 4 Story plus Micah 1 native opener)"
+  ],
+  "parallelArtworkApprovedByAssumption": false,
+  "neighboringIntegrationDependency": "Recheck final Jonah and Nahum branch assets, approved imagery and verse spacing after their integration; no new Micah identity dependency."
+}

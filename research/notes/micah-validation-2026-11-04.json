@@ -1,0 +1,140 @@
+{
+  "scope": "Micah only, branch handoff; no publication/install",
+  "baselineCommit": "8217c57c591928653b7bd452ba5b21b79e4cc3f6",
+  "branch": "artwork/micah-2026-11-04",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "c0dbc63e6342793363b9a73e31597e60231be1a729776eb5e193c5fff4544051"
+  },
+  "counts": {
+    "chapters": 7,
+    "covered": 7,
+    "generated": 7,
+    "retainedMicahImages": 0,
+    "replaced": 0,
+    "bytes": 1033102,
+    "totalRegisteredChapters": 895
+  },
+  "assetPin": "94efb4849f6772cdd8eb38b47c633e9ed76c5aed",
+  "publicOrigin": {
+    "verified": 850,
+    "bytes": 107790800,
+    "newMicah": 7
+  },
+  "preservation": {
+    "baselineCommit": "8217c57c591928653b7bd452ba5b21b79e4cc3f6",
+    "baselineAssetsPreserved": 1215,
+    "earlierChapterMappingsPreserved": 725,
+    "baselineHostedMembersPreserved": 843,
+    "completeUnionInPinnedCommit": 850,
+    "unchanged": [
+      "scripture",
+      "Story metadata",
+      "reader",
+      "package.json",
+      "package-lock.json"
+    ],
+    "activeMicahImages": 7
+  },
+  "worker": {
+    "bytes": 64428372,
+    "limit": 66060288,
+    "headroom": 1631916
+  },
+  "passed": [
+    "locked npm ci; package and lockfile unchanged",
+    "source renderer/coverage/spacing/alt text/captions",
+    "shared build:mobile includes web output",
+    "check:readability (inherited report-only findings)",
+    "50 available nonbrowser content checks",
+    "check:images",
+    "check:mobile",
+    "check:release",
+    "actual seven-chapter offline engine; zero network calls",
+    "complete 850-image actual immutable origin byte verification",
+    "source/web/mobile release identity",
+    "local Worker-only Sites packaging",
+    "baseline preservation",
+    "git diff --check"
+  ],
+  "logs": {
+    "build-mobile": {
+      "path": "/tmp/micah-build-mobile.log",
+      "exitCode": 0,
+      "sha256": "e11320bfc8143ab5750b7328115e5d22db65c309c9145743047a99846eb33b51"
+    },
+    "readability": {
+      "path": "/tmp/micah-readability.log",
+      "exitCode": 0,
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    },
+    "images": {
+      "path": "/tmp/micah-images.log",
+      "exitCode": 0,
+      "sha256": "a6d0158efb6a3e0110fe457920aa4bf8ddf061f5315793edb7139bc585467397"
+    },
+    "mobile": {
+      "path": "/tmp/micah-mobile.log",
+      "exitCode": 0,
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    "release": {
+      "path": "/tmp/micah-release.log",
+      "exitCode": 0,
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    "offline": {
+      "path": "/tmp/micah-offline.log",
+      "exitCode": 0,
+      "sha256": "ce3b25829d5ca12df8b6e4d6e8699067655d68896f3d1a23ac14ca0b3eaa0e07"
+    },
+    "public-origin": {
+      "path": "/tmp/micah-public-origin.log",
+      "exitCode": 0,
+      "sha256": "16a6a8efa43d1ceb1313d4951027c5b37dde38519c44ad54fed48926ac4f1514"
+    },
+    "package": {
+      "path": "/tmp/micah-package.log",
+      "exitCode": 0,
+      "sha256": "8504a85212667bff30ffe04964ec222054388a089950274ee365fea9871e8c08"
+    },
+    "content": {
+      "path": "/tmp/micah-content.log",
+      "exitCode": 0,
+      "sha256": "194eb741152e9cfa034090f6e7fabb5853750e5172a573ac35c58e90db550ee6"
+    }
+  },
+  "neverRun": [
+    "managed-browser phone/iPad viewports",
+    "browser search/recovery smoke",
+    "signed iOS asset comparison",
+    "physical-device screens",
+    "device install and launch",
+    "live release:verify"
+  ],
+  "blocked": [
+    {
+      "action": "Read live release identity",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "outcome": "denied",
+      "reason": "Inherited proxy CONNECT tunnel failed, response 403; curl exit 56; HTTP status 000",
+      "retried": false,
+      "bypassed": false
+    },
+    {
+      "action": "Render phone/iPad browser layouts and browser smoke",
+      "target": "managed browser QA",
+      "outcome": "never run",
+      "reason": "No callable cua_repl.js; no browser installed or substitute server/control route used"
+    }
+  ],
+  "integrationRequirements": [
+    "Union parallel chapter mappings, explicit book registration and hosted asset lists",
+    "Pin new pushed commit containing complete combined asset union",
+    "Recheck final Jonah/Micah/Nahum spacing and full-size visuals",
+    "Assign next release build number in coordinator; feature branch keeps 342",
+    "Rebuild and verify Worker budget, source/web/offline/signed/live byte parity and all required browser/device checks"
+  ],
+  "nextBookHandoff": "Nahum, reader ID 33, three chapters, separate existing batch session; not begun here"
+}
