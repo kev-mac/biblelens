@@ -1,0 +1,45 @@
+{
+  "baseline": "8217c57c591928653b7bd452ba5b21b79e4cc3f6",
+  "assetPin": "d82e5a54afca8c11bce0a50bb683d276335f342a",
+  "branch": "artwork/malachi-2026-11-04",
+  "counts": {
+    "generated": 4,
+    "retainedMalachi": 0,
+    "replaced": 0,
+    "covered": 4,
+    "total": 4
+  },
+  "checks": {
+    "dependencyInstall": "passed: locked npm ci, official registry, ignore scripts, manifests unchanged",
+    "build": "passed",
+    "buildMobile": "passed",
+    "readability": "passed with inherited report-only findings",
+    "images": "passed: 892 chapters",
+    "mobile": "passed",
+    "release": "passed",
+    "sync": "passed",
+    "sitesPackage": "passed: Worker only",
+    "sourceAudit": "passed after correcting audit UX13 enrichment",
+    "offlineAllFour": "passed: zero network permitted, unchanged text, source/web/www parity",
+    "publicOrigin": "passed: 847 files, 107278464 bytes",
+    "npmCheck": "failed: final browser smoke launch cannot find Chromium; all preceding components passed",
+    "phoneIpadViewport": "never run: managed browser tool unavailable",
+    "signedDevice": "pending integration",
+    "liveSite": "denied: proxy HTTP 403 CONNECT for scripture-lens.kvn-mcgwn.chatgpt.site; stopped",
+    "unpublishedMirrorComparison": "pending: Sites source helper absent; native saved provenance matches version331"
+  },
+  "worker": {
+    "bytes": 64426837,
+    "limit": 66060288,
+    "headroom": 1633451
+  },
+  "integration": [
+    "Union all ten approved branches and hosting paths",
+    "Push complete asset union and repin immutable public source",
+    "Recheck Zechariah/Malachi/Matthew boundaries and full continuity",
+    "Compare fresh Sites mirror for independent changes",
+    "Increment combined build, rebuild, actual origin/live checks, viewport QA, sign, publish, install, launch, release verify"
+  ],
+  "noMainMergePublishInstall": true,
+  "browserRecovery": "Investigated: repository setup unavailable; pinned CLI dry-run succeeded; managed browser tool missing and official download hosts outside enforced allowlist. Installation/smoke rerun not attempted, not denied by auto-review. See browser-recovery.json."
+}

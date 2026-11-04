@@ -1,0 +1,15 @@
+
+> scripture-lens@1.1.0 check:sync
+> node scripts/check-sync.mjs && node scripts/check-sync-disconnect.mjs
+
+PASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.
+PASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.
+PASS: failed native disconnect survives reload, retries on reconnect, revokes the copied token and keeps offline notes.
+PASS: already-revoked/expired tokens clear on 401 without enabling sync.
+PASS: a late sync response cannot apply cloud data or restore credentials after disconnect.
+PASS: web sync removes unused bearer credentials and sends only the signed-in session.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
