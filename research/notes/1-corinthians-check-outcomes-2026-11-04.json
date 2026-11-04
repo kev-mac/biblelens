@@ -1,0 +1,139 @@
+{
+  "checks": [
+    {
+      "check": "install",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-install.log",
+      "sha256": "f5815b1765a3237d8ef937b085122c63d473099b236e0d841884ebc921e4ed46",
+      "passMessages": []
+    },
+    {
+      "check": "baseline-build",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-baseline-build.log",
+      "sha256": "d60aaa442174b6f6a49fcbb9a45c7b045a08eed0ab27cd21e5153cef36306ab7",
+      "passMessages": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain."
+      ]
+    },
+    {
+      "check": "build-mobile",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-build-mobile.log",
+      "sha256": "94cb0d926d18b6656c2bd822098d4d9e8c2841cff5fdfbf706cee6a6dcbcdf6e",
+      "passMessages": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain."
+      ]
+    },
+    {
+      "check": "check-images",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-check-images.log",
+      "sha256": "1343e63487daf399d586d993862053f096988f6b3b2a9afe60b634d32fc7d15e",
+      "passMessages": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 973 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, 1 Corinthians); 220 have existing Story coverage, 797 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    {
+      "check": "check-mobile",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-check-mobile.log",
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "passMessages": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    {
+      "check": "check-release",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-check-release.log",
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "passMessages": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    {
+      "check": "package",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-package.log",
+      "sha256": "5f2ead233cbe285b5504ffddff27e828988f9f89a15aeb32013ffda5373fad54",
+      "passMessages": []
+    },
+    {
+      "check": "readability",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-readability.log",
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0",
+      "passMessages": []
+    },
+    {
+      "check": "audit",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-audit.log",
+      "sha256": "b50ae7c5eb59a7b81ad6e5624d3694e6f06988065801ff8dca167e9c354a8478",
+      "passMessages": []
+    },
+    {
+      "check": "public-check",
+      "status": "passed",
+      "log": "/tmp/1-corinthians-public-check.log",
+      "sha256": "1435e0ef6edb3e5e93298676ed0a8e2316580019022097ffddb6817239ee1509",
+      "passMessages": []
+    }
+  ],
+  "neverRun": [
+    "managed browser smoke",
+    "phone/iPad browser layouts",
+    "release:verify against candidate live site",
+    "signing",
+    "signed iOS asset comparison",
+    "device install/version/launch",
+    "physical device screen inspection"
+  ],
+  "blocked": [
+    {
+      "action": "Live release metadata fetch",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "status": "denied by network proxy",
+      "reason": "CONNECT HTTP 403",
+      "retried": false
+    }
+  ],
+  "autoReviewRejection": false,
+  "packageFiles": [
+    "server/index.js",
+    ".openai/hosting.json",
+    ".openai/drizzle/0000_loose_bug.sql",
+    ".openai/drizzle/meta/_journal.json",
+    ".openai/drizzle/meta/0000_snapshot.json"
+  ]
+}
