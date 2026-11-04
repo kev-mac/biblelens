@@ -1,0 +1,106 @@
+{
+  "identity": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "3bd1ed3943af8a7c83d47675411069d5c7980ec78cc499f523833753f712bf8a"
+  },
+  "chapters": 6,
+  "placements": 6,
+  "networkCalls": 0,
+  "workerBytes": 64323298,
+  "limit": 66060288,
+  "headroom": 1736990,
+  "fullWebNativeChapterEquality": true,
+  "results": [
+    {
+      "chapter": 1,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 69,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-01-opening-v1.webp",
+          "bytes": 142002,
+          "sha256": "ec7bd267bc8262f22d3af3c4b5db548e1970a14849110b8fbb12806af6fcc84d"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": 2,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 66,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-02-opening-v1.webp",
+          "bytes": 201398,
+          "sha256": "eb9ffe94e1ab980434b5eafdf70f980d3a2ae4b27bbc9cd735d0df520409e2a5"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": 3,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 63,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-03-opening-v1.webp",
+          "bytes": 180238,
+          "sha256": "b9f7d126a0b030d884549a4d64bbce16ace75d15dca6364b7c6581c7a40a468b"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": 4,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 96,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-04-opening-v1.webp",
+          "bytes": 177082,
+          "sha256": "141cf31c156c796331d01a9f223db5c0b58ddee8ca7302c3db4ec8652ed9c1f3"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": 5,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 99,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-05-opening-v1.webp",
+          "bytes": 168978,
+          "sha256": "56451abf1189ec58a487d2246bf57f0b569effc9b78137e88a6c997bec4c3e64"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chapter": 6,
+      "openingImages": 1,
+      "placements": 1,
+      "verseFields": 72,
+      "inheritedEmptyStrings": [],
+      "files": [
+        {
+          "src": "/assets/chapter-ephesians-06-opening-v1.webp",
+          "bytes": 155402,
+          "sha256": "5f5cd79ef4730bb374a0b6e1ffbd4920a92ce7964b3d858715f54b3231bd8364"
+        }
+      ],
+      "passed": true
+    }
+  ]
+}
