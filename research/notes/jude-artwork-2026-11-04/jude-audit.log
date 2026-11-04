@@ -1,0 +1,85 @@
+{
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "inventory": {
+    "chapters": [
+      {
+        "key": "64:1",
+        "verses": 25,
+        "priorChapterImages": [],
+        "priorStoryHeadings": {},
+        "newOpeners": 1
+      }
+    ],
+    "generated": 1,
+    "retained": 0,
+    "replaced": 0
+  },
+  "pendingBoundaryUnion": [
+    "3 John/Jude",
+    "Jude/Revelation",
+    "Colossians–1 Peter prior batch"
+  ],
+  "preservedAssets": 1394,
+  "mirrorComparison": {
+    "mirrorHead": "8c9650c1d31364a2f573f1de390e085c9503b134",
+    "filesCompared": 1762,
+    "mismatches": [],
+    "siteVersion": 333,
+    "liveReleaseRequest": "HTTP 403 denied; stopped without retry"
+  },
+  "changedStories": [],
+  "batchChapters": 1,
+  "registeredChapters": 1108,
+  "hostedAssets": 1016,
+  "pin": "75425fdf209dedeea0854d6e5cf992fbcdc0f658",
+  "spacing": {
+    "openerAtVerse0": {
+      "baselineAdjacent": 64,
+      "currentAdjacent": 64,
+      "baselineAll": 65,
+      "currentAll": 65,
+      "batchClosePairs": [],
+      "boundaries": [
+        {
+          "a": {
+            "key": "57:8",
+            "verse": 6,
+            "pos": 30102,
+            "src": "/assets/story-new-covenant-v1.webp"
+          },
+          "b": {
+            "key": "64:1",
+            "verse": 0,
+            "pos": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "distance": 574
+        }
+      ]
+    },
+    "openerAtVerse1": {
+      "baselineAdjacent": 69,
+      "currentAdjacent": 69,
+      "baselineAll": 70,
+      "currentAll": 70,
+      "batchClosePairs": [],
+      "boundaries": [
+        {
+          "a": {
+            "key": "57:8",
+            "verse": 6,
+            "pos": 30102,
+            "src": "/assets/story-new-covenant-v1.webp"
+          },
+          "b": {
+            "key": "64:1",
+            "verse": 0,
+            "pos": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "distance": 575
+        }
+      ]
+    }
+  }
+}

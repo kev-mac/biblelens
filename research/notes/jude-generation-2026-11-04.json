@@ -1,6 +1,6 @@
 {
   "tool": "image_gen.imagegen",
-  "prompt": "Create a single 16:9 landscape book-chapter illustration for Jude 1:12–13, the literary metaphor of hidden reefs and wild sea waves. Use the supplied actual Genesis 7 image ONLY as visual style reference: grounded natural light, believable materials, restrained illustrative finish, not a character or scene reference. The new composition is entirely person-free: a low dark rocky reef breaks the surface of a blue-green sea near an ancient Mediterranean coast, with coherent curling waves and white foam under wind-driven cool grey clouds, a thin pale opening of daylight at the horizon. A close reef in the foreground with waves moving past it, distant simple coastline at the edge; no boats, no buildings, no people, no angels, no animals. This is imagined literary imagery, not a historical reconstruction or prophecy about modern events. Natural slate blues, muted teal and grey stone, no sepia/amber wash, no glossy photo finish or cartoon style. Clear spatially coherent water and rock textures, quiet but troubled atmosphere. No text, letters, inscriptions, numbers, symbols, watermarks, signatures or borders anywhere. Wide image suitable for 960x540 output.",
+  "prompt": "Create a single 16:9 landscape book-chapter illustration for Jude 1:12\u201313, the literary metaphor of hidden reefs and wild sea waves. Use the supplied actual Genesis 7 image ONLY as visual style reference: grounded natural light, believable materials, restrained illustrative finish, not a character or scene reference. The new composition is entirely person-free: a low dark rocky reef breaks the surface of a blue-green sea near an ancient Mediterranean coast, with coherent curling waves and white foam under wind-driven cool grey clouds, a thin pale opening of daylight at the horizon. A close reef in the foreground with waves moving past it, distant simple coastline at the edge; no boats, no buildings, no people, no angels, no animals. This is imagined literary imagery, not a historical reconstruction or prophecy about modern events. Natural slate blues, muted teal and grey stone, no sepia/amber wash, no glossy photo finish or cartoon style. Clear spatially coherent water and rock textures, quiet but troubled atmosphere. No text, letters, inscriptions, numbers, symbols, watermarks, signatures or borders anywhere. Wide image suitable for 960x540 output.",
   "inputs": [
     {
       "path": "src/assets/chapter-genesis-07-opening-v1.webp",
@@ -17,11 +17,28 @@
     "method": 6
   },
   "review": {
-    "textualAnchor": "Jude 1:12–13: hidden rocky reefs and wild waves; not a literal historical scene",
+    "textualAnchor": "Jude 1:12\u201313: hidden rocky reefs and wild waves; not a literal historical scene",
     "people": "none; no portrait inputs needed",
     "anatomy": "no people or animals; no hidden anatomy certified",
     "objects": "coherent sea, rock, clouds and distant coast; no text or signatures observed",
     "style": "natural slate-blue/teal sea, grey storm light, grounded rock and water textures; Genesis style-only supplied",
     "status": "accepted"
-  }
+  },
+  "files": [
+    {
+      "path": "/workspace/generated_images/exec-82349529-56b6-42ec-af7c-ea6bb3448faa.png",
+      "bytes": 2545629,
+      "sha256": "e99cdc1f7c9b3641052c35c5849bfc55a891b14abaeadfc5e118f1c859673497"
+    },
+    {
+      "path": "src/assets/chapter-jude-01-opening-v1.webp",
+      "bytes": 84984,
+      "sha256": "ac4af382bfd2f2cc11572452f31303c095d363e40051bdfd1b457184896e10b9"
+    },
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "bytes": 107786,
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    }
+  ]
 }

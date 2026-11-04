@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "check": "content",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 1,
+      "status": "partial; browser infrastructure blocked",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-content.log",
+      "reason": "All preceding content/readability/search commands passed; final check-release-smoke.mjs could not launch missing Chromium headless shell. No browser view rendered. Corpus readability report-only."
+    },
+    {
+      "check": "images",
+      "command": [
+        "npm",
+        "run",
+        "check:images"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-images.log"
+    },
+    {
+      "check": "mobile",
+      "command": [
+        "npm",
+        "run",
+        "check:mobile"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-mobile.log"
+    },
+    {
+      "check": "release",
+      "command": [
+        "npm",
+        "run",
+        "check:release"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-release.log"
+    },
+    {
+      "check": "audit",
+      "command": [
+        "node",
+        "research/notes/jude-artwork-audit-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-audit.log"
+    },
+    {
+      "check": "offline",
+      "command": [
+        "node",
+        "research/notes/jude-offline-verification-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-offline.log"
+    },
+    {
+      "check": "package",
+      "command": [
+        "npm",
+        "run",
+        "release:sites",
+        "--",
+        "/tmp/jude-sites-stage/dist"
+      ],
+      "exitCode": 0,
+      "status": "passed",
+      "log": "research/notes/jude-artwork-2026-11-04/jude-package.log"
+    },
+    {
+      "check": "build-mobile",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "research/notes/jude-artwork-2026-11-04/jude-build-mobile.log"
+    },
+    {
+      "check": "dependency-restore",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "research/notes/jude-artwork-2026-11-04/jude-dependency-restore.log"
+    }
+  ],
+  "limits": {
+    "live": "HTTP 403 for release.json; denied request stopped without retry",
+    "browser": "cua_repl.js unavailable, Chromium absent; browser smoke could not launch; phone/iPad views not run",
+    "signingDevicesPublication": "outside branch scope; pending coordinator",
+    "readability": "full corpus report-only; new alt grade 5.82, no long sentences or unexplained jargon"
+  },
+  "worker": {
+    "bytes": 63920226,
+    "limit": 66060288,
+    "headroom": 2140062
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "c8291461391f32c71cd372ca63ef0026a05904d55818c573e06253660a22d796"
+  }
+}
