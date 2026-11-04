@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "check": "images",
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-images.log"
+    },
+    {
+      "check": "mobile",
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-mobile.log"
+    },
+    {
+      "check": "release",
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-release.log"
+    },
+    {
+      "check": "readability",
+      "command": "npm run check:readability",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-readability.log"
+    },
+    {
+      "check": "audit",
+      "command": "node research/notes/philippians-artwork-audit-2026-11-04.mjs",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-audit.log"
+    },
+    {
+      "check": "offline",
+      "command": "node research/notes/philippians-offline-verification-2026-11-04.mjs",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-offline.log"
+    },
+    {
+      "check": "package",
+      "command": "npm run release:sites -- /tmp/philippians-sites-stage/dist",
+      "exitCode": 0,
+      "status": "passed",
+      "log": "/tmp/philippians-package.log"
+    }
+  ],
+  "build": "passed",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 343,
+    "sourceHash": "f0152088a619c6063681fe3bd1d203f0e6a066f2ca65a78d67cf215e6d380471"
+  },
+  "workerBytes": 64322225,
+  "workerLimit": 66060288,
+  "workerHeadroom": 1738063,
+  "live": {
+    "status": "denied",
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "reason": "Environment proxy CONNECT HTTP 403; stopped without retry or bypass"
+  },
+  "browser": {
+    "status": "never run",
+    "reason": "Managed Linux with no callable cua_repl.js; no substitute installed"
+  },
+  "signing": "release-owned, never run",
+  "devices": "release-owned, never run"
+}
