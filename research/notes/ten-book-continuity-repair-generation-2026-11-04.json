@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "type": "historical-scene / precise-object-edit",
+  "prompt": "Replace the youthful crowned king and younger-looking priest at right with natural empty courtyard, preserving temple masonry, scaffolding, anonymous masons and offering chest. No Joash or Jehoiada portrait, no new king or priest. Keep coherent hands/limbs. Genesis 7 supplies style only: natural light, believable materials, restrained illustration; no ark or copied people. No text, watermark, modern tools or coins.",
+  "actualInputs": [
+    {
+      "path": "src/assets/story-jehoram-ahaziah-athaliah-and-joash-v1.webp",
+      "role": "edit target",
+      "sha256": "50ac7701879d1d72b885011b9602c807704f1c9b27cf9289237dcb6736888402"
+    },
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "role": "style only",
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    }
+  ],
+  "originalOutput": "/Users/kevin/Documents/Codex/2026-11-03/task-2/generated_images/exec-d120f0f0-1de0-4f91-9378-b066a2c9af90.png",
+  "final": {
+    "path": "src/assets/story-jehoram-ahaziah-athaliah-and-joash-v2.webp",
+    "width": 1200,
+    "height": 675,
+    "quality": 82,
+    "bytes": 153676,
+    "sha256": "0cbfff8822ad3457a6ceae965c553692b4caee776c40857256bc11f4100a2cbe"
+  },
+  "review": "Original and final inspected at full size. No identifiable royal/priestly figures remain. Visible anonymous workers and hands/limbs coherent; occluded/distant detail remains limited. Original v1 retained unchanged."
+}
