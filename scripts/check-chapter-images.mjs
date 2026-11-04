@@ -53,6 +53,7 @@ assert.equal(context.readerChapterIllustrations({},1),'');
 validateChapterImages(images,original,headings,stories);
 const missing=structuredClone(images);delete missing['0:2'];
 assert.throws(()=>validateChapterImages(missing,original,headings,stories),/Genesis 2 needs/);
+
 const missingSamuel=structuredClone(images);delete missingSamuel['9:2'];
 assert.throws(()=>validateChapterImages(missingSamuel,original,headings,stories),/2 Samuel 2 needs/);
 const missingFirstSamuel=structuredClone(images);delete missingFirstSamuel['8:2'];
