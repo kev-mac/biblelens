@@ -1,0 +1,27 @@
+{
+  "tool": "image_gen.imagegen",
+  "prompt": "Create a single 16:9 landscape book-chapter illustration for Jude 1:12–13, the literary metaphor of hidden reefs and wild sea waves. Use the supplied actual Genesis 7 image ONLY as visual style reference: grounded natural light, believable materials, restrained illustrative finish, not a character or scene reference. The new composition is entirely person-free: a low dark rocky reef breaks the surface of a blue-green sea near an ancient Mediterranean coast, with coherent curling waves and white foam under wind-driven cool grey clouds, a thin pale opening of daylight at the horizon. A close reef in the foreground with waves moving past it, distant simple coastline at the edge; no boats, no buildings, no people, no angels, no animals. This is imagined literary imagery, not a historical reconstruction or prophecy about modern events. Natural slate blues, muted teal and grey stone, no sepia/amber wash, no glossy photo finish or cartoon style. Clear spatially coherent water and rock textures, quiet but troubled atmosphere. No text, letters, inscriptions, numbers, symbols, watermarks, signatures or borders anywhere. Wide image suitable for 960x540 output.",
+  "inputs": [
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "role": "style only"
+    }
+  ],
+  "original": "/workspace/generated_images/exec-82349529-56b6-42ec-af7c-ea6bb3448faa.png",
+  "accepted": "src/assets/chapter-jude-01-opening-v1.webp",
+  "conversion": {
+    "tool": "Pillow",
+    "resize": "960x540 LANCZOS",
+    "format": "WebP",
+    "quality": 85,
+    "method": 6
+  },
+  "review": {
+    "textualAnchor": "Jude 1:12–13: hidden rocky reefs and wild waves; not a literal historical scene",
+    "people": "none; no portrait inputs needed",
+    "anatomy": "no people or animals; no hidden anatomy certified",
+    "objects": "coherent sea, rock, clouds and distant coast; no text or signatures observed",
+    "style": "natural slate-blue/teal sea, grey storm light, grounded rock and water textures; Genesis style-only supplied",
+    "status": "accepted"
+  }
+}
