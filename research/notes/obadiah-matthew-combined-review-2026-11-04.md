@@ -21,3 +21,7 @@ Branch ledgers used different coordinates, catalog transforms and pair counting 
 Readability is an inherited report-only corpus check; a successful command does not mean every pre-existing record meets the strict prose thresholds. This batch changes image alt text and one image mapping, not scripture or Story prose. Full Mac/browser, offline, public-origin, live and signed-device checks are recorded separately when completed. Publication and installation are pending at this checkpoint.
 
 The reconciled complete-canon counts are 63 adjacent / 64 all near pairs with opener at verse 0, and 67 adjacent / 68 all near pairs with opener at verse 1, identical before and after. All 276 browser layouts passed. New alt text averages grade 7.06 with no overlong sentences or flagged jargon. The independent offline audit initially assumed nonempty text in every edition; source inspection established existing empty ASV strings at Matthew 17:21, 18:11 and 23:14. The corrected audit requires string fields, exact source equality for every edition and exactly those three source blanks, without modifying scripture.
+
+## Release completion
+
+The successful build 343 publication, native installations and exact live/source/offline/signed comparisons are recorded in [build-343-release-verification-2026-11-04.md](build-343-release-verification-2026-11-04.md). See that final report for the completed outcomes, recovered checks and verification limits.

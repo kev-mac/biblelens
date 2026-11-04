@@ -1,0 +1,59 @@
+{
+  "version": "1.1.0",
+  "buildNumber": 343,
+  "sourceHash": "897c1dfad11bd31e4545f5a1803382276e79281b8eda957fb48b4170ed9453a8",
+  "sitesVersion": 332,
+  "sitesSourceCommit": "57013c141639c6db19098d50708ed6201e396ee2",
+  "canonicalSourceCommit": "369181fbd7f72478f2f6c9a5328464085c1aa456",
+  "deploymentId": "appgdep_6aeac4db9d68819186250c24776698d0",
+  "deploymentStatus": "succeeded",
+  "sitesSavedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c4f82307458481919322737ca0df9dd8",
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "archiveSha256": "72b9c441027704d04104b706f13374f331f8b4b2e66b302989a2e5eb3c881dde",
+  "sitesArchiveContentHash": "sha256:fb7dbd5ccb0094fa4c8486baf6e261eaa8ff165808783d9dc9b6645585da7aad",
+  "workerBytes": 64367615,
+  "workerBudgetBytes": 66060288,
+  "signedFilesMatchingWww": 1308,
+  "strictCodesign": "passed",
+  "releasePrepare": "passed",
+  "releaseVerify": "passed",
+  "viewportRenders": 276,
+  "publicOriginAssetsVerified": 900,
+  "liveChaptersVerified": 957,
+  "batchChaptersVerified": 69,
+  "liveImagesVerified": 1198,
+  "liveImageBytesCompared": 148563324,
+  "allImagesServedFromSiteOrigin": true,
+  "preservedBaselineAssets": 1215,
+  "preservedStashes": 4,
+  "devices": {
+    "iphone": {
+      "model": "iPhone 16 Pro",
+      "version": "1.1.0",
+      "buildNumber": 343,
+      "install": "success",
+      "activatedLaunch": "success",
+      "runningAfterLaunch": true
+    },
+    "ipad": {
+      "model": "iPad mini (A17 Pro)",
+      "version": "1.1.0",
+      "buildNumber": 343,
+      "install": "success",
+      "activatedLaunch": "success",
+      "runningAfterLaunch": true
+    }
+  },
+  "status": "complete",
+  "remainingBlockers": [],
+  "limits": [
+    "Physical-device screen appearance was not directly inspected; responsive browser viewports and native version/launch/process checks passed.",
+    "Inherited corpus readability findings remain report-only. New alt text separately meets the collection target; inherited close-pair ledgers remain unchanged."
+  ],
+  "recovery": [
+    "Independent offline audit corrected its nonempty-edition assumption after verifying exact source ASV blanks at Matthew 17:21, 18:11 and 23:14; no scripture was edited.",
+    "The first read-only iPad process listing failed with a StreamingAction connection error. A normal retry succeeded and confirmed the launched process.",
+    "Live browser navigation briefly showed the previous chapter while loading; normal passage-picker selection subsequently loaded Matthew 16 and both images, followed by successful real search."
+  ],
+  "workerHeadroomBytes": 1692673
+}
