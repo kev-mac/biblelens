@@ -1,0 +1,148 @@
+{
+  "checks": [
+    {
+      "name": "build-mobile",
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "log": "/tmp/1-john-build-mobile.log",
+      "logSha256": "3a8558f00356be178dd1c8ed64825caf2d11eb83f256ab850bacf676145d10db",
+      "evidence": [
+        "PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.",
+        "Validated chapter names: 1189",
+        "Lazy Worker: 63922416 bytes; assets: dist/client",
+        "PASS: known-passage retrieval, public packaged responses, references, selections, follow-ups, missing matches, input validation and zero external requests.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: cited family answers, informal terms, relationship direction, duplicate identities, follow-ups, violence intent, missing evidence and offline reference resources.",
+        "PASS: modern food intent, contextual answers, dietary follow-ups, explicit reference priority, scope, real-word typo protection and unrelated-permission rejection.",
+        "PASS: fingerprinted startup assets preserve stylesheet order and URL bases, classic global execution boundaries, nonce, DOM readiness, failure detection, and native bootstrap order.",
+        "PASS: packaged worker serves 26 original startup assets through two correct, content-fingerprinted bundles.",
+        "PASS: startup reveals only after both resources and DOM initialization; missed resource events cannot leave a completed app hidden.",
+        "PASS: partial CSS/script availability and incomplete bundle execution keep recovery available until actual completion.",
+        "PASS: failures before body parsing and during DOMContentLoaded initialization retain a usable recovery action; unrelated resources do not block startup.",
+        "PASS: hung-defer Retry works before DOMContentLoaded, preserves the destination and never touches user storage; unbundled development bypasses the curtain.",
+        "Mobile web bundle ready: /workspace/biblelens/www (offline reading/search; optional cloud sync)"
+      ]
+    },
+    {
+      "name": "images",
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "log": "/tmp/1-john-images.log",
+      "logSha256": "e46310a73dddbe915497e3911e88644cec486ce0901da5a75e9bbc439f678e4b",
+      "evidence": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 1112 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, 1 John); 272 have existing Story coverage, 899 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ]
+    },
+    {
+      "name": "mobile",
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "log": "/tmp/1-john-mobile.log",
+      "logSha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb",
+      "evidence": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ]
+    },
+    {
+      "name": "release",
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "log": "/tmp/1-john-release.log",
+      "logSha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409",
+      "evidence": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data."
+      ]
+    },
+    {
+      "name": "package",
+      "command": "npm run release:sites -- /tmp/1-john-sites-dist",
+      "exitCode": 0,
+      "log": "/tmp/1-john-package.log",
+      "logSha256": "8baffd0e001b2d6a6dc1da37bef1de4bebd5941f221e2767a2345ba6ff788b4d",
+      "evidence": [
+        "Sites Worker-only package ready: /tmp/1-john-sites-dist"
+      ]
+    },
+    {
+      "name": "offline",
+      "command": "node research/notes/1-john-offline-verification-2026-11-04.mjs",
+      "exitCode": 0,
+      "log": "/tmp/1-john-offline.log",
+      "logSha256": "70b61bf7a4dfcb9bebf86ec87b3f0f5a84d56c4c9a268242e62d4853e634ba0e",
+      "evidence": []
+    },
+    {
+      "name": "content",
+      "command": "npm run check",
+      "exitCode": 1,
+      "log": "/tmp/1-john-content.log",
+      "logSha256": "128eefcab0e8fc2f49c8b3efc36c8c7d03f886398ea362762a8c70b6023ffeb5",
+      "evidence": [
+        "PASS: atlas hides generic feature labels while preserving meaningful descriptions.",
+        "PASS: narrative Ur links preserve ambiguity safeguards; real map previews cover every reference point, escape labels and keep unknown coordinates empty.",
+        "PASS: UX2 Places primary prefix/word-start ranking ahead of displayed aliases, without inner substrings.",
+        "PASS: 18 timeline cases, 6 qualified flags, 3 new history annotations, exact KJV quotations, unsafe-source rejection and packaged assets.",
+        "> scripture-lens@1.1.0 check:readability",
+        "> node scripts/check-readability.mjs",
+        "PASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and three tabs.",
+        "PASS: shared pending/resolved reference requests across bundles, failed HTTP/JSON retry, and exclusion of private endpoints.",
+        "PASS: packaged identity HTML/JS/CSS/reference and binary assets remain unchanged for every compression preference.",
+        "PASS: chapter-scoped people/place links retain matcher identity and exact offsets; red-letter spans survive packaging.",
+        "PASS: rendered story decoration, independent reference availability, missing-data retry, failure isolation, observer reconnection and replacement-render race protection.",
+        "PASS: reference formats, ranges, aliases, ambiguous names, spelling, unknown queries and local private-note contracts.",
+        "PASS: search useful-hit threshold 50/50; original targets and alternatives preserved.",
+        "PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.",
+        "PASS: unified offline search, multi-passage comparisons, same-book/alias/range parsing, bounded results, source deduplication, alternative readings and exact selected-edition text.",
+        "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell"
+      ]
+    },
+    {
+      "name": "public",
+      "command": "actual public-origin fetch and SHA-256",
+      "exitCode": 0,
+      "log": "/tmp/1-john-public.log",
+      "logSha256": "9d4b6c0f9108e6aebfc28ae1de76ac3e0f5726e105f97c336409320002635672",
+      "evidence": []
+    },
+    {
+      "name": "parity",
+      "command": "full active-image source/web/offline parity",
+      "exitCode": 0,
+      "log": "/tmp/1-john-parity.log",
+      "logSha256": "b70277e712153883c294ab9b46c3ef98aa88d397c98e2f06305f69717249f0dc",
+      "evidence": []
+    }
+  ],
+  "book": "1 John",
+  "scope": "unpublished feature branch only",
+  "browserSmoke": "unrun: Chromium missing; aggregate exited 1",
+  "phoneIpadLayouts": "unrun: managed browser tool unavailable; no substitute attempted",
+  "live": {
+    "action": "HEAD",
+    "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+    "status": "denied",
+    "reason": "HTTP 403 at proxy CONNECT",
+    "retried": false,
+    "outcome": "No live bytes obtained"
+  },
+  "approvalReviewRejection": false,
+  "pendingApproval": false,
+  "publicationSigningInstallation": "not attempted; reserved to parent",
+  "launchesOfPriorBuild344": "still blocked by device locks per inherited release report",
+  "workerOnlyFiles": [
+    ".openai/drizzle/0000_loose_bug.sql",
+    ".openai/drizzle/meta/0000_snapshot.json",
+    ".openai/drizzle/meta/_journal.json",
+    ".openai/hosting.json",
+    "server/index.js"
+  ]
+}
