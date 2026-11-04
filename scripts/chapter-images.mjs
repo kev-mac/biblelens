@@ -38,7 +38,8 @@ export const illustratedBooks=new Map([
  [32,['Micah',7]],
  [33,['Nahum',3]],
  [34,['Habakkuk',3]],
- [35,['Zephaniah',3]]
+ [35,['Zephaniah',3]],
+ [36,['Haggai',2]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 

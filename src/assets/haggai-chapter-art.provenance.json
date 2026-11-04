@@ -1,0 +1,36 @@
+{
+  "book": "Haggai",
+  "bookId": 36,
+  "date": "2026-11-04",
+  "generated": 2,
+  "retained": 0,
+  "replaced": 0,
+  "entries": [
+    {
+      "chapter": 1,
+      "path": "src/assets/chapter-haggai-01-opening-v1.webp",
+      "generatedFrom": "/workspace/generated_images/exec-16fecc6b-52d9-46a7-b342-f234c46f4dde.png",
+      "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "identityReferences": [],
+      "identifiablePeople": false,
+      "tool": "image_gen.imagegen",
+      "textAnchor": "Haggai 1:4,8,14",
+      "review": "Accepted after original-resolution review of generated source and final 960x540 WebP, with approved style and prior Ezra scenes viewed together. No people/animals/anatomy. Plausible timber and masonry / distinct vine, fig, shrub and olive forms; exact historical architecture and botanical species remain illustrative.",
+      "bytes": 154330,
+      "sha256": "65a0ffe6935c240d2451d49715dff6dc07167da597798012930c1d873547b45c"
+    },
+    {
+      "chapter": 2,
+      "path": "src/assets/chapter-haggai-02-opening-v1.webp",
+      "generatedFrom": "/workspace/generated_images/exec-69cea1d0-7114-4e16-b92f-b6e98bb0e0a2.png",
+      "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "identityReferences": [],
+      "identifiablePeople": false,
+      "tool": "image_gen.imagegen",
+      "textAnchor": "Haggai 2:19",
+      "review": "Accepted after original-resolution review of generated source and final 960x540 WebP, with approved style and prior Ezra scenes viewed together. No people/animals/anatomy. Plausible timber and masonry / distinct vine, fig, shrub and olive forms; exact historical architecture and botanical species remain illustrative.",
+      "bytes": 167484,
+      "sha256": "a3eeeffe303dff8cb1629264a1d48eda660d1afc0a3e86002692586f89d304ec"
+    }
+  ]
+}

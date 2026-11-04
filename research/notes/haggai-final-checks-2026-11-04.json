@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "name": "images",
+      "command": [
+        "npm",
+        "run",
+        "check:images"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/haggai-final-images.log"
+    },
+    {
+      "name": "mobile",
+      "command": [
+        "npm",
+        "run",
+        "check:mobile"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/haggai-final-mobile.log"
+    },
+    {
+      "name": "release",
+      "command": [
+        "npm",
+        "run",
+        "check:release"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/haggai-final-release.log"
+    },
+    {
+      "name": "offline",
+      "command": [
+        "node",
+        "research/notes/haggai-offline-check-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/haggai-final-offline.log"
+    },
+    {
+      "name": "source",
+      "command": [
+        "node",
+        "research/notes/haggai-artwork-audit-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/haggai-final-source.log"
+    }
+  ],
+  "workerBytes": 64425735,
+  "workerLimit": 66060288,
+  "headroom": 1634553,
+  "webRelease": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "25e2824b386742e0c26d2e0e1c1f1a0bcd160f7ab22ef04f8fa8bfb269784680"
+  },
+  "mobileRelease": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "25e2824b386742e0c26d2e0e1c1f1a0bcd160f7ab22ef04f8fa8bfb269784680"
+  },
+  "unrun": [
+    "Browser phone/iPad viewport QA: cua_repl.js unavailable",
+    "Candidate live Site: outside cloud allowlist and not published",
+    "Signed iOS/device/physical-screen/release verification: integration responsibility"
+  ]
+}
