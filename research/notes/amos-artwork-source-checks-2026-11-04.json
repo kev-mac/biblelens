@@ -1,0 +1,308 @@
+{
+  "base": "846ba467f3094e065d5d3489c5bb897908f2bf79",
+  "registeredChapters": 668,
+  "amosOpeners": 9,
+  "retainedStory": {
+    "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+    "alt": "Amos speaks with Amaziah at a sanctuary gate while holding a shepherd\u2019s staff.",
+    "width": 1200,
+    "height": 675
+  },
+  "baselineAssetBlobsPreserved": 991,
+  "baselineMetadataPreserved": true,
+  "scriptureStoryReaderPackageAndPrivacyHandlerUnchanged": true,
+  "rendererSourceChecksPassed": true,
+  "coverageFailClosedPassed": true,
+  "hostedInventoryPassed": true,
+  "assets": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Sheep graze on rocky hills beside a shepherd\u2019s staff near Tekoa.",
+      "src": "/assets/chapter-amos-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 162756,
+      "sha256": "64b245db9a7362a8cf62caac313c2c88f8c78b52fcf312bc92101bbc146cf8e6"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A wooden cart stands loaded with grain sheaves in a rutted field.",
+      "src": "/assets/chapter-amos-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 156354,
+      "sha256": "adec3515fa8bf62fc6d4f367ed1548a5c55cc293246d8f3a005106e15607d2a4"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Broken stone horns lie beside a ruined altar under gray skies.",
+      "src": "/assets/chapter-amos-03-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 127500,
+      "sha256": "7e4c070eb35ae54617e5968d2245a5810784022c42aee279fcfa57f92d8eb020"
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A dry vineyard and olive grove face rain falling on distant hills.",
+      "src": "/assets/chapter-amos-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 157682,
+      "sha256": "646dc95d02910ad71a5755ccb8ae6f6a8deaf0c474428d751ba49199a69b1e42"
+    },
+    {
+      "chapter": 5,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A strong stream flows over rocks through a green valley.",
+      "src": "/assets/chapter-amos-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 156912,
+      "sha256": "106d060b5b149410e68fd52bb81e28f39532acca51990e543d27f91dd416bff0"
+    },
+    {
+      "chapter": 6,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty ivory-inlaid couch stands beside a wine bowl and lyre.",
+      "src": "/assets/chapter-amos-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 113302,
+      "sha256": "61252acbf85700716003aee5f91aef5293446317410ff28665c2bebc9d1c8ed2"
+    },
+    {
+      "chapter": 7,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A weighted plumb line hangs against an ancient stone wall.",
+      "src": "/assets/chapter-amos-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 140052,
+      "sha256": "c56e275a5bf599435528cf8a12af187d2ae724ed0f2abaec14a75506ec2b3456"
+    },
+    {
+      "chapter": 8,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A woven basket holds ripe summer fruit in a quiet courtyard.",
+      "src": "/assets/chapter-amos-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 150214,
+      "sha256": "9cffb1f65c7d8c274291efd1ecd7616858f60111b6be1dce86fbea1e0d81b268"
+    },
+    {
+      "chapter": 9,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Green vineyards and gardens cover restored terraces near stone houses.",
+      "src": "/assets/chapter-amos-09-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 186988,
+      "sha256": "937b9567000bd01c69c48f26c59b9878a1ba8b687982c8653475fc3ad93ae6b2"
+    }
+  ],
+  "spacing": {
+    "pairs": [
+      {
+        "before": {
+          "book": 27,
+          "chapter": 1,
+          "verse": 1,
+          "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+          "position": 22096
+        },
+        "after": {
+          "book": 29,
+          "chapter": 1,
+          "verse": 0,
+          "src": "/assets/chapter-amos-01-opening-v1.webp",
+          "position": 22366
+        },
+        "gap": 270
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 1,
+          "verse": 0,
+          "src": "/assets/chapter-amos-01-opening-v1.webp",
+          "position": 22366
+        },
+        "after": {
+          "book": 29,
+          "chapter": 2,
+          "verse": 0,
+          "src": "/assets/chapter-amos-02-opening-v1.webp",
+          "position": 22381
+        },
+        "gap": 15
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 2,
+          "verse": 0,
+          "src": "/assets/chapter-amos-02-opening-v1.webp",
+          "position": 22381
+        },
+        "after": {
+          "book": 29,
+          "chapter": 3,
+          "verse": 0,
+          "src": "/assets/chapter-amos-03-opening-v2.webp",
+          "position": 22397
+        },
+        "gap": 16
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 3,
+          "verse": 0,
+          "src": "/assets/chapter-amos-03-opening-v2.webp",
+          "position": 22397
+        },
+        "after": {
+          "book": 29,
+          "chapter": 4,
+          "verse": 0,
+          "src": "/assets/chapter-amos-04-opening-v1.webp",
+          "position": 22412
+        },
+        "gap": 15
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 4,
+          "verse": 0,
+          "src": "/assets/chapter-amos-04-opening-v1.webp",
+          "position": 22412
+        },
+        "after": {
+          "book": 29,
+          "chapter": 5,
+          "verse": 0,
+          "src": "/assets/chapter-amos-05-opening-v1.webp",
+          "position": 22425
+        },
+        "gap": 13
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 5,
+          "verse": 0,
+          "src": "/assets/chapter-amos-05-opening-v1.webp",
+          "position": 22425
+        },
+        "after": {
+          "book": 29,
+          "chapter": 6,
+          "verse": 0,
+          "src": "/assets/chapter-amos-06-opening-v1.webp",
+          "position": 22452
+        },
+        "gap": 27
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 6,
+          "verse": 0,
+          "src": "/assets/chapter-amos-06-opening-v1.webp",
+          "position": 22452
+        },
+        "after": {
+          "book": 29,
+          "chapter": 7,
+          "verse": 0,
+          "src": "/assets/chapter-amos-07-opening-v1.webp",
+          "position": 22466
+        },
+        "gap": 14
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 7,
+          "verse": 0,
+          "src": "/assets/chapter-amos-07-opening-v1.webp",
+          "position": 22466
+        },
+        "after": {
+          "book": 29,
+          "chapter": 7,
+          "verse": 10,
+          "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+          "position": 22475
+        },
+        "gap": 9
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 7,
+          "verse": 10,
+          "src": "/assets/story-amaziah-opposes-amos-v1.webp",
+          "position": 22475
+        },
+        "after": {
+          "book": 29,
+          "chapter": 8,
+          "verse": 0,
+          "src": "/assets/chapter-amos-08-opening-v1.webp",
+          "position": 22483
+        },
+        "gap": 8
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 8,
+          "verse": 0,
+          "src": "/assets/chapter-amos-08-opening-v1.webp",
+          "position": 22483
+        },
+        "after": {
+          "book": 29,
+          "chapter": 9,
+          "verse": 0,
+          "src": "/assets/chapter-amos-09-opening-v2.webp",
+          "position": 22497
+        },
+        "gap": 14
+      },
+      {
+        "before": {
+          "book": 29,
+          "chapter": 9,
+          "verse": 0,
+          "src": "/assets/chapter-amos-09-opening-v2.webp",
+          "position": 22497
+        },
+        "after": {
+          "book": 31,
+          "chapter": 1,
+          "verse": 1,
+          "src": "/assets/story-jonah-flees-and-is-swallowed-v1.webp",
+          "position": 22533
+        },
+        "gap": 36
+      }
+    ],
+    "closePairs": [],
+    "boundaryRecheck": "Repeat after concurrent Joel and Obadiah/other branch integration."
+  },
+  "unverified": [
+    "phone/iPad rendering",
+    "signed devices",
+    "live assets"
+  ],
+  "packagedVerification": "Passed build:mobile, check:images, check:mobile and check:release; see amos-build-verification-2026-11-04.json."
+}
