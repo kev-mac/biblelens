@@ -1,0 +1,70 @@
+{
+  "generated": 3,
+  "retainedBookImages": 0,
+  "replaced": 0,
+  "rows": [
+    {
+      "chapter": "60:1",
+      "scene": "Lamp in a dark cave before dawn; 2 Peter 1:19.",
+      "tool": "image_gen.imagegen",
+      "actualReferenceInputs": [
+        "/workspace/biblelens-2-peter/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "referenceRole": "style only, never identity",
+      "original": "/workspace/generated_images/exec-b65d9b79-4957-4a56-9230-935ac934dc4d.png",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "file": "src/assets/chapter-2-peter-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "conversion": "Pillow resize to 960x540, WebP quality=85; original PNG retained",
+      "bytes": 56546,
+      "sha256": "88dd984d61a7ca09fd60325971307b1c56c24cfef542545c0f7265f6ebe9b734",
+      "review": "Original full-size and final asset reviewed; no humans, animals, text/signature or text-critical numbered objects. Lamp/flame, dry basin, stream banks and terrain coherent."
+    },
+    {
+      "chapter": "60:2",
+      "scene": "Dry spring under wind-driven clouds; 2 Peter 2:17.",
+      "tool": "image_gen.imagegen",
+      "actualReferenceInputs": [
+        "/workspace/biblelens-2-peter/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "referenceRole": "style only, never identity",
+      "original": "/workspace/generated_images/exec-f5884bb2-8dea-4357-8c7e-19d063800f15.png",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "file": "src/assets/chapter-2-peter-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "conversion": "Pillow resize to 960x540, WebP quality=85; original PNG retained",
+      "bytes": 151858,
+      "sha256": "042f9b0fa2f54d240207de531ba78e849c05a6fbd35ddcbebc4273396a31d99f",
+      "review": "Original full-size and final asset reviewed; no humans, animals, text/signature or text-critical numbered objects. Lamp/flame, dry basin, stream banks and terrain coherent."
+    },
+    {
+      "chapter": "60:3",
+      "scene": "Green land and clear stream under fresh sky; 2 Peter 3:13.",
+      "tool": "image_gen.imagegen",
+      "actualReferenceInputs": [
+        "/workspace/biblelens-2-peter/src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "referenceRole": "style only, never identity",
+      "original": "/workspace/generated_images/exec-0ff9fc53-6375-4af3-a5b7-9d57aef70b6b.png",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "file": "src/assets/chapter-2-peter-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "conversion": "Pillow resize to 960x540, WebP quality=85; original PNG retained",
+      "bytes": 126682,
+      "sha256": "ca6ff4b0eae1061b64b59ced6295fedb0cf9910944602c775e555f50465a58ff",
+      "review": "Original full-size and final asset reviewed; no humans, animals, text/signature or text-critical numbered objects. Lamp/flame, dry basin, stream banks and terrain coherent."
+    }
+  ]
+}

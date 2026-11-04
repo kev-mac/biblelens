@@ -1,0 +1,98 @@
+{
+  "checks": [
+    {
+      "check": "content",
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "exitCode": 1,
+      "log": "/tmp/2peter-content.log"
+    },
+    {
+      "check": "images",
+      "command": [
+        "npm",
+        "run",
+        "check:images"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-images.log"
+    },
+    {
+      "check": "mobile",
+      "command": [
+        "npm",
+        "run",
+        "check:mobile"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-mobile.log"
+    },
+    {
+      "check": "release",
+      "command": [
+        "npm",
+        "run",
+        "check:release"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-release.log"
+    },
+    {
+      "check": "audit",
+      "command": [
+        "node",
+        "research/notes/2-peter-artwork-audit-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-audit.log"
+    },
+    {
+      "check": "offline",
+      "command": [
+        "node",
+        "research/notes/2-peter-offline-verification-2026-11-04.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-offline.log"
+    },
+    {
+      "check": "package",
+      "command": [
+        "npm",
+        "run",
+        "release:sites",
+        "--",
+        "/tmp/2peter-sites-stage/dist"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/2peter-package.log"
+    }
+  ],
+  "build": {
+    "command": "npm run build:mobile",
+    "exitCode": 0,
+    "log": "/tmp/2peter-build.log",
+    "workerBytes": 63921308,
+    "limit": 66060288,
+    "remaining": 2138980
+  },
+  "contentFailure": {
+    "step": "scripts/check-release-smoke.mjs:31",
+    "reason": "Playwright expected chromium_headless_shell-1248 executable absent",
+    "state": "blocked, browser smoke unrun; aggregate exited 1",
+    "priorChecks": "content, report-only readability and non-browser search completed"
+  },
+  "browserLayouts": {
+    "state": "pending",
+    "reason": "managed Linux required cua_repl.js is not available; system Chromium is present but no unsupported control route was used"
+  },
+  "readability": {
+    "corpus": "report-only with inherited findings",
+    "newAltMeanGrade": 4.281025641025643,
+    "newAltTooLong": 0,
+    "newAltUnexplainedJargon": 0
+  }
+}

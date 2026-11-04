@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "networkCalls": 0,
+  "chapters": [
+    {
+      "key": "60:1",
+      "verses": 21,
+      "openers": 1,
+      "images": 1,
+      "editions": [
+        "kjv",
+        "asv",
+        "web"
+      ],
+      "emptySourceFields": [],
+      "passed": true
+    },
+    {
+      "key": "60:2",
+      "verses": 22,
+      "openers": 1,
+      "images": 1,
+      "editions": [
+        "kjv",
+        "asv",
+        "web"
+      ],
+      "emptySourceFields": [],
+      "passed": true
+    },
+    {
+      "key": "60:3",
+      "verses": 18,
+      "openers": 1,
+      "images": 1,
+      "editions": [
+        "kjv",
+        "asv",
+        "web"
+      ],
+      "emptySourceFields": [],
+      "passed": true
+    }
+  ]
+}
