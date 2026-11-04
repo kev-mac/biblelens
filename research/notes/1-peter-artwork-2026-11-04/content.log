@@ -1,0 +1,301 @@
+
+> scripture-lens@1.1.0 check
+> node scripts/check-reader-unmark.mjs && node scripts/check-evidence-order.mjs && node scripts/check-directory-letter-rail.mjs && node scripts/check-saved-card.mjs && node scripts/check-lost-books.mjs && npm run check:people-roles && node scripts/check-fetch-retry.mjs && node scripts/check-routes.mjs && node scripts/check-header-context.mjs && node scripts/check-card-disclosures.mjs && node scripts/check-text-highlights.mjs && node scripts/check-witness-labels.mjs && node scripts/check-chapter-names.mjs && node scripts/audit-annotations.mjs && node scripts/check-annotations.mjs && node scripts/check-reader-toggles.mjs && node scripts/check-red-letters.mjs && node scripts/check-reader-question.mjs && node scripts/check-global-chat.mjs && node scripts/check-verse-roles.mjs && node scripts/check-questions-category.mjs && node scripts/check-citation-preview.mjs && node scripts/check-reader-swipes.mjs && node scripts/check-reader-bookmarks.mjs && node scripts/check-passage-tools.mjs && node scripts/check-marked-workspace.mjs && node scripts/check-category-pagination.mjs && node scripts/check-commandments.mjs && node scripts/check-commandment-taxonomy.mjs && node scripts/check-genesis-academic.mjs && node scripts/check-study-relationships.mjs && node scripts/check-story-topics.mjs && node scripts/check-stories.mjs && node scripts/check-characters.mjs && node scripts/check-character-connections.mjs && node scripts/check-prophecies.mjs && node scripts/check-reader-picker-grid.mjs && node scripts/check-reader-network.mjs && node scripts/check-timeline.mjs && node scripts/check-places.mjs && node scripts/check-reviewed-timeline.mjs && npm run check:readability && node scripts/check-debates.mjs && node scripts/check-reference-cache.mjs && node scripts/check-asset-compression.mjs && node scripts/check-reader-references.mjs && node scripts/check-reference-link-lifecycle.mjs && npm run check:search
+
+PASS: Unmark warning, cancellation safety, scoped removal, note/highlight Undo, intervening edit protection and Mark action.
+PASS: numeric book/chapter/verse ordering before pagination, numbered books, Psalm alias, structured references and unknown references last.
+PASS: delayed edge activation, slide selection, center letter, release, short-tap/movement cancellation, keyboard access, navigation cleanup and filtered letters.
+PASS: saved verse preview, exact Read target, four labeled icon actions, no header Open button and escaped private drafts.
+PASS: 20 licensed books, 179 reading chapters, verified source counts, 22 passage checks, collection readability, no evidence/links; corpus gzip 328381 bytes.
+
+> scripture-lens@1.1.0 check:people-roles
+> node scripts/check-people-roles.mjs
+
+PASS people roles: { people: 3067, tags: 199 }
+PASS invalid IDs, refs, quotes, roles, basis, production exclusion and same-name safeguards
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+PASS: GET retries then success; bounded 5xx/network failures; exponential jitter backoff; quiet status clears; 4xx, writes, abort and external requests never retry.
+PASS: route aliases preserve reader paths, category filters, bookmarks, query strings and history metadata.
+PASS: neutral framing and display vocabulary in current copy and effective drafts.
+PASS: reader header follows title/description visibility, returns to Read, and preserves other page contexts.
+PASS: live masthead and collection header, direct Settings trigger and retained category icons.
+PASS: initial/dynamic cards start closed, preserve interactive nodes, avoid duplicate wrapping, reset on navigation, and Places Sources starts closed per opening.
+PASS: exact highlight storage/reload, escaping, validation, edition separation, duplicate suppression, and passage-aware People links.
+PASS: context menu recoloring and removal affect only the matching highlight and preserve its bookmark and private note.
+PASS: Saved Highlight/Unhighlight preserves notes and bookmarks, uses the chosen edition and ignores a deleted item during loading.
+PASS: bookmark verse contains the original highlight once, keeps its saved edition and context-menu metadata, uses safe text nodes, and excludes title aliases such as Light.
+PASS: opt-in highlight saving, no default swatch, cancel/navigation safety, live range validation, preserved selection, touch docking, viewport changes, and mouse fallback.
+PASS: 1313 T records; 6 retained future labels; duplicate/invalid rejection; idempotent merge; single toggle; witness display metadata.
+PASS: all 1,189 packaged chapter names, every original verse in all editions, on-demand link/red-letter metadata, and missing/empty rejection.
+{
+  "counts": {
+    "books": 66,
+    "chapters": 1189,
+    "evidenceRecords": 1933,
+    "studyRecords": 6,
+    "booksWithAnnotations": 66,
+    "chaptersWithAnnotations": 1007,
+    "annotatedVerses": 4537
+  },
+  "errors": []
+}
+PASS: 1189 chapters, all comparison modes, 6299 evidence placements, reference bounds and duplicate IDs.
+PASS: one category icon controls all summaries across mixed placement roles.
+PASS: summaries collapsed by default; category-off retains verse icons; independent toggles, details preservation and chapter reset.
+PASS: Q tag, accessible label, initially hidden summary, independent on/off, Context pointer and light/dark colors.
+PASS: independent Questions category participates in reader loading and Q card/context rendering.
+PASS: language tag placements retain KJV contrast card without implying Greek discrepancy on the wrong side.
+PASS: text-size slider scales live from 85 to 150 percent, labels values and persists on change.
+PASS: active categories cycle through matching verses; empty categories do nothing; context-only categories stay off.
+PASS: Settings contains appearance controls; book picker stays floating, including with a legacy fixed preference.
+PASS: fixed reader control ignores legacy anchors while preserving stored user preferences.
+PASS: legacy reasoning fallback, citation rendering and retained evidence expansion.
+PASS: text gestures leave evidence unchanged; Enter and Space activate the explicit disclosure.
+PASS: centered disclosure button expands references and reasoning.
+PASS: Inter default, preserved font choices, consistent app typography and backward-compatible persistence.
+PASS: H/G codes retained; Academic/Translation cards and independent toggle groups; Q display name.
+PASS: 6104 red-letter verse/edition spans preserve exact text; mixed speakers, risen Jesus, migration and Compare on/off.
+PASS: reader question box removed, book picker retained, global chat excludes implicit reader selection.
+PASS: global retrieval across chapters, plague sequence, named references, no reading prerequisite, separate summary/details and safe citation chips.
+PASS: assistant references are actual escaped hyperlinks, user text stays plain, and bounded range/list routes focus the first verse.
+PASS: unique source chips appear with the answer; repeated excerpts are omitted while context and limits remain.
+PASS: non-JSON answer responses preserve the question and show a readable retry message.
+PASS: exact-quote failures, atomic merge, sides/fallback placement, two records, synced toggles, 32-ref fixture/cap, exactly three chips, overlapping highlights/red letters.
+{"visibleEvidenceBeforeFullCards":3402,"visibleEvidenceBeforePointers":0,"visibleEvidenceAfterFullCards":2053,"visibleEvidenceAfterPointers":1923,"visibleEvidenceFullCardsBecamePointers":1445,"beforeFullCards":4852,"beforePointers":0,"afterFullCards":2440,"afterPointers":3755,"fullCardsBecamePointers":2553,"newContextPointers":1202,"evidenceRecords":1933,"recordsWithSides":1552}
+PASS: displayed side quotations sort by canonical book/chapter/verse without changing record sides.
+PASS: sky-dome comparison quotes and highlights the exact Genesis 1:6–7 excerpts without altering scripture.
+PASS: older primary citations quote and highlight packaged scripture; headings appear inside summary blocks.
+PASS: actual Genesis Science records render as collapsed Academic key cards with their sources and unchanged statuses.
+PASS: Questions endpoint returns Q key/context placements without leaking into other categories; fixture never published.
+PASS: full-verse hover and keyboard previews, ranges, cached fetch, direct click/tap navigation and stale-response cancellation.
+PASS: touch release/cancel keeps verse menus and citation previews open; outside taps dismiss; mouse hover still dismisses on leave; movement cancels pending holds.
+PASS: verse menu copies the selected verse range without private notes and Ask opens a verse-specific draft.
+PASS: explicit actions label their effect, allow independent/title-only notes, protect highlights, delegate public sharing, focus enabled controls and leave text gestures native.
+PASS: context markers open small navigable glass previews without inline context rows.
+PASS: finger tracking, axis lock, 80px threshold, edge cue, cancel/snap back, click suppression, boundaries, modal/selection guards, and serialized chapter loading.
+PASS: chapter-loading feedback remains visible during page transitions.
+PASS: text gestures never change bookmarks; explicit verse actions expose persistent, accessible saved state.
+PASS: feedback is visible and announced; Undo does not steal focus, focused actions do not expire, and nested modal feedback remains reachable.
+PASS: Notebook bookmark removal shares reader safety and Undo; stale controls cannot re-add deleted bookmarks.
+PASS: explicit bookmark removal and Undo preserve notes/titles; stale Undo cannot erase later bookmarks or highlights; highlights block destructive removal.
+PASS: intervening sync changes invalidate stale Undo, including an add/remove race ending at the original value.
+PASS: private passage notes persist, escape, export and merge; chapter bookmarks, separate chapter state, and note-free share links.
+PASS: verse notes save, reopen, escape, export and merge without losing existing notes.
+PASS: native/file/loopback links use the published site; real hosted previews preserve their origin and strip queries, credentials and previous routes.
+PASS: editable note titles survive serialization and backup merge; note-only marks render expanded; selected verse links retain exact ranges and omit personal notes.
+PASS: Share uses only the public passage link, falls back to copying that link, and respects cancelled system sharing.
+PASS: reload migration removes stale highlighting without manufacturing bookmarks or losing existing marks and written notes.
+PASS: marked verse text expands from cached chapter data, preserves edition fallback, and rejects stale render updates with accessible network failures.
+PASS: default Note title, icon note controls, cancellation and note-only deletion preserve bookmarks.
+PASS: book-scoped comparison retrieval, one row per verse/comparison, canonical verse text, invalid filters, chapter/category filtering and collapsible category groups without comparison icons.
+PASS: Marked expansion quotes primary passages, puts secondary references below reasoning and keeps assessment metadata in Details.
+PASS: alphabetical categories and zero-result panes, including a selected empty category.
+PASS: zero-result draft filters respect categories, chapters, personal marks and commandment facets; unknown availability stays selectable.
+PASS: Questions profile cards preserve quotations, secondary references, reasoning, scope and sources behind one record action.
+PASS: singular Psalm and plural Psalms references link to the same canonical book.
+PASS: bounded category pages, counts-only metadata, cross-book paging, scope filters, key-only qualifications and invalid query rejection.
+PASS: narrative chapter ranges, scoped people pagination and cross-book prophecy links.
+PASS: independent category routes and filter-preserving page/back links.
+PASS: category links and legacy routes restore the original directory controls without a body back link.
+PASS: Marked profile cards preserve escaped private notes, text hydration and editor references in initially closed note sections.
+PASS: 42 commandments, 10 Ten Commandments, 17 derived Jesus labels, 12 themes, schema rejection, book/chapter API visibility, theme/type filtering, pinned order and range citations.
+PASS: all 613 unique commandment identities, 248/365 partitions, retained-source consistency, exact packaged KJV quotations, valid passage/lens routes, AND/OR facets, escaped cards and bounded incremental rendering.
+PASS: all 613 directive cards have inline verse links, conditional NT Lenses and scripture-only context with bounded verses, caching and retry.
+PASS: 9 Genesis Academic records, 39 exact KJV quotations, reader/Marked visibility, preserved Context statuses and no Science agreements.
+PASS: Genesis doublet groups, comparison/Marked API metadata, related-passage rendering and invalid-reference rejection.
+PASS: Inclusive range and chapter intersections, book isolation, generic filtering, caps, immutable merge and reproducible catalog.
+PASS: 276 stories in canon order, unique titles/slugs, reference bounds, topic vocabulary, per-book/all-book selection, empty search, passage navigation and stale-response protection.
+PASS: Topic pivot filters, origin exclusion, empty results, closing and escaped themes.
+PASS: 24-story pages, page bounds, next/previous state, result ranges, filter resets, empty results, and late-story deep links.
+PASS: Full-range story anchors, direct reader action and unchanged narrative summary.
+PASS: 3066 exact cited scripture excerpts; Abagtha's source, identity links, safe offsets and immutable imported records.
+PASS: 48 character profiles, verse bounds, 25 story destinations, combined era/Women filters, gender colors, sibling/spouse links, Paul/Saul search, cross-book verse links, text-safe cards, and fresh-load story routing.
+PASS: 3067 fetched Theographic people, alias search, safe text, reader passage buttons, bounded 24-card pages, request caching and retry.
+PASS: inline mapped geography, coordinate checks, preserved verse citations and text-safe location prose.
+PASS: UX2 K prefix ranking, visible Kenan/King aliases, no inner substring matches, Moses and 24-result paging.
+PASS: family direction, identity, duplicates, half-siblings, Adam–Jesus traversal, retry/cache, reference profiles, empty categories and text-safe chips.
+Prophecies: samples, 1,024 facet combinations, null fulfillment, disputed labels and HTML escaping passed.
+PASS: chapter/verse grids, selected values, stale fetch protection, full category icons on upward scroll and downward hide.
+PASS: bounded reader startup/body loading, retry recovery, stale response isolation, preserved private notes, background homepage scroll, and reader chapter/verse navigation.
+PASS: visible reader loading, cleared success/error states, and overlapping-request loading ownership.
+Timeline checks passed: 450 real events, 9 flagged; aliases, false positives, immutability, dates and safe rendering.
+Places checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.
+PASS: Places directory search, aliases, accent folding, exact matches and empty results.
+PASS: atlas hides generic feature labels while preserving meaningful descriptions.
+PASS: narrative Ur links preserve ambiguity safeguards; real map previews cover every reference point, escape labels and keep unknown coordinates empty.
+PASS: UX2 Places primary prefix/word-start ranking ahead of displayed aliases, without inner substrings.
+PASS: 18 timeline cases, 6 qualified flags, 3 new history annotations, exact KJV quotations, unsafe-source rejection and packaged assets.
+
+> scripture-lens@1.1.0 check:readability
+> node scripts/check-readability.mjs
+
+| Collection | Lines | Average FK grade | Over length limits | Unexplained jargon lines |
+| --- | ---: | ---: | ---: | ---: |
+| Lost Books — Apocrypha (visible) | 28 | 7.65 | 0.0% (0) | 0 |
+| Lost Books — Gnostic (visible) | 12 | 7.31 | 0.0% (0) | 0 |
+| RC1 accepted imports (visible) | 604 | 7.49 | 0.2% (1) | 7 |
+| RC1 accepted notes (detail) | 181 | 6.99 | 0.0% (0) | 0 |
+| Evidence (visible) | 3871 | 4.74 | 20.4% (788) | 1871 |
+| Evidence notes (detail) | 5666 | 9.80 | 18.3% (1036) | 3669 |
+| UX13 place summaries (visible) | 1298 | 7.66 | 0.0% (0) | 0 |
+| UX13 Events (visible) | 7 | 6.45 | 0.0% (0) | 0 |
+| Events (visible) | 552 | 7.06 | 13.9% (77) | 2 |
+| People (visible) | 96 | 7.88 | 16.7% (16) | 1 |
+| Timeline (visible) | 10 | 7.89 | 0.0% (0) | 0 |
+| Prophecies (visible) | 6 | 7.05 | 0.0% (0) | 0 |
+| Explore cards (visible) | 19 | 11.88 | 0.0% (0) | 1 |
+| Explore visible text (visible) | 19 | 11.88 | 0.0% (0) | 1 |
+| Phase 2 interface (visible) | 9 | 5.54 | 0.0% (0) | 0 |
+
+Lost Books — Apocrypha — top jargon: none
+Lost Books — Gnostic — top jargon: none
+RC1 accepted imports — top jargon: Tischendorf: 5, Brenton: 2
+RC1 accepted notes — top jargon: none
+Evidence — top jargon: Brenton: 1152, Tischendorf: 981, Textus Receptus: 496, Septuagint: 43, witness: 8
+Evidence notes — top jargon: Brenton: 3104, manuscript: 2559, Septuagint: 1992, Textus Receptus: 1950, Tischendorf: 1929, witness: 977, WLC: 961, ordinal: 8, harmoniz: 3, calibration: 1
+UX13 place summaries — top jargon: none
+UX13 Events — top jargon: none
+Events — top jargon: witness: 2
+People — top jargon: witness: 1
+Timeline — top jargon: none
+Prophecies — top jargon: none
+Explore cards — top jargon: manuscript: 1
+Explore visible text — top jargon: manuscript: 1
+Phase 2 interface — top jargon: none
+
+Estimated English syllables; each nonempty field line counts once. FK grades are averaged per line.
+Length limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6–8; detail grades at most 10. Quoted spans are excluded.
+Jargon screening uses the listed terms and plain equivalents by first use; review context manually.
+
+Report-only mode: items need review.
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+PASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and three tabs.
+PASS: shared pending/resolved reference requests across bundles, failed HTTP/JSON retry, and exclusion of private endpoints.
+PASS: packaged identity HTML/JS/CSS/reference and binary assets remain unchanged for every compression preference.
+PASS: chapter-scoped people/place links retain matcher identity and exact offsets; red-letter spans survive packaging.
+PASS: rendered story decoration, independent reference availability, missing-data retry, failure isolation, observer reconnection and replacement-render race protection.
+
+> scripture-lens@1.1.0 check:search
+> node scripts/check-search.mjs && node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs
+
+{
+  "summary": {
+    "queries": 50,
+    "found": 50,
+    "expectedHit": 48,
+    "complete": 35,
+    "expectedFound": 117,
+    "expectedTotal": 160,
+    "top5": 48,
+    "visibleTop5": 48
+  },
+  "byCategory": {
+    "verse_reference": {
+      "queries": 12,
+      "found": 12,
+      "expectedHit": 12,
+      "complete": 11,
+      "expectedFound": 56,
+      "expectedTotal": 63,
+      "top5": 12,
+      "visibleTop5": 12
+    },
+    "person": {
+      "queries": 8,
+      "found": 8,
+      "expectedHit": 8,
+      "complete": 8,
+      "expectedFound": 9,
+      "expectedTotal": 9,
+      "top5": 8,
+      "visibleTop5": 8
+    },
+    "place": {
+      "queries": 6,
+      "found": 6,
+      "expectedHit": 6,
+      "complete": 6,
+      "expectedFound": 8,
+      "expectedTotal": 8,
+      "top5": 6,
+      "visibleTop5": 6
+    },
+    "claim_question": {
+      "queries": 10,
+      "found": 10,
+      "expectedHit": 10,
+      "complete": 3,
+      "expectedFound": 23,
+      "expectedTotal": 35,
+      "top5": 10,
+      "visibleTop5": 10
+    },
+    "topic": {
+      "queries": 6,
+      "found": 6,
+      "expectedHit": 4,
+      "complete": 0,
+      "expectedFound": 6,
+      "expectedTotal": 26,
+      "top5": 5,
+      "visibleTop5": 5
+    },
+    "spelling_variant": {
+      "queries": 8,
+      "found": 8,
+      "expectedHit": 8,
+      "complete": 7,
+      "expectedFound": 15,
+      "expectedTotal": 19,
+      "top5": 7,
+      "visibleTop5": 7
+    }
+  },
+  "timing": {
+    "medianMs": 330,
+    "p95Ms": 410,
+    "maxMs": 1227
+  },
+  "externalRequests": 0
+}
+PASS: reference formats, ranges, aliases, ambiguous names, spelling, unknown queries and local private-note contracts.
+PASS: search useful-hit threshold 50/50; original targets and alternatives preserved.
+PASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.
+PASS: unified offline search, multi-passage comparisons, same-book/alias/range parsing, bounded results, source deduplication, alternative readings and exact selected-edition text.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at /workspace/biblelens/scripts/check-release-smoke.mjs:31:32 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
