@@ -1,0 +1,157 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 346,
+    "sourceHash": "115afea2c21cf5a2c53c6b1a6a900c0405e3a1a1a6e06ba2d69360f46831bdea"
+  },
+  "releaseSourceCommit": "30bd04f43248cd781468c8bf47df49a46d313a1e",
+  "siteVersion": 335,
+  "siteUrl": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+  "sitePackageCommit": "3663c831dbb2ff14fd3ffc89129298ff508542f0",
+  "siteDeploymentId": "appgdep_6aeb71af72e081919483038b7b166de8",
+  "publication": {
+    "package": {
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "checkout_path": "/Users/kevin/git/BibleLens/.release/sites-mirror",
+      "commit_sha": "3663c831dbb2ff14fd3ffc89129298ff508542f0",
+      "archive": "/tmp/biblelens346-sites.tar.gz"
+    },
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_7d6878f7133c8191b0f62b5ade304522",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 335,
+      "source": {
+        "commit_sha": "3663c831dbb2ff14fd3ffc89129298ff508542f0"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000760881f5a170066cbb42f6d7",
+        "content_hash": "sha256:57361aa4311aa2e159310fe617b0112927c12657042453da7d5c9daaf620f98c",
+        "size_bytes": 64020480,
+        "file_count": 5
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6aeb71af72e081919483038b7b166de8",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_7d6878f7133c8191b0f62b5ade304522",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-04T17:56:13.053568+00:00"
+    }
+  },
+  "fullPrepare": {
+    "passed": true,
+    "elapsedSeconds": 206.66,
+    "nodeHeapCapMiB": 2048,
+    "peakRssBytes": 2973171712
+  },
+  "worker": {
+    "bytes": 64011471,
+    "limitBytes": 66060288,
+    "headroomBytes": 2048817
+  },
+  "checks": {
+    "exploreResponsiveCases": 12,
+    "approvedUxCases": 5,
+    "offlineChapters": 1189,
+    "offlineIllustrationPlacements": 1398,
+    "sourceAssetsPreserved": 1476,
+    "signedWwwFilesMatching": 1502,
+    "postInstallReleaseVerify": "passed",
+    "strictCodesign": "passed"
+  },
+  "deviceVerification": {
+    "verifiedAt": "2026-11-04T18:02:07.362104+00:00",
+    "devices": {
+      "iphone": {
+        "version": "1.1.0",
+        "build": "346",
+        "installOutcome": "success",
+        "launchOutcome": "success",
+        "activated": true,
+        "pid": 46259,
+        "runningProcessVerified": true,
+        "processObservation": null
+      },
+      "ipad": {
+        "version": "1.1.0",
+        "build": "346",
+        "installOutcome": "success",
+        "launchOutcome": "success",
+        "activated": true,
+        "pid": 17815,
+        "runningProcessVerified": true,
+        "processObservation": null
+      }
+    },
+    "physicalScreensInspected": false
+  },
+  "liveBrowserVerification": {
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site/#discover",
+    "build": 346,
+    "viewportWidth": 1280,
+    "documentWidth": 1280,
+    "rows": 1,
+    "cardWidth": 280,
+    "cardTop": 315.546875,
+    "cards": [
+      "Stories",
+      "People",
+      "Places",
+      "Laws",
+      "Lost Books",
+      "Evidence & Interpretations",
+      "Timeline"
+    ],
+    "evidenceHref": "#questions?mode=text",
+    "timelineHref": "#timeline",
+    "sharedModes": [
+      "Bible vs. Bible",
+      "Bible vs. Science",
+      "Bible vs. History",
+      "Translations"
+    ],
+    "contradictionsLink": "#questions",
+    "historyFilterVerified": true,
+    "historyRecordCount": 123,
+    "returnedToExplore": true,
+    "method": "CUA live DOM, accessibility and ordinary UI navigation"
+  },
+  "liveContentAudit": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 346,
+      "sourceHash": "115afea2c21cf5a2c53c6b1a6a900c0405e3a1a1a6e06ba2d69360f46831bdea"
+    },
+    "identityEvidence": "/tmp/biblelens346-release-verify.log",
+    "chaptersVerified": 1189,
+    "batchChaptersVerified": 82,
+    "imagesVerified": 1393,
+    "totalImageBytes": 175226554,
+    "allImagesServedFromSiteOrigin": true,
+    "recoveredTransientResponses": []
+  },
+  "limitations": [
+    "Physical device screens were not inspected.",
+    "Inherited readability findings remain report-only.",
+    "One unchanged responsive suite retry resolved a ResizeObserver timing assertion; broader UX test was corrected for normal post-bookmark scroll restoration."
+  ],
+  "preservedStashes": [
+    "3c82c45a52c54cef8da043e7d0683025004bf072",
+    "77c4225175de41348536b7e299248981b16d0337",
+    "0520f45cf17a35514386d701ae9f81666e8b158f",
+    "0cc6c15a7a759e5d2603b627d99f37a18b61b8a9"
+  ],
+  "blockers": [],
+  "completedAt": "2026-11-04T18:15:15.280221+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site/#discover",
+  "build": 346,
+  "viewportWidth": 1280,
+  "documentWidth": 1280,
+  "rows": 1,
+  "cardWidth": 280,
+  "cardTop": 315.546875,
+  "cards": [
+    "Stories",
+    "People",
+    "Places",
+    "Laws",
+    "Lost Books",
+    "Evidence & Interpretations",
+    "Timeline"
+  ],
+  "evidenceHref": "#questions?mode=text",
+  "timelineHref": "#timeline",
+  "sharedModes": [
+    "Bible vs. Bible",
+    "Bible vs. Science",
+    "Bible vs. History",
+    "Translations"
+  ],
+  "contradictionsLink": "#questions",
+  "historyFilterVerified": true,
+  "historyRecordCount": 123,
+  "returnedToExplore": true,
+  "method": "CUA live DOM, accessibility and ordinary UI navigation"
+}

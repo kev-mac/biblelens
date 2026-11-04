@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-11-04T18:02:07.362104+00:00",
+  "devices": {
+    "iphone": {
+      "version": "1.1.0",
+      "build": "346",
+      "installOutcome": "success",
+      "launchOutcome": "success",
+      "activated": true,
+      "pid": 46259,
+      "runningProcessVerified": true,
+      "processObservation": null
+    },
+    "ipad": {
+      "version": "1.1.0",
+      "build": "346",
+      "installOutcome": "success",
+      "launchOutcome": "success",
+      "activated": true,
+      "pid": 17815,
+      "runningProcessVerified": true,
+      "processObservation": null
+    }
+  },
+  "physicalScreensInspected": false
+}
