@@ -2,6 +2,14 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import worker from '../dist/server/index.js';
+const originalFetch=globalThis.fetch;
+const pinned=JSON.parse(fs.readFileSync('data/hosted-artwork.json'));
+globalThis.fetch=async(url,options)=>{
+ const prefix='https://raw.githubusercontent.com/kev-mac/biblelens/'+pinned.sourceCommit+'/src';
+ assert(String(url).startsWith(prefix));const src=String(url).slice(prefix.length);assert(pinned.assets.includes(src));
+ assert.deepEqual(options.headers,{accept:'image/webp'});
+ return new Response(fs.readFileSync('src'+src),{headers:{'content-type':'image/webp'}});
+};
 const get=path=>worker.fetch(new Request('https://biblelens.test'+path),{},{});
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
 const catalog=await(await get('/stories.json')).json();
@@ -42,3 +50,5 @@ for(const {id:book,name}of books.filter(book=>illustratedBooks.includes(book.nam
  }
 }
 console.log('PASS: complete '+illustratedBooks.join(', ')+' Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.');
+
+globalThis.fetch=originalFetch;

@@ -69,6 +69,11 @@ const missingPsalm=structuredClone(images);delete missingPsalm['18:1'];
 assert.throws(()=>validateChapterImages(missingPsalm,original,headings,stories),/Psalms 1 needs/);
 const missingProverbs=structuredClone(images);delete missingProverbs['19:1'];
 assert.throws(()=>validateChapterImages(missingProverbs,original,headings,stories),/Proverbs 1 needs/);
+for(const [book,[name]] of illustratedBooks){
+ const key=Object.keys(images).find(key=>key.startsWith(book+':')&&images[key].some(art=>art.afterVerse===0));
+ if(!key)continue;const without=structuredClone(images);delete without[key];
+ assert.throws(()=>validateChapterImages(without,original,headings,stories),new RegExp(name+' '+key.split(':')[1]+' needs'));
+}
 const missingSamuel=structuredClone(images);delete missingSamuel['9:2'];
 assert.throws(()=>validateChapterImages(missingSamuel,original,headings,stories),/2 Samuel 2 needs/);
 const missingFirstSamuel=structuredClone(images);delete missingFirstSamuel['8:2'];
