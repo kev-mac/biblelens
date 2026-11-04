@@ -1,0 +1,951 @@
+{
+  "tool": "image_gen.imagegen",
+  "toolCalls": 63,
+  "originalGenerations": [
+    {
+      "chapter": 1,
+      "original": "/workspace/generated_images/exec-ed40763b-3dd9-4193-a6b8-cb29e6889411.png",
+      "file": "chapter-isaiah-01-opening-v1.webp",
+      "scene": "An empty weathered vineyard shelter overlooks neglected vines and distant hill country at blue dawn.",
+      "reference": "Isaiah 1:8",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "32cf0a113425f7a7e9b15b4b27d2509a2540f64b2e25558e6705a23825487a2e",
+      "finalSha256": "187bd0dbc2842b11c93320c0bd1c8f94700f33eb0b3527487964c58a199f1de4",
+      "finalBytes": 163500,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 2,
+      "original": "/workspace/generated_images/exec-75b98309-f696-4999-bc53-ddc51642cd23.png",
+      "file": "chapter-isaiah-02-opening-v1.webp",
+      "scene": "A rocky ascending path approaches a high mountain beneath a broad clear morning sky.",
+      "reference": "Isaiah 2:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "ce54cc45d584ea8575eeeff5081ecffd45f790a950e2b35f4110e8bc4a0e889d",
+      "finalSha256": "4abc58bd90e954df7963aed1822d893533b6e9fccd18be7ddba826aa96a283e2",
+      "finalBytes": 127192,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 3,
+      "original": "/workspace/generated_images/exec-a6e329d5-7b8e-46da-8a42-c1c59c7aae95.png",
+      "file": "chapter-isaiah-03-opening-v1.webp",
+      "scene": "Ancient bronze anklets, simple rings, bracelets and a folded veil lie on a low stone shelf.",
+      "reference": "Isaiah 3:18-23",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b3dd88b27fa92332708e1949f3bd34ffbaaf7edf67335ddf08810709de1396d6",
+      "finalSha256": "4bd34ade507e9560de0d6fcec4e07f9dbf85b47e65ce801abd11dd9e66508c27",
+      "finalBytes": 139382,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 4,
+      "original": "/workspace/generated_images/exec-1fd559d1-b2a5-4f0f-87f4-9880423df7c0.png",
+      "file": "chapter-isaiah-04-opening-v1.webp",
+      "scene": "A linen canopy provides shade and shelter beside a stone wall during passing rain.",
+      "reference": "Isaiah 4:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "1f51afa7f5e70667e30e21b92c6dcc0a33575820f11015d582b09d0bc9a50f06",
+      "finalSha256": "769a2eb7ab19bd45faf91a8d7cdc826d146609a43a42701be392e33829d42935",
+      "finalBytes": 128308,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 5,
+      "original": "/workspace/generated_images/exec-86d0c7c5-b3a1-4cb1-bd3b-33a1ee0f253a.png",
+      "file": "chapter-isaiah-05-opening-v1.webp",
+      "scene": "An empty hillside vineyard contains a stone watchtower and a carved rock winepress.",
+      "reference": "Isaiah 5:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "5a9449bd531e97e9c4a0bacf620b9bf20df88f45b9d08e7390a12002b673aba1",
+      "finalSha256": "8ea6f0c222a5d7b6c65f0597ffc8fdd6749a1b4a750bdc2e2a4a0d07cfebecbe",
+      "finalBytes": 161162,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 8,
+      "original": "/workspace/generated_images/exec-ad4f1d0a-30d0-42ce-817b-726070bc2d17.png",
+      "file": "chapter-isaiah-08-opening-v1.webp",
+      "scene": "A large unmarked parchment writing sheet and an ancient stylus rest on a plain wooden table.",
+      "reference": "Isaiah 8:1",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "821c43769d2822a06923dd8eff6924ab5fc5f9f9f8adffd4adb4fcadbcad5196",
+      "finalSha256": "303d9e780a7c0504501b38d7da4720094b2877f914b72fda3b224f7a6f88f337",
+      "finalBytes": 99046,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 9,
+      "original": "/workspace/generated_images/exec-94bd4a71-b523-4a0c-8d8e-e7ef65ffbe40.png",
+      "file": "chapter-isaiah-09-opening-v1.webp",
+      "scene": "A broken wooden ox yoke and a snapped staff lie unused on a field path.",
+      "reference": "Isaiah 9:4",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "e30bffb27c9377a8ea8835936d2a0e7f69106dd0d607a9777fd1c8c8ad883eba",
+      "finalSha256": "9063bd45b0b0b24dc5fc2b43bfc427a0a1a4ad53ca0ef59da8c89bbb3823ab9c",
+      "finalBytes": 132512,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 10,
+      "original": "/workspace/generated_images/exec-0a9b2a30-3b41-4f00-8584-ddb190da3b6f.png",
+      "file": "chapter-isaiah-10-opening-v1.webp",
+      "scene": "An ancient iron axe and a simple bronze saw rest beside cut timber, without modern handles or teeth.",
+      "reference": "Isaiah 10:15",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "1b3b29756b22fe0db03e1e1043baab596a91acc7c13d9eb6da9dfc8a9e631b3a",
+      "finalSha256": "c2323173c17bc347859281161878611680721185f5a3532da4db6219cfa7e40e",
+      "finalBytes": 135830,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 11,
+      "original": "/workspace/generated_images/exec-ac5edcfd-a309-4cf3-b486-ec19618543fd.png",
+      "file": "chapter-isaiah-11-opening-v1.webp",
+      "scene": "A fresh green shoot grows from a weathered cut tree stump in soft daylight.",
+      "reference": "Isaiah 11:1",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "24825d9f0da024366dbaa7ddbab83b0d038df59cb296a1a96c82b1ed28ba8559",
+      "finalSha256": "242f24887752fc758d504d688ce7c35852158be12f715b7461297c3606a6e07b",
+      "finalBytes": 125484,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 12,
+      "original": "/workspace/generated_images/exec-a05f6bc8-fc89-41aa-8293-36ae8e5329c8.png",
+      "file": "chapter-isaiah-12-opening-v1.webp",
+      "scene": "A clay water jar and rope sit beside a stone well filled with clear water.",
+      "reference": "Isaiah 12:3",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "0f271db8a839d4ec227bcff8cd98b149c1680e5fdfb4af8fa64c109621fc8882",
+      "finalSha256": "27fccfbbe4d4c369ce8938e9186ab3ef2c645fa19a68a7dce272359b743c5e49",
+      "finalBytes": 156614,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 13,
+      "original": "/workspace/generated_images/exec-2566e65f-1022-4fdc-97b7-9afad91f1785.png",
+      "file": "chapter-isaiah-13-opening-v1.webp",
+      "scene": "Broken mudbrick walls and empty ruined dwellings stand beneath a stark desert sky.",
+      "reference": "Isaiah 13:19-22",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "8fdda3aa180db54f16440ef093dd448ebe00d8c7591a8db497ece0c5f83b0cbf",
+      "finalSha256": "a0ebc49770096aa2d5aa9037b2a7cb60fa2799501fd20cc5e651c7e16be2db7a",
+      "finalBytes": 126878,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 14,
+      "original": "/workspace/generated_images/exec-8de4ed2b-4271-4724-a0f1-4ab415e685a5.png",
+      "file": "chapter-isaiah-14-opening-v1.webp",
+      "scene": "A broken wooden royal staff lies on a plain stone floor beside an empty seat.",
+      "reference": "Isaiah 14:5",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b712138b8da23c8143fa053687cba13fdd44dabf3057c46e9629042d8d391d8b",
+      "finalSha256": "83e6cfd99ee2337eac3a1bd287898881306a958fad39f30f91daf7d38b121105",
+      "finalBytes": 115978,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 15,
+      "original": "/workspace/generated_images/exec-dce8339f-f674-423e-b467-596b6e611483.png",
+      "file": "chapter-isaiah-15-opening-v1.webp",
+      "scene": "A drying streambed winds between withered reeds and brown grass in the ancient Near East.",
+      "reference": "Isaiah 15:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "a80a5b815803a3996609627498020e5f76f6499daf86f365a42f99cf87cf4731",
+      "finalSha256": "1156d58336e0b50de8b945e3a861556c6f87af953135b7800c61e715f796a457",
+      "finalBytes": 153702,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 16,
+      "original": "/workspace/generated_images/exec-f052de90-9851-4593-aeda-fbe08b30c28e.png",
+      "file": "chapter-isaiah-16-opening-v1.webp",
+      "scene": "An abandoned grape-treading basin stands beside drooping vines and a silent vineyard.",
+      "reference": "Isaiah 16:8-10",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "a04d00f397b1617a1e57b909b1021b45af05453b2d37abce6b9ac9d1d54648ae",
+      "finalSha256": "c2d31b9966348a7e63f61736218c734afb0d5c92c6caa65dedc4a1a6d5bc4994",
+      "finalBytes": 143722,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 17,
+      "original": "/workspace/generated_images/exec-e43a833b-0c2c-4b8b-9201-6f8d1962c4b6.png",
+      "file": "chapter-isaiah-17-opening-v1.webp",
+      "scene": "Only a few ripe olives remain on the highest branches of an olive tree after harvest.",
+      "reference": "Isaiah 17:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "c4ff7b5ab2ce05717227cb49c229ac20f53dd6b2408745d6238595e41b44100d",
+      "finalSha256": "9e5b8485d1a33ea0ef3426bb59c25dc885b18c08b902c6797df7f071b87becf2",
+      "finalBytes": 135114,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 18,
+      "original": "/workspace/generated_images/exec-c5b2f1a9-c862-4e5a-9ccd-a021acdc7c8f.png",
+      "file": "chapter-isaiah-18-opening-v1.webp",
+      "scene": "Freshly pruned vine branches and cut tendrils lie below a grapevine before harvest.",
+      "reference": "Isaiah 18:5",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "84373c29502a2d173a4acef0211ae932233c56712a5a6a25dda47522e72e9e2b",
+      "finalSha256": "bcfc087957f450f7fe4c85de0a3593a50bb98f2828230fc20b6e6fb7151cf605",
+      "finalBytes": 159108,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 19,
+      "original": "/workspace/generated_images/exec-079e3c7f-7e7c-4b83-b45e-f27f4774d6a3.png",
+      "file": "chapter-isaiah-19-opening-v1.webp",
+      "scene": "Linen fishing nets lie unused beside a broad shrinking river with drying reeds.",
+      "reference": "Isaiah 19:5-8",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "4710c0cc23a880aae62819200804b52bb4a3839a882c6ee5e5198fdf4be77f9f",
+      "finalSha256": "e7065a9d19d1c9d476de7c07049b0209ce6a32c75edf0c137002e505019ab27c",
+      "finalBytes": 143514,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 20,
+      "original": "/workspace/generated_images/exec-5206ebee-b5cb-4fa9-a911-2da5d95765c4.png",
+      "file": "chapter-isaiah-20-opening-v1.webp",
+      "scene": "A rough sackcloth garment and a pair of simple leather sandals lie unused beside a stone doorway.",
+      "reference": "Isaiah 20:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "6545557d444585c524014f3cdd493b9a86c3a6764977cb15ecb4c4fcc04e8ab7",
+      "finalSha256": "043a4ab7188f29f3ca03f68f52ce761d8fcc6502c31217b6e48531557adeed23",
+      "finalBytes": 133720,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 21,
+      "original": "/workspace/generated_images/exec-570da9da-42f1-4428-a4f9-a65651460473.png",
+      "file": "chapter-isaiah-21-opening-v1.webp",
+      "scene": "An empty stone watchtower overlooks a wide desert road beneath a violet night sky.",
+      "reference": "Isaiah 21:8",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "7712afa8ee1cfd4e9747185794b1494c3cea8e813a343c4e9310246c12a3c79e",
+      "finalSha256": "debe0dc8c4fa21512f9428f930faf6612b92587c3b549474f73972449bdcf2da",
+      "finalBytes": 97580,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 22,
+      "original": "/workspace/generated_images/exec-9b22093c-20d6-4ece-ac03-5d8480658273.png",
+      "file": "chapter-isaiah-22-opening-v1.webp",
+      "scene": "An open reservoir and water channel sit between old stone defensive walls in hill country.",
+      "reference": "Isaiah 22:9-11",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "19ac865048ee0e3fc227adcd34684af229675da8218e1f55beea8907f7ecd50d",
+      "finalSha256": "032a867602099a4b1989430c85f13a98f2ce1639145c670da645ccea04e294de",
+      "finalBytes": 140500,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 23,
+      "original": "/workspace/generated_images/exec-34c50cad-31a7-42dc-8568-8acebef43f71.png",
+      "file": "chapter-isaiah-23-opening-v1.webp",
+      "scene": "An ancient wooden trading ship with a square linen sail approaches an empty rocky Mediterranean harbor.",
+      "reference": "Isaiah 23:1",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "8ee932c6a6039fed6af948d684d0e679caf38e1c99e3745f21b2ad2fe549ee86",
+      "finalSha256": "37a82413669878117b0cc223c76b650ff4e4695fa68a3e0c8937613959c649c2",
+      "finalBytes": 108426,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 24,
+      "original": "/workspace/generated_images/exec-7d73c350-7952-4b93-8675-82a02222fe0c.png",
+      "file": "chapter-isaiah-24-opening-v1.webp",
+      "scene": "Withered vines frame a deserted damaged city gateway and an empty street.",
+      "reference": "Isaiah 24:7-12",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "cf4a4ae952bc1c542ab263dde7be8e13c550576f8d279304ee24bbeddaab067b",
+      "finalSha256": "e43cf8c26ca079800c5daa705650ce3a50dcd90160f394ba590ee427c80feee9",
+      "finalBytes": 153672,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 25,
+      "original": "/workspace/generated_images/exec-54736067-2417-4f97-b13d-45d967448782.png",
+      "file": "chapter-isaiah-25-opening-v1.webp",
+      "scene": "Bread, bowls of rich food, fruit and a clay wine jug are laid on a table overlooking a mountain landscape.",
+      "reference": "Isaiah 25:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b9076582775342062a8e2f637eef3899dbc953bc16e171245067df94fa1c4b9d",
+      "finalSha256": "680341f64012c5691a1dbd25baa06e9cc2cc74e08f8aea3519d05223481756c0",
+      "finalBytes": 127238,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 26,
+      "original": "/workspace/generated_images/exec-98c9f417-a9e2-43b8-a530-2cd87c479e3c.png",
+      "file": "chapter-isaiah-26-opening-v1.webp",
+      "scene": "An open ancient city gate leads onto a level stone path in clear morning light.",
+      "reference": "Isaiah 26:2,7",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "0691b2405135c1b7174763eebf36f19cba82c29cad8f0eefa143221c6d78b1c1",
+      "finalSha256": "820c53661a6630d3a6c2d8599222ba8390012766167a3d002fda417ccad9261d",
+      "finalBytes": 140468,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 27,
+      "original": "/workspace/generated_images/exec-ecc6cd27-f035-4190-bf11-531d9a94bb30.png",
+      "file": "chapter-isaiah-27-opening-v1.webp",
+      "scene": "A cared-for green vineyard grows beside a clear irrigation channel at dawn.",
+      "reference": "Isaiah 27:2-3",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "68152c93acea6f211a3a3395ff69ef82b750b66cfae6fe83fa0550173c353243",
+      "finalSha256": "13083c511d22fb5dd85a454349219245ea4c72e0245e5776ecf73e01353d1674",
+      "finalBytes": 175458,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 28,
+      "original": "/workspace/generated_images/exec-6be3d541-53bd-45a1-92b5-1bcecd495a73.png",
+      "file": "chapter-isaiah-28-opening-v1.webp",
+      "scene": "A large dressed cornerstone rests securely at the base of an ancient stone wall under construction.",
+      "reference": "Isaiah 28:16",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "18121914c7667226a641b053c94f7a00669d44f9233bcc3ca166f5de1b3423ef",
+      "finalSha256": "579ad6d198be6f39c63f3044c4addb918f47fa27b65df6b9f7086e32ce0c5712",
+      "finalBytes": 127974,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 29,
+      "original": "/workspace/generated_images/exec-6807df68-29ab-47e4-880e-9ef5d06025ad.png",
+      "file": "chapter-isaiah-29-opening-v1.webp",
+      "scene": "A rolled parchment secured with cord and a plain clay seal lies closed on a wooden table.",
+      "reference": "Isaiah 29:11",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "cc9fd01363808410f7edf59d57a82894095c22048c50953612aa8f5b24a06b53",
+      "finalSha256": "49a84d0f3bef74e4e5e14d66433fe471aea60466caa21a169a41bad942eec591",
+      "finalBytes": 94350,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 30,
+      "original": "/workspace/generated_images/exec-96c29bb4-b0ca-4f38-a0c4-383a7acbc894.png",
+      "file": "chapter-isaiah-30-opening-v1.webp",
+      "scene": "Shattered clay jar fragments lie on bare earth near a small empty hearth, with no intact vessel.",
+      "reference": "Isaiah 30:14",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "rejectedReason": "Large curved fragments could still carry coals or water; fails Isaiah 30:14.",
+      "originalSha256": "1a83352338e27ab5d61ff1526a50d9394c294797063fcc3971d16256e99f871b",
+      "finalSha256": "dbdfc3077fdd1b553718298973d7c5cfdd171b1dfc405b12490751243e133253",
+      "finalBytes": 138258,
+      "status": "rejected; retained inactive"
+    },
+    {
+      "chapter": 31,
+      "original": "/workspace/generated_images/exec-1d1ec69b-8585-45e7-82ac-37d84de6713f.png",
+      "file": "chapter-isaiah-31-opening-v1.webp",
+      "scene": "An empty ancient wooden chariot with simple spoked wheels stands beside the road, with no horses or people.",
+      "reference": "Isaiah 31:1",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "15ad32916e8467ba78e58c6e977280711dc3257ebeed914d48d0a8282e5b7055",
+      "finalSha256": "3b5a9119d37b07e19b8052af9d8a67b76bf35275852025d3bb2303b0af5e5e0e",
+      "finalBytes": 116294,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 32,
+      "original": "/workspace/generated_images/exec-c269749d-d0a8-4264-aa49-f47bee85664f.png",
+      "file": "chapter-isaiah-32-opening-v1.webp",
+      "scene": "A peaceful modest stone dwelling and shaded garden sit beneath green trees in quiet afternoon light.",
+      "reference": "Isaiah 32:18",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b5f82ccbfafe42b13d9ec732749870be2c4b09bdfdd3b491606398f5c24bbae7",
+      "finalSha256": "08c21f8eda8460d51aea17a9ac98f8a1a0dab67da5a84dc64786cf78add42f85",
+      "finalBytes": 184002,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 33,
+      "original": "/workspace/generated_images/exec-cff52064-bcfa-4ecd-b233-0f701040431a.png",
+      "file": "chapter-isaiah-33-opening-v1.webp",
+      "scene": "A securely pitched linen tent with taut cords and firm wooden stakes stands beside a quiet stone terrace.",
+      "reference": "Isaiah 33:20",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "6b49c530adcea2e210543346105650b5ebb3d6de4471e904d6594dfeb4cc54c4",
+      "finalSha256": "749eee226c7891f2a0b7dc3671d082259af8a21f43b9ad3df517f963e4cdc854",
+      "finalBytes": 153136,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 34,
+      "original": "/workspace/generated_images/exec-b027ef04-bf06-4fac-9fcf-b044d06b3c90.png",
+      "file": "chapter-isaiah-34-opening-v1.webp",
+      "scene": "Thorns and brambles grow through ruined ancient fortress walls beneath cool gray clouds.",
+      "reference": "Isaiah 34:13",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "5fe3acaabb5de27b83009978912a16d8d098803bdee2fc32679e7ed4fa332b3e",
+      "finalSha256": "511844a61cd62a331c442cbfc3510c4c430e8ff2f9f2bf8a38b5175925dead9d",
+      "finalBytes": 155876,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 35,
+      "original": "/workspace/generated_images/exec-d31dc0e2-9d1c-46c9-bb71-dc3829085cae.png",
+      "file": "chapter-isaiah-35-opening-v1.webp",
+      "scene": "Small wildflowers bloom across previously dry desert ground beneath distant rocky hills after rain.",
+      "reference": "Isaiah 35:1-2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b01d5354b4cf2d20a2628bfa50b6d042208d121a565be80eb649ffc6b80a156f",
+      "finalSha256": "0462853a6644840265fdec0a2e46dd2e8b00d84ba21a0ef1fbeda8a55093acb1",
+      "finalBytes": 164186,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 37,
+      "original": "/workspace/generated_images/exec-fc048b5d-d524-4df4-8ca2-092c2d35e933.png",
+      "file": "chapter-isaiah-37-opening-v1.webp",
+      "scene": "An opened unmarked letter lies on a low stone ledge at a quiet sanctuary entrance.",
+      "reference": "Isaiah 37:14",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "f93656c50e2008523102d16b2ee992fc335920669f790ec1e7a33386fae336d9",
+      "finalSha256": "87df6998706d009e5db000e1bd5bfa99764e8425f65d58c026ff6f96cd70d4a7",
+      "finalBytes": 132374,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 39,
+      "original": "/workspace/generated_images/exec-573e24ee-2ac1-4ad8-b4aa-cf37e52f2073.png",
+      "file": "chapter-isaiah-39-opening-v1.webp",
+      "scene": "Gold and silver vessels, spice jars and an oil flask fill shelves in an empty ancient treasury room.",
+      "reference": "Isaiah 39:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "3c6a5364e5f17352fb3a5bce19d46d29e70a92ee10e08186a1eaf8b370745b10",
+      "finalSha256": "6030070ad3c9c41c7dc1ff9acbca41d443dfd7f4ff16029d371f87846077f9dc",
+      "finalBytes": 125200,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 40,
+      "original": "/workspace/generated_images/exec-3589c960-2193-496e-97c5-f81ab6150867.png",
+      "file": "chapter-isaiah-40-opening-v1.webp",
+      "scene": "A small wildflower and green grass bend beside a patch of withered grass in a passing breeze.",
+      "reference": "Isaiah 40:6-8",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "e737b90c0d58ed9dd22bd8b95174eabead5920e352e5ee200c7d40e96fca3d54",
+      "finalSha256": "7d51b1c5863de5ae193cb1b6088a94abec3d2fc5f22b3cb21a6966ba77eeeb9c",
+      "finalBytes": 128378,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 41,
+      "original": "/workspace/generated_images/exec-7261e9d5-9198-40b9-a62a-8829e7361cf9.png",
+      "file": "chapter-isaiah-41-opening-v1.webp",
+      "scene": "A clear pool and spring water nourish cedar and acacia trees in once dry stony country.",
+      "reference": "Isaiah 41:18-19",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "c99bb906e46af7f0aec4437777e9b1f1677349f6baef6387ce1000d7558e4af6",
+      "finalSha256": "32eff80704d80ab3d29274a97e343c822e2dd4ce621152f486c3ac855e58871e",
+      "finalBytes": 190830,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 42,
+      "original": "/workspace/generated_images/exec-50dab52d-2df5-4a04-9f49-76613525f51d.png",
+      "file": "chapter-isaiah-42-opening-v1.webp",
+      "scene": "A bruised reed lies beside a small clay oil lamp whose wick glows faintly with a little smoke.",
+      "reference": "Isaiah 42:3",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "cf188f3debb8a9df85875e2524e97cbb74319d548f9dee579869e5a0df4c17bc",
+      "finalSha256": "ce3eba1178237188d5c4e05d95e5caeee9d6937cec6fe7ac574bef4d8f0b65a4",
+      "finalBytes": 97780,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 43,
+      "original": "/workspace/generated_images/exec-a38dca88-c0af-41bb-8d7a-ddd44ba22df5.png",
+      "file": "chapter-isaiah-43-opening-v1.webp",
+      "scene": "A clear stream crosses a newly open wilderness path between dry hills beneath a blue sky.",
+      "reference": "Isaiah 43:19",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "6fe84778961d9c2ca3e328001540dc07caefebb039689e4648ed03ea66bf3bb5",
+      "finalSha256": "8fd34dc330f6c50c7ef3e5c5c1ce132ff5da3c3415bb35063fa8d530ba5b39ad",
+      "finalBytes": 180178,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 44,
+      "original": "/workspace/generated_images/exec-3d8dbd36-cc8a-4d55-80bc-66b0706517cb.png",
+      "file": "chapter-isaiah-44-opening-v1.webp",
+      "scene": "Ancient iron tongs and a small hammer rest beside a stone anvil and a charcoal hearth, no people or idols.",
+      "reference": "Isaiah 44:12",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "e5b410a2911419f67b159159d48dcb8225994a3a0fbe5a16adafe516b76cc257",
+      "finalSha256": "2d38cc7d9a09e8a3d0df0a632a1979625f7fa602cf3c036b28acc286342401df",
+      "finalBytes": 140536,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 45,
+      "original": "/workspace/generated_images/exec-351ad0e8-9a29-40a4-a503-91586e1dbb6a.png",
+      "file": "chapter-isaiah-45-opening-v1.webp",
+      "scene": "Broken bronze gate panels and snapped iron bars lie beside an empty stone entrance.",
+      "reference": "Isaiah 45:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "eb9962c3bf6de494e59730300bfa6833ace8f0dc22d5edf18ed319ef0c4ade11",
+      "finalSha256": "202069a3f79367f508f92a7d7f50fd94a405633bc90250a8d0392293ee0b8bf1",
+      "finalBytes": 143524,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 46,
+      "original": "/workspace/generated_images/exec-bc407848-89bc-4d97-ba8a-e8f35eb29d35.png",
+      "file": "chapter-isaiah-46-opening-v1.webp",
+      "scene": "Unworked gold and silver pieces rest on a balance scale beside ancient metalworking tools.",
+      "reference": "Isaiah 46:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "05200ce5005a0910380e71b8f1fcfb567713c757b736e7a8a307b2b70ca2c9a0",
+      "finalSha256": "d3006879ff98bbc9f1016c8dbeabbb02e69341e64bc67baeca30179af839102d",
+      "finalBytes": 124924,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 47,
+      "original": "/workspace/generated_images/exec-d0e4c3e4-dd9a-4412-8e28-f45ba863fc72.png",
+      "file": "chapter-isaiah-47-opening-v1.webp",
+      "scene": "A simple ancient hand mill and a bowl of flour sit on the floor of an empty stone courtyard.",
+      "reference": "Isaiah 47:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "22d761c344178186e9acdf411dfc2b423bc980b39a22951329e0caccbcc051c7",
+      "finalSha256": "5485afbfc4c62f8be040722d484386cbf4053677b7ef67f07de58b5ef35a5c6d",
+      "finalBytes": 137112,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 48,
+      "original": "/workspace/generated_images/exec-602ec673-513c-49e0-b6dd-b4ba93efcedd.png",
+      "file": "chapter-isaiah-48-opening-v1.webp",
+      "scene": "Fresh water flows from a cleft in a rock onto dry stony wilderness ground.",
+      "reference": "Isaiah 48:21",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "925628adc05cf9b40588d7f54670662b4266afaa370e19ad07d918fe0194a3ff",
+      "finalSha256": "9cc995bb6a9927e22c4f4126843b4361e5040c98de78d267b8a7a98eaac8816d",
+      "finalBytes": 147472,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 49,
+      "original": "/workspace/generated_images/exec-9f921949-35b1-4a5b-a435-9f4597501c80.png",
+      "file": "chapter-isaiah-49-opening-v1.webp",
+      "scene": "A raised level road passes between rugged mountains toward a bright horizon.",
+      "reference": "Isaiah 49:11",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "24d65bb1398c32fc6479a8961fd2752ae6c70b2e486849f5cf00ff99695bde4e",
+      "finalSha256": "17b6ecc936312ca5ebc76d362cbddcaa518db512eb33c433d50ecfab2d211fd0",
+      "finalBytes": 140048,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 50,
+      "original": "/workspace/generated_images/exec-fbca4315-3c18-4820-8f5d-4c1d60f4d484.png",
+      "file": "chapter-isaiah-50-opening-v1.webp",
+      "scene": "A piece of dark flint rests on a flat stone in stark morning light.",
+      "reference": "Isaiah 50:7",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "1d5d6929e10c99081c818ac675f7bce11bd751ecc0590c262be5c61d171faf7c",
+      "finalSha256": "7a90546c6838c2d060c5e7d52580adf32876e90964fb942b8a20f465fb30b9be",
+      "finalBytes": 114470,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 51,
+      "original": "/workspace/generated_images/exec-ad6fd4d8-c4fa-4cbf-aad6-0c0c99590df8.png",
+      "file": "chapter-isaiah-51-opening-v1.webp",
+      "scene": "A plain clay cup rests on bare stone in the shadow of a damaged city wall.",
+      "reference": "Isaiah 51:17",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "c4efdd9ec3e528f2a5db0ecc8e6cf9d9bfe144de5fcc58d4e649d55d9960bd1f",
+      "finalSha256": "8fce83688ad45cab5162dc9c52a8fd69050a3043035ee8242cb649b4744c988e",
+      "finalBytes": 105790,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 52,
+      "original": "/workspace/generated_images/exec-4176bb0f-2e0d-4b54-b02c-677a183c8def.png",
+      "file": "chapter-isaiah-52-opening-v1.webp",
+      "scene": "Loosened ancient neck shackles lie in dust beside an open stone gateway, with no people.",
+      "reference": "Isaiah 52:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "b349a1dd6f6a3780e7f6d7a10fe09bbc29442b5f00fbb00971dd74df9ef2820a",
+      "finalSha256": "feaaeeb353aeaac6ad918665f30115de85c606ee47343799de6d9abad8bb8c42",
+      "finalBytes": 140386,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 53,
+      "original": "/workspace/generated_images/exec-f5de7213-73f9-4d92-b894-6e56eeb31e89.png",
+      "file": "chapter-isaiah-53-opening-v1.webp",
+      "scene": "A tender green plant takes root in dry cracked ground beside a weathered rock.",
+      "reference": "Isaiah 53:2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "9606ccd4f03e074c9939e46afe860798c607f873253472fe3ea68ded1843b994",
+      "finalSha256": "3511b9381ba2f01db1f49058d3031061e1372c716c8a41329b0b6ca0a4d9e859",
+      "finalBytes": 105546,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 54,
+      "original": "/workspace/generated_images/exec-6a8371c6-2944-4e5c-ae0a-02889b990a06.png",
+      "file": "chapter-isaiah-54-opening-v1.webp",
+      "scene": "Blue, red and clear colored stones lie beside unfinished foundation blocks and a city gateway.",
+      "reference": "Isaiah 54:11-12",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "c0b1b91ac9407f0f273a8715948f36680898a121d892bd42a166600393f7e902",
+      "finalSha256": "e8dc0da69ff3b4b4eddb888c6da1e0355e3ad1239f8add60bfd8eea4554155d2",
+      "finalBytes": 137316,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 55,
+      "original": "/workspace/generated_images/exec-8e22e469-30e1-4c40-a920-2f350677df09.png",
+      "file": "chapter-isaiah-55-opening-v1.webp",
+      "scene": "Fresh flatbread and clay jars of clear water stand on a plain table in an open empty courtyard.",
+      "reference": "Isaiah 55:1-2",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "736d0672ad0e80bd10f41d769db7a50ee458b3106372451f20ebe308816b9cd7",
+      "finalSha256": "cc38c01223e0e4a8239221050cf42f5d7d3b5bc904679867d5520357f2a6afdc",
+      "finalBytes": 142460,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 56,
+      "original": "/workspace/generated_images/exec-0a805839-e2e7-4b9b-916d-6891075c5274.png",
+      "file": "chapter-isaiah-56-opening-v1.webp",
+      "scene": "An open sanctuary entrance and a quiet empty courtyard welcome the morning light.",
+      "reference": "Isaiah 56:7",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "61ace274b00a1a3bb390fcb9b40bf1d19527b70d2ab5010fd7442052228576b3",
+      "finalSha256": "6021cdeee83ea00a41ab6e399a58852a192fd23e5f212874d5aaf811d5eed3fe",
+      "finalBytes": 128970,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 57,
+      "original": "/workspace/generated_images/exec-0b89e271-5e2e-436f-80ff-ace66ab3a991.png",
+      "file": "chapter-isaiah-57-opening-v1.webp",
+      "scene": "Loose stones have been cleared from a broad ancient footpath and piled to its side.",
+      "reference": "Isaiah 57:14",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "e50a01fafbf204cb5ca2389645c23d91f8a0dfb5a87283111bec5727fc3d3e88",
+      "finalSha256": "3d717d73dac3d28aaefc34ec62183178493b512b1aac49cd9413f1f7a460bea8",
+      "finalBytes": 160192,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 58,
+      "original": "/workspace/generated_images/exec-0c07dc7c-4f8a-4feb-b627-b6c7d928d5e6.png",
+      "file": "chapter-isaiah-58-opening-v1.webp",
+      "scene": "Freshly broken flatbread and a folded simple garment wait on a low table by a modest doorway.",
+      "reference": "Isaiah 58:7",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "34108456028db126b7e48c297deb75f1f2039a7fbf6fed6265c08c3921bb6e1d",
+      "finalSha256": "f69b8d39c799b94c160968f4df109dcceff87d8f2731aa9e630d7ba9b32893fa",
+      "finalBytes": 131186,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 59,
+      "original": "/workspace/generated_images/exec-1809e9ab-0280-4ef3-ad23-f3e565718185.png",
+      "file": "chapter-isaiah-59-opening-v1.webp",
+      "scene": "A fragile spiderweb stretches across an empty broken window opening in a weathered stone wall.",
+      "reference": "Isaiah 59:5-6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "4f7d6f2441f874b97ce144e0922750a7b11ca24fd8e00d59888b324b21c8c709",
+      "finalSha256": "276fca78bc9d2bf264b7cfc9de27ed772c306bc6b45f43e779604e0156f9cd25",
+      "finalBytes": 126894,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 60,
+      "original": "/workspace/generated_images/exec-07416768-187b-4cf3-b290-4d89d70113da.png",
+      "file": "chapter-isaiah-60-opening-v1.webp",
+      "scene": "Wide ancient city gates stand open in full daylight, with an empty road beyond them.",
+      "reference": "Isaiah 60:11",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "678f507604c5b30f662fbfd999420d61cf5f0bc057b4f2ae99a05b6b890d5247",
+      "finalSha256": "585c9782d31e5dcbf8300ac23b737530207750e209ade9f8c26ab9a34733fd75",
+      "finalBytes": 134412,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 61,
+      "original": "/workspace/generated_images/exec-bc60844f-0e75-4e36-a100-f3d14c221ff5.png",
+      "file": "chapter-isaiah-61-opening-v1.webp",
+      "scene": "A simple festive head wreath, a clay oil flask, and folded bright cloth rest beside rough sackcloth and ashes.",
+      "reference": "Isaiah 61:3",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "e67c27ab164c6df07ad8440e4ca484ff35b1056cf828612c4c7769544cabf909",
+      "finalSha256": "251aa286c212c67c95e10cbf88789e3785c5e7f0f7df354a490bc4ccfcd1f6a9",
+      "finalBytes": 156488,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 62,
+      "original": "/workspace/generated_images/exec-20dd9d1e-60f6-428e-a500-da4631e45c93.png",
+      "file": "chapter-isaiah-62-opening-v1.webp",
+      "scene": "An empty watchtower rises above an ancient city wall beneath the first light before dawn.",
+      "reference": "Isaiah 62:6",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "46ce7255b75e6853c46fecded0d44c402b87f714fa5c031bdadb2c3d7b8be9d1",
+      "finalSha256": "6f7f232ffdbc487f5858c35fccf9a1162facc37a34285814389f6257a485cdf8",
+      "finalBytes": 106130,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 63,
+      "original": "/workspace/generated_images/exec-ab348fe3-7446-4879-91e7-f54aeee4833e.png",
+      "file": "chapter-isaiah-63-opening-v1.webp",
+      "scene": "An empty stone grape-treading basin is stained deep red by crushed grapes beside a folded stained linen cloth, no people or blood.",
+      "reference": "Isaiah 63:2-3",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "d1c804f0e153d0924b3e7634f4723e3c08a968e83578a6221c119594a949c103",
+      "finalSha256": "a130cd818670767f1c66b73f35041c51c3e8ec97e627440f037c8f081b3d7df0",
+      "finalBytes": 145918,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 64,
+      "original": "/workspace/generated_images/exec-bb9244ba-12b0-4c9a-8bc5-2b4bcd90dc1d.png",
+      "file": "chapter-isaiah-64-opening-v1.webp",
+      "scene": "A half-shaped clay vessel and damp clay rest on a simple ancient potter's work surface.",
+      "reference": "Isaiah 64:8",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "05f09b970579cbbd0789816a5626abce9944fe61cee64b394b2091fa438e4679",
+      "finalSha256": "6a4c1b831a0b7bb1761fba556b699f763fc55893d2da8be04cee4a0df3778f0b",
+      "finalBytes": 106842,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 65,
+      "original": "/workspace/generated_images/exec-b5bd560e-fb81-4b97-8312-8460510c9c76.png",
+      "file": "chapter-isaiah-65-opening-v1.webp",
+      "scene": "New modest stone houses stand beside a flourishing vineyard in peaceful hill country.",
+      "reference": "Isaiah 65:21",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "80119c9bfee0ae18c49cc9b779389884ce8291c01aa0249bbe35194b63a61b52",
+      "finalSha256": "5e13982a7b6d25a15923ac9ecfe0f57f5e42971bd94f0aa45a292b096fa5893f",
+      "finalBytes": 167792,
+      "status": "accepted after full-size review"
+    },
+    {
+      "chapter": 66,
+      "original": "/workspace/generated_images/exec-7c07c6ad-df89-402e-9f10-74c582df8e4f.png",
+      "file": "chapter-isaiah-66-opening-v1.webp",
+      "scene": "An empty plain wooden footstool rests on bare earth beneath a vast blue sky, a restrained visual metaphor.",
+      "reference": "Isaiah 66:1",
+      "referenceFiles": [
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "role": "style only",
+      "originalSha256": "f8496cb36eb3400e7de0ee7130e8306d5d33db0a6415bb3cac53c3715f127781",
+      "finalSha256": "9bfc1d2f1c940713d3adca76213df1c93bd7e2673a00ff1dd668a796fde43845",
+      "finalBytes": 92810,
+      "status": "accepted after full-size review"
+    }
+  ],
+  "repair": {
+    "chapter": 30,
+    "original": "/workspace/generated_images/exec-07b83338-df11-4261-b139-c8ac3d6c1bf8.png",
+    "file": "chapter-isaiah-30-opening-v2.webp",
+    "referenceFiles": [
+      "src/assets/chapter-isaiah-30-opening-v1.webp",
+      "src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "reason": "Replace large fragments with finely crushed terracotta; change to clear morning light.",
+    "status": "accepted after full-size review; no usable pottery fragments",
+    "originalSha256": "84bfcefd56993e6dfa8eef198449b226828e5e570b4f0a53d1d5cc2fbc824d33",
+    "finalSha256": "061ee193cc909cb555ea835b7d531136fd0cf5567b3af457c6708c336d521eba",
+    "finalBytes": 147306
+  }
+}

@@ -24,7 +24,8 @@ export const illustratedBooks=new Map([
  [18,['Psalms',150]],
  [19,['Proverbs',31]],
  [20,['Ecclesiastes',12]],
- [21,['Song of Solomon',8]]
+ [21,['Song of Solomon',8]],
+ [22,['Isaiah',66]]
 ]);
 const chapterSpecific={0:[17,31,39,42],1:[7,11,15],3:[10,16,26],5:[7]};
 
