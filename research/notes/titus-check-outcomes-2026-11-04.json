@@ -1,0 +1,85 @@
+{
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "pin": "fcd68480723c3f4dcdf862b47f5a83b05268fc37",
+  "build": {
+    "version": "1.1.0",
+    "buildNumber": 344,
+    "sourceHash": "fe4a753dd772507a51fe07f62e5749f51b6a6cbc8906a21a2abc04efba409631"
+  },
+  "passed": [
+    "locked official registry install",
+    "build:mobile",
+    "check:images",
+    "check:mobile",
+    "check:release",
+    "check:readability (report-only)",
+    "check-titus-artwork",
+    "public-origin 1018/1018",
+    "release:sites local package",
+    "source preservation",
+    "git diff --check"
+  ],
+  "failed": [
+    {
+      "command": "npm run check",
+      "step": "check-release-smoke.mjs",
+      "reason": "Chromium executable missing; browser did not launch; earlier content and nonbrowser search checks passed"
+    }
+  ],
+  "denied": [
+    {
+      "action": "HEAD live release.json",
+      "target": "https://scripture-lens.kvn-mcgwn.chatgpt.site/release.json",
+      "reason": "proxy CONNECT HTTP 403",
+      "outcome": "known denied; no retry or bypass"
+    }
+  ],
+  "notRun": [
+    "supported browser smoke",
+    "phone/iPad visual layout",
+    "candidate live parity",
+    "signing/signed native parity",
+    "device installation or launch",
+    "physical screen inspection"
+  ],
+  "workerBytes": 63921315,
+  "workerLimit": 66060288,
+  "logs": {
+    "titus-build-final.log": {
+      "bytes": 2614,
+      "sha256": "2d04bc16172c9ab92a605eec37b0fd29cdc4d101c704ae7c2265cac6013cbd1d"
+    },
+    "titus-check-images-final.log": {
+      "bytes": 1901,
+      "sha256": "197a02b4d51eaa7af84f604beb684f04bad82cee2a9afb7fae20ca7f91640dc3"
+    },
+    "titus-specific-final.log": {
+      "bytes": 148,
+      "sha256": "4916dbd08f63e38b9268fef94c6bed2aedfabb60c85ad20a2627e32a6ea4664a"
+    },
+    "titus-check-content.log": {
+      "bytes": 22936,
+      "sha256": "ee88dae1fae2288eb75f0e4423255fa39127c180fa27862164d7d1fe0d4b00e8"
+    },
+    "titus-check-release.log": {
+      "bytes": 1582,
+      "sha256": "4d2380431c29fbca7e57c3d93a3c60353b4214380c800b44c841b5292cc6a409"
+    },
+    "titus-check-mobile.log": {
+      "bytes": 641,
+      "sha256": "56ef79d20dbaf4fa8c9d7a3f2878a239788472b1d0210b719879a348275144bb"
+    },
+    "titus-npm-install.log": {
+      "bytes": 629,
+      "sha256": "42dbb6d54d4a7dfecd51179efd410926b5d6ae746951bc26b7d86db73a2d73f6"
+    },
+    "titus-package.log": {
+      "bytes": 369,
+      "sha256": "9100765a2d804726b9fcb38b4a2eb860ba8ece9e51f4541c0d73f1d1f5c72bdb"
+    },
+    "titus-readability.log": {
+      "bytes": 2542,
+      "sha256": "e2cae896c6385d056ebd851c86cc77baa6904d259ee2337d13f92db748f377a0"
+    }
+  }
+}

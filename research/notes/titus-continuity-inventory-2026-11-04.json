@@ -1,0 +1,589 @@
+{
+  "baseline": "5a33980ae6e7e25ad9b0dfb345d8da52229226d9",
+  "currentTitusStories": [],
+  "currentTitusChapterImages": {
+    "55:1": [
+      {
+        "afterVerse": 0,
+        "alt": "Imagined scene: Stone homes overlook blue water and green hills on the coast of Crete.",
+        "src": "/assets/chapter-titus-01-opening-v1.webp",
+        "width": 960,
+        "height": 540
+      }
+    ],
+    "55:2": [
+      {
+        "afterVerse": 0,
+        "alt": "Imagined scene: Wooden stools face a scroll and lamp in a quiet stone courtyard.",
+        "src": "/assets/chapter-titus-02-opening-v1.webp",
+        "width": 960,
+        "height": 540
+      }
+    ],
+    "55:3": [
+      {
+        "afterVerse": 0,
+        "alt": "Imagined scene: A woven basket, water flask and tied bundle wait beside a road.",
+        "src": "/assets/chapter-titus-03-opening-v1.webp",
+        "width": 960,
+        "height": 540
+      }
+    ]
+  },
+  "earlierStoryCandidates": [
+    {
+      "book": "Genesis",
+      "title": "The Fall of Man",
+      "passage": "Genesis 3:1 - 3:24",
+      "image": "/assets/story-the-fall-of-man-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Numbers",
+      "title": "Balaam and Balak",
+      "passage": "Numbers 22:1 - 24:25",
+      "image": "/assets/story-balaam-and-balak-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "Israel Demands a King",
+      "passage": "1 Samuel 8:1 - 12:25",
+      "image": "/assets/story-israel-demands-a-king-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "Saul Rejected",
+      "passage": "1 Samuel 13:1 - 15:35",
+      "image": "/assets/story-saul-rejected-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "David Anointed",
+      "passage": "1 Samuel 16:1 - 16:23",
+      "image": "/assets/story-david-anointed-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "Saul's Jealousy and David's Flight",
+      "passage": "1 Samuel 18:1 - 21:15",
+      "image": "/assets/story-saul-s-jealousy-and-david-s-flight-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "David in the Wilderness",
+      "passage": "1 Samuel 22:1 - 26:25",
+      "image": "/assets/story-david-in-the-wilderness-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Samuel",
+      "title": "Saul and the Medium at Endor; Saul's Death",
+      "passage": "1 Samuel 28:1 - 31:13",
+      "image": "/assets/story-saul-and-the-medium-at-endor-saul-s-death-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "2 Samuel",
+      "title": "David Becomes King",
+      "passage": "2 Samuel 1:1 - 5:5",
+      "image": "/assets/story-david-becomes-king-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "2 Samuel",
+      "title": "Sheba's Revolt and the Gibeonites",
+      "passage": "2 Samuel 20:1 - 21:22",
+      "image": "/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "1 Chronicles",
+      "title": "The Death of Saul",
+      "passage": "1 Chronicles 10:1 - 10:14",
+      "image": "/assets/story-the-death-of-saul-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Hosea",
+      "title": "Hosea's Marriage to Gomer",
+      "passage": "Hosea 1:1 - 1:9",
+      "image": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Birth of Jesus and the Magi",
+      "passage": "Matthew 1:18 - 2:12",
+      "image": "/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Baptism and Temptation of Jesus",
+      "passage": "Matthew 3:1 - 4:11",
+      "image": "/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Calling the First Disciples",
+      "passage": "Matthew 4:12 - 4:25",
+      "image": "/assets/story-calling-the-first-disciples-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Healings and Calming the Storm",
+      "passage": "Matthew 8:1 - 9:38",
+      "image": "/assets/story-healings-and-calming-the-storm-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Sending Out the Twelve",
+      "passage": "Matthew 10:1 - 10:5",
+      "image": "/assets/story-sending-out-the-twelve-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Jesus and John the Baptist",
+      "passage": "Matthew 11:1 - 11:30",
+      "image": "/assets/story-jesus-and-john-the-baptist-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "passage": "Matthew 12:1 - 12:50",
+      "image": "/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "passage": "Matthew 14:1 - 14:36",
+      "image": "/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Peter's Confession and the Transfiguration",
+      "passage": "Matthew 16:13 - 17:27",
+      "image": "/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Rich Young Man",
+      "passage": "Matthew 19:1 - 20:34",
+      "image": "/assets/story-the-rich-young-man-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Triumphal Entry and Temple Cleansing",
+      "passage": "Matthew 21:1 - 21:46",
+      "image": "/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Last Supper and Gethsemane",
+      "passage": "Matthew 26:1 - 26:56",
+      "image": "/assets/story-the-last-supper-and-gethsemane-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "Trial, Crucifixion and Burial",
+      "passage": "Matthew 26:57 - 27:66",
+      "image": "/assets/story-trial-crucifixion-and-burial-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Matthew",
+      "title": "The Resurrection and the Great Commission",
+      "passage": "Matthew 28:1 - 28:20",
+      "image": "/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "John the Baptist and the Baptism of Jesus",
+      "passage": "Mark 1:1 - 1:13",
+      "image": "/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Calling the Disciples and Healing in Capernaum",
+      "passage": "Mark 1:14 - 1:45",
+      "image": "/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "The Paralytic and Controversies",
+      "passage": "Mark 2:1 - 3:6",
+      "image": "/assets/story-the-paralytic-and-controversies-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Parables and Calming the Storm",
+      "passage": "Mark 4:1 - 4:41",
+      "image": "/assets/story-parables-and-calming-the-storm-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "The Gadarene Demoniac, Jairus and the Woman",
+      "passage": "Mark 5:1 - 5:43",
+      "image": "/assets/story-the-gadarene-demoniac-jairus-and-the-woman-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Feeding the Multitude",
+      "passage": "Mark 6:30 - 6:56",
+      "image": "/assets/story-feeding-the-multitude-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Peter's Confession and the Transfiguration in Mark",
+      "passage": "Mark 8:27 - 9:29",
+      "image": "/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Blind Bartimaeus",
+      "passage": "Mark 10:46 - 10:52",
+      "image": "/assets/story-blind-bartimaeus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Triumphal Entry and the Temple",
+      "passage": "Mark 11:1 - 11:33",
+      "image": "/assets/story-triumphal-entry-and-the-temple-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "The Last Supper and Gethsemane in Mark",
+      "passage": "Mark 14:1 - 14:52",
+      "image": "/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "Trial, Crucifixion and Burial in Mark",
+      "passage": "Mark 14:53 - 15:47",
+      "image": "/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Mark",
+      "title": "The Empty Tomb",
+      "passage": "Mark 16:1 - 16:8",
+      "image": "/assets/story-the-empty-tomb-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Births of John and Jesus",
+      "passage": "Luke 1:5 - 2:20",
+      "image": "/assets/story-the-births-of-john-and-jesus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "Presentation and the Boy Jesus in the Temple",
+      "passage": "Luke 2:21 - 2:52",
+      "image": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "Rejection at Nazareth",
+      "passage": "Luke 4:14 - 4:30",
+      "image": "/assets/story-rejection-at-nazareth-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Miraculous Catch",
+      "passage": "Luke 5:1 - 5:11",
+      "image": "/assets/story-the-miraculous-catch-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Centurion and the Widow's Son",
+      "passage": "Luke 7:1 - 7:17",
+      "image": "/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Sinful Woman Anoints Jesus",
+      "passage": "Luke 7:36 - 7:50",
+      "image": "/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Good Samaritan and Mary and Martha",
+      "passage": "Luke 10:25 - 10:42",
+      "image": "/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Lost Sheep, Coin and Son",
+      "passage": "Luke 15:1 - 15:32",
+      "image": "/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Rich Man and Lazarus",
+      "passage": "Luke 16:19 - 16:31",
+      "image": "/assets/story-the-rich-man-and-lazarus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "Zacchaeus",
+      "passage": "Luke 19:1 - 19:10",
+      "image": "/assets/story-zacchaeus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Road to Emmaus",
+      "passage": "Luke 24:13 - 24:35",
+      "image": "/assets/story-the-road-to-emmaus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Luke",
+      "title": "The Ascension",
+      "passage": "Luke 24:36 - 24:53",
+      "image": "/assets/story-the-ascension-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The First Disciples and the Wedding at Cana",
+      "passage": "John 1:35 - 2:12",
+      "image": "/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Cleansing the Temple and Nicodemus",
+      "passage": "John 2:13 - 3:21",
+      "image": "/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The Woman at the Well",
+      "passage": "John 4:1 - 4:42",
+      "image": "/assets/story-the-woman-at-the-well-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Healing at Bethesda",
+      "passage": "John 5:1 - 5:47",
+      "image": "/assets/story-healing-at-bethesda-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Bread of Life",
+      "passage": "John 6:1 - 6:71",
+      "image": "/assets/story-bread-of-life-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The Woman Caught in Adultery",
+      "passage": "John 7:53 - 8:11",
+      "image": "/assets/story-the-woman-caught-in-adultery-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The Man Born Blind",
+      "passage": "John 9:1 - 9:41",
+      "image": "/assets/story-the-man-born-blind-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Jesus at the Feast of Dedication",
+      "passage": "John 10:22 - 10:42",
+      "image": "/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The Raising of Lazarus",
+      "passage": "John 11:1 - 11:57",
+      "image": "/assets/story-the-raising-of-lazarus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Anointing and Triumphal Entry",
+      "passage": "John 12:1 - 12:50",
+      "image": "/assets/story-anointing-and-triumphal-entry-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Jesus Washes the Disciples' Feet",
+      "passage": "John 13:1 - 13:38",
+      "image": "/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Arrest, Trial and Crucifixion",
+      "passage": "John 18:1 - 19:42",
+      "image": "/assets/story-arrest-trial-and-crucifixion-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "The Resurrection Appearances",
+      "passage": "John 20:1 - 20:31",
+      "image": "/assets/story-the-resurrection-appearances-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "John",
+      "title": "Breakfast by the Sea of Tiberias",
+      "passage": "John 21:1 - 21:25",
+      "image": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "The Ascension and the Replacement of Judas",
+      "passage": "Acts 1:1 - 1:26",
+      "image": "/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Pentecost",
+      "passage": "Acts 2:1 - 2:47",
+      "image": "/assets/story-pentecost-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "The Lame Man Healed and Arrest of Peter and John",
+      "passage": "Acts 3:1 - 4:31",
+      "image": "/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Ananias and Sapphira",
+      "passage": "Acts 4:32 - 5:11",
+      "image": "/assets/story-ananias-and-sapphira-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Saul's Conversion",
+      "passage": "Acts 9:1 - 9:31",
+      "image": "/assets/story-saul-s-conversion-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Peter, Cornelius and the Gentiles",
+      "passage": "Acts 10:1 - 11:18",
+      "image": "/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Peter's Escape and Herod's Death",
+      "passage": "Acts 12:1 - 12:25",
+      "image": "/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Paul's First Journey",
+      "passage": "Acts 13:1 - 14:28",
+      "image": "/assets/story-paul-s-first-journey-v2.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Paul in Philippi",
+      "passage": "Acts 16:1 - 16:40",
+      "image": "/assets/story-paul-in-philippi-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Thessalonica, Athens and Corinth",
+      "passage": "Acts 17:1 - 18:28",
+      "image": "/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Ephesus",
+      "passage": "Acts 19:1 - 20:38",
+      "image": "/assets/story-ephesus-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Paul Arrested in Jerusalem",
+      "passage": "Acts 21:1 - 23:35",
+      "image": "/assets/story-paul-arrested-in-jerusalem-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Paul Before Felix, Festus and Agrippa",
+      "passage": "Acts 24:1 - 26:32",
+      "image": "/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    },
+    {
+      "book": "Acts",
+      "title": "Shipwreck and Rome",
+      "passage": "Acts 27:1 - 28:31",
+      "image": "/assets/story-shipwreck-and-rome-v1.webp",
+      "status": "metadata candidate, not a verified visible identity or approved anchor"
+    }
+  ],
+  "newIdentifiablePeople": [],
+  "newIdentityInputs": [],
+  "decision": "No identifiable named people or groups in any new scene; no new portrait anchor approved. Names and topical references do not prove visible identity. Do not assume authorship from epistle heading.",
+  "consultedInventories": [
+    "acts-continuity-inventory-2026-11-04.json",
+    "matthew-continuity-inventory-2026-11-04.json"
+  ],
+  "styleOnly": "src/assets/chapter-genesis-07-opening-v1.webp"
+}
