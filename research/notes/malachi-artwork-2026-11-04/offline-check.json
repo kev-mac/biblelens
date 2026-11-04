@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "chapters": 4,
+  "networkAllowed": false,
+  "sourceWebOfflineByteParity": true,
+  "workerBytes": 64426837,
+  "workerLimit": 66060288,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 342,
+    "sourceHash": "25f91c633cdb3eeb6b39548c974e0652214c272ef7baa580428d0eea42af3c9a"
+  },
+  "images": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-malachi-01-opening-v1.webp",
+      "bytes": 122422,
+      "sha256": "40ddf3cc3db2fc6dfe10b281f4790c44aaa6633d3b3fdbc67b21bfe978d700a2"
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-malachi-02-opening-v1.webp",
+      "bytes": 130396,
+      "sha256": "b9a5264aaa405c29ecfacc261833b3f040599471cd10ac4e8e19f6fd45612b51"
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-malachi-03-opening-v1.webp",
+      "bytes": 137630,
+      "sha256": "a7719791bd577039f74daaf5770c983129abffd79e778a1d1fa7f0806cead804"
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-malachi-04-opening-v1.webp",
+      "bytes": 130318,
+      "sha256": "ed67505b0c5912cfdb0fc0401dc49e49ea0ec13f60dfb7b743120bde95644687"
+    }
+  ]
+}
