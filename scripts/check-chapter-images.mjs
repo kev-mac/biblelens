@@ -67,6 +67,8 @@ const missingJob=structuredClone(images);delete missingJob['17:2'];
 assert.throws(()=>validateChapterImages(missingJob,original,headings,stories),/Job 2 needs/);
 const missingPsalm=structuredClone(images);delete missingPsalm['18:1'];
 assert.throws(()=>validateChapterImages(missingPsalm,original,headings,stories),/Psalms 1 needs/);
+const missingLamentations=structuredClone(images);delete missingLamentations['24:1'];
+assert.throws(()=>validateChapterImages(missingLamentations,original,headings,stories),/Lamentations 1 needs/);
 const missingProverbs=structuredClone(images);delete missingProverbs['19:1'];
 assert.throws(()=>validateChapterImages(missingProverbs,original,headings,stories),/Proverbs 1 needs/);
 for(const [book,[name]] of illustratedBooks){
