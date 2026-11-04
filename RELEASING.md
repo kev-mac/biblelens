@@ -19,8 +19,8 @@ Settings → App version shows the version, build number and source fingerprint 
 
 ## Chapter artwork
 
-Keep unchanged Story and legacy Genesis artwork embedded. The reviewed, versioned Story replacements from the ten-book build 341 batch use the same checked hosted path as the chapter artwork; their originals remain in source history. New Genesis opening images,
-selected versioned Genesis replacements, and Exodus–Proverbs chapter images use
+Keep unchanged Story and legacy Genesis artwork embedded. The reviewed, versioned Story replacements from the build 341 and 342 batches use the same checked hosted path as the chapter artwork; their originals remain in source history. New Genesis opening images,
+selected versioned Genesis replacements, and Exodus–Amos chapter images use
 the same-origin image paths through a checked public GitHub source and an edge cache. `data/hosted-artwork.json` pins the exact public asset
 commit; the build records each file's byte length and SHA-256 hash. Commit and
 push those public assets before deploying a release that references them.
