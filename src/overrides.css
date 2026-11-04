@@ -3085,6 +3085,7 @@ html body.lens-app #explore-view [data-topic=people]{--tile-rgb:96,165,250}
 html body.lens-app #explore-view [data-topic=places]{--tile-rgb:45,212,191}
 html body.lens-app #explore-view [data-topic=commandments]{--tile-rgb:251,191,36}
 html body.lens-app #explore-view [data-topic=lost]{--tile-rgb:253,164,175}
+html body.lens-app #explore-view [data-topic=evidence]{--tile-rgb:129,140,248}
 html body.lens-app[data-topic=history],html body.lens-app :is([data-topic=history],[data-collection=history]){--tile-rgb:251,191,36}
 html body.lens-app[data-topic=science],html body.lens-app :is([data-topic=science],[data-collection=science]){--tile-rgb:74,222,128}
 html body.lens-app[data-topic=timeline],html body.lens-app :is([data-topic=timeline],[data-collection=timeline]){--tile-rgb:45,212,191}
@@ -3188,7 +3189,7 @@ html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){m
 /* Approved mobile review: retain the palette and collection tiles. */
 html body.lens-app #lensMasthead nav.lens-primary{grid-template-columns:repeat(3,minmax(0,1fr))}
 /* Explore swimlanes: readable cards and a visible next-card edge invite browsing. */
-html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:max(190px,11rem);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
+html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:clamp(240px,72vw,280px);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
 html body.lens-app.dark #explore-view{--lane-surface:rgba(20,26,35,.72);--lane-copy:#AAB6C8;--lane-ink:#F8FAFC;--lane-glass:rgba(255,255,255,.04)}
 html body.lens-app #explore-view>h1{border-left-width:4px;border-radius:2px}
 html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:none;margin:12px calc(-1 * var(--lane-gutter)) 24px 0;padding:8px var(--lane-gutter) 12px 0}
@@ -3200,11 +3201,11 @@ html body.lens-app #explore-view .ux-topic-section{min-width:0;margin:0 0 18px}
 html body.lens-app #explore-view .ux-lane-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px;margin:0 0 4px}
 html body.lens-app #explore-view .ux-lane-heading h2{margin:0;min-width:0;font:600 .78rem/1.45 var(--ui-font);letter-spacing:.045em;text-transform:uppercase;color:var(--lane-copy)}
 html body.lens-app #explore-view .ux-topic-row{position:relative;display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:0;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 calc(-1 * var(--lane-gutter)) 0 0;padding:10px var(--lane-gutter) 18px 0}
-html body.lens-app #explore-view a.ux-topic{flex:0 0 var(--lane-card-width);width:var(--lane-card-width);min-width:0;height:210px;padding:16px 14px;gap:10px;scroll-snap-align:start;scroll-snap-stop:normal;border:1px solid rgba(var(--tile-rgb),.35);border-radius:19px;background:radial-gradient(ellipse at 12% 0%,rgba(var(--tile-rgb),.19),transparent 75%),linear-gradient(var(--lane-glass),var(--lane-glass)),var(--lane-surface);color:var(--lane-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 14px rgba(var(--tile-rgb),.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .18s,box-shadow .18s,border-color .18s}
+html body.lens-app #explore-view a.ux-topic{flex:0 0 var(--lane-card-width);width:var(--lane-card-width);min-width:0;height:auto;min-height:15rem;padding:20px 18px;gap:14px;scroll-snap-align:start;scroll-snap-stop:normal;border:1px solid rgba(var(--tile-rgb),.35);border-radius:19px;background:radial-gradient(ellipse at 12% 0%,rgba(var(--tile-rgb),.19),transparent 75%),linear-gradient(var(--lane-glass),var(--lane-glass)),var(--lane-surface);color:var(--lane-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 14px rgba(var(--tile-rgb),.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .18s,box-shadow .18s,border-color .18s}
 html body.lens-app #explore-view a.ux-topic:hover{border-color:rgba(var(--tile-rgb),.65);box-shadow:0 0 20px rgba(var(--tile-rgb),.17),inset 0 0 20px rgba(var(--tile-rgb),.06);transform:translateY(-2px)}
 html body.lens-app #explore-view a.ux-topic:active{transform:scale(.975)}
 html body.lens-app #explore-view a.ux-topic:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-3px}
-html body.lens-app #explore-view .ux-topic>svg{box-sizing:border-box;flex:none;width:38px;height:38px;padding:8px;margin:0;border-radius:12px;background:rgba(var(--tile-rgb),.12);color:var(--topic);filter:none;box-shadow:0 0 18px rgba(var(--tile-rgb),.12)}
+html body.lens-app #explore-view .ux-topic>svg{box-sizing:border-box;flex:none;width:44px;height:44px;padding:9px;margin:0;border-radius:12px;background:rgba(var(--tile-rgb),.12);color:var(--topic);filter:none;box-shadow:0 0 18px rgba(var(--tile-rgb),.12)}
 html body.lens-app #explore-view .ux-tile-copy{gap:7px}
 html body.lens-app #explore-view .ux-tile-copy strong{font:700 1.125rem/1.25 var(--ui-font);letter-spacing:-.4px;color:var(--lane-ink);white-space:normal;overflow-wrap:anywhere}
 html body.lens-app #explore-view .ux-tile-copy small{font:400 0.75rem/1.45 var(--ui-font);letter-spacing:0;white-space:normal;color:var(--lane-copy);margin:0}
@@ -3259,7 +3260,7 @@ html body.lens-app #lensMasthead .lens-primary a > span {
  font-size:calc(14rem / 18);
 }
 
-/* Fit both Explore lanes above phone navigation at the default text size.
+/* Keep large collection cards in one scrollable row on phones.
    Larger accessibility text can grow the cards and scroll the page normally. */
 @media(max-width:767px){
  html body.lens-app #explore-view{--lane-inset:4px;}
@@ -3270,8 +3271,8 @@ html body.lens-app #lensMasthead .lens-primary a > span {
  /* Match the All button border, with the same inset at every snap stop. */
  html body.lens-app #explore-view .ux-topic-row{padding-top:4px;padding-bottom:8px;padding-left:var(--lane-inset);scroll-padding-left:var(--lane-inset);padding-right:max(var(--lane-gutter),calc(100% + var(--lane-gutter) - var(--lane-card-width) - var(--lane-inset)));}
  html body.lens-app #explore-view a.ux-topic{
-  height:auto;min-height:max(9.6rem,clamp(172px,calc((100svh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 423px)/2),210px));
-  padding:12px;gap:8px;
+  height:auto;min-height:15rem;
+  padding:20px 18px;gap:14px;
  }
  html body.lens-app #explore-view .ux-lane-pages{margin-top:-8px;}
 }

@@ -14,17 +14,17 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    async function fits(){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page fits '+page.url());}
    await go('#discover','#ux-topic-stories');
    assert.deepEqual(await page.locator('[data-lens-view]').evaluateAll(ns=>ns.map(n=>n.dataset.lensView)),['read','explore','notebook']);
-   assert.equal(await page.locator('.ux-topic').count(),11);
+   assert.equal(await page.locator('.ux-topic').count(),7);
    assert.equal(await page.locator('#ux-topic-prophecies').count(),0);
    await page.getByRole('button',{name:'Evidence',exact:true}).click();
-   assert.equal(await page.locator('.ux-topic').count(),6);
-   assert(await page.locator('#ux-topic-history').isVisible());
+   assert.equal(await page.locator('.ux-topic').count(),2);
+   assert(await page.locator('#ux-topic-evidence').isVisible());
    await page.getByRole('button',{name:'People & Stories',exact:true}).click();
    assert.equal(await page.locator('.ux-topic').count(),5);
    await page.getByRole('button',{name:'All',exact:true}).click();await fits();
    await page.screenshot({path:`${report}/${engine}-${width}-${theme}-explore.png`,fullPage:true});
    // Existing bookmarked Evidence hub URLs still lead to their collections.
-   await go('#discover?section=evidence','#ux-topic-history');
+   await go('#discover?section=evidence','#ux-topic-evidence');
    assert.equal(await page.locator('[data-lens-view=explore]').getAttribute('aria-current'),'page');
    await go('#read/0/1','#verse-1');
    assert.equal(await page.locator('#lens-edition').inputValue(),'web','new reader defaults to WEB');
