@@ -119,7 +119,8 @@
     "height": 540,
     "bytes": 150184,
     "sha256": "9fd9efd342a92f22671c3124d1a620be4e8d99edb6084c7015bf198fbc9b9c2f",
-    "packaging": "Pillow RGB Lanczos fit 960x540; WebP quality 83, method 6; no semantic edits."
+    "packaging": "Pillow RGB Lanczos fit 960x540; WebP quality 83, method 6; no semantic edits.",
+    "editPrompt": "Edit the first image only. Preserve the vineyard scene, dew-covered purple grapes and leaves, dawn lighting, colors and composition exactly. Remove the faint small badge/diamond/emblem near the top right corner in the sky, replacing it with uninterrupted natural sky and clouds. No logos, watermarks, writing, symbols, added objects or people anywhere. The second attached approved Genesis 7 image is style reference only; maintain its restrained illustrative naturalism. Output one 16:9 landscape image."
   },
   {
     "chapter": 9,
