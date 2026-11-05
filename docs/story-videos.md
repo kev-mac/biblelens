@@ -337,3 +337,94 @@ remaining actionable issue after the buffered-stall and pending-pause fixes.
 Web and native release records match source fingerprint
 `c309c93f9d56eba2cb4ac8ab49b58e5cd07a1205525d680de897bae51c368bf3`.
 No physical-device, audio-transcript, deployment or native-install claim is made.
+
+## Viewport playback (current behavior, unreleased feature)
+
+This section supersedes the earlier gesture-only browsing behavior above.
+On ordinary connections, a Story video plays muted once after its video stage
+is at least 60% visible for 180 ms. Native video/YouTube controls retain Play,
+Pause, sound and fullscreen. Automatic playback does not take keyboard focus.
+A browser that refuses autoplay keeps its controls and a short Play prompt.
+Videos never loop. Ending returns the poster, with the small Play control for
+an explicit replay. Show image also suppresses automatic restart.
+
+Only one player may run. Leaving the viewing area stops playback. Hysteresis
+keeps the current story until it falls below 35% visibility or another story
+is clearly more visible. Small scroll changes do not restart a paused or ended
+video. A stage must be completely offscreen for 500 ms before a later viewing
+can start fresh. Hidden pages, navigation, offline transitions and unmounts
+release active and preloaded resources. Returning to the tab or reconnecting
+does not replay the current viewing automatically.
+
+The previous and next available video in the currently rendered Story list
+are prepared while the current story is in view. No other story video is
+prefetched. MP4 neighbors use the browser's preload=auto hint, and the same
+video element is promoted when viewed. Browsers decide how many bytes to fetch
+and may fetch the full clip. This is a two-neighbor limit, not a byte guarantee.
+YouTube neighbors initialize the official player with autoplay disabled and
+sound muted. YouTube controls media buffering; its API does not promise full
+video-byte preloading. No hidden video is played to force buffering. The bridge
+accepts Play commands only from its parent window and the exact parent origin.
+
+Reduced motion, Save-Data and slow-2g/2g connections disable automatic playback
+and adjacent preloading. Manual Play still works. Browsers without
+IntersectionObserver also retain manual playback. The existing local artwork
+and error/Retry behavior remain available offline or on playback failure.
+No video is added to the native package or service-worker cache.
+
+`check-story-viewport.mjs` covers the observer state machine using fixtures.
+`check-story-viewport-browser.mjs` covers real browser scrolling and intersection
+changes with explicit media/API doubles, plus bounded actual MP4 decoding and
+changing-frame checks. Existing reduced-motion YouTube/MP4 browser suites retain
+manual-play regressions. Browser viewport tests are not installed iPhone/iPad
+verification. Build 349 is unchanged; this feature is not a published release.
+
+### Viewport feature verification on OmniBook (2026-11-05)
+
+The feature worktree started from GitHub main `84e5a1f1`. Freshly fetched Sites
+source `e41f5b06` matched main's src, worker, data, scripts, package files and
+hosting configuration. The divergent mirror, original Windows checkout and
+existing stash were preserved. No Site source was pushed or deployed.
+
+The final shared web/mobile build passed with source fingerprint
+`ad51140f8b395da660109e743180fda199b5b96e171f5a8a48a0c03598aac177`.
+All 69 unique checks from check, check:mobile, check:release, check:sync,
+check:videos and check:ui passed after setup corrections: exact-hash audit
+inputs needed their unchanged Git LF bytes, and two UI runners needed an
+explicit local preview URL. Syntax and whitespace checks passed.
+
+All 32 deterministic viewport browser scenarios passed in Chromium and WebKit
+at 390 x 844 and 820 x 1180. This covers real scrolling/IntersectionObserver,
+with clearly labeled media/API doubles, including adjacent reuse, YouTube cue
+promotion, once-per-viewing, exclusive playback, keyboard controls, preferences,
+offline/tab restoration, unseen stories and unmount cleanup. An initial
+YouTube fixture failure was caused by enforcing the app policy on the separate
+player page; the runner now preserves that page's dedicated enforced policy.
+
+Actual Chromium MP4 muted autoplay, changing frames and navigation passed.
+A separate real Chromium Creation check received YouTube playing and advancing
+time events without a Play gesture, verified the muted request and Show image
+teardown. Existing manual YouTube checks passed all 20 engine/viewport cases.
+The existing real MP4 suite passed 71 of 72 cases; Windows WebKit's iPad-sized
+Fall of Man reconnect/resume check failed its time >= 7 assertion. Other clips
+and the phone-sized Fall case passed that flow.
+
+Windows WebKit's new real-autoplay case remains incomplete: some attempts
+closed before the card became visible; an isolated attempt decoded advancing,
+changing frames but closed on navigation to the reader. The deterministic
+WebKit lifecycle results do not resolve this native media-engine behavior.
+Keep these failures visible and finish real Safari/connected-device QA before
+release. No physical iPhone/iPad, signed assets or installed apps were tested.
+
+Detailed reports remain in ignored outputs: viewport-regressions,
+story-viewport-final, story-viewport-webkit-isolated, r2-video-browser,
+creation-video-browser and live-youtube-viewport.json. No publication or
+native installation is claimed.
+
+A bounded WebKit iPad follow-up kept the stage fully visible throughout and
+observed the app explicitly restore 7.224 seconds. WebKit then briefly reported
+0.01 seconds at its native seeked/timeupdate events, before recovering to
+7.344 and advancing to 8.079 without another JavaScript seek. This points to
+transient native seek timing rather than the observer clearing the saved time.
+The original failed immediate assertion remains in the report; the follow-up
+is not substituted for a complete suite pass. See outputs/probe-webkit-resume.json.
