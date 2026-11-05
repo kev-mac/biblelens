@@ -1,3 +1,4 @@
+import {STORY_VIDEO_ORIGINS} from './story-videos.mjs';
 import {transformSync} from 'esbuild';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
@@ -85,7 +86,7 @@ export function consolidateStartupAssets(assets,{minify=false,cssOverride}={}) {
   // hashes; no inline handlers, eval, remote scripts, objects or base overrides.
   const policy = ["default-src 'none'", "base-uri 'none'", "object-src 'none'", "frame-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site", "form-action 'self'",
     "script-src 'self' " + hashes.join(' '), "script-src-attr 'none'", "style-src 'self' 'unsafe-inline'",
-    "manifest-src 'self'", "font-src 'self' data:", "img-src 'self' data: blob: https://raw.githubusercontent.com", "worker-src 'self' blob:",
+    "media-src "+STORY_VIDEO_ORIGINS.join(' '), "manifest-src 'self'", "font-src 'self' data:", "img-src 'self' data: blob: https://raw.githubusercontent.com", "worker-src 'self' blob:",
     "connect-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site https://tiles.openfreemap.org"].join('; ');
   assets['/'].csp = policy;
   // Sites/Cloudflare injects an inline challenge with request-specific values

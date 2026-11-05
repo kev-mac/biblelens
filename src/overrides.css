@@ -3130,7 +3130,7 @@ html body.lens-app #lensInspector .lens-evidence>details>summary{text-decoration
 html body.lens-app .story-illustration{display:block;width:100%;margin:4px 0 16px;padding:0}
 html body.lens-app .story-illustration img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:var(--lens-surface)}
 html body.lens-app .story-video-stage{position:relative;width:100%;max-width:100%;min-width:0;aspect-ratio:16/9;min-height:200px;border-radius:10px;overflow:hidden;background:#10151c}
-html body.lens-app .story-video-stage>img,html body.lens-app .story-video-stage>[data-video-frame],html body.lens-app .story-video-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;min-width:200px;min-height:200px}
+html body.lens-app .story-video-stage>img,html body.lens-app .story-video-stage>[data-video-frame],html body.lens-app .story-video-stage iframe,html body.lens-app .story-video-stage video{position:absolute;inset:0;width:100%;height:100%;border:0;min-width:200px;min-height:200px}
 html body.lens-app .story-video-stage>[hidden],html body.lens-app .story-video [hidden]{display:none!important}
 html body.lens-app .story-video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);min-height:48px;padding:10px 20px;background:#10151c;color:#fff;border:2px solid #fff;cursor:pointer}
 html body.lens-app .story-video-actions{display:flex;gap:12px;flex-wrap:wrap}

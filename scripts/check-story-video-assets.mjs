@@ -1,11 +1,14 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import {STORY_VIDEO_ORIGINS} from './story-videos.mjs';
 import worker from '../dist/server/index.js';
 
 const get=p=>worker.fetch(new Request('https://biblelens.test'+p),{},{});
 const app=await get('/'),appPolicy=app.headers.get('content-security-policy-report-only');
 assert(appPolicy.includes("frame-src 'self' https://scripture-lens.kvn-mcgwn.chatgpt.site"));
+assert(appPolicy.includes('media-src '+STORY_VIDEO_ORIGINS.join(' ')));
+assert(fs.readFileSync('www/index.html','utf8').includes('media-src '+STORY_VIDEO_ORIGINS.join(' ')),'Native policy allows the same approved media host');
 assert(!appPolicy.match(/script-src[^;]*youtube/),'The reading app permits no YouTube scripts');
 const response=await get('/story-video-player.html');assert.equal(response.status,200);
 const html=await response.text();assert(html.includes('http-equiv="Content-Security-Policy"'));assert(html.includes('strict-origin-when-cross-origin'));
@@ -26,8 +29,13 @@ assert(!walk('www').some(p=>/\.(mp4|mov|webm)$/i.test(p)),'Native assets contain
 const shell=fs.readFileSync('www/service-worker.js','utf8');assert(!/youtube|\.mp4/.test(shell),'No YouTube or video shell prefetch');
 for(const [title,record]of Object.entries(JSON.parse(fs.readFileSync('data/story-videos.json')))){
  if(record.status==='pending'){assert(!client.includes(title),'Pending video is absent from playback configuration');continue;}
- assert(client.includes(record.videoId),'Ready video reaches the app');
- assert(script.includes(record.videoId),'Ready video is allowed by the HTTPS bridge');
+ if(record.provider==='youtube'){
+  assert(client.includes(record.videoId),'Ready video reaches the app');
+  assert(script.includes(record.videoId),'Ready video is allowed by the HTTPS bridge');
+ }else{
+  assert(client.includes(record.src),'Ready MP4 reaches the app');
+  assert(!script.includes(record.src),'MP4s never enter the YouTube bridge');
+ }
  const response=await get(record.poster);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/webp');
  const bytes=Buffer.from(await response.arrayBuffer());
  assert.deepEqual(bytes,fs.readFileSync('src'+record.poster),'Web serves the reviewed poster');

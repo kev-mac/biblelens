@@ -52,7 +52,7 @@ options.events.onReady();options.events.onStateChange({data:1});assert.equal(sen
 const dir=fs.mkdtempSync(path.join(os.tmpdir(),'biblelens-video-check-'));
 try{
  const records=JSON.parse(fs.readFileSync('data/story-videos.json'));
- const active=storyVideos(records,{'The Creation':art});
+ const active=storyVideos(records,JSON.parse(fs.readFileSync('data/story-images.json','utf8')));
  assert.equal(active['The Creation'].poster,video.poster,'Creation uses its reviewed video frame');
  assert.deepEqual(storyVideos({'The Creation':{...records['The Creation'],status:'pending'}},{'The Creation':art}),{},'Pending videos stay excluded');
  assert.equal(records['The Creation'].videoId,'BDNJ8-wtaeA','Retain the verified unlisted YouTube ID');
