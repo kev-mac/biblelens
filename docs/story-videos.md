@@ -122,11 +122,42 @@ and physical device tests were not run. Full logs and per-check results are in
 `outputs/creation-video-integration/` (ignored). Source syntax and
 `git diff --check` passed. The final web and native release records both match
 current source fingerprint
-`67fa5654d757429540539d628c76b41aa100ff6941729e5e0e2d47496f416311`.
+`9b831242403183dd3a298de0fc21996fcc66bab8034b52b3b02e5702072495d5`.
 
 Before release, finish real-browser and physical-device QA, then follow
 RELEASING.md. Publishing, merging and device installation need Kevin's explicit
 approval. Build number 346 remains unchanged for this unreleased work.
+
+## Run real browser checks in the existing local development session
+
+Run `npm run check:videos:browser` from this branch in the existing Mac checkout.
+It rebuilds the Worker when its source fingerprint is stale, serves it on a
+temporary loopback port, and uses the project's installed Playwright Chromium
+and WebKit browsers. No separate preview-server command is needed. It closes
+the preview and browsers when done and writes a machine-readable report and
+internal screenshots to `outputs/creation-video-browser/` (ignored).
+
+The command checks phone and iPad viewport layouts, the real poster, no YouTube
+requests before Play, actual YouTube playing/time events, a warm offline image
+transition, reconnection without autoplay, a deliberately blocked player with
+Retry, and playback teardown on navigation. Live failures stop further live
+attempts; it never switches endpoints to get around a denial. Missing browsers
+or failed playback produce an incomplete/failing report, not a passing result.
+The report strips URL queries and records no request headers or account data.
+
+`--plan` prints the intended checks without starting a server or browser. On
+managed Linux, the command exits 2 before building, serving or launching anything;
+that environment must use its provided browser/preview tools. This is preparation
+for the already-requested local testing, not a claim that browser checks ran in
+the cloud. Physical iPhone/iPad playback, fullscreen/controls/caption usability and
+native HTTPS-bridge acceptance remain separate connected-device checks.
+
+The follow-up runner preparation passed JavaScript syntax, `--plan`, and the
+managed-environment refusal check (exit 2 before any preview/browser startup).
+The shared web/mobile build, `check:videos`, Stories, `check:mobile` and
+`check:release` passed again. The real browser runner has not been executed;
+its existence is not a passing browser or device result. The full 65-check
+integration result above belongs to the preceding integration verification.
 
 ## Video direction
 
