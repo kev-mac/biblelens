@@ -11,7 +11,7 @@ if(process.argv.includes('--plan')){console.log(JSON.stringify(plan,null,2));pro
 if(process.env.SITES_MANAGED_LINUX_CONTAINER==='1'){console.error('NOT RUN: local development runner only; use supported managed browser tools.');process.exit(2);}
 const option=name=>process.argv.find(arg=>arg.startsWith('--'+name+'='))?.split('=').slice(1).join('=');
 const output=path.resolve(option('output')||'outputs/story-viewport-browser');fs.mkdirSync(output,{recursive:true});
-const report={startedAt:new Date().toISOString(),source:releaseInfo(),plan,results:[],limits:['Viewport emulation does not verify physical devices or installed native apps.','Fixture media methods and YouTube API are doubles; their PASS results do not claim remote playback.','Visibility state is simulated because headless engines do not reliably hide background tabs. IntersectionObserver and scrolling are real.','One approved MP4 per engine is decoded live; YouTube remote availability is covered by the separate existing live runner.','Offline fixture verifies application transitions, not cold offline installation.']};
+const report={startedAt:new Date().toISOString(),source:releaseInfo(),plan,results:[],browserEvents:[],limits:['Viewport emulation does not verify physical devices or installed native apps.','Windows WebKit runs with compositing enabled: its default disabled-compositing test port crashes on application View Transition snapshots, including the baseline player. Production APIs and motion remain enabled.','Fixture media methods and YouTube API are doubles; their PASS results do not claim remote playback.','Visibility state is simulated because headless engines do not reliably hide background tabs. IntersectionObserver and scrolling are real.','One approved MP4 per engine is decoded live; YouTube remote availability is covered by the separate existing live runner.','Offline fixture verifies application transitions, not cold offline installation.']};
 const save=()=>fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(report,null,2)+'\n');
 const catalog=JSON.parse(fs.readFileSync('data/story-videos.json','utf8'));
 const mp4=Object.values(catalog).find(v=>v.status==='ready'&&v.provider==='mp4');
@@ -95,13 +95,20 @@ try{
  const base=`http://127.0.0.1:${server.address().port}`;
  for(const engine of plan.engines){
   if(option('engine')&&option('engine')!==engine)continue;
-  try{browser=await engines[engine].launch();}catch(error){report.results.push({engine,check:'launch',status:'NOT RUN',detail:error.message});save();continue;}
+  // Playwright's Windows WebKit default disables compositing. Its software
+  // snapshot path crashes on this app's View Transitions, even with the old
+  // manual-only player. Use the supported launch option, not an app/API stub.
+  // DEBUG=pw:browser additionally captures native process stderr for diagnosis.
+  const launchOptions=engine==='webkit'&&process.platform==='win32'?{ignoreDefaultArgs:['--disable-accelerated-compositing']}:{};
+  try{browser=await engines[engine].launch(launchOptions);}catch(error){report.results.push({engine,check:'launch',status:'NOT RUN',detail:error.message});save();continue;}
+  let expectedBrowserClose=false;browser.on('disconnected',()=>{report.browserEvents.push({engine,event:'disconnected',expected:expectedBrowserClose,at:new Date().toISOString()});save();});
   for(const size of plan.sizes){
    if(option('size')&&option('size')!==size.name)continue;
    async function scenario(name,options,run){
     if(option('check')&&!name.toLowerCase().includes(option('check').toLowerCase()))return;
     const context=await browser.newContext({viewport:{width:size.width,height:size.height},serviceWorkers:'block',reducedMotion:options.reduce?'reduce':'no-preference'});
     const page=await context.newPage(),diagnostics=[];
+    page.on('crash',()=>diagnostics.push({type:'page crash'}));
     page.on('pageerror',error=>diagnostics.push({type:'pageerror',message:error.message}));
     page.on('console',message=>{if(message.type()==='error')diagnostics.push({type:'console',message:message.text().slice(0,1000)});});
     page.on('requestfailed',request=>{const u=new URL(request.url());diagnostics.push({type:'requestfailed',url:u.origin+u.pathname,error:request.failure()?.errorText});});
@@ -179,17 +186,22 @@ try{
   // One real approved MP4 per engine, not per size or story, bounds bandwidth.
   if(!stopLive&&!process.argv.includes('--fixture-only')){
    const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'no-preference',serviceWorkers:'block'}),page=await context.newPage();
+   const diagnostics=[],checkpoints=[];let closing=false;
+   page.on('crash',()=>diagnostics.push({type:'page crash'}));
+   page.on('close',()=>diagnostics.push({type:'page closed',expected:closing}));
+   context.on('close',()=>diagnostics.push({type:'context closed',expected:closing}));
+   page.on('pageerror',error=>diagnostics.push({type:'pageerror',message:error.message}));
    try{
-    await page.goto(base+'/#stories/genesis/the-fall-of-man');const card=page.locator('#story-the-fall-of-man .story-video');await card.waitFor();await card.evaluate(el=>el.scrollIntoView({block:'center'}));const video=card.locator('video');await video.waitFor();
+    await page.goto(base+'/#stories/genesis/the-fall-of-man');checkpoints.push('page loaded');const card=page.locator('#story-the-fall-of-man .story-video');await card.waitFor();checkpoints.push('story card visible');await card.evaluate(el=>el.scrollIntoView({block:'center'}));const video=card.locator('video');await video.waitFor();
     await page.waitForFunction(()=>{const v=document.querySelector('.story-video video');return v&&!v.paused&&v.currentTime>1&&v.videoWidth>0&&v.readyState>=2;},null,{timeout:20000});
-    assert(await video.evaluate(v=>v.muted&&!v.loop&&v.controls&&v.playsInline));
+    assert(await video.evaluate(v=>v.muted&&!v.loop&&v.controls&&v.playsInline));checkpoints.push('muted autoplay decoded and advanced');
     const firstTime=await video.evaluate(v=>v.currentTime);await video.evaluate(v=>v.controls=false);const first=await video.screenshot();await page.waitForTimeout(1500);const second=await video.screenshot();assert(await video.evaluate(v=>v.currentTime)>firstTime+0.5);assert(!first.equals(second),'Decoded video frames must change');await video.evaluate(v=>v.controls=true);
-    await page.getByRole('button',{name:'Read The Fall of Man',exact:true}).click();await page.locator('#chapter-text').waitFor();assert.equal(await page.locator('.story-video video').count(),0);
-    report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'PASS'});
-   }catch(error){stopLive=true;report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'FAIL',detail:error.message.slice(0,1600)});}
-   finally{await context.close();save();}
+    checkpoints.push('changing frames verified');await page.getByRole('button',{name:'Read The Fall of Man',exact:true}).click();await page.locator('#chapter-text').waitFor();assert.equal(await page.locator('.story-video video').count(),0);checkpoints.push('reader navigation released video');
+    report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'PASS',checkpoints,diagnostics});
+   }catch(error){stopLive=true;report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'FAIL',detail:error.message.slice(0,1600),checkpoints,diagnostics});}
+   finally{closing=true;await context.close();save();}
   }else report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'NOT RUN',detail:stopLive?'Earlier live failure; no retries or alternate host.':'--fixture-only requested'});
-  await browser.close();browser=undefined;
+  expectedBrowserClose=true;await browser.close();browser=undefined;
  }
 }catch(error){report.results.push({check:'runner setup',status:'FAIL',detail:error.message.slice(0,1600)});}
 finally{await browser?.close();if(server)await new Promise(resolve=>{server.close(resolve);server.closeAllConnections();});report.finishedAt=new Date().toISOString();save();}

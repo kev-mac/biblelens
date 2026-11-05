@@ -13,9 +13,24 @@ const report={startedAt:new Date().toISOString(),source:releaseInfo(),plan,resul
 const save=()=>fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(report,null,2)+'\n');
 const records=Object.entries(JSON.parse(fs.readFileSync('data/story-videos.json','utf8'))).filter(([,v])=>v.status==='ready'&&v.provider==='mp4');
 const images=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
+// Windows WebKit can briefly report zero at seeked before its native clock
+// catches up. Require settled advancing playback, with a post-metadata budget
+// shorter than the saved position: a restart from zero must never pass.
+const waitResumed=(media,minimum)=>media.evaluate((v,minimum)=>new Promise((resolve,reject)=>{
+ const started=performance.now(),samples=[];let readyAt,goodAt,goodTime;
+ const poll=setInterval(()=>{
+  const now=performance.now();if(v.readyState>=1&&readyAt===undefined)readyAt=now;
+  samples.push({time:v.currentTime,seeking:v.seeking,paused:v.paused,ready:v.readyState});if(samples.length>12)samples.shift();
+  if(v.readyState>=2&&!v.seeking&&!v.paused&&v.playbackRate<=1&&v.currentTime>=minimum){
+   if(goodAt===undefined){goodAt=now;goodTime=v.currentTime;}
+   else if(now-goodAt>=300&&v.currentTime>goodTime+.1){clearInterval(poll);resolve();return;}
+  }else goodAt=undefined;
+  if(v.error||now-started>15000||readyAt!==undefined&&now-readyAt>3000){clearInterval(poll);reject(Error('Resume did not settle near the saved position: '+JSON.stringify(samples)));}
+ },50);
+}),minimum);
 let server,browser,stopLive=false;
 try{
- assert.equal(records.length,3,'All three approved R2 videos must be ready');
+ for(const title of ['The Fall of Man','Cain and Abel','The Line of Seth'])assert(records.some(([name])=>name===title),'Approved R2 video missing: '+title);
  let built;try{built=JSON.parse(fs.readFileSync('dist/client/release.json','utf8'));}catch{}
  if(built?.sourceHash!==report.source.sourceHash)execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit'});
  const {default:worker}=await import('./built-worker.mjs');const engines=await import('playwright');
@@ -28,7 +43,10 @@ try{
  });
  await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});const base=`http://127.0.0.1:${server.address().port}`;
  for(const engine of plan.engines){
-  try{browser=await engines[engine].launch();}catch(error){report.results.push({engine,check:'browser launch',status:'NOT RUN',detail:error.message});save();continue;}
+  // Match the normal-motion viewport runner: the Windows WebKit software
+  // compositor crashes on complex View Transition snapshots. Keep real
+  // production features enabled and use the supported compositing launch path.
+  try{browser=await engines[engine].launch(engine==='webkit'&&process.platform==='win32'?{ignoreDefaultArgs:['--disable-accelerated-compositing']}:{});}catch(error){report.results.push({engine,check:'browser launch',status:'NOT RUN',detail:error.message});save();continue;}
   for(const size of plan.sizes)for(const [title,record] of records){
    const slug=title.toLowerCase().replace(/[^a-z0-9]+/g,'-'),context=await browser.newContext({viewport:{width:size.width,height:size.height},reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage(),mediaRequests=[],violations=[];
    page.on('request',r=>{if(new URL(r.url()).hostname.endsWith('.r2.dev'))mediaRequests.push(r.url());});
@@ -63,7 +81,7 @@ try{
      await result('ended poster and restart',async()=>{await media.evaluate(v=>{v.currentTime=v.duration-0.25;return v.play();});await play.waitFor({timeout:10000});assert.equal(await media.count(),0);assert.equal(await still.getAttribute('src'),record.poster);await play.click();await media.waitFor();await waitPlaying();assert(await media.evaluate(v=>v.currentTime<4));});
      await result('offline image, reconnect without autoplay and resume',async()=>{
       await media.evaluate(v=>new Promise(resolve=>{v.addEventListener('seeked',()=>resolve(),{once:true});v.currentTime=7;}));await waitPlaying();await page.waitForTimeout(150);await context.setOffline(true);await status.filter({hasText:'offline'}).waitFor();assert.equal(await media.count(),0);assert.equal(await still.getAttribute('src'),images[title].src);await still.evaluate(img=>img.decode());assert(!await play.isVisible());
-      await page.screenshot({path:path.join(output,`${engine}-${size.name}-${slug}-offline.png`),fullPage:true});await context.setOffline(false);await play.waitFor();assert.equal(await media.count(),0);assert.equal(await still.getAttribute('src'),record.poster);await play.click();await media.waitFor();await waitPlaying();assert(await media.evaluate(v=>v.currentTime>=7));await figure.locator('[data-video-image]').click();assert.equal(await media.count(),0);
+      await page.screenshot({path:path.join(output,`${engine}-${size.name}-${slug}-offline.png`),fullPage:true});await context.setOffline(false);await play.waitFor();assert.equal(await media.count(),0);assert.equal(await still.getAttribute('src'),record.poster);await play.click();await media.waitFor();await waitResumed(media,7);await figure.locator('[data-video-image]').click();assert.equal(await media.count(),0);
      });
     }
     const blockedByPolicy=engine==='webkit'&&process.platform==='win32';

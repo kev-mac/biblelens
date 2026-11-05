@@ -35,7 +35,10 @@ light, sky, land and plants, heavenly lights, sea life and birds, land animals
 and people, then rest. The accessible description follows these observed scenes.
 Footage and contact sheets are inspection inputs, not app assets.
 
-## Playback
+## Original manual-play pilot
+
+This section records the original pilot. The viewport update below supersedes
+its automatic-play and preloading behavior.
 
 Only Stories directory cards use videos. Reader artwork, topic-sheet art, story
 summaries, navigation, scripture, private notes and offline reading are retained.
@@ -428,3 +431,39 @@ observed the app explicitly restore 7.224 seconds. WebKit then briefly reported
 transient native seek timing rather than the observer clearing the saved time.
 The original failed immediate assertion remains in the report; the follow-up
 is not substituted for a complete suite pass. See outputs/probe-webkit-resume.json.
+
+## Noah and shared build 350 candidate (2026-11-05)
+
+Kevin approved integrating the supplied Noah footage with the viewport update,
+then testing, merging and publishing both. The exact manifest key is
+`Noah and the Flood`, Genesis 6:9–9:17. Its approved public R2 URL is
+https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Noah-and-the-Flood.mp4.
+
+A normal range GET returned 206 with bytes 0–1023/5964451, and a normal full
+GET returned 200. A separate earlier HEAD failure did not prevent the media
+GET. No access controls were bypassed. The file is 5,964,451 bytes, 17.5 seconds,
+1280 x 720 H.264 at 24 fps with AAC audio. Full FFmpeg decoding passed. SHA-256:
+`3a34bf97ba5db7da6af30de5997b855499cf689c9faf8f3a0de005fbd114ff56`.
+
+Sampled actual frames show an older man welcoming two adults into the ark,
+animals outside, the ark on floodwater and the man before a grounded ark with
+a rainbow. The accessible description follows those visible scenes. The
+poster is the actual frame at 16 seconds, inspected at full size and compressed
+to `src/assets/story-video-noah-and-the-flood-poster-v1.webp`, 1280 x 720,
+52,980 bytes, WebP quality 77. SHA-256:
+`3ad4e73948b9243153689f70a5396741fec4a700407bddee1dcb420ffaa265c3`.
+The existing `story-noah-and-the-flood-v2.webp` remains the offline/error
+fallback. The approved footage is not bundled, cached or re-uploaded.
+
+The earlier WebKit failures above were investigated rather than discarded.
+The reconnect check now waits for a settled, non-seeking time of at least
+7 seconds that advances for 300 ms, bounded to 3 seconds after metadata
+(15 seconds overall loading). A self-check rejects a restart from zero.
+Windows WebKit also reproduced its renderer crash on unchanged main during
+the existing app View Transition. Omitting only Playwright’s default
+`--disable-accelerated-compositing` launch argument on Windows allowed actual
+muted playback, changing frames and normal navigation without disabling
+any production feature or CSP. The runner records this port-specific setup,
+crash events and checkpoints; no application workaround or user-agent
+exception was added. Viewport emulation does not verify Safari on physical
+iPhone/iPad or installation of native binaries.
