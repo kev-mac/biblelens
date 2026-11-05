@@ -1,22 +1,39 @@
 # Stories video integration
 
-The Creation pilot is approved, but **is not active or published** in this checkout.
-`data/story-videos.json` contains verified YouTube ID `BDNJ8-wtaeA` and keeps it
-pending until a reviewed frame poster and its text description are available. Pending entries
-render the existing Story image without a disabled player or remote requests.
+The Creation pilot is **active in this feature branch and local builds**, using
+YouTube ID `BDNJ8-wtaeA`. It has not been merged, published or installed.
+Kevin approved the unlisted upload on KVN MCGWN with embedding enabled:
+https://www.youtube.com/watch?v=BDNJ8-wtaeA.
 
-The parent selected a clean frame from the approved video's day-three land-and-plants
-shot and supplied `biblelens-creation-poster.jpg`, Library file
-`libfile_fdc0ee5748308191a9f040624d0ae9ba`. The manifest records that derivative's
-Library ID. Its transfer failed in this executor, so `poster` remains null and
-the video remains pending; no pixels were available for local inspection.
+## Selected poster and footage review (2026-11-05)
 
-Kevin chose YouTube and approved an unlisted Creation upload. The parent verified
-the upload on KVN MCGWN with embedding enabled:
-https://www.youtube.com/watch?v=BDNJ8-wtaeA. No YouTube upload, publication,
-visibility change, R2 provisioning, account change or persistent credential was
-performed by this implementation. There is no R2 binding in the current manifest;
-YouTube removes the need to introduce one for this pilot.
+The current Library skill successfully materialized the exact parent-selected
+day-three frame, `biblelens-creation-poster.jpg`, Library file
+`libfile_fdc0ee5748308191a9f040624d0ae9ba`, version 0. The supported helper applied
+and verified its Library identity and version attributes. The original is RGB,
+1280 × 720, 120,694 bytes; SHA-256:
+`7bd624a04bc0d459349c003571d399c3cd0f7b7501f01a2aec1e8c0729739234`.
+
+Actual pixels were inspected at full size, along with the compressed result.
+Waves meet a rocky coastline with distant hills and emerging plants. The frame
+is relevant to the land-and-plants sequence, has natural colors, no people or
+anatomy concerns, and no text to compete with the Play button. This supplied
+selection is a footage derivative; no exact timestamp was supplied or invented.
+
+The versioned asset is `src/assets/story-video-creation-poster-v1.webp`:
+1280 × 720, 67,246 bytes, WebP quality 85; SHA-256:
+`c2359bb7a7b8669388f743bb02606d1a1cc0db5f8532979e8b2d7b3d65d4779e`.
+The Library original remains separate and unchanged. Both builds package the
+same poster. Reader and offline fallback art retain `story-the-creation-v2.webp`.
+
+The approved pilot also materialized from Library file
+`libfile_2ca1b9220b2c81919acbd60a7943453f`: 18,208,549 bytes, 53.917 seconds,
+1280 × 720 H.264 with AAC audio; SHA-256:
+`db7830b6f4dde64b880eb64d651a0ad1cdd9daf7b609116ff135ec3996d9e0af`.
+Full-file FFmpeg decoding passed. Sampled frames show the captioned sequence:
+light, sky, land and plants, heavenly lights, sea life and birds, land animals
+and people, then rest. The accessible description follows these observed scenes.
+Footage and contact sheets are inspection inputs, not app assets.
 
 ## Playback
 
@@ -55,87 +72,61 @@ remains labeled as an imagined scene.
 The video bytes are never part of the native bundle or the service-worker shell.
 Only the small poster and player assets are packaged locally.
 
-## Activate the pilot
+## Verification and remaining limits (2026-11-05)
 
-1. The parent confirmed the unlisted upload ID `BDNJ8-wtaeA` with embedding
-   enabled. Verify actual playback in an official embed when browser access is available.
-2. Prefer the parent-selected day-three frame in Library file
-   `libfile_fdc0ee5748308191a9f040624d0ae9ba` once supported materialization is available.
-   Otherwise use the verified upload's thumbnail or actual video through supported normal
-   access, or materialize Library file `libfile_2ca1b9220b2c81919acbd60a7943453f` in the
-   consuming executor using the current Library skill. Verify readable local
-   bytes, inspect actual frames, select a relevant one and save a compressed WebP at
-   `src/assets/story-video-creation-poster-v1.webp`. Record the source URL or selected
-   timestamp, source checksum, dimensions and review result here. Never bypass an
-   access denial or invent a timestamp for a platform-selected thumbnail. Do not use a generated
-   lookalike or the existing image as a claimed video frame.
-3. Fill `videoId`, `poster`, `posterAlt` and a faithful accessible `description`;
-   then set `status` to `ready`. The build validates the active record and includes
-   that poster in both web and native assets.
-4. Run `npm run check:videos`, shared builds and checks, then browser QA on phone
-   and iPad sizes with the real video: online, offline, blocked load, interruption,
-   resume, retry, controls, captions, fullscreen, poster, navigation and focus.
-   Test the HTTPS bridge on physical iPhone/iPad; a simulated player cannot verify
-   native YouTube playback or referrer acceptance. Follow RELEASING.md for a single
-   shared release and signed-asset parity.
+Fresh GitHub checks found main at
+`d5aa79ab2ac2b6137b517eb7fcc0f6b85e12ed48` and the feature branch at
+`cedfde006f87092ff5bad98ae12969dbe91de193`, with no newer main commits.
+The Sites mirror was fetched read-only at
+`3663c831dbb2ff14fd3ffc89129298ff508542f0`; its src, worker, data, scripts,
+package files and hosting configuration match main. No independent deployed
+source needed reconciliation. Main, existing edits and stashes were preserved.
+The Sites source helper is absent; no Site source was pushed.
 
-## Verification and current blockers (2026-11-04)
+A packaging defect was found and fixed: CSS pruning omitted Play button,
+actions and description styles because the study stylesheet did not scan
+`story-video.js`. The scan now includes it; an asset regression checks the
+actual packaged CSS along with active-ID and poster web/native byte parity.
 
-GitHub main and the clean starting checkout matched (`d5aa79a`). Read-only fetch
-of the Sites mirror (`3663c831dbb2ff14fd3ffc89129298ff508542f0`) found no differences
-in src, worker, data, scripts, package files or hosting configuration. The cloud
-Sites source helper was unavailable; only read-only Git access was used. No main
-branch pointer, stash, remote source, account permissions or hosted app changed.
+The previous Library transfer blocker is resolved. However, one normal
+proxy-respecting request to the official YouTube oEmbed endpoint still returned
+`Tunnel connection failed: 403 Forbidden`. Environment status reports the new
+enforced configuration and YouTube host grants. The mismatch is unresolved.
+User-message history was checked after the denial; it contains no later change
+that warrants another attempt. No alternate YouTube endpoint, proxy bypass or
+executor switch was attempted. This was a proxy denial, not an automatic
+approval-review rejection.
 
-The Library service prepared signed transfers, but its current supported helper
-failed with `library file transfer failed: download failed` for both attempts:
+Managed browser tooling (`cua_repl.js`) is absent. The Sites skill explicitly
+requires skipping browser QA in that case, without starting a preview server,
+installing a browser or improvising another browser-control path. Therefore
+live embedded decoding, online/offline transitions in a real browser,
+responsive phone/iPad views, keyboard focus, controls, captions and fullscreen
+remain unverified. Physical iPhone/iPad HTTPS bridge acceptance, signed-asset
+parity and installed playback also require the release environment. Callback
+fixtures are not proof of real YouTube playback. Do not call this a completed
+or synchronized release.
 
-- `/workspace/creation-video-input/BibleLens-The-Creation-Pilot.mp4`
-- bounded retry: `/workspace/creation-video-input-local-retry/BibleLens-The-Creation-Pilot.mp4`
+Automated fixtures cover poster rendering, no browsing autoplay, offline/error
+images, timeout, buffering, retry/resume, reconnection, ended poster, hidden-page
+teardown, failed poster and exact message origin/source checks. Manifest
+validation requires a reviewed local poster and description before activation.
+Asset checks cover the active ID, shared poster/player bytes, dimensions,
+retained production CSS, narrow policies and no bundled video or shell YouTube
+prefetch. The shared `npm run build:mobile` build passed. All 65 unique non-browser
+checks expanded from `check`, `check:mobile`, `check:images`, `check:release`,
+`check:sync` and `check:videos` passed; the updated current-stylesheet regression
+also passed. Readability passed in its existing report-only mode. The one
+browser-dependent `check-release-smoke.mjs` was explicitly skipped; `check:ui`
+and physical device tests were not run. Full logs and per-check results are in
+`outputs/creation-video-integration/` (ignored). Source syntax and
+`git diff --check` passed. The final web and native release records both match
+current source fingerprint
+`67fa5654d757429540539d628c76b41aa100ff6941729e5e0e2d47496f416311`.
 
-Neither path yielded readable video bytes. Frame inspection, selected timestamp,
-poster extraction and real-video validation remain blocked. No alternate download
-URL or executor was used. After the parent supplied the verified YouTube ID, a
-supported web open of its watch page returned `Online fetch throttled`. A normal
-proxy-respecting HTTPS request to the official YouTube oEmbed metadata endpoint
-failed with `Tunnel connection failed: 403 Forbidden`. The enforced network policy
-contains no YouTube host grant. That denied destination was not retried, and no
-alternate thumbnail URL or executor was used to bypass it. The verified upload
-therefore resolves the ID blocker, but thumbnail retrieval, actual frame review,
-poster selection and live embedded playback remain blocked in this executor.
-The user-message history was checked after the denial; it confirms the upload
-authorization and channel choice, but contains no changed network configuration.
-
-The parent later supplied the new 120,694-byte JPEG derivative named above. Using
-the current Library skill, `prepare_materialize` returned a signed transfer for
-that exact file (version 0, transfer ID `materialize-1`). The current supported
-helper was invoked once with consumer-local destination
-`/workspace/creation-poster-input/biblelens-creation-poster.jpg`. It exited 1 with
-exact output `library file transfer failed: download failed`. The destination
-does not exist and is not readable. This was a distinct derivative transfer,
-not a retry of the video. As instructed, that path stopped after this result:
-no retry, alternate URL, executor switch or access workaround was attempted.
-Local pixel review, poster suitability confirmation and activation remain blocked.
-
-Managed browser tooling (`cua_repl.js`) is absent in this executor. Per the Sites
-skill, browser previews and phone/iPad visual QA cannot run here; no replacement
-browser was installed. Automated state/API fixtures verify controller behavior,
-not real YouTube decoding, network playback, visual layout or device behavior.
-Do not describe this as a completed or synchronized release.
-
-Final checks passed: `npm run build:mobile` (shared web/mobile build),
-`npm run check:videos`, and 65 unique non-browser checks expanded from `check`,
-`check:mobile`, `check:images`, `check:release` and `check:sync`. This includes
-Stories, all packaged Story/chapter image parity, offline reading/search,
-private-note preservation, sync security and release packaging. Readability ran
-successfully in its existing report-only mode. The managed-browser-dependent
-`scripts/check-release-smoke.mjs` was explicitly skipped; `check:ui` and physical
-phone/iPad playback were not run. Source syntax and `git diff --check` passed.
-After recording the verified ID and selected poster reference, both generated release records match the current
-local source fingerprint:
-`b220bc9777ae3c2e004b6c095ed020fd2fa6de1d8c82c28d73e4280fe8d64874`.
-Build number 346 is unchanged because this work has not been released.
-Internal build/check logs are in `outputs/creation-video-integration/` (ignored).
+Before release, finish real-browser and physical-device QA, then follow
+RELEASING.md. Publishing, merging and device installation need Kevin's explicit
+approval. Build number 346 remains unchanged for this unreleased work.
 
 ## Video direction
 

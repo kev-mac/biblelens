@@ -51,9 +51,12 @@ options.events.onReady();options.events.onStateChange({data:1});assert.equal(sen
 
 const dir=fs.mkdtempSync(path.join(os.tmpdir(),'biblelens-video-check-'));
 try{
- const records=JSON.parse(fs.readFileSync('data/story-videos.json'));assert.deepEqual(storyVideos(records,{'The Creation':art}),{},'Unverified pilot stays pending');
+ const records=JSON.parse(fs.readFileSync('data/story-videos.json'));
+ const active=storyVideos(records,{'The Creation':art});
+ assert.equal(active['The Creation'].poster,video.poster,'Creation uses its reviewed video frame');
+ assert.deepEqual(storyVideos({'The Creation':{...records['The Creation'],status:'pending'}},{'The Creation':art}),{},'Pending videos stay excluded');
  assert.equal(records['The Creation'].videoId,'BDNJ8-wtaeA','Retain the verified unlisted YouTube ID');
- assert.throws(()=>storyVideos({'The Creation':{...records['The Creation'],status:'ready'}},{'The Creation':art}),/poster/,'A verified ID alone cannot activate a video without its reviewed frame');
+ assert.throws(()=>storyVideos({'The Creation':{...records['The Creation'],poster:null}},{'The Creation':art}),/poster/,'A verified ID alone cannot activate a video without its reviewed frame');
  assert.throws(()=>storyVideos({'Unknown':{status:'pending',provider:'youtube'}},{'The Creation':art}),/Unknown video story/);
  fs.mkdirSync(dir+'/assets');fs.writeFileSync(dir+video.poster,'poster fixture');
  const ready={...video,status:'ready',provider:'youtube'};
