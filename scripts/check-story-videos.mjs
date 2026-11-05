@@ -10,8 +10,7 @@ const art={src:'/assets/story-creation-v1.webp',alt:'Creation story artwork',wid
 const timers=new Map(),events=new Map(),docEvents=new Map();let nextTimer=0,frames=0;
 const element=()=>({hidden:false,src:'',alt:'',textContent:'',children:[],addEventListener(type,fn){this['on'+type]=fn;},getAttribute(k){return this[k];},replaceChildren(){this.children=[];},appendChild(n){this.children.push(n);},remove(){this.removed=true;},focus(){document.activeElement=this;}});
 const parts=Object.fromEntries(['still','frame','play','retry','image','status'].map(name=>['[data-video-'+name+']',element()]));
-const summary=element();
-const node={dataset:{storyVideo:'The Creation',videoFallback:JSON.stringify(art)},isConnected:true,querySelector:s=>s==='summary'?summary:parts[s]};
+const node={dataset:{storyVideo:'The Creation',videoFallback:JSON.stringify(art)},isConnected:true,focus(){document.activeElement=this;},querySelector:s=>parts[s]};
 const root={querySelectorAll:()=>[node],contains:n=>n===node};
 const document={activeElement:null,hidden:false,addEventListener:(type,fn)=>docEvents.set(type,fn),createElement:tag=>{assert.equal(tag,'iframe');frames++;return {...element(),contentWindow:{}};}};
 const window={addEventListener(type,fn){if(!events.has(type))events.set(type,new Set());events.get(type).add(fn);},removeEventListener(type,fn){events.get(type)?.delete(fn);}};
@@ -23,14 +22,14 @@ const message=(state,extra={})=>dispatch('message',{source:current().contentWind
 const click=name=>parts['[data-video-'+name+']'].onclick();
 
 assert.equal(api.render('Unknown',art),'');
-const html=api.render('The Creation',art);assert(html.includes(video.poster));assert(!html.includes('<iframe'));assert(html.includes('aria-label="Play The Creation on YouTube"'));assert(html.includes('Video description'));assert(!html.includes('youtube.com/iframe_api'));
+const html=api.render('The Creation',art);assert(html.includes(video.poster));assert(!html.includes('<iframe'));assert(html.includes('aria-label="Play The Creation on YouTube"'));assert(!html.includes('<figcaption>'));assert(!html.includes('<summary>'));assert(html.includes('<svg'));assert(html.includes('class="sr-only"'));assert(html.includes(video.description));assert(!html.includes('youtube.com/iframe_api'));
 navigator.onLine=false;assert(api.render('The Creation',art).includes(art.src));navigator.onLine=true;
 api.mount(root);assert.equal(frames,0,'Browsing never creates a network player');
 click('play');assert.equal(frames,1);let frame=current();assert.equal(new URL(frame.src).pathname,'/story-video-player.html');assert.equal(frame.referrerPolicy,'strict-origin-when-cross-origin');assert(frame.allowFullscreen);assert.equal(timers.size,1);assert(parts['[data-video-still]'].hidden);
 dispatch('message',{source:{},origin:'https://biblelens.test',data:{type:'biblelens:story-video',state:'error'}});assert.equal(timers.size,1);
 dispatch('message',{source:frame.contentWindow,origin:'https://wrong.test',data:{type:'biblelens:story-video',state:'error'}});assert.equal(timers.size,1);
 message('ready');assert.equal(timers.size,1,'Player readiness alone does not prove video is available');message('playing');assert.equal(timers.size,0);message('time',{time:17.8});
-navigator.onLine=false;dispatch('offline');assert(frame.removed);assert.equal(parts['[data-video-still]'].src,art.src);assert(parts['[data-video-play]'].hidden);assert.equal(document.activeElement,summary);
+navigator.onLine=false;dispatch('offline');assert(frame.removed);assert.equal(parts['[data-video-still]'].src,art.src);assert(parts['[data-video-play]'].hidden);assert.equal(document.activeElement,node);
 navigator.onLine=true;dispatch('online');assert.equal(frames,1,'Reconnection never auto-plays');assert.equal(parts['[data-video-still]'].src,video.poster);assert(!parts['[data-video-play]'].hidden);
 click('play');assert.equal(new URL(current().src).searchParams.get('start'),'17');message('playing');message('buffering');assert.equal(timers.size,1);[...timers.values()][0]();assert.equal(parts['[data-video-still]'].src,art.src);assert(!parts['[data-video-retry]'].hidden);assert.equal(timers.size,0);
 click('retry');message('error');assert.equal(parts['[data-video-still]'].src,art.src);click('retry');message('paused');assert.equal(timers.size,0);click('image');assert.equal(parts['[data-video-frame]'].children.length,0);assert(!parts['[data-video-play]'].hidden);

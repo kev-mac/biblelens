@@ -65,8 +65,9 @@ the app, replacing cards, or page teardown removes the player and its timers.
 
 The framed player reserves a 16:9 area with a 200px minimum height for YouTube's
 minimum viewport. Buttons have accessible labels, keyboard focus and touch-size
-targets. Status changes are announced; a visible Video description provides a
-text alternative. A failed poster falls back to the original image. Artwork
+targets. Status changes are announced; a screen-reader description provides a
+text alternative. The idle control is a small play silhouette without a visible
+caption or description disclosure. A failed poster falls back to the original image. Artwork
 remains labeled as an imagined scene.
 
 The video bytes are never part of the native bundle or the service-worker shell.

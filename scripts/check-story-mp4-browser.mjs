@@ -41,7 +41,7 @@ try{
      assert.equal(await still.getAttribute('src'),record.poster);await still.evaluate(img=>img.decode());assert.equal(await page.locator('video').count(),0);assert.equal(mediaRequests.length,0);
      assert.equal(await play.getAttribute('aria-label'),'Play '+title+' video');await play.focus();assert(await play.evaluate(el=>el===document.activeElement));
      const bounds=await figure.boundingBox(),stage=await figure.locator('.story-video-stage').boundingBox();assert(stage.x>=bounds.x-1&&stage.x+stage.width<=bounds.x+bounds.width+1);assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
-     await figure.locator('summary').click();assert(await figure.locator('.story-video-description p').isVisible());await figure.locator('summary').click();
+     assert.equal(await figure.locator('figcaption,details').count(),0);assert.equal(await play.locator('svg').count(),1);assert.equal(await play.innerText(),'');const buttonBounds=await play.boundingBox();assert(buttonBounds.width>=44&&buttonBounds.width<=48&&buttonBounds.height>=44&&buttonBounds.height<=48);const description=figure.locator('.sr-only');assert((await description.innerText()).includes(record.description));const descriptionBounds=await description.boundingBox();assert(descriptionBounds.width<=1&&descriptionBounds.height<=1);
      await page.screenshot({path:path.join(output,`${engine}-${size.name}-${slug}-poster.png`),fullPage:true});
     });
     await page.evaluate(async src=>{const img=new Image();img.src=src;await img.decode();window.__fallbackImage=img;},images[title].src);

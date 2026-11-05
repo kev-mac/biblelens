@@ -5,8 +5,8 @@
  const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function render(title,art){
   const video=videos[title];if(!video||!art)return '';
-  const provider=video.provider==='mp4'?'Video':'YouTube';
-  return `<figure class="story-illustration story-video" data-story-video="${escape(title)}" data-video-fallback="${escape(JSON.stringify(art))}"><div class="story-video-stage"><img data-video-still src="${escape(online()?video.poster:art.src)}" alt="${escape(online()?video.posterAlt:art.alt)}" width="1200" height="675" loading="lazy" decoding="async"><div data-video-frame hidden></div><button type="button" class="story-video-play" data-video-play${online()?'':' hidden'} aria-label="Play ${escape(title)}${video.provider==='mp4'?' video':' on YouTube'}">Play video</button></div><figcaption>Imagined scene · ${provider}</figcaption><p class="story-video-status" data-video-status role="status" aria-live="polite">${online()?'':"You're offline. The story image is shown."}</p><div class="story-video-actions"><button type="button" data-video-retry hidden>Retry video</button><button type="button" data-video-image hidden>Show image</button></div><details class="story-video-description"><summary>Video description</summary><p>${escape(video.description)}</p></details></figure>`;
+  const descriptionId='story-video-description-'+title.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+  return `<figure class="story-illustration story-video" tabindex="-1" aria-describedby="${escape(descriptionId)}" data-story-video="${escape(title)}" data-video-fallback="${escape(JSON.stringify(art))}"><div class="story-video-stage"><img data-video-still src="${escape(online()?video.poster:art.src)}" alt="${escape(online()?video.posterAlt:art.alt)}" width="1200" height="675" loading="lazy" decoding="async"><div data-video-frame hidden></div><button type="button" class="story-video-play" data-video-play${online()?'':' hidden'} aria-label="Play ${escape(title)}${video.provider==='mp4'?' video':' on YouTube'}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 4v16l14-8z"/></svg></button></div><p class="story-video-status" data-video-status role="status" aria-live="polite">${online()?'':"You're offline. The story image is shown."}</p><div class="story-video-actions"><button type="button" data-video-retry hidden>Retry video</button><button type="button" data-video-image hidden>Show image</button></div><span class="sr-only" id="${escape(descriptionId)}">Imagined scene. ${escape(video.description)}</span></figure>`;
  }
  function mount(root){
   for(const [node,controller] of live)if(!node.isConnected){controller.destroy();live.delete(node);}
@@ -26,7 +26,7 @@
     const focusInside=frame&&document.activeElement===frame||[play,retry,image].includes(document.activeElement);remove();mode=state;
     const poster=state==='idle'&&online();still.src=poster?video.poster:art.src;still.alt=poster?video.posterAlt:art.alt;still.hidden=false;
     play.hidden=!['idle','image'].includes(state)||!online();retry.hidden=state!=='error'||!online();image.hidden=true;status.textContent=text;
-    if(focusInside)(!play.hidden?play:!retry.hidden?retry:node.querySelector('summary')).focus({preventScroll:true});
+    if(focusInside)(!play.hidden?play:!retry.hidden?retry:node).focus({preventScroll:true});
    }
    function fail(){show('error','Video unavailable. The story image is shown. Try again when your connection is ready.');}
    function deadline(){clear();timer=setTimeout(fail,15000);}
