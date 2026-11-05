@@ -43,7 +43,7 @@ export function framingAudit(){
  for(const file of ['research/b4/wording-proposals.json','research/b4/reading-proposals.json'])walk(JSON.parse(read(file)),file);
  for(const file of ['research/b4/app-store-draft.md','research/b4/B1-decisions.md','research/b4/app-store-readiness-draft.md','research/b4/privacy-policy-draft.md'])check(read(file).replace(/\]\([^)]*\)/g,']').replace(/`[^`]+`/g,''),file);
  function files(directory){return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()&&!['vendor','assets','data','types'].includes(entry.name)?files(path.join(directory,entry.name)):entry.isFile()? [path.join(directory,entry.name)]:[]);}
- for(const file of [...files('src'),...files('worker')].filter(file=>/\.(?:js|mjs|tsx|html)$/.test(file)&&file!=='src/data.js')){
+ for(const file of [...files('src'),...files('worker')].filter(file=>/\.(?:js|mjs|tsx|html)$/.test(file)&&path.normalize(file)!==path.normalize('src/data.js'))){
   const source=read(file);
   if(file.endsWith('.html')){
    const html=source.replace(/<script[\s\S]*?<\/script>/g,'').replace(/<style[\s\S]*?<\/style>/g,'');

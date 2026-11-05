@@ -1,7 +1,7 @@
 # Stories video integration
 
-The Creation pilot is **active in this feature branch and local builds**, using
-YouTube ID `BDNJ8-wtaeA`. It has not been merged, published or installed.
+The Creation pilot uses YouTube ID `BDNJ8-wtaeA` and its reviewed local poster.
+The web player and native bundle share the same manifest and playback assets.
 Kevin approved the unlisted upload on KVN MCGWN with embedding enabled:
 https://www.youtube.com/watch?v=BDNJ8-wtaeA.
 
@@ -158,6 +158,69 @@ The shared web/mobile build, `check:videos`, Stories, `check:mobile` and
 `check:release` passed again. The real browser runner has not been executed;
 its existence is not a passing browser or device result. The full 65-check
 integration result above belongs to the preceding integration verification.
+
+## OmniBook browser verification and release blocker (2026-11-05)
+
+The local Chromium and WebKit runner completed all 20 checks successfully at
+390 x 844 and 820 x 1180. The real approved YouTube embed produced both playing
+and advancing time events in all four engine/viewport combinations. Poster,
+no browsing autoplay, warm offline/reconnect, deliberately blocked-player
+fallback/Retry and navigation teardown also passed. These are browser viewport
+tests, not physical iPhone/iPad or installed-app tests. Results and screenshots
+are in `outputs/creation-video-browser/`.
+
+An earlier interactive Chrome attempt reached the error fallback without
+confirmed playback. That timeout did not reproduce in the controlled runner;
+no player protocol, timeout, endpoint or autoplay policy was changed.
+
+The phone test found that the stage's aspect ratio and 200px minimum height
+could enlarge its width beyond the figure. Explicit width bounds now keep it
+inside the card, and the runner checks its actual bounds instead of relying
+only on document scrolling.
+
+The web build passed, but the mobile build failed while Python moved the
+complete staged bundle to `www`: Windows returned `WinError 5: Access is denied`.
+Disposable relative-path, absolute-path and same-parent directory moves passed,
+including a Node-created directory moved by the same Python runtime. One
+evidence-based retry of the real build failed identically. No security settings
+or access restrictions were changed, and no alternate move tool was used on
+the denied bundle. The required mobile and web/native parity gates remain
+blocked. Nothing was merged, pushed or published during this verification.
+
+The expanded release, sync, mobile, video, image and UI groups ran 71 unique
+checks: 62 passed and nine failed. Six failures depend on the missing `www`
+bundle. The other failures are the framing audit's Windows path exclusion,
+a UI assertion equating scroll width with the viewport despite a Windows
+scrollbar, and the performance browser check timing out on
+`[data-lens-inspect]`. Full per-check logs are retained in
+`outputs/repair-release-checks/`; this is not a passing release candidate.
+
+## Windows preparation recovery and build 347
+
+The intelligence-update event supplied during diagnosis did not identify a
+controlled-folder block. No security setting or permission was changed. The
+inspected complete bundle moved successfully with the original Python helper
+after staging had exited. Stopping the compiler alone inside the old process
+was insufficient. The builder now runs staging in a child process, waits for
+that process to exit, and then invokes the same directory handoff helper.
+The full web/mobile build passed with matching release identities.
+
+Release preparation now constructs both bundles before running parity checks,
+so those checks can run in a fresh checkout. Existing Windows bundles remain
+protected by the helper's refusal to perform an unsupported atomic exchange.
+Use a fresh isolated Windows release checkout; preserve any previous generated
+bundle before preparing another candidate. Mac and Linux retain their atomic
+exchange behavior.
+
+The framing audit now normalizes its existing path exclusion on Windows. UI
+checks account for the stable scrollbar gutter, skip invisible disclosure
+contents, search for records beyond page one, and establish Evidence state
+explicitly. Inline profile tests use the dialog's close behavior. These changes
+retain the actual overflow, touch-size, persistence and navigation assertions.
+
+The earlier incomplete results above remain historical. Build 347 is the next
+release candidate; final checks and publication are recorded by the release
+workflow and handoff.
 
 ## Video direction
 

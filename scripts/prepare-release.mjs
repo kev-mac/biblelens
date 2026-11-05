@@ -11,7 +11,9 @@ if(git(['status','--porcelain']))throw Error('Commit or preserve local edits bef
 run('git',['fetch','origin']);
 if(git(['rev-list','--count','HEAD..origin/main'])!=='0')throw Error('GitHub has newer commits. Integrate them before releasing.');
 const commit=git(['rev-parse','HEAD']);
-for(const cmd of [['run','build'],['run','check'],['run','check:sync'],['run','check:release'],['run','build:mobile'],['run','check:mobile']])runNpm(cmd);
+// Mobile staging runs the shared web build too. Prepare both outputs before
+// checks that compare packaged web and native assets in a fresh checkout.
+for(const cmd of [['run','build:mobile'],['run','check'],['run','check:sync'],['run','check:release'],['run','check:mobile']])runNpm(cmd);
 const release=JSON.parse(fs.readFileSync('www/release.json','utf8'));
 if(release.sourceHash!==releaseInfo().sourceHash)throw Error('Source changed while building. Start the release again.');
 if(flags.has('--ios')){

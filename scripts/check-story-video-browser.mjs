@@ -53,13 +53,13 @@ try{
     }
    });});
    const result=async(check,run)=>{try{await run();report.results.push({engine,size:size.name,check,status:'PASS'});console.log('PASS',engine,size.name,check);return true;}
-    catch(error){report.results.push({engine,size:size.name,check,status:'FAIL',detail:error.message.slice(0,1500),network:[...network]});console.error('FAIL',engine,size.name,check,error.message);return false;}finally{save();}};
+    catch(error){const states=await page.evaluate(()=>window.__storyVideoProbe).catch(()=>[]);await page.screenshot({path:path.join(output,`${engine}-${size.name}-${check.replace(/[^a-z]+/gi,'-')}-failure.png`),fullPage:true}).catch(()=>{});report.results.push({engine,size:size.name,check,status:'FAIL',detail:error.message.slice(0,1500),states,network:[...network]});console.error('FAIL',engine,size.name,check,error.message);return false;}finally{save();}};
    try{
     await page.goto(base+'/#stories/genesis/the-creation');await page.locator('#story-the-creation .story-video').waitFor();
     const figure=page.locator('#story-the-creation .story-video'),play=figure.locator('[data-video-play]'),still=figure.locator('[data-video-still]');
     await result('poster and layout',async()=>{
      assert.equal(await still.getAttribute('src'),record.poster);await still.evaluate(img=>img.decode());assert.equal(await figure.locator('iframe').count(),0);assert.equal(videoRequests.length,0,'Browsing must not contact YouTube');
-     assert(await play.isVisible());const stage=await figure.locator('.story-video-stage').boundingBox();assert(stage.width>=200&&stage.height>=200);
+     assert(await play.isVisible());const stage=await figure.locator('.story-video-stage').boundingBox(),bounds=await figure.boundingBox();assert(stage.width>=200&&stage.height>=200);assert(stage.x>=bounds.x-1&&stage.x+stage.width<=bounds.x+bounds.width+1,'Video stage must fit inside the story figure');
      assert(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),'Horizontal overflow');
      await page.screenshot({path:path.join(output,`${engine}-${size.name}-poster.png`),fullPage:true});
     });
