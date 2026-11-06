@@ -818,3 +818,30 @@ show sons or a blessing gesture. Two actual-frame 1280x720 WebP posters total
 20,838 bytes and were inspected after compression to fit the existing Worker
 budget. Existing reader artwork and offline fallback behavior are retained;
 no MP4 is bundled. The Mac remains the shared build and release environment.
+
+### Build 357 publication and device checkpoint
+
+Full Mac `release:prepare -- --ios`, image checks and strict signature
+verification passed. Both repaired clips passed Mac WebKit playback, advancing
+time, decoded dimensions, control reveal, pause and seek. Reports remain at
+`/Users/kevin/git/BibleLens-357-final/.release/357-final-webkit/results.json`.
+All 1,535 `www` files match the signed app's public assets byte-for-byte; its
+only extra files are the two confirmed empty generated Cordova scripts.
+No MP4 is bundled. The Worker is 66,054,848 bytes, 5,440 bytes below the
+unchanged 66,060,288-byte publication limit.
+
+Canonical source `b1ecf5f790baf0b617289ae852f05ef721db4eed` was pushed to main.
+Sites source `668e9a2f8348422a478916632347b06a21540671` published as version 346,
+deployment `appgdep_6aee3855e5988191ae29a5e8cbae97c8`, preserving public access.
+Unmodified `release:verify` confirmed the live website, canonical source,
+Sites mirror and mobile assets all identify build 357 and source fingerprint
+`91b8cfb0c3b45f5712f9fa19b1497b8521131fb133d67e642d7b5511c6b29a92`.
+
+Installed-app queries confirmed BibleLens 1.1.0/build 357 on Kevin's iPhone
+16 Pro (`97707562-C3A3-5A57-9F88-C607D1E81C92`) and iPad mini (A17 Pro)
+(`F6C4425C-EBDA-5E00-86B9-05DAF442F07C`). The iPhone launched and a process
+query confirmed PID 59334. iOS denied the iPad's ordinary launch because the
+device was locked (`FBSOpenApplicationErrorDomain`, error 7); installation is
+verified, but launch needs Kevin to unlock it and open BibleLens. No lock
+bypass or repeat launch was attempted. Physical-device video playback,
+audible quality, fullscreen and cold offline operation remain unverified.
