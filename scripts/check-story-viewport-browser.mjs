@@ -24,8 +24,9 @@ const fixtureCatalog=Object.fromEntries(Array.from({length:7},(_,i)=>['Fixture '
 const fixtureSource=fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',JSON.stringify(fixtureCatalog));
 assert(fixtureSource!==fs.readFileSync('src/story-video.js','utf8'),'Fixture catalog injection marker must match');
 const fixtureBootstrap=`const root=document.getElementById('fixture');root.innerHTML=Object.keys(${JSON.stringify(fixtureCatalog)}).map(title=>'<article>'+BibleLensStoryVideo.render(title,{src:'/fixture.svg?fallback',alt:'Fixture artwork'})+'</article>').join('');BibleLensStoryVideo.mount(root);`;
-const fixtureHTML='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/fixture.css"></head><body><header>Scroll fixture</header><main id="fixture"></main><footer>End</footer><script src="/fixture-source.js"></script><script src="/fixture-bootstrap.js"></script></body></html>';
-const fixtureCSS='*{box-sizing:border-box}body{margin:0}header,footer{height:150vh}article{height:110vh;display:flex;align-items:center;justify-content:center}figure{margin:0;width:90%;max-width:640px}.story-video-stage{height:360px;position:relative}img,video,iframe{width:100%;height:100%;object-fit:contain}iframe{border:0}[data-video-frame]{position:absolute;inset:0}[hidden]{display:none!important}button{min-width:44px;min-height:44px}.story-video-play{position:absolute;left:45%;top:45%}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden}';
+const fixtureHTML='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/fixture.css"></head><body class="lens-app"><header>Scroll fixture</header><main id="fixture"></main><footer>End</footer><script src="/fixture-source.js"></script><script src="/fixture-bootstrap.js"></script></body></html>';
+const revealCSS=fs.readFileSync('src/overrides.css','utf8').split('\n').filter(line=>line.includes('.story-video-reveal')).join('\n');
+const fixtureCSS='*{box-sizing:border-box}body{margin:0}header,footer{height:150vh}article{height:110vh;display:flex;align-items:center;justify-content:center}figure{margin:0;width:90%;max-width:640px}.story-video-stage{height:360px;position:relative}img,video,iframe{width:100%;height:100%;object-fit:contain}iframe{border:0}[data-video-frame]{position:absolute;inset:0}[hidden]{display:none!important}button{min-width:44px;min-height:44px}.story-video-play{position:absolute;left:45%;top:45%}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden}'+revealCSS;
 
 // Installed before app scripts in each frame, with no network requests. Retain
 // detached nodes to prove teardown clears sources rather than just removing UI.
@@ -141,10 +142,15 @@ try{
    }
    await scenario('autoplay, preload, once per viewing and teardown',{},async({page,card,center,stats,playing})=>{
     await center(4);await playing();
-    let current=card(4).locator('video');assert(await current.evaluate(v=>!v.paused&&v.muted&&!v.loop&&v.controls&&v.playsInline));
+    let current=card(4).locator('video');assert(await current.evaluate(v=>!v.paused&&v.muted&&!v.loop&&!v.controls&&v.playsInline));
     assert.equal((await stats()).filter(s=>s.connected&&!s.paused).length,1);
-    for(const i of [3,5]){const v=card(i).locator('video');assert.equal(await v.count(),1,'Adjacent MP4 exists');assert.equal(await v.getAttribute('preload'),'auto');assert(await v.evaluate(v=>v.paused&&!!v.getAttribute('src')));}
-    for(const i of [0,1,6])assert.equal(await card(i).locator('video,iframe').count(),0,'Distant media is unloaded');
+    const reveal=card(4).getByRole('button',{name:'Show controls for Fixture 4'});
+    assert.equal(await reveal.evaluate(el=>getComputedStyle(el).backgroundColor),'rgba(0, 0, 0, 0)');
+    await reveal.click();assert(await current.evaluate(v=>v.controls&&!v.paused));
+    for(const i of [3,5,6]){const v=card(i).locator('video');assert.equal(await v.count(),1,'Adjacent MP4 exists');assert.equal(await v.getAttribute('preload'),'auto');assert(await v.evaluate(v=>v.paused&&!!v.getAttribute('src')));}
+    const previous = card(2).locator('iframe');
+    assert.equal(new URL(await previous.getAttribute('src')).searchParams.get('autoplay'),'0');
+    for(const i of [0,1])assert.equal(await card(i).locator('video,iframe').count(),0,'Distant media is unloaded');
     const before=(await stats()).reduce((n,v)=>n+v.plays,0);await page.evaluate(()=>window.__end(4));await page.waitForTimeout(300);
     for(const dy of [8,-12,7,-3]){await page.evaluate(y=>scrollBy(0,y),dy);await page.waitForTimeout(100);}
     assert.equal((await stats()).reduce((n,v)=>n+v.plays,0),before,'Ended video must not replay on small visibility jitter');
@@ -152,7 +158,7 @@ try{
     assert.equal((await stats()).reduce((n,v)=>n+v.plays,0),before,'Partial visibility below retention threshold must not rearm playback');
     await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(700);await center(4);await playing();
     assert((await stats()).reduce((n,v)=>n+v.plays,0)>before,'Full leave and return starts a fresh viewing');
-    assert(await card(4).locator('video').evaluate(v=>v.currentTime<1));
+    assert(await card(4).locator('video').evaluate(v=>v.currentTime<1&&!v.controls));
     await center(1);await playing();assert.equal((await stats()).filter(s=>s.connected&&!s.paused).length,1);assert.equal(await card(4).locator('video,iframe').count(),0);
     await page.evaluate(()=>BibleLensStoryVideo.unmount(document.getElementById('fixture')));
     assert.equal(await page.locator('video, [data-video-frame] iframe').count(),0);
@@ -170,7 +176,10 @@ try{
    });
    for(const mode of ['reduced motion','Save-Data'])await scenario(mode+' disables automatic work',{reduce:mode==='reduced motion',saveData:mode==='Save-Data'},async({page,card,center,playing,stats})=>{
     await center(4);assert.equal(await page.locator('video, [data-video-frame] iframe').count(),0,'Preference prevents autoplay AND neighbor preloads');
-    await card(4).locator('[data-video-play]').press('Enter');await playing();assert(await card(4).locator('video').evaluate(v=>v.controls&&v.playsInline));assert.equal((await stats()).filter(s=>s.connected).length,1);
+    await card(4).locator('[data-video-play]').press('Enter');await playing();
+    const video=card(4).locator('video'),reveal=card(4).getByRole('button',{name:/Show controls for/});
+    assert(await video.evaluate(v=>!v.controls&&v.playsInline));assert(await reveal.evaluate(el=>el===document.activeElement));
+    await reveal.press('Enter');assert(await video.evaluate(v=>v.controls&&v===document.activeElement));assert.equal(await reveal.count(),0);assert.equal((await stats()).filter(s=>s.connected).length,1);
     await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(400);assert((await stats()).every(s=>s.paused),'Offscreen explicit playback stops');
    });
    await scenario('offline, reconnect and hidden page',{},async({page,context,card,center,playing,stats})=>{
@@ -200,8 +209,8 @@ try{
    try{
     await page.goto(base+'/#stories/genesis/the-fall-of-man');checkpoints.push('page loaded');const card=page.locator('#story-the-fall-of-man .story-video');await card.waitFor();checkpoints.push('story card visible');await card.evaluate(el=>el.scrollIntoView({block:'center'}));const video=card.locator('video');await video.waitFor();
     await page.waitForFunction(()=>{const v=document.querySelector('.story-video video');return v&&!v.paused&&v.currentTime>1&&v.videoWidth>0&&v.readyState>=2;},null,{timeout:20000});
-    assert(await video.evaluate(v=>v.muted&&!v.loop&&v.controls&&v.playsInline));checkpoints.push('muted autoplay decoded and advanced');
-    const firstTime=await video.evaluate(v=>v.currentTime);await video.evaluate(v=>v.controls=false);const first=await video.screenshot();await page.waitForTimeout(1500);const second=await video.screenshot();assert(await video.evaluate(v=>v.currentTime)>firstTime+0.5);assert(!first.equals(second),'Decoded video frames must change');await video.evaluate(v=>v.controls=true);
+    assert(await video.evaluate(v=>v.muted&&!v.loop&&!v.controls&&v.playsInline));checkpoints.push('muted autoplay decoded and advanced');
+    const firstTime=await video.evaluate(v=>v.currentTime);const first=await video.screenshot();await page.waitForTimeout(1500);const second=await video.screenshot();assert(await video.evaluate(v=>v.currentTime)>firstTime+0.5);assert(!first.equals(second),'Decoded video frames must change');
     checkpoints.push('changing frames verified');await page.getByRole('button',{name:'Read The Fall of Man',exact:true}).click();await page.locator('#chapter-text').waitFor();assert.equal(await page.locator('.story-video video').count(),0);checkpoints.push('reader navigation released video');
     report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'PASS',checkpoints,diagnostics});
    }catch(error){stopLive=true;report.results.push({engine,check:'live approved MP4 muted autoplay, frames and navigation',status:'FAIL',detail:error.message.slice(0,1600),checkpoints,diagnostics});}

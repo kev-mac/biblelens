@@ -3134,6 +3134,8 @@ html body.lens-app .story-video-stage>img,html body.lens-app .story-video-stage>
 html body.lens-app .story-video-stage>[hidden],html body.lens-app .story-video [hidden]{display:none!important}
 html body.lens-app .story-video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:0;border-radius:50%;background:transparent;color:#fff;box-shadow:none;cursor:pointer}
 html body.lens-app .story-video-play svg{display:block;width:22px;height:22px;fill:currentColor;stroke:none;filter:drop-shadow(0 1px 3px #000) drop-shadow(0 0 1px #000);pointer-events:none}
+html body.lens-app .story-video-reveal{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer}
+html body.lens-app .story-video button.story-video-reveal:focus-visible{outline-offset:-4px}
 html body.lens-app .story-video-actions{display:flex;gap:12px;flex-wrap:wrap}
 html body.lens-app .story-video-actions button{min-height:44px;cursor:pointer}
 html body.lens-app .story-video:focus-visible,html body.lens-app .story-video button:focus-visible{outline:3px solid var(--lens-copper)!important;outline-offset:3px;box-shadow:0 0 0 2px var(--lens-surface)!important}
@@ -3198,8 +3200,8 @@ html body.lens-app #chapter-text .reader-event-title:has(+.story-illustration){m
 /* Approved mobile review: retain the palette and collection tiles. */
 html body.lens-app #lensMasthead nav.lens-primary{grid-template-columns:repeat(3,minmax(0,1fr))}
 /* Explore swimlanes: readable cards and a visible next-card edge invite browsing. */
-html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:clamp(240px,72vw,280px);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333;--lane-glass:rgba(255,255,255,.03)}
-html body.lens-app.dark #explore-view{--lane-surface:rgba(20,26,35,.72);--lane-copy:#AAB6C8;--lane-ink:#F8FAFC;--lane-glass:rgba(255,255,255,.04)}
+html body.lens-app #explore-view{--lane-gutter:24px;--lane-card-width:clamp(15rem,80vw,29rem);--lane-surface:rgba(255,255,255,.75);--lane-copy:#475569;--lane-ink:#182333}
+html body.lens-app.dark #explore-view{--lane-surface:rgba(20,26,35,.72);--lane-copy:#AAB6C8;--lane-ink:#F8FAFC}
 html body.lens-app #explore-view>h1{border-left-width:4px;border-radius:2px}
 html body.lens-app #explore-view .ux-explore-filters{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:none;margin:12px calc(-1 * var(--lane-gutter)) 24px 0;padding:8px var(--lane-gutter) 12px 0}
 html body.lens-app #explore-view .ux-explore-filters::-webkit-scrollbar,
@@ -3209,18 +3211,30 @@ html body.lens-app #explore-view .ux-explore-filters button[aria-pressed=true]{b
 html body.lens-app #explore-view .ux-topic-section{min-width:0;margin:0 0 18px}
 html body.lens-app #explore-view .ux-lane-heading{display:flex;align-items:center;justify-content:space-between;gap:6px;min-height:44px;margin:0 0 4px}
 html body.lens-app #explore-view .ux-lane-heading h2{margin:0;min-width:0;font:600 .78rem/1.45 var(--ui-font);letter-spacing:.045em;text-transform:uppercase;color:var(--lane-copy)}
-html body.lens-app #explore-view .ux-topic-row{position:relative;display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-left:0;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 calc(-1 * var(--lane-gutter)) 0 0;padding:10px var(--lane-gutter) 18px 0}
-html body.lens-app #explore-view a.ux-topic{flex:0 0 var(--lane-card-width);width:var(--lane-card-width);min-width:0;height:auto;min-height:15rem;padding:20px 18px;gap:14px;scroll-snap-align:start;scroll-snap-stop:normal;border:1px solid rgba(var(--tile-rgb),.35);border-radius:19px;background:radial-gradient(ellipse at 12% 0%,rgba(var(--tile-rgb),.19),transparent 75%),linear-gradient(var(--lane-glass),var(--lane-glass)),var(--lane-surface);color:var(--lane-ink);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 14px rgba(var(--tile-rgb),.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:transform .18s,box-shadow .18s,border-color .18s}
-html body.lens-app #explore-view a.ux-topic:hover{border-color:rgba(var(--tile-rgb),.65);box-shadow:0 0 20px rgba(var(--tile-rgb),.17),inset 0 0 20px rgba(var(--tile-rgb),.06);transform:translateY(-2px)}
-html body.lens-app #explore-view a.ux-topic:active{transform:scale(.975)}
-html body.lens-app #explore-view a.ux-topic:focus-visible{outline:2px solid var(--lens-focus);outline-offset:-3px}
-html body.lens-app #explore-view .ux-topic>svg{box-sizing:border-box;flex:none;width:44px;height:44px;padding:9px;margin:0;border-radius:12px;background:rgba(var(--tile-rgb),.12);color:var(--topic);filter:none;box-shadow:0 0 18px rgba(var(--tile-rgb),.12)}
-html body.lens-app #explore-view .ux-tile-copy{gap:7px}
-html body.lens-app #explore-view .ux-tile-copy strong{font:700 1.125rem/1.25 var(--ui-font);letter-spacing:-.4px;color:var(--lane-ink);white-space:normal;overflow-wrap:anywhere}
-html body.lens-app #explore-view .ux-tile-copy small{font:400 0.75rem/1.45 var(--ui-font);letter-spacing:0;white-space:normal;color:var(--lane-copy);margin:0}
-html body.lens-app #explore-view .ux-count{top:18px;right:12px;max-width:calc(100% - 60px);font:500 0.6875rem/1.4 var(--ui-font);padding:3px 6px;background:rgba(var(--tile-rgb),.17);color:var(--topic);border-radius:20px}
-html body.lens-app #explore-view .ux-browse{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;margin-top:auto;font:400 0.6875rem/1.4 var(--ui-font);color:var(--lane-copy)}
-html body.lens-app #explore-view .ux-browse svg{width:14px;height:14px;flex:none}
+html body.lens-app #explore-view .ux-topic-row{position:relative;display:flex;align-items:stretch;gap:0;max-width:46rem;margin-inline:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 0 20px}
+html body.lens-app #explore-view .ux-topic-row::before,html body.lens-app #explore-view .ux-topic-row::after{content:'';flex:0 0 max(0px,calc((100% - min(var(--lane-card-width),100%)) / 2))}
+html body.lens-app #explore-view a.ux-topic{
+ flex:0 0 min(var(--lane-card-width),100%);width:min(var(--lane-card-width),100%);min-width:0;height:auto;
+ min-height:clamp(20rem,86vw,26rem);padding:20px;gap:14px;scroll-snap-align:center;
+ border:1px solid rgba(var(--tile-rgb),.58);border-radius:21px;color:#fff;isolation:isolate;--tile-shade:color-mix(in srgb,rgb(var(--tile-rgb)) 12%,#0a0f16);
+ background-color:var(--tile-shade);
+ filter:brightness(.67) saturate(.81);transform:scale(.9);
+ transition:transform .2s,filter .2s,box-shadow .2s;
+}
+html body.lens-app #explore-view a.ux-topic::after{
+ display:block;background:linear-gradient(180deg,#0a0f1630,transparent 29%,#0a0f1614 39%,color-mix(in srgb,var(--tile-shade) 92%,transparent) 79%,var(--tile-shade)),linear-gradient(rgba(var(--tile-rgb),.24),rgba(var(--tile-rgb),.24));pointer-events:none;
+}
+html body.lens-app #explore-view [data-topic=stories] img{object-position:66% center}
+html body.lens-app #explore-view a.ux-topic+a.ux-topic{margin-inline-start:-38px}
+html body.lens-app #explore-view a.ux-topic.ux-topic-centered{z-index:1;filter:none;transform:none;box-shadow:0 9px 20px #20173055}
+html body.lens-app #explore-view a.ux-topic:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+html body.lens-app #explore-view .ux-topic>svg{box-sizing:border-box;flex:none;width:44px;height:44px;padding:9px;margin:0 auto auto 0;border-radius:12px;background:var(--tile-shade);border:1px solid rgba(var(--tile-rgb),.48);color:#fff;filter:none}
+html body.lens-app #explore-view .ux-tile-copy{gap:6px}
+html body.lens-app #explore-view .ux-tile-copy strong{font:700 1.55rem/1.16 var(--ui-font);letter-spacing:-.45px;color:#fff;white-space:normal;overflow-wrap:anywhere}
+html body.lens-app #explore-view .ux-tile-copy small{font:400 .8125rem/1.45 var(--ui-font);color:#f0edf4;white-space:normal;margin:0}
+html body.lens-app #explore-view .ux-count{top:20px;right:20px;max-width:calc(100% - 88px);overflow-wrap:anywhere;font:500 .75rem/1.4 var(--ui-font);padding:4px 9px;background:var(--tile-shade);border:1px solid rgba(var(--tile-rgb),.48);color:#fff;border-radius:20px}
+html body.lens-app #explore-view .ux-browse{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;margin:0;font:400 .75rem/1.4 var(--ui-font);color:#f0edf4}
+html body.lens-app #explore-view .ux-browse svg{width:16px;height:16px;flex:none}
 html body.lens-app #explore-view .ux-lane-pages{display:flex;justify-content:center;align-items:center;gap:0;min-height:32px;margin-top:-12px}
 html body.lens-app #explore-view .ux-lane-pages[hidden]{display:none}
 html body.lens-app #explore-view .ux-lane-page{display:grid;place-items:center;width:24px;min-width:24px;min-height:44px;padding:0;border:0;background:none;color:var(--lane-copy)}
@@ -3231,7 +3245,7 @@ html body.lens-app #explore-view [data-topic=text]{--tile-rgb:129,140,248}
 html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(246,247,251,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 html body.lens-app.dark:has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary{background:rgba(11,14,20,.76);border-top-color:rgba(255,255,255,.08)}
 @media(pointer:coarse){html body.lens-app #explore-view .ux-lane-page{width:24px;min-width:24px}}
-@media(prefers-reduced-motion:reduce){html body.lens-app #explore-view :is(a.ux-topic,.ux-lane-page span,.ux-explore-filters button){transition:none}html body.lens-app #explore-view a.ux-topic:is(:hover,:active){transform:none}}
+@media(prefers-reduced-motion:reduce){html body.lens-app #explore-view :is(a.ux-topic,.ux-lane-page span,.ux-explore-filters button){transition:none}}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence{margin-left:6px}
 html body.lens-app #ux-empty-verse-actions{width:360px;padding:10px 12px;max-height:calc(100dvh - 180px);overflow:auto}
 html body.lens-app #ux-empty-verse-actions #ux-empty-verse-toast{margin:0 0 4px;font-size:.76rem;line-height:1.45}
@@ -3277,12 +3291,7 @@ html body.lens-app #lensMasthead .lens-primary a > span {
  html body.lens-app #explore-view .ux-explore-filters{margin-top:0;margin-bottom:8px;padding-top:4px;padding-bottom:4px;padding-left:var(--lane-inset);}
  html body.lens-app #explore-view .ux-topic-section{margin-bottom:4px;}
  html body.lens-app #explore-view .ux-lane-heading{min-height:24px;margin-bottom:4px;}
- /* Match the All button border, with the same inset at every snap stop. */
- html body.lens-app #explore-view .ux-topic-row{padding-top:4px;padding-bottom:8px;padding-left:var(--lane-inset);scroll-padding-left:var(--lane-inset);padding-right:max(var(--lane-gutter),calc(100% + var(--lane-gutter) - var(--lane-card-width) - var(--lane-inset)));}
- html body.lens-app #explore-view a.ux-topic{
-  height:auto;min-height:15rem;
-  padding:20px 18px;gap:14px;
- }
+ html body.lens-app #explore-view .ux-topic-row{margin-inline:calc(-1 * var(--lane-gutter));padding-block:6px 16px;}
  html body.lens-app #explore-view .ux-lane-pages{margin-top:-8px;}
 }
 
