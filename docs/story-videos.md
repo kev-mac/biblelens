@@ -728,3 +728,25 @@ with PID 57931. The iPad's ordinary launch was denied because it was locked
 are verified, but launch remains pending until Kevin unlocks it. The lock was
 not bypassed. Physical-device video playback, audio quality, fullscreen and
 cold offline operation are not certified by browser emulation or a launch.
+
+## Three remaining uploads: build 356 (2026-11-06)
+
+Kevin confirmed the three remaining uploads. The R2 dashboard completed list
+now contains `BibleLens-The-Family-of-Noah.mp4` (5.55 MB),
+`BibleLens-The-Tower-of-Babel.mp4` (4.43 MB), and `BibleLens-Abram-and-Lot.mp4`
+(6.21 MB). The supplied local ZIP contains exactly those three MP4s and its
+SHA256SUMS file; all checksums and full-file FFmpeg decoding passed.
+
+Five actual frames per clip were compared beside the existing Story artwork.
+No new identity break was observed in those sampled scenes. Versioned actual-frame
+1280x720 WebP posters are each below 65 KB. The descriptions follow the visible
+scenes rather than claiming a complete retelling. Source-file hashes, sizes,
+durations, poster timestamps and poster hashes are in `docs/story-video-batch-356.json`.
+Detailed local audits and contact sheets remain under `outputs/uploaded-video-356`.
+Audio is not listening-reviewed; sampled frames do not certify every motion frame.
+
+The shared manifest now has 27 ready videos. Joseph and His Brothers and Jacob
+Blesses His Family remain pending their separate continuity repairs, without
+blocking these three uploads. Reader artwork, offline fallbacks and video
+runtime code are retained. No MP4 is bundled. Build 356 preserves the complete
+canonical build-355 source and uses one shared source state for web and native.

@@ -1,0 +1,49 @@
+{
+  "build": 356,
+  "uploadEvidence": "R2 completed objects confirmed with expected names and displayed sizes; source ZIP checksums verified.",
+  "audioReview": "Not listening-reviewed",
+  "records": [
+    {
+      "title": "The Family of Noah",
+      "filename": "BibleLens-The-Family-of-Noah.mp4",
+      "bytes": 5549030,
+      "sha256": "fcad5acebbfda1a84f4d3d05459f0916157c2ec54f53c32c48a12a0b49e4988d",
+      "duration": 13.0,
+      "status": "ready",
+      "reference": "/assets/story-the-family-of-noah-v1.webp",
+      "poster": "/assets/story-video-the-family-of-noah-poster-v1.webp",
+      "posterTimestamp": 0.5,
+      "posterBytes": 57802,
+      "posterSha256": "e03af42bb08626862c97936e122a5811af5121a1e7fce7fbedfc16994e550b74",
+      "fullLocalDecode": "passed"
+    },
+    {
+      "title": "The Tower of Babel",
+      "filename": "BibleLens-The-Tower-of-Babel.mp4",
+      "bytes": 4432816,
+      "sha256": "be76df06749b56d5ba52cda4ff32dd6093d96bec288073fd7d4bf8f9dff14250",
+      "duration": 10.25,
+      "status": "ready",
+      "reference": "/assets/story-the-tower-of-babel-v1.webp",
+      "poster": "/assets/story-video-the-tower-of-babel-poster-v1.webp",
+      "posterTimestamp": 0.5,
+      "posterBytes": 62216,
+      "posterSha256": "d2b6b5c23858eb3ed25b1f9277e25406c6e6030612a4278b978e41044c57063d",
+      "fullLocalDecode": "passed"
+    },
+    {
+      "title": "Abram and Lot",
+      "filename": "BibleLens-Abram-and-Lot.mp4",
+      "bytes": 6207404,
+      "sha256": "6e7bfe00ce529787d7203bf961f2a1ae32bb182ac805481c4d7e87bd2a6396f5",
+      "duration": 13.0,
+      "status": "ready",
+      "reference": "/assets/story-abram-and-lot-v1.webp",
+      "poster": "/assets/story-video-abram-and-lot-poster-v1.webp",
+      "posterTimestamp": 3.25,
+      "posterBytes": 46230,
+      "posterSha256": "7f56d47839e5e1e3ea8b2c67ff6130c4f53191c73aa90cdc1986fda1f3518a08",
+      "fullLocalDecode": "passed"
+    }
+  ]
+}
