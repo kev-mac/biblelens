@@ -761,3 +761,36 @@ poster payload is 46,624 bytes; dimensions remain 1280x720. No video, reader
 artwork, security policy or publication budget was changed. Poster metadata and
 alt text follow the newly selected timestamps. The first candidate's playback
 checks are retained as earlier evidence, not claimed for the final source hash.
+
+### Build 356 publication and device checkpoint
+
+The final shared Mac release preparation, signing and image checks passed.
+Its Worker is 66,027,880 bytes, below the unchanged 66,060,288-byte limit.
+The three final poster hashes match the audit and packaged native files.
+All three final-source clips passed Mac WebKit playback, control reveal, pause
+and seek. Reports are under
+`/Users/kevin/git/BibleLens-356-final/.release/356-final-webkit`.
+
+Canonical source `fee1d6285ee9eb6b1cf65bc41f304d850797f427` was pushed to main.
+Sites version 345 published successfully as deployment
+`appgdep_6aee2116aa3481918e5c4b268fb8cb8b` at
+https://scripture-lens.kvn-mcgwn.chatgpt.site. Unmodified `release:verify`
+confirmed the live site, canonical source, Sites mirror and mobile assets all
+match build 356 and fingerprint
+`b66fca522aeb38e020d97faa3596d2f8898b933948ccd432cd9f9b6415789281`.
+The signed app passed strict signature verification. All 1,533 `www` files
+match the signed public assets byte-for-byte, excepting only the two confirmed
+empty Cordova files added by Capacitor. No MP4 is bundled.
+
+Installed-app queries verified 1.1.0/build 356 on Kevin's iPhone 16 Pro
+(`97707562-C3A3-5A57-9F88-C607D1E81C92`) and iPad mini (A17 Pro)
+(`F6C4425C-EBDA-5E00-86B9-05DAF442F07C`). The iPhone launched successfully,
+PID 58789. iOS denied the iPad's launch because it was locked
+(`FBSOpenApplicationErrorDomain`, error 7); no lock bypass or repeat launch
+was attempted. Unlocking the iPad and opening BibleLens completes that check.
+Physical-device video playback, audible quality and cold offline operation
+remain outside this verification. The two continuity repairs remain pending.
+
+The old unpublished Windows Site snapshot is retained in its named stash,
+`Preserve unpublished initial build 356 snapshot before shared Mac budget fix`.
+Existing user checkouts, changes and stashes were preserved.
