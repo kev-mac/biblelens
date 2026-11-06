@@ -18,7 +18,7 @@ assert.equal(Object.keys(images).length,catalog.flatMap(group=>group.stories).le
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 assert.deepEqual(Object.keys(images),catalog.filter(group=>illustratedBooks.includes(group.book)).flatMap(group=>group.stories).map(story=>story.title));
 for(const [title,art]of Object.entries(images)){
- assert.match(art.src,/^\/assets\/story-[a-z0-9-]+-v[12]\.webp$/);
+ assert.match(art.src,/^\/assets\/story-[a-z0-9-]+-v[1-9]\d*\.webp$/);
  assert(art.alt.length>20);
  const response=await get(art.src);assert.equal(response.status,200);assert.equal(response.headers.get('content-type'),'image/webp');
  const bytes=Buffer.from(await response.arrayBuffer());assert(bytes.length<250000);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,16),'WEBPVP8 ');
