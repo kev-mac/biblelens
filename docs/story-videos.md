@@ -467,3 +467,28 @@ any production feature or CSP. The runner records this port-specific setup,
 crash events and checkpoints; no application workaround or user-agent
 exception was added. Viewport emulation does not verify Safari on physical
 iPhone/iPad or installation of native binaries.
+
+### Final build 350 verification (2026-11-06)
+
+The required release:prepare run passed, including the shared web/mobile
+build and 65 unique release, reader, sync and mobile checks. Seven additional
+security/UI/artwork checks passed, for 72 unique checks in total. Both bundles
+and the staged Sites source match fingerprint
+`48a0362f526e8f42833eb97d49f07b0d1cbab638e44a162c98986ec459f5ce52`.
+
+All 34 viewport browser checks passed: 32 real-scrolling lifecycle fixtures
+and actual muted MP4 decoding, changing frames and navigation in Chromium
+and Windows WebKit. All 96 real R2 checks passed across the four ready clips,
+two engines and phone/iPad-sized viewports, including Noah playback, seek,
+end/restart, warm offline fallback, settled reconnect/resume, failure/Retry
+and navigation. All 20 real YouTube manual-play checks passed. A separate
+Chromium check received actual YouTube playing/advancing time events without
+a Play gesture and verified muted autoplay and Show image teardown.
+
+Reports are retained in ignored outputs: release-350-prepare.log,
+release-350-regressions, story-viewport-build350, r2-video-browser,
+creation-video-browser and live-youtube-viewport-build350.json. Earlier
+browser reports remain under their build349 names and probe files.
+Physical iPhone/iPad Safari, signed native asset parity and installed binaries
+were not tested. Shared offline assets are prepared; web publication alone
+does not update installed native apps.
