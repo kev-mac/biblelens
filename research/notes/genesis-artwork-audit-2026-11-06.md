@@ -68,3 +68,10 @@ The originals came from the owner's public [Genesis review transfer](https://pub
 - `chapter-genesis-50-opening-v2.webp` keeps Joseph at the same age as Genesis 48. He kisses Jacob’s face as Genesis 50:1 describes. The edit received `chapter-genesis-50-opening-v1.webp`, `story-jacob-blesses-his-family-v2.webp`, `chapter-genesis-46-v1.webp`, `chapter-genesis-49-opening-v1.webp` and the Genesis 7 style reference. Compared Joseph’s gray-flecked curls and beard, face, complexion and apparent age with Genesis 48, and checked Jacob’s appearance and Joseph’s visible hand.
 
 All eight replacements retain their placement and Story or chapter role. The Genesis 2 exception and the remaining legacy review items above are separate from these accepted replacements.
+
+## Build 358 release verification
+
+- Canonical release source `837aadb18d1425a7c9f286e1e906be0e066e2cef` was pushed to GitHub main. The public artwork pin is `a628c1a247b3f421936a8a552bcda88e985dab3d`. Checked all 1,102 pinned Git blobs and fetched all eight updated artwork files from the public pin. The previous files remain in source.
+- Public Sites version 347 mirrors commit `35ec75d1d97b691bcdd3c5591aea9c1494311379`, deployment `appgdep_6aee46bbe6748191be0dc28f0b1320f6`. The 65,320,489-byte Worker is 739,799 bytes under the 63 MiB limit. All eight live artwork responses matched the source, `www` and signed app bytes.
+- `release:prepare -- --ios`, `check:images`, strict iOS signature verification and `release:verify` passed. The shared run covered content, Chromium and WebKit search, sync, release and mobile checks. Readability ran in report-only mode. All 1,536 `www` files matched the signed app's public files byte for byte, with two additional empty Cordova files. Build 358 has fingerprint `1237a6c8b8ff102db7bc3b0bc8e2a13d88b12914033be0993b206691ada30d3f`.
+- The paired iPhone and iPad each reported BibleLens 1.1.0 build 358 installed. The iPhone launch succeeded. The iPad reported a passcode was required after installation, so its launch remains unverified.
