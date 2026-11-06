@@ -617,3 +617,38 @@ which Windows Python lacks. No file without its required Library metadata was
 used. A cloud-side transfer/upload or Kevin's R2 upload and public URLs are
 needed before integrating the next batch; its app release should use a new
 build number. No R2 upload or availability claim is made for those five clips.
+
+## Fifteen-video build 353 preparation (2026-11-06)
+
+The separate `feature/genesis-video-batch15-2026-11-06` branch stages the next
+15 Genesis stories, from The Family of Noah through The Death of Rachel.
+All 15 exact existing Story keys have pending MP4 records; the five currently
+ready videos remain intact. Build 353 is a candidate, not a published release.
+No R2 URL, video-derived poster, footage description or playback result is
+invented. Pending records are excluded from both clients by `storyVideos()`.
+Reader artwork and offline/error fallbacks are retained.
+
+Kevin verified the first five and subsequently authorized pushing, publishing
+and installing the next ten. That authorization does not establish that he
+listened to or playback-verified those ten separately. The short clips are
+partial retellings; descriptions must state the scenes actually shown.
+
+Before activating a record, obtain the upload worker's exact public R2 URL,
+an actual-frame versioned WebP poster with its timestamp, and alt text and a
+description grounded in that footage. Retain file size, duration and SHA-256
+upload evidence. The existing origin allowlist and no bundled MP4 rule remain.
+Do not retry the previously denied R2 verification requests or switch routes
+without materially new relevant evidence. Windows Library transfer remains
+blocked by unavailable `os.setxattr`; no metadata-free file was used.
+
+The latest visible user direction at 11:11 UTC defers his upload help and asks
+not to be interrupted while the next ten are made. This preparation does not
+request another sign-in or assume the separate upload worker succeeded.
+The Mac build-352 task still reports waitingOnApproval after CoreDeviceService
+timed out. Exact available devices, signing, installed versions and launches
+remain unverified; build-353 installation has not started.
+
+Preparation checks passed: `check-story-videos.mjs`, `check-story-mp4.mjs`,
+`check-story-viewport.mjs` and `git diff --check`. Readability completed in its
+existing report-only mode. No build-353 bundle, real-media browser check,
+publication or native installation is claimed by this preparation checkpoint.
