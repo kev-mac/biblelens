@@ -3216,12 +3216,15 @@ html body.lens-app #explore-view .ux-topic-row::before,html body.lens-app #explo
 html body.lens-app #explore-view a.ux-topic{
  flex:0 0 min(var(--lane-card-width),100%);width:min(var(--lane-card-width),100%);min-width:0;height:auto;
  min-height:clamp(20rem,86vw,26rem);padding:20px;gap:14px;scroll-snap-align:center;
- border:1px solid rgba(var(--tile-rgb),.58);border-radius:21px;color:#fff;--tile-shade:color-mix(in srgb,rgb(var(--tile-rgb)) 12%,#0a0f16);
+ border:1px solid rgba(var(--tile-rgb),.58);border-radius:21px;color:#fff;isolation:isolate;--tile-shade:color-mix(in srgb,rgb(var(--tile-rgb)) 12%,#0a0f16);
  background-color:var(--tile-shade);
- background-image:linear-gradient(180deg,#0a0f1630,transparent 29%,#0a0f1614 39%,color-mix(in srgb,var(--tile-shade) 92%,transparent) 79%,var(--tile-shade)),linear-gradient(rgba(var(--tile-rgb),.24),rgba(var(--tile-rgb),.24)),var(--tile-art);
- background-size:cover;background-position:var(--tile-position,center);filter:brightness(.67) saturate(.81);transform:scale(.9);
+ filter:brightness(.67) saturate(.81);transform:scale(.9);
  transition:transform .2s,filter .2s,box-shadow .2s;
 }
+html body.lens-app #explore-view a.ux-topic::after{
+ display:block;background:linear-gradient(180deg,#0a0f1630,transparent 29%,#0a0f1614 39%,color-mix(in srgb,var(--tile-shade) 92%,transparent) 79%,var(--tile-shade)),linear-gradient(rgba(var(--tile-rgb),.24),rgba(var(--tile-rgb),.24));pointer-events:none;
+}
+html body.lens-app #explore-view [data-topic=stories] img{object-position:66% center}
 html body.lens-app #explore-view a.ux-topic+a.ux-topic{margin-inline-start:-38px}
 html body.lens-app #explore-view a.ux-topic.ux-topic-centered{z-index:1;filter:none;transform:none;box-shadow:0 9px 20px #20173055}
 html body.lens-app #explore-view a.ux-topic:focus-visible{outline:2px solid #fff;outline-offset:-4px}
@@ -3232,15 +3235,6 @@ html body.lens-app #explore-view .ux-tile-copy small{font:400 .8125rem/1.45 var(
 html body.lens-app #explore-view .ux-count{top:20px;right:20px;max-width:calc(100% - 88px);overflow-wrap:anywhere;font:500 .75rem/1.4 var(--ui-font);padding:4px 9px;background:var(--tile-shade);border:1px solid rgba(var(--tile-rgb),.48);color:#fff;border-radius:20px}
 html body.lens-app #explore-view .ux-browse{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;margin:0;font:400 .75rem/1.4 var(--ui-font);color:#f0edf4}
 html body.lens-app #explore-view .ux-browse svg{width:16px;height:16px;flex:none}
-html body.lens-app #explore-view [data-topic=stories]{--tile-art:url(/assets/explore-ark.webp);--tile-position:66% center}
-html body.lens-app #explore-view [data-topic=people]{--tile-art:url(/assets/story-david-and-goliath-v1.webp)}
-html body.lens-app #explore-view [data-topic=places]{--tile-art:url(/assets/story-the-dedication-of-jerusalem-s-wall-v1.webp)}
-html body.lens-app #explore-view [data-topic=commandments]{--tile-art:url(/assets/explore-commandments.webp)}
-html body.lens-app #explore-view [data-topic=lost]{--tile-art:url(/assets/story-the-scroll-burned-v1.webp)}
-html body.lens-app #explore-view [data-topic=evidence]{--tile-art:url(/assets/explore-evidence.webp)}
-html body.lens-app #explore-view [data-topic=timeline]{--tile-art:url(/assets/explore-timeline.webp)}
-html body.lens-app #explore-view [data-topic=text]{--tile-art:url(/assets/story-ezra-reads-the-law-v1.webp)}
-html body.lens-app #explore-view [data-topic=translation]{--tile-art:url(/assets/story-the-tower-of-babel-v1.webp)}
 html body.lens-app #explore-view .ux-lane-pages{display:flex;justify-content:center;align-items:center;gap:0;min-height:32px;margin-top:-12px}
 html body.lens-app #explore-view .ux-lane-pages[hidden]{display:none}
 html body.lens-app #explore-view .ux-lane-page{display:grid;place-items:center;width:24px;min-width:24px;min-height:44px;padding:0;border:0;background:none;color:var(--lane-copy)}

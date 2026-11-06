@@ -34,6 +34,14 @@ try{
     const filters=await lane.locator('.ux-topic').evaluateAll(cards=>cards.map(card=>getComputedStyle(card).filter));
     assert.equal(filters[0],'none');assert(filters[1].includes('brightness'));
     const images=new Set();
+    const stories=page.locator('#ux-topic-stories');
+    const artwork=await stories.locator('img').elementHandle();
+    assert(await artwork.evaluate(async img=>{await img.decode();return img.naturalWidth>0;}));
+    await lane.focus();await page.keyboard.press('ArrowRight');
+    await page.waitForFunction(()=>document.querySelector('#ux-topic-people').classList.contains('ux-topic-centered'));
+    await stories.focus();
+    await page.waitForFunction(()=>document.querySelector('#ux-topic-stories').classList.contains('ux-topic-centered'));
+    assert(await artwork.evaluate(img=>img.isConnected&&img.naturalWidth>0&&document.activeElement===img.parentElement),'focused Stories retains its decoded image');
     assert.equal(await page.locator('#ux-topic-evidence').getAttribute('href'),'#questions?mode=text');
     assert.equal(await page.locator('#ux-topic-timeline').getAttribute('href'),'#timeline');
     const counts=await(await page.request.get(base+'/collection-counts.json')).json();await page.waitForFunction(()=>document.querySelector('#ux-topic-evidence .ux-count')?.textContent!=='…');
@@ -61,7 +69,7 @@ try{
      await page.getByRole('button',{name:filter,exact:true}).click();assert.equal(await page.locator('.ux-topic').count(),count);
      const selected=page.locator('.ux-explore-filters [aria-pressed=true]');assert.equal(await selected.innerText(),filter);
      assert(await selected.evaluate(n=>{const a=n.getBoundingClientRect(),b=n.parentElement.getBoundingClientRect();return a.left>=b.left-1&&a.right<=b.right+1;}),'selected filter stays visible');
-     for(const asset of await page.locator('.ux-topic').evaluateAll(cards=>cards.map(card=>getComputedStyle(card).getPropertyValue('--tile-art').match(/url\(["']?([^"')]+)/)?.[1]))){
+     for(const asset of await page.locator('.ux-topic img').evaluateAll(images=>images.map(img=>img.getAttribute('src')))){
       assert(asset,'each tile has artwork');images.add(asset);
      }
      if(filter==='Manuscripts'){assert.equal(await page.locator('#ux-topic-text').getAttribute('href'),'#questions?mode=text');assert.equal(await page.locator('#ux-topic-translation').getAttribute('href'),'#questions?filter=T');}
