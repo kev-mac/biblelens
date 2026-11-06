@@ -62,8 +62,7 @@ frame origin. API errors (including blocked embedding and error 153), iframe
 errors, or 15 seconds without initial playback/buffering recovery restore the
 original image and offer Retry. A connection loss tears down playback and uses
 the original image. Reconnection restores the poster; another tap resumes near
-the last reported second. Show image is available outside the player, including
-when a browser reports a misleading connection state. Leaving Stories, hiding
+the last reported second. No separate Show image control is shown. Leaving Stories, hiding
 the app, replacing cards, or page teardown removes the player and its timers.
 
 The framed player reserves a 16:9 area with a 200px minimum height for YouTube's
@@ -259,7 +258,7 @@ or service-worker shell.
 MP4 playback is local to the app's HTML video element, with native controls,
 inline playback and a locally packaged poster. Browsing creates no video element
 and makes no R2 request. Only Play or Retry attaches a source; preload is `none`.
-Pause keeps the frame. Show image, errors, offline, navigation, hidden pages and
+Pause keeps the frame. Errors, offline, navigation, hidden pages and
 unmount stop playback and release the remote media resource. Reconnection never
 autoplays; the next tap resumes near the last reported time. Ending restores the
 poster and resets the next play. Loading/buffering has the existing 15-second

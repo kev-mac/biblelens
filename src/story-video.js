@@ -9,7 +9,7 @@
  function render(title,art){
   const video=videos[title];if(!video||!art)return '';
   const descriptionId='story-video-description-'+title.toLowerCase().replace(/[^a-z0-9]+/g,'-');
-  return `<figure class="story-illustration story-video" tabindex="-1" aria-describedby="${escape(descriptionId)}" data-story-video="${escape(title)}" data-video-fallback="${escape(JSON.stringify(art))}"><div class="story-video-stage"><img data-video-still src="${escape(online()?video.poster:art.src)}" alt="${escape(online()?video.posterAlt:art.alt)}" width="1200" height="675" loading="lazy" decoding="async"><div data-video-frame hidden></div><button type="button" class="story-video-play" data-video-play${online()?'':' hidden'} aria-label="Play ${escape(title)}${video.provider==='mp4'?' video':' on YouTube'}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 4v16l14-8z"/></svg></button></div><p class="story-video-status" data-video-status role="status" aria-live="polite">${online()?'':"You're offline. The story image is shown."}</p><div class="story-video-actions"><button type="button" data-video-retry hidden>Retry video</button><button type="button" data-video-image hidden>Show image</button></div><span class="sr-only" id="${escape(descriptionId)}">Imagined scene. ${escape(video.description)}</span></figure>`;
+  return `<figure class="story-illustration story-video" tabindex="-1" aria-describedby="${escape(descriptionId)}" data-story-video="${escape(title)}" data-video-fallback="${escape(JSON.stringify(art))}"><div class="story-video-stage"><img data-video-still src="${escape(online()?video.poster:art.src)}" alt="${escape(online()?video.posterAlt:art.alt)}" width="1200" height="675" loading="lazy" decoding="async"><div data-video-frame hidden></div><button type="button" class="story-video-play" data-video-play${online()?'':' hidden'} aria-label="Play ${escape(title)}${video.provider==='mp4'?' video':' on YouTube'}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 4v16l14-8z"/></svg></button></div><p class="story-video-status" data-video-status role="status" aria-live="polite">${online()?'':"You're offline. The story image is shown."}</p><div class="story-video-actions"><button type="button" data-video-retry hidden>Retry video</button></div><span class="sr-only" id="${escape(descriptionId)}">Imagined scene. ${escape(video.description)}</span></figure>`;
  }
  // One owner, with entry/exit hysteresis and a short dwell before autoplay.
  // Reset a viewing only after the stage has been fully offscreen for 500 ms.
@@ -41,7 +41,7 @@
   for(const node of root.querySelectorAll('[data-story-video]')){
    if(live.has(node))continue;
    const title=node.dataset.storyVideo,video=videos[title];if(!video)continue;
-   const still=node.querySelector('[data-video-still]'),slot=node.querySelector('[data-video-frame]'),play=node.querySelector('[data-video-play]'),retry=node.querySelector('[data-video-retry]'),image=node.querySelector('[data-video-image]'),status=node.querySelector('[data-video-status]');
+   const still=node.querySelector('[data-video-still]'),slot=node.querySelector('[data-video-frame]'),play=node.querySelector('[data-video-play]'),retry=node.querySelector('[data-video-retry]'),status=node.querySelector('[data-video-status]');
    const stage=node.querySelector('.story-video-stage')||node;
    const art=JSON.parse(node.dataset.videoFallback);let frame,timer,exitTimer,generation=0,time=0,resumeTime=0,mode='idle',consumed=false,ready=false,muted=false,warmFailed=false;
    function clear(){clearTimeout(timer);timer=undefined;}
@@ -51,9 +51,9 @@
     frame?.remove();frame=undefined;slot.hidden=true;slot.replaceChildren();
    }
    function show(state,text=''){
-    const focusInside=frame&&document.activeElement===frame||[play,retry,image].includes(document.activeElement);remove();mode=state;
+    const focusInside=frame&&document.activeElement===frame||[play,retry].includes(document.activeElement);remove();mode=state;
     const poster=state==='idle'&&online();still.src=poster?video.poster:art.src;still.alt=poster?video.posterAlt:art.alt;still.hidden=false;
-    play.hidden=!['idle','image'].includes(state)||!online();retry.hidden=state!=='error'||!online();image.hidden=true;status.textContent=text;
+    play.hidden=state!=='idle'||!online();retry.hidden=state!=='error'||!online();status.textContent=text;
     if(focusInside)(!play.hidden?play:!retry.hidden?retry:node).focus({preventScroll:true});
    }
    function fail(){if(mode==='preload'){warmFailed=true;show('idle');return;}consumed=true;show('error','Video unavailable. The story image is shown. Try again when your connection is ready.');}
@@ -99,8 +99,8 @@
     if(!online()){show('offline',"You're offline. The story image is shown.");return;}
     consumed=true;muted=auto;claim(controller);
     const warmed=frame&&mode==='preload';resumeTime=time;if(!warmed)remove();
-    mode='loading';status.textContent='Loading video.';play.hidden=true;retry.hidden=true;image.hidden=false;slot.hidden=false;still.hidden=true;
-    if(!warmed)create(false);deadline();if(!auto||[play,retry,image].includes(document.activeElement))frame.focus({preventScroll:true});
+    mode='loading';status.textContent='Loading video.';play.hidden=true;retry.hidden=true;slot.hidden=false;still.hidden=true;
+    if(!warmed)create(false);deadline();if(!auto||[play,retry].includes(document.activeElement))frame.focus({preventScroll:true});
     if(video.provider==='mp4'||warmed)playMedia();
    }
    function message(event){
@@ -109,7 +109,7 @@
     if(event.data.state==='blocked'){clear();mode='paused';status.textContent='Select Play in the video controls to continue.';return;}
     stateChange(event.data.state,event.data.time);
    }
-   play.onclick=retry.onclick=()=>start();image.onclick=()=>{consumed=true;show('image','The story image is shown.');};
+   play.onclick=retry.onclick=()=>start();
    function network(){if(controller.ratio>0||(frame&&mode!=='preload'))consumed=true;if(!online())show('offline',"You're offline. The story image is shown.");else if(mode==='offline')show('idle','Connection restored. Select Play video to continue.');}
    still.addEventListener('error',()=>{if(still.getAttribute('src')===video.poster){still.src=art.src;still.alt=art.alt;}});
    window.addEventListener('message',message);

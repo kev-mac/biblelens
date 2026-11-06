@@ -159,7 +159,7 @@ try{
     assert.equal(state.vars.autoplay,0,'Neighbor YouTube API must not autoplay');assert.equal(state.plays,0);assert.equal(state.videoId,youtube.videoId,'The API is initialized with the selected video cued and autoplay disabled');assert.equal(state.vars.mute,1);
     await center(2);await frame.waitForFunction(()=>window.__yt.some(p=>p.plays>0));
     assert(await frame.evaluate(()=>window.__yt.some(p=>p.muted)),'Viewport autoplay is muted');
-    const image=card(2).locator('[data-video-image]');assert(await image.isVisible());await image.focus();assert(await image.evaluate(el=>el===document.activeElement));await image.press('Enter');
+    assert.equal(await card(2).locator('[data-video-image]').count(),0);await page.evaluate(()=>window.BibleLensStoryVideo.stop());
     const play=card(2).locator('[data-video-play]');await play.waitFor();assert(await play.getAttribute('aria-label'));await play.focus();assert(await play.evaluate(el=>el===document.activeElement));
    });
    for(const mode of ['reduced motion','Save-Data'])await scenario(mode+' disables automatic work',{reduce:mode==='reduced motion',saveData:mode==='Save-Data'},async({page,card,center,playing,stats})=>{
