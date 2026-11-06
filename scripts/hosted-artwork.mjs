@@ -3,6 +3,10 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
 const hostedStoryReplacements=[
+ "/assets/story-jacob-blesses-his-family-v2.webp",
+ "/assets/story-the-creation-v3.webp",
+ "/assets/story-the-fall-of-man-v3.webp",
+ "/assets/story-cain-and-abel-v3.webp",
  "/assets/story-the-widow-s-oil-and-the-shunammite-s-son-v2.webp",
  "/assets/story-jehu-s-revolt-v2.webp",
  "/assets/story-manasseh-amon-and-josiah-v2.webp",
