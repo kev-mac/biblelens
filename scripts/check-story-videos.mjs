@@ -9,7 +9,7 @@ const video={videoId:'BDNJ8-wtaeA',poster:'/assets/story-video-creation-poster-v
 const art={src:'/assets/story-creation-v1.webp',alt:'Creation story artwork',width:1200,height:675};
 const timers=new Map(),events=new Map(),docEvents=new Map();let nextTimer=0,frames=0;
 const element=()=>({hidden:false,src:'',alt:'',textContent:'',children:[],addEventListener(type,fn){this['on'+type]=fn;},getAttribute(k){return this[k];},replaceChildren(){this.children=[];},appendChild(n){this.children.push(n);},remove(){this.removed=true;},focus(){document.activeElement=this;}});
-const parts=Object.fromEntries(['still','frame','play','retry','status'].map(name=>['[data-video-'+name+']',element()]));
+const parts=Object.fromEntries(['still','frame','play','reveal','retry','status'].map(name=>['[data-video-'+name+']',element()]));
 const node={dataset:{storyVideo:'The Creation',videoFallback:JSON.stringify(art)},isConnected:true,focus(){document.activeElement=this;},querySelector:s=>parts[s]};
 const root={querySelectorAll:()=>[node],contains:n=>n===node};
 const document={activeElement:null,hidden:false,addEventListener:(type,fn)=>docEvents.set(type,fn),createElement:tag=>{assert.equal(tag,'iframe');frames++;return {...element(),contentWindow:{postMessage(){}}};}};

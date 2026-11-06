@@ -16,16 +16,30 @@
   let stops=[],active=0;
   function sync(){
    active=stops.reduce((best,value,index)=>Math.abs(value-row.scrollLeft)<Math.abs(stops[best]-row.scrollLeft)?index:best,0);
-   for(const [index,button] of [...pager.children].entries())button.setAttribute('aria-current',String(index===active));
+   for(const [index,button] of [...pager.children].entries()){
+    const centered=index===active;
+    button.setAttribute('aria-current',String(centered));
+    cards[index].classList.toggle('ux-topic-centered',centered);
+   }
   }
-  function move(index){row.scrollTo({left:stops[Math.max(0,Math.min(stops.length-1,index))]||0,behavior:reducedMotion()?'instant':'smooth'});}
+  const stopFor=card=>Math.max(0,Math.min(row.scrollWidth-row.clientWidth,card.offsetLeft+(card.offsetWidth-row.clientWidth)/2));
+  function move(index){
+   const card=cards[Math.max(0,Math.min(cards.length-1,index))];
+   if(card)row.scrollTo({left:stopFor(card),behavior:reducedMotion()?'instant':'smooth'});
+  }
   function measure(){
-   const max=Math.max(0,row.scrollWidth-row.clientWidth),first=cards[0]?.getBoundingClientRect().left||0;
-   stops=[...new Set(cards.map(card=>Math.min(max,Math.max(0,card.getBoundingClientRect().left-first))))];
+   if(!row.clientWidth)return;
+   stops=cards.map(stopFor);
    pager.replaceChildren(...stops.map((stop,index)=>{const button=document.createElement('button');button.type='button';button.className='ux-lane-page';button.setAttribute('aria-label','Show '+cards[index].querySelector('strong').textContent+' and following collections');button.innerHTML='<span aria-hidden="true"></span>';button.onclick=()=>move(index);return button;}));
    pager.hidden=stops.length<=1;sync();
   }
   row.addEventListener('scroll',sync,{passive:true});
+  row.addEventListener('focusin',event=>{const index=cards.indexOf(event.target);if(index>=0&&event.target.matches(':focus-visible'))move(index);});
+  row.addEventListener('click',event=>{
+   const index=cards.indexOf(event.target.closest('.ux-topic'));
+   if(index<0||index===active||event.detail===0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+   event.preventDefault();move(index);
+  });
   row.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();move(event.key==='Home'?0:event.key==='End'?stops.length-1:active+(event.key==='ArrowRight'?1:-1));});
   const observer=new ResizeObserver(measure);observer.observe(row);observers.push(observer);measure();
  }

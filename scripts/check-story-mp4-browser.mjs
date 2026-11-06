@@ -67,7 +67,7 @@ try{
     if(!stopLive){
      const passed=await result('real MP4 playback, pause and seek',async()=>{
       await play.press('Enter');await media.waitFor();const decoded=await waitPlaying();assert(decoded.width>0&&decoded.height>0,'The player exposes a video frame');assert(decoded.duration>10);
-      assert.equal(await media.getAttribute('preload'),'none');assert(await media.evaluate(v=>v.controls&&v.playsInline));assert.equal(await media.getAttribute('src'),record.src);assert.equal(await page.locator('video').count(),1);if(!(engine==='webkit'&&process.platform==='win32'))assert(mediaRequests.length>0&&mediaRequests.every(u=>u===record.src),'Only the chosen video is fetched');
+      assert.equal(await media.getAttribute('preload'),'none');assert(await media.evaluate(v=>!v.controls&&v.playsInline));const reveal=figure.getByRole('button',{name:'Show controls for '+title});await reveal.click();assert(await media.evaluate(v=>v.controls));assert.equal(await media.getAttribute('src'),record.src);assert.equal(await page.locator('video').count(),1);if(!(engine==='webkit'&&process.platform==='win32'))assert(mediaRequests.length>0&&mediaRequests.every(u=>u===record.src),'Only the chosen video is fetched');
       await media.evaluate(v=>v.pause());const before=await media.evaluate(v=>v.currentTime);await page.waitForTimeout(250);assert(Math.abs(await media.evaluate(v=>v.currentTime)-before)<0.15);assert(await media.isVisible());
       // Some WebKit ports report the rendered size instead of encoded size.
       // Prove changing visual frames, not just a clock or a static poster.
