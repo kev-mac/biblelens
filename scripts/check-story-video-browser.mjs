@@ -6,6 +6,10 @@ import {releaseInfo} from './release-info.mjs';
 
 const plan={engines:['chromium','webkit'],sizes:[{name:'phone',width:390,height:844},{name:'ipad',width:820,height:1180}],checks:['poster and reserved layout','no browsing autoplay','real YouTube playing/time events','warm offline fallback and reconnection','blocked player fallback and Retry','navigation stops playback']};
 if(process.argv.includes('--plan')){console.log(JSON.stringify(plan,null,2));process.exit(0);}
+// No live YouTube request is relevant when every active story uses MP4.
+if(!Object.values(JSON.parse(fs.readFileSync('data/story-videos.json','utf8'))).some(v=>v.status==='ready'&&v.provider==='youtube')){
+ console.log('NOT APPLICABLE: no active YouTube story videos; run the MP4 and viewport browser checks.');process.exit(0);
+}
 // Managed Linux preview/browser access must use the provided desktop tools.
 // Fail before building, opening a port or launching any replacement browser.
 if(process.env.SITES_MANAGED_LINUX_CONTAINER==='1'){

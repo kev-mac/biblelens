@@ -15,8 +15,11 @@ const report={startedAt:new Date().toISOString(),source:releaseInfo(),plan,resul
 const save=()=>fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(report,null,2)+'\n');
 const catalog=JSON.parse(fs.readFileSync('data/story-videos.json','utf8'));
 const mp4=Object.values(catalog).find(v=>v.status==='ready'&&v.provider==='mp4');
-const youtube=Object.values(catalog).find(v=>v.status==='ready'&&v.provider==='youtube');
-assert(mp4&&youtube,'Approved MP4 and YouTube records are needed');
+assert(mp4,'An approved MP4 record is needed');
+// Keep YouTube lifecycle coverage as an explicit API fixture even when the
+// production catalog contains only MP4s. This ID is never added to the app.
+const activeYouTube=Object.values(catalog).filter(v=>v.status==='ready'&&v.provider==='youtube');
+const youtube=activeYouTube[0]||{provider:'youtube',videoId:'BDNJ8-wtaeA',poster:mp4.poster,posterAlt:'Protocol fixture',description:'YouTube protocol fixture; not active story footage.'};
 const fixtureCatalog=Object.fromEntries(Array.from({length:7},(_,i)=>['Fixture '+i,{...(i===2?youtube:mp4),poster:'/fixture.svg',src:'/fixture.mp4?card='+i}]));
 const fixtureSource=fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',JSON.stringify(fixtureCatalog));
 assert(fixtureSource!==fs.readFileSync('src/story-video.js','utf8'),'Fixture catalog injection marker must match');
@@ -84,6 +87,9 @@ try{
    const fixtures={'/fixture.html':['text/html',fixtureHTML],'/fixture.css':['text/css',fixtureCSS],'/fixture-source.js':['text/javascript',fixtureSource],'/fixture-bootstrap.js':['text/javascript',fixtureBootstrap],'/fixture.svg':['image/svg+xml','<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675"><rect width="1200" height="675" fill="#345"/></svg>']};
    if(fixtures[url.pathname]){const [type,body]=fixtures[url.pathname];res.writeHead(200,{'content-type':type,'content-security-policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; frame-src 'self'; object-src 'none'"});res.end(body);return;}
    if(url.pathname==='/fixture.mp4'){res.writeHead(204);res.end();return;}
+   // Only this isolated browser-fixture server admits its explicit API double.
+   // The packaged production bridge retains the actual active catalog IDs.
+   if(url.pathname==='/story-video-player.js'&&!activeYouTube.length){res.writeHead(200,{'content-type':'text/javascript'});res.end(fs.readFileSync('src/story-video-player.js','utf8').replace('/*__STORY_VIDEO_IDS__*/[]',JSON.stringify([youtube.videoId])));return;}
    const response=await worker.fetch(new Request(url,{method:req.method,headers:req.headers}),{},{}),headers=Object.fromEntries(response.headers);
    // The app report-only policy is not the player policy. The bridge carries
    // its own enforced CSP meta tag permitting the official YouTube API.

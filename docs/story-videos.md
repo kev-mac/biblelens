@@ -491,3 +491,73 @@ browser reports remain under their build349 names and probe files.
 Physical iPhone/iPad Safari, signed native asset parity and installed binaries
 were not tested. Shared offline assets are prepared; web publication alone
 does not update installed native apps.
+
+## Revised Creation and Fall footage (build 352 candidate, 2026-11-06)
+
+Kevin authorized replacing the two videos and publishing the verified release.
+The revised Creation is 13.25 seconds (5,833,067 bytes); Fall is 12.75 seconds
+(3,670,353 bytes). Both are H.264, 1280 x 720 at 24 fps, with AAC audio and no
+burned-in captions or visible watermark. Creation now uses the same approved
+R2 origin as the other clips. Versioned object names preserve prior footage:
+`BibleLens-The-Creation-v3.mp4` and `BibleLens-The-Fall-of-Man-v3.mp4`.
+Upload, public-file verification and release results must be recorded below
+before this candidate is called published.
+
+Creation retains approved prior motion scenes in a shorter edit, replacing
+the clothed pre-Fall human shot with a new face portrait. Fall opens with a
+1.5-second hold of its corrected temptation still, then shows Eve eating,
+passing fig-like fruit to Adam, Adam eating, concerned eyes, and departure
+in skin garments. Framing and foliage conceal bodies before eating. Genesis
+does not name the fruit species; its fig-like form is an artistic choice.
+The short retellings omit some events. Audio fully decodes but was not
+listening-reviewed; this does not certify audible quality or a transcript.
+
+New local posters are actual frames: Creation at 5.5 seconds, land and plants;
+Fall at 0.75 seconds, temptation with concealed bodies. Both are 1280 x 720
+WebP, quality 72, below 100 KB, inspected at full size. Their names are
+`story-video-creation-poster-v2.webp` and
+`story-video-fall-of-man-poster-v2.webp`. Existing reader/Story illustrations,
+offline/error fallback images, other videos, viewport autoplay, adjacent
+preloading and reduced-motion/data behavior are unchanged. No MP4 is bundled.
+
+The catalog now has no active YouTube videos. The live YouTube runner reports
+NOT APPLICABLE, while the existing protocol/lifecycle fixtures remain. The
+viewport browser fixture supplies its explicit YouTube API-double ID only
+inside the isolated fixture server; production bridge IDs still come solely
+from the active catalog. MP4 decoding checks include the revised Creation.
+
+Source video SHA-256 values:
+- Creation: `5440db95566c1c69dc688a521ae206301619a86f168bd07789077160019a0b55`.
+- Fall: `d89ee03703c73e411c15924d0f134b00aa2950ddc3c84c09f08f78327b6f3f99`.
+
+### Candidate verification and current blockers
+
+Canonical baseline `f57082275eb3c529bffb5e05e76b8477ee090ac8` and freshly opened
+Sites mirror `27664c064e3c92eaeff97c24cd4ee2d98ff7bcc3` match for app source,
+package files and hosting configuration. This work uses a new isolated checkout;
+no existing user checkout or stash was changed.
+
+The shared web/mobile build passed. All 67 non-browser checks expanded from
+`check`, `check:sync`, `check:release`, `check:mobile`, `check:images` and
+`check:videos` passed, with zero failures. `check-release-smoke.mjs` was
+explicitly NOT RUN: managed Linux requires the supplied browser tools. This
+is not a full `release:prepare` pass. The managed preview command stopped
+because this Worker project has neither a dev script nor static.directory;
+no alternate server/browser was launched or security setting changed.
+
+Both bundles identify build 352, fingerprint
+`5a6f8ba5730c77a3ec0e37355bfe90d5b3cc5425b85baf6c5ff947398e2d0de7`.
+Player/autoplay source and `data/story-images.json` match the original baseline.
+Detailed check results are in ignored `outputs/genesis-video-checks/`.
+
+R2 upload is pending Google device verification for the authorized Cloudflare
+account; neither versioned video object has been uploaded by this session.
+Accordingly, the revised remote URLs and real playback remain unverified.
+A normal proxy-respecting GET of the live `/release.json` returned HTTP 403;
+user history was checked, and no retry or alternate path was used. This was
+an HTTP access failure, not an automatic approval-review rejection.
+
+No main merge, GitHub main push, Sites publication, or native installation has
+been performed for this candidate. No authorized Mac/device execution surface
+is available in this session. Device build numbers, launches, signed-asset
+parity, and physical-device playback therefore remain unverified.

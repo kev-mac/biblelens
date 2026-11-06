@@ -52,9 +52,12 @@ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'biblelens-video-check-'));
 try{
  const records=JSON.parse(fs.readFileSync('data/story-videos.json'));
  const active=storyVideos(records,JSON.parse(fs.readFileSync('data/story-images.json','utf8')));
- assert.equal(active['The Creation'].poster,video.poster,'Creation uses its reviewed video frame');
+ assert.equal(active['The Creation'].poster,'/assets/story-video-creation-poster-v2.webp','Creation uses its revised reviewed frame');
  assert.deepEqual(storyVideos({'The Creation':{...records['The Creation'],status:'pending'}},{'The Creation':art}),{},'Pending videos stay excluded');
- assert.equal(records['The Creation'].videoId,'BDNJ8-wtaeA','Retain the verified unlisted YouTube ID');
+ assert.equal(active['The Creation'].provider,'mp4','Creation uses the approved revised MP4');
+ assert.equal(active['The Creation'].src,'https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Creation-v3.mp4');
+ assert.equal(active['The Fall of Man'].poster,'/assets/story-video-fall-of-man-poster-v2.webp');
+ assert.equal(active['The Fall of Man'].src,'https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Fall-of-Man-v3.mp4');
  assert.throws(()=>storyVideos({'The Creation':{...records['The Creation'],poster:null}},{'The Creation':art}),/poster/,'A verified ID alone cannot activate a video without its reviewed frame');
  assert.throws(()=>storyVideos({'Unknown':{status:'pending',provider:'youtube'}},{'The Creation':art}),/Unknown video story/);
  fs.mkdirSync(dir+'/assets');fs.writeFileSync(dir+video.poster,'poster fixture');
