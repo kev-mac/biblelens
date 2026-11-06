@@ -652,3 +652,38 @@ Preparation checks passed: `check-story-videos.mjs`, `check-story-mp4.mjs`,
 `check-story-viewport.mjs` and `git diff --check`. Readability completed in its
 existing report-only mode. No build-353 bundle, real-media browser check,
 publication or native installation is claimed by this preparation checkpoint.
+
+## Uploaded-video release 355 (2026-11-06)
+
+Kevin explicitly requested the site/app update, publication and installation
+after the R2 upload. The candidate preserves canonical build 354 (`cb5a070c`),
+including the Explore artwork fix and newer Story controls/preloading.
+The signed-in R2 completed object list was inspected on both pages. It contains
+all thirteen Extended replacements and eight other new clips. The upload-panel
+34/38 counter is not used as proof. File names and displayed rounded sizes match
+the supplied local files. No media URL was guessed from an unfinished upload.
+
+All 21 corresponding local MP4s fully decoded without errors. Five actual
+frames from each were compared beside the existing Story reference. Nineteen
+were selected for activation with versioned 1280x720 WebP posters below 100 KB,
+plain descriptions of the scenes actually shown, and retained offline artwork.
+No MP4 is packaged. Public file hashes, sizes, durations, poster timestamps,
+reference paths and review holds are in `docs/story-video-batch-355.json`.
+Contact sheets and the detailed local decode audit remain in ignored
+`outputs/uploaded-video-355`. Audio was not listening-reviewed; sparse frame
+sampling is not a full motion/anatomy or physical-device playback certification.
+
+Two videos are held under AGENTS.md's instruction, "Do not publish an unresolved
+continuity break." Joseph and His Brothers changes the young Joseph's facial
+structure and natural hair texture from the approved reference. Jacob Blesses
+His Family changes the elderly, white-bearded Jacob into a substantially younger
+grey-bearded man. Their revised clips are uploaded but remain pending repair.
+The Family of Noah, The Tower of Babel and Abram and Lot are not in the completed
+R2 object list and also remain pending. The previously rejected Birth and Rescue
+of Moses has no new footage to activate. The release has 24 active clips total,
+including the five already published. No additional content approval is pending.
+
+The old device blocker has been superseded: the Mac session successfully signed
+and installed build 354 on Kevin's iPhone 16 Pro and iPad mini (A17 Pro).
+The next installation must be built from this release's exact source and checked
+again; the earlier device installation is not evidence that build 355 is installed.

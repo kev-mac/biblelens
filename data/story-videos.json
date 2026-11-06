@@ -52,9 +52,13 @@
     "libraryFileId": "libfile_fde3_f-aa1022fe7a10819186909cfdbf10758b_2cd39a2a50248191b2b8d2ef3ad1f429"
   },
   "The Call of Abram": {
-    "status": "pending",
+    "status": "ready",
     "provider": "mp4",
-    "libraryFileId": "libfile_fde3_f-36a463ad968881918c767e41fa3a89ce_2cd39a2a50248191b2b8d2ef3ad1f429"
+    "libraryFileId": "libfile_fde3_f-36a463ad968881918c767e41fa3a89ce_2cd39a2a50248191b2b8d2ef3ad1f429",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Call-of-Abram.mp4",
+    "poster": "/assets/story-video-the-call-of-abram-poster-v1.webp",
+    "posterAlt": "An older traveler leads a household through rocky hills before dawn. An imagined scene.",
+    "description": "A household travels through rocky hills before dawn. Later, an older man places stones together beneath trees."
   },
   "Abram and Lot": {
     "status": "pending",
@@ -62,48 +66,158 @@
     "libraryFileId": "libfile_fde3_f-89446a3ce3688191bbee65a280a98f45_2cd39a2a50248191b2b8d2ef3ad1f429"
   },
   "Hagar and Ishmael": {
-    "status": "pending",
+    "status": "ready",
     "provider": "mp4",
-    "libraryFileId": "libfile_fde3_f-83809deab1cc8191a1ff43968c5c630d_2cd39a2a50248191b2b8d2ef3ad1f429"
+    "libraryFileId": "libfile_fde3_f-83809deab1cc8191a1ff43968c5c630d_2cd39a2a50248191b2b8d2ef3ad1f429",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hagar-and-Ishmael.mp4",
+    "poster": "/assets/story-video-hagar-and-ishmael-poster-v1.webp",
+    "posterAlt": "A pregnant woman rests beside a spring in a rocky canyon. An imagined scene.",
+    "description": "A pregnant woman rests beside a spring in a shaded canyon. Later, she cradles a newborn outside a tent."
   },
   "Abraham and Sarah’s Covenant": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Abraham-and-Sarahs-Covenant.mp4",
+    "poster": "/assets/story-video-abraham-and-sarah-s-covenant-poster-v1.webp",
+    "posterAlt": "An older woman listens from her tent as a man serves three visitors. An imagined scene.",
+    "description": "An older woman listens at a tent entrance. Behind her, a man serves food to three seated visitors. Her surprised expression becomes a smile."
   },
   "Lot Leaves Sodom": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Lot-Leaves-Sodom.mp4",
+    "poster": "/assets/story-video-lot-leaves-sodom-poster-v1.webp",
+    "posterAlt": "An older man and two young women leave a burning city as another woman turns back. An imagined scene.",
+    "description": "An older man and two young women climb a rocky path away from a burning city. Behind them, another woman pauses and turns back."
   },
   "Isaac and Ishmael": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Isaac-and-Ishmael-Extended-v2.mp4",
+    "poster": "/assets/story-video-isaac-and-ishmael-poster-v1.webp",
+    "posterAlt": "A woman draws water beside a boy resting in the shade. An imagined scene.",
+    "description": "An older woman smiles with a young child. A woman and an older boy leave their camp. Later, the woman finds water and shares it with the boy."
   },
   "The Binding of Isaac": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Binding-of-Isaac-Extended-v2.mp4",
+    "poster": "/assets/story-video-the-binding-of-isaac-poster-v1.webp",
+    "posterAlt": "An older man and a boy stand beside a stone altar and a ram. An imagined scene.",
+    "description": "An older man and a boy carry supplies up a rocky path. They stand beside a stone altar. A ram appears in nearby thorn scrub."
   },
   "Isaac and Rebekah": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Isaac-and-Rebekah-Extended-v2.mp4",
+    "poster": "/assets/story-video-isaac-and-rebekah-poster-v1.webp",
+    "posterAlt": "A traveler leads a line of camels away from a village at dusk. An imagined scene.",
+    "description": "A traveler leads camels from a village. A young woman gives water at a well. Later, she arrives with a camel and meets a man in a field."
   },
   "Jacob and Esau": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jacob-and-Esau-Extended-v2.mp4",
+    "poster": "/assets/story-video-jacob-and-esau-poster-v1.webp",
+    "posterAlt": "Two brothers share a bowl of stew beside a fire. An imagined scene.",
+    "description": "Two brothers exchange a bowl of stew. An older man blesses a younger man. A woman then gives the young man a bundle before he leaves."
   },
   "Jacob’s Household": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jacobs-Household-Extended-v2.mp4",
+    "poster": "/assets/story-video-jacob-s-household-poster-v1.webp",
+    "posterAlt": "A father holds a child while his household works beside sheep. An imagined scene.",
+    "description": "A man meets a woman by a well. He later speaks with an older man and a woman. The final scene shows a growing household with children and sheep."
   },
   "Jacob Returns to Canaan": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jacob-Returns-to-Canaan-Extended-v2.mp4",
+    "poster": "/assets/story-video-jacob-returns-to-canaan-poster-v1.webp",
+    "posterAlt": "Two brothers embrace beside a river as their households wait. An imagined scene.",
+    "description": "A caravan crosses open land. Two men struggle beside a river at night. Later, two brothers meet and embrace as their households wait nearby."
   },
   "Dinah at Shechem": {
-    "status": "pending",
-    "provider": "mp4"
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Dinah-at-Shechem-Extended-v2.mp4",
+    "poster": "/assets/story-video-dinah-at-shechem-poster-v1.webp",
+    "posterAlt": "An older man talks with a seated man while two men stand nearby. An imagined scene.",
+    "description": "Men meet in a courtyard. Two brothers stand together. A young woman leaves through a city gate, and an older man later addresses the brothers."
   },
   "The Death of Rachel": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Rachel.mp4",
+    "poster": "/assets/story-video-the-death-of-rachel-poster-v1.webp",
+    "posterAlt": "A man mourns beside a standing stone as a woman holds a newborn. An imagined scene.",
+    "description": "A man rests his hand on a standing stone and bows his head. A woman holding a newborn and another man stand behind him at dusk."
+  },
+  "Israel Oppressed in Egypt": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Israel-Oppressed-in-Egypt-Extended-v2.mp4",
+    "poster": "/assets/story-video-israel-oppressed-in-egypt-poster-v1.webp",
+    "posterAlt": "Two workers shape mud bricks in the sun. An imagined scene.",
+    "description": "A ruler speaks with men in a stone chamber. Workers shape mud bricks under the sun. Two women later speak together in a lamplit room."
+  },
+  "Joseph and His Brothers": {
     "status": "pending",
-    "provider": "mp4"
+    "provider": "mp4",
+    "holdReason": "Visible identity/age drift from the approved Story reference: young Joseph has different facial structure and hair texture."
+  },
+  "Joseph in Egypt": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Joseph-in-Egypt-Extended-v2.mp4",
+    "poster": "/assets/story-video-joseph-in-egypt-poster-v1.webp",
+    "posterAlt": "A man wearing an Egyptian collar watches workers carry baskets. An imagined scene.",
+    "description": "Men speak inside a stone room. A young man then meets a ruler. Later, he wears an Egyptian collar and oversees people carrying baskets beside grain stores."
+  },
+  "Judah and Tamar": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Judah-and-Tamar-Extended-v2.mp4",
+    "poster": "/assets/story-video-judah-and-tamar-poster-v1.webp",
+    "posterAlt": "A woman and an older man face each other across a table holding a staff and seal. An imagined scene.",
+    "description": "A woman waits at a doorway. A staff, cord and seal lie on a stone surface. Later, she presents these objects before an older man."
+  },
+  "Moses Flees to Midian": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Moses-Flees-to-Midian-Extended-v3.mp4",
+    "poster": "/assets/story-video-moses-flees-to-midian-poster-v1.webp",
+    "posterAlt": "A traveler shares a meal with an older man and a woman in a courtyard. An imagined scene.",
+    "description": "A man leaves a walled settlement and crosses dry ground. He meets women carrying water jars. Later, he shares food with an older man and a woman."
+  },
+  "Moses Returns to Egypt": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Moses-Returns-to-Egypt-Extended-v2.mp4",
+    "poster": "/assets/story-video-moses-returns-to-egypt-poster-v1.webp",
+    "posterAlt": "An older man holding a staff stands before elders who bow. An imagined scene.",
+    "description": "An older man travels with a household and a donkey. He embraces another older man. Later, he addresses a group of elders, who bow."
+  },
+  "Jacob Blesses His Family": {
+    "status": "pending",
+    "provider": "mp4",
+    "holdReason": "Visible age/face drift: the blessing scene replaces the approved elderly white-bearded Jacob with a substantially younger grey-bearded man."
+  },
+  "Joseph Reunites His Family": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Joseph-Reunites-His-Family.mp4",
+    "poster": "/assets/story-video-joseph-reunites-his-family-poster-v1.webp",
+    "posterAlt": "Two men embrace in a stone hall. An imagined scene.",
+    "description": "A man wearing an Egyptian collar places his hands on another man's shoulders. They embrace as other men watch nearby."
+  },
+  "The Burning Bush": {
+    "status": "ready",
+    "provider": "mp4",
+    "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Burning-Bush.mp4",
+    "poster": "/assets/story-video-the-burning-bush-poster-v1.webp",
+    "posterAlt": "An older man holding a staff bows beside a burning bush. An imagined scene.",
+    "description": "An older man stands beside a burning bush in rocky country. He lowers his head and bows while the branches remain visible within the flames."
   }
 }
