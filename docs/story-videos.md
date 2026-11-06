@@ -595,3 +595,25 @@ asset parity has been verified. SSH authentication failed and was not retried.
 The earlier denied live `/release.json` was not retried; full live
 `release:verify` remains unperformed. Prepared local assets and a successful
 Sites deployment do not establish a synchronized installed release.
+
+### Build 352 publication checkpoint (2026-11-06)
+
+Canonical commit `1db27aa4be752fef3bb105fb21c771a75074b23c` was pushed to
+GitHub main. The supported Sites helper pushed source
+`f2e55819fadbe6ccc9eb3813759d929b39eb5536` and packaged the already-built
+Worker. Sites saved version 341 and confirmed successful deployment
+`appgdep_6aedb2b52634819194c4dfa8726ac9c5` at
+https://scripture-lens.kvn-mcgwn.chatgpt.site. Sites version 341 is app build 352.
+Local Worker `/release.json`, web assets, mobile assets and mirror source all
+match fingerprint `5a6f8ba5730c77a3ec0e37355bfe90d5b3cc5425b85baf6c5ff947398e2d0de7`.
+No denied remote URL was fetched for this comparison. Full live verification
+and native installation remain pending as described above.
+
+Kevin has now verified all five follow-up clips: The Family of Noah, The Tower
+of Babel, The Call of Abram, Abram and Lot, and Hagar and Ishmael. They are not
+in this release. Preparing the first two Library files failed before final
+installation because the supported transfer helper requires `os.setxattr`,
+which Windows Python lacks. No file without its required Library metadata was
+used. A cloud-side transfer/upload or Kevin's R2 upload and public URLs are
+needed before integrating the next batch; its app release should use a new
+build number. No R2 upload or availability claim is made for those five clips.
