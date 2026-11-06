@@ -750,3 +750,14 @@ Blesses His Family remain pending their separate continuity repairs, without
 blocking these three uploads. Reader artwork, offline fallbacks and video
 runtime code are retained. No MP4 is bundled. Build 356 preserves the complete
 canonical build-355 source and uses one shared source state for web and native.
+
+The Windows build completed its web artifact but its mobile handoff failed with
+`WinError 5` on the generated-directory rename. That denied operation was not
+retried or replaced with another move tool. The already-authorized Mac native
+build is the shared release environment for this batch. Its first Worker was
+117,117 bytes above the existing 63 MiB publication limit, so three simpler
+actual frames were selected and inspected after compression. Their combined
+poster payload is 46,624 bytes; dimensions remain 1280x720. No video, reader
+artwork, security policy or publication budget was changed. Poster metadata and
+alt text follow the newly selected timestamps. The first candidate's playback
+checks are retained as earlier evidence, not claimed for the final source hash.
