@@ -561,3 +561,37 @@ No main merge, GitHub main push, Sites publication, or native installation has
 been performed for this candidate. No authorized Mac/device execution surface
 is available in this session. Device build numbers, launches, signed-asset
 parity, and physical-device playback therefore remain unverified.
+
+### Reviewed build 352 preparation on OmniBook (2026-11-06)
+
+Kevin supplied the public v3 locations and confirmed both videos played.
+This release integrates the reviewed Creation/Fall commit `5839a104` only;
+the later five-video batch is separate. The R2 403/error 1010 denial was not
+retried or bypassed. Remote decoding and audible quality are not claimed here.
+
+Fresh GitHub main `f5708227` and Sites source `27664c06` matched for release
+source. The older local Sites history is retained on
+`preserved/sites-local-2026-11-06`; existing worktrees and stash are preserved.
+Final `npm run release:prepare` passed. With `check:images`, all 68 unique check
+scripts passed, including local Chromium/WebKit search smoke probes. All 32
+phone/iPad viewport browser fixtures passed. Their two remote-decoding cases
+were explicitly NOT RUN with `--fixture-only`. Readability remains report-only.
+
+An earlier sync-disconnect scheduling assertion passed in isolation and in the
+final complete preparation. Windows needed unchanged Git LF template/audit
+bytes. Repreparing existing `www` exposed the Unix-only replacement API in
+`swap-mobile.py`; the previous output was preserved under
+`outputs/before-final-352-www`, and final preparation into a fresh output passed.
+No production source changed. Logs retain the earlier timing/platform failures.
+Both bundles are 1.1.0 build 352, source fingerprint
+`5a6f8ba5730c77a3ec0e37355bfe90d5b3cc5425b85baf6c5ff947398e2d0de7`.
+Evidence: ignored `outputs/release-352-prepare.log`, `release-352-images.log`
+and `story-viewport-browser/results.json`. Publication results follow separately.
+
+Native work is in Mac session `01a1b070-aba7-7f00-936e-f37ad071d76f`, waiting
+for local execution approval after CoreDeviceService initialization timed out.
+No exact device inventory, installed build, successful launch or signed-native
+asset parity has been verified. SSH authentication failed and was not retried.
+The earlier denied live `/release.json` was not retried; full live
+`release:verify` remains unperformed. Prepared local assets and a successful
+Sites deployment do not establish a synchronized installed release.
