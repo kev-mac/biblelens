@@ -1,0 +1,38 @@
+{
+  "build": 357,
+  "uploadEvidence": "Kevin confirmed completed R2 uploads with matching source byte lengths, SHA-256 and object ETag/local MD5. Local file SHA-256 independently matched.",
+  "audioReview": "Not listening-reviewed",
+  "frameReview": "Five frames per clip compared beside approved Story artwork; Joseph also inspected at 2, 8, 10, 14, 16 and 20 seconds. Sampled frames do not certify every motion frame.",
+  "records": [
+    {
+      "title": "Joseph and His Brothers",
+      "filename": "BibleLens-Joseph-and-His-Brothers-Continuity-v3.mp4",
+      "bytes": 8410245,
+      "sha256": "0d6c6659bf6de838873c1762696f114fca5ede73d55ca702bfda609edb6eaadb",
+      "duration": 23.25,
+      "status": "ready",
+      "reference": "/assets/story-joseph-and-his-brothers-v1.webp",
+      "poster": "/assets/story-video-joseph-and-his-brothers-poster-v1.webp",
+      "posterTimestamp": 22.5,
+      "posterBytes": 10344,
+      "posterSha256": "e5190c484745cf03549b5a0340377f0bbb770fa33496727c064c99134aac554c",
+      "fullLocalDecode": "passed",
+      "sampledContinuityReview": "Curly hair, youthful face, complexion and build remain recognizable in sampled Joseph scenes."
+    },
+    {
+      "title": "Jacob Blesses His Family",
+      "filename": "BibleLens-Jacob-Blesses-His-Family-Continuity-v3.mp4",
+      "bytes": 3818993,
+      "sha256": "8468697b5ca895f8076c8e0c25c8ee7264d978286db3cc1cc655578c944185e4",
+      "duration": 6.04,
+      "status": "ready",
+      "reference": "/assets/story-jacob-blesses-his-family-v1.webp",
+      "poster": "/assets/story-video-jacob-blesses-his-family-poster-v1.webp",
+      "posterTimestamp": 5.29,
+      "posterBytes": 10494,
+      "posterSha256": "3725a3ce484cbbd83811ef2780d462ed96b7dbbfece2e697a8f510b71c76702f",
+      "fullLocalDecode": "passed",
+      "sampledContinuityReview": "No identity break observed against approved Story reference; Jacob portrait keeps hands and sons offscreen."
+    }
+  ]
+}

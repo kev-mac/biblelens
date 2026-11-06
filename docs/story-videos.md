@@ -794,3 +794,27 @@ remain outside this verification. The two continuity repairs remain pending.
 The old unpublished Windows Site snapshot is retained in its named stash,
 `Preserve unpublished initial build 356 snapshot before shared Mac budget fix`.
 Existing user checkouts, changes and stashes were preserved.
+
+## Continuity repairs: build 357 (2026-11-06)
+
+Kevin confirmed the completed R2 uploads of the repaired Joseph and His
+Brothers and Jacob Blesses His Family continuity-v3 clips. Their local source
+files independently match the supplied byte lengths and SHA-256 hashes, and
+both decode fully without FFmpeg errors. Source metadata and versioned poster
+hashes are recorded in `docs/story-video-batch-357.json`.
+
+Five frames per clip were compared beside the approved Story artwork. Joseph
+was also inspected at 2, 8, 10, 14, 16 and 20 seconds. His youthful face, curly
+hair, complexion and build remain recognizable across the sampled scenes.
+Jacob's six-second portrait keeps the elderly face, white beard and striped
+hood; his hands and sons remain outside the frame. No unresolved identity
+break was observed in these samples. Audio was not listening-reviewed and
+sampled frames do not certify every motion frame. Review sheets remain local
+under `outputs/uploaded-video-357`.
+
+The manifest now contains 29 ready clips and no pending continuity holds.
+Descriptions follow the visible scenes: Jacob's portrait does not claim to
+show sons or a blessing gesture. Two actual-frame 1280x720 WebP posters total
+20,838 bytes and were inspected after compression to fit the existing Worker
+budget. Existing reader artwork and offline fallback behavior are retained;
+no MP4 is bundled. The Mac remains the shared build and release environment.
