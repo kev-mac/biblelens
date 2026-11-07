@@ -1,0 +1,141 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Chromium headless shell 1248 executable missing. Preceding nonbrowser/search checks passed; readability inherited report-only. No browser installed.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill says skip browser QA in this state; no preview server/browser install/substitute managed control route.",
+  "publication": {
+    "status": "Inherited denial; no publication attempt in Ephesians",
+    "action": "deploy saved public build 386",
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Automatic approval review rejected deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication or bypass. No save/deploy/mirror push/access change/substitute version attempted. Frozen saved source/archive untouched."
+  },
+  "liveBytes": "Inherited denied live HTTP/image/release:verify operations remain deferred; local immutable-origin fixture is not live HTTP verification.",
+  "devices": "No callable Mac/device connector or configured VPN. Signing, signed public versus www parity, physical install/query/launch incomplete. Historical build 359 is not current device evidence.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) unresolved; sync unchanged/not retested.",
+  "assetPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedGitBlobsVerified": 1147,
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "fullReleaseCandidateArchiveProduced": false,
+  "nextBookArtworkReviewed": false,
+  "handoff": "research/notes/philippians-artwork-handoff-from-ephesians-2026-11-07.md",
+  "visualReview": {
+    "nativeImagesViewed": 6,
+    "imageDimensions": [
+      960,
+      540
+    ],
+    "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "visiblePeople": 0,
+    "visibleAnimals": 0,
+    "generationCalls": 0,
+    "nextBookArtworkOpened": false,
+    "unscaledStyleComparisons": 6,
+    "sideBySideObjectAndPriorBookComparisons": 3
+  },
+  "syncChanged": false,
+  "dependencyFilesChanged": false,
+  "scope": "Ephesians only; all six images retained, zero generated/replaced; zero production changes",
+  "baseline": "d9653ffd56004e7ca103845e70655699431cc8bb",
+  "checks": [
+    {
+      "command": "npm ci --registry=https://registry.npmjs.org --cache=/tmp/ephesians-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-npm-ci.log",
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile (includes web build)",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-build-mobile.log",
+      "logSha256": "be1fc77b17425b8532647ff3cdf846dd4bc271ba7239982d351438ec0221d2d4"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-images.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-mobile.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-release.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/ephesians-all.log",
+      "logSha256": "a3f5b77bd3f0cea98bafe48fb415b75b3a607611cbb435f4cb0a943a8d7cd1ff"
+    },
+    {
+      "command": "node research/notes/ephesians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-focused.log",
+      "logSha256": "4c9e98f3a02f028ff28093ad3607d745ff11f72c9eab8274561f1f594b4ca539"
+    },
+    {
+      "command": "node research/notes/ephesians-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/ephesians-mirror.log",
+      "logSha256": "815c93b92fa958add15ac31ee7f2a645306eb4bcbdd3410582e8b1a04103ec80"
+    },
+    {
+      "command": "node research/notes/ephesians-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "result": "6/6 retained; 2010 production files / 1619 assets unchanged; gaps 21 internal, 18/24 boundaries; zero close pairs"
+    },
+    {
+      "command": "git diff --check; node --check for current source-audit, verifier and mirror comparison",
+      "exitCode": 0
+    }
+  ],
+  "mirror": {
+    "baseline": "d9653ffd56004e7ca103845e70655699431cc8bb",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential read-only opening for the Ephesians review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "focused": {
+    "chapterCount": 6,
+    "verseCount": 155,
+    "negativeCoverageChecks": 6,
+    "offlineNetworkCalls": 0,
+    "inheritedAbsentFields": [],
+    "inheritedEmptyStrings": [],
+    "minimumInternalGap": 21,
+    "originFixtureCalls": 6
+  }
+}

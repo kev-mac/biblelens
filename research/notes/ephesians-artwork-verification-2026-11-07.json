@@ -1,0 +1,167 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "Ephesians",
+  "canonicalBaseline": "d9653ffd56004e7ca103845e70655699431cc8bb",
+  "chapterCount": 6,
+  "verseCount": 155,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-ephesians-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 23,
+      "bytes": 142002,
+      "sha256": "ec7bd267bc8262f22d3af3c4b5db548e1970a14849110b8fbb12806af6fcc84d",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-ephesians-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 201398,
+      "sha256": "eb9ffe94e1ab980434b5eafdf70f980d3a2ae4b27bbc9cd735d0df520409e2a5",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-ephesians-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 180238,
+      "sha256": "b9f7d126a0b030d884549a4d64bbce16ace75d15dca6364b7c6581c7a40a468b",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-ephesians-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 32,
+      "bytes": 177082,
+      "sha256": "141cf31c156c796331d01a9f223db5c0b58ddee8ca7302c3db4ec8652ed9c1f3",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-ephesians-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 33,
+      "bytes": 168978,
+      "sha256": "56451abf1189ec58a487d2246bf57f0b569effc9b78137e88a6c997bec4c3e64",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-ephesians-06-opening-v1.webp",
+      "verse": 0,
+      "verses": 24,
+      "bytes": 155402,
+      "sha256": "5f5cd79ef4730bb374a0b6e1ffbd4920a92ce7964b3d858715f54b3231bd8364",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 6,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 47,
+        "chapter": 6,
+        "verse": 0,
+        "position": 131,
+        "src": "/assets/chapter-galatians-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 48,
+        "chapter": 1,
+        "verse": 0,
+        "position": 149,
+        "src": "/assets/chapter-ephesians-01-opening-v1.webp"
+      },
+      "gap": 18
+    },
+    {
+      "a": {
+        "book": 48,
+        "chapter": 6,
+        "verse": 0,
+        "position": 280,
+        "src": "/assets/chapter-ephesians-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 49,
+        "chapter": 1,
+        "verse": 0,
+        "position": 304,
+        "src": "/assets/chapter-philippians-01-opening-v1.webp"
+      },
+      "gap": 24
+    }
+  ],
+  "minimumInternalGap": 21,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Ephesians existing 6 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 6
+}
