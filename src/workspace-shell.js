@@ -44,6 +44,9 @@
  function measureWorkspaceHeader(){
   const height=Math.ceil(masthead.getBoundingClientRect().height);
   document.documentElement.style.setProperty('--ux13-masthead-height',height+'px');
+  // The body declares responsive fallback values, so its measured value must
+  // override those declarations rather than relying on inheritance from html.
+  document.body.style.setProperty('--ux13-masthead-height',height+'px');
   const bar=el('lensReadingBar');
   if(bar)document.documentElement.style.setProperty('--reader-bar-height',Math.ceil(bar.getBoundingClientRect().height)+'px');
  }

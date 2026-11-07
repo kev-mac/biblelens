@@ -33,7 +33,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
     await page.locator('#lens-settings').focus();await page.keyboard.press('Enter');await page.locator('#reader-settings[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-settings');
     await page.evaluate(()=>scrollTo(0,500));await page.waitForTimeout(300);
-    const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON()));assert(sticky[0].top>=(native?24:0)-1);assert(sticky[1].top>=sticky[0].bottom-1);
+    const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
+    assert(Math.abs(await page.locator('body').evaluate(node=>parseFloat(getComputedStyle(node).getPropertyValue('--ux13-masthead-height')))-sticky[0].height)<=1,'Measured header height reaches the body after scrolling');
     assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
     await page.evaluate(()=>scrollTo(0,0));matrix.push({engine,width,native,dark,status:'PASS'});
    }

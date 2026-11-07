@@ -78,7 +78,8 @@ click('[data-lens-chapter]');assert.equal(context.activeVerse,null);assert.equal
 vm.runInContext(workspace.slice(workspace.indexOf(' function evidenceOpener('),workspace.indexOf(' function showInspectorSheet(')),context);
 const freshMarker={category:'T'};nodes.set('verse-12',{querySelector:selector=>selector==='[data-lens-category="T"]'?freshMarker:null});
 context.activeVerse=12;context.activeEvidenceCategory='T';assert.equal(context.evidenceOpener(),freshMarker,'Resolve the new pill after rendering replaces its opener');
-context.activeEvidenceCategory=null;context.inspectorOpener={dataset:{lensCategory:'T'}};assert.equal(context.evidenceOpener(),freshMarker,'Return to the original pill after viewing all verse evidence');
+context.activeEvidenceCategory=null;context.inspectorOpener={dataset:{lensCategory:'T',lensInspect:'12'}};assert.equal(context.evidenceOpener(),freshMarker,'Return to the original pill after viewing all verse evidence');
+context.activeVerse=null;assert.equal(context.evidenceOpener(),freshMarker,'Whole Chapter retains the launching verse identity for close/Escape');
 
 // Inspect the final CSS cascade, including both themes and the original inline placement.
 const rules=[];postcss.parse(read('src/overrides.css')).walkRules(rule=>{if(!rule.parent.name)rules.push(rule);});

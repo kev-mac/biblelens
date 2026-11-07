@@ -8,6 +8,7 @@ const record=(id,extra={})=>({id,verse:3,ref:'Genesis 1:3',title:'Context '+id,s
 const shared=record('fixture-shared',{tags:['H','G','T','T']});
 const fixtures={history:[shared,shared,record('fixture-translation',{tag:'T'}),record('fixture-context',{tag:'T',activeTags:['H'],placementRole:'context'})],science:[record('fixture-shared',{tag:'H'}),record('fixture-science')],contradictions:[record('fixture-violation',{tag:'V'}),record('fixture-comparison')],questions:[record('fixture-question',{tag:'Q'})],commandments:[record('fixture-law',{tags:['V','H']})]};
 const expected={T:2,V:1,commandments:1,Q:1,academic:3,contradictions:1};
+const palette={T:'168,85,247',V:'244,63,94',commandments:'20,184,166',Q:'16,185,129',academic:'59,130,246',contradictions:'249,115,22'};
 let runs=0;
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();
@@ -29,6 +30,13 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    for(const [key,count] of Object.entries(expected)){
     const pill=page.locator(`#verse-3 [data-lens-category="${key}"]`),label=await pill.innerText();
     assert.equal(Number(await pill.getAttribute('data-evidence-count')),count);assert.equal(label,label.toUpperCase());assert.equal(label.includes('('+count+')'),count>1);
+    const colors=await pill.evaluate((node,{rgb,dark})=>{
+     const mark=node.querySelector('.verse-study-pill'),probe=document.createElement('span');probe.hidden=true;
+     probe.style.color=`color-mix(in srgb,rgb(${rgb}) ${dark?70:65}%,${dark?'white':'black'})`;document.body.append(probe);
+     const expected=getComputedStyle(probe).color,style=getComputedStyle(mark),tone=getComputedStyle(node).getPropertyValue('--theme-rgb').replace(/\s/g,'');probe.remove();
+     return {tone,text:style.color===expected,border:style.borderTopColor===expected};
+    },{rgb:palette[key],dark:theme==='dark'});
+    assert.deepEqual(colors,{tone:palette[key],text:true,border:true},'Text and border match the existing category palette in this theme');
     await pill.focus();if(width<=820)await pill.tap();else await page.keyboard.press('Enter');
     const panel=page.locator('#ux-context-panel');await page.locator('#lens-inspector-sheet[open]').waitFor();
     assert.equal(await panel.getAttribute('data-evidence-category'),key);assert.equal(await panel.getAttribute('data-evidence-view'),'summary');
@@ -39,6 +47,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     await panel.locator('[data-lens-summary]').click();assert.equal(await panel.getAttribute('data-evidence-view'),'summary');
     await page.keyboard.press('Escape');await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});assert(await pill.evaluate(node=>node===document.activeElement),'Focus returns to the current category pill');
    }
+   const launch=page.locator('#verse-3 [data-lens-category="T"]');await launch.click();await page.locator('#lens-inspector-sheet[open]').waitFor();
+   await page.locator('[data-lens-chapter]').click();await page.keyboard.press('Escape');
+   await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});assert(await launch.evaluate(node=>node===document.activeElement),'Whole Chapter returns focus to the launching pill');
    const preserved=await page.locator('#verse-3 [data-scripture]').evaluate(node=>{const text=node.firstChild;BibleLensWorkspace.refresh();return node.firstChild===text;});assert(preserved,'Evidence refresh preserves scripture nodes');
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);runs++;console.log('PASS evidence pills',engine,width,theme);
   }finally{await context.close();}

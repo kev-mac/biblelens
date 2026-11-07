@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 391 source
         run: |
-          git merge-base --is-ancestor 1ecbce3e50e7c4b094ac2a1f2d89dae095265f5c HEAD
+          git merge-base --is-ancestor 752c6c1809315d17637ec195a320389bfabb8f39 HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,391);
-          assert.equal(release.sourceHash,'b6c048593e1d2efb3be3dd08ebd80a17591fbdcce694c95f119fe45220a84088');
+          assert.equal(release.sourceHash,'c38bab5f53d66772592797219cbe80f3b1b1c0e43191b2b2898e9f71b3dee995');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
