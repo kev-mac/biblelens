@@ -1,0 +1,161 @@
+{
+  "book": "2 Peter",
+  "baseline": "8c5d59c25542d7d68e92963fac5ee83ec4c4afb4",
+  "chapters": 3,
+  "verseCount": 61,
+  "totalPlacements": 3,
+  "chapterOpeners": 3,
+  "storyPlacements": 0,
+  "retained": 3,
+  "replaced": 0,
+  "totalImageBytes": 335086,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-peter-01-opening-v1.webp",
+      "alt": "Imagined scene: A clay lamp lights a dark cave as dawn breaks beyond the hills.",
+      "width": 960,
+      "height": 540,
+      "bytes": 56546,
+      "sha256": "88dd984d61a7ca09fd60325971307b1c56c24cfef542545c0f7265f6ebe9b734",
+      "verses": 21,
+      "textBasis": "1:19 prophetic word compared to a lamp in a dark place until dawn/day-star. Cave, lamp and distant hills illustrate the simile; not a narrated Peter hiding place or the Transfiguration itself.",
+      "fullSizeReview": "Native 960x540: clay lamp bowl/rim, opening, loop handle and attachment, spout/wick/flame, stone ledge/contact/shadow, cave opening/rock, layered hills and small star. Coherent shapes, warm light against cool blue dawn, restrained material rendering; no definite malformed object, text or signature. Exact lamp date, fuel physics and star identity not certified.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-peter-02-opening-v1.webp",
+      "alt": "Imagined scene: A dry spring lies beneath a rocky slope as clouds cross the sky.",
+      "width": 960,
+      "height": 540,
+      "bytes": 151858,
+      "sha256": "042f9b0fa2f54d240207de531ba78e849c05a6fbd35ddcbebc4273396a31d99f",
+      "verses": 22,
+      "textBasis": "2:17 springs/wells without water and storm-driven clouds: dry stone basin beneath rock with heavy clouds. Literary teaching metaphor, not a named site, actual false-teacher portrait or a claim that the entire surrounding landscape is drought-stricken.",
+      "fullSizeReview": "Native 960x540: dry cracked basin floor with no visible water, stone retaining wall/courses, overhanging rock face, loose stones, dry foreground stalks, green distant hills and layered gray clouds. Coherent ground/stone joins and weather motif; no definite malformed object, lettering or signature. Not a precise historic spring reconstruction or a claim of universal drought.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-peter-03-opening-v1.webp",
+      "alt": "Imagined scene: A clear stream winds through green hills beneath a bright sky.",
+      "width": 960,
+      "height": 540,
+      "bytes": 126682,
+      "sha256": "ca6ff4b0eae1061b64b59ced6295fedb0cf9910944602c775e555f50465a58ff",
+      "verses": 18,
+      "textBasis": "3:13 promise of new heavens/new earth: green hills, clear stream and bright sky provide a conceptual literary evocation. Not a predicted geographic map, scientific account, archaeological evidence or literal final-judgment scene.",
+      "fullSizeReview": "Native 960x540: winding stream and tributary perspective, banks/rocks/grass contact, red wildflowers, green hills, blue distant ridges and bright layered clouds. Coherent watercourse/terrain and varied natural greens/blues; no definite impossible join, text or signature. Unoccupied ideal landscape is literary illustration, not a known place or a geographic forecast.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [
+        21,
+        22
+      ],
+      "minimumInternalGap": 21,
+      "boundaries": [
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30469,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30483,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 60,
+            "chapter": 3,
+            "verse": 0,
+            "position": 30526,
+            "src": "/assets/chapter-2-peter-03-opening-v1.webp"
+          },
+          "b": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30544,
+            "src": "/assets/chapter-1-john-01-opening-v1.webp"
+          },
+          "gap": 18
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [
+        21,
+        22
+      ],
+      "minimumInternalGap": 21,
+      "boundaries": [
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30470,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30484,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 60,
+            "chapter": 3,
+            "verse": 0,
+            "position": 30527,
+            "src": "/assets/chapter-2-peter-03-opening-v1.webp"
+          },
+          "b": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30545,
+            "src": "/assets/chapter-1-john-01-opening-v1.webp"
+          },
+          "gap": 18
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

@@ -1,0 +1,128 @@
+{
+  "scope": "2 Peter only; no 1 John artwork opened or reviewed",
+  "baseline": "8c5d59c25542d7d68e92963fac5ee83ec4c4afb4",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "Actual file viewed separately and in three native-size side-by-side boards. Style only, never an identity reference."
+  },
+  "priorLedgersConsulted": [
+    "1-peter-artwork-audit-2026-11-07.md",
+    "1-peter-artwork-inventory-2026-11-07.json",
+    "1-peter-artwork-verification-2026-11-07.json",
+    "1-peter-continuity-inventory-2026-11-07.json",
+    "1-peter-artwork-2026-11-07/",
+    "2-peter-visual-continuity-audit-2026-11-04.md",
+    "2-peter-generation-ledger-2026-11-04.json",
+    "matthew-artwork-audit-2026-11-07.md",
+    "john-artwork-audit-2026-11-07.md",
+    "acts-artwork-audit-2026-11-07.md",
+    "genesis-artwork-audit-2026-11-06.md",
+    "numbers-artwork-audit-2026-11-07.md"
+  ],
+  "visiblePeople": [],
+  "visibleHumanGroups": [],
+  "visibleAnimals": [],
+  "textualMentionsAreNotDepictions": [
+    {
+      "chapter": 1,
+      "mentions": [
+        "Simon Peter",
+        "Jesus Christ",
+        "God the Father",
+        "prophets",
+        "holy-mountain eyewitnesses"
+      ],
+      "finding": "Only lamp, cave and dawn; illustrates 1:19. No Peter portrait, cave biography, literal Transfiguration cast or implied author location."
+    },
+    {
+      "chapter": 2,
+      "mentions": [
+        "false teachers/prophets",
+        "angels",
+        "Noah and seven others",
+        "Lot",
+        "Balaam son of Bosor/Beor",
+        "donkey",
+        "dog and sow"
+      ],
+      "finding": "Only dry spring and clouds at 2:17. No named people, animals or angels depicted; rhetorical comparisons do not create portrait or anatomical evidence. Ark eight-adult rule remains."
+    },
+    {
+      "chapter": 3,
+      "mentions": [
+        "prophets",
+        "apostles",
+        "scoffers",
+        "Paul",
+        "Jesus Christ"
+      ],
+      "finding": "Only unoccupied stream and hills as literary evocation of 3:13. Does not portray Paul or foretell exact terrain, final judgment or current archaeology."
+    }
+  ],
+  "inheritedPeterGuidance": {
+    "person": "Simon Peter",
+    "references": [
+      "src/assets/story-calling-the-first-disciples-v1.webp",
+      "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "src/assets/story-the-miraculous-catch-v1.webp",
+      "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+    ],
+    "currentAppearances": [
+      "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "src/assets/story-ananias-and-sapphira-v1.webp",
+      "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+      "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent nose, natural dark curls, full dark beard with modest gray, sturdy/lean adult build.",
+    "age": "Early Acts soon after resurrection; later Cornelius/escape years allow modest graying, not a new identity. Exact calendar ages unasserted.",
+    "result": "Six Gospel comparisons and four Acts neighbors checked in native portraits alongside actual originals. Faces/complexion/hair/build compatible. Council left greying listener is compatible but exact assignment not certified; central gray speaker is James per alt. Acts 1 grey lots participant is not labeled Peter. Inactive Pentecost v1 never reactivated or used as reference.",
+    "status": "Current approved Acts ledger guidance carried forward; earlier portrait files were NOT newly visually reviewed or supplied to a generation tool in this session because there is no human portrayal or generation."
+  },
+  "otherIdentityGuidance": "Jesus uses current Gospel/Acts approved anchors, brown complexion, natural dark curls/full beard, prominent nose and lean adult build; ministry/resurrection scenes do not gain decades of age. Apostle John is not John the Baptist or John Mark. Silvanus/Silas or Mark/Marcus historical identification cannot be inferred from a greeting alone. Sarah elderly anchor is story-abraham-and-sarahs-covenant-v1.webp; Genesis audit controls Noah/Abraham and narrative ages. Current Acts Peter allows modest later graying, not identity drift. Do not use rejected Pentecost/first-journey v1 or old sending-twelve/arrest files as approved anchors. Numbers Balaam approved anchors chapter-numbers-23-opening-v1.webp and chapter-numbers-24-opening-v1.webp: long lined brown face, strong nose, natural gray curls/beard across short interval. Lot carries brown complexion, tight natural curls, compact beard/lean adult build with plausible graying after roughly two decades. These are carried ledger references, not newly reviewed portraits or tool inputs here.",
+  "generationCalls": [],
+  "replacements": [],
+  "futureGenerationRequirement": "For every identifiable recurring person in a future image generation/edit, pass the actual clear approved earlier identity image files as visual inputs (plus style reference separately); text descriptions or prior viewing alone are insufficient. Compare full size with actual references and nearby depictions, including cross-book appearances; elapsed narrative time controls aging. Leave unresolved identity pending or choose text-faithful nonportrait scene.",
+  "inspectionPanels": [
+    {
+      "path": "/tmp/2-peter-review/boundary-1-peter-2-peter.png",
+      "bytes": 1674037,
+      "sha256": "f9a0e621752607031e57747579a837f6a4e23a39b564ca0dabd4177333c6ca09",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    },
+    {
+      "path": "/tmp/2-peter-review/neighbors-1-2.png",
+      "bytes": 1608719,
+      "sha256": "e291f87f097bde137335c978f5e883e2a85138891b38923ab9974f93bd8a244d",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    },
+    {
+      "path": "/tmp/2-peter-review/neighbors-2-3.png",
+      "bytes": 1909938,
+      "sha256": "a1cb1327306af2cc933a79b5e99ba1aadf7900910524337a8513bd8eea0145d0",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    },
+    {
+      "path": "/tmp/2-peter-review/style-1.png",
+      "bytes": 1480296,
+      "sha256": "608341cd718edc2aa5bb5eff9c943b78dde81d0f8e93a6a7c44809ce8bb27c15",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    },
+    {
+      "path": "/tmp/2-peter-review/style-2.png",
+      "bytes": 1912138,
+      "sha256": "3b5d4bcba6f095c64d1bfad397236926b09bf9e0b5d31f087832292faa64021e",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    },
+    {
+      "path": "/tmp/2-peter-review/style-3.png",
+      "bytes": 1801117,
+      "sha256": "3f4a271359bc0cdd5fd733c067ae1af1a8335f08e22d58d2ee95f921c8158813",
+      "role": "Inspection only; unscaled 1920x540 composite; no composite enters app"
+    }
+  ],
+  "result": "Retain all three. No humans or animals in 2 Peter images, so no new identity anchor or anatomy defect; no generation/editing. Existing lamp/stone/water/vegetation objects coherent. Exact settings, off-frame structure and star identity not certified. Prior 1 Peter 5 image viewed only for incoming visual comparison; 1 John image never opened.",
+  "nextBookStarted": false
+}

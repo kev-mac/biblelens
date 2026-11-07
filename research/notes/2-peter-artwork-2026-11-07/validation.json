@@ -1,0 +1,201 @@
+{
+  "baseline": "8c5d59c25542d7d68e92963fac5ee83ec4c4afb4",
+  "scope": "2 Peter only; all three existing openers retained, no production edits",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org --cache=/tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/2-peter-npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/2-peter-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "b295302f4525b49d8d3121eccff7a7fda172f01cc0366a6f4e61f37184d3f20d"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "result": "passed; inherited 1 Samuel 7 close pair reported",
+      "logPath": "/tmp/2-peter-check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/2-peter-check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/2-peter-check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/2-peter-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/2-peter-check-verify.log",
+      "logBytes": 383,
+      "logSha256": "c2f80c925db3cecd6aa474393fb108bfa03686844786f39871e858755bdd6862"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "result": "failed at final browser launch; preceding checks passed",
+      "logPath": "/tmp/2-peter-check-all.log",
+      "logBytes": 24169,
+      "logSha256": "26ae432e856982192ea5d5b4ecff17c365e91864a5eeb16750753db85ff7dad8"
+    }
+  ],
+  "additionalPassedChecks": [
+    "Fresh scoped-credential read-only Sites comparison",
+    "2010 production files and 1619 assets byte-identical",
+    "Three chapters/61 verses/183 exact KJV/ASV/WEB fields: presence/type/value preserved",
+    "Three source/Worker/unsigned-native image byte matches; metadata/headings/captions preserved",
+    "Three missing-opener rejections",
+    "1147 immutable pinned Git blobs match source",
+    "Both opener-coordinate conventions: no close pair touching 2 Peter",
+    "Actual offline bundled engine: zero network calls",
+    "git diff --check"
+  ],
+  "production": {
+    "preservedProductionFiles": 2010,
+    "preservedAssets": 1619,
+    "retained": 3,
+    "replaced": 0,
+    "totalImageBytes": 335086,
+    "chapters": 3,
+    "verseCount": 61,
+    "storyPlacements": 0
+  },
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [
+        21,
+        22
+      ],
+      "minimumInternalGap": 21,
+      "boundaries": [
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30469,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30483,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 60,
+            "chapter": 3,
+            "verse": 0,
+            "position": 30526,
+            "src": "/assets/chapter-2-peter-03-opening-v1.webp"
+          },
+          "b": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30544,
+            "src": "/assets/chapter-1-john-01-opening-v1.webp"
+          },
+          "gap": 18
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [
+        21,
+        22
+      ],
+      "minimumInternalGap": 21,
+      "boundaries": [
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30470,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30484,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 60,
+            "chapter": 3,
+            "verse": 0,
+            "position": 30527,
+            "src": "/assets/chapter-2-peter-03-opening-v1.webp"
+          },
+          "b": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30545,
+            "src": "/assets/chapter-1-john-01-opening-v1.webp"
+          },
+          "gap": 18
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Browser assertions did not run. Preceding checks passed; readability remains inherited report-only."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass; no save/deploy, mirror push, access change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1 and no callable cua_repl.js. Sites skill requires skipping browser QA: no preview, browser installation or substitute route.",
+    "Inherited denied live HTTP/image bytes/release:verify deferred without materially new relevant authorization. Local fixture is not live parity. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN. Signing, signed public vs www comparison and installation/query/launch pending. Historical build 359 is not fresh evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains outside scope."
+  ],
+  "nextBookStarted": false
+}
