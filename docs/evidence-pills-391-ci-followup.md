@@ -72,3 +72,31 @@ assertion. Production colors remain unchanged. The current unpublished
 candidate fingerprint is
 `3afe738f05b120305275b8e0aff6dc139bd9392c5c60b637c93e339f01bd8910`;
 a fourth run is required. Do not attribute the prior run's results to it.
+
+## Accepted build 391 browser result
+
+The fourth run,
+[42410122003](https://github.com/kev-mac/biblelens/actions/runs/42410122003),
+completed successfully for the exact `3afe738f05b120305275b8e0aff6dc139bd9392c5c60b637c93e339f01bd8910`
+fingerprint. It passed the complete release preparation, all 24 pill cases and
+all 56 reader cases in real Chromium/WebKit browsers with Chromium sandboxing
+required. This includes rendered category text/border colors in both themes,
+Whole Chapter focus return, sticky headers, safe-area simulation, pickers and
+typed navigation at phone, tablet and desktop widths. These are browser tests,
+not signed native/device installation checks.
+
+The successful CI commit is `ab9d548621f38937a4638bc379fc32c3a409b48c`, based on
+canonical app source `5f195786fd931d3b98f3d9e803029ed7307f989c`. The differences
+outside canonical source are CI configuration/documentation, excluded from the
+release fingerprint. The job retained exact prepared public `dist`/`www`,
+candidate metadata, source/Worker identities and hashes in artifact
+[13589217553](https://github.com/kev-mac/biblelens/actions/runs/42410122003/artifacts/13589217553).
+The artifact is 452,903,235 bytes, ZIP digest
+`b544601613089909fc2ca7a41318854fc27238ca0ac2ca8aaf2300049f6bd1e7`,
+and expires 2026-11-14 at 15:22 Eastern. Its unsigned native assets do not
+constitute an installed app. Preserve this accepted candidate while preparing
+later UI work; do not substitute another source fingerprint when publishing it.
+
+No Site publication or native installation was performed during this CI task.
+The original local browser-control limitations remain; the separate supported
+GitHub runner resolved the test-execution blocker without changing them.
