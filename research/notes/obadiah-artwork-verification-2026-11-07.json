@@ -1,0 +1,84 @@
+{
+  "book": "Obadiah",
+  "canonicalBaseline": "102f09b",
+  "chapterCount": 1,
+  "verseCount": 21,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-obadiah-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 157098,
+      "sha256": "10282b1e7e680ec4affedca3e59626b8635d6b121e64b1a884b1c8042c24cb90",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 1,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 29,
+        "chapter": 9,
+        "verse": 0,
+        "position": 132,
+        "src": "/assets/chapter-amos-09-opening-v2.webp"
+      },
+      "b": {
+        "book": 30,
+        "chapter": 1,
+        "verse": 0,
+        "position": 147,
+        "src": "/assets/chapter-obadiah-01-opening-v1.webp"
+      },
+      "gap": 15
+    },
+    {
+      "a": {
+        "book": 30,
+        "chapter": 1,
+        "verse": 0,
+        "position": 147,
+        "src": "/assets/chapter-obadiah-01-opening-v1.webp"
+      },
+      "b": {
+        "book": 31,
+        "chapter": 1,
+        "verse": 1,
+        "position": 168,
+        "src": "/assets/story-jonah-flees-and-is-swallowed-v1.webp"
+      },
+      "gap": 21
+    }
+  ],
+  "minimumInternalGap": null,
+  "baselineAssetFilesPreserved": 1616,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "pinnedBlobsEqualSource": 1145,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 379,
+    "sourceHash": "242c06b9bc569140a3c97a6fdb4c9a3bf61bab8b9d27f9341cb2d1d6403c38a4"
+  },
+  "workerBytes": 59517400,
+  "workerSha256": "5948b6c0199a5d94d64c1ae176dc23ccfacd438d821da46d1658313563e82988",
+  "originFixtureCalls": 1
+}

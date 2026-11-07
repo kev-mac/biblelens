@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-07",
+  "book": "Obadiah",
+  "canonicalBaseline": "102f09b",
+  "canonicalReviewCommit": "c8f025d27ec1c9f1011364a087cf18fd12e7880d",
+  "review": {
+    "retainedImages": 1,
+    "replacements": 0,
+    "chapterOpeners": 1,
+    "storyPlacements": 0,
+    "boundaryGaps": [
+      15,
+      21
+    ],
+    "closePairsInvolvingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 379,
+    "sourceHash": "242c06b9bc569140a3c97a6fdb4c9a3bf61bab8b9d27f9341cb2d1d6403c38a4"
+  },
+  "workerBytes": 59517400,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed using task-local npm cache; lock unchanged",
+    "buildMobile": "passed inside release:prepare, including shared web build",
+    "images": "passed; all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed this run; inherited intermittent failure remains unresolved",
+    "focusedWorkerOffline": "passed: 1 chapter, 21 verses in KJV/ASV/WEB, one opener and missing-opener rejection, exact source/Worker/native bytes, zero underlying network calls",
+    "baselineAssetFilesPreserved": 1616,
+    "pinnedBlobsEqualSource": 1145,
+    "fullReleasePreparation": "failed: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "browser": "unverified: no supported managed control tool; no browser installation or alternate path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools"
+  },
+  "mirrorBaseline": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 378,
+      "sourceHash": "b9ed14289d5d5c4b23a7bfd2e70d5e0d05e6d015e8891e06c12056027507df7e"
+    },
+    "mirrorCommit": "5ce107319b519ca7988629c12bf7aa6fb4786a15",
+    "mirrorOnly": [],
+    "differences": [
+      "research/notes/amos-artwork-audit-2026-11-07.md",
+      "research/notes/build-378-cloud-release-verification-2026-11-07.json",
+      "research/notes/obadiah-artwork-handoff-from-amos-2026-11-07.md"
+    ]
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "jonah-artwork-handoff-from-obadiah-2026-11-07.md",
+  "nextBookStarted": false,
+  "commitIdentityRepair": "GitHub privacy guard rejected the initial push before publication; only the two unpublished task commits were reauthored using the existing GitHub noreply identity. Application trees and build fingerprint are unchanged."
+}
