@@ -1,0 +1,752 @@
+{
+  "baseline": "0e533d35519d45655f17e813e50e814f09df5e36",
+  "targetBuild": 361,
+  "review": "Full-size review of all active reader files, including normalized title aliases and both Sinai/Mosaic placements. Every original and final corrected WebP reviewed for scene, identity, visible anatomy and animals; small/background faces and occluded digits are bounded by resolution.",
+  "openingChapters": 40,
+  "placementCount": 74,
+  "uniqueFiles": 73,
+  "placements": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Israel Oppressed in Egypt",
+      "src": "/assets/story-israel-oppressed-in-egypt-v1.webp",
+      "alt": "Hebrew workers shape mud and straw into bricks in an Egyptian yard.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Birth and Rescue of Moses",
+      "src": "/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+      "alt": "Pharaoh’s daughter opens a basket holding baby Moses among Nile reeds.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 10,
+      "kind": "story",
+      "title": "Moses Flees to Midian",
+      "src": "/assets/story-moses-flees-to-midian-v1.webp",
+      "alt": "Young Moses waters sheep while Zipporah and her sisters stand beside a well.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Burning Bush",
+      "src": "/assets/story-the-burning-bush-v1.webp",
+      "alt": "Barefoot Moses faces a living bush surrounded by flame at twilight.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 4,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses speaks with Jethro before returning to Egypt.",
+      "src": "/assets/chapter-exodus-04-opening-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 17,
+      "kind": "story",
+      "title": "Moses Returns to Egypt",
+      "src": "/assets/story-moses-returns-to-egypt-v2.webp",
+      "alt": "Moses walks beside a donkey carrying Zipporah and their children toward Egypt.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 5,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Moses and Aaron Before Pharaoh",
+      "src": "/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+      "alt": "Moses and Aaron stand before Pharaoh in a columned Egyptian hall.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 6,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses and Aaron speak with workers near a mudbrick yard.",
+      "src": "/assets/chapter-exodus-06-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 6,
+      "kind": "chapter",
+      "afterVerse": 9,
+      "alt": "Imagined scene: Moses speaks with tired workers beside stacks of mud bricks.",
+      "src": "/assets/chapter-exodus-06-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 7,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses and Aaron stand beside the Nile as its water turns red.",
+      "src": "/assets/chapter-exodus-07-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 7,
+      "afterVerse": 13,
+      "kind": "story",
+      "title": "The Plagues of Egypt",
+      "src": "/assets/story-the-plagues-of-egypt-v1.webp",
+      "alt": "Farmers shield their faces as locusts sweep over fields beside a canal.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 7,
+      "kind": "chapter",
+      "afterVerse": 20,
+      "alt": "Imagined scene: Moses and Aaron stand beside red water as people hold empty jars.",
+      "src": "/assets/chapter-exodus-07-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 8,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Frogs spread among Egyptian houses and river reeds.",
+      "src": "/assets/chapter-exodus-08-opening-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 8,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: Frogs gather around water jars in an Egyptian courtyard.",
+      "src": "/assets/chapter-exodus-08-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 9,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses raises his hand as hail falls over Egyptian fields.",
+      "src": "/assets/chapter-exodus-09-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 9,
+      "kind": "chapter",
+      "afterVerse": 25,
+      "alt": "Imagined scene: Farmers shelter as hail falls on fields of barley and flax.",
+      "src": "/assets/chapter-exodus-09-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 10,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses and Aaron speak before Pharaoh as locusts cover fields.",
+      "src": "/assets/chapter-exodus-10-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 10,
+      "kind": "chapter",
+      "afterVerse": 22,
+      "alt": "Imagined scene: Darkness covers an Egyptian street where people wait at their doors.",
+      "src": "/assets/chapter-exodus-10-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 11,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Passover and the Death of the Firstborn",
+      "src": "/assets/story-the-passover-and-the-death-of-the-firstborn-v1.webp",
+      "alt": "A family shares a lamplit Passover meal with travel bundles ready nearby.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 11,
+      "kind": "chapter",
+      "afterVerse": 8,
+      "alt": "Imagined scene: Moses leaves Pharaoh's hall after delivering his warning.",
+      "src": "/assets/chapter-exodus-11-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 12,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: An Israelite household prepares bread and a lamb in Egypt.",
+      "src": "/assets/chapter-exodus-12-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 12,
+      "afterVerse": 36,
+      "kind": "story",
+      "title": "The Exodus from Egypt",
+      "src": "/assets/story-the-exodus-from-egypt-v1.webp",
+      "alt": "Families leave Egypt with animals and bundles, following a distant pillar of cloud.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 13,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Israelite families leave Egypt with children and animals.",
+      "src": "/assets/chapter-exodus-13-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 13,
+      "kind": "chapter",
+      "afterVerse": 21,
+      "alt": "Imagined scene: Families travel through the wilderness toward a distant pillar of fire.",
+      "src": "/assets/chapter-exodus-13-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 14,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Crossing the Sea",
+      "src": "/assets/story-crossing-the-sea-v1.webp",
+      "alt": "Moses leads families through a path between towering waters under moonlight.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 15,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Elderly Miriam leads women in song beside the sea.",
+      "src": "/assets/chapter-exodus-15-opening-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 15,
+      "kind": "chapter",
+      "afterVerse": 20,
+      "alt": "Imagined scene: Elderly Miriam and other women play hand drums beside the sea.",
+      "src": "/assets/chapter-exodus-15-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 15,
+      "afterVerse": 21,
+      "kind": "story",
+      "title": "Bitter Water, Manna and Quail",
+      "src": "/assets/story-bitter-water-manna-and-quail-v2.webp",
+      "alt": "Families gather small pale manna flakes into baskets near their wilderness tents.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 16,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families gather manna from the wilderness ground.",
+      "src": "/assets/chapter-exodus-16-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 16,
+      "kind": "chapter",
+      "afterVerse": 16,
+      "alt": "Imagined scene: Families gather pale flakes from the ground into woven baskets.",
+      "src": "/assets/chapter-exodus-16-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 17,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Water from the Rock and the Battle with Amalek",
+      "src": "/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+      "alt": "Moses stands by flowing rock water as families fill jars and drink.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 18,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Jethro Advises Moses",
+      "src": "/assets/story-jethro-advises-moses-v1.webp",
+      "alt": "Jethro advises Moses beneath a woven awning while elders hear people nearby.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 19,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Israelite tents stand below a cloud-covered Mount Sinai.",
+      "src": "/assets/chapter-exodus-19-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 19,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Covenant and Ten Commandments at Sinai",
+      "src": "/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+      "alt": "People wait below Sinai as lightning and clouds cover the mountain summit.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 19,
+      "afterVerse": 2,
+      "kind": "story",
+      "title": "Sinai / Mosaic Covenant",
+      "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+      "alt": "Moses holds a scroll before an attentive assembly near the wilderness camp.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 20,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses and the people stand before Mount Sinai.",
+      "src": "/assets/chapter-exodus-20-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 20,
+      "kind": "chapter",
+      "afterVerse": 18,
+      "alt": "Imagined scene: People stand below a mountain covered by clouds and lightning.",
+      "src": "/assets/chapter-exodus-20-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 21,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Elders speak with a family about community laws.",
+      "src": "/assets/chapter-exodus-21-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 21,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: A servant and his household meet elders beside a doorway.",
+      "src": "/assets/chapter-exodus-21-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 22,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Neighbors discuss a lost animal at their camp.",
+      "src": "/assets/chapter-exodus-22-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 22,
+      "kind": "chapter",
+      "afterVerse": 26,
+      "alt": "Imagined scene: A lender returns a woven cloak to a neighbor.",
+      "src": "/assets/chapter-exodus-22-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 23,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A family walks beside a field where animals graze and another person gathers plants.",
+      "src": "/assets/chapter-exodus-23-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 23,
+      "kind": "chapter",
+      "afterVerse": 5,
+      "alt": "Imagined scene: Two travelers help a donkey whose heavy load has slipped.",
+      "src": "/assets/chapter-exodus-23-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 24,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Covenant Is Sealed at Sinai",
+      "src": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+      "alt": "Moses and elders gather at a stone altar surrounded by upright stones.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 24,
+      "afterVerse": 2,
+      "kind": "story",
+      "title": "Sinai / Mosaic Covenant",
+      "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+      "alt": "Moses holds a scroll before an attentive assembly near the wilderness camp.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 25,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Gold, wood, and colored yarn lie ready in a tent.",
+      "src": "/assets/chapter-exodus-25-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 25,
+      "kind": "chapter",
+      "afterVerse": 31,
+      "alt": "Imagined scene: A craftsperson shapes a gold lampstand at a workbench.",
+      "src": "/assets/chapter-exodus-25-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 26,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Curtain cloth, linen, and wood show the sanctuary design.",
+      "src": "/assets/chapter-exodus-26-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 26,
+      "kind": "chapter",
+      "afterVerse": 31,
+      "alt": "Imagined scene: Weavers make blue, purple and scarlet fabric for the sanctuary.",
+      "src": "/assets/chapter-exodus-26-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 27,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A bronze altar and linen courtyard illustrate the design.",
+      "src": "/assets/chapter-exodus-27-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 27,
+      "kind": "chapter",
+      "afterVerse": 9,
+      "alt": "Imagined scene: Linen walls surround the sanctuary courtyard and its altar.",
+      "src": "/assets/chapter-exodus-27-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 28,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Colored yarn and stones lie ready for priestly garments.",
+      "src": "/assets/chapter-exodus-28-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 28,
+      "kind": "chapter",
+      "afterVerse": 12,
+      "alt": "Imagined scene: A craftsperson fits shoulder stones onto a blue priestly garment.",
+      "src": "/assets/chapter-exodus-28-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 29,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Folded linen and oil sit near the tent entrance.",
+      "src": "/assets/chapter-exodus-29-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 29,
+      "kind": "chapter",
+      "afterVerse": 9,
+      "alt": "Imagined scene: Moses arranges linen garments for Aaron and his sons.",
+      "src": "/assets/chapter-exodus-29-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 30,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Incense materials and a bronze basin rest beside a gold altar.",
+      "src": "/assets/chapter-exodus-30-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 30,
+      "kind": "chapter",
+      "afterVerse": 7,
+      "alt": "Imagined scene: A priest tends incense at a small gold altar.",
+      "src": "/assets/chapter-exodus-30-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 31,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses speaks with Bezalel and Oholiab about their work.",
+      "src": "/assets/chapter-exodus-31-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 31,
+      "kind": "chapter",
+      "afterVerse": 5,
+      "alt": "Imagined scene: Craftspeople work with wood, metal and stones at shaded benches.",
+      "src": "/assets/chapter-exodus-31-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 32,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "The Golden Calf",
+      "src": "/assets/story-the-golden-calf-v1.webp",
+      "alt": "Moses holds stone tablets while people gather around a small golden calf.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 33,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Moses Sees God's Glory",
+      "src": "/assets/story-moses-sees-gods-glory-v2.webp",
+      "alt": "Moses shelters his eyes in a rock cleft as bright light passes outside.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 34,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses climbs a mountain carrying two plain stone tablets.",
+      "src": "/assets/chapter-exodus-34-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 34,
+      "kind": "chapter",
+      "afterVerse": 29,
+      "alt": "Imagined scene: Moses carries two stone tablets down the mountain toward the people.",
+      "src": "/assets/chapter-exodus-34-v2.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 35,
+      "afterVerse": 0,
+      "kind": "story",
+      "title": "Building the Tabernacle",
+      "src": "/assets/story-building-the-tabernacle-v1.webp",
+      "alt": "Craftspeople weave colored cloth and fit wooden frames for the tabernacle.",
+      "width": 1200,
+      "height": 675
+    },
+    {
+      "chapter": 36,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families bring materials to artisans at the camp.",
+      "src": "/assets/chapter-exodus-36-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 36,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: Workers stand beside cloth and supplies brought by families.",
+      "src": "/assets/chapter-exodus-36-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 37,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Artisans work near a gold-covered ark in a tent.",
+      "src": "/assets/chapter-exodus-37-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 37,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: Craftspeople finish a gold-covered chest with winged figures.",
+      "src": "/assets/chapter-exodus-37-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 38,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Artisans assemble a bronze altar and courtyard supports.",
+      "src": "/assets/chapter-exodus-38-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 38,
+      "kind": "chapter",
+      "afterVerse": 8,
+      "alt": "Imagined scene: A bronze washing basin stands inside the sanctuary courtyard.",
+      "src": "/assets/chapter-exodus-38-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 39,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Artisans inspect completed priestly garments.",
+      "src": "/assets/chapter-exodus-39-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 39,
+      "kind": "chapter",
+      "afterVerse": 22,
+      "alt": "Imagined scene: Hands inspect a blue robe with woven fruit and small gold bells.",
+      "src": "/assets/chapter-exodus-39-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 40,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: The completed tabernacle stands among Israelite tents.",
+      "src": "/assets/chapter-exodus-40-opening-v1.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "chapter": 40,
+      "kind": "chapter",
+      "afterVerse": 34,
+      "alt": "Imagined scene: A cloud covers the completed sanctuary in the wilderness camp.",
+      "src": "/assets/chapter-exodus-40-v1.webp",
+      "width": 960,
+      "height": 540
+    }
+  ],
+  "gapsUnderFiveVerses": [
+    {
+      "fromChapter": 11,
+      "afterVerse": 8,
+      "fromAsset": "/assets/chapter-exodus-11-v2.webp",
+      "toChapter": 12,
+      "toAfterVerse": 0,
+      "toAsset": "/assets/chapter-exodus-12-opening-v1.webp",
+      "separatingVerses": 2
+    },
+    {
+      "fromChapter": 13,
+      "afterVerse": 21,
+      "fromAsset": "/assets/chapter-exodus-13-v1.webp",
+      "toChapter": 14,
+      "toAfterVerse": 0,
+      "toAsset": "/assets/story-crossing-the-sea-v1.webp",
+      "separatingVerses": 1
+    },
+    {
+      "fromChapter": 15,
+      "afterVerse": 20,
+      "fromAsset": "/assets/chapter-exodus-15-v2.webp",
+      "toChapter": 15,
+      "toAfterVerse": 21,
+      "toAsset": "/assets/story-bitter-water-manna-and-quail-v2.webp",
+      "separatingVerses": 1
+    },
+    {
+      "fromChapter": 19,
+      "afterVerse": 0,
+      "fromAsset": "/assets/chapter-exodus-19-opening-v1.webp",
+      "toChapter": 19,
+      "toAfterVerse": 0,
+      "toAsset": "/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+      "separatingVerses": 0
+    },
+    {
+      "fromChapter": 19,
+      "afterVerse": 0,
+      "fromAsset": "/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+      "toChapter": 19,
+      "toAfterVerse": 2,
+      "toAsset": "/assets/story-sinai-mosaic-covenant-v1.webp",
+      "separatingVerses": 2
+    },
+    {
+      "fromChapter": 24,
+      "afterVerse": 0,
+      "fromAsset": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+      "toChapter": 24,
+      "toAfterVerse": 2,
+      "toAsset": "/assets/story-sinai-mosaic-covenant-v1.webp",
+      "separatingVerses": 2
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-07",
+  "baseline": "0e533d35519d45655f17e813e50e814f09df5e36",
+  "targetBuild": 361,
+  "tool": "Built-in image generation/editing with actual image inputs",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "replacements": [
+    {
+      "key": "gen4",
+      "original": "src/assets/chapter-exodus-04-opening-v1.webp",
+      "asset": "src/assets/chapter-exodus-04-opening-v2.webp",
+      "reason": "Moses, Jethro and the same mature Zipporah/two sons; removed the Aaron lookalike before Aaron joins.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-04-opening-v1.webp",
+        "src/assets/story-moses-returns-to-egypt-v2.webp",
+        "src/assets/story-jethro-advises-moses-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 166976,
+      "sha256": "67185eb252431859a9e2059433d60aedc12006f958c7710251d65caacc4917b3",
+      "generatedOriginalSha256": "f81bd2d7ea49b90c1758617fd3e1e0596a6c1fc253b28b6581ae27612a5be391",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen6",
+      "original": "src/assets/chapter-exodus-06-v1.webp",
+      "asset": "src/assets/chapter-exodus-06-v2.webp",
+      "reason": "Moses remains 80 with the same lined face, gray curls and gray-white beard.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-06-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 160256,
+      "sha256": "3a4bcab5491bdef96d49960320808b14d59ff5471c48303e34d5ebf054d89fed",
+      "generatedOriginalSha256": "5eca9745f8b241d4a938357551d2cf593d1981216a9d68b8f71e474308ff658e",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen7",
+      "original": "src/assets/chapter-exodus-07-v1.webp",
+      "asset": "src/assets/chapter-exodus-07-v2.webp",
+      "reason": "Aaron remains 83 and extends the rod as in Exodus 7:19-20; Moses retains the same elderly likeness.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-07-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 153278,
+      "sha256": "b1519ba04f508a7cd2bc7ec5ce63cc7ea9f446e0cb63bcb576699619adc7bf70",
+      "generatedOriginalSha256": "7ab177f0071aa9cbbe4b2f1992099bd7d30a69071f82c6a1c8e9ffb81b6c8ddd",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen8",
+      "original": "src/assets/chapter-exodus-08-opening-v1.webp",
+      "asset": "src/assets/chapter-exodus-08-opening-v2.webp",
+      "reason": "Corrected Moses from young black-bearded adult to the same elderly 80-year-old; Aaron remains elderly.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-08-opening-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 171952,
+      "sha256": "6de8ea7c14b622fc0c51843a532c6d132229ff7de4c639dda0c06f9ba7d0235e",
+      "generatedOriginalSha256": "01adc7b0e86a136be9bf3444d8c1a4a1be3dd21f055021f9b6cf79c0f594ee8d",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen11",
+      "original": "src/assets/chapter-exodus-11-v1.webp",
+      "asset": "src/assets/chapter-exodus-11-v2.webp",
+      "reason": "Moses leaving Pharaoh now preserves the 80-year-old face and gray-white beard.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-11-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 133992,
+      "sha256": "edb4d928f6adfaeac9d645ddf4069251bb2e2f591e98ddf2948e637d8607b374",
+      "generatedOriginalSha256": "1b60e74d0f249863fbf42de3193f6630fc7fc325afe623bccf7047ba2907c910",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "genMiriam1",
+      "original": "src/assets/chapter-exodus-15-opening-v1.webp",
+      "asset": "src/assets/chapter-exodus-15-opening-v2.webp",
+      "reason": "Miriam is an elderly older sister of 80-year-old Moses, with gray-white curls and naturally lined face.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-15-opening-v1.webp",
+        "src/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 144816,
+      "sha256": "c4a402573949f9e3e4756f7d257776086a447793b22d8dfe5ed7f1737951bb01",
+      "generatedOriginalSha256": "f88b44697abec9d5e4d18b64078468b577f03938d95c490210a3fdba162bd474",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "genMiriam2",
+      "original": "src/assets/chapter-exodus-15-v1.webp",
+      "asset": "src/assets/chapter-exodus-15-v2.webp",
+      "reason": "The same elderly Miriam and recognizable women at the same seaside event; matching face, age and clothing.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-15-v1.webp",
+        "src/assets/chapter-exodus-15-opening-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 170574,
+      "sha256": "ff2ac61d505abbac3ec262b3055ee7480eec81ae64faf4ae7e4a2f690c54f9e1",
+      "generatedOriginalSha256": "63596932f149b4507043dd7a84495e0f6993ac8a186663c8201fd1a9bc4df3de",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen29",
+      "original": "src/assets/chapter-exodus-29-v1.webp",
+      "asset": "src/assets/chapter-exodus-29-v2.webp",
+      "reason": "Moses and Aaron keep their established elderly faces, natural gray curls and beard structure during the linen fitting.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-29-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-28-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 135084,
+      "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3",
+      "generatedOriginalSha256": "856fcb296f65dde608309ef71c61f9784f1972c2d420023ecf7e7a43998c4f70",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen34",
+      "original": "src/assets/chapter-exodus-34-v1.webp",
+      "asset": "src/assets/chapter-exodus-34-v2.webp",
+      "reason": "Moses and Aaron retain their elderly identities at the descent, with two tablets and a lit face.",
+      "actualVisualInputs": [
+        "src/assets/chapter-exodus-34-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-34-opening-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 960,
+      "height": 540,
+      "bytes": 140724,
+      "sha256": "b00356c4334d464d9ec3631baef4128c43877850c3e9a0d99197b46fa97d09f1",
+      "generatedOriginalSha256": "de6ca59a51cdbabc02fa18a422b87c4a9b7fda9523421dd532a06a286b2817e2",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "gen33",
+      "original": "src/assets/story-moses-sees-gods-glory-v1.webp",
+      "asset": "src/assets/story-moses-sees-gods-glory-v2.webp",
+      "reason": "Removed the later veil and replacement tablets from the Exodus 33 cleft scene; same elderly Moses shelters his eyes.",
+      "actualVisualInputs": [
+        "src/assets/story-moses-sees-gods-glory-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 1200,
+      "height": 675,
+      "bytes": 164596,
+      "sha256": "9d5a745e3a06c6003a5d283442a7682e5afb552bf31cccd6ad7e8e4cfea0bda3",
+      "generatedOriginalSha256": "db307cc2ddf6be0fbd8f44ac0198e277be7afd7ec6401607a5d0a5a83fa96594",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "genReturn",
+      "original": "src/assets/story-moses-returns-to-egypt-v1.webp",
+      "asset": "src/assets/story-moses-returns-to-egypt-v2.webp",
+      "reason": "Zipporah keeps her Midian facial structure and natural hair with plausible aging after the long stay; same elderly Moses and two sons.",
+      "actualVisualInputs": [
+        "src/assets/story-moses-returns-to-egypt-v1.webp",
+        "src/assets/story-moses-flees-to-midian-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 1200,
+      "height": 675,
+      "bytes": 191746,
+      "sha256": "978230ba27dc9e736ecc3586397e581e5d1306323e731a822fc21cd553b12b53",
+      "generatedOriginalSha256": "7143fad1503f3a843b697274c8f9403b1c2b36292eb7c5d96fb55e66d736669e",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    },
+    {
+      "key": "genManna",
+      "original": "src/assets/story-bitter-water-manna-and-quail-v1.webp",
+      "asset": "src/assets/story-bitter-water-manna-and-quail-v2.webp",
+      "reason": "Background Moses retains elderly gray curls and beard; the same foreground family and gathering action remain.",
+      "actualVisualInputs": [
+        "src/assets/story-bitter-water-manna-and-quail-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-exodus-16-opening-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "width": 1200,
+      "height": 675,
+      "bytes": 214380,
+      "sha256": "f5eda1c6787c517aa0bd1cb5189604b2f81991111af55d023d4f9087de846d34",
+      "generatedOriginalSha256": "fac57a87a3a6171e3e97dcd7723bd77aa3c5e759101a66124644d82e132bda3e",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size packaged-WebP comparison beside actual reference files, neighboring depictions, verse/action/age review and visible hand, finger, thumb, limb and animal checks. Background faces and hidden digits remain bounded by resolution.",
+      "actualVisualInputsNote": "References created in this session were supplied as the full-resolution accepted generated PNG before WebP encoding. Other references were the actual repository WebP files."
+    }
+  ]
+}
