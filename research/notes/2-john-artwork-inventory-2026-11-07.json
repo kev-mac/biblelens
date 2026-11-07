@@ -1,0 +1,121 @@
+{
+  "book": "2 John",
+  "baseline": "e3ae76b0322d84d49d3118548d473e1264e80f1e",
+  "chapters": 1,
+  "verseCount": 13,
+  "totalPlacements": 1,
+  "chapterOpeners": 1,
+  "storyPlacements": 0,
+  "retained": 1,
+  "replaced": 0,
+  "totalImageBytes": 119130,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Blank paper, a reed pen and an ink pot rest on a wooden table.",
+      "src": "/assets/chapter-2-john-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 119130,
+      "sha256": "4762de8589b128bc1638a0d1560d549d9c660fbd15674e3a5c55642a5acc1d1e",
+      "verses": 13,
+      "textBasis": "1:12 explicitly mentions paper and ink and hopes for a face-to-face visit. Blank papyrus-like paper, a reed pen and ceramic ink pot on an empty household table. Imagined literary setting, not a documented visit, author portrait or exact location. Does not literalize lady/children/sister or invent a welcoming of the rejected teachers in 1:10-11.",
+      "fullSizeReview": "Native 960x540: blank sheet edges and fiber weave; reed nib split/open channel, shaft and nodes; ink pot rim/opening/body/table contact; wooden table planks, legs, peg and brace; blue cloth weave/fringe/drape; door planks/braces/studs; large jar rim and twin handle joins; shelf and basket rim/weave; threshold/floor/shadows and green branches inspected. No definite malformed object, lettering or signature. Hidden table supports, exact dating/site, ink chemistry and botanical species not certified.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 61,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30628,
+            "src": "/assets/chapter-1-john-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30649,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "gap": 21
+        },
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30649,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 61,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30629,
+            "src": "/assets/chapter-1-john-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30650,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "gap": 21
+        },
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30650,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}
