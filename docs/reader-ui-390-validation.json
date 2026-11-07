@@ -1,0 +1,104 @@
+{
+  "result": "pass",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 390,
+    "sourceHash": "dfbd0cc1a03a5ff59d2c301d6452f7e05666b1d39692220897b3511c917e69af"
+  },
+  "verifiedReviewRecords": [
+    "exodus-hardening-agency",
+    "moses-father-in-law-names",
+    "angel-of-the-lord-speaks-as-god-identity-unstated",
+    "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+    "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+  ],
+  "sourceRecords": 1933,
+  "externalRequests": 0,
+  "signedNativeAssets": "unavailable",
+  "liveParity": "not established",
+  "sourceCommit": "bb0eb2d9488e43f64f11e6ec9534cc05df131ec8",
+  "implementationCommit": "e19e962",
+  "githubPush": "confirmed; canonical main fast-forward, no force push",
+  "unchanged": [
+    "data/",
+    "src/assets/",
+    "all original evidence/review records",
+    "production sync logic",
+    "existing book sessions"
+  ],
+  "checks": {
+    "readerAnnotations": "pass; actual header geometry, CSS contracts, captions, full book names/counts and retained navigation",
+    "typedPassage": "pass; shared parser, aliases, numbered books, book-only/chapter/verse/range input, packaged verse validation, invalid/incomplete references, retry preservation and stale cancellation",
+    "existingPickerHeaderWorkspaceMobileChrome": "pass",
+    "readability": "pass in repository report-only mode; inherited findings remain",
+    "sync": "pass after replacing inherited event-loop timing assumption with an actual request-start handshake",
+    "releaseChecks": "pass",
+    "mobileChecks": "pass; offline engine, not an installed device",
+    "storyImages": "pass; packaged figures/captions, image bytes and source/native parity",
+    "releasePrepare": "failed at required npm run check: scripts/check-release-smoke.mjs:31:32; missing Playwright Chromium headless shell 1248; no candidate.json produced",
+    "browserMatrix": "not run; Chromium sandbox/helper blocker and no callable managed cua_repl.js; no sandbox disabling or permission changes"
+  },
+  "visualCoverage": {
+    "authoredWidths": [
+      320,
+      390,
+      647,
+      768,
+      820,
+      1024,
+      1366
+    ],
+    "engines": [
+      "Chromium",
+      "WebKit"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "nativeSafeArea": "authored simulated offset, not physical device evidence",
+    "executed": false
+  },
+  "publication": {
+    "status": "not attempted; required gate failed",
+    "latestObservedSavedSiteVersion": 386,
+    "siteMirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "audience": "public; preserved",
+    "mirrorEditedOrPushed": false
+  },
+  "liveVerification": {
+    "status": "not run this batch; prior proxy CONNECT 403 remains unresolved; no bypass or network-policy change"
+  },
+  "installation": {
+    "status": "not attempted; no Mac/device connector, Xcode tools or connected Apple device",
+    "iphoneBuildNumber": "unverified",
+    "ipadBuildNumber": "unverified",
+    "signedAssetParity": "unverified; unsigned www only"
+  },
+  "logs": {
+    "releasePrepare": {
+      "bytes": 28938,
+      "sha256": "077dea2b3d0703f25263f62078dd3703f5c4afdd9097453072c401942975f401"
+    },
+    "releaseChecks": {
+      "bytes": 1812,
+      "sha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    "mobileChecks": {
+      "bytes": 641,
+      "sha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    "storyImages": {
+      "bytes": 418,
+      "sha256": "5244bc63948978e27c673b61a9557a46d302afa7c064edfd7493e959f9b1080f"
+    },
+    "sync": {
+      "bytes": 1014,
+      "sha256": "a71359e3fa3906ac9916b3d78e1924c03f60b2b72593e76d0770c23c35e79d2d"
+    },
+    "readability": {
+      "bytes": 2647,
+      "sha256": "27c1e2916cce74348ebc39ba58c8f993007a1a782d1f1e7b7cc80c88740054dc"
+    }
+  }
+}
