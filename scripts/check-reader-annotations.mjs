@@ -41,6 +41,7 @@ assert.match(declaration('html body.lens-app #passage-picker .passage-book-grid'
 assert.match(declaration('html body.lens-app #passage-picker .passage-number-grid','grid-template-columns'),/max\(44px,2\.5rem\)/);
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number','min-height'),'44px');
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number span','border-radius'),'var(--control-radius,12px)');
+assert.equal(declaration('html body.lens-app #passage-picker #passage-reference-go','width'),'auto','The Go button must override the narrow-screen form button width so the input has room');
 assert.equal(declaration('html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip)','text-decoration'),'none');
 assert(declaration('html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible','outline').includes('3px solid'));
 const storySource=read('src/stories.js').split('let storiesActive=')[0].replace('/*__STORY_IMAGES__*/{}',JSON.stringify({'A <title>':{src:'/art.webp',alt:'Imagined scene: source description',width:1200,height:675}}));

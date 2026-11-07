@@ -3419,7 +3419,7 @@ html body.lens-app #passage-picker:not([data-step="verse"]) #passage-go {display
 html body.lens-app #passage-picker .passage-reference-entry {display:grid;gap:4px;margin:0 0 4px;}
 html body.lens-app #passage-picker .passage-reference-controls {display:flex;align-items:stretch;gap:6px;}
 html body.lens-app #passage-picker #passage-reference {flex:1 1 0;width:0;min-width:0;min-height:44px;padding:6px 10px;font-size:1rem;border-radius:var(--control-radius,12px);}
-html body.lens-app #passage-picker #passage-reference-go {flex:none;min-width:44px;min-height:44px;padding:6px 12px;border-radius:var(--control-radius,12px);}
+html body.lens-app #passage-picker #passage-reference-go {flex:none;width:auto;min-width:44px;min-height:44px;padding:6px 12px;border-radius:var(--control-radius,12px);}
 html body.lens-app #passage-picker :is(#passage-reference-help,#passage-reference-status) {margin:0;font-size:.75rem;line-height:1.4;}
 html body.lens-app #passage-picker #passage-reference-status:empty {display:none;}
 html body.lens-app #passage-picker #passage-reference[aria-invalid="true"] {border-color:var(--lens-danger,#b91c1c);outline:2px solid var(--lens-danger,#b91c1c);}
@@ -3451,6 +3451,12 @@ html body.lens-app #lensInspector :is(.lens-category-actions button,.lens-eviden
 html body.lens-app #lensInspector .lens-category-title {font:600 1rem/1.4 var(--ui-font);margin:16px 0 8px;}
 html body.lens-app #lensInspector .lens-category-verse {margin:12px 0;padding:0 0 0 12px;border-left:2px solid var(--lens-rule);font:400 1rem/1.6 var(--ui-font);}
 html body.lens-app #lensInspector .lens-evidence-summary h3 {font:600 1rem/1.4 var(--ui-font);}
+html body.lens-app #lensInspector .lens-evidence-summary {--summary-category-color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,black);border-color:var(--summary-category-color);}
+html body.lens-app.dark #lensInspector .lens-evidence-summary {--summary-category-color:color-mix(in srgb,rgb(var(--theme-rgb)) 70%,white);}
+html body.lens-app #lensInspector .lens-summary-actions {display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+html body.lens-app #lensInspector .lens-summary-icon {display:inline-flex;align-items:center;justify-content:center;flex:none;width:44px;height:44px;padding:10px;border:1px solid var(--lens-rule);border-radius:var(--control-radius,12px);color:var(--summary-category-color);}
+html body.lens-app #lensInspector .lens-summary-icon svg {display:block;width:20px;height:20px;flex:none;}
+html body.lens-app #lensInspector .lens-summary-icon:focus-visible {outline:2px solid var(--summary-category-color);outline-offset:2px;}
 
 /* Explore uses its own search entry and fluid collection dimensions. */
 html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead .ux-search {display:none;}

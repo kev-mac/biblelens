@@ -22,3 +22,57 @@ Validation and the exact tested commit/artifact will be recorded after the new
 CI run. Build 392's passing results do not verify build 393. The publishing
 session owns Sites reconciliation/publication of the accepted exact bundle.
 This task does not install devices or retry denied Mac network operations.
+
+## Read reference field and context-card annotations
+
+The original single-row candidate (`1f2ab02`, fingerprint
+`15d7c40a4d63f47eefebb21179741dd7dbb9ebd4764f6d8ebb824eac5fdabbc4`)
+passed [run 42417371250](https://github.com/kev-mac/biblelens/actions/runs/42417371250):
+full release preparation, images, 24 evidence-pill cases, 56 reader cases and
+48 Explore cases including actual Text Comparisons/Translations filter routing.
+That candidate predates the additional user requests below and is not the
+final release candidate.
+
+Source inspection found a narrow-screen sizing conflict relevant to the
+reported one-character reference field. `components.css` makes `form button`
+100% wide below 651px. The reference Go button has `flex:none`, and did not
+override that width, so it can consume the flex row and squeeze the growing
+input to its padding. The existing input's `width:0` is its flex sizing basis;
+it was not evidence of an editing prohibition. The minimal fix sets only the
+Go button's width to `auto`. No reference or search navigation was replaced.
+This source-proven conflict is consistent with the report, but the user's
+exact browser state has not been reproduced or ruled out by a desktop result.
+
+The expanded reader matrix checks 88 cases across Chromium/WebKit, both themes,
+web/simulated native safe areas, widths 320, 390, 647, 650, 651, 768, 820, 844,
+1024, 1165 and 1366, including 844×390 landscape and the observed desktop
+1165×747. It measures readable reference width (at least 160px and 60% of its
+row), height/font, bounds, editability and hit testing; clicks and types a
+reference, edits characters, checks Tab/Shift+Tab focus, and exercises invalid
+Enter, valid Enter and Go-button navigation. It also checks real keyboard
+entry and geometry in global Search. Viewport screenshots and field geometry
+are retained, including loaded stylesheet URLs. These additions close the
+earlier test gap where `fill()` could succeed in a visually tiny field.
+
+Summary-card borders now use their selected category's existing palette and
+the same light/dark color formula as the verse pill. The former Supporting
+context metadata is an information icon that toggles an inline explanation of
+that existing role, with `aria-expanded`, `aria-controls`, descriptive labels
+and tooltips. It does not navigate anywhere. View evidence becomes a separate
+book icon retaining full-evidence navigation. Both have 44px targets and
+visible keyboard focus. Headings, summaries, verse context, sources and Whole
+Chapter behavior are preserved.
+
+The evidence browser matrix now has 28 cases, including the annotated 469×1184
+size. It checks all six card/pill colors, icon-only presentation, metadata
+disclosure with keyboard and pointer/touch, full-evidence focus and return,
+and the actual two Genesis 1:16 Academic cards at mobile and desktop sizes in
+both themes and engines. Fixture and real-data screenshots are retained.
+
+Focused Explore, reader/parser and evidence checks pass locally. The
+readability audit completed in its existing report-only mode and retained
+existing corpus flags; this is not a clean strict readability result.
+The final source now requires a fresh full CI run with 164 browser cases
+(28 evidence + 88 reader + 48 Explore); the earlier passing run is preserved
+and is not attributed to these later changes. No native browser session,
+physical-device check, publication or installation is claimed by this task.
