@@ -1,0 +1,710 @@
+{
+  "date": "2026-11-07",
+  "book": "Deuteronomy",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 364,
+    "sourceHash": "29b9758d0cda1e80b6d23502fd271058a45d6e5d4a44c7dfd87bd5f515558ac4"
+  },
+  "canonicalReleaseCommit": "8f59c13c51bbc5ca87a79375392083697065b4b0",
+  "publicArtworkCommit": "51be1c3ca97b98a9ec9812dc50ca8470341c5d4b",
+  "sites": {
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "version": 353,
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_a65d8add1ae481918295f0280edb537e",
+    "mirrorCommit": "7cdfc7ce4419672be736098c5ce56e1a0348b943",
+    "deploymentId": "appgdep_6aee90dd500c819194388321de3f0ab2",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "audience": "public",
+    "nativeResultVerifiedDeployment": true,
+    "publishedAt": "2026-11-07T02:46:01.648574+00:00"
+  },
+  "review": {
+    "uniqueActiveFiles": 62,
+    "readerPlacements": 62,
+    "chapterOpeners": 34,
+    "versionedCorrections": 12,
+    "chapterCorrections": 10,
+    "storyCorrections": 2,
+    "retainedFiles": 50,
+    "existingCloseGaps": 13,
+    "allOriginalsAndFinalsVisuallyInspected": true,
+    "referenceInputs": "deuteronomy-artwork-corrections-2026-11-07.json",
+    "unresolvedIdentifiableContinuityBreaks": []
+  },
+  "checks": {
+    "build:mobile": "passed via release:prepare; canonical compressed Worker and offline bundle built from same source",
+    "npm run check": "all nonbrowser steps passed; final check-release-smoke failed on missing Chromium headless shell",
+    "check:readability": "completed report-only with existing collection issues",
+    "check:images": "passed: all registered chapter/story placements, source/offline parity, images and caption rules",
+    "check:release": "passed; fixture build219 text is not actual release identity, generated metadata verified364",
+    "check:mobile": "passed; native inference/hardware is not simulated",
+    "check:sync": "FAILED in check-sync-disconnect.mjs:25:55: fixture token remained non-null after bounded settle. Core sync checks passed. One unchanged isolated disconnect recheck passed; intermittent failure remains unresolved. No sync/security/test edits.",
+    "release:prepare": "FAILED at scripts/check-release-smoke.mjs:31:32, missing /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell; no candidate.json, no browser installed, no substitute browser-control path",
+    "release:verify": "DEFERRED: live hostname excluded from enforced egress; inherited denied live request not retried/bypassed; no supported environment-change tool available"
+  },
+  "sourceMirrorOffline": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 364,
+      "sourceHash": "29b9758d0cda1e80b6d23502fd271058a45d6e5d4a44c7dfd87bd5f515558ac4"
+    },
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 364,
+      "sourceHash": "29b9758d0cda1e80b6d23502fd271058a45d6e5d4a44c7dfd87bd5f515558ac4"
+    },
+    "offline": {
+      "version": "1.1.0",
+      "buildNumber": 364,
+      "sourceHash": "29b9758d0cda1e80b6d23502fd271058a45d6e5d4a44c7dfd87bd5f515558ac4"
+    },
+    "worker": {
+      "version": "1.1.0",
+      "buildNumber": 364,
+      "sourceHash": "29b9758d0cda1e80b6d23502fd271058a45d6e5d4a44c7dfd87bd5f515558ac4"
+    },
+    "workerSha256": "7dea3ecedd3f95295c35789ca769c925f78267ca62357accc67f1aa175887372",
+    "exactPreparedWorker": true,
+    "generatedDeuteronomyApi": {
+      "chapters": 34,
+      "openers": 34,
+      "placementCount": 62,
+      "sourceOfflineImagesIdentical": true,
+      "generatedApiPlacementsMatch": true,
+      "placements": [
+        {
+          "chapter": 1,
+          "kind": "story",
+          "beforeVerse": 1,
+          "title": "Moses Recalls the Wilderness Years",
+          "src": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+          "bytes": 108456,
+          "sha256": "d5b3b3827d1ff3ad1a6a763dcf4853595c36b1ba23ec3fb93bb3dd2d73564458"
+        },
+        {
+          "chapter": 2,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-02-opening-v1.webp",
+          "bytes": 95454,
+          "sha256": "3e902f1a9ba7391b81ac7c5938d36ffaadbd9becdac19f03948e9184481befa0"
+        },
+        {
+          "chapter": 2,
+          "kind": "chapter",
+          "afterVerse": 6,
+          "src": "/assets/chapter-deuteronomy-02-v1.webp",
+          "bytes": 143624,
+          "sha256": "84483f9cb9aecfc8d5f85dc46b3a3df7a9d551abd9637816a60b1be973eeb267"
+        },
+        {
+          "chapter": 3,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-03-opening-v2.webp",
+          "bytes": 119310,
+          "sha256": "3688dbc82ded9a36cb1422490ab45d25d9fe1d25a341615d168c70d9dfc1a656"
+        },
+        {
+          "chapter": 3,
+          "kind": "chapter",
+          "afterVerse": 27,
+          "src": "/assets/chapter-deuteronomy-03-v1.webp",
+          "bytes": 141116,
+          "sha256": "dc8ecdcaa16b2c0655368b9132ca9fa24d2455a49e8b170a524cb334d7cd8347"
+        },
+        {
+          "chapter": 4,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-04-opening-v2.webp",
+          "bytes": 130218,
+          "sha256": "d662dadf35845b325a827179e0f7220b26d259a30cec548b525adae459db3f39"
+        },
+        {
+          "chapter": 4,
+          "kind": "story",
+          "beforeVerse": 41,
+          "title": "Moses Sets Apart Three Cities of Refuge",
+          "src": "/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+          "bytes": 151776,
+          "sha256": "32cbb5682413a6eab50ffa3bdfd00a842a5bb6b157e74245b93d45c52df5c2ee"
+        },
+        {
+          "chapter": 5,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-05-v1.webp",
+          "bytes": 102840,
+          "sha256": "8ab2eeb0a9c74a387d60c8df71db719424ed85203b63a396f437fedc9860f3fb"
+        },
+        {
+          "chapter": 6,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-06-opening-v1.webp",
+          "bytes": 56386,
+          "sha256": "fe308da159fa0fcb64ab2ca370d2fbaee7d540bc91b033a25e20748d314d2402"
+        },
+        {
+          "chapter": 6,
+          "kind": "chapter",
+          "afterVerse": 7,
+          "src": "/assets/chapter-deuteronomy-06-v1.webp",
+          "bytes": 121820,
+          "sha256": "f1ddedb6de53ffb23eeff1fb35845edcb1deb0710639cbdab697661aed5bfa30"
+        },
+        {
+          "chapter": 7,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-07-opening-v1.webp",
+          "bytes": 79192,
+          "sha256": "06bc5f9f34b3d9b8b9228601e3b9085cb88eb9c9a84a4f5f5a7565a7ba947242"
+        },
+        {
+          "chapter": 7,
+          "kind": "chapter",
+          "afterVerse": 25,
+          "src": "/assets/chapter-deuteronomy-07-v1.webp",
+          "bytes": 119108,
+          "sha256": "9b3e5cfa0b5891076fa140d6b2c51ea3495499419b2ad7e3da2119050a6e72c3"
+        },
+        {
+          "chapter": 8,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-08-opening-v1.webp",
+          "bytes": 66892,
+          "sha256": "b14c1e62bf9e4de1c50d590209dfefa22de2423d2b3dd3c43a3d9166e23880c0"
+        },
+        {
+          "chapter": 8,
+          "kind": "chapter",
+          "afterVerse": 8,
+          "src": "/assets/chapter-deuteronomy-08-v1.webp",
+          "bytes": 183300,
+          "sha256": "dceb64081232b3cb27857454283d0a08cc8637d456476347e7b376f0fbe5a13b"
+        },
+        {
+          "chapter": 9,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-09-opening-v1.webp",
+          "bytes": 47714,
+          "sha256": "2efc5d8ea9aa14cf1dd684266ae51fb9bb06c7865e439c21c9e15127a92519f3"
+        },
+        {
+          "chapter": 9,
+          "kind": "story",
+          "beforeVerse": 7,
+          "title": "Moses Recalls the Golden Calf",
+          "src": "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+          "bytes": 162450,
+          "sha256": "a1df7ab58cc345b1e9a441f9f337ec182047459f9b840d08bdcd49288097e343"
+        },
+        {
+          "chapter": 10,
+          "kind": "story",
+          "beforeVerse": 1,
+          "title": "Moses Recalls the Second Tablets",
+          "src": "/assets/story-moses-recalls-the-second-tablets-v1.webp",
+          "bytes": 93772,
+          "sha256": "701f36102c3c1f507f939f132a18b68ddbe94232ad9c052d7902b555ec4c78a1"
+        },
+        {
+          "chapter": 11,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-11-opening-v1.webp",
+          "bytes": 72720,
+          "sha256": "86b10a64c84a29b024cd16b9f1523b987b3366fc3f8271db70b69d58a89081ab"
+        },
+        {
+          "chapter": 11,
+          "kind": "chapter",
+          "afterVerse": 19,
+          "src": "/assets/chapter-deuteronomy-11-v1.webp",
+          "bytes": 138916,
+          "sha256": "2d21b91f1db3dc0735fdd8bad4870553aac50bee748d38f86803fb061fd0183b"
+        },
+        {
+          "chapter": 12,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-12-opening-v1.webp",
+          "bytes": 76342,
+          "sha256": "16824e681c9cac614df6168a36faae94c2daf74144e5a2de779e7c2935920c53"
+        },
+        {
+          "chapter": 12,
+          "kind": "chapter",
+          "afterVerse": 12,
+          "src": "/assets/chapter-deuteronomy-12-v1.webp",
+          "bytes": 145690,
+          "sha256": "f7d79bd09ec8f2d9c477de94c949d7bc4b7e37a31d9dbdfc64d7be8f640dd32f"
+        },
+        {
+          "chapter": 13,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-13-opening-v1.webp",
+          "bytes": 68274,
+          "sha256": "0c75d0d6876633031a21399abfa184297e5d8a418ea099633fe819651703dfb3"
+        },
+        {
+          "chapter": 13,
+          "kind": "chapter",
+          "afterVerse": 4,
+          "src": "/assets/chapter-deuteronomy-13-v1.webp",
+          "bytes": 88062,
+          "sha256": "4a3f624be237a4778834246358990d0fd2b2fa49d878d639b6c291e4aff5051a"
+        },
+        {
+          "chapter": 14,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-14-opening-v1.webp",
+          "bytes": 85120,
+          "sha256": "799387600917bac6931e49bda554dbe27cb60d607b9d48c0a0d81d92d4dac3a7"
+        },
+        {
+          "chapter": 14,
+          "kind": "chapter",
+          "afterVerse": 22,
+          "src": "/assets/chapter-deuteronomy-14-v1.webp",
+          "bytes": 145254,
+          "sha256": "54b78099a32cafd66c81538e84e1e2dd73ba135a5b1d2e7b24e0c80a25663c62"
+        },
+        {
+          "chapter": 15,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-15-opening-v1.webp",
+          "bytes": 97848,
+          "sha256": "25e30092971ea77c07d412028a90040c0368480d5f4339e04be882a81e771fbb"
+        },
+        {
+          "chapter": 15,
+          "kind": "chapter",
+          "afterVerse": 8,
+          "src": "/assets/chapter-deuteronomy-15-v1.webp",
+          "bytes": 100438,
+          "sha256": "9977c73a8bd4bdf7fb9aa69c6cea81aea33a891cea45335190969c808005c6ae"
+        },
+        {
+          "chapter": 16,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-16-opening-v1.webp",
+          "bytes": 105292,
+          "sha256": "0ab951f058e4f802ab4666509cbbf6b99afd6e5e2cf9b1f71114ade88157ccea"
+        },
+        {
+          "chapter": 16,
+          "kind": "chapter",
+          "afterVerse": 18,
+          "src": "/assets/chapter-deuteronomy-16-v1.webp",
+          "bytes": 154432,
+          "sha256": "1bd10603bbdbd8d0d9848048eeba7a706119a17fc2239e77aa274d739df0d547"
+        },
+        {
+          "chapter": 17,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-17-opening-v1.webp",
+          "bytes": 111194,
+          "sha256": "fa90defc457c49ce89974696ca8d752198e21c395fe32a7654a1c59b84f00bce"
+        },
+        {
+          "chapter": 17,
+          "kind": "chapter",
+          "afterVerse": 18,
+          "src": "/assets/chapter-deuteronomy-17-v2.webp",
+          "bytes": 132574,
+          "sha256": "75335a7702ce8503f01655bef94d126416cde88ee20fb31ca4d86c9a2ea47ca3"
+        },
+        {
+          "chapter": 18,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-18-opening-v1.webp",
+          "bytes": 104080,
+          "sha256": "4e430e31cb33747b1392453644af0e758df45b97ee307bc71274e2ba1594b837"
+        },
+        {
+          "chapter": 18,
+          "kind": "chapter",
+          "afterVerse": 3,
+          "src": "/assets/chapter-deuteronomy-18-v1.webp",
+          "bytes": 111126,
+          "sha256": "c948659387aac3b2d6e851bc8036cc00ea353a7fddfef01320afd5deb286ea2f"
+        },
+        {
+          "chapter": 19,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-19-opening-v1.webp",
+          "bytes": 116910,
+          "sha256": "3cb73e93a07ece2c173dae0e7a74aa3c06cb3847246aec7d23ac7e5aef1cd5b5"
+        },
+        {
+          "chapter": 19,
+          "kind": "chapter",
+          "afterVerse": 3,
+          "src": "/assets/chapter-deuteronomy-19-v1.webp",
+          "bytes": 162466,
+          "sha256": "71948394424a4a56e83f5ab142cd06151a81519dfbcacdc8385c265af7ef8c7d"
+        },
+        {
+          "chapter": 20,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-20-opening-v1.webp",
+          "bytes": 92900,
+          "sha256": "cce643d8a9822fa0f1be3d14b93e28686c024b768b6392aa1f165ba372a63397"
+        },
+        {
+          "chapter": 20,
+          "kind": "chapter",
+          "afterVerse": 19,
+          "src": "/assets/chapter-deuteronomy-20-v1.webp",
+          "bytes": 180574,
+          "sha256": "7b428776a9801942e30fb56f9e0e5c29db613eca6ae297f73b3934f5e44b8757"
+        },
+        {
+          "chapter": 21,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-21-opening-v1.webp",
+          "bytes": 103520,
+          "sha256": "77187cd89936a384a5401635081a2603d1e08f0a1eabc5cfed550fd89024a1b8"
+        },
+        {
+          "chapter": 21,
+          "kind": "chapter",
+          "afterVerse": 6,
+          "src": "/assets/chapter-deuteronomy-21-v2.webp",
+          "bytes": 173544,
+          "sha256": "f087c30d658b0a018409bf019b183225509fbe91ef985ee3541120020b74db93"
+        },
+        {
+          "chapter": 22,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-22-opening-v1.webp",
+          "bytes": 117120,
+          "sha256": "9d37b9c393ddcd53180d7530348b3599d40a3ceebebd19a6058eb427d652454a"
+        },
+        {
+          "chapter": 22,
+          "kind": "chapter",
+          "afterVerse": 8,
+          "src": "/assets/chapter-deuteronomy-22-v1.webp",
+          "bytes": 126662,
+          "sha256": "644b5cda523fae7a112e3ee073bdd4f71747aeaa250331bd38301a152f284a31"
+        },
+        {
+          "chapter": 23,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-23-opening-v1.webp",
+          "bytes": 102210,
+          "sha256": "452fa515d68703ce19c9310d1bfe962fc1008ba6f2410378ac52743f4a8f73be"
+        },
+        {
+          "chapter": 23,
+          "kind": "chapter",
+          "afterVerse": 24,
+          "src": "/assets/chapter-deuteronomy-23-v1.webp",
+          "bytes": 140204,
+          "sha256": "6391ebeaf7aea16ac3f43306347687f81470798df5c9e7170a451e59ba9fc482"
+        },
+        {
+          "chapter": 24,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-24-opening-v1.webp",
+          "bytes": 107962,
+          "sha256": "59d2ef73f034a461cad00c873fb49bdf5ab03509d7adcc41920c013d26fe3a4a"
+        },
+        {
+          "chapter": 24,
+          "kind": "chapter",
+          "afterVerse": 19,
+          "src": "/assets/chapter-deuteronomy-24-v1.webp",
+          "bytes": 139156,
+          "sha256": "d5f028bacd6f216f3bb4d9c4bd1d756f94ba266630ac5854227c3d48078f3f7d"
+        },
+        {
+          "chapter": 25,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-25-opening-v1.webp",
+          "bytes": 87528,
+          "sha256": "0ca0e52a412786d87cbdf9b049be1d05b4caec6d17f7f98773fae5b7bb62531e"
+        },
+        {
+          "chapter": 25,
+          "kind": "chapter",
+          "afterVerse": 13,
+          "src": "/assets/chapter-deuteronomy-25-v1.webp",
+          "bytes": 102042,
+          "sha256": "f37ab0b46815dee5733377a6da871deb0500b61d3718c22d8018df96e0f1293f"
+        },
+        {
+          "chapter": 26,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-26-opening-v1.webp",
+          "bytes": 107312,
+          "sha256": "5996cb5b6fb3b78ee7b673bbd058f916b76b3c2fc31951dc35f3ac4f89c3edac"
+        },
+        {
+          "chapter": 26,
+          "kind": "chapter",
+          "afterVerse": 10,
+          "src": "/assets/chapter-deuteronomy-26-v1.webp",
+          "bytes": 118024,
+          "sha256": "b309cd932c94259dcb17c54894191a423bd9494468760b05e1e75dfb4e0a48bf"
+        },
+        {
+          "chapter": 27,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-27-opening-v2.webp",
+          "bytes": 154632,
+          "sha256": "ef69e4e9d4f1a453fec44de87054bda873c6f3025556533aaa513907d7eca8b0"
+        },
+        {
+          "chapter": 27,
+          "kind": "chapter",
+          "afterVerse": 4,
+          "src": "/assets/chapter-deuteronomy-27-v2.webp",
+          "bytes": 168388,
+          "sha256": "b922cc721e06ec02ca5c60c483486fd7261c3cc14a15ffe0f9cdc90437acd4d0"
+        },
+        {
+          "chapter": 28,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-28-opening-v1.webp",
+          "bytes": 71960,
+          "sha256": "cbaed759235606faaff938534123ae276bc36e73d62bfbb0069c4ec236a78648"
+        },
+        {
+          "chapter": 28,
+          "kind": "chapter",
+          "afterVerse": 3,
+          "src": "/assets/chapter-deuteronomy-28-v1.webp",
+          "bytes": 178982,
+          "sha256": "2194fef9b717e1351a85b0865de776cb92b5041ba9126b51389ae39178d8bada"
+        },
+        {
+          "chapter": 29,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-29-opening-v1.webp",
+          "bytes": 85518,
+          "sha256": "0ec7621b44fc166e11b35a5ca11805fc8896ef016701529cb87e58a6a03852f7"
+        },
+        {
+          "chapter": 29,
+          "kind": "chapter",
+          "afterVerse": 10,
+          "src": "/assets/chapter-deuteronomy-29-v1.webp",
+          "bytes": 151098,
+          "sha256": "7e493a637a68e5727506446efd9e0349bfda6c129a30b5abb13cb86b8147ee9f"
+        },
+        {
+          "chapter": 30,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-30-opening-v1.webp",
+          "bytes": 66814,
+          "sha256": "c4cfc978e6f1b0014056a2779e0763ba93e08f293ec4289fbc471e412b1d8825"
+        },
+        {
+          "chapter": 30,
+          "kind": "chapter",
+          "afterVerse": 19,
+          "src": "/assets/chapter-deuteronomy-30-v2.webp",
+          "bytes": 171236,
+          "sha256": "41bc95af8ec62506ae31b782b2bbc177d904e4509e8a8ef48ad4f0a1a71c6500"
+        },
+        {
+          "chapter": 31,
+          "kind": "story",
+          "beforeVerse": 1,
+          "title": "Joshua Commissioned and the Law Entrusted",
+          "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+          "bytes": 134936,
+          "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+        },
+        {
+          "chapter": 32,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-32-opening-v2.webp",
+          "bytes": 104708,
+          "sha256": "dd38aa20304bba5fd51dfd002d53fd4a3932a86daf3939cabe1b348df8e5430e"
+        },
+        {
+          "chapter": 32,
+          "kind": "chapter",
+          "afterVerse": 44,
+          "src": "/assets/chapter-deuteronomy-32-v2.webp",
+          "bytes": 125592,
+          "sha256": "b121ef21672687126b68134e5613e80a0add22c856b1e9ab5e8f79ccc4f1d6d7"
+        },
+        {
+          "chapter": 33,
+          "kind": "chapter",
+          "afterVerse": 0,
+          "src": "/assets/chapter-deuteronomy-33-v2.webp",
+          "bytes": 130512,
+          "sha256": "888456eeaf0d23bc1080ea05f6a04876cbbecf2cc445829a3ec859b26f1f1d3a"
+        },
+        {
+          "chapter": 34,
+          "kind": "story",
+          "beforeVerse": 1,
+          "title": "The Death of Moses",
+          "src": "/assets/story-the-death-of-moses-v1.webp",
+          "bytes": 108828,
+          "sha256": "8567c8830ffc1b69bbd6a2fc40b92374208ab4838bbaf2777265dfa9cef278e4"
+        }
+      ]
+    }
+  },
+  "publicArtwork": {
+    "pin": "51be1c3ca97b98a9ec9812dc50ca8470341c5d4b",
+    "pinnedCount": 1126,
+    "allPinnedBlobsMatchCanonicalSource": true,
+    "verification": "Every canonical asset Git blob hash matched the exact immutable public pin tree; SHA-256 values recorded locally. All 12 new immutable public downloads independently matched canonical bytes.",
+    "manifestSha256": "1f9a375ae888542bdae1d5d30b5f58b6f79e66018a1da69e8e6aa72ac0ccf3a5",
+    "newImmutableDownloads": [
+      {
+        "src": "/assets/chapter-deuteronomy-03-opening-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-03-opening-v2.webp",
+        "bytes": 119310,
+        "sha256": "3688dbc82ded9a36cb1422490ab45d25d9fe1d25a341615d168c70d9dfc1a656",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-04-opening-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-04-opening-v2.webp",
+        "bytes": 130218,
+        "sha256": "d662dadf35845b325a827179e0f7220b26d259a30cec548b525adae459db3f39",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/story-moses-recalls-the-golden-calf-v2.webp",
+        "bytes": 162450,
+        "sha256": "a1df7ab58cc345b1e9a441f9f337ec182047459f9b840d08bdcd49288097e343",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-17-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-17-v2.webp",
+        "bytes": 132574,
+        "sha256": "75335a7702ce8503f01655bef94d126416cde88ee20fb31ca4d86c9a2ea47ca3",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-21-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-21-v2.webp",
+        "bytes": 173544,
+        "sha256": "f087c30d658b0a018409bf019b183225509fbe91ef985ee3541120020b74db93",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-27-opening-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-27-opening-v2.webp",
+        "bytes": 154632,
+        "sha256": "ef69e4e9d4f1a453fec44de87054bda873c6f3025556533aaa513907d7eca8b0",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-27-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-27-v2.webp",
+        "bytes": 168388,
+        "sha256": "b922cc721e06ec02ca5c60c483486fd7261c3cc14a15ffe0f9cdc90437acd4d0",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-30-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-30-v2.webp",
+        "bytes": 171236,
+        "sha256": "41bc95af8ec62506ae31b782b2bbc177d904e4509e8a8ef48ad4f0a1a71c6500",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "bytes": 134936,
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-32-opening-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-32-opening-v2.webp",
+        "bytes": 104708,
+        "sha256": "dd38aa20304bba5fd51dfd002d53fd4a3932a86daf3939cabe1b348df8e5430e",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-32-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-32-v2.webp",
+        "bytes": 125592,
+        "sha256": "b121ef21672687126b68134e5613e80a0add22c856b1e9ab5e8f79ccc4f1d6d7",
+        "status": "matched"
+      },
+      {
+        "src": "/assets/chapter-deuteronomy-33-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/51be1c3ca97b98a9ec9812dc50ca8470341c5d4b/src/assets/chapter-deuteronomy-33-v2.webp",
+        "bytes": 130512,
+        "sha256": "888456eeaf0d23bc1080ea05f6a04876cbbecf2cc445829a3ec859b26f1f1d3a",
+        "status": "matched"
+      }
+    ]
+  },
+  "archive": {
+    "path": "/workspace/biblelens/.release/deuteronomy-build364-sites.tar.gz",
+    "bytes": 49659402,
+    "sha256": "e2194d75e94177db84c765bd7d34baf72f1691714371d6929c5db0b508add328",
+    "fileCount": 6,
+    "paths": [
+      ".openai/hosting.json",
+      "dist/server/index.js",
+      "dist/.openai/hosting.json",
+      "dist/.openai/drizzle/0000_loose_bug.sql",
+      "dist/.openai/drizzle/meta/_journal.json",
+      "dist/.openai/drizzle/meta/0000_snapshot.json"
+    ],
+    "workerOnly": true
+  },
+  "savedArchive": {
+    "archive_format": "tar",
+    "sediment_file_id": "file_0000000054cc81fbb188ebc9ab3a0156",
+    "content_hash": "sha256:31a430943d847088e1330ef78fe4329e96e9ad77435bb5c3e260add6371a0160",
+    "size_bytes": 62371840,
+    "file_count": 6
+  },
+  "deferred": {
+    "browser": "Supported managed cua_repl.js/desktop JavaScript tool absent after ready-state discovery; remote_desktop enabled but state unknown. Browser QA unverified.",
+    "liveHttp": "release:verify/live release and image delivery bytes unverified. Existing publication confirmed by native Sites tool only.",
+    "sync": "Intermittent bounded-settle disconnect assertion; failed suite, unchanged isolated recheck passed. Not fixed or waived.",
+    "macAndDevices": "No Mac connector, configured VPN, authorized TCP route or xcodebuild. Signing, signed public/www comparison, iPhone/iPad installs, fresh installed-build queries and launches not attempted. Last historical device record359; no native/web synchronization claim.",
+    "nextBook": "Provide Joshua handoff in a new cloud session; Joshua not begun here."
+  },
+  "authorization": {
+    "ownerMessageId": "Sentinel_71f14e4a51e88191a1801af8136df6ca",
+    "ownerInstructionVerified": "Per-book commit, push, publish and install on available devices; cloud-only book work continues when Mac/devices unavailable.",
+    "publicationApproval": "First deployment call succeeded; no denial or pending approval in this session."
+  },
+  "overall": "Artwork review complete and public build364 publication succeeded; full release gate and native/live verification remain incomplete."
+}
