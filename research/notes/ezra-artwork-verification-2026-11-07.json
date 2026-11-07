@@ -1,0 +1,83 @@
+{
+  "book": "Ezra",
+  "canonicalBaseline": "3f9904606c116003786283eb85ce324e5eb70b34",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "chapterCount": 10,
+  "verseCount": 280,
+  "chapterImages": 4,
+  "storyImages": 6,
+  "minimumInternalSpacing": 10,
+  "closePairs": [],
+  "boundaryGaps": [
+    23,
+    45
+  ],
+  "pinnedCommit": "c87ed7459451ea3e2b3400eed783def11f017291",
+  "pinnedBlobsMatch": 1142,
+  "sourceWorkerOfflineParity": true,
+  "offlineEngineNetworkForbidden": true,
+  "scriptureAndMetadataPreserved": true,
+  "originFixtureOnly": true,
+  "workerBytes": 59888449,
+  "workerSha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2",
+  "productionChanges": 0,
+  "retainedImages": 10,
+  "checks": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache --no-audit --no-fund",
+      "exitCode": 0
+    },
+    {
+      "command": "build:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "check:images",
+      "exitCode": 0
+    },
+    {
+      "command": "independent local Worker/offline-engine and pinned-blob parity",
+      "exitCode": 0
+    },
+    {
+      "command": "release:prepare",
+      "exitCode": 1,
+      "output": "tuagint: 1992, Textus Receptus: 1950, Tischendorf: 1929, witness: 977, WLC: 961, ordinal: 8, harmoniz: 3, calibration: 1\nUX13 place summaries \u2014 top jargon: none\nUX13 Events \u2014 top jargon: none\nEvents \u2014 top jargon: witness: 2\nPeople \u2014 top jargon: witness: 1\nTimeline \u2014 top jargon: none\nProphecies \u2014 top jargon: none\nExplore cards \u2014 top jargon: manuscript: 1\nExplore visible text \u2014 top jargon: manuscript: 1\nPhase 2 interface \u2014 top jargon: none\n\nEstimated English syllables; each nonempty field line counts once. FK grades are averaged per line.\nLength limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6\u20138; detail grades at most 10. Quoted spans are excluded.\nJargon screening uses the listed terms and plain equivalents by first use; review context manually.\n\nReport-only mode: items need review.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nPASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and three tabs.\nPASS: shared pending/resolved reference requests across bundles, failed HTTP/JSON retry, and exclusion of private endpoints.\nPASS: packaged identity HTML/JS/CSS/reference and binary assets remain unchanged for every compression preference.\nPASS: chapter-scoped people/place links retain matcher identity and exact offsets; red-letter spans survive packaging.\nPASS: rendered story decoration, independent reference availability, missing-data retry, failure isolation, observer reconnection and replacement-render race protection.\n\n> scripture-lens@1.1.0 check:search\n> node scripts/check-search.mjs && node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs\n\n{\n  \"summary\": {\n    \"queries\": 50,\n    \"found\": 50,\n    \"expectedHit\": 48,\n    \"complete\": 35,\n    \"expectedFound\": 117,\n    \"expectedTotal\": 160,\n    \"top5\": 48,\n    \"visibleTop5\": 48\n  },\n  \"byCategory\": {\n    \"verse_reference\": {\n      \"queries\": 12,\n      \"found\": 12,\n      \"expectedHit\": 12,\n      \"complete\": 11,\n      \"expectedFound\": 56,\n      \"expectedTotal\": 63,\n      \"top5\": 12,\n      \"visibleTop5\": 12\n    },\n    \"person\": {\n      \"queries\": 8,\n      \"found\": 8,\n      \"expectedHit\": 8,\n      \"complete\": 8,\n      \"expectedFound\": 9,\n      \"expectedTotal\": 9,\n      \"top5\": 8,\n      \"visibleTop5\": 8\n    },\n    \"place\": {\n      \"queries\": 6,\n      \"found\": 6,\n      \"expectedHit\": 6,\n      \"complete\": 6,\n      \"expectedFound\": 8,\n      \"expectedTotal\": 8,\n      \"top5\": 6,\n      \"visibleTop5\": 6\n    },\n    \"claim_question\": {\n      \"queries\": 10,\n      \"found\": 10,\n      \"expectedHit\": 10,\n      \"complete\": 3,\n      \"expectedFound\": 23,\n      \"expectedTotal\": 35,\n      \"top5\": 10,\n      \"visibleTop5\": 10\n    },\n    \"topic\": {\n      \"queries\": 6,\n      \"found\": 6,\n      \"expectedHit\": 4,\n      \"complete\": 0,\n      \"expectedFound\": 6,\n      \"expectedTotal\": 26,\n      \"top5\": 5,\n      \"visibleTop5\": 5\n    },\n    \"spelling_variant\": {\n      \"queries\": 8,\n      \"found\": 8,\n      \"expectedHit\": 8,\n      \"complete\": 7,\n      \"expectedFound\": 15,\n      \"expectedTotal\": 19,\n      \"top5\": 7,\n      \"visibleTop5\": 7\n    }\n  },\n  \"timing\": {\n    \"medianMs\": 306,\n    \"p95Ms\": 431,\n    \"maxMs\": 1130\n  },\n  \"externalRequests\": 0\n}\nPASS: reference formats, ranges, aliases, ambiguous names, spelling, unknown queries and local private-note contracts.\nPASS: search useful-hit threshold 50/50; original targets and alternatives preserved.\nPASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.\nPASS: unified offline search, multi-passage comparisons, same-book/alias/range parsing, bounded results, source deduplication, alternative readings and exact selected-edition text.\nnode:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nbrowserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n    at /workspace/biblelens/scripts/check-release-smoke.mjs:31:32 {\n  log: [],\n  name: 'Error'\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnode:internal/errors:986\n  const err = new Error(message);\n              ^\n\nError: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/bin/npm-cli.js run check\n    at genericNodeError (node:internal/errors:986:15)\n    at wrappedFn (node:internal/errors:540:14)\n    at checkExecSyncError (node:child_process:943:11)\n    at execFileSync (node:child_process:979:15)\n    at runNpm (file:///workspace/biblelens/scripts/prepare-release.mjs:5:20)\n    at file:///workspace/biblelens/scripts/prepare-release.mjs:16:127\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  status: 1,\n  signal: null,\n  output: [ null, null, null ],\n  pid: 2832,\n  stdout: null,\n  stderr: null\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:release",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:release\n> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs && node scripts/check-prepared-assets.mjs\n\nPASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.\nPASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.\nPASS: local browser previews make no published-release request, while native localhost still checks for updates.\nPASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.\nPASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.\nPASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.\nPASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.\nPASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes; no temporary full Worker is required.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:sync",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:sync\n> node scripts/check-sync.mjs && node scripts/check-sync-disconnect.mjs\n\nPASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.\nPASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.\nPASS: failed native disconnect survives reload, retries on reconnect, revokes the copied token and keeps offline notes.\nPASS: already-revoked/expired tokens clear on 401 without enabling sync.\nPASS: a late sync response cannot apply cloud data or restore credentials after disconnect.\nPASS: web sync removes unused bearer credentials and sends only the signed-in session.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:mobile",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:mobile\n> node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs\n\nPASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.\nPASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    }
+  ],
+  "fullReleaseGatePassed": false,
+  "candidateCreated": false,
+  "deferred": [
+    "managed Sites browser QA: missing callable cua_repl.js/shared-desktop JavaScript tool",
+    "live HTTP/image bytes and release:verify: inherited destination-policy denial, no environment-change tool",
+    "signing, signed assets/www comparison, iPhone/iPad install/query/launch: no Mac/device route or Xcode"
+  ],
+  "risks": [
+    "inherited intermittent sync settling not proved fixed",
+    "tiny/occluded anatomy and imagined architecture/geography remain qualified"
+  ],
+  "systemBrowserProbe": {
+    "result": "empty-page title probe passed",
+    "appQaExercised": false,
+    "furtherSubstituteBrowserUse": false
+  }
+}

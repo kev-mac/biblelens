@@ -50,3 +50,9 @@ Managed Sites flag is `1`, with no callable cua_repl.js/shared-desktop JavaScrip
 The live hostname remains outside enforced outbound policy with no environment-change tool. Inherited denied live requests are not retried or bypassed. Live HTTP/image verification and `release:verify` remain deferred until permitted access. Native Sites deployment metadata is distinct from live bytes/browser verification.
 
 No Mac connector, configured VPN/device route, xcodebuild or xcrun is available. Signing, signed App.app/public versus www comparison, iPhone/iPad install, installed-build query and launch are deferred under the owner's cloud-continuation instruction. Historical device build 359 is not a fresh observation. Passing unchanged sync tests does not prove the inherited intermittent settling issue fixed. No full gate or synchronized-device release is claimed.
+
+## Final checks before publication
+
+Unchanged `release:prepare` failed, exit 1, at `check-release-smoke.mjs:31:32`: missing default Playwright Chromium headless shell. Its `build:mobile` step and preceding nonbrowser checks passed, including search useful-hit 50/50. Readability completed in the existing report-only mode with inherited findings. No candidate.json was produced. Independent `check:release`, `check:sync` and `check:mobile` passed. No gate or assertion was weakened, no browser installation was attempted and no production source was changed to compensate. These outcomes and independent evidence are committed in `ezra-artwork-verification-2026-11-07.json`.
+
+The reviewed production fingerprint remains unchanged. Publication will use the exact canonical already-built Worker; the deployment mirror is not rebuilt. Browser/live HTTP/image bytes, release:verify and native signing/install/query/launch remain deferred as described above. No full gate or synchronized-device release is claimed.

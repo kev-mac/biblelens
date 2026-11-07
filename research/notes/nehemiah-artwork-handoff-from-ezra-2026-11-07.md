@@ -31,3 +31,7 @@ Managed Sites flag is 1; no callable cua_repl.js/shared-desktop JavaScript tool.
 No Mac connector, VPN/device route, xcodebuild or xcrun. Signing, signed-app/www comparison, physical iPhone/iPad installation/query/launch are deferred. Historical device build 359 is not a fresh query. Passing unchanged sync tests does not prove intermittent settling fixed. Do not claim a full gate or synchronized-device release.
 
 After a denial, check uncertain outcome and use user_message_read.read_messages for trusted authorization. Retry only the same denied operation once per materially new relevant evidence if known unexecuted; never bypass. Trusted owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca` explicitly authorizes each book's commit/push/publish/available-device installation. Preserve exact outcome and blocker records.
+
+## Final check results
+
+`release:prepare` failed exit 1 at unchanged `check-release-smoke.mjs:31:32` because the default Playwright Chromium headless shell is missing. `build:mobile` and preceding nonbrowser checks passed; useful-hit 50/50. Readability exit 0 is report-only with inherited findings. No candidate.json was produced. `check:images`, `check:release`, `check:sync`, `check:mobile`, independent local Worker/offline parity and git diff checks passed. No gate was weakened. Browser QA, live verification and native signing/install remain deferred; passing unchanged sync checks does not prove intermittent settling fixed.
