@@ -90,8 +90,75 @@ The current candidate fingerprint is
 Focused Explore checks and syntax pass. A fresh CI run, now including the image
 gate, must verify this source and all browser matrices before publication.
 
-No publication or native installation has occurred. The Sites mirror was
-freshly opened and remains unchanged at saved build 386 / commit
-`64bea042655bc72df95a994a4b6c70237b2c3f5c`, with no newer independent work.
-No Mac/device or signed native build is available. Follow `RELEASING.md` after
-the exact source passes all gates; preserve the accepted build 391 artifact.
+## Accepted result
+
+[Run 42414444700](https://github.com/kev-mac/biblelens/actions/runs/42414444700)
+completed successfully for CI commit
+`d848a308d26039204215730300d6b86b3aa6706e`, based on canonical source
+`bbe327ca07858a0fd60f9eb855fd093cb67ce90d`. Release preparation, the complete
+shared image gate, 24 evidence-pill cases, 56 reader cases and 48 Explore cases
+all passed. Browser cases ran in Chromium and WebKit on the GitHub-hosted
+runner, with Chromium sandboxing required. No local browser or sandbox repair
+was used.
+
+The [accepted artifact](https://github.com/kev-mac/biblelens/actions/runs/42414444700/artifacts/13591475227)
+was downloaded through the authorized GitHub artifact tool. Its ZIP SHA-256 is
+`98b74de2ffac31eab5c03dae9b31c9ec06a727b93e2f2c11b6cabb5f8f4b2de3`.
+It includes the exact prepared web/native bundles, candidate metadata, logs,
+screenshots and the actual case matrix; retention expires November 14, 2026.
+The inner prepared-bundles archive SHA-256 is
+`9f538acd69c081317fedaebee3a823102be903928368ff9992808abc18140234`.
+Its manifest identifies build 392 / source fingerprint
+`242ae82664a39b4a66caf92a700a4134f7048cbe261279efa6ae1973068aa9f1`.
+The 59,182,330-byte Worker SHA-256 is
+`e118d536b589495299ea2061dcf0c1b34affb5c5e0daed202ff2270c88c1c23f`;
+the local rebuilt Worker matches that digest exactly. Both local web and
+unsigned native release metadata match the accepted fingerprint.
+
+An additional byte comparison caught a local native-only build comment
+difference in `www/device-bootstrap.js`: esbuild names the symlinked local
+dependency path `../biblelens/node_modules/...`, while the CI output names
+`node_modules/...`. This is a generated comment, but the local native rebuild
+is not claimed byte-identical to the accepted CI native bundle. The verified
+archive was safely extracted, without links or traversal paths, to
+`/workspace/shared/build392-exact-bundles` (4,466 entries). Use its exact
+`dist` and `www` together for artifact transfer, rather than substituting the
+local native rebuild. Its candidate metadata retains the tested CI commit and
+source fingerprint. No signed app or device installation is included.
+
+Manual inspection of the accepted screenshots covered Chromium 525×985 light,
+WebKit 985×525 dark and WebKit 820×1180 light. The search input/button stay in
+one row, the Stories count avoids the portrait face, the crop retains the
+doorway figures, and tile shapes adjust with orientation. Other cases are
+covered by the saved automated matrix; no physical-device QA is claimed.
+
+## Publication and device handoff
+
+No publication or native installation has occurred. A fresh native Sites read
+still reports public audience and saved version 386. The retained mirror is
+unchanged at `64bea042655bc72df95a994a4b6c70237b2c3f5c`. A fresh source
+credential was obtained in memory only; no source push/save/deploy was issued.
+
+The Sites skill and `RELEASING.md` require the source helper to commit, push
+and package the exact mirror state. `site-workflow.mjs` is absent from the
+installed executor and could not be read through the skill resource provider.
+This infrastructure gap blocks that required publishing step. Restore the
+supported helper in a capable session, freshly fetch/reconcile the mirror,
+copy the canonical source, and stage the already-built Worker with
+`npm run release:sites -- <mirror>/dist`. Use the helper's verified pushed
+commit/archive for the native save/deploy calls, preserving the public
+audience. Do not publish from the old build 391 checkout or rebuild a separate
+Sites version. An already-validated Worker-only package is retained at
+`/workspace/shared/build392-sites-package`; it has the accepted Worker digest.
+
+Kevin reports the Mac and devices are connected. This cloud session still
+exposes only Linux, no Mac/device connector, no configured VPN, no SSH target,
+and no `xcodebuild`/`xcrun`. Device installation is pending access from a
+Mac-capable session, not denied and not attempted. Preserve local Mac work,
+reconcile canonical main, confirm this exact fingerprint, and follow
+`RELEASING.md` for signed build/asset comparison and installation. The existing
+`--ios --install` script installs only the named iPhone; discover the connected
+iPad identifier before installing the same verified signed app there. Verify
+build 392 and the fingerprint on both devices. Run `release:verify` after
+publication; it has not passed for this unpublished candidate. Preserve the
+accepted build 391 artifact and concurrent book-review work.
