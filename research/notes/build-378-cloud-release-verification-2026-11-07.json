@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-07",
+  "book": "Amos",
+  "canonicalBaseline": "45aa882",
+  "canonicalReviewCommit": "231c028",
+  "review": {
+    "retainedImages": 10,
+    "replacements": 0,
+    "chapterOpeners": 9,
+    "storyPlacements": 1,
+    "minimumInternalGap": 8,
+    "boundaryGaps": [
+      21,
+      15
+    ],
+    "closePairsInvolvingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 378,
+    "sourceHash": "b9ed14289d5d5c4b23a7bfd2e70d5e0d05e6d015e8891e06c12056027507df7e"
+  },
+  "workerBytes": 59517400,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; npm ci --ignore-scripts; lock unchanged",
+    "buildMobile": "passed inside release:prepare; includes shared web build",
+    "images": "passed; all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed this run; inherited intermittent failure not repaired",
+    "focusedWorkerOffline": "passed: 9 chapters, 146 verses in each of KJV/ASV/WEB, 10 placements, 9 missing-opener controls, exact source/Worker/native bytes, zero underlying network requests",
+    "baselineAssetFilesPreserved": 1616,
+    "pinnedBlobsEqualSource": 1145,
+    "fullReleasePreparation": "failed: Playwright Chromium headless-shell executable missing at check-release-smoke.mjs:31; full npm run check incomplete",
+    "browser": "unverified: supported managed control tool unavailable; no browser install or alternate control path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed"
+  },
+  "publication": {
+    "status": "pending"
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel audit uploads remain excluded; no retry.",
+  "handoff": "obadiah-artwork-handoff-from-amos-2026-11-07.md",
+  "nextBookStarted": false
+}
