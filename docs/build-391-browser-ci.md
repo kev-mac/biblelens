@@ -13,8 +13,8 @@ requires `chromiumSandbox: true` even for older tests whose launch options omit
 it; there is no sandbox-disable flag or machine security workaround.
 
 The checkout must descend from source commit
-`f7e970e375c9d4c5eb0e66729d9b06e5f830b09b` and must retain build 391 fingerprint
-`c3d6da57a5f73dd4e74cb2f7f79c38e6d8b0bed10faf3ce3dded06987ffae38e`.
+`5f195786fd931d3b98f3d9e803029ed7307f989c` and must retain build 391 fingerprint
+`3afe738f05b120305275b8e0aff6dc139bd9392c5c60b637c93e339f01bd8910`.
 CI configuration and documentation are outside the release fingerprint; no app
 source, build number or checked-in test changes are included in this branch.
 
