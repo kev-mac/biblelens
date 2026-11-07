@@ -1,4 +1,78 @@
-# Restore the single Explore carousel
+# Build 393 UI corrections and release handoff
+
+The final candidate passed [run 42424797447](https://github.com/kev-mac/biblelens/actions/runs/42424797447):
+complete `release:prepare`, `check:images`, and 180 Chromium/WebKit cases
+(104 reader, 28 evidence/context, 48 Explore). The run completed successfully;
+the accepted artifacts were downloaded and their ZIP, inner archive, release
+identity and Worker hashes verified locally. Earlier runs below are retained
+as an audit, not substituted for this final source's results.
+
+| Identity | Accepted value |
+| --- | --- |
+| Version / build | 1.1.0 / 393 |
+| Canonical code commit | `7fe24ca40349e86336bb733edeff6a4bb409495f` |
+| Tested CI commit | `d7504187747b2451f826485ea3e007860d01c9e8` |
+| Source SHA-256 | `e2a84cc647ec2458bf0cec4b20412f3617ffa44c3c618763070eafcd9412df05` |
+| Worker bytes | 59,185,175 |
+| Worker SHA-256 | `c4c05b389cb27d2ef9aadb7e6b7cc2d2eea4880778aac0280e59f1a62df42b6f` |
+| Inner prepared-bundles.tar.gz SHA-256 | `70ac5a45d34dd50cbe0172f1a8118aae8c2e811494d345d3fe7533cf0db012bc` |
+
+The CI commit retains canonical main as an ancestor; its additional changes
+are CI configuration and documentation. Both compute the source hash above.
+Documentation-only checkpoint commits do not change release identity.
+
+- [Exact verified bundles, artifact 13594934612](https://github.com/kev-mac/biblelens/actions/runs/42424797447/artifacts/13594934612):
+  452,906,161 bytes, ZIP SHA-256
+  `94fa3c6a16dd422daab1ea9abdcc7dfce91976969e34b2df078a3758f9cc259d`.
+- [Screenshots, matrices and logs, artifact 13594979908](https://github.com/kev-mac/biblelens/actions/runs/42424797447/artifacts/13594979908):
+  87,862,837 bytes, ZIP SHA-256
+  `49126eb27c89949cfdc9c3acf69cd7c111afc2c693130f6274afbdf82bbce0f3`.
+
+These GitHub artifacts expire on 2026-11-14. Preserved local paths are
+`/workspace/shared/build393-final-verified-bundles.zip` and
+`/workspace/shared/build393-final-visual-qa.zip`, with extracted copies beside
+them. The safely extracted, byte-verified shared bundles are in
+`/workspace/shared/build393-final-exact-bundles/{dist,www}`. The Worker-only
+Sites package is `/workspace/shared/build393-final-sites-package`; it contains
+only `server` and `.openai`, and its Worker hash matches the tested bundle.
+It was packaged from accepted CI bytes with canonical `packageSites`, without
+rebuilding the app. Do not use the original frozen build-391 checkout or an
+earlier build-393 artifact for this release.
+
+Manual inspection covered Chromium 598×1184 light and WebKit 598×1184 dark
+passage screenshots, WebKit 1157×1184 light and Chromium 1157×1184 dark,
+the undimmed 598px reader, and WebKit 820×1024 with simulated native safe area.
+The narrow reference fields measure 496px / 496.22px by 44px; the wide fields
+measure 642px / 642.22px by 44px. Narrow grids use abbreviations throughout;
+wide grids show full names on one line. The chapter opener has link styling,
+translation controls have visible labels and native selection affordances,
+and all three passage steps have borders. Real typing, editing, invalid and
+valid submission, pointer Go navigation, keyboard selection and focus passed.
+
+The actual Genesis 1:16 Academic cards were inspected at 469px Chromium light
+and 1440px WebKit dark: category-colored borders and distinct information/
+evidence icon buttons preserve the two summaries. Explore was inspected at
+525×985 Chromium light, 820×1180 WebKit dark and 1180×820 Chromium light:
+one Collections carousel, retained search and coherent portrait/landscape
+cropping. All 180 matrix rows are PASS. No screenshot comparison to a missing
+approved rendering is claimed.
+
+The final reader diagnostics captured only sync-session 503s and corresponding
+cancelled requests; no stylesheet failure was recorded. The CI preview has no
+D1 binding. A read-only production database overview confirms the `DB` binding
+and `sync_devices`, `sync_documents`, `sync_pair_codes` tables exist, but does
+not verify authenticated live sync. Existing readability corpus flags and the
+reported 1 Samuel 7 close image pair remain in the check logs; artwork and
+research data were not changed by this UI correction.
+
+Publication belongs to the coordinating parent session's supported Sites
+route. Reconcile the current mirror, publish these exact bytes, then run
+`release:verify` and live sync checks. The native `www` is prepared but unsigned
+(`signedNativeAssets: false`); Mac build/signing, signed-asset comparison,
+iPhone/iPad installation and on-device build verification remain pending.
+This session did not publish, install, or retry denied Mac network operations.
+
+## Implemented scope
 
 Build 393 removes the unintended second Text & Translation Tools row added in
 build 392. Default Explore again contains exactly one Collections carousel with
@@ -18,10 +92,8 @@ The existing Evidence deep link remains available. Older carousel/approved UX
 assertions were aligned with the single-row structure; they are not claimed
 executed unless separately recorded.
 
-Validation and the exact tested commit/artifact will be recorded after the new
-CI run. Build 392's passing results do not verify build 393. The publishing
-session owns Sites reconciliation/publication of the accepted exact bundle.
-This task does not install devices or retry denied Mac network operations.
+Build 392's passing results do not verify these changes. The accepted final
+source, artifacts and remaining release steps are recorded above.
 
 ## Read reference field and context-card annotations
 
@@ -38,12 +110,13 @@ reported one-character reference field. `components.css` makes `form button`
 100% wide below 651px. The reference Go button has `flex:none`, and did not
 override that width, so it can consume the flex row and squeeze the growing
 input to its padding. The existing input's `width:0` is its flex sizing basis;
-it was not evidence of an editing prohibition. The minimal fix sets only the
-Go button's width to `auto`. No reference or search navigation was replaced.
+it was not evidence of an editing prohibition. The initial fix set the Go
+button's width to `auto`; the final reference row uses the explicit grid below.
+No reference parser or passage navigation was replaced.
 This source-proven conflict is consistent with the report, but the user's
 exact browser state has not been reproduced or ruled out by a desktop result.
 
-The expanded reader matrix checks 88 cases across Chromium/WebKit, both themes,
+The intermediate reader matrix checked 88 cases across Chromium/WebKit, both themes,
 web/simulated native safe areas, widths 320, 390, 647, 650, 651, 768, 820, 844,
 1024, 1165 and 1366, including 844×390 landscape and the observed desktop
 1165×747. It measures readable reference width (at least 160px and 60% of its
@@ -72,9 +145,9 @@ both themes and engines. Fixture and real-data screenshots are retained.
 Focused Explore, reader/parser and evidence checks pass locally. The
 readability audit completed in its existing report-only mode and retained
 existing corpus flags; this is not a clean strict readability result.
-The final source now requires a fresh full CI run with 164 browser cases
-(28 evidence + 88 reader + 48 Explore); the earlier passing run is preserved
-and is not attributed to these later changes. No native browser session,
+That intermediate source required a fresh full CI run with 164 browser cases
+(28 evidence + 88 reader + 48 Explore); the earlier passing run was preserved
+and was not attributed to later changes. No native browser session,
 physical-device check, publication or installation is claimed by this task.
 
 ## Further passage-picker annotations
