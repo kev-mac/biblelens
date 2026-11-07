@@ -70,9 +70,19 @@
   },
   "syncFlake": "Unchanged passing run does not prove inherited intermittent bounded-settle failure fixed.",
   "publication": {
-    "status": "pending checkpoint publication",
-    "priorSitesVersion": 355,
-    "unchangedBuild": 366
+    "status": "succeeded",
+    "sitesVersion": 356,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_1b60f9d4b100819194f73bf739cdbbb5",
+    "mirrorCommit": "793e11bc58d8f7765d54f6138d53d224e1f72532",
+    "deploymentId": "appgdep_6aee9f21a03881918539f1d9c1e51e64",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "unchangedBuild": 366,
+    "archiveFiles": 6,
+    "archiveContentHash": "sha256:693013a1f837790a1c63e72c03a2bb7c62c00de4953413add7d3bab8cc98c9e7",
+    "workerNotRebuiltInMirror": true,
+    "publicAudiencePreserved": true,
+    "firstAttempt": "No structured deployment confirmation returned; saved-version query showed deployment_id null. Trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca freshly read and owner/public access verified; exact deployment retried once and succeeded. No bypass or pending approval."
   },
-  "platformsSynchronized": false
+  "platformsSynchronized": false,
+  "canonicalReviewCommit": "e5dd067"
 }

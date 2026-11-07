@@ -41,3 +41,19 @@ Browser QA, live HTTP verification and signed-device parity remain separate requ
 The live hostname remains outside the enforced egress policy and no environment-change tool is exposed. The inherited denied live request was not retried or bypassed; `release:verify` remains deferred. Native Sites publication metadata cannot establish live release/image delivery.
 
 No Mac connector, configured VPN/authorized device route, Xcode or xcrun is available. Signing, signed `App.app/public` versus `www` comparison, installation, installed-build queries and launches are deferred. Build 359 was the last historical installed report, not a fresh query. No native/web synchronization is claimed. The owner explicitly authorized continued cloud book progress when Mac/devices are unavailable.
+
+
+## Completed checks and publication
+
+- `npm run build:mobile`: passed inside release preparation; shared Worker/offline build 366 and fingerprint unchanged.
+- `npm run check:images`, `check:release`, `check:mobile`, `check:sync`: individually passed. The sync run did not reproduce the inherited intermittent bounded-settle failure and does not prove it fixed. No sync/security/test changes were made.
+- `npm run check`: all nonbrowser stages passed, including search 50/50; report-only readability retains existing findings. Final browser smoke failed because Playwright Chromium headless shell is absent at `/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell` (`scripts/check-release-smoke.mjs:31:32`).
+- `npm run release:prepare`: **FAILED**, exit 1; no candidate.json. Browser QA is unverified. No assertion was weakened and no substitute browser was used.
+- Exact built Worker API audit: four openers; source/Worker/offline/mirror bytes equal; scripture and metadata preserved. All 1,138 immutable hosted Git blobs match source at `f7b2eebf5ff77c25f98fe94ad3c59da22ab02c22`. No changed image or new pin/download was needed.
+- `git diff --check`: passed. All production paths remain byte-identical to the fetched main baseline.
+
+Canonical review commit **e5dd067** was pushed to GitHub main. The public Sites source checkpoint is **793e11bc58d8f7765d54f6138d53d224e1f72532**. Canonical `release:sites` staged the already-built Worker without rebuilding the mirror. The archive contains six files, root hosting metadata and Worker-only `dist/server`/`dist/.openai`; it has no `dist/client` bypass.
+
+Native Sites saved **version 356** and returned **succeeded** for deployment `appgdep_6aee9f21a03881918539f1d9c1e51e64`, at https://scripture-lens.kvn-mcgwn.chatgpt.site. Public audience is preserved. App identity remains build **366**, not a new artwork build. The initial deploy attempt returned no structured deployment confirmation; a saved-version read showed no deployment ID. After freshly reading the owner's explicit publication instruction and verifying owner/public access, the identical deployment operation was retried once and succeeded. No approval remains pending.
+
+Publication is confirmed by Sites; full gate, live HTTP checks and signed-device synchronization are still incomplete as detailed above. Final documentation commits retain the same source fingerprint. The next-session prompt is `1-samuel-artwork-handoff-from-ruth-2026-11-07.md`; 1 Samuel was not begun here.

@@ -4,7 +4,7 @@ Review BibleLens chapter and Story still artwork for **1 Samuel only**, in a new
 
 Start with latest GitHub `kev-mac/biblelens` main. Preserve edits/stashes; read AGENTS.md, RELEASING.md, Ruth audit/inventory/verification (`ruth-artwork-*-2026-11-07.*`) and earlier Genesis–Judges identity ledgers. Open public Sites `appgprj_6acba627a6cc8191932fbbc47db8895d` with a fresh source credential and reuse `.release/sites-mirror`; reconcile independent work before editing. Source helper was absent here, so ordinary Git used hidden stdin/in-memory authentication without credential files or arguments.
 
-Ruth review retained all four existing images with no production change. Build **366**, fingerprint `76051e3cb94714ca4022fa7bd44140a47512485d2c5875b04097d267faf1a2fe`, remains the shared identity. Read the Ruth verification JSON for final publication/checkpoint IDs. No 1 Samuel review was begun in the Ruth session.
+Ruth review retained all four existing images with no production change. Build **366**, fingerprint `76051e3cb94714ca4022fa7bd44140a47512485d2c5875b04097d267faf1a2fe`, remains the shared identity. Ruth checkpoint published as public Sites version **356**, mirror `793e11bc58d8f7765d54f6138d53d224e1f72532`, succeeded deployment `appgdep_6aee9f21a03881918539f1d9c1e51e64` at https://scripture-lens.kvn-mcgwn.chatgpt.site. Canonical review commit `e5dd067`; later documentation keeps the same fingerprint. Read the Ruth verification JSON for exact evidence. No 1 Samuel review was begun in the Ruth session.
 
 ## Review and identity references
 
