@@ -1,0 +1,173 @@
+{
+  "scope": "Titus only; no Philemon artwork opened or reviewed. Outgoing opener metadata used solely for spacing.",
+  "baseline": "3ef4b563f60284465333df643c2543eb8961080b",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "style only; actual file viewed separately and beside all three originals; never identity for another person"
+  },
+  "priorInventories": [
+    "titus-visual-continuity-audit-2026-11-04.md",
+    "titus-continuity-inventory-2026-11-04.json",
+    "acts-continuity-inventory-2026-11-07.json",
+    "2-timothy-continuity-inventory-2026-11-07.json"
+  ],
+  "visibleNamedPeople": [],
+  "visiblePeople": [],
+  "visibleGroups": [],
+  "visibleAnimals": [],
+  "textualMentionsAreNotDepictions": [
+    {
+      "names": [
+        "Paul",
+        "Titus",
+        "Jesus Christ"
+      ],
+      "verses": "1:1,4-5; 2:13-14; 3:6",
+      "finding": "No portraits. Titus is not Timothy; true child language does not establish biological parentage, an age, or a physical face. No identity inferred from anonymous Acts companions. Book order is not elapsed narrative time."
+    },
+    {
+      "names": [
+        "elders/overseers and households",
+        "older men and women",
+        "younger men and women",
+        "servants and masters",
+        "Cretans",
+        "opponents",
+        "rulers/authorities"
+      ],
+      "verses": "1:5-16; 2:1-10; 3:1-3,9-11",
+      "finding": "No visible group; empty stools do not certify who gathered. General descriptions/quoted polemic are not portraits or ethnic stereotypes. Evil beasts in 1:12 is not a literal animal scene."
+    },
+    {
+      "names": [
+        "Artemas",
+        "Tychicus",
+        "Zenas",
+        "Apollos",
+        "companions and greeting group"
+      ],
+      "verses": "3:12-15",
+      "finding": "Textual mentions only. Supplies evoke requested support without asserting a completed journey/delivery or an exact route to Nicopolis. No new portrait anchor."
+    }
+  ],
+  "inheritedApprovedPaulGuidance": {
+    "sourceLedger": "acts-continuity-inventory-2026-11-07.json",
+    "paths": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-shipwreck-and-rome-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+    "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+    "cautions": "Actual files exist; hashes recorded below. Ledger guidance only: these portraits were not re-reviewed or used to generate art in this session. First-journey incompatible v1 remains inactive; v2 landscape is not a face reference. Ephesus artisan is not Paul. Council exact identities remain qualified."
+  },
+  "referenceFileHashes": [
+    {
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "sha256": "0b8b96c507d70183544aa2508a90d2de165eca27102c1eb9c9b8fa89e825ed47"
+    },
+    {
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "sha256": "58e0dcfc83147191569bca6d402c861e702f6386808e992d6c7b2139c22bc090"
+    },
+    {
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+    },
+    {
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+    },
+    {
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "sha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c"
+    },
+    {
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "sha256": "bcd71f02072568b28dc375bb13a29bdd7fa6a1c563f0e3ad84650ef0e651200d"
+    }
+  ],
+  "inspection": {
+    "originalsViewedSeparatelyAtNativeSize": 3,
+    "nativeImageSize": [
+      960,
+      540
+    ],
+    "styleBoards": 3,
+    "neighborBoards": 3,
+    "boards": [
+      {
+        "path": "/tmp/titus-review/style-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "31d37c3331e60e1fc7cdacff598e9f37692ff150dc7213ebce39dc00f8c0f4d6",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/titus-review/neighbor-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "0762e0bf1540cfb85b0906585c06a54f7dbb40e92f1ba94c7bfbcc80956889d9",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/titus-review/style-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "24f966174a9ee9bbec8a94c6acd2cb8fe42d80f65feef77b46738426620234cc",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/titus-review/neighbor-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "0772af9f58ca29b964f07291c68c3d9b92832f8b3897921f6b62cfd9f4c991d3",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/titus-review/style-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "4d5f0af2c07f155b279146b10e8c49796b93d41b08d041684a64f67ba78611bd",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/titus-review/neighbor-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "288fe289f70c91498e3c331386449f80a135d7aafb9fb42be11a9abeb82a78ed",
+        "viewed": true
+      }
+    ],
+    "incomingNeighbor": "src/assets/chapter-2-timothy-04-opening-v1.webp",
+    "outgoingNeighbor": "Philemon artwork not opened; metadata only.",
+    "anatomy": "No visible humans or animals: face, complexion, natural hair, age/build, finger/thumb/limb and animal checks not applicable. Every visible scene object inspected at native size; concealed geometry and exact archaeology not certified."
+  },
+  "generationCalls": 0,
+  "editingCalls": 0,
+  "actualIdentityInputs": "No generation/editing took place. Every future new identifiable recurring portrayal requires actual approved image files as visual inputs, not descriptions alone.",
+  "result": "Retain all three existing openers; no definite object defect, text contradiction or identity drift. No new portrait anchors.",
+  "titusIdentity": "No new or certified Titus face anchor. Do not infer him from an anonymous Acts companion, headband, clothing or position. Timothy is not Titus. Book order does not establish elapsed narrative time or aging."
+}

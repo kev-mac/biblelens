@@ -1,0 +1,114 @@
+{
+  "baseline": "3ef4b563f60284465333df643c2543eb8961080b",
+  "scope": "Titus only; 3 existing openers retained, no production changes or next-book review.",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --registry=https://registry.npmjs.org --cache=/tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-npm-install.log",
+      "logBytes": 629,
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "6fe9eb87e54619f3d85c58e674fdfb03186047036ddf1056e06377cf1447d15c"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/titus-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-sites-comparison.log",
+      "logBytes": 1172,
+      "logSha256": "cad12c9d7d0dfb4d7e83a5f752d09789e46b46c0277c54ff1097338503286039"
+    },
+    {
+      "command": "node research/notes/titus-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "logPath": "/tmp/titus-verify.log",
+      "logBytes": 383,
+      "logSha256": "3106305c6ab509a8cdae36dd6d6cfb0043b4bc332bf5eee3b5247512cb92c995"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "logPath": "/tmp/titus-check.log",
+      "logBytes": 23961,
+      "logSha256": "1d20861b3ed366366284ddbbff0af3132b20e21445e991fd5765a5a90fec72ea"
+    }
+  ],
+  "additionalPassedChecks": [
+    "Current source-audit.mjs: 2010 production files, 1619 assets byte-identical; all 3 openers retained, zero Story placements",
+    "git diff --check",
+    "Fresh GitHub fetch before delivery: main unchanged from baseline; no stashes",
+    "Read-only fresh-credential Sites opening: clean/unpushed frozen build 386, no independent newer work"
+  ],
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "executable": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "finding": "Browser launch failed because executable is absent. Preceding checks passed; readability is inherited report-only, not a strict corpus pass."
+  },
+  "production": {
+    "preservedFiles": 2010,
+    "preservedAssets": 1619,
+    "imagesRetained": 3,
+    "imagesReplaced": 0,
+    "imageBytes": 460588,
+    "chapters": 3,
+    "verses": 46,
+    "offlineNetworkCalls": 0,
+    "minimumInternalGap": 15,
+    "internalGaps": [
+      16,
+      15
+    ],
+    "boundaryGaps": [
+      22,
+      15
+    ],
+    "closePairs": []
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "publication": {
+    "status": "Inherited denial; not attempted in this session",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected deployment and an evidence-backed same-version retry pending explicit new approval. Parent explicitly prohibits publication/bypass. No save, deploy, mirror push, audience change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites browser control tool cua_repl.js not callable; Sites skill explicitly says skip browser QA when missing. No installation, substitute control route or preview server.",
+    "Inherited denied live HTTP/image bytes/release:verify operations deferred without materially new relevant authorization; local origin fixture is not live verification. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN: signing, signed public-vs-www parity, physical install/query/launch pending. Historical build 359 is not current device evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains outside artwork scope."
+  ],
+  "nextBookStarted": false
+}

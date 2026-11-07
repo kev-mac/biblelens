@@ -1,0 +1,26 @@
+{
+  "baseline": "3ef4b563f60284465333df643c2543eb8961080b",
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "productionFilesCompared": 2010,
+  "sharedProductionFilesCompared": 2007,
+  "differences": [
+    "data/chapter-images.json",
+    "data/hosted-artwork.json",
+    "data/story-images.json",
+    "package.json",
+    "scripts/hosted-artwork.mjs"
+  ],
+  "onlyCanonical": [
+    "src/assets/chapter-matthew-15-opening-v2.webp",
+    "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+    "src/assets/story-sending-out-the-twelve-v2.webp"
+  ],
+  "onlyMirror": [],
+  "mirror": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "result": "Fresh credential read-only opening for the Titus review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+}
