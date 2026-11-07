@@ -22,4 +22,15 @@ No Mac connector, configured VPN/device route, Xcode/xcrun or physical devices. 
 
 Psalms close pairs: 89:0→89:3 (3), 117:0→118:0 (2), 123:0→124:0 (4), 131:0→132:0 (3), 133:0→134:0 (3), 134:0→135:0 (3). Preserve necessary coverage; Psalm 89 is the priority phone/iPad check. Boundary Psalms 150:0→Proverbs 1:0 is 6 positions. Inherited 1 Samuel and Esther→Job pairs remain separately disclosed.
 
-Use public/D1-preserving Worker-only package. Copy canonical source preserving deliberate exclusions, stage its already-built artifact with release:sites, no mirror rebuild or dist/client bypass. If images change, push public asset commit before updating immutable host pin/deployment. Documentation-only review retains build 370. Final publication provenance will be appended here before handoff.
+Use public/D1-preserving Worker-only package. Copy canonical source preserving deliberate exclusions, stage its already-built artifact with release:sites, no mirror rebuild or dist/client bypass. If images change, push public asset commit before updating immutable host pin/deployment. Documentation-only review retains build 370. Final publication provenance follows below.
+
+
+## Confirmed publication
+
+Canonical review commit **a172093** was pushed to GitHub main. Mirror **3e5bacc45f873b44d43fe2d7116c05fa4184f759** was pushed after a fresh authenticated fetch confirmed no independent advance. Canonical tracked source copied with deliberate research omissions preserved; release:sites staged the exact already-built Worker without rebuilding the mirror. Canonical/mirror/Worker/unsigned offline fingerprint remains build 370, **d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2**.
+
+Sites saved **version 367**, ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_923ae50a4fd08191a7f7e2211df6e0de`; deployment **appgdep_6aeebc5553348191ad040d8e641818f3** returned **succeeded** at https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file Worker-only archive, content hash `sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa`, preserves public audience/D1 and excludes static bypass paths. The same artifact hash as Job is expected because production bytes are unchanged.
+
+The initial publish call returned no structured outcome; a saved-version read confirmed deployment_id null. Re-read trusted owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca` explicitly authorizing per-book publication and recent history, then retried the identical native saved-version deployment once. It succeeded. No publication remains pending; no denied route was bypassed. Initial rejection reason, if any, was not exposed by the tool and is not invented here.
+
+Browser gate, live HTTP/release:verify/image bytes and signing/device steps remain deferred as detailed above. Final canonical publication documentation is newer than the mirror, without a production fingerprint change. Proverbs is the next separate session; no next-book visual review began here.

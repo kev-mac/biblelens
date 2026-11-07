@@ -501,5 +501,24 @@
     "live": "Inherited denied destination outside enforced policy. No new relevant authorization or supported environment-change tool. release:verify/live HTTP and live image bytes remain deferred without retry or bypass.",
     "devices": "No Mac connector, configured VPN/device route, Xcode/xcrun or physical devices. Signing, signed assets versus www, device query/install/launch deferred. Historical build 359 not freshly queried.",
     "sync": "Isolated unchanged check:sync passed. Static investigation: sync awaits /session before /document; bearer authentication awaits WebCrypto digest. Fixed 30 setImmediate rounds do not guarantee native async completion. Hypothesis only; inherited intermittent failure unresolved. No test weakening or production change."
+  },
+  "publication": {
+    "canonicalReviewCommit": "a172093",
+    "mirrorCommit": "3e5bacc45f873b44d43fe2d7116c05fa4184f759",
+    "sitesVersion": 367,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_923ae50a4fd08191a7f7e2211df6e0de",
+    "deploymentId": "appgdep_6aeebc5553348191ad040d8e641818f3",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "archiveFileCount": 6,
+    "publicAudiencePreserved": true,
+    "d1Preserved": true,
+    "mirrorRebuilt": false
+  },
+  "publicationAttemptHistory": {
+    "initialOutcome": "No structured deployment confirmation returned; subsequent saved-version read had deployment_id null.",
+    "evidence": "Re-read trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizing each book commit/push/publish/install and recent room history. Site freshly confirmed owner/public.",
+    "retry": "Identical saved-version native deploy retried once and succeeded. No bypass or remaining pending publication."
   }
 }
