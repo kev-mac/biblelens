@@ -1,0 +1,149 @@
+{
+  "build": 360,
+  "version": "1.1.0",
+  "canonicalReleaseCommit": "30bb649497259845493eb883a5c8995b3bcf4935",
+  "artworkPin": "8e06339384bc0d6c5a5e1900581a1c0ef9d28723",
+  "sitesSourceCommit": "f8dac207ef9bd9da9b36e203184f32888f6e78d4",
+  "sourceHash": "8866cd0d68ead3521aa4a16d079f33af4ff82f9e202d44633663bc1745b14524",
+  "sitesVersion": 349,
+  "deployment": {
+    "id": "appgdep_6aee75ebdd4481919d1727f1cd915bd8",
+    "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "title": "BibleLens",
+    "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f020472e76288191a9fee35d60c3786b",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+    "failure_message": null,
+    "env_set_revision": 1,
+    "updated_at": "2026-11-07T00:51:05.432220+00:00"
+  },
+  "workerBytes": 64449038,
+  "workerLimitBytes": 66060288,
+  "coverage": {
+    "chaptersWithOpener": 50,
+    "placements": 88,
+    "uniqueActiveFiles": 86,
+    "versionedCorrections": 18,
+    "retainedGapsUnderFiveVerses": 10
+  },
+  "checks": {
+    "buildMobile": "passed",
+    "images": "passed; shared Story/chapter coverage, exact encoding, native/web byte parity",
+    "releaseContracts": "passed; npm run check:release",
+    "mobile": "passed; offline worker and mobile chrome fixtures",
+    "contentAndSearch": "all nonbrowser steps of npm run check passed; final browser smoke step blocked",
+    "readability": "ran successfully in report-only mode; existing issues remain",
+    "syncCore": "passed",
+    "syncDisconnect": "unchanged test passed in one isolated execution, but failed in combined runs at bounded settle assertions (lines 30 and 34); overall npm run check:sync is not green",
+    "sourceParity": "canonical source, Sites mirror and offline release.json have identical build 360 fingerprint; staged Worker bytes equal canonical Worker",
+    "publicArtwork": {
+      "pin": "8e06339384bc0d6c5a5e1900581a1c0ef9d28723",
+      "verifiedPinnedGitBlobs": 1111,
+      "publicDownloads": [
+        {
+          "asset": "/assets/chapter-genesis-20-v2.webp",
+          "bytes": 121328,
+          "sha256": "0460951d3cb33c56bcd9cbac372d2a3fb26f1bccc38c2c279a3c7e63040d2ee6"
+        },
+        {
+          "asset": "/assets/story-isaac-and-ishmael-v2.webp",
+          "bytes": 249350,
+          "sha256": "2ea32fc9beba6682ccfb4a51eeabebe9c40c59406f5af746fc1dfa43f16a761d"
+        },
+        {
+          "asset": "/assets/chapter-genesis-25-opening-v2.webp",
+          "bytes": 154196,
+          "sha256": "7701b8b3c94aced835d7d2e114de15652226a3548996871d9fdde5facf26de03"
+        },
+        {
+          "asset": "/assets/story-noah-and-the-flood-v3.webp",
+          "bytes": 187524,
+          "sha256": "98b2ff4c32f32fcb38287364424a547991aac8835cc3074af7e7e8a157540352"
+        },
+        {
+          "asset": "/assets/chapter-genesis-26-opening-v2.webp",
+          "bytes": 175676,
+          "sha256": "de42774345efbcb05ae2d681546c0a614ebd42bb265dd6c11abe320acf5f7033"
+        },
+        {
+          "asset": "/assets/chapter-genesis-41-opening-v2.webp",
+          "bytes": 101794,
+          "sha256": "f527a7748e4703d6187628810e6eed5bdf2ecd6aa8a8f29bd710d97dac3dec2b"
+        },
+        {
+          "asset": "/assets/chapter-genesis-40-v2.webp",
+          "bytes": 110162,
+          "sha256": "5768568ef1537f1407c1f756d13b4a84409dcdc976a1e5e936a4d11d24b21991"
+        },
+        {
+          "asset": "/assets/chapter-genesis-44-v2.webp",
+          "bytes": 114952,
+          "sha256": "00e35285cefc3f5c3f7a3b37911592ffab197361c53cd279c8f70114e0123229"
+        },
+        {
+          "asset": "/assets/chapter-genesis-20-opening-v2.webp",
+          "bytes": 188234,
+          "sha256": "d28a0d8bf4f3dd3bb396a8d58e57f5a0dd38a402e28c375b4386dd9372af199e"
+        },
+        {
+          "asset": "/assets/chapter-genesis-14-v2.webp",
+          "bytes": 110330,
+          "sha256": "259bccefe983d2ac447c7d21d0888bf4fe3a41a98d72b2b72242a6ae670174d2"
+        },
+        {
+          "asset": "/assets/chapter-genesis-27-opening-v2.webp",
+          "bytes": 154760,
+          "sha256": "d69b3279b441312223d9675d73dfa83571c4f960dd37b8709d6595491a4f8fc4"
+        },
+        {
+          "asset": "/assets/chapter-genesis-28-opening-v2.webp",
+          "bytes": 166292,
+          "sha256": "bcc666e1ee89d9ed20081c0483e37bac67a4697c94e72b81ef58ca8de8dbcf57"
+        },
+        {
+          "asset": "/assets/chapter-genesis-43-opening-v2.webp",
+          "bytes": 154978,
+          "sha256": "bc4c3fb97c5e9cc8ae9a2f0c90f14d02c65e34d8b7a6b92a95b45f639ee7b6aa"
+        },
+        {
+          "asset": "/assets/chapter-genesis-43-v3.webp",
+          "bytes": 118026,
+          "sha256": "30a8db6c577f82c6237d666213b2f02f5b0e705778f1fe0c203c6e13dbedadf8"
+        },
+        {
+          "asset": "/assets/story-joseph-reunites-his-family-v2.webp",
+          "bytes": 196950,
+          "sha256": "6bbf9db2cd2cfa37dcf66ed1f5af9a3b954ff5b6ef535d2b361eb9a1919a65ef"
+        },
+        {
+          "asset": "/assets/chapter-genesis-45-v2.webp",
+          "bytes": 117312,
+          "sha256": "520d482a12433dadcbbd14e4d5e7c6016ac2a65c7cfe2abd7bb61c828b1e61af"
+        },
+        {
+          "asset": "/assets/chapter-genesis-47-opening-v2.webp",
+          "bytes": 159824,
+          "sha256": "445256ee4221f2d99418d47e79d88240f469a6e890b2c79d37cf5bea75feeb2a"
+        },
+        {
+          "asset": "/assets/chapter-genesis-44-opening-v2.webp",
+          "bytes": 112692,
+          "sha256": "39a068a8c3fb5809aaed9d62f34b6692b2f617b9b3470c86ebd7ff562e65c051"
+        }
+      ]
+    },
+    "browserSmoke": "blocked: Playwright Chromium executable absent; WebKit also absent; no browser installed",
+    "postPublishReleaseVerify": "blocked: direct Node fetch EAI_AGAIN; correctly proxied fetch denied HTTP CONNECT with 403; live hostname absent from enforced environment allowlist",
+    "liveArtworkBytes": "not verified from live Site; all 18 immutable public source downloads match source and offline bytes",
+    "signedAssets": "deferred; no Mac connector/TCP access exposed to this session",
+    "deviceInstalls": "deferred; no installation attempted; iPhone and iPad last recorded at build 359, not freshly queried",
+    "deviceLaunches": "deferred; build 359 launches previously unverified because devices were locked",
+    "videoMotionAndPlayback": "not re-reviewed; existing video sources/posters preserved"
+  },
+  "userDecision": "No outstanding artwork decision. Device work may be deferred under Kevin’s latest instruction. Live HTTP verification needs an environment allowed to reach the Site; browser checks need the supported browser runtime.",
+  "nextBook": "Exodus, in a separate session. Do not redo Genesis 2 landscapes."
+}
