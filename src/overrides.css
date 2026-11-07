@@ -3408,7 +3408,7 @@ html body.lens-app #passage-picker :is(.passage-steps,.passage-testaments) butto
 html body.lens-app #passage-picker .passage-steps button {border:1px solid var(--lens-rule);background:var(--lens-control-bg);}
 html body.lens-app #passage-picker .passage-steps button[aria-pressed="true"] {border-color:var(--lens-link);background:var(--lens-link-soft);}
 html body.lens-app #passage-picker legend {margin-bottom:4px;font-size:.75rem;}
-html body.lens-app #passage-picker .passage-book-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(56px,4rem,calc((100% - 20px)/6))),1fr));gap:4px;}
+html body.lens-app #passage-picker .passage-book-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(56px,4rem,calc((100% - 16px)/5))),1fr));gap:4px;}
 html body.lens-app #passage-picker .passage-number-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(max(44px,2.5rem),1fr));gap:4px;max-height:none;overflow:visible;}
 html body.lens-app #passage-picker .passage-number {min-width:44px;min-height:44px;}
 html body.lens-app #passage-picker .passage-number span {

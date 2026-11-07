@@ -20,7 +20,9 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
  try{
   for(const [width,height] of screens)for(const native of [false,true]){
    const context=await browser.newContext({viewport:{width,height},hasTouch:Math.min(width,height)<=1024,reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage();
-   const errors=[],contextResults=[];page.on('pageerror',error=>errors.push(error.message));
+   const errors=[],contextResults=[],network=[];page.on('pageerror',error=>errors.push(error.message));
+   page.on('requestfailed',request=>{const url=new URL(request.url());network.push({kind:'failed',origin:url.origin,path:url.pathname,error:request.failure()?.errorText});});
+   page.on('response',response=>{if(response.status()>=500){const url=new URL(response.url());network.push({kind:'response',origin:url.origin,path:url.pathname,status:response.status()});}});
    try{
    await page.goto(base+'/#read/1/1');await page.locator('#ux-chapter-picker').filter({hasText:'Exodus'}).waitFor();
    await page.locator('#chapter-text .story-illustration-reader figcaption').first().waitFor();
@@ -41,7 +43,7 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     assert(!(await page.locator('#chapter-text .story-illustration-reader figcaption').first().innerText()).startsWith('Imagined scene:'));
     if([320,598,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-reader.png`,fullPage:false});
     await page.locator('#ux-chapter-picker').focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();
-    const bookLabels=await checkBookLabels(page);assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
+    const bookLabels=await checkBookLabels(page);if(width>=1157)assert.equal(bookLabels,'full','Wide Old Testament grids make room for all full book names');if(width<=598)assert.equal(bookLabels,'abbreviated','Narrow grids abbreviate the entire visible group');assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
     const reference=page.locator('#passage-reference'),referenceGeometry=await reference.evaluate(node=>{
      const box=node.getBoundingClientRect(),control=node.parentElement.getBoundingClientRect(),go=document.getElementById('passage-reference-go').getBoundingClientRect(),style=getComputedStyle(node);
      return {input:box.toJSON(),control:control.toJSON(),go:go.toJSON(),fontSize:parseFloat(style.fontSize),flex:style.flex,disabled:node.disabled,readOnly:node.readOnly,hitAtCenter:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)===node,stylesheets:[...document.styleSheets].map(sheet=>sheet.href).filter(Boolean)};
@@ -84,7 +86,7 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
    }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;}
-   finally{await context.close();}
+   finally{fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-network.json`,JSON.stringify(network,null,2)+'\n');await context.close();}
   }
  }finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');}
