@@ -34,9 +34,15 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      const mark=node.querySelector('.verse-study-pill'),probe=document.createElement('span');probe.hidden=true;
      probe.style.color=`color-mix(in srgb,rgb(${rgb}) ${dark?70:65}%,${dark?'white':'black'})`;document.body.append(probe);
      const expected=getComputedStyle(probe).color,style=getComputedStyle(mark),tone=getComputedStyle(node).getPropertyValue('--theme-rgb').replace(/\s/g,'');probe.remove();
-     return {tone,text:style.color===expected,border:style.borderTopColor===expected};
+     // Engines can serialize inherited color(srgb) as rgb(). Compare rendered
+     // sRGB channels, retaining the raw values in any failure diagnosis.
+     const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const context=canvas.getContext('2d');
+     const rgba=value=>{context.clearRect(0,0,1,1);context.fillStyle='#010203';context.fillStyle=value;if(context.fillStyle==='#010203')throw Error('Canvas could not parse '+value);context.fillRect(0,0,1,1);return [...context.getImageData(0,0,1,1).data];};
+     const desired=rgba(expected),text=rgba(style.color),border=rgba(style.borderTopColor);
+     return {tone,desired,text,border,raw:{expected,text:style.color,border:style.borderTopColor}};
     },{rgb:palette[key],dark:theme==='dark'});
-    assert.deepEqual(colors,{tone:palette[key],text:true,border:true},'Text and border match the existing category palette in this theme');
+    const diagnostic=JSON.stringify({engine,width,theme,key,colors});assert.equal(colors.tone,palette[key],diagnostic);
+    for(const actual of [colors.text,colors.border])assert(actual.every((channel,index)=>Math.abs(channel-colors.desired[index])<=1),'Rendered text/border match the existing palette within one 8-bit rounding step: '+diagnostic);
     await pill.focus();if(width<=820)await pill.tap();else await page.keyboard.press('Enter');
     const panel=page.locator('#ux-context-panel');await page.locator('#lens-inspector-sheet[open]').waitFor();
     assert.equal(await panel.getAttribute('data-evidence-category'),key);assert.equal(await panel.getAttribute('data-evidence-view'),'summary');

@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 391 source
         run: |
-          git merge-base --is-ancestor 752c6c1809315d17637ec195a320389bfabb8f39 HEAD
+          git merge-base --is-ancestor f7e970e375c9d4c5eb0e66729d9b06e5f830b09b HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,391);
-          assert.equal(release.sourceHash,'c38bab5f53d66772592797219cbe80f3b1b1c0e43191b2b2898e9f71b3dee995');
+          assert.equal(release.sourceHash,'c3d6da57a5f73dd4e74cb2f7f79c38e6d8b0bed10faf3ce3dded06987ffae38e');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -123,6 +123,24 @@ jobs:
             kill "$(cat .release/browser-ci/server.pid)" 2>/dev/null || true
           fi
 
+      - name: Retain the exact verified public bundles
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          const {canonicalCommit,...prepared}=JSON.parse(fs.readFileSync('.release/candidate.json'));
+          assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
+          const worker=fs.readFileSync('dist/server/index.js');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'f7e970e375c9d4c5eb0e66729d9b06e5f830b09b',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          JS
+          tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
+
       - name: Retain public test results and release identities
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
@@ -131,6 +149,9 @@ jobs:
           path: |
             .release/browser-ci/*.log
             .release/browser-ci/source-release.json
+            .release/browser-ci/prepared-manifest.json
+            .release/browser-ci/prepared-bundles.tar.gz
+            .release/browser-ci/prepared-bundles.sha256
             www/release.json
             dist/client/release.json
           retention-days: 7

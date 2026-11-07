@@ -13,8 +13,8 @@ requires `chromiumSandbox: true` even for older tests whose launch options omit
 it; there is no sandbox-disable flag or machine security workaround.
 
 The checkout must descend from source commit
-`752c6c1809315d17637ec195a320389bfabb8f39` and must retain build 391 fingerprint
-`c38bab5f53d66772592797219cbe80f3b1b1c0e43191b2b2898e9f71b3dee995`.
+`f7e970e375c9d4c5eb0e66729d9b06e5f830b09b` and must retain build 391 fingerprint
+`c3d6da57a5f73dd4e74cb2f7f79c38e6d8b0bed10faf3ce3dded06987ffae38e`.
 CI configuration and documentation are outside the release fingerprint; no app
 source, build number or checked-in test changes are included in this branch.
 
@@ -25,7 +25,12 @@ on runner loopback to execute `check-evidence-tags-browser.mjs` and
 `check-reader-annotations-browser.mjs`. A failed preparation gate remains a
 failed job; the UI steps can collect additional evidence when exact matching
 bundles were built. Only selected public test logs and release manifests are
-uploaded, with seven-day retention.
+uploaded, with seven-day retention. Only when every check succeeds, also retain
+the exact verified `dist`, unsigned offline `www`, generated candidate metadata,
+source/Worker identities and archive hash. These contain public app build files,
+not runtime user notes or credentials, and can be handed to the publishing
+workflow without rebuilding a different artifact. This does not verify a signed
+iOS app or a device installation.
 
 The checking agent session inherited the original cloud environment and could
 not acquire a working browser. Direct GitHub Actions REST access through the
