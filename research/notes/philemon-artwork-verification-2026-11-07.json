@@ -1,0 +1,97 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "Philemon",
+  "canonicalBaseline": "d3ce58291c72c2fe623579fd3c053642504d8887",
+  "chapterCount": 1,
+  "verseCount": 25,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-philemon-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 128258,
+      "sha256": "0c6265352b09a54e3b9f30e56cde50f8d11b5b7a42e98773ab2db4f891109b89",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 1,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 55,
+        "chapter": 3,
+        "verse": 0,
+        "position": 31,
+        "src": "/assets/chapter-titus-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 56,
+        "chapter": 1,
+        "verse": 0,
+        "position": 46,
+        "src": "/assets/chapter-philemon-01-opening-v1.webp"
+      },
+      "gap": 15
+    },
+    {
+      "a": {
+        "book": 56,
+        "chapter": 1,
+        "verse": 0,
+        "position": 46,
+        "src": "/assets/chapter-philemon-01-opening-v1.webp"
+      },
+      "b": {
+        "book": 57,
+        "chapter": 1,
+        "verse": 0,
+        "position": 71,
+        "src": "/assets/chapter-hebrews-01-opening-v1.webp"
+      },
+      "gap": 25
+    }
+  ],
+  "minimumInternalGap": null,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Philemon existing 1 opener retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 1
+}

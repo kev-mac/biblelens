@@ -1,0 +1,70 @@
+{
+  "book": "Philemon",
+  "baseline": "d3ce58291c72c2fe623579fd3c053642504d8887",
+  "chapters": 1,
+  "totalPlacements": 1,
+  "chapterOpeners": 1,
+  "storyPlacements": 0,
+  "retained": 1,
+  "replaced": 0,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A simple guest room has a bed beside an open courtyard door.",
+      "src": "/assets/chapter-philemon-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 128258,
+      "sha256": "0c6265352b09a54e3b9f30e56cde50f8d11b5b7a42e98773ab2db4f891109b89",
+      "textBasis": "1:22 requests a lodging/guest room in hope of a return. Empty room is an imagined motif, not proof of Paul's release, a completed visit/reconciliation, Onesimus's emancipation, a particular house/location, or family relationships.",
+      "fullSizeReview": "Native 960x540: bed posts/legs/rails/visible woven base; pillow, linen fringe and folded blue/burgundy blanket; stool top/legs/braces, pitcher neck/handle/rim and cup; basket weave/rim/linen, wall niche jar/basket, rafters/reed roof, stone floor, rug weave/fringe, door planks/crossbars/hinges/frame, courtyard bench/jars and vine branches. No definite malformed visible object/join, readable pseudo-lettering, signature or watermark. Cool courtyard daylight, green vines and olive foliage, blue hills and blue/burgundy cloth preserve varied natural color. Hidden supports and exact archaeological dating not certified.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "minimumInternalGap": null,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 55,
+        "chapter": 3,
+        "verse": 0,
+        "position": 29927,
+        "src": "/assets/chapter-titus-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 56,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29942,
+        "src": "/assets/chapter-philemon-01-opening-v1.webp"
+      },
+      "gap": 15
+    },
+    {
+      "a": {
+        "book": 56,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29942,
+        "src": "/assets/chapter-philemon-01-opening-v1.webp"
+      },
+      "b": {
+        "book": 57,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29967,
+        "src": "/assets/chapter-hebrews-01-opening-v1.webp"
+      },
+      "gap": 25
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

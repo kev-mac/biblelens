@@ -1,0 +1,141 @@
+{
+  "scope": "Philemon only; no Hebrews art opened or reviewed. Outgoing opener placement metadata used solely for spacing.",
+  "baseline": "d3ce58291c72c2fe623579fd3c053642504d8887",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "style only; actual file viewed separately and beside Philemon original at native size; never identity for another person"
+  },
+  "priorInventories": [
+    "philemon-visual-continuity-audit-2026-11-04.md",
+    "philemon-continuity-inventory-2026-11-04.json",
+    "acts-continuity-inventory-2026-11-07.json",
+    "titus-continuity-inventory-2026-11-07.json"
+  ],
+  "visibleNamedPeople": [],
+  "visiblePeople": [],
+  "visibleGroups": [],
+  "visibleAnimals": [],
+  "textualMentionsAreNotDepictions": [
+    {
+      "names": [
+        "Paul",
+        "Timothy",
+        "Philemon",
+        "Apphia",
+        "Archippus",
+        "house assembly",
+        "Jesus Christ"
+      ],
+      "verses": "1:1-7,9,25",
+      "finding": "No visible portraits or gathering. Apphia/Archippus are not assigned a wife/son relationship absent from these verses. Paul aged in 1:9 is textual, not a visual aging instruction based on book order. No exact city/house asserted."
+    },
+    {
+      "names": [
+        "Onesimus",
+        "Paul",
+        "Philemon"
+      ],
+      "verses": "1:8-21",
+      "finding": "Appeal and request to receive Onesimus do not establish that reconciliation, emancipation or a visit occurred. Child/begotten in bonds is not a biological parentage or age claim. Empty guest room does not assert an outcome."
+    },
+    {
+      "names": [
+        "Paul",
+        "Philemon"
+      ],
+      "verses": "1:22",
+      "finding": "Guest-room request and hope of return supply the imagined scene motif. No claim Paul was released, visited, stayed here or that this is an attested room."
+    },
+    {
+      "names": [
+        "Epaphras",
+        "Mark/Marcus",
+        "Aristarchus",
+        "Demas",
+        "Luke/Lucas"
+      ],
+      "verses": "1:23-24",
+      "finding": "Names in greetings are textual references only. Do not assign anonymous Acts faces to these people; Mark is not apostle John merely by a shared name. No new portrait anchors."
+    }
+  ],
+  "inheritedApprovedPaulGuidance": {
+    "sourceLedger": "acts-continuity-inventory-2026-11-07.json",
+    "paths": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-shipwreck-and-rome-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+    "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+    "cautions": "Actual files exist; hashes recorded below. Ledger guidance only: these portraits were not re-reviewed or used to generate art in this session. First-journey incompatible v1 remains inactive; v2 landscape is not a face reference. Ephesus artisan is not Paul. Council exact identities remain qualified."
+  },
+  "referenceFileHashes": [
+    {
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "sha256": "0b8b96c507d70183544aa2508a90d2de165eca27102c1eb9c9b8fa89e825ed47"
+    },
+    {
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "sha256": "58e0dcfc83147191569bca6d402c861e702f6386808e992d6c7b2139c22bc090"
+    },
+    {
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+    },
+    {
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+    },
+    {
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "sha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c"
+    },
+    {
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "sha256": "bcd71f02072568b28dc375bb13a29bdd7fa6a1c563f0e3ad84650ef0e651200d"
+    }
+  ],
+  "inspection": {
+    "originalsViewedSeparatelyAtNativeSize": 1,
+    "nativeImageSize": [
+      960,
+      540
+    ],
+    "styleBoards": 1,
+    "neighborBoards": 1,
+    "boards": [
+      {
+        "path": "/tmp/philemon-review/style.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "8d7ec44e104fe42ca2c80aed2bbbc6b9d2fcab99a89fbc704e3368429d5d7535",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/philemon-review/incoming.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "c0bb8eacb5ce1bd3db58d42f948f0e2c782f8d201633a288b380c247aae95780",
+        "viewed": true
+      }
+    ],
+    "incomingNeighbor": "src/assets/chapter-titus-03-opening-v1.webp",
+    "outgoingNeighbor": "Hebrews artwork not opened; placement metadata only.",
+    "anatomy": "No people, recognizable recurring groups or animals visible. Face/complexion/hair, age/build, fingers/thumbs/limbs and animal checks not applicable. Full-size visible objects inspected; no hidden geometry or exact archaeology certified."
+  },
+  "generationCalls": 0,
+  "editingCalls": 0,
+  "actualIdentityInputs": "No generation/editing calls. Actual approved identity image files must accompany any future identifiable recurring portrayal; viewing/describing is insufficient.",
+  "result": "Retain existing Philemon 1 guest-room opener; no definite object defect, text contradiction or identity drift. No new portrait anchor.",
+  "uncertainty": "Room design, materials, furniture, landscape and exact location are imagined. No evidence the requested visit happened. No identity is inferred from textual mentions."
+}
