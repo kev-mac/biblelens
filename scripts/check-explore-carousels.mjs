@@ -19,13 +19,13 @@ try{
     await page.context().route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
     await page.goto(base+'/#discover');await page.locator('#ux-topic-evidence').waitFor();
     await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);await page.evaluate(()=>document.fonts.ready);
-    assert.equal(await page.locator('.ux-topic').count(),9);
+    assert.equal(await page.locator('.ux-topic').count(),7);
     assert.equal(await page.locator('.ux-lane-arrows,[data-lane-previous],[data-lane-next]').count(),0);
     assert.equal(await page.locator('.ux-daily-question,#ux-topic-prophecies').count(),0);
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'only lanes may overflow');
     const lane=page.locator('#ux-lane-collections');
     const boxes=await lane.evaluate(n=>({row:n.getBoundingClientRect().toJSON(),cards:[...n.querySelectorAll('.ux-topic')].map(c=>c.getBoundingClientRect().toJSON())}));
-    assert.equal(await page.locator('.ux-topic-section').count(),2,'collections and manuscript tools remain accessible');
+    assert.equal(await page.locator('.ux-topic-section').count(),1,'default Explore retains one Collections carousel');
     assert.deepEqual(await lane.locator('strong').allTextContents(),['Stories','People','Places','Laws','Lost Books','Evidence & Interpretations','Timeline']);
     const [first,second]=boxes.cards;
     assert(Math.abs((first.left+first.right-boxes.row.left-boxes.row.right)/2)<2,'first tile is centered');
@@ -67,8 +67,8 @@ try{
     }
     assert.equal(await page.locator('.ux-explore-filters,[data-explore-filter]').count(),0);
     for(const asset of await page.locator('.ux-topic img').evaluateAll(images=>images.map(img=>img.getAttribute('src')))){assert(asset,'each tile has artwork');images.add(asset);}
-    assert.equal(await page.locator('#ux-topic-text').getAttribute('href'),'#questions?mode=text');assert.equal(await page.locator('#ux-topic-translation').getAttribute('href'),'#questions?filter=T');
-    assert.equal(images.size,9,'all nine destinations have distinct artwork');
+    assert.equal(await page.locator('#ux-lane-manuscripts,#ux-topic-text,#ux-topic-translation').count(),0,'tools remain inside Evidence instead of appending Explore cards');
+    assert.equal(images.size,7,'all seven collection destinations have distinct artwork');
     for(const asset of images)assert(fs.readFileSync('dist/client'+asset).equals(fs.readFileSync('www'+asset)),asset+' matches the mobile bundle');
     async function openTile(id){
      const tile=page.locator(id);
@@ -78,6 +78,8 @@ try{
      await tile.click();
     }
     await openTile('#ux-topic-evidence');await page.locator('#debates-view:not([hidden]) .phase2-debate-card').first().waitFor();
+    await page.getByRole('button',{name:'Filter records',exact:true}).click();await page.locator('#debate-sheet').getByRole('link',{name:'Translations',exact:true}).click();await page.locator('[data-debate-mode=translation][aria-pressed=true]').waitFor();await page.locator('#debates-view:not([hidden]) .phase2-debate-card').first().waitFor();
+    await page.getByRole('button',{name:'Filter records',exact:true}).click();await page.locator('#debate-sheet nav[aria-label="Evidence collections"]').getByRole('link',{name:'Text Comparisons',exact:true}).click();await page.locator('[data-debate-mode=text][aria-pressed=true]').waitFor();await page.locator('#debates-view:not([hidden]) .phase2-debate-card').first().waitFor();
     for(const mode of ['history','science','translation','text']){
      await page.locator('[data-debate-mode="'+mode+'"]').click();await page.locator('[data-debate-mode="'+mode+'"][aria-pressed=true]').waitFor();await page.locator('#debates-view:not([hidden]) .phase2-debate-card').first().waitFor();
     }

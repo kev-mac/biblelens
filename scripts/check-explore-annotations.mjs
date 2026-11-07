@@ -10,8 +10,11 @@ const c={document:{getElementById:()=>host},location:{hash:'#discover'},URLSearc
 const header=atlas.slice(atlas.indexOf(' const host='),atlas.indexOf(' const reducedMotion='));
 const render=atlas.slice(atlas.indexOf(' function render(){'),atlas.indexOf(" fetch('/collection-counts"));
 const fixture=vm.runInContext('(()=>{'+header+render+'return {render,scope:value=>scope=value};})()',c);
-fixture.render();assert.equal((markup.match(/class="ux-topic"/g)||[]).length,9);assert(!markup.includes('ux-explore-filters')&&!markup.includes('data-explore-filter'));
-for(const id of ['stories','people','places','commandments','lost','evidence','timeline','text','translation'])assert(markup.includes('id="ux-topic-'+id+'"'),'Preserve collection '+id);
+fixture.render();assert.equal((markup.match(/class="ux-topic"/g)||[]).length,7);assert.equal((markup.match(/class="ux-topic-section"/g)||[]).length,1,'Default Explore has one Collections carousel');assert(!markup.includes('ux-explore-filters')&&!markup.includes('data-explore-filter'));
+for(const id of ['stories','people','places','commandments','lost','evidence','timeline'])assert(markup.includes('id="ux-topic-'+id+'"'),'Preserve collection '+id);
+assert(!markup.includes('ux-lane-manuscripts')&&!markup.includes('ux-topic-text')&&!markup.includes('ux-topic-translation'),'Do not append tool cards or another row');
+assert(markup.includes('id="ux-topic-evidence" data-topic="evidence" href="#questions?mode=text"'),'Text Comparisons remains the Evidence destination');
+const debates=read('src/debates.js');for(const href of ['#questions?mode=text','#questions?filter=T'])assert(debates.includes('href="'+href+'"'),'Evidence filters retain '+href);
 assert(markup.includes('<h1 class="sr-only" tabindex="-1">Explore</h1>'));assert(markup.includes('role="search"'));assert(markup.includes('for="ux-explore-search"'));assert(markup.includes('type="search" maxlength="300"'));
 input.value='  John 3:16  ';form.onsubmit({preventDefault(){}});assert.deepEqual(searches,['John 3:16']);
 fixture.render();assert.equal(renders,1,'Counts and return navigation preserve the mounted input');assert.equal(input.value,'  John 3:16  ');
@@ -38,4 +41,4 @@ assert.equal(last('html body.lens-app #explore-view a.ux-topic>img','object-fit'
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','min-height'),'48px');assert(atlas.includes('stops[Math.min(active,stops.length-1)]'),'Resize retains the active carousel position');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-direction'),'row');assert.equal(last('html body.lens-app #explore-view [data-topic=stories] img','object-position'),'88% center');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wrap'),'nowrap');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'auto');
-console.log('PASS: nine retained collections without filter controls, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry remains separate.');
+console.log('PASS: one Collections carousel with seven destinations, text/translation routes retained in Evidence filters, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry and actual destination navigation remain separate.');
