@@ -20,11 +20,13 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
  try{
   for(const [width,height] of screens)for(const native of [false,true]){
    const context=await browser.newContext({viewport:{width,height},hasTouch:Math.min(width,height)<=1024,reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage();
-   const errors=[];page.on('pageerror',error=>errors.push(error.message));
+   const errors=[],contextResults=[];page.on('pageerror',error=>errors.push(error.message));
+   try{
    await page.goto(base+'/#read/1/1');await page.locator('#ux-chapter-picker').filter({hasText:'Exodus'}).waitFor();
    await page.locator('#chapter-text .story-illustration-reader figcaption').first().waitFor();
    await page.evaluate(native=>{document.documentElement.classList.toggle('native-ios',native);document.body.style.setProperty('--app-safe-top',native?'24px':'0px');},native);
    for(const dark of [false,true]){
+    const caseName=`${engine}-${width}x${height}-${native?'native-safe-area':'web'}-${dark?'dark':'light'}`;
     await page.evaluate(dark=>{state.theme=dark?'dark':'light';applyTheme();persist();},dark);await page.evaluate(()=>document.fonts.ready);
     assert.equal(await page.locator('#lens-settings:visible,[data-open-settings]:visible').count(),1);
     assert.equal(await page.locator('#lens-compare').count(),0);assert.equal(await page.locator('.study-library:visible').count(),0);
@@ -37,13 +39,13 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     assert(await page.locator('#chapter-text .chapter-heading-row').evaluate(n=>[n,...n.querySelectorAll('*')].every(n=>getComputedStyle(n).textShadow==='none')));
     assert(await page.locator('a:visible').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).textDecorationLine==='none')));
     assert(!(await page.locator('#chapter-text .story-illustration-reader figcaption').first().innerText()).startsWith('Imagined scene:'));
+    if([320,598,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-reader.png`,fullPage:false});
     await page.locator('#ux-chapter-picker').focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();
     const bookLabels=await checkBookLabels(page);assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
     const reference=page.locator('#passage-reference'),referenceGeometry=await reference.evaluate(node=>{
      const box=node.getBoundingClientRect(),control=node.parentElement.getBoundingClientRect(),go=document.getElementById('passage-reference-go').getBoundingClientRect(),style=getComputedStyle(node);
      return {input:box.toJSON(),control:control.toJSON(),go:go.toJSON(),fontSize:parseFloat(style.fontSize),flex:style.flex,disabled:node.disabled,readOnly:node.readOnly,hitAtCenter:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)===node,stylesheets:[...document.styleSheets].map(sheet=>sheet.href).filter(Boolean)};
     });
-    const caseName=`${engine}-${width}x${height}-${native?'native-safe-area':'web'}-${dark?'dark':'light'}`;
     fs.writeFileSync(`${output}/${caseName}-geometry.json`,JSON.stringify(referenceGeometry,null,2)+'\n');
     await page.screenshot({path:`${output}/${caseName}-passage.png`,fullPage:false});
     assert(referenceGeometry.input.width>=160&&referenceGeometry.input.width>=referenceGeometry.control.width*.6,'Reference field has readable editing space: '+JSON.stringify({engine,width,height,native,dark,referenceGeometry}));
@@ -70,17 +72,19 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
     assert(Math.abs(await page.locator('body').evaluate(node=>parseFloat(getComputedStyle(node).getPropertyValue('--ux13-masthead-height')))-sticky[0].height)<=1,'Measured header height reaches the body after scrolling');
     assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
-    await page.evaluate(()=>scrollTo(0,0));matrix.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox});
+    await page.evaluate(()=>scrollTo(0,0));contextResults.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox});
    }
-   await page.locator('#lens-edition').focus();await page.keyboard.press('Home');await page.keyboard.press('Enter');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='kjv'&&document.getElementById('lens-edition').value==='kjv');
+   await page.locator('#lens-edition').focus();await page.keyboard.press('Home');await page.keyboard.press('Tab');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='kjv'&&document.getElementById('lens-edition').value==='kjv');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#read/21/8'));await page.locator('#ux-chapter-picker').filter({hasText:'Song of Solomon'}).waitFor();
    assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
    await page.locator('#ux-chapter-picker').click();await page.locator('#passage-reference').fill('Exodus 41');await page.locator('#passage-reference').press('Enter');await page.waitForFunction(()=>document.getElementById('passage-reference').getAttribute('aria-invalid')==='true');assert(await page.locator('#passage-reference-status').innerText());
    await page.locator('#passage-reference').fill('Exodus 1:8');await page.locator('#passage-reference').press('Enter');await page.waitForFunction(()=>location.hash==='#read/1/1/8');await page.locator('#verse-8').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0);
    await page.locator('#ux-chapter-picker').click();await page.locator('#passage-reference').click();await page.keyboard.type('Genesis 2:3');await page.locator('#passage-reference-go').click();await page.waitForFunction(()=>location.hash==='#read/0/2/3');await page.locator('#verse-3').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0,'Pointer/keyboard entry and the Go button navigate to the typed verse');
-   await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').focus();await page.keyboard.press('End');await page.keyboard.press('Enter');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='asv'&&document.getElementById('lens-edition').value==='asv');await page.keyboard.press('Escape');
+   await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').focus();await page.keyboard.press('End');await page.keyboard.press('Tab');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='asv'&&document.getElementById('lens-edition').value==='asv');await page.keyboard.press('Escape');await page.locator('#passage-picker').waitFor({state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
-   assert.deepEqual(errors,[]);await context.close();
+   assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
+   }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;}
+   finally{await context.close();}
   }
  }finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');}
