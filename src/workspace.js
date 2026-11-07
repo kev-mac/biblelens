@@ -35,12 +35,13 @@
  const heading = (kicker, title, copy) => `<div class="lens-page-heading"><span class="lens-kicker">${kicker}</span><h1 tabindex="-1">${title}</h1><p>${copy}</p></div>`;
  const searchView=section('search', `<form class="lens-search-form" id="lens-search-form"><label class="sr-only" for="lens-search-input">Search the Library</label><input id="lens-search-input" type="search" maxlength="300" placeholder="A passage, a person, a question…" autocomplete="off"><button class="lens-button" type="button" data-search-cancel>Cancel</button></form><div class="lens-search-suggestions"><span>Try</span>${['Genesis 1','mercy','Mary','Jerusalem'].map(q=>`<button class="lens-button" data-lens-query="${q}">${q}</button>`).join('')}<a href="#chat">Ask a question</a></div><p id="lens-search-status" role="status"></p><div id="lens-search-results" class="lens-search-results"></div>`);
  const searchDialog=document.createElement('dialog');searchDialog.id='lens-search-overlay';searchDialog.setAttribute('aria-label','Search the library');document.body.append(searchDialog);searchDialog.append(searchView);searchView.hidden=false;
- let includeLost=false;
+ let includeLost=false,inputTimer;
  const lostToggle=document.createElement('button');lostToggle.type='button';lostToggle.className='lens-button lost-search-toggle';lostToggle.id='lost-search-toggle';lostToggle.textContent='Include Lost Books';lostToggle.setAttribute('aria-pressed','false');searchView.querySelector('.lens-search-suggestions').before(lostToggle);lostToggle.onclick=()=>{includeLost=!includeLost;lostToggle.setAttribute('aria-pressed',String(includeLost));runSearch(el('lens-search-input').value);};
  let searchReturn=location.hash.startsWith('#search')?'#discover':location.hash||'#discover';
- window.addEventListener('hashchange',event=>{const previous=new URL(event.oldURL||location.href).hash;if(location.hash.startsWith('#search')&&!previous.startsWith('#search'))searchReturn=previous||'#discover';if(!location.hash.startsWith('#search')){clearTimeout(inputTimer);if(searchDialog.open)searchDialog.close();}});
- searchDialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();event.stopPropagation();searchDialog.close();}});
- searchDialog.addEventListener('close',()=>{const returnToExplore=!searchDialog.open&&location.hash.startsWith('#search')&&searchReturn.startsWith('#discover');if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);if(returnToExplore)requestAnimationFrame(()=>{if(view==='explore'&&!searchDialog.open)el('ux-explore-search')?.focus({preventScroll:true});});});
+ function cancelSearchInput(){clearTimeout(inputTimer);inputTimer=undefined;++searchVersion;}
+ window.addEventListener('hashchange',event=>{const previous=new URL(event.oldURL||location.href).hash;if(location.hash.startsWith('#search')&&!previous.startsWith('#search'))searchReturn=previous||'#discover';if(!location.hash.startsWith('#search')){cancelSearchInput();if(searchDialog.open)searchDialog.close();}});
+ searchDialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();event.stopPropagation();cancelSearchInput();searchDialog.close();}},true);
+ searchDialog.addEventListener('close',()=>{cancelSearchInput();const returnToExplore=!searchDialog.open&&location.hash.startsWith('#search')&&searchReturn.startsWith('#discover');if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);if(returnToExplore)requestAnimationFrame(()=>{if(view==='explore'&&!searchDialog.open)el('ux-explore-search')?.focus({preventScroll:true});});});
  section('notebook', `<div class="lens-page-heading"><h1 tabindex="-1">Saved</h1></div><div class="lens-notebook-tools"><div role="group" aria-label="Filter saved items">${[['all','All'],['notes','Notes'],['bookmarks','Bookmarks'],['saved','Contradictions'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='all'}">${label} (0)</button>`).join('')}</div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div><div class="lens-notebook-exports"><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div>`);
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
@@ -194,7 +195,7 @@
   if(event.target.closest('[data-context-evidence]')){inspectVerse(activeVerse,true,el('verse-'+activeVerse)?.querySelector('.verse-num'),true);return;}
   if(event.target.closest('[data-context-close]')){inspectorSheet.close();return;}
   if(event.target.closest('[data-context-note]')){dismissEmpty();showInspectorSheet(event.target.closest('button'));const editor=inspector.querySelector('.lens-note-editor');editor.hidden=false;el('lens-margin-note').focus();return;}
-  if(event.target.closest('[data-search-cancel]')){clearTimeout(inputTimer);searchDialog.close();return;}
+  if(event.target.closest('[data-search-cancel]')){cancelSearchInput();searchDialog.close();return;}
   if(event.target.closest('[data-context-copy]')){Promise.resolve().then(()=>navigator.clipboard.writeText(refLabel({book:readingBook,chapter:readingChapter,verse:activeVerse})+' '+plain(reading.verses.find(v=>v.n===activeVerse)?.[edition()]))).then(()=>toast('Verse copied.')).catch(()=>toast('Copy unavailable on this device.'));return;}
   if(event.target.closest('[data-context-compare]')){dismissEmpty();const verse=activeVerse;openCompare();el('lens-compare-left').value=refLabel({book:readingBook,chapter:readingChapter,verse});return;}
   const marker=event.target.closest('[data-lens-inspect]');if(marker){inspectVerse(Number(marker.dataset.lensInspect),true,marker,true,marker.dataset.lensCategory);return;}
@@ -297,8 +298,8 @@
    if(!total)box.innerHTML='<div class="lens-empty"><h2>No Connections Found Yet.</h2><p>Try a shorter phrase, a full book name, or a passage such as John 3:16. The reference collections have uneven coverage.</p></div>';
   }catch(error){if(version===searchVersion)status.textContent=error.message||'Search could not finish. Try again.';}finally{if(version===searchVersion){box.removeAttribute('aria-busy');status.classList.remove('loading-state');}}
  }
- let inputTimer;el('lens-search-input').addEventListener('input',()=>{clearTimeout(inputTimer);inputTimer=setTimeout(()=>el('lens-search-form').requestSubmit(),150);});
- el('lens-search-form').onsubmit=event=>{event.preventDefault();clearTimeout(inputTimer);const q=el('lens-search-input').value;routeTo('#search?lost='+(includeLost?'1':'0')+(q?'&q='+encodeURIComponent(q):''));};
+ el('lens-search-input').addEventListener('input',()=>{clearTimeout(inputTimer);if(!searchDialog.open)return;inputTimer=setTimeout(()=>{if(searchDialog.open)el('lens-search-form').requestSubmit();},150);});
+ el('lens-search-form').onsubmit=event=>{event.preventDefault();clearTimeout(inputTimer);if(!searchDialog.open)return;const q=el('lens-search-input').value;routeTo('#search?lost='+(includeLost?'1':'0')+(q?'&q='+encodeURIComponent(q):''));};
  let savedRender=0;
  function renderNotebook(){
   const renderId=++savedRender;

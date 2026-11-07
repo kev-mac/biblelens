@@ -187,3 +187,28 @@ assigned. The reader test now retains only failed-request origins/paths and
 5xx status metadata, without query strings, headers or response contents, to
 distinguish asset/style/API failures during the final review. This does not
 hide the indicator or weaken any navigation, geometry or editing assertion.
+
+The wider-grid run, [42422814744](https://github.com/kev-mac/biblelens/actions/runs/42422814744),
+passed preparation/images and all 28 context cases, then completed 88 reader
+layout cases before WebKit at 1024×1024 left Search open after Escape. The
+Chromium wide cases rendered full names as required. This was a newly exposed
+Search dismissal failure, not a field-width or book-label failure, and the
+run was not accepted. Its early failure artifact SHA-256 is
+`4451b805a69062cf95ceeefc433fb296d20a235b55314b49cb9441905c0e594f`.
+
+The source allowed debounced input/submission after the Search dialog closed.
+The fix cancels queued work on Escape and every close, invalidates stale
+search results, ignores late input while closed, and guards both the timer
+callback and form submission. Escape is handled in the dialog's capture
+phase. A unit regression executes the actual handlers with queued/late events;
+the browser regression also types and closes during the debounce window.
+Event timing metadata, without query values, is retained to diagnose any
+remaining platform-specific failure. The exact native event ordering that
+caused the observed failure was not recorded in the earlier fixture.
+
+The network diagnostics identify the background retry as
+`GET /api/sync/session` returning 503 on the CI preview. The Node preview has
+no D1 binding, and `worker/sync.mjs` deliberately returns that status when
+`env.DB` is absent. No stylesheet failure was captured. This is a preview
+limitation; signed-in production sync still requires live verification. Sync
+code, authorization, revision handling and credentials were not changed.

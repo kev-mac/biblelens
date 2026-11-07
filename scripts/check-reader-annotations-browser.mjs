@@ -23,6 +23,13 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    const errors=[],contextResults=[],network=[];page.on('pageerror',error=>errors.push(error.message));
    page.on('requestfailed',request=>{const url=new URL(request.url());network.push({kind:'failed',origin:url.origin,path:url.pathname,error:request.failure()?.errorText});});
    page.on('response',response=>{if(response.status()>=500){const url=new URL(response.url());network.push({kind:'response',origin:url.origin,path:url.pathname,status:response.status()});}});
+   await context.addInitScript(()=>{
+    window.__readerSearchEvents=[];
+    const record=(type,target,key)=>{const events=window.__readerSearchEvents;events.push({type,target,key,route:location.hash.split('?')[0],focus:document.activeElement?.id,open:!!document.querySelector('#lens-search-overlay[open]')});if(events.length>200)events.shift();};
+    document.addEventListener('keydown',event=>{if(event.key==='Escape')record('keydown',event.target.id,event.key);},true);
+    for(const type of ['input','submit','close','cancel'])document.addEventListener(type,event=>{if(['lens-search-input','lens-search-form','lens-search-overlay'].includes(event.target.id))record(type,event.target.id);},true);
+    window.addEventListener('hashchange',()=>record('hashchange'));
+   });
    try{
    await page.goto(base+'/#read/1/1');await page.locator('#ux-chapter-picker').filter({hasText:'Exodus'}).waitFor();
    await page.locator('#chapter-text .story-illustration-reader figcaption').first().waitFor();
@@ -69,6 +76,10 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const search=page.locator('#lens-search-input'),searchBox=await search.boundingBox();assert(searchBox.width>=160&&searchBox.height>=44,'Global Search also retains a readable input');
     await search.click();await page.keyboard.type('mercy');assert.equal(await search.inputValue(),'mercy');assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-search-input');
     await page.screenshot({path:`${output}/${caseName}-search.png`,fullPage:false});await page.keyboard.press('Escape');await page.waitForFunction(()=>location.hash.startsWith('#read')&&!document.querySelector('#lens-search-overlay[open]'));
+    if([598,1024].includes(width)){
+     await page.locator('#lensMasthead .ux-search').click();await page.locator('#lens-search-overlay[open]').waitFor();await search.click();await page.keyboard.type('mercy');await page.keyboard.press('Escape');
+     await page.waitForFunction(()=>location.hash.startsWith('#read')&&!document.querySelector('#lens-search-overlay[open]'));await page.waitForTimeout(250);assert.equal(await page.locator('#lens-search-overlay[open]').count(),0,'Escape during the input debounce keeps Search closed');assert(await page.evaluate(()=>location.hash.startsWith('#read')));
+    }
     await page.locator('#lens-settings').focus();await page.keyboard.press('Enter');await page.locator('#reader-settings[open]').waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-settings');
     await page.evaluate(()=>scrollTo(0,500));await page.waitForTimeout(300);
     const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
@@ -86,7 +97,7 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
    }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;}
-   finally{fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-network.json`,JSON.stringify(network,null,2)+'\n');await context.close();}
+   finally{fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-network.json`,JSON.stringify(network,null,2)+'\n');fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-search-events.json`,JSON.stringify(await page.evaluate(()=>window.__readerSearchEvents||[]).catch(()=>[]),null,2)+'\n');await context.close();}
   }
  }finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');}
