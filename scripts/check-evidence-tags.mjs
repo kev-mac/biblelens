@@ -9,6 +9,7 @@ const context={esc:value=>String(value).replaceAll('&','&amp;').replaceAll('<','
  reading:{verses:[{n:12,kjv:'The verse text.'}]},edition:()=> 'kjv',plain:value=>String(value),
  excerpt:(value,limit)=>String(value).slice(0,limit),referenceLink:()=>'<a href="#read/44/5/12" data-cite="44/5/12">Romans 5:12</a>',refLabel:()=> 'Romans 5:12'};
 vm.createContext(context);
+vm.runInContext(workspace.slice(workspace.indexOf(' const icon ='),workspace.indexOf(' const savedActionIcons =')),context);
 vm.runInContext(reader.slice(reader.indexOf('function filterCategory('),reader.indexOf('function witnessLabel(')),context);
 vm.runInContext(workspace.slice(workspace.indexOf(' function uniqueRecords('),workspace.indexOf(' function sourceLink(')),context);
 const json=value=>JSON.parse(JSON.stringify(value)),groups=items=>json(context.evidenceGroups(items));
@@ -48,9 +49,16 @@ for(const group of context.evidenceGroups(records)){
  assert.equal(summary.getElementsByTagName('button').length,group.records.length,'Every item has a full-evidence option');
  assert.equal(summary.getElementsByTagName('blockquote')[0].textContent,'The verse text.');
  assert.equal(summary.getElementsByTagName('a')[0].getAttribute('data-cite'),'44/5/12','Verse reference opens existing context preview');
+ for(const article of [...Array(summary.getElementsByTagName('article').length)].map((_,index)=>summary.getElementsByTagName('article')[index])){
+  assert.equal(article.getAttribute('data-tone'),group.tone,'Summary cards inherit the selected category palette');
+  const action=article.getElementsByTagName('button')[0];assert.equal(action.textContent,'');assert.equal(action.getAttribute('title'),'View evidence');assert.equal(action.getElementsByTagName('svg').length,1);
+ }
 }
 const hostile={key:'academic',tone:'academic',label:'Academic',records:[{title:'<script>bad</script>',summary:'<img src=x onerror=bad>',placementRole:'context'}]};
 const escaped=context.evidenceSummaryHtml(hostile,{verse:12});assert(!escaped.includes('<script>')&&!escaped.includes('<img'));assert(escaped.includes('Supporting context'));
+const supporting=parse(escaped),supportButtons=supporting.getElementsByTagName('button');assert.equal(supportButtons.length,2,'Supporting context metadata gets its own information action');
+assert.equal(supportButtons[0].getAttribute('title'),'About supporting context');assert.equal(supportButtons[0].getAttribute('aria-expanded'),'false');assert.equal(supportButtons[0].textContent,'');assert.notEqual(supportButtons[0].getAttribute('aria-label'),supportButtons[1].getAttribute('aria-label'));
+const supportNote=[...Array(supporting.getElementsByTagName('p').length)].map((_,index)=>supporting.getElementsByTagName('p')[index]).find(node=>node.getAttribute('id')===supportButtons[0].getAttribute('aria-controls'));assert(supportNote?.hasAttribute('hidden'));assert.match(supportNote.textContent,/provide background for the verse/);
 
 // Exercise the actual inspector actions and async selection, with DOM operations recorded.
 const calls=[],nodes=new Map();let listener,resolveComparisons;
@@ -66,6 +74,10 @@ vm.runInContext(workspace.slice(workspace.indexOf(' async function inspectVerse(
 const start=workspace.indexOf(" document.addEventListener('click',event=>{",workspace.indexOf(' async function inspectVerse('));
 vm.runInContext(workspace.slice(start,workspace.indexOf('\n });',start)+5),context);
 const click=(selector,dataset={})=>listener({target:{closest:query=>query===selector?{dataset}:null}});
+const infoAttrs={'aria-controls':'support-note','aria-expanded':'false'},info={getAttribute:key=>infoAttrs[key],setAttribute:(key,value)=>infoAttrs[key]=value,removeAttribute:key=>delete infoAttrs[key]},note={id:'support-note',hidden:true};nodes.set('support-note',note);
+const toggleInfo=()=>listener({target:{closest:query=>query==='[data-lens-context-info]'?info:null}});
+toggleInfo();assert.equal(note.hidden,false);assert.equal(infoAttrs['aria-expanded'],'true');assert.equal(infoAttrs['aria-describedby'],'support-note');assert.equal(context.evidenceSummary,true,'Context information does not navigate away');
+toggleInfo();assert.equal(note.hidden,true);assert.equal(infoAttrs['aria-expanded'],'false');assert(!('aria-describedby' in infoAttrs));
 click('[data-lens-evidence-record]',{lensEvidenceRecord:'1'});assert.equal(context.evidenceSummary,false);assert.deepEqual(calls.at(-1),['focus','[data-lens-evidence-index="1"]']);
 click('[data-lens-summary]');assert.equal(context.evidenceSummary,true);assert.equal(context.inspectorSheet.scrollTop,0);
 click('[data-lens-all-evidence]');assert.equal(context.activeEvidenceCategory,null);assert.equal(context.evidenceSummary,false);
@@ -89,5 +101,7 @@ assert.equal(value('html body.lens-app #chapter-text .verse-evidence-tags','disp
 assert.equal(value(button,'position'),'relative');assert.equal(value(button,'width'),'auto');assert.equal(value(button,'min-height'),'44px');assert.equal(value(button,'min-width'),'44px');assert.equal(value(button,'margin'),'0 3px 0 0');
 assert.equal(value(button+' .verse-study-pill','border'),'1px solid currentColor');assert.equal(value(button+' .verse-study-pill','border-radius'),'4px');assert.equal(value(button+' .verse-study-pill','padding'),'2px 4px');assert.match(value(button+' .verse-study-pill','font'),/\.625rem/);
 assert(value(button,'color').includes('var(--theme-rgb)'));assert(value('html body.lens-app.dark #chapter-text .verse-body .lens-verse-evidence','color').includes('var(--theme-rgb)'));
+assert.equal(value('html body.lens-app #lensInspector .lens-evidence-summary','border-color'),'var(--summary-category-color)');assert(value('html body.lens-app #lensInspector .lens-evidence-summary','--summary-category-color').includes('65%,black'));assert(value('html body.lens-app.dark #lensInspector .lens-evidence-summary','--summary-category-color').includes('70%,white'));
+assert.equal(value('html body.lens-app #lensInspector .lens-summary-icon','width'),'44px');assert.equal(value('html body.lens-app #lensInspector .lens-summary-icon','height'),'44px');assert(value('html body.lens-app #lensInspector .lens-summary-icon:focus-visible','outline'));
 assert(workspace.includes("row.querySelector('[data-scripture]').append(tags)"),'Append marks without replacing scripture nodes');
 console.log('PASS: six categories, overlapping tags, duplicate/anonymous records, placement tags, exact counts, safe summaries, citation previews, full-evidence navigation, stale requests, inline CSS and 44px targets. Browser geometry remains a separate check.');
