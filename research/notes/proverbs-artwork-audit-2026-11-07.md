@@ -23,3 +23,14 @@ Required build/check outcomes, exact byte verification and publication provenanc
 Managed Sites mode is 1 and tool discovery found no callable cua_repl.js or desktop JavaScript. Following Sites managed preview instructions, no browser installation, alternate browser path or preview server. Live hostname remains outside enforced policy; inherited denied live HTTP/image operations are not retried without materially new relevant authorization/evidence. No supported environment-change tool was available. release:verify/live response bytes remain deferred.
 
 No Mac/device connector, configured VPN/device route, Xcode/xcrun or physical-device tools. Signing, signed App.app/public comparison, device query/install/launch remain deferred under the owner's explicit continuation instruction. Historical build 359 is not a current device query. Publication cannot update installed binaries.
+
+
+## Completed local verification
+
+Full **release:prepare failed**, exit 1, at check-release-smoke.mjs:31: missing Chromium headless shell. Shared web/mobile builds and preceding nonbrowser checks passed; search useful-hit 50/50 and existing report-only readability findings. No candidate.json and no full-gate pass. Separate unchanged **check:images, check:release, check:mobile and check:sync passed**. Inherited intermittent assert(finishRead) remains unresolved; static inspection confirms the /session then /document sequence, awaited WebCrypto bearer digest and fixed 30 setImmediate settling lead. No test or sync code changed.
+
+Independent verification passed all **31 Worker/offline chapters, 915 KJV/ASV/WEB verses**, exact chapter-image metadata and event-heading parity, no Proverbs Story images, hidden generic captions and all 31 source/Worker/unsigned offline image bytes. Offline engine made **zero network calls**. Hosted image responses used local immutable-origin fixtures, not live HTTP. All **1,142** Git blobs match unchanged public pin **c87ed7459451ea3e2b3400eed783def11f017291**. Build 370/fingerprint unchanged; Worker **59,888,449 bytes**, SHA-256 **605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2**. Production paths are untouched.
+
+No close consecutive pair involving Proverbs; minimum opener spacing is six verse positions. Psalms 150→Proverbs 1 gap **6**; Proverbs 31→Ecclesiastes 1 gap **31**. Only the next-book first-placement metadata was inspected; Ecclesiastes artwork review has not begun. Existing 1 Samuel/Psalms/earlier book spacing limitations remain separately disclosed.
+
+The next separate-session prompt is ecclesiastes-artwork-handoff-from-proverbs-2026-11-07.md. Publication provenance follows after native confirmation.

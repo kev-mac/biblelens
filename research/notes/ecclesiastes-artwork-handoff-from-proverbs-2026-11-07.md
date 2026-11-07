@@ -9,3 +9,7 @@ Inspect full-size scenes, anatomy and text compatibility; retain suitable images
 Browser QA remains unavailable (managed mode 1, no cua_repl.js). Missing Chromium blocks full release preparation. Live host remains outside enforced policy; do not retry inherited denied HTTP/image operations without materially new relevant evidence and trusted-message review. release:verify/live bytes deferred. Intermittent check-sync-disconnect.mjs:34 assert(finishRead) remains unresolved: /session precedes /document and bearer authentication awaits WebCrypto, while test settling uses 30 setImmediate rounds. No sync/test change was made in Proverbs. No Mac route, Xcode or physical devices; signing, signed-asset parity, installation/launch deferred. Device build 359 is historical, not a current query.
 
 Final check and publication provenance follows after completion.
+
+## Proverbs checks
+
+Full release:prepare failed at missing Chromium after web/mobile builds and preceding nonbrowser checks; no candidate/full-gate pass. Separate images/release/mobile/sync passed. Independent checks passed all 31 Worker/offline chapters, 915 verses across KJV/ASV/WEB, exact metadata/event headings and all image bytes; zero offline network calls. All 1,142 pinned Git blobs match unchanged c87ed7459451ea3e2b3400eed783def11f017291. Worker 59,888,449 bytes, SHA-256 605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2. Fixtures do not establish live HTTP. No Proverbs close pairs; boundary gaps Psalms→Proverbs 6 and Proverbs→Ecclesiastes 31.
