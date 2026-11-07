@@ -251,5 +251,47 @@
   "browserBlocker": "check-release-smoke.mjs:31: missing Playwright chromium_headless_shell-1248 executable; managed cua_repl.js unavailable",
   "syncIntermittentStatus": "Standard check:sync passes this run; prior intermittent finishRead assertion remains unresolved. Source inspection confirms awaited WebCrypto bearer authentication in /session precedes /document; fixed 30 setImmediate rounds do not guarantee that I/O is complete. No sync/test source change.",
   "liveVerification": "Inherited denied live HTTP not retried; hostname remains outside enforced policy and no material change.",
-  "nativeStatus": "Unsigned offline bundle checked; signing, signed asset comparison and physical-device install/launch deferred; no Mac/device route."
+  "nativeStatus": "Unsigned offline bundle checked; signing, signed asset comparison and physical-device install/launch deferred; no Mac/device route.",
+  "publication": {
+    "canonicalReview": "6134791",
+    "canonicalVerification": "de890225cc590401c804f184ce3611b8242afa2f",
+    "mirrorCommit": "4ac34bd2629449713ac6777f8679215101a482b5",
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_d7d3fe719a588191a528a4738fa7ddc4",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 369,
+      "source": {
+        "commit_sha": "4ac34bd2629449713ac6777f8679215101a482b5"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000903481fb90b064487083fb06",
+        "content_hash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+        "size_bytes": 59904000,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6aeec0c4d79c8191abbb1eb0f8ba1a04",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_d7d3fe719a588191a528a4738fa7ddc4",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T06:10:24.957399+00:00"
+    },
+    "initialDeploymentDenial": "Automatic approval review rejected native production deployment, stating explicit publication authorization was missing.",
+    "authorizationEvidence": "user_message_read.read_messages verified Sentinel_71f14e4a51e88191a1801af8136df6ca: explicit instruction to commit, push, publish and install per book; recent history had no cancellation. get_site_version confirmed deployment_id null before single retry.",
+    "denialResolved": true,
+    "remainingUncertainOperation": false,
+    "liveReleaseVerify": "Not run: inherited denied HTTP not retried without materially new relevant evidence. Local canonical/mirror/Worker/unsigned offline identity equality passed; this does not establish live HTTP or signed/installed parity."
+  }
 }
