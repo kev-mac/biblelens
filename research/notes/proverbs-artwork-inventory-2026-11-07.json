@@ -1,0 +1,857 @@
+{
+  "book": "Proverbs",
+  "bookId": 19,
+  "canonicalBaseline": "9cbd44dee8aa600917b64468be6ba5ee064de743",
+  "chapterCount": 31,
+  "verseCount": 915,
+  "chapterImages": 31,
+  "storyImages": 0,
+  "activePlacements": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A quiet city gateway opens onto branching footpaths.",
+      "src": "/assets/chapter-proverbs-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 154854,
+      "sha256": "d1d61ec5803685d10d35cd3a252ebd4e1bf2d41014866deca6671ae546f8f5d2",
+      "reference": "1:20-21",
+      "textChecked": [
+        {
+          "verse": 20,
+          "kjv": "Wisdom crieth without; she uttereth her voice in the streets:",
+          "web": "Wisdom calls aloud in the street. She utters her voice in the public squares."
+        },
+        {
+          "verse": 21,
+          "kjv": "She crieth in the chief place of concourse, in the openings of the gates: in the city she uttereth her words, saying,",
+          "web": "She calls at the head of noisy places. At the entrance of the city gates, she utters her words:"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Silver rests in a clay jar beside a rocky crevice.",
+      "src": "/assets/chapter-proverbs-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 125958,
+      "sha256": "6221b36381ebaa432d7be30e5fc43980624ff6a7e9ca350a843c24a1e9ef4324",
+      "reference": "2:4",
+      "textChecked": [
+        {
+          "verse": 4,
+          "kjv": "If thou seekest her as silver, and searchest for her as for hid treasures;",
+          "web": "if you seek her as silver, and search for her as for hidden treasures;"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Grain fills storage jars beside a stone grape-treading basin.",
+      "src": "/assets/chapter-proverbs-03-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 149840,
+      "sha256": "81f73e287ec14388210dbe8707470ac45e2d3245f7194293a2b1748c8461b8e0",
+      "reference": "3:9-10",
+      "textChecked": [
+        {
+          "verse": 9,
+          "kjv": "Honour the Lord with thy substance, and with the firstfruits of all thine increase:",
+          "web": "Honor the LORD with your substance, with the first fruits of all your increase;"
+        },
+        {
+          "verse": 10,
+          "kjv": "So shall thy barns be filled with plenty, and thy presses shall burst out with new wine.",
+          "web": "so your barns will be filled with plenty, and your vats will overflow with new wine."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A hill-country path brightens in the light of dawn.",
+      "src": "/assets/chapter-proverbs-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 108916,
+      "sha256": "19783b7cd46b4168f32758ff92c5dbc39d8ad13b66c8d399220cde99f3b995d2",
+      "reference": "4:18",
+      "textChecked": [
+        {
+          "verse": 18,
+          "kjv": "But the path of the just is as the shining light, that shineth more and more unto the perfect day.",
+          "web": "But the path of the righteous is like the dawning light that shines more and more until the perfect day."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 5,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Clear water fills a stone cistern in a shaded courtyard.",
+      "src": "/assets/chapter-proverbs-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 154340,
+      "sha256": "d5a60b1ec87c810e315fc6a40522c96b582b0dbe82170eb65f109340553a8276",
+      "reference": "5:15-18",
+      "textChecked": [
+        {
+          "verse": 15,
+          "kjv": "Drink waters out of thine own cistern, and running waters out of thine own well.",
+          "web": "Drink water out of your own cistern, running water out of your own well."
+        },
+        {
+          "verse": 16,
+          "kjv": "Let thy fountains be dispersed abroad, and rivers of waters in the streets.",
+          "web": "Should your springs overflow in the streets, streams of water in the public squares?"
+        },
+        {
+          "verse": 17,
+          "kjv": "Let them be only thine own, and not strangers' with thee.",
+          "web": "Let them be for yourself alone, not for strangers with you."
+        },
+        {
+          "verse": 18,
+          "kjv": "Let thy fountain be blessed: and rejoice with the wife of thy youth.",
+          "web": "Let your spring be blessed. Rejoice in the wife of your youth."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Cistern illustrates the marriage metaphor without adding a wife portrait.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 6,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Ants carry seeds beside a field of ripening grain.",
+      "src": "/assets/chapter-proverbs-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 155636,
+      "sha256": "3c5f0abdf28ca9017ed37ccc3404b553702dfa790f8843cdd6540fcede747fd9",
+      "reference": "6:6-8",
+      "textChecked": [
+        {
+          "verse": 6,
+          "kjv": "Go to the ant, thou sluggard; consider her ways, and be wise:",
+          "web": "Go to the ant, you sluggard. Consider her ways, and be wise;"
+        },
+        {
+          "verse": 7,
+          "kjv": "Which having no guide, overseer, or ruler,",
+          "web": "which having no chief, overseer, or ruler,"
+        },
+        {
+          "verse": 8,
+          "kjv": "Provideth her meat in the summer, and gathereth her food in the harvest.",
+          "web": "provides her bread in the summer, and gathers her food in the harvest."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "Ground-level ants: connected head/thorax/abdomen, antennae and segmented legs inspected. Visible legs are coherent; overlap and small scale limit exact counts on distant ants. No obvious malformed insect. Perspective foreground scale is illustrative.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 7,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A lattice window overlooks a quiet street at dusk.",
+      "src": "/assets/chapter-proverbs-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 108452,
+      "sha256": "62abe516077a0c189d429a21bee5d18798753dbf26ce73e98030fffa8e80fddf",
+      "reference": "7:6-9",
+      "textChecked": [
+        {
+          "verse": 6,
+          "kjv": "For at the window of my house I looked through my casement,",
+          "web": "For at the window of my house, I looked out through my lattice."
+        },
+        {
+          "verse": 7,
+          "kjv": "And beheld among the simple ones, I discerned among the youths, a young man void of understanding,",
+          "web": "I saw among the simple ones. I discerned among the youths a young man void of understanding,"
+        },
+        {
+          "verse": 8,
+          "kjv": "Passing through the street near her corner; and he went the way to her house,",
+          "web": "passing through the street near her corner, he went the way to her house,"
+        },
+        {
+          "verse": 9,
+          "kjv": "In the twilight, in the evening, in the black and dark night:",
+          "web": "in the twilight, in the evening of the day, in the middle of the night and in the darkness."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Empty window/street evoke the setting; no newly cast youth or woman.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 8,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Paths meet on a hillside beside an ancient town gate.",
+      "src": "/assets/chapter-proverbs-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 162472,
+      "sha256": "cf50d2ab2120352ef83248a1802f166927d22173f4ee4b862b7076fc4ab8d66f",
+      "reference": "8:1-3",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "Doth not wisdom cry? and understanding put forth her voice?",
+          "web": "Doesn\u2019t wisdom cry out? Doesn\u2019t understanding raise her voice?"
+        },
+        {
+          "verse": 2,
+          "kjv": "She standeth in the top of high places, by the way in the places of the paths.",
+          "web": "On the top of high places by the way, where the paths meet, she stands."
+        },
+        {
+          "verse": 3,
+          "kjv": "She crieth at the gates, at the entry of the city, at the coming in at the doors.",
+          "web": "Beside the gates, at the entry of the city, at the entry doors, she cries aloud:"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 9,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A table with bread and a jug stands beside seven stone pillars.",
+      "src": "/assets/chapter-proverbs-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 143174,
+      "sha256": "f811c664d7750267e152ca5a35593489722980b66e877837dfef157f1c117c1e",
+      "reference": "9:1-5",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "Wisdom hath builded her house, she hath hewn out her seven pillars:",
+          "web": "Wisdom has built her house. She has carved out her seven pillars."
+        },
+        {
+          "verse": 2,
+          "kjv": "She hath killed her beasts; she hath mingled her wine; she hath also furnished her table.",
+          "web": "She has prepared her meat. She has mixed her wine. She has also set her table."
+        },
+        {
+          "verse": 3,
+          "kjv": "She hath sent forth her maidens: she crieth upon the highest places of the city,",
+          "web": "She has sent out her maidens. She cries from the highest places of the city:"
+        },
+        {
+          "verse": 4,
+          "kjv": "Whoso is simple, let him turn in hither: as for him that wanteth understanding, she saith to him,",
+          "web": "\u201cWhoever is simple, let him turn in here!\u201d As for him who is void of understanding, she says to him,"
+        },
+        {
+          "verse": 5,
+          "kjv": "Come, eat of my bread, and drink of the wine which I have mingled.",
+          "web": "\u201cCome, eat some of my bread, Drink some of the wine which I have mixed!"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Seven separate pillars counted left to right; bread and jug preserve Wisdom\u2019s banquet metaphor without a portrait.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 10,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Gathered grain sheaves rest beside a sickle after harvest.",
+      "src": "/assets/chapter-proverbs-10-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 138612,
+      "sha256": "5e43f2ea788121093d54eef965cc4cdf3cae4e6ec219a2b990bda8d965436c06",
+      "reference": "10:4-5",
+      "textChecked": [
+        {
+          "verse": 4,
+          "kjv": "He becometh poor that dealeth with a slack hand: but the hand of the diligent maketh rich.",
+          "web": "He becomes poor who works with a lazy hand, but the hand of the diligent brings wealth."
+        },
+        {
+          "verse": 5,
+          "kjv": "He that gathereth in summer is a wise son: but he that sleepeth in harvest is a son that causeth shame.",
+          "web": "He who gathers in summer is a wise son, but he who sleeps during the harvest is a son who causes shame."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 11,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A level balance and stone weights stand on a market counter.",
+      "src": "/assets/chapter-proverbs-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 110920,
+      "sha256": "40101420bf139c47aa2a23f61ee3ddebf671f7a838bec7477a2b5f67b25e830d",
+      "reference": "11:1",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "A false balance is abomination to the Lord: but a just weight is his delight.",
+          "web": "A false balance is an abomination to the LORD, but accurate weights are his delight."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 12,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An ox rests beside fodder and a filled water trough.",
+      "src": "/assets/chapter-proverbs-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 146882,
+      "sha256": "586043c0bf34470f8bb5697783138226d569c8f2c55a62b0c8b2c7f295ff979a",
+      "reference": "12:10-11",
+      "textChecked": [
+        {
+          "verse": 10,
+          "kjv": "A righteous man regardeth the life of his beast: but the tender mercies of the wicked are cruel.",
+          "web": "A righteous man respects the life of his animal, but the tender mercies of the wicked are cruel."
+        },
+        {
+          "verse": 11,
+          "kjv": "He that tilleth his land shall be satisfied with bread: but he that followeth vain persons is void of understanding.",
+          "web": "He who tills his land shall have plenty of bread, but he who chases fantasies is void of understanding."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "Resting ox: paired horns/ears, muzzle, eye, folded forelegs, visible rear leg/hoof and tail inspected. No disconnected limb; hidden underside and far legs cannot be certified.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 13,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Ripe figs grow on a tree beside a stone wall.",
+      "src": "/assets/chapter-proverbs-13-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 158856,
+      "sha256": "85f70b1c9d5e204a6eebcb0477b4d3dd29c79449f1ad45dedfaeb224d75ee227",
+      "reference": "13:12",
+      "textChecked": [
+        {
+          "verse": 12,
+          "kjv": "Hope deferred maketh the heart sick: but when the desire cometh, it is a tree of life.",
+          "web": "Hope deferred makes the heart sick, but when longing is fulfilled, it is a tree of life."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Fig tree illustrates the tree-of-life simile; text does not specify this species.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 14,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A cared-for stone house opens onto a quiet courtyard.",
+      "src": "/assets/chapter-proverbs-14-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 154242,
+      "sha256": "584d376c86d837ec44d5f35aab357ecfe5aca784719ddb451f5452970b96a4e9",
+      "reference": "14:1",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "Every wise woman buildeth her house: but the foolish plucketh it down with her hands.",
+          "web": "Every wise woman builds her house, but the foolish one tears it down with her own hands."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 15,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Herbs and plain bread form a simple meal in clay dishes.",
+      "src": "/assets/chapter-proverbs-15-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 140036,
+      "sha256": "83d378350c7ff93c2bb2ed9d15c5e644413fa45cd84e4ee2e6d0b293a769165a",
+      "reference": "15:17",
+      "textChecked": [
+        {
+          "verse": 17,
+          "kjv": "Better is a dinner of herbs where love is, than a stalled ox and hatred therewith.",
+          "web": "Better is a dinner of herbs, where love is, than a fattened calf with hatred."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 16,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Honeycomb rests in a clay dish on a wooden table.",
+      "src": "/assets/chapter-proverbs-16-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 119792,
+      "sha256": "c734d88adde5c21b65968d13b3e6b8378ad89564f4355375f44d9ef8430df22c",
+      "reference": "16:24",
+      "textChecked": [
+        {
+          "verse": 24,
+          "kjv": "Pleasant words are as an honeycomb, sweet to the soul, and health to the bones.",
+          "web": "Pleasant words are a honeycomb, sweet to the soul, and health to the bones."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 17,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A piece of flatbread rests on a plate in a quiet room.",
+      "src": "/assets/chapter-proverbs-17-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 97614,
+      "sha256": "3f782c3b77fd81f2213ed3d9d85be9c9096ed6176fc3f175047741a09204ea51",
+      "reference": "17:1",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "Better is a dry morsel, and quietness therewith, than an house full of sacrifices with strife.",
+          "web": "Better is a dry morsel with quietness, than a house full of feasting with strife."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 18,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Clear spring water flows through a rocky channel beneath trees.",
+      "src": "/assets/chapter-proverbs-18-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 200108,
+      "sha256": "00f5f496dc156f63fe9a9e1d36adca269735713d12092e9ebc5ed18b2bffdd75",
+      "reference": "18:4",
+      "textChecked": [
+        {
+          "verse": 4,
+          "kjv": "The words of a man's mouth are as deep waters, and the wellspring of wisdom as a flowing brook.",
+          "web": "The words of a man\u2019s mouth are like deep waters. The fountain of wisdom is like a flowing brook."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 19,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Bread and water wait beside a modest stone doorway.",
+      "src": "/assets/chapter-proverbs-19-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 138658,
+      "sha256": "b5e8494c8f325621689631fc0b5a79c202d23d62822b4eff59b078f7bd20cc78",
+      "reference": "19:17",
+      "textChecked": [
+        {
+          "verse": 17,
+          "kjv": "He that hath pity upon the poor lendeth unto the Lord; and that which he hath given will he pay him again.",
+          "web": "He who has pity on the poor lends to the LORD; he will reward him."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Bread and water evoke provision; no invented recipient or claim that the verse specifies these gifts.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 20,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Stone trading weights of different sizes lie beside a weighing pan.",
+      "src": "/assets/chapter-proverbs-20-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 127490,
+      "sha256": "90f61bbe6a17aa83c4a3934fdc121a6af815c3d914aec2f17c94e8f02d1d364b",
+      "reference": "20:10,23",
+      "textChecked": [
+        {
+          "verse": 10,
+          "kjv": "Divers weights, and divers measures, both of them are alike abomination to the Lord.",
+          "web": "Differing weights and differing measures, both of them alike are an abomination to the LORD."
+        },
+        {
+          "verse": 23,
+          "kjv": "Divers weights are an abomination unto the Lord; and a false balance is not good.",
+          "web": "The LORD detests differing weights, and dishonest scales are not pleasing."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Different sizes alone cannot prove dishonesty; the objects evoke the warning about trading weights.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 21,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Water divides through channels around green field beds.",
+      "src": "/assets/chapter-proverbs-21-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 140122,
+      "sha256": "e91420770ee5fc3e01fc2f25d439183cabaa87e2e8f7ffdcbb3dbe76a7b47f05",
+      "reference": "21:1",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "The king's heart is in the hand of the Lord, as the rivers of water: he turneth it whithersoever he will.",
+          "web": "The king\u2019s heart is in the LORD\u2019s hand like the watercourses. He turns it wherever he desires."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Irrigation illustrates the river simile without portraying a king or divine hand.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 22,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An old boundary stone marks the edge of two fields.",
+      "src": "/assets/chapter-proverbs-22-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 160496,
+      "sha256": "8b98d1c55284dfdcf49f204a45fa7bfe9f7a08c84cd5a76e3fdacf5e5ebf240d",
+      "reference": "22:28",
+      "textChecked": [
+        {
+          "verse": 28,
+          "kjv": "Remove not the ancient landmark, which thy fathers have set.",
+          "web": "Don\u2019t move the ancient boundary stone which your fathers have set up."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 23,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Red wine fills a clay cup beside a small oil lamp.",
+      "src": "/assets/chapter-proverbs-23-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 88990,
+      "sha256": "92fc8a7501f9bba29f282b207d4c8b8fea90dc9797c8d37e715e6545b726ba04",
+      "reference": "23:31-32",
+      "textChecked": [
+        {
+          "verse": 31,
+          "kjv": "Look not thou upon the wine when it is red, when it giveth his colour in the cup, when it moveth itself aright.",
+          "web": "Don\u2019t look at the wine when it is red, when it sparkles in the cup, when it goes down smoothly."
+        },
+        {
+          "verse": 32,
+          "kjv": "At the last it biteth like a serpent, and stingeth like an adder.",
+          "web": "In the end, it bites like a snake, and poisons like a viper."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Red wine evokes the warning in verses 31\u201332, not an invitation to drink.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 24,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Thorns cover a neglected vineyard beside a broken stone wall.",
+      "src": "/assets/chapter-proverbs-24-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 165048,
+      "sha256": "89b484210a350c11d8d6f0e41a0ed0224539d8074866ee54d4f61b92e091f037",
+      "reference": "24:30-31",
+      "textChecked": [
+        {
+          "verse": 30,
+          "kjv": "I went by the field of the slothful, and by the vineyard of the man void of understanding;",
+          "web": "I went by the field of the sluggard, by the vineyard of the man void of understanding."
+        },
+        {
+          "verse": 31,
+          "kjv": "And, lo, it was all grown over with thorns, and nettles had covered the face thereof, and the stone wall thereof was broken down.",
+          "web": "Behold, it was all grown over with thorns. Its surface was covered with nettles, and its stone wall was broken down."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 25,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Golden apple shapes rest in an openwork silver tray.",
+      "src": "/assets/chapter-proverbs-25-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 127664,
+      "sha256": "26b4536de69c74ef270a05f2056eb99168b36934bee7678645e1caf50943310b",
+      "reference": "25:11",
+      "textChecked": [
+        {
+          "verse": 11,
+          "kjv": "A word fitly spoken is like apples of gold in pictures of silver.",
+          "web": "A word fitly spoken is like apples of gold in settings of silver."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Golden apple shapes and silver openwork illustrate the simile, not an asserted ancient artifact.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 26,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Embers fade in a hearth with no firewood left.",
+      "src": "/assets/chapter-proverbs-26-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 95886,
+      "sha256": "253b468ed41f30bff82825d41b05aa19c2e1893a69dc2c6e7073bf24ad0437fd",
+      "reference": "26:20",
+      "textChecked": [
+        {
+          "verse": 20,
+          "kjv": "Where no wood is, there the fire goeth out: so where there is no talebearer, the strife ceaseth.",
+          "web": "For lack of wood a fire goes out. Without gossip, a quarrel dies down."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 27,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Goats graze near freshly cut hay in green pasture.",
+      "src": "/assets/chapter-proverbs-27-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 156354,
+      "sha256": "5795ab1f23c3a354313ed1bd3b9b4088bfbedd9ffe9f07054f39228e773d265e",
+      "reference": "27:25-27",
+      "textChecked": [
+        {
+          "verse": 25,
+          "kjv": "The hay appeareth, and the tender grass sheweth itself, and herbs of the mountains are gathered.",
+          "web": "The hay is removed, and the new growth appears, the grasses of the hills are gathered in."
+        },
+        {
+          "verse": 26,
+          "kjv": "The lambs are for thy clothing, and the goats are the price of the field.",
+          "web": "The lambs are for your clothing, and the goats are the price of a field."
+        },
+        {
+          "verse": 27,
+          "kjv": "And thou shalt have goats' milk enough for thy food, for the food of thy household, and for the maintenance for thy maidens.",
+          "web": "There will be plenty of goats\u2019 milk for your food, for your family\u2019s food, and for the nourishment of your servant girls."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "Four goats: horns, ears, necks, backs, tails and connected legs/hooves inspected. Foreground legs coherent; grass, grazing poses and distant scale conceal portions.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 28,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A lion stands alert on a low rocky ridge.",
+      "src": "/assets/chapter-proverbs-28-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 111054,
+      "sha256": "26578e7104fd53902ba9e1df9b18c844e76bec67e80846cac6f042ef7f9823e3",
+      "reference": "28:1",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "The wicked flee when no man pursueth: but the righteous are bold as a lion.",
+          "web": "The wicked flee when no one pursues; but the righteous are as bold as a lion."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stated literary motif retained; contextual scenery and props are imagined, not exact historical reconstruction.",
+      "anatomyReview": "Lion: connected four limbs, paws, torso, tail, ears, eyes and muzzle inspected; no duplicated limb or clear malformed anatomy. Mane is illustrative, not a subspecies claim.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 29,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Stone benches stand within a sturdy ancient town gate.",
+      "src": "/assets/chapter-proverbs-29-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 176208,
+      "sha256": "675fa93cb2c602f29baecfe2862eed86ef2bde3a8a5f042088e955cbc0e881ac",
+      "reference": "29:4",
+      "textChecked": [
+        {
+          "verse": 4,
+          "kjv": "The king by judgment establisheth the land: but he that receiveth gifts overthroweth it.",
+          "web": "The king by justice makes the land stable, but he who takes bribes tears it down."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Gate/benches evoke civic judgment; verse 4 does not specify this architecture.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 30,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Rock hyraxes shelter among limestone crevices.",
+      "src": "/assets/chapter-proverbs-30-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 153748,
+      "sha256": "4744f0b938571153b43b4f4e3fbeb4b5bf6f6808e35337e7564a4737f2ac8c36",
+      "reference": "30:26",
+      "textChecked": [
+        {
+          "verse": 26,
+          "kjv": "The conies are but a feeble folk, yet make they their houses in the rocks;",
+          "web": "The hyraxes are but a feeble folk, yet make they their houses in the rocks."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Hyraxes represent the WEB rock-badger reading; KJV conies does not require modern rabbits.",
+      "anatomyReview": "Three hyraxes: muzzles/whiskers, ears, rounded bodies and visible short feet inspected. Rear animal and folded/occluded limbs cannot be fully certified; no clear malformation.",
+      "identityReferences": []
+    },
+    {
+      "chapter": 31,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Purple cloth hangs on a loom beside wool, flax, and a spindle.",
+      "src": "/assets/chapter-proverbs-31-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 157430,
+      "sha256": "883ff95e6877405d999c187c0bbf9d22f3ecb0c05c65032e1fdfd0b1d61ce42b",
+      "reference": "31:13,19,21-22",
+      "textChecked": [
+        {
+          "verse": 13,
+          "kjv": "She seeketh wool, and flax, and worketh willingly with her hands.",
+          "web": "She seeks wool and flax, and works eagerly with her hands."
+        },
+        {
+          "verse": 19,
+          "kjv": "She layeth her hands to the spindle, and her hands hold the distaff.",
+          "web": "She lays her hands to the distaff, and her hands hold the spindle."
+        },
+        {
+          "verse": 21,
+          "kjv": "She is not afraid of the snow for her household: for all her household are clothed with scarlet.",
+          "web": "She is not afraid of the snow for her household, for all her household are clothed with scarlet."
+        },
+        {
+          "verse": 22,
+          "kjv": "She maketh herself coverings of tapestry; her clothing is silk and purple.",
+          "web": "She makes for herself carpets of tapestry. Her clothing is fine linen and purple."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Loom, wool, flax, spindle and cloth evoke work and textiles; no named woman portrait or exact loom reconstruction.",
+      "anatomyReview": "No visible people or living animals; object connections, materials and full scene inspected.",
+      "identityReferences": []
+    }
+  ],
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "recurringPeople": [],
+  "generation": null
+}
