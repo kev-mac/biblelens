@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
 const hostedStoryReplacements=[
+ "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+ "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
  "/assets/story-counting-the-camp-v2.webp",
  "/assets/story-aaronic-blessing-v2.webp",
  "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
