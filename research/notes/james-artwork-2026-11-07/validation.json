@@ -1,0 +1,119 @@
+{
+  "baseline": "3e0cb77f0af296cd6f40a672d8bba79cb08e5c82",
+  "scope": "James only; five existing images retained, no production edits",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --registry=https://registry.npmjs.org --cache=/tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-npm-install.log",
+      "logBytes": 629,
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "a09977f49e8e7a9ef0610bc52e27c206d0d55ce4e0222b88d2bd8b2e08aa3622"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/james-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/james-check-verify.log",
+      "logBytes": 384,
+      "logSha256": "be228966b2281ac50e5d0cc718ff660be890dd10a783acb36b4d35dd2a1d77f5"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "result": "failed at browser smoke after preceding checks passed",
+      "logPath": "/tmp/james-check-all.log",
+      "logBytes": 24169,
+      "logSha256": "8c09bc73c845e172e28db8b92aa10827faf46467f495cb7e7c0da5103ac57767"
+    }
+  ],
+  "additionalPassedChecks": [
+    "Fresh-credential read-only Sites comparison",
+    "2010 production files and 1619 assets byte-identical",
+    "Five single openers; 108 verses, 324 exact KJV/ASV/WEB fields with presence/type/value preserved",
+    "Five missing-opener rejection cases",
+    "1147 immutable pinned Git blobs match source",
+    "Source/Worker/unsigned native image parity; zero offline network calls",
+    "Both opener-coordinate conventions; no close pair touching James"
+  ],
+  "production": {
+    "filesPreserved": 2010,
+    "assetsPreserved": 1619,
+    "imagesRetained": 5,
+    "imagesReplaced": 0,
+    "chapterOpeners": 5,
+    "stories": 0,
+    "chapters": 5,
+    "verses": 108,
+    "totalImageBytes": 601924,
+    "internalGaps": [
+      27,
+      26,
+      18,
+      17
+    ],
+    "boundaryGaps": [
+      25,
+      20
+    ],
+    "closePairs": []
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "executable": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Executable absent; browser tests did not run. Readability remains inherited report-only, not a strict corpus pass."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass. No save/deploy, mirror push, audience change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1; no callable cua_repl.js. Sites skill requires skipping browser QA when absent. No preview server, browser install or substitute control route.",
+    "Inherited denied live HTTP/image bytes/release:verify remain deferred without materially new relevant authorization. Local fixture is not live parity. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN. Signing, signed App public vs www comparison and installation/query/launch pending. Historical build 359 is not current evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) outside scope."
+  ],
+  "nextBookStarted": false
+}

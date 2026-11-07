@@ -1,0 +1,153 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "James",
+  "canonicalBaseline": "3e0cb77f0af296cd6f40a672d8bba79cb08e5c82",
+  "chapterCount": 5,
+  "verseCount": 108,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-james-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 27,
+      "bytes": 90490,
+      "sha256": "b0ec7b0d8f68810ba1f743a377bf59a3e74bbc3f12240274ce142b45be8cbe64",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-james-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 26,
+      "bytes": 113480,
+      "sha256": "5a63a12115cb5bb2af96800bfa7bae6252451908f492f05efadb30d1077368b1",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-james-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 139982,
+      "sha256": "af0694b846387204ed03a9c1ce0314c2505d4cf7bb454e97c41316383c214f99",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-james-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 17,
+      "bytes": 113392,
+      "sha256": "a72e76c5bb3770b0e308a4db6bd490d6a1ffd27f5ccb95ed2f8fb90133cbb30f",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-james-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 20,
+      "bytes": 144580,
+      "sha256": "91e9855930d0f2af2f9803835604b15df3f15715656bcf6551ba34f23f8b9e2b",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 5,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 57,
+        "chapter": 13,
+        "verse": 0,
+        "position": 278,
+        "src": "/assets/chapter-hebrews-13-opening-v1.webp"
+      },
+      "b": {
+        "book": 58,
+        "chapter": 1,
+        "verse": 0,
+        "position": 303,
+        "src": "/assets/chapter-james-01-opening-v1.webp"
+      },
+      "gap": 25
+    },
+    {
+      "a": {
+        "book": 58,
+        "chapter": 5,
+        "verse": 0,
+        "position": 391,
+        "src": "/assets/chapter-james-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 59,
+        "chapter": 1,
+        "verse": 0,
+        "position": 411,
+        "src": "/assets/chapter-1-peter-01-opening-v1.webp"
+      },
+      "gap": 20
+    }
+  ],
+  "minimumInternalGap": 17,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; James existing 5 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 5
+}
