@@ -1,0 +1,324 @@
+{
+  "date": "2026-11-07",
+  "baseline": "f648cf41c84c359d0ae2c1071df41f0a43fe7a6f",
+  "targetBuild": 360,
+  "tool": "Built-in image generation/editing with actual image inputs",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "replacements": [
+    {
+      "key": "sarah20",
+      "width": 960,
+      "reason": "Sarah now remains elderly at about 90, matching the Genesis 17–18 face, gray waves and slender build.",
+      "generatedOriginalSha256": "b8a20af30b5130e51ebda83a1d2546228202a39ee518cf4150f7f1ed89de5594",
+      "asset": "src/assets/chapter-genesis-20-v2.webp",
+      "height": 540,
+      "sha256": "0460951d3cb33c56bcd9cbac372d2a3fb26f1bccc38c2c279a3c7e63040d2ee6",
+      "bytes": 121328,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-20-v1.webp",
+        "src/assets/story-abraham-and-sarahs-covenant-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "ishmael21",
+      "width": 1200,
+      "reason": "Ishmael is a taller adolescent, about 16 rather than a small child; Hagar retains her oval face and dark curls.",
+      "generatedOriginalSha256": "4df60f712fec87631a877b78a27d574741e748d9f5ca37b2f5a9b8ea0a9bebfc",
+      "asset": "src/assets/story-isaac-and-ishmael-v2.webp",
+      "height": 675,
+      "sha256": "2ea32fc9beba6682ccfb4a51eeabebe9c40c59406f5af746fc1dfa43f16a761d",
+      "bytes": 249350,
+      "actualVisualInputs": [
+        "src/assets/story-isaac-and-ishmael-v1.webp",
+        "src/assets/story-hagar-and-ishmael-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "isaac25",
+      "width": 960,
+      "reason": "At Abraham's death Isaac is 75 and Ishmael about 89. The front bearers now age the same faces and natural curls; grips remain anatomically credible.",
+      "generatedOriginalSha256": "1e2fc3d9e13a270dce5fdb141baa954edcfc197cffefaa2b119fdee3bee0976e",
+      "asset": "src/assets/chapter-genesis-25-opening-v2.webp",
+      "height": 540,
+      "sha256": "7701b8b3c94aced835d7d2e114de15652226a3548996871d9fdde5facf26de03",
+      "bytes": 154196,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-25-opening-v1.webp",
+        "src/assets/chapter-genesis-27-opening-v1.webp",
+        "src/assets/story-isaac-and-ishmael-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "noah",
+      "width": 1200,
+      "reason": "The opening Story scene now shows ark construction on dry land before the flood, without a premature rainbow or ambiguous household count. No identifiable person appears.",
+      "generatedOriginalSha256": "b22164c2f487e5d243ef00c200ad14b1ce23fed9e12023cbe1c4412278fc7a71",
+      "asset": "src/assets/story-noah-and-the-flood-v3.webp",
+      "height": 675,
+      "sha256": "98b2ff4c32f32fcb38287364424a547991aac8835cc3074af7e7e8a157540352",
+      "bytes": 187524,
+      "actualVisualInputs": [
+        "src/assets/story-noah-and-the-flood-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "isaac26",
+      "width": 960,
+      "reason": "Isaac retains the broad brown face, gray curls and beard of Genesis 27 rather than adopting the servant's face from Genesis 24. Rebekah ages the young well-scene face.",
+      "generatedOriginalSha256": "1a04272c688e3c2bd3f6581e3b1121a537c94ddf1ee5660cd07fce55c7521aa2",
+      "asset": "src/assets/chapter-genesis-26-opening-v2.webp",
+      "height": 540,
+      "sha256": "de42774345efbcb05ae2d681546c0a614ebd42bb265dd6c11abe320acf5f7033",
+      "bytes": 175676,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-26-opening-v1.webp",
+        "src/assets/chapter-genesis-27-opening-v1.webp",
+        "src/assets/story-isaac-and-rebekah-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "pharaoh41",
+      "width": 960,
+      "reason": "The dream and audience now show the same deep-brown Pharaoh, strong cheekbones, broad nose and clean-shaven jaw.",
+      "generatedOriginalSha256": "dc8cbac419d231955474fd9574760ae417537bbb5ebfb73af39ba7d7affedd01",
+      "asset": "src/assets/chapter-genesis-41-opening-v2.webp",
+      "height": 540,
+      "sha256": "f527a7748e4703d6187628810e6eed5bdf2ecd6aa8a8f29bd710d97dac3dec2b",
+      "bytes": 101794,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-41-opening-v1.webp",
+        "src/assets/chapter-genesis-41-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "prison40",
+      "width": 960,
+      "reason": "Joseph keeps his angular face and loose wavy curls; the cupbearer's dark beard and curls and the baker's stockier build and headwrap match their arrival.",
+      "generatedOriginalSha256": "7aa8274c80475c5f1a2806cc2f7ca50d8dc4af72651d3f8546640fe7f5905ca4",
+      "asset": "src/assets/chapter-genesis-40-v2.webp",
+      "height": 540,
+      "sha256": "5768568ef1537f1407c1f756d13b4a84409dcdc976a1e5e936a4d11d24b21991",
+      "bytes": 110162,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-40-v1.webp",
+        "src/assets/chapter-genesis-40-opening-v1.webp",
+        "src/assets/story-joseph-in-egypt-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "benjamin44",
+      "width": 960,
+      "reason": "Benjamin is a fully adult youngest brother with the same medium-brown face and dense curls, a mature jaw and short beard. This accepted edit supplies the reference for the other connected scenes.",
+      "generatedOriginalSha256": "42f86f60b242bb122c4987f8593a9cf92b0658fe385ad692da9a2ef5eca5154b",
+      "asset": "src/assets/chapter-genesis-44-v2.webp",
+      "height": 540,
+      "sha256": "00e35285cefc3f5c3f7a3b37911592ffab197361c53cd279c8f70114e0123229",
+      "bytes": 114952,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-44-v1.webp",
+        "src/assets/chapter-genesis-43-opening-v1.webp",
+        "src/assets/chapter-genesis-43-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "sarah20open",
+      "width": 960,
+      "reason": "Sarah's arrival and return now match the elderly Sarah close-up, without reversing her age.",
+      "generatedOriginalSha256": "1a4ea559c065ec1dd0ccb31c11730b0fea660d4512ead93e074e4290d2098739",
+      "asset": "src/assets/chapter-genesis-20-opening-v2.webp",
+      "height": 540,
+      "sha256": "d28a0d8bf4f3dd3bb396a8d58e57f5a0dd38a402e28c375b4386dd9372af199e",
+      "bytes": 188234,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-20-opening-v1.webp",
+        "src/assets/story-abraham-and-sarahs-covenant-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "abraham14",
+      "width": 960,
+      "reason": "The recipient of Melchizedek's bread and wine now retains elderly Abram's long nose, lined brown face and gray-white beard.",
+      "generatedOriginalSha256": "36bc237ad98980b2648b497895ddff2b20ec2d611a656520afd97e1158ec3998",
+      "asset": "src/assets/chapter-genesis-14-v2.webp",
+      "height": 540,
+      "sha256": "259bccefe983d2ac447c7d21d0888bf4fe3a41a98d72b2b72242a6ae670174d2",
+      "bytes": 110330,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-14-v1.webp",
+        "src/assets/chapter-genesis-12-v1.webp",
+        "src/assets/story-abram-and-lot-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "rebekah27",
+      "width": 960,
+      "reason": "The background listener ages the same Rebekah face into an elderly woman; Isaac and Esau retain their foreground identities.",
+      "generatedOriginalSha256": "2aa55f557522e8b1cfab0a9aec837d91a8b93096b4487d0d74acc124b9dbe7d9",
+      "asset": "src/assets/chapter-genesis-27-opening-v2.webp",
+      "height": 540,
+      "sha256": "d69b3279b441312223d9675d73dfa83571c4f960dd37b8709d6595491a4f8fc4",
+      "bytes": 154760,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-27-opening-v1.webp",
+        "src/assets/story-isaac-and-rebekah-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "rebekah28",
+      "width": 960,
+      "reason": "Rebekah remains elderly as Jacob departs rather than reverting to her young well-scene age.",
+      "generatedOriginalSha256": "604d0534d9e6d8cedc91e47ebfbda069e39be6e322f74ea3dcda5772ca821fa2",
+      "asset": "src/assets/chapter-genesis-28-opening-v2.webp",
+      "height": 540,
+      "sha256": "bcc666e1ee89d9ed20081c0483e37bac67a4697c94e72b81ef58ca8de8dbcf57",
+      "bytes": 166292,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-28-opening-v1.webp",
+        "src/assets/story-isaac-and-rebekah-v1.webp",
+        "src/assets/chapter-genesis-27-opening-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "benjamin43open",
+      "width": 960,
+      "reason": "Benjamin matches the accepted adult in the cup search, retaining dense curls, narrow mature jaw and short beard.",
+      "generatedOriginalSha256": "c9bc3b38a91553e3b484f58e0845ea91a2634d907597ee1ce9f74ef9d92858c0",
+      "asset": "src/assets/chapter-genesis-43-opening-v2.webp",
+      "height": 540,
+      "sha256": "bc4c3fb97c5e9cc8ae9a2f0c90f14d02c65e34d8b7a6b92a95b45f639ee7b6aa",
+      "bytes": 154978,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-43-opening-v1.webp",
+        "src/assets/chapter-genesis-44-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "benjamin43meal",
+      "width": 960,
+      "reason": "The youngest brother at the banquet is the same adult Benjamin; Joseph, the server, portions and other brothers retain their roles.",
+      "generatedOriginalSha256": "e6cbe2bca57f43e13c7c6a713c517ec9b7b9b9cfde1e1539ed364414de24559b",
+      "asset": "src/assets/chapter-genesis-43-v3.webp",
+      "height": 540,
+      "sha256": "30a8db6c577f82c6237d666213b2f02f5b0e705778f1fe0c203c6e13dbedadf8",
+      "bytes": 118026,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-43-v2.webp",
+        "src/assets/chapter-genesis-44-v2.webp",
+        "src/assets/story-joseph-in-egypt-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "reunionStory",
+      "width": 1200,
+      "reason": "Joseph matches the private revelation's angular face and loose wavy curls; Benjamin is the same adult, and distant attendants are removed per Genesis 45:1.",
+      "generatedOriginalSha256": "5c4f158fc2f4eb3dcaf26a65744a2346ef64dbb252fd673439aea662fd57efb1",
+      "asset": "src/assets/story-joseph-reunites-his-family-v2.webp",
+      "height": 675,
+      "sha256": "6bbf9db2cd2cfa37dcf66ed1f5af9a3b954ff5b6ef535d2b361eb9a1919a65ef",
+      "bytes": 196950,
+      "actualVisualInputs": [
+        "src/assets/story-joseph-reunites-his-family-v1.webp",
+        "src/assets/chapter-genesis-45-opening-v2.webp",
+        "src/assets/chapter-genesis-44-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "reunion45",
+      "width": 960,
+      "reason": "Joseph retains the same face and midlength wavy curls during the immediate embrace instead of changing hairline and haircut.",
+      "generatedOriginalSha256": "b34f0aac58a3e06a82779217561bfb1871c73d9482451de9fd7891fed0b5c52b",
+      "asset": "src/assets/chapter-genesis-45-v2.webp",
+      "height": 540,
+      "sha256": "520d482a12433dadcbbd14e4d5e7c6016ac2a65c7cfe2abd7bb61c828b1e61af",
+      "bytes": 117312,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-45-v1.webp",
+        "src/assets/chapter-genesis-45-opening-v2.webp",
+        "src/assets/story-joseph-in-egypt-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "pharaoh47",
+      "width": 960,
+      "reason": "Pharaoh keeps the same deep-brown complexion, broad nose and strong cheekbones about nine years after the dreams; Jacob and Joseph retain their identities.",
+      "generatedOriginalSha256": "9ff399b1c1267920a68ca9d2df006d666e353f5fefbb4ecc49b0d00a2636471e",
+      "asset": "src/assets/chapter-genesis-47-opening-v2.webp",
+      "height": 540,
+      "sha256": "445256ee4221f2d99418d47e79d88240f469a6e890b2c79d37cf5bea75feeb2a",
+      "bytes": 159824,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-47-opening-v1.webp",
+        "src/assets/chapter-genesis-41-v1.webp",
+        "src/assets/chapter-genesis-46-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    },
+    {
+      "key": "steward44",
+      "width": 960,
+      "reason": "The man hiding and finding the cup is the same deep-brown, muscular, clean-shaven steward.",
+      "generatedOriginalSha256": "c5bb99c7ee70bc48b47c482cb8391eeee404cc99699c8e04c0f84694d3a45489",
+      "asset": "src/assets/chapter-genesis-44-opening-v2.webp",
+      "height": 540,
+      "sha256": "39a068a8c3fb5809aaed9d62f34b6692b2f617b9b3470c86ebd7ff562e65c051",
+      "bytes": 112692,
+      "actualVisualInputs": [
+        "src/assets/chapter-genesis-44-opening-v1.webp",
+        "src/assets/chapter-genesis-44-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "For references created in this session, the full-resolution generated PNG for that accepted asset was supplied, before WebP encoding. All other references were supplied as the repository WebP itself.",
+      "review": "Accepted after full-size packaged-image inspection against the earlier and neighboring depictions, verse/action/age review, and visible hands, fingers, thumbs, limbs and animal checks."
+    }
+  ]
+}

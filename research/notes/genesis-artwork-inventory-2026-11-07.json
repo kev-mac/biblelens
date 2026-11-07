@@ -1,0 +1,882 @@
+{
+  "baseline": "f648cf41c84c359d0ae2c1071df41f0a43fe7a6f",
+  "targetBuild": 360,
+  "review": "Full-size source and packaged-image review completed for the active Genesis reader artwork. Retained art keeps earlier approvals; corrected art and actual input references are recorded in genesis-artwork-corrections-2026-11-07.json. Small/background faces remain bounded by their visible resolution; unnamed household members are not assigned invented individual names.",
+  "openingChapters": 50,
+  "placementCount": 88,
+  "uniqueFiles": 86,
+  "assets": [
+    "src/assets/story-the-creation-v3.webp",
+    "src/assets/chapter-genesis-02-opening-v3.webp",
+    "src/assets/chapter-genesis-02-v3.webp",
+    "src/assets/story-the-fall-of-man-v3.webp",
+    "src/assets/story-cain-and-abel-v3.webp",
+    "src/assets/story-the-line-of-seth-v2.webp",
+    "src/assets/chapter-genesis-05-opening-v2.webp",
+    "src/assets/chapter-genesis-06-opening-v1.webp",
+    "src/assets/chapter-genesis-05-v1.webp",
+    "src/assets/story-noah-and-the-flood-v3.webp",
+    "src/assets/chapter-genesis-07-opening-v1.webp",
+    "src/assets/chapter-genesis-07-v1.webp",
+    "src/assets/chapter-genesis-08-opening-v1.webp",
+    "src/assets/chapter-genesis-08-v1.webp",
+    "src/assets/chapter-genesis-09-opening-v1.webp",
+    "src/assets/story-noahic-covenant-v1.webp",
+    "src/assets/story-the-family-of-noah-v1.webp",
+    "src/assets/chapter-genesis-10-opening-v1.webp",
+    "src/assets/story-the-tower-of-babel-v1.webp",
+    "src/assets/chapter-genesis-10-v1.webp",
+    "src/assets/story-the-call-of-abram-v1.webp",
+    "src/assets/story-abrahamic-covenant-v1.webp",
+    "src/assets/chapter-genesis-12-v1.webp",
+    "src/assets/story-abram-and-lot-v1.webp",
+    "src/assets/chapter-genesis-14-opening-v1.webp",
+    "src/assets/chapter-genesis-14-v2.webp",
+    "src/assets/chapter-genesis-15-v1.webp",
+    "src/assets/story-hagar-and-ishmael-v1.webp",
+    "src/assets/story-abraham-and-sarahs-covenant-v1.webp",
+    "src/assets/chapter-genesis-17-v1.webp",
+    "src/assets/chapter-genesis-18-opening-v1.webp",
+    "src/assets/chapter-genesis-18-v1.webp",
+    "src/assets/story-lot-leaves-sodom-v1.webp",
+    "src/assets/chapter-genesis-20-opening-v2.webp",
+    "src/assets/chapter-genesis-20-v2.webp",
+    "src/assets/story-isaac-and-ishmael-v2.webp",
+    "src/assets/story-the-binding-of-isaac-v1.webp",
+    "src/assets/chapter-genesis-23-opening-v1.webp",
+    "src/assets/chapter-genesis-23-v1.webp",
+    "src/assets/story-isaac-and-rebekah-v1.webp",
+    "src/assets/chapter-genesis-25-opening-v2.webp",
+    "src/assets/story-jacob-and-esau-v1.webp",
+    "src/assets/chapter-genesis-26-opening-v2.webp",
+    "src/assets/chapter-genesis-26-v1.webp",
+    "src/assets/chapter-genesis-27-opening-v2.webp",
+    "src/assets/chapter-genesis-27-v1.webp",
+    "src/assets/chapter-genesis-28-opening-v2.webp",
+    "src/assets/chapter-genesis-28-v1.webp",
+    "src/assets/story-jacobs-household-v1.webp",
+    "src/assets/chapter-genesis-30-opening-v1.webp",
+    "src/assets/chapter-genesis-30-v1.webp",
+    "src/assets/story-jacob-returns-to-canaan-v1.webp",
+    "src/assets/chapter-genesis-31-v1.webp",
+    "src/assets/chapter-genesis-32-opening-v1.webp",
+    "src/assets/chapter-genesis-32-v1.webp",
+    "src/assets/chapter-genesis-33-opening-v1.webp",
+    "src/assets/chapter-genesis-33-v2.webp",
+    "src/assets/story-dinah-at-shechem-v1.webp",
+    "src/assets/story-the-death-of-rachel-v1.webp",
+    "src/assets/chapter-genesis-36-opening-v1.webp",
+    "src/assets/chapter-genesis-36-v1.webp",
+    "src/assets/story-joseph-and-his-brothers-v1.webp",
+    "src/assets/story-judah-and-tamar-v1.webp",
+    "src/assets/story-joseph-in-egypt-v1.webp",
+    "src/assets/chapter-genesis-39-v1.webp",
+    "src/assets/chapter-genesis-40-opening-v1.webp",
+    "src/assets/chapter-genesis-40-v2.webp",
+    "src/assets/chapter-genesis-41-opening-v2.webp",
+    "src/assets/chapter-genesis-41-v1.webp",
+    "src/assets/story-joseph-reunites-his-family-v2.webp",
+    "src/assets/chapter-genesis-42-v2.webp",
+    "src/assets/chapter-genesis-43-opening-v2.webp",
+    "src/assets/chapter-genesis-44-opening-v2.webp",
+    "src/assets/chapter-genesis-43-v3.webp",
+    "src/assets/chapter-genesis-44-v2.webp",
+    "src/assets/chapter-genesis-45-opening-v2.webp",
+    "src/assets/chapter-genesis-45-v2.webp",
+    "src/assets/chapter-genesis-46-opening-v1.webp",
+    "src/assets/chapter-genesis-46-v1.webp",
+    "src/assets/chapter-genesis-47-opening-v2.webp",
+    "src/assets/chapter-genesis-47-v2.webp",
+    "src/assets/story-jacob-blesses-his-family-v2.webp",
+    "src/assets/chapter-genesis-49-opening-v1.webp",
+    "src/assets/chapter-genesis-49-v1.webp",
+    "src/assets/chapter-genesis-50-opening-v2.webp",
+    "src/assets/chapter-genesis-50-v1.webp"
+  ],
+  "placements": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "side": "before",
+      "title": "The Creation",
+      "asset": "src/assets/story-the-creation-v3.webp",
+      "position": 0
+    },
+    {
+      "chapter": 2,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-02-opening-v3.webp",
+      "position": 31
+    },
+    {
+      "chapter": 2,
+      "verse": 10,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-02-v3.webp",
+      "position": 41
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "side": "before",
+      "title": "The Fall of Man",
+      "asset": "src/assets/story-the-fall-of-man-v3.webp",
+      "position": 56
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "side": "before",
+      "title": "Cain and Abel",
+      "asset": "src/assets/story-cain-and-abel-v3.webp",
+      "position": 80
+    },
+    {
+      "chapter": 4,
+      "verse": 25,
+      "side": "before",
+      "title": "The Line of Seth",
+      "asset": "src/assets/story-the-line-of-seth-v2.webp",
+      "position": 104
+    },
+    {
+      "chapter": 5,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-05-opening-v2.webp",
+      "position": 106
+    },
+    {
+      "chapter": 5,
+      "verse": 32,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-05-v1.webp",
+      "position": 138
+    },
+    {
+      "chapter": 6,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-06-opening-v1.webp",
+      "position": 138
+    },
+    {
+      "chapter": 6,
+      "verse": 9,
+      "side": "before",
+      "title": "Noah and the Flood",
+      "asset": "src/assets/story-noah-and-the-flood-v3.webp",
+      "position": 146
+    },
+    {
+      "chapter": 7,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "position": 160
+    },
+    {
+      "chapter": 7,
+      "verse": 17,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-07-v1.webp",
+      "position": 177
+    },
+    {
+      "chapter": 8,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-08-opening-v1.webp",
+      "position": 184
+    },
+    {
+      "chapter": 8,
+      "verse": 11,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-08-v1.webp",
+      "position": 195
+    },
+    {
+      "chapter": 9,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-09-opening-v1.webp",
+      "position": 206
+    },
+    {
+      "chapter": 9,
+      "verse": 8,
+      "side": "before",
+      "title": "Noahic Covenant",
+      "asset": "src/assets/story-noahic-covenant-v1.webp",
+      "position": 213
+    },
+    {
+      "chapter": 9,
+      "verse": 18,
+      "side": "before",
+      "title": "The Family of Noah",
+      "asset": "src/assets/story-the-family-of-noah-v1.webp",
+      "position": 223
+    },
+    {
+      "chapter": 10,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-10-opening-v1.webp",
+      "position": 235
+    },
+    {
+      "chapter": 10,
+      "verse": 32,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-10-v1.webp",
+      "position": 267
+    },
+    {
+      "chapter": 11,
+      "verse": 1,
+      "side": "before",
+      "title": "The Tower of Babel",
+      "asset": "src/assets/story-the-tower-of-babel-v1.webp",
+      "position": 267
+    },
+    {
+      "chapter": 11,
+      "verse": 27,
+      "side": "before",
+      "title": "The Call of Abram",
+      "asset": "src/assets/story-the-call-of-abram-v1.webp",
+      "position": 293
+    },
+    {
+      "chapter": 12,
+      "verse": 1,
+      "side": "before",
+      "title": "Abrahamic Covenant",
+      "asset": "src/assets/story-abrahamic-covenant-v1.webp",
+      "position": 299
+    },
+    {
+      "chapter": 12,
+      "verse": 6,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-12-v1.webp",
+      "position": 305
+    },
+    {
+      "chapter": 13,
+      "verse": 1,
+      "side": "before",
+      "title": "Abram and Lot",
+      "asset": "src/assets/story-abram-and-lot-v1.webp",
+      "position": 319
+    },
+    {
+      "chapter": 14,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-14-opening-v1.webp",
+      "position": 337
+    },
+    {
+      "chapter": 14,
+      "verse": 18,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-14-v2.webp",
+      "position": 355
+    },
+    {
+      "chapter": 15,
+      "verse": 1,
+      "side": "before",
+      "title": "Abrahamic Covenant",
+      "asset": "src/assets/story-abrahamic-covenant-v1.webp",
+      "position": 361
+    },
+    {
+      "chapter": 15,
+      "verse": 5,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-15-v1.webp",
+      "position": 366
+    },
+    {
+      "chapter": 16,
+      "verse": 1,
+      "side": "before",
+      "title": "Hagar and Ishmael",
+      "asset": "src/assets/story-hagar-and-ishmael-v1.webp",
+      "position": 382
+    },
+    {
+      "chapter": 17,
+      "verse": 1,
+      "side": "before",
+      "title": "Abrahamic Covenant",
+      "asset": "src/assets/story-abrahamic-covenant-v1.webp",
+      "position": 398
+    },
+    {
+      "chapter": 17,
+      "verse": 1,
+      "side": "before",
+      "title": "Abraham and Sarah’s Covenant",
+      "asset": "src/assets/story-abraham-and-sarahs-covenant-v1.webp",
+      "position": 398
+    },
+    {
+      "chapter": 17,
+      "verse": 5,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-17-v1.webp",
+      "position": 403
+    },
+    {
+      "chapter": 18,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-18-opening-v1.webp",
+      "position": 425
+    },
+    {
+      "chapter": 18,
+      "verse": 8,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-18-v1.webp",
+      "position": 433
+    },
+    {
+      "chapter": 19,
+      "verse": 1,
+      "side": "before",
+      "title": "Lot Leaves Sodom",
+      "asset": "src/assets/story-lot-leaves-sodom-v1.webp",
+      "position": 458
+    },
+    {
+      "chapter": 20,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-20-opening-v2.webp",
+      "position": 496
+    },
+    {
+      "chapter": 20,
+      "verse": 14,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-20-v2.webp",
+      "position": 510
+    },
+    {
+      "chapter": 21,
+      "verse": 1,
+      "side": "before",
+      "title": "Isaac and Ishmael",
+      "asset": "src/assets/story-isaac-and-ishmael-v2.webp",
+      "position": 514
+    },
+    {
+      "chapter": 22,
+      "verse": 1,
+      "side": "before",
+      "title": "The Binding of Isaac",
+      "asset": "src/assets/story-the-binding-of-isaac-v1.webp",
+      "position": 548
+    },
+    {
+      "chapter": 23,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-23-opening-v1.webp",
+      "position": 572
+    },
+    {
+      "chapter": 23,
+      "verse": 19,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-23-v1.webp",
+      "position": 591
+    },
+    {
+      "chapter": 24,
+      "verse": 1,
+      "side": "before",
+      "title": "Isaac and Rebekah",
+      "asset": "src/assets/story-isaac-and-rebekah-v1.webp",
+      "position": 592
+    },
+    {
+      "chapter": 25,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-25-opening-v2.webp",
+      "position": 659
+    },
+    {
+      "chapter": 25,
+      "verse": 19,
+      "side": "before",
+      "title": "Jacob and Esau",
+      "asset": "src/assets/story-jacob-and-esau-v1.webp",
+      "position": 677
+    },
+    {
+      "chapter": 26,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-26-opening-v2.webp",
+      "position": 693
+    },
+    {
+      "chapter": 26,
+      "verse": 22,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-26-v1.webp",
+      "position": 715
+    },
+    {
+      "chapter": 27,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-27-opening-v2.webp",
+      "position": 728
+    },
+    {
+      "chapter": 27,
+      "verse": 23,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-27-v1.webp",
+      "position": 751
+    },
+    {
+      "chapter": 28,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-28-opening-v2.webp",
+      "position": 774
+    },
+    {
+      "chapter": 28,
+      "verse": 12,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-28-v1.webp",
+      "position": 786
+    },
+    {
+      "chapter": 29,
+      "verse": 1,
+      "side": "before",
+      "title": "Jacob’s Household",
+      "asset": "src/assets/story-jacobs-household-v1.webp",
+      "position": 796
+    },
+    {
+      "chapter": 30,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-30-opening-v1.webp",
+      "position": 831
+    },
+    {
+      "chapter": 30,
+      "verse": 40,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-30-v1.webp",
+      "position": 871
+    },
+    {
+      "chapter": 31,
+      "verse": 1,
+      "side": "before",
+      "title": "Jacob Returns to Canaan",
+      "asset": "src/assets/story-jacob-returns-to-canaan-v1.webp",
+      "position": 874
+    },
+    {
+      "chapter": 31,
+      "verse": 21,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-31-v1.webp",
+      "position": 895
+    },
+    {
+      "chapter": 32,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-32-opening-v1.webp",
+      "position": 929
+    },
+    {
+      "chapter": 32,
+      "verse": 26,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-32-v1.webp",
+      "position": 955
+    },
+    {
+      "chapter": 33,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-33-opening-v1.webp",
+      "position": 961
+    },
+    {
+      "chapter": 33,
+      "verse": 4,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-33-v2.webp",
+      "position": 965
+    },
+    {
+      "chapter": 34,
+      "verse": 1,
+      "side": "before",
+      "title": "Dinah at Shechem",
+      "asset": "src/assets/story-dinah-at-shechem-v1.webp",
+      "position": 981
+    },
+    {
+      "chapter": 35,
+      "verse": 1,
+      "side": "before",
+      "title": "The Death of Rachel",
+      "asset": "src/assets/story-the-death-of-rachel-v1.webp",
+      "position": 1012
+    },
+    {
+      "chapter": 36,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-36-opening-v1.webp",
+      "position": 1041
+    },
+    {
+      "chapter": 36,
+      "verse": 8,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-36-v1.webp",
+      "position": 1049
+    },
+    {
+      "chapter": 37,
+      "verse": 1,
+      "side": "before",
+      "title": "Joseph and His Brothers",
+      "asset": "src/assets/story-joseph-and-his-brothers-v1.webp",
+      "position": 1084
+    },
+    {
+      "chapter": 38,
+      "verse": 1,
+      "side": "before",
+      "title": "Judah and Tamar",
+      "asset": "src/assets/story-judah-and-tamar-v1.webp",
+      "position": 1120
+    },
+    {
+      "chapter": 39,
+      "verse": 1,
+      "side": "before",
+      "title": "Joseph in Egypt",
+      "asset": "src/assets/story-joseph-in-egypt-v1.webp",
+      "position": 1150
+    },
+    {
+      "chapter": 39,
+      "verse": 20,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-39-v1.webp",
+      "position": 1170
+    },
+    {
+      "chapter": 40,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-40-opening-v1.webp",
+      "position": 1173
+    },
+    {
+      "chapter": 40,
+      "verse": 8,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-40-v2.webp",
+      "position": 1181
+    },
+    {
+      "chapter": 41,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-41-opening-v2.webp",
+      "position": 1196
+    },
+    {
+      "chapter": 41,
+      "verse": 29,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-41-v1.webp",
+      "position": 1225
+    },
+    {
+      "chapter": 42,
+      "verse": 1,
+      "side": "before",
+      "title": "Joseph Reunites His Family",
+      "asset": "src/assets/story-joseph-reunites-his-family-v2.webp",
+      "position": 1253
+    },
+    {
+      "chapter": 42,
+      "verse": 8,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-42-v2.webp",
+      "position": 1261
+    },
+    {
+      "chapter": 43,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-43-opening-v2.webp",
+      "position": 1291
+    },
+    {
+      "chapter": 43,
+      "verse": 34,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-43-v3.webp",
+      "position": 1325
+    },
+    {
+      "chapter": 44,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-44-opening-v2.webp",
+      "position": 1325
+    },
+    {
+      "chapter": 44,
+      "verse": 12,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-44-v2.webp",
+      "position": 1337
+    },
+    {
+      "chapter": 45,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-45-opening-v2.webp",
+      "position": 1359
+    },
+    {
+      "chapter": 45,
+      "verse": 15,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-45-v2.webp",
+      "position": 1374
+    },
+    {
+      "chapter": 46,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-46-opening-v1.webp",
+      "position": 1387
+    },
+    {
+      "chapter": 46,
+      "verse": 29,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-46-v1.webp",
+      "position": 1416
+    },
+    {
+      "chapter": 47,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-47-opening-v2.webp",
+      "position": 1421
+    },
+    {
+      "chapter": 47,
+      "verse": 23,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-47-v2.webp",
+      "position": 1444
+    },
+    {
+      "chapter": 48,
+      "verse": 1,
+      "side": "before",
+      "title": "Jacob Blesses His Family",
+      "asset": "src/assets/story-jacob-blesses-his-family-v2.webp",
+      "position": 1452
+    },
+    {
+      "chapter": 49,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-49-opening-v1.webp",
+      "position": 1474
+    },
+    {
+      "chapter": 49,
+      "verse": 28,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-49-v1.webp",
+      "position": 1502
+    },
+    {
+      "chapter": 50,
+      "verse": 0,
+      "side": "opener",
+      "asset": "src/assets/chapter-genesis-50-opening-v2.webp",
+      "position": 1507
+    },
+    {
+      "chapter": 50,
+      "verse": 13,
+      "side": "after",
+      "asset": "src/assets/chapter-genesis-50-v1.webp",
+      "position": 1520
+    }
+  ],
+  "gapsUnderFiveVerses": [
+    {
+      "first": {
+        "chapter": 4,
+        "verse": 25,
+        "side": "before",
+        "title": "The Line of Seth"
+      },
+      "next": {
+        "chapter": 5,
+        "verse": 0,
+        "side": "opener"
+      },
+      "interveningVerses": 2
+    },
+    {
+      "first": {
+        "chapter": 5,
+        "verse": 32,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 6,
+        "verse": 0,
+        "side": "opener"
+      },
+      "interveningVerses": 0
+    },
+    {
+      "first": {
+        "chapter": 10,
+        "verse": 32,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 11,
+        "verse": 1,
+        "side": "before",
+        "title": "The Tower of Babel"
+      },
+      "interveningVerses": 0
+    },
+    {
+      "first": {
+        "chapter": 17,
+        "verse": 1,
+        "side": "before",
+        "title": "Abrahamic Covenant"
+      },
+      "next": {
+        "chapter": 17,
+        "verse": 1,
+        "side": "before",
+        "title": "Abraham and Sarah’s Covenant"
+      },
+      "interveningVerses": 0
+    },
+    {
+      "first": {
+        "chapter": 20,
+        "verse": 14,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 21,
+        "verse": 1,
+        "side": "before",
+        "title": "Isaac and Ishmael"
+      },
+      "interveningVerses": 4
+    },
+    {
+      "first": {
+        "chapter": 23,
+        "verse": 19,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 24,
+        "verse": 1,
+        "side": "before",
+        "title": "Isaac and Rebekah"
+      },
+      "interveningVerses": 1
+    },
+    {
+      "first": {
+        "chapter": 30,
+        "verse": 40,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 31,
+        "verse": 1,
+        "side": "before",
+        "title": "Jacob Returns to Canaan"
+      },
+      "interveningVerses": 3
+    },
+    {
+      "first": {
+        "chapter": 33,
+        "verse": 0,
+        "side": "opener"
+      },
+      "next": {
+        "chapter": 33,
+        "verse": 4,
+        "side": "after"
+      },
+      "interveningVerses": 4
+    },
+    {
+      "first": {
+        "chapter": 39,
+        "verse": 20,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 40,
+        "verse": 0,
+        "side": "opener"
+      },
+      "interveningVerses": 3
+    },
+    {
+      "first": {
+        "chapter": 43,
+        "verse": 34,
+        "side": "after"
+      },
+      "next": {
+        "chapter": 44,
+        "verse": 0,
+        "side": "opener"
+      },
+      "interveningVerses": 0
+    }
+  ]
+}
