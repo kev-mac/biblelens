@@ -1,0 +1,792 @@
+[
+  {
+    "idx": 0,
+    "source": "/assets/story-joshua-commissioned-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Edit the FIRST supplied image only. Preserve 16:9 landscape, scene composition and tribal audience above Jordan. Correct the blue-cloaked central Joshua to the SAME older Joshua at the LEFT of second input (Deuteronomy commissioning): long lined medium-brown face, prominent long nose, longer natural mixed-gray curls, full graying beard, lean vigorous older build. Joshua1 immediately follows Deuteronomy31, so retain the same apparent age, NOT a younger black-haired man. Keep the people and geography; Moses is dead and must not appear. Third input is Genesis7 STYLE ONLY: grounded cinematic realism, believable faces and cloth, natural daylight, restrained illustrative finish, not glossy or oil painting. Inspect sound hands, fingers, thumbs and limbs. Save corrected image locally and report exact path.",
+    "prompt": "Edit the FIRST supplied image only. Preserve 16:9 landscape, scene composition and tribal audience above Jordan. Correct the blue-cloaked central Joshua to the SAME older Joshua at the LEFT of second input (Deuteronomy commissioning): long lined medium-brown face, prominent long nose, longer natural mixed-gray curls, full graying beard, lean vigorous older build. Joshua1 immediately follows Deuteronomy31, so retain the same apparent age, NOT a younger black-haired man. Keep the people and geography; Moses is dead and must not appear. Third input is Genesis7 STYLE ONLY: grounded cinematic realism, believable faces and cloth, natural daylight, restrained illustrative finish, not glossy or oil painting. Inspect sound hands, fingers, thumbs and limbs. Save corrected image locally and report exact path.",
+    "finalSrc": "/assets/story-joshua-commissioned-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+    "generatedSha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59",
+    "finalSha256": "166470e15bd35d8af28da86839eb28f056c7a836bdb66d0e79ac01be9db65f47",
+    "bytes": 202976,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-joshua-commissioned-v1.webp",
+        "sha256": "99dc700db133f706ad4103ba34e6447265536baecb0cd2d0185c60302097d039"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 2,
+    "source": "/assets/story-crossing-the-jordan-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-crossing-the-jordan-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Text correction: Joshua3:16-17 has the priests standing firmly in the middle of a completely DRY gravel riverbed while families pass them. Keep these same anonymous priests and covered blue ark on carrying poles, but arrange them stationary in middle distance with natural feet planted on dry ground and families crossing beside them. Remove the nearby wall/waterfall of water and the prematurely completed foreground memorial cairn. The stopped waters were far away at Adam, not a visible nearby Red-Sea-like wall. Retain realistic blue/green Jordan valley, dry stones and varied family ages; no identifiable Joshua or Moses.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nText correction: Joshua3:16-17 has the priests standing firmly in the middle of a completely DRY gravel riverbed while families pass them. Keep these same anonymous priests and covered blue ark on carrying poles, but arrange them stationary in middle distance with natural feet planted on dry ground and families crossing beside them. Remove the nearby wall/waterfall of water and the prematurely completed foreground memorial cairn. The stopped waters were far away at Adam, not a visible nearby Red-Sea-like wall. Retain realistic blue/green Jordan valley, dry stones and varied family ages; no identifiable Joshua or Moses.",
+    "finalSrc": "/assets/story-crossing-the-jordan-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-b67c5415-806b-4e37-8127-8cae336511a5.png",
+    "generatedSha256": "8ff82d594219d45a2fab81ae0ae877f8ae05371109d11bffabb2e393d5887451",
+    "finalSha256": "ed15e11a202dc2a53c88528a4ad1b2d48dc50c5dde1435fd8a12292f79972dd5",
+    "bytes": 239900,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-crossing-the-jordan-v1.webp",
+        "sha256": "bd313e56a1c5c24bcd9384f9e7a336fe120f78560d9173d833188598bd89474a"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 84,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 4,
+    "source": "/assets/chapter-joshua-04-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-04-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Text correction Joshua4:5-8: the stone-bearers are twelve adult MEN, one from each tribe, each with a single manageable river stone on his shoulder. Replace the child/woman stone carriers and implausibly huge stones. Show several foreground adult men with natural weight-bearing stance, each supporting one shoulder-sized stone at a shoulder, remaining men behind. Families may observe near tents but are not assigned the twelve men's carrying role. All faces anonymous, no Joshua/Moses. Keep river/camp landscape and natural daylight.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nText correction Joshua4:5-8: the stone-bearers are twelve adult MEN, one from each tribe, each with a single manageable river stone on his shoulder. Replace the child/woman stone carriers and implausibly huge stones. Show several foreground adult men with natural weight-bearing stance, each supporting one shoulder-sized stone at a shoulder, remaining men behind. Families may observe near tents but are not assigned the twelve men's carrying role. All faces anonymous, no Joshua/Moses. Keep river/camp landscape and natural daylight.",
+    "finalSrc": "/assets/chapter-joshua-04-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-a7f41d0f-6aba-4ad8-a71c-f6637b5fc0bb.png",
+    "generatedSha256": "401879c0ac4945d2823093f544196f99b122f916acf30a6f6437948ea9198de2",
+    "finalSha256": "306b9b15a7e51f7f3c1e3cfc9b35d69568f1257ebd3cfc96bdd0bc924aad2364",
+    "bytes": 209160,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-04-v1.webp",
+        "sha256": "4ebd9d6ed654ac5a2df991d6fb0f5cba13bdf7330a27f1e9a54749687930e5f2"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 6,
+    "source": "/assets/story-the-fall-of-jericho-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-the-fall-of-jericho-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep him left foreground at Jericho with covered ark, seven horn-blowing priests and crumbling walls. Preserve exact seven horn blowers and their sound grips.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep him left foreground at Jericho with covered ark, seven horn-blowing priests and crumbling walls. Preserve exact seven horn blowers and their sound grips.",
+    "finalSrc": "/assets/story-the-fall-of-jericho-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-d6e7e569-08fc-4689-a8ed-4eb362cd6352.png",
+    "generatedSha256": "749955c6b6c0361c55eb27384fe6c5ca6636cdb1112699e0382d36072b5dcbdb",
+    "finalSha256": "b548932afc4bfb416c6588c765797fdd32425e57663e3864807bf4a87b1b3848",
+    "bytes": 228314,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-the-fall-of-jericho-v1.webp",
+        "sha256": "e692c32e732b7835c8d603fb8949a7e2813e3b0081ab1a13a5ff0198826088e3"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 86,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 7,
+    "source": "/assets/story-achan-s-sin-and-ai-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-achan-s-sin-and-ai-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep him reading a scroll before an uncut stone altar between slopes, with gathered families. This illustrates the ending of the Story range Joshua7-8 (8:30-35), not a claim this happens in chapter7.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep him reading a scroll before an uncut stone altar between slopes, with gathered families. This illustrates the ending of the Story range Joshua7-8 (8:30-35), not a claim this happens in chapter7.",
+    "finalSrc": "/assets/story-achan-s-sin-and-ai-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-e0722241-907b-4654-9f04-ef5db0b276ca.png",
+    "generatedSha256": "36ea4f94b3028ad16ec8318bc3652be4257175901a756fa5a28184bbc7d5f24e",
+    "finalSha256": "a86e85b34be995f3f0a757fb967ec9f0d280b512a2d6587ec8c63fdab6e3d1f6",
+    "bytes": 204770,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-achan-s-sin-and-ai-v1.webp",
+        "sha256": "6c99e5be3b2c6219851d65c78c09b7107e5d30dd107f921ffb9fe6ac8f64dd73"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 10,
+    "source": "/assets/chapter-joshua-08-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-08-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep central scroll reader at altar in Joshua8:34. Preserve the ark and families on opposing slopes and all priestly figures. Do not add Moses.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep central scroll reader at altar in Joshua8:34. Preserve the ark and families on opposing slopes and all priestly figures. Do not add Moses.",
+    "finalSrc": "/assets/chapter-joshua-08-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-632525f8-b894-4836-b324-e1e265d1eaa6.png",
+    "generatedSha256": "37313d2a0d7e46f0381f9f9b028613f600e7babf8d665856c3b10e157774724f",
+    "finalSha256": "e084a79c01b006972dc7e20ee4ba5dffc073394a815644617c108ca361c4b411",
+    "bytes": 170386,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-08-v1.webp",
+        "sha256": "30041b357d8ebad5a879b206680a5b919db6a492ef46fd3503f5808700c1ded9"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 11,
+    "source": "/assets/story-the-gibeonite-deception-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-the-gibeonite-deception-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is the blue-cloaked seated man at RIGHT, chin resting on hand. Keep worn bread/wineskins/sandals, anonymous visitors and elders, table and canopy.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is the blue-cloaked seated man at RIGHT, chin resting on hand. Keep worn bread/wineskins/sandals, anonymous visitors and elders, table and canopy.",
+    "finalSrc": "/assets/story-the-gibeonite-deception-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-e35e97f8-ffcd-43e7-9a5b-3f11b163e80e.png",
+    "generatedSha256": "1cf8d5c7a041e03a4b20fadb4733bb214ae31f8bcb989f933ca1b6aceed844f2",
+    "finalSha256": "23a86ad3e574d7ad8c423796ca960c00620eee10a0214474329d365889d5149f",
+    "bytes": 173296,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-the-gibeonite-deception-v1.webp",
+        "sha256": "2320b9f3002be92f19ce8ee18410b9aab4bbd97d874d5baa8f3844a7b90eacbc"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 12,
+    "source": "/assets/story-the-sun-stands-still-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-the-sun-stands-still-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep Joshua's rear three-quarter view raising one hand under sun and moon on a rocky slope. Retain natural hand anatomy, sky and valley. His visible profile and hair must match older reference.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Keep Joshua's rear three-quarter view raising one hand under sun and moon on a rocky slope. Retain natural hand anatomy, sky and valley. His visible profile and hair must match older reference.",
+    "finalSrc": "/assets/story-the-sun-stands-still-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-76a1eadf-675b-48b4-a9e4-c86f3a631a28.png",
+    "generatedSha256": "07810fdcf1e6295ae3ddc1e9103a02cfaad4884ac2f9f9c18d6f780acf4b827f",
+    "finalSha256": "5db83754671f9fe4780bea18a84d3f7e53132ca899871bc70423fd76d788f4ca",
+    "bytes": 187066,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-the-sun-stands-still-v1.webp",
+        "sha256": "1fb8ce6733603b1fee58929a089be7c3029f86edd3e1d1f86505d46c45a250cf"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 13,
+    "source": "/assets/story-northern-campaign-and-the-land-taken-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-northern-campaign-and-the-land-taken-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is the blue-cloaked spear-holder in left foreground. Keep northern wetland/hills/settlement, companions and captured chariot parts; no killing scene.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is the blue-cloaked spear-holder in left foreground. Keep northern wetland/hills/settlement, companions and captured chariot parts; no killing scene.",
+    "finalSrc": "/assets/story-northern-campaign-and-the-land-taken-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-c3c72d39-0049-437d-95b6-353b3037aa89.png",
+    "generatedSha256": "1c923323e1636bf5c0613a24444d8f6044c16748e9c5638895e40b59a2f7d4c0",
+    "finalSha256": "a8fd3efff7804457127f0fae8302775e549ba114569d2e51c3eabb0d96a37792",
+    "bytes": 247518,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-northern-campaign-and-the-land-taken-v1.webp",
+        "sha256": "abbe858ae51b238562e6797c73ebe021bbf87df300f44fc6d23c99703e7c4ac4"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 19,
+    "source": "/assets/story-caleb-receives-hebron-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-caleb-receives-hebron-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-numbers-14-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Also correct Caleb at RIGHT gesturing toward hills to SAME RIGHT man from Numbers14 pair: broader darker-brown face, shorter natural curls, full short beard, sturdy build, aged45 years from40 to85 (Joshua14:7,10). Gray-white beard/hair and lines but vigorous, preserve distinctive broad face/nose. Joshua keeps long lean face distinctly different from Caleb. Keep companions, gesture and hills.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Also correct Caleb at RIGHT gesturing toward hills to SAME RIGHT man from Numbers14 pair: broader darker-brown face, shorter natural curls, full short beard, sturdy build, aged45 years from40 to85 (Joshua14:7,10). Gray-white beard/hair and lines but vigorous, preserve distinctive broad face/nose. Joshua keeps long lean face distinctly different from Caleb. Keep companions, gesture and hills.",
+    "finalSrc": "/assets/story-caleb-receives-hebron-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-abca1032-91bf-4909-9ecf-626f29df2c5c.png",
+    "generatedSha256": "bf524d76cf78339738f170dfd369defbd8cdeb5b8daa7aba5b7c3e65f8b655e1",
+    "finalSha256": "d60ef877796f64cd0fa92d182c07ee95addc62b2166074204241bd642bac85a8",
+    "bytes": 232680,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-caleb-receives-hebron-v1.webp",
+        "sha256": "791b790fb2416f542254133e0df42569e4db779ac82e2bdeef3ecce7e919986f"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-numbers-14-v1.webp",
+        "sha256": "0d5ee613b452e63bfd8e4bdcf0da1cdd9a6c30f200982711a5d4466438622625"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 86,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 21,
+    "source": "/assets/chapter-joshua-15-v1.webp",
+    "inputs": [
+      "/workspace/generated_images/exec-64ab1d82-374b-43dc-9753-4bbd30d7a689.png",
+      "/workspace/generated_images/exec-abca1032-91bf-4909-9ecf-626f29df2c5c.png",
+      "/workspace/biblelens/src/assets/chapter-numbers-14-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Caleb at RIGHT (staff-holder) to SAME RIGHT man in Numbers14 pair, aged from40 to85: broader darker-brown face and nose, shorter natural curls now gray, full gray-white beard, sturdy vigorous build, lined face. Do not use left man's Joshua identity. Keep Achsah's exact face, brown complexion, long natural dark curls and purple/red clothing, raised hands, donkey and flowing springs. This is father Caleb and adult daughter Achsah, no Joshua. Refined with actual approved late Caleb Joshua14 PNG to align adjacent face and rounded beard; no further aging.",
+    "prompt": "Refine FIRST image only: Caleb is the older man at RIGHT. Match him EXACTLY to the older Caleb at RIGHT in SECOND input (Joshua14 approved draft): same broad darker-brown face, nose, short natural gray curls and same rounded full WHITE beard length, sturdy vigorous85-year-old build. Trim the overly long pointed beard of first image to that same rounded beard. Same time period, no additional aging. Third Numbers14 image is earlier Caleb at RIGHT aged40 for identity only, not age now. Retain Achsah's face, hair, hands and clothing, donkey, springs, staff and all other composition unchanged. Final Genesis7 STYLE ONLY, grounded cinematic realism, natural colors and anatomy,16:9. Save locally and report path.",
+    "finalSrc": "/assets/chapter-joshua-15-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-88e28eb1-5e05-42a3-97dd-e61d51722119.png",
+    "generatedSha256": "a192707e88c72f64415284c31b63436e68fc3f9a0f27a65152c0565649b3a5a6",
+    "finalSha256": "cfd8dc5ebbea4586363b4c19c252c811e5b44342f7806b01f2c7ec2244e9d363",
+    "bytes": 180638,
+    "visualInputs": [
+      {
+        "path": "/workspace/generated_images/exec-64ab1d82-374b-43dc-9753-4bbd30d7a689.png",
+        "sha256": "19eb44bcfc9a3c97bbbcc48787c1be10f5564f5346f42b6bcbaa7a85ff1bc51f"
+      },
+      {
+        "path": "/workspace/generated_images/exec-abca1032-91bf-4909-9ecf-626f29df2c5c.png",
+        "sha256": "bf524d76cf78339738f170dfd369defbd8cdeb5b8daa7aba5b7c3e65f8b655e1"
+      },
+      {
+        "path": "src/assets/chapter-numbers-14-v1.webp",
+        "sha256": "0d5ee613b452e63bfd8e4bdcf0da1cdd9a6c30f200982711a5d4466438622625"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 24,
+    "source": "/assets/chapter-joshua-17-v2.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-17-v2.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-numbers-27-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Preserve ALL FIVE sisters' distinct adult brown faces, natural curls, relative heights/builds and left-to-right arrangement exactly; they match five women in Numbers27 input, only several years earlier. Correct seated Joshua seen from behind at RIGHT to older Joshua1/Deuteronomy references: longer mixed-gray natural curls, lean build, tiny profile matching long brown face; no youthful dark-haired head. Correct distant priest Eleazar by sanctuary to SAME RIGHT priest in Numbers27 reference: lined long medium-brown face/nose, gray-white natural curls/beard and lean older build; preserve twelve breastplate stones in four rows of three, shoulder settings, gold forehead plate with blue cord when visible. Eleazar is not Aaron/Moses. Keep inheritance discussion, table and scenery.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nPreserve ALL FIVE sisters' distinct adult brown faces, natural curls, relative heights/builds and left-to-right arrangement exactly; they match five women in Numbers27 input, only several years earlier. Correct seated Joshua seen from behind at RIGHT to older Joshua1/Deuteronomy references: longer mixed-gray natural curls, lean build, tiny profile matching long brown face; no youthful dark-haired head. Correct distant priest Eleazar by sanctuary to SAME RIGHT priest in Numbers27 reference: lined long medium-brown face/nose, gray-white natural curls/beard and lean older build; preserve twelve breastplate stones in four rows of three, shoulder settings, gold forehead plate with blue cord when visible. Eleazar is not Aaron/Moses. Keep inheritance discussion, table and scenery.",
+    "finalSrc": "/assets/chapter-joshua-17-v3.webp",
+    "generatedPath": "/workspace/generated_images/exec-63aee9c5-784f-43fb-8f17-f0203fd16d93.png",
+    "generatedSha256": "9c955f2571c2e6c0a79d4f710add0e8a49b5512012bf8070dc218a7051fc61f2",
+    "finalSha256": "a26d34654820b92c39a11c56bf2ad23df9e14660b18ed30b95886be316123994",
+    "bytes": 171546,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-17-v2.webp",
+        "sha256": "f5fee7887c6095067eaa009c5182e03a9af2a4b99957cc5439ecb372ea88d3c6"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-numbers-27-v2.webp",
+        "sha256": "119466dcdcc0bf624c40b6855c9647fecd809a40ff0124be99e3d9659ee8541f"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 26,
+    "source": "/assets/chapter-joshua-18-v1.webp",
+    "inputs": [
+      "/workspace/generated_images/exec-7ca48f5f-54d5-44c3-9819-16c0696f6cfd.png",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Repair failed draft: remove duplicate background Joshua and correct the central bowl-user to the established older identity.",
+    "prompt": "Edit first image. There is a failed prior edit: remove the ADDED gray-curled standing man at UPPER LEFT entirely and restore the anonymous red-clad tall representative from original scene. Then REPLACE the FACE and HAIR of the seated CENTRAL man who has his right hand INSIDE THE BOWL: he is JOSHUA. Make that central bowl-user the SAME older Joshua as second/third identity references: long lined brown face/nose, longer mixed-gray natural curls, full gray beard, lean older build. Keep him seated with the same bowl action and blue cloak. There must be EXACTLY ONE recognizable Joshua, the central lot-caster, none behind him. Do not leave young central black-haired face. Preserve all other elders, sanctuary, 16:9, table, cloth, lots. Final image STYLE ONLY. Grounded cinematic realism and sound hands. Save locally and report path.",
+    "finalSrc": "/assets/chapter-joshua-18-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-3d199a05-b506-4a2c-bbcc-554a24fc29de.png",
+    "generatedSha256": "33631ecc790bd2fa680a015a73c3fd716d59b676531ad7852a3aa0d00391ca8b",
+    "finalSha256": "5cdef4fd924aa9abae52e33ba2a10f403ad79d98276f3ee545599ff111745859",
+    "bytes": 131238,
+    "visualInputs": [
+      {
+        "path": "/workspace/generated_images/exec-7ca48f5f-54d5-44c3-9819-16c0696f6cfd.png",
+        "sha256": "af7287727be1679cd90bd8b1ba89be1b6c9c566405faf80d57e50361c2666020"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 28,
+    "source": "/assets/chapter-joshua-19-v2.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-19-v2.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is central-left standing blue cloak speaking with tribal elders beside hill settlement. No new generation of aging since Joshua14.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect Joshua to the SAME older Joshua at LEFT of the Deuteronomy commissioning input and the matching newly approved Joshua1 input. Long lined medium-brown face, prominent long nose, longer naturally curled hair with mixed gray, full graying beard, lean vigorous older build. This is only a few years after Deuteronomy, not a new generation. Preserve his identity, not the younger/short-haired original. Joshua is central-left standing blue cloak speaking with tribal elders beside hill settlement. No new generation of aging since Joshua14.",
+    "finalSrc": "/assets/chapter-joshua-19-v3.webp",
+    "generatedPath": "/workspace/generated_images/exec-39d5b9f4-1df1-4bfc-9e9d-825c57c46da4.png",
+    "generatedSha256": "f9d4972a16d35ff08211b5cb311e18d24cda83d7bb8460073b4b38ff56e1583c",
+    "finalSha256": "74243ec7b6cdcdddda7c3304fba80f294353f2ff0fabef037734ab0f5ec3bffc",
+    "bytes": 191422,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-19-v2.webp",
+        "sha256": "a6070e3bc08c1fbb2737d5e36d27b8984ca704e1fcca654095512e630ceda919"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 33,
+    "source": "/assets/story-the-altar-by-the-jordan-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-the-altar-by-the-jordan-v1.webp",
+      "/workspace/biblelens/src/assets/story-priestly-covenant-with-phinehas-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Text/identity correction Joshua22:13-15: delegation is led by PHINEHAS, not Joshua. Replace only the gray-haired blue-cloaked LEFT speaking leader with SAME Phinehas from second input (central younger man): medium-brown long face, short natural dark curls and full dark beard, lean adult build, slightly more mature after a few years, no gray elder substitution. Give him plain cream linen with blue sash like reference; he is not the high priest and needs no high-priest breastplate. Keep other anonymous tribal representatives, altar, river and calm discussion, no offerings or fire; the altar is a witness. No Moses/Joshua.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nText/identity correction Joshua22:13-15: delegation is led by PHINEHAS, not Joshua. Replace only the gray-haired blue-cloaked LEFT speaking leader with SAME Phinehas from second input (central younger man): medium-brown long face, short natural dark curls and full dark beard, lean adult build, slightly more mature after a few years, no gray elder substitution. Give him plain cream linen with blue sash like reference; he is not the high priest and needs no high-priest breastplate. Keep other anonymous tribal representatives, altar, river and calm discussion, no offerings or fire; the altar is a witness. No Moses/Joshua.",
+    "finalSrc": "/assets/story-the-altar-by-the-jordan-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-28e6b667-5696-45b1-85c8-8a70867db6a6.png",
+    "generatedSha256": "769a7cc95d66925f207da52b1027cae0a34b7977dfb60e631a9303dfde1aa8a9",
+    "finalSha256": "04ed8de856cd482cf285a744e0258ae54fbfdb275f03d3fbe9a9e3d81c4a796a",
+    "bytes": 197798,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-the-altar-by-the-jordan-v1.webp",
+        "sha256": "2d7fb883e9a370d053dc85faa8bb24597787f245eef4066171a8140d853bb81c"
+      },
+      {
+        "path": "src/assets/story-priestly-covenant-with-phinehas-v1.webp",
+        "sha256": "c1ef281f8286beebd331690522ed2b41fbd53401fa9c668515d8e938ece3c286"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 34,
+    "source": "/assets/story-joshua-s-farewell-and-covenant-at-shechem-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-joshua-s-farewell-and-covenant-at-shechem-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct blue-cloaked elderly Joshua at LEFT to SAME Joshua from Deuteronomy/Joshua1 actual inputs, plausibly further aged near the end of life at110 (Joshua24:29): retain long brown face/nose, long natural curls now mostly gray-white, full gray-white beard, lean older build, recognizable face beneath additional lines. Do not turn him into Moses or a different short-haired man. Keep oak, standing stone, families, gesture and scroll. This Story spans Joshua23-24 and depicts Shechem ending of its range.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect blue-cloaked elderly Joshua at LEFT to SAME Joshua from Deuteronomy/Joshua1 actual inputs, plausibly further aged near the end of life at110 (Joshua24:29): retain long brown face/nose, long natural curls now mostly gray-white, full gray-white beard, lean older build, recognizable face beneath additional lines. Do not turn him into Moses or a different short-haired man. Keep oak, standing stone, families, gesture and scroll. This Story spans Joshua23-24 and depicts Shechem ending of its range.",
+    "finalSrc": "/assets/story-joshua-s-farewell-and-covenant-at-shechem-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-d6c89d24-f4ac-40ce-b3fa-043a579075cf.png",
+    "generatedSha256": "dfde33959cc10e813e8659f4919aa4b015b9a22b38befdebb9675bad39b9e7af",
+    "finalSha256": "5c93e989b8a20e472b0e14b800f53d426606ef3e3e8caad1e2c4d712f354c075",
+    "bytes": 238892,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-joshua-s-farewell-and-covenant-at-shechem-v1.webp",
+        "sha256": "bd05d3638ad981955f7d835264b2ada81d7d732af1844c1e0eefd28ec88728d5"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 86,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 36,
+    "source": "/assets/chapter-joshua-24-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-24-v1.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct LEFT elder touching standing stone to SAME late Joshua, matching actual Deuteronomy/Joshua1 references with additional aging toward110: long lined brown face/nose, longer gray-white natural curls, full gray-white beard, lean older build. Preserve standing stone, oak, gathered families, red mantle and touch gesture, sound hands and feet. No Moses.",
+    "prompt": "Edit the FIRST image only, preserving 16:9 landscape, composition, setting and all unmentioned people/objects. Final input Genesis7 is STYLE ONLY, never Noah as another person. Grounded cinematic realism matching realistic video style; believable natural materials and varied brown complexions/natural curls, restrained illustrative finish, natural varied colors, no glossy photo or oil texture or cartoon. Sound hands/fingers/thumbs, limbs and animals. Save locally and report exact path.\nCorrect LEFT elder touching standing stone to SAME late Joshua, matching actual Deuteronomy/Joshua1 references with additional aging toward110: long lined brown face/nose, longer gray-white natural curls, full gray-white beard, lean older build. Preserve standing stone, oak, gathered families, red mantle and touch gesture, sound hands and feet. No Moses.",
+    "finalSrc": "/assets/chapter-joshua-24-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-acb29d60-d3b0-431f-875e-66dce01422f8.png",
+    "generatedSha256": "6a9aa11f42aac326568c68c834e27f7b271a06416ffc25882835523d6a9af215",
+    "finalSha256": "9a880c6cd792701fbc3de50b9b60e0c1e80e170cd0b5a9ba70b9086fc76ff543",
+    "bytes": 187584,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-24-v1.webp",
+        "sha256": "0b818a5ddc644e07bef276a5204ca4862ac1c65e0d942e569c20c13646694c3d"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  },
+  {
+    "idx": 17,
+    "source": "/assets/chapter-joshua-13-v2.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-joshua-13-v2.webp",
+      "/workspace/biblelens/src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Align the rear-view older Joshua hair/build with the established older Joshua; retain a rear view without claiming unseen facial details.",
+    "finalSrc": "/assets/chapter-joshua-13-v3.webp",
+    "prompt": "Edit FIRST image only. Keep wide rear view of tribal elders surveying Jordan land, original green-blue scenery, red mantle and staff. Correct ONLY the central tall red-mantled elderly leader's visible hair/build: SAME older Joshua at LEFT of second image and central blue man of third. Longer natural MIXED-GRAY CURLS and lean vigorous older build, not long loose straight white hair or Moses. Keep his head turned AWAY so no invented face or extra portrait is added. No Moses is present. Preserve elders, natural fingers/feet and whole composition16:9. Final Genesis7 STYLE ONLY, grounded natural cinematic realism, restrained illustrative finish and natural materials/colors. Save locally and report path.",
+    "generatedPath": "/workspace/generated_images/exec-cd98c62c-a43b-4f02-bbf6-95d55b186501.png",
+    "generatedSha256": "e03af123bbb37a958f8db2f5394ce8ca1da2aa4ed493a24685599e5171c7bd62",
+    "finalSha256": "5d57e5ce4c9bcaed4725ef88f0fab378cf54a894472cad73e304862252d1c5a5",
+    "bytes": 211758,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-joshua-13-v2.webp",
+        "sha256": "240407e7e85fb7cfa4a3b8ca29437b904c7ff379c662115a6a8e996e9125adb9"
+      },
+      {
+        "path": "src/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75"
+      },
+      {
+        "path": "/workspace/generated_images/exec-cc694494-069d-40d5-978a-8e12d12ae49c.png",
+        "sha256": "b91e9aea28502220d21d0f1ffbcaa1a424550fac61191ecd75ac60ac12fb5f59"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "review": "Accepted after full-size generated PNG and final WebP inspection against actual reference/nearby scenes: facial structure, complexion, natural hair, apparent age/build, relationships, verse action, visible hands/fingers/thumbs, limbs and animals. Tiny background and hidden details remain resolution limited; no unresolved identifiable continuity break accepted."
+  }
+]

@@ -3,6 +3,17 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
 const hostedStoryReplacements=[
+ "/assets/story-joshua-commissioned-v2.webp",
+ "/assets/story-crossing-the-jordan-v2.webp",
+ "/assets/story-the-fall-of-jericho-v2.webp",
+ "/assets/story-achan-s-sin-and-ai-v2.webp",
+ "/assets/story-the-gibeonite-deception-v2.webp",
+ "/assets/story-the-sun-stands-still-v2.webp",
+ "/assets/story-northern-campaign-and-the-land-taken-v2.webp",
+ "/assets/story-caleb-receives-hebron-v2.webp",
+ "/assets/story-the-altar-by-the-jordan-v2.webp",
+ "/assets/story-joshua-s-farewell-and-covenant-at-shechem-v2.webp",
+
  "/assets/story-moses-recalls-the-golden-calf-v2.webp",
  "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
  "/assets/story-counting-the-camp-v2.webp",
