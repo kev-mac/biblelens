@@ -40,7 +40,7 @@ vm.runInContext(fs.readFileSync('src/data.js','utf8'),context);
 if(fs.existsSync('src/search-core.js'))vm.runInContext(fs.readFileSync('src/search-core.js','utf8'),context);
 vm.runInContext(`let searchVersion=0,resources,includeLost=false;\n`+
  between(source,' async function getResources()',' function noteRows()')+
- between(source,' async function runSearch(query)',' let inputTimer;')+
+ between(source,' async function runSearch(query)'," el('lens-search-input').addEventListener")+
  between(source,' function parseReference(value)',' function openCompare()')+
  between(fs.readFileSync('src/stories.js','utf8'),'function storyReference(','function storyRoute(')+
  between(fs.readFileSync('src/reader-state.js','utf8'),'function readRef(','\n'),context);

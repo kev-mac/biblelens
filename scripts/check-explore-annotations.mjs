@@ -28,7 +28,7 @@ navigation.openWorkspaceSearch('  Moses & Pharaoh  ');assert.equal(routes.at(-1)
 navigation.openWorkspaceSearch('x'.repeat(400));assert.equal(decodeURIComponent(routes.at(-1).split('=')[1]).length,300);navigation.openWorkspaceSearch(' ');assert.equal(routes.at(-1),'#search');
 assert(workspace.includes('search:window.BibleLensWorkspace.search'),'Lazy workspace retains the shared search entry API');
 let close,frame,returned,restored=0;
-const closeContext={searchDialog:{open:false,addEventListener:(_type,fn)=>close=fn},location:{hash:'#search?q=mercy'},searchReturn:'#discover?section=evidence',view:'search',routeTo:route=>{returned=route;closeContext.view='explore';},requestAnimationFrame:fn=>frame=fn,el:()=>({focus:()=>restored++})};vm.createContext(closeContext);
+const closeContext={cancelSearchInput(){},searchDialog:{open:false,addEventListener:(_type,fn)=>close=fn},location:{hash:'#search?q=mercy'},searchReturn:'#discover?section=evidence',view:'search',routeTo:route=>{returned=route;closeContext.view='explore';},requestAnimationFrame:fn=>frame=fn,el:()=>({focus:()=>restored++})};vm.createContext(closeContext);
 vm.runInContext(workspace.split('\n').find(line=>line.startsWith(" searchDialog.addEventListener('close'")),closeContext);close();assert.equal(returned,'#discover?section=evidence');frame();assert.equal(restored,1);
 closeContext.location.hash='#read/0/1';frame=null;close();assert.equal(frame,null,'Search result navigation does not steal focus back to Explore');
 
