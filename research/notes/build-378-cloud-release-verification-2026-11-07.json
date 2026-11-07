@@ -36,12 +36,47 @@
     "browser": "unverified: supported managed control tool unavailable; no browser install or alternate control path",
     "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
     "signedNativeParity": "deferred",
-    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed"
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed",
+    "localPostPublicationParity": "passed: canonical, Sites mirror, local prepared Worker and unsigned native identities/Worker bytes match; full live release:verify deferred"
   },
   "publication": {
-    "status": "pending"
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_d8ab620e25a481918111ece27a8c0b9e",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 378,
+      "source": {
+        "commit_sha": "5ce107319b519ca7988629c12bf7aa6fb4786a15"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000df5481fd9169b805b489d048",
+        "content_hash": "sha256:cd03d41190f258b327d06d8e4aa9f2a0c4343d727089f687f95a30aef523915b",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeed92f2ec88191afb6f2775f9bf86f",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_d8ab620e25a481918111ece27a8c0b9e",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T07:54:34.406688+00:00"
+    }
   },
   "excludedUploads": "Previously denied detailed Ezekiel audit uploads remain excluded; no retry.",
   "handoff": "obadiah-artwork-handoff-from-amos-2026-11-07.md",
-  "nextBookStarted": false
+  "nextBookStarted": false,
+  "canonicalValidationCommit": "8f3e553",
+  "mirrorCommit": "5ce107319b519ca7988629c12bf7aa6fb4786a15",
+  "publicationAttemptHandling": "Initial deployment rejected by automatic approval review for missing visible production publication authorization. Confirmed deployment_id null, read original owner instruction and newly retrieved cloud/device-continuation instructions with user_message_read.read_messages, retried the identical saved-version deployment once; native Sites result succeeded. No alternate route used."
 }
