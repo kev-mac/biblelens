@@ -1,0 +1,940 @@
+[
+  {
+    "idx": 0,
+    "source": "/assets/story-counting-the-camp-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-counting-the-camp-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "edit": "Correct young Aaron to approved83-year-old census elder; retain Moses, census action and camp.",
+    "generatedPath": "/workspace/generated_images/exec-1d66b230-ab76-4d12-988f-9509df45c014.png",
+    "finalSrc": "/assets/story-counting-the-camp-v2.webp",
+    "prompt": "Edit the FIRST image only, keep its 16:9 composition, census counting men, pebbles, desert camp, lighting, natural materials and all placements. Correct Aaron, the turbaned man at far left beside staff-holding Moses: he must be recognizable as Aaron, the gray-curled rounder medium-brown elder standing beside Moses in SECOND image. He is 83, three years older than Moses, not a dark-haired man of 40. Gray curls under headwrap and full gray beard, same medium-brown complexion, strong nose and compact build. Preserve Moses’s identity as in second image, age about80. Keep every hand/finger/thumb and body anatomically sound. Third image is STYLE ONLY, grounded realistic cinematic illustration, natural light, no glossy photography, no oil texture. Do not put Noah or ark into scene. Output a single corrected full landscape image. Save the generated file locally and report its path.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 85,
+      "method": 6
+    },
+    "generatedSha256": "8b7590d8f9536728343563bc7fbb5ccd4793b68575495bfe88cc472c51f4ac5b",
+    "finalSha256": "769d2b94657da3febf4fefc89b6a52ab0dd5051bb5f8148cd4be094f20d2f183",
+    "bytes": 216898,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-counting-the-camp-v1.webp",
+        "sha256": "6204245a0a1cdb96c672e5709fd82f51936a292dd07860105711bb09e2e9163a"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 3,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "edit": "Correct Moses, right-hand elder holding staff, to match the RIGHTMOST Moses in second image: same lined long medium-brown face, prominent long nose, natural GRAY CURLS (not long straight flowing hair), full long gray-white beard, lean weathered build, age about80. Retain all Levite families and equipment. Do not turn any other person into Moses.",
+    "source": "/assets/chapter-numbers-03-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-03-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-a889ef87-94b4-4a89-9c2d-23e68c1b2d62.png",
+    "finalSrc": "/assets/chapter-numbers-03-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Moses, right-hand elder holding staff, to match the RIGHTMOST Moses in second image: same lined long medium-brown face, prominent long nose, natural GRAY CURLS (not long straight flowing hair), full long gray-white beard, lean weathered build, age about80. Retain all Levite families and equipment. Do not turn any other person into Moses.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "e0d1f34506bc1c831b827d53935cc7100342b43fce76b8802a5514527c1907a3",
+    "finalSha256": "c072d5d7236968c5630ef1b07c6cb335f66eade383b38266d7e7f1c4e82369a1",
+    "bytes": 152452,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-03-opening-v1.webp",
+        "sha256": "21e70eac589a4feaaad35ca5adf5bf8d31de6abc4a63d8ec9649367b2950efac"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 10,
+    "refs": [
+      "chapter-exodus-29-v2.webp",
+      "chapter-leviticus-16-v2.webp"
+    ],
+    "edit": "Correct central blessing elder Aaron to match the gray-curled medium-brown elder immediately LEFT of Moses in second reference and plain-white Aaron in third. Aaron is83 here: rounder lined medium-brown face, strong nose, full gray beard and natural gray curls visible under linen headwrap, compact build. Preserve plain linen clothing, raised hands, two adult sons, families, setting. Do not add high-priest breastplate to this plain-linen image. Match the two visible adult sons to the existing same adults; do not invent names.",
+    "source": "/assets/story-aaronic-blessing-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-aaronic-blessing-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-16-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-e50c3f1f-ceaa-41cd-9ac7-fde1c52f4a08.png",
+    "finalSrc": "/assets/story-aaronic-blessing-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect central blessing elder Aaron to match the gray-curled medium-brown elder immediately LEFT of Moses in second reference and plain-white Aaron in third. Aaron is83 here: rounder lined medium-brown face, strong nose, full gray beard and natural gray curls visible under linen headwrap, compact build. Preserve plain linen clothing, raised hands, two adult sons, families, setting. Do not add high-priest breastplate to this plain-linen image. Match the two visible adult sons to the existing same adults; do not invent names.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "43b2bedada777e474b6eef238006f3c24f8350570cfe950554ea06c7eb326e09",
+    "finalSha256": "5e7ec09bd069c380d2eee0beb682bfbbff2be07dd84076775769fa9edab08b5f",
+    "bytes": 136924,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-aaronic-blessing-v1.webp",
+        "sha256": "86f0e0fef2e6a56a8e3d203c473570bf956f52a57b194eaf1c2c646670117be3"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-16-v2.webp",
+        "sha256": "6fee4b32e799c8ef3567242d246e7aff2b20b95e050642c5ef264308153552b0"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 12,
+    "refs": [
+      "chapter-leviticus-04-v3.webp"
+    ],
+    "edit": "Correct Aaron tending seven lamps to match Aaron at RIGHT in second image, age83, lined rounder medium-brown face, natural gray curls beneath linen turban, full gray beard, strong nose, compact build. Correct ceremonial garments to exactly TWELVE individual breastplate stones in FOUR ROWS of THREE, shoulder settings and small GOLD FOREHEAD PLATE fastened by BLUE CORD (no extra stones). Preserve seven lamp flames and all other scene details, sensible hand grip on lamp tool.",
+    "source": "/assets/chapter-numbers-08-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-08-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-ca4a0dc6-ac8e-432b-b8ac-323e20e5f8ad.png",
+    "finalSrc": "/assets/chapter-numbers-08-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Aaron tending seven lamps to match Aaron at RIGHT in second image, age83, lined rounder medium-brown face, natural gray curls beneath linen turban, full gray beard, strong nose, compact build. Correct ceremonial garments to exactly TWELVE individual breastplate stones in FOUR ROWS of THREE, shoulder settings and small GOLD FOREHEAD PLATE fastened by BLUE CORD (no extra stones). Preserve seven lamp flames and all other scene details, sensible hand grip on lamp tool.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "4fb322f326fe1f7177cb0b92dc8ae4bac3ce4e521163dbd52670df8a62b9a995",
+    "finalSha256": "8349d150df32d7b2adb235c9d412239b45f130d7e3c518268affeb1d7fcbce4d",
+    "bytes": 124162,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-08-opening-v1.webp",
+        "sha256": "009b8821395b2fe630266a57ffab11ab4e8f42d8ea9304a930b53633b42a879d"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 9,
+    "refs": [
+      "chapter-leviticus-04-v3.webp"
+    ],
+    "edit": "The blessing priest in FIRST is Aaron in ceremonial high-priest vestments, age83. Match the actual rounder lined medium-brown Aaron at RIGHT in SECOND: natural gray curls, full gray beard, compact build, strong nose. Exactly twelve breastplate stones, FOUR ROWS of THREE; no fifth row. Add correct small gold forehead plate secured by blue cord and shoulder settings. Retain Nazirite's uncut natural hair, family, posture and hands.",
+    "source": "/assets/chapter-numbers-06-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-06-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-b274e3be-881f-4edf-8298-18921aed07fd.png",
+    "finalSrc": "/assets/chapter-numbers-06-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nThe blessing priest in FIRST is Aaron in ceremonial high-priest vestments, age83. Match the actual rounder lined medium-brown Aaron at RIGHT in SECOND: natural gray curls, full gray beard, compact build, strong nose. Exactly twelve breastplate stones, FOUR ROWS of THREE; no fifth row. Add correct small gold forehead plate secured by blue cord and shoulder settings. Retain Nazirite's uncut natural hair, family, posture and hands.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "c2d86b0d5379d4f00f73ec756bec189762649b4d7c723a8591b9705a81df640e",
+    "finalSha256": "d8ed28d9c154dcc60b76cdb26dbcbf3604d62cd6bb7c0c04740ca1bebc816f00",
+    "bytes": 140774,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-06-opening-v1.webp",
+        "sha256": "5fae8b15e3e8135e36023db0062bc42bbfc10fcd8ccb1781d9cc92585fc56b39"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 13,
+    "refs": [
+      "chapter-leviticus-04-v3.webp"
+    ],
+    "edit": "Numbers8:2 names Aaron. Match tending priest's face to actual Aaron at RIGHT in second reference, age83: rounder lined medium-brown face, full gray beard and natural gray curls under turban, compact build and strong nose. Preserve seven lamps and seven flames, blue ceremonial robe and realistic hand grip. Give correct small gold forehead plate with blue cord; any visible breastplate exactly four rows of three stones.",
+    "source": "/assets/chapter-numbers-08-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-08-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-866cc833-8658-4a1c-a88c-177e934fa34f.png",
+    "finalSrc": "/assets/chapter-numbers-08-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nNumbers8:2 names Aaron. Match tending priest's face to actual Aaron at RIGHT in second reference, age83: rounder lined medium-brown face, full gray beard and natural gray curls under turban, compact build and strong nose. Preserve seven lamps and seven flames, blue ceremonial robe and realistic hand grip. Give correct small gold forehead plate with blue cord; any visible breastplate exactly four rows of three stones.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "c7d96d9c00324ab6aa68bec635cdc1aec75c1d1329ea13e4ba94e126d6a4220e",
+    "finalSha256": "3346736af3d05e8ca0b5de1600c5d53421cd1a369ea00720dd3657cad18b1bbf",
+    "bytes": 114524,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-08-v1.webp",
+        "sha256": "2432b223190ba924d66605f60cd3e3a0b385aa08500bd9f7d2f273dec630d541"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 16,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "edit": "Correct Moses at far left to match RIGHTMOST staff-less Moses in second image: lined LONG medium-brown face and prominent long nose, natural GRAY CURLS, long gray-white beard, lean weathered build, about80. He is not a light-skinned round-faced European elder. Keep two silver trumpets, their shape/material, his hands resting on cloth, anonymous people and scene.",
+    "source": "/assets/chapter-numbers-10-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-10-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-afdf7746-7c21-415b-881c-93d3d10ba2ce.png",
+    "finalSrc": "/assets/chapter-numbers-10-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Moses at far left to match RIGHTMOST staff-less Moses in second image: lined LONG medium-brown face and prominent long nose, natural GRAY CURLS, long gray-white beard, lean weathered build, about80. He is not a light-skinned round-faced European elder. Keep two silver trumpets, their shape/material, his hands resting on cloth, anonymous people and scene.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "74682b5b4252555e9a4d5b92699b511f8c384f9d71991bdd9ba83f334ceefe21",
+    "finalSha256": "e53bfa7224c042cd5a3f33ec017dad98baa10b941df511037238a33e058ce4ba",
+    "bytes": 151902,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-10-opening-v1.webp",
+        "sha256": "76c83082d8ccee964cb3363f314ac0498219f30f9c745c48e50804aa0ced3d77"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 23,
+    "refs": [
+      "chapter-numbers-14-v1.webp"
+    ],
+    "edit": "Replace ONLY the TWO central speakers so that they match the two men in SECOND image: LEFT man Joshua with longish dark natural curls, medium-brown long face and full dark beard, lean adult build; RIGHT man Caleb with shorter dark curls, darker brown broader face and full short dark beard, sturdy adult build. Both middle aged, Caleb40 according Joshua14:7; neither is elderly Moses. Give both visibly torn upper garments as Numbers14:6, retain raised speaking hands, crowd, setting, overcast light; no staff or Moses clone.",
+    "source": "/assets/chapter-numbers-14-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-14-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-14-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-d9d5a835-cd7d-4d5f-b951-6b54bdfbe7c4.png",
+    "finalSrc": "/assets/chapter-numbers-14-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nReplace ONLY the TWO central speakers so that they match the two men in SECOND image: LEFT man Joshua with longish dark natural curls, medium-brown long face and full dark beard, lean adult build; RIGHT man Caleb with shorter dark curls, darker brown broader face and full short dark beard, sturdy adult build. Both middle aged, Caleb40 according Joshua14:7; neither is elderly Moses. Give both visibly torn upper garments as Numbers14:6, retain raised speaking hands, crowd, setting, overcast light; no staff or Moses clone.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "e266a8b57bbd3599191cd82c9309b5e5c8795ae167e84c79da5d4c6be27a1d8a",
+    "finalSha256": "e2c4eb8fc55cdcfcf7556f6406e6ae072531a117adb439d05d6355d06558f105",
+    "bytes": 137520,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-14-opening-v1.webp",
+        "sha256": "675a3ab108572717fbac2cd5ffa978e2732da1416d545c60e3e63ff300bc0e03"
+      },
+      {
+        "path": "src/assets/chapter-numbers-14-v1.webp",
+        "sha256": "0d5ee613b452e63bfd8e4bdcf0da1cdd9a6c30f200982711a5d4466438622625"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 21,
+    "refs": [
+      "chapter-exodus-29-v2.webp",
+      "chapter-exodus-15-opening-v2.webp"
+    ],
+    "edit": "Correct THREE siblings' identities. FIRST image left=Miriam; match central tambourine woman in THIRD image: long oval lined medium-brown face, long nose, gray-white natural curls, slender vigorous elderly build, older than Moses; preserve her blue headshawl and serious discussion expression. FIRST middle=Aaron; match white-linen gray-curled elder immediately LEFT of Moses in SECOND, rounder lined medium-brown face, strong nose, full gray beard, natural gray curls and compact build, age83. FIRST right=Moses; match RIGHTMOST Moses in SECOND: long lined medium-brown face, prominent long nose, gray curls, long gray-white beard, lean build, about80. Keep outdoor tent discussion, sound gestures/hands and staff.",
+    "source": "/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-15-opening-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-17e0b9f8-ca35-4c17-98a0-f0bf6e5ace93.png",
+    "finalSrc": "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect THREE siblings' identities. FIRST image left=Miriam; match central tambourine woman in THIRD image: long oval lined medium-brown face, long nose, gray-white natural curls, slender vigorous elderly build, older than Moses; preserve her blue headshawl and serious discussion expression. FIRST middle=Aaron; match white-linen gray-curled elder immediately LEFT of Moses in SECOND, rounder lined medium-brown face, strong nose, full gray beard, natural gray curls and compact build, age83. FIRST right=Moses; match RIGHTMOST Moses in SECOND: long lined medium-brown face, prominent long nose, gray curls, long gray-white beard, lean build, about80. Keep outdoor tent discussion, sound gestures/hands and staff.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "ce413ad628dd4597cd52147e1029e75066efd0e3cae1c37d561b0ba87d5b5ef3",
+    "finalSha256": "61e1b53de7ba980b74ca6642b10618b76c5cab5cb3f23c860f6ad1933f7e793d",
+    "bytes": 224202,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-miriam-and-aaron-speak-against-moses-v1.webp",
+        "sha256": "26c55569f7b9f6579458f294124beeca88dc0d8d50c42a2218bb8d3a13447748"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-exodus-15-opening-v2.webp",
+        "sha256": "c4a402573949f9e3e4756f7d257776086a447793b22d8dfe5ed7f1737951bb01"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 27,
+    "refs": [
+      "chapter-exodus-29-v2.webp",
+      "chapter-leviticus-04-v3.webp"
+    ],
+    "edit": "Match Aaron holding almond staff to actual Aaron at RIGHT in THIRD: rounder lined medium-brown face, natural gray curls below linen turban, full gray beard and compact build, age83. Preserve FIRST plain/blue clothing and staff with buds/blossoms/ripe almonds; no need to add breastplate. Moses at left matches RIGHTMOST Moses in SECOND, lean medium-brown long face, gray curls, long gray-white beard. Preserve almond branch and natural hand grip and plain staffs. No extra people.",
+    "source": "/assets/story-korah-s-rebellion-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-korah-s-rebellion-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-0950d233-6f36-4c05-8bb6-1376087eed8a.png",
+    "finalSrc": "/assets/story-korah-s-rebellion-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nMatch Aaron holding almond staff to actual Aaron at RIGHT in THIRD: rounder lined medium-brown face, natural gray curls below linen turban, full gray beard and compact build, age83. Preserve FIRST plain/blue clothing and staff with buds/blossoms/ripe almonds; no need to add breastplate. Moses at left matches RIGHTMOST Moses in SECOND, lean medium-brown long face, gray curls, long gray-white beard. Preserve almond branch and natural hand grip and plain staffs. No extra people.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "257843b5537a33b3324bfdff59d053068c528d2cef2998d68d88917d6a65073f",
+    "finalSha256": "68496d86de755386b1feef7dd74bb323867b40e0addfac5adbdf9d2638aa8d83",
+    "bytes": 197056,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-korah-s-rebellion-v1.webp",
+        "sha256": "1308a751035be419107eff4a7545d7d4ec9bb2a1b1dd93c525ab864a927ab93f"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 28,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "edit": "Fix DUPLICATED MOSES in FIRST image. There must be exactly TWO named elders on RIGHT facing the protesting man at left. Keep Moses as the prostrate red-cloaked elder at lower center per Numbers16:4, with gray curls and medium-brown skin. REMOVE the standing staff-holding duplicate Moses at right-center entirely (replace area with background/crowd space). Change standing blue-robed black-bearded man at FAR RIGHT into AARON, age83, match white-linen elder immediately LEFT of Moses in SECOND: rounder lined medium-brown face, strong nose, natural gray curls under linen headwrap, full gray beard, compact build. Retain left protest leader, crowd, sanctuary and credible anatomy. Do not create a second standing Moses.",
+    "source": "/assets/chapter-numbers-16-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-16-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-636a891c-0ec0-4734-8acb-0512c10ecdd3.png",
+    "finalSrc": "/assets/chapter-numbers-16-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nFix DUPLICATED MOSES in FIRST image. There must be exactly TWO named elders on RIGHT facing the protesting man at left. Keep Moses as the prostrate red-cloaked elder at lower center per Numbers16:4, with gray curls and medium-brown skin. REMOVE the standing staff-holding duplicate Moses at right-center entirely (replace area with background/crowd space). Change standing blue-robed black-bearded man at FAR RIGHT into AARON, age83, match white-linen elder immediately LEFT of Moses in SECOND: rounder lined medium-brown face, strong nose, natural gray curls under linen headwrap, full gray beard, compact build. Retain left protest leader, crowd, sanctuary and credible anatomy. Do not create a second standing Moses.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "b22ace1374ac59d7ddebd4bfe43a97efded9de6313b63b7db073b9200dd31662",
+    "finalSha256": "ee68b242d246f5e963865a1d3535b08da4b8473e8e866ca6c9d48a1f9da32c32",
+    "bytes": 137600,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-16-v1.webp",
+        "sha256": "02cb2ecff00847852b5d98558b6dc9397c1aa992013fa69f4b5cc8baf2bb7cb6"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 29,
+    "refs": [
+      "chapter-leviticus-04-v3.webp"
+    ],
+    "edit": "Match Aaron holding budding almond rod to Aaron at RIGHT in SECOND reference: rounder lined medium-brown face, strong nose, natural gray curls under turban, full gray beard and compact build, about83. Preserve his ceremonial robe, exactly TWELVE breastplate stones in FOUR ROWS of THREE, shoulder settings, and small gold forehead plate fastened with BLUE cord. Retain staff buds/blossoms/almonds and other staffs/crowd. Hands grasp one staff naturally.",
+    "source": "/assets/chapter-numbers-17-opening-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-17-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-2891ba2e-6fcf-49af-8e13-4a45a68c4cb8.png",
+    "finalSrc": "/assets/chapter-numbers-17-opening-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nMatch Aaron holding budding almond rod to Aaron at RIGHT in SECOND reference: rounder lined medium-brown face, strong nose, natural gray curls under turban, full gray beard and compact build, about83. Preserve his ceremonial robe, exactly TWELVE breastplate stones in FOUR ROWS of THREE, shoulder settings, and small gold forehead plate fastened with BLUE cord. Retain staff buds/blossoms/almonds and other staffs/crowd. Hands grasp one staff naturally.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "aa112111a86c15c577404d31bd1293c3db2d34c408f15a77d3081f9bc7de648b",
+    "finalSha256": "b382a090faf0e9c62d4d26f7dd9b981a69f48d0369f33a64991b9964ef3dd9e8",
+    "bytes": 133230,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-17-opening-v1.webp",
+        "sha256": "3ea3b76360e25e47cb42556fcad61d7b4b3af037dcaf55787de8e0d45c56ae0d"
+      },
+      {
+        "path": "src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 36,
+    "refs": [
+      "chapter-exodus-29-v2.webp",
+      "chapter-numbers-19-opening-v1.webp"
+    ],
+    "edit": "Correct Numbers20:26-28 action and identities. The three men remain on Mount Hor at dusk, camp distant. LEFT Moses must match RIGHTMOST Moses in SECOND, long lined medium-brown face, gray curly hair, long gray-white beard, lean; now about120 after roughly38 years since Sinai, extra lines/whiter beard, same identity. MIDDLE Aaron must match gray-curled elder just LEFT of Moses in SECOND, rounder lined medium-brown face and full gray beard, compact; now123, gray-white natural curls, same face with plausible aging, in plain white undergarment, sitting/resting respectfully nearby. RIGHT Eleazar must match the white-turbaned priest on LEFT in THIRD (red-heifer scene): same medium-brown complexion, long strong nose, relatively lean build and graying curly beard, now roughly38 years older than that appearance so lined, gray-white full beard, NOT a young black-haired man and not Aaron's face. Moses is gently placing the blue ceremonial robe ONTO Eleazar's shoulders as scripture says, while Aaron observes before his death. Natural supportive hand positions. No Aaron handing a folded robe, no dead body, no extra people, no nudity.",
+    "source": "/assets/story-edom-refuses-passage-and-aaron-dies-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-edom-refuses-passage-and-aaron-dies-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-19-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+    "finalSrc": "/assets/story-edom-refuses-passage-and-aaron-dies-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Numbers20:26-28 action and identities. The three men remain on Mount Hor at dusk, camp distant. LEFT Moses must match RIGHTMOST Moses in SECOND, long lined medium-brown face, gray curly hair, long gray-white beard, lean; now about120 after roughly38 years since Sinai, extra lines/whiter beard, same identity. MIDDLE Aaron must match gray-curled elder just LEFT of Moses in SECOND, rounder lined medium-brown face and full gray beard, compact; now123, gray-white natural curls, same face with plausible aging, in plain white undergarment, sitting/resting respectfully nearby. RIGHT Eleazar must match the white-turbaned priest on LEFT in THIRD (red-heifer scene): same medium-brown complexion, long strong nose, relatively lean build and graying curly beard, now roughly38 years older than that appearance so lined, gray-white full beard, NOT a young black-haired man and not Aaron's face. Moses is gently placing the blue ceremonial robe ONTO Eleazar's shoulders as scripture says, while Aaron observes before his death. Natural supportive hand positions. No Aaron handing a folded robe, no dead body, no extra people, no nudity.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "fc2b59e0806fdaba3bbb2b10d31190445c2c349e8033ff13be7cc164ad96f742",
+    "finalSha256": "8bf83279d238918050f6fb3f173047fff1eb96f14c5b9f8a96073fba9222af0e",
+    "bytes": 223878,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-edom-refuses-passage-and-aaron-dies-v1.webp",
+        "sha256": "ec3bb04300dcd449037f1d57611acd113b036c502429e7f60b94f4bb25668b57"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-numbers-19-opening-v1.webp",
+        "sha256": "7826732dbc2d3db359bdd712c1c8a529bafc8c35b217c558a2925e67078ffcc8"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 40,
+    "refs": [
+      "chapter-numbers-23-opening-v1.webp",
+      "chapter-numbers-24-opening-v1.webp"
+    ],
+    "edit": "Correct Balaam, seated rider in FIRST, to same person as gray-haired simple-robed man at LEFT in SECOND and turbaned central elder in THIRD: medium-brown long lined face, strong nose, natural gray curls and gray beard, mature/older adult. Keep original maroon headwrap/cloak but visibly gray beard/curls consistent with hillside scenes a few days later. Keep stopped donkey, sword-bearing messenger in vineyard lane, realistic animal ears/legs, hands and seated posture. Do not age Balak or add a king here.",
+    "source": "/assets/story-balaam-and-balak-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-balaam-and-balak-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-23-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-24-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-d3ef6f8b-0d2e-4fd0-969a-62d2ca8dd4ca.png",
+    "finalSrc": "/assets/story-balaam-and-balak-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Balaam, seated rider in FIRST, to same person as gray-haired simple-robed man at LEFT in SECOND and turbaned central elder in THIRD: medium-brown long lined face, strong nose, natural gray curls and gray beard, mature/older adult. Keep original maroon headwrap/cloak but visibly gray beard/curls consistent with hillside scenes a few days later. Keep stopped donkey, sword-bearing messenger in vineyard lane, realistic animal ears/legs, hands and seated posture. Do not age Balak or add a king here.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 85,
+      "method": 6
+    },
+    "generatedSha256": "ebf2a6f06fef7d89f1de46648742bd4ee648bf077593b727ee433c8d26df4bad",
+    "finalSha256": "14f3112550f7de778ddd9a371abb37b9942cda21ae4f3186b21ccc514a8d2724",
+    "bytes": 243598,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-balaam-and-balak-v1.webp",
+        "sha256": "71a56fbcc5cbbbbb383d90504d4fc4edfbdf72be8e10630fd443ed420fa40f5a"
+      },
+      {
+        "path": "src/assets/chapter-numbers-23-opening-v1.webp",
+        "sha256": "4b115016942ce2498b18968aca76425fa92174a0ef1da8c665dd24065845a138"
+      },
+      {
+        "path": "src/assets/chapter-numbers-24-opening-v1.webp",
+        "sha256": "439a913bae2ae70a4fca7c1815e09faa720ae7890e2fd1498197bc504499a13b"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 48,
+    "refs": [
+      "chapter-exodus-29-v2.webp",
+      "chapter-numbers-19-opening-v1.webp"
+    ],
+    "edit": "Correct Moses and Eleazar in the standing pair behind census men. Moses left must match RIGHTMOST Moses in SECOND: medium-brown long lined face and prominent long nose, GRAY CURLS not long straight hair, long gray-white beard and lean build, now120 near end wilderness with subtle extra lines/white hair. Eleazar right must be same white-turbaned priest at LEFT in THIRD red-heifer scene, not Aaron: medium-brown face, long strong nose, lean build, curly beard. About38 years older than early appearance; now visibly older with gray-white beard, natural gray curls at turban edges, same face. Keep ceremonial clothes with exactly12 breastplate stones FOUR ROWS THREE, gold forehead plate/blue cord. Preserve counting action, pebbles, river, all other men and credible anatomy.",
+    "source": "/assets/chapter-numbers-26-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-26-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-19-opening-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-08c21f54-90cc-4d3b-b02e-9825216f7ba5.png",
+    "finalSrc": "/assets/chapter-numbers-26-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Moses and Eleazar in the standing pair behind census men. Moses left must match RIGHTMOST Moses in SECOND: medium-brown long lined face and prominent long nose, GRAY CURLS not long straight hair, long gray-white beard and lean build, now120 near end wilderness with subtle extra lines/white hair. Eleazar right must be same white-turbaned priest at LEFT in THIRD red-heifer scene, not Aaron: medium-brown face, long strong nose, lean build, curly beard. About38 years older than early appearance; now visibly older with gray-white beard, natural gray curls at turban edges, same face. Keep ceremonial clothes with exactly12 breastplate stones FOUR ROWS THREE, gold forehead plate/blue cord. Preserve counting action, pebbles, river, all other men and credible anatomy.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "8652ae671a17b021a59ed442e02be26bd7d5e3496c409091ddec9db93c1cd558",
+    "finalSha256": "a8a85f3f48498b594bc08b422b8de84f9a926c1afaadff142b3e412644af5912",
+    "bytes": 167568,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-26-v1.webp",
+        "sha256": "afa9821102d88a2958bf6b692c478a257665c8a9cecf2c0e53d99dda7da429ec"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "src/assets/chapter-numbers-19-opening-v1.webp",
+        "sha256": "7826732dbc2d3db359bdd712c1c8a529bafc8c35b217c558a2925e67078ffcc8"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 47,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "extra": [
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png"
+    ],
+    "edit": "Correct ONLY far-right high priest Eleazar, leaving all five sisters and Moses recognizable exactly as FIRST. Eleazar must match the blue-robed man on RIGHT in THIRD image (corrected Mount Hor): lined medium-brown long face, strong long nose, natural gray curls at white-turban edges and full gray-white curly beard, relatively lean build, clearly different from Aaron. This is only a short interval later, same age. Preserve ceremonial blue/gold robes; visible breastplate exactly12 stones FOUR ROWS of THREE, forehead gold plate tied blue. Moses same long face/gray curls as RIGHTMOST in SECOND, now120. No face/clothes changes to five sisters. Preserve original hearing.",
+    "source": "/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-bfa6fbc2-c541-440d-89ff-528b1f022f5c.png",
+    "finalSrc": "/assets/story-a-new-census-and-joshua-appointed-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect ONLY far-right high priest Eleazar, leaving all five sisters and Moses recognizable exactly as FIRST. Eleazar must match the blue-robed man on RIGHT in THIRD image (corrected Mount Hor): lined medium-brown long face, strong long nose, natural gray curls at white-turban edges and full gray-white curly beard, relatively lean build, clearly different from Aaron. This is only a short interval later, same age. Preserve ceremonial blue/gold robes; visible breastplate exactly12 stones FOUR ROWS of THREE, forehead gold plate tied blue. Moses same long face/gray curls as RIGHTMOST in SECOND, now120. No face/clothes changes to five sisters. Preserve original hearing.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "23ed197859e372fbb09b0959d8d4c7c95aada2c392b31442643c32bebafb5143",
+    "finalSha256": "80faeedd209cbed964ecb30ef2c895825bfc7aee6b28eb3bd462d0bc4ed67408",
+    "bytes": 196594,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+        "sha256": "7ce314f91d8060e461de71baf9ab8a75f5d65b8bd8bb4c951db7f64f952a9d11"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+        "sha256": "fc2b59e0806fdaba3bbb2b10d31190445c2c349e8033ff13be7cc164ad96f742"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 50,
+    "refs": [
+      "story-a-new-census-and-joshua-appointed-v1.webp",
+      "chapter-exodus-29-v2.webp"
+    ],
+    "extra": [
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png"
+    ],
+    "edit": "Correct all recurring people in FIRST hearing. FIVE sisters must match the SAME FIVE women in SECOND hearing, in corresponding left-to-right order, preserving their exact individual facial structures, medium-brown complexions, natural dark curl textures, ages and builds; clothing may vary but use their recognizable cream/rose/teal/maroon garments to aid clarity. Keep FIVE, no sixth woman. RIGHT named elders: Moses same as RIGHTMOST man in THIRD reference: long medium-brown lined face, prominent long nose, gray natural CURLS (not straight hair hidden beneath shawl), long gray-white beard, lean build, now120. Eleazar furthest RIGHT must match blue-robed man on RIGHT in FOURTH corrected Mount Hor image: same lined medium-brown long face/strong nose/natural gray curls/full gray-white curly beard, lean older build, SAME AGE not a young black-bearded man. Correct high-priest ceremonial clothing as needed,12 stones four rows of3 if visible, gold forehead plate/blue cord. Retain hearing setting, natural hand gestures and sound anatomy.",
+    "source": "/assets/chapter-numbers-27-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-27-v1.webp",
+      "/workspace/biblelens/src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-821da59b-dacb-492c-b13d-06922f78b918.png",
+    "finalSrc": "/assets/chapter-numbers-27-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect all recurring people in FIRST hearing. FIVE sisters must match the SAME FIVE women in SECOND hearing, in corresponding left-to-right order, preserving their exact individual facial structures, medium-brown complexions, natural dark curl textures, ages and builds; clothing may vary but use their recognizable cream/rose/teal/maroon garments to aid clarity. Keep FIVE, no sixth woman. RIGHT named elders: Moses same as RIGHTMOST man in THIRD reference: long medium-brown lined face, prominent long nose, gray natural CURLS (not straight hair hidden beneath shawl), long gray-white beard, lean build, now120. Eleazar furthest RIGHT must match blue-robed man on RIGHT in FOURTH corrected Mount Hor image: same lined medium-brown long face/strong nose/natural gray curls/full gray-white curly beard, lean older build, SAME AGE not a young black-bearded man. Correct high-priest ceremonial clothing as needed,12 stones four rows of3 if visible, gold forehead plate/blue cord. Retain hearing setting, natural hand gestures and sound anatomy.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "989b8076b29a0a868f3070515d4939c501059460d1714d1e650637892d46d8a5",
+    "finalSha256": "119466dcdcc0bf624c40b6855c9647fecd809a40ff0124be99e3d9659ee8541f",
+    "bytes": 179458,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-27-v1.webp",
+        "sha256": "0a65015669b5813e6bc88f57b61ef2c5eea0fdb388f6b67ab5f33bccee5c8fc7"
+      },
+      {
+        "path": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+        "sha256": "7ce314f91d8060e461de71baf9ab8a75f5d65b8bd8bb4c951db7f64f952a9d11"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+        "sha256": "fc2b59e0806fdaba3bbb2b10d31190445c2c349e8033ff13be7cc164ad96f742"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 57,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "extra": [
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png"
+    ],
+    "edit": "Correct Eleazar, far-right priest receiving gold offerings, to same person as blue-robed man at RIGHT in THIRD corrected Mount Hor scene: lined medium-brown long face, strong long nose, gray natural curls at headwrap edges, full gray-white curly beard, relatively lean older build, same age. No young black-bearded Eleazar. Keep white linen and existing gold-edged turban. Moses beside him must match RIGHTMOST Moses in SECOND, same long lined medium-brown face, gray CURLS and long gray-white beard, lean, now120. Preserve all officers, gold bowls, hands, gestures and scene.",
+    "source": "/assets/story-vengeance-on-midian-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-vengeance-on-midian-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-77881de2-047d-4d02-8309-bdd331a89854.png",
+    "finalSrc": "/assets/story-vengeance-on-midian-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect Eleazar, far-right priest receiving gold offerings, to same person as blue-robed man at RIGHT in THIRD corrected Mount Hor scene: lined medium-brown long face, strong long nose, gray natural curls at headwrap edges, full gray-white curly beard, relatively lean older build, same age. No young black-bearded Eleazar. Keep white linen and existing gold-edged turban. Moses beside him must match RIGHTMOST Moses in SECOND, same long lined medium-brown face, gray CURLS and long gray-white beard, lean, now120. Preserve all officers, gold bowls, hands, gestures and scene.",
+    "encoding": {
+      "dimensions": [
+        1200,
+        675
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "89626d3112687f464ee2ae0e96ec4c87f08a1225808213f0ea9424828a20d964",
+    "finalSha256": "2f8668ae1794ed6a102d98967cc517adb6fb5858ed437720d29da3bbd2e73c7a",
+    "bytes": 196422,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-vengeance-on-midian-v1.webp",
+        "sha256": "c4fe4ae88258c2784a5dd42c3aece4cd9b9273a3ea680ffcea73a50d3c068f5c"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+        "sha256": "fc2b59e0806fdaba3bbb2b10d31190445c2c349e8033ff13be7cc164ad96f742"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 66,
+    "refs": [
+      "story-a-new-census-and-joshua-appointed-v1.webp",
+      "chapter-numbers-36-opening-v2.webp"
+    ],
+    "edit": "Correct the FIVE central sisters to be the exact same FIVE sisters in SECOND and THIRD approved hearing images, same left-to-right individual faces, medium-brown complexions, natural dark curly hair textures, apparent ages and builds, no changes of identity. Keep their current celebratory clothing and marriages context or modestly adapt textiles, preserve FIVE sisters, their spouses and elders, no added sixth sister. No rapid aging between adjacent chapters. Preserve future inherited farmland setting, wedding context, good anatomy/hands. Only women are identity targets; do not copy Moses or Eleazar into this scene.",
+    "source": "/assets/chapter-numbers-36-v1.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/chapter-numbers-36-v1.webp",
+      "/workspace/biblelens/src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-numbers-36-opening-v2.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "generatedPath": "/workspace/generated_images/exec-20117984-ffe5-4129-88e5-20d98d24e4ea.png",
+    "finalSrc": "/assets/chapter-numbers-36-v2.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nCorrect the FIVE central sisters to be the exact same FIVE sisters in SECOND and THIRD approved hearing images, same left-to-right individual faces, medium-brown complexions, natural dark curly hair textures, apparent ages and builds, no changes of identity. Keep their current celebratory clothing and marriages context or modestly adapt textiles, preserve FIVE sisters, their spouses and elders, no added sixth sister. No rapid aging between adjacent chapters. Preserve future inherited farmland setting, wedding context, good anatomy/hands. Only women are identity targets; do not copy Moses or Eleazar into this scene.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "4b70786993034d1185a4b970b31fd0c63326f55515336af9d9282c7cfba27ae5",
+    "finalSha256": "21705a8985042b4c458d84e0e94be066fb80d53c41bff0f68ebd87533bedba5f",
+    "bytes": 169518,
+    "visualInputs": [
+      {
+        "path": "src/assets/chapter-numbers-36-v1.webp",
+        "sha256": "ce143d37ea359124db9f28b728745627c2a166fc0b5577fe76d857d5436b7eec"
+      },
+      {
+        "path": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+        "sha256": "7ce314f91d8060e461de71baf9ab8a75f5d65b8bd8bb4c951db7f64f952a9d11"
+      },
+      {
+        "path": "src/assets/chapter-numbers-36-opening-v2.webp",
+        "sha256": "ebf0c7adaaa7fed714782a1b247962256b2c733dad5b438ff6309078215bd9fb"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  },
+  {
+    "idx": 49,
+    "refs": [
+      "chapter-exodus-29-v2.webp"
+    ],
+    "extra": [
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png"
+    ],
+    "edit": "Same hearing artwork as Story47, encoded to chapter dimensions; maintains already nearly-identical opener composition.",
+    "source": "/assets/chapter-numbers-27-opening-v2.webp",
+    "inputs": [
+      "/workspace/biblelens/src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+      "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "sharedGenerationFrom": 47,
+    "generatedPath": "/workspace/generated_images/exec-bfa6fbc2-c541-440d-89ff-528b1f022f5c.png",
+    "finalSrc": "/assets/chapter-numbers-27-opening-v3.webp",
+    "prompt": "Edit the FIRST supplied image only. Preserve its 16:9 landscape composition, setting, natural materials, other people and action except requested corrections. Use the supplied approved character reference files as actual identity references. Final supplied Genesis7 image is STYLE ONLY: grounded cinematic realistic illustration, natural light, restrained illustrative finish, varied natural colors, no glossy plastic faces or heavy oil texture. No Noah/ark. Anatomically coherent hands, five fingers when visible, thumbs, limbs and faces. Output one full landscape image and save locally.\nSame hearing artwork as Story47, encoded to chapter dimensions; maintains already nearly-identical opener composition.",
+    "encoding": {
+      "dimensions": [
+        960,
+        540
+      ],
+      "format": "lossy WebP",
+      "quality": 88,
+      "method": 6
+    },
+    "generatedSha256": "23ed197859e372fbb09b0959d8d4c7c95aada2c392b31442643c32bebafb5143",
+    "finalSha256": "45a0dc50388932b3e2256e58f516309d833883db3c925b959f4a4aa1a83c4a6d",
+    "bytes": 137980,
+    "visualInputs": [
+      {
+        "path": "src/assets/story-a-new-census-and-joshua-appointed-v1.webp",
+        "sha256": "7ce314f91d8060e461de71baf9ab8a75f5d65b8bd8bb4c951db7f64f952a9d11"
+      },
+      {
+        "path": "src/assets/chapter-exodus-29-v2.webp",
+        "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+      },
+      {
+        "path": "/workspace/generated_images/exec-536de027-7ad0-42e9-9498-57597635ed66.png",
+        "sha256": "fc2b59e0806fdaba3bbb2b10d31190445c2c349e8033ff13be7cc164ad96f742"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Accepted: generated PNG and final encoded WebP inspected at full size for verse action, identities, complexion, natural hair, build, age, relationships, hands/fingers/thumbs, limbs and animals; compared with actual visual inputs and nearby scenes. No unresolved identifiable continuity break."
+  }
+]
