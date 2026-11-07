@@ -1,0 +1,22 @@
+[
+  {
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-ed6fe079-3a05-418b-bb77-acc5ed981bea.png",
+    "actualReferenceInputs": [
+      "src/assets/story-hezekiah-and-sennacherib-v1.webp",
+      "src/assets/story-hezekiah-s-illness-and-the-babylonian-envoys-v1.webp",
+      "src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "correction": "Remove Isaiah from temple prayer scene; 2 Kings 19:20 describes a sent response. Keep Hezekiah identity, composition, folded letter and sanctuary setting.",
+    "result": {
+      "src": "/assets/story-hezekiah-and-sennacherib-v2.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "bytes": 107388,
+      "sha256": "2d12fa1236863c96dd18bdbafebe393241f9f8cabadbe7a683ad721666f13cfd",
+      "review": "Generated original and final WebP inspected full size beside both actual identity references. Hezekiah retains face, complexion, black curls, beard, adult build and age. Visible hands/thumbs/fingers/limbs coherent; hidden anatomy unverified. No Isaiah remains. Third reference supplied as style only."
+    }
+  }
+]
