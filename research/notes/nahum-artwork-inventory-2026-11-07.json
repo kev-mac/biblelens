@@ -1,0 +1,77 @@
+{
+  "book": "Nahum",
+  "baseline": "78534c7",
+  "priorProvenance": [
+    "nahum-visual-continuity-audit-2026-11-04.md",
+    "nahum-artwork-generation-2026-11-04.json",
+    "nahum-prior-artwork-inventory-2026-11-04.json"
+  ],
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "earlierNinevehComparisons": [
+    "src/assets/story-nineveh-repents-v1.webp",
+    "src/assets/story-jonah-s-anger-v1.webp"
+  ],
+  "boundaryComparisonsOnly": [
+    "src/assets/chapter-micah-07-opening-v1.webp",
+    "src/assets/chapter-habakkuk-01-opening-v1.webp"
+  ],
+  "comparisonPanel": "/tmp/nahum-full-size-comparison.png",
+  "storyImages": 0,
+  "generations": 0,
+  "replacements": 0,
+  "retained": 3,
+  "records": [
+    {
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-01-opening-v1.webp",
+      "alt": "Imagined scene: Storm clouds and distant rain cross a rocky valley and dry riverbed.",
+      "width": 960,
+      "height": 540,
+      "chapter": 1,
+      "bytes": 111860,
+      "sha256": "8945fdb0c44213bdb09909c035229b9bdfd8e27dc30b372f01ef2bc0fcc064c0",
+      "anchor": "Nahum 1:3–6",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "peopleAnimalsOrAnatomy": "absent",
+      "continuity": "No identifiable recurring person or group appears."
+    },
+    {
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-02-opening-v1.webp",
+      "alt": "Imagined scene: Turbulent river water passes through Nineveh’s broken timber gateway.",
+      "width": 960,
+      "height": 540,
+      "chapter": 2,
+      "bytes": 146130,
+      "sha256": "7fe6c3fd2668ba26082146bb4dc91c1f8cf8bfaabdc10fc64b44960028128bc5",
+      "anchor": "Nahum 2:6–10",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "peopleAnimalsOrAnatomy": "absent",
+      "continuity": "No identifiable recurring person or group appears."
+    },
+    {
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-03-opening-v1.webp",
+      "alt": "Imagined scene: An empty street leads to Nineveh’s burned gate and fallen timbers.",
+      "width": 960,
+      "height": 540,
+      "chapter": 3,
+      "bytes": 125488,
+      "sha256": "4a71eb57f677c77f5352a8735551a80f3584c8f29ddeb9d1aa9110ee593e125a",
+      "anchor": "Nahum 3:7,13–15",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "peopleAnimalsOrAnatomy": "absent",
+      "continuity": "No identifiable recurring person or group appears."
+    }
+  ],
+  "identityInventory": {
+    "Nahum": "No earlier or current portrait; no identity reference is established.",
+    "Jonah and Ninevites": "Appear in the approved earlier Jonah Story files; no people are depicted in Nahum. No aging or face comparison dependency.",
+    "Jacob / Israel": "Named in 2:2 as a people or land; no patriarch portrait or recurring group is portrayed.",
+    "King of Assyria": "Addressed without a personal name in 3:18; no royal portrait is portrayed.",
+    "God": "No anthropomorphic portrayal."
+  }
+}
