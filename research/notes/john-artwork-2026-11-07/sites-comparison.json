@@ -1,0 +1,30 @@
+{
+  "baseline": "2a9be03b80f8f392feb2daa3de5fdc15af4d026c",
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "productionFilesCompared": 2009,
+  "sharedProductionFilesCompared": 2007,
+  "differences": [
+    "data/chapter-images.json",
+    "data/hosted-artwork.json",
+    "data/story-images.json",
+    "package.json",
+    "scripts/hosted-artwork.mjs"
+  ],
+  "onlyCanonical": [
+    "src/assets/chapter-matthew-15-opening-v2.webp",
+    "src/assets/story-sending-out-the-twelve-v2.webp"
+  ],
+  "onlyMirror": [],
+  "canonical": {
+    "version": "1.1.0",
+    "buildNumber": 387,
+    "sourceHash": "b08f7de0bc3e83df9e137323ee20008f2d4ce78c2ae765dad7bd257a5712cf18"
+  },
+  "mirror": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "result": "Frozen saved 386; five shared file differences and two canonical-only images are known Matthew 387 work. No independent newer application work. Fresh credential opening, helper absent; no mirror edit/push or publishing."
+}

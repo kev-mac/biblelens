@@ -1,0 +1,946 @@
+{
+  "baseline": "2a9be03b80f8f392feb2daa3de5fdc15af4d026c",
+  "book": "John",
+  "chapters": 21,
+  "chapterOpeners": 11,
+  "storyOpeners": 10,
+  "storyPlacements": 14,
+  "totalPlacements": 25,
+  "inventory": [
+    {
+      "chapter": 1,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Dawn light breaks through dark clouds above a river and green reeds.",
+          "src": "/assets/chapter-john-01-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "1:4–5 dawn and river motif for light in darkness; no human or divine portrait",
+          "bytes": 144424,
+          "sha256": "f5cba9dd4c740b512ade3f03a4c5087ec65ae0da2dd55386ea735dbfa6ee8233",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        },
+        {
+          "src": "/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+          "alt": "Jesus speaks with servants beside large stone water jars at a wedding.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 35,
+          "title": "The First Disciples and the Wedding at Cana",
+          "textBasis": "John 1:35–2:12 Story at 1:35; illustrates 2:6–8 servants filling six stone water jars at wedding. Not a baptism scene; no exact face-name maps assigned to wedding crowd.",
+          "bytes": 135466,
+          "sha256": "b554f02e4e9a82fe60c8819dd4001614c30ab4e1c477c660dcb6609650856ef8",
+          "decision": "retain",
+          "storyPassage": "John 1:35 - 2:12",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Six stone water jars stand in a shaded courtyard beneath grape vines.",
+          "src": "/assets/chapter-john-02-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "2:6 exactly six stone water jars in an imagined courtyard",
+          "bytes": 189222,
+          "sha256": "c30b769a5b34a74530819c3af5da27dae366924c8716a11040edf711fab64d94",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        },
+        {
+          "src": "/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+          "alt": "Nicodemus speaks with Jesus on a rooftop terrace by lamplight.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 13,
+          "title": "Cleansing the Temple and Nicodemus",
+          "textBasis": "John 2:13–3:21 Story at 2:13; illustrates 3:1–8 night visit of Nicodemus, not temple-cleansing moment. Older listener and adult Jesus by lamp.",
+          "bytes": 94596,
+          "sha256": "6815297c91cd087136a723eee14a37781db58025ed0483d7f8f3ddbbb3b62ed8",
+          "decision": "retain",
+          "storyPassage": "John 2:13 - 3:21",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A clay lamp lights two empty cushions on a roof at night.",
+          "src": "/assets/chapter-john-03-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "3:1–2 night visit motif: lamp and empty roof cushions; not a claim people absent",
+          "bytes": 145988,
+          "sha256": "ee6f42798d4ab47e472f294af2538c3084eb1c6db0cdd8af1047bc6b63c6ca88",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-woman-at-the-well-v1.webp",
+          "alt": "A Samaritan woman holding a water jar speaks with Jesus beside a well.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Woman at the Well",
+          "textBasis": "4:5–28 Jesus seated by well with Samaritan woman and waterpot, daylight sixth-hour setting; not Mary Magdalene or Bethany Mary.",
+          "bytes": 135926,
+          "sha256": "157ed62c7273c88c94aeb4ead772377411423def1758bf7a761d51ae56e8a7ac",
+          "decision": "retain",
+          "storyPassage": "John 4:1 - 4:42",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-healing-at-bethesda-v1.webp",
+          "alt": "A man holds his rolled sleeping mat beside Jesus at the pool of Bethesda.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Healing at Bethesda",
+          "textBasis": "5:1–9 man now standing with carried mat at Bethesda; 38 years of infirmity does not mean he is 38 years old.",
+          "bytes": 127422,
+          "sha256": "7a5d451a497c0140e42c72c85c4ebaf51cf45419728c07a4e32ce5014f0cc6fc",
+          "decision": "retain",
+          "storyPassage": "John 5:1 - 5:47",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-bread-of-life-v1.webp",
+          "alt": "Jesus teaches listeners seated on stone benches in Capernaum.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Bread of Life",
+          "textBasis": "6:35,59–69 teaching in Capernaum synagogue with some departing listeners, not a second illustration of feeding inventory.",
+          "bytes": 79796,
+          "sha256": "d4689119d67da4416f6fbc81e3e75502528e57db848456584e90f22e2fc83384",
+          "decision": "retain",
+          "storyPassage": "John 6:1 - 6:71",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Leafy booths stand on stone terraces beneath a clear autumn sky.",
+          "src": "/assets/chapter-john-07-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "7:2 Feast of Tabernacles leafy booths motif; imagined Jerusalem",
+          "bytes": 217160,
+          "sha256": "8c71a20d6fd6419f4f268a5ef6ba6f4ebbc00e05a2bbe45d05d877bf9878999a",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        },
+        {
+          "src": "/assets/story-the-woman-caught-in-adultery-v1.webp",
+          "alt": "A woman stands before Jesus in a quiet courtyard as others walk away.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 53,
+          "title": "The Woman Caught in Adultery",
+          "textBasis": "John 7:53–8:11 Story at 7:53 illustrates 8:2–11: standing woman, seated Jesus and departing accusers. No woman name invented; source editions and textual variant annotations untouched.",
+          "bytes": 103954,
+          "sha256": "d1d5a78553eaff0e8963fa67e0a73648ac7b46d81089e0b5ce20baa1eeded458",
+          "decision": "retain",
+          "storyPassage": "John 7:53 - 8:11",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Early light casts long shadows across an empty stone temple court.",
+          "src": "/assets/chapter-john-08-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "8:2 early light in temple court; no invented woman or Moses portrait",
+          "bytes": 163640,
+          "sha256": "47e31d2950edb1cf56cd28f0b62e1ce15aba8fc19d6a5adbe0295a677a4edddd",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-man-born-blind-v1.webp",
+          "alt": "A man washes his face at a stone pool beneath Jerusalem’s terraces.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Man Born Blind",
+          "textBasis": "9:6–7 man washes at Siloam after clay application; not Bethesda man, and distant back-facing person is not certified as Jesus.",
+          "bytes": 152612,
+          "sha256": "2e846034f393d2580caeebeed7916713dc373f5bf28da9cbedfff0a6f9d575b2",
+          "decision": "retain",
+          "storyPassage": "John 9:1 - 9:41",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An open wooden gate leads into a stone sheep pen among green hills.",
+          "src": "/assets/chapter-john-10-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "10:1–9 sheepfold and gate teaching motif; no shepherd portrait",
+          "bytes": 185584,
+          "sha256": "cdef7f434424f855a981efde973dcd194192097b378b4b06c065d11fde7e119f",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        },
+        {
+          "src": "/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+          "alt": "Jesus speaks with listeners beneath a temple portico on a cool winter day.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 22,
+          "title": "Jesus at the Feast of Dedication",
+          "textBasis": "10:22–30 winter temple portico conversation; no name assigned to anonymous listeners.",
+          "bytes": 82516,
+          "sha256": "9da97c1ceab793a9df86feca8ce1531b88d5734bbb6f91203e2ee68d28f1969d",
+          "decision": "retain",
+          "storyPassage": "John 10:22 - 10:42",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-raising-of-lazarus-v1.webp",
+          "alt": "Lazarus stands with his sisters and Jesus outside a garden tomb.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Raising of Lazarus",
+          "textBasis": "11:38–44 Lazarus outside tomb after command to loose him, sisters beginning to remove wraps. Exposed hands/head fit unbinding phase, not initial fully bound emergence. Bethany Lazarus differs from Luke parable Lazarus.",
+          "bytes": 130974,
+          "sha256": "ce24451d2e0203c20c663bfb73a8f20074679034e7cf7b445fd1917b80de3604",
+          "decision": "retain",
+          "storyPassage": "John 11:1 - 11:57",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-anointing-and-triumphal-entry-v1.webp",
+          "alt": "Mary brings a small perfume jar to Jesus during a meal at Bethany.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Anointing and Triumphal Entry",
+          "textBasis": "12:1–8 supper: Mary of Bethany anoints feet with hair loose, Martha serves and Lazarus reclines; not Luke unnamed woman or Magdalene. Broad Story includes later entry, not a claim entry is shown.",
+          "bytes": 128204,
+          "sha256": "fa9c60cd6d74444c8203c71db26e24b3bc437e9b5db526c4ca0ef09ce39cde57",
+          "decision": "retain",
+          "storyPassage": "John 12:1 - 12:50",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+          "alt": "Jesus kneels beside a basin and washes Peter’s feet as disciples watch.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Jesus Washes the Disciples' Feet",
+          "textBasis": "13:4–12 Jesus lays outer garment aside, towel at waist, washing Simon Peter feet with basin/pitcher. Partial disciple group not an assertion only these attended.",
+          "bytes": 98602,
+          "sha256": "ce9fcfab12dcccb6d748d2bdc4e9f495329bb2713d321d5ccffb62b52a95b00f",
+          "decision": "retain",
+          "storyPassage": "John 13:1 - 13:38",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Open rooms face a quiet garden courtyard beneath a blue evening sky.",
+          "src": "/assets/chapter-john-14-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "14:2 dwelling places motif, not a factual depiction of heaven",
+          "bytes": 178976,
+          "sha256": "a75e85713d69e1c2659258cae3666684ba9d16ee6b8ec70807a39fa6ff4f1581",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Clusters of purple grapes hang from green branches on a thick vine.",
+          "src": "/assets/chapter-john-15-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "15:1–5 vine and branches with purple grapes, teaching motif",
+          "bytes": 229370,
+          "sha256": "c66ba52a90fb4dd96b99193b414f1d953c0a02e877424a6b7063da3595f38ac0",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Sunlight breaks through rain clouds above a calm lake and distant hills.",
+          "src": "/assets/chapter-john-16-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "16:20–22,33 light after rain motif for sorrow/joy and peace, not an actual weather claim",
+          "bytes": 178668,
+          "sha256": "de36a6e851344a24bed46db60fed43160d57dcf17ee11696e3cff5c22c38e341",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Stars appear above a quiet roof terrace with olive branches at dusk.",
+          "src": "/assets/chapter-john-17-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "17:1 prayer to heaven motif: quiet terrace at dusk; does not locate prayer with historical certainty",
+          "bytes": 140774,
+          "sha256": "9e57071d3a834c256aeb71d16a7d281ee53ba21a966908222adc5a1903a176f4",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-arrest-trial-and-crucifixion-v1.webp",
+          "alt": "Joseph and Nicodemus carry linen and spice jars toward a garden tomb.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Arrest, Trial and Crucifixion",
+          "textBasis": "John 18:1–19:42 broad Story; 19:38–42 Joseph of Arimathea carries linen and Nicodemus spices to garden tomb. They are not Jesus and Peter; Joseph differs from Nazareth/Genesis Joseph.",
+          "bytes": 137956,
+          "sha256": "7cf5dcac4dc5f058e6428e3438b1cdc78411d7ba5799fd19ff55132acb7a1944",
+          "decision": "retain",
+          "storyPassage": "John 18:1 - 19:42",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Linen cloth and a clay jar rest on a stone tomb bench.",
+          "src": "/assets/chapter-john-19-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "19:38–42 linen and spice jar at new garden tomb, preparation motif before burial, not premature resurrection",
+          "bytes": 162840,
+          "sha256": "715b405470b84c75c433c17ddd4734722806d3754dbcadd04f57e0076d427248",
+          "decision": "retain",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-resurrection-appearances-v1.webp",
+          "alt": "Mary Magdalene turns toward Jesus in a quiet garden beside the tomb.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Resurrection Appearances",
+          "textBasis": "20:11–18 Mary Magdalene turns toward Jesus at tomb during recognition, after initial still-dark arrival; not Bethany Mary or mother of Jesus.",
+          "bytes": 136870,
+          "sha256": "24c7fc63794afe5263dca6a53289e64c386e268344adea9bb2fe58278cacb155",
+          "decision": "retain",
+          "storyPassage": "John 20:1 - 20:31",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+          "alt": "Jesus prepares fish and bread as fishermen come ashore beside the lake.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Breakfast by the Sea of Tiberias",
+          "textBasis": "21:2–17 Jesus on shore with fish/bread/coals and seven adult disciples (four near fire, three by boat/net), Simon Peter foreground. Does not claim every overlapping fish counted visually or exact simultaneous instant.",
+          "bytes": 133908,
+          "sha256": "bd23be6a14133af5b387593a872781b77fceab54bee1a98927498d45741db699",
+          "decision": "retain",
+          "storyPassage": "John 21:1 - 21:25",
+          "fullSizeReview": "Actual native-size file viewed; visible faces, complexion, hair, age/build, relationships/actions/objects, hands/fingers/thumbs/limbs and animals checked. Hidden or tiny anatomy not certified."
+        }
+      ]
+    }
+  ],
+  "consecutive": [
+    {
+      "a": {
+        "key": "41:24",
+        "verse": 36,
+        "position": 1134,
+        "src": "/assets/story-the-ascension-v1.webp"
+      },
+      "b": {
+        "key": "42:1",
+        "verse": 0,
+        "position": 1151,
+        "src": "/assets/chapter-john-01-opening-v1.webp"
+      },
+      "gap": 17
+    },
+    {
+      "a": {
+        "key": "42:1",
+        "verse": 0,
+        "position": 1151,
+        "src": "/assets/chapter-john-01-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:1",
+        "verse": 35,
+        "position": 1186,
+        "src": "/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp"
+      },
+      "gap": 35
+    },
+    {
+      "a": {
+        "key": "42:1",
+        "verse": 35,
+        "position": 1186,
+        "src": "/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp"
+      },
+      "b": {
+        "key": "42:2",
+        "verse": 0,
+        "position": 1202,
+        "src": "/assets/chapter-john-02-opening-v1.webp"
+      },
+      "gap": 16
+    },
+    {
+      "a": {
+        "key": "42:2",
+        "verse": 0,
+        "position": 1202,
+        "src": "/assets/chapter-john-02-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:2",
+        "verse": 13,
+        "position": 1215,
+        "src": "/assets/story-cleansing-the-temple-and-nicodemus-v1.webp"
+      },
+      "gap": 13
+    },
+    {
+      "a": {
+        "key": "42:2",
+        "verse": 13,
+        "position": 1215,
+        "src": "/assets/story-cleansing-the-temple-and-nicodemus-v1.webp"
+      },
+      "b": {
+        "key": "42:3",
+        "verse": 0,
+        "position": 1227,
+        "src": "/assets/chapter-john-03-opening-v1.webp"
+      },
+      "gap": 12
+    },
+    {
+      "a": {
+        "key": "42:3",
+        "verse": 0,
+        "position": 1227,
+        "src": "/assets/chapter-john-03-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:4",
+        "verse": 1,
+        "position": 1264,
+        "src": "/assets/story-the-woman-at-the-well-v1.webp"
+      },
+      "gap": 37
+    },
+    {
+      "a": {
+        "key": "42:4",
+        "verse": 1,
+        "position": 1264,
+        "src": "/assets/story-the-woman-at-the-well-v1.webp"
+      },
+      "b": {
+        "key": "42:5",
+        "verse": 1,
+        "position": 1318,
+        "src": "/assets/story-healing-at-bethesda-v1.webp"
+      },
+      "gap": 54
+    },
+    {
+      "a": {
+        "key": "42:5",
+        "verse": 1,
+        "position": 1318,
+        "src": "/assets/story-healing-at-bethesda-v1.webp"
+      },
+      "b": {
+        "key": "42:6",
+        "verse": 1,
+        "position": 1365,
+        "src": "/assets/story-bread-of-life-v1.webp"
+      },
+      "gap": 47
+    },
+    {
+      "a": {
+        "key": "42:6",
+        "verse": 1,
+        "position": 1365,
+        "src": "/assets/story-bread-of-life-v1.webp"
+      },
+      "b": {
+        "key": "42:7",
+        "verse": 0,
+        "position": 1435,
+        "src": "/assets/chapter-john-07-opening-v1.webp"
+      },
+      "gap": 70
+    },
+    {
+      "a": {
+        "key": "42:7",
+        "verse": 0,
+        "position": 1435,
+        "src": "/assets/chapter-john-07-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:7",
+        "verse": 53,
+        "position": 1488,
+        "src": "/assets/story-the-woman-caught-in-adultery-v1.webp"
+      },
+      "gap": 53
+    },
+    {
+      "a": {
+        "key": "42:7",
+        "verse": 53,
+        "position": 1488,
+        "src": "/assets/story-the-woman-caught-in-adultery-v1.webp"
+      },
+      "b": {
+        "key": "42:8",
+        "verse": 0,
+        "position": 1488,
+        "src": "/assets/chapter-john-08-opening-v1.webp"
+      },
+      "gap": 0
+    },
+    {
+      "a": {
+        "key": "42:8",
+        "verse": 0,
+        "position": 1488,
+        "src": "/assets/chapter-john-08-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:9",
+        "verse": 1,
+        "position": 1548,
+        "src": "/assets/story-the-man-born-blind-v1.webp"
+      },
+      "gap": 60
+    },
+    {
+      "a": {
+        "key": "42:9",
+        "verse": 1,
+        "position": 1548,
+        "src": "/assets/story-the-man-born-blind-v1.webp"
+      },
+      "b": {
+        "key": "42:10",
+        "verse": 0,
+        "position": 1588,
+        "src": "/assets/chapter-john-10-opening-v1.webp"
+      },
+      "gap": 40
+    },
+    {
+      "a": {
+        "key": "42:10",
+        "verse": 0,
+        "position": 1588,
+        "src": "/assets/chapter-john-10-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:10",
+        "verse": 22,
+        "position": 1610,
+        "src": "/assets/story-jesus-at-the-feast-of-dedication-v1.webp"
+      },
+      "gap": 22
+    },
+    {
+      "a": {
+        "key": "42:10",
+        "verse": 22,
+        "position": 1610,
+        "src": "/assets/story-jesus-at-the-feast-of-dedication-v1.webp"
+      },
+      "b": {
+        "key": "42:11",
+        "verse": 1,
+        "position": 1631,
+        "src": "/assets/story-the-raising-of-lazarus-v1.webp"
+      },
+      "gap": 21
+    },
+    {
+      "a": {
+        "key": "42:11",
+        "verse": 1,
+        "position": 1631,
+        "src": "/assets/story-the-raising-of-lazarus-v1.webp"
+      },
+      "b": {
+        "key": "42:12",
+        "verse": 1,
+        "position": 1688,
+        "src": "/assets/story-anointing-and-triumphal-entry-v1.webp"
+      },
+      "gap": 57
+    },
+    {
+      "a": {
+        "key": "42:12",
+        "verse": 1,
+        "position": 1688,
+        "src": "/assets/story-anointing-and-triumphal-entry-v1.webp"
+      },
+      "b": {
+        "key": "42:13",
+        "verse": 1,
+        "position": 1738,
+        "src": "/assets/story-jesus-washes-the-disciples-feet-v1.webp"
+      },
+      "gap": 50
+    },
+    {
+      "a": {
+        "key": "42:13",
+        "verse": 1,
+        "position": 1738,
+        "src": "/assets/story-jesus-washes-the-disciples-feet-v1.webp"
+      },
+      "b": {
+        "key": "42:14",
+        "verse": 0,
+        "position": 1775,
+        "src": "/assets/chapter-john-14-opening-v1.webp"
+      },
+      "gap": 37
+    },
+    {
+      "a": {
+        "key": "42:14",
+        "verse": 0,
+        "position": 1775,
+        "src": "/assets/chapter-john-14-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:15",
+        "verse": 0,
+        "position": 1806,
+        "src": "/assets/chapter-john-15-opening-v1.webp"
+      },
+      "gap": 31
+    },
+    {
+      "a": {
+        "key": "42:15",
+        "verse": 0,
+        "position": 1806,
+        "src": "/assets/chapter-john-15-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:16",
+        "verse": 0,
+        "position": 1833,
+        "src": "/assets/chapter-john-16-opening-v1.webp"
+      },
+      "gap": 27
+    },
+    {
+      "a": {
+        "key": "42:16",
+        "verse": 0,
+        "position": 1833,
+        "src": "/assets/chapter-john-16-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:17",
+        "verse": 0,
+        "position": 1866,
+        "src": "/assets/chapter-john-17-opening-v1.webp"
+      },
+      "gap": 33
+    },
+    {
+      "a": {
+        "key": "42:17",
+        "verse": 0,
+        "position": 1866,
+        "src": "/assets/chapter-john-17-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:18",
+        "verse": 1,
+        "position": 1893,
+        "src": "/assets/story-arrest-trial-and-crucifixion-v1.webp"
+      },
+      "gap": 27
+    },
+    {
+      "a": {
+        "key": "42:18",
+        "verse": 1,
+        "position": 1893,
+        "src": "/assets/story-arrest-trial-and-crucifixion-v1.webp"
+      },
+      "b": {
+        "key": "42:19",
+        "verse": 0,
+        "position": 1932,
+        "src": "/assets/chapter-john-19-opening-v1.webp"
+      },
+      "gap": 39
+    },
+    {
+      "a": {
+        "key": "42:19",
+        "verse": 0,
+        "position": 1932,
+        "src": "/assets/chapter-john-19-opening-v1.webp"
+      },
+      "b": {
+        "key": "42:20",
+        "verse": 1,
+        "position": 1975,
+        "src": "/assets/story-the-resurrection-appearances-v1.webp"
+      },
+      "gap": 43
+    },
+    {
+      "a": {
+        "key": "42:20",
+        "verse": 1,
+        "position": 1975,
+        "src": "/assets/story-the-resurrection-appearances-v1.webp"
+      },
+      "b": {
+        "key": "42:21",
+        "verse": 1,
+        "position": 2006,
+        "src": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      },
+      "gap": 31
+    },
+    {
+      "a": {
+        "key": "42:21",
+        "verse": 1,
+        "position": 2006,
+        "src": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      },
+      "b": {
+        "key": "43:1",
+        "verse": 1,
+        "position": 2031,
+        "src": "/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp"
+      },
+      "gap": 25
+    }
+  ],
+  "closePairs": [
+    {
+      "a": {
+        "key": "42:7",
+        "verse": 53,
+        "position": 1488,
+        "src": "/assets/story-the-woman-caught-in-adultery-v1.webp"
+      },
+      "b": {
+        "key": "42:8",
+        "verse": 0,
+        "position": 1488,
+        "src": "/assets/chapter-john-08-opening-v1.webp"
+      },
+      "gap": 0
+    }
+  ],
+  "minimumInternalGap": 0,
+  "boundaries": [
+    {
+      "a": {
+        "key": "41:24",
+        "verse": 36,
+        "position": 1134,
+        "src": "/assets/story-the-ascension-v1.webp"
+      },
+      "b": {
+        "key": "42:1",
+        "verse": 0,
+        "position": 1151,
+        "src": "/assets/chapter-john-01-opening-v1.webp"
+      },
+      "gap": 17
+    },
+    {
+      "a": {
+        "key": "42:21",
+        "verse": 1,
+        "position": 2006,
+        "src": "/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      },
+      "b": {
+        "key": "43:1",
+        "verse": 1,
+        "position": 2031,
+        "src": "/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp"
+      },
+      "gap": 25
+    }
+  ],
+  "preservedAssets": 1618,
+  "allProductionMetadataUnchanged": true,
+  "nextBookArtworkReviewed": false
+}

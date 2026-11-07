@@ -1,0 +1,553 @@
+{
+  "scope": "John only",
+  "baseline": "2a9be03b80f8f392feb2daa3de5fdc15af4d026c",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "priorInventories": [
+    "research/notes/matthew-artwork-inventory-2026-11-07.json",
+    "research/notes/mark-artwork-inventory-2026-11-07.json",
+    "research/notes/luke-artwork-inventory-2026-11-07.json"
+  ],
+  "people": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-road-to-emmaus-v1.webp",
+        "src/assets/story-the-ascension-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+        "src/assets/story-the-woman-at-the-well-v1.webp",
+        "src/assets/story-healing-at-bethesda-v1.webp",
+        "src/assets/story-bread-of-life-v1.webp",
+        "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+        "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+        "src/assets/story-the-raising-of-lazarus-v1.webp",
+        "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-the-resurrection-appearances-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, prominent nose, full dark beard, dark natural curls, lean adult build.",
+      "age": "Ministry through resurrection; parallel Gospel scenes and a few years of narrative time do not justify decades of aging.",
+      "result": "Recognizable across actual earlier approved references and all current neighboring depictions. Lighting/pose and apparent curl length vary within compatibility. No definite identity break."
+    },
+    {
+      "person": "Simon Peter",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "stableTraits": "Brown complexion, prominent nose, full dark beard with modest gray strands, natural dark curls, sturdy adult build.",
+      "age": "Same adult ministry/resurrection period; no decades of aging.",
+      "result": "Actual Mark courtyard/confession and Matthew calling compared with footwashing and breakfast, including native portrait crops. Recognizable compatible face and build; warm lighting is not evidence of a changed complexion."
+    },
+    {
+      "person": "Nicodemus",
+      "references": [
+        "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-arrest-trial-and-crucifixion-v1.webp"
+      ],
+      "stableTraits": "Older brown face, prominent nose, gray full beard, partly hidden dark/gray curls beneath head covering, lean older build.",
+      "age": "Night visit and burial within same Gospel ministry, not decades apart.",
+      "result": "Native side-by-side face comparison compatible; near profile and distant profile differ in scale/light. Burial spice-bearer is Nicodemus, not linen-bearer Joseph. No fabricated earlier Gospel portrait."
+    },
+    {
+      "person": "Mary and Martha of Bethany, Lazarus of Bethany",
+      "references": [
+        "src/assets/story-the-raising-of-lazarus-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-anointing-and-triumphal-entry-v1.webp"
+      ],
+      "stableTraits": "Mary: brown oval face and long dark natural curls; Martha: brown oval face, dark eyes/hair mostly covered, slender adult build; Lazarus: brown complexion, mature face, full beard with some gray, dark curls, adult build.",
+      "age": "Days around Bethany raising and pre-Passover supper; no substantial aging.",
+      "result": "Sisters and Lazarus compatible in the two actual scenes, with unscaled portrait comparison. Mary anoints, Martha serves, Lazarus reclines. Sisters are not confused with Magdalene, mother of Jesus or Luke unnamed anointing woman. Luke 10 artwork depicts Samaritan rather than Bethany sisters, and Luke parabolic Lazarus is not this Lazarus. Exact left/right sister identification in raising alone is not established by textual placement."
+    },
+    {
+      "person": "Mary Magdalene",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-the-resurrection-appearances-v1.webp"
+      ],
+      "stableTraits": "Brown oval face, long natural dark curls, slender adult build.",
+      "age": "Adult at resurrection; no independent earlier exact face-name map established.",
+      "result": "Current explicit Mary Magdalene portrayal fits John 20. Prior empty-tomb/ascension groups do not establish an exact named female portrait. Do not use mother of Jesus, Bethany Mary or Luke unnamed woman as her identity reference."
+    },
+    {
+      "person": "Joseph of Arimathea",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-arrest-trial-and-crucifixion-v1.webp"
+      ],
+      "stableTraits": "Brown face, graying full beard, dark natural curls, adult build; linen-bearing figure.",
+      "age": "Adult at burial; no exact age asserted.",
+      "result": "No certified earlier named portrait from prior active Gospel images. Not Joseph of Nazareth or Genesis Joseph."
+    },
+    {
+      "person": "Recurring disciples and anonymous crowds",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "stableTraits": "Varied brown complexions, natural dark hair, adult builds with familiar curls and headwrapped figures.",
+      "age": "Same ministry/resurrection period.",
+      "result": "Compatible group, no arbitrary identity changes inferred. Breakfast has seven adult disciples (four by fire, three at boat/net) plus Jesus. Peter is foreground; other precise face-name maps for Thomas, Nathanael, sons of Zebedee and two unnamed men remain uncertain. Do not identify apostle John merely by headband/clothing. John the Baptist is distinct and not an explicit current portrait."
+    }
+  ],
+  "referenceFiles": [
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "bytes": 107786,
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    },
+    {
+      "path": "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+      "bytes": 128204,
+      "sha256": "fa9c60cd6d74444c8203c71db26e24b3bc437e9b5db526c4ca0ef09ce39cde57"
+    },
+    {
+      "path": "src/assets/story-arrest-trial-and-crucifixion-v1.webp",
+      "bytes": 137956,
+      "sha256": "7cf5dcac4dc5f058e6428e3438b1cdc78411d7ba5799fd19ff55132acb7a1944"
+    },
+    {
+      "path": "src/assets/story-bread-of-life-v1.webp",
+      "bytes": 79796,
+      "sha256": "d4689119d67da4416f6fbc81e3e75502528e57db848456584e90f22e2fc83384"
+    },
+    {
+      "path": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "bytes": 133908,
+      "sha256": "bd23be6a14133af5b387593a872781b77fceab54bee1a98927498d45741db699"
+    },
+    {
+      "path": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "bytes": 129094,
+      "sha256": "7d3c6b38a52c46a7d8279a7529a6f3cf2fa997c39042d01b049c4f112411b5d1"
+    },
+    {
+      "path": "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+      "bytes": 94596,
+      "sha256": "6815297c91cd087136a723eee14a37781db58025ed0483d7f8f3ddbbb3b62ed8"
+    },
+    {
+      "path": "src/assets/story-healing-at-bethesda-v1.webp",
+      "bytes": 127422,
+      "sha256": "7a5d451a497c0140e42c72c85c4ebaf51cf45419728c07a4e32ce5014f0cc6fc"
+    },
+    {
+      "path": "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+      "bytes": 82516,
+      "sha256": "9da97c1ceab793a9df86feca8ce1531b88d5734bbb6f91203e2ee68d28f1969d"
+    },
+    {
+      "path": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "bytes": 98602,
+      "sha256": "ce9fcfab12dcccb6d748d2bdc4e9f495329bb2713d321d5ccffb62b52a95b00f"
+    },
+    {
+      "path": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "bytes": 166668,
+      "sha256": "8c00e0e85dc7307364bc81b66729a587f1237a6bf8d33352bc62063a6b2cba22"
+    },
+    {
+      "path": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "bytes": 217294,
+      "sha256": "b364b72a1b320a750d35a22b747649bb5bfbabf42202e8153fb75c9c317310b8"
+    },
+    {
+      "path": "src/assets/story-the-ascension-v1.webp",
+      "bytes": 131684,
+      "sha256": "75322c7817a97ae874c177af89491e3a5a35be2cea0b0a725a2b3b7511810fd4"
+    },
+    {
+      "path": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "bytes": 119468,
+      "sha256": "d09926414ae3a679ffb6625d97d572ae67315be7de1a1805313ff38e4c83eb33"
+    },
+    {
+      "path": "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+      "bytes": 135466,
+      "sha256": "b554f02e4e9a82fe60c8819dd4001614c30ab4e1c477c660dcb6609650856ef8"
+    },
+    {
+      "path": "src/assets/story-the-raising-of-lazarus-v1.webp",
+      "bytes": 130974,
+      "sha256": "ce24451d2e0203c20c663bfb73a8f20074679034e7cf7b445fd1917b80de3604"
+    },
+    {
+      "path": "src/assets/story-the-resurrection-appearances-v1.webp",
+      "bytes": 136870,
+      "sha256": "24c7fc63794afe5263dca6a53289e64c386e268344adea9bb2fe58278cacb155"
+    },
+    {
+      "path": "src/assets/story-the-road-to-emmaus-v1.webp",
+      "bytes": 87490,
+      "sha256": "24fdb9ebacfc4f32491f654bae190d8a29054e62632ef663ebc99c95abe591a2"
+    },
+    {
+      "path": "src/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "bytes": 95512,
+      "sha256": "8f2954a5ac3a23c799247a27041eedd1d0ff8f8141d25466959c95a4e3937ca7"
+    },
+    {
+      "path": "src/assets/story-the-woman-at-the-well-v1.webp",
+      "bytes": 135926,
+      "sha256": "157ed62c7273c88c94aeb4ead772377411423def1758bf7a761d51ae56e8a7ac"
+    },
+    {
+      "path": "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+      "bytes": 103954,
+      "sha256": "d1d5a78553eaff0e8963fa67e0a73648ac7b46d81089e0b5ce20baa1eeded458"
+    },
+    {
+      "path": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "bytes": 66178,
+      "sha256": "3a25e4ebcebb4510fd108175d7818976f629eff660707304b210c340c6bbc8a9"
+    }
+  ],
+  "comparisonPairs": [
+    {
+      "first": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "second": "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "second": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "second": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "second": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "second": "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-road-to-emmaus-v1.webp",
+      "second": "src/assets/story-the-resurrection-appearances-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-ascension-v1.webp",
+      "second": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "second": "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+      "second": "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+      "second": "src/assets/story-the-woman-at-the-well-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-woman-at-the-well-v1.webp",
+      "second": "src/assets/story-healing-at-bethesda-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-healing-at-bethesda-v1.webp",
+      "second": "src/assets/story-bread-of-life-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-bread-of-life-v1.webp",
+      "second": "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+      "second": "src/assets/story-the-man-born-blind-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-man-born-blind-v1.webp",
+      "second": "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+      "second": "src/assets/story-the-raising-of-lazarus-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-raising-of-lazarus-v1.webp",
+      "second": "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+      "second": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "second": "src/assets/story-arrest-trial-and-crucifixion-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-arrest-trial-and-crucifixion-v1.webp",
+      "second": "src/assets/story-the-resurrection-appearances-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    },
+    {
+      "first": "src/assets/story-the-resurrection-appearances-v1.webp",
+      "second": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "method": "Native-resolution unscaled vertical comparison panel, actual originals also viewed"
+    }
+  ],
+  "nativeCrops": {
+    "crops": [
+      [
+        "cana-hands",
+        "story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        [
+          0,
+          260,
+          610,
+          525
+        ]
+      ],
+      [
+        "nicodemus-hands",
+        "story-cleansing-the-temple-and-nicodemus-v1.webp",
+        [
+          290,
+          345,
+          1010,
+          560
+        ]
+      ],
+      [
+        "well-hands",
+        "story-the-woman-at-the-well-v1.webp",
+        [
+          395,
+          235,
+          1050,
+          590
+        ]
+      ],
+      [
+        "bethesda-hands",
+        "story-healing-at-bethesda-v1.webp",
+        [
+          150,
+          335,
+          870,
+          675
+        ]
+      ],
+      [
+        "bread-hands-feet",
+        "story-bread-of-life-v1.webp",
+        [
+          215,
+          270,
+          720,
+          675
+        ]
+      ],
+      [
+        "woman-hands-feet",
+        "story-the-woman-caught-in-adultery-v1.webp",
+        [
+          180,
+          255,
+          1110,
+          675
+        ]
+      ],
+      [
+        "siloam-hands",
+        "story-the-man-born-blind-v1.webp",
+        [
+          275,
+          115,
+          665,
+          380
+        ]
+      ],
+      [
+        "dedication-hands",
+        "story-jesus-at-the-feast-of-dedication-v1.webp",
+        [
+          255,
+          290,
+          985,
+          655
+        ]
+      ],
+      [
+        "lazarus-hands",
+        "story-the-raising-of-lazarus-v1.webp",
+        [
+          240,
+          245,
+          1000,
+          675
+        ]
+      ],
+      [
+        "anointing-hands-feet",
+        "story-anointing-and-triumphal-entry-v1.webp",
+        [
+          290,
+          350,
+          735,
+          650
+        ]
+      ],
+      [
+        "washing-hands-feet",
+        "story-jesus-washes-the-disciples-feet-v1.webp",
+        [
+          340,
+          250,
+          970,
+          620
+        ]
+      ],
+      [
+        "burial-hands",
+        "story-arrest-trial-and-crucifixion-v1.webp",
+        [
+          160,
+          270,
+          720,
+          550
+        ]
+      ],
+      [
+        "resurrection-hands",
+        "story-the-resurrection-appearances-v1.webp",
+        [
+          225,
+          325,
+          1055,
+          675
+        ]
+      ],
+      [
+        "breakfast-hands-fish",
+        "story-breakfast-by-the-sea-of-tiberias-v1.webp",
+        [
+          30,
+          250,
+          1120,
+          675
+        ]
+      ]
+    ],
+    "identityComparisons": [
+      [
+        "nicodemus-identity",
+        "story-cleansing-the-temple-and-nicodemus-v1.webp",
+        [
+          855,
+          95,
+          1145,
+          335
+        ],
+        "story-arrest-trial-and-crucifixion-v1.webp",
+        [
+          465,
+          135,
+          715,
+          355
+        ]
+      ],
+      [
+        "bethany-sisters",
+        "story-the-raising-of-lazarus-v1.webp",
+        [
+          155,
+          150,
+          815,
+          385
+        ],
+        "story-anointing-and-triumphal-entry-v1.webp",
+        [
+          190,
+          0,
+          590,
+          440
+        ]
+      ],
+      [
+        "peter-identity",
+        "story-trial-crucifixion-and-burial-in-mark-v1.webp",
+        [
+          230,
+          95,
+          425,
+          335
+        ],
+        "story-jesus-washes-the-disciples-feet-v1.webp",
+        [
+          800,
+          0,
+          1010,
+          215
+        ]
+      ],
+      [
+        "peter-breakfast",
+        "story-jesus-washes-the-disciples-feet-v1.webp",
+        [
+          800,
+          0,
+          1010,
+          215
+        ],
+        "story-breakfast-by-the-sea-of-tiberias-v1.webp",
+        [
+          355,
+          140,
+          565,
+          360
+        ]
+      ]
+    ]
+  },
+  "reviewResult": "All actual active originals and listed panels/crops viewed; visible faces, hands, thumbs, fingers, limbs, body relationships, jars, food and fish checked. No definite malformed anatomy or identity break found. Occluded anatomy, tiny faces and overlapping fish cannot all be certified.",
+  "generationCalls": 0,
+  "replacementFiles": [],
+  "futureGenerationRequirement": "Supply actual approved earlier identity image files as tool inputs for each new identifiable recurring person; Genesis 7 is style only. Viewing/describing reference is insufficient.",
+  "nextBookArtworkReviewed": false
+}
