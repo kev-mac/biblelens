@@ -51,6 +51,56 @@
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "zephaniah-artwork-handoff-from-habakkuk-2026-11-07.md",
   "nextBookStarted": false,
-  "publication": "pending",
-  "gitPushRecovery": "Initial GitHub push rejected with GH007 because local commits used a private email. Re-authored only the two unpublished local commits with the existing repository GitHub noreply identity; application source and prepared bytes unchanged."
+  "publication": {
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_5c44a456f8f881918db4cd7b6523b485",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 383,
+      "source": {
+        "commit_sha": "a14a5b4f39049f714e3f289bef92abd8125462b4"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000076e881fdbae7563244643179",
+        "content_hash": "sha256:78503a37777e5aab5e22a1039a2cf18a6f83b5e05a3c908aef2935ab74a28c79",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeee5bba12881919ea8e7762e731b71",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_5c44a456f8f881918db4cd7b6523b485",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:48:06.010337+00:00"
+    }
+  },
+  "gitPushRecovery": "Initial GitHub push rejected with GH007 because local commits used a private email. Re-authored only the two unpublished local commits with the existing repository GitHub noreply identity; application source and prepared bytes unchanged.",
+  "canonicalValidationCommit": "ebd21948512cc6667a684c6c90d397a17deb400c",
+  "mirrorCommit": "a14a5b4f39049f714e3f289bef92abd8125462b4",
+  "publicationRecovery": "First deployment rejected by automatic approval review because available user messages appeared to authorize only Mac/device attempts. After denial, user_message_read.read_messages verified the original per-book publish instruction and newly read the later explicit cloud-work and continue-without-devices instructions; get_site refreshed owner/public status. Retried the exact same saved-version deployment once; succeeded. No workaround or alternate target.",
+  "localPostPublicationParity": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 383,
+      "sourceHash": "13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab"
+    },
+    "workerSha256": "fb7c40f9ee49003b125aea9211683935c096112e1cdc1789d8c13813d3f00c80",
+    "canonicalMirrorUnsignedNativeLocalWorkerIdentityEqual": true,
+    "workerStagingEqual": true,
+    "habakkukSourceMirrorOfflineBytesEqual": true,
+    "liveVerification": false,
+    "signedAppVerified": false
+  },
+  "localArchiveParity": "All six local archive members exactly equal staged prepared files. Native Sites returned succeeded; no live HTTP/byte verification is claimed."
 }
