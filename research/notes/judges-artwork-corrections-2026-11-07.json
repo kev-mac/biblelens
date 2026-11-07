@@ -2,12 +2,12 @@
   {
     "key": "gideon",
     "originalSrc": "/assets/story-gideon-and-the-midianites-v1.webp",
-    "src": "/assets/story-gideon-and-the-midianites-v2.webp",
-    "generatedPath": "/workspace/generated_images/exec-cc692fe0-d10b-4a99-b707-45d3eec66067.png",
-    "generatedSha256": "0ac7834a0e5173d7b75257e5274a0d931f1aff5710852c4620657e18cb409370",
+    "src": "/assets/story-gideon-and-the-midianites-v3.webp",
+    "generatedPath": "/workspace/generated_images/exec-faa6c666-f9db-48a8-ac69-af0ee775606e.png",
+    "generatedSha256": "c907e04e71fb53e85925d93850c32c24054e46ac8177586d88bb0e0dfd01488a",
     "originalSha256": "f1bdc0c2fa33c93c6bc890cac9e848b1c3619c04774d66cd22656743ba935882",
-    "sha256": "fdf5361f5b08cc33eb2c9747223a723fd1ec0c8421db9f9f01fbbdd3946b7417",
-    "bytes": 185606,
+    "sha256": "5218ce15bbe9c752f44839949d99a375bb394ae69835d2431e23e17ffe38a2fb",
+    "bytes": 209386,
     "actualVisualInputs": [
       {
         "path": "src/assets/story-gideon-and-the-midianites-v1.webp",
@@ -18,8 +18,25 @@
         "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
       }
     ],
-    "review": "Judges7:20: torch anatomical LEFT (image right), trumpet RIGHT (image left); visible soldiers corrected too. Same long angular brown face, dark loose curls, full beard, lean adult build; hands, thumbs, arms, knees and feet reviewed beside original.",
-    "accepted": true
+    "review": "Judges7:20: torch anatomical LEFT (image right), trumpet RIGHT (image left); visible soldiers corrected too. Same long angular brown face, dark loose curls, full beard, lean adult build; hands, thumbs, arms, knees and feet reviewed beside original. Refined nearest background soldier to one trumpet, rejecting duplicate-object draft.",
+    "accepted": true,
+    "rejectedDraft": {
+      "src": "/assets/story-gideon-and-the-midianites-v2.webp",
+      "generatedPath": "/workspace/generated_images/exec-cc692fe0-d10b-4a99-b707-45d3eec66067.png",
+      "generatedSha256": "0ac7834a0e5173d7b75257e5274a0d931f1aff5710852c4620657e18cb409370",
+      "sha256": "fdf5361f5b08cc33eb2c9747223a723fd1ec0c8421db9f9f01fbbdd3946b7417",
+      "reason": "Nearest background soldier had two trumpets. Never deployed."
+    },
+    "refinementVisualInputs": [
+      {
+        "path": "/workspace/generated_images/exec-cc692fe0-d10b-4a99-b707-45d3eec66067.png",
+        "sha256": "0ac7834a0e5173d7b75257e5274a0d931f1aff5710852c4620657e18cb409370"
+      },
+      {
+        "path": "src/assets/story-gideon-and-the-midianites-v1.webp",
+        "sha256": "f1bdc0c2fa33c93c6bc890cac9e848b1c3619c04774d66cd22656743ba935882"
+      }
+    ]
   },
   {
     "key": "samson",

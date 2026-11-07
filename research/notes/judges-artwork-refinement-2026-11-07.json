@@ -1,0 +1,9 @@
+{
+  "prompt": "Refine FIRST draft image only, preserving the entire scene and all identities, Gideon's face, exact torch in his anatomical LEFT hand (image right), one trumpet in his RIGHT hand (image left), broken jar, ridge, camp and blue night. IMPORTANT object error: nearest background soldier immediately behind Gideon at upper left currently has TWO ram horns, one floating by his mouth and a second in his right hand. Give him exactly ONE horn trumpet in his anatomical RIGHT hand naturally touching his mouth, with coherent wrist/elbow and five-finger grip, and one torch in his LEFT hand; REMOVE the duplicate horn, leaving clean natural background. Every other soldier also has at most ONE horn and ONE torch. Keep coherent arms, no extra fingers or duplicate objects. SECOND input is original approved Gideon identity for face/hair/build only, do not restore wrong torch/trumpet handedness. Same grounded cinematic realistic style and 16:9. Save locally return exact path.",
+  "actualVisualInputs": [
+    "/workspace/generated_images/exec-cc692fe0-d10b-4a99-b707-45d3eec66067.png",
+    "/workspace/biblelens/src/assets/story-gideon-and-the-midianites-v1.webp"
+  ],
+  "generatedPath": "/workspace/generated_images/exec-faa6c666-f9db-48a8-ac69-af0ee775606e.png",
+  "reason": "First Gideon draft duplicated nearest background soldier's trumpet; rejected before publication. Refined final has one horn naturally gripped to his mouth; Gideon retains corrected handedness and identity."
+}
