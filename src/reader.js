@@ -393,7 +393,7 @@ document.addEventListener('pointerdown',()=>document.body.classList.remove('keyb
 let passagePicker=null,passagePickerRequest=0,passageReferenceRequest=0;
 async function navigateTypedPassage(){
  const input=$('#passage-reference'),status=$('#passage-reference-status'),go=$('#passage-reference-go'),value=input.value.trim(),request=++passageReferenceRequest;
- const parse=window.BibleLensWorkspace.parseReference,ref=parse(value)||parse(value+' 1');
+ const parse=window.BibleLensWorkspace.parseReference,bookOnly=/^(?:[1-3]\s*)?[^0-9:–-]+$/.test(value),ref=parse(value)||(bookOnly?parse(value+' 1'):null);
  const invalid=message=>{input.setAttribute('aria-invalid','true');status.textContent=message;input.focus({preventScroll:true});};
  if(!ref){invalid('Enter a Bible reference, such as Exodus 1:8.');return;}
  go.disabled=true;status.textContent='Opening passage…';input.removeAttribute('aria-invalid');

@@ -16,7 +16,7 @@ const reset=value=>{routes.length=0;const input=node('#passage-reference');input
 for(const [text,expected] of [['Exodus','#read/1/1'],['Exodus 1','#read/1/1'],['Exodus 1:8','#read/1/1/8'],['ex 1:8','#read/1/1/8'],['1Sam17:4','#read/8/17/4'],['II Timothy 1:7','#read/54/1/7'],['John 3:16-18','#read/42/3/16-18'],['Jude','#read/64/1']]){
  reset(text);await ctx.navigateTypedPassage();assert.deepEqual(routes,[expected],text);assert(!node('#passage-reference').attrs['aria-invalid']);
 }
-for(const text of ['', 'Unknown 1:2','Exodus 41','John 3:99','John 3:0','John 3:20-16','<img src=x onerror=alert(1)>']){
+for(const text of ['', 'Unknown 1:2','Exodus 41','John 3:99','John 3:0','John 3:','John 3:20-16','<img src=x onerror=alert(1)>']){
  reset(text);await ctx.navigateTypedPassage();assert.deepEqual(routes,[],text);assert.equal(node('#passage-reference').attrs['aria-invalid'],'true');assert(node('#passage-reference').focused);assert(node('#passage-reference-status').textContent);
 }
 reset('John 3:16');ctx.readerJson=async()=>{throw Error('Offline');};await ctx.navigateTypedPassage();assert.equal(node('#passage-reference').value,'John 3:16');assert.match(node('#passage-reference-status').textContent,/Try again/);assert.deepEqual(routes,[]);
