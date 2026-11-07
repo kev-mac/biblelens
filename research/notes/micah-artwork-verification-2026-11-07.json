@@ -1,0 +1,168 @@
+{
+  "book": "Micah",
+  "canonicalBaseline": "b50b948",
+  "chapterCount": 7,
+  "verseCount": 105,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-micah-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 16,
+      "bytes": 142026,
+      "sha256": "a544741664d0afe4e1276012b64031ed835cda5efdb59fead9d9478f557c3861",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-micah-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 13,
+      "bytes": 159240,
+      "sha256": "5e8f3ab58c0953e1486a592d7f32ed6f12820e228c8a8e719c2c592df1191eb6",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-micah-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 12,
+      "bytes": 112364,
+      "sha256": "ee71cd0ad0903299ed7f3f4b097e069dd4ff23b0ad329e706c86443f884b4032",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-micah-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 13,
+      "bytes": 202546,
+      "sha256": "aa29461a1b397ebcc537c8783b22763f54944640c8096851fa8fb56a897b9bc9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-micah-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 15,
+      "bytes": 158802,
+      "sha256": "2f36349fbe3f3607b636f1c9a95b74217b5ccea3cd1742f50e2c44fdc4e36c03",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-micah-06-opening-v1.webp",
+      "verse": 0,
+      "verses": 16,
+      "bytes": 93064,
+      "sha256": "282e8532084883400c7efba6df7f3f54c10e34dab865e194356435427d97beb0",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 7,
+      "src": "/assets/chapter-micah-07-opening-v1.webp",
+      "verse": 0,
+      "verses": 20,
+      "bytes": 165060,
+      "sha256": "f15fca398c96c85e678aecadaced0be93095c51c34380fa14ee171bb531776e3",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 7,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 31,
+        "chapter": 4,
+        "verse": 1,
+        "position": 38,
+        "src": "/assets/story-jonah-s-anger-v1.webp"
+      },
+      "b": {
+        "book": 32,
+        "chapter": 1,
+        "verse": 0,
+        "position": 48,
+        "src": "/assets/chapter-micah-01-opening-v1.webp"
+      },
+      "gap": 10
+    },
+    {
+      "a": {
+        "book": 32,
+        "chapter": 7,
+        "verse": 0,
+        "position": 133,
+        "src": "/assets/chapter-micah-07-opening-v1.webp"
+      },
+      "b": {
+        "book": 33,
+        "chapter": 1,
+        "verse": 0,
+        "position": 153,
+        "src": "/assets/chapter-nahum-01-opening-v1.webp"
+      },
+      "gap": 20
+    }
+  ],
+  "minimumInternalGap": 12,
+  "baselineAssetFilesPreserved": 1616,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "pinnedBlobsEqualSource": 1145,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 381,
+    "sourceHash": "b9d4062ff7be727a8183cdfbdc63e6ac6dd1b458a28abdb70169c57bd0f27520"
+  },
+  "workerBytes": 59517395,
+  "workerSha256": "7e03ea9a6348aaa47f2ecc9d544f5035b7023761af4b23db5075ebd8d64f5761",
+  "originFixtureCalls": 7
+}

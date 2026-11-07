@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-07",
+  "book": "Micah",
+  "canonicalBaseline": "b50b948",
+  "canonicalReviewCommit": "b688df75d15bd5acd07de6fd22adae6316a8bf46",
+  "review": {
+    "retainedImages": 7,
+    "replacements": 0,
+    "storyImages": 0,
+    "chapterOpeners": 7,
+    "closePairsTouchingBook": 0,
+    "gapsTouchingBook": [
+      10,
+      16,
+      13,
+      12,
+      13,
+      15,
+      16,
+      20
+    ]
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 381,
+    "sourceHash": "b9d4062ff7be727a8183cdfbdc63e6ac6dd1b458a28abdb70169c57bd0f27520"
+  },
+  "workerBytes": 59517395,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "FAILED: unchanged check-sync-disconnect.mjs:34 assert(finishRead); inherited intermittent issue remains unresolved",
+    "syncTimingDiagnostic": "temporary local timer-settling variant passed all disconnect cases; suggests timing sensitivity, not a passing unchanged suite",
+    "focusedWorkerOffline": "passed 7 chapters, 105 verses, three editions, seven single openers, seven missing-opener rejection cases, exact metadata and bytes; zero underlying network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no installation or alternate path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools",
+    "fullReleasePreparation": "FAILED: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "readability": "completed report-only with inherited findings"
+  },
+  "mirrorBaseline": {
+    "commit": "0545516f20bdb99a0eea9ade9ef42f0a00b5661d",
+    "buildNumber": 380,
+    "sourceHash": "67f05c3765fc9ede8d664ece9761d33745b5c78faad8ce2eeafaa5be9af0b9e7",
+    "independentApplicationChanges": false,
+    "mirrorOnlyTrackedFiles": []
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "nahum-artwork-handoff-from-micah-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": "pending",
+  "gitHubInitialPush": "rejected by GH007 email privacy protection; corrected only new local commit identity to the existing canonical noreply identity before retry"
+}
