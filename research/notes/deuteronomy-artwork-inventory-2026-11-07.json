@@ -1,0 +1,1469 @@
+{
+  "baseline": "476430a",
+  "baselineSitesMirror": "d703710997de14ea0ed017064496f58cbb5daf40",
+  "targetBuild": 364,
+  "placementCount": 62,
+  "uniqueFiles": 62,
+  "openingChapters": 34,
+  "replacements": 12,
+  "retained": 50,
+  "placements": [
+    {
+      "chapter": 1,
+      "kind": "story",
+      "beforeVerse": 1,
+      "title": "Moses Recalls the Wilderness Years",
+      "src": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+      "alt": "Moses recounts the journey to families and younger elders on the plains of Moab.",
+      "width": 1200,
+      "height": 675,
+      "idx": 0,
+      "originalSrc": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+      "originalSha256": "d5b3b3827d1ff3ad1a6a763dcf4853595c36b1ba23ec3fb93bb3dd2d73564458",
+      "sha256": "d5b3b3827d1ff3ad1a6a763dcf4853595c36b1ba23ec3fb93bb3dd2d73564458",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain late Moses identity and children/younger elders listening in Moab; no named Joshua assignment to the younger blue-cloaked listener."
+    },
+    {
+      "chapter": 2,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Travelers cross a rocky wilderness route near Edom.",
+      "src": "/assets/chapter-deuteronomy-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 1,
+      "originalSrc": "/assets/chapter-deuteronomy-02-opening-v1.webp",
+      "originalSha256": "3e902f1a9ba7391b81ac7c5938d36ffaadbd9becdac19f03948e9184481befa0",
+      "sha256": "3e902f1a9ba7391b81ac7c5938d36ffaadbd9becdac19f03948e9184481befa0",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 2,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: Travelers trade for bread and water along a rocky route.",
+      "src": "/assets/chapter-deuteronomy-02-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 2,
+      "originalSrc": "/assets/chapter-deuteronomy-02-v1.webp",
+      "originalSha256": "84483f9cb9aecfc8d5f85dc46b3a3df7a9d551abd9637816a60b1be973eeb267",
+      "sha256": "84483f9cb9aecfc8d5f85dc46b3a3df7a9d551abd9637816a60b1be973eeb267",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 3,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Elderly Moses looks across the Jordan valley from a ridge.",
+      "src": "/assets/chapter-deuteronomy-03-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 3,
+      "originalSrc": "/assets/chapter-deuteronomy-03-opening-v1.webp",
+      "originalSha256": "fd68e4bd485ec6bcf4731752e0f1dadcd90c2c6d6cccee44e4f2c569d9331169",
+      "sha256": "3688dbc82ded9a36cb1422490ab45d25d9fe1d25a341615d168c70d9dfc1a656",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct Moses to the SAME Moses as the LEFT standing staff-holder in the second input, with long lined medium-brown face, prominent long nose, lean build, tight natural gray CURLS and long gray-white beard. Replace the flowing straight/wavy silver hair and lighter face. He is at his final age120, immediately following late Numbers; retain vitality and same apparent late age as reference, do not add decades. Keep the ridge, river landscape, contemplative pose, staff and clothing."
+    },
+    {
+      "chapter": 3,
+      "kind": "chapter",
+      "afterVerse": 27,
+      "alt": "Imagined scene: Moses looks across the Jordan valley from a high ridge.",
+      "src": "/assets/chapter-deuteronomy-03-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 4,
+      "originalSrc": "/assets/chapter-deuteronomy-03-v1.webp",
+      "originalSha256": "dc8ecdcaa16b2c0655368b9132ca9fa24d2455a49e8b170a524cb334d7cd8347",
+      "sha256": "dc8ecdcaa16b2c0655368b9132ca9fa24d2455a49e8b170a524cb334d7cd8347",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain rear/partial-profile Moses: natural graying curls, lean build and staff, looking from east of Jordan. Unseen frontal features are not inferred."
+    },
+    {
+      "chapter": 4,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses addresses the gathered people beyond the Jordan.",
+      "src": "/assets/chapter-deuteronomy-04-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 5,
+      "originalSrc": "/assets/chapter-deuteronomy-04-opening-v1.webp",
+      "originalSha256": "30f1479db59094a9a374d8d6250a4af7f65685d2c98bfc69e38184206ca5ed08",
+      "sha256": "d662dadf35845b325a827179e0f7220b26d259a30cec548b525adae459db3f39",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct Moses, the speaker on LEFT, to match the LEFT standing staff-holder in second image: same long lined medium-brown face, prominent long nose, lean build, natural gray CURLS and long gray-white beard. Remove long loose wavy hair. Age120, same late age as reference. Keep pose, gesture, assembly, valley and clothing."
+    },
+    {
+      "chapter": 4,
+      "kind": "story",
+      "beforeVerse": 41,
+      "title": "Moses Sets Apart Three Cities of Refuge",
+      "src": "/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+      "alt": "A traveler reaches a stone gateway where elders wait to hear him.",
+      "width": 1200,
+      "height": 675,
+      "idx": 6,
+      "originalSrc": "/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+      "originalSha256": "32cbb5682413a6eab50ffa3bdfd00a842a5bb6b157e74245b93d45c52df5c2ee",
+      "sha256": "32cbb5682413a6eab50ffa3bdfd00a842a5bb6b157e74245b93d45c52df5c2ee",
+      "reviewDecision": "retained",
+      "reviewNote": "Refuge gateway illustrates application of eastern refuge designation; central elder is anonymous, not an invented second Moses."
+    },
+    {
+      "chapter": 5,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families gather on the plains to hear Moses speak.",
+      "src": "/assets/chapter-deuteronomy-05-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 7,
+      "originalSrc": "/assets/chapter-deuteronomy-05-v1.webp",
+      "originalSha256": "8ab2eeb0a9c74a387d60c8df71db719424ed85203b63a396f437fedc9860f3fb",
+      "sha256": "8ab2eeb0a9c74a387d60c8df71db719424ed85203b63a396f437fedc9860f3fb",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain compatible curly-haired Moses and assembly on plains."
+    },
+    {
+      "chapter": 6,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A parent speaks with a child beside a home doorway.",
+      "src": "/assets/chapter-deuteronomy-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 8,
+      "originalSrc": "/assets/chapter-deuteronomy-06-opening-v1.webp",
+      "originalSha256": "fe308da159fa0fcb64ab2ca370d2fbaee7d540bc91b033a25e20748d314d2402",
+      "sha256": "fe308da159fa0fcb64ab2ca370d2fbaee7d540bc91b033a25e20748d314d2402",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain anonymous parent/child instruction; distinct family vignette, no individual name assignment."
+    },
+    {
+      "chapter": 6,
+      "kind": "chapter",
+      "afterVerse": 7,
+      "alt": "Imagined scene: Parents speak with their children beside a home doorway.",
+      "src": "/assets/chapter-deuteronomy-06-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 9,
+      "originalSrc": "/assets/chapter-deuteronomy-06-v1.webp",
+      "originalSha256": "f1ddedb6de53ffb23eeff1fb35845edcb1deb0710639cbdab697661aed5bfa30",
+      "sha256": "f1ddedb6de53ffb23eeff1fb35845edcb1deb0710639cbdab697661aed5bfa30",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain two-child household, natural curls/brown complexions, coherent hands; general settled-law application."
+    },
+    {
+      "chapter": 7,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families look across the Jordan valley toward the land ahead.",
+      "src": "/assets/chapter-deuteronomy-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 10,
+      "originalSrc": "/assets/chapter-deuteronomy-07-opening-v1.webp",
+      "originalSha256": "06bc5f9f34b3d9b8b9228601e3b9085cb88eb9c9a84a4f5f5a7565a7ba947242",
+      "sha256": "06bc5f9f34b3d9b8b9228601e3b9085cb88eb9c9a84a4f5f5a7565a7ba947242",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 7,
+      "kind": "chapter",
+      "afterVerse": 25,
+      "alt": "Imagined scene: A carved figure and metal ornaments lie outside the camp.",
+      "src": "/assets/chapter-deuteronomy-07-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 11,
+      "originalSrc": "/assets/chapter-deuteronomy-07-v1.webp",
+      "originalSha256": "9b3e5cfa0b5891076fa140d6b2c51ea3495499419b2ad7e3da2119050a6e72c3",
+      "sha256": "9b3e5cfa0b5891076fa140d6b2c51ea3495499419b2ad7e3da2119050a6e72c3",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 8,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Travelers carry water and packs through the wilderness.",
+      "src": "/assets/chapter-deuteronomy-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 12,
+      "originalSrc": "/assets/chapter-deuteronomy-08-opening-v1.webp",
+      "originalSha256": "b14c1e62bf9e4de1c50d590209dfefa22de2423d2b3dd3c43a3d9166e23880c0",
+      "sha256": "b14c1e62bf9e4de1c50d590209dfefa22de2423d2b3dd3c43a3d9166e23880c0",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 8,
+      "kind": "chapter",
+      "afterVerse": 8,
+      "alt": "Imagined scene: A farmer walks among grain, vines, fruit trees and olive trees.",
+      "src": "/assets/chapter-deuteronomy-08-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 13,
+      "originalSrc": "/assets/chapter-deuteronomy-08-v1.webp",
+      "originalSha256": "dceb64081232b3cb27857454283d0a08cc8637d456476347e7b376f0fbe5a13b",
+      "sha256": "dceb64081232b3cb27857454283d0a08cc8637d456476347e7b376f0fbe5a13b",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 9,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses speaks to listeners under a stormy sky.",
+      "src": "/assets/chapter-deuteronomy-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 14,
+      "originalSrc": "/assets/chapter-deuteronomy-09-opening-v1.webp",
+      "originalSha256": "2efc5d8ea9aa14cf1dd684266ae51fb9bb06c7865e439c21c9e15127a92519f3",
+      "sha256": "2efc5d8ea9aa14cf1dd684266ae51fb9bb06c7865e439c21c9e15127a92519f3",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain recognizable gray-curled Moses before stormy sky, compatible with late Numbers/current book."
+    },
+    {
+      "chapter": 9,
+      "kind": "story",
+      "beforeVerse": 7,
+      "title": "Moses Recalls the Golden Calf",
+      "src": "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+      "alt": "Moses recounts the events at Sinai to listeners gathered under a shade canopy in Moab.",
+      "width": 1200,
+      "height": 675,
+      "idx": 15,
+      "originalSrc": "/assets/story-moses-recalls-the-golden-calf-v1.webp",
+      "originalSha256": "25559c753200f3ac83455900ada3b16b706b7546b7b87c1ebbfdfd249ba6ca6e",
+      "sha256": "a1df7ab58cc345b1e9a441f9f337ec182047459f9b840d08bdcd49288097e343",
+      "reviewDecision": "replaced",
+      "reviewNote": "Remove intact calf and broken tablets from present-day recollection: calf was destroyed (9:21); preserve Moses recounting the events in Moab."
+    },
+    {
+      "chapter": 10,
+      "kind": "story",
+      "beforeVerse": 1,
+      "title": "Moses Recalls the Second Tablets",
+      "src": "/assets/story-moses-recalls-the-second-tablets-v1.webp",
+      "alt": "Moses lowers two stone tablets into a plain wooden chest inside a tent.",
+      "width": 1200,
+      "height": 675,
+      "idx": 16,
+      "originalSrc": "/assets/story-moses-recalls-the-second-tablets-v1.webp",
+      "originalSha256": "701f36102c3c1f507f939f132a18b68ddbe94232ad9c052d7902b555ec4c78a1",
+      "sha256": "701f36102c3c1f507f939f132a18b68ddbe94232ad9c052d7902b555ec4c78a1",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain retrospective Sinai placement of second tablets in plain wooden chest (10:1–5), earlier age near80, not the present-day frame."
+    },
+    {
+      "chapter": 11,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: People gather near a river as Moses speaks.",
+      "src": "/assets/chapter-deuteronomy-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 17,
+      "originalSrc": "/assets/chapter-deuteronomy-11-opening-v1.webp",
+      "originalSha256": "86b10a64c84a29b024cd16b9f1523b987b3366fc3f8271db70b69d58a89081ab",
+      "sha256": "86b10a64c84a29b024cd16b9f1523b987b3366fc3f8271db70b69d58a89081ab",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain compatible gray-curled Moses and gathered listeners east of Jordan."
+    },
+    {
+      "chapter": 11,
+      "kind": "chapter",
+      "afterVerse": 19,
+      "alt": "Imagined scene: A parent speaks with a child while walking beside a field.",
+      "src": "/assets/chapter-deuteronomy-11-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 18,
+      "originalSrc": "/assets/chapter-deuteronomy-11-v1.webp",
+      "originalSha256": "2d21b91f1db3dc0735fdd8bad4870553aac50bee748d38f86803fb061fd0183b",
+      "sha256": "2d21b91f1db3dc0735fdd8bad4870553aac50bee748d38f86803fb061fd0183b",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 12,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Travelers look over hills and valleys beyond the Jordan.",
+      "src": "/assets/chapter-deuteronomy-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 19,
+      "originalSrc": "/assets/chapter-deuteronomy-12-opening-v1.webp",
+      "originalSha256": "16824e681c9cac614df6168a36faae94c2daf74144e5a2de779e7c2935920c53",
+      "sha256": "16824e681c9cac614df6168a36faae94c2daf74144e5a2de779e7c2935920c53",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain anonymous travelers looking toward land; do not assign staff-holder an unsupported name."
+    },
+    {
+      "chapter": 12,
+      "kind": "chapter",
+      "afterVerse": 12,
+      "alt": "Imagined scene: Families and Levite neighbors share food near the sanctuary.",
+      "src": "/assets/chapter-deuteronomy-12-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 20,
+      "originalSrc": "/assets/chapter-deuteronomy-12-v1.webp",
+      "originalSha256": "f7d79bd09ec8f2d9c477de94c949d7bc4b7e37a31d9dbdfc64d7be8f640dd32f",
+      "sha256": "f7d79bd09ec8f2d9c477de94c949d7bc4b7e37a31d9dbdfc64d7be8f640dd32f",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 13,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A group listens at the edge of camp at dusk.",
+      "src": "/assets/chapter-deuteronomy-13-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 21,
+      "originalSrc": "/assets/chapter-deuteronomy-13-opening-v1.webp",
+      "originalSha256": "0c75d0d6876633031a21399abfa184297e5d8a418ea099633fe819651703dfb3",
+      "sha256": "0c75d0d6876633031a21399abfa184297e5d8a418ea099633fe819651703dfb3",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain anonymous camp elder/listeners; clothing alone does not establish Moses identity."
+    },
+    {
+      "chapter": 13,
+      "kind": "chapter",
+      "afterVerse": 4,
+      "alt": "Imagined scene: Elders and families listen carefully as Moses speaks.",
+      "src": "/assets/chapter-deuteronomy-13-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 22,
+      "originalSrc": "/assets/chapter-deuteronomy-13-v1.webp",
+      "originalSha256": "4a3f624be237a4778834246358990d0fd2b2fa49d878d639b6c291e4aff5051a",
+      "sha256": "4a3f624be237a4778834246358990d0fd2b2fa49d878d639b6c291e4aff5051a",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain compatible gray-curled Moses, elders/families, natural varied skin/hair."
+    },
+    {
+      "chapter": 14,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families share a meal beside tents on the plains.",
+      "src": "/assets/chapter-deuteronomy-14-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 23,
+      "originalSrc": "/assets/chapter-deuteronomy-14-opening-v1.webp",
+      "originalSha256": "799387600917bac6931e49bda554dbe27cb60d607b9d48c0a0d81d92d4dac3a7",
+      "sha256": "799387600917bac6931e49bda554dbe27cb60d607b9d48c0a0d81d92d4dac3a7",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 14,
+      "kind": "chapter",
+      "afterVerse": 22,
+      "alt": "Imagined scene: A farmer measures grain into a separate basket beside the harvest.",
+      "src": "/assets/chapter-deuteronomy-14-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 24,
+      "originalSrc": "/assets/chapter-deuteronomy-14-v1.webp",
+      "originalSha256": "54b78099a32cafd66c81538e84e1e2dd73ba135a5b1d2e7b24e0c80a25663c62",
+      "sha256": "54b78099a32cafd66c81538e84e1e2dd73ba135a5b1d2e7b24e0c80a25663c62",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 15,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Two people discuss a debt at a simple table.",
+      "src": "/assets/chapter-deuteronomy-15-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 25,
+      "originalSrc": "/assets/chapter-deuteronomy-15-opening-v1.webp",
+      "originalSha256": "25e30092971ea77c07d412028a90040c0368480d5f4339e04be882a81e771fbb",
+      "sha256": "25e30092971ea77c07d412028a90040c0368480d5f4339e04be882a81e771fbb",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain debt discussion foreground; covered-hair elder in background is not assigned an unsupported individual name."
+    },
+    {
+      "chapter": 15,
+      "kind": "chapter",
+      "afterVerse": 8,
+      "alt": "Imagined scene: A household shares grain and bread with a neighbor.",
+      "src": "/assets/chapter-deuteronomy-15-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 26,
+      "originalSrc": "/assets/chapter-deuteronomy-15-v1.webp",
+      "originalSha256": "9977c73a8bd4bdf7fb9aa69c6cea81aea33a891cea45335190969c808005c6ae",
+      "sha256": "9977c73a8bd4bdf7fb9aa69c6cea81aea33a891cea45335190969c808005c6ae",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 16,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families carry baskets through a green valley.",
+      "src": "/assets/chapter-deuteronomy-16-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 27,
+      "originalSrc": "/assets/chapter-deuteronomy-16-opening-v1.webp",
+      "originalSha256": "0ab951f058e4f802ab4666509cbbf6b99afd6e5e2cf9b1f71114ade88157ccea",
+      "sha256": "0ab951f058e4f802ab4666509cbbf6b99afd6e5e2cf9b1f71114ade88157ccea",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 16,
+      "kind": "chapter",
+      "afterVerse": 18,
+      "alt": "Imagined scene: Judges listen to two adults at a stone town gate.",
+      "src": "/assets/chapter-deuteronomy-16-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 28,
+      "originalSrc": "/assets/chapter-deuteronomy-16-v1.webp",
+      "originalSha256": "1bd10603bbdbd8d0d9848048eeba7a706119a17fc2239e77aa274d739df0d547",
+      "sha256": "1bd10603bbdbd8d0d9848048eeba7a706119a17fc2239e77aa274d739df0d547",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 17,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Elders sit together at a town gate.",
+      "src": "/assets/chapter-deuteronomy-17-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 29,
+      "originalSrc": "/assets/chapter-deuteronomy-17-opening-v1.webp",
+      "originalSha256": "fa90defc457c49ce89974696ca8d752198e21c395fe32a7654a1c59b84f00bce",
+      "sha256": "fa90defc457c49ce89974696ca8d752198e21c395fe32a7654a1c59b84f00bce",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 17,
+      "kind": "chapter",
+      "afterVerse": 18,
+      "alt": "Imagined scene: A ruler copies a scroll beside a priest.",
+      "src": "/assets/chapter-deuteronomy-17-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 30,
+      "originalSrc": "/assets/chapter-deuteronomy-17-v1.webp",
+      "originalSha256": "b9e4ea332d1a667f52ceacb7a50b7aa0b598294ed8ddd821fb5bd674f769953b",
+      "sha256": "75335a7702ce8503f01655bef94d126416cde88ee20fb31ca4d86c9a2ea47ca3",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct the action to Deuteronomy17:18: the unnamed KING on LEFT must himself be writing his own copy of the law on a scroll with a reed pen. Move the scroll in front of him on the table, give him the writing pose and coherent hands. The unnamed older PRIEST on RIGHT supervises and holds or indicates the source scroll, without writing for the king. Retain both existing faces, complexions and hair, royal purple clothing, modest setting, daylight. No new identifiable named king or priest. No modern printed letters, no legible invented scripture."
+    },
+    {
+      "chapter": 18,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Families bring food portions to Levites among the tents.",
+      "src": "/assets/chapter-deuteronomy-18-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 31,
+      "originalSrc": "/assets/chapter-deuteronomy-18-opening-v1.webp",
+      "originalSha256": "4e430e31cb33747b1392453644af0e758df45b97ee307bc71274e2ba1594b837",
+      "sha256": "4e430e31cb33747b1392453644af0e758df45b97ee307bc71274e2ba1594b837",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain anonymous Levite recipients and family group, distinct from named priest anchors."
+    },
+    {
+      "chapter": 18,
+      "kind": "chapter",
+      "afterVerse": 3,
+      "alt": "Imagined scene: Families bring food and baskets to priests.",
+      "src": "/assets/chapter-deuteronomy-18-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 32,
+      "originalSrc": "/assets/chapter-deuteronomy-18-v1.webp",
+      "originalSha256": "c948659387aac3b2d6e851bc8036cc00ea353a7fddfef01320afd5deb286ea2f",
+      "sha256": "c948659387aac3b2d6e851bc8036cc00ea353a7fddfef01320afd5deb286ea2f",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain representative priests receiving portions; not a present-day portrait of deceased Aaron."
+    },
+    {
+      "chapter": 19,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A traveler follows a road through hills toward a settlement.",
+      "src": "/assets/chapter-deuteronomy-19-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 33,
+      "originalSrc": "/assets/chapter-deuteronomy-19-opening-v1.webp",
+      "originalSha256": "3cb73e93a07ece2c173dae0e7a74aa3c06cb3847246aec7d23ac7e5aef1cd5b5",
+      "sha256": "3cb73e93a07ece2c173dae0e7a74aa3c06cb3847246aec7d23ac7e5aef1cd5b5",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 19,
+      "kind": "chapter",
+      "afterVerse": 3,
+      "alt": "Imagined scene: A road leads toward an open gateway at a refuge town.",
+      "src": "/assets/chapter-deuteronomy-19-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 34,
+      "originalSrc": "/assets/chapter-deuteronomy-19-v1.webp",
+      "originalSha256": "71948394424a4a56e83f5ab142cd06151a81519dfbcacdc8385c265af7ef8c7d",
+      "sha256": "71948394424a4a56e83f5ab142cd06151a81519dfbcacdc8385c265af7ef8c7d",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 20,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A community pauses above a valley before a distant city.",
+      "src": "/assets/chapter-deuteronomy-20-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 35,
+      "originalSrc": "/assets/chapter-deuteronomy-20-opening-v1.webp",
+      "originalSha256": "cce643d8a9822fa0f1be3d14b93e28686c024b768b6392aa1f165ba372a63397",
+      "sha256": "cce643d8a9822fa0f1be3d14b93e28686c024b768b6392aa1f165ba372a63397",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 20,
+      "kind": "chapter",
+      "afterVerse": 19,
+      "alt": "Imagined scene: Fruit trees stand beside a camp near a distant fortified town.",
+      "src": "/assets/chapter-deuteronomy-20-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 36,
+      "originalSrc": "/assets/chapter-deuteronomy-20-v1.webp",
+      "originalSha256": "7b428776a9801942e30fb56f9e0e5c29db613eca6ae297f73b3934f5e44b8757",
+      "sha256": "7b428776a9801942e30fb56f9e0e5c29db613eca6ae297f73b3934f5e44b8757",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 21,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Elders gather beside a stream outside their town.",
+      "src": "/assets/chapter-deuteronomy-21-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 37,
+      "originalSrc": "/assets/chapter-deuteronomy-21-opening-v1.webp",
+      "originalSha256": "77187cd89936a384a5401635081a2603d1e08f0a1eabc5cfed550fd89024a1b8",
+      "sha256": "77187cd89936a384a5401635081a2603d1e08f0a1eabc5cfed550fd89024a1b8",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain elders discussing the unresolved death before the handwashing; not a portrayal of execution."
+    },
+    {
+      "chapter": 21,
+      "kind": "chapter",
+      "afterVerse": 6,
+      "alt": "Imagined scene: Elders wash their hands over a heifer in a rocky valley.",
+      "src": "/assets/chapter-deuteronomy-21-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 38,
+      "originalSrc": "/assets/chapter-deuteronomy-21-v1.webp",
+      "originalSha256": "8555b2b35723c72281a6be5186eaa71e5705e71924935de9dd45a1679f67c6dd",
+      "sha256": "f087c30d658b0a018409bf019b183225509fbe91ef985ee3541120020b74db93",
+      "reviewDecision": "replaced",
+      "reviewNote": "Restore the heifer in the handwashing ritual (21:6), with head/neck outside frame and no visible injury."
+    },
+    {
+      "chapter": 22,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A traveler guides a stray sheep along a country path.",
+      "src": "/assets/chapter-deuteronomy-22-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 39,
+      "originalSrc": "/assets/chapter-deuteronomy-22-opening-v1.webp",
+      "originalSha256": "9d37b9c393ddcd53180d7530348b3599d40a3ceebebd19a6058eb427d652454a",
+      "sha256": "9d37b9c393ddcd53180d7530348b3599d40a3ceebebd19a6058eb427d652454a",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 22,
+      "kind": "chapter",
+      "afterVerse": 8,
+      "alt": "Imagined scene: Builders add a low safety wall around a home's roof.",
+      "src": "/assets/chapter-deuteronomy-22-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 40,
+      "originalSrc": "/assets/chapter-deuteronomy-22-v1.webp",
+      "originalSha256": "644b5cda523fae7a112e3ee073bdd4f71747aeaa250331bd38301a152f284a31",
+      "sha256": "644b5cda523fae7a112e3ee073bdd4f71747aeaa250331bd38301a152f284a31",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 23,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: People walk through an ancient camp at dawn.",
+      "src": "/assets/chapter-deuteronomy-23-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 41,
+      "originalSrc": "/assets/chapter-deuteronomy-23-opening-v1.webp",
+      "originalSha256": "452fa515d68703ce19c9310d1bfe962fc1008ba6f2410378ac52743f4a8f73be",
+      "sha256": "452fa515d68703ce19c9310d1bfe962fc1008ba6f2410378ac52743f4a8f73be",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 23,
+      "kind": "chapter",
+      "afterVerse": 24,
+      "alt": "Imagined scene: A traveler eats grapes at the edge of a vineyard.",
+      "src": "/assets/chapter-deuteronomy-23-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 42,
+      "originalSrc": "/assets/chapter-deuteronomy-23-v1.webp",
+      "originalSha256": "6391ebeaf7aea16ac3f43306347687f81470798df5c9e7170a451e59ba9fc482",
+      "sha256": "6391ebeaf7aea16ac3f43306347687f81470798df5c9e7170a451e59ba9fc482",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 24,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A woman gathers grain left at the edge of a field.",
+      "src": "/assets/chapter-deuteronomy-24-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 43,
+      "originalSrc": "/assets/chapter-deuteronomy-24-opening-v1.webp",
+      "originalSha256": "59d2ef73f034a461cad00c873fb49bdf5ab03509d7adcc41920c013d26fe3a4a",
+      "sha256": "59d2ef73f034a461cad00c873fb49bdf5ab03509d7adcc41920c013d26fe3a4a",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 24,
+      "kind": "chapter",
+      "afterVerse": 19,
+      "alt": "Imagined scene: A worker leaves a grain bundle for a widow and child to gather.",
+      "src": "/assets/chapter-deuteronomy-24-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 44,
+      "originalSrc": "/assets/chapter-deuteronomy-24-v1.webp",
+      "originalSha256": "d5f028bacd6f216f3bb4d9c4bd1d756f94ba266630ac5854227c3d48078f3f7d",
+      "sha256": "d5f028bacd6f216f3bb4d9c4bd1d756f94ba266630ac5854227c3d48078f3f7d",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 25,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Two brothers discuss a family matter with an elder.",
+      "src": "/assets/chapter-deuteronomy-25-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 45,
+      "originalSrc": "/assets/chapter-deuteronomy-25-opening-v1.webp",
+      "originalSha256": "0ca0e52a412786d87cbdf9b049be1d05b4caec6d17f7f98773fae5b7bb62531e",
+      "sha256": "0ca0e52a412786d87cbdf9b049be1d05b4caec6d17f7f98773fae5b7bb62531e",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain generic household discussion without assigning named brothers or asserting either has already died."
+    },
+    {
+      "chapter": 25,
+      "kind": "chapter",
+      "afterVerse": 13,
+      "alt": "Imagined scene: A seller checks stone weights beside a balance scale.",
+      "src": "/assets/chapter-deuteronomy-25-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 46,
+      "originalSrc": "/assets/chapter-deuteronomy-25-v1.webp",
+      "originalSha256": "f37ab0b46815dee5733377a6da871deb0500b61d3718c22d8018df96e0f1293f",
+      "sha256": "f37ab0b46815dee5733377a6da871deb0500b61d3718c22d8018df96e0f1293f",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain balance and dark stone weights as an imagined fair-measure illustration, no modern numeral markings or historical-evidence claim."
+    },
+    {
+      "chapter": 26,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A family carries a basket of first fruits through a valley.",
+      "src": "/assets/chapter-deuteronomy-26-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 47,
+      "originalSrc": "/assets/chapter-deuteronomy-26-opening-v1.webp",
+      "originalSha256": "5996cb5b6fb3b78ee7b673bbd058f916b76b3c2fc31951dc35f3ac4f89c3edac",
+      "sha256": "5996cb5b6fb3b78ee7b673bbd058f916b76b3c2fc31951dc35f3ac4f89c3edac",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 26,
+      "kind": "chapter",
+      "afterVerse": 10,
+      "alt": "Imagined scene: A farmer presents a basket of fruit to a priest.",
+      "src": "/assets/chapter-deuteronomy-26-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 48,
+      "originalSrc": "/assets/chapter-deuteronomy-26-v1.webp",
+      "originalSha256": "b309cd932c94259dcb17c54894191a423bd9494468760b05e1e75dfb4e0a48bf",
+      "sha256": "b309cd932c94259dcb17c54894191a423bd9494468760b05e1e75dfb4e0a48bf",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain future firstfruits priest/household; not an asserted Eleazar portrait. Visible ceremonial breastplate has twelve stones."
+    },
+    {
+      "chapter": 27,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses and elders speak before the gathered community.",
+      "src": "/assets/chapter-deuteronomy-27-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 49,
+      "originalSrc": "/assets/chapter-deuteronomy-27-opening-v1.webp",
+      "originalSha256": "365cf2799522f2f406b53d0b6420de950f7ec1262ec969b751f7fbe6987e5a2c",
+      "sha256": "ef69e4e9d4f1a453fec44de87054bda873c6f3025556533aaa513907d7eca8b0",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct Moses, central red-cloaked speaker, to same Moses as LEFT standing staff-holder in second input: long lined medium-brown face, prominent long nose, natural GRAY CURLS, long gray-white beard and lean build, at final age120, immediately following late Numbers, no extra decades. Remove lighter face and loose straight silver hair. Retain elders, community, pose, setting."
+    },
+    {
+      "chapter": 27,
+      "kind": "chapter",
+      "afterVerse": 4,
+      "alt": "Imagined scene: Workers raise plastered stones on a mountain slope.",
+      "src": "/assets/chapter-deuteronomy-27-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 50,
+      "originalSrc": "/assets/chapter-deuteronomy-27-v1.webp",
+      "originalSha256": "d555251d6cef3b1a724a1af83f5c486217016336c994fcdf3e6ceeb776fd62ef",
+      "sha256": "b922cc721e06ec02ca5c60c483486fd7261c3cc14a15ffe0f9cdc90437acd4d0",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct textual contradiction in Deuteronomy27:4. This depicts the future raising and plastering of stones on Mount Ebal AFTER crossing the Jordan. Moses never crosses. REMOVE the small red-cloaked white-haired Moses speaking to an assembly at left and remove that entire small background assembly; replace that area with natural empty hillside/valley terrain. Preserve the four unnamed foreground workmen, their distinct faces, natural dark hair and brown skin, the large plastered stones, plaster bowls, sound hands and limbs, and landscape. No identifiable Moses, Aaron, Miriam or Joshua anywhere. Do not change the stone-setting/plastering action."
+    },
+    {
+      "chapter": 28,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: People look over the Jordan valley under a changing sky.",
+      "src": "/assets/chapter-deuteronomy-28-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 51,
+      "originalSrc": "/assets/chapter-deuteronomy-28-opening-v1.webp",
+      "originalSha256": "cbaed759235606faaff938534123ae276bc36e73d62bfbb0069c4ec236a78648",
+      "sha256": "cbaed759235606faaff938534123ae276bc36e73d62bfbb0069c4ec236a78648",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 28,
+      "kind": "chapter",
+      "afterVerse": 3,
+      "alt": "Imagined scene: A farming family carries grain between a town and its fields.",
+      "src": "/assets/chapter-deuteronomy-28-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 52,
+      "originalSrc": "/assets/chapter-deuteronomy-28-v1.webp",
+      "originalSha256": "2194fef9b717e1351a85b0865de776cb92b5041ba9126b51389ae39178d8bada",
+      "sha256": "2194fef9b717e1351a85b0865de776cb92b5041ba9126b51389ae39178d8bada",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 29,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: People of all ages gather beside the Jordan at dawn.",
+      "src": "/assets/chapter-deuteronomy-29-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 53,
+      "originalSrc": "/assets/chapter-deuteronomy-29-opening-v1.webp",
+      "originalSha256": "0ec7621b44fc166e11b35a5ca11805fc8896ef016701529cb87e58a6a03852f7",
+      "sha256": "0ec7621b44fc166e11b35a5ca11805fc8896ef016701529cb87e58a6a03852f7",
+      "reviewDecision": "retained",
+      "reviewNote": "Retained after full-size inspection: relevant verse action/setting, believable natural materials, visible hands/limbs/animals, dignified varied brown faces and natural hair. Anonymous legal/household figures are not assigned invented names; settled scenes illustrate future law applications."
+    },
+    {
+      "chapter": 29,
+      "kind": "chapter",
+      "afterVerse": 10,
+      "alt": "Imagined scene: Elders, workers, women, children and travelers gather before Moses.",
+      "src": "/assets/chapter-deuteronomy-29-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 54,
+      "originalSrc": "/assets/chapter-deuteronomy-29-v1.webp",
+      "originalSha256": "7e493a637a68e5727506446efd9e0349bfda6c129a30b5abb13cb86b8147ee9f",
+      "sha256": "7e493a637a68e5727506446efd9e0349bfda6c129a30b5abb13cb86b8147ee9f",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain reverse-view Moses with natural graying curls and lean build; families/workers/children included (29:10–11)."
+    },
+    {
+      "chapter": 30,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: An elder and two younger adults look over the Jordan valley.",
+      "src": "/assets/chapter-deuteronomy-30-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 55,
+      "originalSrc": "/assets/chapter-deuteronomy-30-opening-v1.webp",
+      "originalSha256": "c4cfc978e6f1b0014056a2779e0763ba93e08f293ec4289fbc471e412b1d8825",
+      "sha256": "c4cfc978e6f1b0014056a2779e0763ba93e08f293ec4289fbc471e412b1d8825",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain anonymous elder/two younger adults looking toward land, no named assignment."
+    },
+    {
+      "chapter": 30,
+      "kind": "chapter",
+      "afterVerse": 19,
+      "alt": "Imagined scene: Moses speaks to households beside green fields and a branching path.",
+      "src": "/assets/chapter-deuteronomy-30-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 56,
+      "originalSrc": "/assets/chapter-deuteronomy-30-v1.webp",
+      "originalSha256": "fc6a5b06a68af6f19ce65ebb9537368075634ae9a5aa544f1ac03084361a0838",
+      "sha256": "41bc95af8ec62506ae31b782b2bbc177d904e4509e8a8ef48ad4f0a1a71c6500",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct Moses, central standing speaker, to same Moses as LEFT standing staff-holder in second input: same long lined medium-brown face, prominent long nose, lean build, natural gray CURLS (not loose wavy straight hair), long gray-white beard. Final age120, same late age as late Numbers reference, vitality preserved. Preserve the families, branching path, valley, pose and garments. This is east of Jordan, not Moses entering Canaan."
+    },
+    {
+      "chapter": 31,
+      "kind": "story",
+      "beforeVerse": 1,
+      "title": "Joshua Commissioned and the Law Entrusted",
+      "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+      "alt": "Moses gives a rolled scroll to priests while Joshua and the people stand nearby.",
+      "width": 1200,
+      "height": 675,
+      "idx": 57,
+      "originalSrc": "/assets/story-joshua-commissioned-and-the-law-entrusted-v1.webp",
+      "originalSha256": "98b1933f389a1aabc95ea313242b2c4029f6100312a38d6768a711a825ed6f28",
+      "sha256": "5e8e7632c71ca6248ae5cc4c247162818751399a5fdf631c6b1e548d6b0afa75",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct Joshua at LEFT in blue cloak to an aged version of the LEFT man in THIRD reference (Numbers14 pair): same long brown face, nose, longer natural curls, full beard and lean build, now approximately38 years older than that scouting scene, late70s with gray/dark mixed curls and beard, deeper facial lines, still vigorous. Do not use right-hand Caleb identity or Moses identity for him. Keep Moses in CENTER consistent with LEFT Moses in SECOND reference: long lined medium-brown face, natural gray curls, long gray-white beard, lean build, final age120. Keep scroll handover to unnamed white-linen Levite priests at right (Deut31:9), tents, gathered people, dignity and anatomy. Do not name these generic priests Eleazar or Aaron, and do not add breastplates."
+    },
+    {
+      "chapter": 32,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses sings before the gathered community with Joshua nearby.",
+      "src": "/assets/chapter-deuteronomy-32-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 58,
+      "originalSrc": "/assets/chapter-deuteronomy-32-opening-v1.webp",
+      "originalSha256": "e313ee6194479a6bfa764f00015cd79f5c0ff66f3e9dc6b6b5f222188d478e74",
+      "sha256": "dd38aa20304bba5fd51dfd002d53fd4a3932a86daf3939cabe1b348df8e5430e",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct BOTH named men. Moses at LEFT/red cloak must match LEFT Moses in SECOND input: long lined medium-brown face, strong long nose, natural gray CURLS, long gray-white beard, lean build, final age120 same late age as reference, not loose straight silver hair. Joshua on RIGHT/blue cloak must match an aged version of LEFT man in THIRD input (Numbers14): same long brown face, nose, longer natural curls, full beard and lean build; approximately38 years older, late70s gray/dark mixed curls and beard, deeper lines, vigorous. Do not copy right-hand Caleb or turn Joshua into Moses. Retain song/recitation, twilight blue palette, crowd, donkey, natural fabrics and sound hands/limbs."
+    },
+    {
+      "chapter": 32,
+      "kind": "chapter",
+      "afterVerse": 44,
+      "alt": "Imagined scene: Moses and Joshua speak to people gathered beside a rocky valley.",
+      "src": "/assets/chapter-deuteronomy-32-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 59,
+      "originalSrc": "/assets/chapter-deuteronomy-32-v1.webp",
+      "originalSha256": "1beba99c53b4e7543c6ccca78f650dcbc780ccb4f27e5e8dac88e0bcbcf68e88",
+      "sha256": "b121ef21672687126b68134e5613e80a0add22c856b1e9ab5e8f79ccc4f1d6d7",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct BOTH named men, keeping the full composition. Moses on LEFT must match LEFT Moses in SECOND input: long lined medium-brown face, strong long nose, natural gray CURLS, long gray-white beard, lean build, final age120 same late age as reference. Joshua at center-RIGHT/blue-gray cloak must match aged LEFT man in THIRD input (Numbers14): same long brown face, longer natural curls, nose, full beard and lean build, now approximately38 years older, late70s with gray/dark mixed curls/beard and deeper lines, still vigorous. Do not use right-hand Caleb or Moses for Joshua. Preserve recitation/song, sunset purple/orange sky, crowd, coherent hands/fingers/thumbs/limbs."
+    },
+    {
+      "chapter": 33,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Moses blesses tribal representatives gathered on the plains.",
+      "src": "/assets/chapter-deuteronomy-33-v2.webp",
+      "width": 960,
+      "height": 540,
+      "idx": 60,
+      "originalSrc": "/assets/chapter-deuteronomy-33-v1.webp",
+      "originalSha256": "8dbe20b107c0babe67bfd27ff39cd4f4b84b5e49062bd9e545b18e83c1b49f02",
+      "sha256": "888456eeaf0d23bc1080ea05f6a04876cbbecf2cc445829a3ec859b26f1f1d3a",
+      "reviewDecision": "replaced",
+      "reviewNote": "Correct central Moses to SAME Moses as LEFT standing staff-holder in second input: long lined medium-brown face, strong long nose, lean build, natural GRAY CURLS and long gray-white beard. Remove bald/straight long white hairstyle and lighter skin. Final age120, same late age as Numbers reference, no extra decades; retain vitality. Keep blessing pose, raised hand with coherent five digits, staff, tribal representatives, scenery and clothing."
+    },
+    {
+      "chapter": 34,
+      "kind": "story",
+      "beforeVerse": 1,
+      "title": "The Death of Moses",
+      "src": "/assets/story-the-death-of-moses-v1.webp",
+      "alt": "Moses stands on a rocky height and looks across the Jordan valley.",
+      "width": 1200,
+      "height": 675,
+      "idx": 61,
+      "originalSrc": "/assets/story-the-death-of-moses-v1.webp",
+      "originalSha256": "8567c8830ffc1b69bbd6a2fc40b92374208ab4838bbaf2777265dfa9cef278e4",
+      "sha256": "8567c8830ffc1b69bbd6a2fc40b92374208ab4838bbaf2777265dfa9cef278e4",
+      "reviewDecision": "retained",
+      "reviewNote": "Retain gray-curled lean Moses in profile/rear view on Nebo before death (34:1–4), no companions or invented tomb."
+    }
+  ],
+  "closeGaps": [
+    {
+      "from": {
+        "chapter": 3,
+        "afterVerse": 27
+      },
+      "to": {
+        "chapter": 4,
+        "afterVerse": 0
+      },
+      "versesBetween": 2
+    },
+    {
+      "from": {
+        "chapter": 7,
+        "afterVerse": 25
+      },
+      "to": {
+        "chapter": 8,
+        "afterVerse": 0
+      },
+      "versesBetween": 1
+    },
+    {
+      "from": {
+        "chapter": 13,
+        "afterVerse": 0
+      },
+      "to": {
+        "chapter": 13,
+        "afterVerse": 4
+      },
+      "versesBetween": 4
+    },
+    {
+      "from": {
+        "chapter": 16,
+        "afterVerse": 18
+      },
+      "to": {
+        "chapter": 17,
+        "afterVerse": 0
+      },
+      "versesBetween": 4
+    },
+    {
+      "from": {
+        "chapter": 17,
+        "afterVerse": 18
+      },
+      "to": {
+        "chapter": 18,
+        "afterVerse": 0
+      },
+      "versesBetween": 2
+    },
+    {
+      "from": {
+        "chapter": 18,
+        "afterVerse": 0
+      },
+      "to": {
+        "chapter": 18,
+        "afterVerse": 3
+      },
+      "versesBetween": 3
+    },
+    {
+      "from": {
+        "chapter": 19,
+        "afterVerse": 0
+      },
+      "to": {
+        "chapter": 19,
+        "afterVerse": 3
+      },
+      "versesBetween": 3
+    },
+    {
+      "from": {
+        "chapter": 20,
+        "afterVerse": 19
+      },
+      "to": {
+        "chapter": 21,
+        "afterVerse": 0
+      },
+      "versesBetween": 1
+    },
+    {
+      "from": {
+        "chapter": 23,
+        "afterVerse": 24
+      },
+      "to": {
+        "chapter": 24,
+        "afterVerse": 0
+      },
+      "versesBetween": 1
+    },
+    {
+      "from": {
+        "chapter": 24,
+        "afterVerse": 19
+      },
+      "to": {
+        "chapter": 25,
+        "afterVerse": 0
+      },
+      "versesBetween": 3
+    },
+    {
+      "from": {
+        "chapter": 27,
+        "afterVerse": 0
+      },
+      "to": {
+        "chapter": 27,
+        "afterVerse": 4
+      },
+      "versesBetween": 4
+    },
+    {
+      "from": {
+        "chapter": 28,
+        "afterVerse": 0
+      },
+      "to": {
+        "chapter": 28,
+        "afterVerse": 3
+      },
+      "versesBetween": 3
+    },
+    {
+      "from": {
+        "chapter": 30,
+        "afterVerse": 19
+      },
+      "to": {
+        "chapter": 31,
+        "beforeVerse": 1
+      },
+      "versesBetween": 1
+    }
+  ],
+  "earlierInventories": {
+    "genesis": {
+      "inventory": "genesis-artwork-inventory-2026-11-07.json",
+      "sha256": "1d51a913ea3b5c639b98d446d1d0228c1faba4af81ea61333de341402ca4b7f2",
+      "namedMosesJoshuaAaronMiriamEleazarCandidates": []
+    },
+    "exodus": {
+      "inventory": "exodus-artwork-inventory-2026-11-07.json",
+      "sha256": "4c9e0e5f6ed8dd9d640ab4f1a330b8cb173eca0f75bec5d1e4dcc6ce68fc64b8",
+      "namedMosesJoshuaAaronMiriamEleazarCandidates": [
+        {
+          "chapter": 2,
+          "src": "/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+          "alt": "Pharaoh’s daughter opens a basket holding baby Moses among Nile reeds.",
+          "title": "The Birth and Rescue of Moses"
+        },
+        {
+          "chapter": 2,
+          "src": "/assets/story-moses-flees-to-midian-v1.webp",
+          "alt": "Young Moses waters sheep while Zipporah and her sisters stand beside a well.",
+          "title": "Moses Flees to Midian"
+        },
+        {
+          "chapter": 3,
+          "src": "/assets/story-the-burning-bush-v1.webp",
+          "alt": "Barefoot Moses faces a living bush surrounded by flame at twilight.",
+          "title": "The Burning Bush"
+        },
+        {
+          "chapter": 4,
+          "src": "/assets/chapter-exodus-04-opening-v2.webp",
+          "alt": "Imagined scene: Moses speaks with Jethro before returning to Egypt.",
+          "title": null
+        },
+        {
+          "chapter": 4,
+          "src": "/assets/story-moses-returns-to-egypt-v2.webp",
+          "alt": "Moses walks beside a donkey carrying Zipporah and their children toward Egypt.",
+          "title": "Moses Returns to Egypt"
+        },
+        {
+          "chapter": 5,
+          "src": "/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "alt": "Moses and Aaron stand before Pharaoh in a columned Egyptian hall.",
+          "title": "Moses and Aaron Before Pharaoh"
+        },
+        {
+          "chapter": 6,
+          "src": "/assets/chapter-exodus-06-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak with workers near a mudbrick yard.",
+          "title": null
+        },
+        {
+          "chapter": 6,
+          "src": "/assets/chapter-exodus-06-v2.webp",
+          "alt": "Imagined scene: Moses speaks with tired workers beside stacks of mud bricks.",
+          "title": null
+        },
+        {
+          "chapter": 7,
+          "src": "/assets/chapter-exodus-07-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside the Nile as its water turns red.",
+          "title": null
+        },
+        {
+          "chapter": 7,
+          "src": "/assets/chapter-exodus-07-v2.webp",
+          "alt": "Imagined scene: Moses and Aaron stand beside red water as people hold empty jars.",
+          "title": null
+        },
+        {
+          "chapter": 9,
+          "src": "/assets/chapter-exodus-09-opening-v1.webp",
+          "alt": "Imagined scene: Moses raises his hand as hail falls over Egyptian fields.",
+          "title": null
+        },
+        {
+          "chapter": 10,
+          "src": "/assets/chapter-exodus-10-opening-v1.webp",
+          "alt": "Imagined scene: Moses and Aaron speak before Pharaoh as locusts cover fields.",
+          "title": null
+        },
+        {
+          "chapter": 11,
+          "src": "/assets/chapter-exodus-11-v2.webp",
+          "alt": "Imagined scene: Moses leaves Pharaoh's hall after delivering his warning.",
+          "title": null
+        },
+        {
+          "chapter": 14,
+          "src": "/assets/story-crossing-the-sea-v1.webp",
+          "alt": "Moses leads families through a path between towering waters under moonlight.",
+          "title": "Crossing the Sea"
+        },
+        {
+          "chapter": 15,
+          "src": "/assets/chapter-exodus-15-opening-v2.webp",
+          "alt": "Imagined scene: Elderly Miriam leads women in song beside the sea.",
+          "title": null
+        },
+        {
+          "chapter": 15,
+          "src": "/assets/chapter-exodus-15-v2.webp",
+          "alt": "Imagined scene: Elderly Miriam and other women play hand drums beside the sea.",
+          "title": null
+        },
+        {
+          "chapter": 17,
+          "src": "/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+          "alt": "Moses stands by flowing rock water as families fill jars and drink.",
+          "title": "Water from the Rock and the Battle with Amalek"
+        },
+        {
+          "chapter": 18,
+          "src": "/assets/story-jethro-advises-moses-v1.webp",
+          "alt": "Jethro advises Moses beneath a woven awning while elders hear people nearby.",
+          "title": "Jethro Advises Moses"
+        },
+        {
+          "chapter": 19,
+          "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+          "alt": "Moses holds a scroll before an attentive assembly near the wilderness camp.",
+          "title": "Sinai / Mosaic Covenant"
+        },
+        {
+          "chapter": 20,
+          "src": "/assets/chapter-exodus-20-opening-v1.webp",
+          "alt": "Imagined scene: Moses and the people stand before Mount Sinai.",
+          "title": null
+        },
+        {
+          "chapter": 24,
+          "src": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+          "alt": "Moses and elders gather at a stone altar surrounded by upright stones.",
+          "title": "The Covenant Is Sealed at Sinai"
+        },
+        {
+          "chapter": 24,
+          "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+          "alt": "Moses holds a scroll before an attentive assembly near the wilderness camp.",
+          "title": "Sinai / Mosaic Covenant"
+        },
+        {
+          "chapter": 29,
+          "src": "/assets/chapter-exodus-29-v2.webp",
+          "alt": "Imagined scene: Moses arranges linen garments for Aaron and his sons.",
+          "title": null
+        },
+        {
+          "chapter": 31,
+          "src": "/assets/chapter-exodus-31-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks with Bezalel and Oholiab about their work.",
+          "title": null
+        },
+        {
+          "chapter": 32,
+          "src": "/assets/story-the-golden-calf-v1.webp",
+          "alt": "Moses holds stone tablets while people gather around a small golden calf.",
+          "title": "The Golden Calf"
+        },
+        {
+          "chapter": 33,
+          "src": "/assets/story-moses-sees-gods-glory-v2.webp",
+          "alt": "Moses shelters his eyes in a rock cleft as bright light passes outside.",
+          "title": "Moses Sees God's Glory"
+        },
+        {
+          "chapter": 34,
+          "src": "/assets/chapter-exodus-34-opening-v1.webp",
+          "alt": "Imagined scene: Moses climbs a mountain carrying two plain stone tablets.",
+          "title": null
+        },
+        {
+          "chapter": 34,
+          "src": "/assets/chapter-exodus-34-v2.webp",
+          "alt": "Imagined scene: Moses carries two stone tablets down the mountain toward the people.",
+          "title": null
+        }
+      ]
+    },
+    "leviticus": {
+      "inventory": "leviticus-artwork-inventory-2026-11-07.json",
+      "sha256": "53f70be9efc10ffc6708fb0b7b2a4bc31601a30321a53ecccde24cc3da4a8af5",
+      "namedMosesJoshuaAaronMiriamEleazarCandidates": [
+        {
+          "chapter": 8,
+          "src": "/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+          "alt": "Imagined scene: Moses pours oil on Aaron's head while Aaron's sons stand nearby.",
+          "title": "Aaron and His Sons Are Ordained"
+        },
+        {
+          "chapter": 9,
+          "src": "/assets/chapter-leviticus-09-opening-v2.webp",
+          "alt": "Imagined scene: Aaron stands near a calf and a ram at the sanctuary.",
+          "title": null
+        },
+        {
+          "chapter": 9,
+          "src": "/assets/chapter-leviticus-09-v2.webp",
+          "alt": "Imagined scene: Moses and Aaron stand before people gathered at the sanctuary.",
+          "title": null
+        },
+        {
+          "chapter": 16,
+          "src": "/assets/chapter-leviticus-16-v2.webp",
+          "alt": "Imagined scene: Aaron lays both hands on a live goat as an escort waits to lead it into the wilderness.",
+          "title": null
+        },
+        {
+          "chapter": 18,
+          "src": "/assets/chapter-leviticus-18-opening-v1.webp",
+          "alt": "Imagined scene: People sit among the tents and listen to Moses.",
+          "title": null
+        },
+        {
+          "chapter": 18,
+          "src": "/assets/chapter-leviticus-18-v1.webp",
+          "alt": "Imagined scene: Adults listen as Moses speaks about laws for their community.",
+          "title": null
+        },
+        {
+          "chapter": 20,
+          "src": "/assets/chapter-leviticus-20-opening-v1.webp",
+          "alt": "Imagined scene: Moses faces a gathering among tents in the wilderness.",
+          "title": null
+        },
+        {
+          "chapter": 20,
+          "src": "/assets/chapter-leviticus-20-v1.webp",
+          "alt": "Imagined scene: Elders and families listen to Moses at the camp's edge.",
+          "title": null
+        },
+        {
+          "chapter": 24,
+          "src": "/assets/story-the-blasphemer-stoned-v2.webp",
+          "alt": "Imagined scene: A man faces Moses and a group of elders among the tents.",
+          "title": "The Blasphemer Stoned"
+        }
+      ]
+    },
+    "numbers": {
+      "inventory": "numbers-artwork-inventory-2026-11-07.json",
+      "sha256": "cec1393a8b7b10de974d773967496b4bccf625e786a47a509168ca6f0f1ac6e0",
+      "namedMosesJoshuaAaronMiriamEleazarCandidates": [
+        {
+          "chapter": 1,
+          "src": "/assets/story-counting-the-camp-v2.webp",
+          "alt": "Moses and Aaron oversee groups of men as elders count pebbles beside the camp.",
+          "title": "Counting the Camp"
+        },
+        {
+          "chapter": 6,
+          "src": "/assets/story-aaronic-blessing-v2.webp",
+          "alt": "Aaron raises his hands before families gathered near the tabernacle.",
+          "title": "Aaronic Blessing"
+        },
+        {
+          "chapter": 8,
+          "src": "/assets/chapter-numbers-08-opening-v2.webp",
+          "alt": "Imagined scene: Aaron tends the seven lamps inside the sanctuary.",
+          "title": null
+        },
+        {
+          "chapter": 10,
+          "src": "/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+          "alt": "Travelers pause with their belongings as Moses speaks with elders and quail fly nearby.",
+          "title": "Leaving Sinai and the Complaints"
+        },
+        {
+          "chapter": 11,
+          "src": "/assets/chapter-numbers-11-opening-v1.webp",
+          "alt": "Imagined scene: Moses speaks with elders beside the tent of meeting.",
+          "title": null
+        },
+        {
+          "chapter": 12,
+          "src": "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
+          "alt": "Miriam and Aaron speak with Moses outside the tent of meeting.",
+          "title": "Miriam and Aaron Speak Against Moses"
+        },
+        {
+          "chapter": 14,
+          "src": "/assets/chapter-numbers-14-opening-v2.webp",
+          "alt": "Imagined scene: Joshua and Caleb address an anxious camp at Kadesh.",
+          "title": null
+        },
+        {
+          "chapter": 14,
+          "src": "/assets/chapter-numbers-14-v1.webp",
+          "alt": "Imagined scene: Joshua and Caleb address an anxious gathering at the camp.",
+          "title": null
+        },
+        {
+          "chapter": 16,
+          "src": "/assets/story-korah-s-rebellion-v2.webp",
+          "alt": "Aaron holds a flowering almond staff before Moses and gathered elders.",
+          "title": "Korah's Rebellion"
+        },
+        {
+          "chapter": 16,
+          "src": "/assets/chapter-numbers-16-v2.webp",
+          "alt": "Imagined scene: Leaders confront Aaron while Moses falls facedown near the sanctuary.",
+          "title": null
+        },
+        {
+          "chapter": 17,
+          "src": "/assets/chapter-numbers-17-opening-v2.webp",
+          "alt": "Imagined scene: Aaron holds a budding almond staff beside plain staffs.",
+          "title": null
+        },
+        {
+          "chapter": 20,
+          "src": "/assets/story-water-from-the-rock-at-meribah-v1.webp",
+          "alt": "Moses and Aaron stand beside flowing water while families fill jars.",
+          "title": "Water from the Rock at Meribah"
+        },
+        {
+          "chapter": 20,
+          "src": "/assets/story-edom-refuses-passage-and-aaron-dies-v2.webp",
+          "alt": "Moses places Aaron’s blue robe on Eleazar while Aaron rests nearby on Mount Hor.",
+          "title": "Edom Refuses Passage and Aaron Dies"
+        },
+        {
+          "chapter": 21,
+          "src": "/assets/story-the-bronze-serpent-v1.webp",
+          "alt": "People look toward a bronze snake raised on a wooden pole beside Moses.",
+          "title": "The Bronze Serpent"
+        },
+        {
+          "chapter": 26,
+          "src": "/assets/story-a-new-census-and-joshua-appointed-v2.webp",
+          "alt": "Five sisters present their claim before Moses and Eleazar.",
+          "title": "A New Census and Joshua Appointed"
+        },
+        {
+          "chapter": 26,
+          "src": "/assets/chapter-numbers-26-v2.webp",
+          "alt": "Imagined scene: Moses and Eleazar oversee a count of people near the Jordan.",
+          "title": null
+        },
+        {
+          "chapter": 27,
+          "src": "/assets/chapter-numbers-27-opening-v3.webp",
+          "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar.",
+          "title": null
+        },
+        {
+          "chapter": 27,
+          "src": "/assets/chapter-numbers-27-v2.webp",
+          "alt": "Imagined scene: Five sisters present their inheritance claim before Moses and Eleazar.",
+          "title": null
+        },
+        {
+          "chapter": 31,
+          "src": "/assets/story-vengeance-on-midian-v2.webp",
+          "alt": "Officers place gold ornaments in bowls before Moses and Eleazar.",
+          "title": "Vengeance on Midian"
+        },
+        {
+          "chapter": 32,
+          "src": "/assets/story-tribes-settle-east-of-the-jordan-v1.webp",
+          "alt": "Leaders speak with Moses while families build stone walls near grazing sheep.",
+          "title": "Tribes Settle East of the Jordan"
+        }
+      ]
+    }
+  },
+  "review": {
+    "originalFullSize": true,
+    "generatedAndFinalFullSize": true,
+    "actualVisualInputs": "deuteronomy-artwork-corrections-2026-11-07.json",
+    "comparisonBoards": "ignored .release/deuteronomy-review; source images pasted without scaling",
+    "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "anatomy": "visible hands/fingers/thumbs, limbs, relationships and animals checked; hidden/small details bounded by image resolution",
+    "unresolvedIdentifiableContinuityBreaks": []
+  }
+}
