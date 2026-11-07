@@ -35,7 +35,8 @@
     "browser": "unverified: no supported managed control tool; no browser installation or alternate path",
     "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
     "signedNativeParity": "deferred",
-    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools"
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools",
+    "localPostPublicationParity": "passed: canonical, mirror, prepared Worker and unsigned offline release identities and staged Worker bytes match; full live release:verify deferred"
   },
   "mirrorBaseline": {
     "release": {
@@ -52,10 +53,44 @@
     ]
   },
   "publication": {
-    "status": "pending"
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c09a5ba341e08191a03b0100b1de1cff",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 379,
+      "source": {
+        "commit_sha": "b1468cf563b3005f553e3db695ceb1c4ef7319e5"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000d5a481fd9df59ed55efbaafb",
+        "content_hash": "sha256:d88d95a40c1c2a3821230ecd60792356d4b9c4bd3100c2cecddaf0dd2e66a919",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeedc427afc81918d248779af05bff8",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c09a5ba341e08191a03b0100b1de1cff",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:07:40.570903+00:00"
+    }
   },
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "jonah-artwork-handoff-from-obadiah-2026-11-07.md",
   "nextBookStarted": false,
-  "commitIdentityRepair": "GitHub privacy guard rejected the initial push before publication; only the two unpublished task commits were reauthored using the existing GitHub noreply identity. Application trees and build fingerprint are unchanged."
+  "commitIdentityRepair": "GitHub privacy guard rejected the initial push before publication; only the two unpublished task commits were reauthored using the existing GitHub noreply identity. Application trees and build fingerprint are unchanged.",
+  "canonicalValidationCommit": "083d732",
+  "mirrorCommit": "b1468cf563b3005f553e3db695ceb1c4ef7319e5",
+  "publicationAttemptHandling": "Initial archive wrapper lacked dist/ and was rejected as invalid without saving; corrected wrapper saved successfully. Initial deployment rejected by automatic approval review for lack of visible publication authorization. Confirmed deployment_id null, read original owner's explicit publish instruction and newly retrieved later cloud instruction through user_message_read.read_messages, then retried the identical saved-version deployment once; native Sites result succeeded. No alternate publishing route, denied live request or detailed Ezekiel upload was attempted."
 }
