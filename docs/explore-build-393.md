@@ -110,3 +110,29 @@ decision. Screenshots must be inspected before accepting the exact source.
 No earlier approved rendering is present in this checkout or attached to this
 delegated task. Comparison can use the supplied annotated screenshots and
 requested behavior; no missing rendering is invented or claimed matched.
+
+## Intermediate CI audit
+
+[Run 42418351607](https://github.com/kev-mac/biblelens/actions/runs/42418351607)
+stopped at the canonical ancestry gate, before dependencies or browser tests.
+The checking branch had cherry-picked equivalent source without retaining the
+new canonical commit as an ancestor. Merging canonical main into the checking
+branch corrected that provenance error; the gate was not weakened.
+
+[Run 42418521654](https://github.com/kev-mac/biblelens/actions/runs/42418521654),
+for the earlier `b705f48…` source, passed release preparation, image parity,
+all 88 reader/reference/global-search cases and all 48 Explore cases. It failed
+the evidence test's keyboard-focus assertion in its first 320px Chromium case.
+That fixture programmatically focused an information icon immediately after
+a pointer tap, then pressed Enter. The existing app enables its keyboard
+focus styling on Tab, so this was not actual keyboard traversal. The fixture
+now uses Tab/Shift+Tab to reach the icon and retains the visible-outline
+assertion. No production focus rules were removed or weakened. Its other
+evidence cases did not run, and no prepared release bundle was accepted.
+
+The failed run's screenshot/log archive SHA-256 is
+`b524df56d6bb9d529ab808e1149c6df95c1058674f0ab430720a1ad695f4c22f`.
+The latest passage annotations were implemented afterward and remain subject
+to a fresh exact-source run covering all 180 cases. Passing intermediate
+reader geometry is evidence for that source only, not acceptance of the later
+picker changes or context actions.

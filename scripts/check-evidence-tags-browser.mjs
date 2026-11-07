@@ -64,7 +64,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     const info=panel.locator('[data-lens-context-info]');assert.equal(await info.count(),key==='academic'?1:0,'Only supporting-context records get a metadata action');
     if(await info.count()){
      const note=page.locator('#'+await info.getAttribute('aria-controls'));assert.equal(await info.getAttribute('aria-expanded'),'false');assert(!(await note.isVisible()));
-     await info.focus();await page.keyboard.press('Enter');assert.equal(await info.getAttribute('aria-expanded'),'true');assert(await note.isVisible());assert.match(await note.innerText(),/Supporting context:.*provide background for the verse/);assert(await info.evaluate(node=>node===document.activeElement));
+     await info.focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');assert(await info.evaluate(node=>node===document.activeElement),'Tab navigation reaches the information action');await page.keyboard.press('Enter');assert.equal(await info.getAttribute('aria-expanded'),'true');assert(await note.isVisible());assert.match(await note.innerText(),/Supporting context:.*provide background for the verse/);assert(await info.evaluate(node=>node===document.activeElement));
      assert.equal(await info.evaluate(node=>getComputedStyle(node).outlineStyle),'solid','Keyboard focus is visible');
      await page.keyboard.press('Space');assert.equal(await info.getAttribute('aria-expanded'),'false');assert(!(await note.isVisible()));
      if(width<=820)await info.tap();else await info.click();assert(await note.isVisible());assert.equal(await panel.getAttribute('data-evidence-view'),'summary','Metadata does not navigate to an unrelated destination');
