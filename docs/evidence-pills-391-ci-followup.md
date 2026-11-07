@@ -37,3 +37,20 @@ revised source. The existing local `www`/`dist` outputs still identify the
 original candidate until rebuilt. Signed native/device and live parity remain
 unverified. Continue the isolated CI branch with this exact canonical source;
 keep all release gates in force.
+
+The second run,
+[42408474347](https://github.com/kev-mac/biblelens/actions/runs/42408474347),
+passed release preparation and the complete 56-case reader matrix, confirming
+the sticky-header fix. All 12 Chromium pill cases passed with the added color
+and focus checks. WebKit stopped at the first raw CSS color-string comparison:
+the category RGB identity was correct, but the text/border strings differed
+from the independently computed reference. That run failed overall.
+
+The next candidate changes only the browser color assertion to compare rendered
+8-bit sRGB channels, allowing one rounding step per channel and retaining the
+engine, viewport, theme, raw CSS values and channel values on any failure.
+It still requires exact category RGB identity and tests both text and borders.
+No production color rule was changed or failed assertion ignored. A new run is
+required to determine whether serialization explains the WebKit result.
+The current fingerprint for that candidate is
+`c3d6da57a5f73dd4e74cb2f7f79c38e6d8b0bed10faf3ce3dded06987ffae38e`.
