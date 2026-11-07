@@ -40,12 +40,47 @@
     "browser": "unverified: supported managed control tool unavailable; no browser install or alternate control path",
     "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
     "signedNativeParity": "deferred",
-    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed"
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed",
+    "localPostPublicationParity": "passed: canonical, Sites mirror, prepared Worker and unsigned native identities/Worker bytes match; full live release:verify deferred"
   },
   "publication": {
-    "status": "prepared; not yet published"
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_140d0faa150c81918a3166a5a636f95c",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 377,
+      "source": {
+        "commit_sha": "98c6422d72b1d893bcd53f5f9c9fed09e182f2df"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000d46881fdb39b2bc33048acb2",
+        "content_hash": "sha256:68a6304d6ad6b28a51900c6c314d5d96d76c63d0959375afe3412a9023bb442f",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeed6d8afa481918f7cc2ec463562e6",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_140d0faa150c81918a3166a5a636f95c",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T07:44:35.102667+00:00"
+    }
   },
   "excluded": "Previously denied detailed Ezekiel audit uploads remain excluded and were not retried.",
   "handoff": "amos-artwork-handoff-from-joel-2026-11-07.md",
-  "nextBookStarted": false
+  "nextBookStarted": false,
+  "canonicalValidationCommit": "31e82f9",
+  "mirrorCommit": "98c6422d72b1d893bcd53f5f9c9fed09e182f2df",
+  "publicationAttemptHandling": "Initial deployment was rejected by automatic approval review because original publication authorization was absent from visible user messages. Confirmed saved version deployment_id null, read original user instruction with user_message_read.read_messages, retried the identical operation once; native Sites result succeeded. No alternate route used."
 }
