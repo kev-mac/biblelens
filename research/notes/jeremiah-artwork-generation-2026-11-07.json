@@ -1,0 +1,37 @@
+{
+  "tool": "image_gen.imagegen",
+  "operation": "edit",
+  "reason": "Jeremiah 38:11–13 places protective cloth under the armpits, under the cords; v1 incorrectly wraps cloth and rope at the wrists.",
+  "prompt": "Edit the FIRST image, BibleLens 'Jeremiah in the Cistern', into one landscape 16:9 realistic restrained cinematic still. Correct the rescue rigging to Jeremiah 38:11–13: old folded cloth pads are UNDER JEREMIAH'S ARMPITS, between his body and the weight-bearing ropes. Two taut lifting ropes rise from underneath his arms up to the rescuers above the cistern rim. NO ropes, knots, loops, restraints or cloth bindings around his wrists, forearms, hands or neck. Show a clear physically coherent rescue, Jeremiah being lifted upright by padded ropes below both armpits, his elbows bent and both free hands lightly touching the ropes well above the armpits. Frame his full upper torso so both padding positions are visually readable and not hidden by a raised sleeve. Hands have anatomically coherent fingers/thumbs and plausible rope grips. Do not put a cloth sling through his wrists or a rope through his hand. The cistern has damp/muddy stone and no standing water. Retain the three identifiable men from image 1: Ebed-melech on left foreground is deep-brown skinned, strong build, short tight black curls and dark beard; the headwrapped helper is a separate man. Jeremiah in the cistern is older, lean, medium-brown with a prominent nose and naturally curly salt-and-pepper hair and graying full beard. Preserve his actual face/complexion/build; images 2 (scroll dictation) and 3 (flight) supply actual approved nearby Jeremiah identity references, not different people to add. Do not change Jeremiah into Noah from image 4. Image 4 is Genesis 7 STYLE ONLY: grounded daylight, believable cloth/stone/rope, natural varied colors, restrained realistic video-still finish. Keep muted blue cloak on Ebed-melech, stone rim and ancient Jerusalem background. Crop to a few rescue helpers as before; no claim to show the whole party. No modern equipment, no text, watermark, frame or labels. This is imagined biblical artwork, not documentary evidence.",
+  "actualVisualInputs": [
+    {
+      "path": "src/assets/story-jeremiah-in-the-cistern-v1.webp",
+      "role": "target; approved Jeremiah, Ebed-melech and helper identities, excluding the flawed rescue rigging",
+      "sha256": "80164be4671d6379715eb306bcd2596063f4ce9fddab6e00273d21165d0304a4"
+    },
+    {
+      "path": "src/assets/story-the-scroll-burned-v1.webp",
+      "role": "approved earlier graying Jeremiah identity",
+      "sha256": "6deddc004b1bddb7c6dd78fc6ef2899efa0a55d2845f8793a882a1c2335ae430"
+    },
+    {
+      "path": "src/assets/story-the-fall-of-jerusalem-and-flight-to-egypt-v1.webp",
+      "role": "approved nearby older Jeremiah identity",
+      "sha256": "924bbb41ee4dc2670393afabad089a4f098c4bb8655fc5b404d3897654502997"
+    },
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "role": "style only, never Jeremiah identity",
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    }
+  ],
+  "generatedOriginal": "/workspace/generated_images/exec-000106ff-1a46-42b7-b62f-fa08405cacb9.png",
+  "accepted": "src/assets/story-jeremiah-in-the-cistern-v2.webp",
+  "formatting": "Lanczos resize to 1200x675, WebP quality 86/method 6; substantive rescue edit by imagegen only.",
+  "review": "Original 1672x941 PNG and final 1200x675 WebP inspected. Both armpit pads sit between body and lifting ropes; wrists are free and hands grip rather than bind. Visible fingers/thumbs, elbows, forearms, shoulders and rope paths are coherent. Ebed-melech and helper retain their faces, natural curls, complexion and build. Jeremiah retains prominent nose, brown complexion, graying curls/full beard and lean older build. Cropped/covered lower body and hidden grips cannot be certified. Few foreground rescuers are a crop, not an exhaustive count.",
+  "originalSha256": "f1aa3597b92d29fef6b154992ad957e01584541c44a49d869599d310236472db",
+  "sha256": "d3622a4f3ca4c196ce577dbe91a8c55f4d64dc1122c72943066da05760fedb1a",
+  "width": 1200,
+  "height": 675,
+  "bytes": 183514
+}
