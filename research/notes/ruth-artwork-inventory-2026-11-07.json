@@ -1,0 +1,111 @@
+{
+  "book": "Ruth",
+  "baselineCanonicalCommit": "a4e31a3134dfba8a07c40f7af240abaefa516a31",
+  "baselineMirrorCommit": "11678abafe29583f0a3ffb6fe31a4c043eb79a8a",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 366,
+    "sourceHash": "76051e3cb94714ca4022fa7bd44140a47512485d2c5875b04097d267faf1a2fe"
+  },
+  "placements": [
+    {
+      "chapter": 1,
+      "beforeVerse": 1,
+      "kind": "story",
+      "title": "Naomi and Ruth Return to Bethlehem",
+      "src": "/assets/story-naomi-and-ruth-return-to-bethlehem-v1.webp",
+      "alt": "Ruth and Naomi carry small bundles along a path toward a hill village.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 175448,
+      "sha256": "dcf02cd79287f78078d2fab82961e4c4d0470e400cc22587769ed2830af182ab",
+      "position": 0,
+      "decision": "retained",
+      "review": "Original viewed at full native 1200x675; natural materials/light, text-compatible scene, recognizable recurring people, no clear visible malformed anatomy. Occluded fingers and distant faces remain uncertain."
+    },
+    {
+      "chapter": 2,
+      "beforeVerse": 1,
+      "kind": "story",
+      "title": "Ruth Gleans in Boaz's Field",
+      "src": "/assets/story-ruth-gleans-in-boaz-s-field-v1.webp",
+      "alt": "Ruth gathers fallen barley stalks while Boaz and harvest workers stand nearby.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 138080,
+      "sha256": "6df20fa052ca641d7afc2b4cd93d84532724af7605e76d51c3e14966fb1257d4",
+      "position": 22,
+      "decision": "retained",
+      "review": "Original viewed at full native 1200x675; natural materials/light, text-compatible scene, recognizable recurring people, no clear visible malformed anatomy. Occluded fingers and distant faces remain uncertain."
+    },
+    {
+      "chapter": 3,
+      "beforeVerse": 1,
+      "kind": "story",
+      "title": "The Threshing Floor",
+      "src": "/assets/story-the-threshing-floor-v1.webp",
+      "alt": "Ruth speaks with Boaz beside barley at the threshing floor before dawn.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 89790,
+      "sha256": "a465e168619959f4c0fe218081de9c005b6e32b93c8ce697af940ea94181f086",
+      "position": 45,
+      "decision": "retained",
+      "review": "Original viewed at full native 1200x675; natural materials/light, text-compatible scene, recognizable recurring people, no clear visible malformed anatomy. Occluded fingers and distant faces remain uncertain."
+    },
+    {
+      "chapter": 4,
+      "beforeVerse": 1,
+      "kind": "story",
+      "title": "Boaz Redeems and Marries Ruth",
+      "src": "/assets/story-boaz-redeems-and-marries-ruth-v1.webp",
+      "alt": "Boaz and elders sit at the city gate as a man presents a sandal.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 108290,
+      "sha256": "2b3186fe2c197657b97f00fb8cdb82842c9173e66be78da89019ea4fef4fbdbd",
+      "position": 63,
+      "decision": "retained",
+      "review": "Original viewed at full native 1200x675; natural materials/light, text-compatible scene, recognizable recurring people, no clear visible malformed anatomy. Occluded fingers and distant faces remain uncertain."
+    }
+  ],
+  "spacing": [
+    {
+      "from": "1:1",
+      "to": "2:1",
+      "distance": 22
+    },
+    {
+      "from": "2:1",
+      "to": "3:1",
+      "distance": 23
+    },
+    {
+      "from": "3:1",
+      "to": "4:1",
+      "distance": 18
+    }
+  ],
+  "boundary": [
+    {
+      "from": "Judges 21:0",
+      "to": "Ruth 1:1",
+      "distance": 26
+    },
+    {
+      "from": "Ruth 4:1",
+      "to": "1 Samuel 1:1",
+      "distance": 22
+    }
+  ],
+  "closePairs": [],
+  "checks": {
+    "chapterOpeners": 4,
+    "duplicateOpeners": 0,
+    "laterPlacements": 0,
+    "scriptureUnchanged": true,
+    "workerSourceOfflineMirrorBytesEqual": true,
+    "releaseMetadataEqual": true
+  },
+  "generation": "None needed; approved originals retained byte for byte."
+}
