@@ -1,0 +1,423 @@
+{
+  "book": "Nehemiah",
+  "canonicalBaseline": "905f415e55d3fa25b032a7f6122228b936b6a169",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "chapterCount": 13,
+  "verseCount": 406,
+  "chapterImages": 8,
+  "storyImages": 7,
+  "activePlacements": [
+    {
+      "book": 15,
+      "chapter": 1,
+      "src": "/assets/story-nehemiah-s-prayer-and-commission-v1.webp",
+      "alt": "Nehemiah speaks with a Persian ruler while holding a bronze cup.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Nehemiah's Prayer and Commission",
+      "kind": "Story",
+      "position": 12298,
+      "bytes": 86356,
+      "sha256": "32f10ee0d459a446091806293ba612822a4324f4d0edbcfcad84ca5aee5ac3f3",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A bronze cup and a sealed travel letter rest on a table in a Persian palace.",
+      "src": "/assets/chapter-nehemiah-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12308,
+      "bytes": 93848,
+      "sha256": "2f85adf2f7527788b498b72bbdb5d4c8f3b1c31ed28ec07f56b40aaa952b184b",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 2,
+      "src": "/assets/story-rebuilding-the-wall-v1.webp",
+      "alt": "Nehemiah rides beside a ruined wall as companions carry small lamps.",
+      "width": 1200,
+      "height": 675,
+      "verse": 11,
+      "title": "Rebuilding the Wall",
+      "kind": "Story",
+      "position": 12319,
+      "bytes": 117954,
+      "sha256": "6ae76bec5697d3514a83a3929f0f6971eecf5eaa5b1f8b1943011eb1f2ff866b",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Stoneworking tools and baskets sit beside a repaired section of Jerusalem\u2019s wall.",
+      "src": "/assets/chapter-nehemiah-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12328,
+      "bytes": 143036,
+      "sha256": "e212f78c792e43e77af4dd3d321fab042c90ba20036aa999c99c7f9f97f554f9",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Masonry tools, a spear and a shield rest beside a partly rebuilt stone wall.",
+      "src": "/assets/chapter-nehemiah-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12360,
+      "bytes": 119458,
+      "sha256": "65d4f92f33d2e83e267ef1a52223bd5def17cc35a47f61616bf0eff202601dec",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 5,
+      "src": "/assets/story-debt-relief-v1.webp",
+      "alt": "Nehemiah oversees a meeting as a man returns a pouch to a family.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Debt Relief",
+      "kind": "Story",
+      "position": 12384,
+      "bytes": 116668,
+      "sha256": "c40bca181413339613029c6f04740257f4d2f12c891d62111b937e2e0993f174",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 6,
+      "src": "/assets/story-the-wall-completed-v2.webp",
+      "alt": "Three workers carry tools away from a finished stone wall and wooden city gate.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "The Wall Completed",
+      "kind": "Story",
+      "position": 12403,
+      "bytes": 201168,
+      "sha256": "b35a53af518ee347d6b00acb2b0d4e197c19ef744bd8d22bce7e889047427768",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 7,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A family register lies on a table beside a finished wooden city gate.",
+      "src": "/assets/chapter-nehemiah-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12421,
+      "bytes": 117606,
+      "sha256": "98bc138cdeada6100ab985b0ffdd739d9e235bc152297c6b40b75ef9fea5da23",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 8,
+      "src": "/assets/story-ezra-reads-the-law-v1.webp",
+      "alt": "Ezra reads from a platform while teachers speak with groups of listeners.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Ezra Reads the Law",
+      "kind": "Story",
+      "position": 12495,
+      "bytes": 135352,
+      "sha256": "1004ba27f2c85c83d903ee843b187d8670fb8ed9f815bd50acc96e93e8ab1d89",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 9,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Sackcloth, a bowl of earth and an open scroll rest in a quiet stone courtyard.",
+      "src": "/assets/chapter-nehemiah-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12512,
+      "bytes": 121974,
+      "sha256": "73c533806581228e2c185cf4bb4565b41ac50ae54504c906b6f418b2a1a40883",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 10,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A tied document and clay seals lie beside grain baskets and oil jars.",
+      "src": "/assets/chapter-nehemiah-10-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12550,
+      "bytes": 110354,
+      "sha256": "d764f1bb1e56d6cea35aaeb40abe281fb4b226158b139f5a6ad891e779459e61",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 11,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Household bundles sit near a city gate leading to modest stone homes.",
+      "src": "/assets/chapter-nehemiah-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12589,
+      "bytes": 139842,
+      "sha256": "48178683628177f4a35175de91eb949952ed026f4ebdebd344971d469922fe73",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 12,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A wooden lyre, small cymbals and a register rest on a courtyard bench.",
+      "src": "/assets/chapter-nehemiah-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12625,
+      "bytes": 116414,
+      "sha256": "c45ea5732f37acfc2cbe4e5b8fe8153d8eadf6e3c908dffa68d87c3d5a140daf",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 12,
+      "src": "/assets/story-the-dedication-of-jerusalem-s-wall-v1.webp",
+      "alt": "Singers and musicians walk along the repaired city wall.",
+      "width": 1200,
+      "height": 675,
+      "verse": 27,
+      "title": "The Dedication of Jerusalem\u2019s Wall",
+      "kind": "Story",
+      "position": 12652,
+      "bytes": 146662,
+      "sha256": "f50eb9191cc4d16ca41a1c65a6ef6601ad12a28a184cacdc4201836f22761aec",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 15,
+      "chapter": 13,
+      "src": "/assets/story-nehemiah-s-reforms-v1.webp",
+      "alt": "Nehemiah speaks with gatekeepers as merchants wait outside closing doors.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Nehemiah's Reforms",
+      "kind": "Story",
+      "position": 12673,
+      "bytes": 115374,
+      "sha256": "226d8a56cba19f926653f214e4e77d482dbafb93e740f89db96d8a8b398f283b",
+      "visualReview": "Actual native-size WebP inspected; retained",
+      "decision": "retain"
+    }
+  ],
+  "coverage": [
+    {
+      "chapter": 1,
+      "verses": 11,
+      "placements": [
+        "/assets/story-nehemiah-s-prayer-and-commission-v1.webp"
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": 20,
+      "placements": [
+        "/assets/chapter-nehemiah-02-opening-v1.webp",
+        "/assets/story-rebuilding-the-wall-v1.webp"
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": 32,
+      "placements": [
+        "/assets/chapter-nehemiah-03-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 4,
+      "verses": 23,
+      "placements": [
+        "/assets/chapter-nehemiah-04-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 5,
+      "verses": 19,
+      "placements": [
+        "/assets/story-debt-relief-v1.webp"
+      ]
+    },
+    {
+      "chapter": 6,
+      "verses": 19,
+      "placements": [
+        "/assets/story-the-wall-completed-v2.webp"
+      ]
+    },
+    {
+      "chapter": 7,
+      "verses": 73,
+      "placements": [
+        "/assets/chapter-nehemiah-07-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 8,
+      "verses": 18,
+      "placements": [
+        "/assets/story-ezra-reads-the-law-v1.webp"
+      ]
+    },
+    {
+      "chapter": 9,
+      "verses": 38,
+      "placements": [
+        "/assets/chapter-nehemiah-09-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 10,
+      "verses": 39,
+      "placements": [
+        "/assets/chapter-nehemiah-10-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 11,
+      "verses": 36,
+      "placements": [
+        "/assets/chapter-nehemiah-11-opening-v1.webp"
+      ]
+    },
+    {
+      "chapter": 12,
+      "verses": 47,
+      "placements": [
+        "/assets/chapter-nehemiah-12-opening-v1.webp",
+        "/assets/story-the-dedication-of-jerusalem-s-wall-v1.webp"
+      ]
+    },
+    {
+      "chapter": 13,
+      "verses": 31,
+      "placements": [
+        "/assets/story-nehemiah-s-reforms-v1.webp"
+      ]
+    }
+  ],
+  "sourceWebOfflineParity": true,
+  "offlineNetworkCalls": 0,
+  "spacing": {
+    "minimumInternal": 9,
+    "closePairs": [],
+    "boundaries": [
+      {
+        "a": {
+          "book": 14,
+          "chapter": 10,
+          "afterVerse": 0,
+          "alt": "Imagined scene: A seated assembly gathers in heavy rain outside a temple doorway.",
+          "src": "/assets/chapter-ezra-10-opening-v2.webp",
+          "width": 960,
+          "height": 540,
+          "verse": 0,
+          "kind": "chapter",
+          "position": 12253
+        },
+        "b": {
+          "book": 15,
+          "chapter": 1,
+          "src": "/assets/story-nehemiah-s-prayer-and-commission-v1.webp",
+          "alt": "Nehemiah speaks with a Persian ruler while holding a bronze cup.",
+          "width": 1200,
+          "height": 675,
+          "verse": 1,
+          "title": "Nehemiah's Prayer and Commission",
+          "kind": "Story",
+          "position": 12298
+        },
+        "gap": 45
+      },
+      {
+        "a": {
+          "book": 15,
+          "chapter": 13,
+          "src": "/assets/story-nehemiah-s-reforms-v1.webp",
+          "alt": "Nehemiah speaks with gatekeepers as merchants wait outside closing doors.",
+          "width": 1200,
+          "height": 675,
+          "verse": 1,
+          "title": "Nehemiah's Reforms",
+          "kind": "Story",
+          "position": 12673
+        },
+        "b": {
+          "book": 16,
+          "chapter": 1,
+          "src": "/assets/story-vashti-deposed-v1.webp",
+          "alt": "Vashti declines a messenger\u2019s summons in a cool, lamplit palace courtyard.",
+          "width": 1200,
+          "height": 675,
+          "verse": 1,
+          "title": "Vashti Deposed",
+          "kind": "Story",
+          "position": 12704
+        },
+        "gap": 31
+      }
+    ]
+  },
+  "pinnedArtwork": {
+    "commit": "c87ed7459451ea3e2b3400eed783def11f017291",
+    "verifiedPublicGitBlobs": 1142,
+    "liveOriginVerified": false
+  },
+  "worker": {
+    "bytes": 59888449,
+    "sha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2"
+  },
+  "originResponses": "Local source fixtures, not live HTTP",
+  "signedDeviceVerified": false
+}

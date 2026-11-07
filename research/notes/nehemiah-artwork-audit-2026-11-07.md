@@ -1,0 +1,64 @@
+# Nehemiah artwork cloud review — 2026-11-07
+
+## Outcome and source
+
+All **15 active stills retained**: eight chapter openers and seven Story images across 13 chapters. Actual files were opened at native resolution and compared with the relevant verses, Genesis 7 style reference, nearby Nehemiah portraits and the freshly reviewed Ezra images. No demonstrated anatomy, realism or identity defect warrants regeneration. No image, alt text, placement, scripture, video/poster or production source changed. Build remains **370**, fingerprint **d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2**. No other book review was begun.
+
+Read AGENTS.md, RELEASING.md, the Ezra handoff/audit/inventory/verification and the November 4 Nehemiah continuity audit/evidence. Clean GitHub checkout was fetched and fast-forwarded to **905f415e55d3fa25b032a7f6122228b936b6a169**. Fresh scoped Sites access opened public mirror **5151d500aaeeec0a540656403d39ebb25a214365**, version 363. Production fingerprints match. No mirror-only paths or independent production edits exist: only three final Ezra audit/verification/handoff files differ. The 330 canonical research drafts intentionally absent from Sites are preserved as absent. No local edits or stashes were discarded.
+
+The documented Sites source helper is absent from this image. Ordinary Git uses the scoped credential through hidden stdin and process memory, with no credential file or shell argument. The reusable `.release/sites-mirror` cache is retained. Dependencies were missing; `npm ci --cache /tmp/biblelens-npm-cache --no-audit --no-fund` passed with unchanged dependency inputs. Public audience and D1 remain unchanged.
+
+## Full-size scene review
+
+Paths are under `src/assets/`. Natural faces, cloth, wood, stone and metal have restrained realism. Blue night skies, clear daylight, green foliage, violet textiles and gray clouds avoid a uniform amber grade. Visible foreground hands, thumbs, fingers, limbs, grips and donkey anatomy were inspected; no clear malformed inspectable anatomy was found. Tiny, overlapping or covered anatomy cannot be resolved. Architecture, instrument forms, scenery, clothing and scroll marks remain imagined, not historical evidence or exact reconstructions.
+
+| Chapter / anchor | Active file | Text and visual acceptance |
+| --- | --- | --- |
+| 1:1 Story | `story-nehemiah-s-prayer-and-commission-v1.webp` | Cupbearer and Artaxerxes fit the Story's 1:1–2:10 span, especially 2:1–8. Court scene previews chapter 2 rather than depicting the prayer's exact moment. Cup and chest hands, king's resting hand and bent arm are coherent. Cropped court composition does not assert the queen absent from 2:6. |
+| 2 opener | `chapter-nehemiah-02-opening-v1.webp` | People-free cup, sealed letter and Persian-style setting fit 2:1,7–8. Seal motif is decorative, not an authenticated royal seal. |
+| 2:11 Story | `story-rebuilding-the-wall-v1.webp` | One mounted Nehemiah and companions with lamps fit 2:12–15. Donkey ears/muzzle and rider/companion grips are coherent. Background masonry activity previews the broader 2:11–4:23 rebuilding Story; it is not proof organized repairs preceded the secret inspection. Skyline is imagined. |
+| 3 opener | `chapter-nehemiah-03-opening-v1.webp` | People-free tools, baskets, repaired gate and wall fit the builders' chapter, including 3:1–3. |
+| 4 opener | `chapter-nehemiah-04-opening-v1.webp` | Tools, spear, shield and incomplete wall fit 4:16–21; no new fighter or named leader. |
+| 5:1 Story | `story-debt-relief-v1.webp` | Governor, affluent men, pouch/document and families fit 5:1–13. Raised palm, scroll/pouch grips and visible family hands are coherent. Gold-banded man is an anonymous noble, not Artaxerxes transported to Jerusalem. Illustration does not establish the exact legal instrument or payment sequence. |
+| 6:1 Story | `story-the-wall-completed-v2.webp` | Three anonymous rear-view workers beside finished masonry fit the broad 6:1–7:5 Story and completion at 6:15. Visible legs, sandals, tool/basket hands and proportions are plausible. Preserve v2; rejected v1's older leader remains inactive. |
+| 7 opener | `chapter-nehemiah-07-opening-v1.webp` | Finished gate and register fit 7:1,5–6. Marks do not claim a readable ancient genealogical artifact. |
+| 8:1 Story | `story-ezra-reads-the-law-v1.webp` | Ezra on wooden platform, scroll and teachers/listeners fit the broad 8:1–9:38 Story. Branch shelters preview 8:14–17. Mixed seated/standing listeners are an illustrative composite, not the exact all-standing moment of 8:5. Scroll grips and visible foreground limbs remain coherent. |
+| 9 opener | `chapter-nehemiah-09-opening-v1.webp` | Sackcloth, earth and scroll fit 9:1–3 without recasting historical people recalled in the chapter's prayer. |
+| 10 opener | `chapter-nehemiah-10-opening-v1.webp` | Tied document, decorative clay seals, grain and jars fit 10:1,29,35–38. No precise seal ownership, ancient script or whole contribution inventory is asserted. |
+| 11 opener | `chapter-nehemiah-11-opening-v1.webp` | Household bundles and homes fit relocation at 11:1–3. No recurring family portrait is introduced. |
+| 12 opener | `chapter-nehemiah-12-opening-v1.webp` | Lyre, cymbals and register fit the chapter's singers/lists and 12:27. Instruments are imagined forms. |
+| 12:27 Story | `story-the-dedication-of-jerusalem-s-wall-v1.webp` | Singers/instruments and companies on walls fit 12:27–43. Visible foreground instrument hands, feet and limbs are coherent. Leading musicians are anonymous, not new Ezra/Nehemiah portraits. Parallel wall viewpoints and expansive temple skyline are symbolic composition, not a literal map or reconstructed Persian-period city. |
+| 13:1 Story | `story-nehemiah-s-reforms-v1.webp` | Nehemiah, gatekeepers, loaded donkey and waiting traders at dusk fit the broad reforms Story, especially 13:15–22. Open-palm, resting hand and gate-pushing hands/limbs remain coherent. No assault or forced family departure is depicted. |
+
+## Continuity ledger
+
+Actual files listed below were inspected together at native sizes. No new image was generated; any future identifiable recurring-person scene must receive the actual approved files as visual inputs. Descriptions or viewing alone do not satisfy that requirement.
+
+- **Nehemiah:** `story-nehemiah-s-prayer-and-commission-v1.webp`, `story-rebuilding-the-wall-v1.webp`, `story-debt-relief-v1.webp`, `story-nehemiah-s-reforms-v1.webp`. Prominent brow/nose, medium-brown complexion, natural dark curls, full dark beard, mature lean-to-average adult build remain recognizable. Court/travel/civic clothes change. Inspection and rebuilding allow little aging (6:15: 52 days); 5:14 and 13:6 allow over twelve years before the later return, without requiring a different face or an invented birth age. Height is not independently measurable between compositions. The modest existing aging differences do not establish a recast. `story-the-wall-completed-v1.webp` remains rejected as an identity reference; active v2's anonymous backs create no new leader portrait. The Nehemiah name in Ezra 2 is not proof of the governor's appearance in returnee art.
+- **Ezra:** current accepted `story-ezra-comes-to-jerusalem-v1.webp` and `story-ezra-and-mixed-marriages-v1.webp` were freshly compared with `story-ezra-reads-the-law-v1.webp`. Brown complexion, pronounced brow/nose, substantial beard, curly dark-to-gray hair and mature build are compatible; the later reader is grayer, fitting the seventh/twentieth royal-year interval without claiming an exact age. Headcloth, bowed prayer head, pose and distance limit exact hairline/face comparison. The November 4 cross-book clearance dependency is addressed using the completed November 7 Ezra review and actual files; no demonstrated identity break remains. These qualified views do not create a definitive close-portrait anchor. Use all three actual approved files for future scenes and reassess age. Dedication musicians are not silently relabeled as Ezra.
+- **Artaxerxes:** commissioning king has medium-brown skin, pronounced brow/nose, natural dark curls/full beard and broad adult build. Ezra's journey shows Ezra, not the king, and its anonymous opposition officials do not establish the same ruler's face. No earlier secure Artaxerxes portrait or new portrayal is invented. The chapter 2 still life has no people. Cyrus is another ruler and is not used as his model.
+- **Priests, Levites, builders, families, singers, gatekeepers and merchants:** no identified matching individuals are asserted across Ezra, the first return and later Nehemiah scenes. Do not turn anonymous musicians, gold-banded nobles or rear-view workers into named recurring figures. Hanani, Hananiah, Eliashib, Sanballat, Tobiah and other names in prose do not establish a secure face here. Chapter still lifes have no people or animals.
+- **Style only:** `chapter-genesis-07-opening-v1.webp`, inspected at native size; its Noah is never another person's identity reference. The wall-completion v2 and retained chapter still lifes preserve the grounded natural-light target.
+
+## Coverage and available verification
+
+Independent inventory uses actual built API headings, including `addUX13Events`. All 13 chapters retain one opener: eight chapter images at afterVerse 0, five Story images at verse 1; later Stories remain at 2:11 and 12:27. Alt text, captions, generic-caption suppression, metadata, scripture and offline coverage are unchanged. No consecutive pair involving Nehemiah is below five verse positions; exact minimum/boundaries appear in the inventory.
+
+Actual local Worker and unsigned offline-engine comparisons pass **13 chapters, 406 KJV/ASV/WEB verses and 15 image placements**. Source, Worker image responses and unsigned offline files have identical bytes. Offline API disallows network. All **1,142** public Git asset blobs match source at unchanged pin **c87ed7459451ea3e2b3400eed783def11f017291**. Origin responses in these checks are local source fixtures, not live delivery. Canonical/Worker/unsigned mobile identities match build 370. Exact already-built Worker: **59,888,449 bytes**, SHA-256 **605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2**, below 63 MiB.
+
+## Infrastructure and release limits
+
+Managed Sites flag is `1`; no callable `cua_repl.js`/shared-desktop JavaScript tool is available. Following the Sites skill, no browser install, substitute browser control or preview server was attempted. Unchanged required checks are attempted and their actual outcomes recorded separately. The inherited Playwright missing-browser failure is not treated as a passing app test.
+
+The live hostname remains outside enforced outbound policy, and no environment-change tool is available. Inherited denied live requests are not retried or bypassed; `release:verify`, live HTTP/image delivery and browser QA remain deferred. Native Sites publication metadata cannot establish live bytes.
+
+No Mac connector, configured VPN/device route, `xcodebuild` or `xcrun` is available. Signing, signed App.app/public versus www comparison, physical iPhone/iPad installation/query/launch are deferred under the owner's cloud-continuation instruction. Historical device build 359 is not a new observation. Passing unchanged sync checks does not prove the inherited intermittent settling issue fixed. No full release gate or synchronized-device release is claimed. Publication/check results are appended after execution; next book is Esther in a separate session.
+
+
+## Final check results before publication
+
+Unchanged `release:prepare` failed exit 1 at `check-release-smoke.mjs:31:32`: missing default Playwright Chromium headless shell. Its `build:mobile` and preceding nonbrowser checks passed, including useful-hit 50/50. Readability completed in report-only mode with inherited findings. No candidate.json was produced. Independent `check:images`, `check:release`, `check:mobile`, local Worker/offline parity and `git diff --check` passed.
+
+`check:sync` initially failed at unchanged `check-sync-disconnect.mjs:34` (`assert(finishRead)`). The earlier sync invariants/revocation checks had passed. Inspection found its fixed 30-`setImmediate` settling helper; an isolated unchanged rerun passed. Scheduling is a plausible cause, not a proven diagnosis or fix. Both outputs are preserved in `nehemiah-artwork-verification-2026-11-07.json`. No production code, test assertion or gate was weakened. No full gate, browser/live HTTP verification or synchronized-device release is claimed.
+
+Internal minimum image gap is **9** verse positions; boundaries are **45** from Ezra and **31** to Esther. Publication will stage the exact already-built canonical Worker, without rebuilding the deployment mirror. Build remains 370 because production contents are unchanged.
