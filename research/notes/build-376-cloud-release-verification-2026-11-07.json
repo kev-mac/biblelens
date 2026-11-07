@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-07",
+  "book": "Hosea",
+  "review": {
+    "retainedImages": 14,
+    "replacements": 0,
+    "chapterOpeners": 14,
+    "closePairsInvolvingBook": 0,
+    "minimumInternalGap": 5,
+    "inventory": "hosea-artwork-inventory-2026-11-07.json",
+    "audit": "hosea-artwork-audit-2026-11-07.md"
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 376,
+    "sourceHash": "607dd4bbff1cd33dd195f5abc93117b9efb5d033b31b472c71228cf7456a147a",
+    "workerBytes": 59517405,
+    "workerBudgetBytes": 66060288
+  },
+  "canonicalReviewCommit": "ddba0fe",
+  "canonicalPublicationCommit": "10d7559",
+  "mirrorCommit": "46cf8646328687883b33057df0a2273c0b07f286",
+  "checks": {
+    "lockedDependencies": "Restored with npm ci --ignore-scripts; no lockfile change",
+    "buildMobile": "passed; includes web build",
+    "images": "passed",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "hoseaSourceOffline": "passed: 14 chapters, exact metadata/scripture/image bytes, zero underlying network requests",
+    "focusedWorker": "passed: 14 chapters, 197 verses across KJV/ASV/WEB, 14 image placements and 14 missing-opener rejection checks",
+    "preservedBaselineAssets": 1616,
+    "pinnedSourceBlobsVerifiedLocally": 1145,
+    "fullReleasePreparation": "failed: missing Chromium executable in check-release-smoke.mjs; full npm run check incomplete",
+    "syncSuite": "failed: check-sync-disconnect.mjs:30 already-revoked token not cleared after fixed settling turns",
+    "isolatedDisconnect": "passed unchanged; intermittent failure remains unresolved",
+    "localPostPublicationParity": "canonical, Sites mirror, prepared Worker and unsigned native identities/Worker bytes match",
+    "liveReleaseVerify": "deferred under inherited access denial; live request not attempted",
+    "browser": "unverified: Chromium/WebKit executables and supported managed browser-control tool unavailable",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed in this cloud session"
+  },
+  "publication": {
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_11194ce2b4448191a33f8fccae05934c",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 376,
+      "source": {
+        "commit_sha": "46cf8646328687883b33057df0a2273c0b07f286"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000c35881fd88890ac1b380f389",
+        "content_hash": "sha256:b216d6b201e4055a792b523d59b7479f24e222926345b0381beaa27ba9923d1c",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeed492eaf48191a2c3f160487430c9",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_11194ce2b4448191a33f8fccae05934c",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T07:34:51.954540+00:00"
+    }
+  },
+  "publicationAttemptHandling": "First call produced no saved deployment record. Confirmed deployment_id null, read original user publication authorization through user_message_read, retried same saved version once; native result succeeded. First call's unavailable payload does not establish its specific failure reason.",
+  "excluded": "Previously denied detailed Ezekiel audit uploads were not retried or copied; detailed local logs remain local.",
+  "handoff": "joel-artwork-handoff-from-hosea-2026-11-07.md",
+  "nextBookStarted": false
+}
