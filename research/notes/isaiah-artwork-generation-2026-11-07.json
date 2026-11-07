@@ -1,0 +1,36 @@
+{
+  "tool": "image_gen.imagegen",
+  "operation": "edit",
+  "reason": "Isaiah 37:14-21: remove standing Isaiah from Hezekiah prayer; Isaiah sent his reply.",
+  "actualVisualInputs": [
+    {
+      "path": "src/assets/story-sennacherib-s-threat-and-hezekiah-v1.webp",
+      "role": "target / approved Hezekiah identity",
+      "sha256": "9a50eb6663feceda2351dc352c3389b8d245a03e6a9f0e09a904e02704bbb127"
+    },
+    {
+      "path": "src/assets/story-hezekiah-and-sennacherib-v2.webp",
+      "role": "target / approved Hezekiah identity",
+      "sha256": "2d12fa1236863c96dd18bdbafebe393241f9f8cabadbe7a683ad721666f13cfd"
+    },
+    {
+      "path": "src/assets/story-hezekiah-s-illness-v1.webp",
+      "role": "target / approved Hezekiah identity",
+      "sha256": "4da50d4e34dd748c614a8d07087a0cc8c8099315f089285769d3781afb4fa581"
+    },
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "role": "style only",
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    }
+  ],
+  "generatedOriginal": "/workspace/generated_images/exec-d7bc3649-23bb-4efc-ad6b-ee9a6c4e1f00.png",
+  "originalSha256": "22b2288bc29d6bd8accebee9d3910ab1ed9ced6c6e898a3a8fa61da931a69f09",
+  "accepted": "src/assets/story-sennacherib-s-threat-and-hezekiah-v2.webp",
+  "sha256": "bb30b393e38219455c8edf1dee2b423f31067a1976bdb9b0462ff47c0024e015",
+  "width": 1200,
+  "height": 675,
+  "bytes": 151086,
+  "formatting": "Lanczos resize to 1200x675; WebP quality 86, method 6; substantive scene edit by imagegen only.",
+  "review": "Generated original and final WebP inspected at full size and compared with actual approved Kings prayer and Isaiah illness. Recognizable brown complexion, defined brow/nose/jaw, natural dark curls, full beard with gray, mature adult build. Both palms, fingers/thumbs and forearms coherent. Hidden knees and covered anatomy cannot be verified. No standing person remains. Blue/violet evening and warm lamp accents preserved."
+}
