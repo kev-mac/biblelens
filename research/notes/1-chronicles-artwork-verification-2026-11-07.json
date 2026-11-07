@@ -115,7 +115,23 @@
     "sync": "Passing unchanged tests do not prove inherited intermittent settling failure resolved."
   },
   "publication": {
-    "status": "preparing",
-    "publicAudiencePreserved": true
+    "status": "succeeded",
+    "publicAudiencePreserved": true,
+    "versionNumber": 361,
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_fdd53eb63860819182b3a4b8d4dc74fd",
+    "deploymentId": "appgdep_6aeead1ca8f88191a8903cf61a1f5939",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "canonicalReviewCommit": "7de4225",
+    "mirrorCommit": "2b05f46a74b349d9d61f429697249103b52ba23f",
+    "archiveFileCount": 6,
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "workerBytes": 59888449,
+    "workerSha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2",
+    "mirrorRebuilt": false,
+    "liveHttpVerified": false,
+    "fullReleaseGatePassed": false,
+    "nativeInstalled": false,
+    "pendingApproval": false,
+    "pendingDeployment": false
   }
 }
