@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-07",
+  "tool": "image_gen.imagegen",
+  "original": "/workspace/generated_images/exec-c8ae0357-b8a1-4e74-b114-237544013225.png",
+  "actualReferenceInputs": [
+    "src/assets/story-absalom-s-rebellion-v1.webp",
+    "src/assets/story-david-in-the-wilderness-v1.webp",
+    "src/assets/chapter-genesis-07-opening-v1.webp"
+  ],
+  "correction": "Cover every follower head in the Mount of Olives scene, as specified in 2 Samuel 15:30.",
+  "result": {
+    "src": "/assets/story-absalom-s-rebellion-v2.webp",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "bytes": 239424,
+    "sha256": "5c1aa2a600428acbb66fa6cd74d84914b85fd57da06f601f52c078af0bb48623",
+    "review": "Original 1672x941 and final 1200x675 inspected at full size against original scene and prior adult David. All six people retained; David plus five followers have covered heads. David remains barefoot, aged face/complexion/curls/beard/build recognizable; followers retain faces/build/positions. Visible hands, thumbs/fingers, arms, legs and feet show no clear defect. Small/occluded parts cannot support exact anatomy conclusions."
+  }
+}
