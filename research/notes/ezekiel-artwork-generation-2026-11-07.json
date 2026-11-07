@@ -1,0 +1,33 @@
+{
+  "book": "Ezekiel",
+  "date": "2026-11-07",
+  "tool": "built-in image_gen.imagegen",
+  "generatedFile": "/workspace/generated_images/exec-df73ddce-dcfc-484e-b6e0-4f9b11c4b224.png",
+  "actualImageInputs": [
+    {
+      "path": "src/assets/story-the-death-of-ezekiel-s-wife-v1.webp",
+      "sha256": "eab6ba4c60df5f27da5e892448c159a59ea27f6ec2641ba670f5e3ec45560078",
+      "role": "approved existing Ezekiel identity/scene"
+    },
+    {
+      "path": "src/assets/story-ezekiel-s-vision-and-commission-v2.webp",
+      "sha256": "1ea81fb8455d8cecadb8b867b3462eabd6d89846eb75c161098c56d1b85f4b64",
+      "role": "approved existing Ezekiel identity/scene"
+    },
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+      "role": "style only"
+    }
+  ],
+  "correction": "Ezekiel 24:17 requires his headdress kept on. Add linen wrap to previously bareheaded figure; keep existing identity, crossed hands, neighbor and empty chair.",
+  "final": {
+    "path": "src/assets/story-the-death-of-ezekiel-s-wife-v2.webp",
+    "width": 1200,
+    "height": 675,
+    "bytes": 118530,
+    "sha256": "e960db62d2232f388afe9fda22b32a0b83defe8054440eedb0303d86ab5408c8"
+  },
+  "inspection": "Viewed generated full scene and final WebP at native size; compared original wife scene, earlier vision and adjacent Story scenes. Face, complexion, graying beard, build, neighbor and setting remain recognizable. Visible fingers, thumbs, wrists and arms coherent; lower legs/feet concealed, not verified. Linen headdress corrects text detail without changing identity.",
+  "disposition": "accepted; earlier v1 retained unchanged"
+}
