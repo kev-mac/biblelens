@@ -1,0 +1,25 @@
+# Ecclesiastes artwork review — 2026-11-07
+
+All **12 active chapter openers retained** after individual native-size inspection (960×540). No Ecclesiastes Story image is active. No generation, alt text, placement, production metadata or asset edit is required. Version 1.1.0/build **370** and production fingerprint **d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2** remain unchanged. This session stops at Ecclesiastes.
+
+Read AGENTS.md, RELEASING.md, the Proverbs handoff/audit/inventory/verification and original Ecclesiastes plan/generation/continuity audit. GitHub main fetched and fast-forwarded cleanly from the environment's older snapshot to **1ccd0a4**. No pre-existing local edits or stashes. Fresh scoped Sites source comparison and release outcomes are recorded below after completion.
+
+## Full-size scene and text review
+
+Opened each actual active WebP individually at native resolution, plus actual approved **src/assets/chapter-genesis-07-opening-v1.webp** for style only. Coherent natural water, weather, stone, timber, clay, cloth and food, with restrained finish and varied blue/green/purple/cool-interior light fit the reference. No accidental lettering or apparent scene defect found. Chapter 3 uses selected v2 narrow young grain; inactive maize-like v1 stays inactive. Repeated hill-country backgrounds remain a reading-rhythm limitation for eventual rendered QA, not sufficient reason to regenerate suitable art.
+
+The inventory records each scene, included KJV/WEB text, dimensions, source hash and decision. Chapters 1–3 use sun/river cycles, cultivated gardens/pools and planting/harvest. Chapter 4 shows three constituent strands joining into cord; 5 shows unmarked silver pieces and small ingots; 6 bread/lentils and fruit; 7 thorn fire beneath a supported pot; 8 an empty royal chair; 9 bread/wine/ointment/white linen; 10 axe and sharpening stone; 11 seed basket/furrows/uncertain rain; 12 broken pitcher/fountain/almond blossom. These illustrate chapter imagery without claiming to depict verse 1, exact archaeological objects or historical evidence. Chapter 3 does not imply instantaneous ripening; chapter 6 does not show an identified wealthy man enjoying possessions. Chapter 12 illustrates metaphors without inventing a literal death portrait.
+
+No people, animals or identifiable recurring groups appear. Full scenes, object joins, cord strands, axe head/handle, chair supports, pot/hearth, pottery fractures and botanical forms were inspected. No human/animal hands, limbs or faces need repair. Retention is not a claim to certify hidden surfaces or exact botanical/architectural reconstruction.
+
+Read earlier approved Solomon continuity records in November 7 Kings and Chronicles audits: **story-solomon-becomes-king-v1.webp**, **story-solomon-s-wisdom-v1.webp**, active **story-the-temple-built-v2.webp**, **story-the-queen-of-sheba-and-solomon-s-decline-v1.webp**, and **story-solomon-s-reign-and-the-queen-of-sheba-v1.webp**. Stable traits recorded there are medium-brown complexion, defined brow/nose/jaw, dense natural dark curls, beard and strong adult build. This session does not newly portray the literary speaker or identify the unnamed king as Solomon. No generation occurred and no identity-reference input was needed. Future portrayals require actual approved images as tool inputs and plausible narrative aging; Genesis 7 is style only.
+
+## Verification and limits
+
+Detailed local checks, immutable-host pin verification, scripture/metadata/asset parity, spacing and publication provenance will be appended after completion. No full release gate, live HTTP verification or device synchronization is claimed without evidence.
+
+Managed Sites mode is 1; discovery found no callable cua_repl.js or desktop JavaScript. Per Sites managed preview instructions, no alternate browser path, browser installation or preview server. The existing /usr/bin/chromium launcher does not establish a working managed browser or Playwright engine. Required release preparation is attempted separately and its actual failure/pass is recorded. Live host remains outside enforced policy; inherited denied HTTP/image requests are not retried without materially new relevant evidence and trusted-message review. No supported environment-change tool was found.
+
+No Mac/device connector, configured VPN/device route, xcrun/Xcode or physical-device tools. Signing, signed App.app/public comparison, device query/install/launch remain deferred under the owner's explicit continuation instruction. Historical device build 359 is not a current query; web publication cannot update installed binaries.
+
+Documented Sites source helper is absent in this image. Ordinary Git fallback uses fresh scoped credentials via hidden stdin and in-memory child environment configuration, never credential files or command arguments. Dependencies installed with unchanged lockfile and a writable /tmp cache. No sync implementation or test edits are part of this artwork review; inherited intermittent check-sync-disconnect.mjs:34 remains an investigation item until evidence resolves it.

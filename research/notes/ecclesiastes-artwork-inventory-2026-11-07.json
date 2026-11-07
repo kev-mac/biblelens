@@ -1,0 +1,348 @@
+{
+  "book": "Ecclesiastes",
+  "bookId": 20,
+  "canonicalBaseline": "1ccd0a4",
+  "chapterCount": 12,
+  "verseCount": 222,
+  "chapterImages": 12,
+  "storyImages": 0,
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "activePlacements": [
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: A river flows into the blue sea beneath a low sun.",
+      "src": "/assets/chapter-ecclesiastes-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 1,
+      "bytes": 124220,
+      "sha256": "f3f26648518fbe653e319d7a326fcd3b0f02b2f0cc80b0488e8d9bcc11329f17",
+      "reference": "1:5–7",
+      "textChecked": [
+        {
+          "verse": 5,
+          "kjv": "The sun also ariseth, and the sun goeth down, and hasteth to his place where he arose.",
+          "web": "The sun also rises, and the sun goes down, and hurries to its place where it rises."
+        },
+        {
+          "verse": 6,
+          "kjv": "The wind goeth toward the south, and turneth about unto the north; it whirleth about continually, and the wind returneth again according to his circuits.",
+          "web": "The wind goes toward the south, and turns around to the north. It turns around continually as it goes, and the wind returns again to its courses."
+        },
+        {
+          "verse": 7,
+          "kjv": "All the rivers run into the sea; yet the sea is not full; unto the place from whence the rivers come, thither they return again.",
+          "web": "All the rivers run into the sea, yet the sea is not full. To the place where the rivers flow, there they flow again."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "River mouth, low sun, wind-bent reeds and blue sea support the cyclical water/sun imagery. Natural water flow, rocks and banks remain coherent.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: A stone pool and water channel border a green orchard and vineyard.",
+      "src": "/assets/chapter-ecclesiastes-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 2,
+      "bytes": 180758,
+      "sha256": "c38e21e5f15c2101c84fa7e8fd02e2d07349928a7c3afd5ff397572b47416061",
+      "reference": "2:4–6",
+      "textChecked": [
+        {
+          "verse": 4,
+          "kjv": "I made me great works; I builded me houses; I planted me vineyards:",
+          "web": "I made myself great works. I built myself houses. I planted myself vineyards."
+        },
+        {
+          "verse": 5,
+          "kjv": "I made me gardens and orchards, and I planted trees in them of all kind of fruits:",
+          "web": "I made myself gardens and parks, and I planted trees in them of all kinds of fruit."
+        },
+        {
+          "verse": 6,
+          "kjv": "I made me pools of water, to water therewith the wood that bringeth forth trees:",
+          "web": "I made myself pools of water, to water the forest where trees were grown."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Stone pool feeds a continuous channel beside orchard and vineyard. Fruit, foliage, water and masonry are believable; this is imagined cultivation, not an exact royal estate.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Young grain grows near a ripe wheat field and a low stone wall.",
+      "src": "/assets/chapter-ecclesiastes-03-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 3,
+      "bytes": 165890,
+      "sha256": "9ce261ed39aacdfb7ce561d6978153b86a5f2bafb9cdf54237cdcd0cad659927",
+      "reference": "3:1–2",
+      "textChecked": [
+        {
+          "verse": 1,
+          "kjv": "To every thing there is a season, and a time to every purpose under the heaven:",
+          "web": "For everything there is a season, and a time for every purpose under heaven:"
+        },
+        {
+          "verse": 2,
+          "kjv": "A time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted;",
+          "web": "a time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted;"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Narrow young grain and ripe wheat juxtapose planting and harvest as literary imagery. No instantaneous ripening is implied. Selected v2 retained; maize-like inactive v1 remains inactive.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Three strands join into a strong cord on wood and stone.",
+      "src": "/assets/chapter-ecclesiastes-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 4,
+      "bytes": 125304,
+      "sha256": "4f6491d1d02967eee3e9dde0b7c07d7af95e4b8d990f7a0c12ef50347ef0cdd1",
+      "reference": "4:12",
+      "textChecked": [
+        {
+          "verse": 12,
+          "kjv": "And if one prevail against him, two shall withstand him; and a threefold cord is not quickly broken.",
+          "web": "If a man prevails against one who is alone, two shall withstand him; and a threefold cord is not quickly broken."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Three visible constituent strands join into a twisted cord. Fibers, wooden support and stone are coherent; the cord illustrates the metaphor without newly casting the companions.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Loose silver pieces and an open pouch rest on a low table.",
+      "src": "/assets/chapter-ecclesiastes-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 5,
+      "bytes": 81470,
+      "sha256": "6136d7f0985f853152814a0966d7155ad899be5ef4365c2ae0e020852808f5fd",
+      "reference": "5:10",
+      "textChecked": [
+        {
+          "verse": 10,
+          "kjv": "He that loveth silver shall not be satisfied with silver; nor he that loveth abundance with increase: this is also vanity.",
+          "web": "He who loves silver shall not be satisfied with silver, nor he who loves abundance, with increase. This also is vanity."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Loose silver pieces, small ingots and woven pouch illustrate desire for silver. No stamped lettering or identified owner. The scene does not claim a specific currency or historical date.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Bread and lentils sit on a stone surface beside fruit and a window.",
+      "src": "/assets/chapter-ecclesiastes-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 6,
+      "bytes": 110048,
+      "sha256": "dc02081dc54aa29c8063343178b039fe08d0d42e747595d68565ad11ff70d252",
+      "reference": "6:7",
+      "textChecked": [
+        {
+          "verse": 7,
+          "kjv": "All the labour of man is for his mouth, and yet the appetite is not filled.",
+          "web": "All the labor of man is for his mouth, and yet the appetite is not filled."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Bread in lentils and background fruit illustrate work for food and desire. No wealthy character is shown enjoying possessions contrary to the chapter; bowl and food are coherent.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Thorn branches burn beneath a clay pot on a stone hearth.",
+      "src": "/assets/chapter-ecclesiastes-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 7,
+      "bytes": 131088,
+      "sha256": "ac4089359565f70a5e4801bdbd2e6447a2c8e71b71b6ce5071329b03ceceb3bb",
+      "reference": "7:6",
+      "textChecked": [
+        {
+          "verse": 6,
+          "kjv": "For as the crackling of thorns under a pot, so is the laughter of the fool: this also is vanity.",
+          "web": "For as the crackling of thorns under a pot, so is the laughter of the fool. This also is vanity."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Thorn branches burn between hearth stones supporting a clay pot. Flame, smoke and pot support are plausible; this illustrates the laughter/thorn-fire comparison.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty wooden chair stands on a low dais in an imagined royal hall.",
+      "src": "/assets/chapter-ecclesiastes-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 8,
+      "bytes": 131532,
+      "sha256": "e4baf83b0647362866e8e8406880e6f8ea8141dd551b04396251802012b173f4",
+      "reference": "8:2–4",
+      "textChecked": [
+        {
+          "verse": 2,
+          "kjv": "I counsel thee to keep the king's commandment, and that in regard of the oath of God.",
+          "web": "I say, “Keep the king’s command!” because of the oath to God."
+        },
+        {
+          "verse": 3,
+          "kjv": "Be not hasty to go out of his sight: stand not in an evil thing; for he doeth whatsoever pleaseth him.",
+          "web": "Don’t be hasty to go out of his presence. Don’t persist in an evil thing, for he does whatever pleases him,"
+        },
+        {
+          "verse": 4,
+          "kjv": "Where the word of a king is, there is power: and who may say unto him, What doest thou?",
+          "web": "for the king’s word is supreme. Who can say to him, “What are you doing?”"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Empty wooden chair in a purple-draped royal hall evokes royal authority. No unnamed king is identified as Solomon; chair connections and architectural lines remain coherent.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: Bread, red wine, an ointment jar and white linen sit on a table.",
+      "src": "/assets/chapter-ecclesiastes-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 9,
+      "bytes": 154670,
+      "sha256": "3b7115ff2f96b847731a67e8895906e95628b4b34d76b40bc1a41716cd09e7a8",
+      "reference": "9:7–8",
+      "textChecked": [
+        {
+          "verse": 7,
+          "kjv": "Go thy way, eat thy bread with joy, and drink thy wine with a merry heart; for God now accepteth thy works.",
+          "web": "Go your way—eat your bread with joy, and drink your wine with a merry heart; for God has already accepted your works."
+        },
+        {
+          "verse": 8,
+          "kjv": "Let thy garments be always white; and let thy head lack no ointment.",
+          "web": "Let your garments be always white, and don’t let your head lack oil."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Bread, red wine, lidded ointment jar and white linen match the chapter motifs. No specified feast participant or narrator is invented; pottery, bread and cloth remain coherent.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: An iron axe and sharpening stone rest beside split wood.",
+      "src": "/assets/chapter-ecclesiastes-10-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 10,
+      "bytes": 133626,
+      "sha256": "b522cc9b870f66c23db9d89896da1a4ff79bce1797c3f640db8a944aa87265cb",
+      "reference": "10:10",
+      "textChecked": [
+        {
+          "verse": 10,
+          "kjv": "If the iron be blunt, and he do not whet the edge, then must he put to more strength: but wisdom is profitable to direct.",
+          "web": "If the ax is blunt, and one doesn’t sharpen the edge, then he must use more strength; but skill brings success."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Iron axe with attached wooden handle rests beside sharpening stone and split wood. Head, edge and handle connection are believable; the image illustrates the dull-iron saying.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: A basket of grain rests beside furrows beneath rain clouds.",
+      "src": "/assets/chapter-ecclesiastes-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 11,
+      "bytes": 108498,
+      "sha256": "3f000c07f5fdb71ccee4062b52f9d166c0767cc697aa4705ffc392d7eaab1868",
+      "reference": "11:3–6",
+      "textChecked": [
+        {
+          "verse": 3,
+          "kjv": "If the clouds be full of rain, they empty themselves upon the earth: and if the tree fall toward the south, or toward the north, in the place where the tree falleth, there it shall be.",
+          "web": "If the clouds are full of rain, they empty themselves on the earth; and if a tree falls toward the south, or toward the north, in the place where the tree falls, there shall it be."
+        },
+        {
+          "verse": 4,
+          "kjv": "He that observeth the wind shall not sow; and he that regardeth the clouds shall not reap.",
+          "web": "He who observes the wind won’t sow; and he who regards the clouds won’t reap."
+        },
+        {
+          "verse": 5,
+          "kjv": "As thou knowest not what is the way of the spirit, nor how the bones do grow in the womb of her that is with child: even so thou knowest not the works of God who maketh all.",
+          "web": "As you don’t know what is the way of the wind, nor how the bones grow in the womb of her who is with child; even so you don’t know the work of God who does all."
+        },
+        {
+          "verse": 6,
+          "kjv": "In the morning sow thy seed, and in the evening withhold not thine hand: for thou knowest not whether shall prosper, either this or that, or whether they both shall be alike good.",
+          "web": "In the morning sow your seed, and in the evening don’t withhold your hand; for you don’t know which will prosper, whether this or that, or whether they both will be equally good."
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Seed basket beside furrows under uncertain rainfall illustrates sowing amid uncertainty. Grain, basket, soil and distant rain are coherent; no claim of forecasting or instant growth.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    },
+    {
+      "afterVerse": 0,
+      "alt": "Imagined scene: A broken pitcher lies beside a fountain near pale almond blossoms.",
+      "src": "/assets/chapter-ecclesiastes-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "chapter": 12,
+      "bytes": 113544,
+      "sha256": "1d75981dae66b41d380d2f1ce90806d8077f2546012a2538e5e01fa61078b06d",
+      "reference": "12:5–6",
+      "textChecked": [
+        {
+          "verse": 5,
+          "kjv": "Also when they shall be afraid of that which is high, and fears shall be in the way, and the almond tree shall flourish, and the grasshopper shall be a burden, and desire shall fail: because man goeth to his long home, and the mourners go about the streets:",
+          "web": "yes, they shall be afraid of heights, and terrors will be on the way; and the almond tree shall blossom, and the grasshopper shall be a burden, and desire shall fail; because man goes to his everlasting home, and the mourners go about the streets;"
+        },
+        {
+          "verse": 6,
+          "kjv": "Or ever the silver cord be loosed, or the golden bowl be broken, or the pitcher be broken at the fountain, or the wheel broken at the cistern.",
+          "web": "before the silver cord is severed, or the golden bowl is broken, or the pitcher is broken at the spring, or the wheel broken at the cistern,"
+        }
+      ],
+      "decision": "retain",
+      "nativeSizeInspected": true,
+      "review": "Broken pitcher and compatible shards beside fountain under pale almond blossom evoke the chapter metaphors. Pottery fractures, stream and stone are coherent; no literal death portrait is asserted.",
+      "anatomyReview": "No visible humans or animals. Full scene, object connections and botanical forms inspected; no apparent malformed forms.",
+      "identityReferences": []
+    }
+  ]
+}
