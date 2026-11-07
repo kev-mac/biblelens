@@ -25,3 +25,17 @@ Inherited denied live HTTP/image checks and full release:verify remain deferred 
 Actual mirror comparison, checks and publication results are appended below. This review alone does not assert release gates passed.
 
 The freshly opened Sites mirror `a14a5b4f39049f714e3f289bef92abd8125462b4` matches canonical build 383 and fingerprint `13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab`. No independent application changes or mirror-only tracked files were found; existing differences are release/audit/handoff records and absent research drafts. Preserve unrelated mirror records and exclude previously denied detailed Ezekiel uploads and absent research drafts. The Sites helper executable is unavailable. Ordinary scoped authenticated Git opened the mirror with credential JSON through hidden stdin and ephemeral process configuration; no credential was written to disk. This fresh cloud checkout had no mirror cache, so `.release/sites-mirror` was created for reuse.
+
+## Validation
+
+Locked dependencies restored with `npm ci --ignore-scripts` and a task-local cache; package-lock unchanged. The shared web/mobile build passed inside release:prepare. Separate check:images (all 1,189 chapters), check:mobile and check:release passed. Focused local Worker/offline checks passed all three chapters and 53 verses in KJV/ASV/WEB, three single openers and missing-opener rejection cases, exact metadata/headings and source/Worker/native image bytes, with zero underlying offline network calls. All 1,616 baseline asset files and 1,145 pinned blobs remain exact. Hosted responses used a local immutable-origin source fixture, not live HTTP. No replacement asset or new hosted pin is needed.
+
+Spacing uses opener position 0 and Story start verse. Gaps touching Zephaniah are 19 from Habakkuk 3, 18 and 15 internally, and 20 to Haggai 1. No pair involving Zephaniah is closer than five positions; unrelated inherited clusters remain outside scope.
+
+Version/build 1.1.0/384, fingerprint `88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb`. Prepared Worker: 59,517,395 bytes against 66,060,288. Canonical source, local Worker release response and unsigned native assets agree. No built release JSON was hand-edited.
+
+Full release:prepare exited 1 when npm run check reached check-release-smoke.mjs:31: Playwright Chromium headless-shell is missing. Preceding nonbrowser checks, including content/search and report-only readability, completed with inherited findings. Full npm run check and full release preparation did not pass; no successful candidate gate is claimed. No supported managed browser-control tool is exposed; no browser installation, preview server or alternate control path was used.
+
+The separate unchanged check:sync passed its single run, including all disconnect cases. Earlier sessions failed at check-sync-disconnect.mjs:34 (`assert(finishRead)`). This pass does not resolve the intermittent failure or establish a timing cause. No sync implementation/test or timer schedule changed.
+
+Full live release:verify remains deferred because it includes the inherited denied live request; it was not retried or simulated as a passing live check. Browser rendering, live release/images, signing, signed-app parity and physical installation/launch remain incomplete. No previously denied detailed Ezekiel upload was retried. Detailed local logs remain under /tmp/zephaniah-384-*.

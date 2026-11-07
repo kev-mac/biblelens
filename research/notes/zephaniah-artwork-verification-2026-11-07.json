@@ -1,0 +1,113 @@
+{
+  "book": "Zephaniah",
+  "canonicalBaseline": "97b002518d22ab83eaa065c3dd9808bd46ee6765",
+  "chapterCount": 3,
+  "verseCount": 53,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-zephaniah-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 130608,
+      "sha256": "f7c012fed15efa9afc9a7c0972a6dfaf387485af015cc305eb04cf39ff9ce05a",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": "not applicable: no Zephaniah Story artwork"
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-zephaniah-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 15,
+      "bytes": 144736,
+      "sha256": "1b71389fb495b0e7eaf5a6f38a12fb34a9c498c8a14fb55bf720c073241b7ef9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": "not applicable: no Zephaniah Story artwork"
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-zephaniah-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 20,
+      "bytes": 151364,
+      "sha256": "94b8369d07c0d98bce278956c0ace8c57bd4bb1ef981ca7ef53c0c64e6d9b0f5",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": "not applicable: no Zephaniah Story artwork"
+    }
+  ],
+  "negativeCoverageChecks": 3,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 34,
+        "chapter": 3,
+        "verse": 0,
+        "position": 37,
+        "src": "/assets/chapter-habakkuk-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 35,
+        "chapter": 1,
+        "verse": 0,
+        "position": 56,
+        "src": "/assets/chapter-zephaniah-01-opening-v1.webp"
+      },
+      "gap": 19
+    },
+    {
+      "a": {
+        "book": 35,
+        "chapter": 3,
+        "verse": 0,
+        "position": 89,
+        "src": "/assets/chapter-zephaniah-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 36,
+        "chapter": 1,
+        "verse": 0,
+        "position": 109,
+        "src": "/assets/chapter-haggai-01-opening-v1.webp"
+      },
+      "gap": 20
+    }
+  ],
+  "minimumInternalGap": 15,
+  "baselineAssetFilesPreserved": 1616,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "pinnedBlobsEqualSource": 1145,
+  "unrelatedStoryMetadataPreserved": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 384,
+    "sourceHash": "88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb"
+  },
+  "workerBytes": 59517395,
+  "workerSha256": "a3f29fa2fb5d50f794eeab2d4c6980a4a09dabd54d7c6921723a6672061cfc31",
+  "originFixtureCalls": 3
+}

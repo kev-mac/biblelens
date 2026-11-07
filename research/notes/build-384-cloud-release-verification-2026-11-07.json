@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-07",
+  "book": "Zephaniah",
+  "canonicalBaseline": "97b002518d22ab83eaa065c3dd9808bd46ee6765",
+  "canonicalReviewCommit": "f5198fe",
+  "review": {
+    "retainedImages": 3,
+    "replacements": 0,
+    "generations": 0,
+    "storyImages": 0,
+    "chapterOpeners": 3,
+    "gapsTouchingBook": [
+      19,
+      18,
+      15,
+      20
+    ],
+    "closePairsTouchingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 384,
+    "sourceHash": "88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb"
+  },
+  "workerBytes": 59517395,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference unverified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed single unchanged run; inherited intermittent assert(finishRead) failure unresolved",
+    "focusedWorkerOffline": "passed 3 chapters, 53 verses, three editions, exact metadata and bytes, three missing-opener rejection cases, zero offline network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no installation/alternate path",
+    "fullReleasePreparation": "FAILED: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "readability": "completed report-only with inherited findings",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry/bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools"
+  },
+  "mirrorBaseline": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 383,
+      "sourceHash": "13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab"
+    },
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 383,
+      "sourceHash": "13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab"
+    },
+    "mirrorCommit": "a14a5b4f39049f714e3f289bef92abd8125462b4",
+    "mirrorOnly": [],
+    "differences": [
+      "research/notes/build-379-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-380-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-381-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-382-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-383-cloud-release-verification-2026-11-07.json",
+      "research/notes/habakkuk-artwork-audit-2026-11-07.md",
+      "research/notes/habakkuk-artwork-handoff-from-nahum-2026-11-07.md",
+      "research/notes/jonah-artwork-audit-2026-11-07.md",
+      "research/notes/jonah-artwork-handoff-from-obadiah-2026-11-07.md",
+      "research/notes/micah-artwork-audit-2026-11-07.md",
+      "research/notes/micah-artwork-handoff-from-jonah-2026-11-07.md",
+      "research/notes/nahum-artwork-audit-2026-11-07.md",
+      "research/notes/nahum-artwork-handoff-from-micah-2026-11-07.md",
+      "research/notes/obadiah-artwork-audit-2026-11-07.md",
+      "research/notes/zephaniah-artwork-handoff-from-habakkuk-2026-11-07.md"
+    ]
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "haggai-artwork-handoff-from-zephaniah-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": "pending"
+}
