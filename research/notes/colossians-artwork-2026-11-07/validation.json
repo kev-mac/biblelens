@@ -1,0 +1,155 @@
+{
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Chromium headless shell 1248 executable missing. Preceding nonbrowser/search checks passed; readability inherited report-only. No browser installed.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill says skip browser QA in this state; no preview server/browser install/substitute managed control route.",
+  "publication": {
+    "status": "Inherited denial; no publication attempt in Colossians",
+    "action": "deploy saved public build 386",
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Automatic approval review rejected deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication or bypass. No save/deploy/mirror push/access change/substitute version attempted. Frozen saved source/archive untouched."
+  },
+  "liveBytes": "Inherited denied live HTTP/image/release:verify operations remain deferred; local immutable-origin fixture is not live HTTP verification.",
+  "devices": "No callable Mac/device connector or configured VPN. Signing, signed public versus www parity, physical install/query/launch incomplete. Historical build 359 is not current device evidence.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) unresolved; sync unchanged/not retested.",
+  "assetPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedGitBlobsVerified": 1147,
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "fullReleaseCandidateArchiveProduced": false,
+  "nextBookArtworkReviewed": false,
+  "handoff": "research/notes/1-thessalonians-artwork-handoff-from-colossians-2026-11-07.md",
+  "visualReview": {
+    "nativeImagesViewed": 4,
+    "imageDimensions": [
+      960,
+      540
+    ],
+    "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "visiblePeople": 0,
+    "visibleAnimals": 0,
+    "generationCalls": 0,
+    "nextBookArtworkOpened": false,
+    "unscaledStyleComparisons": 4,
+    "sideBySideObjectAndPriorBookComparisons": 4,
+    "unscaledBoardSha256": {
+      "boundary.png": "60309b9f78803c61fdb5a7880575bd7f6133ef7a92ccffd05d6104c88b94dc9b",
+      "cloth.png": "8de090f9f7d701a35583ec4b1f90debeb0c6f4cb941e2bcb93338c9ab6a40fd6",
+      "prior-cloth.png": "5fa169aebc1dd2746362972b9bb63aaf111673e4bd622dd1d985f895d40ec896",
+      "style-1.png": "32ff6c5151e635b0c316f77894e218e8a1f6ddd87caeba8b65db9613d0400037",
+      "style-2.png": "752a71d5a610dc4e2492f7570ceb4b35cd1e54b5a72ed524cc94e90d23410dc0",
+      "style-3.png": "a91f41d978551e107b1634f2bd193465116038fea0a3e8458e5b833dd0d5f173",
+      "style-4.png": "d6530a0e4f7b563f8b3748b15000d75e642b9f21693c3456b42942b656db4433",
+      "trees.png": "e7239a14a6224bb374ca83fbabfe9ca9a9cb6101cb902811f28c7c05aa77fbd4"
+    }
+  },
+  "syncChanged": false,
+  "dependencyFilesChanged": false,
+  "scope": "Colossians only; all four images retained, zero generated/replaced; zero production changes",
+  "baseline": "34a90d08310a32890bcc66a5ca505a21d9f2e7f3",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --cache /tmp/colossians-npm-cache",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-npm-ci.log",
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile (includes web build)",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-build-mobile.log",
+      "logSha256": "e56e337a8a42bc86f307b655660a5f1a5c992cd2521564c3045ce7a473e9dd05"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-images.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-mobile.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-release.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/colossians-all.log",
+      "logSha256": "1fca177ad9d45fca2aba58e85c2346dde506af05939c0af89a04219d03d75844"
+    },
+    {
+      "command": "node research/notes/colossians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-focused.log",
+      "logSha256": "e48ee249dca97d5b801f08db71415df992afc6cbd508aa603a2ae1bcc6cb0377"
+    },
+    {
+      "command": "node research/notes/colossians-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/colossians-mirror.log",
+      "logSha256": "94f67f1c044938eb7950932876ba2dc0d005e29bbfd1ab52cbc071bf9079a77a"
+    },
+    {
+      "command": "node research/notes/colossians-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "result": "4/4 retained; 2010 production files / 1619 assets unchanged; gap 23 internal, 23/18 boundaries; zero close pairs"
+    },
+    {
+      "command": "git diff --check; node --check for source-audit, verifier and mirror comparison",
+      "exitCode": 0
+    }
+  ],
+  "mirror": {
+    "baseline": "34a90d08310a32890bcc66a5ca505a21d9f2e7f3",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential read-only opening for the Colossians review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "focused": {
+    "chapterCount": 4,
+    "verseCount": 95,
+    "negativeCoverageChecks": 4,
+    "offlineNetworkCalls": 0,
+    "inheritedAbsentFields": [],
+    "inheritedEmptyStrings": [],
+    "minimumInternalGap": 23,
+    "originFixtureCalls": 4,
+    "boundaries": [
+      23,
+      18
+    ]
+  }
+}

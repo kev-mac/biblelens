@@ -1,0 +1,139 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "Colossians",
+  "canonicalBaseline": "34a90d08310a32890bcc66a5ca505a21d9f2e7f3",
+  "chapterCount": 4,
+  "verseCount": 95,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-colossians-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 29,
+      "bytes": 148908,
+      "sha256": "1830479a70238d8cfdb03d3f3e73e462bd57ab852cc80cbd94796a7a8413292c",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-colossians-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 23,
+      "bytes": 166854,
+      "sha256": "cb5d8e65375472b77379d5d27b8bd12387a40676756d6b6a8abfafe22b5c8fd9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-colossians-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 91312,
+      "sha256": "3a33967473e9d3c54c7f1e143b9d5a77df248aac825909aed7148240910b8fd9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-colossians-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 90166,
+      "sha256": "0d2b72b8379a137555dbcb0139fc6ff18b80dc670bf47a0973979a8f8a044464",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 4,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 49,
+        "chapter": 4,
+        "verse": 0,
+        "position": 81,
+        "src": "/assets/chapter-philippians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 50,
+        "chapter": 1,
+        "verse": 0,
+        "position": 104,
+        "src": "/assets/chapter-colossians-01-opening-v1.webp"
+      },
+      "gap": 23
+    },
+    {
+      "a": {
+        "book": 50,
+        "chapter": 4,
+        "verse": 0,
+        "position": 181,
+        "src": "/assets/chapter-colossians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 51,
+        "chapter": 1,
+        "verse": 0,
+        "position": 199,
+        "src": "/assets/chapter-1-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 18
+    }
+  ],
+  "minimumInternalGap": 23,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Colossians existing 4 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 4
+}

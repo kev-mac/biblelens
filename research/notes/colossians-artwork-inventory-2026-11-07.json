@@ -1,0 +1,118 @@
+{
+  "book": "Colossians",
+  "baseline": "34a90d08310a32890bcc66a5ca505a21d9f2e7f3",
+  "chapters": 4,
+  "totalPlacements": 4,
+  "chapterOpeners": 4,
+  "storyPlacements": 0,
+  "retained": 4,
+  "replaced": 0,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Purple figs grow among green leaves above a quiet garden.",
+      "src": "/assets/chapter-colossians-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 148908,
+      "sha256": "1830479a70238d8cfdb03d3f3e73e462bd57ab852cc80cbd94796a7a8413292c",
+      "textBasis": "1:6,10: the gospel bearing fruit and being fruitful in every good work. Fig tree/garden illustrate the fruit metaphor; no named historical garden or portrait asserted.",
+      "fullSizeReview": "Native 960x540 inspection of fig stems and attachment, leaf lobes/veins, branch junctions/bark, terrace stonework, orchard rows and blue hills. Purple fruit and green leaves, natural daylight. No people, tiny silhouettes, animals, lettering or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An olive tree spreads its roots over the stones of a hillside.",
+      "src": "/assets/chapter-colossians-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 166854,
+      "sha256": "cb5d8e65375472b77379d5d27b8bd12387a40676756d6b6a8abfafe22b5c8fd9",
+      "textBasis": "2:6-7: walking in Christ, rooted and built up in him. Olive roots over a stone terrace illustrate rootedness; no literal reported planting or exact site asserted.",
+      "fullSizeReview": "Native inspection of olive leaf/fruit attachments, trunk fork and bark, exposed root routes over stone courses, terraces and distant slopes. Overcast light and grey-green palette. No people/animals or definite malformed object.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A blue tunic and red sash lie on a wooden bench.",
+      "src": "/assets/chapter-colossians-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 91312,
+      "sha256": "3a33967473e9d3c54c7f1e143b9d5a77df248aac825909aed7148240910b8fd9",
+      "textBasis": "3:9-14: putting off the old self and putting on the new, kindness and love. Tunic and sash illustrate clothing language, not a reported event or a named person’s garments.",
+      "fullSizeReview": "Native inspection of tunic neckline/placket, both sleeves/cuffs, hem stitching, folds, sash fringe/weave, bench plank/leg joins, pottery/basket, window stonework and distant town. Blue tunic and muted red sash. Empty garment; no body, human/animal or definite defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A clay bowl holds coarse salt beside a blue cloth.",
+      "src": "/assets/chapter-colossians-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 90166,
+      "sha256": "0d2b72b8379a137555dbcb0139fc6ff18b80dc670bf47a0973979a8f8a044464",
+      "textBasis": "4:5-6: wise conduct and speech seasoned with salt. Bowl of coarse salt illustrates the speech metaphor; open gate is background, not a claimed depiction of Paul’s bonds or actual letter setting.",
+      "fullSizeReview": "Native inspection of bowl rim/base, salt pile and spilled crystals, cloth weave/fringe, olive leaves/branch, stone ledge, jug rim and gate panel/hinge construction. Cool dusk and natural leaf shadows. No people, animals, writing or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "minimumInternalGap": 23,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 49,
+        "chapter": 4,
+        "verse": 0,
+        "position": 29446,
+        "src": "/assets/chapter-philippians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 50,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29469,
+        "src": "/assets/chapter-colossians-01-opening-v1.webp"
+      },
+      "gap": 23
+    },
+    {
+      "a": {
+        "book": 50,
+        "chapter": 4,
+        "verse": 0,
+        "position": 29546,
+        "src": "/assets/chapter-colossians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 51,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29564,
+        "src": "/assets/chapter-1-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 18
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}
