@@ -41,3 +41,13 @@ This managed environment (`ccarenv_b64_Y2NhcmVudl9lMjI2NTJkOWEwOWM4MTkxOWFlYWMwY
 The live hostname is excluded by enforced cloud egress; no environment-change tool is available. The inherited denied live request is not retried or bypassed. Live HTTP/image verification and `release:verify` remain deferred. Native Sites deployment success establishes publication metadata, not live-byte delivery.
 
 No Mac connector, configured VPN/device route, Xcode or xcrun is available. Signing, signed `App.app/public` versus `www` parity, installation, installed-build queries and launches remain deferred. Historical device build 359 is not a fresh query. The owner authorized continued cloud artwork progress without Mac/devices. No synchronized native/web release is claimed. No 2 Samuel review is begun in this session.
+
+## Completed checks
+
+`npm run release:prepare` built the shared Worker/offline bundle successfully, then **failed**, exit 1, at `scripts/check-release-smoke.mjs:31:32`: missing Playwright Chromium headless shell. All preceding nonbrowser checks/search passed (search useful-hit threshold 50/50); readability completed in report-only mode with existing findings. No candidate.json was created and no assertions were weakened.
+
+Separately, `check:images`, `check:release`, `check:mobile` and unchanged `check:sync` passed. The sync run does not prove the inherited intermittent bounded-settle failure fixed; no sync/security/test code was edited. Exact built API checks covered all 31 chapters and preserved headings/placements. Source/Worker/offline image bytes, captions and KJV/ASV/WEB scripture parity passed the image suite. All 33 offline assets match source; all 1,138 immutable hosted Git blobs match source at the unchanged pin `f7b2eebf5ff77c25f98fe94ad3c59da22ab02c22`. No remote image download or new pin was needed.
+
+Canonical source, generated Worker and offline release metadata agree on build **367**, fingerprint `7598f835f621c56ecf87992dd913260cb7a50c9f893ae61012e10eeb6a0c49f5`. Boundary gaps are Ruth→1 Samuel **22**, 1 Samuel→2 Samuel **14**; neither is a close pair. Only 7:0→7:2 is below five. `git diff --check` passed.
+
+Canonical artwork review commit is **8ea8e2e**. Initial GitHub push was rejected with GH007 because the cloud default author email was private. Verified remote was unchanged, then amended the unpublished commit using the same GitHub noreply identity already established on main. No account privacy setting was changed. Build source/fingerprint and checked artifacts were unchanged by author metadata correction.
