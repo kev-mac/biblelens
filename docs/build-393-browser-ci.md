@@ -7,8 +7,8 @@ It uses the established sandbox-required GitHub-hosted runner workflow with
 read-only repository permissions, no stored checkout credentials, no secrets,
 no deployment and no device access. Only this PR branch triggers the workflow.
 
-Canonical source: `05872592eb77f8b33c78712efe3d1fd6fc16b05e`. Build 393
-fingerprint: `06df6b14fc5d1fa02ed0bd153b41fb82c2252dd80bb40ff5c29f02e26659052f`.
+Canonical source: `7fe24ca40349e86336bb733edeff6a4bb409495f`. Build 393
+fingerprint: `e2a84cc647ec2458bf0cec4b20412f3617ffa44c3c618763070eafcd9412df05`.
 A failure stays a failed job. Exact prepared bundles are retained only after
 all gates succeed; screenshots/logs remain available on failure. Publication
 is handled separately by the parent session using the exact accepted bundle.
@@ -27,3 +27,10 @@ return on wide screens. The source gate now targets that candidate. Exact
 bundles are uploaded separately from screenshots to stay below the native
 artifact-download limit, without changing application bytes. The earlier
 one-off partition workflow is disabled after its completed transfer.
+
+The wider-grid run exposed a WebKit Search dismissal failure after 88 reader
+cases. The current source cancels pending input, invalidates old results and
+blocks submissions from a closed Search dialog. Unit and real browser
+regressions cover closure during the debounce window, with event traces.
+The preview background retry was identified as missing-D1 sync/session 503;
+production sync verification remains separate and no sync code was changed.
