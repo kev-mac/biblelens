@@ -6512,7 +6512,36 @@
         "url": "https://ebible.org/eng-kjv/EXO14.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "The story credits both Pharaoh and God with hardening Pharaoh’s heart.",
+      "passages": [
+        "Exodus 4:21-23",
+        "Exodus 7:1-5",
+        "Exodus 8:15",
+        "Exodus 8:32",
+        "Exodus 9:12",
+        "Exodus 9:34-35",
+        "Exodus 10:1-2",
+        "Romans 9:14-18"
+      ],
+      "context": "These statements recur across the plagues. God announces a purpose of showing power; Pharaoh repeatedly refuses to release Israel.",
+      "explanations": [
+        {
+          "reading": "Both agents act",
+          "support": "Divine and human action can occur together. None of these verses says that only one agent acts."
+        },
+        {
+          "reading": "God confirms an earlier choice",
+          "support": "Pharaoh repeatedly resists. However, God announces hardening before those plague refusals, which limits this explanation."
+        }
+      ],
+      "assessment": "The texts do not require exclusive agents. Responsibility and divine causation remain open questions.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Passage wording and context checked against packaged KJV, ASV and WEB. This does not reverify the record’s older Hebrew or Greek claims.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-magicians-limits",
@@ -22650,7 +22679,33 @@
       "T"
     ],
     "languageContext": "Greek Old Testament (Septuagint) · Brenton Greek edition",
-    "witness": "Septuagint"
+    "witness": "Septuagint",
+    "contradictionReview": {
+      "conflict": "Exodus names Moses’s father-in-law Reuel and Jethro. Numbers calls Hobab Reuel’s son; the KJV of Judges calls Hobab his father-in-law.",
+      "passages": [
+        "Exodus 2:16-22",
+        "Exodus 3:1",
+        "Exodus 18:1-12",
+        "Numbers 10:29-32",
+        "Judges 4:11"
+      ],
+      "context": "Separate accounts describe Moses’s Midianite family and its travel with Israel. The relationship wording varies between English editions.",
+      "explanations": [
+        {
+          "reading": "Two names and a wider family term",
+          "support": "Reuel and Jethro may name one man. The WEB calls Hobab a brother-in-law in Judges 4:11; the KJV calls him father-in-law."
+        },
+        {
+          "reading": "Different family traditions",
+          "support": "The accounts preserve different names. This could reflect different traditions, but these verses do not establish how the accounts developed."
+        }
+      ],
+      "assessment": "A family reconstruction is possible. These passages do not explicitly identify Reuel and Jethro as the same person.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Passage wording and context checked against packaged KJV, ASV and WEB. This does not reverify the record’s older Hebrew or Greek claims.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "gideon-seventy-sons-count",
@@ -30730,7 +30785,31 @@
         "ref": "Genesis 31:13",
         "quote": "I am the God of Bethel"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "An angel appears in the bush, while God calls from the same bush.",
+      "passages": [
+        "Exodus 3:1-12",
+        "Mark 12:26-27",
+        "Acts 7:30-35"
+      ],
+      "context": "Exodus moves from the angel’s appearance to divine speech within one scene. Jesus and Stephen later summarize that scene for different audiences.",
+      "explanations": [
+        {
+          "reading": "A messenger speaks for God",
+          "support": "A messenger can convey the sender’s words. Neither account says that only an angel, or no angel, was present."
+        },
+        {
+          "reading": "A divine appearance",
+          "support": "The scene shifts from an angel to God speaking. This allows a divine-appearance reading without expressly defining the angel’s identity."
+        }
+      ],
+      "assessment": "The speaker’s identity remains open. A strict contradiction is not demonstrated by these verses alone.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Passage wording and context checked against packaged KJV, ASV and WEB. This does not reverify the record’s older Hebrew or Greek claims.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "three-men-at-mamre-and-the-lord-relation-unstated",
@@ -33839,7 +33918,31 @@
         "ref": "Hebrews 11:27",
         "quote": "he forsook Egypt, not fearing the wrath of the king"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Exodus says Moses feared and fled Pharaoh. Hebrews says he left Egypt without fearing the king.",
+      "passages": [
+        "Exodus 2:11-15",
+        "Hebrews 11:23-29",
+        "Exodus 10:28-29"
+      ],
+      "context": "Exodus describes the aftermath of a killing. Hebrews praises faithful action and mentions the departure before Passover.",
+      "explanations": [
+        {
+          "reading": "A later departure",
+          "support": "Hebrews may describe the later exodus, when Moses confronted Pharaoh. Its placement before Passover leaves the reference uncertain."
+        },
+        {
+          "reading": "Faith despite fear",
+          "support": "If both passages describe the first departure, Hebrews may praise decisive faith despite fear. The texts do not explicitly make this distinction."
+        }
+      ],
+      "assessment": "A real contrast remains if both accounts describe the first departure. The later-departure explanation is possible, but uncertain.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Passage wording and context checked against packaged KJV, ASV and WEB. This does not reverify the record’s older Hebrew or Greek claims.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east",
@@ -90863,7 +90966,32 @@
         "ref": "Exodus 4:10",
         "quote": "I am not eloquent"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Moses calls himself slow of speech. Stephen calls him mighty in words and deeds.",
+      "passages": [
+        "Exodus 4:10-16",
+        "Exodus 6:12",
+        "Exodus 6:30",
+        "Acts 7:20-22"
+      ],
+      "context": "Moses objects to his commission and receives Aaron as spokesman. Stephen describes Moses’s education and public stature before the council.",
+      "explanations": [
+        {
+          "reading": "Different speakers and meanings",
+          "support": "Moses’s self-assessment need not match Stephen’s praise. Powerful words need not mean fluent speech."
+        },
+        {
+          "reading": "A contrast in speaking ability",
+          "support": "If both descriptions concern the same ability and time, Aaron’s appointment strengthens the tension. Neither passage expressly resolves that comparison."
+        }
+      ],
+      "assessment": "The character descriptions differ. Different speakers and meanings allow a possible reconciliation.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Passage wording and context checked against packaged KJV, ASV and WEB. This does not reverify the record’s older Hebrew or Greek claims.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "why-had-the-holy-ghost-not-yet-fallen-on-the-baptized-samaritans-acts-8-16",

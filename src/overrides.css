@@ -3334,3 +3334,7 @@ html body.lens-app #ux-empty-verse-actions .ux-verse-actions-close{position:abso
 html body.lens-app #ux-empty-verse-actions #ux-empty-verse-toast{display:flex;align-items:center;justify-content:center;min-height:32px;padding:0 30px;box-sizing:border-box;}
 
 html body.lens-app #notebook-view .lens-note-actions [data-lens-toggle-highlight]{padding-inline:0;}
+
+/* Keep the cited range distinct from its surrounding passage. */
+#verse-preview .preview-selected{background:#f4dc8a;color:#202b35;border-radius:3px;box-decoration-break:clone}
+#verse-preview .preview-context{opacity:.85}

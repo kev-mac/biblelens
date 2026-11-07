@@ -77,6 +77,19 @@ for(let index=0;index<2;index++){handlers.pointerdown({button:0,pointerType:'tou
 assert(!handlers.dblclick,'No double-click handler may consume native text selection');assert(popup.hidden);assert.equal(mutationAttempts,0,'Touch text selection cannot mutate bookmarks');
 console.log('PASS: explicit actions label their effect, allow independent/title-only notes, protect highlights, delegate public sharing, focus enabled controls and leave text gestures native.');
 
+// A comparison click stays in place and distinguishes the cited range from context.
+ctx.fetch=async()=>({ok:true,json:async()=>({verses:Array.from({length:9},(_,i)=>({n:i+1,kjv:'KJV '+(i+1),web:i===3?'':'WEB '+(i+1)}))})});
+const contextRange=chip(3,4);Object.assign(contextRange.dataset,{cite:'1/9/3',citePreview:'',citeContext:'true',citeEdition:'web'});
+const beforeContext=loads.length;handlers.click({target:target(contextRange),preventDefault(){}});await settle();
+const contextText=child('.preview-text').innerHTML;
+assert(!popup.hidden);assert.equal(loads.length,beforeContext,'Comparison citations must not navigate away');
+assert(contextText.includes('WEB 1'));assert(contextText.includes('WEB 6'));assert(!contextText.includes('WEB 7'));
+assert(contextText.includes('class="preview-selected"><b>3</b> WEB 3'));
+assert(contextText.includes('class="preview-selected"><b>4</b> This verse is absent'));
+assert(contextText.includes('class="preview-context"><b>5</b> WEB 5'));
+handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);assert.equal(doc.activeElement,contextRange);
+console.log('PASS: comparison clicks open selected-edition context, mark ranges, retain missing-verse notices and restore focus without navigation.');
+
 
 assert(!html.includes('id="prev-top"'));assert(!html.includes('id="next-top"'));
 

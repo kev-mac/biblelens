@@ -1,0 +1,213 @@
+{
+  "checkedAt": "2026-11-07",
+  "canonicalBaseline": "b3c4713",
+  "siteMirror": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "siteSavedVersion": 386,
+  "sourceBuild": 389,
+  "completeBookIntegrations": [],
+  "partialBookIntegrations": [
+    {
+      "book": "Exodus",
+      "assessments": 5,
+      "sabEntries": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ]
+    }
+  ],
+  "locatedReviewFiles": [
+    {
+      "name": "ezekiel-review.html",
+      "libraryFileId": "libfile_fde3_f-731e1d7c4ea0819191bfbaa63d95ffac_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/ezekiel-review.html",
+      "sizeBytes": 1870346,
+      "modifiedAt": "2026-11-07T18:02:54.295231Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "psalms-review.html",
+      "libraryFileId": "libfile_fde3_f-17151c8591308191b6ccef55113f3f18_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/psalms-review.html",
+      "sizeBytes": 2980508,
+      "modifiedAt": "2026-11-07T17:55:30.672401Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "song-of-solomon-review-package.zip",
+      "libraryFileId": "libfile_fde3_f-ae75e1865af0819191f5b3c02a6e8bb6_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/song-of-solomon-review-package.zip",
+      "sizeBytes": 201603,
+      "modifiedAt": "2026-11-07T17:55:29.613104Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "proverbs-review-package.zip",
+      "libraryFileId": "libfile_fde3_f-b3239f5dad9481918fa18953ef62fb62_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/proverbs-review-package.zip",
+      "sizeBytes": 360114,
+      "modifiedAt": "2026-11-07T17:53:43.433371Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "ezra-contradiction-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-2a2f2700a2dc81918753c46269b60d02_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/ezra-contradiction-review-2026-11-07.zip",
+      "sizeBytes": 261051,
+      "modifiedAt": "2026-11-07T17:51:19.365548Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "2-chronicles-review.html",
+      "libraryFileId": "libfile_fde3_f-ceff6c388a148191b713272f455b947f_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/2-chronicles-review.html",
+      "sizeBytes": 1253981,
+      "modifiedAt": "2026-11-07T17:50:46.992686Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "job-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-82632df88288819190ce602bafb8f8c1_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/job-review-2026-11-07.zip",
+      "sizeBytes": 364083,
+      "modifiedAt": "2026-11-07T17:48:44.492346Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "1-chronicles-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-00f95521147c8191b9bf723c9c7335d1_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/1-chronicles-review-2026-11-07.zip",
+      "sizeBytes": 463522,
+      "modifiedAt": "2026-11-07T17:46:44.634371Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "1-samuel-contradictions-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-5f1efb2078308191bf57a4e8104d4bb7_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/1-samuel-contradictions-review-2026-11-07.zip",
+      "sizeBytes": 405554,
+      "modifiedAt": "2026-11-07T17:40:12.708588Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "deuteronomy-contradiction-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-d020c073bb3c819199b61ee9553a3757_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/deuteronomy-contradiction-review-2026-11-07.zip",
+      "sizeBytes": 504748,
+      "modifiedAt": "2026-11-07T17:40:04.461818Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "1-kings-contradictions-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-4f2e5aec284c8191af5d8bcc19869c3b_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/1-kings-contradictions-review-2026-11-07.zip",
+      "sizeBytes": 713071,
+      "modifiedAt": "2026-11-07T17:39:16.567109Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "Numbers-contradiction-review.zip",
+      "libraryFileId": "libfile_fde3_f-ec9fdc49245c8191a431e5aef41bdf96_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/Numbers-contradiction-review.zip",
+      "sizeBytes": 665763,
+      "modifiedAt": "2026-11-07T17:36:39.633363Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "judges-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-f6c7dedef08c8191908dd01ed752d961_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/judges-review-2026-11-07.zip",
+      "sizeBytes": 445741,
+      "modifiedAt": "2026-11-07T17:36:32.461687Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "exodus-review.html",
+      "libraryFileId": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/exodus-review.html",
+      "sizeBytes": 1081196,
+      "modifiedAt": "2026-11-07T17:36:02.760698Z",
+      "status": "read; five assessments integrated; remainder pending"
+    },
+    {
+      "name": "joshua-contradiction-review.zip",
+      "libraryFileId": "libfile_fde3_f-b8da140ea1c081919cc10f72a82f5eb2_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/joshua-contradiction-review.zip",
+      "sizeBytes": 584654,
+      "modifiedAt": "2026-11-07T17:33:05.547989Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "leviticus-contradiction-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-391271c237f881919bdd6b880809108f_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/leviticus-contradiction-review-2026-11-07.zip",
+      "sizeBytes": 545936,
+      "modifiedAt": "2026-11-07T17:30:54.503039Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "joel-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-d9a35fa9bf348191a02ac643922eab76_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/joel-review-2026-11-07.zip",
+      "sizeBytes": 228031,
+      "modifiedAt": "2026-11-07T18:07:20.211689Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "amos-review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-2d2ffb3ab27081919cecc7af6365b91b_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/amos-review-2026-11-07.zip",
+      "sizeBytes": 527103,
+      "modifiedAt": "2026-11-07T18:06:33.597796Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "obadiah-review.html",
+      "libraryFileId": "libfile_fde3_f-f6fb112a79fc8191b1094127ea25375c_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/obadiah-review.html",
+      "sizeBytes": 201202,
+      "modifiedAt": "2026-11-07T18:06:26.792850Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "amos-review.html",
+      "libraryFileId": "libfile_fde3_f-76f5d0aaa59481918226d811c0d1f005_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/amos-review.html",
+      "sizeBytes": 279585,
+      "modifiedAt": "2026-11-07T18:06:21.750557Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "Daniel-Contradiction-Review-2026-11-07.zip",
+      "libraryFileId": "libfile_fde3_f-e96645e36a588191ac0a5ada5eef3b0c_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/Daniel-Contradiction-Review-2026-11-07.zip",
+      "sizeBytes": 215517,
+      "modifiedAt": "2026-11-07T18:03:37.247049Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    },
+    {
+      "name": "hosea-review.html",
+      "libraryFileId": "libfile_fde3_f-2f62cc5d58b481919e14728b1caf3e5c_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "path": "/hosea-review.html",
+      "sizeBytes": 365349,
+      "modifiedAt": "2026-11-07T18:03:24.940688Z",
+      "status": "located; bytes inaccessible through Library transfer helper; not integrated"
+    }
+  ],
+  "requestedSpaceSaves": {
+    "books": [
+      "Esther",
+      "Ecclesiastes",
+      "Nehemiah"
+    ],
+    "status": "authorized by Kevin, but reports/bundles not accessible or located in this session; no saves attempted"
+  },
+  "concurrency": {
+    "maximumBooks": 10,
+    "newSessionsStarted": 0,
+    "existingSessions": "untouched; managed by parent thread"
+  },
+  "remainingBooks": "Every book still needs full review integration. Exodus has only five scoped assessments integrated."
+}

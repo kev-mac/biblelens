@@ -27,7 +27,7 @@ console.log('PASS: book-scoped comparison retrieval, one row per verse/compariso
 const actualPrimaryReferences=context.markedPrimaryReferences;
 // Expanded cards quote primary passages before reasoning and place secondary references after it.
 Object.assign(context,{markedBookSelection:0,books:[{name:'Genesis'}],languageTags:{T:{}},comparisonTone:()=> 'translation',comparisonEvidenceOpen:new Set(),esc:s=>String(s),summaryText:r=>r.summary,comparisonReasoning:r=>r.reasoning,referenceLink:r=>`<a class="verse-citation">${r.label}</a>`,commandmentLabels:()=>'',commandmentRepetitions:()=>'',roleCitations:()=>'<div class="context-citations">Supporting reference</div>',scienceDetails:()=>'',markedPrimaryReferences:()=>[{label:'Genesis 49:10',quotes:['Full scripture quotation']}],markedCardId:()=> 'marked-regression'});
-vm.runInContext(readerSource.slice(readerSource.indexOf('function relatedStudyPassages('),readerSource.indexOf('function scienceDetails(')),context);
+vm.runInContext(readerSource.slice(readerSource.indexOf('function contradictionReviewHtml('),readerSource.indexOf('function scienceDetails(')),context);
 context.markedKind='all';context.markedMatchingPlacements=()=>[{chapter:49,verse:10}];context.markedChoices=r=>[{...r,tag:'T'}];context.markedGroup=()=> 'V';
 vm.runInContext(source.slice(source.indexOf('function markedPrimaryRows'),source.indexOf('function renderMarkedContext')),context);
 // Prose links preserve chapter/range navigation and escape user-facing text.
