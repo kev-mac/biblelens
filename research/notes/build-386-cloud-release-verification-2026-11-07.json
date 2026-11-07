@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-07",
+  "book": "Zechariah",
+  "canonicalBaseline": "3d21d5f000de6506ac602592fc90e3e286bb5662",
+  "canonicalReviewCommit": "30ea88c",
+  "review": {
+    "retainedImages": 14,
+    "replacements": 0,
+    "generations": 0,
+    "storyImages": 0,
+    "chapterOpeners": 14,
+    "minimumInternalGap": 9,
+    "boundaryGaps": [
+      23,
+      21
+    ],
+    "closePairsTouchingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "workerBytes": 59517405,
+  "workerSha256": "19e0945b9d99d5aa36d43c5c1e46d89d7fbb7aaba582d5dee64acb53bcb03eff",
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference unverified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed single unchanged run; inherited intermittent assert(finishRead) failure unresolved",
+    "focusedWorkerOffline": "passed 14 chapters, 211 verses, three editions, exact metadata and bytes, 14 missing-opener rejection cases, zero offline network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no installation/alternate path",
+    "fullReleasePreparation": "FAILED exit 1: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete; no candidate.json",
+    "readability": "completed report-only with inherited findings",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry/bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools"
+  },
+  "mirrorBaseline": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 385,
+      "sourceHash": "b74b15569d60d46b7b289c59b3ac57418fa0a3dabbeba4a739072e48c7c26545"
+    },
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 385,
+      "sourceHash": "b74b15569d60d46b7b289c59b3ac57418fa0a3dabbeba4a739072e48c7c26545"
+    },
+    "mirrorCommit": "1595541e124cda1810f45197f6704008c0807975",
+    "independentApplicationChanges": false,
+    "mirrorOnly": [],
+    "differences": "330 research draft files absent from Sites plus release/audit/handoff documents; preserve existing mirror research"
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry. Detailed local logs remain /tmp/zechariah-386-*; not public handoff material.",
+  "handoff": "malachi-artwork-handoff-from-zechariah-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": {
+    "status": "pending"
+  },
+  "pushRecovery": "Initial canonical push rejected by GitHub GH007 email privacy protection. Only this session\u2019s two unpublished commits were rewritten using the existing prior canonical GitHub noreply identity; no public history or source bytes changed."
+}
