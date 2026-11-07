@@ -136,3 +136,23 @@ The latest passage annotations were implemented afterward and remain subject
 to a fresh exact-source run covering all 180 cases. Passing intermediate
 reader geometry is evidence for that source only, not acceptance of the later
 picker changes or context actions.
+
+[Run 42419644938](https://github.com/kev-mac/biblelens/actions/runs/42419644938)
+passed preparation/images, all 28 evidence/context-card cases and all 48
+Explore cases for source `04104cbe…`. The new reader fixture stopped after
+its first 320px context on the final comparison focus assertion. The test had
+pressed Enter on an already focused native translation select, opening its
+native menu; Escape then dismissed the menu rather than the passage dialog.
+The subsequent comparison therefore had the wrong assumed opener. Selection
+is now committed with Tab, and the test explicitly verifies the passage
+dialog closes and restores chapter-control focus before testing comparison.
+The focus assertions and real keyboard translation selection are retained.
+No production behavior was changed for that test sequence error. Matrix PASS
+rows are now recorded only after the entire viewport context completes, and
+failures retain a viewport screenshot. Undimmed reader screenshots are also
+retained at 320px and both annotated passage sizes.
+
+That failed result archive SHA-256 is
+`d14a2c797a0cbbc3c70cd862aa527c7554553b92f9bbdde8432131501898a8f8`.
+No bundle was accepted from it. Its category/color/real-context results are
+useful evidence for that source, but do not constitute a complete release.
