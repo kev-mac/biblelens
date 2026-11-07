@@ -1,0 +1,112 @@
+{
+  "baseline": "33aacf3cc74ecab68540ad9a26af93a71a61b94a",
+  "scope": "Hebrews artwork only; all 14 images retained, no production changes",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --registry=https://registry.npmjs.org --cache=/tmp/biblelens-npm-cache",
+      "result": "passed",
+      "logPath": "/tmp/hebrews-npm-install.log",
+      "logBytes": 629,
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build:mobile",
+      "result": "passed",
+      "logPath": "/tmp/hebrews-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "57b285789841ec27680d68256db7f143195033689adc62a88f0e9d235d3209fe",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:images",
+      "result": "passed; all three constituent scripts emitted PASS",
+      "logPath": "/tmp/hebrews-check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "result": "passed; both constituent scripts emitted PASS",
+      "logPath": "/tmp/hebrews-check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "result": "passed; all six constituent scripts emitted PASS",
+      "logPath": "/tmp/hebrews-check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/hebrews-artwork-2026-11-07/verify.mjs",
+      "result": "passed",
+      "logPath": "/tmp/hebrews-check-verify.log",
+      "logBytes": 386,
+      "logSha256": "0262430b1064f1283efae2f15af2db9482710a8fb94b1f35c0bf3580c45f96bc",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check",
+      "result": "failed at browser smoke after all preceding checks passed",
+      "logPath": "/tmp/hebrews-check-all.log",
+      "logBytes": 24170,
+      "logSha256": "258b7d107bfae1649607b7ff8c0fd74b8de4fad2851668bf467074b6d39b1e56",
+      "exitCode": 1
+    }
+  ],
+  "additionalPassedChecks": [
+    "Fresh-credential read-only Sites source comparison",
+    "2010 production files, 1619 assets byte-identical",
+    "13 single openers, 14 placements, 303 verses with exact KJV/ASV/WEB presence/type/value",
+    "13 missing-opener rejection cases",
+    "1147 pinned Git blobs match local bytes",
+    "Source/Worker/unsigned offline image parity, zero offline network calls",
+    "Both opener-coordinate spacing conventions, no pair touching Hebrews below five"
+  ],
+  "production": {
+    "filesPreserved": 2010,
+    "assetsPreserved": 1619,
+    "imagesRetained": 14,
+    "imagesReplaced": 0,
+    "chapterOpeners": 13,
+    "stories": 1,
+    "chapters": 13,
+    "verses": 303,
+    "totalImageBytes": 1772480,
+    "minimumInternalGapZeroConvention": 6,
+    "minimumInternalGapOneConvention": 5,
+    "boundaryGaps": [
+      25,
+      25
+    ],
+    "closePairs": []
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "executable": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Executable absent. Browser tests did not run. Readability is inherited report-only, not a strict corpus pass."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass. No save/deploy/mirror push/audience change/superseding version/alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1; no callable cua_repl.js. Sites skill explicitly says skip browser QA when absent. No preview server/browser installation/substitute control route.",
+    "Inherited denied live HTTP/image bytes/release:verify remain deferred without materially new relevant authorization. Local immutable-origin fixture is not live HTTP QA. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN. Signing, signed App public vs www parity and installation/query/launch pending. Historical build 359 is not current device evidence.",
+    "Sync unchanged/not retested. Inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains unresolved outside scope."
+  ],
+  "nextBookStarted": false
+}
