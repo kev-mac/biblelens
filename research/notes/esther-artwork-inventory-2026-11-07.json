@@ -1,0 +1,352 @@
+{
+  "book": "Esther",
+  "canonicalBaseline": "9a679a4d37c0a033a6b2c5e2583dccc0bdd24042",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "chapterCount": 10,
+  "verseCount": 167,
+  "chapterImages": 5,
+  "storyImages": 5,
+  "activePlacements": [
+    {
+      "book": 16,
+      "chapter": 1,
+      "src": "/assets/story-vashti-deposed-v1.webp",
+      "alt": "Vashti declines a messenger’s summons in a cool, lamplit palace courtyard.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Vashti Deposed",
+      "kind": "Story",
+      "position": 12704,
+      "bytes": 97490,
+      "sha256": "b194ec86d5c88509542474aa01fe5d04fa59d4f4970897c76487414ae337cd81",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 2,
+      "src": "/assets/story-esther-becomes-queen-v1.webp",
+      "alt": "The Persian king places a diadem on Esther as attendants watch.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Esther Becomes Queen",
+      "kind": "Story",
+      "position": 12726,
+      "bytes": 126416,
+      "sha256": "923d15ac5644e43a4f5ced4764f3cd005661306d329039fafcf2989c583867f2",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 3,
+      "src": "/assets/story-haman-s-plot-v1.webp",
+      "alt": "Mordecai speaks with a messenger outside a palace gate as Esther listens above.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Haman's Plot",
+      "kind": "Story",
+      "position": 12749,
+      "bytes": 124764,
+      "sha256": "90699e07304bd518118fc3b054285684e4d40c9050e55368e3b5b3253d42364f",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 4,
+      "afterVerse": 0,
+      "src": "/assets/chapter-esther-04-opening-v1.webp",
+      "alt": "Imagined scene: Mordecai mourns in sackcloth outside the palace gate at Susa.",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12763,
+      "bytes": 126226,
+      "sha256": "bc435b56769d8dedc95c37a8932f21263ee6d4ed756251a3a0866f805703f7fa",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 5,
+      "src": "/assets/story-esther-s-banquets-v1.webp",
+      "alt": "Esther addresses the king at a lamplit banquet while Haman listens.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Esther's Banquets",
+      "kind": "Story",
+      "position": 12781,
+      "bytes": 99762,
+      "sha256": "6f41b1c706c2a15164f627f579af33ab3f52751d8752d7cc429418838fef0f79",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 6,
+      "afterVerse": 0,
+      "src": "/assets/chapter-esther-06-opening-v1.webp",
+      "alt": "Imagined scene: The sleepless king listens as a court reader reads the royal records.",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12794,
+      "bytes": 89840,
+      "sha256": "399fbd319ade5d47495758eae339f491bed0bea6c49da2bd13dfb7f710e65281",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 7,
+      "afterVerse": 0,
+      "src": "/assets/chapter-esther-07-opening-v1.webp",
+      "alt": "Imagined scene: A quiet palace garden lies beyond an open banquet room at dusk.",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12808,
+      "bytes": 138922,
+      "sha256": "8ed378010db88eaa9a0ceab1327c8f1e4334a3f8f0cfcb15cf4135ddee53e10d",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 8,
+      "src": "/assets/story-the-jews-delivered-and-purim-v1.webp",
+      "alt": "Families share bread and baskets of food in a Persian town courtyard.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "The Jews Delivered and Purim",
+      "kind": "Story",
+      "position": 12819,
+      "bytes": 143508,
+      "sha256": "cef8fa9ccbdda1543df4c02bf2f5c85109785a7ecf372f4ec73970d680111fb1",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 9,
+      "afterVerse": 0,
+      "src": "/assets/chapter-esther-09-opening-v1.webp",
+      "alt": "Imagined scene: Baskets of food and a tied letter rest on a table for Purim.",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12835,
+      "bytes": 170908,
+      "sha256": "9dff4767af28c04cc86f946fa3b073c361294c1747eb3d5ba202f26546aa70c2",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    },
+    {
+      "book": 16,
+      "chapter": 10,
+      "afterVerse": 0,
+      "src": "/assets/chapter-esther-10-opening-v1.webp",
+      "alt": "Imagined scene: Mordecai, dressed as a royal official, listens to two people in a courtyard.",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 12867,
+      "bytes": 153908,
+      "sha256": "cc53cc5f2b7295c17d69b84b164f0a860fa4fc91911d5dd56b91235ed18ab340",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected"
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "verseCount": 22,
+      "eventHeadings": {
+        "1": [
+          "Vashti Deposed"
+        ]
+      }
+    },
+    {
+      "chapter": 2,
+      "verseCount": 23,
+      "eventHeadings": {
+        "1": [
+          "Esther Becomes Queen"
+        ]
+      }
+    },
+    {
+      "chapter": 3,
+      "verseCount": 15,
+      "eventHeadings": {
+        "1": [
+          "Haman's Plot"
+        ]
+      }
+    },
+    {
+      "chapter": 4,
+      "verseCount": 17,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-esther-04-opening-v1.webp",
+          "alt": "Imagined scene: Mordecai mourns in sackcloth outside the palace gate at Susa.",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verseCount": 14,
+      "eventHeadings": {
+        "1": [
+          "Esther's Banquets"
+        ]
+      }
+    },
+    {
+      "chapter": 6,
+      "verseCount": 14,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-esther-06-opening-v1.webp",
+          "alt": "Imagined scene: The sleepless king listens as a court reader reads the royal records.",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verseCount": 10,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-esther-07-opening-v1.webp",
+          "alt": "Imagined scene: A quiet palace garden lies beyond an open banquet room at dusk.",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verseCount": 17,
+      "eventHeadings": {
+        "1": [
+          "The Jews Delivered and Purim"
+        ]
+      }
+    },
+    {
+      "chapter": 9,
+      "verseCount": 32,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-esther-09-opening-v1.webp",
+          "alt": "Imagined scene: Baskets of food and a tied letter rest on a table for Purim.",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verseCount": 3,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "src": "/assets/chapter-esther-10-opening-v1.webp",
+          "alt": "Imagined scene: Mordecai, dressed as a royal official, listens to two people in a courtyard.",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    }
+  ],
+  "spacing": {
+    "internal": [
+      {
+        "from": "1:1",
+        "to": "2:1",
+        "distance": 22
+      },
+      {
+        "from": "2:1",
+        "to": "3:1",
+        "distance": 23
+      },
+      {
+        "from": "3:1",
+        "to": "4:0",
+        "distance": 14
+      },
+      {
+        "from": "4:0",
+        "to": "5:1",
+        "distance": 18
+      },
+      {
+        "from": "5:1",
+        "to": "6:0",
+        "distance": 13
+      },
+      {
+        "from": "6:0",
+        "to": "7:0",
+        "distance": 14
+      },
+      {
+        "from": "7:0",
+        "to": "8:1",
+        "distance": 11
+      },
+      {
+        "from": "8:1",
+        "to": "9:0",
+        "distance": 16
+      },
+      {
+        "from": "9:0",
+        "to": "10:0",
+        "distance": 32
+      }
+    ],
+    "boundaryFromNehemiah": 31,
+    "boundaryToJob": 4
+  },
+  "sourceWebOfflineBytes": true,
+  "offlineNetworkCalls": 0,
+  "pinnedPublicGitBlobs": 1142,
+  "publicSourcePin": "c87ed7459451ea3e2b3400eed783def11f017291",
+  "originResponses": "Local fixtures, not live HTTP",
+  "worker": {
+    "bytes": 59888449,
+    "sha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2"
+  }
+}
