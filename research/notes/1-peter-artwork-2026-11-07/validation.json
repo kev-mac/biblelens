@@ -1,0 +1,212 @@
+{
+  "baseline": "8f1db26635174c2aa49fa64be051d788e473ba38",
+  "scope": "1 Peter only; all five existing openers retained, no production edits",
+  "checks": [
+    {
+      "command": "npm ci --no-audit --no-fund",
+      "exitCode": 254,
+      "result": "failed default cache write; resolved by scoped-cache retry",
+      "logPath": "/tmp/1-peter-npm-ci.log",
+      "logBytes": 79912,
+      "logSha256": "9822438a49c8ce889854890019e47d9f25095919e739cf291f7129adace6fdb2"
+    },
+    {
+      "command": "npm ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org --cache=/tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-npm-ci-retry.log",
+      "logBytes": 629,
+      "logSha256": "6d83048ada6619f2e051e316c49d923db9e450c44b757ccaf8e7cd23af5a5195"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "abe530bd46cc8ce16eaaebcc8071a29389d53c6859c42b758ab15dbb6acb0234"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/1-peter-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/1-peter-check-verify.log",
+      "logBytes": 384,
+      "logSha256": "1d0acb15e58ceaf02246b6e3bb454210e6f0c832070b8a7c005c6202779ca86e"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "result": "failed at final browser launch after preceding checks passed",
+      "logPath": "/tmp/1-peter-check-all.log",
+      "logBytes": 24170,
+      "logSha256": "1879a5c3ae76df1f8403acb6fbdc48cc5263123e5198a7769cf8a15d25f0182f"
+    }
+  ],
+  "additionalPassedChecks": [
+    "Fresh scoped-credential read-only Sites comparison",
+    "2010 production files and 1619 assets byte-identical",
+    "Five chapters/105 verses/315 exact KJV/ASV/WEB fields, presence/type/value preserved",
+    "Five source/Worker/unsigned-native image byte matches; headings/metadata/captions preserved",
+    "Five missing-opener rejection cases",
+    "1147 immutable pinned Git blobs match source",
+    "Both opener-coordinate conventions: no close pair touching 1 Peter",
+    "Actual offline bundled engine: zero network calls"
+  ],
+  "production": {
+    "preservedProductionFiles": 2010,
+    "preservedAssets": 1619,
+    "retained": 5,
+    "replaced": 0,
+    "totalImageBytes": 658804,
+    "chapters": 5,
+    "verseCount": 105,
+    "storyPlacements": 0
+  },
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [
+        25,
+        25,
+        22,
+        19
+      ],
+      "minimumInternalGap": 19,
+      "boundaries": [
+        {
+          "a": {
+            "book": 58,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30358,
+            "src": "/assets/chapter-james-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 59,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30378,
+            "src": "/assets/chapter-1-peter-01-opening-v1.webp"
+          },
+          "gap": 20
+        },
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30469,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30483,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [
+        25,
+        25,
+        22,
+        19
+      ],
+      "minimumInternalGap": 19,
+      "boundaries": [
+        {
+          "a": {
+            "book": 58,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30359,
+            "src": "/assets/chapter-james-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 59,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30379,
+            "src": "/assets/chapter-1-peter-01-opening-v1.webp"
+          },
+          "gap": 20
+        },
+        {
+          "a": {
+            "book": 59,
+            "chapter": 5,
+            "verse": 0,
+            "position": 30470,
+            "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+          },
+          "b": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30484,
+            "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Browser executable absent; browser assertions did not run. Preceding checks passed; readability remains inherited report-only."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass; no save/deploy, mirror push, access change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1 and no callable cua_repl.js; Sites skill requires skipping browser QA. No preview, browser installation or substitute route.",
+    "Inherited denied live HTTP/image bytes/release:verify deferred without materially new relevant authorization. Local origin fixture is not live parity. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN. Signing, signed public vs www comparison and device installation/query/launch pending. Historical build 359 is not fresh evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains unresolved outside scope."
+  ],
+  "nextBookStarted": false
+}

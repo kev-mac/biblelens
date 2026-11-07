@@ -1,0 +1,154 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "1 Peter",
+  "canonicalBaseline": "8f1db26635174c2aa49fa64be051d788e473ba38",
+  "chapterCount": 5,
+  "verseCount": 105,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-1-peter-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 106858,
+      "sha256": "81105c37160d276f3f09535d6c9e4bf616b8089e5e295b64d4d35d0480f3f126",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-1-peter-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 122118,
+      "sha256": "501e34c486602ba5062ed88d99668de346d2b9418bda6fd7fa97b5b2eec9a15c",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-1-peter-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 176388,
+      "sha256": "02516703edc48633fc1ca2ab58890018a47049108ebcf9af062d71e63e2fd536",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-1-peter-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 19,
+      "bytes": 98980,
+      "sha256": "72a98896f90e9b85c1b3a917012402d4bfb011f15ba66bc630de313d1201b1b4",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-1-peter-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 14,
+      "bytes": 154460,
+      "sha256": "a54ecdd116c90d090e794f14ed021f9b276b54b6b6582c82bac5eb56e4ad528e",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 5,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 58,
+        "chapter": 5,
+        "verse": 0,
+        "position": 88,
+        "src": "/assets/chapter-james-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 59,
+        "chapter": 1,
+        "verse": 0,
+        "position": 108,
+        "src": "/assets/chapter-1-peter-01-opening-v1.webp"
+      },
+      "gap": 20
+    },
+    {
+      "a": {
+        "book": 59,
+        "chapter": 5,
+        "verse": 0,
+        "position": 199,
+        "src": "/assets/chapter-1-peter-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 60,
+        "chapter": 1,
+        "verse": 0,
+        "position": 213,
+        "src": "/assets/chapter-2-peter-01-opening-v1.webp"
+      },
+      "gap": 14
+    }
+  ],
+  "minimumInternalGap": 19,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; 1 Peter existing 5 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 5,
+  "exactEditionFieldsVerified": 315
+}

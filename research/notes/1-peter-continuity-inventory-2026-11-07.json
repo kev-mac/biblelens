@@ -1,0 +1,191 @@
+{
+  "scope": "1 Peter only. No 2 Peter artwork opened/reviewed; outgoing metadata supplies spacing only.",
+  "baseline": "8f1db26635174c2aa49fa64be051d788e473ba38",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "Actual image viewed separately and in five native-size side-by-side style boards. Style only, never identity for another character."
+  },
+  "priorLedgersConsulted": [
+    "1-peter-visual-continuity-audit-2026-11-04.md",
+    "1-peter-artwork-2026-11-04/prior-inventory.json",
+    "1-peter-artwork-2026-11-04/generation-ledger.json",
+    "james-artwork-audit-2026-11-07.md",
+    "james-continuity-inventory-2026-11-07.json",
+    "matthew-artwork-audit-2026-11-07.md",
+    "matthew-continuity-inventory-2026-11-07.json",
+    "john-artwork-audit-2026-11-07.md",
+    "john-continuity-inventory-2026-11-07.json",
+    "acts-artwork-audit-2026-11-07.md",
+    "acts-continuity-inventory-2026-11-07.json",
+    "genesis-artwork-audit-2026-11-06.md"
+  ],
+  "visiblePeople": [],
+  "visibleHumanGroups": [],
+  "visibleAnimals": [
+    {
+      "chapter": 5,
+      "animals": "Four white/cream sheep: foreground-left and background-center resting, background-left and foreground-right grazing.",
+      "role": "Pastoral flock metaphor at 5:2-3; not a named recurring historical flock or a complete count.",
+      "review": "Viewed actual 960x540 source and adjacent/style boards; two extra 4x background crops. Heads, ears, eyes, muzzles, neck/body joins, visible limbs/hooves and folded resting limbs coherent. Back-left sheep has four distinguishable legs. Resting and partially occluded limbs are not certified beyond visible detail. No definite malformed anatomy found."
+    }
+  ],
+  "textualMentionsAreNotDepictions": [
+    {
+      "chapter": 1,
+      "mentions": [
+        "Peter",
+        "Jesus Christ",
+        "scattered addressees",
+        "prophets",
+        "angels",
+        "lamb simile"
+      ],
+      "finding": "Only furnace, gold and tools. Greeting proves no face, age or author workshop; literary lamb simile is not drawn."
+    },
+    {
+      "chapter": 2,
+      "mentions": [
+        "Jesus Christ",
+        "builders",
+        "priesthood",
+        "king/governors",
+        "servants/masters",
+        "sheep simile"
+      ],
+      "finding": "Only stones and tools. Cornerstone metaphor is not a Jesus portrait or historical temple reconstruction."
+    },
+    {
+      "chapter": 3,
+      "mentions": [
+        "wives/husbands",
+        "Sarah/Sara",
+        "Abraham",
+        "Christ",
+        "Noah",
+        "eight saved souls",
+        "spirits",
+        "angels"
+      ],
+      "finding": "Only peaceful path and stream, conceptual illustration of 3:11 and quiet spirit. No baptism event, Noah family, prison scene or OT portrait. Eight-adult ark constraint remains for any future ark scene."
+    },
+    {
+      "chapter": 4,
+      "mentions": [
+        "Christ",
+        "hospitality recipients",
+        "speakers/servants",
+        "sufferers"
+      ],
+      "finding": "Empty prepared table and open door; no identified household, attendee count or witnessed meal."
+    },
+    {
+      "chapter": 5,
+      "mentions": [
+        "elders",
+        "Christ/chief Shepherd",
+        "younger",
+        "devil/lion simile",
+        "Silvanus",
+        "Mark/Marcus",
+        "Babylon greeting"
+      ],
+      "finding": "Four sheep only; no Peter/Silvanus/Mark portrait, literal chief Shepherd or lion. Greeting does not settle Babylon location, date, family relationship or historical portrait."
+    }
+  ],
+  "inheritedPeterGuidance": {
+    "person": "Simon Peter",
+    "references": [
+      "src/assets/story-calling-the-first-disciples-v1.webp",
+      "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "src/assets/story-the-miraculous-catch-v1.webp",
+      "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+    ],
+    "currentAppearances": [
+      "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "src/assets/story-ananias-and-sapphira-v1.webp",
+      "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+      "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent nose, natural dark curls, full dark beard with modest gray, sturdy/lean adult build.",
+    "age": "Early Acts soon after resurrection; later Cornelius/escape years allow modest graying, not a new identity. Exact calendar ages unasserted.",
+    "result": "Six Gospel comparisons and four Acts neighbors checked in native portraits alongside actual originals. Faces/complexion/hair/build compatible. Council left greying listener is compatible but exact assignment not certified; central gray speaker is James per alt. Acts 1 grey lots participant is not labeled Peter. Inactive Pentecost v1 never reactivated or used as reference.",
+    "status": "Current approved Acts ledger guidance carried forward; earlier portrait files were NOT newly visually reviewed or supplied to a generation tool in this session because there is no human portrayal or generation."
+  },
+  "otherIdentityGuidance": "Jesus uses current Gospel/Acts approved anchors, brown complexion, natural dark curls/full beard, prominent nose and lean adult build; ministry/resurrection scenes do not gain decades of age. Apostle John is not John the Baptist or John Mark. Silvanus/Silas or Mark/Marcus historical identification cannot be inferred from a greeting alone. Sarah elderly anchor is story-abraham-and-sarahs-covenant-v1.webp; Genesis audit controls Noah/Abraham and narrative ages. Current Acts Peter allows modest later graying, not identity drift. Do not use rejected Pentecost/first-journey v1 or old sending-twelve/arrest files as approved anchors.",
+  "generationCalls": [],
+  "replacements": [],
+  "futureGenerationRequirement": "For every identifiable recurring person in a future image generation/edit, pass the actual clear approved earlier identity image files as visual inputs (plus style reference separately); text descriptions or prior viewing alone are insufficient. Compare full size with actual references and nearby depictions, including cross-book appearances; elapsed narrative time controls aging. Leave unresolved identity pending or choose text-faithful nonportrait scene.",
+  "inspectionPanels": [
+    {
+      "path": "/tmp/1-peter-review/neighbors-1-2.png",
+      "bytes": 1797071,
+      "sha256": "a423d7a613a8d22ccea1255ba3914fde0854f3f090dc655ed4009e2f4b13391d",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/neighbors-2-3.png",
+      "bytes": 2086563,
+      "sha256": "912af3bf184913d0ed5735cb0515d6d7cf31874060af8884d838ff6546dc1d31",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/neighbors-3-4.png",
+      "bytes": 2005940,
+      "sha256": "710895faf11d01eab5b0c09ea3bcfa0cf4276f51c716f78682f40f8e917ea6c1",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/neighbors-4-5.png",
+      "bytes": 1923483,
+      "sha256": "f37273d2b913dd9f73448d890e2bd2e66e3cf9bc31af4ed285cd9f502909316a",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/sheep-back-center-4x.png",
+      "bytes": 389285,
+      "sha256": "c9ad538d578526c586267c6c67826a4bfb51c2dff8feb53a0b710bcb3b431400",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/sheep-back-left-4x.png",
+      "bytes": 537024,
+      "sha256": "37156681e44817bee64d46bd022dfa742457e856907a371baa444747ba1f0888",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/style-1.png",
+      "bytes": 1776781,
+      "sha256": "f3e3d289fb296282fb264800d10b8e942855b40936ce7d90e3c0230a4674a590",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/style-2.png",
+      "bytes": 1833018,
+      "sha256": "f9e5f172b77e0cbfbf555b93c46b47dd2264c461845c359152f578a621c3facb",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/style-3.png",
+      "bytes": 2065279,
+      "sha256": "56e180b6990713b52aba71c141bd0b3246145ab28b315d0caa4ed163830c107f",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/style-4.png",
+      "bytes": 1737878,
+      "sha256": "f2d9e2ada3a4b448d07cc32c0b016afc8a41df96eb3961126d2e9133dfdf82cc",
+      "role": "Inspection only; no composite enters app"
+    },
+    {
+      "path": "/tmp/1-peter-review/style-5.png",
+      "bytes": 1975832,
+      "sha256": "02422e502da882ca2c529ea0d4f4d39dbf12e667dd2a15cf695992fb884bac3c",
+      "role": "Inspection only; no composite enters app"
+    }
+  ],
+  "result": "Five existing openers retained. No named human portrait, new identity anchor or unresolved recurring-person break. No definite visible animal anatomy defect. Hidden limbs and exact locations/reconstructions not certified.",
+  "nextBookStarted": false
+}
