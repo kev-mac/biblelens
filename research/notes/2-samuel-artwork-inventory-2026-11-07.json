@@ -3,11 +3,11 @@
   "bookId": 9,
   "reviewDate": "2026-11-07",
   "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
-  "retainedImages": 25,
+  "retainedImages": 26,
   "replacements": 1,
   "chapterOpeners": 16,
   "storyOpeners": 8,
-  "laterStoryImages": 2,
+  "laterStoryImages": 3,
   "placements": [
     {
       "book": 9,
@@ -176,6 +176,27 @@
       "sha256": "819879cb6b3c40f62565c88adc0080ceb7f223f981a4e6053ff5cd91a7270e13",
       "decision": "retained after full-size review",
       "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 7,
+      "verse": 8,
+      "position": 976,
+      "type": "story",
+      "title": "Davidic Covenant",
+      "src": "/assets/story-davidic-covenant-v1.webp",
+      "alt": "David sits quietly before a linen sanctuary curtain beside a small lamp.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-davidic-covenant-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 58270,
+      "sha256": "2520aacb673bc5598d5f6c0ae7df9d338f9789018854019fc03d8868c05409d9",
+      "decision": "retained after full-size review; existing UX13 event added to production Story catalog",
+      "anatomy": "Visible hands/arms/legs coherent; hidden feet unverified."
     },
     {
       "book": 9,
@@ -584,5 +605,9 @@
       ],
       "gap": 25
     }
+  ],
+  "catalogSources": [
+    "data/stories.json",
+    "data/ux13-events.json via addUX13Events"
   ]
 }
