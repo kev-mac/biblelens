@@ -16,7 +16,7 @@
         "src/assets/chapter-exodus-29-v2.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "width": 960,
       "height": 540,
       "bytes": 141890,
@@ -32,7 +32,48 @@
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
       "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
-      "goldPlateEditInputSha256": "4039fafb85258592cb07a92d45e4adc72657553ca660c1dcfcfccf530b34f54f"
+      "goldPlateEditInputSha256": "4039fafb85258592cb07a92d45e4adc72657553ca660c1dcfcfccf530b34f54f",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-04-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-04-v2.webp",
+          "sha256": "0331133b98dd5240ef9de8bc2acb50c9c33ce237c1275e778ad75d57c674ed4f"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-exodus-29-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "goldPlateEditInputFiles": [
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-04-v3.webp",
+          "sha256": "4039fafb85258592cb07a92d45e4adc72657553ca660c1dcfcfccf530b34f54f",
+          "stage": "Intermediate WebP before gold-plate edit"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen8",
@@ -46,7 +87,7 @@
         "src/assets/chapter-leviticus-04-v3.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "width": 1200,
       "height": 675,
       "bytes": 185162,
@@ -62,7 +103,54 @@
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
       "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
-      "goldPlateEditInputSha256": "04c308740ce6c3f8e0530e59bcfb01304012b0f5ddcaf595757c1bb709342b53"
+      "goldPlateEditInputSha256": "04c308740ce6c3f8e0530e59bcfb01304012b0f5ddcaf595757c1bb709342b53",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+          "sha256": "b13384859c62d0cdf08d5400b49716d9da24934978ced1e9cac7cc67e1a43168"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-exodus-29-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-04-v3.webp",
+          "suppliedFile": "/workspace/generated_images/exec-ec0506ba-ba69-49be-9818-535884248121.png",
+          "sha256": "a4340ff7c2e6e6347833770379b49f4078eb3d4d895828663c95b8d65b69b84f",
+          "stage": "Accepted first-pass PNG, before later forehead-plate detail edit; not the subsequently edited final WebP."
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "goldPlateEditInputFiles": [
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+          "sha256": "04c308740ce6c3f8e0530e59bcfb01304012b0f5ddcaf595757c1bb709342b53",
+          "stage": "Intermediate WebP before gold-plate edit"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen9open",
@@ -76,7 +164,7 @@
         "src/assets/chapter-leviticus-04-v3.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "width": 960,
       "height": 540,
       "bytes": 155992,
@@ -92,7 +180,54 @@
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
       "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
-      "goldPlateEditInputSha256": "9399275f4b579852b3d43841ba1a44f196bef69775ebdcb413b2d8132297ab60"
+      "goldPlateEditInputSha256": "9399275f4b579852b3d43841ba1a44f196bef69775ebdcb413b2d8132297ab60",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-09-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-09-opening-v1.webp",
+          "sha256": "1be317e9176e740579243f8e8a736ebefab66769048492c46f3290b350cdf740"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-exodus-29-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-04-v3.webp",
+          "suppliedFile": "/workspace/generated_images/exec-ec0506ba-ba69-49be-9818-535884248121.png",
+          "sha256": "a4340ff7c2e6e6347833770379b49f4078eb3d4d895828663c95b8d65b69b84f",
+          "stage": "Accepted first-pass PNG, before later forehead-plate detail edit; not the subsequently edited final WebP."
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "goldPlateEditInputFiles": [
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-09-opening-v2.webp",
+          "sha256": "9399275f4b579852b3d43841ba1a44f196bef69775ebdcb413b2d8132297ab60",
+          "stage": "Intermediate WebP before gold-plate edit"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen9",
@@ -106,7 +241,7 @@
         "src/assets/chapter-leviticus-09-opening-v2.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "width": 960,
       "height": 540,
       "bytes": 140330,
@@ -122,7 +257,54 @@
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
       "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
-      "goldPlateEditInputSha256": "5295ae581cbf22d9f36327b608dafec95421817387cdabd33e2c74cac40ea08e"
+      "goldPlateEditInputSha256": "5295ae581cbf22d9f36327b608dafec95421817387cdabd33e2c74cac40ea08e",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-09-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-09-v1.webp",
+          "sha256": "48b35eb065fe58692daebfb27295472585d801879289427d13f621f7cdd893ed"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-18-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-18-v1.webp",
+          "sha256": "a369f812fcc127ab2eba1a51e49897377aa859942aea587437ab12e54e3f4408"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-09-opening-v2.webp",
+          "suppliedFile": "/workspace/generated_images/exec-30f8c2fd-d7e4-44d6-9ade-f8071721d923.png",
+          "sha256": "73b9a333b832f9f3490d82124eb917846a4588606f53d787e024d640505cd95d",
+          "stage": "Accepted first-pass PNG, before later forehead-plate detail edit; not the subsequently edited final WebP."
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "goldPlateEditInputFiles": [
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-09-v2.webp",
+          "sha256": "5295ae581cbf22d9f36327b608dafec95421817387cdabd33e2c74cac40ea08e",
+          "stage": "Intermediate WebP before gold-plate edit"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen12",
@@ -136,7 +318,7 @@
         "src/assets/chapter-leviticus-04-v3.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "width": 960,
       "height": 540,
       "bytes": 149206,
@@ -152,7 +334,54 @@
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
       "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
-      "goldPlateEditInputSha256": "b7c81e2613cd6e9daec29710ef8e9ef7a18eb4473ea63eceb01bf6cf07f303b4"
+      "goldPlateEditInputSha256": "b7c81e2613cd6e9daec29710ef8e9ef7a18eb4473ea63eceb01bf6cf07f303b4",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-12-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-12-v1.webp",
+          "sha256": "9a39145ea215369659f5866a2c8366907f53c1e287012a4b7e235755e04d7341"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-exodus-29-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-04-v3.webp",
+          "suppliedFile": "/workspace/generated_images/exec-ec0506ba-ba69-49be-9818-535884248121.png",
+          "sha256": "a4340ff7c2e6e6347833770379b49f4078eb3d4d895828663c95b8d65b69b84f",
+          "stage": "Accepted first-pass PNG, before later forehead-plate detail edit; not the subsequently edited final WebP."
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "goldPlateEditInputFiles": [
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-12-v2.webp",
+          "sha256": "b7c81e2613cd6e9daec29710ef8e9ef7a18eb4473ea63eceb01bf6cf07f303b4",
+          "stage": "Intermediate WebP before gold-plate edit"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen16",
@@ -166,14 +395,42 @@
         "src/assets/chapter-leviticus-04-v3.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "generatedOriginalSha256": "da8aa2005e1482a4dc8c9bc92bcdfb9b97010e7db4eae24f473eb6b2315ec0c7",
       "width": 960,
       "height": 540,
       "bytes": 137624,
       "sha256": "6fee4b32e799c8ef3567242d246e7aff2b20b95e050642c5ef264308153552b0",
       "encodingQuality": 88,
-      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution."
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-16-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-16-v1.webp",
+          "sha256": "4dcf7603823e8ceb1aeaa4d2fe422e4c7f0fcbd50d9275ea53970110ee856beb"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-exodus-29-v2.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-exodus-29-v2.webp",
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-04-v3.webp",
+          "suppliedFile": "/workspace/generated_images/exec-ec0506ba-ba69-49be-9818-535884248121.png",
+          "sha256": "a4340ff7c2e6e6347833770379b49f4078eb3d4d895828663c95b8d65b69b84f",
+          "stage": "Accepted first-pass PNG, before later forehead-plate detail edit; not the subsequently edited final WebP."
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     },
     {
       "key": "gen24",
@@ -187,14 +444,41 @@
         "src/assets/chapter-leviticus-18-v1.webp",
         "src/assets/chapter-genesis-07-opening-v1.webp"
       ],
-      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "actualVisualInputsNote": "Exact first-generation supplied files and hashes are recorded in firstGenerationInputFiles. In-session references used accepted pre-detail full-resolution PNGs; the logical asset paths identify their eventual packaged successors. Later forehead-plate edits have a separate input hash/pass record.",
       "generatedOriginalSha256": "508175efd9f689df45cf7f41d2084c00fd2c21b27b078895e14443581eee30ef",
       "width": 1200,
       "height": 675,
       "bytes": 201440,
       "sha256": "8806525c384f45d32ca107516d7ba20f761d4412943b8d9d28225a2e4be9d95a",
       "encodingQuality": 88,
-      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution."
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "firstGenerationInputFiles": [
+        {
+          "logicalAsset": "src/assets/story-the-blasphemer-stoned-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-the-blasphemer-stoned-v1.webp",
+          "sha256": "6c87b2a08a702f3db05bb2dcda18b64bacffc7bab7cfcff1e3cd26b06fa93cdb"
+        },
+        {
+          "logicalAsset": "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+          "sha256": "ba1ce2238af9f17a7d5b90f93962c6d5dc6d367996b7a7d7ac0f5906efb09b86"
+        },
+        {
+          "logicalAsset": "src/assets/story-the-burning-bush-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/story-the-burning-bush-v1.webp",
+          "sha256": "8e531af8f8486c3ad011938b4c9266fe91541436165245d8123e6ee1f18a7453"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-leviticus-18-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-leviticus-18-v1.webp",
+          "sha256": "a369f812fcc127ab2eba1a51e49897377aa859942aea587437ab12e54e3f4408"
+        },
+        {
+          "logicalAsset": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "suppliedFile": "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ]
     }
   ]
 }

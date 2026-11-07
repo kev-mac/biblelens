@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-07",
+  "book": "Leviticus",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 362,
+    "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+  },
+  "canonicalReleaseCommit": "b7954cdfe1a09662a854206b86b6d076602bc70a",
+  "publicArtworkCommit": "73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063",
+  "sites": {
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "version": 351,
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_3d71689a514081918be0db6dfa09233b",
+    "mirrorCommit": "a263158aa349ad830618744a805e8636333c3fb4",
+    "deploymentId": "appgdep_6aee83ae9a60819186309bea170b3fec",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "audience": "public",
+    "nativeResultVerifiedDeployment": true
+  },
+  "review": {
+    "uniqueActiveFiles": 52,
+    "readerPlacements": 52,
+    "chapterOpeners": 27,
+    "versionedCorrections": 7,
+    "retainedFiles": 45,
+    "existingCloseGaps": 7,
+    "allOriginalsAndFinalsVisuallyInspected": true,
+    "referenceInputs": "leviticus-artwork-corrections-2026-11-07.json"
+  },
+  "checks": {
+    "build:mobile": "passed via release:prepare; shared compressed Worker and offline assets built",
+    "npm run check": "all nonbrowser steps passed, including content/search; final check-release-smoke browser launch failed because Chromium headless shell is missing",
+    "check:readability": "completed in report-only mode; existing collection length/jargon issues remain",
+    "check:images": "passed",
+    "check:release": "passed",
+    "check:mobile": "passed; native inference/hardware not simulated",
+    "check:sync": "passed; no sync/security code changed; historical bounded-settle intermittent failure not proven fixed",
+    "release:prepare": "stopped in npm run check at scripts/check-release-smoke.mjs:31. Full gate is NOT reported as passed; no candidate.json was generated. Browser installation/substitute control path not attempted.",
+    "release:verify": "live HTTP not attempted: current enforced egress policy excludes Site host, prior denial not retried/bypassed. Canonical/mirror/offline/Worker comparisons completed separately."
+  },
+  "sourceMirrorOffline": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 362,
+      "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+    },
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 362,
+      "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+    },
+    "offline": {
+      "version": "1.1.0",
+      "buildNumber": 362,
+      "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+    },
+    "exactPreparedWorker": true
+  },
+  "generatedLeviticusApi": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 362,
+      "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+    },
+    "offline": {
+      "version": "1.1.0",
+      "buildNumber": 362,
+      "sourceHash": "87e168a6f24e00a69ea2a90b5f7a7da26aa5949fc924be526293822de41a580e"
+    },
+    "placementCount": 52,
+    "uniqueFiles": 52,
+    "openers": 27,
+    "allLeviticusSourceOfflineImagesEqual": true
+  },
+  "publicOrigin": {
+    "sourcePin": "73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063",
+    "pinnedAssetCount": 1116,
+    "pinnedSourceMismatches": [],
+    "immutableDownloads": [
+      {
+        "src": "/assets/chapter-leviticus-04-v3.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/chapter-leviticus-04-v3.webp",
+        "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5",
+        "bytes": 141890,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+        "sha256": "6043e78f1e7d9fbe1bd924892269bbf7fdb091ee11a52e0de4d8effb82bf6cc3",
+        "bytes": 185162,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/chapter-leviticus-09-opening-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/chapter-leviticus-09-opening-v2.webp",
+        "sha256": "60d7b162ead27f6d18abc3a7fcf5e91e6d5fc8ef03fa1ddf9631fa0acfe8ffab",
+        "bytes": 155992,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/chapter-leviticus-09-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/chapter-leviticus-09-v2.webp",
+        "sha256": "1d81d93d5fb6ed8b6ba2d6717c029c61fbecee01acf933d67ad7e214d7bc1c17",
+        "bytes": 140330,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/chapter-leviticus-12-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/chapter-leviticus-12-v2.webp",
+        "sha256": "24c19e8028971f280e705b6af6b6e3302aec4e548ee3402b8860bf93d78fbaab",
+        "bytes": 149206,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/chapter-leviticus-16-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/chapter-leviticus-16-v2.webp",
+        "sha256": "6fee4b32e799c8ef3567242d246e7aff2b20b95e050642c5ef264308153552b0",
+        "bytes": 137624,
+        "sourceMatch": true
+      },
+      {
+        "src": "/assets/story-the-blasphemer-stoned-v2.webp",
+        "url": "https://raw.githubusercontent.com/kev-mac/biblelens/73eaf786eb6563cb5ff0d1f54b5ffff3a7e02063/src/assets/story-the-blasphemer-stoned-v2.webp",
+        "sha256": "8806525c384f45d32ca107516d7ba20f761d4412943b8d9d28225a2e4be9d95a",
+        "bytes": 201440,
+        "sourceMatch": true
+      }
+    ]
+  },
+  "artifacts": {
+    "workerSha256": "a47a46b764ba466c88b9e204884a255b17c358c7bdb6376f824577ebf1254531",
+    "workerBytes": 63776850,
+    "localArchiveSha256": "8463c1f7b331687abbe79d067e1df3d090b1eba5dc72618f63a789b4db322f24",
+    "nativeSavedArchive": {
+      "format": "tar",
+      "contentHash": "sha256:02b98aa5311ae67484e0e40b18922d174c1dd55c7cecd3b3b63a17899718eb9b",
+      "bytes": 63795200,
+      "fileCount": 6
+    },
+    "workerOnlyPackage": true,
+    "exactPreparedWorkerCopiedWithoutMirrorRebuild": true
+  },
+  "deferred": {
+    "browser": "Supported cua_repl.js tool unavailable; Chromium headless shell missing at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell. WebKit absent in prior session; no fresh launch performed.",
+    "liveHttp": "No new grant for scripture-lens.kvn-mcgwn.chatgpt.site; no retry/bypass of prior CONNECT403. Live release.json and image-byte verification remain unverified.",
+    "mac": "No Mac connector, configured VPN or authorized TCP route. Mac checkout untouched.",
+    "ios": "Signing, signed-App.app/public comparison, installation, installed-build queries and launches not attempted. Both devices last recorded build359, no fresh device query. Install latest reviewed shared release when authorized Mac/device access becomes available."
+  },
+  "publicationApproval": {
+    "initialDeploymentAttempt": "Denied by automatic approval review for allegedly missing public-deployment authorization; action did not execute.",
+    "newEvidence": "user_message_read.read_messages verified original owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly instructing per-book commit, push, publish and available-device installation.",
+    "resolution": "One retry of the same saved version succeeded; no outstanding publication approval."
+  },
+  "gitPrivacy": "First unpushed artwork commit was rejected by GitHub GH007 email privacy protection. Amended only that new unpushed commit to the existing verified GitHub noreply identity and pushed successfully; no force push.",
+  "logs": {
+    "release-prepare": {
+      "path": ".release/release-prepare-362.log",
+      "sha256": "84800268da1d52ea839c64c0d8f5ab8858ddb9222d4d288466a687d682bbdffb",
+      "retention": "Ignored cloud workspace log; conclusions recorded in this tracked evidence file."
+    },
+    "check-images": {
+      "path": ".release/check-images-362.log",
+      "sha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7",
+      "retention": "Ignored cloud workspace log; conclusions recorded in this tracked evidence file."
+    },
+    "check-release": {
+      "path": ".release/check-release-362.log",
+      "sha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde",
+      "retention": "Ignored cloud workspace log; conclusions recorded in this tracked evidence file."
+    },
+    "check-mobile": {
+      "path": ".release/check-mobile-362.log",
+      "sha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd",
+      "retention": "Ignored cloud workspace log; conclusions recorded in this tracked evidence file."
+    },
+    "check-sync": {
+      "path": ".release/check-sync-362.log",
+      "sha256": "254221de7aa70fdb8d64d5cb6bb9b846b2ecca542a402421486cfb9b8442a9a4",
+      "retention": "Ignored cloud workspace log; conclusions recorded in this tracked evidence file."
+    }
+  }
+}
