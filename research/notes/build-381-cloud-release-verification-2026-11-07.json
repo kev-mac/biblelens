@@ -55,6 +55,46 @@
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "nahum-artwork-handoff-from-micah-2026-11-07.md",
   "nextBookStarted": false,
-  "publication": "pending",
-  "gitHubInitialPush": "rejected by GH007 email privacy protection; corrected only new local commit identity to the existing canonical noreply identity before retry"
+  "canonicalValidationCommit": "da8aa40",
+  "mirrorCommit": "ecbaf547f3b5abaca8574518f26d79b731d88a1a",
+  "localPostPublicationParity": "passed: canonical, mirror, local Worker and unsigned native release identities and staged Worker bytes agree; full live release:verify deferred",
+  "publication": {
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_0de1b4a50aa0819194b07cf7c132dbaa",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 381,
+      "source": {
+        "commit_sha": "ecbaf547f3b5abaca8574518f26d79b731d88a1a"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000045dc81fdb3417beb0c441547",
+        "content_hash": "sha256:959a8432458ce4f113cb6e344d6d19d495bbf3b683c590407de843f5d9320314",
+        "size_bytes": 59535360,
+        "file_count": 5
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeee0e20b508191a170fde12f686431",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_0de1b4a50aa0819194b07cf7c132dbaa",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:27:26.293688+00:00"
+    }
+  },
+  "gitHubInitialPush": "rejected by GH007 email privacy protection; corrected only new local commit identity to the existing canonical noreply identity before retry",
+  "publicationRecovery": {
+    "archive": "First save rejected the archive because server/index.js was at its root; repackaged unchanged prepared bytes at dist/server/index.js, then saved successfully.",
+    "deployment": "First deployment result was not recorded by orchestration and the version read showed no deployment ID. Verified original owner publication authorization via user_message_read.read_messages, then the subsequent deployment returned succeeded."
+  }
 }
