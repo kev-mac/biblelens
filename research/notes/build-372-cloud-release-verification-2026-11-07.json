@@ -412,5 +412,56 @@
     "Inherited live Site HTTP denial, unchanged enforced network policy; no retry/bypass; live release:verify and image bytes deferred",
     "No Mac/device/VPN/Xcode tools; signing, signed asset comparison, installation and launch deferred"
   ],
-  "catalogCorrection": "New Covenant already rendered at Jeremiah 31:31 via compiled Covenants catalog; older no-heading handoff superseded. Existing Luke/Hebrews anchors retained."
+  "catalogCorrection": "New Covenant already rendered at Jeremiah 31:31 via compiled Covenants catalog; older no-heading handoff superseded. Existing Luke/Hebrews anchors retained.",
+  "publication": {
+    "savedVersion": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_95bcab600144819188eb706ef0d3661f",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 372,
+      "source": {
+        "commit_sha": "8c82d4ca20666e04aa6f1c60eae057e1d96f7f6a"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000606881fdb4295d92ac27bbc4",
+        "content_hash": "sha256:b3147ae453803a5f2525a07f162efdeccedf13a2430778ffd47e4329d2d017a1",
+        "size_bytes": 59627520,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6aeec9b7ace48191a9cf521286f08a61",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_95bcab600144819188eb706ef0d3661f",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T06:48:34.313693+00:00"
+    },
+    "mirrorCommit": "8c82d4ca20666e04aa6f1c60eae057e1d96f7f6a",
+    "archive": "/tmp/biblelens-build-372-sites-v2.tar.gz",
+    "archiveGzipSha256": "f130d40f4cad7b21ad562217e26384b6f648f0a0a01fb471bd8a87f7037a1743",
+    "archiveCorrections": "Initial archive had server at root rather than dist/server; save_site_version returned INVALID_ARGUMENT invalid_archive and no version. Exact prepared Worker repackaged at supported root with six files, then saved successfully.",
+    "deploymentReconciliation": "Initial deployment invocation produced no retained structured result and local store failed; get_site_version confirmed deployment_id null. Trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca was read, then one normal deployment retry succeeded. No uncertain deployment remains.",
+    "latestParentDeviceReport": {
+      "messageId": "Sentinel_42035414187c8191a5d14c7761d2b757",
+      "time": "2026-11-07T06:47:40.087781+00:00",
+      "report": "Mac/device service working; iPad available, iPhone unavailable; parent checking newest Mac build before installation. This cloud session has no Mac/device tools and makes no install claim."
+    }
+  },
+  "postPublicationLocalParity": {
+    "canonicalMirrorWorkerUnsignedOfflineIdentityEqual": true,
+    "exactWorkerBytesEqual": true,
+    "liveHttpVerified": false,
+    "signedAssetsVerified": false,
+    "deviceInstalled": false
+  }
 }
