@@ -12,7 +12,9 @@ permissions:
 
 jobs:
   partition-accepted-artifact:
-    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/browser-checks-393'
+    # One-off transfer of the earlier 0cd367da candidate is complete.
+    # Later candidates upload bundles and visual QA separately in browser-checks-393.
+    if: false
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     steps:
