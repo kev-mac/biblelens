@@ -20,7 +20,11 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.route('**/api/comparisons?**',route=>route.fulfill({json:{items:fixtures[new URL(route.request().url()).searchParams.get('mode')]||[]}}));
    await page.goto(base+'/#read/0/1');
    await page.waitForFunction(()=>reading?.chapter===1&&comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready'));
-   await page.evaluate(theme=>{state.theme=theme;applyTheme();},theme);
+   // Persist the preference as the Settings control does; startup journal
+   // updates must not restore the old theme after a test-only state mutation.
+   await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);
+   await page.waitForFunction(theme=>state.theme===theme&&document.body.classList.contains('dark')===(theme==='dark'),theme);
+   await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await Promise.all(document.getAnimations().filter(animation=>'transitionProperty' in animation&&/color/.test(animation.transitionProperty)).map(animation=>animation.finished.catch(()=>{})));});
    const pills=page.locator('#verse-3 [data-lens-category]');assert.equal(await pills.count(),6);
    const geometry=await pills.evaluateAll(nodes=>nodes.map(node=>({key:node.dataset.lensCategory,box:node.getBoundingClientRect().toJSON(),pill:node.querySelector('span').getBoundingClientRect().toJSON(),margin:node.closest('.verse-body').getBoundingClientRect().toJSON(),position:getComputedStyle(node).position})));
    for(const item of geometry){assert(item.box.width>=44&&item.box.height>=44);assert(item.box.left>=item.margin.left-.5&&item.box.right<=item.margin.right+.5);assert(item.pill.height<30);assert.equal(item.position,'relative');}
@@ -39,9 +43,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      const canvas=document.createElement('canvas');canvas.width=canvas.height=1;const context=canvas.getContext('2d');
      const rgba=value=>{context.clearRect(0,0,1,1);context.fillStyle='#010203';context.fillStyle=value;if(context.fillStyle==='#010203')throw Error('Canvas could not parse '+value);context.fillRect(0,0,1,1);return [...context.getImageData(0,0,1,1).data];};
      const desired=rgba(expected),text=rgba(style.color),border=rgba(style.borderTopColor);
-     return {tone,desired,text,border,raw:{expected,text:style.color,border:style.borderTopColor}};
+     return {tone,desired,text,border,theme:document.body.classList.contains('dark')?'dark':'light',raw:{expected,text:style.color,border:style.borderTopColor}};
     },{rgb:palette[key],dark:theme==='dark'});
-    const diagnostic=JSON.stringify({engine,width,theme,key,colors});assert.equal(colors.tone,palette[key],diagnostic);
+    const diagnostic=JSON.stringify({engine,width,theme,key,colors});assert.equal(colors.theme,theme,diagnostic);assert.equal(colors.tone,palette[key],diagnostic);
     for(const actual of [colors.text,colors.border])assert(actual.every((channel,index)=>Math.abs(channel-colors.desired[index])<=1),'Rendered text/border match the existing palette within one 8-bit rounding step: '+diagnostic);
     await pill.focus();if(width<=820)await pill.tap();else await page.keyboard.press('Enter');
     const panel=page.locator('#ux-context-panel');await page.locator('#lens-inspector-sheet[open]').waitFor();

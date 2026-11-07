@@ -54,3 +54,21 @@ No production color rule was changed or failed assertion ignored. A new run is
 required to determine whether serialization explains the WebKit result.
 The current fingerprint for that candidate is
 `c3d6da57a5f73dd4e74cb2f7f79c38e6d8b0bed10faf3ce3dded06987ffae38e`.
+
+The third run,
+[42409260952](https://github.com/kev-mac/biblelens/actions/runs/42409260952),
+again passed release preparation and all 56 reader cases. The rendered-color
+check passed all Chromium cases and both WebKit 320px cases, then failed WebKit
+390px light: actual text and border were `[194,136,249,255]`, the correct dark
+Translation tone, while the light reference was `[109,55,161,255]`. This confirms
+the remaining result was not merely a CSS serialization difference. No prepared
+bundle archive was accepted or retained as successful.
+
+The test had mutated `state.theme` without persisting the preference, unlike the
+actual Settings control, and sampled colors without waiting for color
+transitions. The fixture now persists the theme, verifies its state/body class,
+waits for color transitions, and includes actual theme identity in every color
+assertion. Production colors remain unchanged. The current unpublished
+candidate fingerprint is
+`3afe738f05b120305275b8e0aff6dc139bd9392c5c60b637c93e339f01bd8910`;
+a fourth run is required. Do not attribute the prior run's results to it.
