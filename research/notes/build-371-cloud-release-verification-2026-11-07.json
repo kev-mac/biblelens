@@ -398,5 +398,42 @@
     "live": "Inherited destination-policy denial on live site; no materially new evidence; no retry or bypass. release:verify/live image bytes deferred.",
     "devices": "No Mac/device connector, VPN route or Xcode. Signing, signed-assets parity, install and launch deferred. Parent separately handles Mac connection/device-service timeout.",
     "sync": "check:sync passed this run; inherited intermittent assert(finishRead) unresolved. Static investigation: /session awaits WebCrypto bearer hashing before /document; fixed 30 setImmediate settle cycles are not an elapsed-time guarantee. No production/test edits."
-  }
+  },
+  "publication": {
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "sitesVersion": 371,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_a88232d0c3a081918337519391d9833a",
+    "deploymentId": "appgdep_6aeec64b9e108191adb48d96d9aab184",
+    "updatedAt": "2026-11-07T06:33:58.664236+00:00",
+    "canonicalAssetCommit": "2b164d1689d73f7c54108488403430af9428b69f",
+    "canonicalReviewCommit": "fc4f5e3893c6f484a79b64123792dbfbcf0e424c",
+    "canonicalVerificationCommit": "086382d5434330570186b4a2a340049eb858e26a",
+    "mirrorCommit": "3da6f25ef9ed5dcdac8b09eb027e2e77f0dcd706",
+    "archiveContentHash": "sha256:02601418af7949cff46ea8835e00de52c16919272a9c74374b36c5a6178c85a8",
+    "archiveStoredBytes": 59770880,
+    "archiveFileCount": 6,
+    "archive": "/tmp/biblelens-isaiah-build371.tar.gz",
+    "archiveFiles": [
+      ".openai/hosting.json",
+      "dist/.openai/drizzle/0000_loose_bug.sql",
+      "dist/.openai/drizzle/meta/0000_snapshot.json",
+      "dist/.openai/drizzle/meta/_journal.json",
+      "dist/.openai/hosting.json",
+      "dist/server/index.js"
+    ],
+    "archiveGzipSha256": "c1ad8613e59b9252c82769ccd8ada9d4a947bd2e02f55c8a121672295cc73901",
+    "archiveSize": 47542758,
+    "audience": "public; preserved",
+    "d1": "DB; preserved",
+    "postPublicationLocalIdentityParity": true,
+    "workerSha256": "334e050c2676fa3358c01498783ab43ad2dda97dbcaf658b4fcc52ba453c6128",
+    "liveReleaseVerify": "deferred; inherited live destination denial, no materially new evidence; no retry/bypass",
+    "signedInstalledParity": "deferred; no Mac/device connector"
+  },
+  "operationalIssues": [
+    "First mirror staging command used the wrong working directory; guards failed before source copy or commit. Corrected working directory and staged successfully.",
+    "Initial mirror push rejected with Invalid or expired token (403); no remote mutation. Fresh native scoped credential and trusted owner-message read preceded one normal retry, which succeeded. No bypass or unresolved push remains.",
+    "No automatic approval rejection occurred in this session. No pending deployment or uncertain mutation remains."
+  ]
 }
