@@ -1,0 +1,149 @@
+{
+  "book": "Nahum",
+  "canonicalBaseline": "78534c7",
+  "chapters": 3,
+  "verses": 47,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-01-opening-v1.webp",
+      "alt": "Imagined scene: Storm clouds and distant rain cross a rocky valley and dry riverbed.",
+      "width": 960,
+      "height": 540,
+      "verses": 15,
+      "bytes": 111860,
+      "sha256": "8945fdb0c44213bdb09909c035229b9bdfd8e27dc30b372f01ef2bc0fcc064c0",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-02-opening-v1.webp",
+      "alt": "Imagined scene: Turbulent river water passes through Nineveh’s broken timber gateway.",
+      "width": 960,
+      "height": 540,
+      "verses": 13,
+      "bytes": 146130,
+      "sha256": "7fe6c3fd2668ba26082146bb4dc91c1f8cf8bfaabdc10fc64b44960028128bc5",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "src": "/assets/chapter-nahum-03-opening-v1.webp",
+      "alt": "Imagined scene: An empty street leads to Nineveh’s burned gate and fallen timbers.",
+      "width": 960,
+      "height": 540,
+      "verses": 19,
+      "bytes": 125488,
+      "sha256": "4a71eb57f677c77f5352a8735551a80f3584c8f29ddeb9d1aa9110ee593e125a",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    }
+  ],
+  "negativeCoverageChecks": 3,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 382,
+    "sourceHash": "85d07be491c275fa640d8f64ae6e82479d74c5ea6281b5fd1ba48aef201d233e"
+  },
+  "gapsTouchingBook": [
+    {
+      "a": {
+        "book": 32,
+        "chapter": 7,
+        "verse": 0,
+        "position": 22665,
+        "src": "/assets/chapter-micah-07-opening-v1.webp"
+      },
+      "b": {
+        "book": 33,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22685,
+        "src": "/assets/chapter-nahum-01-opening-v1.webp"
+      },
+      "gap": 20
+    },
+    {
+      "a": {
+        "book": 33,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22685,
+        "src": "/assets/chapter-nahum-01-opening-v1.webp"
+      },
+      "b": {
+        "book": 33,
+        "chapter": 2,
+        "verse": 0,
+        "position": 22700,
+        "src": "/assets/chapter-nahum-02-opening-v1.webp"
+      },
+      "gap": 15
+    },
+    {
+      "a": {
+        "book": 33,
+        "chapter": 2,
+        "verse": 0,
+        "position": 22700,
+        "src": "/assets/chapter-nahum-02-opening-v1.webp"
+      },
+      "b": {
+        "book": 33,
+        "chapter": 3,
+        "verse": 0,
+        "position": 22713,
+        "src": "/assets/chapter-nahum-03-opening-v1.webp"
+      },
+      "gap": 13
+    },
+    {
+      "a": {
+        "book": 33,
+        "chapter": 3,
+        "verse": 0,
+        "position": 22713,
+        "src": "/assets/chapter-nahum-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 34,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22732,
+        "src": "/assets/chapter-habakkuk-01-opening-v1.webp"
+      },
+      "gap": 19
+    }
+  ],
+  "closePairsTouchingBook": [],
+  "baselineAssetsPreserved": 1616,
+  "pinnedBlobsMatchSource": 1145,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "applicationChangesSinceBaseline": [
+    "package.json buildNumber"
+  ],
+  "offlineNetworkCalls": 0,
+  "originFixtureCalls": 3,
+  "workerBytes": 59517405,
+  "workerSha256": "dc8d635b056fb3881d274c304226d383433a2b9f3e722bef67fcb3bff93348af"
+}

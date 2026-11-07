@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-07",
+  "book": "Nahum",
+  "canonicalBaseline": "78534c7",
+  "canonicalReviewCommit": "60c0047c2d99699317e7122c2b96cd255ecd6fda",
+  "review": {
+    "retainedImages": 3,
+    "replacements": 0,
+    "generations": 0,
+    "storyImages": 0,
+    "chapterOpeners": 3,
+    "closePairsTouchingBook": 0,
+    "gapsTouchingBook": [
+      20,
+      15,
+      13,
+      19
+    ]
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 382,
+    "sourceHash": "85d07be491c275fa640d8f64ae6e82479d74c5ea6281b5fd1ba48aef201d233e"
+  },
+  "workerBytes": 59517405,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed single unchanged run including all disconnect cases; inherited assert(finishRead) intermittent failure remains unresolved",
+    "focusedWorkerOffline": "passed 3 chapters, 47 verses, three editions, three single openers and missing-opener rejection cases; exact metadata and bytes; zero offline network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no install or alternate path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools",
+    "fullReleasePreparation": "FAILED: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "readability": "completed report-only with inherited findings"
+  },
+  "mirrorBaseline": {
+    "commit": "ecbaf547f3b5abaca8574518f26d79b731d88a1a",
+    "buildNumber": 381,
+    "sourceHash": "b9d4062ff7be727a8183cdfbdc63e6ac6dd1b458a28abdb70169c57bd0f27520",
+    "independentApplicationChanges": false,
+    "mirrorOnlyTrackedFiles": []
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "habakkuk-artwork-handoff-from-nahum-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": {
+    "status": "pending"
+  }
+}

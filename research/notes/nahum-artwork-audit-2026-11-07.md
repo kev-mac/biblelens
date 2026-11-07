@@ -24,4 +24,16 @@ The freshly opened Sites mirror `ecbaf547f3b5abaca8574518f26d79b731d88a1a` match
 
 Inherited denied live HTTP/image checks and full release:verify remain deferred without retry or bypass. Previously denied detailed Ezekiel uploads remain excluded. No Mac/device connector or Xcode tools are exposed: signing, signed-app asset parity and physical iPhone/iPad install/launch are deferred. Website publication does not update installed native binaries. Continue the cloud sequence when devices are unavailable, as authorized.
 
-Validation and publication outcomes will be recorded after running the checks. Full release preparation and unchanged sync failures must remain visible if reproduced; no failed gate is treated as passed.
+## Validation
+
+Locked dependencies restored with `npm ci --ignore-scripts` and a task-local cache; package-lock unchanged. Shared web and mobile build passed inside release:prepare. Separate check:images (all 1,189 chapters), check:mobile and check:release passed. Focused local Worker/offline checks passed all three chapters and 47 verses in KJV/ASV/WEB, three single openers, three missing-opener rejection cases, exact headings/metadata and source/Worker/native image bytes, with zero underlying offline network calls. All 1,616 baseline assets and 1,145 pinned blobs remain exact. Hosted responses used a local immutable-origin source fixture; this is not live HTTP verification.
+
+Spacing uses opener position 0 and Story starting verse. Gaps touching Nahum are 20 from Micah 7, 15 and 13 internally, and 19 to Habakkuk 1. No pair involving Nahum is below five positions; inherited unrelated clusters remain outside this scope.
+
+Version/build 1.1.0/382, fingerprint `85d07be491c275fa640d8f64ae6e82479d74c5ea6281b5fd1ba48aef201d233e`. Prepared Worker is 59,517,405 bytes against the 66,060,288-byte budget. Canonical source, local Worker release response and unsigned native assets agree. No built release JSON was hand-edited.
+
+Full release:prepare exited 1 when npm run check reached check-release-smoke.mjs:31: Chromium headless-shell is missing from the Playwright cache. Preceding nonbrowser checks and report-only readability completed, with inherited readability findings. Full npm run check and full release preparation did not pass; no release candidate success is claimed. No supported managed browser-control tool is exposed. No browser install, preview server or alternative control path was used.
+
+The separate, unchanged check:sync exited 0 on its single run in this session. Schema/account/revision/offline/revocation checks and all disconnect cases, including the late-response and web credential cases, passed. Earlier sessions failed at check-sync-disconnect.mjs:34 (`assert(finishRead)`). This run does not resolve that intermittent failure or prove a timing cause. No sync implementation or repository test changed, and no timer-modified diagnostic was used here.
+
+Full live release:verify remains deferred because it includes the inherited denied live request; it was not retried or simulated as a passing live check. Browser rendering, live release/images, signing, signed-app parity and physical installation/launch remain incomplete. No denied detailed Ezekiel upload was retried. Detailed local logs remain under /tmp/nahum-382-*.
