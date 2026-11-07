@@ -3457,10 +3457,10 @@ html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead .ux-search {di
 html body.lens-app #explore-view {
  --lane-card-width:min(88cqw,64dvh);--lane-card-aspect:9/10;
 }
-html body.lens-app #explore-view .ux-explore-search {display:flex;flex-direction:row;align-items:stretch;gap:8px;position:relative;margin:8px auto 20px;max-width:64rem;}
+html body.lens-app #explore-view .ux-explore-search {display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:8px;position:relative;margin:8px auto 20px;max-width:64rem;}
 html body.lens-app #explore-view .ux-explore-search>.ux-search-field {flex:1 1 0;min-width:0;}
 html body.lens-app #explore-view #ux-explore-search {flex:1 1 0;min-width:0;width:100%;min-height:48px;padding:10px 40px 10px 12px;border:1px solid var(--lens-rule);border-radius:var(--control-radius,12px);font:400 1rem/1.4 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
-html body.lens-app #explore-view .ux-explore-search>button {flex:none;min-width:44px;min-height:48px;padding:8px 12px;border-radius:var(--control-radius,12px);}
+html body.lens-app #explore-view .ux-explore-search>button {flex:none;width:auto;min-width:44px;min-height:48px;padding:8px 12px;border-radius:var(--control-radius,12px);}
 html body.lens-app #explore-view .ux-topic-section {container-type:inline-size;width:100%;max-width:64rem;margin-inline:auto;}
 html body.lens-app #explore-view .ux-topic-row {width:100%;max-width:none;}
 html body.lens-app #explore-view a.ux-topic {height:auto;min-height:16rem;aspect-ratio:var(--lane-card-aspect);border-radius:21px;}
@@ -3470,3 +3470,7 @@ html body.lens-app #explore-view a.ux-topic>img {width:100%;height:100%;object-f
 }
 
 html body.lens-app #explore-view [data-topic=stories] img {object-position:88% center;}
+
+@media (orientation:portrait) {
+ html body.lens-app #explore-view [data-topic=stories] .ux-count {left:76px;right:auto;}
+}

@@ -47,7 +47,7 @@ try {
   }
   for(const titles of Object.values(data.eventHeadings))for(const title of titles.filter(title=>stories[title])){
    const html=context.readerStoryEvent(title);
-   assert(html.includes('<figcaption>Imagined scene: '),'Retain story caption');
+   assert(html.includes('<figcaption>'+context.esc(title)+'</figcaption>')&&!html.includes('<figcaption>Imagined scene: '),'Retain the actual story title without the removed prefix');
   }
   const artwork=[...(data.chapterImages||[]),...Object.values(data.eventHeadings).flat().filter(title=>stories[title]).map(title=>stories[title])];
   for(const art of artwork){

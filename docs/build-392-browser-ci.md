@@ -13,14 +13,14 @@ requires `chromiumSandbox: true` even for older tests whose launch options omit
 it; there is no sandbox-disable flag or machine security workaround.
 
 The checkout must descend from source commit
-`5c9e0909fbb2752b58cbbe9bac02898289b2eb5e` and must retain build 392 fingerprint
-`b0593f5516862d9ec7116e88b2a7bbb104829651ce7d00c36a18468d3af83518`.
+`bbe327ca07858a0fd60f9eb855fd093cb67ce90d` and must retain build 392 fingerprint
+`242ae82664a39b4a66caf92a700a4134f7048cbe261279efa6ae1973068aa9f1`.
 CI configuration and documentation are outside the release fingerprint; no app
 source, build number or checked-in test changes are included in this branch.
 
 The job runs `release:prepare`, including both bundled outputs, the complete
 check suite, required Chromium/WebKit smoke, sync, release-packaging and mobile
-checks. It then verifies both bundles' identities and serves the built Worker
+checks, plus the required shared Story/chapter image parity gate. It then verifies both bundles' identities and serves the built Worker
 on runner loopback to execute `check-evidence-tags-browser.mjs` and
 `check-reader-annotations-browser.mjs`, followed by the new 48-case
 `check-explore-annotations-browser.mjs` portrait/landscape matrix. A failed preparation gate remains a

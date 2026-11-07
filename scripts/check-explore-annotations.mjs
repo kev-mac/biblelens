@@ -37,4 +37,5 @@ assert.equal(last('html body.lens-app #explore-view .ux-topic-section','containe
 assert.equal(last('html body.lens-app #explore-view a.ux-topic>img','object-fit'),'cover');assert.equal(last('html body.lens-app #explore-view a.ux-topic','border-radius'),'21px');
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','min-height'),'48px');assert(atlas.includes('stops[Math.min(active,stops.length-1)]'),'Resize retains the active carousel position');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-direction'),'row');assert.equal(last('html body.lens-app #explore-view [data-topic=stories] img','object-position'),'88% center');
+assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wrap'),'nowrap');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'auto');
 console.log('PASS: nine retained collections without filter controls, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry remains separate.');
