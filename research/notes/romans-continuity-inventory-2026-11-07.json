@@ -1,0 +1,52 @@
+{
+  "scope": "Romans only",
+  "baseline": "00a65a6952e760752b965d212310c15ab2ec4006",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "Style only; actual native file viewed this session"
+  },
+  "currentAppearances": [],
+  "result": "All sixteen actual active Romans files viewed individually at native 960x540. No humans, recognizable recurring groups or animals are visible. No identity drift or aging dependency exists in these retained scenes. No image generation/editing was needed; actual identity inputs rule not triggered.",
+  "textualMentionsAreNotPortraits": [
+    "Paul author and travel plans",
+    "Jesus Christ",
+    "Abraham/Sarah in Romans 4",
+    "Adam in Romans 5",
+    "Isaac/Rebecca/Jacob/Esau/Moses/Pharaoh in Romans 9",
+    "Elijah in Romans 11",
+    "Priscilla/Aquila/Phoebe and other greetings in Romans 16"
+  ],
+  "identityDistinctions": [
+    "Romans 16 Mary is not assigned a prior Mary portrait.",
+    "King Saul is distinct from Saul/Paul.",
+    "Do not age Paul from Acts 28 by book order: Romans 15:25-28 gives travel plans before Jerusalem; this scene contains only travel objects.",
+    "Empty Romans 16 courtyard depicts a house-gathering motif, no face map or exact historical building."
+  ],
+  "priorApprovedLedger": "research/notes/acts-continuity-inventory-2026-11-07.json",
+  "futurePaulGuidanceInheritedFromActs": {
+    "person": "Saul / Paul",
+    "references": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp"
+    ],
+    "currentAppearances": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-the-jerusalem-council-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "src/assets/story-shipwreck-and-rome-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+    "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+    "result": "Native conversion/council/Philippi/Athens/arrest/hearing/Malta face comparisons compatible. Corrected arrest v2 retains actual v1 identity, checked beside original and approved Athens/hearing inputs. Added two cuffs/two chain routes for 21:33\u201340. Earlier incompatible first-journey v1 remains inactive; v2 landscape adds no face. Ephesus silversmiths are not Paul. Council right listener Paul-compatible; not made a new unconditional anchor by clothing."
+  },
+  "generationCalls": 0,
+  "actualIdentityInputsSuppliedToNewScenes": "No new scenes; not applicable. Must supply actual approved image files for any future identifiable recurring person.",
+  "neighborComparisons": "All Romans originals viewed in sequence; no humans to compare across Acts/Romans boundary. Do not certify or regenerate other-book faces in this session.",
+  "nextBookArtworkReviewed": false
+}

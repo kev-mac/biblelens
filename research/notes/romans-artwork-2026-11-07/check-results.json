@@ -1,0 +1,32 @@
+[
+  {
+    "command": "node research/notes/romans-artwork-2026-11-07/verify.mjs",
+    "exitCode": 0,
+    "localLog": "/tmp/romans-check-0.log",
+    "logSha256": "e28b6c6e3f04c67d77e69bcf3b2d215fa649208af03ee6d15355bec6ed2e198d"
+  },
+  {
+    "command": "npm run check:images",
+    "exitCode": 0,
+    "localLog": "/tmp/romans-check-1.log",
+    "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+  },
+  {
+    "command": "npm run check:mobile",
+    "exitCode": 0,
+    "localLog": "/tmp/romans-check-2.log",
+    "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+  },
+  {
+    "command": "npm run check:release",
+    "exitCode": 0,
+    "localLog": "/tmp/romans-check-3.log",
+    "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 1,
+    "localLog": "/tmp/romans-check-4.log",
+    "logSha256": "07212f16a5ff848e82308e8500a7bca67c69b7e2d3f55e180207dea7e80df430"
+  }
+]

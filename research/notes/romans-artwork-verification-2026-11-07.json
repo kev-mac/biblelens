@@ -1,0 +1,359 @@
+{
+  "inheritedAbsentFields": [
+    {
+      "chapter": 16,
+      "verse": 26,
+      "edition": "web"
+    },
+    {
+      "chapter": 16,
+      "verse": 27,
+      "edition": "web"
+    }
+  ],
+  "inheritedEmptyStrings": [
+    {
+      "chapter": 14,
+      "verse": 24,
+      "edition": "kjv"
+    },
+    {
+      "chapter": 14,
+      "verse": 24,
+      "edition": "asv"
+    },
+    {
+      "chapter": 14,
+      "verse": 25,
+      "edition": "kjv"
+    },
+    {
+      "chapter": 14,
+      "verse": 25,
+      "edition": "asv"
+    },
+    {
+      "chapter": 14,
+      "verse": 26,
+      "edition": "kjv"
+    },
+    {
+      "chapter": 14,
+      "verse": 26,
+      "edition": "asv"
+    },
+    {
+      "chapter": 16,
+      "verse": 24,
+      "edition": "asv"
+    },
+    {
+      "chapter": 16,
+      "verse": 25,
+      "edition": "web"
+    }
+  ],
+  "book": "Romans",
+  "canonicalBaseline": "00a65a6952e760752b965d212310c15ab2ec4006",
+  "chapterCount": 16,
+  "verseCount": 436,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-romans-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 32,
+      "bytes": 148386,
+      "sha256": "d10f3c0e8deb9bee6ac04a6954d1abb41bb61caab93ee2e23d4621ef042f59cf",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-romans-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 29,
+      "bytes": 120118,
+      "sha256": "b4bebf59156ec35c242c7c36dcaf270a52b0fa06791b84cd4d263541bc057603",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-romans-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 31,
+      "bytes": 108838,
+      "sha256": "1741873287b1c7d80c32f5ae813c226eb32df0817bae09c33f85b27a89c367c9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-romans-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 99064,
+      "sha256": "1a992e089c834430bb8f68d5859ed4559034750ea9df10da70ae22fdbce6aa94",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-romans-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 104370,
+      "sha256": "3b88c61dee59015dc3fc367b8298cb4b7b4bab918830bfd217d2de514517097b",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-romans-06-opening-v1.webp",
+      "verse": 0,
+      "verses": 23,
+      "bytes": 176422,
+      "sha256": "21e1387737e878636fbe305b654eb81c1ecf5556ca8ea8687401eb113f3980c2",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 7,
+      "src": "/assets/chapter-romans-07-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 75018,
+      "sha256": "0566438786f75f0d2c920453d23748d23cb489b891c62486ba48cf54d2a5ec80",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 8,
+      "src": "/assets/chapter-romans-08-opening-v1.webp",
+      "verse": 0,
+      "verses": 39,
+      "bytes": 152390,
+      "sha256": "db6f5755f4d3ddacb50c50d4d0ce9552c8a5be4772e054a8392bb7d2acaee22a",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 9,
+      "src": "/assets/chapter-romans-09-opening-v1.webp",
+      "verse": 0,
+      "verses": 33,
+      "bytes": 125554,
+      "sha256": "eecef5b35bdb549a2e86a13184357db49eaba264d47700770afce585ec3f2adc",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 10,
+      "src": "/assets/chapter-romans-10-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 133670,
+      "sha256": "25fb6a3beb99c2d4f90911f750320ecdc2207068319abe2fb375bf3f775fe1b3",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 11,
+      "src": "/assets/chapter-romans-11-opening-v1.webp",
+      "verse": 0,
+      "verses": 36,
+      "bytes": 138486,
+      "sha256": "d5f0b58846fe3d0ce6c7543cb9c1e0e3eb03cc3631dc3480aef9002ee3861467",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 12,
+      "src": "/assets/chapter-romans-12-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 155144,
+      "sha256": "9d51351007388d6ac6e7fa79591bd44081e16757afd6af75138ea564f9e3333e",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 13,
+      "src": "/assets/chapter-romans-13-opening-v1.webp",
+      "verse": 0,
+      "verses": 14,
+      "bytes": 102550,
+      "sha256": "51273ca55d482d151a77136cc87244bacd906cc15ed160e7e8b32fef502946aa",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 14,
+      "src": "/assets/chapter-romans-14-opening-v1.webp",
+      "verse": 0,
+      "verses": 26,
+      "bytes": 155310,
+      "sha256": "80ae5d7fbe799ada9a1683f0efab5412d59c6be3c16324b15607d644d783a020",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 15,
+      "src": "/assets/chapter-romans-15-opening-v1.webp",
+      "verse": 0,
+      "verses": 33,
+      "bytes": 166486,
+      "sha256": "7faa1b493cc46b7c8f52d3c10bff9292568160d64fe1419ae1f60c13f7fb2a76",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 16,
+      "src": "/assets/chapter-romans-16-opening-v1.webp",
+      "verse": 0,
+      "verses": 27,
+      "bytes": 132424,
+      "sha256": "03b314717e2f986e518b5d24c1fd217b2d7ce07a29379bba4a369aa226729b2d",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 16,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 43,
+        "chapter": 28,
+        "verse": 0,
+        "position": 976,
+        "src": "/assets/chapter-acts-28-opening-v1.webp"
+      },
+      "b": {
+        "book": 44,
+        "chapter": 1,
+        "verse": 0,
+        "position": 1007,
+        "src": "/assets/chapter-romans-01-opening-v1.webp"
+      },
+      "gap": 31
+    },
+    {
+      "a": {
+        "book": 44,
+        "chapter": 16,
+        "verse": 0,
+        "position": 1416,
+        "src": "/assets/chapter-romans-16-opening-v1.webp"
+      },
+      "b": {
+        "book": 45,
+        "chapter": 1,
+        "verse": 0,
+        "position": 1443,
+        "src": "/assets/chapter-1-corinthians-01-opening-v1.webp"
+      },
+      "gap": 27
+    }
+  ],
+  "minimumInternalGap": 14,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Romans existing 16 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 16
+}

@@ -1,0 +1,118 @@
+{
+  "scope": "Romans only; all 16 images retained, zero generated or replaced; no production changes",
+  "baseline": "00a65a6952e760752b965d212310c15ab2ec4006",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "checks": [
+    {
+      "command": "npm ci --cache=/tmp/biblelens-romans-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-npm-ci.log",
+      "logSha256": "31eb7208fe7ce83e69e5e661ee768200c17b02683902dbe47c82c05b0039e2c1"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-build.log",
+      "logSha256": "53b7b97b3fb0ccc17333f8e4895496201d3bf902b5c30ba0891b3b73b7e1d81b"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-build-mobile.log",
+      "logSha256": "c05d24ce3dfc4501f8b22ec02f4940296b386869ba2c672a47b34c638c6b7de7"
+    },
+    {
+      "command": "node research/notes/romans-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-check-0.log",
+      "logSha256": "e28b6c6e3f04c67d77e69bcf3b2d215fa649208af03ee6d15355bec6ed2e198d"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-check-1.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-check-2.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/romans-check-3.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/romans-check-4.log",
+      "logSha256": "07212f16a5ff848e82308e8500a7bca67c69b7e2d3f55e180207dea7e80df430"
+    },
+    {
+      "command": "node research/notes/romans-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/romans-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Playwright Chromium headless shell 1248 missing. Preceding nonbrowser/search checks passed; readability inherited report-only. No browser installed.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill forbids a substitute managed browser route; no preview server or browser install.",
+  "publication": {
+    "status": "inherited denial; no attempt in Romans",
+    "action": "deploy saved public build 386",
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Automatic approval review rejected deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication or bypass. No save/deploy/mirror push/access change/substitute version attempted. Frozen saved source/archive untouched."
+  },
+  "liveBytes": "Inherited denied live HTTP/image/release:verify operations deferred; local immutable-origin fixture is not live HTTP QA.",
+  "devices": "No callable Mac/device connector or configured VPN. Signing, signed public-versus-www parity, physical install/query/launch incomplete. Historical build 359 not current evidence.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) remains unresolved; sync unchanged and not retested.",
+  "mirror": {
+    "baseline": "00a65a6952e760752b965d212310c15ab2ec4006",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential opening before Romans review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "assetPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedGitBlobsVerified": 1147,
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "fullReleaseCandidateArchiveProduced": false,
+  "nextBookArtworkReviewed": false,
+  "handoff": "research/notes/1-corinthians-artwork-handoff-from-romans-2026-11-07.md"
+}
