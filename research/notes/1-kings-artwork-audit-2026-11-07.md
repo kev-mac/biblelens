@@ -40,4 +40,10 @@ Managed environment reports desktop enabled/state unknown but exposes no callabl
 
 No Mac connector, configured VPN/device route, Xcode or xcrun is available. Signing, signed App.app/public versus www comparison, iPhone/iPad installs, installed-build queries and launches are deferred under the owner's continuation instruction. Historical device build 359 is not a fresh query. Full release/browser/live/device synchronization is not claimed. No 2 Kings artwork review is begun here.
 
-Execution results and publication provenance will be appended after checks.
+Completed checks: build:mobile, check:images, check:release, check:sync and check:mobile passed. release:prepare failed, exit 1, at check-release-smoke.mjs:31:32 because Chromium headless shell is missing. Preceding nonbrowser checks and search useful-hit 50/50 passed; readability completed report-only with existing corpus findings. No candidate.json was produced; no gate/assertion was weakened. Passing unchanged sync tests does not establish the inherited intermittent settling issue fixed.
+
+Independent built API/offline verification passed all 22 chapters, 816 verses in KJV/ASV/WEB and all 23 image bytes/placements. Source chapter metadata, scripture and Story catalogs are byte-identical to baseline. Worker, offline and canonical release identity agree on build 369, fingerprint d036467202117dc0266d96a78160ab2c7150e8aa08d82cdbd212022cd13c650f. Image-origin fixture responses are not live Sites delivery evidence. The first ad hoc preservation check exceeded Node's default Git-output buffer; increasing only that harness buffer allowed every unchanged assertion to pass.
+
+All 1,141 immutable hosted Git blobs match source at artwork commit 3fe01f0c4e216ccaf3cac116b74de8b4e95f4a01. Both new public GitHub GETs returned HTTP 200 with exact source bytes (temple 199,410; Ahab 141,384). This does not verify live Sites delivery. Boundaries are 2 Samuel→1 Kings 25 and 1 Kings→2 Kings 53, with no close pairs involving 1 Kings. Next-book metadata was examined solely for spacing, not artwork review. git diff --check passed.
+
+Artwork commit 3fe01f0 and activation efe55b2 identify the reviewed source. Publication provenance will be appended after the native Sites result.
