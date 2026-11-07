@@ -1,0 +1,478 @@
+{
+  "scope": "Luke only",
+  "baseline": "9c0dea4bc9a6eb579f1c847e52c28a3cb30e35d5",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "priorInventories": {
+    "matthew": {
+      "path": "research/notes/matthew-artwork-inventory-2026-11-07.json",
+      "baseline": "9f5a8ce",
+      "placements": 33
+    },
+    "mark": {
+      "path": "research/notes/mark-artwork-inventory-2026-11-07.json",
+      "baseline": "dfd10f8e3e7ab9d92ed420a9735774c4d28ceee3",
+      "placements": 21
+    }
+  },
+  "people": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-rejection-at-nazareth-v1.webp",
+        "src/assets/story-the-miraculous-catch-v1.webp",
+        "src/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+        "src/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+        "src/assets/story-zacchaeus-v1.webp",
+        "src/assets/story-the-road-to-emmaus-v1.webp",
+        "src/assets/story-the-ascension-v1.webp"
+      ],
+      "stableTraits": "Medium-brown face, prominent nose, full dark beard, dark natural curls, lean adult build. Clothing/illumination can vary.",
+      "narrativeAge": "About thirty at ministry start (Luke 3:23); no decades of aging between parallel Gospel ministry or post-resurrection scenes.",
+      "result": "Same recognizable face, complexion, hair texture and adult build retained; actual references and native-size neighboring images/panels compared. No definite identity break."
+    },
+    {
+      "person": "Mary, mother of Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-births-of-john-and-jesus-v1.webp",
+        "src/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, oval face, dark tight/wavy curls around forehead, slender build.",
+      "narrativeAge": "Young adult at birth, exact age unspecified; twelve years pass before temple scene (2:42).",
+      "result": "Compatible face and hair with Matthew, plausible modest aging in temple. Not identified with unnamed anointing woman, Mary Magdalene or Bethany Mary."
+    },
+    {
+      "person": "Joseph of Nazareth",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-births-of-john-and-jesus-v1.webp",
+        "src/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, strong nose, natural dark curls, full dark beard, lean adult build.",
+      "narrativeAge": "Adult at birth; some graying at temple twelve years later is plausible, exact age unknown.",
+      "result": "Compatible recognizable face and build. Not Genesis Joseph or Joseph of Arimathea."
+    },
+    {
+      "person": "Infant and twelve-year-old Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-births-of-john-and-jesus-v1.webp",
+        "src/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp"
+      ],
+      "stableTraits": "Brown complexion, dark curls as child, oval face; infant face small and partly swaddled.",
+      "narrativeAge": "Swaddled newborn and twelve-year-old; adult ministry begins much later.",
+      "result": "Age progression compatible; infant cannot establish a precise adult facial likeness. Boy does not acquire adult beard or adult build."
+    },
+    {
+      "person": "Simon Peter",
+      "references": [
+        "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-miraculous-catch-v1.webp"
+      ],
+      "stableTraits": "Brown complexion, full dark beard, dark natural curls, sturdy adult build, prominent nose.",
+      "narrativeAge": "Same adult ministry period.",
+      "result": "Kneeling Simon recognizable beside actual earlier calling/confession/courtyard portrayals. Other fisherman identities are not assigned merely by headbands."
+    },
+    {
+      "person": "Recurring disciples and followers",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-miraculous-catch-v1.webp",
+        "src/assets/story-zacchaeus-v1.webp",
+        "src/assets/story-the-ascension-v1.webp"
+      ],
+      "stableTraits": "Varied brown complexions, natural dark curls, adult bearded men with differing builds; familiar headwrapped figures.",
+      "narrativeAge": "Adults through ministry and ascension; no unsupported widespread aging.",
+      "result": "Compatible visible familiar group. Exact name-to-face maps and totals in partial/occluded groups remain uncertain. Emmaus travelers are not assigned Peter/John names; only Cleopas is named in text but not mapped to a face."
+    },
+    {
+      "person": "Jeremiah (shared thematic Story)",
+      "references": [
+        "src/assets/story-the-scroll-burned-v1.webp",
+        "src/assets/story-the-fall-of-jerusalem-and-flight-to-egypt-v1.webp",
+        "src/assets/story-new-covenant-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-new-covenant-v1.webp"
+      ],
+      "stableTraits": "Older medium-brown lean man, prominent nose, graying natural curls, full gray beard.",
+      "narrativeAge": "Literary teaching vignette with no exact scene date; no actual life into first-century Luke asserted.",
+      "result": "Actual older earlier references and shared image compared. Luke 22:20 compiles thematic event for Jeremiah 31:31\u201334; it is not an aged Jesus portrait or a supper depiction. Shared asset retained byte-identically."
+    },
+    {
+      "person": "Local/parabolic figures and animals",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+        "src/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+        "src/assets/story-the-rich-man-and-lazarus-v1.webp"
+      ],
+      "stableTraits": "Locally distinct dignified people, varied brown complexions and natural hair, visible adult relationships.",
+      "narrativeAge": "Per passage; parable people not silently identified with named historical people.",
+      "result": "Samaritan and wounded traveler differ from Jesus; Lazarus is not the later Bethany Lazarus, and no Abraham portrait is shown. Sheep, donkey, dog and fish checked; hidden limbs and densely overlapping fish cannot be certified individually."
+    }
+  ],
+  "referenceFiles": [
+    {
+      "path": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "bytes": 129094,
+      "sha256": "7d3c6b38a52c46a7d8279a7529a6f3cf2fa997c39042d01b049c4f112411b5d1"
+    },
+    {
+      "path": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "bytes": 131056,
+      "sha256": "dcbe95ded4f5aa2bd0db8e6cb11eebb736c7684e714eafc7a7eecc97b289d64a"
+    },
+    {
+      "path": "src/assets/story-new-covenant-v1.webp",
+      "bytes": 134236,
+      "sha256": "a1b20f7a8cc94003840ca586c984bb67679804b67bd2f664d9404ef16edc6055"
+    },
+    {
+      "path": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "bytes": 166668,
+      "sha256": "8c00e0e85dc7307364bc81b66729a587f1237a6bf8d33352bc62063a6b2cba22"
+    },
+    {
+      "path": "src/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp",
+      "bytes": 97330,
+      "sha256": "3ce43147389a7a823b4dc03ae3da81c72b5ffcea82d3d166ab1f1b82afadd1e4"
+    },
+    {
+      "path": "src/assets/story-rejection-at-nazareth-v1.webp",
+      "bytes": 78386,
+      "sha256": "b3bdd3b1cc447857130c6d1eafe4080da35f0f59c5d87a9497bee78a3d677139"
+    },
+    {
+      "path": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "bytes": 217294,
+      "sha256": "b364b72a1b320a750d35a22b747649bb5bfbabf42202e8153fb75c9c317310b8"
+    },
+    {
+      "path": "src/assets/story-the-ascension-v1.webp",
+      "bytes": 131684,
+      "sha256": "75322c7817a97ae874c177af89491e3a5a35be2cea0b0a725a2b3b7511810fd4"
+    },
+    {
+      "path": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "bytes": 119468,
+      "sha256": "d09926414ae3a679ffb6625d97d572ae67315be7de1a1805313ff38e4c83eb33"
+    },
+    {
+      "path": "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "bytes": 121032,
+      "sha256": "209d687693b7a42c1cfcd16eb40741941d71a3d10059c67e2aa5fac2706e6459"
+    },
+    {
+      "path": "src/assets/story-the-births-of-john-and-jesus-v1.webp",
+      "bytes": 108112,
+      "sha256": "c2f074dc5658ad10306b035127629105a10deda579568cf23f9a96fe453d5b9e"
+    },
+    {
+      "path": "src/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+      "bytes": 124558,
+      "sha256": "932c3298271b9d3bbf561f9f1ac13e286ea3adb85cac0da2d2f4954f0f129ba6"
+    },
+    {
+      "path": "src/assets/story-the-fall-of-jerusalem-and-flight-to-egypt-v1.webp",
+      "bytes": 126032,
+      "sha256": "924bbb41ee4dc2670393afabad089a4f098c4bb8655fc5b404d3897654502997"
+    },
+    {
+      "path": "src/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+      "bytes": 160838,
+      "sha256": "cba6002b19f5bb1daf4fce9cf7cd2a3de60dc22371f0f4fc01d79d70debfa6b8"
+    },
+    {
+      "path": "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp",
+      "bytes": 76920,
+      "sha256": "65b0045c7fde16835ac07866b354f0d4cc99882a3e1904f086f5023236cb900c"
+    },
+    {
+      "path": "src/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+      "bytes": 148714,
+      "sha256": "7813b9940e70bb772194f212f450a9883973846bbc2651084a841eef665b9ef3"
+    },
+    {
+      "path": "src/assets/story-the-miraculous-catch-v1.webp",
+      "bytes": 140986,
+      "sha256": "2d9b73a129370f8af060ccf9122c2ed55e0bc2d2a566fcd006fca67cbff13750"
+    },
+    {
+      "path": "src/assets/story-the-rich-man-and-lazarus-v1.webp",
+      "bytes": 128822,
+      "sha256": "797d4c01c806c00f3bbc43f8f570aef109a7cd38c4b306758c2760e94845e09e"
+    },
+    {
+      "path": "src/assets/story-the-road-to-emmaus-v1.webp",
+      "bytes": 87490,
+      "sha256": "24fdb9ebacfc4f32491f654bae190d8a29054e62632ef663ebc99c95abe591a2"
+    },
+    {
+      "path": "src/assets/story-the-scroll-burned-v1.webp",
+      "bytes": 83178,
+      "sha256": "6deddc004b1bddb7c6dd78fc6ef2899efa0a55d2845f8793a882a1c2335ae430"
+    },
+    {
+      "path": "src/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "bytes": 95512,
+      "sha256": "8f2954a5ac3a23c799247a27041eedd1d0ff8f8141d25466959c95a4e3937ca7"
+    },
+    {
+      "path": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "bytes": 66178,
+      "sha256": "3a25e4ebcebb4510fd108175d7818976f629eff660707304b210c340c6bbc8a9"
+    },
+    {
+      "path": "src/assets/story-zacchaeus-v1.webp",
+      "bytes": 145370,
+      "sha256": "bab9a05ede905daef17a4b7c19bec2d0ac5a6eca031bd8826d4894c3bde9b904"
+    }
+  ],
+  "comparisonPairs": [
+    {
+      "left": "/assets/story-the-births-of-john-and-jesus-v1.webp",
+      "right": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp"
+    },
+    {
+      "left": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp",
+      "right": "/assets/story-rejection-at-nazareth-v1.webp"
+    },
+    {
+      "left": "/assets/story-rejection-at-nazareth-v1.webp",
+      "right": "/assets/story-the-miraculous-catch-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-miraculous-catch-v1.webp",
+      "right": "/assets/story-the-centurion-and-the-widow-s-son-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+      "right": "/assets/story-the-sinful-woman-anoints-jesus-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "right": "/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+      "right": "/assets/story-the-lost-sheep-coin-and-son-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+      "right": "/assets/story-the-rich-man-and-lazarus-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-rich-man-and-lazarus-v1.webp",
+      "right": "/assets/story-zacchaeus-v1.webp"
+    },
+    {
+      "left": "/assets/story-zacchaeus-v1.webp",
+      "right": "/assets/story-new-covenant-v1.webp"
+    },
+    {
+      "left": "/assets/story-new-covenant-v1.webp",
+      "right": "/assets/story-the-road-to-emmaus-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-road-to-emmaus-v1.webp",
+      "right": "/assets/story-the-ascension-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "right": "/assets/story-the-births-of-john-and-jesus-v1.webp"
+    },
+    {
+      "left": "/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "right": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "right": "/assets/story-rejection-at-nazareth-v1.webp"
+    },
+    {
+      "left": "/assets/story-calling-the-first-disciples-v1.webp",
+      "right": "/assets/story-the-miraculous-catch-v1.webp"
+    },
+    {
+      "left": "/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "right": "/assets/story-the-miraculous-catch-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp",
+      "right": "/assets/story-the-road-to-emmaus-v1.webp"
+    },
+    {
+      "left": "/assets/story-sending-out-the-twelve-v2.webp",
+      "right": "/assets/story-the-ascension-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-scroll-burned-v1.webp",
+      "right": "/assets/story-new-covenant-v1.webp"
+    },
+    {
+      "left": "/assets/story-the-fall-of-jerusalem-and-flight-to-egypt-v1.webp",
+      "right": "/assets/story-new-covenant-v1.webp"
+    },
+    {
+      "left": "/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "right": "/assets/story-the-miraculous-catch-v1.webp",
+      "method": "Unscaled native-resolution Peter portrait crops side by side"
+    }
+  ],
+  "nativeCrops": [
+    {
+      "src": "/assets/story-the-births-of-john-and-jesus-v1.webp",
+      "box": [
+        510,
+        265,
+        930,
+        550
+      ],
+      "name": "birth-hands"
+    },
+    {
+      "src": "/assets/story-presentation-and-the-boy-jesus-in-the-temple-v1.webp",
+      "box": [
+        640,
+        345,
+        1000,
+        675
+      ],
+      "name": "temple-child-hands"
+    },
+    {
+      "src": "/assets/story-rejection-at-nazareth-v1.webp",
+      "box": [
+        370,
+        245,
+        635,
+        385
+      ],
+      "name": "scroll-grip"
+    },
+    {
+      "src": "/assets/story-the-miraculous-catch-v1.webp",
+      "box": [
+        600,
+        370,
+        1200,
+        650
+      ],
+      "name": "catch-hands"
+    },
+    {
+      "src": "/assets/story-the-centurion-and-the-widow-s-son-v1.webp",
+      "box": [
+        380,
+        220,
+        950,
+        575
+      ],
+      "name": "nain-hands"
+    },
+    {
+      "src": "/assets/story-the-sinful-woman-anoints-jesus-v1.webp",
+      "box": [
+        325,
+        405,
+        675,
+        550
+      ],
+      "name": "anointing-hands-feet"
+    },
+    {
+      "src": "/assets/story-the-good-samaritan-and-mary-and-martha-v1.webp",
+      "box": [
+        275,
+        290,
+        585,
+        535
+      ],
+      "name": "samaritan-bandage"
+    },
+    {
+      "src": "/assets/story-the-lost-sheep-coin-and-son-v1.webp",
+      "box": [
+        450,
+        70,
+        740,
+        375
+      ],
+      "name": "embrace-hands"
+    },
+    {
+      "src": "/assets/story-the-rich-man-and-lazarus-v1.webp",
+      "box": [
+        260,
+        325,
+        665,
+        635
+      ],
+      "name": "lazarus-hands-feet-dog"
+    },
+    {
+      "src": "/assets/story-zacchaeus-v1.webp",
+      "box": [
+        60,
+        75,
+        530,
+        375
+      ],
+      "name": "zacchaeus-grips"
+    },
+    {
+      "src": "/assets/story-the-road-to-emmaus-v1.webp",
+      "box": [
+        450,
+        285,
+        735,
+        410
+      ],
+      "name": "emmaus-bread-grip"
+    },
+    {
+      "src": "/assets/story-the-ascension-v1.webp",
+      "box": [
+        300,
+        25,
+        670,
+        175
+      ],
+      "name": "ascension-hands"
+    }
+  ],
+  "generationCalls": 0,
+  "newPortraits": 0,
+  "generationInputs": [],
+  "futureGenerationRule": "Every new identifiable recurring portrayal must receive actual approved reference image files; textual descriptions or prior viewing do not suffice. Genesis 7 is style only. No new image was generated in this review.",
+  "limits": [
+    "Hidden/occluded anatomy and tiny background faces not certified",
+    "Most exact disciple name-to-face assignments remain uncertain",
+    "No John artwork viewed or approved; only boundary placement metadata read",
+    "No identifiable John Baptist/Moses/Elijah/Elisha/Simeon/Anna/Elizabeth/Zacharias portrait inferred from broad Story titles or genealogy",
+    "Imagined art is not historical evidence or a real portrait"
+  ]
+}

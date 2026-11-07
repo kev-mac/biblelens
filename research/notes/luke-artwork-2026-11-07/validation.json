@@ -1,0 +1,84 @@
+{
+  "scope": "Luke only; all production source/assets retained",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 387,
+    "sourceHash": "b08f7de0bc3e83df9e137323ee20008f2d4ce78c2ae765dad7bd257a5712cf18"
+  },
+  "checks": [
+    {
+      "command": "npm ci --cache=/tmp/biblelens-luke-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-npm-ci.log",
+      "logSha256": "60f902c395d3870d2842edc85370cf4421b553f16bdc20c4cc7dbe3ee43dc48a"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-build.log",
+      "logSha256": "770dd0a56241c6491b155dffa733a009a7da50944b5652129c6b4096577aa1a5"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-mobile-build.log",
+      "logSha256": "3a965a30849bf0b76df5b2bd26858ea352a77ffb5721a2fef7da0b0f53e0a203"
+    },
+    {
+      "command": "node research/notes/luke-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-check-source-audit.log",
+      "logSha256": "0ac5b4b86149128e29661433a257236df1459aec106b1da77d5c08302e21ba90"
+    },
+    {
+      "command": "node research/notes/luke-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-check-focused.log",
+      "logSha256": "0054c0752d6d54c6e0f316775bcbc8f47688e6df375aa60e126a70efe6c6bf2b"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-check-images.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-check-mobile.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/luke-check-release.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/luke-check-full.log",
+      "logSha256": "8865213c272297a1181726f14178f38ce5540db73b6283001e601e9582c14cbf"
+    }
+  ],
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Playwright Chromium headless shell 1248 executable absent. Preceding nonbrowser/search checks pass. Readability remains inherited report-only.",
+  "publication": "No save, deploy, mirror push, audience change, substituted version or indirect route attempted. Inherited build 386 automatic-approval denial and parent publication prohibition remain in force.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1, no callable cua_repl.js. Full-suite browser launch attempted and failed. Sites instructions prohibit browser installation or improvised managed control.",
+  "liveBytes": "Inherited denied live HTTP/image/release:verify actions remain deferred without materially new relevant evidence. Worker bytes tested with explicit local immutable-origin fixture, not live HTTP.",
+  "devices": "No Mac/device connector or configured VPN exposed. Signing, signed-app/public-versus-www parity, physical installation/query/launch incomplete.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) remains unresolved, not changed or retested in this artwork-only review.",
+  "mirror": {
+    "commit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997",
+    "productionFilesCompared": 2006,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "result": "Matches frozen saved 386 source; differences are already-known canonical Matthew build 387 work, no independent new source to integrate. Mirror never mutated/pushed."
+  }
+}
