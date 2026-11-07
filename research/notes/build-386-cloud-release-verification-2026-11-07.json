@@ -61,7 +61,47 @@
   "handoff": "malachi-artwork-handoff-from-zechariah-2026-11-07.md",
   "nextBookStarted": false,
   "publication": {
-    "status": "pending"
+    "status": "saved; production deployment blocked by automatic approval review",
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "versionNumber": 386,
+    "deploymentId": null,
+    "siteUrl": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "localArchive": {
+      "format": "tar",
+      "fileCount": 6,
+      "sizeBytes": 59535360,
+      "contentHash": "sha256:b58034f62cb84db32dfcb08f738bf9dce37ba991dbf0997076e14d89fcbe10b9",
+      "allLocalArchiveMembersMatchStagedBytes": true
+    },
+    "savedArchive": {
+      "format": "tar",
+      "fileCount": 6,
+      "sizeBytes": 59535360,
+      "contentHash": "sha256:db05c359b951667624ce4eaed824481cd9b4f7c5ce43774d690d4965c05ae816"
+    },
+    "initialSave": "rejected invalid_archive: archive lacked supported dist/server path; corrected archive layout only, then saved successfully",
+    "deploymentOutcome": "First deployment response was not retained because the orchestration wrapper failed while storing absent structured data. get_site_version confirmed deployment_id null. After reading additional trusted cloud/continue-without-devices owner messages and refreshing owner/public audience, only the same saved-version operation was retried once. It was explicitly denied. Final get_site_version again confirmed deployment_id null. No production deployment exists for this version.",
+    "blockedAction": "sites.deploy_site_version for public BibleLens saved build 386",
+    "denialReason": "This publishes version 386 to a production site and creates an external commitment; \u201cyes. i want it done in the cloud\u201d authorizes cloud work generally but does not clearly authorize this exact public production deployment.",
+    "requiredNextStep": "Obtain explicit owner approval to publish this exact saved build 386 publicly. Do not retry without materially new relevant authorization. No workaround or indirect deployment was attempted."
   },
-  "pushRecovery": "Initial canonical push rejected by GitHub GH007 email privacy protection. Only this session\u2019s two unpublished commits were rewritten using the existing prior canonical GitHub noreply identity; no public history or source bytes changed."
+  "pushRecovery": "Initial canonical push rejected by GitHub GH007 email privacy protection. Only this session\u2019s two unpublished commits were rewritten using the existing prior canonical GitHub noreply identity; no public history or source bytes changed.",
+  "canonicalValidationCommit": "ebcada3",
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "localPostSaveParity": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "canonicalMirrorUnsignedNativeIdentityEqual": true,
+    "workerStagingEqual": true,
+    "zechariahSourceMirrorOfflineBytesEqual": 14,
+    "archiveMembersMatchStaging": true,
+    "archiveFileCount": 6,
+    "archiveBytes": 59535360,
+    "archiveSha256": "b58034f62cb84db32dfcb08f738bf9dce37ba991dbf0997076e14d89fcbe10b9",
+    "liveVerification": false,
+    "signedAppVerified": false
+  }
 }
