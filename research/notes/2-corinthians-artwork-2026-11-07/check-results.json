@@ -1,0 +1,26 @@
+[
+  {
+    "command": "npm run check:images",
+    "exitCode": 0,
+    "localLog": "/tmp/2-corinthians-check-0.log",
+    "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+  },
+  {
+    "command": "npm run check:mobile",
+    "exitCode": 0,
+    "localLog": "/tmp/2-corinthians-check-1.log",
+    "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+  },
+  {
+    "command": "npm run check:release",
+    "exitCode": 0,
+    "localLog": "/tmp/2-corinthians-check-2.log",
+    "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 1,
+    "localLog": "/tmp/2-corinthians-check-3.log",
+    "logSha256": "12fdd01530f03ae529ed765f5346b3a7da45e21debdf54b5b069ad9c0243b804"
+  }
+]
