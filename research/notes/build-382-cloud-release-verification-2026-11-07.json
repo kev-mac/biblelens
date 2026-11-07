@@ -51,7 +51,42 @@
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "habakkuk-artwork-handoff-from-nahum-2026-11-07.md",
   "nextBookStarted": false,
+  "canonicalValidationCommit": "5a43ad7",
+  "mirrorCommit": "b1cee84f9da5321e636ba6b71d1d87d9decfcd47",
   "publication": {
-    "status": "pending"
-  }
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_684d8fcfb2cc8191b5ab5a23389c58f9",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 382,
+      "source": {
+        "commit_sha": "b1cee84f9da5321e636ba6b71d1d87d9decfcd47"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_000000004ff881fda2ffa62e4ab0fe04",
+        "content_hash": "sha256:969aced77e45be34ff3821482951d23ae3ab6853b3bea927d259c5c92a355c0c",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeee33502808191b8419131d1c90aa3",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_684d8fcfb2cc8191b5ab5a23389c58f9",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:37:19.635204+00:00"
+    }
+  },
+  "publicationRecovery": "First deployment rejected by automatic review for unverified publication authorization and Site ownership/audience. Read original owner publication message via user_message_read.read_messages and refreshed get_site confirming current_user_role=owner and access_mode=public. Retried the same saved-version deployment once with that new evidence; succeeded. No workaround or alternate target.",
+  "localPostPublicationParity": "passed: canonical/mirror/unsigned-native/local Worker release identities and staged Worker/Nahum bytes agree; full live release:verify deferred"
 }
