@@ -1,0 +1,38 @@
+{
+  "book": "Obadiah",
+  "bookId": 30,
+  "date": "2026-11-07",
+  "canonicalBaseline": "102f09b",
+  "retained": 1,
+  "replacements": 0,
+  "chapterOpeners": 1,
+  "storyPlacements": 0,
+  "styleReferences": [
+    "src/assets/chapter-genesis-07-opening-v1.webp",
+    "src/assets/story-video-creation-poster-v2.webp"
+  ],
+  "comparisonReference": "src/assets/chapter-jeremiah-49-opening-v1.webp",
+  "referenceRole": "Actual local files viewed at native resolution; no new image generation, edits or uploads. Genesis 7 is style-only. Jeremiah 49 is an earlier Edom landscape, not an assertion of an identical building.",
+  "identityLimits": "No visible people, recurring group, animals or divine figure. Ancestral and national mentions of Jacob, Esau, Joseph, Benjamin and Edom do not require ancestral portraits or prove that the prophet is depicted. No new portrayal or aging change. Future identifiable people require actual approved image inputs.",
+  "priorAudit": "obadiah-visual-continuity-audit-2026-11-04.md",
+  "rows": [
+    {
+      "chapter": 1,
+      "key": "30:1",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A rough stone stronghold stands high among red cliffs above a deep rocky ravine.",
+      "src": "/assets/chapter-obadiah-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 157098,
+      "sha256": "10282b1e7e680ec4affedca3e59626b8635d6b121e64b1a884b1c8042c24cb90",
+      "verseMotif": "Obadiah 1:3–4",
+      "decision": "retain",
+      "reason": "Rough stone dwellings sheltered high in red cliff clefts above a ravine illustrate the chapter’s high habitation. Natural blue light, muted red rock, gray-green shrubs and weathered timber fit the approved realism. Doorways, roofs, beams, steps and stonework have coherent forms; no definite visual defect. No later monumental Petra facade or claim of exact historical reconstruction.",
+      "reviewSize": "960x540 native",
+      "people": false,
+      "animals": false,
+      "generation": "none; earlier provenance retained"
+    }
+  ]
+}
