@@ -1,0 +1,910 @@
+{
+  "scope": "Acts only",
+  "baseline": "2e21b79bed156f09ad6e023c52f9ecb1dd07b97c",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "priorInventories": [
+    "research/notes/acts-continuity-inventory-2026-11-04.json",
+    "research/notes/matthew-continuity-inventory-2026-11-07.json",
+    "research/notes/mark-continuity-inventory-2026-11-07.json",
+    "research/notes/luke-continuity-inventory-2026-11-07.json",
+    "research/notes/john-continuity-inventory-2026-11-07.json"
+  ],
+  "people": [
+    {
+      "person": "Simon Peter",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+        "src/assets/story-the-miraculous-catch-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+        "src/assets/story-ananias-and-sapphira-v1.webp",
+        "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+        "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, prominent nose, natural dark curls, full dark beard with modest gray, sturdy/lean adult build.",
+      "age": "Early Acts soon after resurrection; later Cornelius/escape years allow modest graying, not a new identity. Exact calendar ages unasserted.",
+      "result": "Six Gospel comparisons and four Acts neighbors checked in native portraits alongside actual originals. Faces/complexion/hair/build compatible. Council left greying listener is compatible but exact assignment not certified; central gray speaker is James per alt. Acts 1 grey lots participant is not labeled Peter. Inactive Pentecost v1 never reactivated or used as reference."
+    },
+    {
+      "person": "Saul / Paul",
+      "references": [
+        "src/assets/story-saul-s-conversion-v1.webp",
+        "src/assets/story-paul-in-philippi-v1.webp",
+        "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+        "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-saul-s-conversion-v1.webp",
+        "src/assets/story-the-jerusalem-council-v1.webp",
+        "src/assets/story-paul-in-philippi-v1.webp",
+        "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+        "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+        "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+        "src/assets/story-shipwreck-and-rome-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+      "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+      "result": "Native conversion/council/Philippi/Athens/arrest/hearing/Malta face comparisons compatible. Corrected arrest v2 retains actual v1 identity, checked beside original and approved Athens/hearing inputs. Added two cuffs/two chain routes for 21:33–40. Earlier incompatible first-journey v1 remains inactive; v2 landscape adds no face. Ephesus silversmiths are not Paul. Council right listener Paul-compatible; not made a new unconditional anchor by clothing."
+    },
+    {
+      "person": "Apostle John and recurring apostolic group",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-ascension-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+        "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+        "src/assets/story-the-jerusalem-council-v1.webp"
+      ],
+      "stableTraits": "Varied brown complexions, natural curls and adult builds; Acts 3 John is the younger dark-curled bearded witness beside Peter.",
+      "age": "Resurrection to early Acts does not permit decades of aging. Council later, exact face maps limited.",
+      "result": "Actual approved group originals inspected. Acts 3 witness is John by action/alt, but precise earlier Gospel named portrait is uncertain; no headband/clothing naming. Group compatibility retained without certifying all twelve in a partial frame or naming gray Acts 1 participant. Apostle John is distinct from John the Baptist and John Mark."
+    },
+    {
+      "person": "James at Jerusalem council",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-the-jerusalem-council-v1.webp"
+      ],
+      "stableTraits": "Older brown face, gray curls and full gray beard, lean seated adult build; central speaker.",
+      "age": "Council occurs years after Gospel ministry; exact birth year/age not asserted.",
+      "result": "Alt identifies James; seated speech/letter phase fits 15:13–29, following Peter speech. No certified exact earlier Gospel brother-of-Jesus portrait established from anonymous disciple group. Do not map him to James son of Zebedee (killed in 12:2) or James son of Alphaeus by same name."
+    },
+    {
+      "person": "Philip the evangelist and Ethiopian official",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-philip-and-the-ethiopian-v1.webp"
+      ],
+      "stableTraits": "Philip brown face, dark natural curls, full beard; official dark-brown face with short natural curls, gray at temples/beard, adult build.",
+      "age": "One current scene, no added aging.",
+      "result": "Distinct text-compatible adults in chariot, scroll held coherently, charioteer anonymous and two horses partly visible. Acts 8 Philip the evangelist is not assigned an apostle Philip Gospel face. No earlier exact portrait of either certified."
+    },
+    {
+      "person": "Ananias in Jerusalem; Ananias in Damascus; high priest Ananias",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-ananias-and-sapphira-v1.webp",
+        "src/assets/story-saul-s-conversion-v1.webp"
+      ],
+      "stableTraits": "Jerusalem donor: brown face, dark curls and beard. Damascus disciple: older brown face, graying curly hair and beard.",
+      "age": "Different people; no identity-continuity requirement between them.",
+      "result": "Keep identities distinct. Jerusalem image shows male donor and anonymous witnesses, not Sapphira before her later arrival. Damascus disciple lays a hand on Saul. Later named high priest is neither man and is not assigned a generic council face."
+    },
+    {
+      "person": "Stephen; Cornelius; Lydia; silversmiths; Festus and Agrippa II; islanders",
+      "references": [],
+      "currentAppearances": [
+        "src/assets/story-stephen-v1.webp",
+        "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+        "src/assets/story-paul-in-philippi-v1.webp",
+        "src/assets/story-ephesus-v1.webp",
+        "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+        "src/assets/story-shipwreck-and-rome-v1.webp"
+      ],
+      "stableTraits": "Dignified varied brown complexions, natural curls/hair textures and believable adult builds. Single explicit current portraits or anonymous groups.",
+      "age": "No invented aging between shared names or unidentified listeners.",
+      "result": "Stephen addresses council. Cornelius sits listening after Peter raised him. Lydia by river, not named solely by purple. Silversmith work fits Demetrius episode, not Paul manual craft. Hearing has governor and king: later Festus/Agrippa, not Felix simultaneously. Agrippa II not Herod of Acts 12. Malta women/child are island inhabitants and not required to be passengers; no names assigned to sailor/guard by headband."
+    },
+    {
+      "person": "Jesus, Mary mother of Jesus, Barnabas, Moses and other quoted/mentioned names",
+      "references": [
+        "src/assets/story-the-ascension-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp"
+      ],
+      "currentAppearances": [],
+      "stableTraits": "No new identifiable portrait established in active Acts scenes.",
+      "age": "No portrait aging inferred from a quotation or mention.",
+      "result": "Acts 1 shows lots, not Jesus ascension; Jesus remains in prior approved Gospel scene only. No named Mary visible; no new birth-to-adult comparison needed. Burning bush has no Moses; Paul Damascus room has Ananias, not Jesus. Barnabas and other council/travel companions not assigned by clothes. Judas Iscariot dead before lots; Joseph Barsabbas differs from Joseph of Nazareth/Arimathea/Genesis; Matthias exact face unresolved and unused for generation."
+    }
+  ],
+  "referenceFiles": [
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "bytes": 107786,
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    },
+    {
+      "path": "src/assets/story-ananias-and-sapphira-v1.webp",
+      "bytes": 84616,
+      "sha256": "708ed8bf8937b6a723eb4a4b1e40013a93aa3e56a14d6ff2d9a9914e0f73caf7"
+    },
+    {
+      "path": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+      "bytes": 133908,
+      "sha256": "bd23be6a14133af5b387593a872781b77fceab54bee1a98927498d45741db699"
+    },
+    {
+      "path": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "bytes": 129094,
+      "sha256": "7d3c6b38a52c46a7d8279a7529a6f3cf2fa997c39042d01b049c4f112411b5d1"
+    },
+    {
+      "path": "src/assets/story-ephesus-v1.webp",
+      "bytes": 111604,
+      "sha256": "406a16f33a78d6800c3e442aba707bd1bd060405c8e39eda0cedacc280b63b8c"
+    },
+    {
+      "path": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+      "bytes": 98602,
+      "sha256": "ce9fcfab12dcccb6d748d2bdc4e9f495329bb2713d321d5ccffb62b52a95b00f"
+    },
+    {
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "bytes": 145050,
+      "sha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c"
+    },
+    {
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "bytes": 102998,
+      "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+    },
+    {
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "bytes": 137234,
+      "sha256": "58e0dcfc83147191569bca6d402c861e702f6386808e992d6c7b2139c22bc090"
+    },
+    {
+      "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+      "bytes": 104508,
+      "sha256": "f4869c732c006d5d2cd1d5630abfb0c4a3c4fdf9b5c3e6c01f3bc9f5549c7b0a"
+    },
+    {
+      "path": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "bytes": 166668,
+      "sha256": "8c00e0e85dc7307364bc81b66729a587f1237a6bf8d33352bc62063a6b2cba22"
+    },
+    {
+      "path": "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+      "bytes": 84322,
+      "sha256": "9c668c19537266b34f9de6c5c4b58f9fc4667e72c02d819fa85b874fe35cbf17"
+    },
+    {
+      "path": "src/assets/story-philip-and-the-ethiopian-v1.webp",
+      "bytes": 147612,
+      "sha256": "0f270ef8e6b54a1449002f861f3df60090107d50db9cc7c1f62a610805c0b13c"
+    },
+    {
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "bytes": 107064,
+      "sha256": "0b8b96c507d70183544aa2508a90d2de165eca27102c1eb9c9b8fa89e825ed47"
+    },
+    {
+      "path": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "bytes": 217294,
+      "sha256": "b364b72a1b320a750d35a22b747649bb5bfbabf42202e8153fb75c9c317310b8"
+    },
+    {
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "bytes": 147828,
+      "sha256": "bcd71f02072568b28dc375bb13a29bdd7fa6a1c563f0e3ad84650ef0e651200d"
+    },
+    {
+      "path": "src/assets/story-stephen-v1.webp",
+      "bytes": 107586,
+      "sha256": "8a9551c362d555bcdebdab099ec7f6e9b4e06e6b303d068298c30bb2736769de"
+    },
+    {
+      "path": "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+      "bytes": 158680,
+      "sha256": "67b118505d2dea4b3ad0d638c997e7a39a9f46234b1a65c68dcac4f5a147a60b"
+    },
+    {
+      "path": "src/assets/story-the-ascension-v1.webp",
+      "bytes": 131684,
+      "sha256": "75322c7817a97ae874c177af89491e3a5a35be2cea0b0a725a2b3b7511810fd4"
+    },
+    {
+      "path": "src/assets/story-the-jerusalem-council-v1.webp",
+      "bytes": 109122,
+      "sha256": "66cc7cd525b340836a42c76858439cabc40b0805229ed3d6394ee0028378c137"
+    },
+    {
+      "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "bytes": 135590,
+      "sha256": "f69dde46a0b9f7c431d9de70bf196ba3533a225641bf62af197f5dafbe9b762e"
+    },
+    {
+      "path": "src/assets/story-the-miraculous-catch-v1.webp",
+      "bytes": 140986,
+      "sha256": "2d9b73a129370f8af060ccf9122c2ed55e0bc2d2a566fcd006fca67cbff13750"
+    },
+    {
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "bytes": 119816,
+      "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+    },
+    {
+      "path": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "bytes": 66178,
+      "sha256": "3a25e4ebcebb4510fd108175d7818976f629eff660707304b210c340c6bbc8a9"
+    }
+  ],
+  "inspectionPanels": [
+    {
+      "file": "/tmp/acts-review/portrait-00.png",
+      "pairs": [
+        {
+          "name": "peter-john-breakfast",
+          "path": "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp",
+          "crop": [
+            365,
+            130,
+            555,
+            320
+          ]
+        },
+        {
+          "name": "peter-acts3",
+          "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+          "crop": [
+            550,
+            10,
+            710,
+            200
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-01.png",
+      "pairs": [
+        {
+          "name": "peter-john-washing",
+          "path": "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+          "crop": [
+            790,
+            0,
+            1005,
+            210
+          ]
+        },
+        {
+          "name": "peter-acts4",
+          "path": "src/assets/story-ananias-and-sapphira-v1.webp",
+          "crop": [
+            815,
+            85,
+            1100,
+            355
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-02.png",
+      "pairs": [
+        {
+          "name": "peter-matthew",
+          "path": "src/assets/story-calling-the-first-disciples-v1.webp",
+          "crop": [
+            495,
+            115,
+            635,
+            300
+          ]
+        },
+        {
+          "name": "peter-acts3",
+          "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+          "crop": [
+            550,
+            10,
+            710,
+            200
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-03.png",
+      "pairs": [
+        {
+          "name": "peter-mark-confession",
+          "path": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+          "crop": [
+            260,
+            90,
+            470,
+            300
+          ]
+        },
+        {
+          "name": "peter-acts10",
+          "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+          "crop": [
+            295,
+            5,
+            445,
+            200
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-04.png",
+      "pairs": [
+        {
+          "name": "peter-mark-courtyard",
+          "path": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+          "crop": [
+            205,
+            60,
+            440,
+            320
+          ]
+        },
+        {
+          "name": "peter-acts12",
+          "path": "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+          "crop": [
+            545,
+            50,
+            685,
+            240
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-05.png",
+      "pairs": [
+        {
+          "name": "peter-luke",
+          "path": "src/assets/story-the-miraculous-catch-v1.webp",
+          "crop": [
+            640,
+            175,
+            750,
+            320
+          ]
+        },
+        {
+          "name": "peter-acts3",
+          "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+          "crop": [
+            550,
+            10,
+            710,
+            200
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-06.png",
+      "pairs": [
+        {
+          "name": "peter-acts3",
+          "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+          "crop": [
+            550,
+            10,
+            710,
+            200
+          ]
+        },
+        {
+          "name": "peter-acts4",
+          "path": "src/assets/story-ananias-and-sapphira-v1.webp",
+          "crop": [
+            815,
+            85,
+            1100,
+            355
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-07.png",
+      "pairs": [
+        {
+          "name": "peter-acts4",
+          "path": "src/assets/story-ananias-and-sapphira-v1.webp",
+          "crop": [
+            815,
+            85,
+            1100,
+            355
+          ]
+        },
+        {
+          "name": "peter-acts10",
+          "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+          "crop": [
+            295,
+            5,
+            445,
+            200
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-08.png",
+      "pairs": [
+        {
+          "name": "peter-acts10",
+          "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+          "crop": [
+            295,
+            5,
+            445,
+            200
+          ]
+        },
+        {
+          "name": "peter-acts12",
+          "path": "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+          "crop": [
+            545,
+            50,
+            685,
+            240
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-09.png",
+      "pairs": [
+        {
+          "name": "peter-acts10",
+          "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+          "crop": [
+            295,
+            5,
+            445,
+            200
+          ]
+        },
+        {
+          "name": "council-left-candidate",
+          "path": "src/assets/story-the-jerusalem-council-v1.webp",
+          "crop": [
+            170,
+            90,
+            285,
+            250
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-10.png",
+      "pairs": [
+        {
+          "name": "paul-acts9",
+          "path": "src/assets/story-saul-s-conversion-v1.webp",
+          "crop": [
+            700,
+            140,
+            960,
+            410
+          ]
+        },
+        {
+          "name": "paul-acts15-candidate",
+          "path": "src/assets/story-the-jerusalem-council-v1.webp",
+          "crop": [
+            710,
+            55,
+            870,
+            235
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-11.png",
+      "pairs": [
+        {
+          "name": "paul-acts9",
+          "path": "src/assets/story-saul-s-conversion-v1.webp",
+          "crop": [
+            700,
+            140,
+            960,
+            410
+          ]
+        },
+        {
+          "name": "paul-acts16",
+          "path": "src/assets/story-paul-in-philippi-v1.webp",
+          "crop": [
+            230,
+            60,
+            420,
+            275
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-12.png",
+      "pairs": [
+        {
+          "name": "paul-acts16",
+          "path": "src/assets/story-paul-in-philippi-v1.webp",
+          "crop": [
+            230,
+            60,
+            420,
+            275
+          ]
+        },
+        {
+          "name": "paul-acts17",
+          "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "crop": [
+            330,
+            10,
+            475,
+            210
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-13.png",
+      "pairs": [
+        {
+          "name": "paul-acts17",
+          "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "crop": [
+            330,
+            10,
+            475,
+            210
+          ]
+        },
+        {
+          "name": "paul-acts21",
+          "path": "src/assets/story-paul-arrested-in-jerusalem-v1.webp",
+          "crop": [
+            640,
+            25,
+            795,
+            230
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-14.png",
+      "pairs": [
+        {
+          "name": "paul-acts21",
+          "path": "src/assets/story-paul-arrested-in-jerusalem-v1.webp",
+          "crop": [
+            640,
+            25,
+            795,
+            230
+          ]
+        },
+        {
+          "name": "paul-acts24",
+          "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+          "crop": [
+            145,
+            45,
+            290,
+            230
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/portrait-15.png",
+      "pairs": [
+        {
+          "name": "paul-acts24",
+          "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+          "crop": [
+            145,
+            45,
+            290,
+            230
+          ]
+        },
+        {
+          "name": "paul-acts27",
+          "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+          "crop": [
+            590,
+            105,
+            725,
+            300
+          ]
+        }
+      ],
+      "method": "Native-resolution unscaled side-by-side portrait crops"
+    },
+    {
+      "file": "/tmp/acts-review/detail-00-lots-hands.png",
+      "path": "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+      "crop": [
+        350,
+        150,
+        760,
+        365
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-01-healing-grip.png",
+      "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "crop": [
+        420,
+        170,
+        730,
+        340
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-02-healing-feet.png",
+      "path": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "crop": [
+        300,
+        460,
+        890,
+        660
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-03-purse-hands.png",
+      "path": "src/assets/story-ananias-and-sapphira-v1.webp",
+      "crop": [
+        440,
+        350,
+        860,
+        610
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-04-stephen-hands.png",
+      "path": "src/assets/story-stephen-v1.webp",
+      "crop": [
+        200,
+        130,
+        420,
+        355
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-05-scroll-hands.png",
+      "path": "src/assets/story-philip-and-the-ethiopian-v1.webp",
+      "crop": [
+        280,
+        235,
+        830,
+        485
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-06-horses-driver.png",
+      "path": "src/assets/story-philip-and-the-ethiopian-v1.webp",
+      "crop": [
+        725,
+        85,
+        1100,
+        600
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-07-ananias-hands.png",
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "crop": [
+        250,
+        300,
+        780,
+        570
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-08-peter-teaching.png",
+      "path": "src/assets/story-peter-cornelius-and-the-gentiles-v1.webp",
+      "crop": [
+        325,
+        200,
+        560,
+        365
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-09-escape-hands-feet.png",
+      "path": "src/assets/story-peter-s-escape-and-herod-s-death-v1.webp",
+      "crop": [
+        320,
+        300,
+        985,
+        660
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-10-council-hands.png",
+      "path": "src/assets/story-the-jerusalem-council-v1.webp",
+      "crop": [
+        390,
+        180,
+        620,
+        300
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-11-scribe-grip.png",
+      "path": "src/assets/story-the-jerusalem-council-v1.webp",
+      "crop": [
+        820,
+        370,
+        1000,
+        500
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-12-lydia-paul-hands.png",
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "crop": [
+        280,
+        325,
+        825,
+        525
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-13-athens-hands.png",
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "crop": [
+        360,
+        165,
+        600,
+        315
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-14-silversmith-grips.png",
+      "path": "src/assets/story-ephesus-v1.webp",
+      "crop": [
+        295,
+        315,
+        780,
+        600
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-15-arrest-hands-wrists.png",
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v1.webp",
+      "crop": [
+        410,
+        180,
+        990,
+        400
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-16-hearing-bonds-hands.png",
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "crop": [
+        210,
+        260,
+        410,
+        450
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-17-shipwreck-sticks.png",
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "crop": [
+        505,
+        335,
+        790,
+        545
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    },
+    {
+      "file": "/tmp/acts-review/detail-18-blanket-hands.png",
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "crop": [
+        735,
+        170,
+        1050,
+        445
+      ],
+      "method": "Native-resolution unscaled anatomy/object crop"
+    }
+  ],
+  "additionalCorrectionInspection": [
+    "/tmp/acts-review/new-hands.png",
+    "/tmp/acts-review/new-chain-links.png",
+    "/tmp/acts-review/new-face.png",
+    "/tmp/acts-review/new-identity.png",
+    "/tmp/acts-review/new-vs-hearing.png",
+    "/tmp/acts-review/new-vs-Malta.png"
+  ],
+  "generation": "See acts-artwork-generation-2026-11-07.json: actual target, two approved Paul references and Genesis style file supplied to image tool. No new portrait relies on text-only continuity.",
+  "uncertainty": "Hidden/tiny anatomy and exact anonymous-group face-name maps not certified. None used as new generation anchors. No definite unresolved visible identity drift found.",
+  "nextBookArtworkReviewed": false,
+  "groupComparisons": [
+    {
+      "first": "src/assets/story-the-ascension-v1.webp",
+      "second": "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+      "method": "Unscaled full-original paired panel",
+      "panel": "/tmp/acts-review/group-0.png"
+    },
+    {
+      "first": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "second": "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+      "method": "Unscaled full-original paired panel",
+      "panel": "/tmp/acts-review/group-1.png"
+    },
+    {
+      "first": "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+      "second": "src/assets/story-the-jerusalem-council-v1.webp",
+      "method": "Unscaled full-original paired panel",
+      "panel": "/tmp/acts-review/group-2.png"
+    }
+  ]
+}

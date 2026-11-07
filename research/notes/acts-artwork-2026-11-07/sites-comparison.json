@@ -1,0 +1,25 @@
+{
+  "baseline": "2e21b79bed156f09ad6e023c52f9ecb1dd07b97c",
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "productionFilesCompared": 2009,
+  "sharedProductionFilesCompared": 2007,
+  "differences": [
+    "data/chapter-images.json",
+    "data/hosted-artwork.json",
+    "data/story-images.json",
+    "package.json",
+    "scripts/hosted-artwork.mjs"
+  ],
+  "onlyCanonical": [
+    "src/assets/chapter-matthew-15-opening-v2.webp",
+    "src/assets/story-sending-out-the-twelve-v2.webp"
+  ],
+  "onlyMirror": [],
+  "mirror": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "result": "Fresh credential opening before Acts integration. Frozen saved 386; known Matthew 387 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical Acts build 388 is intentionally not mirrored or published."
+}

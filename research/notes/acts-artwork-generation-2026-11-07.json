@@ -1,0 +1,44 @@
+{
+  "tool": "image_gen.imagegen",
+  "actualVisualInputsSupplied": true,
+  "referenceImagesViewedBeforeUse": true,
+  "originalVersionsPreserved": true,
+  "scope": "Acts only",
+  "rows": [
+    {
+      "target": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "replaces": "src/assets/story-paul-arrested-in-jerusalem-v1.webp",
+      "reason": "Acts 21:33 commands two chains before the 21:40 address; v1 shows bare wrists.",
+      "inputFiles": [
+        {
+          "path": "src/assets/story-paul-arrested-in-jerusalem-v1.webp",
+          "role": "Existing scene and approved Paul identity to preserve; factual bonds corrected",
+          "sha256": "41d7e03f1db721ca8fc8544a38b5928e172ab1732a7d245e4a4de6f7e1fda740"
+        },
+        {
+          "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "role": "Approved Paul identity",
+          "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+        },
+        {
+          "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+          "role": "Approved Paul identity and wrist-bond comparison",
+          "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+        },
+        {
+          "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+          "role": "Style only, not identity",
+          "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+        }
+      ],
+      "generatedOriginal": "/workspace/generated_images/exec-9e152937-aec9-4d62-b0b7-099a1a945ab8.png",
+      "prompt": "Edit image 1, the existing Acts Jerusalem arrest scene, with a narrow factual correction. Preserve exactly the same recognizable Paul (central standing speaker), all faces, natural curls, complexion, adult age/build, poses, guards/crowd, stone stairs, daylight and composition. Acts 21:33 says Paul was bound with TWO CHAINS before he speaks from the stairs in 21:40. Add believable dark iron wrist cuffs to BOTH Paul's wrists and two clearly distinct iron chains running downward from his cuffs toward his Roman guard/custody. Keep his raised speaking hands and all visible fingers anatomically coherent, five digits per hand with natural partial occlusion, no duplicated limbs or floating chains. The chains must visibly attach to wrist cuffs and have believable weight. Image 2 (Athens) and image 3 (hearing) are actual approved references of this same Paul: keep his medium-brown face, prominent angular nose, curly dark hair, full dark beard with modest gray, lean mature adult build unchanged; no extra aging in this same arrest scene. Image 4 Genesis 7 is STYLE ONLY, never character identity: grounded natural light, believable faces/materials, restrained illustrative realism, not glossy, cartoon or thick paint. Do not replace the composition with another scene, do not show release/broken chains, do not add text, signatures or borders. Wide 16:9 output; correction of image 1 only.",
+      "encoding": "Pillow RGB/Lanczos resize from 1672x941 to 1200x675; WebP quality 83, method 6. No painted/composited content.",
+      "acceptance": "Native generated original, final encoding, unscaled hand/chain/face crops and original/Athens identity triptych inspected. Two cuffs, two distinct chain routes; farther route partly occluded by crowd. Recognizable unchanged Paul, mature brown face, dark natural curls, full beard, lean build; coherent speaking hands and Roman guard grip. No extra aging.",
+      "narrativeTime": "Same arrest/address; no aging.",
+      "generatedOriginalSha256": "8d7cfde725aac1a6c72a982b100996a47391b57afbd8f4b58cb1c051c902c5ce",
+      "targetSha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c",
+      "targetBytes": 145050
+    }
+  ]
+}
