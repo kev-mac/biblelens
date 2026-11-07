@@ -428,5 +428,50 @@
     "Live release:verify and Site image bytes under unchanged inherited destination denial",
     "Mac signing, signed App.app/public parity, physical iPhone/iPad installation and launch"
   ],
-  "githubPushPrivacyRepair": "First push rejected GH007 because inherited author email was private. Re-authored only two unpushed local commits with verified public-history noreply address; no upstream history rewritten."
+  "githubPushPrivacyRepair": "First push rejected GH007 because inherited author email was private. Re-authored only two unpushed local commits with verified public-history noreply address; no upstream history rewritten.",
+  "canonicalPublicationCommit": "f6b0f21",
+  "mirrorCommit": "610841bdce5a2e429b0dd0e92497f55f7f56a31d",
+  "publication": {
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_bf583f2736ac81918e0479d7a8decd5e",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 373,
+      "source": {
+        "commit_sha": "610841bdce5a2e429b0dd0e92497f55f7f56a31d"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000d53881fd97ea449439848548",
+        "content_hash": "sha256:16722d95e1d913889d57cd1b4a522a858eaf99a972caa74a8c507b70a1d87d82",
+        "size_bytes": 59627520,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeecc19cab08191a29cc951976e7bed",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_bf583f2736ac81918e0479d7a8decd5e",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T06:58:47.064043+00:00"
+    }
+  },
+  "approvalReview": {
+    "initialAction": "Deploy saved Sites version 373 to production",
+    "initialResult": "Denied, known not executed",
+    "reason": "Reviewer believed recent Mac/device messages were the only authorization",
+    "newEvidence": "Trusted user_message_read read of Sentinel_71f14e4a51e88191a1801af8136df6ca confirmed owner instruction to commit, push, publish and install each book",
+    "retry": "Same saved version retried once using normal native deploy tool; succeeded. No bypass or unresolved deployment blocker."
+  },
+  "postPublicationLocalParity": "Canonical, mirror, exact Worker bytes and unsigned native identity match; live stage of release:verify deferred, not run against denied destination.",
+  "latestParentStatus": "2026-11-07 06:58:03 UTC user: devices hsould work now; parent 06:58:08 UTC rechecking devices and latest build. No device/signing tools in this cloud session."
 }
