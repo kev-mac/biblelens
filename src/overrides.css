@@ -3430,3 +3430,24 @@ html body.lens-app #passage-picker #passage-reference[aria-invalid="true"] {bord
   max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 16px);
  }
 }
+
+/* Each category mark flows after the verse and wraps within its margins. */
+html body.lens-app #chapter-text .verse-evidence-tags {display:inline;white-space:normal;}
+html body.lens-app #chapter-text .verse-body .lens-verse-evidence {
+ position:relative;inset:auto;display:inline-flex!important;align-items:center;justify-content:center;
+ width:auto;min-width:44px;min-height:44px;height:auto;max-width:100%;margin:0 3px 0 0;padding:0;
+ vertical-align:middle;white-space:nowrap;line-height:1;background:transparent;border:0;border-radius:5px;box-shadow:none;
+ color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,black);
+}
+html body.lens-app.dark #chapter-text .verse-body .lens-verse-evidence {color:color-mix(in srgb,rgb(var(--theme-rgb)) 70%,white);}
+html body.lens-app #chapter-text .verse-body .lens-verse-evidence .verse-study-pill {
+ display:inline-block;font:500 .625rem/1.2 var(--ui-font);letter-spacing:.015em;
+ color:inherit;background:transparent;border:1px solid currentColor;border-radius:4px;padding:2px 4px;
+}
+html body.lens-app #chapter-text .verse-body .lens-verse-evidence:focus-visible {outline:2px solid currentColor;outline-offset:1px;}
+html body.lens-app #chapter-text .verse-body .lens-verse-evidence:hover .verse-study-pill {background:rgba(var(--theme-rgb),.12);}
+html body.lens-app #lensInspector .lens-category-actions {display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+html body.lens-app #lensInspector :is(.lens-category-actions button,.lens-evidence-summary button) {min-width:44px;min-height:44px;white-space:normal;}
+html body.lens-app #lensInspector .lens-category-title {font:600 1rem/1.4 var(--ui-font);margin:16px 0 8px;}
+html body.lens-app #lensInspector .lens-category-verse {margin:12px 0;padding:0 0 0 12px;border-left:2px solid var(--lens-rule);font:400 1rem/1.6 var(--ui-font);}
+html body.lens-app #lensInspector .lens-evidence-summary h3 {font:600 1rem/1.4 var(--ui-font);}
