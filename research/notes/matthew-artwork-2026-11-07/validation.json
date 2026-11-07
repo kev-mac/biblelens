@@ -1,0 +1,80 @@
+{
+  "scope": "Matthew only; two versioned artwork corrections; unpublished canonical build 387",
+  "baseline": "9f5a8ce",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 387,
+    "sourceHash": "b08f7de0bc3e83df9e137323ee20008f2d4ce78c2ae765dad7bd257a5712cf18"
+  },
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --cache /tmp/matthew-npm-cache",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/matthew-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/matthew-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check (settled artifacts)",
+      "exitCode": 1
+    }
+  ],
+  "fullCheckFailure": {
+    "file": "scripts/check-release-smoke.mjs",
+    "line": 31,
+    "reason": "Playwright default Chromium headless-shell executable missing",
+    "precedingNonbrowserChecksPassed": true,
+    "searchUsefulHit": "50/50",
+    "readability": "Existing report-only mode with inherited findings"
+  },
+  "setupAndHarnessConditions": [
+    "Initial dependency restore could not create cache under restricted /home/agent/.npm; retry used writable /tmp/matthew-npm-cache and preserved lockfile.",
+    "Early verification attempts overlapped mobile rebuilding shared dist and encountered missing Worker; final checks ran after build completion and focused verification passed."
+  ],
+  "releasePrepare": "Not repeated after required full-check browser gate failed; no complete candidate.json or archive prepared",
+  "sync": "Unchanged; not rerun; inherited intermittent assert(finishRead) remains unresolved",
+  "publication": {
+    "attempted": false,
+    "reason": "Parent explicitly prohibits publishing or bypassing prior auto-review denial",
+    "blockedSavedVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "recordedDeploymentId": null,
+    "mirrorMutated": false,
+    "newVersionCreated": false,
+    "frozenMirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c"
+  },
+  "limits": [
+    "No supported managed browser control tool; no substitute browser, preview server or installation attempted",
+    "Inherited denied live HTTP/image/release:verify actions not retried",
+    "No Mac/device connector or VPN route; signing, signed parity and physical-device install/query/launch deferred"
+  ],
+  "nextBook": "Mark handoff prepared only; session not started"
+}

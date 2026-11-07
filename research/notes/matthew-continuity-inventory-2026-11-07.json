@@ -1,0 +1,234 @@
+{
+  "scope": "Matthew only, current canonical baseline 9f5a8ce",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "people": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp"
+      ],
+      "stableFeatures": "Medium-brown complexion, dark natural curls around ears/nape, full dark beard, prominent straight/angular nose, lean adult build. Beige tunic and blue mantle recur but clothing is not identity.",
+      "age": "Adult, visually around thirty; Matthew does not fix an exact age. Ministry scenes span a few years, not decades.",
+      "result": "Rechecked all current Matthew portrayals individually and adjacent native-resolution pairs. Same recognizable brown face, prominent nose, full dark beard, natural curls and lean adult build. All three actual approved earlier images supplied to the commission edit. No ministry aging invented."
+    },
+    {
+      "person": "Mary, mother of Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Young adult woman, medium-brown complexion, dark tight/wavy curls at forehead, oval face, slender build, pale head covering.",
+      "age": "Young adult; exact age unspecified. Birth and flight scenes near in narrative time.",
+      "result": "Rechecked actual current Matthew files individually and relevant unscaled neighbor pairs; compatible visible traits. No new portrait generated. Small/hidden detail is not certified."
+    },
+    {
+      "person": "Joseph of Nazareth",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Adult man with dark natural curls, dark beard, strong nose, medium-brown skin, lean build.",
+      "age": "Adult, exact age unspecified; no unsupported large aging between scenes.",
+      "result": "Rechecked actual current Matthew files individually and relevant unscaled neighbor pairs; compatible visible traits. No new portrait generated. Small/hidden detail is not certified."
+    },
+    {
+      "person": "Infant/young Jesus",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+      ],
+      "stableFeatures": "Swaddled young child with dark hair and brown complexion; face small and partly obscured.",
+      "age": "Infant/young child; Matthew calls him a young child and does not fix exact age.",
+      "result": "Rechecked actual current Matthew files individually and relevant unscaled neighbor pairs; compatible visible traits. No new portrait generated. Small/hidden detail is not certified."
+    },
+    {
+      "person": "John the Baptist",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp"
+      ],
+      "stableFeatures": "Medium-brown skin, full dark/gray beard, dense longer dark curls, robust lean adult build, coarse hair garment.",
+      "age": "Adult, visually thirties or forties; same baptism event in Mark does not justify aging.",
+      "result": "Only secure Matthew portrayal is baptism left figure. Matthew 11 has two messengers, not John. No Mark artwork review or new John portrait generated."
+    },
+    {
+      "person": "Twelve disciples / eleven after Judas",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+        "src/assets/story-the-resurrection-and-the-great-commission-v1.webp"
+      ],
+      "stableFeatures": "Varied brown complexions, natural dark curls, adult bearded men with varied builds, simple woven garments. Some recurring brown/cream headbands.",
+      "age": "Adults, mostly young to middle adult. No broad aging across ministry.",
+      "result": "Same recognizable group and individual facial traits retained in edited commission; actual original commission and calling image supplied. Visible crop does not enumerate all twelve. Nearby familiar group depictions compared; exact name-to-face assignment remains uncertain and is not invented."
+    },
+    {
+      "person": "Moses and Elijah",
+      "references": [
+        "src/assets/chapter-numbers-26-v2.webp",
+        "src/assets/story-elijah-and-the-drought-v1.webp",
+        "src/assets/story-elijah-on-mount-carmel-v1.webp",
+        "src/assets/story-elijah-at-horeb-v1.webp",
+        "src/assets/story-naboth-s-vineyard-v1.webp"
+      ],
+      "stableFeatures": "Earlier Moses: older medium-brown man, gray curls, full white/gray beard, weathered face. Earlier Elijah: lean medium-brown man, angular nose, gray-black natural curls/beard. See prior Numbers/Deuteronomy and Kings audits.",
+      "age": "Earlier narratives and later vision are not a basis for inventing ordinary centuries of aging.",
+      "result": "Current active Transfiguration v2 is cloud-only. No current Matthew depiction or generation of identifiable Moses/Elijah. These are inherited current Deuteronomy/Kings identity paths, not new reapprovals here. Inactive Transfiguration v1 remains rejected as identity input. Do not confuse John the Baptist, Elijah and Elisha."
+    },
+    {
+      "person": "Magi / Pilate / local crowds",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-v1.webp"
+      ],
+      "stableFeatures": "Single-local-scene figures or anonymous crowds; no repeated identity asserted.",
+      "age": "Adults with local narrative roles; no unsupported cross-name assignment.",
+      "result": "Rechecked actual current Matthew files individually and relevant unscaled neighbor pairs; compatible visible traits. No new portrait generated. Small/hidden detail is not certified."
+    }
+  ],
+  "earlierBookRule": "Catalog name matches are provenance leads only. Joseph of Nazareth is not Genesis Joseph or Joseph of Arimathea; Jesus is not an Old Testament Joshua/Jesus name match. Genealogy/prophecy does not create a portrait. No anonymous earlier person is relabeled.",
+  "generationLedger": "research/notes/matthew-artwork-generation-2026-11-07.json",
+  "actualApprovedIdentityInputsSuppliedForEveryNewPortrait": true,
+  "comparisonMethod": "33 original active source files viewed individually, two generated originals and final WebPs viewed at native size; native-resolution adjacent Story comparisons and style comparisons, plus original-resolution hand crops. No thumbnail-only acceptance.",
+  "comparisonPairs": [
+    {
+      "left": "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "right": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp"
+    },
+    {
+      "left": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "right": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "right": "src/assets/story-calling-the-first-disciples-v1.webp"
+    },
+    {
+      "left": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "right": "src/assets/story-healings-and-calming-the-storm-v1.webp"
+    },
+    {
+      "left": "src/assets/story-healings-and-calming-the-storm-v1.webp",
+      "right": "src/assets/story-sending-out-the-twelve-v2.webp"
+    },
+    {
+      "left": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "right": "src/assets/story-jesus-and-john-the-baptist-v1.webp"
+    },
+    {
+      "left": "src/assets/story-jesus-and-john-the-baptist-v1.webp",
+      "right": "src/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp"
+    },
+    {
+      "left": "src/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+      "right": "src/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp"
+    },
+    {
+      "left": "src/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+      "right": "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp"
+    },
+    {
+      "left": "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+      "right": "src/assets/story-the-rich-young-man-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-rich-young-man-v1.webp",
+      "right": "src/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+      "right": "src/assets/story-the-last-supper-and-gethsemane-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+      "right": "src/assets/story-trial-crucifixion-and-burial-v1.webp"
+    },
+    {
+      "left": "src/assets/story-trial-crucifixion-and-burial-v1.webp",
+      "right": "src/assets/story-the-resurrection-and-the-great-commission-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-05-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-16-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-17-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-22-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-06-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-01-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-18-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-24-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-25-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-20-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-15-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-09-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-27-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-07-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-02-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-04-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-23-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-13-opening-v1.webp"
+    },
+    {
+      "left": "src/assets/chapter-matthew-15-opening-v1.webp",
+      "right": "src/assets/chapter-matthew-15-opening-v2.webp"
+    }
+  ],
+  "limits": [
+    "Fine hidden/occluded anatomy and background faces not certified",
+    "No precise child Jesus portrait or exact disciple name-to-face map established",
+    "No Mark art reviewed; later boundary metadata only"
+  ]
+}

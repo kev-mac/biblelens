@@ -1,0 +1,997 @@
+{
+  "baseline": "9f5a8ce",
+  "chapters": 28,
+  "chapterOpeners": 18,
+  "storyOpeners": 10,
+  "storyPlacements": 15,
+  "totalPlacements": 33,
+  "retained": 31,
+  "replaced": 2,
+  "baselineAssetsPreserved": 1616,
+  "inventory": [
+    {
+      "chapter": 1,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An unlettered scroll lies beside a reed pen in a quiet stone room.",
+          "src": "/assets/chapter-matthew-01-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "1:1–17 genealogy motif, blank scroll is editorial, not a manuscript",
+          "sha256": "0a23c6fba90d812fb1abfe0ea15c9a6c318df2ac8a8e39a01f592512b0b46705",
+          "bytes": 109176,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        },
+        {
+          "src": "/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+          "alt": "Mary holds her infant as travelers bring gifts inside a modest house.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 18,
+          "title": "The Birth of Jesus and the Magi",
+          "textBasis": "2:11 young child with Mary, Joseph nearby, gifts in house; three Magi is artistic convention, text gives no count",
+          "sha256": "209d687693b7a42c1cfcd16eb40741941d71a3d10059c67e2aa5fac2706e6459",
+          "bytes": 121032,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A bright star shines above the rooftops and dark hills near Bethlehem.",
+          "src": "/assets/chapter-matthew-02-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "2:1–12 star and Bethlehem, imagined skyline",
+          "sha256": "b9e16748230d6b636d7b8d15055fa12ea16d6fe5f70819d0ae247b99a2e815e8",
+          "bytes": 100434,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        },
+        {
+          "src": "/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+          "alt": "Joseph leads a donkey carrying Mary and her infant toward green Egyptian fields.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 13,
+          "title": "Flight to Egypt and Return to Nazareth",
+          "textBasis": "2:13–23 journey motif; sunrise can be later travel, not claim that departure occurred by day; donkey/river are imagined",
+          "sha256": "dcbe95ded4f5aa2bd0db8e6cb11eebb736c7684e714eafc7a7eecc97b289d64a",
+          "bytes": 131056,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+          "alt": "John stands beside Jesus in the Jordan as a dove passes above the reeds.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Baptism and Temptation of Jesus",
+          "textBasis": "3:13–17 baptism/dove, adult Jesus and distinct John, no later temptation conflated",
+          "sha256": "d09926414ae3a679ffb6625d97d572ae67315be7de1a1805313ff38e4c83eb33",
+          "bytes": 119468,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Pale stones lie in a dry Judean ravine beneath the dawn sky.",
+          "src": "/assets/chapter-matthew-04-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "4:1–11 wilderness stones, no tempter portrait",
+          "sha256": "6f476fb55f8624c879e7706db3c1c7f72bcaef1214d9f7255cb9586bcdfa46cb",
+          "bytes": 143682,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        },
+        {
+          "src": "/assets/story-calling-the-first-disciples-v1.webp",
+          "alt": "Jesus speaks to fishermen beside their boat and nets on the Galilean shore.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 12,
+          "title": "Calling the First Disciples",
+          "textBasis": "4:18–22 shore/net calling motif; four fishermen shown, no secure name-to-face map",
+          "sha256": "7d3c6b38a52c46a7d8279a7529a6f3cf2fa997c39042d01b049c4f112411b5d1",
+          "bytes": 129094,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Small lamps glow in a hillside village at blue twilight.",
+          "src": "/assets/chapter-matthew-05-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "5:14–16 hillside city and lamps",
+          "sha256": "93e543377703a535724113ad8d0d7ada247ba343f0518e7c9e69d56fd40bf9e8",
+          "bytes": 127684,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Wild flowers and small birds brighten a green hillside above the lake.",
+          "src": "/assets/chapter-matthew-06-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "6:26–30 birds and flowers, no species certainty",
+          "sha256": "3213931b1ac709db242042ce070f1018ed33537549abf18153bc2397d7e885d3",
+          "bytes": 153710,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A stone house rests on bedrock above a rain-swollen stream.",
+          "src": "/assets/chapter-matthew-07-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "7:24–27 house on rock in rain",
+          "sha256": "96cadb341cafae5d05f150efc6e5b824d00276929cff640360cbaa36ac1cc3f3",
+          "bytes": 128882,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-healings-and-calming-the-storm-v1.webp",
+          "alt": "Jesus stands in a fishing boat as the disciples watch storm waves settle.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Healings and Calming the Storm",
+          "textBasis": "8:23–27 Jesus rebukes storm, coherent boat/rope grips; not sleeping moment",
+          "sha256": "68c5a2f8446d601ed0087c77131b05ff927a078e2a877a5179a35323fd8d862b",
+          "bytes": 120858,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Wineskins rest beside a stitched patch on coarse cloth.",
+          "src": "/assets/chapter-matthew-09-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "9:16–17 cloth/wineskins motif, no claim that patch is unshrunk",
+          "sha256": "2f09d66183efc1a1bb80e7518e2746433588506ba2a3ce7fca5602326c5c634b",
+          "bytes": 110670,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-sending-out-the-twelve-v2.webp",
+          "alt": "Jesus speaks to his disciples as they listen in a shaded courtyard.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Sending Out the Twelve",
+          "textBasis": "10:1–10 instruction scene; removed staffs, travel bags and sandal preparation contrary to 10:9–10; feet cropped, group partial",
+          "sha256": "b364b72a1b320a750d35a22b747649bb5bfbabf42202e8153fb75c9c317310b8",
+          "bytes": 217294,
+          "decision": "versioned correction",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-jesus-and-john-the-baptist-v1.webp",
+          "alt": "Two messengers speak with Jesus beside a shaded village doorway.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Jesus and John the Baptist",
+          "textBasis": "11:2–6 two messengers visit Jesus; neither foreground messenger is John, who remains imprisoned",
+          "sha256": "93ad30bf469063917c1b88a64fe6a5d298776074c47cec222378cbdf8e5598a1",
+          "bytes": 156694,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+          "alt": "Jesus and his disciples speak with teachers beside a ripe barley field.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Sabbath Controversies and the Sign of Jonah",
+          "textBasis": "12:1–8 grain-field dispute, no Jonah/David/Solomon portrait inferred",
+          "sha256": "60b93880c8ce93f34bce75fd898f989270ed3517a3f17001a9e73c3adb1a3232",
+          "bytes": 138472,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A field path passes stones, thorns and grain rooted in deep soil.",
+          "src": "/assets/chapter-matthew-13-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "13:3–9 path, stones, thorns and good soil",
+          "sha256": "ece5fae0be701c0cbec261cc2ebd7c2fae7df8a1d46ce28238019be9ab70472f",
+          "bytes": 153662,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+          "alt": "Jesus breaks bread as disciples carry baskets to families seated on a green hillside.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "Feeding the Five Thousand and Walking on Water",
+          "textBasis": "14:17–21 distribution after multiplication; five intact loaves plus broken bread not claimed pre-miracle inventory, two fish visible",
+          "sha256": "b641b00e2d36ccb5313a1007359d9fdef8ec7c8c28caf9d5308fc90aee9da35d",
+          "bytes": 133036,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Seven small loaves and a few fish rest in a basket above the lake.",
+          "src": "/assets/chapter-matthew-15-opening-v2.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "15:34–36 seven loaves and a few fish; corrected from eight visible loaves",
+          "sha256": "bc6b8e498f43c1ecf2ecd7bd8a550b241e4600e03dc5169faeee550033f19d53",
+          "bytes": 157712,
+          "decision": "versioned correction",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A clear spring flows beneath limestone cliffs and green trees.",
+          "src": "/assets/chapter-matthew-16-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "16:13 imagined Caesarea Philippi landscape, not exact reconstruction",
+          "sha256": "1fb73cb9188b99e36ace69459db4ac416a9ea5433b20f711732e69cc63cf742b",
+          "bytes": 168710,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        },
+        {
+          "src": "/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+          "alt": "A bright cloud covers a rocky mountain ridge beneath a pale sky.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 13,
+          "title": "Peter's Confession and the Transfiguration",
+          "textBasis": "17:5 bright cloud on mountain; retained v2 avoids unresolved Moses/Elijah identity of inactive v1",
+          "sha256": "97804261219a11fa1ba84ece8d770fd70cbd233ac3ea9f354055fa01cb0d9708",
+          "bytes": 111192,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A high rocky ridge rises above pale cloud in the morning light.",
+          "src": "/assets/chapter-matthew-17-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "17:1–8 high mountain, no Moses/Elijah/Jesus portrait",
+          "sha256": "e2955ea554ada44cd4d49f39b1a026592208f39e7291854259582d9f144f4e43",
+          "bytes": 98144,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A lone sheep stands on a grassy ledge above a distant flock.",
+          "src": "/assets/chapter-matthew-18-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "18:12–14 stray sheep simile, distant flock not asserted count of 99",
+          "sha256": "e6afc331a08645cd19b333a35a5088ca0048964e375f8f1ac96568056118beac",
+          "bytes": 124778,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-rich-young-man-v1.webp",
+          "alt": "A young man listens to Jesus beside a vineyard path with a pouch in his hand.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Rich Young Man",
+          "textBasis": "19:16–22 conversation with wealthy young man; vineyard/workers/background people preview subsequent 20:1–16 and 20:29–34 in broad Story span, not simultaneous event evidence",
+          "sha256": "9edf4c08e998417c3afdeef47a52734ed0fb84a10f6bfde316b749e4b89e2d39",
+          "bytes": 148232,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A narrow path leads through grapevines beside a stone terrace wall.",
+          "src": "/assets/chapter-matthew-20-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "20:1–16 vineyard parable",
+          "sha256": "6a5133071a86c5240549de7808693d7dbc81bbc481adae70ce7a30cb5d35cbc2",
+          "bytes": 154086,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+          "alt": "Jesus rides a donkey toward Jerusalem as people spread cloaks and branches along the road.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Triumphal Entry and Temple Cleansing",
+          "textBasis": "21:1–11 donkey entry, branches/garments; partial view does not assert absence of second animal, city/temple imagined",
+          "sha256": "ca6441ca9353b8e086d82995fcd006f71976f7f94e793d5ff3816416e260e222",
+          "bytes": 179518,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A low banquet table stands ready beneath courtyard vines.",
+          "src": "/assets/chapter-matthew-22-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "22:1–14 prepared banquet, imagined architecture",
+          "sha256": "37b83862dea3e9eb6b7fae0678018a7b6c01582d1b91a3ca398bc32fd2fae5ca",
+          "bytes": 151002,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A mother hen shelters small chicks beside a stone courtyard wall.",
+          "src": "/assets/chapter-matthew-23-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "23:37 hen gathering chicks simile",
+          "sha256": "afe4890dbb27ce6fdcb8b87b0f017cfd8757c2c3e5935e2f7f81ee703cc57d30",
+          "bytes": 143684,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Tender green leaves open on a fig branch above distant hills.",
+          "src": "/assets/chapter-matthew-24-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "24:32–33 fig leaves",
+          "sha256": "70005185a5df2a8a59b6ac6e574d177c864bbb3d9c110f4c9e46ab3b747f609c",
+          "bytes": 148898,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Five small oil lamps burn beside an oil flask at a closed doorway.",
+          "src": "/assets/chapter-matthew-25-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "25:1–13 five lit lamps/oil denote prepared group, not total of ten attendants",
+          "sha256": "fa01ba556d32cadb221ea69ad85e93e70ba77058f2ef76fdda846687bd693874",
+          "bytes": 111560,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 26,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-last-supper-and-gethsemane-v1.webp",
+          "alt": "Jesus prays beside an olive tree while three disciples rest farther away.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Last Supper and Gethsemane",
+          "textBasis": "26:36–47 prayer and sleeping companions; prayer posture need not depict initial face-down instant of 26:39",
+          "sha256": "8e0e3a1c44c4510685585a12a6819fef00768a13f032250d996e1387054baaba",
+          "bytes": 124358,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        },
+        {
+          "src": "/assets/story-trial-crucifixion-and-burial-v1.webp",
+          "alt": "Jesus stands before Pilate in a quiet stone courtyard at early morning.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 57,
+          "title": "Trial, Crucifixion and Burial",
+          "textBasis": "27:11–14 Jesus before governor; imagined Pilate and guards, not Caiaphas trial of chapter 26 opening anchor",
+          "sha256": "c02da73ad7caca79f24cd70f22b95fc1fab05b32ca5613057d430007a7f9be0c",
+          "bytes": 75622,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 27,
+      "openers": 1,
+      "entries": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A round stone closes a rock-cut tomb in a quiet garden at dusk.",
+          "src": "/assets/chapter-matthew-27-opening-v1.webp",
+          "width": 960,
+          "height": 540,
+          "kind": "chapter",
+          "position": 0,
+          "textBasis": "27:59–60 closed garden tomb, not identified surviving site",
+          "sha256": "74c95f62e05ace1b060e0f4570cb738e979af16eb92cf649b2d1706c93456e3b",
+          "bytes": 143758,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    },
+    {
+      "chapter": 28,
+      "openers": 1,
+      "entries": [
+        {
+          "src": "/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+          "alt": "Jesus speaks to eleven disciples on a green hillside above the lake.",
+          "width": 1200,
+          "height": 675,
+          "kind": "Story",
+          "position": 1,
+          "title": "The Resurrection and the Great Commission",
+          "textBasis": "28:16–20 mountain commission; partial group view does not establish complete eleven count",
+          "sha256": "569aede045b99f308331bd2d22c3f5f2a8ad654f5c3a256118b754155e6b2437",
+          "bytes": 135158,
+          "decision": "retain",
+          "fullSizeReview": "Actual source viewed individually; visible faces/complexions/hair/build/age/relationships/actions/objects/hands/limbs and animals inspected. Hidden or tiny detail not certified."
+        }
+      ]
+    }
+  ],
+  "earlierNameInventory": {
+    "Jesus": [
+      {
+        "book": "Jeremiah",
+        "title": "New Covenant",
+        "src": "/assets/story-new-covenant-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "Mary": [],
+    "Joseph": [
+      {
+        "book": "Genesis",
+        "title": "Jacob’s Household",
+        "src": "/assets/story-jacobs-household-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph and His Brothers",
+        "src": "/assets/story-joseph-and-his-brothers-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph in Egypt",
+        "src": "/assets/story-joseph-in-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph Reunites His Family",
+        "src": "/assets/story-joseph-reunites-his-family-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Jacob Blesses His Family",
+        "src": "/assets/story-jacob-blesses-his-family-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Exodus from Egypt",
+        "src": "/assets/story-the-exodus-from-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Joshua's Farewell and Covenant at Shechem",
+        "src": "/assets/story-joshua-s-farewell-and-covenant-at-shechem-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "John": [],
+    "Peter": [],
+    "Moses": [
+      {
+        "book": "Exodus",
+        "title": "The Birth and Rescue of Moses",
+        "src": "/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Flees to Midian",
+        "src": "/assets/story-moses-flees-to-midian-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Burning Bush",
+        "src": "/assets/story-the-burning-bush-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Returns to Egypt",
+        "src": "/assets/story-moses-returns-to-egypt-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses and Aaron Before Pharaoh",
+        "src": "/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Plagues of Egypt",
+        "src": "/assets/story-the-plagues-of-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Passover and the Death of the Firstborn",
+        "src": "/assets/story-the-passover-and-the-death-of-the-firstborn-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Exodus from Egypt",
+        "src": "/assets/story-the-exodus-from-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Crossing the Sea",
+        "src": "/assets/story-crossing-the-sea-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Bitter Water, Manna and Quail",
+        "src": "/assets/story-bitter-water-manna-and-quail-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Water from the Rock and the Battle with Amalek",
+        "src": "/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Jethro Advises Moses",
+        "src": "/assets/story-jethro-advises-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Covenant and Ten Commandments at Sinai",
+        "src": "/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Covenant Is Sealed at Sinai",
+        "src": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Golden Calf",
+        "src": "/assets/story-the-golden-calf-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Sees God's Glory",
+        "src": "/assets/story-moses-sees-gods-glory-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Building the Tabernacle",
+        "src": "/assets/story-building-the-tabernacle-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Sinai / Mosaic Covenant",
+        "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Leviticus",
+        "title": "Aaron and His Sons Are Ordained",
+        "src": "/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Leviticus",
+        "title": "Nadab and Abihu",
+        "src": "/assets/story-nadab-and-abihu-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Counting the Camp",
+        "src": "/assets/story-counting-the-camp-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Leaving Sinai and the Complaints",
+        "src": "/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Miriam and Aaron Speak Against Moses",
+        "src": "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Korah's Rebellion",
+        "src": "/assets/story-korah-s-rebellion-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Water from the Rock at Meribah",
+        "src": "/assets/story-water-from-the-rock-at-meribah-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "The Bronze Serpent",
+        "src": "/assets/story-the-bronze-serpent-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "A New Census and Joshua Appointed",
+        "src": "/assets/story-a-new-census-and-joshua-appointed-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Vengeance on Midian",
+        "src": "/assets/story-vengeance-on-midian-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Tribes Settle East of the Jordan",
+        "src": "/assets/story-tribes-settle-east-of-the-jordan-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Aaronic Blessing",
+        "src": "/assets/story-aaronic-blessing-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Wilderness Years",
+        "src": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Sets Apart Three Cities of Refuge",
+        "src": "/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Golden Calf",
+        "src": "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Second Tablets",
+        "src": "/assets/story-moses-recalls-the-second-tablets-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Joshua Commissioned and the Law Entrusted",
+        "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "The Death of Moses",
+        "src": "/assets/story-the-death-of-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Joshua Commissioned",
+        "src": "/assets/story-joshua-commissioned-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Caleb Receives Hebron",
+        "src": "/assets/story-caleb-receives-hebron-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "Elijah": [
+      {
+        "book": "1 Kings",
+        "title": "Elijah and the Drought",
+        "src": "/assets/story-elijah-and-the-drought-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Elijah on Mount Carmel",
+        "src": "/assets/story-elijah-on-mount-carmel-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Elijah at Horeb",
+        "src": "/assets/story-elijah-at-horeb-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Naboth's Vineyard",
+        "src": "/assets/story-naboth-s-vineyard-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "2 Kings",
+        "title": "Elijah Taken Up",
+        "src": "/assets/story-elijah-taken-up-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ]
+  },
+  "closeConsecutivePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "key": "38:4",
+        "verse": 0,
+        "position": 23139,
+        "src": "/assets/chapter-malachi-04-opening-v1.webp"
+      },
+      "b": {
+        "key": "39:1",
+        "verse": 0,
+        "position": 23145,
+        "src": "/assets/chapter-matthew-01-opening-v1.webp"
+      },
+      "gap": 6
+    },
+    {
+      "a": {
+        "key": "39:28",
+        "verse": 1,
+        "position": 24197,
+        "src": "/assets/story-the-resurrection-and-the-great-commission-v1.webp"
+      },
+      "b": {
+        "key": "40:1",
+        "verse": 1,
+        "position": 24217,
+        "src": "/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp"
+      },
+      "gap": 20
+    }
+  ],
+  "minimumInternalGap": 7,
+  "caveat": "Only Malachi/Matthew/Mark metadata read for spacing. Mark artwork review has not begun. Portrait/continuity decisions are in companion audit and generation ledger."
+}
