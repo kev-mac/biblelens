@@ -1,0 +1,139 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "2 Timothy",
+  "canonicalBaseline": "d5d1465619aa3e64b75fe7a844737c6b1db22739",
+  "chapterCount": 4,
+  "verseCount": 83,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-2-timothy-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 77682,
+      "sha256": "40133987f59468e57fdaf07bc82a4a74b64dc9be6fe25598f02271f980300d97",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-2-timothy-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 26,
+      "bytes": 161798,
+      "sha256": "86fe0c7389767c388a0089a5d55a8278a5d0f1926d84624ecfa4a64f844278d7",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-2-timothy-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 17,
+      "bytes": 110166,
+      "sha256": "a3d12809a72701d6646c0975be4ab5dcba8b764f28fc58140accafbf16caa4a9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-2-timothy-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 104346,
+      "sha256": "9283a5aab19b367cb2639a02bbb10b598294d048aa185d8e5152f96bff7caea5",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 4,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 53,
+        "chapter": 6,
+        "verse": 0,
+        "position": 92,
+        "src": "/assets/chapter-1-timothy-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 54,
+        "chapter": 1,
+        "verse": 0,
+        "position": 113,
+        "src": "/assets/chapter-2-timothy-01-opening-v1.webp"
+      },
+      "gap": 21
+    },
+    {
+      "a": {
+        "book": 54,
+        "chapter": 4,
+        "verse": 0,
+        "position": 174,
+        "src": "/assets/chapter-2-timothy-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 55,
+        "chapter": 1,
+        "verse": 0,
+        "position": 196,
+        "src": "/assets/chapter-titus-01-opening-v1.webp"
+      },
+      "gap": 22
+    }
+  ],
+  "minimumInternalGap": 17,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; 2 Timothy existing 4 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 4
+}

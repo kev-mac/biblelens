@@ -1,0 +1,228 @@
+{
+  "scope": "2 Timothy only; no Titus art opened or reviewed. Its opener metadata used solely for spacing.",
+  "baseline": "d5d1465619aa3e64b75fe7a844737c6b1db22739",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "style only; actual file viewed separately and beside all four originals; never identity for another person"
+  },
+  "priorInventories": [
+    "2-timothy-visual-continuity-audit-2026-11-04.md",
+    "2-timothy-continuity-inventory-2026-11-04.json",
+    "acts-continuity-inventory-2026-11-07.json",
+    "matthew-continuity-inventory-2026-11-07.json",
+    "1-timothy-continuity-inventory-2026-11-07.json"
+  ],
+  "visibleNamedPeople": [],
+  "visiblePeople": [],
+  "visibleGroups": [],
+  "visibleAnimals": [],
+  "textualMentionsAreNotDepictions": [
+    {
+      "names": [
+        "Paul",
+        "Timothy",
+        "Jesus Christ"
+      ],
+      "verses": "1:1-2,6,8; 2:1,8-9; 3:10-17; 4:1,9,22",
+      "finding": "No people visible. Lamp/chain evokes imprisonment without reconstructing a prison, assigning Paul a new face or depicting release. No Timothy face inferred from an anonymous Acts companion. No exact ages or interval asserted from book order."
+    },
+    {
+      "names": [
+        "Lois",
+        "Eunice",
+        "Phygelus",
+        "Hermogenes",
+        "Onesiphorus and household"
+      ],
+      "verses": "1:5,15-18; 4:19",
+      "finding": "No family, named visitor, companions or household portrayed; no relationships inferred from architecture."
+    },
+    {
+      "names": [
+        "David",
+        "Hymenaeus",
+        "Philetus",
+        "Jannes",
+        "Jambres",
+        "Moses"
+      ],
+      "verses": "2:8,17; 3:8",
+      "finding": "Names are textual mentions, not portraits. Moses is not made the study scene author; Exodus unnamed figures are not automatically Jannes/Jambres."
+    },
+    {
+      "names": [
+        "Demas",
+        "Crescens",
+        "Titus",
+        "Luke",
+        "Mark",
+        "Tychicus",
+        "Carpus",
+        "Alexander the coppersmith",
+        "Prisca",
+        "Aquila",
+        "Erastus",
+        "Trophimus",
+        "Eubulus",
+        "Pudens",
+        "Linus",
+        "Claudia",
+        "all the brothers"
+      ],
+      "verses": "4:10-21",
+      "finding": "No travelers, household or greeting group portrayed. Cloak/books are a request rather than completed delivery; Titus is not Timothy, Mark is not apostle John, and same-name Alexanders/Erastus are not automatically merged."
+    },
+    {
+      "names": [
+        "soldier",
+        "athlete",
+        "farmer",
+        "teachers",
+        "opponents",
+        "lion"
+      ],
+      "verses": "2:3-6,24-26; 3:1-9; 4:3,17",
+      "finding": "Metaphors, general descriptions and allusions do not become identified visible groups or animals. Field has no farmer; no literal lion attack depicted."
+    }
+  ],
+  "inheritedApprovedPaulGuidance": {
+    "sourceLedger": "acts-continuity-inventory-2026-11-07.json",
+    "paths": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-shipwreck-and-rome-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+    "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+    "cautions": "Actual files exist; hashes recorded below. Ledger guidance only: these portraits were not re-reviewed or used to generate art in this session. First-journey incompatible v1 remains inactive; v2 landscape is not a face reference. Ephesus artisan is not Paul. Council exact identities remain qualified."
+  },
+  "referenceFileHashes": [
+    {
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "sha256": "0b8b96c507d70183544aa2508a90d2de165eca27102c1eb9c9b8fa89e825ed47"
+    },
+    {
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "sha256": "58e0dcfc83147191569bca6d402c861e702f6386808e992d6c7b2139c22bc090"
+    },
+    {
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+    },
+    {
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+    },
+    {
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "sha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c"
+    },
+    {
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "sha256": "bcd71f02072568b28dc375bb13a29bdd7fa6a1c563f0e3ad84650ef0e651200d"
+    }
+  ],
+  "timothyIdentity": "No new or certified Timothy face anchor. Do not infer him from an anonymous Acts companion, headband, clothing or position. Timothy is not Titus. Book order does not establish elapsed narrative time or aging.",
+  "inspection": {
+    "originalsViewedSeparatelyAtNativeSize": 4,
+    "nativeImageSize": [
+      960,
+      540
+    ],
+    "styleBoards": 4,
+    "neighborBoards": 4,
+    "boards": [
+      {
+        "path": "/tmp/2-timothy-review/style-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "31bb891ab6c10660035340ff5a1d31850861f8b36204b2522748dbb8d14eb167",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/neighbor-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "a20179bc7682c87288881b6483468789eee31888337bcaa25b3059c3e320469e",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/style-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "23d4316c03614cd283ad281eca0440919ef98e9bc5f159748b8756885f7d2c11",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/neighbor-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "95b7a269594c412eae9324662ce2598721b01d6ddd5d566958d0f1db441ad282",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/style-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "2f5931465afe63b776ec94be29e328268c76ecb21c1f2035a066574f3ad256b8",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/neighbor-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "cb974a9929172399f5ae3f23c70139721615d5e4b1cc21db4c49ffb395163731",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/style-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "b9740a7da31d01d4a583d244a654d645e13d87a60f046de4df5d4bb216238b11",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-timothy-review/neighbor-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "3445931cf70993eccc0a07dedf210a48cfd8d44b622810b6f6b9df58f2757ec5",
+        "viewed": true
+      }
+    ],
+    "incomingNeighbor": "src/assets/chapter-1-timothy-06-opening-v1.webp",
+    "outgoingNeighbor": "Titus artwork not opened; metadata only.",
+    "anatomy": "No visible humans or animals: faces, fingers, thumbs, limbs, age/build/complexion comparisons not applicable. All visible scene objects inspected at native size; concealed geometry and exact archaeology not certified."
+  },
+  "generationCalls": 0,
+  "editingCalls": 0,
+  "actualIdentityInputs": "No generation/editing took place. Every future new identifiable recurring portrayal requires actual approved image files as visual inputs, not descriptions alone.",
+  "result": "Retain four existing openers; no definite object defect, text conflict or identity drift. No new portrait anchors."
+}
