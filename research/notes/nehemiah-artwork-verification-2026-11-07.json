@@ -79,6 +79,28 @@
     "Tiny/occluded anatomy and exact historical architecture remain qualified"
   ],
   "publication": {
-    "state": "not yet attempted"
+    "siteVersion": 364,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f9a263fbffac81918aa344680c6bc098",
+    "mirrorCommit": "1d714f0f21636004f42ee43290dc7eefc912dd2f",
+    "deploymentId": "appgdep_6aeeb4b133b48191abcea586a5e82adb",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveFiles": 6,
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "canonicalReviewCommit": "3cc4194",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2",
+    "publicAudiencePreserved": true,
+    "D1Preserved": true,
+    "liveHttpVerified": false,
+    "signedDevicesVerified": false,
+    "approvalHistory": {
+      "initialAction": "Deploy saved Sites version 364 to the existing public BibleLens Site",
+      "initialOutcome": "denied; version query confirmed deployment_id null",
+      "initialReason": "Automatic approval review did not recognize explicit publication authorization to the public/shared destination",
+      "newEvidence": "Fresh trusted user_message_read of owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizes book-by-book commit/push/publish/available-device installation; fresh get_site confirms owner/public audience",
+      "retry": "Same saved-version deployment retried once; succeeded",
+      "remainingApprovalBlocker": false
+    }
   }
 }

@@ -34,3 +34,10 @@ After denial, check uncertain outcomes and freshly read trusted user messages wi
 ## Nehemiah final check results
 
 `release:prepare` failed at missing Playwright headless shell after successful build/mobile and preceding nonbrowser checks (search useful-hit 50/50; readability report-only findings). No candidate. `check:images`, `check:release`, `check:mobile`, independent parity and diff checks passed. `check:sync` failed once at unchanged `check-sync-disconnect.mjs:34` (`assert(finishRead)`), then passed an isolated unchanged rerun. Preserve both outcomes; its fixed 30-setImmediate settle helper is a lead, not a proven diagnosis/fix. No gate/assertion changed. Minimum internal image gap 9; Ezra/Nehemiah 45 and Nehemiah/Esther 31. Browser, live bytes, release:verify and signed-device delivery remain deferred.
+
+
+## Confirmed Nehemiah publication
+
+Review commit **3cc4194** is pushed to GitHub main. Sites mirror **1d714f0f21636004f42ee43290dc7eefc912dd2f** is pushed, staging the same already-built Worker without a mirror rebuild. Sites **version 364**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f9a263fbffac81918aa344680c6bc098`, confirmed **succeeded** deployment **appgdep_6aeeb4b133b48191abcea586a5e82adb**, https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file Worker-only archive; public audience/D1 retained. Build 370/fingerprint unchanged. Final canonical publication documents are newer than the mirror; reconcile them next time without changing production fingerprint.
+
+Initial deployment was rejected by automatic approval review for unrecognized publication authorization to the public/shared destination. Saved-version query confirmed deployment_id null; fresh trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizes publication and get_site reverified owner/public audience. Same saved-version retry once succeeded. No bypass, pending approval or pending deployment remains. Do not duplicate the completed deployment or imply live HTTP/signed-device verification.
