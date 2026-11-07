@@ -156,3 +156,34 @@ That failed result archive SHA-256 is
 `d14a2c797a0cbbc3c70cd862aa527c7554553b92f9bbdde8432131501898a8f8`.
 No bundle was accepted from it. Its category/color/real-context results are
 useful evidence for that source, but do not constitute a complete release.
+
+## Manual review of the first complete candidate
+
+[Run 42420559428](https://github.com/kev-mac/biblelens/actions/runs/42420559428)
+passed preparation, images and all 180 cases for source `0cd367da…` / canonical
+`dfce764`. Its combined 540,332,486-byte artifact exceeded the native download
+tool's 512 MiB limit. A packaging-only workflow used the pinned official
+[GitHub artifact action](https://github.com/actions/download-artifact) to
+verify the original ZIP checksum, original manifest/CI identity, inner archive,
+both release manifests and Worker hash, then copy the accepted bytes into
+separate bundles and visual artifacts. Nothing was rebuilt or edited by that
+partition. Both resulting ZIP digests were verified locally before inspection.
+
+The 598×1184 Chromium and 1157×1184 WebKit dialog screenshots confirmed the
+usable reference row, native translation affordance, step borders and
+single-line book labels. Field widths were 496px and 642.22px respectively,
+with 44px height. However, the wide dialog still used abbreviations because
+its six columns were unnecessarily narrow. The final candidate increases
+usable column width with at most five columns, retaining compact responsive
+targets and the all-or-none label rule. Browser assertions now explicitly
+require full Old Testament names at wide sizes and uniform abbreviations at
+narrow sizes, rather than accepting whichever mode the layout happened to
+produce. This new source requires another complete exact-source run; the
+earlier 180 passes are preserved and are not attributed to it.
+
+Some early reader screenshots show a background Retrying indicator. The
+failed request was not captured in the earlier fixture, so no cause is
+assigned. The reader test now retains only failed-request origins/paths and
+5xx status metadata, without query strings, headers or response contents, to
+distinguish asset/style/API failures during the final review. This does not
+hide the indicator or weaken any navigation, geometry or editing assertion.
