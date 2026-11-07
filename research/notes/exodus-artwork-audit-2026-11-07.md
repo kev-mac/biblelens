@@ -1,5 +1,7 @@
 # Exodus still-art review — cloud, November 7, 2026
 
+**Complete:** Exodus build 361 is published as public Sites version 350 with 12 versioned corrections. Browser/live HTTP verification and Mac/device delivery remain deferred as detailed below.
+
 Reviewed Exodus only from clean GitHub main `0e533d35519d45655f17e813e50e814f09df5e36` (Genesis build 360). The public Sites version 349 mirror opened at `f8dac207ef9bd9da9b36e203184f32888f6e78d4`; `src`, `data`, `worker` and `scripts` matched canonical source with no independent work to integrate. No Mac checkout was opened or changed.
 
 ## Review and coverage
@@ -49,3 +51,15 @@ Exodus 19's duplicate opening was already present: the displayed “Ten Laws” 
 Build 361 targets identical prepared web and offline artwork. Release results and exact deferred verification will be recorded after checks and publication. This cloud runtime has no Playwright Chromium or WebKit executable. No browser installation or substitute browser path is used. No Mac connector or authorized TCP route is exposed; signing, signed-bundle byte comparison, device installation and launches are deferred. Both devices were last recorded at build 359, with no fresh device query. Kevin's instruction allows continued cloud book work while those steps are unavailable. Do not claim native/web synchronization.
 
 No next-book artwork is begun here. The next session is Leviticus, carrying Moses, Aaron, priestly household, sanctuary and relevant group references forward.
+
+### Build 361 publication outcome
+
+- Canonical artwork commit/pin `71d22734505ce6dc21c9c7b2e974e4ea97fb990f` and release source `93f1d3274ce74edf407b28b67221474fd539b885` are pushed to GitHub main. All 1,114 pinned Git blobs match source; all 12 new immutable public downloads match source and final offline files byte for byte.
+- Public Sites version **350**, mirror source `ea10d238306bf5a0389240c2e71bf149ae635446`, deployment `appgdep_6aee7cababd08191843d6fcaa5eab64a`, reports **succeeded** at `https://scripture-lens.kvn-mcgwn.chatgpt.site`. Public access is preserved. Source, mirror and `www/release.json` agree on build **361**, fingerprint `fce086d6ed6f6365868d62aee5804bf34ddad24ac09f0eadd3b66107ad7b5b62`. Staged and canonical Worker bytes are identical; Worker size is 64,052,124 bytes, 2,008,164 bytes below 63 MiB.
+- `build:mobile`, `check:images`, `check:release`, `check:mobile` and `check:sync` passed. Every nonbrowser step of `npm run check` passed, including readability in report-only mode and search. The unchanged sync-disconnect check passed in this run. Its earlier intermittent failure is not claimed fixed by one successful run.
+- The full `release:prepare` gate remains incomplete: its final release smoke check requires the absent Playwright Chromium headless shell. WebKit is absent too. Browser QA was not replaced with a different control path.
+- After publication, cloud environment status still showed an enforced restricted policy with the live hostname absent. The known build-360 proxy CONNECT 403 request was not repeated or bypassed without a new grant. Live HTTP `release:verify` and live image-byte comparison are deferred. The successful native Sites publication result is the production-deployment evidence.
+- The first native deployment attempt was denied before execution because automatic approval review missed the prior publishing instruction. `user_message_read.read_messages` verified the original owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca`, explicitly authorizing each book's commit, push, publish and available-device installation. Exactly one retry of the same saved version succeeded. No publication approval is outstanding.
+- No Mac/native work was attempted or claimed. Build 361 signing, signed `public`/`www` comparison, both installations, fresh installed-version queries, both launches and device playback remain deferred. Devices were last recorded at **359**, with no new query.
+
+Machine-readable release evidence is in `build-361-cloud-release-verification-2026-11-07.json`. The new-session prompt and precise deferred steps are in `leviticus-artwork-handoff-from-exodus-2026-11-07.md`. Exodus still-art review is complete; device and environment checks may be carried forward under Kevin's instruction.

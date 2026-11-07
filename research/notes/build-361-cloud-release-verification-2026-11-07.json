@@ -1,0 +1,172 @@
+{
+  "build": 361,
+  "version": "1.1.0",
+  "canonicalReleaseCommit": "93f1d3274ce74edf407b28b67221474fd539b885",
+  "artworkPin": "71d22734505ce6dc21c9c7b2e974e4ea97fb990f",
+  "sitesSourceCommit": "ea10d238306bf5a0389240c2e71bf149ae635446",
+  "sourceHash": "fce086d6ed6f6365868d62aee5804bf34ddad24ac09f0eadd3b66107ad7b5b62",
+  "sitesVersion": 350,
+  "savedVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_ba729af637f48191abb8f06a44844b65",
+  "deployment": {
+    "id": "appgdep_6aee7cababd08191843d6fcaa5eab64a",
+    "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "title": "BibleLens",
+    "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_ba729af637f48191abb8f06a44844b65",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+    "failure_message": null,
+    "env_set_revision": 1,
+    "updated_at": "2026-11-07T01:19:52.916900+00:00"
+  },
+  "workerBytes": 64052124,
+  "workerLimitBytes": 66060288,
+  "coverage": {
+    "chaptersWithOpener": 40,
+    "placements": 74,
+    "uniqueActiveFiles": 73,
+    "versionedCorrections": 12,
+    "retainedGapsUnderFiveVerses": 6
+  },
+  "checks": {
+    "buildMobile": "passed",
+    "images": "passed; complete shared Story/chapter coverage, WebP encoding, preserved scripture and native/web image byte parity",
+    "releaseContracts": "passed; npm run check:release",
+    "mobile": "passed; npm run check:mobile",
+    "contentAndSearch": "Every nonbrowser step of npm run check passed. The last release smoke browser step stopped on the missing Chromium executable.",
+    "readability": "completed in report-only mode; existing collection issues remain",
+    "sync": "npm run check:sync passed in this run, including sync-disconnect. No sync source/test changes. The previous build's intermittent bounded-settle failure is historical evidence, not proven fixed by this one successful run.",
+    "sourceParity": "Post-publication canonical source, offline release.json and Sites mirror agree on build 361 and sourceHash. Staged Worker equals canonical Worker byte for byte.",
+    "actualExodusInventory": "All 74 placements compared against the generated chapter API, including normalized Story title alias and both Mosaic Story anchors.",
+    "browserSmoke": "blocked; Playwright Chromium/headless shell and WebKit absent; no browser installed; release:prepare did not finish its full gate",
+    "postPublishReleaseVerify": "Deferred before live request: enforced cloud policy still excludes scripture-lens.kvn-mcgwn.chatgpt.site. The build-360 proxied verification was denied CONNECT 403; no new grant was observed, so that denied live request was not repeated or bypassed. Native Sites reports deployment succeeded; no successful live HTTP verification is claimed.",
+    "liveArtworkBytes": "not checked from live Site; all 12 immutable public source downloads match source, and final source files match offline www bytes",
+    "signedAssets": "deferred; no Mac connector or authorized TCP route in this cloud session",
+    "deviceInstalls": "not attempted; iPhone/iPad last recorded at build 359, not freshly queried",
+    "deviceLaunches": "not attempted; no build-361 launch evidence",
+    "videoMotionAndPlayback": "not re-reviewed; existing sources and posters unchanged; nonbrowser video contract checks passed",
+    "publicArtwork": {
+      "pin": "71d22734505ce6dc21c9c7b2e974e4ea97fb990f",
+      "verifiedPinnedGitBlobs": 1114,
+      "publicDownloads": [
+        {
+          "asset": "src/assets/chapter-exodus-04-opening-v2.webp",
+          "bytes": 166976,
+          "sha256": "67185eb252431859a9e2059433d60aedc12006f958c7710251d65caacc4917b3"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-06-v2.webp",
+          "bytes": 160256,
+          "sha256": "3a4bcab5491bdef96d49960320808b14d59ff5471c48303e34d5ebf054d89fed"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-07-v2.webp",
+          "bytes": 153278,
+          "sha256": "b1519ba04f508a7cd2bc7ec5ce63cc7ea9f446e0cb63bcb576699619adc7bf70"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-08-opening-v2.webp",
+          "bytes": 171952,
+          "sha256": "6de8ea7c14b622fc0c51843a532c6d132229ff7de4c639dda0c06f9ba7d0235e"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-11-v2.webp",
+          "bytes": 133992,
+          "sha256": "edb4d928f6adfaeac9d645ddf4069251bb2e2f591e98ddf2948e637d8607b374"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-15-opening-v2.webp",
+          "bytes": 144816,
+          "sha256": "c4a402573949f9e3e4756f7d257776086a447793b22d8dfe5ed7f1737951bb01"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-15-v2.webp",
+          "bytes": 170574,
+          "sha256": "ff2ac61d505abbac3ec262b3055ee7480eec81ae64faf4ae7e4a2f690c54f9e1"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-29-v2.webp",
+          "bytes": 135084,
+          "sha256": "0b545847191d24b9c083b37d6e49ad715ca0d8a492ef107fce1c037453c07ee3"
+        },
+        {
+          "asset": "src/assets/chapter-exodus-34-v2.webp",
+          "bytes": 140724,
+          "sha256": "b00356c4334d464d9ec3631baef4128c43877850c3e9a0d99197b46fa97d09f1"
+        },
+        {
+          "asset": "src/assets/story-moses-sees-gods-glory-v2.webp",
+          "bytes": 164596,
+          "sha256": "9d5a745e3a06c6003a5d283442a7682e5afb552bf31cccd6ad7e8e4cfea0bda3"
+        },
+        {
+          "asset": "src/assets/story-moses-returns-to-egypt-v2.webp",
+          "bytes": 191746,
+          "sha256": "978230ba27dc9e736ecc3586397e581e5d1306323e731a822fc21cd553b12b53"
+        },
+        {
+          "asset": "src/assets/story-bitter-water-manna-and-quail-v2.webp",
+          "bytes": 214380,
+          "sha256": "f5eda1c6787c517aa0bd1cb5189604b2f81991111af55d023d4f9087de846d34"
+        }
+      ]
+    }
+  },
+  "networkPreflight": {
+    "observationsCurrent": true,
+    "policyState": "enforced",
+    "mode": "restricted",
+    "liveHostAllowed": false,
+    "tcpRouteAvailable": false
+  },
+  "publicationApproval": {
+    "initialResult": "denied before execution; reviewer stated the user had not authorized publishing/deployment",
+    "verifiedUserMessage": "Sentinel_71f14e4a51e88191a1801af8136df6ca",
+    "verifiedUserInstruction": "update the app with these images. then, for each book, create a session that updates the images of those books, commit, push to git, publish and install on available devices",
+    "retry": "Exactly one retry of the same saved version after read_messages verified prior user authorization. Succeeded; no workaround or alternate deployment path."
+  },
+  "packaging": {
+    "method": "Repository release:sites staged the exact already-built Worker-only package. The Sites skill source helper was not present in this managed filesystem; ordinary Git used a fresh source credential in process memory, and the verified archive was supplied to the native save/deploy tools.",
+    "archive": "biblelens-build-361.tar.gz",
+    "localArchiveSha256": "1d9beefa26fd67028ff73d4cfb41188041f53168b51ace8ebdd36f10dd72270a",
+    "localArchiveBytes": 51024330,
+    "savedArchive": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000c30081f5956be4df41951cf5",
+      "content_hash": "sha256:06dfbd21d5e73ff0711a0605bcbb77074c68988d0959c60f867c4b5de6e6dde2",
+      "size_bytes": 64061440,
+      "file_count": 6
+    }
+  },
+  "nextBook": "Leviticus in a new cloud session; not begun here",
+  "verificationLogs": {
+    "release-prepare": {
+      "path": ".release/release-prepare-361.log",
+      "sha256": "38e2bc91f13cff1f1e54e17b7ebf88b8ad0da3dcc448e658bd461514228aa899",
+      "retention": "ignored cloud workspace log; conclusions recorded in this tracked evidence file"
+    },
+    "check-images": {
+      "path": ".release/check-images-361.log",
+      "sha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7",
+      "retention": "ignored cloud workspace log; conclusions recorded in this tracked evidence file"
+    },
+    "check-release": {
+      "path": ".release/check-release-361.log",
+      "sha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde",
+      "retention": "ignored cloud workspace log; conclusions recorded in this tracked evidence file"
+    },
+    "check-mobile": {
+      "path": ".release/check-mobile-361.log",
+      "sha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd",
+      "retention": "ignored cloud workspace log; conclusions recorded in this tracked evidence file"
+    },
+    "check-sync": {
+      "path": ".release/check-sync-361.log",
+      "sha256": "254221de7aa70fdb8d64d5cb6bb9b846b2ecca542a402421486cfb9b8442a9a4",
+      "retention": "ignored cloud workspace log; conclusions recorded in this tracked evidence file"
+    }
+  }
+}
