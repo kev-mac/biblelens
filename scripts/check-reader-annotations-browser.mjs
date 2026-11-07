@@ -9,11 +9,11 @@ async function checkBookLabels(page){
  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
  const report=await page.locator('#passage-book-grid [data-book-full]').evaluateAll(nodes=>nodes.map(node=>{
   const style=getComputedStyle(node),probe=document.createElement('span');probe.textContent=node.dataset.bookFull;Object.assign(probe.style,{font:style.font,whiteSpace:'nowrap',position:'fixed',visibility:'hidden',display:'inline-block',width:'max-content',padding:'0',border:'0'});document.body.append(probe);const fullWidth=probe.getBoundingClientRect().width;probe.remove();
-  return {full:node.dataset.bookFull,short:node.dataset.bookShort,text:node.textContent,fullWidth,space:node.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),fits:node.scrollWidth<=node.clientWidth+1,nowrap:style.whiteSpace==='nowrap',name:node.previousElementSibling.getAttribute('aria-label')};
+  return {full:node.dataset.bookFull,short:node.dataset.bookShort,text:node.textContent,fullWidth,space:node.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),font:style.font,fits:node.scrollWidth<=node.clientWidth+1,nowrap:style.whiteSpace==='nowrap',name:node.previousElementSibling.getAttribute('aria-label')};
  }));
  const abbreviated=report.some(label=>label.fullWidth>label.space+.5),mode=abbreviated?'abbreviated':'full';assert.equal(await page.locator('#passage-book-grid').getAttribute('data-book-labels'),mode,JSON.stringify(report));
  for(const label of report){assert.equal(label.text,abbreviated?label.short:label.full,'Use one label mode for every book');assert.equal(label.name,label.full);assert(label.fits&&label.nowrap,'Book names stay on one line without clipping: '+JSON.stringify(label));}
- return mode;
+ return {mode,labels:report};
 }
 try{for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
@@ -43,7 +43,7 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     assert(!(await page.locator('#chapter-text .story-illustration-reader figcaption').first().innerText()).startsWith('Imagined scene:'));
     if([320,598,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-reader.png`,fullPage:false});
     await page.locator('#ux-chapter-picker').focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();
-    const bookLabels=await checkBookLabels(page);if(width>=1157)assert.equal(bookLabels,'full','Wide Old Testament grids make room for all full book names');if(width<=598)assert.equal(bookLabels,'abbreviated','Narrow grids abbreviate the entire visible group');assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
+    const bookLabels=await checkBookLabels(page);if(width>=1157)assert.equal(bookLabels.mode,'full','Wide Old Testament grids make room for all full book names: '+JSON.stringify(bookLabels));if(width<=598)assert.equal(bookLabels.mode,'abbreviated','Narrow grids abbreviate the entire visible group: '+JSON.stringify(bookLabels));assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
     const reference=page.locator('#passage-reference'),referenceGeometry=await reference.evaluate(node=>{
      const box=node.getBoundingClientRect(),control=node.parentElement.getBoundingClientRect(),go=document.getElementById('passage-reference-go').getBoundingClientRect(),style=getComputedStyle(node);
      return {input:box.toJSON(),control:control.toJSON(),go:go.toJSON(),fontSize:parseFloat(style.fontSize),flex:style.flex,disabled:node.disabled,readOnly:node.readOnly,hitAtCenter:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)===node,stylesheets:[...document.styleSheets].map(sheet=>sheet.href).filter(Boolean)};
