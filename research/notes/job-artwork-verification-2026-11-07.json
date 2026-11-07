@@ -1,0 +1,129 @@
+{
+  "book": "Job",
+  "review": "All 42 active images retained; documentation only",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "checks": [
+    {
+      "command": "release:prepare",
+      "exitCode": 1,
+      "outputTail": "e.\nPASS: bounded reader startup/body loading, retry recovery, stale response isolation, preserved private notes, background homepage scroll, and reader chapter/verse navigation.\nPASS: visible reader loading, cleared success/error states, and overlapping-request loading ownership.\nTimeline checks passed: 450 real events, 9 flagged; aliases, false positives, immutability, dates and safe rendering.\nPlaces checks passed: dataset, aliases, boundaries, ambiguity, coordinates, escaping, fetch retry and cache.\nPASS: Places directory search, aliases, accent folding, exact matches and empty results.\nPASS: atlas hides generic feature labels while preserving meaningful descriptions.\nPASS: narrative Ur links preserve ambiguity safeguards; real map previews cover every reference point, escape labels and keep unknown coordinates empty.\nPASS: UX2 Places primary prefix/word-start ranking ahead of displayed aliases, without inner substrings.\nPASS: 18 timeline cases, 6 qualified flags, 3 new history annotations, exact KJV quotations, unsafe-source rejection and packaged assets.\n\n> scripture-lens@1.1.0 check:readability\n> node scripts/check-readability.mjs\n\n| Collection | Lines | Average FK grade | Over length limits | Unexplained jargon lines |\n| --- | ---: | ---: | ---: | ---: |\n| Lost Books \u2014 Apocrypha (visible) | 28 | 7.65 | 0.0% (0) | 0 |\n| Lost Books \u2014 Gnostic (visible) | 12 | 7.31 | 0.0% (0) | 0 |\n| RC1 accepted imports (visible) | 604 | 7.49 | 0.2% (1) | 7 |\n| RC1 accepted notes (detail) | 181 | 6.99 | 0.0% (0) | 0 |\n| Evidence (visible) | 3871 | 4.74 | 20.4% (788) | 1871 |\n| Evidence notes (detail) | 5666 | 9.80 | 18.3% (1036) | 3669 |\n| UX13 place summaries (visible) | 1298 | 7.66 | 0.0% (0) | 0 |\n| UX13 Events (visible) | 7 | 6.45 | 0.0% (0) | 0 |\n| Events (visible) | 552 | 7.06 | 13.9% (77) | 2 |\n| People (visible) | 96 | 7.88 | 16.7% (16) | 1 |\n| Timeline (visible) | 10 | 7.89 | 0.0% (0) | 0 |\n| Prophecies (visible) | 6 | 7.05 | 0.0% (0) | 0 |\n| Explore cards (visible) | 13 | 10.79 | 0.0% (0) | 1 |\n| Explore visible text (visible) | 13 | 10.79 | 0.0% (0) | 1 |\n| Phase 2 interface (visible) | 9 | 5.54 | 0.0% (0) | 0 |\n\nLost Books \u2014 Apocrypha \u2014 top jargon: none\nLost Books \u2014 Gnostic \u2014 top jargon: none\nRC1 accepted imports \u2014 top jargon: Tischendorf: 5, Brenton: 2\nRC1 accepted notes \u2014 top jargon: none\nEvidence \u2014 top jargon: Brenton: 1152, Tischendorf: 981, Textus Receptus: 496, Septuagint: 43, witness: 8\nEvidence notes \u2014 top jargon: Brenton: 3104, manuscript: 2559, Septuagint: 1992, Textus Receptus: 1950, Tischendorf: 1929, witness: 977, WLC: 961, ordinal: 8, harmoniz: 3, calibration: 1\nUX13 place summaries \u2014 top jargon: none\nUX13 Events \u2014 top jargon: none\nEvents \u2014 top jargon: witness: 2\nPeople \u2014 top jargon: witness: 1\nTimeline \u2014 top jargon: none\nProphecies \u2014 top jargon: none\nExplore cards \u2014 top jargon: manuscript: 1\nExplore visible text \u2014 top jargon: manuscript: 1\nPhase 2 interface \u2014 top jargon: none\n\nEstimated English syllables; each nonempty field line counts once. FK grades are averaged per line.\nLength limits: visible 20 words per sentence and 15 per blurb; disclosed details 30 words per sentence. Visible collection grades 6\u20138; detail grades at most 10. Quoted spans are excluded.\nJargon screening uses the listed terms and plain equivalents by first use; review context manually.\n\nReport-only mode: items need review.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nPASS: all current verdicts, full pagination, topic filters, deterministic daily selection, exact detail fields, missing IDs, local choices/saves, backup merge and three tabs.\nPASS: shared pending/resolved reference requests across bundles, failed HTTP/JSON retry, and exclusion of private endpoints.\nPASS: packaged identity HTML/JS/CSS/reference and binary assets remain unchanged for every compression preference.\nPASS: chapter-scoped people/place links retain matcher identity and exact offsets; red-letter spans survive packaging.\nPASS: rendered story decoration, independent reference availability, missing-data retry, failure isolation, observer reconnection and replacement-render race protection.\n\n> scripture-lens@1.1.0 check:search\n> node scripts/check-search.mjs && node scripts/check-search-vocabulary.mjs && node scripts/check-workspace-search.mjs && node scripts/check-release-smoke.mjs\n\n{\n  \"summary\": {\n    \"queries\": 50,\n    \"found\": 50,\n    \"expectedHit\": 48,\n    \"complete\": 35,\n    \"expectedFound\": 117,\n    \"expectedTotal\": 160,\n    \"top5\": 48,\n    \"visibleTop5\": 48\n  },\n  \"byCategory\": {\n    \"verse_reference\": {\n      \"queries\": 12,\n      \"found\": 12,\n      \"expectedHit\": 12,\n      \"complete\": 11,\n      \"expectedFound\": 56,\n      \"expectedTotal\": 63,\n      \"top5\": 12,\n      \"visibleTop5\": 12\n    },\n    \"person\": {\n      \"queries\": 8,\n      \"found\": 8,\n      \"expectedHit\": 8,\n      \"complete\": 8,\n      \"expectedFound\": 9,\n      \"expectedTotal\": 9,\n      \"top5\": 8,\n      \"visibleTop5\": 8\n    },\n    \"place\": {\n      \"queries\": 6,\n      \"found\": 6,\n      \"expectedHit\": 6,\n      \"complete\": 6,\n      \"expectedFound\": 8,\n      \"expectedTotal\": 8,\n      \"top5\": 6,\n      \"visibleTop5\": 6\n    },\n    \"claim_question\": {\n      \"queries\": 10,\n      \"found\": 10,\n      \"expectedHit\": 10,\n      \"complete\": 3,\n      \"expectedFound\": 23,\n      \"expectedTotal\": 35,\n      \"top5\": 10,\n      \"visibleTop5\": 10\n    },\n    \"topic\": {\n      \"queries\": 6,\n      \"found\": 6,\n      \"expectedHit\": 4,\n      \"complete\": 0,\n      \"expectedFound\": 6,\n      \"expectedTotal\": 26,\n      \"top5\": 5,\n      \"visibleTop5\": 5\n    },\n    \"spelling_variant\": {\n      \"queries\": 8,\n      \"found\": 8,\n      \"expectedHit\": 8,\n      \"complete\": 7,\n      \"expectedFound\": 15,\n      \"expectedTotal\": 19,\n      \"top5\": 7,\n      \"visibleTop5\": 7\n    }\n  },\n  \"timing\": {\n    \"medianMs\": 300,\n    \"p95Ms\": 390,\n    \"maxMs\": 969\n  },\n  \"externalRequests\": 0\n}\nPASS: reference formats, ranges, aliases, ambiguous names, spelling, unknown queries and local private-note contracts.\nPASS: search useful-hit threshold 50/50; original targets and alternatives preserved.\nPASS: WordNet synonyms, irregular forms, MiniSearch typos, loan/dietary queries, unknown terms, book scope, explicit references, licenses and offline search.\nPASS: unified offline search, multi-passage comparisons, same-book/alias/range parsing, bounded results, source deduplication, alternative readings and exact selected-edition text.\nnode:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nbrowserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n    at /workspace/biblelens/scripts/check-release-smoke.mjs:31:32 {\n  log: [],\n  name: 'Error'\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnode:internal/errors:986\n  const err = new Error(message);\n              ^\n\nError: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/bin/npm-cli.js run check\n    at genericNodeError (node:internal/errors:986:15)\n    at wrappedFn (node:internal/errors:540:14)\n    at checkExecSyncError (node:child_process:943:11)\n    at execFileSync (node:child_process:979:15)\n    at runNpm (file:///workspace/biblelens/scripts/prepare-release.mjs:5:20)\n    at file:///workspace/biblelens/scripts/prepare-release.mjs:16:127\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  status: 1,\n  signal: null,\n  output: [ null, null, null ],\n  pid: 1114,\n  stdout: null,\n  stderr: null\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:images",
+      "exitCode": 0,
+      "outputTail": "\n> scripture-lens@1.1.0 check:images\n> node scripts/check-story-images.mjs && node scripts/check-chapter-images.mjs && node scripts/check-1-samuel-artwork.mjs\n\nPASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.\nPASS: all 1189 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, Revelation); 273 have existing Story coverage, 976 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.\nCLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]\nPASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:release",
+      "exitCode": 0,
+      "outputTail": "\n> scripture-lens@1.1.0 check:release\n> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs && node scripts/check-prepared-assets.mjs\n\nPASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.\nPASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.\nPASS: local browser previews make no published-release request, while native localhost still checks for updates.\nPASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.\nPASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.\nPASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.\nPASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.\nPASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes; no temporary full Worker is required.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:mobile",
+      "exitCode": 0,
+      "outputTail": "\n> scripture-lens@1.1.0 check:mobile\n> node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs\n\nPASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.\nPASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:sync",
+      "exitCode": 0,
+      "outputTail": "\n> scripture-lens@1.1.0 check:sync\n> node scripts/check-sync.mjs && node scripts/check-sync-disconnect.mjs\n\nPASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.\nPASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.\nPASS: failed native disconnect survives reload, retries on reconnect, revokes the copied token and keeps offline notes.\nPASS: already-revoked/expired tokens clear on 401 without enabling sync.\nPASS: a late sync response cannot apply cloud data or restore credentials after disconnect.\nPASS: web sync removes unused bearer credentials and sends only the signed-in session.\n"
+    }
+  ],
+  "fullReleaseGatePassed": false,
+  "candidateCreated": false,
+  "sourceComparison": {
+    "canonical": "6f4b4c0e5c8a25fecd9bebffa0af091a3a0859ca",
+    "mirror": "01d49d40ed6a26e46885f6229abbe6eb3edae5f2",
+    "changedCommonPaths": [
+      "research/notes/esther-artwork-audit-2026-11-07.md",
+      "research/notes/esther-artwork-verification-2026-11-07.json",
+      "research/notes/job-artwork-handoff-from-esther-2026-11-07.md"
+    ],
+    "mirrorOnlyPaths": [],
+    "canonicalOnlyCount": 330
+  },
+  "independentParity": {
+    "chapterCount": 42,
+    "verseCount": 1070,
+    "activeImages": 42,
+    "chapterOpeners": 38,
+    "storyOpeners": 4,
+    "sourceWebOfflineBytes": true,
+    "offlineNetworkCalls": 0,
+    "pinnedPublicGitBlobs": 1142,
+    "publicPin": "c87ed7459451ea3e2b3400eed783def11f017291",
+    "originResponses": "Local fixtures, not live HTTP",
+    "spacing": {
+      "internalMinimum": 6,
+      "closePairs": [
+        {
+          "from": {
+            "book": 16,
+            "chapter": 10,
+            "verse": 0,
+            "src": "/assets/chapter-esther-10-opening-v1.webp",
+            "position": 12867
+          },
+          "to": {
+            "book": 17,
+            "chapter": 1,
+            "verse": 1,
+            "src": "/assets/story-job-s-testing-v1.webp",
+            "position": 12871
+          },
+          "distance": 4
+        }
+      ],
+      "boundaryPairs": [
+        {
+          "from": {
+            "book": 16,
+            "chapter": 10,
+            "verse": 0,
+            "src": "/assets/chapter-esther-10-opening-v1.webp",
+            "position": 12867
+          },
+          "to": {
+            "book": 17,
+            "chapter": 1,
+            "verse": 1,
+            "src": "/assets/story-job-s-testing-v1.webp",
+            "position": 12871
+          },
+          "distance": 4
+        },
+        {
+          "from": {
+            "book": 17,
+            "chapter": 42,
+            "verse": 1,
+            "src": "/assets/story-job-restored-v1.webp",
+            "position": 13924
+          },
+          "to": {
+            "book": 18,
+            "chapter": 1,
+            "verse": 0,
+            "src": "/assets/chapter-psalms-001-opening-v1.webp",
+            "position": 13940
+          },
+          "distance": 16
+        }
+      ]
+    },
+    "worker": {
+      "bytes": 59888449,
+      "sha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2"
+    }
+  },
+  "limits": {
+    "browser": "Managed Sites mode 1; no callable cua_repl.js or desktop JavaScript tool. Chromium headless shell missing; no browser install, preview server or alternate control path.",
+    "live": "Inherited denied destination remains outside enforced network policy; no materially new evidence or supported request_changes tool. release:verify and live image bytes deferred without retry.",
+    "devices": "Linux environment; no Mac connector, configured VPN/device route, Xcode/xcrun or physical device access. Signing, signed assets comparison, physical query/install/launch deferred.",
+    "sync": "Isolated check:sync passed unchanged; inherited intermittent check-sync-disconnect.mjs:34 assert(finishRead) unresolved. Fixed-count settle remains a hypothesis, not a fix."
+  }
+}

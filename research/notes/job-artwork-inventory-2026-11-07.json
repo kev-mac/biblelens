@@ -1,0 +1,2131 @@
+{
+  "book": "Job",
+  "canonicalBaseline": "6f4b4c0e5c8a25fecd9bebffa0af091a3a0859ca",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "chapterCount": 42,
+  "verseCount": 1070,
+  "chapterImages": 38,
+  "storyImages": 4,
+  "activePlacements": [
+    {
+      "book": 17,
+      "chapter": 1,
+      "src": "/assets/story-job-s-testing-v1.webp",
+      "alt": "Job sits in grief outside his home as three friends keep him company.",
+      "width": 1200,
+      "height": 675,
+      "title": "Job's Testing",
+      "verse": 1,
+      "kind": "Story",
+      "bytes": 116164,
+      "sha256": "db1060f69bf58856f7502c309c11fd51a19c76a56e9c050185e9acd83adcf36f",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12871,
+      "textCompatibility": "Story spans Job 1\u20132; grief and three friends illustrate 2:11\u201313; preserve existing 1:1 anchor.",
+      "referencePaths": [
+        "src/assets/story-job-s-testing-v1.webp"
+      ],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    },
+    {
+      "book": 17,
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Job sits on an ash heap and holds a broken piece of pottery.",
+      "src": "/assets/chapter-job-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 125060,
+      "sha256": "5f51c73b8c460b446b44e012fc1412d2746beb56b5bb1211dc0066a7ce50124d",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12892,
+      "textCompatibility": "Job 2:7-8: established Job seated on ashes with a potsherd",
+      "referencePaths": [
+        "src/assets/story-job-s-testing-v1.webp"
+      ],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    },
+    {
+      "book": 17,
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A starless night hangs above a silent stone house.",
+      "src": "/assets/chapter-job-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 78748,
+      "sha256": "d4aabd28ba538675a749c47b2c7146a0d1560b07084b526ca17b6292b884ff79",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12905,
+      "textCompatibility": "A bleak starless night above a silent stone house, evoking Job's wish that the night of his birth had remained dark (3:3-9). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Weathered animal bones and broken teeth lie outside a rocky lion den.",
+      "src": "/assets/chapter-job-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 126352,
+      "sha256": "ff4747f8896b72219c0e4ec52c72e9a709524e93103fb2240683d0955ef08b18",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12931,
+      "textCompatibility": "An abandoned rocky lion den with weathered bones and broken animal teeth, evoking Eliphaz's lion metaphor (4:10-11). No living lions or people.",
+      "referencePaths": [],
+      "anatomyReview": "Visible animal forms inspected, no correction required; distant and occluded detail limited."
+    },
+    {
+      "book": 17,
+      "chapter": 5,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Rain falls on green fields and dry earth.",
+      "src": "/assets/chapter-job-05-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 133508,
+      "sha256": "0c529a8f375c668abb4c4d0e81eb27761a4948b6f7f0e62719a993337f7312db",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12952,
+      "textCompatibility": "Fresh rain watering green fields and dry earth, with a rainbowless cool gray sky (5:9-10). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 6,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A dry streambed winds beside an empty caravan path.",
+      "src": "/assets/chapter-job-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 156410,
+      "sha256": "b3168956f6f78379fbc110b04294c56c88ad02df0babe7000e1486eb4f2b8747",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 12979,
+      "textCompatibility": "A once-flowing rocky streambed now dry under summer heat, with distant empty caravan path (6:15-20). No people or camels.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 7,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An unfinished cloth rests on an ancient wooden loom.",
+      "src": "/assets/chapter-job-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 108456,
+      "sha256": "f1b5bc7ff76ad1c51b06f12801f7d00ad49e8213fa96569f0be0891eda59ccca",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13009,
+      "textCompatibility": "An ancient wooden hand loom with a shuttle and a short unfinished wool cloth in a dim stone doorway (7:6). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 8,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Reeds wither at the edge of a drying pool.",
+      "src": "/assets/chapter-job-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 136844,
+      "sha256": "12cebecd1288c2e3526b7c2add3cd3d2f00045c0953df12f9a18358f3e77bace",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13030,
+      "textCompatibility": "Papyrus and reeds withering at a drying pool, visible roots near mud (8:11-13). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 9,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Stars shine above dark rocky hills.",
+      "src": "/assets/chapter-job-09-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 103200,
+      "sha256": "16315fdefc11f2e67919122a29f4bc6c86c2f95400327df3c20bbc91840aa423",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13052,
+      "textCompatibility": "A vast clear night sky of recognizable stars above low ancient Near Eastern hills, evoking constellations in 9:8-10. No symbols or people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 10,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An unfinished clay vessel rests beside damp earth.",
+      "src": "/assets/chapter-job-10-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 113570,
+      "sha256": "7bea71fcd1cee37ee1578846196b29d921783210c429dffde699d045c71fa8bd",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13087,
+      "textCompatibility": "Weathered earth and a simple unfinished clay vessel beside damp clay in morning light, a visual metaphor for being formed from clay (10:8-9). No humans or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 11,
+      "afterVerse": 0,
+      "alt": "Imagined scene: High mountains rise above a deep shadowed valley.",
+      "src": "/assets/chapter-job-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 83066,
+      "sha256": "2179e655a79bce9cdcc35817a8161797f494a4736a2a56ece5f7527d58907e62",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13109,
+      "textCompatibility": "High rocky mountains above a deep shadowed valley under an immense clear blue sky, a visual metaphor for heights and depths beyond measure (11:7-9). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 12,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Birds fly above a stream and distant grazing animals.",
+      "src": "/assets/chapter-job-12-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 137040,
+      "sha256": "b7fb0f3a8776bbd0c47559ca98f05c2e2cebefe8ada6a783af0c8dbdbdc98d96",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13129,
+      "textCompatibility": "Wild birds over a rocky ancient Near Eastern landscape with a small stream and grazing wild animals in the distance (12:7-10). No people.",
+      "referencePaths": [],
+      "anatomyReview": "Visible animal forms inspected, no correction required; distant and occluded detail limited."
+    },
+    {
+      "book": 17,
+      "chapter": 13,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty stone seat and a walking staff stand beside an ash heap.",
+      "src": "/assets/chapter-job-13-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 158884,
+      "sha256": "5a28c260ac433ef3ecf8320528359e698b36918d1c35ec33171fc3cbdb3d0d6c",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13154,
+      "textCompatibility": "An empty shaded stone seat and a walking staff beside an ash heap, evoking Job's wish to state his case (13:13-23). No people and no modern court.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 14,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A green shoot grows from a cut tree stump beside water.",
+      "src": "/assets/chapter-job-14-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 132674,
+      "sha256": "23cd8872c5acb862ce16597bb18c1f89394231736884a9a388b5c111c7d949b7",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13182,
+      "textCompatibility": "A cut tree stump with a fresh green shoot beside a little water in a rocky landscape (14:7-9). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 15,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An olive branch sheds blossoms beside a vine with unripe grapes.",
+      "src": "/assets/chapter-job-15-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 141576,
+      "sha256": "03c667851a9b7d373c1d7d78cc123efbc3ca4f6585f5e6af57e2726bc91bdc09",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13204,
+      "textCompatibility": "Olive branches shedding blossoms in a dry wind, unripe grapes visible on a nearby vine, embodying Eliphaz's comparison (15:32-33). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 16,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Job sits with his back turned on ash-covered ground.",
+      "src": "/assets/chapter-job-16-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 124790,
+      "sha256": "6b7ef8c13c691fd55da1974db9396c7a40ebd1b7294dd27335c0ef137465d338",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13239,
+      "textCompatibility": "Job seated alone on ash-covered earth seen strictly from behind at medium distance; torn cream robe, short gray curls. No visible face, no other figures. Evokes grief (16:15-17).",
+      "referencePaths": [
+        "src/assets/story-job-s-testing-v1.webp"
+      ],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    },
+    {
+      "book": 17,
+      "chapter": 17,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A dark burial opening faces the fading evening light.",
+      "src": "/assets/chapter-job-17-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 94508,
+      "sha256": "8abb805a8d081a17fe35da4cf7cdca243d2f8cd360d62b97c7f8ee55734bc5fb",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13261,
+      "textCompatibility": "A dark rock-cut burial opening in bare earth under a fading violet twilight (17:13-16). No people, bones, inscriptions or death figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 18,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An extinguished clay lamp rests in a dark dwelling.",
+      "src": "/assets/chapter-job-18-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 78588,
+      "sha256": "f1f1a1f9e8daf37961a4dfb37747bc0e635fffc77c86410a020d687b349e6b94",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13277,
+      "textCompatibility": "A simple ancient clay oil lamp just extinguished in an empty dark stone tent-like dwelling (18:5-6). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 19,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An iron stylus and chisel lie beside a bare stone slab.",
+      "src": "/assets/chapter-job-19-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 128028,
+      "sha256": "1a2a4686fbf5b0c9da43578049fb13f578a106a31817cff183f46427947d98d0",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13298,
+      "textCompatibility": "An iron stylus and chisel beside a bare stone slab awaiting words (19:23-24). No readable marks, people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 20,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A snake rests among dry stones.",
+      "src": "/assets/chapter-job-20-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 149208,
+      "sha256": "3d31918ad1f93698579afbf8256d8f8bb248f0768de916ff493abf17367b4bce",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13327,
+      "textCompatibility": "A small natural venomous snake partly visible beside dry stones under harsh daylight (20:14-16). Anatomically correct snake, closed mouth, no prey or people.",
+      "referencePaths": [],
+      "anatomyReview": "Visible animal forms inspected, no correction required; distant and occluded detail limited."
+    },
+    {
+      "book": 17,
+      "chapter": 21,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Sheep graze near a prosperous ancient household.",
+      "src": "/assets/chapter-job-21-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 163142,
+      "sha256": "5606c6197d17d6ea25739dacfd8a25092e13e17906c313c2e3cedc73911ea968",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13356,
+      "textCompatibility": "Healthy sheep grazing green land near a prosperous ancient rural household under blue sky (21:7-13). No people and no modern buildings.",
+      "referencePaths": [],
+      "anatomyReview": "Visible animal forms inspected, no correction required; distant and occluded detail limited."
+    },
+    {
+      "book": 17,
+      "chapter": 22,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Gold-colored minerals glint among the stones of a mountain brook.",
+      "src": "/assets/chapter-job-22-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 130620,
+      "sha256": "4aaa318bbfafd7eae8f7b7fe07d46731dff714f25c9d78df5b18bac09ca393d9",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13390,
+      "textCompatibility": "A rocky mountain brook carrying natural glints of gold-colored minerals among ordinary stones (22:24-25). A metaphor from Eliphaz's speech, no treasure piles, people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 23,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A narrow mountain path vanishes into morning mist.",
+      "src": "/assets/chapter-job-23-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 111136,
+      "sha256": "a86e48eaff9beaf72ec5f01cce77e140c3dec20efb9c797ae37a4e07d9e13335",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13420,
+      "textCompatibility": "An empty narrow mountain path disappearing around a rock wall in a misty dawn (23:8-10). No people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 24,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Grain sheaves lie outside the wall of an ancient estate.",
+      "src": "/assets/chapter-job-24-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 127614,
+      "sha256": "e1e8799d5e54bf8e61f3cf48f079fd02073b67efec0f20fc6172c6c6fd2fb7ed",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13437,
+      "textCompatibility": "Simple bound sheaves of grain on dry field margins below the wall of a wealthy ancient estate, evoking labor and deprivation in 24:6-11. No identifiable people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 25,
+      "afterVerse": 0,
+      "alt": "Imagined scene: The moon and stars hang above a dark mountain horizon.",
+      "src": "/assets/chapter-job-25-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 61962,
+      "sha256": "af782b5e43d8d8fe3b8375d936e53974502a3abea5776888e7e46b9ae771cbfe",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13462,
+      "textCompatibility": "A pale moon and distant stars over a dark mountain horizon, restrained quiet blue light (25:5). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 26,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Storm clouds sweep across a dark sea and rocky coast.",
+      "src": "/assets/chapter-job-26-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 96042,
+      "sha256": "d99daa2b9aaa18c2c53d1d5cbf3d16a5877c937801d8d1062ff46fcc1cc1da9f",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13468,
+      "textCompatibility": "Vast dark sea beneath a sweeping storm sky over a curved rocky coast, natural light breaking through clouds (26:7-14). No divine figure, monsters or people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 27,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A fragile reed shelter stands near an abandoned stone house.",
+      "src": "/assets/chapter-job-27-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 127344,
+      "sha256": "1a5176fc74462e67e46db02d462b6afdac9fe52064b860bce2714e4bc7e2c3fd",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13482,
+      "textCompatibility": "An empty fragile reed shelter beside a weathered abandoned stone house, wind rising over surrounding fields (27:13-18). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 28,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Simple picks and a lamp rest inside an ancient mine entrance.",
+      "src": "/assets/chapter-job-28-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 138140,
+      "sha256": "ad20ee751bf61f4abe96912d677aee7229b0c4fb5901cd82f17eb1aec42b4867",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13505,
+      "textCompatibility": "A small ancient hand-dug mine entrance with mineral seams, an oil lamp and simple metal picks, evoking the search for wisdom (28:1-12). No people or modern machinery.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 29,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty stone bench stands in a shaded town gateway.",
+      "src": "/assets/chapter-job-29-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 132980,
+      "sha256": "d751fe2465116cf803d97cf21774f7e5da56698c70308b9f145a980370ebbbb1",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13533,
+      "textCompatibility": "An empty stone bench in a shaded ancient town gateway at late morning, evoking Job's memory of respect at the gate (29:7-10). No statues, text, throne or people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 30,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Ashes and a broken potsherd lie outside a distant settlement.",
+      "src": "/assets/chapter-job-30-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 107350,
+      "sha256": "e2d27e724e1975fdde44195accbbf955d169120e2497974ec3373554dc794e40",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13558,
+      "textCompatibility": "A low ash heap and broken potsherd in dry windswept earth outside a distant settlement, purple storm shadows, evoking Job's present grief (30:19-23). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 31,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A balance scale with equal pans stands beside a harvested field.",
+      "src": "/assets/chapter-job-31-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 116278,
+      "sha256": "352b025a59779f3917615bfc135cac7461bf760bb2ad3a975b49228fdbdc85be",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13589,
+      "textCompatibility": "A simple ancient balance scale with equal empty pans on a rough wooden table near harvested field (31:5-6). No people or text.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 32,
+      "src": "/assets/story-elihu-speaks-v2.webp",
+      "alt": "Elihu speaks while Job and three older friends listen beneath a tree.",
+      "width": 1200,
+      "height": 675,
+      "title": "Elihu Speaks",
+      "verse": 1,
+      "kind": "Story",
+      "bytes": 199334,
+      "sha256": "eb9cc960343046b5305d6bad02363aac2bbecc76b546cca8028de4eda31b377b",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13630,
+      "textCompatibility": "Job 32: Elihu, established older Job and all three friends, friends viewed from behind",
+      "referencePaths": [
+        "src/assets/story-job-s-testing-v1.webp",
+        "src/assets/story-elihu-speaks-v1.webp (young speaker only)"
+      ],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    },
+    {
+      "book": 17,
+      "chapter": 33,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A clay bowl rests beside damp earth and rock.",
+      "src": "/assets/chapter-job-33-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 123220,
+      "sha256": "b80e1e591ef0105453f42d66b3c1452fb239651371965bdbf2ba5db7e08c150f",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13651,
+      "textCompatibility": "Hands-free still life of damp earth and a clay bowl beside a rock, recalling Elihu's statement that he too was formed from clay (33:6). No identifiable people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 34,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Morning light falls across farmland and barren hills.",
+      "src": "/assets/chapter-job-34-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 128282,
+      "sha256": "43a11b527205705b175c107bba942b162dabec813b8c4ec1def8bc768826f20f",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13684,
+      "textCompatibility": "Early sunlight falling across farmland and barren hills alike, with an ancient village small in the distance, evoking impartial rule (34:18-24). No people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 35,
+      "afterVerse": 0,
+      "alt": "Imagined scene: High white clouds tower above a rocky plain.",
+      "src": "/assets/chapter-job-35-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 81260,
+      "sha256": "601de4e4e5b9fec0457dd62d84de31a4edacffaea3945fac12d5ce602c81475a",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13721,
+      "textCompatibility": "Blue sky and high white clouds towering above an empty rocky plain (35:5). No people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 36,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Rain falls across a green valley beneath heavy clouds.",
+      "src": "/assets/chapter-job-36-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 123846,
+      "sha256": "bba540f44fa517ca541c91ec6ce445c114f18608770b26272674f22922c6c592",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13737,
+      "textCompatibility": "Rain falling from heavy clouds across a broad green valley at late afternoon, small drops visible in foreground (36:27-29). No people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 37,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Lightning and cold rain cross a snowy mountain range.",
+      "src": "/assets/chapter-job-37-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 115644,
+      "sha256": "0cd52a8bf009b0d616d3138e83992b743dd0e10336622de11899ad22d4a9fb02",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13770,
+      "textCompatibility": "Lightning and snow-bright rain over an ancient Near Eastern mountain range under cold storm clouds (37:2-13). No people or divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 38,
+      "src": "/assets/story-god-answers-from-the-whirlwind-v1.webp",
+      "alt": "Job stands on a ridge beneath vast storm clouds as wind bends the grass.",
+      "width": 1200,
+      "height": 675,
+      "title": "God Answers from the Whirlwind",
+      "verse": 1,
+      "kind": "Story",
+      "bytes": 105418,
+      "sha256": "b40ae74c39f4b1f8a084c9e488b3727655a8173fbc1f6e5c994f2e9edf2bfe43",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13795,
+      "textCompatibility": "Job 38:1\u20133: distant listener and storm; no visible divine figure.",
+      "referencePaths": [],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    },
+    {
+      "book": 17,
+      "chapter": 39,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Wild mountain goats stand on craggy cliffs above a valley.",
+      "src": "/assets/chapter-job-39-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 111108,
+      "sha256": "b526b6dde1cf1ddf8e499e96b520b290079042785ccefc380375a9b26e9930c8",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13835,
+      "textCompatibility": "Two anatomically correct wild mountain goats on craggy cliffs above a distant valley in clear dawn light (39:1-4). No people, pregnancy depiction or text.",
+      "referencePaths": [],
+      "anatomyReview": "Visible animal forms inspected, no correction required; distant and occluded detail limited."
+    },
+    {
+      "book": 17,
+      "chapter": 40,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Reeds and lotus plants shelter a quiet river pool.",
+      "src": "/assets/chapter-job-40-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 138100,
+      "sha256": "a66632939621b63cfda533fdc2f6f159d0489e75b371cbb3834dafe5a51f3978",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13865,
+      "textCompatibility": "Tall reeds and lotus plants in a still river pool at warm daylight, evoking the habitat in the Behemoth passage (40:21-23). No visible creature, no implied exact species, no people.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 41,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Foaming waves leave a shining wake across a rough sea.",
+      "src": "/assets/chapter-job-41-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "bytes": 101640,
+      "sha256": "82def4212870565f160820336d23162574dfa2926195a748102ab04194d9ec4c",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13889,
+      "textCompatibility": "Foaming dark water leaving a shining wake in a rough blue sea, evoking the poetic Leviathan passage (41:31-32). No visible creature, identifiable people or implied exact species.",
+      "referencePaths": [],
+      "anatomyReview": "No visible people or animals; objects/materials inspected."
+    },
+    {
+      "book": 17,
+      "chapter": 42,
+      "src": "/assets/story-job-restored-v1.webp",
+      "alt": "Job and his household share food with visiting relatives in a green courtyard.",
+      "width": 1200,
+      "height": 675,
+      "title": "Job Restored",
+      "verse": 1,
+      "kind": "Story",
+      "bytes": 153674,
+      "sha256": "a87373929689a809f9aa3a0392e897cc7f3b7c756da80a69b4ce0fc72e8b8eba",
+      "decision": "retain",
+      "visualReview": "Actual native-size WebP inspected; visible anatomy and text-compatible scene role reviewed",
+      "position": 13924,
+      "textCompatibility": "Job 42:10\u201317: household and relatives share food during restoration; no exact time or identity assigned to children.",
+      "referencePaths": [
+        "src/assets/story-job-s-testing-v1.webp"
+      ],
+      "anatomyReview": "Visible faces, hands, fingers, feet and limb connections inspected; no correction required. Occluded/distant detail cannot be certified."
+    }
+  ],
+  "chapterResponses": [
+    {
+      "chapter": 1,
+      "verseCount": 22,
+      "eventHeadings": {
+        "1": [
+          "Job's Testing"
+        ]
+      },
+      "chapterImages": []
+    },
+    {
+      "chapter": 2,
+      "verseCount": 13,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Job sits on an ash heap and holds a broken piece of pottery.",
+          "src": "/assets/chapter-job-02-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verseCount": 26,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A starless night hangs above a silent stone house.",
+          "src": "/assets/chapter-job-03-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verseCount": 21,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Weathered animal bones and broken teeth lie outside a rocky lion den.",
+          "src": "/assets/chapter-job-04-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verseCount": 27,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Rain falls on green fields and dry earth.",
+          "src": "/assets/chapter-job-05-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verseCount": 30,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A dry streambed winds beside an empty caravan path.",
+          "src": "/assets/chapter-job-06-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verseCount": 21,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An unfinished cloth rests on an ancient wooden loom.",
+          "src": "/assets/chapter-job-07-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verseCount": 22,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Reeds wither at the edge of a drying pool.",
+          "src": "/assets/chapter-job-08-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verseCount": 35,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Stars shine above dark rocky hills.",
+          "src": "/assets/chapter-job-09-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verseCount": 22,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An unfinished clay vessel rests beside damp earth.",
+          "src": "/assets/chapter-job-10-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verseCount": 20,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: High mountains rise above a deep shadowed valley.",
+          "src": "/assets/chapter-job-11-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verseCount": 25,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Birds fly above a stream and distant grazing animals.",
+          "src": "/assets/chapter-job-12-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verseCount": 28,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An empty stone seat and a walking staff stand beside an ash heap.",
+          "src": "/assets/chapter-job-13-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verseCount": 22,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A green shoot grows from a cut tree stump beside water.",
+          "src": "/assets/chapter-job-14-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verseCount": 35,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An olive branch sheds blossoms beside a vine with unripe grapes.",
+          "src": "/assets/chapter-job-15-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verseCount": 22,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Job sits with his back turned on ash-covered ground.",
+          "src": "/assets/chapter-job-16-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verseCount": 16,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A dark burial opening faces the fading evening light.",
+          "src": "/assets/chapter-job-17-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verseCount": 21,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An extinguished clay lamp rests in a dark dwelling.",
+          "src": "/assets/chapter-job-18-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verseCount": 29,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An iron stylus and chisel lie beside a bare stone slab.",
+          "src": "/assets/chapter-job-19-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "verseCount": 29,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A snake rests among dry stones.",
+          "src": "/assets/chapter-job-20-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 21,
+      "verseCount": 34,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Sheep graze near a prosperous ancient household.",
+          "src": "/assets/chapter-job-21-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 22,
+      "verseCount": 30,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Gold-colored minerals glint among the stones of a mountain brook.",
+          "src": "/assets/chapter-job-22-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 23,
+      "verseCount": 17,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A narrow mountain path vanishes into morning mist.",
+          "src": "/assets/chapter-job-23-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 24,
+      "verseCount": 25,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Grain sheaves lie outside the wall of an ancient estate.",
+          "src": "/assets/chapter-job-24-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 25,
+      "verseCount": 6,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: The moon and stars hang above a dark mountain horizon.",
+          "src": "/assets/chapter-job-25-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 26,
+      "verseCount": 14,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Storm clouds sweep across a dark sea and rocky coast.",
+          "src": "/assets/chapter-job-26-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 27,
+      "verseCount": 23,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A fragile reed shelter stands near an abandoned stone house.",
+          "src": "/assets/chapter-job-27-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 28,
+      "verseCount": 28,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Simple picks and a lamp rest inside an ancient mine entrance.",
+          "src": "/assets/chapter-job-28-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 29,
+      "verseCount": 25,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: An empty stone bench stands in a shaded town gateway.",
+          "src": "/assets/chapter-job-29-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 30,
+      "verseCount": 31,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Ashes and a broken potsherd lie outside a distant settlement.",
+          "src": "/assets/chapter-job-30-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 31,
+      "verseCount": 40,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A balance scale with equal pans stands beside a harvested field.",
+          "src": "/assets/chapter-job-31-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 32,
+      "verseCount": 22,
+      "eventHeadings": {
+        "1": [
+          "Elihu Speaks"
+        ]
+      },
+      "chapterImages": []
+    },
+    {
+      "chapter": 33,
+      "verseCount": 33,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: A clay bowl rests beside damp earth and rock.",
+          "src": "/assets/chapter-job-33-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 34,
+      "verseCount": 37,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Morning light falls across farmland and barren hills.",
+          "src": "/assets/chapter-job-34-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 35,
+      "verseCount": 16,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: High white clouds tower above a rocky plain.",
+          "src": "/assets/chapter-job-35-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 36,
+      "verseCount": 33,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Rain falls across a green valley beneath heavy clouds.",
+          "src": "/assets/chapter-job-36-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 37,
+      "verseCount": 24,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Lightning and cold rain cross a snowy mountain range.",
+          "src": "/assets/chapter-job-37-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 38,
+      "verseCount": 41,
+      "eventHeadings": {
+        "1": [
+          "God Answers from the Whirlwind"
+        ]
+      },
+      "chapterImages": []
+    },
+    {
+      "chapter": 39,
+      "verseCount": 30,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Wild mountain goats stand on craggy cliffs above a valley.",
+          "src": "/assets/chapter-job-39-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 40,
+      "verseCount": 24,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Reeds and lotus plants shelter a quiet river pool.",
+          "src": "/assets/chapter-job-40-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 41,
+      "verseCount": 34,
+      "eventHeadings": {},
+      "chapterImages": [
+        {
+          "afterVerse": 0,
+          "alt": "Imagined scene: Foaming waves leave a shining wake across a rough sea.",
+          "src": "/assets/chapter-job-41-opening-v1.webp",
+          "width": 960,
+          "height": 540
+        }
+      ]
+    },
+    {
+      "chapter": 42,
+      "verseCount": 17,
+      "eventHeadings": {
+        "1": [
+          "Job Restored"
+        ]
+      },
+      "chapterImages": []
+    }
+  ],
+  "spacing": [
+    {
+      "from": {
+        "book": 16,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-esther-10-opening-v1.webp",
+        "position": 12867
+      },
+      "to": {
+        "book": 17,
+        "chapter": 1,
+        "verse": 1,
+        "src": "/assets/story-job-s-testing-v1.webp",
+        "position": 12871
+      },
+      "distance": 4
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 1,
+        "verse": 1,
+        "src": "/assets/story-job-s-testing-v1.webp",
+        "position": 12871
+      },
+      "to": {
+        "book": 17,
+        "chapter": 2,
+        "verse": 0,
+        "src": "/assets/chapter-job-02-opening-v1.webp",
+        "position": 12892
+      },
+      "distance": 21
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 2,
+        "verse": 0,
+        "src": "/assets/chapter-job-02-opening-v1.webp",
+        "position": 12892
+      },
+      "to": {
+        "book": 17,
+        "chapter": 3,
+        "verse": 0,
+        "src": "/assets/chapter-job-03-opening-v1.webp",
+        "position": 12905
+      },
+      "distance": 13
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 3,
+        "verse": 0,
+        "src": "/assets/chapter-job-03-opening-v1.webp",
+        "position": 12905
+      },
+      "to": {
+        "book": 17,
+        "chapter": 4,
+        "verse": 0,
+        "src": "/assets/chapter-job-04-opening-v1.webp",
+        "position": 12931
+      },
+      "distance": 26
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 4,
+        "verse": 0,
+        "src": "/assets/chapter-job-04-opening-v1.webp",
+        "position": 12931
+      },
+      "to": {
+        "book": 17,
+        "chapter": 5,
+        "verse": 0,
+        "src": "/assets/chapter-job-05-opening-v1.webp",
+        "position": 12952
+      },
+      "distance": 21
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 5,
+        "verse": 0,
+        "src": "/assets/chapter-job-05-opening-v1.webp",
+        "position": 12952
+      },
+      "to": {
+        "book": 17,
+        "chapter": 6,
+        "verse": 0,
+        "src": "/assets/chapter-job-06-opening-v1.webp",
+        "position": 12979
+      },
+      "distance": 27
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 6,
+        "verse": 0,
+        "src": "/assets/chapter-job-06-opening-v1.webp",
+        "position": 12979
+      },
+      "to": {
+        "book": 17,
+        "chapter": 7,
+        "verse": 0,
+        "src": "/assets/chapter-job-07-opening-v1.webp",
+        "position": 13009
+      },
+      "distance": 30
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 7,
+        "verse": 0,
+        "src": "/assets/chapter-job-07-opening-v1.webp",
+        "position": 13009
+      },
+      "to": {
+        "book": 17,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-job-08-opening-v1.webp",
+        "position": 13030
+      },
+      "distance": 21
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 8,
+        "verse": 0,
+        "src": "/assets/chapter-job-08-opening-v1.webp",
+        "position": 13030
+      },
+      "to": {
+        "book": 17,
+        "chapter": 9,
+        "verse": 0,
+        "src": "/assets/chapter-job-09-opening-v1.webp",
+        "position": 13052
+      },
+      "distance": 22
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 9,
+        "verse": 0,
+        "src": "/assets/chapter-job-09-opening-v1.webp",
+        "position": 13052
+      },
+      "to": {
+        "book": 17,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-job-10-opening-v1.webp",
+        "position": 13087
+      },
+      "distance": 35
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 10,
+        "verse": 0,
+        "src": "/assets/chapter-job-10-opening-v1.webp",
+        "position": 13087
+      },
+      "to": {
+        "book": 17,
+        "chapter": 11,
+        "verse": 0,
+        "src": "/assets/chapter-job-11-opening-v1.webp",
+        "position": 13109
+      },
+      "distance": 22
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 11,
+        "verse": 0,
+        "src": "/assets/chapter-job-11-opening-v1.webp",
+        "position": 13109
+      },
+      "to": {
+        "book": 17,
+        "chapter": 12,
+        "verse": 0,
+        "src": "/assets/chapter-job-12-opening-v1.webp",
+        "position": 13129
+      },
+      "distance": 20
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 12,
+        "verse": 0,
+        "src": "/assets/chapter-job-12-opening-v1.webp",
+        "position": 13129
+      },
+      "to": {
+        "book": 17,
+        "chapter": 13,
+        "verse": 0,
+        "src": "/assets/chapter-job-13-opening-v1.webp",
+        "position": 13154
+      },
+      "distance": 25
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 13,
+        "verse": 0,
+        "src": "/assets/chapter-job-13-opening-v1.webp",
+        "position": 13154
+      },
+      "to": {
+        "book": 17,
+        "chapter": 14,
+        "verse": 0,
+        "src": "/assets/chapter-job-14-opening-v1.webp",
+        "position": 13182
+      },
+      "distance": 28
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 14,
+        "verse": 0,
+        "src": "/assets/chapter-job-14-opening-v1.webp",
+        "position": 13182
+      },
+      "to": {
+        "book": 17,
+        "chapter": 15,
+        "verse": 0,
+        "src": "/assets/chapter-job-15-opening-v1.webp",
+        "position": 13204
+      },
+      "distance": 22
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 15,
+        "verse": 0,
+        "src": "/assets/chapter-job-15-opening-v1.webp",
+        "position": 13204
+      },
+      "to": {
+        "book": 17,
+        "chapter": 16,
+        "verse": 0,
+        "src": "/assets/chapter-job-16-opening-v1.webp",
+        "position": 13239
+      },
+      "distance": 35
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 16,
+        "verse": 0,
+        "src": "/assets/chapter-job-16-opening-v1.webp",
+        "position": 13239
+      },
+      "to": {
+        "book": 17,
+        "chapter": 17,
+        "verse": 0,
+        "src": "/assets/chapter-job-17-opening-v1.webp",
+        "position": 13261
+      },
+      "distance": 22
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 17,
+        "verse": 0,
+        "src": "/assets/chapter-job-17-opening-v1.webp",
+        "position": 13261
+      },
+      "to": {
+        "book": 17,
+        "chapter": 18,
+        "verse": 0,
+        "src": "/assets/chapter-job-18-opening-v1.webp",
+        "position": 13277
+      },
+      "distance": 16
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 18,
+        "verse": 0,
+        "src": "/assets/chapter-job-18-opening-v1.webp",
+        "position": 13277
+      },
+      "to": {
+        "book": 17,
+        "chapter": 19,
+        "verse": 0,
+        "src": "/assets/chapter-job-19-opening-v1.webp",
+        "position": 13298
+      },
+      "distance": 21
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 19,
+        "verse": 0,
+        "src": "/assets/chapter-job-19-opening-v1.webp",
+        "position": 13298
+      },
+      "to": {
+        "book": 17,
+        "chapter": 20,
+        "verse": 0,
+        "src": "/assets/chapter-job-20-opening-v1.webp",
+        "position": 13327
+      },
+      "distance": 29
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 20,
+        "verse": 0,
+        "src": "/assets/chapter-job-20-opening-v1.webp",
+        "position": 13327
+      },
+      "to": {
+        "book": 17,
+        "chapter": 21,
+        "verse": 0,
+        "src": "/assets/chapter-job-21-opening-v1.webp",
+        "position": 13356
+      },
+      "distance": 29
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 21,
+        "verse": 0,
+        "src": "/assets/chapter-job-21-opening-v1.webp",
+        "position": 13356
+      },
+      "to": {
+        "book": 17,
+        "chapter": 22,
+        "verse": 0,
+        "src": "/assets/chapter-job-22-opening-v1.webp",
+        "position": 13390
+      },
+      "distance": 34
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 22,
+        "verse": 0,
+        "src": "/assets/chapter-job-22-opening-v1.webp",
+        "position": 13390
+      },
+      "to": {
+        "book": 17,
+        "chapter": 23,
+        "verse": 0,
+        "src": "/assets/chapter-job-23-opening-v1.webp",
+        "position": 13420
+      },
+      "distance": 30
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 23,
+        "verse": 0,
+        "src": "/assets/chapter-job-23-opening-v1.webp",
+        "position": 13420
+      },
+      "to": {
+        "book": 17,
+        "chapter": 24,
+        "verse": 0,
+        "src": "/assets/chapter-job-24-opening-v1.webp",
+        "position": 13437
+      },
+      "distance": 17
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 24,
+        "verse": 0,
+        "src": "/assets/chapter-job-24-opening-v1.webp",
+        "position": 13437
+      },
+      "to": {
+        "book": 17,
+        "chapter": 25,
+        "verse": 0,
+        "src": "/assets/chapter-job-25-opening-v1.webp",
+        "position": 13462
+      },
+      "distance": 25
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 25,
+        "verse": 0,
+        "src": "/assets/chapter-job-25-opening-v1.webp",
+        "position": 13462
+      },
+      "to": {
+        "book": 17,
+        "chapter": 26,
+        "verse": 0,
+        "src": "/assets/chapter-job-26-opening-v1.webp",
+        "position": 13468
+      },
+      "distance": 6
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 26,
+        "verse": 0,
+        "src": "/assets/chapter-job-26-opening-v1.webp",
+        "position": 13468
+      },
+      "to": {
+        "book": 17,
+        "chapter": 27,
+        "verse": 0,
+        "src": "/assets/chapter-job-27-opening-v1.webp",
+        "position": 13482
+      },
+      "distance": 14
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 27,
+        "verse": 0,
+        "src": "/assets/chapter-job-27-opening-v1.webp",
+        "position": 13482
+      },
+      "to": {
+        "book": 17,
+        "chapter": 28,
+        "verse": 0,
+        "src": "/assets/chapter-job-28-opening-v1.webp",
+        "position": 13505
+      },
+      "distance": 23
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 28,
+        "verse": 0,
+        "src": "/assets/chapter-job-28-opening-v1.webp",
+        "position": 13505
+      },
+      "to": {
+        "book": 17,
+        "chapter": 29,
+        "verse": 0,
+        "src": "/assets/chapter-job-29-opening-v1.webp",
+        "position": 13533
+      },
+      "distance": 28
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 29,
+        "verse": 0,
+        "src": "/assets/chapter-job-29-opening-v1.webp",
+        "position": 13533
+      },
+      "to": {
+        "book": 17,
+        "chapter": 30,
+        "verse": 0,
+        "src": "/assets/chapter-job-30-opening-v1.webp",
+        "position": 13558
+      },
+      "distance": 25
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 30,
+        "verse": 0,
+        "src": "/assets/chapter-job-30-opening-v1.webp",
+        "position": 13558
+      },
+      "to": {
+        "book": 17,
+        "chapter": 31,
+        "verse": 0,
+        "src": "/assets/chapter-job-31-opening-v1.webp",
+        "position": 13589
+      },
+      "distance": 31
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 31,
+        "verse": 0,
+        "src": "/assets/chapter-job-31-opening-v1.webp",
+        "position": 13589
+      },
+      "to": {
+        "book": 17,
+        "chapter": 32,
+        "verse": 1,
+        "src": "/assets/story-elihu-speaks-v2.webp",
+        "position": 13630
+      },
+      "distance": 41
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 32,
+        "verse": 1,
+        "src": "/assets/story-elihu-speaks-v2.webp",
+        "position": 13630
+      },
+      "to": {
+        "book": 17,
+        "chapter": 33,
+        "verse": 0,
+        "src": "/assets/chapter-job-33-opening-v1.webp",
+        "position": 13651
+      },
+      "distance": 21
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 33,
+        "verse": 0,
+        "src": "/assets/chapter-job-33-opening-v1.webp",
+        "position": 13651
+      },
+      "to": {
+        "book": 17,
+        "chapter": 34,
+        "verse": 0,
+        "src": "/assets/chapter-job-34-opening-v1.webp",
+        "position": 13684
+      },
+      "distance": 33
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 34,
+        "verse": 0,
+        "src": "/assets/chapter-job-34-opening-v1.webp",
+        "position": 13684
+      },
+      "to": {
+        "book": 17,
+        "chapter": 35,
+        "verse": 0,
+        "src": "/assets/chapter-job-35-opening-v1.webp",
+        "position": 13721
+      },
+      "distance": 37
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 35,
+        "verse": 0,
+        "src": "/assets/chapter-job-35-opening-v1.webp",
+        "position": 13721
+      },
+      "to": {
+        "book": 17,
+        "chapter": 36,
+        "verse": 0,
+        "src": "/assets/chapter-job-36-opening-v1.webp",
+        "position": 13737
+      },
+      "distance": 16
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 36,
+        "verse": 0,
+        "src": "/assets/chapter-job-36-opening-v1.webp",
+        "position": 13737
+      },
+      "to": {
+        "book": 17,
+        "chapter": 37,
+        "verse": 0,
+        "src": "/assets/chapter-job-37-opening-v1.webp",
+        "position": 13770
+      },
+      "distance": 33
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 37,
+        "verse": 0,
+        "src": "/assets/chapter-job-37-opening-v1.webp",
+        "position": 13770
+      },
+      "to": {
+        "book": 17,
+        "chapter": 38,
+        "verse": 1,
+        "src": "/assets/story-god-answers-from-the-whirlwind-v1.webp",
+        "position": 13795
+      },
+      "distance": 25
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 38,
+        "verse": 1,
+        "src": "/assets/story-god-answers-from-the-whirlwind-v1.webp",
+        "position": 13795
+      },
+      "to": {
+        "book": 17,
+        "chapter": 39,
+        "verse": 0,
+        "src": "/assets/chapter-job-39-opening-v1.webp",
+        "position": 13835
+      },
+      "distance": 40
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 39,
+        "verse": 0,
+        "src": "/assets/chapter-job-39-opening-v1.webp",
+        "position": 13835
+      },
+      "to": {
+        "book": 17,
+        "chapter": 40,
+        "verse": 0,
+        "src": "/assets/chapter-job-40-opening-v1.webp",
+        "position": 13865
+      },
+      "distance": 30
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 40,
+        "verse": 0,
+        "src": "/assets/chapter-job-40-opening-v1.webp",
+        "position": 13865
+      },
+      "to": {
+        "book": 17,
+        "chapter": 41,
+        "verse": 0,
+        "src": "/assets/chapter-job-41-opening-v1.webp",
+        "position": 13889
+      },
+      "distance": 24
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 41,
+        "verse": 0,
+        "src": "/assets/chapter-job-41-opening-v1.webp",
+        "position": 13889
+      },
+      "to": {
+        "book": 17,
+        "chapter": 42,
+        "verse": 1,
+        "src": "/assets/story-job-restored-v1.webp",
+        "position": 13924
+      },
+      "distance": 35
+    },
+    {
+      "from": {
+        "book": 17,
+        "chapter": 42,
+        "verse": 1,
+        "src": "/assets/story-job-restored-v1.webp",
+        "position": 13924
+      },
+      "to": {
+        "book": 18,
+        "chapter": 1,
+        "verse": 0,
+        "src": "/assets/chapter-psalms-001-opening-v1.webp",
+        "position": 13940
+      },
+      "distance": 16
+    }
+  ]
+}
