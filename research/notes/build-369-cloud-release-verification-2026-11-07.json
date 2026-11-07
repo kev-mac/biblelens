@@ -153,6 +153,19 @@
   "syncFlake": "Passing unchanged sync tests does not establish the inherited intermittent bounded-settle failure fixed.",
   "verificationHarnessCorrection": "Initial ad hoc baseline Git output exceeded Node default maxBuffer. Raised output buffer only; all API/offline and preservation assertions then passed. No production or repository test altered.",
   "publication": {
-    "status": "not yet attempted"
+    "status": "succeeded",
+    "sitesVersion": 359,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_91cecb4f87cc8191a9043decec38ce3c",
+    "mirrorCommit": "ac362a64e122094054674ea793e74e5fec7b73a1",
+    "canonicalVerificationCommit": "857e48d",
+    "deploymentId": "appgdep_6aeea850600c8191b3bec13e92d3e068",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveFiles": 6,
+    "archiveContentHash": "sha256:9338896c1e87974b05944a8e0500c6f00c435523a873698f46221534f48139c9",
+    "workerBytes": 59972179,
+    "workerNotRebuiltInMirror": true,
+    "sourceMirrorOfflineFingerprintsEqual": true,
+    "publicAudiencePreserved": true,
+    "firstAttempt": "Automatic approval review rejected deployment for missing trusted publication authorization. Saved-version query showed deployment_id null. Freshly read owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizing book-by-book commit/push/publish/install. Retried the identical saved-version deployment once, succeeded. No pending deployment/approval or bypass."
   }
 }
