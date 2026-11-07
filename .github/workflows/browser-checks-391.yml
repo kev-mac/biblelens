@@ -1,0 +1,138 @@
+name: Build 391 browser checks
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/browser-checks-391.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-391-browser-checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  browser-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/browser-checks-391'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+      BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+    steps:
+      - name: Check out the reviewed source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify exact build 391 source
+        run: |
+          git merge-base --is-ancestor 1ecbce3e50e7c4b094ac2a1f2d89dae095265f5c HEAD
+          mkdir -p .release/browser-ci
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {releaseInfo} from './scripts/release-info.mjs';
+          const release=releaseInfo();
+          assert.equal(release.buildNumber,391);
+          assert.equal(release.sourceHash,'b6c048593e1d2efb3be3dd08ebd80a17591fbdcce694c95f119fe45220a84088');
+          fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
+          console.log(release);
+          JS
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Install browsers on this separate GitHub runner
+        id: browsers
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Require the Chromium sandbox for every browser check
+        run: |
+          cat > .release/browser-ci/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';
+          const launch=chromium.launch.bind(chromium);
+          chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+          node --check .release/browser-ci/require-sandbox.mjs
+
+      - name: Run the complete required release preparation
+        id: prepare
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/browser-ci/release-prepare.log
+
+      # A failed gate remains a failed job. Collect the UI results as well when
+      # the exact built bundle exists; this never accepts or publishes a release.
+      - name: Open the exact built app on runner loopback
+        id: preview
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' && steps.prepare.outcome != 'skipped' }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const source=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),source);
+          JS
+          node scripts/serve.mjs > .release/browser-ci/server.log 2>&1 &
+          printf '%s\n' "$!" > .release/browser-ci/server.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {setTimeout} from 'node:timers/promises';
+          const expected=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          let ready=false;
+          for(let attempt=0;attempt<100;attempt++){
+            try{
+              const response=await fetch('http://127.0.0.1:8787/release.json',{signal:AbortSignal.timeout(2000)});
+              assert(response.ok);assert.deepEqual(await response.json(),expected);ready=true;break;
+            }catch{await setTimeout(200);}
+          }
+          assert(ready,'The exact build 391 preview did not become ready.');
+          JS
+
+      - name: Check inline evidence pills in Chromium and WebKit
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
+
+      - name: Check reader controls on phones, iPad and desktop
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-reader-annotations-browser.mjs 2>&1 | tee .release/browser-ci/reader-controls.log
+
+      - name: Stop this job's preview
+        if: always()
+        run: |
+          if test -f .release/browser-ci/server.pid; then
+            kill "$(cat .release/browser-ci/server.pid)" 2>/dev/null || true
+          fi
+
+      - name: Retain public test results and release identities
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-391-browser-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/*.log
+            .release/browser-ci/source-release.json
+            www/release.json
+            dist/client/release.json
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: warn
