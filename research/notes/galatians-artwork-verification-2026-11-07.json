@@ -1,0 +1,167 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "Galatians",
+  "canonicalBaseline": "f1def6e5b16459a187443476ca68ecd7cd84f7b0",
+  "chapterCount": 6,
+  "verseCount": 149,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-galatians-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 24,
+      "bytes": 143330,
+      "sha256": "997ff9411677afdec7440fb1eeb2afa9e77854f478d36f056a8d72aef1047e34",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-galatians-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 183168,
+      "sha256": "1e07015bd4159948d50971d986c710bbe2292c436ee52c524d5a50f009402863",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-galatians-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 29,
+      "bytes": 108242,
+      "sha256": "3a8927f9baef17e1791175e07f83188634567e5d6dd959c6e8c901a2b542171c",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-galatians-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 31,
+      "bytes": 145744,
+      "sha256": "53c1d049afbba52ba9239010415653b2d668a65ceb239872e4b3603d01c6f839",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-galatians-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 26,
+      "bytes": 170026,
+      "sha256": "b19455a9f167bf7b16ba26ff3cb2e524c82c39b2c2540418e431aefd3351cf34",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-galatians-06-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 176336,
+      "sha256": "f9c55ea65be22884c5e689d373de4cec7e01e892489760b064c79a5acc68e243",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 6,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 46,
+        "chapter": 13,
+        "verse": 0,
+        "position": 243,
+        "src": "/assets/chapter-2-corinthians-13-opening-v1.webp"
+      },
+      "b": {
+        "book": 47,
+        "chapter": 1,
+        "verse": 0,
+        "position": 257,
+        "src": "/assets/chapter-galatians-01-opening-v1.webp"
+      },
+      "gap": 14
+    },
+    {
+      "a": {
+        "book": 47,
+        "chapter": 6,
+        "verse": 0,
+        "position": 388,
+        "src": "/assets/chapter-galatians-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 48,
+        "chapter": 1,
+        "verse": 0,
+        "position": 406,
+        "src": "/assets/chapter-ephesians-01-opening-v1.webp"
+      },
+      "gap": 18
+    }
+  ],
+  "minimumInternalGap": 21,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Galatians existing 6 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 6,
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c"
+}

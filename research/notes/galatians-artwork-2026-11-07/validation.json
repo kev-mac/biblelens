@@ -1,0 +1,141 @@
+{
+  "scope": "Galatians only; all six images retained, zero generated/replaced; zero production changes",
+  "baseline": "f1def6e5b16459a187443476ca68ecd7cd84f7b0",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "checks": [
+    {
+      "command": "npm ci --cache=/tmp/biblelens-galatians-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-npm-ci.log",
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile (includes web build)",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-build-mobile.log",
+      "logSha256": "128d9b6c8132d561dc8187372cdf7c18c43a56a33c9ffff34ad6b60b4076353e"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-images.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-mobile.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-release.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/galatians-all.log",
+      "logSha256": "d65502c7e306cf3ed0410b6dc9e03df62fd1e0354539a62e3cdb3e4efa63bd79"
+    },
+    {
+      "command": "node research/notes/galatians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-focused.log",
+      "logSha256": "1d38a931183e1b216f2f587b23a468276981a7212ec7cf7f4435e95ef5c6a765"
+    },
+    {
+      "command": "node research/notes/galatians-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/galatians-mirror.log",
+      "logSha256": "3e6544646e35bcac548eccb0fd1c71fc3304ab481f6c42e7637e58a015fff45d"
+    },
+    {
+      "command": "node research/notes/galatians-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "result": "6/6 retained; 2010 production files / 1619 assets unchanged; gaps 21 internal, 14/18 boundaries; zero close pairs"
+    },
+    {
+      "command": "git diff --check; node --check for current audit/verifier",
+      "exitCode": 0
+    }
+  ],
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Chromium headless shell 1248 executable missing. Preceding nonbrowser/search checks passed; readability inherited report-only. No browser installed.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill says skip browser QA in this state; no preview server/browser install/substitute managed control route.",
+  "publication": {
+    "status": "Inherited denial; no publication attempt in Galatians",
+    "action": "deploy saved public build 386",
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Automatic approval review rejected deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication or bypass. No save/deploy/mirror push/access change/substitute version attempted. Frozen saved source/archive untouched."
+  },
+  "liveBytes": "Inherited denied live HTTP/image/release:verify operations remain deferred; local immutable-origin fixture is not live HTTP verification.",
+  "devices": "No callable Mac/device connector or configured VPN. Signing, signed public versus www parity, physical install/query/launch incomplete. Historical build 359 is not current device evidence.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) unresolved; sync unchanged/not retested.",
+  "mirror": {
+    "baseline": "f1def6e5b16459a187443476ca68ecd7cd84f7b0",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential opening before Galatians review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "assetPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedGitBlobsVerified": 1147,
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "fullReleaseCandidateArchiveProduced": false,
+  "nextBookArtworkReviewed": false,
+  "handoff": "research/notes/ephesians-artwork-handoff-from-galatians-2026-11-07.md",
+  "focused": {
+    "chapterCount": 6,
+    "verseCount": 149,
+    "negativeCoverageChecks": 6,
+    "offlineNetworkCalls": 0,
+    "inheritedAbsentFields": [],
+    "inheritedEmptyStrings": [],
+    "minimumInternalGap": 21,
+    "originFixtureCalls": 6
+  },
+  "visualReview": {
+    "nativeImagesViewed": 6,
+    "imageDimensions": [
+      960,
+      540
+    ],
+    "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "visiblePeople": 0,
+    "visibleAnimals": 0,
+    "generationCalls": 0,
+    "nextBookArtworkOpened": false,
+    "unscaledStyleComparisons": 6,
+    "sideBySideObjectAndPriorBookComparisons": 3
+  },
+  "syncChanged": false,
+  "dependencyFilesChanged": false
+}
