@@ -1,0 +1,42 @@
+[
+  {
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-d8535286-858b-4bfc-b97a-c495e2639af8.png",
+    "actualReferenceInputs": [
+      "src/assets/story-the-temple-built-v1.webp",
+      "src/assets/story-solomon-s-wisdom-v1.webp",
+      "src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "correction": "Remove temple-site hammer/chisel stone cutting inconsistent with 1 Kings 6:7; retain finished stones, timber, workers and Solomon.",
+    "result": {
+      "src": "/assets/story-the-temple-built-v2.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "bytes": 199410,
+      "sha256": "410a96700f6bc19433f28d0b98286427edc7f47ceff539acd458b3bfb5336c6c",
+      "review": "Generated original and final WebP inspected full size beside actual references. Recognizable faces, complexions, curls, build and relationships retained; visible hands/thumbs/fingers/limbs coherent. Hidden/distant anatomy cannot be fully assessed. Genesis 7 supplied only for style."
+    }
+  },
+  {
+    "tool": "image_gen.imagegen",
+    "original": "/workspace/generated_images/exec-6eb4abcf-0441-490f-9778-17c109e8f891.png",
+    "actualReferenceInputs": [
+      "src/assets/story-ahab-and-micaiah-v1.webp",
+      "src/assets/story-naboth-s-vineyard-v1.webp",
+      "src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "correction": "Preserve Ahab gray beard/temple hair in the later gate scene using earlier vineyard identity; do not reverse apparent aging.",
+    "result": {
+      "src": "/assets/story-ahab-and-micaiah-v2.webp",
+      "dimensions": [
+        1200,
+        675
+      ],
+      "bytes": 141384,
+      "sha256": "716939bc42c60bb2176acb63ef0b3ab4c7b5ca641af3cf90f991c71d2b7c8e26",
+      "review": "Generated original and final WebP inspected full size beside actual references. Recognizable faces, complexions, curls, build and relationships retained; visible hands/thumbs/fingers/limbs coherent. Hidden/distant anatomy cannot be fully assessed. Genesis 7 supplied only for style."
+    }
+  }
+]
