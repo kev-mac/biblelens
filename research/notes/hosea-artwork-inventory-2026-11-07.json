@@ -1,0 +1,248 @@
+{
+  "book": "Hosea",
+  "baseline": "5e992ea",
+  "date": "2026-11-07",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "earlierInventory": "research/notes/hosea-continuity-inventory-2026-11-04.json",
+  "decision": "Retain all 14 active images after native-size review; no generation required.",
+  "images": [
+    {
+      "chapter": 1,
+      "kind": "Story",
+      "title": "Hosea's Marriage to Gomer",
+      "placement": {
+        "verse": 1
+      },
+      "anchor": "Hosea 1:2–9",
+      "src": "/assets/story-hosea-s-marriage-to-gomer-v1.webp",
+      "alt": "Hosea and Gomer share a quiet courtyard meal with their three children.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 112148,
+      "sha256": "a4e6161fe12512f77ecaebe45a47fb40ba1076a05fe4da39731368095c26bc3f",
+      "decision": "retain",
+      "review": "Hosea and Gomer share a meal with two boys and one girl. Composite family scene after the three births; no exact child ages assigned. Brown complexions, dark natural curls, believable faces and cloth. Visible bread grips, fingers, arms and proportions show no definite defect; table and clothing obscure lower bodies. No other located named portrayal requires identity matching."
+    },
+    {
+      "chapter": 2,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 2:14–15",
+      "src": "/assets/chapter-hosea-02-opening-v1.webp",
+      "alt": "Imagined scene: A rocky wilderness valley opens toward green vineyards.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 157880,
+      "sha256": "54de933f15353f0ef3135e234651299245556358731fae132b20184d4e25e0e0",
+      "decision": "retain",
+      "review": "Rocky wilderness opens into a green vineyard, with blue sky and natural foliage. Imagines restoration imagery, without identifying a literal valley location. No people or animals."
+    },
+    {
+      "chapter": 3,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 3:2",
+      "src": "/assets/chapter-hosea-03-opening-v1.webp",
+      "alt": "Imagined scene: Loose silver pieces lie beside an open sack of barley.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 147288,
+      "sha256": "d7c07b42c873946ffa0a7d736cd13c3018a272da0eede66410361042cafed3d5",
+      "decision": "retain",
+      "review": "Loose unmarked silver pieces beside barley. No modern minted denominations or exact weight claim. Material textures and oblique light remain grounded. No people or animals."
+    },
+    {
+      "chapter": 4,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 4:3",
+      "src": "/assets/chapter-hosea-04-opening-v1.webp",
+      "alt": "Imagined scene: Dry earth and withered plants border a shrinking stream.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 132398,
+      "sha256": "c0e2ad4badb25f336984eb0a930809075a8e74c88e3aefd1adb8cf97ffa4717d",
+      "decision": "retain",
+      "review": "Cracked earth, shrinking stream and withered plants illustrate mourning land. Subdued daylight fits the drought imagery. No people or animals."
+    },
+    {
+      "chapter": 5,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 5:10",
+      "src": "/assets/chapter-hosea-05-opening-v4.webp",
+      "alt": "Imagined scene: A boundary stone tilts beside disturbed earth between two fields.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 155822,
+      "sha256": "7e29e93391e907936e489a21a3ce6d0772d08819992e8497d722c085895af6c7",
+      "decision": "retain",
+      "review": "Tilted field-boundary stone beside disturbed earth illustrates removal of a boundary. Accepted v4 has no signature-like corner mark; rejected v1–v3 remain inactive. No people or animals."
+    },
+    {
+      "chapter": 6,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 6:3–4",
+      "src": "/assets/chapter-hosea-06-opening-v1.webp",
+      "alt": "Imagined scene: Rain falls on a green field as morning light breaks through mist.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 103858,
+      "sha256": "d0d925316ace7c3b3262a4f0a85027e0f17e92af215bf584b136e389cfb9b37b",
+      "decision": "retain",
+      "review": "Rain, mist and green shoots under emerging dawn light illustrate rain and morning imagery. No people or animals."
+    },
+    {
+      "chapter": 7,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 7:4–8",
+      "src": "/assets/chapter-hosea-07-opening-v1.webp",
+      "alt": "Imagined scene: A clay oven glows beside dough and a partly scorched flatbread.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 119236,
+      "sha256": "1f5d9cbc800c1abf42c005851c0e6eeaff50f91c18f99538f5be9f53830a2378",
+      "decision": "retain",
+      "review": "Glowing clay oven, dough and partly burned bread illustrate the oven and unturned cake comparisons. Warm embers contrast with neutral daylight. No people or animals."
+    },
+    {
+      "chapter": 8,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 8:7",
+      "src": "/assets/chapter-hosea-08-opening-v1.webp",
+      "alt": "Imagined scene: Bare stalks bend in the wind beneath storm clouds.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 109422,
+      "sha256": "92b46c7b0afc90a330de7cd39e4551e297879222159b1272d5e887402fd7622f",
+      "decision": "retain",
+      "review": "Wind bends bare stalks under storm clouds. Imagines sowing wind and harvest failure without presenting a literal disaster record. No people or animals."
+    },
+    {
+      "chapter": 9,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 9:2",
+      "src": "/assets/chapter-hosea-09-opening-v1.webp",
+      "alt": "Imagined scene: An empty winepress stands beside a bare threshing floor.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 143588,
+      "sha256": "e75f14a9ac961a43a0d80c4e855f6423818d88310e62948bac090ac5da4ad088",
+      "decision": "retain",
+      "review": "Empty winepress and bare threshing floor illustrate failed yield. Weathered stone and natural light fit the style. No people or animals."
+    },
+    {
+      "chapter": 10,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 10:8",
+      "src": "/assets/chapter-hosea-10-opening-v1.webp",
+      "alt": "Imagined scene: Thorns and purple thistles grow around a stone altar.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 151140,
+      "sha256": "c9102617406da73296d757da394c08280b3c9fecd157c355b8607ef718cda993",
+      "decision": "retain",
+      "review": "Thorns and purple thistles overgrow a stone altar, matching the chapter imagery. No invented named portrait or exact shrine reconstruction. No people or animals."
+    },
+    {
+      "chapter": 11,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 11:4",
+      "src": "/assets/chapter-hosea-11-opening-v1.webp",
+      "alt": "Imagined scene: A wooden yoke lies beside fodder and loose cords.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 168520,
+      "sha256": "1597080d59016f0a4def28fe8b8886a8a5469ac49dd33a937c9b929b22a07af5",
+      "decision": "retain",
+      "review": "Removed wooden yoke, cords and fodder illustrate agricultural compassion language without making Israel a literal child portrait. No people or animals."
+    },
+    {
+      "chapter": 12,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 12:1",
+      "src": "/assets/chapter-hosea-12-opening-v1.webp",
+      "alt": "Imagined scene: Clay oil jars and packing ropes stand beside a desert road.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 130346,
+      "sha256": "d2b132de1ce1cbb1f066a04b0d0bd4b05e622b8decc5d0f60ac1c45b55308345",
+      "decision": "retain",
+      "review": "Clay oil jars, packing rope and a road illustrate oil being carried to Egypt. Does not assign a face to Jacob, Moses or a king mentioned elsewhere in the chapter. No people or animals."
+    },
+    {
+      "chapter": 13,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 13:15",
+      "src": "/assets/chapter-hosea-13-opening-v1.webp",
+      "alt": "Imagined scene: Wind blows dust past a dry spring and brittle grass.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 140472,
+      "sha256": "4474ffb49f66ef64b957a1beaf055d33eded3f0cad0d6e794ec72f52c81c0eb9",
+      "decision": "retain",
+      "review": "Dust blows past a dry spring and brittle grass, matching east-wind and dried-source imagery. No people or animals."
+    },
+    {
+      "chapter": 14,
+      "kind": "chapter",
+      "placement": {
+        "afterVerse": 0
+      },
+      "anchor": "Hosea 14:5–7",
+      "src": "/assets/chapter-hosea-14-opening-v1.webp",
+      "alt": "Imagined scene: Dew covers lilies beside an olive tree, grain and vines.",
+      "afterVerse": 0,
+      "width": 960,
+      "height": 540,
+      "bytes": 185046,
+      "sha256": "149f1450f9512a0df9ec5e505579401c6b1a661e624b5c5ab969233a18df7289",
+      "decision": "retain",
+      "review": "Dewy lilies, olive tree, grain and vines visualize the restoration comparisons. Blue-green natural colors and restrained realistic detail remain compatible. No people or animals."
+    }
+  ]
+}
