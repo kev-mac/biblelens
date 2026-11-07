@@ -66,6 +66,30 @@ fingerprint is `b0593f5516862d9ec7116e88b2a7bbb104829651ce7d00c36a18468d3af83518
 A new CI run must verify these changes; the first run's passing cases do not
 verify this revised source.
 
+The [second run](https://github.com/kev-mac/biblelens/actions/runs/42413466631)
+passed release preparation and the retained 80 cases, then caught the compact
+search row still wrapping at 320px. The inherited generic `form` rule allowed
+wrapping and made its button 100% wide. The revised styles explicitly use
+`nowrap` and an intrinsic-width submit button. The portrait Stories count now
+sits beside its icon so it does not cover the face at the upper right. The
+failure screenshot/archive digest
+`8b4c885ad7629ae627d33d79b6642376b9f7735f7744f26c21ed48b1e770c594`
+was verified before inspection. That run failed overall.
+
+`npm run check:images` additionally found its active 1 Samuel caption test still
+expecting the removed “Imagined scene:” prefix. Aligning that assertion with the
+user-approved actual title made the complete image check pass: all Story
+assets, all 1,189 chapter images, and all 31 1 Samuel openers retain their text
+and web/offline bytes. No image or production caption was changed. An extra
+attempt to run the historical Acts checkpoint check failed its fixed build 343
+package baseline before reaching captions; it is not a current release gate
+and was left unchanged, as were the other historical book checkpoint tests.
+
+The current candidate fingerprint is
+`242ae82664a39b4a66caf92a700a4134f7048cbe261279efa6ae1973068aa9f1`.
+Focused Explore checks and syntax pass. A fresh CI run, now including the image
+gate, must verify this source and all browser matrices before publication.
+
 No publication or native installation has occurred. The Sites mirror was
 freshly opened and remains unchanged at saved build 386 / commit
 `64bea042655bc72df95a994a4b6c70237b2c3f5c`, with no newer independent work.

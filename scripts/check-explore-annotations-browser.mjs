@@ -24,8 +24,9 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    assert(width>height?measures.width>measures.height:measures.height>measures.width,JSON.stringify({width,height,measures}));
    assert.deepEqual(await page.locator('#explore-view .ux-topic').evaluateAll(nodes=>nodes.filter(node=>node.scrollHeight>node.clientHeight+1||node.scrollWidth>node.clientWidth+1).map(node=>node.id)),[],'Overlay copy fits all cards');
    for(const selector of ['#ux-explore-search','#ux-explore-search-form>button']){const box=await page.locator(selector).boundingBox();assert(box.width>=44&&box.height>=44&&box.x>=0&&box.x+box.width<=width);}
-   const fieldBox=await input.boundingBox(),submitBox=await page.locator('#ux-explore-search-form>button').boundingBox();assert(Math.abs(fieldBox.y-submitBox.y)<=1,'Search stays in one compact row');
+   const fieldBox=await input.boundingBox(),submitBox=await page.locator('#ux-explore-search-form>button').boundingBox();assert(Math.abs(fieldBox.y-submitBox.y)<=1,'Search stays in one compact row: '+JSON.stringify({engine,width,height,fieldBox,submitBox}));
    assert.equal(await card.locator('img').evaluate(node=>getComputedStyle(node).objectPosition),'88% 50%','The portrait crop retains the people at the doorway');
+   if(width<height){const bounds=await card.boundingBox(),badge=await card.locator('.ux-count').boundingBox();assert(badge.x+badge.width<bounds.x+bounds.width*.65,'The portrait count stays away from the face at the upper right');}
    await lane.focus();await page.keyboard.press('End');await page.waitForFunction(()=>document.getElementById('ux-topic-timeline').classList.contains('ux-topic-centered'));
    await page.keyboard.press('Home');await page.waitForFunction(()=>document.getElementById('ux-topic-stories').classList.contains('ux-topic-centered'));
    await lane.focus();await page.keyboard.press('ArrowRight');await page.waitForFunction(()=>document.getElementById('ux-topic-people').classList.contains('ux-topic-centered'));
