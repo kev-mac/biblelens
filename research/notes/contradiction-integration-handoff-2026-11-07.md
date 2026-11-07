@@ -33,4 +33,16 @@ The Sites source helper is absent from the environment and cannot be read at eit
 
 Managed browser QA is unavailable: `SITES_MANAGED_LINUX_CONTAINER=1`, with no callable `cua_repl.js`. The Sites skill requires skipping browser QA in that state and prohibits installing a browser or improvising another browser-control path. `/usr/bin/chromium` exists but is not the required Playwright browser installation and does not supply WebKit. Do not substitute a browser path to evade this rule. The required full-suite result and release attempt must be reported honestly.
 
-Check outcomes and commit/release status will be appended after final validation. No existing public deployment was retried merely to test authorization.
+## Final validation and release status
+
+Source changes are committed and pushed to GitHub main as `5037e6440081a9ff62bd4e300599518be37f1221`. An initial push was rejected by GitHub GH007 because the environment's default commit metadata used a private email. Only this unpushed commit was amended to use the exact noreply author/committer identity already used on main. The corrected ordinary fast-forward push succeeded; no account privacy setting, credential or security configuration was changed.
+
+Final source, compiled Worker and unsigned offline bundle match **1.1.0 build 389**, source fingerprint `916dfacec79c7efd58077e572f749056be42f29ba4f3a8d75b271fbe4e8384ae`. The five exact review objects match through both compiled web and actual bundled offline Worker APIs, with zero external requests. All old evidence fields remain equal to baseline. See `contradiction-integration-validation-2026-11-07.json` for record IDs, results and log hashes.
+
+Passed: focused reviews, click/context/range/edition/absence/focus behavior, strict new-review readability, `build:mobile`, fresh `check:sync`, fresh `check:release`, fresh `check:mobile`, source preservation and diff whitespace checks. The full check passed its preceding checks and reached `scripts/check-release-smoke.mjs:31:32`, then failed because Playwright Chromium headless shell 1248 is absent. No browser assertions ran. The exact missing path is `/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell`.
+
+`release:prepare` rebuilt both bundles from the clean final source and failed at that required full-check gate. It did not produce `.release/candidate.json`. Its later checks were independently run and passed, but the failed browser gate remains blocking. **No Site save/deployment, mirror mutation/push, public deployment retry or installation occurred.** Fresh Site metadata still reports latest saved version 386 and public access. Do not deploy the older held build 386 as if it contains this work.
+
+`release:verify` passed the initial source/mobile identity comparison but failed to fetch the live release with `EAI_AGAIN` for `scripture-lens.kvn-mcgwn.chatgpt.site`. A separate ordinary curl with inherited proxy settings returned `CONNECT tunnel failed, response 403`. The current allowed-host policy lacks this Site host. Live identity and actual live image delivery are unverified; local fixtures do not establish them. No network-policy change or alternative route was attempted.
+
+Signing, signed-asset parity and installation/launch on both iPhone and iPad remain pending on Kevin's Mac. The requested three Space report saves remain pending with their originating sessions. Existing book sessions and their ten-book concurrency cap are untouched.

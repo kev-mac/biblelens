@@ -1,0 +1,77 @@
+{
+  "result": "pass",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 389,
+    "sourceHash": "916dfacec79c7efd58077e572f749056be42f29ba4f3a8d75b271fbe4e8384ae"
+  },
+  "verifiedReviewRecords": [
+    "exodus-hardening-agency",
+    "moses-father-in-law-names",
+    "angel-of-the-lord-speaks-as-god-identity-unstated",
+    "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+    "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+  ],
+  "sourceRecords": 1933,
+  "externalRequests": 0,
+  "signedNativeAssets": "unavailable",
+  "liveParity": "not established",
+  "canonicalCommit": "5037e6440081a9ff62bd4e300599518be37f1221",
+  "githubPush": "confirmed; ordinary fast-forward to main",
+  "checks": {
+    "focusedReviews": "pass",
+    "citationWindows": "pass",
+    "readability": "pass for new prose, FK 7.67, zero sentence/jargon violations; inherited report-only findings remain",
+    "buildMobile": "pass",
+    "checkSync": "pass",
+    "checkRelease": "pass",
+    "checkMobile": "pass",
+    "fullCheck": "failed at scripts/check-release-smoke.mjs:31:32; missing Playwright Chromium headless shell 1248; browser assertions did not run",
+    "releasePrepare": "failed at required npm run check; no candidate.json produced",
+    "releaseVerify": "failed fetching live release: EAI_AGAIN; separate inherited-proxy curl request returned CONNECT 403"
+  },
+  "publication": {
+    "status": "not attempted; required checks failed",
+    "latestSiteSavedVersion": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorChanged": false,
+    "audience": "public; unchanged"
+  },
+  "installation": {
+    "status": "not attempted; no Mac/device connector, xcodebuild, xcrun or configured VPN",
+    "iphone": "pending",
+    "ipad": "pending",
+    "signedAssetsComparison": "pending; no signed App.app available"
+  },
+  "spaceSaves": "Esther, Ecclesiastes and Nehemiah authorized but inaccessible in this session; no save attempted",
+  "logs": {
+    "fullCheck": {
+      "bytes": 24453,
+      "sha256": "5a0cbba0a9317ef0d52cc7bff0f3f62accd4fe1a60b016d3608ba4c21737b9e5"
+    },
+    "releasePrepare": {
+      "bytes": 28341,
+      "sha256": "4b56ff5c1ed67dd837ef63caa28155dac89a55aef4ec554c493dd8093e96d7b7"
+    },
+    "sync": {
+      "bytes": 806,
+      "sha256": "254221de7aa70fdb8d64d5cb6bb9b846b2ecca542a402421486cfb9b8442a9a4"
+    },
+    "releaseChecks": {
+      "bytes": 1812,
+      "sha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    "mobile": {
+      "bytes": 641,
+      "sha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    "releaseVerify": {
+      "bytes": 683,
+      "sha256": "3a4f0034ca7b65b2cd4fa8321ac05f6aca33c327f0b335665d9640fa4df67c50"
+    },
+    "readability": {
+      "bytes": 2647,
+      "sha256": "27c1e2916cce74348ebc39ba58c8f993007a1a782d1f1e7b7cc80c88740054dc"
+    }
+  }
+}
