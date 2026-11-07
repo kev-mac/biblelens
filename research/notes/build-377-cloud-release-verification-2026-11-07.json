@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-07",
+  "book": "Joel",
+  "review": {
+    "retainedImages": 3,
+    "replacements": 0,
+    "storyPlacements": 0,
+    "chapterOpeners": 3,
+    "closePairsInvolvingBook": 0,
+    "internalGaps": [
+      20,
+      32
+    ],
+    "boundaryGaps": [
+      9,
+      21
+    ],
+    "inventory": "joel-artwork-inventory-2026-11-07.json",
+    "audit": "joel-artwork-audit-2026-11-07.md"
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 377,
+    "sourceHash": "adcb3cc276b32adc1c441e883f3f9a3686aaf714945840d614de91afd7cc7c45",
+    "workerBytes": 59517395,
+    "workerBudgetBytes": 66060288
+  },
+  "canonicalReviewCommit": "edd1fb1",
+  "checks": {
+    "lockedDependencies": "passed; ignore-scripts, no lockfile changes",
+    "buildMobile": "passed inside release:prepare, includes web build",
+    "images": "passed; all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed this run; inherited intermittent failure not repaired",
+    "focusedWorkerOffline": "passed: 3 chapters, 73 verses in each of KJV/ASV/WEB, 3 placements, 3 missing-opener controls, exact source/Worker/native bytes, zero underlying network requests",
+    "baselineAssetFilesPreserved": 1616,
+    "pinnedBlobsEqualSource": 1145,
+    "fullReleasePreparation": "failed: Playwright Chromium headless-shell executable missing at check-release-smoke.mjs:31; full npm run check incomplete",
+    "browser": "unverified: supported managed control tool unavailable; no browser install or alternate control path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector exposed"
+  },
+  "publication": {
+    "status": "prepared; not yet published"
+  },
+  "excluded": "Previously denied detailed Ezekiel audit uploads remain excluded and were not retried.",
+  "handoff": "amos-artwork-handoff-from-joel-2026-11-07.md",
+  "nextBookStarted": false
+}
