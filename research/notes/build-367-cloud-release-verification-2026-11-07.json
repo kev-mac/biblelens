@@ -419,8 +419,26 @@
   },
   "syncFlake": "Passing unchanged check:sync run does not establish that inherited intermittent bounded-settle failure is fixed. No sync/security/test changes.",
   "publication": {
-    "status": "pending"
+    "status": "succeeded",
+    "sitesVersion": 357,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_a730c7cd2bd88191ae7229d6403de436",
+    "mirrorCommit": "27500fc0c86ac5a1eac1ca196109191952a05b3e",
+    "deploymentId": "appgdep_6aeea20755a88191a3f13e671be55739",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveContentHash": "sha256:06b1973d4c058b145ea7bb3028fed1edcbe234eab7e81b57759535afaf09cd13",
+    "archiveFiles": 6,
+    "localArchiveSha256": "13996527630a44f42a3d81615695965d42204e36c537c40da05c0bf9206aa1b0",
+    "workerNotRebuiltInMirror": true,
+    "publicAudiencePreserved": true,
+    "initialRejection": "Automatic approval review rejected production deployment, citing missing explicit authorization/audience. Saved-version read confirmed deployment_id null. Freshly read trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizing book-by-book commits, pushes, publication and installs; fresh Site read confirmed owner/public access. Exact operation retried once and succeeded. No bypass or pending approval."
   },
   "platformsSynchronized": false,
-  "gitPrivacy": "Initial push was remotely rejected with GH007; confirmed remote unchanged, amended unpublished commit to established main-branch GitHub noreply author/committer. No privacy setting changed."
+  "gitPrivacy": "Initial push was remotely rejected with GH007; confirmed remote unchanged, amended unpublished commit to established main-branch GitHub noreply author/committer. No privacy setting changed.",
+  "mirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 367,
+    "sourceHash": "7598f835f621c56ecf87992dd913260cb7a50c9f893ae61012e10eeb6a0c49f5"
+  },
+  "mirrorImagesMatch": 33,
+  "mirrorWorkerMatchesBuiltWorker": true
 }
