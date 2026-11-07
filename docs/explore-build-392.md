@@ -21,7 +21,7 @@ Explore work uses the isolated `/workspace/biblelens-explore` checkout.
   keep the shared search action available on other views.
 - Size collection cards from their container and viewport height. Portrait
   cards use a taller ratio; landscape cards use a wider ratio. Retain cover
-  cropping, focal positions, overlay copy, 21px card corners, scroll snapping,
+  cropping, overlay copy, 21px card corners, scroll snapping,
   pagination and touch/keyboard browsing. Preserve the active card on resize.
 
 ## Validation state
@@ -40,6 +40,31 @@ cropping, corners, text fit and overflow. It retains screenshots and its actual
 case matrix. Browser execution and the complete release gates remain pending a
 separate supported CI run for this exact build 392 source. Passing build 391
 results must not be attributed to build 392.
+
+## First CI result and follow-up
+
+[Run 42412209652](https://github.com/kev-mac/biblelens/actions/runs/42412209652)
+passed release preparation, all retained 80 pill/reader cases, and all 24
+Chromium Explore cases. WebKit stopped on an incorrect `innerText` assertion for
+the deliberately clipped screen-reader heading. The test now checks its text
+content and accessible heading name instead. The run failed overall and did
+not accept a prepared release archive.
+
+The run's [screenshots and logs](https://github.com/kev-mac/biblelens/actions/runs/42412209652/artifacts/13590570863)
+were downloaded through the authorized artifact tool and their ZIP digest
+`9f9e82acacb91b6d107747338962b52ffab743339cb0b2f15bae15e02464d7e0`
+verified. Manual inspection covered 525×985 light portrait, 985×525 dark
+landscape and WebKit 320×844. It found the Search button stacking below the
+input, so the form now explicitly stays in one row with a short placeholder.
+The Stories crop now uses an 88% horizontal focal point to retain the doorway
+people in portrait, rather than cutting off the person on the right. Source
+image bytes and other collection art remain unchanged. Browser checks assert
+the compact row and focal point as well.
+
+Focused tests and syntax checks pass for the revised candidate. Its source
+fingerprint is `b0593f5516862d9ec7116e88b2a7bbb104829651ce7d00c36a18468d3af83518`.
+A new CI run must verify these changes; the first run's passing cases do not
+verify this revised source.
 
 No publication or native installation has occurred. The Sites mirror was
 freshly opened and remains unchanged at saved build 386 / commit

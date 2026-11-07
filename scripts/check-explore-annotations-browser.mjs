@@ -14,7 +14,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    await page.goto(base+'/#discover');const input=page.locator('#ux-explore-search');await input.waitFor();
    await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);await page.evaluate(()=>document.fonts.ready);
    assert.equal(await page.locator('.ux-explore-filters,[data-explore-filter]').count(),0);
-   assert.equal(await page.locator('#explore-view>h1.sr-only').innerText(),'Explore');
+   assert.equal(await page.locator('#explore-view>h1.sr-only').textContent(),'Explore');assert.equal(await page.getByRole('heading',{name:'Explore',exact:true}).count(),1,'Screen readers retain a named page heading');
    assert.equal(await page.locator('#lensMasthead .ux-search:visible').count(),0);assert.equal(await page.locator('#lens-settings:visible').count(),1);
    assert.equal(await page.locator('#explore-view .ux-topic').count(),9);assert.equal(await page.locator('#ux-lane-collections .ux-topic').count(),7);assert.equal(await page.locator('#ux-lane-manuscripts .ux-topic').count(),2);
    for(const id of ids)assert.equal(await page.locator('#ux-topic-'+id).count(),1);
@@ -24,6 +24,8 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    assert(width>height?measures.width>measures.height:measures.height>measures.width,JSON.stringify({width,height,measures}));
    assert.deepEqual(await page.locator('#explore-view .ux-topic').evaluateAll(nodes=>nodes.filter(node=>node.scrollHeight>node.clientHeight+1||node.scrollWidth>node.clientWidth+1).map(node=>node.id)),[],'Overlay copy fits all cards');
    for(const selector of ['#ux-explore-search','#ux-explore-search-form>button']){const box=await page.locator(selector).boundingBox();assert(box.width>=44&&box.height>=44&&box.x>=0&&box.x+box.width<=width);}
+   const fieldBox=await input.boundingBox(),submitBox=await page.locator('#ux-explore-search-form>button').boundingBox();assert(Math.abs(fieldBox.y-submitBox.y)<=1,'Search stays in one compact row');
+   assert.equal(await card.locator('img').evaluate(node=>getComputedStyle(node).objectPosition),'88% 50%','The portrait crop retains the people at the doorway');
    await lane.focus();await page.keyboard.press('End');await page.waitForFunction(()=>document.getElementById('ux-topic-timeline').classList.contains('ux-topic-centered'));
    await page.keyboard.press('Home');await page.waitForFunction(()=>document.getElementById('ux-topic-stories').classList.contains('ux-topic-centered'));
    await lane.focus();await page.keyboard.press('ArrowRight');await page.waitForFunction(()=>document.getElementById('ux-topic-people').classList.contains('ux-topic-centered'));
