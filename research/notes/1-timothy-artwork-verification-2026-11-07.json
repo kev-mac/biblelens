@@ -1,0 +1,167 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "1 Timothy",
+  "canonicalBaseline": "a515b04b687d980cfd68248f9aab6b25f1b2f64f",
+  "chapterCount": 6,
+  "verseCount": 113,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-1-timothy-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 20,
+      "bytes": 138880,
+      "sha256": "18a06964ffdc8bcddb3216d3b4a8df12d804977506eb1a1de308622d5df86cc7",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-1-timothy-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 15,
+      "bytes": 159924,
+      "sha256": "694365b40a55ca70f22d5db54f9f58e47f588d15c7169f605f2964d6cc23374c",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-1-timothy-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 16,
+      "bytes": 160304,
+      "sha256": "7df2d1526eb373406094a1c9c5a05fe5b413fed6f22aa61842c655c8ea1f206c",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-1-timothy-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 16,
+      "bytes": 153346,
+      "sha256": "62624f2f065e35d3f4608d29a3a1ac995dfe0aa78a3bab4757e171a88d978fad",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-1-timothy-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 25,
+      "bytes": 170412,
+      "sha256": "4b8309b737d59cfcb4e43616542b3b9fe31f30aed0b58a3b2c7619acc6780b2a",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 6,
+      "src": "/assets/chapter-1-timothy-06-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 131794,
+      "sha256": "de1bdaf7914d14ffd464f6f07c9a58dc2c049d5546b1e1bd36970d019884032b",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 6,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 52,
+        "chapter": 3,
+        "verse": 0,
+        "position": 29,
+        "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 53,
+        "chapter": 1,
+        "verse": 0,
+        "position": 47,
+        "src": "/assets/chapter-1-timothy-01-opening-v1.webp"
+      },
+      "gap": 18
+    },
+    {
+      "a": {
+        "book": 53,
+        "chapter": 6,
+        "verse": 0,
+        "position": 139,
+        "src": "/assets/chapter-1-timothy-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 54,
+        "chapter": 1,
+        "verse": 0,
+        "position": 160,
+        "src": "/assets/chapter-2-timothy-01-opening-v1.webp"
+      },
+      "gap": 21
+    }
+  ],
+  "minimumInternalGap": 15,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; 1 Timothy existing 6 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 6
+}

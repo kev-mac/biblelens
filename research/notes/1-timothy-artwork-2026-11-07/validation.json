@@ -1,0 +1,93 @@
+{
+  "book": "1 Timothy",
+  "baseline": "a515b04b687d980cfd68248f9aab6b25f1b2f64f",
+  "commands": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache --registry=https://registry.npmjs.org",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "676d2932c81d0a296fba21d05fd1717830ef01a1d11cac039411bea7541f10d5"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/1-timothy-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "log": "/tmp/1-timothy-focused.log",
+      "logBytes": 384,
+      "logSha256": "c60e2eebc44b05d6bc26b78801bd322417c8647a15fc1cbaea48d264b728e115"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "log": "/tmp/1-timothy-full.log",
+      "logBytes": 24169,
+      "logSha256": "6dcb633d4c11d76f093b22603939b26ce58142b4befb2ff541c250d5d15d3d38"
+    }
+  ],
+  "sourcePreservation": "2010 production files including 1619 assets byte-identical; no added production paths.",
+  "sourceAudit": "source-audit.mjs passed",
+  "sitesComparison": "compare-sites.mjs passed; fresh credential read-only opening, clean frozen 386 mirror; no independent newer work. Cache absent, cloned once; reuse .release/sites-mirror.",
+  "focusedVerification": {
+    "chapters": 6,
+    "verses": 113,
+    "editions": [
+      "kjv",
+      "asv",
+      "web"
+    ],
+    "placements": 6,
+    "negativeMissingOpenerCases": 6,
+    "offlineNetworkCalls": 0,
+    "pinnedGitBlobsEqualSource": 1147,
+    "minimumInternalGap": 15,
+    "boundaryGaps": [
+      18,
+      21
+    ],
+    "sourceWorkerUnsignedNativeImageMatches": 6
+  },
+  "fullSuite": "Exit 1 at final browser smoke, scripts/check-release-smoke.mjs:31:32: /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell absent. All preceding checks passed; corpus readability remains inherited report-only, not strict.",
+  "browserControl": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill says: If cua_repl.js is unavailable, skip browser QA. No browser installation or alternate control route attempted.",
+  "publication": "Inherited automatic approval review rejected deployment of saved public build 386 and one evidence-backed retry pending explicit new approval. Parent explicitly prohibits publication/bypass. No save/deploy/mirror push/access change attempted. Frozen saved version/source/archive not modified.",
+  "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+  "liveHttp": "Inherited denied live HTTP/image/release:verify operations deferred without materially new relevant authorization. Local source-origin fixture does not verify live HTTP.",
+  "devices": "No callable Mac/device connector or configured VPN. Only unsigned www assets verified. Signing, signed public/www parity, physical install/query/launch pending; historical 359 is not a current device reading.",
+  "sync": "Unchanged and not retested. Inherited intermittent check-sync-disconnect.mjs assert(finishRead) unresolved, outside artwork scope.",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "nextBookStarted": false,
+  "gitIdentity": "Use established repository no-reply author/committer identity for checkpoint; do not change owner email privacy settings."
+}

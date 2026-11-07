@@ -1,0 +1,44 @@
+# 1 Timothy artwork review — 2026-11-07
+
+Reviewed **1 Timothy only**, reader book 53, from freshly fetched GitHub main `a515b04b687d980cfd68248f9aab6b25f1b2f64f`. Read AGENTS.md, RELEASING.md and the incoming 2 Thessalonians handoff first, then CLAUDE.md, current continuity guidance and historical 1 Timothy provenance. Fast-forwarded the clean older checkout without discarding edits or stashes. No 2 Timothy art opened or reviewed; only opener placement metadata supplies the outgoing spacing boundary.
+
+All **six existing chapter openers are retained**, with one before verse 1 per chapter and **zero Story placements, replacements or new images**. The active `src/assets/chapter-1-timothy-NN-opening-v1.webp` files remain 960×540 and total **914,660 bytes**. All **2,010 production files**, including **1,619 assets**, remain byte-identical to starting main. This adds review evidence and a handoff only; scripture, metadata, assets, renderers, dependencies, hosted pin and build number are unchanged. Still **unpublished build 388**, source fingerprint `279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278`.
+
+## Visual decisions
+
+Viewed all six originals separately at native 960×540, the actual approved Genesis 7 style file, six unscaled side-by-side style boards and six unscaled neighbor boards. The incoming neighbor is 2 Thessalonians 3; all five internal neighbors were compared. Temporary 1920×570 boards preserve original pixels plus labels under `/tmp/1-timothy-review/`; hashes and review status are in the continuity inventory. They are inspection aids, not app assets.
+
+| Chapter | Retained scene and textual role |
+| --- | --- |
+| 1 | Damaged, unoccupied boat on a rocky coast: shipwreck as a metaphor for lost faith/conscience, 1:18–19. It does not depict an actual wreck experienced by Paul, Timothy, Hymenaeus or Alexander, or the Acts 27 voyage. |
+| 2 | Quiet, empty courtyard with woven mats: prayer and a peaceful life, 2:1–2,8. Mats and architecture are imagined; no historical prayer site, gender-role tableau or Adam/Eve portrait asserted. |
+| 3 | Bread, jug, two cups and an open door: hospitality, 3:2. No named overseer's household, spouse, children or documented church location. |
+| 4 | Bread, lentils, olives and figs: food received with thanksgiving, 4:3–5. No exact apostolic menu or historical dietary reconstruction asserted. |
+| 5 | Bread, sealed jar and folded cloth at a doorway: practical provision for widows, 5:3–16. No widow's portrait, age or biography invented. Oil is the imagined intended jar content, not visibly proven. |
+| 6 | Plain cloak, bread and cup: contentment with food and clothing, 6:6–8. No identifiable Timothy, Paul, Pilate, servant or master depicted. |
+
+Inspected the damaged boat's planks/ribs/mast/rigging and intentional hull damage; mats, pergola and vine joins; pottery rims, handles and feet; lamp wick/flame; bread crust/crumb, legumes, olives and fig stalks; basket weave and handles; cloth folds/fringe; table/bench/shelf supports, doors/hinges and masonry. No definite malformed object, writing, signature or watermark was found. Cool blue coast/clouds, green courtyard/orchard, muted red textiles, blue glaze, purple cloth and a cool twilight/dawn landscape vary the palette while retaining grounded materials and restrained realism. Exact historical architecture, concealed geometry and time of day are not certified.
+
+There are **no visible humans, identifiable recurring groups or animals**. Face, complexion, hair, age/build, fingers/thumbs/limbs and animal comparisons therefore do not apply to these six assets. No generation/editing calls occurred. No new portrait anchor is established. Actual approved identity files would be mandatory inputs for any future identifiable recurring portrayal; descriptions alone would not suffice. Current Acts guidance supersedes obsolete candidate lists: Paul is not King Saul; the inactive first-journey v1 is not an anchor; the active arrest image is v2; Ephesus's artisan is not Paul. An anonymous Acts companion is not a certified Timothy portrait; Timothy is not Titus. Book order does not establish elapsed time or aging. Text mentions of Jesus, Adam, Eve, Pilate, Hymenaeus, Alexander, widows, elders, servants/masters or angels are not visible depictions here.
+
+## Preservation and checks
+
+`1-timothy-artwork-inventory-2026-11-07.json` records per-image hashes, text anchors, full-size inspection and spacing. `1-timothy-continuity-inventory-2026-11-07.json` records reference guidance and inspection boards. Reproducible current-source checks are in `1-timothy-artwork-2026-11-07/`; the historical initial-integration checker has an obsolete baseline and is not used as a current review gate.
+
+Passed locked official-registry npm installation, `build:mobile`, `check:images`, `check:mobile`, `check:release`, production-file preservation, fresh read-only Sites comparison and focused Worker/offline verification. All six chapters and **113 verses** preserve exact KJV/ASV/WEB values, types and field presence. No absent/empty edition fields occur in this book; inherited absences elsewhere remain intact. Verified six source/Worker/unsigned-native image matches, headings, alts, hidden generic captions, one opener before verse 1, six missing-opener rejection cases and **zero offline network calls**. Local immutable-origin fixtures are not live HTTP verification. Story mappings, anchors and small italic captions throughout the app remain unchanged.
+
+Minimum internal image distance is **15 verse positions**; all internal gaps are **20, 15, 16, 16, 25**. Boundaries are **18** from 2 Thessalonians 3→1 Timothy 1 and **21** from 1 Timothy 6→2 Timothy 1. No pair involving 1 Timothy is separated by fewer than five verses. No scripture or image was moved to hide spacing.
+
+Hosted pin remains pushed `1e26754b308a178be210fa0ee900415bcd3a3553`; all **1,147 pinned Git blobs** equal source. Source, local Worker and unsigned native release metadata match build 388/fingerprint above. Worker size **59,167,345 bytes**, SHA-256 `fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9`. Logs stay task-local; command results, log hashes and limitations are in `validation.json`.
+
+Fresh credential read-only opening found Sites main still **`64bea042655bc72df95a994a4b6c70237b2c3f5c`**, frozen saved build **386**, fingerprint `e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997`. The five known Matthew/Acts production differences and three canonical-only versioned assets are unchanged; zero mirror-only production files or independent newer work. The source helper is absent, so ordinary Git used hidden stdin and child-process-only authorization. No credential was written to disk or printed. Cache was absent, so cloned once; reuse `.release/sites-mirror` in this environment. Mirror remains clean and unpushed.
+
+## Exact blockers
+
+- **Publication held:** automatic approval review previously rejected deployment of saved public build 386 and one evidence-backed same-version retry pending explicit new approval. Held version `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05`. Parent explicitly prohibits publication or bypass. No save/deploy, mirror push, audience change, superseding version or alternate route attempted. Frozen saved source/archive untouched.
+- **Browser/full-suite QA incomplete:** fresh `npm run check` exits 1 at `scripts/check-release-smoke.mjs:31:32`, missing `/home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell`. All preceding checks passed; corpus readability remains inherited report-only. Managed mode has no callable `cua_repl.js`; the [Sites skill](skill://plugin_connector_1p_689987207de08191979cf68eca2941c6/sites/SKILL.md) says, “If `cua_repl.js` is unavailable, skip browser QA.” No browser installation, preview server or substitute managed-control route was attempted.
+- **Live release/image parity pending:** inherited denied live HTTP, image-byte and `release:verify` operations remain deferred without materially new relevant authorization. Local fixture responses do not establish live parity. Complete release-candidate archive remains incomplete.
+- **Native installation pending:** no callable Mac/device connector or configured VPN. Signing, signed `public` vs `www` comparison, physical install/query/launch remain pending. Build 359 is historical device information, not a fresh observation. Unsigned offline asset checks passed.
+- **Inherited sync issue:** sync source unchanged and not retested; intermittent `check-sync-disconnect.mjs` `assert(finishRead)` remains unresolved outside this artwork review.
+
+The outgoing handoff prepares **2 Timothy for a new cloud session only**. This session does not start that book.

@@ -1,0 +1,240 @@
+{
+  "scope": "1 Timothy only; no 2 Timothy art opened or reviewed. Its opener metadata used solely for spacing.",
+  "baseline": "a515b04b687d980cfd68248f9aab6b25f1b2f64f",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "style only; actual file viewed separately and beside all six originals; never identity for another person"
+  },
+  "priorInventories": [
+    "1-timothy-visual-continuity-audit-2026-11-04.md",
+    "1-timothy-continuity-inventory-2026-11-04.json",
+    "acts-continuity-inventory-2026-11-07.json",
+    "matthew-continuity-inventory-2026-11-07.json",
+    "2-thessalonians-continuity-inventory-2026-11-07.json"
+  ],
+  "visibleNamedPeople": [],
+  "visiblePeople": [],
+  "visibleGroups": [],
+  "visibleAnimals": [],
+  "textualMentionsAreNotDepictions": [
+    {
+      "names": [
+        "Paul",
+        "Timothy",
+        "Jesus Christ",
+        "Hymenaeus",
+        "Alexander"
+      ],
+      "verses": "1:1-3,12-20; 4:12; 6:20",
+      "finding": "No people visible. Paul is not King Saul; same-name Alexanders are not silently merged. Shipwreck is metaphorical and no Acts companion is assigned Timothy identity."
+    },
+    {
+      "names": [
+        "Adam",
+        "Eve"
+      ],
+      "verses": "2:13-14",
+      "finding": "No creation scene or ancestral portraits. Consult current Genesis continuity records and actual approved files before any future depiction."
+    },
+    {
+      "names": [
+        "Pontius Pilate"
+      ],
+      "verses": "6:13",
+      "finding": "Text alludes to Jesus confession, but cloak/bread scene depicts neither Pilate nor Jesus."
+    },
+    {
+      "names": [
+        "widows",
+        "elders",
+        "overseers",
+        "deacons",
+        "servants",
+        "masters",
+        "angels"
+      ],
+      "verses": "3; 5; 6",
+      "finding": "No visible recurring group or human age/relationship to certify; no named household, widow or assembly assigned to architecture. No ox depicted for the 5:18 quotation."
+    }
+  ],
+  "inheritedApprovedPaulGuidance": {
+    "sourceLedger": "acts-continuity-inventory-2026-11-07.json",
+    "paths": [
+      "src/assets/story-saul-s-conversion-v1.webp",
+      "src/assets/story-paul-in-philippi-v1.webp",
+      "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-shipwreck-and-rome-v1.webp"
+    ],
+    "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+    "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+    "cautions": "Actual files exist; hashes recorded below. Ledger guidance only: these portraits were not re-reviewed or used to generate art in this session. First-journey incompatible v1 remains inactive; v2 landscape is not a face reference. Ephesus artisan is not Paul. Council exact identities remain qualified."
+  },
+  "referenceFileHashes": [
+    {
+      "path": "src/assets/story-saul-s-conversion-v1.webp",
+      "sha256": "0b8b96c507d70183544aa2508a90d2de165eca27102c1eb9c9b8fa89e825ed47"
+    },
+    {
+      "path": "src/assets/story-paul-in-philippi-v1.webp",
+      "sha256": "58e0dcfc83147191569bca6d402c861e702f6386808e992d6c7b2139c22bc090"
+    },
+    {
+      "path": "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+      "sha256": "95e649dd6e3d16a2e23e9566ff60347a74ac22062d85c7d5ee1eaac81d6bc0f4"
+    },
+    {
+      "path": "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+      "sha256": "25ee4638b5b020e1a5eb8369764b5fbc3a2a991b0e3d95b22cf144397bdc04df"
+    },
+    {
+      "path": "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "sha256": "a59041966a232c7f272120a6f42e1a30dc6311e07ff3adf1d724ae337169c28c"
+    },
+    {
+      "path": "src/assets/story-shipwreck-and-rome-v1.webp",
+      "sha256": "bcd71f02072568b28dc375bb13a29bdd7fa6a1c563f0e3ad84650ef0e651200d"
+    }
+  ],
+  "timothyIdentity": "No new or certified Timothy face anchor. Do not infer him from an anonymous Acts companion, headband, clothing or position. Timothy is not Titus. Book order does not establish elapsed narrative time or aging.",
+  "inspection": {
+    "originalsViewedSeparatelyAtNativeSize": 6,
+    "nativeImageSize": [
+      960,
+      540
+    ],
+    "styleBoards": 6,
+    "neighborBoards": 6,
+    "boards": [
+      {
+        "path": "/tmp/1-timothy-review/style-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "069dda446457fe25cd6552a7b55c824962c767bcf0edc8eda1c1f4b928ac1514",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "f760347c3af9a59c034c9cad66df9d5da41c8a207d6f5c594199c114ffdf747f",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/style-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "880daee63c1b575fd3d71539a202fec98d433fd7a50d0ece4a71776188c66de6",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "3dbf40a2594006566ef6cb8fc33eb1ca34bddce56efacf53b9da1b3293ce5a1e",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/style-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "f00a87cbac41619095e124a167e2a8b19203e735bebd27c384fb0bb7d1448c25",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "1fd8899de355aadcbd6a85b74ec322f8493921fca72125131966dc012fbda98e",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/style-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "c31730972f74eac27d07ba9fc774698279c773c964bc78561a60fc4bf303cf72",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "d232f275494731b92ce50b00e0ac53c21bab3f4adeb7f3b9286feef696351221",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/style-5.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "a2a93eb16366adf147ab4f21e630a33e764bb08efa767e98c61cb8447ae2a3dc",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-5.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "107d6c16c2546f95d0464793a373b6dba428466c116a13eb763bdaf5a37ce133",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/style-6.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "55f14f1b53e03d034226e743baabfcb2529d764a0ee937ffaf521fd75ff06638",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/1-timothy-review/neighbor-6.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "a36df5b312ae006a66b2aaea6f5deda9d82548f45dde84aa25b2e22f4eddf213",
+        "viewed": true
+      }
+    ],
+    "incomingNeighbor": "src/assets/chapter-2-thessalonians-03-opening-v1.webp",
+    "outgoingNeighbor": "2 Timothy artwork not opened; metadata only.",
+    "anatomy": "No visible humans or animals: faces, fingers, thumbs, limbs, age/build/complexion comparisons not applicable to these six assets. Visible objects inspected at native size; hidden geometry not certified."
+  },
+  "generationCalls": 0,
+  "editingCalls": 0,
+  "actualIdentityInputs": "No generation/editing took place. Every future new identifiable recurring portrayal requires actual approved image files as visual inputs, not descriptions alone.",
+  "result": "Retain six existing openers; no definite object defect, text conflict or identity drift. No new portrait anchors."
+}
