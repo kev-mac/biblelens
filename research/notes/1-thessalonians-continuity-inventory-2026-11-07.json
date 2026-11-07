@@ -1,0 +1,186 @@
+{
+  "scope": "1 Thessalonians only; book 51",
+  "baseline": "a3544e7d1548eb4afa9931b6473eb6c900dac601",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "visiblePeople": [],
+  "visibleRecognizableGroups": [],
+  "visibleAnimals": [],
+  "generationCalls": 0,
+  "editingCalls": 0,
+  "actualIdentityInputsRequiredForFutureGeneration": true,
+  "newPortraitAnchors": [],
+  "textualMentions": [
+    {
+      "person": "Paul",
+      "places": [
+        "1:1",
+        "2:18"
+      ],
+      "visible": false,
+      "inheritedApprovedGuidance": {
+        "person": "Saul / Paul",
+        "references": [
+          "src/assets/story-saul-s-conversion-v1.webp",
+          "src/assets/story-paul-in-philippi-v1.webp",
+          "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp"
+        ],
+        "currentAppearances": [
+          "src/assets/story-saul-s-conversion-v1.webp",
+          "src/assets/story-the-jerusalem-council-v1.webp",
+          "src/assets/story-paul-in-philippi-v1.webp",
+          "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+          "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+          "src/assets/story-shipwreck-and-rome-v1.webp"
+        ],
+        "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+        "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+        "result": "Native conversion/council/Philippi/Athens/arrest/hearing/Malta face comparisons compatible. Corrected arrest v2 retains actual v1 identity, checked beside original and approved Athens/hearing inputs. Added two cuffs/two chain routes for 21:33\u201340. Earlier incompatible first-journey v1 remains inactive; v2 landscape adds no face. Ephesus silversmiths are not Paul. Council right listener Paul-compatible; not made a new unconditional anchor by clothing."
+      },
+      "qualification": "Guidance inherited from current Acts audit; not re-reviewed or used as generation input here. First-journey v1 remains inactive."
+    },
+    {
+      "person": "Silvanus / Timothy",
+      "places": [
+        "1:1",
+        "3:2",
+        "3:6"
+      ],
+      "visible": false,
+      "qualification": "Timothy is sent/returns in chapter 3. No person appears on the bridge/path; no clothing-based identification or standalone approved face inferred. Consult current Acts ledger before selecting any face."
+    },
+    {
+      "person": "Jesus Christ",
+      "places": [
+        "1:1,10",
+        "3:13",
+        "4:14-17",
+        "5:9-10"
+      ],
+      "visible": false,
+      "qualification": "No return/resurrection portrait added. Apply current Matthew/Luke/John ledgers if a later scene depicts Jesus."
+    },
+    {
+      "person": "Thessalonian church / families / saints",
+      "places": [
+        "1:1,6-9",
+        "2:7,11,14",
+        "3:13",
+        "4:9-18",
+        "5:3-8,26-27"
+      ],
+      "visible": false,
+      "qualification": "Nurse/father/children/light/thief/childbirth are comparisons, not visible figures. No named face or recurring human group certified."
+    }
+  ],
+  "chronology": "Book order is not elapsed time. 2:2 recalls Philippi; 3:1-2 left at Athens and Timothy sent; 3:6 Timothy returned. No prison setting, precise workshop/trade, exact road, year or aging inferred.",
+  "inspection": {
+    "originals": "Five active native 960x540 WebPs viewed separately",
+    "styleBoards": [
+      {
+        "path": "/tmp/thess-review/style-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "01a1cb32c252f2df7f0baaa648b0365e0a082d7f970c6705ce621649a1b0a08b",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/style-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "f120d6f2d9c427a04a78ca5eb8272089a66ac15d0cbedec7cfb6d6b67753651a",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/style-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "1d7d6ef2d9412ae9986df511e4c32b84955cd669eefc34edd1a75ad1a141d94d",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/style-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "64f7c49b42ae8d52c56f0d772cf60fc7e54c1a3471d10a422fd64e311d02a4f6",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/style-5.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "487634df59122bb21cfcc104e6c45c42c0fa2b4ca589495b1b7913a21b7881b4",
+        "viewed": true
+      }
+    ],
+    "neighborBoards": [
+      {
+        "path": "/tmp/thess-review/neighbor-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "b0cafef51461e1502648642d09fc2fc11adfbe2270fa4df86de48e7111999aac",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/neighbor-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "ce4b46ead44d0766fec6d55ff125f09ce057cd88bcdba6b71110a0353a7e16eb",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/neighbor-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "a26152981337f80d3e4622697c75ecd77d2be94a28cb4d5c014239aa64b14013",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/neighbor-4.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "28acbb93099687bd2371373ee67201687a3577cd50cc7e00d39375804c673bb0",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/thess-review/neighbor-5.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "94a4a362825b8ae4b36fa465cc341b4c83e94044aff5a6cba818d7c31cf88970",
+        "viewed": true
+      }
+    ]
+  },
+  "result": "All five images retained. No humans or animals; anatomy and facial identity comparisons inapplicable. No new identity image input needed because no generation/editing performed."
+}

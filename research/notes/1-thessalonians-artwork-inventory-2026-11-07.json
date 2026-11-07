@@ -1,0 +1,134 @@
+{
+  "book": "1 Thessalonians",
+  "baseline": "a3544e7d1548eb4afa9931b6473eb6c900dac601",
+  "chapters": 5,
+  "totalPlacements": 5,
+  "chapterOpeners": 5,
+  "storyPlacements": 0,
+  "retained": 5,
+  "replaced": 0,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "src": "/assets/chapter-1-thessalonians-01-opening-v1.webp",
+      "alt": "Imagined scene: A coastal road leads through green hills beside a blue sea.",
+      "width": 960,
+      "height": 540,
+      "bytes": 156468,
+      "sha256": "1071c7b0835561f31504c3ac7fd81065790c3d90ed353f158408f3a03e099d85",
+      "textBasis": "1:7-8: faith and the message spreading through Macedonia and Achaia. Coastal route illustrates transmission; it is no exact mapped road or claimed view of ancient Thessalonica.",
+      "fullSizeReview": "Native 960x540: tree branch/leaf attachments, tiled roof/stone wall joints, coastal village and road junctions, sea/horizon and hill shadows. Greens, blue sea/sky, gentle daylight. No people, silhouettes, animals or writing; no definite malformed object.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "src": "/assets/chapter-1-thessalonians-02-opening-v1.webp",
+      "alt": "Imagined scene: A small lamp lights cloth and tools for work at night.",
+      "width": 960,
+      "height": 540,
+      "bytes": 129318,
+      "sha256": "424390935d1b8ff2b61d1160a909126462cd5120120d64b7242d5a9b907fd90d",
+      "textBasis": "2:9: labouring night and day to avoid burdening recipients. Lamp, cloth and tools evoke manual work; this letter does not specify a trade, workshop or tent interior.",
+      "fullSizeReview": "Native 960x540: single lamp flame/wick/nozzle/handle, thread winding and loose strand, small comb/loom teeth, yarn basket weave/handles, pottery, coarse cloth fringe, table legs/plank and tent ropes. Warm lamplight balanced by deep blue night. No people, animals or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "src": "/assets/chapter-1-thessalonians-03-opening-v1.webp",
+      "alt": "Imagined scene: A stone bridge crosses a stream along a path through green hills.",
+      "width": 960,
+      "height": 540,
+      "bytes": 154824,
+      "sha256": "30f13f8fbfc8d82f69985eea5ef466fe03e160b3f0c2740715011daf28ecb821",
+      "textBasis": "3:1-2,6: left at Athens, Timothy sent and returned with news. Path and bridge evoke communication; no identifiable messenger, exact route or dated journey is asserted.",
+      "fullSizeReview": "Native 960x540: bridge arch voussoirs/parapet/abutments, path meeting crossing, stream through arch, water/rock boundaries, olive branches, grass and distant hills. Grey clouds, blue sky and green valley. No people/animals or definite structure defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "src": "/assets/chapter-1-thessalonians-04-opening-v1.webp",
+      "alt": "Imagined scene: Cloth, thread and simple tools rest on a quiet courtyard bench.",
+      "width": 960,
+      "height": 540,
+      "bytes": 140264,
+      "sha256": "0500b44713cc08c977cd5cce4d9ba705ba063676232096ad94009e9bd68a7b1e",
+      "textBasis": "4:11-12: quiet living and work with your hands. Unoccupied courtyard workbench illustrates manual labour; does not claim a named artisan or displace later resurrection teaching (4:13-18).",
+      "fullSizeReview": "Native 960x540: weaving-frame warp strands, spindles and shuttle, yarn basket, purple cloth folds/fringe, bench supports/joints, pottery rim, door/gate, vine/pergola attachment and distant hills. Purple cloth, green foliage and cool daylight. No people/animals or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 5,
+      "afterVerse": 0,
+      "src": "/assets/chapter-1-thessalonians-05-opening-v1.webp",
+      "alt": "Imagined scene: Dawn light fills a stone doorway beside a lamp at rest.",
+      "width": 960,
+      "height": 540,
+      "bytes": 116276,
+      "sha256": "3270da507c7c8b1a986b31848ceacffcd959f5d9ee7f56d1763fba8d2b6e8837",
+      "textBasis": "5:4-8: light, day, night and watchfulness imagery. Dawn and unlit lamp illustrate the metaphor; no literal thief, childbirth or returning Jesus scene.",
+      "fullSizeReview": "Native 960x540: door jamb/lintel grain and stone joinery, unlit lamp nozzle/handle/base, pot mouth, woven cloth/fringe, light/shadow, grass and hillside horizon. Cool blue-grey shade and restrained golden dawn. No people/animals or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "minimumInternalGap": 10,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 50,
+        "chapter": 4,
+        "verse": 0,
+        "position": 29546,
+        "src": "/assets/chapter-colossians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 51,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29564,
+        "src": "/assets/chapter-1-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 18
+    },
+    {
+      "a": {
+        "book": 51,
+        "chapter": 5,
+        "verse": 0,
+        "position": 29625,
+        "src": "/assets/chapter-1-thessalonians-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 52,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29653,
+        "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 28
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

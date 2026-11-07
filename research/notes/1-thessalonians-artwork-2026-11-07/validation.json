@@ -1,0 +1,107 @@
+{
+  "scope": "1 Thessalonians only",
+  "baseline": "a3544e7d1548eb4afa9931b6473eb6c900dac601",
+  "checks": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "localLog": "/tmp/biblelens-npm-install.log",
+      "logBytes": 629,
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "02f8d9436f4d60ae01c9153bfd265ae37a4ae0b1572a4ef17e25f22ce1f44d7f"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/thess-all.log",
+      "logBytes": 24169,
+      "logSha256": "e3fc35879d45040553842eadf9ce27596c35ade77c7d6c30cfce387a36013a14"
+    },
+    {
+      "command": "node research/notes/1-thessalonians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-focused.log",
+      "logBytes": 383,
+      "logSha256": "8e9b631ad86803312bc2f0b6c078ced992934068c050ecba92c0cdd75226ec26"
+    },
+    {
+      "command": "node research/notes/1-thessalonians-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/thess-mirror.log",
+      "logBytes": 1182,
+      "logSha256": "ab1afde0e84b4259d07f459bdc4a01df919739f0ab979f79707ad304fc0e3ca9"
+    }
+  ],
+  "additionalPassed": [
+    "source audit: 2010 production files/1619 assets unchanged",
+    "three evidence scripts node --check",
+    "git diff --check",
+    "all 1147 pinned Git blobs equal source"
+  ],
+  "fullSuiteBlocker": {
+    "status": "failed",
+    "stage": "scripts/check-release-smoke.mjs:31:32",
+    "error": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "precedingChecks": "Nonbrowser/content/readability/search stages passed; readability remains inherited report-only."
+  },
+  "browserQA": {
+    "status": "not run",
+    "managedSitesMode": true,
+    "supportedCuaReplToolAvailable": false,
+    "reason": "Sites SKILL.md requires skipping browser QA without cua_repl.js. No preview server, browser installation or substitute control route."
+  },
+  "publication": {
+    "status": "blocked by inherited automatic approval-review denial; no publication attempted here",
+    "target": "saved public build 386",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Explicit new approval required; parent prohibits publication or bypass. One evidence-backed same-version retry was previously denied.",
+    "mirrorEditedOrPushed": false,
+    "accessChanged": false,
+    "newVersionSaved": false,
+    "substituteRouteAttempted": false
+  },
+  "liveVerification": {
+    "status": "deferred",
+    "reason": "Inherited denied live HTTP/image/release:verify operations; no materially new relevant authorization. Focused Worker image fixture is local, not live HTTP."
+  },
+  "physicalDevices": {
+    "status": "pending",
+    "callableMacDeviceConnector": false,
+    "vpnConfigured": false,
+    "reason": "Cannot sign, compare signed public vs www, install, query or launch devices with tools available here. No historical installed version claimed current."
+  },
+  "sync": {
+    "changed": false,
+    "retested": false,
+    "inheritedBlocker": "Intermittent scripts/check-sync-disconnect.mjs assert(finishRead), outside artwork scope."
+  },
+  "releaseCandidateArchive": "Not produced; no publication attempt",
+  "nextBookStarted": false
+}
