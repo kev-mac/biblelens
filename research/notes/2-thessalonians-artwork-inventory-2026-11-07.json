@@ -1,0 +1,102 @@
+{
+  "book": "2 Thessalonians",
+  "baseline": "dcf47bf1fa0e11f17b66cf5799130f83a573831f",
+  "chapters": 3,
+  "totalPlacements": 3,
+  "chapterOpeners": 3,
+  "storyPlacements": 0,
+  "retained": 3,
+  "replaced": 0,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An olive tree shades weathered stone benches in a quiet courtyard, with rainwater gathered across the paving.",
+      "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 163546,
+      "sha256": "ce1f53b952bfa1bf1cd28e5858aa7ae4f133b3e1dbcce44f9cd69e0a9a7f9532",
+      "textBasis": "1:3-4: growing faith, love and endurance. Olive courtyard is a thematic illustration, not a documented meeting place or an event described by verse 1.",
+      "fullSizeReview": "Native 960x540: olive trunk roots/branches/leaf connections, vines/pergola beams, three benches and their supports, wet flagstones/reflections, jar rims/handles, masonry, grass and distant hills. Blue storm clouds, green leaves and cool daylight. No people, animals, writing or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A blank parchment letter rests beside a reed pen and clay inkpot in a sunlit room.",
+      "src": "/assets/chapter-2-thessalonians-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 101072,
+      "sha256": "33aa78c3b1157e667cad9eebbfc541805d9a0946f1a6f05314245ecad1e05ead",
+      "textBasis": "2:2,15: letters allegedly from the writers and received teaching by letter. Blank parchment avoids inventing an authentic document, quotation or authorship conclusion; no portrait of the lawless one.",
+      "fullSizeReview": "Native 960x540: blank parchment edges/curl, reed pen split tip, inkpot rim/mouth, paperweight, bench/table grain/joints, purple textile folds/fringe, basket handles/weave, jar rims/handles, shutter hinges/panels, olive branches/hill horizon. Soft natural daylight. No people/animals, invented writing or definite object defect.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Evening lamplight falls across an empty workshop, with hand tools, woven cloth and bread beside the doorway.",
+      "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 107306,
+      "sha256": "b83c5d83845a72c154cbd405eb4fd446ab9c9f6ee7c84d9da574b7a9ea984105",
+      "textBasis": "3:8-12: work night and day, quiet labor and eating earned bread. Tools, cloth, bread and lamplight evoke this theme; no exact trade, named artisan or historical workshop asserted.",
+      "fullSizeReview": "Native 960x540: single lamp flame/wick/nozzle and handle, pottery mouth, hammer head/shaft junction, chisel tip/handle, open divider pivot and paired legs, cloth folds/fringe, bread crust/plate/cup rims, stool supports, bench braces, woven basket/handle, door hinges/ring, upright boards and stone masonry. Cool blue dusk with local amber lamp and muted red cloth. No people, animals or definite malformed object.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "minimumInternalGap": 12,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 51,
+        "chapter": 5,
+        "verse": 0,
+        "position": 29625,
+        "src": "/assets/chapter-1-thessalonians-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 52,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29653,
+        "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 28
+    },
+    {
+      "a": {
+        "book": 52,
+        "chapter": 3,
+        "verse": 0,
+        "position": 29682,
+        "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 53,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29700,
+        "src": "/assets/chapter-1-timothy-01-opening-v1.webp"
+      },
+      "gap": 18
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

@@ -1,0 +1,125 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "2 Thessalonians",
+  "canonicalBaseline": "dcf47bf1fa0e11f17b66cf5799130f83a573831f",
+  "chapterCount": 3,
+  "verseCount": 47,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 12,
+      "bytes": 163546,
+      "sha256": "ce1f53b952bfa1bf1cd28e5858aa7ae4f133b3e1dbcce44f9cd69e0a9a7f9532",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-2-thessalonians-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 17,
+      "bytes": 101072,
+      "sha256": "33aa78c3b1157e667cad9eebbfc541805d9a0946f1a6f05314245ecad1e05ead",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 107306,
+      "sha256": "b83c5d83845a72c154cbd405eb4fd446ab9c9f6ee7c84d9da574b7a9ea984105",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 3,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 51,
+        "chapter": 5,
+        "verse": 0,
+        "position": 61,
+        "src": "/assets/chapter-1-thessalonians-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 52,
+        "chapter": 1,
+        "verse": 0,
+        "position": 89,
+        "src": "/assets/chapter-2-thessalonians-01-opening-v1.webp"
+      },
+      "gap": 28
+    },
+    {
+      "a": {
+        "book": 52,
+        "chapter": 3,
+        "verse": 0,
+        "position": 118,
+        "src": "/assets/chapter-2-thessalonians-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 53,
+        "chapter": 1,
+        "verse": 0,
+        "position": 136,
+        "src": "/assets/chapter-1-timothy-01-opening-v1.webp"
+      },
+      "gap": 18
+    }
+  ],
+  "minimumInternalGap": 12,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; 2 Thessalonians existing 3 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 3
+}

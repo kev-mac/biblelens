@@ -1,0 +1,66 @@
+{
+  "book": "2 Thessalonians",
+  "baseline": "dcf47bf1fa0e11f17b66cf5799130f83a573831f",
+  "commands": [
+    {
+      "command": "npm ci --cache /tmp/2-thess-npm-cache --no-audit --no-fund",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "a3e6deded10b060a573d8fc4374bc19a8ec92ede16214410f3bfe2fcbee93704"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/2-thessalonians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "log": "/tmp/2-thess-focused.log",
+      "logBytes": 383,
+      "logSha256": "b8f0903e560db96e1b3924c9378f56933f314776b235575ebdc46f6e251b7d60"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "log": "/tmp/2-thess-full.log",
+      "logBytes": 24169,
+      "logSha256": "2aa8c7db1b52a3cf88d16d819ec3a0d00b1a744cabbeb25cf543d8bc27c6ebad"
+    }
+  ],
+  "sourcePreservation": "2010 production files including 1619 assets byte-identical; no added production paths.",
+  "sourceAudit": "source-audit.mjs passed",
+  "sitesComparison": "compare-sites.mjs passed; clean frozen 386 mirror, no independent newer work.",
+  "fullSuite": "Failed at final browser smoke: Chromium headless shell 1248 missing, scripts/check-release-smoke.mjs:31:32. Preceding checks passed; readability report-only.",
+  "browserControl": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill prohibits installing/substituting control in this mode.",
+  "publication": "Inherited automatic-review rejection of saved public 386; no publish/save/mirror push/access change/bypass attempted.",
+  "liveHttp": "Inherited denied live HTTP/images/release:verify remain deferred; fixture is not live HTTP verification.",
+  "devices": "No callable Mac/device connector or configured VPN; unsigned assets only; signing, signed parity, installation, launch pending.",
+  "sync": "Unchanged; not retested. Inherited check-sync-disconnect.mjs assert(finishRead) unresolved.",
+  "nextBookStarted": false,
+  "gitIdentity": "Initial push rejected by GitHub GH007 email privacy guard. Review commit amended to established repository no-reply author/committer identity before retry; no email privacy setting changed."
+}

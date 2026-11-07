@@ -1,0 +1,157 @@
+{
+  "book": "2 Thessalonians",
+  "id": 52,
+  "baseline": "dcf47bf1fa0e11f17b66cf5799130f83a573831f",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "styleUse": "Actual file viewed separately and on three unscaled boards; style only, never identity.",
+  "currentAppearances": [
+    {
+      "chapter": 1,
+      "path": "src/assets/chapter-2-thessalonians-01-opening-v1.webp",
+      "visiblePeople": [],
+      "visibleAnimals": []
+    },
+    {
+      "chapter": 2,
+      "path": "src/assets/chapter-2-thessalonians-02-opening-v1.webp",
+      "visiblePeople": [],
+      "visibleAnimals": []
+    },
+    {
+      "chapter": 3,
+      "path": "src/assets/chapter-2-thessalonians-03-opening-v1.webp",
+      "visiblePeople": [],
+      "visibleAnimals": []
+    }
+  ],
+  "relevantNamedFigures": [
+    {
+      "person": "Paul / Saul of Tarsus",
+      "verses": [
+        "1:1",
+        "3:17"
+      ],
+      "visible": false,
+      "approvedEarlierGuidance": {
+        "person": "Saul / Paul",
+        "references": [
+          "src/assets/story-saul-s-conversion-v1.webp",
+          "src/assets/story-paul-in-philippi-v1.webp",
+          "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp"
+        ],
+        "currentAppearances": [
+          "src/assets/story-saul-s-conversion-v1.webp",
+          "src/assets/story-the-jerusalem-council-v1.webp",
+          "src/assets/story-paul-in-philippi-v1.webp",
+          "src/assets/story-thessalonica-athens-and-corinth-v1.webp",
+          "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+          "src/assets/story-paul-before-felix-festus-and-agrippa-v1.webp",
+          "src/assets/story-shipwreck-and-rome-v1.webp"
+        ],
+        "stableTraits": "Medium-brown complexion, prominent angular nose, deep-set brown eyes, natural dark curls, full dark beard, lean adult build; modest gray appears later. Haircut/beard length can vary.",
+        "age": "Conversion precedes journeys by years; arrest/hearings/Malta separated by a few years with two-year custody in Acts 24:27. No exact age asserted. New v2 depicts same arrest instant as v1, no aging.",
+        "result": "Native conversion/council/Philippi/Athens/arrest/hearing/Malta face comparisons compatible. Corrected arrest v2 retains actual v1 identity, checked beside original and approved Athens/hearing inputs. Added two cuffs/two chain routes for 21:33\u201340. Earlier incompatible first-journey v1 remains inactive; v2 landscape adds no face. Ephesus silversmiths are not Paul. Council right listener Paul-compatible; not made a new unconditional anchor by clothing."
+      },
+      "qualification": "Inherited current Acts approved ledger, not re-reviewed or supplied to generation in this session. First-journey v1 inactive; arrested v2 current. Romans through 1 Thessalonians add no portrait."
+    },
+    {
+      "person": "Silvanus / Timothy",
+      "verses": [
+        "1:1"
+      ],
+      "visible": false,
+      "qualification": "No standalone face inferred from anonymous travel companion, clothing, headband or position. Consult current Acts ledger and actual approved references before any new portrait. Timothy differs from Titus."
+    },
+    {
+      "person": "Jesus Christ / angels / saints / Thessalonian assembly",
+      "verses": [
+        "1:1-12",
+        "2:1,8,13-16",
+        "3:1-6,12,16-18"
+      ],
+      "visible": false,
+      "qualification": "No congregation, return, angels or named portrait appears. Jesus requires current Matthew/Luke/John anchors if later depicted."
+    },
+    {
+      "person": "man of lawlessness / Satan / opponents / idle brothers",
+      "verses": [
+        "2:3-12",
+        "3:2,6-15"
+      ],
+      "visible": false,
+      "qualification": "No invented historical identity or portrait. No literalized group, anatomy or relationships added."
+    }
+  ],
+  "chronology": "No exact location, authorship verdict, dated journey, prison or trade asserted. Epistle order is not elapsed narrative time; no aging inferred. Parchment is blank, not a facsimile of 3:17 signature.",
+  "inspection": {
+    "nativeOriginals": "Three active 960x540 WebPs viewed separately. No visible human/animal anatomy; hidden anatomy not certified.",
+    "boards": [
+      {
+        "path": "/tmp/2-thess-review/style-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "b3c976198f0cf1c46d3e389749c10009e7dc1582d8996c2cf15404361b63f6bb",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-thess-review/neighbor-1.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "3200e9f6c8c11ce5c6e5eef115b7a043605099012990966dc83b7ef2680ceb1d",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-thess-review/style-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "57af3f92e3cee7be626c479b08302c63f5c1e339a9f37ca44aa537b3dee00dbb",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-thess-review/neighbor-2.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "af403fecae287d320d7f602fe41cd3155bc087999fabb2ed7bdd8564973a368e",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-thess-review/style-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "8fd153306e0d79ff9935862b4f78307e28e06ce2e06e55c306ec470bb2d14238",
+        "viewed": true
+      },
+      {
+        "path": "/tmp/2-thess-review/neighbor-3.png",
+        "size": [
+          1920,
+          570
+        ],
+        "unscaled": true,
+        "sha256": "2a168f5d1b1d3b1b6b42052e8cbbae6d2a5ebb3e8daceeb8c1aa7e901492c1b2",
+        "viewed": true
+      }
+    ],
+    "incomingNeighbor": "src/assets/chapter-1-thessalonians-05-opening-v1.webp",
+    "outgoingNeighbor": "1 Timothy art not opened; metadata only spacing check."
+  },
+  "generationCalls": 0,
+  "actualIdentityInputs": "Not required because no generation/editing occurred. Future identifiable recurring portraits require actual approved files as image inputs.",
+  "result": "All three retained; no identity drift, definite object defect, or text conflict requiring replacement. No new portrait anchors."
+}
