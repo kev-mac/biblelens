@@ -1,0 +1,25 @@
+[
+  {
+    "key": "gideon",
+    "paths": [
+      "/workspace/biblelens/src/assets/story-gideon-and-the-midianites-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "prompt": "Edit FIRST image only, retain 16:9 composition, same Gideon identity and soldiers, same dark ridge and broken jar/Midian camp. Correct the hand assignment to Judges7:20: torch must be in Gideon's anatomical LEFT hand (on image RIGHT) and ram-horn trumpet in his anatomical RIGHT hand (on image LEFT). Correct all visible soldiers similarly: LEFT torches, RIGHT trumpets. Preserve anatomically correct arms wrists thumbs five fingers natural grips. Gideon must remain same long angular medium-brown face strong nose dark loose natural curls full dark beard and lean athletic adult build from FIRST image; same age. SECOND image is STYLE ONLY grounded natural light/materials believable cinematic realism restrained illustration, never Noah or anyone else as Gideon. No text. Save result locally and return exact path."
+  },
+  {
+    "key": "samson",
+    "paths": [
+      "/workspace/biblelens/src/assets/story-samson-v1.webp",
+      "/workspace/biblelens/src/assets/chapter-genesis-07-opening-v1.webp"
+    ],
+    "prompt": "Edit FIRST image only. Retain 16:9 landscape, same Samson face/complexion/long dark natural curly hair full dark beard muscular build age clothing and dawn rocky hill setting. Correct missing city gate components per Judges16:3: Samson carries the TWO WOODEN DOOR LEAVES of Gaza's gate TOGETHER WITH TWO POSTS AND THE BAR, as one uprooted assembly on his shoulders. Existing scene is only an empty inverted-U frame without doors. Show clear attached sturdy plank door panels and crossbar with the two posts, angled naturally across/behind his shoulders without hiding his face or inventing extra limbs. Strong coherent shoulder support and hand grips, five fingers, two sound arms/legs. Gate opening in distant town should be visibly empty, no intact gate doors there. No gore. SECOND image is STYLE ONLY grounded cinematic realism natural materials restrained illustrative finish, not identity. No text. Save locally return exact path."
+  },
+  {
+    "key": "chapter11",
+    "paths": [
+      "/workspace/biblelens/src/assets/chapter-judges-11-opening-v1.webp"
+    ],
+    "prompt": "Edit this existing BibleLens chapter landscape preserving exactly its 16:9 composition, stormy landscape stone village traveler from rear animals light and natural restrained cinematic realism. Remove the tiny white accidental logo/lettering in the extreme TOP LEFT corner; fill the few affected pixels naturally with existing leaves/sky. No other text or signatures anywhere. Retain all people and objects and credible anatomy. Save locally return exact path."
+  }
+]

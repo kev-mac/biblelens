@@ -1,0 +1,64 @@
+[
+  {
+    "key": "gideon",
+    "originalSrc": "/assets/story-gideon-and-the-midianites-v1.webp",
+    "src": "/assets/story-gideon-and-the-midianites-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-cc692fe0-d10b-4a99-b707-45d3eec66067.png",
+    "generatedSha256": "0ac7834a0e5173d7b75257e5274a0d931f1aff5710852c4620657e18cb409370",
+    "originalSha256": "f1bdc0c2fa33c93c6bc890cac9e848b1c3619c04774d66cd22656743ba935882",
+    "sha256": "fdf5361f5b08cc33eb2c9747223a723fd1ec0c8421db9f9f01fbbdd3946b7417",
+    "bytes": 185606,
+    "actualVisualInputs": [
+      {
+        "path": "src/assets/story-gideon-and-the-midianites-v1.webp",
+        "sha256": "f1bdc0c2fa33c93c6bc890cac9e848b1c3619c04774d66cd22656743ba935882"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Judges7:20: torch anatomical LEFT (image right), trumpet RIGHT (image left); visible soldiers corrected too. Same long angular brown face, dark loose curls, full beard, lean adult build; hands, thumbs, arms, knees and feet reviewed beside original.",
+    "accepted": true
+  },
+  {
+    "key": "samson",
+    "originalSrc": "/assets/story-samson-v1.webp",
+    "src": "/assets/story-samson-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-a877d542-ffe9-418c-aa93-d74eb09294cd.png",
+    "generatedSha256": "77489b13c47aee0358cbac26c1f1e2a4e420991ae259d3a0d451b1500fccb5d4",
+    "originalSha256": "5dff84ef94b42a65cc885822b16c156515dcdbb92fc4c6ae20ada0bf20a3827a",
+    "sha256": "11b01fb50eeff6cd81f702f2ba91aadcba2a69846a9f0dc8e81ce1d2dc92673f",
+    "bytes": 197504,
+    "actualVisualInputs": [
+      {
+        "path": "src/assets/story-samson-v1.webp",
+        "sha256": "5dff84ef94b42a65cc885822b16c156515dcdbb92fc4c6ae20ada0bf20a3827a"
+      },
+      {
+        "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+        "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+      }
+    ],
+    "review": "Judges16:3: added two attached plank doors and bar to existing two-post assembly carried at shoulders; distant gate now empty. Same angular brown face, long natural dark curls, full beard, muscular adult build. Grips, shoulders, arms and feet reviewed beside original.",
+    "accepted": true
+  },
+  {
+    "key": "chapter11",
+    "originalSrc": "/assets/chapter-judges-11-opening-v1.webp",
+    "src": "/assets/chapter-judges-11-opening-v2.webp",
+    "generatedPath": "/workspace/generated_images/exec-9111fdd7-0b69-43d3-9457-db483e06374e.png",
+    "generatedSha256": "8aad52ef1e78797e2695ffefc6029be97a6dc75c42dd52463ab71d30e6a7dfd6",
+    "originalSha256": "e59bef26e56135077f22800ea166656eb2e289c0a7f6baeceba68337ba98bf8e",
+    "sha256": "64ae5f98b38a9c55035df41ba05080b7cbd4c2db4938d347898edd648ff379c8",
+    "bytes": 186022,
+    "actualVisualInputs": [
+      {
+        "path": "src/assets/chapter-judges-11-opening-v1.webp",
+        "sha256": "e59bef26e56135077f22800ea166656eb2e289c0a7f6baeceba68337ba98bf8e"
+      }
+    ],
+    "review": "Removed stray white lettering at top left. Preserved anonymous rear-view traveler, animals, village and stormy Gilead landscape; no Jephthah face asserted.",
+    "accepted": true
+  }
+]
