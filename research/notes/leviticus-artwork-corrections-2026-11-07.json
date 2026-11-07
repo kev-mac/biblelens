@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-07",
+  "baseline": "7c810f77e6ab653b9af284d1378de6a7ac26b6f1",
+  "targetBuild": 362,
+  "tool": "Built-in image generation/editing with actual image inputs",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "replacements": [
+    {
+      "key": "gen4",
+      "original": "src/assets/chapter-leviticus-04-v2.webp",
+      "asset": "src/assets/chapter-leviticus-04-v3.webp",
+      "reason": "Restored elderly Aaron beside the female goat (4:27–31); twelve breastplate stones. Restored the ceremonial gold forehead plate with blue cord (8:9; Exodus28:36–38).",
+      "actualVisualInputs": [
+        "src/assets/chapter-leviticus-04-v2.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "width": 960,
+      "height": 540,
+      "bytes": 141890,
+      "sha256": "894f38f7edc359d6baaa1b4ffdcbcec42955b8ea995f48f1eaaf7a9ec8fe1ee5",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "initialGenerationSha256": "a4340ff7c2e6e6347833770379b49f4078eb3d4d895828663c95b8d65b69b84f",
+      "generatedOriginalSha256": "51fc0f400a50c4382e8bff72a09931632c1564d5650c4004585b6674035d639f",
+      "goldPlateEditVisualInputs": [
+        "src/assets/chapter-leviticus-04-v3.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
+      "goldPlateEditInputSha256": "4039fafb85258592cb07a92d45e4adc72657553ca660c1dcfcfccf530b34f54f"
+    },
+    {
+      "key": "gen8",
+      "original": "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+      "asset": "src/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+      "reason": "Corrected fifteen breastplate stones to twelve (Exodus28:17–21 / Leviticus8:8) while retaining the same elderly Moses/Aaron and visible adult sons. Restored the ceremonial gold forehead plate with blue cord (8:9; Exodus28:36–38).",
+      "actualVisualInputs": [
+        "src/assets/story-aaron-and-his-sons-are-ordained-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-leviticus-04-v3.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 185162,
+      "sha256": "6043e78f1e7d9fbe1bd924892269bbf7fdb091ee11a52e0de4d8effb82bf6cc3",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "initialGenerationSha256": "90d884edc736c54abb027b65ed3cff782f36bdcf9e5665e1d25e7ccd93077e62",
+      "generatedOriginalSha256": "227fa3e9e19fac0c3450640ae31c27ea12b7a0a7de4f23bcda1b17d0073d1f6c",
+      "goldPlateEditVisualInputs": [
+        "src/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
+      "goldPlateEditInputSha256": "04c308740ce6c3f8e0530e59bcfb01304012b0f5ddcaf595757c1bb709342b53"
+    },
+    {
+      "key": "gen9open",
+      "original": "src/assets/chapter-leviticus-09-opening-v1.webp",
+      "asset": "src/assets/chapter-leviticus-09-opening-v2.webp",
+      "reason": "Restored Aaron at 83 with his calf and ram (9:1–4). Restored the ceremonial gold forehead plate with blue cord (8:9; Exodus28:36–38).",
+      "actualVisualInputs": [
+        "src/assets/chapter-leviticus-09-opening-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-leviticus-04-v3.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "width": 960,
+      "height": 540,
+      "bytes": 155992,
+      "sha256": "60d7b162ead27f6d18abc3a7fcf5e91e6d5fc8ef03fa1ddf9631fa0acfe8ffab",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "initialGenerationSha256": "73b9a333b832f9f3490d82124eb917846a4588606f53d787e024d640505cd95d",
+      "generatedOriginalSha256": "3d391b005c13a12d00decfe9624a60ce2893189a22078f511b46e80cb346abb7",
+      "goldPlateEditVisualInputs": [
+        "src/assets/chapter-leviticus-09-opening-v2.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
+      "goldPlateEditInputSha256": "9399275f4b579852b3d43841ba1a44f196bef69775ebdcb413b2d8132297ab60"
+    },
+    {
+      "key": "gen9",
+      "original": "src/assets/chapter-leviticus-09-v1.webp",
+      "asset": "src/assets/chapter-leviticus-09-v2.webp",
+      "reason": "Restored Moses’ natural gray curls, brown face and lean build and the same elderly Aaron blessing the assembly (9:23–24). Restored the ceremonial gold forehead plate with blue cord (8:9; Exodus28:36–38).",
+      "actualVisualInputs": [
+        "src/assets/chapter-leviticus-09-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-leviticus-18-v1.webp",
+        "src/assets/chapter-leviticus-09-opening-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "width": 960,
+      "height": 540,
+      "bytes": 140330,
+      "sha256": "1d81d93d5fb6ed8b6ba2d6717c029c61fbecee01acf933d67ad7e214d7bc1c17",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "initialGenerationSha256": "6084a4e1e5d4505b7b0aa2e4f75e73b4fc0b9f3a3f0ebb9efbdd1afec7fb374c",
+      "generatedOriginalSha256": "889ab29b178def73a778ba4c34be9845789590ea34cae935c65bffbd04e662bb",
+      "goldPlateEditVisualInputs": [
+        "src/assets/chapter-leviticus-09-v2.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
+      "goldPlateEditInputSha256": "5295ae581cbf22d9f36327b608dafec95421817387cdabd33e2c74cac40ea08e"
+    },
+    {
+      "key": "gen12",
+      "original": "src/assets/chapter-leviticus-12-v1.webp",
+      "asset": "src/assets/chapter-leviticus-12-v2.webp",
+      "reason": "Restored Aaron’s elderly likeness; a year-old lamb with ONE bird follows 12:6 rather than mixing the two-bird alternative in 12:8. Same mother, newborn and companion. Restored the ceremonial gold forehead plate with blue cord (8:9; Exodus28:36–38).",
+      "actualVisualInputs": [
+        "src/assets/chapter-leviticus-12-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-leviticus-04-v3.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "width": 960,
+      "height": 540,
+      "bytes": 149206,
+      "sha256": "24c19e8028971f280e705b6af6b6e3302aec4e548ee3402b8860bf93d78fbaab",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution.",
+      "initialGenerationSha256": "eec03e04caf4e952dcc3f475eea95e4a7993fa1dc2f6273c3bfc9120875b0e07",
+      "generatedOriginalSha256": "0b68f04a2ba8b081073e91fa6b3ecc71c56dc84029b3375fb98b1df13d865b65",
+      "goldPlateEditVisualInputs": [
+        "src/assets/chapter-leviticus-12-v2.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "goldPlateEditInputNote": "First input was the intermediate encoded WebP at the same eventual source path, before the forehead-plate edit. Its SHA-256 is recorded below.",
+      "goldPlateEditInputSha256": "b7c81e2613cd6e9daec29710ef8e9ef7a18eb4473ea63eceb01bf6cf07f303b4"
+    },
+    {
+      "key": "gen16",
+      "original": "src/assets/chapter-leviticus-16-v1.webp",
+      "asset": "src/assets/chapter-leviticus-16-v2.webp",
+      "reason": "Restored Aaron’s compact elderly likeness; both hands on live goat and plain white linen for 16:4,21. Same unnamed escort.",
+      "actualVisualInputs": [
+        "src/assets/chapter-leviticus-16-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-leviticus-04-v3.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "generatedOriginalSha256": "da8aa2005e1482a4dc8c9bc92bcdfb9b97010e7db4eae24f473eb6b2315ec0c7",
+      "width": 960,
+      "height": 540,
+      "bytes": 137624,
+      "sha256": "6fee4b32e799c8ef3567242d246e7aff2b20b95e050642c5ef264308153552b0",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution."
+    },
+    {
+      "key": "gen24",
+      "original": "src/assets/story-the-blasphemer-stoned-v1.webp",
+      "asset": "src/assets/story-the-blasphemer-stoned-v2.webp",
+      "reason": "Restored Moses’ long lined brown face, prominent nose, gray curls and lean build at the pre-sentence hearing (24:10–12); retained accused adult and witnesses.",
+      "actualVisualInputs": [
+        "src/assets/story-the-blasphemer-stoned-v1.webp",
+        "src/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-leviticus-18-v1.webp",
+        "src/assets/chapter-genesis-07-opening-v1.webp"
+      ],
+      "actualVisualInputsNote": "References to replacements generated in this session were supplied as the accepted full-resolution PNG corresponding to the recorded packaged WebP; all other inputs were the actual repository WebP files. Final Genesis7 input is style only.",
+      "generatedOriginalSha256": "508175efd9f689df45cf7f41d2084c00fd2c21b27b078895e14443581eee30ef",
+      "width": 1200,
+      "height": 675,
+      "bytes": 201440,
+      "sha256": "8806525c384f45d32ca107516d7ba20f761d4412943b8d9d28225a2e4be9d95a",
+      "encodingQuality": 88,
+      "review": "Accepted after full-size scene, verse, face, complexion, hair, age, build, hand/finger/thumb/limb and animal checks. Compared final encoded WebP beside approved court/fitting anchors and nearby Leviticus depictions. No unresolved identifiable continuity break; small background faces and hidden digits remain bounded by resolution."
+    }
+  ]
+}
