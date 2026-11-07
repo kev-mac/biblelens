@@ -25,3 +25,7 @@ No Mac connector, configured VPN/device route, Xcode/xcrun or attached physical 
 Spacing: no Esther internal gap below five (minimum 11); Nehemiah→Esther 31. **Esther 10:0 → Job 1:1 is four positions**; retain both required openers and inspect during eventual phone/iPad QA. Do not move Story anchors merely to manufacture spacing. Inherited 1 Samuel 7:0→7:2 close pair remains separately documented.
 
 After denial, check uncertain outcomes and fresh trusted user messages using `user_message_read.read_messages`. Retry the same known-unexecuted action once only per materially new relevant evidence, never bypass. Owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca` explicitly authorizes book-by-book commit/push/publish/install on available devices. Record exact final publication outcome before handoff.
+
+## Confirmed Esther publication
+
+Review commit **19e811b** is pushed to GitHub main. Mirror **01d49d40ed6a26e46885f6229abbe6eb3edae5f2** is pushed, with no mirror rebuild. Sites **version 365**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_7f78b43913148191ab93bf2329efb791`, deployment **appgdep_6aeeb6ba96e481918ad26c544778be6d**, returned **succeeded**, https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file Worker-only archive; public/D1 retained. Build 370/fingerprint unchanged. No denial or pending deployment remains from this session. Final canonical publication notes are newer than mirror; reconcile them next session. No live HTTP or signed-device verification is implied.

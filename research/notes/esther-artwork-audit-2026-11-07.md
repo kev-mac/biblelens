@@ -54,3 +54,7 @@ Managed Sites mode is `1`; discovery found no callable `cua_repl.js`/desktop Jav
 No Mac connector, configured VPN/device route, Xcode or xcrun is available. Signing, signed App.app/public versus www comparison and physical iPhone/iPad installation/query/launch remain deferred. Build 359 is historical device information, not a fresh query. Neither a passing local test nor a Sites deployment proves synchronized devices.
 
 Stop after Esther. The next-book handoff is `job-artwork-handoff-from-esther-2026-11-07.md`; it carries the unresolved checks and actual reference requirements without beginning Job in this session.
+
+## Confirmed publication
+
+Review commit **19e811b** is pushed to GitHub main. Sites mirror **01d49d40ed6a26e46885f6229abbe6eb3edae5f2** is pushed with the exact already-built Worker. Sites **version 365**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_7f78b43913148191ab93bf2329efb791`, deployment **appgdep_6aeeb6ba96e481918ad26c544778be6d**, returned **succeeded** at https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file Worker-only archive, content hash `sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa`; public audience and D1 preserved. Build/fingerprint unchanged. No automatic approval rejection or pending deployment remains in this session. Live HTTP and signed-device verification remain deferred. Final publication documents are newer than the mirror; reconcile next session without changing production fingerprint.
