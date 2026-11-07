@@ -1,0 +1,111 @@
+name: Split the accepted build 393 artifacts
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/package-build-393-artifacts.yml
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  partition-accepted-artifact:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/browser-checks-393'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - name: Download only the already accepted immutable artifact
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
+        with:
+          repository: kev-mac/biblelens
+          run-id: 42420559428
+          artifact-ids: '13593936841'
+          github-token: ${{ github.token }}
+          path: original
+          skip-decompress: true
+          digest-mismatch: error
+
+      - name: Verify provenance and partition without rebuilding or editing bundles
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, shutil, tarfile, zipfile
+          expected_release = {'version':'1.1.0','buildNumber':393,'sourceHash':'0cd367da96e2f1c732a7b6c77cee0e42237b7b63f1e99ef06737873713eb1bf3'}
+          original_sha = 'bf64b6d4adf0b99fdadd5629dfa0ee77ded47aa6448f6d9c07df59c092bbdaae'
+          def digest(path):
+              value = hashlib.sha256()
+              with path.open('rb') as source:
+                  for chunk in iter(lambda: source.read(1048576), b''): value.update(chunk)
+              return value.hexdigest()
+          archives = [path for path in pathlib.Path('original').rglob('*') if path.is_file()]
+          assert len(archives) == 1, [str(path) for path in archives]
+          assert digest(archives[0]) == original_sha
+          original = pathlib.Path('accepted')
+          with zipfile.ZipFile(archives[0]) as archive:
+              for item in archive.infolist():
+                  name = pathlib.PurePosixPath(item.filename)
+                  assert not name.is_absolute() and '..' not in name.parts
+                  assert ((item.external_attr >> 16) & 0o170000) != 0o120000
+              archive.extractall(original)
+          manifest = json.loads((original/'.release/browser-ci/prepared-manifest.json').read_text())
+          assert manifest['release'] == expected_release
+          assert manifest['ciCommit'] == '6ce241ddc8b596d9a99beba107e555a9e75819e2'
+          assert manifest['canonicalSourceBase'] == 'dfce76427c8c31c472de580f4db37672cc7036a3'
+          assert manifest['signedNativeAssets'] is False
+          bundle = original/'.release/browser-ci/prepared-bundles.tar.gz'
+          inner_sha = (original/'.release/browser-ci/prepared-bundles.sha256').read_text().split()[0]
+          assert digest(bundle) == inner_sha
+          with tarfile.open(bundle, 'r|gz') as archive:
+              verified = set()
+              for item in archive:
+                  if item.name in ['dist/client/release.json','www/release.json']:
+                      assert json.load(archive.extractfile(item)) == expected_release
+                      verified.add(item.name)
+                  elif item.name == 'dist/server/index.js':
+                      value = hashlib.sha256()
+                      stream = archive.extractfile(item)
+                      for chunk in iter(lambda: stream.read(1048576), b''): value.update(chunk)
+                      assert value.hexdigest() == manifest['workerSha256']
+                      verified.add(item.name)
+              assert len(verified) == 3
+          bundles = pathlib.Path('verified-bundles')
+          visuals = pathlib.Path('visual-qa')
+          def copy(name, destination):
+              target = destination/name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(original/name, target)
+          for name in ['.release/browser-ci/prepared-bundles.tar.gz','.release/browser-ci/prepared-bundles.sha256','.release/browser-ci/prepared-manifest.json','.release/browser-ci/source-release.json','dist/client/release.json','www/release.json']:
+              copy(name, bundles)
+          for folder in ['.release/reader-annotations','.release/explore-annotations','.release/evidence-tags']:
+              shutil.copytree(original/folder, visuals/folder)
+          for log in (original/'.release/browser-ci').glob('*.log'):
+              copy(log.relative_to(original), visuals)
+          provenance = {'verifiedSourceRun':42420559428,'originalArtifact':13593936841,'originalArtifactZipSha256':original_sha,'preparedBundlesSha256':inner_sha,'release':expected_release,'manifest':manifest,'bundleBytesUnchanged':True,'testsRerun':False}
+          for destination in [bundles, visuals]:
+              target = destination/'.release/browser-ci/repack-provenance.json'
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_text(json.dumps(provenance, indent=2)+'\n')
+              total = sum(path.stat().st_size for path in destination.rglob('*') if path.is_file())
+              assert total < 536870912, total
+              print(destination, total, 'uncompressed bytes; exact accepted provenance verified')
+          PY
+
+      - name: Retain the exact verified web and unsigned-native bundles
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-393-exact-verified-bundles
+          path: verified-bundles/
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: error
+
+      - name: Retain the actual screenshots, case matrices and logs separately
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-393-visual-qa
+          path: visual-qa/
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: error
