@@ -1,0 +1,140 @@
+{
+  "book": "Lamentations",
+  "canonicalBaseline": "2825aad",
+  "chapterCount": 5,
+  "verseCount": 154,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-lamentations-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 93684,
+      "sha256": "b55622543778b6741096c7c2594cb5c2feaa7f9e7db41fbc25b398f3c1fef4ba",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-lamentations-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 146996,
+      "sha256": "b0ca2df1cdeb3ea58fb15bc5481221e64a590dcf242ee8ef52a1c846fecbe1b4",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-lamentations-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 66,
+      "bytes": 150428,
+      "sha256": "0738a0f4516bc1c2057e212018c9bcdb89cb48f0736fc3175b60fb13e12ed653",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-lamentations-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 107286,
+      "sha256": "7bdeb1609d4ee93fccf8fe85e290e35e450929376ce63a7958ea16e9e271ea88",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-lamentations-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 22,
+      "bytes": 162708,
+      "sha256": "98f10e26879d4a24b223da9be4bf75e9e42ec0b9babc8c99ed2bc3c547a0520a",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 5,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 23,
+        "chapter": 52,
+        "verse": 0,
+        "position": 1331,
+        "src": "/assets/chapter-jeremiah-52-opening-v1.webp"
+      },
+      "b": {
+        "book": 24,
+        "chapter": 1,
+        "verse": 0,
+        "position": 1365,
+        "src": "/assets/chapter-lamentations-01-opening-v1.webp"
+      },
+      "gap": 34
+    },
+    {
+      "a": {
+        "book": 24,
+        "chapter": 5,
+        "verse": 0,
+        "position": 1497,
+        "src": "/assets/chapter-lamentations-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 25,
+        "chapter": 1,
+        "verse": 1,
+        "position": 1519,
+        "src": "/assets/story-ezekiel-s-vision-and-commission-v2.webp"
+      },
+      "gap": 22
+    }
+  ],
+  "minimumInternalGap": 22,
+  "baselineAssetFilesPreserved": 1615,
+  "hostedPin": "c9cf480cdea56656c333159a07ebe354fea7676f",
+  "pinnedBlobsEqualSource": 1144,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 373,
+    "sourceHash": "fc763631fd368a66f5b020a87679bc6d298fe0523460ee8876612b7eb125581f"
+  },
+  "workerBytes": 59616907,
+  "workerSha256": "97655b8b62961a7628ab59178bebcb9aa5be87de97e0dce9d7a5190ae21fafbf",
+  "originFixtureCalls": 5
+}
