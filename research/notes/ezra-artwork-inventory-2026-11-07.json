@@ -1,0 +1,241 @@
+{
+  "book": "Ezra",
+  "canonicalBaseline": "3f9904606c116003786283eb85ce324e5eb70b34",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "chapterCount": 10,
+  "verseCount": 280,
+  "chapterImages": 4,
+  "storyImages": 6,
+  "activePlacements": [
+    {
+      "book": 14,
+      "chapter": 1,
+      "src": "/assets/story-cyrus-s-decree-and-the-return-v2.webp",
+      "alt": "Families travel with bundled belongings and covered vessels on donkeys.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Cyrus's Decree and the Return",
+      "kind": "Story",
+      "position": 1,
+      "bytes": 197002,
+      "sha256": "e47394390e424df1021a4beaa9925f0d7f401b98ec5ed688ab1a5eafb889a6bb",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Travel bundles, gifts and a folded garment rest in a damaged stone courtyard.",
+      "src": "/assets/chapter-ezra-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 11,
+      "bytes": 120382,
+      "sha256": "cf96760cd3faed78336c645b880523d815e88f5ecb7a33731c83625b0847b216",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 3,
+      "src": "/assets/story-rebuilding-the-altar-and-foundation-v1.webp",
+      "alt": "People gather with mixed joy and tears as workers lay temple foundations.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Rebuilding the Altar and Foundation",
+      "kind": "Story",
+      "position": 82,
+      "bytes": 168628,
+      "sha256": "cc503552eebcf4b446efacffa924839aa7d59383057a65d44fc25dc39fd74f4b",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 4,
+      "src": "/assets/story-opposition-and-delay-v1.webp",
+      "alt": "Officials and builders meet beside an unfinished wall and a sealed letter.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Opposition and Delay",
+      "kind": "Story",
+      "position": 95,
+      "bytes": 95186,
+      "sha256": "5d5a0f121aa54243cda68fa517601100f274bd53395bbc9ea439e706b86ed000",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 5,
+      "src": "/assets/story-the-temple-completed-v1.webp",
+      "alt": "Priests, musicians and families gather before a completed temple.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "The Temple Completed",
+      "kind": "Story",
+      "position": 119,
+      "bytes": 112716,
+      "sha256": "a52631ae71a61bf077748117b6f4a3ee935936c206117d9fa345e9cc59051050",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 6,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An open scroll rests on a table among stored records in a palace archive.",
+      "src": "/assets/chapter-ezra-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 135,
+      "bytes": 111780,
+      "sha256": "caa0dd16859e52445239ed7a32f5b60165405423a1d2103a3441ef55840c0a02",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 7,
+      "src": "/assets/story-ezra-comes-to-jerusalem-v1.webp",
+      "alt": "Ezra leads travelers carrying scroll bundles beside a river.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Ezra Comes to Jerusalem",
+      "kind": "Story",
+      "position": 158,
+      "bytes": 128694,
+      "sha256": "c348b5e3a47a7d8d297b03608a3f583d840cd423316823c8858b65f7fdf077fd",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 8,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Balance scales and metal vessels stand beside packed gifts at a river camp.",
+      "src": "/assets/chapter-ezra-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 185,
+      "bytes": 161266,
+      "sha256": "73276f046dea9a549ff8f13469b3bd501df79cd31a3eccc5a513cdc972493fed",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 9,
+      "src": "/assets/story-ezra-and-mixed-marriages-v1.webp",
+      "alt": "Ezra and an assembled crowd sit solemnly in the rain outside a temple.",
+      "width": 1200,
+      "height": 675,
+      "verse": 1,
+      "title": "Ezra and Mixed Marriages",
+      "kind": "Story",
+      "position": 222,
+      "bytes": 136688,
+      "sha256": "ea148c511a0153db98c3ea398b069a60745f12a631b9608ec03bf35390476e87",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    },
+    {
+      "book": 14,
+      "chapter": 10,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A seated assembly gathers in heavy rain outside a temple doorway.",
+      "src": "/assets/chapter-ezra-10-opening-v2.webp",
+      "width": 960,
+      "height": 540,
+      "verse": 0,
+      "kind": "chapter",
+      "position": 236,
+      "bytes": 135260,
+      "sha256": "1f4ae4b37af3afbefcbc5ea767370e3083be73a7dbbd69b459cd58c8ec75b18d",
+      "visualReview": "Native-size WebP inspected; retained",
+      "decision": "retain"
+    }
+  ],
+  "byChapter": [
+    {
+      "chapter": 1,
+      "verses": 11,
+      "images": 1
+    },
+    {
+      "chapter": 2,
+      "verses": 70,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "verses": 13,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "verses": 24,
+      "images": 1
+    },
+    {
+      "chapter": 5,
+      "verses": 17,
+      "images": 1
+    },
+    {
+      "chapter": 6,
+      "verses": 22,
+      "images": 1
+    },
+    {
+      "chapter": 7,
+      "verses": 28,
+      "images": 1
+    },
+    {
+      "chapter": 8,
+      "verses": 36,
+      "images": 1
+    },
+    {
+      "chapter": 9,
+      "verses": 15,
+      "images": 1
+    },
+    {
+      "chapter": 10,
+      "verses": 44,
+      "images": 1
+    }
+  ],
+  "minimumInternalSpacing": 10,
+  "closePairs": [],
+  "boundaryGaps": [
+    23,
+    45
+  ],
+  "pinnedCommit": "c87ed7459451ea3e2b3400eed783def11f017291",
+  "pinnedBlobsMatch": 1142,
+  "sourceWorkerOfflineParity": true,
+  "offlineEngineNetworkForbidden": true,
+  "scriptureAndMetadataPreserved": true,
+  "originFixtureOnly": true,
+  "workerBytes": 59888449,
+  "workerSha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2"
+}
