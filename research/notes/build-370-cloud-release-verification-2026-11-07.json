@@ -129,6 +129,20 @@
   "syncFlake": "Passing unchanged sync checks does not establish the inherited intermittent bounded-settle failure fixed.",
   "dependencySetup": "First npm ci failed unwritable default /home/agent/.npm cache; repeated once with workspace cache succeeded without dependency input changes.",
   "publication": {
-    "status": "pending source packaging"
+    "status": "succeeded",
+    "sitesVersion": 360,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_7a3ca209a4d4819191531aaa9ef9b8df",
+    "mirrorCommit": "07b57d75723a605e42e022ba8bfa511397280c5b",
+    "canonicalVerificationCommit": "3199d5b",
+    "deploymentId": "appgdep_6aeeaae2044c8191a0d905c4b77eaec2",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveFiles": 6,
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "localCompressedArchiveSHA256": "7d89c157999c8b5ea227f77d383785db93a3c4d92297ae9720c3c9ee99652c1f",
+    "workerBytes": 59888449,
+    "workerNotRebuiltInMirror": true,
+    "sourceMirrorOfflineFingerprintsEqual": true,
+    "publicAudiencePreserved": true,
+    "approvalReview": "First identical public deployment rejected by automatic approval review, reason: no trusted publishing authorization in transcript. Saved-version query confirmed deployment_id null. Fresh user_message_read.read_messages retrieved owner message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizing book-by-book commits/push/publish/available-device installation. Same saved-version operation retried once and succeeded. No bypass or pending approval/deployment."
   }
 }
