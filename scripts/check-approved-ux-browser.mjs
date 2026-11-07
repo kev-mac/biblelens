@@ -78,7 +78,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    assert(colors.every(c=>c.color===c.icon),'icon and label inherit the same state color');
    if(theme==='dark')assert(colors.filter(c=>!c.disabled).every(c=>c.color==='rgb(255, 255, 255)'),'available actions are white');
    assert(colors.filter(c=>c.disabled).every(c=>c.color!=='rgb(255, 255, 255)'),'unavailable actions retain a dim tint');
-   for(const selector of ['.directory-settings-open','.directory-filter-open','.directory-filter-open>span']){
+   for(const selector of ['.directory-filter-open','.directory-filter-open>span']){
     assert.equal(await page.locator('#characters-view .stories-header '+selector).evaluate(n=>getComputedStyle(n).borderTopWidth),'0px',selector);
    }
    await fits();await page.screenshot({path:`${report}/${engine}-${width}-${theme}-people.png`,fullPage:true});

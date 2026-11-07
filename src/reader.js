@@ -390,7 +390,25 @@ document.addEventListener('pointerdown',()=>document.body.classList.remove('keyb
 
 // Keep the same reader controls in Settings at every viewport width.
 // Passage navigation uses a separate dialog so reader settings stay independent.
-let passagePicker=null,passagePickerRequest=0;
+let passagePicker=null,passagePickerRequest=0,passageReferenceRequest=0;
+async function navigateTypedPassage(){
+ const input=$('#passage-reference'),status=$('#passage-reference-status'),go=$('#passage-reference-go'),value=input.value.trim(),request=++passageReferenceRequest;
+ const parse=window.BibleLensWorkspace.parseReference,ref=parse(value)||parse(value+' 1');
+ const invalid=message=>{input.setAttribute('aria-invalid','true');status.textContent=message;input.focus({preventScroll:true});};
+ if(!ref){invalid('Enter a Bible reference, such as Exodus 1:8.');return;}
+ go.disabled=true;status.textContent='Opening passage…';input.removeAttribute('aria-invalid');
+ try{
+  const chapter=await readerJson(`/api/chapter?book=${ref.book}&chapter=${ref.chapter}`);
+  if(request!==passageReferenceRequest||!passagePicker.open||input.value.trim()!==value)return;
+  if(ref.verse&&(!chapter.verses.some(v=>v.n===ref.verse)||!chapter.verses.some(v=>v.n===(ref.endVerse||ref.verse)))){invalid('That verse is not in this chapter. Check the number and try again.');return;}
+  const verse=ref.verse?'/'+ref.verse+(ref.endVerse>ref.verse?'-'+ref.endVerse:''):'';
+  passagePicker.close();window.BibleLensWorkspace.navigate(`#read/${ref.book}/${ref.chapter}${verse}`);
+ }catch{if(request===passageReferenceRequest&&passagePicker.open)status.textContent='Could not open this chapter. Your reference is kept. Try again.';}
+ finally{if(request===passageReferenceRequest)go.disabled=false;}
+}
+function cancelTypedPassage(){
+ passageReferenceRequest++;$('#passage-reference-go').disabled=false;$('#passage-reference').removeAttribute('aria-invalid');$('#passage-reference-status').textContent='';
+}
 function passageNumberGrid(field,numbers,preferred){
  const selected=numbers.includes(preferred)?preferred:numbers[0];
  $('#'+field).value=String(selected||'');
@@ -420,8 +438,12 @@ function setPassageStep(step){
 function openPassagePicker(){
  if(!books.length)return;
  if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
-  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to Passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div id="passage-translation"></div><nav class="passage-steps" aria-label="Passage selection"><button type="button" data-passage-step="book">Book</button><button type="button" data-passage-step="chapter">Chapter</button><button type="button" data-passage-step="verse">Verse</button></nav><fieldset data-passage-pane="book"><legend>Book</legend><input type="hidden" id="passage-book"><div class="passage-testaments" role="group" aria-label="Book collection"><button type="button" data-book-testament="old">Old Testament</button><button type="button" data-book-testament="new">New Testament</button><button type="button" data-book-testament="lost">Lost Books</button></div><div id="passage-book-grid" class="passage-book-grid"></div></fieldset><div class="passage-picker-fields"><fieldset data-passage-pane="chapter"><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset data-passage-pane="verse"><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read Passage</button></form>';document.body.append(passagePicker);
+  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to Passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div class="passage-reference-entry"><label for="passage-reference">Type a Reference</label><div class="passage-reference-controls"><input type="text" id="passage-reference" maxlength="80" placeholder="Exodus 1:8" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" aria-describedby="passage-reference-help passage-reference-status"><button type="button" id="passage-reference-go">Go</button></div><p id="passage-reference-help">Enter a book name, with a chapter and verse if needed. Or use the grids below.</p><p id="passage-reference-status" role="status" aria-live="polite" aria-atomic="true"></p></div><div id="passage-translation"></div><nav class="passage-steps" aria-label="Passage selection"><button type="button" data-passage-step="book">Book</button><button type="button" data-passage-step="chapter">Chapter</button><button type="button" data-passage-step="verse">Verse</button></nav><fieldset data-passage-pane="book"><legend>Book</legend><input type="hidden" id="passage-book"><div class="passage-testaments" role="group" aria-label="Book collection"><button type="button" data-book-testament="old">Old Testament</button><button type="button" data-book-testament="new">New Testament</button><button type="button" data-book-testament="lost">Lost Books</button></div><div id="passage-book-grid" class="passage-book-grid"></div></fieldset><div class="passage-picker-fields"><fieldset data-passage-pane="chapter"><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset data-passage-pane="verse"><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read Passage</button></form>';document.body.append(passagePicker);
   $('#passage-translation').append($('#reader-edition').closest('label'));
+  $('#passage-reference-go').onclick=navigateTypedPassage;
+  $('#passage-reference').onkeydown=event=>{if(event.key==='Enter'&&!event.isComposing){event.preventDefault();void navigateTypedPassage();}};
+  $('#passage-reference').oninput=cancelTypedPassage;
+  passagePicker.addEventListener('click',event=>{if(event.target.closest('[data-passage-step],[data-book-testament],input[type=radio]'))cancelTypedPassage();});
   passagePicker.addEventListener('click',ev=>{const testament=ev.target.closest('[data-book-testament]');if(testament){renderPassageBooks(testament.dataset.bookTestament);return;}const step=ev.target.closest('[data-passage-step]');if(step)setPassageStep(step.dataset.passageStep);});passagePicker.addEventListener('click',ev=>{
    // Radio changes omit an already-selected choice; clicks also cover that tap and keyboard activation.
    const choice=ev.target;if(!choice.matches('input[type="radio"]'))return;
@@ -431,8 +453,9 @@ function openPassagePicker(){
   });
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('read',false);loadChapter(b,ch,v);};
-  passagePicker.addEventListener('close',()=>{passagePickerRequest++;document.querySelector('.passage-heading-picker')?.focus({preventScroll:true});});
+  passagePicker.addEventListener('close',()=>{passagePickerRequest++;passageReferenceRequest++;($('#ux-chapter-picker')||document.querySelector('.passage-heading-picker'))?.focus({preventScroll:true});});
  }
+ $('#passage-reference').value='';$('#passage-reference').removeAttribute('aria-invalid');$('#passage-reference-status').textContent='';$('#passage-reference-go').disabled=false;
  $('#passage-book').value=readingBook;renderPassageBooks();setPassageStep('book');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);setPassageStep('book');passagePicker.showModal();
 }
 document.addEventListener('click',ev=>{

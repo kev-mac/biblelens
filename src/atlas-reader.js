@@ -18,7 +18,7 @@
 
   const controls=document.createElement('div');controls.className='ux-reader-controls';
   const svg=path=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="${path}"/></svg>`;
-  controls.innerHTML=`<button type="button" id="ux-chapter-picker" aria-label="Choose chapter"></button><button type="button" id="ux-font-less" aria-label="Decrease text size">A−</button><button type="button" id="ux-font-more" aria-label="Increase text size">A+</button><button type="button" id="ux-font-style" aria-label="Use serif app font">${svg('M4 20 12 4l8 16M7 14h10')}</button><button type="button" id="ux-prev" aria-label="Previous chapter">${svg('m15 5-7 7 7 7')}</button><button type="button" id="ux-next" aria-label="Next chapter">${svg('m9 5 7 7-7 7')}</button>`;
+  controls.innerHTML=`<button type="button" id="ux-chapter-picker" aria-label="Choose chapter" aria-haspopup="dialog" aria-controls="passage-picker"></button><button type="button" id="ux-font-less" aria-label="Decrease text size">A−</button><button type="button" id="ux-font-more" aria-label="Increase text size">A+</button><button type="button" id="ux-font-style" aria-label="Use serif app font">${svg('M4 20 12 4l8 16M7 14h10')}</button><button type="button" id="ux-prev" aria-label="Previous chapter">${svg('m15 5-7 7 7 7')}</button><button type="button" id="ux-next" aria-label="Next chapter">${svg('m9 5 7 7-7 7')}</button>`;
   readingBar.prepend(controls);
   const typePanel=document.createElement('div');typePanel.className='ux-type-panel';typePanel.hidden=true;
   typePanel.append(document.getElementById('ux-font-less'),document.getElementById('ux-font-more'),document.getElementById('ux-font-style'));readingBar.after(typePanel);
@@ -26,7 +26,6 @@
   controls.append(aa);
   controls.querySelector('#ux-chapter-picker').after(document.querySelector('.lens-edition-label'));
   readingBar.append(document.getElementById('lens-focus'));
-  document.querySelector('.chapter-bottom').append(document.getElementById('lens-compare'));
   document.querySelector('.lens-reading-actions').hidden=true;
   const control=id=>document.getElementById(id);
   control('ux-chapter-picker').onclick=()=>chapter.querySelector('.passage-heading-picker')?.click();
@@ -37,7 +36,6 @@
    if(!reading)return;
    const lost=!!books[readingBook]?.collection;
    control('lens-focus').disabled=lost;control('lens-focus').title=lost?'Evidence links are not available for these books yet.':'';
-   control('lens-compare').hidden=lost;
    control('lens-edition').disabled=lost;control('reader-edition').disabled=lost;
    control('lens-edition').value=lost?'kjv':control('reader-edition').value;
    let label=control('lost-reader-edition');
@@ -49,25 +47,12 @@
    const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;const arrow=document.createElement('span');arrow.className='ux-picker-arrow';arrow.textContent=' ▾';chapterLabel.append(arrow);
    control('ux-chapter-picker').replaceChildren(bookLabel,chapterLabel);
    control('ux-chapter-picker').setAttribute('aria-label',reading.name+' '+reading.chapter+'. Choose chapter');
-   requestAnimationFrame(fitPassageLabel);
    control('ux-prev').disabled=readingBook===0&&readingChapter===1;
    control('ux-next').disabled=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;
    control('ux-font-style').setAttribute('aria-label',['lora','georgia'].includes(readerPreferences.appFont)?'Use sans serif app font':'Use serif app font');
    control('ux-font-less').disabled=Number(state.textScale)<=1.02;control('ux-font-more').disabled=Number(state.textScale)>=1.8;
   }
   window.addEventListener('biblelens:statechange',updateControls);
-  // Long passage names yield space to the fixed edition and evidence controls.
-  function fitPassageLabel(){
-   const picker=control('ux-chapter-picker');picker.style.removeProperty('font-size');
-   if(innerWidth>=768||!picker.clientWidth)return;
-   const labels=[...picker.children];
-   for(let size=parseFloat(getComputedStyle(document.documentElement).fontSize);size>=9;size-=.25){
-    picker.style.fontSize=size+'px';
-    if(labels.reduce((sum,node)=>{const range=document.createRange();range.selectNodeContents(node);return sum+range.getBoundingClientRect().width;},0)+3<=picker.clientWidth+.1)break;
-   }
-  }
-  new ResizeObserver(fitPassageLabel).observe(readingBar);
-  document.fonts.ready.then(fitPassageLabel);
   function decorateHeading() {
     if (typeof reading === 'undefined' || !reading) return;
     const row=chapter.querySelector('.chapter-heading-row');

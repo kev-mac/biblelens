@@ -55,7 +55,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    const active=await page.locator('.verse.lens-active-verse').evaluate(n=>({right:n.getBoundingClientRect().right,column:n.closest('#chapter-text').getBoundingClientRect().right,bg:getComputedStyle(n).backgroundColor}));
    assert(Math.abs(active.right-active.column)<=2);assert.equal(active.bg,'rgba(99, 102, 241, 0.08)');
    await page.locator('[data-context-close]').click();await page.evaluate(()=>scrollTo(0,0));
-   const compare=await page.locator('#lens-compare').evaluate(n=>({wrap:getComputedStyle(n).whiteSpace,...n.getBoundingClientRect().toJSON()}));assert.equal(compare.wrap,'nowrap');assert(compare.width>=44);
+   assert.equal(await page.locator('#lens-compare').count(),0,'Reader footer has no Compare button');
    rows.push({engine,width,theme,mode,verses:measured.length,availableRightGap:Math.max(...measured.map(x=>Math.abs(x.rightGap))),targets:targets.map(x=>x.id)});
    await page.screenshot({path:`${root}/ux11-shots/${prefix}-${engine}-${width}-${theme}-${mode}.png`});
   }

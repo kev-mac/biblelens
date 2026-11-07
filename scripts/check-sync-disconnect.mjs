@@ -30,8 +30,13 @@ try{
  app=client(storage,{fetcher});await settle();assert.equal(app.meta().token,null);assert(!app.meta().disconnectPending);
  console.log('PASS: already-revoked/expired tokens clear on 401 without enabling sync.');
  // Pause a document read, then turn sync off while it is in flight.
- const third=await fixture.pair();storage.set(key,JSON.stringify({enabled:true,base:{},owner:third.userId,token:third.token}));let finishRead;
- app=client(storage,{fetcher:async(url,options)=>url.endsWith('/document')&&!options.method?new Promise(resolve=>{finishRead=resolve;}):fetcher(url,options)});await settle();assert(finishRead);
+ const third=await fixture.pair();storage.set(key,JSON.stringify({enabled:true,base:{},owner:third.userId,token:third.token}));let finishRead,startRead,deadline;
+ const readStarted=new Promise(resolve=>{startRead=resolve;});
+ app=client(storage,{fetcher:async(url,options)=>url.endsWith('/document')&&!options.method?new Promise(resolve=>{finishRead=resolve;startRead();}):fetcher(url,options)});
+ // Account lookup hashes a token asynchronously. Wait for the held request,
+ // rather than assuming a fixed number of event-loop turns completes that work.
+ try{await Promise.race([readStarted,new Promise((_,reject)=>{deadline=setTimeout(()=>reject(Error('Document read did not start within five seconds')),5000);})]);}finally{clearTimeout(deadline);}
+ assert(finishRead);
  await app.click('Turn Off Sync');finishRead(Response.json({revision:1,data:{notes:{remote:'Must not apply after disconnect'}}}));await settle();
  assert.equal(app.context.applied,0);assert.equal(app.context.state.notes.offline,'Keep offline notes');assert.equal(app.meta().enabled,false);assert.equal(app.meta().token,null);
  console.log('PASS: a late sync response cannot apply cloud data or restore credentials after disconnect.');

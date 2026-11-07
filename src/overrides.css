@@ -2104,7 +2104,7 @@ html body.lens-app #main>section>h1{font-size:2.375rem!important;font-weight:500
 
 html body.lens-app #main #chat-view h1{font-size:2.375rem!important;font-weight:500;line-height:1.12;letter-spacing:-1.6px}
 
-html body.lens-app #read-view .study-library{display:block;margin-top:28px}
+
 
 /* UX2 restores the Phase 2 palette (5cf2cda), shared by web and native. */
 html body.lens-app {--lens-paper:#f6f7fb;--lens-surface:#fff;--lens-ink:#1c2235;--lens-muted:#62697d;--lens-rule:#e7e9f1;--lens-copper:#4056cf;--lens-link:#4056cf;--lens-focus:#4056cf;--lens-copper-soft:#edf0ff;--lens-link-soft:#edf0ff;--bg:var(--lens-paper);--panel:var(--lens-surface);--ink:var(--lens-ink);--muted:var(--lens-muted);--green:var(--lens-link);--soft:var(--lens-control-bg);--line:var(--lens-rule);--brand-accent:var(--lens-link);
@@ -2683,7 +2683,7 @@ html body.lens-app{--ux13-base:#f6f7fb;--ux13-surface:#fff;--ux13-ink:#182333;--
 html body.lens-app.dark{--ux13-base:#0B0E14;--ux13-surface:#141A23;--ux13-ink:#F8FAFC;--ux13-white:#fff;--ux13-copy:#CBD5E1;--ux13-muted:#94A3B8;--ux13-subtle:#94A3B8;--ux13-indigo:#A5B4FC;--ux13-header:rgba(11,14,20,.85);--ux13-card:rgba(20,26,35,.7);--ux13-card-strong:rgba(20,26,35,.75);--ux13-rule:rgba(255,255,255,.08);--ux13-rule-10:rgba(255,255,255,.1);--ux13-rule-15:rgba(255,255,255,.15);--ux13-soft:rgba(255,255,255,.04);--ux13-soft-5:rgba(255,255,255,.05);--ux13-soft-3:rgba(255,255,255,.03);--ux13-shadow:rgba(0,0,0,.4)}
 /* Shared directory canvas: Stories is the reference component. */
 html body.lens-app:has(.directory-hub:not([hidden])){background:var(--ux13-base)}
-@media(max-width:767px){html body.lens-app:has(.directory-hub:not([hidden])) #lensMasthead{height:0;min-height:0;padding:0;border:0;overflow:visible;background:none}}
+
 html body.lens-app:has(.directory-hub:not([hidden])) #main{padding:0;margin:0 auto;width:100%;max-width:960px}
 html body.lens-app:has(.directory-hub:not([hidden])) .lens-context{display:none}
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub{--bg-base:var(--ux13-base);--bg-surface:var(--ux13-surface);--border-subtle:var(--ux13-rule);--accent-purple:var(--directory-accent);--accent-purple-border:rgba(var(--directory-rgb),.35);--accent-purple-soft:rgba(var(--directory-rgb),.16);padding:0 0 90px;margin:0;color:var(--ux13-ink);font-family:var(--ui-font);width:100%;max-width:none}
@@ -2803,7 +2803,7 @@ html body.lens-app #main .directory-hub .story-footer>.person-section-controls .
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .ux-person-open{display:flex;align-items:center;justify-content:flex-start;width:100%;max-width:none;min-width:44px;min-height:44px;padding:0 34px 0 0;flex:none}
 html body.lens-app #main #characters-view.directory-hub #characters-list .ux-contact .ux-contact-copy{display:block;width:100%}
 @media(max-width:767px){
-html body.lens-app:has(.directory-hub:not([hidden])) #lensMasthead>:not(.lens-primary){display:none}
+
 html body.lens-app #lensMasthead nav.lens-primary{position:fixed;inset:auto 0 0;transform:none;width:100%;max-width:none;height:calc(54px + max(18px,env(safe-area-inset-bottom)));padding:10px 16px max(18px,env(safe-area-inset-bottom));background:var(--ux13-base);border-top:1px solid var(--ux13-rule);z-index:50;justify-content:space-around}
 html body.lens-app #lensMasthead .lens-primary a{flex:1;display:flex;flex-direction:column;gap:4px;padding:0;min-height:44px;font-size:.7rem;color:var(--ux13-subtle)}
 html body.lens-app #lensMasthead .lens-primary a[aria-current=page]{color:var(--ux13-white);font-weight:700}
@@ -2853,8 +2853,8 @@ html body.lens-app #lens-compare{flex:none;width:auto;min-width:max-content;whit
 html body.lens-app .chapter-bottom{flex-wrap:wrap}
 html body.lens-app .ux-reader-eyebrow{display:none}
 @media(max-width:767px){
- html body.lens-app.read-view #lensMasthead{height:0;min-height:0;padding:0;border:0;margin:0}
- html body.lens-app.read-view #lensMasthead>:is(.lens-brand,.lens-tools){display:none}
+
+
  html body.lens-app.read-view #main{padding-inline:16px;padding-top:0}
  html body.lens-app #lensReadingBar{position:relative;top:auto;margin:0 -16px;width:calc(100% + 32px);max-width:none;height:44px;min-height:44px;padding:0 16px;border:0;border-bottom:1px solid var(--lens-rule);border-radius:0;background:transparent;gap:8px;box-sizing:border-box}
  html body.lens-app #lensReadingBar .ux-reader-controls{flex:1 1 0;flex-basis:0;gap:4px;min-width:0}
@@ -3168,7 +3168,7 @@ html body.lens-app .lens-page-heading{position:relative;padding-right:52px}
 html body.lens-app .lens-page-heading>.directory-settings-open{position:absolute;right:0;top:0}
 @media(max-width:767px){
  html body.lens-app #lensReadingBar #ux-chapter-picker{font-size:1.125rem;gap:6px}
- html body.lens-app.reader-scrolling-down #lensReadingBar #ux-chapter-picker{font-size:.85rem}
+
  html body.lens-app #lensReadingBar #ux-chapter-picker .ux-picker-book{min-width:0;overflow:hidden;text-overflow:ellipsis}
  html body.lens-app #lensReadingBar .directory-settings-open{border:0;padding:8px}
 }
@@ -3326,7 +3326,7 @@ html body.lens-app #notebook-view [data-lens-toggle-highlight][aria-pressed=true
 html body.lens-app #notebook-view .lens-note-actions .lens-note-action{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:6px;min-width:0;min-height:60px;height:auto;margin:0;padding:6px 2px;border:0;background:none;box-shadow:none;color:var(--lens-muted);font:500 .72rem/1.35 var(--ui-font);text-align:center;text-decoration:none;}
 html body.lens-app #notebook-view .lens-note-action svg{display:block;flex:none;width:22px;height:22px;}
 html body.lens-app #notebook-view .lens-note-actions [data-lens-delete-note]{color:var(--lens-danger,#f5a5a0);}
-html body.lens-app #chapter-text :is(.ux-reader-eyebrow,h2.chapter-subtitle){text-shadow:0 0 9px rgba(165,180,252,.55),0 0 22px rgba(99,102,241,.35);}
+html body.lens-app #chapter-text :is(.chapter-heading-row,.chapter-heading-row *){text-shadow:none!important;}
 html body.lens-app .evidence-collection-links{display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;margin:10px 0 18px;padding:2px 0 6px;scrollbar-width:thin;}
 html body.lens-app .evidence-collection-links a{display:inline-flex;flex:none;align-items:center;min-height:44px;padding:6px 14px;border:1px solid var(--lens-rule);border-radius:22px;color:var(--lens-muted);font:500 .85rem/1.3 var(--ui-font);white-space:nowrap;text-decoration:none;}
 html body.lens-app .evidence-collection-links a[aria-current=page]{color:var(--lens-link);background:var(--lens-link-soft);border-color:var(--lens-link);}
@@ -3338,3 +3338,95 @@ html body.lens-app #notebook-view .lens-note-actions [data-lens-toggle-highlight
 /* Keep the cited range distinct from its surrounding passage. */
 #verse-preview .preview-selected{background:#f4dc8a;color:#202b35;border-radius:3px;box-decoration-break:clone}
 #verse-preview .preview-context{opacity:.85}
+
+/* Reader annotation fixes: one shared header, readable controls and safe insets. */
+html body.lens-app,
+html.native-ios body.lens-app {
+ --app-safe-top:env(safe-area-inset-top,0px);
+ --ux13-masthead-height:64px;
+ padding-top:var(--app-safe-top);
+}
+html body.lens-app::before {
+ content:"";position:fixed;inset:0 0 auto;height:var(--app-safe-top);
+ background:var(--ux13-base);z-index:120;pointer-events:none;
+}
+html body.lens-app > #lensMasthead.lens-masthead {
+ position:sticky;top:var(--app-safe-top);left:auto;right:auto;z-index:110;
+ display:flex;align-items:center;gap:12px;flex-wrap:nowrap;flex:none;
+ width:100%;max-width:none;height:auto;min-height:64px;margin:0;
+ padding:8px max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px));
+ border-bottom:1px solid var(--lens-rule);background:var(--ux13-base);box-sizing:border-box;
+}
+html body.lens-app #lensMasthead .lens-brand {display:flex;min-width:0;}
+html body.lens-app #lensMasthead .lens-tools {display:flex;position:static;flex:none;margin-left:auto;gap:4px;}
+html body.lens-app #lensMasthead :is(#lens-settings,.ux-search) {display:inline-flex;align-items:center;justify-content:center;width:44px;min-width:44px;height:44px;min-height:44px;}
+html body.lens-app #lensReadingBar {
+ position:sticky;top:calc(var(--app-safe-top) + var(--ux13-masthead-height));
+ height:auto;min-height:52px;flex-wrap:wrap;padding-block:4px;gap:8px;
+}
+html.native-ios body.lens-app > #lensMasthead.lens-masthead {top:calc(var(--app-safe-top) + var(--visual-offset-top,0px));}
+html.native-ios body.lens-app #lensReadingBar {top:calc(var(--app-safe-top) + var(--visual-offset-top,0px) + var(--ux13-masthead-height));}
+html.native-ios body.lens-app::before {height:calc(var(--app-safe-top) + var(--visual-offset-top,0px));}
+html body.lens-app #lensReadingBar .ux-reader-controls {display:flex;flex:1 1 180px;min-width:0;gap:4px;}
+html body.lens-app #lensReadingBar #ux-chapter-picker {
+ display:flex;align-items:center;flex:1 1 auto;width:auto;max-width:none;min-width:44px;min-height:44px;height:auto;
+ padding:6px 8px;margin:0;gap:6px;font:600 1.125rem/1.35 var(--ui-font);
+ white-space:normal;overflow:visible;text-overflow:clip;text-decoration:none;
+ border:1px solid var(--lens-rule);border-radius:8px;background:var(--lens-surface);color:var(--lens-link);
+}
+html body.lens-app #ux-chapter-picker .ux-picker-book {min-width:0;white-space:normal;overflow-wrap:anywhere;overflow:visible;text-overflow:clip;}
+html body.lens-app #ux-chapter-picker .ux-picker-chapter {flex:none;white-space:nowrap;}
+html body.lens-app #ux-chapter-picker .ux-picker-arrow {display:inline;}
+html body.lens-app #chapter-text :is(.verse,.chapter-heading-row) {scroll-margin-top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + var(--reader-bar-height,64px) + 16px);}
+html body.lens-app #main .directory-hub .stories-header {top:calc(var(--app-safe-top) + var(--ux13-masthead-height));}
+html body.lens-app #main .directory-hub .ux-letter-heading {top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + 52px);}
+html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip) {text-decoration:none!important;}
+html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible {outline:3px solid var(--lens-focus)!important;outline-offset:3px;}
+html body.lens-app a:hover {color:var(--lens-link);}
+@media(min-width:768px) {
+ html body.lens-app {--ux13-masthead-height:76px;}
+ html body.lens-app > #lensMasthead.lens-masthead {min-height:76px;padding-inline:max(24px,env(safe-area-inset-left,0px)) max(24px,env(safe-area-inset-right,0px));}
+}
+
+/* Compact selector: full names, shared corners and real 44px targets. */
+html body.lens-app #passage-picker[open] {
+ inset:max(12px,env(safe-area-inset-top,0px)) 12px max(12px,env(safe-area-inset-bottom,0px));
+ width:min(720px,calc(100vw - 24px));max-width:calc(100vw - 24px);margin:auto;
+ height:fit-content;max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 24px);
+ padding:12px;overflow:auto;border-radius:var(--control-radius,12px)!important;
+}
+html body.lens-app #passage-picker .sheet-heading {gap:8px;margin:0 0 4px;}
+html body.lens-app #passage-picker #passage-picker-title {font:600 1.125rem/1.3 var(--ui-font);}
+html body.lens-app #passage-picker-form {gap:6px;margin-top:4px;}
+html body.lens-app #passage-translation label {display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;}
+html body.lens-app #passage-translation select {width:88px;min-height:44px;padding:4px 8px;}
+html body.lens-app #passage-picker :is(.passage-steps,.passage-testaments) {gap:4px;margin:0 0 6px;padding:0;border:0;}
+html body.lens-app #passage-picker :is(.passage-steps,.passage-testaments) button {min-width:44px;min-height:44px;padding:4px;font-size:.75rem;border-radius:var(--control-radius,12px);}
+html body.lens-app #passage-picker legend {margin-bottom:4px;font-size:.75rem;}
+html body.lens-app #passage-picker .passage-book-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,max(64px,3.6rem)),1fr));gap:4px;}
+html body.lens-app #passage-picker .passage-number-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(max(44px,2.5rem),1fr));gap:4px;max-height:none;overflow:visible;}
+html body.lens-app #passage-picker .passage-number {min-width:44px;min-height:44px;}
+html body.lens-app #passage-picker .passage-number span {
+ display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;width:100%;height:100%;aspect-ratio:auto;
+ padding:4px 2px;border-radius:var(--control-radius,12px);font:500 .85rem/1.2 var(--ui-font);
+ white-space:normal;word-break:normal;overflow-wrap:anywhere;hyphens:none;overflow:visible;
+}
+html body.lens-app #passage-picker .passage-book-grid .passage-number span {font-size:.75rem;}
+html body.lens-app #passage-picker .passage-number input:focus-visible+span {outline:3px solid var(--lens-focus);outline-offset:1px;}
+html body.lens-app #passage-picker .passage-number input:checked+span {border:1px solid var(--lens-link);background:var(--lens-link-soft);}
+html body.lens-app #passage-picker .lost-picker-heading {grid-column:1/-1;margin:8px 0 4px;}
+html body.lens-app #passage-picker:not([data-step="verse"]) #passage-go {display:none;}
+html body.lens-app #passage-picker .passage-reference-entry {display:grid;gap:4px;margin:0 0 4px;}
+html body.lens-app #passage-picker .passage-reference-controls {display:flex;align-items:stretch;gap:6px;}
+html body.lens-app #passage-picker #passage-reference {flex:1 1 0;width:0;min-width:0;min-height:44px;padding:6px 10px;font-size:1rem;border-radius:var(--control-radius,12px);}
+html body.lens-app #passage-picker #passage-reference-go {flex:none;min-width:44px;min-height:44px;padding:6px 12px;border-radius:var(--control-radius,12px);}
+html body.lens-app #passage-picker :is(#passage-reference-help,#passage-reference-status) {margin:0;font-size:.75rem;line-height:1.4;}
+html body.lens-app #passage-picker #passage-reference-status:empty {display:none;}
+html body.lens-app #passage-picker #passage-reference[aria-invalid="true"] {border-color:var(--lens-danger,#b91c1c);outline:2px solid var(--lens-danger,#b91c1c);}
+@media(max-width:420px) {
+ html body.lens-app #passage-picker[open] {
+  inset:max(8px,env(safe-area-inset-top,0px)) 8px max(8px,env(safe-area-inset-bottom,0px));
+  width:calc(100vw - 16px);max-width:calc(100vw - 16px);padding:8px;
+  max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 16px);
+ }
+}

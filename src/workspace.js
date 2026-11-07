@@ -45,7 +45,7 @@
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
  const readingBar = document.createElement('div'); readingBar.id='lensReadingBar'; readingBar.className='lens-reading-bar';
- readingBar.innerHTML=`<div class="lens-reading-location"><span class="lens-kicker">The reading room</span><span id="lens-reading-meta"></span></div><div class="lens-reading-actions"><label class="lens-edition-label"><span class="sr-only">Reading translation</span><select id="lens-edition" aria-label="Reading translation"><option value="kjv">KJV</option><option value="web">WEB</option><option value="asv">ASV</option></select></label><button type="button" id="lens-focus" class="lens-button" aria-pressed="false">Focus</button><button type="button" id="lens-compare" class="lens-button">${icons.compare}<span>Compare</span></button></div>`;
+ readingBar.innerHTML=`<div class="lens-reading-location"><span class="lens-kicker">The reading room</span><span id="lens-reading-meta"></span></div><div class="lens-reading-actions"><label class="lens-edition-label"><span class="sr-only">Reading translation</span><select id="lens-edition" aria-label="Reading translation"><option value="kjv">KJV</option><option value="web">WEB</option><option value="asv">ASV</option></select></label><button type="button" id="lens-focus" class="lens-button" aria-pressed="false">Focus</button></div>`;
  layout.before(readingBar);
  const inspector = document.createElement('aside'); inspector.id='lensInspector'; inspector.className='lens-inspector'; inspector.setAttribute('aria-label','Passage evidence and notes'); layout.append(inspector);
  const inspectorSheet=document.createElement('dialog');inspectorSheet.id='lens-inspector-sheet';inspectorSheet.className='lens-inspector-sheet';inspectorSheet.setAttribute('aria-label','Passage evidence');inspectorSheet.innerHTML='<div class="sheet-handle" aria-hidden="true"></div><button type="button" class="lens-inspector-sheet-close lens-button" aria-label="Close passage evidence">Close <span aria-hidden="true">×</span></button>';document.body.append(inspectorSheet);
@@ -76,7 +76,8 @@
  function showInspectorSheet(opener){inspectorOpener=opener?.isConnected&&opener.getClientRects().length?opener:el('verse-'+activeVerse)?.querySelector('.verse-num')||el('lens-focus');inspector.hidden=false;compare.hidden=true;compare.open=false;inspectorSheet.append(inspector);if(activeVerse&&innerWidth<1024&&!inspectorSheet.open){const row=el('verse-'+activeVerse);if(row)window.scrollTo({top:window.scrollY+row.getBoundingClientRect().top-64,behavior:'instant'});}if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,inspectorOpener);document.getElementById('verse-'+activeVerse)?.classList.add('lens-active-verse');inspectorSheet.scrollTop=0;inspector.querySelector('[data-context-close]')?.focus({preventScroll:true});}
  inspectorSheet.querySelector('button').onclick=()=>inspectorSheet.close();
  inspectorSheet.addEventListener('close',()=>{layout.append(inspector);inspector.hidden=true;document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));inspectorOpener?.focus({preventScroll:true});});
- function showComparison(){inspector.hidden=true;compare.hidden=false;compare.open=true;if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,el('lens-compare'));}
+ let comparisonOpener=null;
+ function showComparison(){inspector.hidden=true;compare.hidden=false;compare.open=true;if(!inspectorSheet.open)BibleLensPopup.show(inspectorSheet,comparisonOpener||el('ux-chapter-picker')||el('lens-focus'));}
  const mobileLayout=matchMedia('(max-width:760px)');
  const updateEvidenceControl=()=>{const label=document.createElement('span');label.className='ux-evidence-label';label.textContent='Evidence';el('lens-focus').replaceChildren(label);el('lens-focus').setAttribute('aria-pressed',String(evidenceVisible));};
  mobileLayout.addEventListener('change',updateEvidenceControl);
@@ -92,9 +93,8 @@
  el('lens-focus').onclick=()=>{evidenceVisible=!evidenceVisible;saveDisplayChoice('biblelens-evidence-visible',String(evidenceVisible));updateEvidenceControl();refreshVerseHighlights();renderInspector();};updateEvidenceControl();
  el('lens-edition').value=edition();
  el('lens-edition').onchange=()=>{el('reader-edition').value=el('lens-edition').value; el('reader-edition').dispatchEvent(new Event('change')); if(comparison&&!compare.hidden)runComparison(comparison.left,comparison.right);};
- el('lens-compare').onclick=()=>openCompare();
  el('lens-compare-close').onclick=()=>compare.close();
- inspectorSheet.addEventListener('close',()=>{const wasComparing=compare.open;compare.hidden=true;compare.open=false;document.body.classList.remove('lens-comparing'); ++compareVersion; if(location.hash.startsWith('#compare')||location.hash.startsWith('#investigation'))navigateHash(refHash({book:readingBook,chapter:readingChapter})); if(wasComparing)el('lens-compare').focus({preventScroll:true});});
+ inspectorSheet.addEventListener('close',()=>{const wasComparing=compare.open;compare.hidden=true;compare.open=false;document.body.classList.remove('lens-comparing'); ++compareVersion; if(location.hash.startsWith('#compare')||location.hash.startsWith('#investigation'))navigateHash(refHash({book:readingBook,chapter:readingChapter})); if(wasComparing)(comparisonOpener?.isConnected&&comparisonOpener.getClientRects().length?comparisonOpener:el('ux-chapter-picker')||el('lens-focus')).focus({preventScroll:true});});
  function uniqueRecords(items) {return items.filter((item,index,all)=>all.findIndex(other=>(other.id||other.title+other.summary)===(item.id||item.title+item.summary))===index);}
  function sourceLink(source){const url=source.url||''; return /^https:\/\//.test(url)?`<a class="lens-source-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(source.label||'Source')}</a>`:'';}
  function evidenceHtml(item) {
@@ -317,7 +317,7 @@
   if(!book||+match[2]<1||+match[2]>book.chapters||match[3]&&(+match[3]<1||+match[3]>176)||match[4]&&+match[4]<+match[3])return null;
   return {book:book.id,chapter:+match[2],...(match[3]?{verse:+match[3],endVerse:+(match[4]||match[3])}:{})};
  }
- function openCompare(){setView('read',false);compare.hidden=false;if(!compare.open)showComparison();document.body.classList.add('lens-comparing');el('lens-compare-left').value=reading?refLabel({book:readingBook,chapter:readingChapter,...(activeVerse?{verse:activeVerse}:{})}):'Genesis 1';el('lens-compare-right').value=comparison?refLabel(comparison.right):'';el('lens-compare-heading').focus({preventScroll:true});compare.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});el('lens-compare-right').focus({preventScroll:true});}
+ function openCompare(){comparisonOpener=document.activeElement;setView('read',false);compare.hidden=false;if(!compare.open)showComparison();document.body.classList.add('lens-comparing');el('lens-compare-left').value=reading?refLabel({book:readingBook,chapter:readingChapter,...(activeVerse?{verse:activeVerse}:{})}):'Genesis 1';el('lens-compare-right').value=comparison?refLabel(comparison.right):'';el('lens-compare-heading').focus({preventScroll:true});compare.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});el('lens-compare-right').focus({preventScroll:true});}
  el('lens-comparison-form').onsubmit=event=>{event.preventDefault();const left=parseReference(el('lens-compare-left').value),right=parseReference(el('lens-compare-right').value);if(!left||!right){el('lens-compare-status').textContent='Use a valid book and chapter, with an optional verse range. For example: Genesis 1:1–5.';return;}currentInvestigation=null;const params=new URLSearchParams({left:refLabel(left),right:refLabel(right),edition:edition()});routeTo('#compare?'+params);};
  async function runComparison(left,right){
   const version=++compareVersion,preserveDraft=comparison&&JSON.stringify(comparison.left)===JSON.stringify(left)&&JSON.stringify(comparison.right)===JSON.stringify(right)&&comparison.id===currentInvestigation;comparison={left,right,id:currentInvestigation};compare.hidden=false;if(!compare.open)showComparison();document.body.classList.add('lens-comparing');el('lens-compare-left').value=refLabel(left);el('lens-compare-right').value=refLabel(right);el('lens-compare-status').classList.add('loading-state');el('lens-compare-status').textContent='Opening both passages and their attached research…';el('lens-compare-results').setAttribute('aria-busy','true');el('lens-compare-results').inert=true;
@@ -347,6 +347,6 @@
   }
   return false;
  }
- window.BibleLensWorkspace={route:workspaceRoute,navigate:routeTo,refresh:renderInspector,inspectVerse};
+ window.BibleLensWorkspace={route:workspaceRoute,navigate:routeTo,refresh:renderInspector,inspectVerse,parseReference};
  renderInspector();inspector.hidden=true;
 })();

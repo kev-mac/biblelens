@@ -71,10 +71,10 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   const close=page.locator('[data-context-close]');assert.equal(await close.count(),1);const r=await close.boundingBox();assert(r.width>=44&&r.height>=44);
   await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.className),'verse-num');
   await page.locator('#verse-3 .verse-num').tap();await page.keyboard.press('Escape');await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});
-  await page.locator('#lens-compare').tap();await page.waitForSelector('#lens-inspector-sheet[open]');assert.equal(await page.locator('#lensComparison img').count(),0);await shot('read-compare');
+  await page.evaluate(()=>BibleLensWorkspace.navigate('#compare')); await page.waitForSelector('#lens-inspector-sheet[open]');assert.equal(await page.locator('#lensComparison img').count(),0);await shot('read-compare');
   await page.locator('#lens-compare-right').fill('Genesis 2');await page.getByRole('button',{name:'Compare Passages',exact:true}).tap();await page.waitForSelector('.lens-comparison-passage');await shot('read-compare');
-  await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-compare');
-  await page.locator('.study-library>summary').tap();await page.locator('#collection').scrollIntoViewIfNeeded();assert.equal(await page.locator('#collection input[type=search]').count(),0);await shot('studies');
+  await page.touchscreen.tap(2,2);await page.waitForSelector('#lens-inspector-sheet[open]',{state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
+  assert.equal(await page.locator('.study-library:visible').count(),0);assert.equal(await page.locator('#collection input[type=search]').count(),0);
   await page.locator('#lens-settings').tap();await page.waitForSelector('#reader-settings[open]');assert.equal(await page.locator('#reader-settings button[aria-label=Close]').count(),1);await page.keyboard.press('Escape');await page.waitForSelector('#reader-settings[open]',{state:'hidden'});
   assert.deepEqual(errors,[]);results.push({engine,width,height,theme,status:'PASS',mosesTaps,questionTaps,homeTaps,questionRoutes:'PASS',outsideEvidence:'PASS',outsideCompare:'PASS'});
   fs.writeFileSync(`${output}/matrix.json`,JSON.stringify(results,null,2)+'\n');console.log('PASS '+JSON.stringify(results.at(-1)));await context.close();

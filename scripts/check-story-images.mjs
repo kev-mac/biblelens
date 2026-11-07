@@ -37,7 +37,7 @@ for(const title of Object.keys(images)){
  assert(summary.includes(images[title].src));assert(reader.includes(images[title].src));
  const displayedTitle=title.replace(/\bCommandments\b/g,'Laws');
  assert(context.storyIllustration(displayedTitle,'reader').includes(images[title].src),'Read title aliases retain matching artwork');
- assert(!summary.includes('<figcaption>'));assert(reader.includes('<figcaption>Imagined scene: '+context.esc(title)+'</figcaption>'),'Read artwork labels follow the image');
+ assert(!summary.includes('<figcaption>'));assert(reader.includes('<figcaption>'+context.esc(title)+'</figcaption>'),'Read artwork keeps the actual title without a generic prefix');
 }
 assert.equal(context.storyIllustration('A story without artwork'),'');
 const chapters=new Map();
