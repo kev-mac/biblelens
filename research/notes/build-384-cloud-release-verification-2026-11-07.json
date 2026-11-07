@@ -2,7 +2,7 @@
   "date": "2026-11-07",
   "book": "Zephaniah",
   "canonicalBaseline": "97b002518d22ab83eaa065c3dd9808bd46ee6765",
-  "canonicalReviewCommit": "f5198fe",
+  "canonicalReviewCommit": "f5198feb9d061670c352c9cbc59d461a64ee343b",
   "review": {
     "retainedImages": 3,
     "replacements": 0,
@@ -29,7 +29,7 @@
     "buildMobile": "passed inside release:prepare including shared web build",
     "images": "passed all 1189 chapters",
     "mobile": "passed; native inference unverified",
-    "releasePackaging": "passed",
+    "releasePackaging": "passed including actual prepared Worker-only Sites staging",
     "syncSuite": "passed single unchanged run; inherited intermittent assert(finishRead) failure unresolved",
     "focusedWorkerOffline": "passed 3 chapters, 53 verses, three editions, exact metadata and bytes, three missing-opener rejection cases, zero offline network calls",
     "baselineAssetsPreserved": 1616,
@@ -75,5 +75,46 @@
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "haggai-artwork-handoff-from-zephaniah-2026-11-07.md",
   "nextBookStarted": false,
-  "publication": "pending"
+  "publication": {
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f76874232c0881919a541e2c75ea4d78",
+    "versionNumber": 384,
+    "archive": {
+      "format": "tar",
+      "fileCount": 6,
+      "sizeBytes": 59535360,
+      "contentHash": "sha256:c1b852f61bafb70756c011363c2773c2e07913a619977a5e54acf4b5c0335d90",
+      "allLocalArchiveMembersMatchStagedBytes": true
+    },
+    "deploy": {
+      "id": "appgdep_6aeee7fd95448191a49e1c879bb6e084",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_f76874232c0881919a541e2c75ea4d78",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:57:43.897674+00:00"
+    }
+  },
+  "canonicalValidationCommit": "f243303ea33a127f5332e8f04e5c4c8dfd961566",
+  "mirrorCommit": "7a0846df2a54b3c1c78107b155d3dcf3fad78bfc",
+  "publicationRecovery": "Initial production deployment denied by automatic approval review for missing explicit publication authorization and unverified audience. After denial, user_message_read.read_messages verified the original per-book publish instruction and the later cloud/continue-without-devices instructions; get_site freshly confirmed owner role and public audience. Retried only the exact same saved-version deployment once; succeeded. No workaround or alternate target.",
+  "localPostPublicationParity": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 384,
+      "sourceHash": "88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb"
+    },
+    "canonicalMirrorUnsignedNativeLocalWorkerIdentityEqual": true,
+    "workerStagingEqual": true,
+    "zephaniahSourceMirrorOfflineBytesEqual": true,
+    "workerSha256": "a3f29fa2fb5d50f794eeab2d4c6980a4a09dabd54d7c6921723a6672061cfc31",
+    "liveVerification": false,
+    "signedAppVerified": false
+  }
 }
