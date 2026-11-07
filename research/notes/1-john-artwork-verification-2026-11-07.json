@@ -1,0 +1,154 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "1 John",
+  "canonicalBaseline": "7ca62428f5103db5593e5e602b087afb987ea114",
+  "chapterCount": 5,
+  "verseCount": 105,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-1-john-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 10,
+      "bytes": 112986,
+      "sha256": "7d0f3b1567692e7f20b4cc27a0e5e553502fedd41a9a2de7414c245d0b882901",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-1-john-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 29,
+      "bytes": 165006,
+      "sha256": "8531ab7d0b7bec54f825fe7b7d9caa60e5e2de562173d6495c84dbb45b35dc79",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-1-john-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 24,
+      "bytes": 149702,
+      "sha256": "f1f7bb6726eb3b93171b3a20e1c1145a62badb3713e5d325e2f32c7a5a4bf2cc",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-1-john-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 142302,
+      "sha256": "d8cfc5fa19227e8a65252d5e4a547818728aa8fe40b0d779aad72631f68ee9d9",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 5,
+      "src": "/assets/chapter-1-john-05-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 88216,
+      "sha256": "5677262447d4951a4e8475f6d038b1cf4211b91ef18c9f6e0e3274dabee3628d",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 5,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "exactEditionFieldsVerified": 315,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 60,
+        "chapter": 3,
+        "verse": 0,
+        "position": 43,
+        "src": "/assets/chapter-2-peter-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 61,
+        "chapter": 1,
+        "verse": 0,
+        "position": 61,
+        "src": "/assets/chapter-1-john-01-opening-v1.webp"
+      },
+      "gap": 18
+    },
+    {
+      "a": {
+        "book": 61,
+        "chapter": 5,
+        "verse": 0,
+        "position": 145,
+        "src": "/assets/chapter-1-john-05-opening-v1.webp"
+      },
+      "b": {
+        "book": 62,
+        "chapter": 1,
+        "verse": 0,
+        "position": 166,
+        "src": "/assets/chapter-2-john-01-opening-v1.webp"
+      },
+      "gap": 21
+    }
+  ],
+  "minimumInternalGap": 10,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; 1 John existing 5 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 5
+}
