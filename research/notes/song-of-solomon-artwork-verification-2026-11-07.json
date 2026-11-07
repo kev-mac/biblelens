@@ -359,5 +359,48 @@
   "syncIntermittentStatus": "Standard check:sync passed. Inherited intermittent finishRead assertion unresolved; static timing lead only, no production/test edit.",
   "liveVerification": "Inherited denied live HTTP/image operations not retried; no materially new evidence.",
   "nativeStatus": "Unsigned offline assets checked; signing, signed asset parity, physical-device install/launch deferred.",
-  "deliberatelyOmittedCanonicalResearchPaths": 330
+  "deliberatelyOmittedCanonicalResearchPaths": 330,
+  "publication": {
+    "canonicalReview": "00bfdf4",
+    "canonicalVerification": "e247c7d7293a94076cea627541c3859512cba1be",
+    "mirrorCommit": "007a990830fc89a2b46028c6cfa51e6cc1ee88fe",
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_9494adfe1a888191a491bf8adb8dab96",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 370,
+      "source": {
+        "commit_sha": "007a990830fc89a2b46028c6cfa51e6cc1ee88fe"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_0000000057d081fda144d87422bab98a",
+        "content_hash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+        "size_bytes": 59904000,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deployment": {
+      "id": "appgdep_6aeec300dfe881918063dd8b4f86a0f6",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_9494adfe1a888191a491bf8adb8dab96",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T06:19:54.462533+00:00"
+    },
+    "archiveGzipSha256": "e0df9f494bdd801ffa05a663b6908e0b2fc7f719ffbf70b30cda2b808482e6b0",
+    "canonicalPushPrivacyRejection": "Initial two unpushed commits used checkout private email and GitHub rejected GH007. Both were reauthored with established kev-mac noreply identity and normal push succeeded. No force push.",
+    "automaticApprovalRejection": false,
+    "remainingUncertainOperation": false,
+    "liveReleaseVerify": "Deferred: inherited denied live HTTP/image action has no materially new relevant evidence. Local canonical/mirror/Worker/unsigned offline identity equality passes; does not establish live HTTP or signed/installed parity.",
+    "nativeContext": "No Mac/device connector in this cloud session. Latest parent room update reports Mac connected separately but Xcode device service timed out; parent handles signing/install separately."
+  }
 }
