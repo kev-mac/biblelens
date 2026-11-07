@@ -1,0 +1,636 @@
+{
+  "scope": "Mark only, canonical baseline dfd10f8",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "people": [
+    {
+      "name": "Jesus",
+      "age": "adult ministry, approximately thirty; no extra aging between parallel accounts",
+      "traits": "brown complexion; dark natural curls; full beard; angular nose; lean adult build",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+        "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp"
+      ],
+      "result": "Fresh native-size review of all Mark portraits and Matthew anchors: compatible brown face, prominent nose, full dark beard, natural dark curls, lean build and adult age across parallel events. Light and pose change; no decades of aging."
+    },
+    {
+      "name": "John the Baptist",
+      "age": "adult contemporary of Jesus",
+      "traits": "brown complexion, full curly beard, natural dark curls, sturdy lean build",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp"
+      ],
+      "result": "Actual Matthew and Mark baptism files compared side by side at native size. Same coarse-garment adult man with brown face, dark natural curls and full beard; distinct from Jesus, apostle John, Moses, Elijah and Elisha."
+    },
+    {
+      "name": "Peter and disciples",
+      "age": "adult ministry; same approximate ages across parallel accounts",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp",
+        "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+        "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+        "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp"
+      ],
+      "traits": "Peter in two explicitly titled Mark scenes has brown complexion, naturally curled dark hair, full beard and sturdy adult build; unnamed disciples remain varied ancient Near Eastern adults",
+      "result": "Fresh native-size calling and confession/courtyard comparisons retain compatible varied brown faces, dark natural curls and adult builds; Peter has full dark beard and sturdy build across explicitly identified scenes. No exhaustive named-face map or exact count inferred from partial/occluded supper/calling groups."
+    },
+    {
+      "name": "Mary, Joseph and women at tomb",
+      "references": [
+        "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+        "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+        "src/assets/story-the-empty-tomb-v1.webp"
+      ],
+      "result": "Three Mark tomb women have brown complexions and naturally curled dark hair, varied adult faces/builds. Mark 16:1 names Mary Magdalene, Mary mother of James, Salome; exact face assignment unestablished. No infant/young-Jesus or Joseph portrayal in Mark; birth Mary must not be conflated with Mary Magdalene."
+    },
+    {
+      "name": "Paul/Saul, Barnabas, Stephen",
+      "references": [],
+      "result": "No Mark portrayal or new asset; later Acts current-main candidates cannot become Mark identities. No dependence on parallel work."
+    },
+    {
+      "name": "Moses and Elijah",
+      "references": [
+        "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp"
+      ],
+      "result": "Mark 8 Story is confession; Mark 9 is a bright cloud, with no identifiable Moses/Elijah. No inherited Moses/Elijah reference is newly reapproved. Never use inactive Matthew Transfiguration v1."
+    }
+  ],
+  "referenceFiles": [
+    {
+      "path": "src/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp",
+      "sha256": "a3d59a615fd632c85f4137bbea9401457e76646940921a4245f24b7002f8241c",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "sha256": "7d3c6b38a52c46a7d8279a7529a6f3cf2fa997c39042d01b049c4f112411b5d1",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "sha256": "dcbe95ded4f5aa2bd0db8e6cb11eebb736c7684e714eafc7a7eecc97b289d64a",
+      "status": "inherited approved provenance, no new portrayal or fresh visual certification here"
+    },
+    {
+      "path": "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp",
+      "sha256": "be9d6f1f05beb34fb012cffd9ba6c144780a3fc1e9011acca1b7e2b88df263cf",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "sha256": "8c00e0e85dc7307364bc81b66729a587f1237a6bf8d33352bc62063a6b2cba22",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+      "sha256": "97804261219a11fa1ba84ece8d770fd70cbd233ac3ea9f354055fa01cb0d9708",
+      "status": "inherited approved provenance, no new portrayal or fresh visual certification here"
+    },
+    {
+      "path": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "sha256": "b364b72a1b320a750d35a22b747649bb5bfbabf42202e8153fb75c9c317310b8",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "sha256": "d09926414ae3a679ffb6625d97d572ae67315be7de1a1805313ff38e4c83eb33",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "sha256": "209d687693b7a42c1cfcd16eb40741941d71a3d10059c67e2aa5fac2706e6459",
+      "status": "inherited approved provenance, no new portrayal or fresh visual certification here"
+    },
+    {
+      "path": "src/assets/story-the-empty-tomb-v1.webp",
+      "sha256": "47d86a3a13b5c0acc781b4ff2f51cf4b0c8b5fc09c6494bd5a71e7fa043ab7a9",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp",
+      "sha256": "65b0045c7fde16835ac07866b354f0d4cc99882a3e1904f086f5023236cb900c",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+      "sha256": "569aede045b99f308331bd2d22c3f5f2a8ad654f5c3a256118b754155e6b2437",
+      "status": "freshly viewed for continuity comparison"
+    },
+    {
+      "path": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "sha256": "3a25e4ebcebb4510fd108175d7818976f629eff660707304b210c340c6bbc8a9",
+      "status": "freshly viewed for continuity comparison"
+    }
+  ],
+  "earlierMatthewAppearances": [
+    {
+      "title": "The Birth of Jesus and the Magi",
+      "passage": "Matthew 1:18 - 2:12",
+      "src": "src/assets/story-the-birth-of-jesus-and-the-magi-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Flight to Egypt and Return to Nazareth",
+      "passage": "Matthew 2:13 - 2:23",
+      "src": "src/assets/story-flight-to-egypt-and-return-to-nazareth-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "The Baptism and Temptation of Jesus",
+      "passage": "Matthew 3:1 - 4:11",
+      "src": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Calling the First Disciples",
+      "passage": "Matthew 4:12 - 4:25",
+      "src": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Healings and Calming the Storm",
+      "passage": "Matthew 8:1 - 9:38",
+      "src": "src/assets/story-healings-and-calming-the-storm-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Sending Out the Twelve",
+      "passage": "Matthew 10:1 - 10:5",
+      "src": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "decision": "Current Matthew v2 is approved; earlier v1 equipment was rejected for Matthew 10.",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Jesus and John the Baptist",
+      "passage": "Matthew 11:1 - 11:30",
+      "src": "src/assets/story-jesus-and-john-the-baptist-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "passage": "Matthew 12:1 - 12:50",
+      "src": "src/assets/story-sabbath-controversies-and-the-sign-of-jonah-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "passage": "Matthew 14:1 - 14:36",
+      "src": "src/assets/story-feeding-the-five-thousand-and-walking-on-water-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration",
+      "passage": "Matthew 16:13 - 17:27",
+      "src": "src/assets/story-peter-s-confession-and-the-transfiguration-v2.webp",
+      "decision": "replace v1 with v2 cloud-only scene",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "The Rich Young Man",
+      "passage": "Matthew 19:1 - 20:34",
+      "src": "src/assets/story-the-rich-young-man-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "The Triumphal Entry and Temple Cleansing",
+      "passage": "Matthew 21:1 - 21:46",
+      "src": "src/assets/story-the-triumphal-entry-and-temple-cleansing-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "The Last Supper and Gethsemane",
+      "passage": "Matthew 26:1 - 26:56",
+      "src": "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "Trial, Crucifixion and Burial",
+      "passage": "Matthew 26:57 - 27:66",
+      "src": "src/assets/story-trial-crucifixion-and-burial-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    },
+    {
+      "title": "The Resurrection and the Great Commission",
+      "passage": "Matthew 28:1 - 28:20",
+      "src": "src/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+      "decision": "retain current approved-main image",
+      "status": "Inherited approved appearance inventory; only the actual comparison paths are freshly viewed in this Mark session"
+    }
+  ],
+  "earlierCatalogNameLeads": {
+    "Jesus": [
+      {
+        "book": "Jeremiah",
+        "title": "New Covenant",
+        "src": "/assets/story-new-covenant-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "Mary": [],
+    "Joseph": [
+      {
+        "book": "Genesis",
+        "title": "Jacob\u2019s Household",
+        "src": "/assets/story-jacobs-household-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph and His Brothers",
+        "src": "/assets/story-joseph-and-his-brothers-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph in Egypt",
+        "src": "/assets/story-joseph-in-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Joseph Reunites His Family",
+        "src": "/assets/story-joseph-reunites-his-family-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Genesis",
+        "title": "Jacob Blesses His Family",
+        "src": "/assets/story-jacob-blesses-his-family-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Exodus from Egypt",
+        "src": "/assets/story-the-exodus-from-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Joshua's Farewell and Covenant at Shechem",
+        "src": "/assets/story-joshua-s-farewell-and-covenant-at-shechem-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "John": [],
+    "Peter": [],
+    "Moses": [
+      {
+        "book": "Exodus",
+        "title": "The Birth and Rescue of Moses",
+        "src": "/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Flees to Midian",
+        "src": "/assets/story-moses-flees-to-midian-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Burning Bush",
+        "src": "/assets/story-the-burning-bush-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Returns to Egypt",
+        "src": "/assets/story-moses-returns-to-egypt-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses and Aaron Before Pharaoh",
+        "src": "/assets/story-moses-and-aaron-before-pharaoh-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Plagues of Egypt",
+        "src": "/assets/story-the-plagues-of-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Passover and the Death of the Firstborn",
+        "src": "/assets/story-the-passover-and-the-death-of-the-firstborn-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Exodus from Egypt",
+        "src": "/assets/story-the-exodus-from-egypt-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Crossing the Sea",
+        "src": "/assets/story-crossing-the-sea-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Bitter Water, Manna and Quail",
+        "src": "/assets/story-bitter-water-manna-and-quail-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Water from the Rock and the Battle with Amalek",
+        "src": "/assets/story-water-from-the-rock-and-the-battle-with-amalek-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Jethro Advises Moses",
+        "src": "/assets/story-jethro-advises-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Covenant and Ten Commandments at Sinai",
+        "src": "/assets/story-the-covenant-and-ten-commandments-at-sinai-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Covenant Is Sealed at Sinai",
+        "src": "/assets/story-the-covenant-is-sealed-at-sinai-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "The Golden Calf",
+        "src": "/assets/story-the-golden-calf-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Moses Sees God's Glory",
+        "src": "/assets/story-moses-sees-gods-glory-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Building the Tabernacle",
+        "src": "/assets/story-building-the-tabernacle-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Exodus",
+        "title": "Sinai / Mosaic Covenant",
+        "src": "/assets/story-sinai-mosaic-covenant-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Leviticus",
+        "title": "Aaron and His Sons Are Ordained",
+        "src": "/assets/story-aaron-and-his-sons-are-ordained-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Leviticus",
+        "title": "Nadab and Abihu",
+        "src": "/assets/story-nadab-and-abihu-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Counting the Camp",
+        "src": "/assets/story-counting-the-camp-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Leaving Sinai and the Complaints",
+        "src": "/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Miriam and Aaron Speak Against Moses",
+        "src": "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Korah's Rebellion",
+        "src": "/assets/story-korah-s-rebellion-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Water from the Rock at Meribah",
+        "src": "/assets/story-water-from-the-rock-at-meribah-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "The Bronze Serpent",
+        "src": "/assets/story-the-bronze-serpent-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "A New Census and Joshua Appointed",
+        "src": "/assets/story-a-new-census-and-joshua-appointed-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Vengeance on Midian",
+        "src": "/assets/story-vengeance-on-midian-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Tribes Settle East of the Jordan",
+        "src": "/assets/story-tribes-settle-east-of-the-jordan-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Numbers",
+        "title": "Aaronic Blessing",
+        "src": "/assets/story-aaronic-blessing-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Wilderness Years",
+        "src": "/assets/story-moses-recalls-the-wilderness-years-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Sets Apart Three Cities of Refuge",
+        "src": "/assets/story-moses-sets-apart-three-cities-of-refuge-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Golden Calf",
+        "src": "/assets/story-moses-recalls-the-golden-calf-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Moses Recalls the Second Tablets",
+        "src": "/assets/story-moses-recalls-the-second-tablets-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "Joshua Commissioned and the Law Entrusted",
+        "src": "/assets/story-joshua-commissioned-and-the-law-entrusted-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Deuteronomy",
+        "title": "The Death of Moses",
+        "src": "/assets/story-the-death-of-moses-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Joshua Commissioned",
+        "src": "/assets/story-joshua-commissioned-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "Joshua",
+        "title": "Caleb Receives Hebron",
+        "src": "/assets/story-caleb-receives-hebron-v2.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ],
+    "Elijah": [
+      {
+        "book": "1 Kings",
+        "title": "Elijah and the Drought",
+        "src": "/assets/story-elijah-and-the-drought-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Elijah on Mount Carmel",
+        "src": "/assets/story-elijah-on-mount-carmel-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Elijah at Horeb",
+        "src": "/assets/story-elijah-at-horeb-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "1 Kings",
+        "title": "Naboth's Vineyard",
+        "src": "/assets/story-naboth-s-vineyard-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      },
+      {
+        "book": "2 Kings",
+        "title": "Elijah Taken Up",
+        "src": "/assets/story-elijah-taken-up-v1.webp",
+        "status": "Text-match provenance lead, not proof of visible identity; shared names are not the same person."
+      }
+    ]
+  },
+  "nameLeadLimit": "Catalog names, prophecies and genealogies are provenance leads, not proof of visible identity or same-name identity. Mark earlier appearances inventoried independently; no Luke art reviewed.",
+  "comparisons": [
+    {
+      "left": "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp",
+      "right": "src/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp"
+    },
+    {
+      "left": "src/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp",
+      "right": "src/assets/story-the-paralytic-and-controversies-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-paralytic-and-controversies-v1.webp",
+      "right": "src/assets/story-parables-and-calming-the-storm-v1.webp"
+    },
+    {
+      "left": "src/assets/story-parables-and-calming-the-storm-v1.webp",
+      "right": "src/assets/story-the-gadarene-demoniac-jairus-and-the-woman-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-gadarene-demoniac-jairus-and-the-woman-v1.webp",
+      "right": "src/assets/story-feeding-the-multitude-v1.webp"
+    },
+    {
+      "left": "src/assets/story-feeding-the-multitude-v1.webp",
+      "right": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp"
+    },
+    {
+      "left": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "right": "src/assets/story-blind-bartimaeus-v1.webp"
+    },
+    {
+      "left": "src/assets/story-blind-bartimaeus-v1.webp",
+      "right": "src/assets/story-triumphal-entry-and-the-temple-v1.webp"
+    },
+    {
+      "left": "src/assets/story-triumphal-entry-and-the-temple-v1.webp",
+      "right": "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp",
+      "right": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp"
+    },
+    {
+      "left": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp",
+      "right": "src/assets/story-the-empty-tomb-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+      "right": "src/assets/story-john-the-baptist-and-the-baptism-of-jesus-v1.webp"
+    },
+    {
+      "left": "src/assets/story-calling-the-first-disciples-v1.webp",
+      "right": "src/assets/story-calling-the-disciples-and-healing-in-capernaum-v1.webp"
+    },
+    {
+      "left": "src/assets/story-peter-s-confession-and-the-transfiguration-in-mark-v1.webp",
+      "right": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp"
+    },
+    {
+      "left": "src/assets/story-sending-out-the-twelve-v2.webp",
+      "right": "src/assets/story-feeding-the-multitude-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-last-supper-and-gethsemane-v1.webp",
+      "right": "src/assets/story-the-last-supper-and-gethsemane-in-mark-v1.webp"
+    },
+    {
+      "left": "src/assets/story-the-resurrection-and-the-great-commission-v1.webp",
+      "right": "src/assets/story-trial-crucifixion-and-burial-in-mark-v1.webp"
+    }
+  ],
+  "generationCalls": 0,
+  "newIdentityInputs": [],
+  "generationLimit": "All active images retained. For any later new identifiable recurring portrait, supply actual approved identity files to the tool, not text descriptions; Genesis 7 is style only.",
+  "reviewLimits": [
+    "Unseen/occluded anatomy and tiny background faces not certified",
+    "Exact name-to-face assignments of most disciples and tomb women remain uncertain",
+    "Imagined art is not historical evidence or a real portrait",
+    "No later-book art viewed or reapproved"
+  ]
+}

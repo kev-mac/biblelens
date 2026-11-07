@@ -1,0 +1,67 @@
+{
+  "scope": "Mark only; no production source change",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 387,
+    "sourceHash": "b08f7de0bc3e83df9e137323ee20008f2d4ce78c2ae765dad7bd257a5712cf18"
+  },
+  "checks": [
+    {
+      "command": "npm ci --cache=/tmp/biblelens-mark-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-npm-ci.log",
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-build.log",
+      "logSha256": "770dd0a56241c6491b155dffa733a009a7da50944b5652129c6b4096577aa1a5"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-mobile-build.log",
+      "logSha256": "4135d89eb25fd4db7796ffea3c0a135ba889a2517a2b87bbc74f5e02b00e11ca"
+    },
+    {
+      "command": "node research/notes/mark-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/mark-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-check-focused.log",
+      "logSha256": "fd955ee4e619c157502f91fc80456310bbb6365b6d171a0987e68ebfbfa39b9b"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-check-images.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-check-mobile.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/mark-check-release.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/mark-check-full.log",
+      "logSha256": "d1526eca1651a621dad26947a9e176d8be205556142a9cb8644f8e9149aede5d"
+    }
+  ],
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Playwright Chromium headless shell 1248 executable absent. Prior nonbrowser checks and search 50/50 pass. Readability remains inherited report-only.",
+  "publication": "No save, deploy, mirror push, audience mutation or live HTTP/release:verify attempted; inherited build 386 denial remains in force.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js tool. Sites instruction prohibits installing browser or improvising control in this case.",
+  "devices": "No exposed Mac/device connector or configured VPN; unsigned local assets only. Signing, signed-app parity, install, query and launch incomplete.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) unresolved, not retested or changed in artwork-only session."
+}
