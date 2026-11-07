@@ -1,0 +1,242 @@
+{
+  "baseline": "59c87c22afd17a6ffed23a6b7e05a99f357b9224",
+  "scope": "Revelation only; all 22 existing openers retained, no production changes",
+  "checks": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "0d4c30a7d86a5e99fceb6d4b45f2c7259f29238962ebf330e9134e4cdf12f1f3"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/revelation-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "result": "passed"
+    },
+    {
+      "command": "node research/notes/revelation-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/verify.log",
+      "logBytes": 378,
+      "logSha256": "792884fb52529ec3cb3477496dffff62c17282f78d2421e42b532e7c48f55ff9"
+    },
+    {
+      "command": "node research/notes/revelation-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/revelation-review/compare-sites.log",
+      "logBytes": 1177,
+      "logSha256": "6ca189a180c22ca91a1f02f9306688d8b49a1a947f252c39de42f90eb296a036"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "result": "failed at final browser launch; preceding checks passed",
+      "logPath": "/tmp/revelation-review/check-all.log",
+      "logBytes": 24169,
+      "logSha256": "1813416bb92e975e1e12a0e7b4c805d1424b6f73aa8d9302383f06be1066f834"
+    }
+  ],
+  "production": {
+    "preservedProductionFiles": 2010,
+    "preservedAssets": 1619,
+    "retained": 22,
+    "replaced": 0,
+    "totalImageBytes": 2322638,
+    "chapters": 22,
+    "verseCount": 404,
+    "storyPlacements": 0
+  },
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [
+        20,
+        29,
+        22,
+        11,
+        14,
+        17,
+        17,
+        13,
+        21,
+        11,
+        19,
+        17,
+        18,
+        20,
+        8,
+        21,
+        18,
+        24,
+        21,
+        15,
+        27
+      ],
+      "minimumInternalGap": 8,
+      "boundaries": [
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30701,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [
+        20,
+        29,
+        22,
+        11,
+        14,
+        17,
+        17,
+        13,
+        21,
+        11,
+        19,
+        17,
+        18,
+        20,
+        8,
+        21,
+        18,
+        24,
+        21,
+        15,
+        27
+      ],
+      "minimumInternalGap": 8,
+      "boundaries": [
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30702,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "additionalPassedChecks": [
+    "2010 production files/1619 assets byte-identical",
+    "404 verses / 1212 exact edition fields",
+    "22 source/Worker/unsigned-native image byte matches",
+    "22 missing-opener rejections",
+    "1147 immutable pinned blobs equal source",
+    "Zero offline network calls",
+    "git diff --check"
+  ],
+  "sourceMirror": {
+    "baseline": "59c87c22afd17a6ffed23a6b7e05a99f357b9224",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential read-only opening for the Revelation review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "message": "Missing Chromium headless shell 1248",
+    "result": "Browser assertions did not run; preceding checks passed, readability inherited report-only."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "reason": "Automatic approval review rejected public deployment and same-version retry pending explicit new approval. Parent prohibits publication/bypass."
+  },
+  "limitations": [
+    "Managed Sites mode=1; no callable cua_repl.js. Per Sites skill no preview, browser installation or substitute route.",
+    "Inherited denied live HTTP/image/release:verify deferred without materially new relevant authorization. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN; signing, signed-native parity and install/query/launch pending.",
+    "Sync unchanged/not retested; inherited intermittent assert(finishRead) unresolved."
+  ],
+  "finalBookPassComplete": true,
+  "nextBookStarted": false
+}
