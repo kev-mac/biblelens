@@ -1,0 +1,44 @@
+# 2 Samuel artwork cloud review — 2026-11-07
+
+## Scope and sources
+
+Reviewed all 26 active 2 Samuel stills at native size: 16 chapter openers and ten Story images. Retained 25; replaced only the rebellion scene to cover the followers' heads, matching 15:30. Original v1 stays in source. Videos/posters, scripture, Story prose, anchors, unrelated assets and reader behavior remain unchanged. Build advances to 368.
+
+Started from clean GitHub main fdf8cabfaac5d163bac085a47ce1afc843995303. Read AGENTS.md, RELEASING.md, the 1 Samuel handoff/audit/inventory/verification, earlier 2 Samuel audit and Ruth/Samuel continuity fixes. Freshly opened public Sites source at 27500fc0c86ac5a1eac1ca196109191952a05b3e. No mirror-only source existed; three differing research documents were later canonical 1 Samuel audit/verification/handoff updates. Production fingerprints matched before editing. No local edits or stashes were present. Source helper is absent in this cloud image, so ordinary Git uses scoped credentials through hidden stdin and in-memory Git configuration, never files or command arguments. Existing public audience is preserved.
+
+## Review and correction
+
+Viewed actual Genesis 7 style reference, the prior adult David wilderness reference, all ten Story and sixteen chapter files, generated original and final replacement at native size. Compared faces, complexion, hair, build, age, actions, relationships, visible hands/thumbs/fingers, limbs, feet and animals. No clear malformed visible anatomy remains; small/occluded details cannot support exact counts. Grounded natural light/materials and varied blue/green/plum/gray scenes meet the established realistic restrained style.
+
+`story-absalom-s-rebellion-v1.webp` had two uncovered followers' heads. Included WEB/KJV/ASV 15:30 describe David and the people with covered heads; David also goes barefoot. New `story-absalom-s-rebellion-v2.webp` gives those followers loose linen coverings, retaining all six people, identifiable faces/builds/positions, older David's covered head and bare feet, uphill road and gray sky. Every visible head is now covered. Actual v1, `story-david-in-the-wilderness-v1.webp` and style-only `chapter-genesis-07-opening-v1.webp` were supplied to imagegen. Original PNG and final 1200×675 WebP were inspected against those references; all visible hands and feet remain coherent. Generation record contains input paths, original path, bytes and hash. The public asset commit precedes the updated immutable host pin; shared web/native metadata selects v2. No character was recast.
+
+Text checks used the included scripture: Hebron 2:1–4; sleeping house/wheat 4:5–6; stronghold 5:6–9; instruments/procession 6:5,13–15; table 9:7–13; lamb parable 12:1–3; Tamar staying with Absalom 13:18–20; Tekoa mourning disguise 14:2; flight 15:30; two saddled donkeys/provisions 16:1–2; overnight Jordan crossing 17:22; woodland/oak 18:6–9; ferry 19:18; famine 21:1; rock refuge/song 22:1–2; lentils and poured-out water 23:11,15–17; Araunah purchase, oxen/yoke 24:20–24. Props are contextual, not exhaustive inventories or archaeological reconstructions.
+
+## Identity ledger
+
+All paths below are under `src/assets/`. Actual files, not verbal descriptions, must accompany any later generation showing these people.
+
+- Adult David anchor: `story-david-in-the-wilderness-v1.webp`; medium-brown complexion, recognizable brow/nose, dense natural dark curls, short/full beard, strong adult build and blue mantle. Compare `story-david-becomes-king-v1.webp` (30 at accession, 5:4), `story-jerusalem-and-the-ark-v1.webp`, `story-the-davidic-covenant-v1.webp`, `story-david-and-mephibosheth-v1.webp`, `story-david-bathsheba-and-uriah-v1.webp`, active rebellion v2, `story-the-exploits-of-david-s-mighty-men-v1.webp` and `story-the-census-and-the-plague-v1.webp`. Features remain recognizable; rebellion shows plausible gray/age. Appendix scenes lack a secure date sequence; do not infer reversed aging or a precise chronology from chapter order. Do not use Jonathan in the earlier robe exchange as David.
+- Nathan: covenant and Bathsheba/Uriah files show the same mature medium/deep-brown man with gray natural curls, graying beard, pronounced brow/nose and dark mantle. Preserve for 1 Kings with plausible aging.
+- Tamar/Absalom: active `story-amnon-tamar-and-absalom-v2.webp`, brown complexions, dark curls, Tamar's oval face/blue covering, Absalom's long natural curls/beard/strong build. V2 remains without circlet. No secure other Absalom face is invented from the rebellion scene, which depicts David leaving.
+- Mephibosheth: table Story, medium-brown man, dark natural curls/beard, plain linen, seated with crutches. Earlier 4:4 mentions his childhood but its empty house opener does not portray him. No new appearance.
+- Joab: `story-sheba-s-revolt-and-the-gibeonites-v1.webp`, strong brown adult, tight curls/short beard, blue outer cloth. Wise woman of Abel is older, brown complexion, gray-streaked curls, cream headcloth/plum outer cloth. She is not automatically the unnamed woman of Tekoa.
+- Araunah: census Story, older brown man, gray beard, headwrap, striped earth-tone cloth. Two oxen/yoke remain plausible; hidden legs unverified.
+- Anonymous elders, priests/bearers, David's five companions and three mighty men retain source identities/compositions. Do not assign them to Abigail, Bathsheba, Uriah, Abishai, Abiathar or other named people without evidence. The woman in the flight scene has no established named identity. Earlier Samuel/Saul/Jonathan/Abigail references remain in the 1 Samuel ledger; none is newly depicted here. No portrait in Ruth is an adult David reference.
+- Chapter openers avoid identifiable people/groups. Lamb ears/head/body and folded limbs, and both donkeys' heads/ears/muzzles/hooves/folded limbs were inspected. Resting animals have intentionally occluded anatomy. Active chapter 23 lentil v2 is retained; v1 stays inactive.
+
+## Coverage and uncertainty
+
+Exactly one opener in all 24 chapters: sixteen chapter images at afterVerse 0 and eight Story openers at verse 1. Later Story anchors remain 5:6 and 23:8. Existing Story banners can preview a later event within their multi-chapter span (anointing, ark procession, meal, Nathan's confrontation and city-wall encounter); none is relabeled as the opening verse's exact event. Generic chapter captions remain absent and Story captions remain small italic text. Inventory records every path/alt/dimension/hash/placement/decision.
+
+No consecutive pairs involving 2 Samuel are below five verse positions. Within-chapter gaps are 6 and 8; boundaries are 1 Samuel→2 Samuel 14 and 2 Samuel→1 Kings 25. Boundary metadata review does not begin the next book. The earlier 1 Samuel 7 close pair remains reported in its audit.
+
+Retained Jerusalem scenes differ in settlement scale. Stronghold capture, later construction, viewpoint and elapsed time do not establish an exact common city plan; this remains setting-scale uncertainty, not a claimed historical reconstruction. Appendix ages and hidden anatomy remain qualified. No unresolved identifiable-person continuity break was found.
+
+## Release checks and limits
+
+Check results and publication provenance are recorded in `build-368-cloud-release-verification-2026-11-07.json` after execution. Full release preparation must report its actual outcome, including browser failures. No test assertion or release gate is weakened.
+
+Managed desktop declares enabled/state unknown but has no callable cua_repl.js/desktop JavaScript tool. Sites instructions prohibit substitute browser control, browser installation and preview servers in that situation. Existing repository tests will be attempted normally. Live hostname is excluded from enforced cloud egress; inherited denied live requests are not retried or bypassed. Live HTTP/image-byte checks and release:verify remain deferred absent permitted access. Native Sites publication metadata is not live delivery evidence.
+
+No Mac connector, configured VPN/device route, Xcode or xcrun is available. Signing, signed App.app/public versus www comparison, device installation, installed-build query and launch are deferred under the owner's instruction to continue cloud artwork. Historical build 359 is not a fresh device query. Full release/browser/live/device synchronization is not claimed. No next-book review is begun here.

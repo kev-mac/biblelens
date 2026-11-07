@@ -1,0 +1,588 @@
+{
+  "book": "2 Samuel",
+  "bookId": 9,
+  "reviewDate": "2026-11-07",
+  "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+  "retainedImages": 25,
+  "replacements": 1,
+  "chapterOpeners": 16,
+  "storyOpeners": 8,
+  "laterStoryImages": 2,
+  "placements": [
+    {
+      "book": 9,
+      "chapter": 1,
+      "verse": 1,
+      "position": 811,
+      "type": "story",
+      "title": "David Becomes King",
+      "src": "/assets/story-david-becomes-king-v1.webp",
+      "alt": "Elders gather around David as one pours oil onto his head.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-david-becomes-king-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 103572,
+      "sha256": "81085259ead36e1e18654e032f86933908680428077f29c47c0ba5b2073b8e0b",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 2,
+      "verse": 0,
+      "position": 837,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-02-opening-v1.webp",
+      "alt": "Imagined scene: A road winds toward Hebron through green hills and olive groves.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-02-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 167446,
+      "sha256": "74089870cfec129e4bb148bd5f59f843d2c77d6cb5a7b8fde690d71d0134f75f",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 3,
+      "verse": 0,
+      "position": 869,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-03-opening-v1.webp",
+      "alt": "Imagined scene: A spear and shield rest beside a ridge road between hill towns and a distant camp.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-03-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 142822,
+      "sha256": "e0d3823e85316aaa4cbe278040a6be2f06c5cd2c0d767de4cc7d5582f8d2426c",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 4,
+      "verse": 0,
+      "position": 908,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-04-opening-v1.webp",
+      "alt": "Imagined scene: A grain jar stands outside a shaded house with a woven sleeping mat.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-04-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 155618,
+      "sha256": "5849634584c50d3389b315ed3dead4e72e7893303d9ffe9e834510924b0321ff",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 5,
+      "verse": 0,
+      "position": 920,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-05-opening-v1.webp",
+      "alt": "Imagined scene: A small fortified Jerusalem stands above a rocky ravine.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-05-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 148184,
+      "sha256": "6f1d4eaaaadcb4dabc22c16bac2d18d6a25e4f565298d930f376cdc062553511",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 5,
+      "verse": 6,
+      "position": 926,
+      "type": "story",
+      "title": "Jerusalem and the Ark",
+      "src": "/assets/story-jerusalem-and-the-ark-v1.webp",
+      "alt": "David moves before priests carrying a covered chest as people watch near a city gate.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-jerusalem-and-the-ark-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 172782,
+      "sha256": "d29271c604aabef71ff784611bf5d0508965a12e2afc254f75eed15064a04fb5",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 6,
+      "verse": 0,
+      "position": 945,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-06-opening-v1.webp",
+      "alt": "Imagined scene: A lyre, frame drum and wooden clappers rest on woven cloth near a stone gate.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-06-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 130668,
+      "sha256": "621ddb6e446f42e3513f341e293a439c80181bd9917036380deed9beab704440",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 7,
+      "verse": 1,
+      "position": 969,
+      "type": "story",
+      "title": "The Davidic Covenant",
+      "src": "/assets/story-the-davidic-covenant-v1.webp",
+      "alt": "Nathan speaks with David in a cedar-paneled room.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-the-davidic-covenant-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 85630,
+      "sha256": "819879cb6b3c40f62565c88adc0080ceb7f223f981a4e6053ff5cd91a7270e13",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 8,
+      "verse": 1,
+      "position": 998,
+      "type": "story",
+      "title": "David and Mephibosheth",
+      "src": "/assets/story-david-and-mephibosheth-v1.webp",
+      "alt": "David welcomes Mephibosheth at a low table with bread and fruit.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-david-and-mephibosheth-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 89404,
+      "sha256": "3b13c4b98e1ccef56fad6797068cdafa2975a78b2d1f631b6fd6119874082d4e",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 9,
+      "verse": 0,
+      "position": 1015,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-09-opening-v1.webp",
+      "alt": "Imagined scene: Bread, fruit and an empty place wait at a low table in a cedar room.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-09-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 123138,
+      "sha256": "14153036e4bbbf166ab27d4bd5af49b9eb8709598794de44277a551f5dd1bda6",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 10,
+      "verse": 0,
+      "position": 1028,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-10-opening-v1.webp",
+      "alt": "Imagined scene: Tents stand outside an Ammonite hill town beneath a violet evening sky.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-10-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 98662,
+      "sha256": "6827f0411d133c53eda1574e8a2c2c2699b27da82ee1aa494fd2f41ba94a07f1",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 11,
+      "verse": 1,
+      "position": 1048,
+      "type": "story",
+      "title": "David, Bathsheba and Uriah",
+      "src": "/assets/story-david-bathsheba-and-uriah-v1.webp",
+      "alt": "Nathan addresses David, who listens with his crown set aside.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-david-bathsheba-and-uriah-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 87284,
+      "sha256": "0dfbf7f93a6c56b256397a23650ebb8a9960136f85e7c69df17bf3737363f764",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 12,
+      "verse": 0,
+      "position": 1074,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-12-opening-v1.webp",
+      "alt": "Imagined scene: A lamb rests on a woven mat beside a clay cup, recalling Nathan’s parable.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-12-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 113144,
+      "sha256": "fe366d7ff2d54a40ae308748d163120bd153751c2e6abb1a2cac1d422f888fef",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 13,
+      "verse": 1,
+      "position": 1106,
+      "type": "story",
+      "title": "Amnon, Tamar and Absalom",
+      "src": "/assets/story-amnon-tamar-and-absalom-v2.webp",
+      "alt": "Tamar sits in a shaded doorway as Absalom offers her a place to stay.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-amnon-tamar-and-absalom-v2.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 126048,
+      "sha256": "7cb77f26ae643f99771048451b2482b7f6ee28ef804d918b2180c194ae0a7b60",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 14,
+      "verse": 0,
+      "position": 1144,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-14-opening-v1.webp",
+      "alt": "Imagined scene: A dark mourning shawl rests beside a road leading from Tekoa.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-14-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 151062,
+      "sha256": "eaf772362e7c0f0e7dce37b844a0c77123b6a7b86a504ece5d7b8bcd02da29a6",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 15,
+      "verse": 1,
+      "position": 1178,
+      "type": "story",
+      "title": "Absalom's Rebellion",
+      "src": "/assets/story-absalom-s-rebellion-v2.webp",
+      "alt": "David and companions walk uphill away from Jerusalem beneath gray skies.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-absalom-s-rebellion-v2.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 239424,
+      "sha256": "5c1aa2a600428acbb66fa6cd74d84914b85fd57da06f601f52c078af0bb48623",
+      "decision": "replaced for 15:30 head coverings",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 16,
+      "verse": 0,
+      "position": 1214,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-16-opening-v1.webp",
+      "alt": "Imagined scene: Two saddled donkeys rest beside baskets of bread, raisins, fruit and a wineskin.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-16-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 179482,
+      "sha256": "7e3b13c99e89ad10eb21ef834acea4739f37ed0fcd4f9f22da2ba6580171dd98",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 17,
+      "verse": 0,
+      "position": 1237,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-17-opening-v1.webp",
+      "alt": "Imagined scene: Moonlight falls across a shallow crossing of the Jordan River.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-17-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 115266,
+      "sha256": "916797caf7cac7f8a11c58c8ee72b87501acdb1d0fc74973818824bc5e3a75a1",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 18,
+      "verse": 0,
+      "position": 1266,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-18-opening-v1.webp",
+      "alt": "Imagined scene: A spreading oak shades a woodland path in the land east of the Jordan.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-18-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 182240,
+      "sha256": "086a9ee409996f9a503ddf446775f2efd131fac7d0b213aa275c04ebe9d30245",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 19,
+      "verse": 0,
+      "position": 1299,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-19-opening-v1.webp",
+      "alt": "Imagined scene: A plain wooden ferry boat rests among reeds beside the Jordan.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-19-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 121222,
+      "sha256": "dec22d0d9b3c453aaf8cba6240fc30c872086fc2f5d672ec96dda7f20f36f879",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 20,
+      "verse": 1,
+      "position": 1343,
+      "type": "story",
+      "title": "Sheba's Revolt and the Gibeonites",
+      "src": "/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+      "alt": "A woman speaks from a city wall to Joab and waiting men below.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-sheba-s-revolt-and-the-gibeonites-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 105688,
+      "sha256": "77d9678b6af5ef178206eb640f76b8c69748b0b00c501fd0e4139f69263bf21b",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 21,
+      "verse": 0,
+      "position": 1368,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-21-opening-v1.webp",
+      "alt": "Imagined scene: Withered crops surround an empty grain store during a long famine.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-21-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 151472,
+      "sha256": "1dbb2046061bc3d6caf5412830bb44c5cbf8a7cedb69674da35c63decee42140",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 22,
+      "verse": 0,
+      "position": 1390,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-22-opening-v1.webp",
+      "alt": "Imagined scene: Light breaks through storm clouds above a rocky refuge, recalling David’s song.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-22-opening-v1.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 119564,
+      "sha256": "6e27fada57f4c457b42f03c123f989c5facef16e11f4dbc2c44647de925bf095",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 23,
+      "verse": 0,
+      "position": 1441,
+      "type": "chapter",
+      "afterVerse": 0,
+      "src": "/assets/chapter-2-samuel-23-opening-v2.webp",
+      "alt": "Imagined scene: A shield rests beside a field of lentils, recalling Shammah’s defense of the field.",
+      "width": 960,
+      "height": 540,
+      "path": "src/assets/chapter-2-samuel-23-opening-v2.webp",
+      "actualDimensions": [
+        960,
+        540
+      ],
+      "bytes": 155206,
+      "sha256": "054e27428e1b9a37764524e6af112b1da6075ef5556c2a9e8a36264b35697a0a",
+      "decision": "retained after full-size review",
+      "anatomy": "No people or animals."
+    },
+    {
+      "book": 9,
+      "chapter": 23,
+      "verse": 8,
+      "position": 1449,
+      "type": "story",
+      "title": "The Exploits of David's Mighty Men",
+      "src": "/assets/story-the-exploits-of-david-s-mighty-men-v1.webp",
+      "alt": "David pours water onto the ground before three waiting companions.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-the-exploits-of-david-s-mighty-men-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 100794,
+      "sha256": "0a0594f8e52bce81a181950c3b778b1e86f62d48188f7011ecfc61e82eb0b781",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    },
+    {
+      "book": 9,
+      "chapter": 24,
+      "verse": 1,
+      "position": 1481,
+      "type": "story",
+      "title": "The Census and the Plague",
+      "src": "/assets/story-the-census-and-the-plague-v1.webp",
+      "alt": "David offers a pouch to Araunah beside a stone threshing floor and oxen.",
+      "width": 1200,
+      "height": 675,
+      "path": "src/assets/story-the-census-and-the-plague-v1.webp",
+      "actualDimensions": [
+        1200,
+        675
+      ],
+      "bytes": 131596,
+      "sha256": "1d91561c4a8a29b6d22c527bacf673d563ecdd982d77bb04566bcf2547bc2f00",
+      "decision": "retained after full-size review",
+      "anatomy": "No clear malformed visible anatomy; hidden parts unverified."
+    }
+  ],
+  "closePairs": [],
+  "boundaryGaps": [
+    {
+      "from": [
+        8,
+        31,
+        0
+      ],
+      "to": [
+        9,
+        1,
+        1
+      ],
+      "gap": 14
+    },
+    {
+      "from": [
+        9,
+        24,
+        1
+      ],
+      "to": [
+        10,
+        1,
+        1
+      ],
+      "gap": 25
+    }
+  ]
+}
