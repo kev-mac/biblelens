@@ -1,0 +1,130 @@
+{
+  "book": "Malachi",
+  "canonicalBaseline": "092a3e4",
+  "chapterCount": 4,
+  "verseCount": 55,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-malachi-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 14,
+      "bytes": 122422,
+      "sha256": "40ddf3cc3db2fc6dfe10b281f4790c44aaa6633d3b3fdbc67b21bfe978d700a2",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-malachi-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 17,
+      "bytes": 130396,
+      "sha256": "b9a5264aaa405c29ecfacc261833b3f040599471cd10ac4e8e19f6fd45612b51",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-malachi-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 18,
+      "bytes": 137630,
+      "sha256": "a7719791bd577039f74daaf5770c983129abffd79e778a1d1fa7f0806cead804",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-malachi-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 6,
+      "bytes": 130318,
+      "sha256": "ed67505b0c5912cfdb0fc0401dc49e49ea0ec13f60dfb7b743120bde95644687",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 4,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 37,
+        "chapter": 14,
+        "verse": 0,
+        "position": 190,
+        "src": "/assets/chapter-zechariah-14-opening-v1.webp"
+      },
+      "b": {
+        "book": 38,
+        "chapter": 1,
+        "verse": 0,
+        "position": 211,
+        "src": "/assets/chapter-malachi-01-opening-v1.webp"
+      },
+      "gap": 21
+    },
+    {
+      "a": {
+        "book": 38,
+        "chapter": 4,
+        "verse": 0,
+        "position": 260,
+        "src": "/assets/chapter-malachi-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 39,
+        "chapter": 1,
+        "verse": 0,
+        "position": 266,
+        "src": "/assets/chapter-matthew-01-opening-v1.webp"
+      },
+      "gap": 6
+    }
+  ],
+  "minimumInternalGap": 14,
+  "baselineAssetFilesPreserved": 1616,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "pinnedBlobsEqualSource": 1145,
+  "unrelatedStoryMetadataPreserved": true,
+  "productionSourceUnchanged": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": true,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59517405,
+  "workerSha256": "19e0945b9d99d5aa36d43c5c1e46d89d7fbb7aaba582d5dee64acb53bcb03eff",
+  "originFixtureCalls": 4
+}

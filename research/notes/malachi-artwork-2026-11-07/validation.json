@@ -1,0 +1,71 @@
+{
+  "scope": "Malachi only; documentation-only review, no new release",
+  "baseline": "092a3e4",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/malachi-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node research/notes/malachi-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1
+    }
+  ],
+  "fullCheckFailure": {
+    "file": "scripts/check-release-smoke.mjs",
+    "line": 31,
+    "reason": "Missing default Playwright Chromium headless-shell executable; browser smoke did not run",
+    "precedingNonbrowserChecksPassed": true,
+    "searchUsefulHit": "50/50",
+    "readability": "Existing report-only mode with inherited findings"
+  },
+  "sync": "Unchanged, not rerun; earlier intermittent assert(finishRead) failure remains unresolved",
+  "releasePrepare": "Not run: no application change or new release",
+  "publication": {
+    "attempted": false,
+    "reason": "Parent explicitly prohibits publishing or bypassing inherited auto-review denial",
+    "blockedVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "priorRecordedDeploymentId": null,
+    "mirrorMutated": false,
+    "newVersionCreated": false
+  },
+  "limits": [
+    "Managed browser control unavailable; no alternate control or installation attempted",
+    "Inherited denied live HTTP/image/release:verify checks not retried",
+    "No Mac/device connector or configured VPN route; signing, signed parity, device install/query/launch deferred"
+  ],
+  "nextBook": "Matthew; handoff prepared, session not started"
+}
