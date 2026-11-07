@@ -60,5 +60,24 @@
     "Inherited intermittent sync settling is not proved fixed by passing unchanged checks",
     "Tiny/occluded anatomy and imagined architecture remain qualified"
   ],
-  "publication": null
+  "publication": {
+    "canonicalReviewCommit": "90429df9fb29d94e1de8ff22bf3f5992ca61b81a",
+    "mirrorCommit": "6fd4b8405b7cb4858c604e9775af43b64bb027d7",
+    "version": 362,
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_e5e0c59f776481918646f23c72801e7c",
+    "deploymentId": "appgdep_6aeeafa3f5d88191a74d5f183cd80099",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveFiles": 6,
+    "workerSha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2",
+    "mirrorRebuilt": false,
+    "initialDeploymentRejected": true,
+    "initialRejectionReason": "Automatic approval review did not recognize explicit publication authorization.",
+    "outcomeChecked": "get_site_version confirmed deployment_id null",
+    "authorizationEvidence": "Trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca reread after rejection; explicitly authorizes book-by-book commit, push, publish and available-device install.",
+    "identicalDeploymentRetriedOnce": true,
+    "pendingApprovalOrDeployment": false,
+    "liveHttpVerified": false,
+    "signedDevicesVerified": false
+  }
 }

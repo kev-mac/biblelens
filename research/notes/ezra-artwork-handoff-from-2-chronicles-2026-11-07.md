@@ -35,3 +35,9 @@ No Mac connector, configured VPN/device route, xcodebuild or xcrun is available.
 Preserve public audience/D1 and Worker-only packaging. Push public new assets before updating immutable host pin. Stage canonical already-built output through `release:sites`; do not independently rebuild mirror or package dist/client/static bypass. Never edit generated release.json by hand.
 
 After a denial, check uncertain outcome, read trusted owner messages with user_message_read.read_messages, and retry only the same denied action once per materially new relevant evidence when known not executed. Owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca` explicitly authorizes each book's commit/push/publish/install; it was freshly read during this review. Never bypass a denial. Final publication IDs and commits are appended after confirmed deployment.
+
+## Confirmed publication
+
+2 Chronicles review commit **90429df9fb29d94e1de8ff22bf3f5992ca61b81a** is pushed to GitHub main; later documentation records the confirmed publication. Mirror commit **6fd4b8405b7cb4858c604e9775af43b64bb027d7** is pushed. Public Sites **version 362**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_e5e0c59f776481918646f23c72801e7c`, succeeded deployment **appgdep_6aeeafa3f5d88191a74d5f183cd80099**, https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file archive staged the exact canonical Worker without rebuilding mirror. Same build 370/fingerprint above; no signed-device delivery implied.
+
+Initial deployment rejection said authorization was missing. Saved-version query confirmed deployment_id null; freshly read trusted owner message explicitly authorized each book's publication. Identical saved-version deployment retried once and succeeded. No approval or deployment remains pending. Browser gate, live HTTP and native signing/install remain deferred. Preserve the checked production fingerprint while integrating final documentation.
