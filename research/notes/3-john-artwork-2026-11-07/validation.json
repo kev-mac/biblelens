@@ -1,0 +1,232 @@
+{
+  "baseline": "df8fa3fb5ed2cf8dfe9bd3fde222b3b147b0f36e",
+  "scope": "3 John only; sole existing opener retained, no production changes",
+  "checks": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/3-john-review/npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/3-john-review/build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "e6645601f3b125f809435f842d25fabc120fe8b53632d5011b4a9dd493b9a2e2"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "logPath": "/tmp/3-john-review/check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "logPath": "/tmp/3-john-review/check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "logPath": "/tmp/3-john-review/check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde",
+      "result": "passed"
+    },
+    {
+      "command": "node research/notes/3-john-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "logPath": "/tmp/3-john-review/verify.log",
+      "logBytes": 385,
+      "logSha256": "4c580191cde4a3210a4d1a23cf7584e2fe183c90661734aaa1bd2d4eccab79de",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "logPath": "/tmp/3-john-review/check-all.log",
+      "logBytes": 23961,
+      "logSha256": "3b7e153f9cfef32b1dee6e6fe98ae9a8ca62ee83419eb39a533d39fa4ba04214",
+      "result": "failed at final browser launch; preceding checks passed"
+    },
+    {
+      "command": "node research/notes/3-john-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/3-john-review/compare-sites.log",
+      "logBytes": 1173,
+      "logSha256": "8ab73b31198f51102bfe5827257cae72e52349395ff88241aa65046b31e87425"
+    }
+  ],
+  "additionalPassedChecks": [
+    "2010 production files and 1619 assets byte-identical",
+    "14 verses / 42 exact KJV/ASV/WEB fields including presence/type/value",
+    "One source/Worker/unsigned-native image byte match; headings/metadata/hidden generic caption preserved",
+    "Missing-opener negative coverage rejection",
+    "1147 immutable pinned Git blobs equal source",
+    "Both opener-coordinate conventions: boundary gaps 13 and 14, no close pairs touching 3 John",
+    "Actual offline bundled engine: zero network calls",
+    "git diff --check"
+  ],
+  "production": {
+    "preservedProductionFiles": 2010,
+    "preservedAssets": 1619,
+    "retained": 1,
+    "replaced": 0,
+    "totalImageBytes": 135906,
+    "chapters": 1,
+    "verseCount": 14,
+    "storyPlacements": 0
+  },
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30649,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        },
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30650,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        },
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Browser assertions did not run; preceding checks passed, readability inherited report-only."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted in 3 John session",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass; no save/deploy, mirror push, audience change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1 and no callable cua_repl.js. Sites skill requires skipping browser QA: no preview, browser installation or substitute route.",
+    "Inherited denied live HTTP/image/release:verify deferred without materially new relevant authorization. Local fixture is not live parity. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN; signing, signed public vs www comparison and installation/query/launch pending. Historical build 359 is not fresh evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains outside scope."
+  ],
+  "sourceMirror": {
+    "baseline": "df8fa3fb5ed2cf8dfe9bd3fde222b3b147b0f36e",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential read-only opening for the 3 John review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "nextBookStarted": false,
+  "gitTransport": {
+    "initialPush": "Rejected by GitHub GH007: commit would publish a private email address. Remote main remained at baseline.",
+    "repair": "Use the already-established public GitHub noreply author/committer identity from recent canonical commits; amend only this session\u2019s unpublished commit. No account privacy setting changed."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "book": "3 John",
+  "baseline": "df8fa3fb5ed2cf8dfe9bd3fde222b3b147b0f36e",
+  "chapters": 1,
+  "verseCount": 14,
+  "totalPlacements": 1,
+  "chapterOpeners": 1,
+  "storyPlacements": 0,
+  "retained": 1,
+  "replaced": 0,
+  "totalImageBytes": 135906,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "src": "/assets/chapter-3-john-01-opening-v1.webp",
+      "alt": "Imagined scene: Bread and water await guests beside an open door. A green path leads toward distant hills.",
+      "width": 960,
+      "height": 540,
+      "bytes": 135906,
+      "sha256": "e0a7943fa470c8654c6ccb407e9f2f6baa202cdde071d83d8e21ae7c6ad9d5d6",
+      "verses": 14,
+      "textBasis": "1:5-8 praises care for traveling brothers and strangers and urges support for their journey. Bread, a water jug and an open door form an imagined hospitality motif; no meal, exact house, route or completed face-to-face meeting is claimed. Does not literalize children (1:4), conflate Gaius or Demetrius with same-named people elsewhere, or portray Diotrephes as welcoming guests.",
+      "fullSizeReview": "Native 960x540: bread crust/scoring and plate rim/contact; jug lip, neck, body, handle joins and table contact; table and bench planks/legs; folded red cloth weave/fringe; hanging cloth; door boards/braces/fasteners/ring; threshold/floor/mat weave; left basket lid/handle and partial pot; niche basket and two pots, foliage and landscape/path. No definite malformed object, lettering or signature. Occluded supports, jug contents, exact date/site, botanical species and bread recipe are not established.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30649,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        },
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 62,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30650,
+            "src": "/assets/chapter-2-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "gap": 13
+        },
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

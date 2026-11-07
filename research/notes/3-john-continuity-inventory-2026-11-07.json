@@ -1,0 +1,148 @@
+{
+  "scope": "3 John only; Jude art not opened/reviewed; outgoing placement metadata only",
+  "baseline": "df8fa3fb5ed2cf8dfe9bd3fde222b3b147b0f36e",
+  "textRead": "All 14 KJV/ASV/WEB verses. Hospitality/journey 1:5-8; reported rejection 1:9-10; Demetrius commendation 1:12; ink/pen and hoped-for future face-to-face conversation 1:13-14. Exact edition fields retained.",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "bytes": 107786,
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "Actual source image viewed separately and compared unscaled side by side; style only, never identity."
+  },
+  "priorInventories": [
+    "research/notes/2-john-artwork-audit-2026-11-07.md",
+    "research/notes/2-john-artwork-inventory-2026-11-07.json",
+    "research/notes/2-john-continuity-inventory-2026-11-07.json",
+    "research/notes/2-john-artwork-verification-2026-11-07.json",
+    "research/notes/john-continuity-inventory-2026-11-07.json",
+    "research/notes/acts-continuity-inventory-2026-11-07.json",
+    "research/notes/romans-continuity-inventory-2026-11-07.json",
+    "research/notes/1-corinthians-continuity-inventory-2026-11-07.json"
+  ],
+  "visiblePeople": [],
+  "visibleAnimals": [],
+  "recognizableRecurringGroups": [],
+  "identityInputs": [],
+  "generationCalls": [],
+  "replacements": [],
+  "decision": "Retain sole existing 960x540 opener; no production changes or new portrait anchor.",
+  "textualMentions": [
+    {
+      "mentions": [
+        "elder",
+        "Gaius",
+        "brothers/strangers",
+        "children",
+        "friends"
+      ],
+      "finding": "No people portrayed. Literary hospitality motif is compatible with 1:5-8; children is not made a literal family portrait. No asserted apostle John portrait, known building, named traveler, exact location/date or completed visit."
+    },
+    {
+      "mentions": [
+        "Diotrephes",
+        "Demetrius"
+      ],
+      "finding": "Neither depicted. Do not make Diotrephes the welcoming host, turn commendation into a narrated visit, or identify Demetrius with the Acts 19 silversmith or Gaius with same-named people elsewhere on name alone."
+    },
+    {
+      "mentions": [
+        "God",
+        "the Name"
+      ],
+      "finding": "Textual mentions only; no divine figure or portrait shown."
+    }
+  ],
+  "inheritedPeopleGuidance": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-road-to-emmaus-v1.webp",
+        "src/assets/story-the-ascension-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+        "src/assets/story-the-woman-at-the-well-v1.webp",
+        "src/assets/story-healing-at-bethesda-v1.webp",
+        "src/assets/story-bread-of-life-v1.webp",
+        "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+        "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+        "src/assets/story-the-raising-of-lazarus-v1.webp",
+        "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-the-resurrection-appearances-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, prominent nose, full dark beard, dark natural curls, lean adult build.",
+      "age": "Ministry through resurrection; parallel Gospel scenes and a few years of narrative time do not justify decades of aging.",
+      "result": "Recognizable across actual earlier approved references and all current neighboring depictions. Lighting/pose and apparent curl length vary within compatibility. No definite identity break.",
+      "status": "Carried from current approved earlier ledger for possible future work; no new portrait generation/edit and no earlier human portrait re-reviewed in this 3 John session."
+    },
+    {
+      "person": "Apostle John and recurring apostolic group",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-ascension-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+        "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+        "src/assets/story-the-jerusalem-council-v1.webp"
+      ],
+      "stableTraits": "Varied brown complexions, natural curls and adult builds; Acts 3 John is the younger dark-curled bearded witness beside Peter.",
+      "age": "Resurrection to early Acts does not permit decades of aging. Council later, exact face maps limited.",
+      "result": "Actual approved group originals inspected. Acts 3 witness is John by action/alt, but precise earlier Gospel named portrait is uncertain; no headband/clothing naming. Group compatibility retained without certifying all twelve in a partial frame or naming gray Acts 1 participant. Apostle John is distinct from John the Baptist and John Mark.",
+      "status": "Carried from current approved earlier ledger for possible future work; no new portrait generation/edit and no earlier human portrait re-reviewed in this 3 John session."
+    }
+  ],
+  "referenceFilesViewed": [
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "bytes": 107786,
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    },
+    {
+      "path": "src/assets/chapter-2-john-01-opening-v1.webp",
+      "bytes": 119130,
+      "sha256": "4762de8589b128bc1638a0d1560d549d9c660fbd15674e3a5c55642a5acc1d1e"
+    },
+    {
+      "path": "src/assets/chapter-3-john-01-opening-v1.webp",
+      "bytes": 135906,
+      "sha256": "e0a7943fa470c8654c6ccb407e9f2f6baa202cdde071d83d8e21ae7c6ad9d5d6"
+    }
+  ],
+  "inspectionPanels": [
+    {
+      "label": "Genesis 7 style left; 3 John right; both native 960x540 unscaled",
+      "path": "/tmp/3-john-review/style-comparison.png",
+      "bytes": 1864832,
+      "sha256": "7cfe7392fd99ba3174088df265bb47eba6a1485d9e230f72166ec873d6b17ee5"
+    },
+    {
+      "label": "2 John left; 3 John right; both native 960x540 unscaled",
+      "path": "/tmp/3-john-review/incoming-comparison.jpg",
+      "bytes": 679485,
+      "sha256": "70467f49a1a6049d632ca41aca5e99d17676c2825195357c2d02bb6fb767d13b"
+    }
+  ],
+  "fullSizeReview": "Native 960x540: bread crust/scoring and plate rim/contact; jug lip, neck, body, handle joins and table contact; table and bench planks/legs; folded red cloth weave/fringe; hanging cloth; door boards/braces/fasteners/ring; threshold/floor/mat weave; left basket lid/handle and partial pot; niche basket and two pots, foliage and landscape/path. No definite malformed object, lettering or signature. Occluded supports, jug contents, exact date/site, botanical species and bread recipe are not established.",
+  "anatomy": "No current people, body parts, recognizable recurring human groups or animals. Face/complexion/hair/age/build, hands/fingers/thumbs/limbs and animal anatomy have no current subjects. Genesis 7 supplied style only, not a new Genesis audit.",
+  "styleResult": "Natural doorway daylight and believable stone/wood/clay/woven materials fit the restrained Genesis 7 finish. Green hills, blue sky and red folded cloth vary the preceding blue-cloth writing-table composition. Similar domestic objects do not establish the same room, table, cloth, jug or location.",
+  "uncertainties": [
+    "Jug interior is not visible; water is an imagined provision in the existing alt, not a measured content or explicit verse-specific menu.",
+    "Bread/water and blankets illustrate support rather than claim a documented meal or the exact supplies sent.",
+    "Occluded table/bench supports, vessel date/site, bread recipe and botanical species not established.",
+    "Epistle title does not establish an apostle portrait. Apostle John differs from Baptist/John Mark; Acts 3 witness is clearer than exact Gospel named face mapping.",
+    "No current Gaius, Demetrius or Diotrephes portrait anchor is created. A name shared elsewhere does not prove identity.",
+    "Universal future recurring-person generation/edit requires actual clear approved earlier image files as visual inputs and full-size comparisons; descriptions or prior viewing do not count. Age only with narrative elapsed time.",
+    "Superseded sending-twelve/arrest v1 and Pentecost/first-journey v1 are not approved anchors.",
+    "Noah ark scenes permit only eight adults aboard and no children."
+  ],
+  "nextBookArtworkReviewed": false
+}
