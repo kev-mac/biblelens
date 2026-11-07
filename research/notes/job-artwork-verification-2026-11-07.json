@@ -125,5 +125,26 @@
     "live": "Inherited denied destination remains outside enforced network policy; no materially new evidence or supported request_changes tool. release:verify and live image bytes deferred without retry.",
     "devices": "Linux environment; no Mac connector, configured VPN/device route, Xcode/xcrun or physical device access. Signing, signed assets comparison, physical query/install/launch deferred.",
     "sync": "Isolated check:sync passed unchanged; inherited intermittent check-sync-disconnect.mjs:34 assert(finishRead) unresolved. Fixed-count settle remains a hypothesis, not a fix."
+  },
+  "publication": {
+    "canonicalReviewCommit": "a872475",
+    "mirrorCommit": "8c91d2a492b0ca6b855900ad5dcdbef863a08fd3",
+    "sitesVersion": 366,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_791b8222f6b48191877f4ecb9c343773",
+    "deploymentId": "appgdep_6aeeb92c9e9c81918fe92b5f4a5221f0",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "archiveFileCount": 6,
+    "publicAudiencePreserved": true,
+    "d1Preserved": true,
+    "mirrorRebuilt": false
+  },
+  "approvalHistory": {
+    "initialAction": "sites_deploy_site_version for saved Job version 366",
+    "initialStatus": "denied, known unexecuted",
+    "reason": "This deploy publishes version 366 to production and may affect an unverified site audience; the available user message authorizes continuing work, but not this production publication.",
+    "newRelevantEvidence": "Read trusted user message Sentinel_71f14e4a51e88191a1801af8136df6ca explicitly authorizing each book commit/push/publish/install; refreshed Site confirms owner/public. No later cancellation found in recent room messages.",
+    "retry": "Same native deploy operation retried once; succeeded. No workaround or remaining approval blocker."
   }
 }

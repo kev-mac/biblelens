@@ -26,4 +26,6 @@ Use public/D1-preserving Worker-only packaging. Copy canonical reviewed source, 
 
 ## Publication
 
-Pending Job documentation publication; final notes will record exact commit/version/deployment result.
+Review commit **a872475** is pushed to GitHub main. Mirror **8c91d2a492b0ca6b855900ad5dcdbef863a08fd3** is pushed, with no mirror rebuild. Sites **version 366**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_791b8222f6b48191877f4ecb9c343773`, deployment **appgdep_6aeeb92c9e9c81918fe92b5f4a5221f0**, returned **succeeded** at https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file Worker-only archive; content hash `sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa`. Public audience/D1 retained; build 370 and fingerprint unchanged. No live HTTP or signed-device verification is implied.
+
+The first native deploy was rejected by automatic approval review because it did not see explicit publishing authorization and considered the audience unverified. Read trusted owner message `Sentinel_71f14e4a51e88191a1801af8136df6ca` (explicit per-book commit/push/publish/install instruction), checked recent messages for cancellation, and refreshed owner/public Site metadata. Retried only the same known-unexecuted deploy once; it succeeded. No bypass, pending deployment or remaining approval rejection. Final canonical publication documents are newer than the mirror; reconcile next session without changing the production fingerprint.
