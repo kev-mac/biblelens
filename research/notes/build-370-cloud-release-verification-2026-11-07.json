@@ -1,0 +1,134 @@
+{
+  "book": "2 Kings",
+  "retainedImages": 25,
+  "replacements": 1,
+  "altCorrections": 1,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "baselineCanonicalCommit": "57a2afe927f5bb8e65970515f045da4540ff7730",
+  "baselineMirrorCommit": "ac362a64e122094054674ea793e74e5fec7b73a1",
+  "artworkCommit": "c87ed7459451ea3e2b3400eed783def11f017291",
+  "activationCommit": "4973f38",
+  "sourceComparison": {
+    "independentProductionWork": false,
+    "newerCanonicalResearchDocuments": [
+      "research/notes/1-kings-artwork-audit-2026-11-07.md",
+      "research/notes/2-kings-artwork-handoff-from-1-kings-2026-11-07.md",
+      "research/notes/build-369-cloud-release-verification-2026-11-07.json"
+    ],
+    "absentResearchDraftsPreserved": true
+  },
+  "checks": {
+    "check:images": {
+      "exitCode": 0,
+      "status": "passed",
+      "passEvidence": [
+        "PASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.",
+        "PASS: all 1189 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, Revelation); 273 have existing Story coverage, 976 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.",
+        "PASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check."
+      ],
+      "closePairsReported": [
+        "CLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]"
+      ]
+    },
+    "check:release": {
+      "exitCode": 0,
+      "status": "passed",
+      "passEvidence": [
+        "PASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.",
+        "PASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.",
+        "PASS: local browser previews make no published-release request, while native localhost still checks for updates.",
+        "PASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.",
+        "PASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.",
+        "PASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.",
+        "PASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.",
+        "PASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes; no temporary full Worker is required."
+      ],
+      "closePairsReported": []
+    },
+    "check:sync": {
+      "exitCode": 0,
+      "status": "passed",
+      "passEvidence": [
+        "PASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.",
+        "PASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.",
+        "PASS: failed native disconnect survives reload, retries on reconnect, revokes the copied token and keeps offline notes.",
+        "PASS: already-revoked/expired tokens clear on 401 without enabling sync.",
+        "PASS: a late sync response cannot apply cloud data or restore credentials after disconnect.",
+        "PASS: web sync removes unused bearer credentials and sends only the signed-in session."
+      ],
+      "closePairsReported": []
+    },
+    "check:mobile": {
+      "exitCode": 0,
+      "status": "passed",
+      "passEvidence": [
+        "PASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.",
+        "PASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified."
+      ],
+      "closePairsReported": []
+    },
+    "release:prepare": {
+      "status": "failed",
+      "exitCode": 1,
+      "build:mobile": "passed",
+      "candidateCreated": false,
+      "reason": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+      "location": "scripts/check-release-smoke.mjs:31:32",
+      "precedingNonbrowserStages": "passed; search useful-hit threshold 50/50",
+      "readability": "completed existing report-only mode with corpus findings"
+    }
+  },
+  "apiOfflineVerification": {
+    "release": {
+      "version": "1.1.0",
+      "buildNumber": 370,
+      "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+    },
+    "chapters": 25,
+    "verses": 719,
+    "editions": [
+      "kjv",
+      "asv",
+      "web"
+    ],
+    "chapterOpeners": 13,
+    "storyOpeners": 12,
+    "artworkPlacements": 26,
+    "sourceWorkerOfflineBytesEqual": true,
+    "scriptureChapterMetadataStoryCatalogOtherArtworkUnchanged": true,
+    "hostedFixtureRequests": 17,
+    "fixtureIsNotLiveHTTP": true
+  },
+  "immutableArtwork": {
+    "sourceCommit": "c87ed7459451ea3e2b3400eed783def11f017291",
+    "matchedGitBlobs": 1142,
+    "newAssetHTTP": {
+      "src": "/assets/story-hezekiah-and-sennacherib-v2.webp",
+      "status": 200,
+      "bytes": 107388,
+      "sha256": "2d12fa1236863c96dd18bdbafebe393241f9f8cabadbe7a683ad721666f13cfd"
+    }
+  },
+  "spacing": {
+    "closePairs": [],
+    "minimumInternalGap": 6,
+    "boundaryGaps": [
+      53,
+      30
+    ]
+  },
+  "deferred": {
+    "browserQA": "No callable managed cua_repl.js/desktop JS tool; unchanged browser smoke failed missing Chromium. No substitute browser install/control/preview.",
+    "liveHTTPImagesReleaseVerify": "Live hostname excluded by enforced egress; inherited denied requests not retried or bypassed. No environment-change tool.",
+    "nativeSigningInstallQueryLaunch": "No Mac connector, Xcode/xcrun or configured VPN/device route. Signed App.app/public versus www comparison, installs, installed queries and launches deferred. Historical build 359 not freshly queried."
+  },
+  "syncFlake": "Passing unchanged sync checks does not establish the inherited intermittent bounded-settle failure fixed.",
+  "dependencySetup": "First npm ci failed unwritable default /home/agent/.npm cache; repeated once with workspace cache succeeded without dependency input changes.",
+  "publication": {
+    "status": "pending source packaging"
+  }
+}

@@ -37,4 +37,12 @@ Build 370 uses one source fingerprint for web and offline native assets. Asset c
 
 Managed Sites container has no callable cua_repl.js/desktop JS tool. No alternate browser install/control or preview server was used. Browser smoke will be attempted through the unchanged repository gate; any failure remains a failure. Live hostname is excluded by enforced egress; inherited denied requests are not retried or bypassed, and no environment-change tool is exposed. Native Sites metadata cannot prove live HTTP/image bytes. No Mac connector, configured VPN/device route, Xcode or xcrun: signing, signed public-vs-www parity, installation, installed-build queries and launches remain deferred. Historical device build 359 is not a fresh query. Inherited intermittent sync-settle issue is not declared fixed by a passing unchanged run.
 
-Final check and publication results follow after execution.
+## Completed checks and release preparation
+
+`build:mobile`, `check:images`, `check:release`, `check:sync` and `check:mobile` passed. Unchanged sync tests did not reproduce the inherited intermittent settling failure; they do not establish it fixed. The first dependency install failed at the default home npm cache; using a writable workspace cache succeeded without dependency changes.
+
+`release:prepare` **failed**, exit 1, at unchanged `check-release-smoke.mjs:31:32`: missing Playwright Chromium headless shell. Preceding nonbrowser checks/search useful-hit 50/50 passed; readability completed report-only with existing corpus findings. No candidate.json was produced, no assertion weakened. Independent built API/offline verification passed all 25 chapters, 719 verses in KJV/ASV/WEB, 26 image bytes/anchors and exact one-opener coverage. Hosted responses used source fixtures, not live delivery.
+
+Web/offline/canonical agree on build 370 and fingerprint `d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2`. All 1,142 pinned Git blobs match source at artwork commit `c87ed7459451ea3e2b3400eed783def11f017291`. New public GitHub image returned HTTP 200 and exact 107,388 source bytes. This does not verify live Sites delivery. Scripture, chapter metadata, Story catalog, videos/posters and all other image mappings match baseline. git diff --check passed.
+
+Publication is being packaged from this exact built source; final result follows below. Browser QA, live HTTP/image bytes, release:verify and signed-device synchronization remain deferred. The next-session prompt is `1-chronicles-artwork-handoff-from-2-kings-2026-11-07.md`; 1 Chronicles was not begun.
