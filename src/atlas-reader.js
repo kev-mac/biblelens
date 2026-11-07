@@ -44,7 +44,7 @@
    control('lens-edition').closest('label').hidden=lost;
 
    const bookLabel=document.createElement('span');bookLabel.className='ux-picker-book';bookLabel.textContent=reading.name;
-   const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;const arrow=document.createElement('span');arrow.className='ux-picker-arrow';arrow.textContent=' ▾';chapterLabel.append(arrow);
+   const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;
    control('ux-chapter-picker').replaceChildren(bookLabel,chapterLabel);
    control('ux-chapter-picker').setAttribute('aria-label',reading.name+' '+reading.chapter+'. Choose chapter');
    control('ux-prev').disabled=readingBook===0&&readingChapter===1;

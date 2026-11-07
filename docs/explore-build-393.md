@@ -76,3 +76,37 @@ The final source now requires a fresh full CI run with 164 browser cases
 (28 evidence + 88 reader + 48 Explore); the earlier passing run is preserved
 and is not attributed to these later changes. No native browser session,
 physical-device check, publication or installation is claimed by this task.
+
+## Further passage-picker annotations
+
+The user's supplied 598×1184 dialog screenshot confirms an actual visually
+narrow field; the earlier different desktop observation does not disprove it.
+The coordinated candidate also restores the chapter opener to link styling:
+no stretched field border/background or dropdown arrow, while retaining its
+dialog semantics, readable font, 44px target, keyboard focus and picker access.
+Translation controls retain native selection with visible labels and the
+site's 12px corners, borders and control colors. The three passage steps have
+consistent borders, with the selected step distinguished.
+
+The reference row now uses a full-width rectangular input plus an intrinsic
+Go column. Its label says Go to a passage, and help text distinguishes passage
+references from Search for words/topics. Existing parser and navigation rules
+are unchanged. Each visible book grid uses full names on one line if all fit;
+if any full name cannot fit, all its labels use abbreviations. Full accessible
+names remain on the radio inputs. Actual font metrics, resize observation and
+font readiness choose one mode; labels never shrink or split words. Widening
+restores full names when they fit. All 86 books remain available through the
+existing testament/collection controls.
+
+The reader matrix adds the exact supplied 598×1184 and 1157×1184 viewports.
+It now has 104 reader cases, for 180 total browser cases with the existing 28
+evidence/context and 48 Explore cases. New assertions inspect link-style
+chapter navigation, translation geometry/native appearance and keyboard
+selection, visible step borders, uniform book-label mode and single-line fit
+in Old/New/Lost groups, in addition to real reference entry/editing/focus.
+Independent DOM text measurement checks the production canvas-based label
+decision. Screenshots must be inspected before accepting the exact source.
+
+No earlier approved rendering is present in this checkout or attached to this
+delegated task. Comparison can use the supplied annotated screenshots and
+requested behavior; no missing rendering is invented or claimed matched.

@@ -423,23 +423,39 @@ async function updatePassagePickerVerses(preferred=1){
  }catch{if(request===passagePickerRequest)$('#passage-verse-grid').innerHTML='<span class="number-grid-status">Could not load verses. Choose the chapter to retry.</span>';}
 }
 function updatePassagePickerChapters(chapter=1){const book=books[Number($('#passage-book').value)];passageNumberGrid('passage-chapter',Array.from({length:book.chapters},(_,i)=>i+1),chapter);}
+function passageBookAbbreviation(book){
+ const extra={66:'Tob',67:'Jdt',68:'AddEsth',69:'Wis',70:'Sir',71:'Bar',72:'Song3',73:'Sus',74:'Bel',75:'1Macc',76:'2Macc',77:'1Esd',78:'PrMan',79:'2Esd',80:'GThom',81:'GPhil',82:'GTruth',83:'GMary',84:'GJudas',85:'SJames'};
+ return extra[book.id]||book.code||book.name;
+}
+function fitPassageBookLabels(){
+ const grid=$('#passage-book-grid');if(!passagePicker?.open||passagePicker.dataset.step!=='book'||!grid?.clientWidth)return;
+ const labels=[...grid.querySelectorAll('[data-book-full]')],context=document.createElement('canvas').getContext('2d');
+ const abbreviated=labels.some(label=>{const style=getComputedStyle(label);context.font=style.font||`${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;return context.measureText(label.dataset.bookFull).width>label.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight)+.5;});
+ grid.dataset.bookLabels=abbreviated?'abbreviated':'full';
+ for(const label of labels){const text=abbreviated?label.dataset.bookShort:label.dataset.bookFull;if(label.textContent!==text)label.textContent=text;}
+}
 function renderPassageBooks(testament){
  const selected=Number($('#passage-book').value),group=testament||(selected>=66?'lost':selected<39?'old':'new');
  passagePicker.dataset.testament=group;
- $('#passage-book-grid').innerHTML=books.filter(b=>group==='lost'?b.id>=66:group==='old'?b.id<39:b.id>=39&&b.id<66).map(b=>`<label class="passage-number"><input type="radio" name="passage-book-choice" aria-label="${esc(b.name)}" title="${esc(b.name)}" value="${b.id}" ${b.id===selected?'checked':''}><span>${esc(b.name)}</span></label>`).join('');
+ $('#passage-book-grid').innerHTML=books.filter(b=>group==='lost'?b.id>=66:group==='old'?b.id<39:b.id>=39&&b.id<66).map(b=>`<label class="passage-number"><input type="radio" name="passage-book-choice" aria-label="${esc(b.name)}" title="${esc(b.name)}" value="${b.id}" ${b.id===selected?'checked':''}><span data-book-full="${esc(b.name)}" data-book-short="${esc(passageBookAbbreviation(b))}">${esc(b.name)}</span></label>`).join('');
  if(group==='lost'){const grid=$('#passage-book-grid');for(const collection of [...new Set(books.filter(b=>b.collection).map(b=>b.collection))]){const heading=document.createElement('h3');heading.className='lost-picker-heading';heading.textContent=collection;const first=grid.querySelector('input[value="'+books.find(b=>b.collection===collection).id+'"]')?.closest('label');if(first)grid.insertBefore(heading,first);}}
  for(const button of passagePicker.querySelectorAll('[data-book-testament]'))button.setAttribute('aria-pressed',String(button.dataset.bookTestament===group));
+ requestAnimationFrame(fitPassageBookLabels);
 }
 function setPassageStep(step){
- passagePicker.dataset.step=step;
+ passagePicker.dataset.step=step;requestAnimationFrame(fitPassageBookLabels);
  for(const pane of passagePicker.querySelectorAll('[data-passage-pane]'))pane.hidden=pane.dataset.passagePane!==step;
  for(const button of passagePicker.querySelectorAll('[data-passage-step]')){button.setAttribute('aria-pressed',String(button.dataset.passageStep===step));button.textContent=button.dataset.passageStep==='book'?books[Number($('#passage-book').value)]?.name||'Book':button.dataset.passageStep==='chapter'?'Chapter '+($('#passage-chapter').value||'1'):'Verse '+($('#passage-verse').value||'1');}
 }
 function openPassagePicker(){
  if(!books.length)return;
  if(!passagePicker){passagePicker=document.createElement('dialog');passagePicker.id='passage-picker';passagePicker.className='glass-dialog';passagePicker.setAttribute('aria-labelledby','passage-picker-title');
-  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to Passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div class="passage-reference-entry"><label for="passage-reference">Type a Reference</label><div class="passage-reference-controls"><input type="text" id="passage-reference" maxlength="80" placeholder="Exodus 1:8" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" aria-describedby="passage-reference-help passage-reference-status"><button type="button" id="passage-reference-go">Go</button></div><p id="passage-reference-help">Enter a book name, with a chapter and verse if needed. Or use the grids below.</p><p id="passage-reference-status" role="status" aria-live="polite" aria-atomic="true"></p></div><div id="passage-translation"></div><nav class="passage-steps" aria-label="Passage selection"><button type="button" data-passage-step="book">Book</button><button type="button" data-passage-step="chapter">Chapter</button><button type="button" data-passage-step="verse">Verse</button></nav><fieldset data-passage-pane="book"><legend>Book</legend><input type="hidden" id="passage-book"><div class="passage-testaments" role="group" aria-label="Book collection"><button type="button" data-book-testament="old">Old Testament</button><button type="button" data-book-testament="new">New Testament</button><button type="button" data-book-testament="lost">Lost Books</button></div><div id="passage-book-grid" class="passage-book-grid"></div></fieldset><div class="passage-picker-fields"><fieldset data-passage-pane="chapter"><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset data-passage-pane="verse"><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read Passage</button></form>';document.body.append(passagePicker);
+  passagePicker.innerHTML='<div class="sheet-heading"><h2 id="passage-picker-title">Go to Passage</h2><button type="button" class="icon" data-picker-close aria-label="Close passage picker">×</button></div><form id="passage-picker-form"><div class="passage-reference-entry"><label for="passage-reference">Go to a passage</label><div class="passage-reference-controls"><input type="text" id="passage-reference" maxlength="80" placeholder="e.g. John 3:16" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="go" aria-describedby="passage-reference-help passage-reference-status"><button type="button" id="passage-reference-go">Go</button></div><p id="passage-reference-help">Type a passage reference, such as John 3:16. Use Search for words or topics.</p><p id="passage-reference-status" role="status" aria-live="polite" aria-atomic="true"></p></div><div id="passage-translation"></div><nav class="passage-steps" aria-label="Passage selection"><button type="button" data-passage-step="book">Book</button><button type="button" data-passage-step="chapter">Chapter</button><button type="button" data-passage-step="verse">Verse</button></nav><fieldset data-passage-pane="book"><legend>Book</legend><input type="hidden" id="passage-book"><div class="passage-testaments" role="group" aria-label="Book collection"><button type="button" data-book-testament="old">Old Testament</button><button type="button" data-book-testament="new">New Testament</button><button type="button" data-book-testament="lost">Lost Books</button></div><div id="passage-book-grid" class="passage-book-grid"></div></fieldset><div class="passage-picker-fields"><fieldset data-passage-pane="chapter"><legend>Chapter</legend><input type="hidden" id="passage-chapter"><div id="passage-chapter-grid" class="passage-number-grid"></div></fieldset><fieldset data-passage-pane="verse"><legend>Verse</legend><input type="hidden" id="passage-verse"><div id="passage-verse-grid" class="passage-number-grid" aria-live="polite"></div></fieldset></div><button type="submit" id="passage-go" class="primary">Read Passage</button></form>';document.body.append(passagePicker);
   $('#passage-translation').append($('#reader-edition').closest('label'));
+  $('#reader-edition').setAttribute('title','Select a Bible translation');
+  new ResizeObserver(fitPassageBookLabels).observe($('#passage-book-grid'));
+  document.fonts.ready.then(fitPassageBookLabels);
+  window.addEventListener('biblelens:statechange',fitPassageBookLabels);
   $('#passage-reference-go').onclick=navigateTypedPassage;
   $('#passage-reference').onkeydown=event=>{if(event.key==='Enter'&&!event.isComposing){event.preventDefault();void navigateTypedPassage();}};
   $('#passage-reference').oninput=cancelTypedPassage;
@@ -456,7 +472,7 @@ function openPassagePicker(){
   passagePicker.addEventListener('close',()=>{passagePickerRequest++;passageReferenceRequest++;($('#ux-chapter-picker')||document.querySelector('.passage-heading-picker'))?.focus({preventScroll:true});});
  }
  $('#passage-reference').value='';$('#passage-reference').removeAttribute('aria-invalid');$('#passage-reference-status').textContent='';$('#passage-reference-go').disabled=false;
- $('#passage-book').value=readingBook;renderPassageBooks();setPassageStep('book');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);setPassageStep('book');passagePicker.showModal();
+ $('#passage-book').value=readingBook;renderPassageBooks();setPassageStep('book');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);setPassageStep('book');passagePicker.showModal();fitPassageBookLabels();
 }
 document.addEventListener('click',ev=>{
  if(ev.target.closest('.passage-picker-trigger,.passage-heading-picker'))openPassagePicker();

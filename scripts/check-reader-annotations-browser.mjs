@@ -4,7 +4,17 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an authorized running preview.');
 const matrix=[],output='.release/reader-annotations';fs.mkdirSync(output,{recursive:true});
-const screens=[[320,844],[390,844],[647,844],[650,844],[651,844],[768,1024],[820,1024],[844,390],[1024,1024],[1165,747],[1366,1024]];
+const screens=[[320,844],[390,844],[598,1184],[647,844],[650,844],[651,844],[768,1024],[820,1024],[844,390],[1024,1024],[1157,1184],[1165,747],[1366,1024]];
+async function checkBookLabels(page){
+ await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+ const report=await page.locator('#passage-book-grid [data-book-full]').evaluateAll(nodes=>nodes.map(node=>{
+  const style=getComputedStyle(node),probe=document.createElement('span');probe.textContent=node.dataset.bookFull;Object.assign(probe.style,{font:style.font,whiteSpace:'nowrap',position:'fixed',visibility:'hidden',display:'inline-block',width:'max-content',padding:'0',border:'0'});document.body.append(probe);const fullWidth=probe.getBoundingClientRect().width;probe.remove();
+  return {full:node.dataset.bookFull,short:node.dataset.bookShort,text:node.textContent,fullWidth,space:node.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),fits:node.scrollWidth<=node.clientWidth+1,nowrap:style.whiteSpace==='nowrap',name:node.previousElementSibling.getAttribute('aria-label')};
+ }));
+ const abbreviated=report.some(label=>label.fullWidth>label.space+.5),mode=abbreviated?'abbreviated':'full';assert.equal(await page.locator('#passage-book-grid').getAttribute('data-book-labels'),mode,JSON.stringify(report));
+ for(const label of report){assert.equal(label.text,abbreviated?label.short:label.full,'Use one label mode for every book');assert.equal(label.name,label.full);assert(label.fits&&label.nowrap,'Book names stay on one line without clipping: '+JSON.stringify(label));}
+ return mode;
+}
 try{for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
  try{
@@ -21,11 +31,14 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const measures=await page.locator('#lensMasthead,#lensReadingBar,#ux-chapter-picker,#lens-settings').evaluateAll(nodes=>nodes.map(n=>({id:n.id,...n.getBoundingClientRect().toJSON(),font:parseFloat(getComputedStyle(n).fontSize)})));
     const header=measures.find(n=>n.id==='lensMasthead'),bar=measures.find(n=>n.id==='lensReadingBar'),picker=measures.find(n=>n.id==='ux-chapter-picker');
     assert(header.top>=(native?24:0)-1);assert(bar.top>=header.bottom-1);assert(picker.width>=44&&picker.height>=44&&picker.font>=18);
+    const pickerStyle=await page.locator('#ux-chapter-picker').evaluate(node=>{const style=getComputedStyle(node);return {border:style.borderTopWidth,background:style.backgroundColor,grow:style.flexGrow};});assert.equal(pickerStyle.border,'0px');assert.equal(pickerStyle.background,'rgba(0, 0, 0, 0)');assert.equal(pickerStyle.grow,'0');assert.equal(await page.locator('#ux-chapter-picker .ux-picker-arrow').count(),0,'Chapter navigation has link styling, without a dropdown arrow');
+    assert(await page.locator('.lens-translation-caption').isVisible());const translationStyle=await page.locator('#lens-edition').evaluate(node=>({radius:getComputedStyle(node).borderRadius,appearance:getComputedStyle(node).appearance,border:getComputedStyle(node).borderTopWidth}));assert.equal(translationStyle.radius,'12px');assert.notEqual(translationStyle.appearance,'none');assert.equal(translationStyle.border,'1px');
     assert(measures.every(n=>n.left>=-1&&n.right<=width+1));
     assert(await page.locator('#chapter-text .chapter-heading-row').evaluate(n=>[n,...n.querySelectorAll('*')].every(n=>getComputedStyle(n).textShadow==='none')));
     assert(await page.locator('a:visible').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).textDecorationLine==='none')));
     assert(!(await page.locator('#chapter-text .story-illustration-reader figcaption').first().innerText()).startsWith('Imagined scene:'));
     await page.locator('#ux-chapter-picker').focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();
+    const bookLabels=await checkBookLabels(page);assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
     const reference=page.locator('#passage-reference'),referenceGeometry=await reference.evaluate(node=>{
      const box=node.getBoundingClientRect(),control=node.parentElement.getBoundingClientRect(),go=document.getElementById('passage-reference-go').getBoundingClientRect(),style=getComputedStyle(node);
      return {input:box.toJSON(),control:control.toJSON(),go:go.toJSON(),fontSize:parseFloat(style.fontSize),flex:style.flex,disabled:node.disabled,readOnly:node.readOnly,hitAtCenter:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)===node,stylesheets:[...document.styleSheets].map(sheet=>sheet.href).filter(Boolean)};
@@ -39,9 +52,11 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     await reference.click();assert.equal(await page.evaluate(()=>document.activeElement.id),'passage-reference');await page.keyboard.type('Genesis 2:3');assert.equal(await reference.inputValue(),'Genesis 2:3');
     await page.keyboard.press('Backspace');await page.keyboard.type('4');assert.equal(await reference.inputValue(),'Genesis 2:4');await page.keyboard.press('Backspace');await page.keyboard.type('3');
     await page.keyboard.press('Tab');assert.equal(await page.evaluate(()=>document.activeElement.id),'passage-reference-go');await page.keyboard.press('Shift+Tab');assert.equal(await page.evaluate(()=>document.activeElement.id),'passage-reference');
-    assert.equal(await page.locator('#passage-book-grid input').count(),39);assert((await page.locator('#passage-book-grid').innerText()).includes('Song of Solomon'));
+    assert.equal(await page.locator('#passage-book-grid input').count(),39);assert.equal(await page.getByRole('radio',{name:'Song of Solomon',exact:true}).count(),1,'Full book names remain accessible in abbreviated mode');
     const choices=await page.locator('#passage-book-grid label').evaluateAll(nodes=>nodes.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height,scroll:n.firstElementChild.nextElementSibling.scrollWidth,client:n.firstElementChild.nextElementSibling.clientWidth,radius:getComputedStyle(n.firstElementChild.nextElementSibling).borderRadius})));
     assert(choices.every(n=>n.w>=44&&n.h>=44&&n.scroll<=n.client+1&&n.radius==='12px'));
+    for(const [group,count]of [['new',27],['lost',20],['old',39]]){await page.locator(`[data-book-testament="${group}"]`).click();assert.equal(await page.locator('#passage-book-grid input').count(),count);await checkBookLabels(page);}
+    assert(await page.locator('.passage-steps button').evaluateAll(nodes=>nodes.every(node=>{const s=getComputedStyle(node);return ['Top','Right','Bottom','Left'].every(side=>parseFloat(s['border'+side+'Width'])>=1)&&s.borderTopStyle==='solid'&&s.borderRadius==='12px';})),'All three step controls have consistent borders');
     await page.locator('[data-passage-step="chapter"]').click();assert.equal(await page.locator('#passage-chapter-grid input').count(),40,'All Exodus chapters retained');
     assert(await page.locator('#passage-chapter-grid label').evaluateAll(nodes=>nodes.every(n=>{const r=n.getBoundingClientRect();return r.width>=44&&r.height>=44;})));
     await page.keyboard.press('Escape');
@@ -55,17 +70,19 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
     assert(Math.abs(await page.locator('body').evaluate(node=>parseFloat(getComputedStyle(node).getPropertyValue('--ux13-masthead-height')))-sticky[0].height)<=1,'Measured header height reaches the body after scrolling');
     assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
-    await page.evaluate(()=>scrollTo(0,0));matrix.push({engine,width,height,native,dark,status:'PASS',reference:referenceGeometry.input,globalSearch:searchBox});
+    await page.evaluate(()=>scrollTo(0,0));matrix.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox});
    }
+   await page.locator('#lens-edition').focus();await page.keyboard.press('Home');await page.keyboard.press('Enter');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='kjv'&&document.getElementById('lens-edition').value==='kjv');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#read/21/8'));await page.locator('#ux-chapter-picker').filter({hasText:'Song of Solomon'}).waitFor();
    assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
    await page.locator('#ux-chapter-picker').click();await page.locator('#passage-reference').fill('Exodus 41');await page.locator('#passage-reference').press('Enter');await page.waitForFunction(()=>document.getElementById('passage-reference').getAttribute('aria-invalid')==='true');assert(await page.locator('#passage-reference-status').innerText());
    await page.locator('#passage-reference').fill('Exodus 1:8');await page.locator('#passage-reference').press('Enter');await page.waitForFunction(()=>location.hash==='#read/1/1/8');await page.locator('#verse-8').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0);
    await page.locator('#ux-chapter-picker').click();await page.locator('#passage-reference').click();await page.keyboard.type('Genesis 2:3');await page.locator('#passage-reference-go').click();await page.waitForFunction(()=>location.hash==='#read/0/2/3');await page.locator('#verse-3').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0,'Pointer/keyboard entry and the Go button navigate to the typed verse');
+   await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').focus();await page.keyboard.press('End');await page.keyboard.press('Enter');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='asv'&&document.getElementById('lens-edition').value==='asv');await page.keyboard.press('Escape');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    assert.deepEqual(errors,[]);await context.close();
   }
  }finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');}
-assert.equal(matrix.length,88);
+assert.equal(matrix.length,104);
 console.log(JSON.stringify(matrix,null,2));

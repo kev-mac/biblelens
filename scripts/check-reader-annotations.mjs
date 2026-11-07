@@ -11,13 +11,19 @@ assert(workspace.includes("event.target.closest('[data-context-compare]')"));ass
 assert(html.includes('<details class="study-library" hidden inert>'));assert(html.includes('id="collection"'),'Keep legacy records and hooks without exposing the reader disclosure');
 assert(read('src/reader.js').includes('${esc(b.name)}</span>'),'Picker retains full book names');
 const readerSource=read('src/reader.js'),bookGrid={value:'0',innerHTML:''};
-const pickerContext={books:[...JSON.parse(read('data/books.json')),...JSON.parse(read('data/lost-books/books.json'))],passagePicker:{dataset:{},querySelectorAll:()=>[]},$:selector=>bookGrid,esc:value=>String(value)};
-vm.createContext(pickerContext);vm.runInContext(readerSource.slice(readerSource.indexOf('function renderPassageBooks('),readerSource.indexOf('function setPassageStep(')),pickerContext);
+const pickerContext={books:[...JSON.parse(read('data/books.json')),...JSON.parse(read('data/lost-books/books.json'))],passagePicker:{dataset:{},querySelectorAll:()=>[]},$:selector=>bookGrid,esc:value=>String(value),requestAnimationFrame:()=>{}};
+vm.createContext(pickerContext);vm.runInContext(readerSource.slice(readerSource.indexOf('function passageBookAbbreviation('),readerSource.indexOf('function setPassageStep(')),pickerContext);
 for(const [group,first,last,count] of [['old','Genesis','Malachi',39],['new','Matthew','Revelation',27]]){
- pickerContext.renderPassageBooks(group);assert.equal((bookGrid.innerHTML.match(/type="radio"/g)||[]).length,count);assert(bookGrid.innerHTML.includes('<span>'+first+'</span>'));assert(bookGrid.innerHTML.includes('<span>'+last+'</span>'));
+ pickerContext.renderPassageBooks(group);assert.equal((bookGrid.innerHTML.match(/type="radio"/g)||[]).length,count);assert(bookGrid.innerHTML.includes('>'+first+'</span>'));assert(bookGrid.innerHTML.includes('>'+last+'</span>'));
 }
-pickerContext.renderPassageBooks('old');assert(bookGrid.innerHTML.includes('<span>Song of Solomon</span>'),'Full names, not historical abbreviations');
-assert(!atlas.includes('fitPassageLabel')&&!atlas.includes('style.fontSize'),'Passage names must wrap rather than shrink');
+pickerContext.renderPassageBooks('old');assert(bookGrid.innerHTML.includes('aria-label="Song of Solomon"')&&bookGrid.innerHTML.includes('data-book-short="Song"'),'Full accessible names and existing standard abbreviations');
+assert(!atlas.includes('fitPassageLabel')&&!atlas.includes('style.fontSize'),'Do not shrink the type to make names fit');
+const labels=[{dataset:{bookFull:'Genesis',bookShort:'Gen'},clientWidth:64,textContent:'Genesis'},{dataset:{bookFull:'Deuteronomy',bookShort:'Deut'},clientWidth:64,textContent:'Deuteronomy'}];
+const fitGrid={clientWidth:300,dataset:{},querySelectorAll:()=>labels};
+const measureContext={measureText:value=>({width:value==='Deuteronomy'?85:46})};
+Object.assign(pickerContext,{passagePicker:{open:true,dataset:{step:'book'}},$:()=>fitGrid,getComputedStyle:()=>({font:'12px Inter',paddingLeft:'2',paddingRight:'2'}),document:{createElement:()=>({getContext:()=>measureContext})}});
+pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'abbreviated');assert.deepEqual(labels.map(label=>label.textContent),['Gen','Deut'],'One non-fitting name abbreviates every label');
+labels.forEach(label=>label.clientWidth=120);pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'full');assert.deepEqual(labels.map(label=>label.textContent),['Genesis','Deuteronomy'],'Widening restores all full names');
 assert(atlas.includes('id="ux-chapter-picker" aria-label="Choose chapter" aria-haspopup="dialog" aria-controls="passage-picker"'));
 assert(read('src/reader.js').includes("($('#ux-chapter-picker')||document.querySelector('.passage-heading-picker'))?.focus"));
 const geometry=shell.slice(shell.indexOf('function measureWorkspaceHeader(){'),shell.indexOf('const headerObserver='));
@@ -36,12 +42,16 @@ assert.equal(declaration('html.native-ios body.lens-app > #lensMasthead.lens-mas
 assert.equal(declaration('html.native-ios body.lens-app #lensReadingBar','top'),'calc(var(--app-safe-top) + var(--visual-offset-top,0px) + var(--ux13-masthead-height))');
 assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','min-height'),'44px');
 assert.match(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','font'),/1\.125rem/);
+assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','border'),'0');assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','background'),'transparent');assert(!atlas.includes("arrow.textContent=' ▾'"));
 assert.equal(declaration('html body.lens-app #ux-chapter-picker .ux-picker-book','white-space'),'normal');
 assert.match(declaration('html body.lens-app #passage-picker .passage-book-grid','grid-template-columns'),/auto-fit/);
 assert.match(declaration('html body.lens-app #passage-picker .passage-number-grid','grid-template-columns'),/max\(44px,2\.5rem\)/);
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number','min-height'),'44px');
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number span','border-radius'),'var(--control-radius,12px)');
 assert.equal(declaration('html body.lens-app #passage-picker #passage-reference-go','width'),'auto','The Go button must override the narrow-screen form button width so the input has room');
+assert.equal(declaration('html body.lens-app #passage-picker #passage-reference','width'),'100%');assert.equal(declaration('html body.lens-app #passage-picker .passage-reference-controls','grid-template-columns'),'minmax(0,1fr) auto');
+assert.equal(declaration('html body.lens-app #passage-picker .passage-book-grid .passage-number span','white-space'),'nowrap');assert(declaration('html body.lens-app #passage-picker .passage-steps button','border').includes('1px solid'));
+assert.equal(declaration('html body.lens-app #lensReadingBar #lens-edition','appearance'),'auto');assert(workspace.includes('class="lens-translation-caption">Translation</span>'));
 assert.equal(declaration('html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip)','text-decoration'),'none');
 assert(declaration('html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible','outline').includes('3px solid'));
 const storySource=read('src/stories.js').split('let storiesActive=')[0].replace('/*__STORY_IMAGES__*/{}',JSON.stringify({'A <title>':{src:'/art.webp',alt:'Imagined scene: source description',width:1200,height:675}}));
