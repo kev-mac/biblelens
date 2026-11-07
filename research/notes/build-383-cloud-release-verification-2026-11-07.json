@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-07",
+  "book": "Habakkuk",
+  "canonicalBaseline": "5479816",
+  "canonicalReviewCommit": "d288684b5ef154f94abf3db8bd7edc41f19708d4",
+  "review": {
+    "retainedImages": 3,
+    "replacements": 0,
+    "generations": 0,
+    "storyImages": 0,
+    "chapterOpeners": 3,
+    "closePairsTouchingBook": 0,
+    "gapsTouchingBook": [
+      19,
+      17,
+      20,
+      19
+    ]
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 383,
+    "sourceHash": "13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab"
+  },
+  "workerBytes": 59517400,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed including actual Worker-only Sites staging",
+    "syncSuite": "passed single unchanged run including all disconnect cases; inherited assert(finishRead) intermittent failure remains unresolved",
+    "focusedWorkerOffline": "passed 3 chapters, 56 verses, three editions, three single openers and missing-opener rejection cases; exact metadata and bytes; zero offline network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no install or alternate path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools",
+    "fullReleasePreparation": "FAILED: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "readability": "completed report-only with inherited findings"
+  },
+  "mirrorBaseline": {
+    "commit": "b1cee84f9da5321e636ba6b71d1d87d9decfcd47",
+    "buildNumber": 382,
+    "sourceHash": "85d07be491c275fa640d8f64ae6e82479d74c5ea6281b5fd1ba48aef201d233e",
+    "independentApplicationChanges": false,
+    "mirrorOnlyTrackedFiles": []
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "zephaniah-artwork-handoff-from-habakkuk-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": "pending",
+  "gitPushRecovery": "Initial GitHub push rejected with GH007 because local commits used a private email. Re-authored only the two unpublished local commits with the existing repository GitHub noreply identity; application source and prepared bytes unchanged."
+}

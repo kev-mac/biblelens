@@ -1,0 +1,149 @@
+{
+  "book": "Habakkuk",
+  "canonicalBaseline": "5479816",
+  "chapters": 3,
+  "verses": 56,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "src": "/assets/chapter-habakkuk-01-opening-v1.webp",
+      "alt": "Imagined scene: Broken pottery and an overturned basket at a town gate evoke the violence Habakkuk laments.",
+      "width": 960,
+      "height": 540,
+      "verses": 17,
+      "bytes": 158382,
+      "sha256": "2495d73be7299007871600786f68e4c0eb020119c9e44de97f7a2069ed29efd0",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "src": "/assets/chapter-habakkuk-02-opening-v1.webp",
+      "alt": "Imagined scene: Writing tablets rest on a watchtower wall above quiet hills, evoking Habakkuk waiting for an answer.",
+      "width": 960,
+      "height": 540,
+      "verses": 20,
+      "bytes": 107918,
+      "sha256": "ebb621848a883838255960584c78bfe26d7c333bf942400cd8d19ef87bb46ee1",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "src": "/assets/chapter-habakkuk-03-opening-v1.webp",
+      "alt": "Imagined scene: A fruitless fig tree stands beside an empty fold and bare vines, echoing Habakkuk’s harvest poem.",
+      "width": 960,
+      "height": 540,
+      "verses": 19,
+      "bytes": 164002,
+      "sha256": "f5afff2db85bcd7432a2204da4a636ae7d69a979c463ac98b98df56642ba7f03",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "headingsAndMetadataEqual": true,
+      "singleOpenerBeforeVerse1": true,
+      "genericCaptionHidden": true
+    }
+  ],
+  "negativeCoverageChecks": 3,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "offlineNetworkCalls": 0,
+  "gapsTouchingBook": [
+    {
+      "a": {
+        "book": 33,
+        "chapter": 3,
+        "verse": 0,
+        "position": 22713,
+        "src": "/assets/chapter-nahum-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 34,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22732,
+        "src": "/assets/chapter-habakkuk-01-opening-v1.webp"
+      },
+      "gap": 19
+    },
+    {
+      "a": {
+        "book": 34,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22732,
+        "src": "/assets/chapter-habakkuk-01-opening-v1.webp"
+      },
+      "b": {
+        "book": 34,
+        "chapter": 2,
+        "verse": 0,
+        "position": 22749,
+        "src": "/assets/chapter-habakkuk-02-opening-v1.webp"
+      },
+      "gap": 17
+    },
+    {
+      "a": {
+        "book": 34,
+        "chapter": 2,
+        "verse": 0,
+        "position": 22749,
+        "src": "/assets/chapter-habakkuk-02-opening-v1.webp"
+      },
+      "b": {
+        "book": 34,
+        "chapter": 3,
+        "verse": 0,
+        "position": 22769,
+        "src": "/assets/chapter-habakkuk-03-opening-v1.webp"
+      },
+      "gap": 20
+    },
+    {
+      "a": {
+        "book": 34,
+        "chapter": 3,
+        "verse": 0,
+        "position": 22769,
+        "src": "/assets/chapter-habakkuk-03-opening-v1.webp"
+      },
+      "b": {
+        "book": 35,
+        "chapter": 1,
+        "verse": 0,
+        "position": 22788,
+        "src": "/assets/chapter-zephaniah-01-opening-v1.webp"
+      },
+      "gap": 19
+    }
+  ],
+  "closePairsTouchingBook": [],
+  "baselineAssetsPreserved": 1616,
+  "hostedPin": "816c68870634b05a2a031fab978907873abae3bf",
+  "pinnedBlobsMatchSource": 1145,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 383,
+    "sourceHash": "13da7aa175fc1815a02ccce89216e6f80b5dbc080d86564419eb6580b6c2b8ab"
+  },
+  "workerBytes": 59517400,
+  "workerSha256": "fb7c40f9ee49003b125aea9211683935c096112e1cdc1789d8c13813d3f00c80",
+  "originFixtureCalls": 3,
+  "applicationChangesSinceBaseline": [
+    "package.json buildNumber"
+  ]
+}
