@@ -1,0 +1,50 @@
+[
+  {
+    "command": "node research/notes/1-corinthians-artwork-2026-11-07/verify.mjs",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-0.log",
+    "logSha256": "953296880aecf39f27f2e274ebb4d4505232e5d07c02ad3e56a5347a10f7316d"
+  },
+  {
+    "command": "npm run check:images",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-1.log",
+    "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+  },
+  {
+    "command": "npm run check:mobile",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-2.log",
+    "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+  },
+  {
+    "command": "npm run check:release",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-3.log",
+    "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+  },
+  {
+    "command": "npm run check",
+    "exitCode": 1,
+    "localLog": "/tmp/1-corinthians-check-4.log",
+    "logSha256": "8913b44780a0d508681f7268af762f3bb345b5351e0b931d2a124d4626556aae"
+  },
+  {
+    "command": "node research/notes/1-corinthians-artwork-2026-11-07/source-audit.mjs",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-5.log",
+    "logSha256": "e2c71c1a674b05794f5962b7f3598bf14a76b043d7cdf3573ad1726aa2099d47"
+  },
+  {
+    "command": "node research/notes/1-corinthians-artwork-2026-11-07/compare-sites.mjs",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-6.log",
+    "logSha256": "5672516aeff638c31307b7ba272d497912dd4a34b6c546a40b5da580efdbc7e7"
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "localLog": "/tmp/1-corinthians-check-7.log",
+    "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

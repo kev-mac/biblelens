@@ -1,0 +1,146 @@
+{
+  "scope": "1 Corinthians only; all 16 images retained, zero generated/replaced; zero production changes",
+  "baseline": "ddbbf81cfe154c07347c741dba83fca711962b2a",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "checks": [
+    {
+      "command": "npm ci --cache=/tmp/biblelens-1-corinthians-npm-cache --ignore-scripts",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-npm-ci.log",
+      "logSha256": "786b5d23be61db76583d08976f9876581553396b9f232542adb6f7f6fa313bed"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-build.log",
+      "logSha256": "53b7b97b3fb0ccc17333f8e4895496201d3bf902b5c30ba0891b3b73b7e1d81b"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-build-mobile.log",
+      "logSha256": "e1a91cc797a4648dc408b8d8941cd4c4af8f362da5c44ec4d00e0e08da500a5b"
+    },
+    {
+      "command": "node research/notes/1-corinthians-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-0.log",
+      "logSha256": "953296880aecf39f27f2e274ebb4d4505232e5d07c02ad3e56a5347a10f7316d"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-1.log",
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-2.log",
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-3.log",
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "localLog": "/tmp/1-corinthians-check-4.log",
+      "logSha256": "8913b44780a0d508681f7268af762f3bb345b5351e0b931d2a124d4626556aae"
+    },
+    {
+      "command": "node research/notes/1-corinthians-artwork-2026-11-07/source-audit.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-5.log",
+      "logSha256": "e2c71c1a674b05794f5962b7f3598bf14a76b043d7cdf3573ad1726aa2099d47"
+    },
+    {
+      "command": "node research/notes/1-corinthians-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-6.log",
+      "logSha256": "5672516aeff638c31307b7ba272d497912dd4a34b6c546a40b5da580efdbc7e7"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "localLog": "/tmp/1-corinthians-check-7.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "fullSuiteBlocker": "scripts/check-release-smoke.mjs:31:32; Playwright Chromium headless shell 1248 missing. Preceding nonbrowser/search checks passed; readability inherited report-only. No browser installed.",
+  "browser": "SITES_MANAGED_LINUX_CONTAINER=1; no callable cua_repl.js. Sites skill forbids a substitute managed browser route; no preview server or browser install.",
+  "publication": {
+    "status": "inherited denial; no attempt in 1 Corinthians",
+    "action": "deploy saved public build 386",
+    "projectId": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "reason": "Automatic approval review rejected deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication or bypass. No save/deploy/mirror push/access change/substitute version attempted. Frozen saved source/archive untouched."
+  },
+  "liveBytes": "Inherited denied live HTTP/image/release:verify operations deferred; local immutable-origin fixture is not live HTTP QA.",
+  "devices": "No callable Mac/device connector or configured VPN. Signing, signed public-versus-www parity, physical install/query/launch incomplete. Historical build 359 not current evidence.",
+  "inheritedSync": "Intermittent check-sync-disconnect.mjs assert(finishRead) remains unresolved; sync unchanged and not retested.",
+  "mirror": {
+    "baseline": "ddbbf81cfe154c07347c741dba83fca711962b2a",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential opening before 1 Corinthians review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "assetPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedGitBlobsVerified": 1147,
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "fullReleaseCandidateArchiveProduced": false,
+  "nextBookArtworkReviewed": false,
+  "handoff": "research/notes/2-corinthians-artwork-handoff-from-1-corinthians-2026-11-07.md",
+  "focused": {
+    "chapterCount": 16,
+    "verseCount": 437,
+    "negativeCoverageChecks": 16,
+    "offlineNetworkCalls": 0,
+    "inheritedAbsentFields": [],
+    "inheritedEmptyStrings": [],
+    "minimumInternalGap": 13,
+    "originFixtureCalls": 16
+  },
+  "visualReview": {
+    "nativeImagesViewed": 16,
+    "imageDimensions": [
+      960,
+      540
+    ],
+    "styleReference": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "visiblePeople": 0,
+    "visibleAnimals": 0,
+    "generationCalls": 0,
+    "nextBookArtworkOpened": false
+  }
+}
