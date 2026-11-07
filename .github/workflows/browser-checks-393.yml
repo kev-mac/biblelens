@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 393 source
         run: |
-          git merge-base --is-ancestor ac122bc36dc5eff07a4ce8aca1a54c0f883a58ea HEAD
+          git merge-base --is-ancestor 25e8f2560901b547f744df3e4c0392bf0bf7f95b HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,393);
-          assert.equal(release.sourceHash,'b705f48ca78105b9d5f36fdcf3b60f73aedb020b5c678de05919af2d2f25457d');
+          assert.equal(release.sourceHash,'04104cbe6d779e40497e1d201e2254ca3c83dafaafa2d050a2afe489eca4475d');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -146,7 +146,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'ac122bc36dc5eff07a4ce8aca1a54c0f883a58ea',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'25e8f2560901b547f744df3e4c0392bf0bf7f95b',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
