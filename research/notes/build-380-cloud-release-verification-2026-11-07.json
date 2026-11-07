@@ -2,7 +2,7 @@
   "date": "2026-11-07",
   "book": "Jonah",
   "canonicalBaseline": "5b21ba9",
-  "canonicalReviewCommit": "769a614",
+  "canonicalReviewCommit": "769a614730d77968f9e253db6c5d8bab766bc2b0",
   "review": {
     "retainedImages": 4,
     "replacements": 0,
@@ -50,5 +50,42 @@
   },
   "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
   "handoff": "micah-artwork-handoff-from-jonah-2026-11-07.md",
-  "nextBookStarted": false
+  "nextBookStarted": false,
+  "canonicalValidationCommit": "8d2c61b2026396e2ba9ac0a36ae4c51d556dd5ed",
+  "mirrorCommit": "0545516f20bdb99a0eea9ade9ef42f0a00b5661d",
+  "localPostPublicationParity": "passed: canonical, mirror, prepared Worker and unsigned offline release identities and staged Worker bytes agree locally; full live release:verify deferred",
+  "publication": {
+    "saved": {
+      "id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_eb0066976254819184511fdec5b8ddda",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "version_number": 380,
+      "source": {
+        "commit_sha": "0545516f20bdb99a0eea9ade9ef42f0a00b5661d"
+      },
+      "archive_storage": {
+        "archive_format": "tar",
+        "sediment_file_id": "file_00000000600481fd84eb029d8123df7f",
+        "content_hash": "sha256:5107afff36bfaeb5505b8f9c8236c5a41b126cfe5298361fceb618147716be68",
+        "size_bytes": 59535360,
+        "file_count": 6
+      },
+      "screenshot_url": null,
+      "deployment_id": null
+    },
+    "deploy": {
+      "id": "appgdep_6aeede4354408191a4af750fe9634960",
+      "project_id": "appgprj_6acba627a6cc8191932fbbc47db8895d",
+      "title": "BibleLens",
+      "version_id": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_eb0066976254819184511fdec5b8ddda",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6acba627a6cc8191932fbbc47db8895d",
+      "failure_message": null,
+      "env_set_revision": 1,
+      "updated_at": "2026-11-07T08:16:14.073366+00:00"
+    }
+  }
 }
