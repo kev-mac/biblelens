@@ -435,5 +435,21 @@
     "live": "Inherited denied destination outside enforced policy. No materially new relevant evidence or supported environment-change tool. Live HTTP/release:verify and live image bytes deferred without retry or bypass.",
     "devices": "No Mac/device connector, configured VPN/device route, Xcode/xcrun or physical device tools. Signing, signed assets comparison, install/launch deferred. Historical build 359 is not a fresh device query.",
     "sync": "Unchanged isolated check:sync passed. Inherited intermittent assert(finishRead) remains unresolved. Static inspection reconfirms /session before /document, bearer WebCrypto digest and only 30 setImmediate settling rounds; timing hypothesis is not a fix."
+  },
+  "publication": {
+    "canonicalReviewCommit": "d9c1e3f",
+    "canonicalVerificationCommit": "326667d011747acf787faa526e9dab2839de361c",
+    "mirrorCommit": "600120937d577ec790d8c2be60562e8979b7bf97",
+    "sitesVersion": 368,
+    "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_fce8273883b8819199ccb7148e8cc818",
+    "deploymentId": "appgdep_6aeebe8196e8819184b67f9327fa6c67",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveContentHash": "sha256:1dd5e5c93cdc7fb3635a25c45d1c56e9c30d4e548f9789579da525380160dbfa",
+    "archiveFileCount": 6,
+    "initialDeployDenied": true,
+    "denialReason": "Production deployment to public/shared audience; reviewer said explicit user production authorization was missing.",
+    "authorizationEvidenceMessageId": "Sentinel_71f14e4a51e88191a1801af8136df6ca",
+    "retry": "After trusted user-message read confirmed explicit per-book publish instruction and saved version read confirmed deployment_id null, identical operation retried once and succeeded."
   }
 }
