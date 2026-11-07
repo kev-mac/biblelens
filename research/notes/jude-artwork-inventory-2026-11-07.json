@@ -1,0 +1,121 @@
+{
+  "book": "Jude",
+  "baseline": "a53edeccc752a05f54cc46cd3e9e1718f04f766c",
+  "chapters": 1,
+  "verseCount": 25,
+  "totalPlacements": 1,
+  "chapterOpeners": 1,
+  "storyPlacements": 0,
+  "retained": 1,
+  "replaced": 0,
+  "totalImageBytes": 84984,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Wild waves break over a low rocky reef beneath dark clouds.",
+      "src": "/assets/chapter-jude-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 84984,
+      "sha256": "ac4af382bfd2f2cc11572452f31303c095d363e40051bdfd1b457184896e10b9",
+      "verses": 25,
+      "textBasis": "Jude 1:13 compares the criticized people to wild/raging foaming sea waves. Low reefs also resonate with the ASV/WEB 1:12 metaphor; KJV says spots. Landscape is a literary illustration, not an asserted narrated storm or precise coast. Storm clouds and distant rain are not offered as a literal rendering of the separate clouds-without-water simile in 1:12. No named person, animal, love-feast, Michael/Moses dispute or Enoch judgment scene is invented.",
+      "fullSizeReview": "Native 960x540: breaking wave crests, spray and white foam, overlapping foreground currents and flow around rocks; wet rock planes and green growth; right-hand coast and receding hills; horizon, cloud layers, distant rain and daylight opening. No definite malformed object, human/animal anatomy, lettering or signature. Exact coast/date, rock/geological species, weather and physical ocean simulation not certified.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; hands/fingers/thumbs/limbs/identity/aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30701,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30702,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}

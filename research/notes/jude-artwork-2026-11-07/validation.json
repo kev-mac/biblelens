@@ -1,0 +1,236 @@
+{
+  "baseline": "a53edeccc752a05f54cc46cd3e9e1718f04f766c",
+  "scope": "Jude only; sole existing opener retained, no production changes",
+  "checks": [
+    {
+      "command": "npm ci --cache /tmp/biblelens-npm-cache",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/npm-ci.log",
+      "logBytes": 629,
+      "logSha256": "431b216b734b9685b2da47747a27da351ad0b2bb00acf288ada3dc849f573ac9"
+    },
+    {
+      "command": "npm run build:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/build-mobile.log",
+      "logBytes": 2648,
+      "logSha256": "87b27efe302252c0347d599664eeccf0f2978c7dd9a68347154faa370c63f327"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 1,
+      "result": "Started before mobile staging completed; missing www/assets/story-the-creation-v3.webp. Post-staging rerun passed.",
+      "logPath": "/tmp/jude-review/check-images-before-staging.log",
+      "logBytes": 786,
+      "logSha256": "e02388d1666eff07459279120b5e31eb79e135d6ba71fbc75427f0c24b5d0ee3"
+    },
+    {
+      "command": "npm run check:images",
+      "exitCode": 0,
+      "result": "passed after completed mobile staging",
+      "logPath": "/tmp/jude-review/check-images.log",
+      "logBytes": 2055,
+      "logSha256": "de2a9f7a9bf10d77934bc434505bd47ce0a6d9571ef724bc958eef5326fd34f7"
+    },
+    {
+      "command": "npm run check:mobile",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/check-mobile.log",
+      "logBytes": 641,
+      "logSha256": "9565fcf0a19ec04ab669ffbbe070a2958b9ce5976830400851313f9647ef7cbd"
+    },
+    {
+      "command": "npm run check:release",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/check-release.log",
+      "logBytes": 1812,
+      "logSha256": "984f2647f273c3e3af9feb3165e7b4c29e791f9a4b1ff564ba6b466e0cca1cde"
+    },
+    {
+      "command": "node research/notes/jude-artwork-2026-11-07/verify.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/verify.log",
+      "logBytes": 385,
+      "logSha256": "944682a985bee3a1e8fe2b0f84e3cbd4ae7457457bc7241a25610b166d4589a2"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 1,
+      "result": "failed at final browser launch; preceding checks passed",
+      "logPath": "/tmp/jude-review/check-all.log",
+      "logBytes": 24170,
+      "logSha256": "9bbecc65d4306465b31a5b0104952b7108c8b8ca6cbd1a7c49994ce9441d380f"
+    },
+    {
+      "command": "node research/notes/jude-artwork-2026-11-07/compare-sites.mjs",
+      "exitCode": 0,
+      "result": "passed",
+      "logPath": "/tmp/jude-review/compare-sites.log",
+      "logBytes": 1171,
+      "logSha256": "0e65d678fcca9c3a8799f63f6e7ef4764a375d2f63050aa5d5cf22a2f4e81dd3"
+    }
+  ],
+  "additionalPassedChecks": [
+    "2010 production files and 1619 assets byte-identical",
+    "25 verses / 75 exact KJV/ASV/WEB fields including presence/type/value",
+    "One source/Worker/unsigned-native image byte match; headings/metadata/hidden generic caption preserved",
+    "Missing-opener negative coverage rejection",
+    "1147 immutable pinned Git blobs equal source",
+    "Both opener-coordinate conventions: boundary gaps 14 and 25, no close pairs touching Jude",
+    "Actual offline bundled engine: zero network calls",
+    "git diff --check"
+  ],
+  "production": {
+    "preservedProductionFiles": 2010,
+    "preservedAssets": 1619,
+    "retained": 1,
+    "replaced": 0,
+    "totalImageBytes": 84984,
+    "chapters": 1,
+    "verseCount": 25,
+    "storyPlacements": 0
+  },
+  "spacing": [
+    {
+      "openerCoordinate": 0,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30662,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30676,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30701,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    },
+    {
+      "openerCoordinate": 1,
+      "internalGaps": [],
+      "minimumInternalGap": null,
+      "boundaries": [
+        {
+          "a": {
+            "book": 63,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30663,
+            "src": "/assets/chapter-3-john-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "gap": 14
+        },
+        {
+          "a": {
+            "book": 64,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30677,
+            "src": "/assets/chapter-jude-01-opening-v1.webp"
+          },
+          "b": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 0,
+            "position": 30702,
+            "src": "/assets/chapter-revelation-01-opening-v1.webp"
+          },
+          "gap": 25
+        }
+      ],
+      "closePairs": []
+    }
+  ],
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "fullSuiteFailure": {
+    "script": "scripts/check-release-smoke.mjs:31:32",
+    "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell",
+    "result": "Browser assertions did not run; preceding checks passed, readability inherited report-only."
+  },
+  "publication": {
+    "status": "Inherited denial; no publication operation attempted in Jude session",
+    "heldVersion": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_c455c9a2f05081918005c878a24c5f05",
+    "heldBuild": 386,
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "reason": "Automatic approval review rejected public deployment and one evidence-backed same-version retry pending explicit new approval. Parent prohibits publication/bypass; no save/deploy, mirror push, audience change, superseding version or alternate route."
+  },
+  "limitations": [
+    "Managed Sites mode=1 and no callable cua_repl.js. Sites skill requires skipping browser QA: no preview, browser installation or substitute route.",
+    "Inherited denied live HTTP/image/release:verify deferred without materially new relevant authorization. Local fixture is not live parity. Complete release-candidate archive incomplete.",
+    "No callable Mac/device connector or configured VPN; signing, signed public vs www comparison and installation/query/launch pending. Historical build 359 is not fresh evidence.",
+    "Sync unchanged/not retested; inherited intermittent check-sync-disconnect.mjs assert(finishRead) remains outside scope."
+  ],
+  "sourceMirror": {
+    "baseline": "a53edeccc752a05f54cc46cd3e9e1718f04f766c",
+    "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "mirrorRemoteHead": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+    "productionFilesCompared": 2010,
+    "sharedProductionFilesCompared": 2007,
+    "differences": [
+      "data/chapter-images.json",
+      "data/hosted-artwork.json",
+      "data/story-images.json",
+      "package.json",
+      "scripts/hosted-artwork.mjs"
+    ],
+    "onlyCanonical": [
+      "src/assets/chapter-matthew-15-opening-v2.webp",
+      "src/assets/story-paul-arrested-in-jerusalem-v2.webp",
+      "src/assets/story-sending-out-the-twelve-v2.webp"
+    ],
+    "onlyMirror": [],
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 386,
+      "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+    },
+    "result": "Fresh credential read-only opening for the Jude review. Frozen saved 386; known Matthew 387 and Acts 388 differences only, no independent newer mirror source. Helper absent; ordinary Git fallback with hidden stdin and ephemeral child-process authorization header. Mirror never edited/pushed. Canonical build 388 is intentionally not mirrored or published."
+  },
+  "nextBookStarted": false
+}

@@ -1,0 +1,209 @@
+{
+  "scope": "Jude only; Revelation art not opened or reviewed; outgoing placement metadata only",
+  "baseline": "a53edeccc752a05f54cc46cd3e9e1718f04f766c",
+  "textRead": "All 25 verses in KJV/ASV/WEB. Verse 13 wild/raging foaming waves is the primary visual basis. ASV/WEB 1:12 hidden rocks/reefs differ from KJV spots; all editions preserved. The image does not reconstruct a narrated storm, love-feast or every metaphor.",
+  "styleReference": {
+    "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+    "bytes": 107786,
+    "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+    "role": "Actual source viewed at native size and unscaled beside Jude; style only, never identity."
+  },
+  "priorInventories": [
+    "research/notes/3-john-artwork-audit-2026-11-07.md",
+    "research/notes/3-john-artwork-inventory-2026-11-07.json",
+    "research/notes/3-john-continuity-inventory-2026-11-07.json",
+    "research/notes/3-john-artwork-verification-2026-11-07.json",
+    "research/notes/genesis-artwork-audit-2026-11-06.md",
+    "research/notes/exodus-artwork-audit-2026-11-07.md",
+    "research/notes/numbers-artwork-audit-2026-11-07.md",
+    "research/notes/deuteronomy-artwork-audit-2026-11-07.md",
+    "research/notes/daniel-artwork-audit-2026-11-07.md",
+    "research/notes/john-continuity-inventory-2026-11-07.json"
+  ],
+  "visiblePeople": [],
+  "visibleAnimals": [],
+  "recognizableRecurringGroups": [],
+  "identityInputs": [],
+  "generationCalls": [],
+  "replacements": [],
+  "decision": "Retain sole 960x540 opener; no production changes or new portrait anchor.",
+  "textualMentions": [
+    {
+      "mentions": [
+        "Jude",
+        "James",
+        "Jesus Christ",
+        "God",
+        "Spirit",
+        "apostles",
+        "called/beloved",
+        "intruders"
+      ],
+      "finding": "None portrayed. Letter title, brother relationship and servant designation do not establish a certified apostle/author portrait, time or location. No apostolic face or historical love-feast group invented."
+    },
+    {
+      "mentions": [
+        "Exodus people",
+        "angels",
+        "Sodom and Gomorrah",
+        "Michael",
+        "devil",
+        "Moses"
+      ],
+      "finding": "1:5-9 callbacks only; no current appearance. Michael is not equated with an anonymous Daniel angel or furnace companion. Moses body is not a living portrait or new death scene. Any future identifiable Moses scene must use approved actual earlier inputs and appropriate narrative age."
+    },
+    {
+      "mentions": [
+        "Cain",
+        "Balaam",
+        "Korah/Core",
+        "Enoch",
+        "Adam",
+        "holy ones"
+      ],
+      "finding": "1:11 and 1:14-15 textual examples only, not a narrated combined gathering. Genesis family groups do not certify an individual Enoch face; do not label anonymous Numbers protestors Korah. No portrait created."
+    },
+    {
+      "mentions": [
+        "creatures without reason",
+        "shepherds",
+        "clouds",
+        "trees",
+        "waves",
+        "wandering stars",
+        "fire",
+        "garment"
+      ],
+      "finding": "Rhetorical images and exhortations, not evidence of a literal animal scene, named shepherd, complete astronomical map, rescue or every metaphor combined. Sea foam and reefs fit selected 1:12-13 imagery."
+    }
+  ],
+  "earlierCallbackGuidance": [
+    {
+      "person": "Cain",
+      "references": [
+        "src/assets/story-cain-and-abel-v3.webp",
+        "src/assets/story-video-cain-and-abel-poster-v1.webp"
+      ],
+      "stableTraits": "Muscular adult, medium-brown complexion, short tight curls and compact beard. Abel is slimmer with fuller dark curls and beard.",
+      "status": "Approved Genesis ledger guidance only; no current portrait and these images not re-opened in Jude."
+    },
+    {
+      "person": "Moses",
+      "references": [
+        "src/assets/story-the-burning-bush-v1.webp",
+        "src/assets/chapter-exodus-29-v2.webp",
+        "src/assets/chapter-numbers-26-v2.webp"
+      ],
+      "stableTraits": "Long lined medium-brown face, prominent long nose, natural gray curls, long gray-white beard and lean build.",
+      "age": "Exodus about 80; final age 120. Jude refers to the body of Moses, not a new living scene or further aging.",
+      "status": "Approved earlier ledgers only; no current portrayal or earlier portrait re-review."
+    },
+    {
+      "person": "Balaam",
+      "references": [
+        "src/assets/chapter-numbers-23-opening-v1.webp",
+        "src/assets/chapter-numbers-24-opening-v1.webp"
+      ],
+      "stableTraits": "Long lined brown face, strong nose, natural gray curls and gray beard; do not confuse with Balak, whose dark curls/beard, robust build and royal band differ.",
+      "status": "Approved Numbers ledger only; no current portrayal or portrait re-review."
+    },
+    {
+      "person": "Michael/Enoch/Korah",
+      "references": [],
+      "stableTraits": null,
+      "status": "No unambiguous approved individual anchor established by consulted ledgers. No anonymous earlier figure assigned identity. Resolve before identifiable new portrayal or choose a nonportrait scene."
+    }
+  ],
+  "inheritedPeopleGuidance": [
+    {
+      "person": "Adult Jesus",
+      "references": [
+        "src/assets/story-the-baptism-and-temptation-of-jesus-v1.webp",
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-road-to-emmaus-v1.webp",
+        "src/assets/story-the-ascension-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-first-disciples-and-the-wedding-at-cana-v1.webp",
+        "src/assets/story-cleansing-the-temple-and-nicodemus-v1.webp",
+        "src/assets/story-the-woman-at-the-well-v1.webp",
+        "src/assets/story-healing-at-bethesda-v1.webp",
+        "src/assets/story-bread-of-life-v1.webp",
+        "src/assets/story-the-woman-caught-in-adultery-v1.webp",
+        "src/assets/story-jesus-at-the-feast-of-dedication-v1.webp",
+        "src/assets/story-the-raising-of-lazarus-v1.webp",
+        "src/assets/story-anointing-and-triumphal-entry-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-the-resurrection-appearances-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "stableTraits": "Medium-brown complexion, prominent nose, full dark beard, dark natural curls, lean adult build.",
+      "age": "Ministry through resurrection; parallel Gospel scenes and a few years of narrative time do not justify decades of aging.",
+      "result": "Recognizable across actual earlier approved references and all current neighboring depictions. Lighting/pose and apparent curl length vary within compatibility. No definite identity break.",
+      "status": "Carried from approved earlier ledgers for possible future work. No portrait generation/edit or re-review of these earlier human portraits in Jude; current scene has no people."
+    },
+    {
+      "person": "Apostle John and recurring apostolic group",
+      "references": [
+        "src/assets/story-calling-the-first-disciples-v1.webp",
+        "src/assets/story-sending-out-the-twelve-v2.webp",
+        "src/assets/story-the-ascension-v1.webp",
+        "src/assets/story-jesus-washes-the-disciples-feet-v1.webp",
+        "src/assets/story-breakfast-by-the-sea-of-tiberias-v1.webp"
+      ],
+      "currentAppearances": [
+        "src/assets/story-the-ascension-and-the-replacement-of-judas-v1.webp",
+        "src/assets/story-the-lame-man-healed-and-arrest-of-peter-and-john-v1.webp",
+        "src/assets/story-the-jerusalem-council-v1.webp"
+      ],
+      "stableTraits": "Varied brown complexions, natural curls and adult builds; Acts 3 John is the younger dark-curled bearded witness beside Peter.",
+      "age": "Resurrection to early Acts does not permit decades of aging. Council later, exact face maps limited.",
+      "result": "Actual approved group originals inspected. Acts 3 witness is John by action/alt, but precise earlier Gospel named portrait is uncertain; no headband/clothing naming. Group compatibility retained without certifying all twelve in a partial frame or naming gray Acts 1 participant. Apostle John is distinct from John the Baptist and John Mark.",
+      "status": "Carried from approved earlier ledgers for possible future work. No portrait generation/edit or re-review of these earlier human portraits in Jude; current scene has no people."
+    }
+  ],
+  "referenceFilesViewed": [
+    {
+      "path": "src/assets/chapter-genesis-07-opening-v1.webp",
+      "bytes": 107786,
+      "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0"
+    },
+    {
+      "path": "src/assets/chapter-3-john-01-opening-v1.webp",
+      "bytes": 135906,
+      "sha256": "e0a7943fa470c8654c6ccb407e9f2f6baa202cdde071d83d8e21ae7c6ad9d5d6"
+    },
+    {
+      "path": "src/assets/chapter-jude-01-opening-v1.webp",
+      "bytes": 84984,
+      "sha256": "ac4af382bfd2f2cc11572452f31303c095d363e40051bdfd1b457184896e10b9"
+    }
+  ],
+  "inspectionPanels": [
+    {
+      "label": "Genesis 7 left; Jude right; both unscaled 960x540",
+      "path": "/tmp/jude-review/style-comparison.png",
+      "bytes": 1598127,
+      "sha256": "b00b2f91a76a9f418d863791293538babc52431514ec0851d3ef2096a5ad879d"
+    },
+    {
+      "label": "3 John left; Jude right; both unscaled 960x540",
+      "path": "/tmp/jude-review/incoming-comparison.jpg",
+      "bytes": 451789,
+      "sha256": "e993e2bfb757352e22f76d6213c87759dc3bfcbcb48bd549af7a062b48ec30bd"
+    }
+  ],
+  "fullSizeReview": "Native 960x540: breaking wave crests, spray and white foam, overlapping foreground currents and flow around rocks; wet rock planes and green growth; right-hand coast and receding hills; horizon, cloud layers, distant rain and daylight opening. No definite malformed object, human/animal anatomy, lettering or signature. Exact coast/date, rock/geological species, weather and physical ocean simulation not certified.",
+  "anatomy": "No people, body parts, recurring human groups or animals. Face/complexion/hair/age/build and fingers/thumbs/limbs have no current subjects. Genesis 7 is style only, not a new Genesis review.",
+  "styleResult": "Muted teal/blue water, gray clouds/rocks, green coastal growth and natural distant light fit restrained realism and vary the incoming red-cloth domestic scene. No glossy studio lighting, cartoon finish or heavy oil texture. Similar weather does not assign Genesis flood geography or episode to Jude.",
+  "uncertainties": [
+    "Exact coast, date, geology and physical wave simulation not certified.",
+    "Visible distant rain and storm clouds do not literally illustrate the separate clouds-without-water metaphor; primary role is verse 13 sea imagery.",
+    "ASV/WEB hidden rocks/reefs versus KJV spots preserved as distinct verse text; image is illustrative, not a textual verdict.",
+    "No new named-person/group reference created. Actual approved image files must be supplied as tool inputs for every future identifiable recurring-person generation/edit; viewing/describing is insufficient.",
+    "Age only with narrative elapsed time; Jesus ministry/resurrection scenes do not imply decades. Apostle John differs from Baptist/John Mark; exact earlier Gospel face map remains uncertain.",
+    "Superseded sending-twelve/arrest v1 and Pentecost/first-journey v1 are not approved anchors. Noah ark scenes permit eight adults and no children aboard."
+  ],
+  "nextBookArtworkReviewed": false
+}
