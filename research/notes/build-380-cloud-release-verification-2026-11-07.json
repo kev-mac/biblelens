@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-07",
+  "book": "Jonah",
+  "canonicalBaseline": "5b21ba9",
+  "canonicalReviewCommit": "769a614",
+  "review": {
+    "retainedImages": 4,
+    "replacements": 0,
+    "chapterOpeners": 4,
+    "storyPlacements": 3,
+    "gapsTouchingBook": [
+      22,
+      16,
+      11,
+      10,
+      10
+    ],
+    "closePairsTouchingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 380,
+    "sourceHash": "67f05c3765fc9ede8d664ece9761d33745b5c78faad8ce2eeafaa5be9af0b9e7"
+  },
+  "workerBytes": 59517400,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed using task-local npm cache; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference not verified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed this run; inherited intermittent failure remains unresolved",
+    "focusedWorkerOffline": "passed all 4 chapters and 48 verses in KJV/ASV/WEB, exactly one opener each, missing-opener rejection, exact source/Worker/native image bytes, zero underlying network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no installation or alternate path",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry or bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools",
+    "fullReleasePreparation": "failed: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete",
+    "readability": "completed in report-only mode with inherited findings"
+  },
+  "mirrorBaseline": {
+    "commit": "b1468cf563b3005f553e3db695ceb1c4ef7319e5",
+    "buildNumber": 379,
+    "sourceHash": "242c06b9bc569140a3c97a6fdb4c9a3bf61bab8b9d27f9341cb2d1d6403c38a4",
+    "independentApplicationChanges": false,
+    "mirrorOnlyTrackedFiles": []
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry.",
+  "handoff": "micah-artwork-handoff-from-jonah-2026-11-07.md",
+  "nextBookStarted": false
+}
