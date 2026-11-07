@@ -7,8 +7,8 @@ It uses the established sandbox-required GitHub-hosted runner workflow with
 read-only repository permissions, no stored checkout credentials, no secrets,
 no deployment and no device access. Only this PR branch triggers the workflow.
 
-Canonical source: `25e8f2560901b547f744df3e4c0392bf0bf7f95b`. Build 393
-fingerprint: `04104cbe6d779e40497e1d201e2254ca3c83dafaafa2d050a2afe489eca4475d`.
+Canonical source: `dfce76427c8c31c472de580f4db37672cc7036a3`. Build 393
+fingerprint: `0cd367da96e2f1c732a7b6c77cee0e42237b7b63f1e99ef06737873713eb1bf3`.
 A failure stays a failed job. Exact prepared bundles are retained only after
 all gates succeed; screenshots/logs remain available on failure. Publication
 is handled separately by the parent session using the exact accepted bundle.
