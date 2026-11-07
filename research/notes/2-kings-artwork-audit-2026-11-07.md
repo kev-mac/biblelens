@@ -31,7 +31,7 @@ The 13 person-free chapter images were individually inspected full size for subj
 
 ## Placement, shared assets and limits
 
-All 25 chapters keep exactly one opener: 13 chapter at afterVerse 0 and 12 Story at verse 1. Fall of Jerusalem remains 23:31. All Story passage/catalog/anchors, chapter metadata, scripture, captions/renderer, videos/posters and unrelated artwork remain unchanged. No duplicate opener or missing role. Minimum internal spacing is 24 verses; no close pairs involving 2 Kings. Boundary gaps are 53 from 1 Kings and 30 to 1 Chronicles; adjacent metadata used only for spacing.
+All 25 chapters keep exactly one opener: 13 chapter at afterVerse 0 and 12 Story at verse 1. Fall of Jerusalem remains 23:31. All Story passage/catalog/anchors, chapter metadata, scripture, captions/renderer, videos/posters and unrelated artwork remain unchanged. No duplicate opener or missing role. Minimum internal spacing is six verses; no close pairs involving 2 Kings. Boundary gaps are 53 from 1 Kings and 30 to 1 Chronicles; adjacent metadata used only for spacing.
 
 Build 370 uses one source fingerprint for web and offline native assets. Asset commit is pushed before activation and pinned in hosted-artwork.json. No signed mobile build or device update is implied.
 
