@@ -126,7 +126,8 @@
  section('explore','');
 
  function shellRoute(hash){if(!hash||hash==='#'||hash.split('?')[0]==='#discover'){setView('explore',false);return true;}return false;}
- window.BibleLensWorkspace={navigate:routeTo,route:shellRoute};
+ function openWorkspaceSearch(query=''){searchParent=primary();const text=String(query).trim().slice(0,300);routeTo('#search'+(text?'?q='+encodeURIComponent(text):''));}
+ window.BibleLensWorkspace={navigate:routeTo,route:shellRoute,search:openWorkspaceSearch};
  document.addEventListener('click',event=>{
   const link=event.target.closest('a[href^="#"]');if(!link||event.defaultPrevented||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||link.classList.contains('skip')||link.hasAttribute('data-cite'))return;
   if(link.closest('.lens-masthead,.lens-workspace,#lensComparison,.lens-context')){event.preventDefault();routeTo(link.getAttribute('href'));}

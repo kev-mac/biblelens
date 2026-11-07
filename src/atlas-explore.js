@@ -18,9 +18,8 @@
   text:'story-ezra-reads-the-law-v1.webp',
   translation:'story-the-tower-of-babel-v1.webp',
  };
- const filters=[['all','All'],['topics','People & Stories'],['evidence','Evidence'],['manuscripts','Manuscripts']];
- const routeFilter=()=>new URLSearchParams(location.hash.split('?')[1]).get('section')==='evidence'?'evidence':'all';
- let counts=null,rendered=null,filter=routeFilter(),observers=[];
+ const routeScope=()=>new URLSearchParams(location.hash.split('?')[1]).get('section')==='evidence'?'evidence':'all';
+ let counts=null,rendered=null,scope=routeScope(),observers=[];
  const reducedMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
  function connectLane(section){
   const row=section.querySelector('.ux-topic-row'),cards=[...row.querySelectorAll('.ux-topic')],pager=section.querySelector('.ux-lane-pages');
@@ -42,7 +41,7 @@
    if(!row.clientWidth)return;
    stops=cards.map(stopFor);
    pager.replaceChildren(...stops.map((stop,index)=>{const button=document.createElement('button');button.type='button';button.className='ux-lane-page';button.setAttribute('aria-label','Show '+cards[index].querySelector('strong').textContent+' and following collections');button.innerHTML='<span aria-hidden="true"></span>';button.onclick=()=>move(index);return button;}));
-   pager.hidden=stops.length<=1;sync();
+   pager.hidden=stops.length<=1;row.scrollTo({left:stops[Math.min(active,stops.length-1)]||0,behavior:'instant'});sync();
   }
   row.addEventListener('scroll',sync,{passive:true});
   row.addEventListener('focusin',event=>{const index=cards.indexOf(event.target);if(index>=0&&event.target.matches(':focus-visible'))move(index);});
@@ -57,17 +56,20 @@
  function updateCounts(){if(!counts)return;for(const tile of host.querySelectorAll('.ux-topic')){const badge=tile.querySelector('.ux-count'),value=counts[tile.dataset.topic];badge.textContent=value.toLocaleString();badge.setAttribute('aria-label',value.toLocaleString()+' records');}}
 
  function render(){
-  const view=filter;
+  const view=scope;
   if(rendered===view)return;rendered=view;
   observers.forEach(observer=>observer.disconnect());observers=[];
   const arrow=direction=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${direction==='left'?'m14 6-6 6 6 6':'m10 6 6 6-6 6'}"/></svg>`;
   const group=(id,name,rows)=>`<section class="ux-topic-section" aria-label="${name}"><div class="ux-lane-heading"><h2 id="ux-lane-${id}-title">${name}</h2></div><div class="ux-topic-row" id="ux-lane-${id}" role="group" aria-roledescription="carousel" aria-labelledby="ux-lane-${id}-title" tabindex="0">${rows.map(([key,label,subtitle,url])=>`<a class="ux-topic" id="ux-topic-${key}" data-topic="${key}" href="${url}" aria-label="${label}"><img src="/assets/${artwork[key]}" alt="" decoding="async"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${paths[key]}"/></svg><span class="ux-count" aria-label="${counts?counts[key].toLocaleString()+' records':'Loading count'}">${counts?counts[key].toLocaleString():'…'}</span><div class="ux-tile-copy"><strong>${label}</strong><small>${subtitle}</small></div><span class="ux-browse" aria-hidden="true">Browse collection ${arrow('right')}</span></a>`).join('')}</div><div class="ux-lane-pages" role="group" aria-label="${name} positions"></div></section>`;
-  host.innerHTML=`<h1 tabindex="-1">Explore</h1><nav class="ux-explore-filters" aria-label="Explore collections">${filters.map(([key,label])=>`<button type="button" class="filter-pill" data-explore-filter="${key}" aria-pressed="${filter===key}">${label}</button>`).join('')}</nav>${filter==='all'?group('collections','Collections',[...topics,...evidence]):''}${filter==='topics'?group('topics','People, Places & Texts',topics):''}${filter==='evidence'?group('evidence','Evidence & Interpretations',evidence):''}${filter==='manuscripts'?'<p class="ux-manuscripts-intro">Explore ancient copies with these text and translation tools.</p>'+group('manuscripts','Text & Translation Tools',textTools):''}`;
+  host.innerHTML=`<h1 class="sr-only" tabindex="-1">Explore</h1><form id="ux-explore-search-form" class="ux-explore-search" role="search" aria-label="Search BibleLens"><label class="sr-only" for="ux-explore-search">Search scripture, people and evidence</label><input id="ux-explore-search" type="search" maxlength="300" required enterkeyhint="search" autocomplete="off" placeholder="Search scripture, people, or evidence"><button type="submit" class="lens-button">Search</button><span class="sr-only" id="ux-explore-search-status" role="status"></span></form>${scope==='evidence'?group('evidence','Evidence & Interpretations',evidence):group('collections','Collections',[...topics,...evidence])+group('manuscripts','Text & Translation Tools',textTools)}`;
+  const form=host.querySelector('#ux-explore-search-form'),input=host.querySelector('#ux-explore-search'),status=host.querySelector('#ux-explore-search-status');
+  form.onsubmit=event=>{event.preventDefault();const query=input.value.trim();if(!query){status.textContent='Enter a Bible reference or keywords to search.';input.focus();return;}window.BibleLensWorkspace.search(query);};
+  input.addEventListener('input',()=>{status.textContent='';});
+  input.addEventListener('keydown',event=>{if(event.key==='Escape'&&input.value){event.preventDefault();input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));}});
   host.querySelectorAll('.ux-topic-section').forEach(connectLane);
  }
  fetch('/collection-counts.json?inspect=1').catch(()=>fetch('/collection-counts.json')).then(r=>{if(!r.ok)throw Error();return r.json();}).then(value=>{counts=value;render();updateCounts();}).catch(()=>{host.querySelectorAll('.ux-count').forEach(n=>{n.textContent='';n.setAttribute('aria-label','Count unavailable');});});
- host.addEventListener('click',event=>{const button=event.target.closest('[data-explore-filter]');if(!button)return;const left=button.parentElement.scrollLeft;filter=button.dataset.exploreFilter;render();updateCounts();host.querySelector('.ux-explore-filters').scrollLeft=left;const selected=host.querySelector(`[data-explore-filter="${filter}"]`);selected.focus({preventScroll:true});selected.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});});
- window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#discover')){filter=routeFilter();render();updateCounts();}});
+ window.addEventListener('hashchange',()=>{if(location.hash.startsWith('#discover')){scope=routeScope();render();updateCounts();}});
  render();
  const topic=()=>{
   const hash=location.hash,params=new URLSearchParams(hash.split('?')[1]);

@@ -40,7 +40,7 @@
  let searchReturn=location.hash.startsWith('#search')?'#discover':location.hash||'#discover';
  window.addEventListener('hashchange',event=>{const previous=new URL(event.oldURL||location.href).hash;if(location.hash.startsWith('#search')&&!previous.startsWith('#search'))searchReturn=previous||'#discover';if(!location.hash.startsWith('#search')){clearTimeout(inputTimer);if(searchDialog.open)searchDialog.close();}});
  searchDialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();event.stopPropagation();searchDialog.close();}});
- searchDialog.addEventListener('close',()=>{if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);});
+ searchDialog.addEventListener('close',()=>{const returnToExplore=!searchDialog.open&&location.hash.startsWith('#search')&&searchReturn.startsWith('#discover');if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);if(returnToExplore)requestAnimationFrame(()=>{if(view==='explore'&&!searchDialog.open)el('ux-explore-search')?.focus({preventScroll:true});});});
  section('notebook', `<div class="lens-page-heading"><h1 tabindex="-1">Saved</h1></div><div class="lens-notebook-tools"><div role="group" aria-label="Filter saved items">${[['all','All'],['notes','Notes'],['bookmarks','Bookmarks'],['saved','Contradictions'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='all'}">${label} (0)</button>`).join('')}</div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div><div class="lens-notebook-exports"><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div>`);
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
@@ -375,7 +375,7 @@
   const [path,query='']=hash.split('?'),params=new URLSearchParams(query);
   if(!path || path==='#' || path==='#discover'){setView('explore',false);return true;}
   if(path==='#lost'){setView('lost',false);return true;}
-  if(path==='#search'){includeLost=params.has('lost')?params.get('lost')==='1':searchReturn.startsWith('#lost');lostToggle.setAttribute('aria-pressed',String(includeLost));searchView.hidden=false;if(!searchDialog.open)BibleLensPopup.show(searchDialog,document.querySelector('.ux-search'));runSearch(params.get('q')||'');el('lens-search-input').focus({preventScroll:true});return true;}
+  if(path==='#search'){includeLost=params.has('lost')?params.get('lost')==='1':searchReturn.startsWith('#lost');lostToggle.setAttribute('aria-pressed',String(includeLost));searchView.hidden=false;if(!searchDialog.open)BibleLensPopup.show(searchDialog,searchReturn.startsWith('#discover')?el('ux-explore-search'):document.querySelector('.ux-search'));runSearch(params.get('q')||'');el('lens-search-input').focus({preventScroll:true});return true;}
   if(path==='#notebook'){notebookFilter=params.has('note')?'all':['all','notes','saved','bookmarks','investigations'].includes(params.get('section'))?params.get('section'):'all';setView('notebook',false);renderNotebook();const note=params.get('note');if(note)requestAnimationFrame(()=>{const row=[...el('lens-notebook-list').children].find(n=>n.dataset.lensNote===note);row?.querySelector('textarea')?.focus();});return true;}
   if(path==='#compare'||path.startsWith('#investigation/')){
    setView('read',false);compare.hidden=false;if(!compare.open)showComparison();if(!books.length){el('lens-compare-status').textContent='Loading the library…';return true;}
@@ -386,6 +386,6 @@
   }
   return false;
  }
- window.BibleLensWorkspace={route:workspaceRoute,navigate:routeTo,refresh:renderInspector,inspectVerse,parseReference};
+ window.BibleLensWorkspace={route:workspaceRoute,navigate:routeTo,refresh:renderInspector,inspectVerse,parseReference,search:window.BibleLensWorkspace.search};
  renderInspector();inspector.hidden=true;
 })();

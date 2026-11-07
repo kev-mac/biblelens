@@ -14,7 +14,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    async function fits(){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page fits '+page.url());}
    await go('#discover','#ux-topic-stories');
    assert.deepEqual(await page.locator('[data-lens-view]').evaluateAll(ns=>ns.map(n=>n.dataset.lensView)),['read','explore','notebook']);
-   assert.equal(await page.locator('.ux-topic').count(),7);
+   assert.equal(await page.locator('.ux-topic').count(),9);
    assert.equal(await page.locator('#ux-topic-prophecies').count(),0);
    await page.getByRole('button',{name:'Evidence',exact:true}).click();
    assert.equal(await page.locator('.ux-topic').count(),2);
