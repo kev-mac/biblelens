@@ -1,0 +1,139 @@
+{
+  "inheritedAbsentFields": [],
+  "inheritedEmptyStrings": [],
+  "book": "Philippians",
+  "canonicalBaseline": "cff284070a5e304a4dbd4bc40ffa6f7d17ae3b3d",
+  "chapterCount": 4,
+  "verseCount": 104,
+  "editions": [
+    "kjv",
+    "asv",
+    "web"
+  ],
+  "rows": [
+    {
+      "chapter": 1,
+      "src": "/assets/chapter-philippians-01-opening-v1.webp",
+      "verse": 0,
+      "verses": 30,
+      "bytes": 89062,
+      "sha256": "30d7e73e09c93e0fe0444f5f78c5a57c2252081bf9d59978eb7f502dfddc7cfd",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 2,
+      "src": "/assets/chapter-philippians-02-opening-v1.webp",
+      "verse": 0,
+      "verses": 30,
+      "bytes": 116450,
+      "sha256": "a7522f8fe7a258c4ca324857d79de016d2d4619537f6ec8a80c053e53ee1e0f4",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 3,
+      "src": "/assets/chapter-philippians-03-opening-v1.webp",
+      "verse": 0,
+      "verses": 21,
+      "bytes": 154300,
+      "sha256": "5f5cbf9acc22d2d6ad5c095898d49b8abf845b797a0c1a8911b02c13609a551f",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    },
+    {
+      "chapter": 4,
+      "src": "/assets/chapter-philippians-04-opening-v1.webp",
+      "verse": 0,
+      "verses": 23,
+      "bytes": 104200,
+      "sha256": "fb61231c6886e4acb0c0a33f6ed2c09f6872908ffaa5af81c6aa73cbcfe355fb",
+      "sourceWorkerOfflineBytesEqual": true,
+      "scriptureThreeEditionsEqual": true,
+      "metadataHeadingsEqual": true,
+      "openerBeforeVerse1": true,
+      "genericCaptionHidden": true,
+      "storyCaptionPreserved": false
+    }
+  ],
+  "negativeCoverageChecks": 4,
+  "originMode": "Local immutable-origin source fixture; no live HTTP verification",
+  "limits": [
+    "Browser QA missing supported managed control tool",
+    "release:verify/live HTTP and image bytes deferred under inherited network denial",
+    "Signed-app parity, installation and launch deferred: no Mac/device connector"
+  ],
+  "offlineNetworkCalls": 0,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 48,
+        "chapter": 6,
+        "verse": 0,
+        "position": 131,
+        "src": "/assets/chapter-ephesians-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 49,
+        "chapter": 1,
+        "verse": 0,
+        "position": 155,
+        "src": "/assets/chapter-philippians-01-opening-v1.webp"
+      },
+      "gap": 24
+    },
+    {
+      "a": {
+        "book": 49,
+        "chapter": 4,
+        "verse": 0,
+        "position": 236,
+        "src": "/assets/chapter-philippians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 50,
+        "chapter": 1,
+        "verse": 0,
+        "position": 259,
+        "src": "/assets/chapter-colossians-01-opening-v1.webp"
+      },
+      "gap": 23
+    }
+  ],
+  "minimumInternalGap": 21,
+  "baselineAssetFilesPreserved": 1619,
+  "hostedPin": "1e26754b308a178be210fa0ee900415bcd3a3553",
+  "pinnedBlobsEqualSource": 1147,
+  "productionDeltaVerified": true,
+  "allProductionMetadataPreserved": true,
+  "productionDelta": "No production changes; Philippians existing 4 openers retained, build 388 unchanged",
+  "unpublishedCandidate": true,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 388,
+    "sourceHash": "279a4e898db0ccdb8c63a0c435bd7e245399a3f195eeb4dc785837520db89278"
+  },
+  "frozenMirrorRelease": {
+    "version": "1.1.0",
+    "buildNumber": 386,
+    "sourceHash": "e2726d8c93d3761a5925c07893660d8643c8e0bdb0705fad8a84e4ae6108e997"
+  },
+  "freshlyOpenedMirrorIdentityEqual": false,
+  "mirrorCommit": "64bea042655bc72df95a994a4b6c70237b2c3f5c",
+  "workerBytes": 59167345,
+  "workerSha256": "fc13e7bed97a5ae5065de5afd82f11572ce3963d821bd7158428b35892184cf9",
+  "originFixtureCalls": 4
+}

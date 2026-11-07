@@ -1,0 +1,118 @@
+{
+  "book": "Philippians",
+  "baseline": "cff284070a5e304a4dbd4bc40ffa6f7d17ae3b3d",
+  "chapters": 4,
+  "totalPlacements": 4,
+  "chapterOpeners": 4,
+  "storyPlacements": 0,
+  "retained": 4,
+  "replaced": 0,
+  "inventory": [
+    {
+      "chapter": 1,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A blank scroll and iron chain rest on a desk in a stone prison.",
+      "src": "/assets/chapter-philippians-01-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 89062,
+      "sha256": "30d7e73e09c93e0fe0444f5f78c5a57c2252081bf9d59978eb7f502dfddc7cfd",
+      "textBasis": "1:7,12-14,16: bonds and the message spreading. Blank scroll and chain in an imagined prison illustrate the letter’s custody language. No portrait of Paul, actual manuscript, exact prison, date or composition location asserted.",
+      "fullSizeReview": "Both blank scroll rollers/finials, scroll edge and surface, linked chain/cuff fastening, iron window bars, stone courses, bench textile/fringe and table joints inspected at native 960x540. No malformed visible object or lettering; cell and distant window view contain no people/animals.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 2,
+      "afterVerse": 0,
+      "alt": "Imagined scene: Stars shine above a quiet stone town at night.",
+      "src": "/assets/chapter-philippians-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 116450,
+      "sha256": "a7522f8fe7a258c4ca324857d79de016d2d4619537f6ec8a80c053e53ee1e0f4",
+      "textBasis": "2:15-16: shining as lights in the world and holding the word of life. Stars above a quiet town illustrate light imagery; not a reconstruction of Philippi or a claim that verse 1 describes this town.",
+      "fullSizeReview": "Olive trunk/branches and leaves, jug handle/rim, roof timbers/tiles, masonry, window openings, track/path perspective, distant town and stars inspected at native size. Deep blue sky and restrained window light; no tiny pedestrians, silhouettes or animals.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 3,
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty running track leads toward the far end of a stone stadium.",
+      "src": "/assets/chapter-philippians-03-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 154300,
+      "sha256": "5f5cbf9acc22d2d6ad5c095898d49b8abf845b797a0c1a8911b02c13609a551f",
+      "textBasis": "3:12-14: pressing toward the mark and prize. Empty track illustrates the running/goal metaphor, not a claim Paul competed in this stadium or a dated site reconstruction.",
+      "fullSizeReview": "Track surface/edges, seating courses, steps, column capitals/lintels, olive trunk/branches and hills inspected at native size. Empty track and stands, no runners, audience or animals. Natural green and blue morning colors; no invented named face.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    },
+    {
+      "chapter": 4,
+      "afterVerse": 0,
+      "alt": "Imagined scene: A tied cloth parcel and clay jug rest on a wooden table.",
+      "src": "/assets/chapter-philippians-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 104200,
+      "sha256": "fb61231c6886e4acb0c0a33f6ed2c09f6872908ffaa5af81c6aa73cbcfe355fb",
+      "textBasis": "4:10-18: giving, receiving and the gift brought by Epaphroditus. Tied cloth parcel and jug are illustrative gift objects; the text does not specify their material, contents or actual appearance. No messenger or recipient pictured.",
+      "fullSizeReview": "Folded textile edges/fringe, cord knot/routes, jug rim/handle attachment, table plank/leg joints, doorway framing, wall niche and landscape inspected at native size. Muted purple fabric, natural brown pottery and green hills. No hands, messenger, recipient or animal.",
+      "visiblePeople": [],
+      "visibleAnimals": [],
+      "anatomy": "No humans or animals visible; fingers, thumbs, limbs and aging comparisons not applicable.",
+      "decision": "retain"
+    }
+  ],
+  "preservedProductionFiles": 2010,
+  "preservedAssets": 1619,
+  "productionDelta": "None. All production files and assets byte-identical to baseline; build 388 unchanged.",
+  "minimumInternalGap": 21,
+  "closePairs": [],
+  "boundaries": [
+    {
+      "a": {
+        "book": 48,
+        "chapter": 6,
+        "verse": 0,
+        "position": 29341,
+        "src": "/assets/chapter-ephesians-06-opening-v1.webp"
+      },
+      "b": {
+        "book": 49,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29365,
+        "src": "/assets/chapter-philippians-01-opening-v1.webp"
+      },
+      "gap": 24
+    },
+    {
+      "a": {
+        "book": 49,
+        "chapter": 4,
+        "verse": 0,
+        "position": 29446,
+        "src": "/assets/chapter-philippians-04-opening-v1.webp"
+      },
+      "b": {
+        "book": 50,
+        "chapter": 1,
+        "verse": 0,
+        "position": 29469,
+        "src": "/assets/chapter-colossians-01-opening-v1.webp"
+      },
+      "gap": 23
+    }
+  ],
+  "nextBookArtworkReviewed": false
+}
