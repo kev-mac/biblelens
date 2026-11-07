@@ -1,0 +1,64 @@
+{
+  "book": "2 Chronicles",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 370,
+    "sourceHash": "d9aef55ab803d0356d1d952d11d7c1a87c82606f2c3e60ef59864fed78ea2ef2"
+  },
+  "productionChanges": 0,
+  "retainedImages": 36,
+  "checks": [
+    {
+      "command": "release:prepare",
+      "exitCode": 1,
+      "output": "xact selected-edition text.\nnode:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nbrowserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at /workspace/biblelens/scripts/check-release-smoke.mjs:31:32 {\n  log: [],\n  name: 'Error'\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\nnode:internal/errors:986\n  const err = new Error(message);\n              ^\n\nError: Command failed: /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/bin/npm-cli.js run check\n    at genericNodeError (node:internal/errors:986:15)\n    at wrappedFn (node:internal/errors:540:14)\n    at checkExecSyncError (node:child_process:943:11)\n    at execFileSync (node:child_process:979:15)\n    at runNpm (file:///workspace/biblelens/scripts/prepare-release.mjs:5:20)\n    at file:///workspace/biblelens/scripts/prepare-release.mjs:16:127\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\n    at async node:internal/modules/esm/loader:647:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  status: 1,\n  signal: null,\n  output: [ null, null, null ],\n  pid: 1175,\n  stdout: null,\n  stderr: null\n}\n\nNode.js v24.22.1\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:images",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:images\n> node scripts/check-story-images.mjs && node scripts/check-chapter-images.mjs && node scripts/check-1-samuel-artwork.mjs\n\nPASS: complete Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Isaiah, Jeremiah, Ezekiel, Daniel, Hosea, Amos, Jonah, Matthew, Mark, Luke, John, Acts Story images, valid 1200px packaged WebP files, native/web byte parity, shared card/Read figures, graceful missing artwork and verse-aligned titles.\nPASS: all 1189 registered chapters illustrated (Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon, Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude, Revelation); 273 have existing Story coverage, 976 gain inline images; unchanged scripture, valid placement, accessible art without generic captions, packaged image parity and fail-closed coverage.\nCLOSE PAIR: [{\"book\":8,\"chapter\":7,\"verse\":0,\"position\":225,\"src\":\"/assets/chapter-1-samuel-07-opening-v2.webp\"},{\"book\":8,\"chapter\":7,\"verse\":2,\"position\":227,\"src\":\"/assets/story-samuel-judges-israel-v1.webp\"}]\nPASS: all 31 1 Samuel openers (22 chapter, 9 Story), retained Story verses/captions, unchanged scripture, alt text and offline/web byte parity. Browser/device layout remains a separate check.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:release",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:release\n> node scripts/check-release.mjs && node scripts/check-sites-package.mjs && node scripts/check-app-refresh.mjs && node scripts/check-embedded-encoding.mjs && node scripts/check-public-artwork.mjs && node scripts/check-prepared-assets.mjs\n\nPASS: deterministic release identity, text line-ending normalization, exact binary hashing, generated-output exclusion and source drift detection.\nPASS: shared Build 219 settings label on web/iOS, build mismatch detection, and native CFBundleVersion uses release metadata.\nPASS: local browser previews make no published-release request, while native localhost still checks for updates.\nPASS: Sites package excludes static bypass paths; embedded routes retain both CSP headers with a failing platform ASSETS binding, identity bodies with and without gzip negotiation, release identity matches, and sync retains authentication.\nPASS: app refresh clears only BibleLens public caches and same-origin workers, preserves saved data and routes, keeps offline files on connection failure, and reports the loaded bundle identity.\nPASS: hosted asset encoding preserves every story image byte, text, all byte values and every padding length without JSON escapes.\nPASS: pinned public artwork, exact bytes and hashes, verified cache hits, HEAD/ETag, method guards, pinned fallback on origin failures and no forwarded credentials or private query data.\nPASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes; no temporary full Worker is required.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    },
+    {
+      "command": "check:sync",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:sync\n> node scripts/check-sync.mjs && node scripts/check-sync-disconnect.mjs\n\nPASS: schema migrations, account isolation, CSRF/origin checks, single-use/expiring device codes, hashed/revocable tokens, revision conflicts, offline edits, deletions and preservation of concurrent note text.\nPASS: concurrent saved text highlights merge without losing offline selections; bookmark deletions still propagate.\nPASS: failed native disconnect survives reload, retries on reconnect, revokes the copied token and keeps offline notes.\nPASS: already-revoked/expired tokens clear on 401 without enabling sync.\nPASS: a late sync response cannot apply cloud data or restore credentials after disconnect.\nPASS: web sync removes unused bearer credentials and sends only the signed-in session.\n"
+    },
+    {
+      "command": "check:mobile",
+      "exitCode": 0,
+      "output": "\n> scripture-lens@1.1.0 check:mobile\n> node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs\n\nPASS: mobile chrome follows keyboard pan/resize, clamps overscroll, avoids scroll loops and resets after dismissal.\nPASS: mobile worker reading, comparisons, chat, concurrent calls, citation provenance, qualified-answer preservation, abort handling and zero network requests. Native inference is not simulated or verified.\nnpm notice\nnpm notice New major version of npm available! 11.9.0 -> 12.2.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2\nnpm notice To update run: npm install -g npm@12.2.2\nnpm notice\n"
+    }
+  ],
+  "fullReleaseGatePassed": false,
+  "candidateCreated": false,
+  "independent": {
+    "chapters": 36,
+    "verses": 822,
+    "images": 36,
+    "pinnedBlobsMatch": 1142,
+    "sourceWorkerOfflineParity": true,
+    "offlineEngineNetworkForbidden": true,
+    "scriptureAndMetadataPreserved": true,
+    "minimumInternalSpacing": 10,
+    "closePairs": [],
+    "boundaryGaps": [
+      31,
+      23
+    ]
+  },
+  "deferred": [
+    "browser QA: managed Sites mode has no callable cua_repl.js/desktop JavaScript tool; unchanged smoke fails missing Chromium",
+    "live HTTP/image bytes and release:verify: inherited destination-policy denial, no environment-change tool",
+    "signing, signed asset parity, device install/query/launch: no Mac/device route or Xcode"
+  ],
+  "risks": [
+    "Inherited intermittent sync settling is not proved fixed by passing unchanged checks",
+    "Tiny/occluded anatomy and imagined architecture remain qualified"
+  ],
+  "publication": null
+}
