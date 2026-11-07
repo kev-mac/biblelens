@@ -1,0 +1,673 @@
+{
+  "book": "1 Kings",
+  "chapterCount": 22,
+  "activeImages": 23,
+  "chapterOpeners": 11,
+  "storyImages": 12,
+  "placements": [
+    {
+      "book": 10,
+      "chapter": 1,
+      "verse": 1,
+      "position": 1,
+      "kind": "Story",
+      "title": "Solomon Becomes King",
+      "src": "/assets/story-solomon-becomes-king-v1.webp",
+      "alt": "A priest anoints Solomon beside a spring as Nathan and Bathsheba watch.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 164170,
+      "sha256": "393c92344b59f564fcbb2520d8b5ab989f843eaad260b8448990801e52576663",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 2,
+      "verse": 0,
+      "position": 53,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: An empty wooden throne and blue mantle mark a royal succession.",
+      "src": "/assets/chapter-1-kings-02-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 76382,
+      "sha256": "d941176cf01bf8c7914213e14d43fd512b50cd89b8aff19dd573e155e84cb3ac",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 3,
+      "verse": 1,
+      "position": 100,
+      "kind": "Story",
+      "title": "Solomon's Wisdom",
+      "src": "/assets/story-solomon-s-wisdom-v1.webp",
+      "alt": "Two women stand before Solomon while one safely holds a wrapped baby.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 121714,
+      "sha256": "fe1d60efee76d1f74b3f62cc60c979f22fbd7d30db5c1c414a099d0dfa3ab24d",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 4,
+      "verse": 0,
+      "position": 127,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Grain baskets, flour sacks and straw fill a shaded storeroom.",
+      "src": "/assets/chapter-1-kings-04-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 152106,
+      "sha256": "f096074903b45d7f56511cbcb2c6e6868397bd891157106f29ea2fef5fffe65c",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 5,
+      "verse": 1,
+      "position": 162,
+      "kind": "Story",
+      "title": "The Temple Built",
+      "src": "/assets/story-the-temple-built-v2.webp",
+      "alt": "Craftspeople fit cedar beams and stone blocks at a temple construction site.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 199410,
+      "sha256": "410a96700f6bc19433f28d0b98286427edc7f47ceff539acd458b3bfb5336c6c",
+      "decision": "versioned replacement",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 6,
+      "verse": 0,
+      "position": 179,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Carved cedar panels and floorboards line a temple room.",
+      "src": "/assets/chapter-1-kings-06-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 80984,
+      "sha256": "e861ca675b2944e98486e3f133684499eaa0d4b952508086b7c1d85e0af0b46a",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 7,
+      "verse": 0,
+      "position": 217,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Rows of cedar pillars support an empty palace hall.",
+      "src": "/assets/chapter-1-kings-07-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 95788,
+      "sha256": "20fde943dcf1536891ea84a4738ff0031805e9c054532db85be8599b04957a0d",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 8,
+      "verse": 0,
+      "position": 268,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: A dark cloud fills the doorway of a stone temple.",
+      "src": "/assets/chapter-1-kings-08-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 49968,
+      "sha256": "c5b58d67d7d91930126c1d98d0b8cef69a0989fac59875c7d141c884f2c3991b",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 9,
+      "verse": 1,
+      "position": 335,
+      "kind": "Story",
+      "title": "The Queen of Sheba and Solomon's Decline",
+      "src": "/assets/story-the-queen-of-sheba-and-solomon-s-decline-v1.webp",
+      "alt": "The queen of Sheba speaks with Solomon as attendants carry vessels and folded cloth.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 122130,
+      "sha256": "f9b24087408785e84233b213cb8ea456a66455152e8be3e98b36646f2bc6b798",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 10,
+      "verse": 0,
+      "position": 362,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Spices, gold vessels and rough stones rest on purple cloth.",
+      "src": "/assets/chapter-1-kings-10-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 132640,
+      "sha256": "e05614bf3f423bb79c4d04396ce364e75c1ba17c7b82cc04a5608c0a198bdf9c",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 11,
+      "verse": 0,
+      "position": 391,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Torn cloth rests on rocks beside a hill-country path.",
+      "src": "/assets/chapter-1-kings-11-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 125668,
+      "sha256": "c6d1093638883ad6dcae9f4a76849774faa06c1859deaa0057a1ef5387c025c3",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 12,
+      "verse": 1,
+      "position": 435,
+      "kind": "Story",
+      "title": "The Kingdom Divides",
+      "src": "/assets/story-the-kingdom-divides-v1.webp",
+      "alt": "Rehoboam hears the elders while seated across from them in a courtyard.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 121282,
+      "sha256": "3395a3970aaeafc6cbf75f7319b9cf6db854b5e5fdcee838327daf2221e97287",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 13,
+      "verse": 1,
+      "position": 468,
+      "kind": "Story",
+      "title": "The Man of God from Judah",
+      "src": "/assets/story-the-man-of-god-from-judah-v1.webp",
+      "alt": "A prophet addresses Jeroboam beside a stone altar under gray skies.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 108554,
+      "sha256": "5e8278918af8545f59e979b061127918e974ec2f0b834593e5b1f01912ba83ef",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 14,
+      "verse": 0,
+      "position": 501,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Bread, cakes and a honey jar sit at a house doorway.",
+      "src": "/assets/chapter-1-kings-14-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 119184,
+      "sha256": "35b54b150ea1f5f1f26d13ea7e011274e39db325f8ca61443c58de36651de448",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 15,
+      "verse": 0,
+      "position": 532,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Reused stones and timber lie beside an unfinished wall.",
+      "src": "/assets/chapter-1-kings-15-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 155250,
+      "sha256": "ef591789da2f843f2d7756dffccf9d29a1383ae75c275c75439d28be1fad5894",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 16,
+      "verse": 0,
+      "position": 566,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: Smoke rises from a burning royal house beyond an empty lane.",
+      "src": "/assets/chapter-1-kings-16-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 83680,
+      "sha256": "e420ca65e9cb709c83c7327fe137ae0faddbb66d400fc6e2c451fc08875953fd",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 16,
+      "verse": 8,
+      "position": 574,
+      "kind": "Story",
+      "title": "Zimri's Coup and Omri's Rise",
+      "src": "/assets/story-zimri-s-coup-and-omri-s-rise-v1.webp",
+      "alt": "Omri speaks with workers laying stone foundations on a green hill.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 165368,
+      "sha256": "4991f38e695d1690d4fdcb4b9fd9b0d63752772a8c7af658adffec4bc5e54eeb",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 17,
+      "verse": 1,
+      "position": 601,
+      "kind": "Story",
+      "title": "Elijah and the Drought",
+      "src": "/assets/story-elijah-and-the-drought-v1.webp",
+      "alt": "Elijah rests beside a shaded brook as ravens approach with bread.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 174682,
+      "sha256": "0089c81bb28dae94129038572ecf9707f74eb61cb1a1fa5f41cc8a13606c6168",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 18,
+      "verse": 1,
+      "position": 625,
+      "kind": "Story",
+      "title": "Elijah on Mount Carmel",
+      "src": "/assets/story-elijah-on-mount-carmel-v1.webp",
+      "alt": "Elijah stands near a stone altar with fire and a water-filled trench.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 127444,
+      "sha256": "1e9423e5fea54920c0dc1af952350c521e7c7bda07a5613f64ce4e09fa593776",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 19,
+      "verse": 1,
+      "position": 671,
+      "kind": "Story",
+      "title": "Elijah at Horeb",
+      "src": "/assets/story-elijah-at-horeb-v1.webp",
+      "alt": "Elijah covers his face with his cloak at the mouth of a mountain cave.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 77304,
+      "sha256": "ff2e41b107f1cf8399e6f05be0a9a165c4f35056750842779675d7b55e3c97be",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 20,
+      "verse": 0,
+      "position": 691,
+      "kind": "chapter",
+      "afterVerse": 0,
+      "alt": "Imagined scene: An army camp fills fields below a walled hilltop city.",
+      "src": "/assets/chapter-1-kings-20-opening-v1.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 92518,
+      "sha256": "45357e48f85df08bb3b8cf766b8045e79db6ebdfe04f7a2d1aca3d1aeb51049d",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "No identifiable person or animal."
+    },
+    {
+      "book": 10,
+      "chapter": 21,
+      "verse": 1,
+      "position": 735,
+      "kind": "Story",
+      "title": "Naboth's Vineyard",
+      "src": "/assets/story-naboth-s-vineyard-v1.webp",
+      "alt": "Elijah addresses Ahab among vineyard terraces and grapevines.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 128538,
+      "sha256": "8dcbb8e7315114291c837173f778d3d42b9813905da0463d3f8eac87e611bcad",
+      "decision": "retain",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    },
+    {
+      "book": 10,
+      "chapter": 22,
+      "verse": 1,
+      "position": 764,
+      "kind": "Story",
+      "title": "Ahab and Micaiah",
+      "src": "/assets/story-ahab-and-micaiah-v2.webp",
+      "alt": "Micaiah speaks before two seated kings and their advisors.",
+      "width": 1200,
+      "height": 675,
+      "bytes": 141384,
+      "sha256": "716939bc42c60bb2176acb63ef0b3ab4c7b5ca641af3cf90f991c71d2b7c8e26",
+      "decision": "versioned replacement",
+      "fullSizeReviewed": true,
+      "visibleAnatomy": "Visible faces/hands/limbs and any infant/mule/ravens inspected; no clear defect; hidden/distant anatomy qualified."
+    }
+  ],
+  "gaps": [
+    {
+      "from": [
+        1,
+        1
+      ],
+      "to": [
+        2,
+        0
+      ],
+      "gap": 52
+    },
+    {
+      "from": [
+        2,
+        0
+      ],
+      "to": [
+        3,
+        1
+      ],
+      "gap": 47
+    },
+    {
+      "from": [
+        3,
+        1
+      ],
+      "to": [
+        4,
+        0
+      ],
+      "gap": 27
+    },
+    {
+      "from": [
+        4,
+        0
+      ],
+      "to": [
+        5,
+        1
+      ],
+      "gap": 35
+    },
+    {
+      "from": [
+        5,
+        1
+      ],
+      "to": [
+        6,
+        0
+      ],
+      "gap": 17
+    },
+    {
+      "from": [
+        6,
+        0
+      ],
+      "to": [
+        7,
+        0
+      ],
+      "gap": 38
+    },
+    {
+      "from": [
+        7,
+        0
+      ],
+      "to": [
+        8,
+        0
+      ],
+      "gap": 51
+    },
+    {
+      "from": [
+        8,
+        0
+      ],
+      "to": [
+        9,
+        1
+      ],
+      "gap": 67
+    },
+    {
+      "from": [
+        9,
+        1
+      ],
+      "to": [
+        10,
+        0
+      ],
+      "gap": 27
+    },
+    {
+      "from": [
+        10,
+        0
+      ],
+      "to": [
+        11,
+        0
+      ],
+      "gap": 29
+    },
+    {
+      "from": [
+        11,
+        0
+      ],
+      "to": [
+        12,
+        1
+      ],
+      "gap": 44
+    },
+    {
+      "from": [
+        12,
+        1
+      ],
+      "to": [
+        13,
+        1
+      ],
+      "gap": 33
+    },
+    {
+      "from": [
+        13,
+        1
+      ],
+      "to": [
+        14,
+        0
+      ],
+      "gap": 33
+    },
+    {
+      "from": [
+        14,
+        0
+      ],
+      "to": [
+        15,
+        0
+      ],
+      "gap": 31
+    },
+    {
+      "from": [
+        15,
+        0
+      ],
+      "to": [
+        16,
+        0
+      ],
+      "gap": 34
+    },
+    {
+      "from": [
+        16,
+        0
+      ],
+      "to": [
+        16,
+        8
+      ],
+      "gap": 8
+    },
+    {
+      "from": [
+        16,
+        8
+      ],
+      "to": [
+        17,
+        1
+      ],
+      "gap": 27
+    },
+    {
+      "from": [
+        17,
+        1
+      ],
+      "to": [
+        18,
+        1
+      ],
+      "gap": 24
+    },
+    {
+      "from": [
+        18,
+        1
+      ],
+      "to": [
+        19,
+        1
+      ],
+      "gap": 46
+    },
+    {
+      "from": [
+        19,
+        1
+      ],
+      "to": [
+        20,
+        0
+      ],
+      "gap": 20
+    },
+    {
+      "from": [
+        20,
+        0
+      ],
+      "to": [
+        21,
+        1
+      ],
+      "gap": 44
+    },
+    {
+      "from": [
+        21,
+        1
+      ],
+      "to": [
+        22,
+        1
+      ],
+      "gap": 29
+    }
+  ],
+  "closePairs": [],
+  "boundaryGaps": [
+    {
+      "from": [
+        9,
+        24,
+        1
+      ],
+      "to": [
+        10,
+        1,
+        1
+      ],
+      "gap": 25
+    },
+    {
+      "from": [
+        10,
+        22,
+        1
+      ],
+      "to": [
+        11,
+        1,
+        1
+      ],
+      "gap": 53
+    }
+  ]
+}
