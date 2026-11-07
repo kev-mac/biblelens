@@ -35,3 +35,9 @@ After a denial, check uncertain outcome and use user_message_read.read_messages 
 ## Final check results
 
 `release:prepare` failed exit 1 at unchanged `check-release-smoke.mjs:31:32` because the default Playwright Chromium headless shell is missing. `build:mobile` and preceding nonbrowser checks passed; useful-hit 50/50. Readability exit 0 is report-only with inherited findings. No candidate.json was produced. `check:images`, `check:release`, `check:sync`, `check:mobile`, independent local Worker/offline parity and git diff checks passed. No gate was weakened. Browser QA, live verification and native signing/install remain deferred; passing unchanged sync checks does not prove intermittent settling fixed.
+
+## Confirmed Ezra publication
+
+GitHub main contains review **0ea6b4bebbed1e4b209f277d98b2acc8d4dd1543** and check-evidence **ca02c1a**; final documentation records publication. Mirror commit **5151d500aaeeec0a540656403d39ebb25a214365** is pushed. Sites **version 363**, saved ID `appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_be9d6611a6108191b42f7107909d6ce1`, confirmed **succeeded** deployment **appgdep_6aeeb25921348191a8ba431dbd9262f5**, https://scripture-lens.kvn-mcgwn.chatgpt.site. Six-file archive staged the exact canonical Worker without rebuilding mirror. Same build 370/fingerprint above; browser/live/native verification remains deferred.
+
+Initial automatic approval rejection said trusted messages did not authorize publication or establish audience. get_site_version confirmed deployment_id null, trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca was freshly reread and get_site reverified owner/public audience. Identical saved-version deployment retried once and succeeded. No bypass, pending approval or pending deployment remains. Do not duplicate this deployment or imply live HTTP/signed-device verification. Preserve the checked production fingerprint when integrating final documentation.

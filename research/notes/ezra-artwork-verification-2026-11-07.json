@@ -79,5 +79,26 @@
     "result": "empty-page title probe passed",
     "appQaExercised": false,
     "furtherSubstituteBrowserUse": false
+  },
+  "publication": {
+    "canonicalReviewCommit": "0ea6b4bebbed1e4b209f277d98b2acc8d4dd1543",
+    "canonicalChecksCommit": "ca02c1ac7fdcbe5b79662f3190d43eb2f86a1056",
+    "mirrorCommit": "5151d500aaeeec0a540656403d39ebb25a214365",
+    "version": 363,
+    "versionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_be9d6611a6108191b42f7107909d6ce1",
+    "deploymentId": "appgdep_6aeeb25921348191a8ba431dbd9262f5",
+    "status": "succeeded",
+    "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+    "archiveFiles": 6,
+    "workerSha256": "605bda5692389047d6f536c06b91fdc47f8e26a5a0891e3e52bcbc96dfacada2",
+    "mirrorRebuilt": false,
+    "initialDeploymentRejected": true,
+    "initialRejectionReason": "Automatic approval review did not recognize explicit publication authorization or existing public audience.",
+    "outcomeChecked": "get_site_version confirmed deployment_id null",
+    "authorizationEvidence": "Trusted owner message Sentinel_71f14e4a51e88191a1801af8136df6ca freshly reread after rejection explicitly authorizes book-by-book commit/push/publish/available-device install; get_site reverified owner and public audience.",
+    "identicalDeploymentRetriedOnce": true,
+    "pendingApprovalOrDeployment": false,
+    "liveHttpVerified": false,
+    "signedDevicesVerified": false
   }
 }
