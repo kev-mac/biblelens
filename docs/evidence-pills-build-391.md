@@ -1,5 +1,10 @@
 # Inline evidence pills — build 391
 
+This records the initial unpublished candidate. See
+[the CI follow-up](evidence-pills-391-ci-followup.md) for the subsequent browser
+results, fixes and revised candidate fingerprint. The original fingerprint below
+does not identify the revised source.
+
 Source implementation: `d60ba8d` (on top of reader UI build 390).
 
 Verse evidence now uses small, bordered ALL CAPS category pills after the verse

@@ -21,10 +21,10 @@ assert(!atlas.includes('fitPassageLabel')&&!atlas.includes('style.fontSize'),'Pa
 assert(atlas.includes('id="ux-chapter-picker" aria-label="Choose chapter" aria-haspopup="dialog" aria-controls="passage-picker"'));
 assert(read('src/reader.js').includes("($('#ux-chapter-picker')||document.querySelector('.passage-heading-picker'))?.focus"));
 const geometry=shell.slice(shell.indexOf('function measureWorkspaceHeader(){'),shell.indexOf('const headerObserver='));
-const styles=new Map();let headerHeight=64,barHeight=52;
-const ctx={masthead:{getBoundingClientRect:()=>({height:headerHeight})},document:{documentElement:{style:{setProperty:(k,v)=>styles.set(k,v)}}},el:()=>({getBoundingClientRect:()=>({height:barHeight})})};
+const styles=new Map(),bodyStyles=new Map();let headerHeight=64,barHeight=52;
+const ctx={masthead:{getBoundingClientRect:()=>({height:headerHeight})},document:{documentElement:{style:{setProperty:(k,v)=>styles.set(k,v)}},body:{style:{setProperty:(k,v)=>bodyStyles.set(k,v)}}},el:()=>({getBoundingClientRect:()=>({height:barHeight})})};
 vm.createContext(ctx);vm.runInContext(geometry,ctx);
-for(const [header,bar] of [[64,52],[76,52],[96.2,82.5]]){headerHeight=header;barHeight=bar;ctx.measureWorkspaceHeader();assert.equal(styles.get('--ux13-masthead-height'),Math.ceil(header)+'px');assert.equal(styles.get('--reader-bar-height'),Math.ceil(bar)+'px');}
+for(const [header,bar] of [[64,52],[76,52],[96.2,82.5]]){headerHeight=header;barHeight=bar;ctx.measureWorkspaceHeader();assert.equal(styles.get('--ux13-masthead-height'),Math.ceil(header)+'px');assert.equal(bodyStyles.get('--ux13-masthead-height'),Math.ceil(header)+'px','Measured height overrides responsive body fallbacks');assert.equal(styles.get('--reader-bar-height'),Math.ceil(bar)+'px');}
 // Parse the real cascade: safe-area handling and readable targets apply outside phone-only media queries.
 const tree=postcss.parse(css),rules=[];tree.walkRules(rule=>rules.push(rule));
 const declaration=(selector,property)=>rules.filter(rule=>!rule.parent.name&&rule.selector===selector).flatMap(rule=>rule.nodes.filter(node=>node.prop===property)).at(-1)?.value;
