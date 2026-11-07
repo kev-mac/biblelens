@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-07",
+  "book": "Haggai",
+  "canonicalBaseline": "39431aea57ec551b5bd306811539d4f87e0885fd",
+  "canonicalReviewCommit": "24adf7f4db013253c3b10bb915f85d4212917cc6",
+  "review": {
+    "retainedImages": 2,
+    "replacements": 0,
+    "generations": 0,
+    "storyImages": 0,
+    "chapterOpeners": 2,
+    "gapsTouchingBook": [
+      20,
+      15,
+      23
+    ],
+    "closePairsTouchingBook": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 385,
+    "sourceHash": "b74b15569d60d46b7b289c59b3ac57418fa0a3dabbeba4a739072e48c7c26545"
+  },
+  "workerBytes": 59517410,
+  "workerBudgetBytes": 66060288,
+  "checks": {
+    "lockedDependencies": "passed; lock unchanged",
+    "buildMobile": "passed inside release:prepare including shared web build",
+    "images": "passed all 1189 chapters",
+    "mobile": "passed; native inference unverified",
+    "releasePackaging": "passed",
+    "syncSuite": "passed single unchanged run; inherited intermittent assert(finishRead) failure unresolved",
+    "focusedWorkerOffline": "passed 2 chapters, 38 verses, three editions, exact metadata and bytes, two missing-opener rejection cases, zero offline network calls",
+    "baselineAssetsPreserved": 1616,
+    "pinnedBlobsMatchSource": 1145,
+    "browser": "unverified: no supported managed control tool; no installation/alternate path",
+    "fullReleasePreparation": "FAILED exit 1: missing Playwright Chromium headless-shell at check-release-smoke.mjs:31; full npm run check incomplete; no candidate.json",
+    "readability": "completed report-only with inherited findings",
+    "liveReleaseVerify": "deferred under inherited access denial; no retry/bypass",
+    "signedNativeParity": "deferred",
+    "physicalInstallAndLaunch": "deferred: no Mac/device connector or Xcode tools"
+  },
+  "mirrorBaseline": {
+    "canonical": {
+      "version": "1.1.0",
+      "buildNumber": 384,
+      "sourceHash": "88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb"
+    },
+    "mirror": {
+      "version": "1.1.0",
+      "buildNumber": 384,
+      "sourceHash": "88adc5899c8490023530afb1508b4b1b7acfd037e7b70722f9aa0afd7d0cffeb"
+    },
+    "mirrorCommit": "7a0846df2a54b3c1c78107b155d3dcf3fad78bfc",
+    "differences": [
+      "research/notes/build-379-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-380-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-381-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-382-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-383-cloud-release-verification-2026-11-07.json",
+      "research/notes/build-384-cloud-release-verification-2026-11-07.json",
+      "research/notes/habakkuk-artwork-audit-2026-11-07.md",
+      "research/notes/habakkuk-artwork-handoff-from-nahum-2026-11-07.md",
+      "research/notes/haggai-artwork-handoff-from-zephaniah-2026-11-07.md",
+      "research/notes/jonah-artwork-audit-2026-11-07.md",
+      "research/notes/jonah-artwork-handoff-from-obadiah-2026-11-07.md",
+      "research/notes/micah-artwork-audit-2026-11-07.md",
+      "research/notes/micah-artwork-handoff-from-jonah-2026-11-07.md",
+      "research/notes/nahum-artwork-audit-2026-11-07.md",
+      "research/notes/nahum-artwork-handoff-from-micah-2026-11-07.md",
+      "research/notes/obadiah-artwork-audit-2026-11-07.md",
+      "research/notes/zephaniah-artwork-audit-2026-11-07.md",
+      "research/notes/zephaniah-artwork-handoff-from-habakkuk-2026-11-07.md"
+    ],
+    "mirrorOnly": []
+  },
+  "excludedUploads": "Previously denied detailed Ezekiel uploads remain excluded; no retry. Detailed local logs remain /tmp/haggai-385-*; not public handoff material.",
+  "handoff": "zechariah-artwork-handoff-from-haggai-2026-11-07.md",
+  "nextBookStarted": false,
+  "publication": "pending"
+}
