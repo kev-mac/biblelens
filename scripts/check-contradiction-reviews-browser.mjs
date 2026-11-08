@@ -2,6 +2,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 
+async function waitForScrollIdle(page){
+ return page.evaluate(()=>new Promise((resolve,reject)=>{
+  let previous=scrollY,stable=0;const started=performance.now();
+  function frame(){const current=scrollY;stable=Math.abs(current-previous)<.1?stable+1:0;previous=current;
+   if(stable>=8){resolve(current);return;}if(performance.now()-started>5000){reject(Error('Comparison scroll did not settle at '+current));return;}requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+ }));
+}
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an authorized running preview.');
 const ids=['exodus-crops-surviving-hail','early-sabbath','deuteronomy-ark-builder',...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-397.json')).exodus.addedRecordIds,...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-398.json')).addedRecordIds];
@@ -13,7 +21,13 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
  try{for(const width of [390,1157])for(const edition of ['kjv','asv','web']){
   const context=await browser.newContext({viewport:{width,height:1184},hasTouch:width===390,reducedMotion:'reduce',serviceWorkers:'block'});
-  const page=await context.newPage(),errors=[];
+  const page=await context.newPage(),errors=[];let attempt=null;
+  await context.addInitScript(()=>{
+   window.__contradictionContextEvents=[];
+   const record=(type,target,key)=>{const popup=document.getElementById('verse-preview'),events=window.__contradictionContextEvents;events.push({type,key,target:target?.id||target?.dataset?.cite||target?.tagName,route:location.hash,scrollY,focus:document.activeElement?.id||document.activeElement?.dataset?.cite||document.activeElement?.tagName,popupHidden:popup?.hidden,popupLabel:popup?.querySelector('strong')?.textContent,time:performance.now()});if(events.length>160)events.shift();};
+   for(const type of ['scroll','click','pointerdown','focusin','keydown'])document.addEventListener(type,event=>record(type,event.target,event.key),true);
+   new MutationObserver(records=>{if(records.some(r=>r.target.id==='verse-preview'))record('preview-visibility',document.getElementById('verse-preview'));}).observe(document,{subtree:true,attributes:true,attributeFilter:['hidden']});
+  });
   page.on('pageerror',error=>errors.push(error.message));
   try{
    await page.goto(base+'/#read/1/9');
@@ -26,6 +40,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     const review=page.locator('.contradiction-review:visible');
     await review.waitFor();
     await page.locator('#debate-view .phase2-sides:not([aria-busy])').waitFor();
+    await page.evaluate(()=>document.fonts.ready);await waitForScrollIdle(page);
     assert.equal(await review.locator('p').first().innerText(),row.contradictionReview.conflict);
     assert.match(await review.innerText(),/Common Explanations/);
     assert.match(await review.innerText(),/Assessment and Limits/);
@@ -33,13 +48,14 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     assert.equal(await links.count(),row.contradictionReview.passages.length);
     for(let index=0;index<await links.count();index++){
      const link=links.nth(index),ref=row.contradictionReview.passages[index];
+     attempt={id:row.id,index,ref,input:index%2?'keyboard':width===390?'touch':'mouse',scrollAtStart:await page.evaluate(()=>scrollY)};
      const [book,chapter,verse]=(await link.getAttribute('data-cite')).split('/').map(Number);
      const end=Number(await link.getAttribute('data-cite-end'));
      const response=await page.request.get(`${base}/api/chapter?book=${book}&chapter=${chapter}`);
      assert(response.ok());const data=await response.json();
-     await link.scrollIntoViewIfNeeded();
-     if(width===1157){await link.hover();assert(await page.locator('#verse-preview').isHidden(),'Hover leaves the comparison citation available for activation');}
-     if(index%2){await link.focus();assert(await page.locator('#verse-preview').isHidden(),'Focus alone preserves the context link');await page.keyboard.press('Enter');}
+     await link.scrollIntoViewIfNeeded();attempt.scrollAfterPosition=await waitForScrollIdle(page);
+     if(width===1157){await link.hover();attempt.scrollAfterHover=await waitForScrollIdle(page);assert(await page.locator('#verse-preview').isHidden(),'Hover leaves the comparison citation available for activation');}
+     if(index%2){await link.focus();attempt.scrollAfterFocus=await waitForScrollIdle(page);assert(await link.evaluate(node=>node===document.activeElement),'The intended citation retains keyboard focus before activation');assert(await page.locator('#verse-preview').isHidden(),'Focus alone preserves the context link');await page.keyboard.press('Enter');}
      else if(width===390)await link.tap();
      else await link.click();
      const preview=page.locator('#verse-preview');await preview.waitFor({state:'visible'});
@@ -65,7 +81,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     results.push({engine,width,edition,id:row.id,passages:row.contradictionReview.passages,status:'PASS'});
     console.log('PASS reviewed context',engine,width,edition,row.id);
    }
-  }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}-${edition}.png`,fullPage:false}).catch(()=>{});throw error;}
+  }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}-${edition}.png`,fullPage:false}).catch(()=>{});const state=await page.evaluate(()=>({route:location.hash,scrollY,focus:document.activeElement?.outerHTML,popupHidden:document.getElementById('verse-preview')?.hidden,popupLabel:document.querySelector('#verse-preview strong')?.textContent,events:window.__contradictionContextEvents})).catch(error=>({unavailable:error.message}));fs.writeFileSync(`${output}/failure-${engine}-${width}-${edition}.json`,JSON.stringify({error:error.stack,attempt,state},null,2)+'\n');throw error;}
   finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');await context.close();}
  }}finally{await browser.close();}
 }
