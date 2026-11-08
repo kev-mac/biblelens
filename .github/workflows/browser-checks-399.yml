@@ -41,8 +41,8 @@ jobs:
       - name: Verify exact build 399 source
         run: |
           git merge-base --is-ancestor 0ad1d007bf99dc5c8263592d75f176cd8b456d1d HEAD
-          git cat-file -e 2df1c06121ee2a50885a2d9efec49ce8328cbc6b^{commit}
-          git diff --exit-code 2df1c06121ee2a50885a2d9efec49ce8328cbc6b HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle
+          git cat-file -e 315edfca1d67feeb6b0631912c0d581619c021c4^{commit}
+          git diff --exit-code 315edfca1d67feeb6b0631912c0d581619c021c4 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -52,7 +52,7 @@ jobs:
           assert.equal(release.buildNumber,399);
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: 2df1c06121ee2a50885a2d9efec49ce8328cbc6b');
+          console.log('Pinned source commit: 315edfca1d67feeb6b0631912c0d581619c021c4');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -230,7 +230,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'2df1c06121ee2a50885a2d9efec49ce8328cbc6b',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'315edfca1d67feeb6b0631912c0d581619c021c4',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
