@@ -44,7 +44,8 @@
     "other_book_pending_count": 8,
     "broader_topic_footnotes": "Not exhaustively audited beyond the Genesis-linked passages identified by each review; no complete numerical inventory claimed",
     "retained_language_claims": "Existing ancient-language claims inside reviewed comparisons are explicitly retained without a fresh source audit; comparison review is not manuscript verification",
-    "browser": "Real layout/touch QA remains unavailable; simulated passage checks passed"
+    "browser": "The standalone 109-review report was simulated, not real-browser tested. The five integrated application assessments passed the final Chromium/WebKit context matrix; actual device verification remains pending.",
+    "historicalReportBrowserStatus": "Real layout/touch QA remains unavailable; simulated passage checks passed"
   },
   "counts": {
     "reviewGroups": 109,
@@ -2106,5 +2107,13 @@
   "canonicalBaseline": "887b93fcbfb0f8e9ab9166f85baa436f5b4d352d",
   "baselineEvidenceSha256": "1c455e0e96167e0e7017824e7ab3acc4c8644c917dcdf3f38eb834db33956cc9",
   "evidenceSha256": "679650378769a755a32fb908353d1b156b47656cfdd5abf8130c514f64153f0f",
-  "previousThirteenReviewsSemanticSha256": "c13602e45403dd36042241e56c70508f26e67bce3e7d7bd7f18ca1319a00d8c4"
+  "previousThirteenReviewsSemanticSha256": "c13602e45403dd36042241e56c70508f26e67bce3e7d7bd7f18ca1319a00d8c4",
+  "releaseVerification": {
+    "build": 398,
+    "fingerprint": "07a19e5f10d2ba8678fc620e38f61e1f90c0ffdfaeb614fee35c975dc2eb929b",
+    "ciHead": "78d62955ab57404ea41abd9b79b27980b4ba108c",
+    "runId": 42465627248,
+    "all404BrowserCasesPassed": true,
+    "noPublicationOrDeviceInstallHere": true
+  }
 }

@@ -30,5 +30,111 @@
   "applicationReviewCount": 18,
   "sourceScriptsExecuted": false,
   "siteMutationPerformed": false,
-  "deviceInstallInitiated": false
+  "deviceInstallInitiated": false,
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 398,
+    "sourceHash": "07a19e5f10d2ba8678fc620e38f61e1f90c0ffdfaeb614fee35c975dc2eb929b",
+    "sourceCodeCommit": "524d549012d8370cd97552620cb6c82df960bc6d"
+  },
+  "acceptedCI": {
+    "head": "78d62955ab57404ea41abd9b79b27980b4ba108c",
+    "runId": 42465627248,
+    "jobId": 128684353916,
+    "conclusion": "success",
+    "requiredReleasePreparation": "PASS",
+    "webOfflineEighteenReviewParity": "PASS",
+    "imageParity": "PASS",
+    "browserCases": 404
+  },
+  "matrices": {
+    "contradiction-reviews": {
+      "cases": 156,
+      "sha256": "275b3de00fff97d04bb6509b7abd399df2553b291e80693302c99ab694901247"
+    },
+    "directory-letter-rail": {
+      "cases": 56,
+      "sha256": "b1af3b9f49e00961be3c6f21183864446d0ea3ec337e5cd4aa11a3f2555554c7"
+    },
+    "evidence-tags": {
+      "cases": 32,
+      "sha256": "81203077e3db6341fcffc21e1083218bfc9d25985f9b95a6b008d36d6112fafe"
+    },
+    "reader-annotations": {
+      "cases": 112,
+      "sha256": "37507a703c6534c132b243464e142a4e655a32b25bf7579569c154fcc04611e0"
+    },
+    "explore-annotations": {
+      "cases": 48,
+      "sha256": "58978363bf305924795a869174738768a1b3debd2f1752d15a0aa70d98d6402f"
+    },
+    "maxReaderScrollRestoreDriftPx": 0
+  },
+  "newProse": {
+    "fields": 40,
+    "fkGrade": 6.487165709846677,
+    "sentenceOrJargonViolations": 0,
+    "all144ReviewFieldsFkGrade": 6.67,
+    "repositoryReadability": "Report-only; inherited findings remain."
+  },
+  "artifacts": {
+    "bundlesId": 13612387418,
+    "bundlesBytes": 452924185,
+    "bundlesZipSha256": "90ff3e374b5e4e10b4d570b360ab1f62e7d0e2c8f5dd91724c3258fa956f7347",
+    "resultsId": 13612198070,
+    "resultsBytes": 132015534,
+    "resultsZipSha256": "7e6e845c45297db76483e7b59c5df9c1af3e37fd042f767699028ed68cde54f4",
+    "innerTarSha256": "7b8a0419892365ef5e7e62d04a87063d79e6c296b68f56806a9197c529149862",
+    "workerBytes": 59197110,
+    "workerSha256": "250a3cbb1afe1a1e6fbe42ae2beadb6f7d5c6c033245373ec3b6c735d827e076",
+    "downloadedAndVerified": true
+  },
+  "screenshotsInspected": [
+    {
+      "path": "contradiction-reviews/webkit-1157-kjv-shem-a-hundred-years-old-two-years-after-the-flood-context.png",
+      "sha256": "add92299836fb43eafe36bd15d760c47fcdd4b4610d747956dfaf01f2d3fb475"
+    },
+    {
+      "path": "contradiction-reviews/webkit-390-web-early-ark-count-context.png",
+      "sha256": "395fa513b26f209d94cbdb7c98a16ee332c9458885dc0d441b517e1ee8b8e5ad"
+    },
+    {
+      "path": "contradiction-reviews/chromium-1157-asv-cain-fugitive-and-vagabond-yet-builds-a-city-context.png",
+      "sha256": "6ee5045bfc8bb6d9fc6a1ba3f95520776d68efb6f85ef28f015b5f1204b9926a"
+    },
+    {
+      "path": "contradiction-reviews/webkit-390-asv-nations-after-their-tongues-before-babel-context.png",
+      "sha256": "189c780c9d88a15275b6faefc11ce7627707bf27782904b8f5b683ff29719399"
+    },
+    {
+      "path": "contradiction-reviews/chromium-1157-web-who-named-beersheba-abraham-or-isaac-context.png",
+      "sha256": "24f4c343e830de783ac19be4cb770363fa0977eba1bf760c6778a9087a28cfa3"
+    }
+  ],
+  "priorFailure": {
+    "runId": 42464803373,
+    "ciHead": "f4d531530f87d11ca05ef269b36efbf88d7e7cda",
+    "requiredPreparation": "PASS",
+    "webOfflineParity": "PASS",
+    "images": "PASS",
+    "contextCasesPassed": 126,
+    "failure": "Later Shem citation did not open in WebKit desktop KJV; first citation screenshot showed a successful preview. Exact cause unconfirmed.",
+    "response": "Test waits for fonts and eight stable scroll frames after navigation/position/hover/focus, asserts current keyboard target and captures per-citation route/scroll/popup events. No app code or data change.",
+    "acceptedReleaseArtifact": false
+  },
+  "releaseHandoff": {
+    "exactLocalBundles": "/workspace/shared/build398-exact-bundles",
+    "sitesPackage": "/workspace/shared/build398-final-sites-package",
+    "sitesPackageEntries": [
+      ".openai",
+      "server"
+    ],
+    "independentMirrorBuild": false,
+    "sitePublishedHere": false,
+    "deviceInstallInitiated": false,
+    "signedAssetParity": "not verified; unsigned CI assets only",
+    "actualDeviceBuildNumbers": "not verified for 398 on iPhone or iPad",
+    "postPublicationVerify": "pending parent supported publication, fresh mirror comparison and release:verify"
+  },
+  "browserCoverageLimit": "Real Chromium/WebKit application subset, including engine touch and keyboard checks; no claim of hardware testing or real-browser certification of all 109 standalone report reviews."
 }
