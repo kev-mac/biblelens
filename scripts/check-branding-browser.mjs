@@ -7,7 +7,7 @@ if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an authorized preview.');
 const name='xLenz: Bible',output='.release/branding',matrix=[];
 const screens=[[320,844],[390,844],[546,1184],[768,1024],[820,1024],[1024,820],[844,390],[1366,1024]];
 const note='A BibleLens note saved before the rename.',title='Keep my BibleLens title';
-const legacy={bookmarks:[],notes:{},verseBookmarks:{'0:1:1':{book:0,chapter:1,verse:1}},verseNotes:{'0:1:1':{book:0,chapter:1,verse:1,text:note,title}},theme:'dark',readerPreferences:{edition:'asv',appFont:'inter'}};
+const legacy={bookmarks:[],notes:{},verseBookmarks:{'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis'}},verseNotes:{'0:1:1':{book:0,chapter:1,verse:1,name:'Genesis',text:note,title}},theme:'dark',readerPreferences:{edition:'asv',appFont:'inter'}};
 fs.mkdirSync(output,{recursive:true});
 async function settle(page){
  await page.evaluate(()=>document.fonts.ready);
@@ -30,6 +30,7 @@ async function header(page,width,native){
  return result;
 }
 async function legacyBackup(page,engine,native){
+ assert.equal(await page.evaluate(()=>state.verseNotes['0:1:1']?.text),note,'The valid legacy verse note is present before importing');
  await page.evaluate(()=>BibleLensWorkspace.navigate('#method'));await page.locator('#method-view:not([hidden])').waitFor();
  const id=await page.evaluate(()=>ENTRIES[0].id);
  const backup={version:1,bookmarks:[id],notes:{[id]:note},noteTitles:{[id]:title}};
