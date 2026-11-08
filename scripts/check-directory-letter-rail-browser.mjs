@@ -24,19 +24,21 @@ async function geometry(page,kind){
   const host=document.querySelector(kind==='People'?'#characters-view':'#places-view'),rail=host.querySelector('.directory-letter-rail'),edge=host.querySelector('.directory-letter-edge');
   const header=document.querySelector('#lensMasthead'),nav=header.querySelector('.lens-primary'),main=document.querySelector('#main');
   const box=node=>node.getBoundingClientRect().toJSON(),viewport=visualViewport,body=getComputedStyle(document.body);
+  const style=node=>Object.fromEntries(['position','top','bottom','height','box-sizing','transform','visibility'].map(key=>[key,getComputedStyle(node).getPropertyValue(key)]));
   const letters=[...rail.children].map(node=>{
    const range=document.createRange();range.selectNodeContents(node);const r=node.getBoundingClientRect();
    return {letter:node.dataset.letter,disabled:node.disabled,box:box(node),glyph:range.getBoundingClientRect().toJSON(),font:getComputedStyle(node).fontSize,hit:document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('[data-letter]')?.dataset.letter};
   });
-  return {rail:box(rail),edge:box(edge),header:box(header),navigation:box(nav),fixedNavigation:getComputedStyle(nav).position==='fixed',main:box(main),viewport:{top:viewport?.offsetTop||0,height:viewport?.height||innerHeight,width:innerWidth},safeBottom:parseFloat(body.getPropertyValue('--app-safe-bottom'))||0,letters};
+  return {rail:box(rail),edge:box(edge),railStyle:style(rail),edgeStyle:style(edge),header:box(header),navigation:box(nav),fixedNavigation:getComputedStyle(nav).position==='fixed',main:box(main),viewport:{top:viewport?.offsetTop||0,height:viewport?.height||innerHeight,width:innerWidth},safeBottom:parseFloat(body.getPropertyValue('--app-safe-bottom'))||0,letters};
  },kind);
  const bottom=Math.min(value.viewport.top+value.viewport.height-value.safeBottom,value.main.bottom,value.fixedNavigation?value.navigation.top:Infinity);
  assert.equal(value.letters.map(row=>row.letter).join(''),'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
  assert(value.rail.top>=Math.max(value.header.bottom,value.main.top,value.viewport.top)+7);
  assert(Math.abs(value.rail.bottom-(bottom-8))<2,'Fill the usable main viewport instead of stopping at a fixed height');
- assert(Math.abs(value.edge.top-value.rail.top)<1&&Math.abs(value.edge.height-value.rail.height)<1);
+ assert(Math.abs(value.edge.top-value.rail.top)<1&&Math.abs(value.edge.height-value.rail.height)<1,JSON.stringify({rail:value.rail,edge:value.edge,railStyle:value.railStyle,edgeStyle:value.edgeStyle}));
  assert(value.rail.left>=0&&value.rail.right<=value.viewport.width+1);
  for(const letter of value.letters){assert(letter.box.height>0&&letter.box.width>=44);assert(letter.box.top>=value.rail.top-.5&&letter.box.bottom<=value.rail.bottom+.5);}
+ for(let index=1;index<value.letters.length;index++)assert(value.letters[index-1].glyph.bottom<=value.letters[index].glyph.top+1,'Adjacent letters remain visually distinct');
  for(const letter of [value.letters[0],value.letters.at(-1)]){
   assert(letter.glyph.top>=value.header.bottom&&letter.glyph.bottom<=bottom,'First/last visible glyphs clear header and footer');
   assert.equal(letter.hit,letter.letter,'First/last letters can receive pointer input');
@@ -66,8 +68,8 @@ async function drag(page,context,engine,kind,touch){
   await rail.waitFor({state:'visible'});await frames(page);
   const preview=page.locator((kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');
   await page.waitForFunction(selector=>document.querySelector(selector)?.textContent==='J',(kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');
-  const disabled=rail.locator('button:disabled').first();
-  if(await disabled.count()){
+  const disabled=rail.locator('button:disabled').first(),disabledSkipped=(await disabled.count())>0;
+  if(disabledSkipped){
    const before=await preview.innerText(),box=await disabled.boundingBox();await move(box.y+box.height/2,1);await frames(page);assert.equal(await preview.innerText(),before,'Dragging over a disabled letter keeps the current selection');
   }
   const last=rail.locator('[data-letter="Z"]'),lastBox=await last.boundingBox();await move(lastBox.y+lastBox.height/2);await page.waitForFunction(selector=>document.querySelector(selector)?.textContent==='Z',(kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');await page.locator(selected(kind,'Z')).first().waitFor();
@@ -75,7 +77,7 @@ async function drag(page,context,engine,kind,touch){
   const firstBox=await rail.locator('[data-letter="A"]').boundingBox();await move(firstBox.y+firstBox.height/2);await page.waitForFunction(selector=>document.querySelector(selector)?.textContent==='A',(kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');await page.locator(selected(kind,'A')).first().waitFor();
  }finally{if(cdp){await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await cdp.detach();}else await page.mouse.up();}
  await rail.waitFor({state:'hidden'});assert(await page.locator((kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview').isHidden());
- return {engine,kind,input:touch?'browser touch':'mouse',first:'A',last:'Z',disabledSkipped:true};
+ return {engine,kind,input:touch?'browser touch':'mouse',first:'A',last:'Z',disabledSkipped};
 }
 
 for(const [engine,type] of Object.entries({chromium,webkit})){
@@ -93,7 +95,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     await page.evaluate(()=>document.fonts.ready);
     let {rail}=await openWithKeyboard(page,kind);await jump(page,rail,kind,'J');
     const initial=await geometry(page,kind),disabled=initial.letters.filter(letter=>letter.disabled).map(letter=>letter.letter);
-    if([390,834,1024,1194,1366,1440].includes(width))await page.screenshot({path:`${output}/${name}-J.png`,fullPage:false});
+    await page.screenshot({path:`${output}/${name}-J.png`,fullPage:false});
     await rail.locator('button:not(:disabled)').first().focus();await page.keyboard.press('End');await page.locator(selected(kind,'Z')).first().waitFor();await geometry(page,kind);
     await rail.locator('button:not(:disabled)').last().focus();await page.keyboard.press('Home');await page.locator(selected(kind,'A')).first().waitFor();await geometry(page,kind);
     const first=rail.locator('[data-letter="J"]');await first.tap();await page.locator(selected(kind,'J')).first().waitFor();await rail.waitFor({state:'hidden'});
