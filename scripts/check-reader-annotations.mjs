@@ -25,7 +25,7 @@ Object.assign(pickerContext,{passagePicker:{open:true,dataset:{step:'book'}},$:(
 pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'abbreviated');assert.deepEqual(labels.map(label=>label.textContent),['Gen','Deut'],'One non-fitting name abbreviates every label');
 labels.forEach(label=>label.clientWidth=120);pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'full');assert.deepEqual(labels.map(label=>label.textContent),['Genesis','Deuteronomy'],'Widening restores all full names');
 assert(atlas.includes('id="ux-chapter-picker" aria-label="Choose chapter" aria-haspopup="dialog" aria-controls="passage-picker"'));
-assert(read('src/reader.js').includes("($('#ux-chapter-picker')||document.querySelector('.passage-heading-picker'))?.focus"));
+assert(readerSource.includes('passagePickerOpener?.isConnected')&&readerSource.includes('opener?.focus({preventScroll:true})'),'Return focus to the actual passage-picker opener, including bottom navigation');
 const geometry=shell.slice(shell.indexOf('function measureWorkspaceHeader(){'),shell.indexOf('const headerObserver='));
 const styles=new Map(),bodyStyles=new Map();let headerHeight=64,barHeight=52;
 const ctx={masthead:{getBoundingClientRect:()=>({height:headerHeight})},document:{documentElement:{style:{setProperty:(k,v)=>styles.set(k,v)}},body:{style:{setProperty:(k,v)=>bodyStyles.set(k,v)}}},el:()=>({getBoundingClientRect:()=>({height:barHeight})})};

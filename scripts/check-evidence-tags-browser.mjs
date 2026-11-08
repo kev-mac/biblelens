@@ -13,8 +13,8 @@ const palette={T:'168,85,247',V:'244,63,94',commandments:'20,184,166',Q:'16,185,
 let runs=0;const results=[],output='.release/evidence-tags';fs.mkdirSync(output,{recursive:true});
 for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch();
- try{for(const width of [320,390,469,647,820,1024,1440])for(const theme of ['light','dark']){
-  const context=await browser.newContext({viewport:{width,height:width===469?1184:1024},hasTouch:width<=820,reducedMotion:'reduce',serviceWorkers:'block'});
+ try{for(const width of [320,390,469,601,647,820,1024,1440])for(const theme of ['light','dark']){
+  const context=await browser.newContext({viewport:{width,height:[469,601].includes(width)?1184:1024},hasTouch:width<=820,reducedMotion:'reduce',serviceWorkers:'block'});
   try{
    await context.addInitScript(()=>localStorage.setItem('biblelens-evidence-visible','true'));
    const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
@@ -28,7 +28,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await Promise.all(document.getAnimations().filter(animation=>'transitionProperty' in animation&&/color/.test(animation.transitionProperty)).map(animation=>animation.finished.catch(()=>{})));});
    const pills=page.locator('#verse-3 [data-lens-category]');assert.equal(await pills.count(),6);
    const geometry=await pills.evaluateAll(nodes=>nodes.map(node=>({key:node.dataset.lensCategory,box:node.getBoundingClientRect().toJSON(),pill:node.querySelector('span').getBoundingClientRect().toJSON(),margin:node.closest('.verse-body').getBoundingClientRect().toJSON(),position:getComputedStyle(node).position})));
-   for(const item of geometry){assert(item.box.width>=44&&item.box.height>=44);assert(item.box.left>=item.margin.left-.5&&item.box.right<=item.margin.right+.5);assert(item.pill.height<30);assert.equal(item.position,'relative');}
+   for(const item of geometry){assert(item.box.width>=24&&item.box.height>=24&&item.box.height<=28,'Tags have compact, separate 24px targets');assert(item.box.left>=item.margin.left-.5&&item.box.right<=item.margin.right+.5);assert(item.pill.height<=15,'Visible bordered pills are smaller than build 393');assert.equal(item.position,'relative');}
    for(let i=0;i<geometry.length;i++)for(let j=i+1;j<geometry.length;j++){const a=geometry[i].box,b=geometry[j].box;assert(!(a.left<b.right-.5&&b.left<a.right-.5&&a.top<b.bottom-.5&&b.top<a.bottom-.5),'Touch targets overlap');}
    const inline=await page.locator('#verse-3 [data-scripture]').evaluate(node=>{const text=[...node.childNodes].find(node=>node.nodeType===Node.TEXT_NODE),tags=node.querySelector('.verse-evidence-tags');return {display:getComputedStyle(tags).display,textBefore:!!(text.compareDocumentPosition(tags)&Node.DOCUMENT_POSITION_FOLLOWING)};});
    assert.deepEqual(inline,{display:'inline',textBefore:true});
@@ -89,8 +89,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     const about=actual.locator('[data-lens-context-info]').first();await about.click();assert.equal(await about.getAttribute('aria-expanded'),'true');await actual.locator('[data-lens-evidence-record]').first().click();assert.equal(await actual.getAttribute('data-evidence-view'),'full');await actual.locator('[data-lens-summary]').click();assert.equal(await actual.getAttribute('data-evidence-view'),'summary');await page.locator('[data-lens-chapter]').click();await page.keyboard.press('Escape');
    }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);runs++;console.log('PASS evidence pills',engine,width,theme);
-   results.push({engine,width,height:width===469?1184:1024,theme,status:'PASS',categories:Object.keys(expected),realGenesisContext:[469,1440].includes(width)});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');
+   results.push({engine,width,height:[469,601].includes(width)?1184:1024,theme,status:'PASS',categories:Object.keys(expected),realGenesisContext:[469,1440].includes(width)});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');
   }finally{await context.close();}
  }}finally{await browser.close();}
 }
-assert.equal(runs,28);console.log(`PASS: ${runs} phone, tablet and desktop cases; six category-colored summary borders, accessible icon actions, metadata disclosure, actual Genesis 1:16 context cards, counts, evidence sections, inline margins, touch targets, keyboard and focus return.`);
+assert.equal(runs,32);console.log(`PASS: ${runs} phone, tablet and desktop cases; six category-colored summary borders, accessible icon actions, metadata disclosure, actual Genesis 1:16 context cards, counts, evidence sections, inline margins, touch targets, keyboard and focus return.`);

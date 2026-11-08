@@ -4,7 +4,7 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an authorized running preview.');
 const matrix=[],output='.release/reader-annotations';fs.mkdirSync(output,{recursive:true});
-const screens=[[320,844],[390,844],[598,1184],[647,844],[650,844],[651,844],[768,1024],[820,1024],[844,390],[1024,1024],[1157,1184],[1165,747],[1366,1024]];
+const screens=[[320,844],[390,844],[598,1184],[601,1184],[647,844],[650,844],[651,844],[768,1024],[820,1024],[844,390],[1024,1024],[1157,1184],[1165,747],[1366,1024]];
 async function checkBookLabels(page){
  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
  const report=await page.locator('#passage-book-grid [data-book-full]').evaluateAll(nodes=>nodes.map(node=>{
@@ -14,6 +14,17 @@ async function checkBookLabels(page){
  const abbreviated=report.some(label=>label.fullWidth>label.space+.5),mode=abbreviated?'abbreviated':'full';assert.equal(await page.locator('#passage-book-grid').getAttribute('data-book-labels'),mode,JSON.stringify(report));
  for(const label of report){assert.equal(label.text,abbreviated?label.short:label.full,'Use one label mode for every book');assert.equal(label.name,label.full);assert(label.fits&&label.nowrap,'Book names stay on one line without clipping: '+JSON.stringify(label));}
  return {mode,labels:report};
+}
+async function checkBottomNavigation(page){
+ await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.locator('#chapter-footer').filter({hasText:'Genesis 1'}).waitFor();assert(await page.locator('#prev-bottom').isDisabled(),'First chapter has no previous passage');
+ await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/50'));await page.locator('#chapter-footer').filter({hasText:'Genesis 50'}).waitFor();
+ await page.locator('#next-bottom').click();await page.waitForFunction(()=>location.hash==='#read/1/1');await page.locator('#chapter-footer').filter({hasText:'Exodus 1'}).waitFor();
+ await page.locator('#prev-bottom').click();await page.waitForFunction(()=>location.hash==='#read/0/50');await page.locator('#chapter-footer').filter({hasText:'Genesis 50'}).waitFor();
+ await page.locator('#chapter-footer').click();await page.locator('#passage-picker[open]').waitFor();await page.locator('[data-book-testament="new"]').click();
+ await page.locator('#passage-book-grid label').filter({has:page.locator('input[value="42"]')}).click();
+ await page.locator('[data-passage-pane="chapter"]:visible').waitFor();await page.locator('#passage-chapter-grid label').filter({has:page.locator('input[value="3"]')}).click();
+ await page.locator('[data-passage-pane="verse"]:visible').waitFor();await page.locator('#passage-verse-grid label').filter({has:page.locator('input[value="16"]')}).click();
+ await page.waitForFunction(()=>location.hash==='#read/42/3/16');await page.locator('#verse-16').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0,'Bottom picker selects another book, chapter and verse');
 }
 try{for(const [engine,type] of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
@@ -43,12 +54,12 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const header=measures.find(n=>n.id==='lensMasthead'),bar=measures.find(n=>n.id==='lensReadingBar'),picker=measures.find(n=>n.id==='ux-chapter-picker');
     assert(header.top>=(native?24:0)-1);assert(bar.top>=header.bottom-1);assert(picker.width>=44&&picker.height>=44&&picker.font>=18);
     const pickerStyle=await page.locator('#ux-chapter-picker').evaluate(node=>{const style=getComputedStyle(node);return {border:style.borderTopWidth,background:style.backgroundColor,grow:style.flexGrow};});assert.equal(pickerStyle.border,'0px');assert.equal(pickerStyle.background,'rgba(0, 0, 0, 0)');assert.equal(pickerStyle.grow,'0');assert.equal(await page.locator('#ux-chapter-picker .ux-picker-arrow').count(),0,'Chapter navigation has link styling, without a dropdown arrow');
-    assert(await page.locator('.lens-translation-caption').isVisible());const translationStyle=await page.locator('#lens-edition').evaluate(node=>({radius:getComputedStyle(node).borderRadius,appearance:getComputedStyle(node).appearance,border:getComputedStyle(node).borderTopWidth}));assert.equal(translationStyle.radius,'12px');assert.notEqual(translationStyle.appearance,'none');assert.equal(translationStyle.border,'1px');
+    assert(await page.locator('.lens-translation-caption').isVisible());const translationStyle=await page.locator('#lens-edition').evaluate(node=>({radius:getComputedStyle(node).borderRadius,appearance:getComputedStyle(node).appearance,border:getComputedStyle(node).borderTopWidth}));assert.equal(translationStyle.radius,'12px');assert.notEqual(translationStyle.appearance,'none');assert.equal(translationStyle.border,'1px');const editionBox=await page.locator('#lens-edition').boundingBox();assert(editionBox.width>=44&&editionBox.width<=66&&editionBox.height>=24&&editionBox.height<=34,'Toolbar translation selector stays compact and usable: '+JSON.stringify(editionBox));
     assert(measures.every(n=>n.left>=-1&&n.right<=width+1));
     assert(await page.locator('#chapter-text .chapter-heading-row').evaluate(n=>[n,...n.querySelectorAll('*')].every(n=>getComputedStyle(n).textShadow==='none')));
     assert(await page.locator('a:visible').evaluateAll(nodes=>nodes.every(n=>getComputedStyle(n).textDecorationLine==='none')));
     assert(!(await page.locator('#chapter-text .story-illustration-reader figcaption').first().innerText()).startsWith('Imagined scene:'));
-    if([320,598,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-reader.png`,fullPage:false});
+    if([320,598,601,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-reader.png`,fullPage:false});
     await page.locator('#ux-chapter-picker').focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();
     const bookLabels=await checkBookLabels(page);if(width>=1157)assert.equal(bookLabels.mode,'full','Wide Old Testament grids make room for all full book names: '+JSON.stringify(bookLabels));if(width<=598)assert.equal(bookLabels.mode,'abbreviated','Narrow grids abbreviate the entire visible group: '+JSON.stringify(bookLabels));assert(await page.getByLabel('Go to a passage',{exact:true}).isVisible());assert.match(await page.locator('#passage-reference-help').innerText(),/Use Search for words or topics/);
     const reference=page.locator('#passage-reference'),referenceGeometry=await reference.evaluate(node=>{
@@ -85,6 +96,13 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
     assert(Math.abs(await page.locator('body').evaluate(node=>parseFloat(getComputedStyle(node).getPropertyValue('--ux13-masthead-height')))-sticky[0].height)<=1,'Measured header height reaches the body after scrolling');
     assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
+    const footer=page.locator('#chapter-footer');await footer.scrollIntoViewIfNeeded();
+    const bottom=await page.locator('.chapter-bottom button').evaluateAll(nodes=>nodes.map(node=>({id:node.id,...node.getBoundingClientRect().toJSON()})));
+    assert.deepEqual(bottom.map(node=>node.id),['prev-bottom','chapter-footer','next-bottom'],'Keep the familiar previous / passage / next order');assert(bottom.every(node=>node.width>=44&&node.height>=44&&node.left>=0&&node.right<=width),'Bottom controls remain reachable and inside the reading margins');
+    assert.equal(await footer.getAttribute('aria-haspopup'),'dialog');assert.match(await footer.getAttribute('aria-label'),/Choose book, chapter or verse/);
+    if([601,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-bottom.png`,fullPage:false});
+    await footer.click();await page.locator('#passage-picker[open]').waitFor();await page.keyboard.press('Escape');await page.locator('#passage-picker').waitFor({state:'hidden'});assert(await footer.evaluate(node=>node===document.activeElement),'Closing the bottom picker returns focus to the bottom control');
+    const afterClose=await footer.boundingBox();assert(afterClose.y>=0&&afterClose.y+afterClose.height<=height,'Closing the picker keeps the reader at the bottom');
     await page.evaluate(()=>scrollTo(0,0));contextResults.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox});
    }
    await page.locator('#lens-edition').focus();await page.keyboard.press('Home');await page.keyboard.press('Tab');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='kjv'&&document.getElementById('lens-edition').value==='kjv');
@@ -95,11 +113,12 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.locator('#ux-chapter-picker').click();await page.locator('#passage-reference').click();await page.keyboard.type('Genesis 2:3');await page.locator('#passage-reference-go').click();await page.waitForFunction(()=>location.hash==='#read/0/2/3');await page.locator('#verse-3').waitFor();assert.equal(await page.locator('#passage-picker[open]').count(),0,'Pointer/keyboard entry and the Go button navigate to the typed verse');
    await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').focus();await page.keyboard.press('End');await page.keyboard.press('Tab');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='asv'&&document.getElementById('lens-edition').value==='asv');await page.keyboard.press('Escape');await page.locator('#passage-picker').waitFor({state:'hidden'});assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
+   if(width===601)await checkBottomNavigation(page);
    assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
    }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;}
    finally{fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-network.json`,JSON.stringify(network,null,2)+'\n');fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-search-events.json`,JSON.stringify(await page.evaluate(()=>window.__readerSearchEvents||[]).catch(()=>[]),null,2)+'\n');await context.close();}
   }
  }finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');}
-assert.equal(matrix.length,104);
+assert.equal(matrix.length,112);
 console.log(JSON.stringify(matrix,null,2));

@@ -3376,10 +3376,10 @@ html body.lens-app #lensReadingBar #ux-chapter-picker {
 }
 html body.lens-app #ux-chapter-picker .ux-picker-book {min-width:0;white-space:normal;overflow-wrap:normal;overflow:visible;text-overflow:clip;}
 html body.lens-app #ux-chapter-picker .ux-picker-chapter {flex:none;white-space:nowrap;}
-html body.lens-app #lensReadingBar .lens-edition-label {display:flex;flex-direction:column;align-items:stretch;gap:2px;position:static;flex:0 0 80px;width:80px;min-width:80px;height:auto;margin:0;color:var(--lens-ink);}
+html body.lens-app #lensReadingBar .lens-edition-label {display:flex;flex-direction:column;align-items:stretch;gap:2px;position:static;flex:0 0 64px;width:64px;min-width:64px;height:auto;margin:0;color:var(--lens-ink);}
 html body.lens-app #lensReadingBar .lens-edition-label::before,html body.lens-app #lensReadingBar .lens-edition-label::after {content:none;display:none;}
 html body.lens-app #lensReadingBar .lens-translation-caption {font:500 .6875rem/1.2 var(--ui-font);color:var(--lens-muted);}
-html body.lens-app #lensReadingBar #lens-edition {appearance:auto;width:100%;min-width:0;min-height:44px;height:44px;padding:6px 8px;border:1px solid var(--lens-rule);border-radius:var(--control-radius,12px);font:500 .875rem/1.3 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
+html body.lens-app #lensReadingBar #lens-edition {appearance:auto;width:100%;min-width:0;min-height:32px;height:32px;padding:3px 6px;border:1px solid var(--lens-rule);border-radius:var(--control-radius,12px);font:500 .75rem/1.3 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
 html body.lens-app #chapter-text :is(.verse,.chapter-heading-row) {scroll-margin-top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + var(--reader-bar-height,64px) + 16px);}
 html body.lens-app #main .directory-hub .stories-header {top:calc(var(--app-safe-top) + var(--ux13-masthead-height));}
 html body.lens-app #main .directory-hub .ux-letter-heading {top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + 52px);}
@@ -3440,17 +3440,27 @@ html body.lens-app #passage-picker #passage-reference[aria-invalid="true"] {bord
 html body.lens-app #chapter-text .verse-evidence-tags {display:inline;white-space:normal;}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence {
  position:relative;inset:auto;display:inline-flex!important;align-items:center;justify-content:center;
- width:auto;min-width:44px;min-height:44px;height:auto;max-width:100%;margin:0 3px 0 0;padding:0;
+ width:auto;min-width:24px;min-height:24px;height:auto;max-width:100%;margin:0 3px 0 0;padding:0;
  vertical-align:middle;white-space:nowrap;line-height:1;background:transparent;border:0;border-radius:5px;box-shadow:none;
  color:color-mix(in srgb,rgb(var(--theme-rgb)) 65%,black);
 }
 html body.lens-app.dark #chapter-text .verse-body .lens-verse-evidence {color:color-mix(in srgb,rgb(var(--theme-rgb)) 70%,white);}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence .verse-study-pill {
- display:inline-block;font:500 .625rem/1.2 var(--ui-font);letter-spacing:.015em;
- color:inherit;background:transparent;border:1px solid currentColor;border-radius:4px;padding:2px 4px;
+ display:inline-block;font:500 .5625rem/1.2 var(--ui-font);letter-spacing:.01em;
+ color:inherit;background:transparent;border:1px solid currentColor;border-radius:4px;padding:1px 3px;
 }
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence:focus-visible {outline:2px solid currentColor;outline-offset:1px;}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence:hover .verse-study-pill {background:rgba(var(--theme-rgb),.12);}
+/* Keep the familiar paging row and let its passage label choose another book. */
+html body.lens-app .chapter-bottom #chapter-footer {
+ display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;
+ width:auto;max-width:calc(100% - 120px);min-width:44px;min-height:44px;height:auto;
+ padding:8px;margin:0 auto;border:0;border-radius:var(--control-radius,12px);
+ background:transparent;color:var(--lens-link);font:600 .875rem/1.4 var(--ui-font);
+ white-space:normal;overflow-wrap:normal;text-align:center;
+}
+html body.lens-app .chapter-bottom #chapter-footer:hover {background:var(--lens-control-hover);}
+html body.lens-app .chapter-bottom #chapter-footer:focus-visible {outline:3px solid var(--lens-focus);outline-offset:3px;}
 html body.lens-app #lensInspector .lens-category-actions {display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
 html body.lens-app #lensInspector :is(.lens-category-actions button,.lens-evidence-summary button) {min-width:44px;min-height:44px;white-space:normal;}
 html body.lens-app #lensInspector .lens-category-title {font:600 1rem/1.4 var(--ui-font);margin:16px 0 8px;}
