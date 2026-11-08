@@ -24,7 +24,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await go('#discover?section=evidence','#ux-topic-evidence');
    assert.equal(await page.locator('[data-lens-view=explore]').getAttribute('aria-current'),'page');
    await go('#read/0/1','#verse-1');
-   assert.equal(await page.locator('#lens-edition').inputValue(),'web','new reader defaults to WEB');
+   assert.equal(await page.locator('#reader-edition').inputValue(),'web','new reader defaults to WEB');
    await page.waitForFunction(()=>comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready'));
    const linked=page.locator('[data-lens-inspect]').first();assert(await linked.count(),'evidence remains discoverable');
    const verse=await linked.getAttribute('data-lens-inspect');
@@ -60,7 +60,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    // Real old states without a default marker must retain every valid edition.
    for(const edition of ['kjv','asv','web']){
     await page.evaluate(edition=>{state.readerPreferences.edition=edition;delete state.readerEditionDefault;persist();},edition);
-    await page.reload();await page.locator('#verse-1').waitFor();assert.equal(await page.locator('#lens-edition').inputValue(),edition);
+    await page.reload();await page.locator('#verse-1').waitFor();assert.equal(await page.locator('#reader-edition').inputValue(),edition);
    }
    await go('#commandments','.commandment-card');
    const before=await page.locator('#commandments-count').innerText();

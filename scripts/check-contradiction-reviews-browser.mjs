@@ -32,7 +32,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   try{
    await page.goto(base+'/#read/1/9');
    await page.locator('#verse-25').waitFor();
-   await page.locator('#lens-edition').selectOption(edition);
+   await page.locator('#ux-chapter-picker').click();
+   await page.locator('#reader-edition').selectOption(edition);
+   await page.keyboard.press('Escape');await page.locator('#passage-picker').waitFor({state:'hidden'});
    await page.waitForFunction(edition=>document.querySelector('#reader-edition').value===edition,edition);
    for(const row of records){
     const route='#debate/'+row.id;

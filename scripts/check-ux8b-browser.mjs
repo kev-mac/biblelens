@@ -19,7 +19,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     await page.waitForFunction(hash=>document.querySelector('#ux-chapter-picker').textContent.startsWith(hash==='#read/0/1'?'Genesis 1':'Song of Solomon 8'),chapter);
     await page.locator('#chapter-text .verse').first().waitFor();
     for(const edition of ['kjv','web','asv']){
-     await page.locator('#lens-edition').selectOption(edition);
+     await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').selectOption(edition);await page.keyboard.press('Escape');
      const controls=await page.locator('#lensReadingBar button:visible,#lensReadingBar select:visible').evaluateAll(nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {label:n.id||n.getAttribute('aria-label'),x:r.x,y:r.y,w:r.width,h:r.height};}));
      for(const r of controls){assert(r.w>=44&&r.h>=44,`${engine}/${width}: target ${JSON.stringify(r)}`);assert(r.x>=0&&r.x+r.w<=width,`${engine}/${width}: outside viewport ${r.label}`);}
      for(let i=0;i<controls.length;i++)for(let j=i+1;j<controls.length;j++){
@@ -29,7 +29,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     }
    }
   }
-  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.locator('#lens-edition').selectOption('kjv');await page.locator('#ux-chapter-picker').filter({hasText:'Genesis'}).waitFor();await page.evaluate(()=>document.fonts.ready);
+  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>BibleLensWorkspace.navigate('#read/0/1'));await page.locator('#ux-chapter-picker').click();await page.locator('#reader-edition').selectOption('kjv');await page.keyboard.press('Escape');await page.locator('#ux-chapter-picker').filter({hasText:'Genesis'}).waitFor();await page.evaluate(()=>document.fonts.ready);
   if(process.env.UX_NO_SHOTS!=='1')await page.screenshot({path:`${out}/${engine}-390-read-after.png`});
   await page.evaluate(()=>BibleLensWorkspace.navigate('#search?q=Moses'));await page.locator('#lens-results-people .lens-result').first().waitFor();
   const sizes=await page.locator('#lens-search-overlay .lens-result-group > h2').evaluateAll(nodes=>nodes.map(n=>({size:getComputedStyle(n).fontSize,weight:getComputedStyle(n).fontWeight})));
