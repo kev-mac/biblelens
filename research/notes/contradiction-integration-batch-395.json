@@ -30,7 +30,14 @@
       "reportEmbeddedKjvVerses": 5238,
       "packagedKjvMismatches": 0,
       "selectedAssessments": "All cited passage wording and context read in current packaged KJV, ASV and WEB.",
-      "limits": "Other report assessments, earlier Hebrew/Greek claims, Brenton quotations, historical events and manuscript claims were not recertified."
+      "limits": "Other report assessments, earlier Hebrew/Greek claims, Brenton quotations, historical events and manuscript claims were not recertified.",
+      "mappingMethod": "Report-listed stable IDs were checked for exact existence. Groups without listed IDs remain unmapped, except the accepted burning-bush review matched by subject and all cited ranges. Empty currentRecordIds does not establish that the application has no equivalent.",
+      "mappingCounts": {
+        "groupsWithCurrentIds": 50,
+        "uniqueCurrentIds": 55,
+        "deferredGroupsWithCurrentIds": 42,
+        "deferredGroupsWithoutListedMatch": 38
+      }
     },
     "groupedAssessments": 88,
     "previouslyIntegratedRecordIds": [
@@ -1139,7 +1146,6 @@
     "sourceSnapshot": "unavailable",
     "completeBook": false,
     "coordinationOnly": {
-      "sourceSession": "01a1b6f3-2700-71e2-b68d-03188066c005",
       "parentReported": "110 guide dispositions in 109 comparisons, six edition audits, eight records anchored elsewhere. These counts are not payload verification."
     },
     "missing": "Readable final report or structured package, its source snapshot, stable disposition-to-record mapping and six edition audits.",

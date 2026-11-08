@@ -1,0 +1,174 @@
+{
+  "status": "VERIFIED CHECKPOINT: ready for the parent publishing route",
+  "buildNumber": 395,
+  "canonicalCodeCommit": "70c9ed842eed9336b3e394afe295efb6581dbdb8",
+  "ciHead": "a97c46a3c92f498b4c7d8115a4d81c83074a95ba",
+  "ciRun": 42447875850,
+  "ciJob": 128630558466,
+  "sourceHash": "ee02c800aa595558c5e6b4ead4c657662f752fb421207990d799e3e4077c1bc5",
+  "addedRecordIds": [
+    "exodus-crops-surviving-hail",
+    "early-sabbath",
+    "deuteronomy-ark-builder"
+  ],
+  "preservedReviewIds": [
+    "exodus-hardening-agency",
+    "moses-father-in-law-names",
+    "angel-of-the-lord-speaks-as-god-identity-unstated",
+    "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+    "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+  ],
+  "exodusGroupsIntegrated": 8,
+  "exodusGroupsDeferred": 80,
+  "deferredIdsFile": "contradiction-integration-batch-395.json",
+  "genesis": "No payload verified and no records added; source snapshot and stable disposition IDs unavailable. Supported Library list-origin transfer failed with a network error.",
+  "localChecks": {
+    "focusedPreservationAndPassages": "PASS: 1933 original rows and every original field; five previous reviews unchanged; 146 cited verses present in KJV/ASV/WEB",
+    "citationRegression": "PASS: owner-managed focus, click/Enter comparison activation, ordinary reference hover, selected-edition context and ranges.",
+    "readability": "All eight review objects FK 7.25; new 24 fields FK 6.56; no length or jargon violations. Full corpus report-only findings remain.",
+    "legacyB4": "Cannot run: required codex/b3 ref absent. Direct comparison passes: only evidence source hash changes, overlay remains draft and unaccepted."
+  },
+  "priorCiRuns": [
+    {
+      "run": 42441757616,
+      "head": "0651750a160dc4bdf13b472cea96b09da387f0d2",
+      "sourceHash": "c07639c472f4454dcf935d5378d5ee482d1aa1a43e61eca58bd573910bbe24d1",
+      "passed": "Full release preparation, actual web/offline review parity, image parity and all 192 existing UI cases",
+      "failed": "New real-browser current-citation focus assertion",
+      "diagnosticArtifactId": 13601933608,
+      "diagnosticZipSha256": "3ab50994c239f5212ca53db04627c6682096ca57aa7ac8c008387b1731074640"
+    },
+    {
+      "run": 42442923234,
+      "head": "2fa53eb30e1f7367171f6c39153e03b2b9dae1e6",
+      "sourceHash": "df8e16560ec1ed1afeda12cbd2796009c18ca4641fb77bd05678dc41e6d43db1",
+      "passed": "Full release preparation, actual web/offline review parity, image parity, all 192 existing UI cases and nine Chromium phone record/edition cases",
+      "failed": "Desktop preview reopened after Escape when the mouse exposed its citation",
+      "diagnosticArtifactId": 13602766813,
+      "diagnosticZipSha256": "49c347f6190f7f2e48efe0d5619843c0c18b6a2a40714861a1001696d8a2e60d"
+    },
+    {
+      "run": 42443602698,
+      "head": "882e77ab2709c7b9e85e6d40864999a4571462b5",
+      "sourceHash": "742cf176f16493fa71975ad21c8453313239e5047936a7c1157e73ba6640b13f",
+      "passed": "Nine Chromium phone cases and two desktop records, including actual selected-edition verse text.",
+      "failed": "A long hover preview intercepted its citation before clicking. Final design uses deliberate activation for comparison contexts.",
+      "diagnosticArtifactId": 13603415263,
+      "diagnosticZipSha256": "a2b82fa981023f6b9b1abeba21ccc9e704d8dfa18a7df4a87a6f5557dcc150b3"
+    },
+    {
+      "run": 42444912727,
+      "head": "1b4551973ff9e2ddd194b6dc89e7bc3019512e17",
+      "sourceHash": "5088d3e367c83453df464bfbc7f2f2c4ebfc234c845a3412f767c3412e80ff3d",
+      "passed": "Full release preparation, web/offline and image parity, 36 context cases, 32 evidence cases, 48 Explore cases and 60 reader cases.",
+      "failed": "WebKit reader wait for exact scrollY=650; screenshot showed floating controls.",
+      "diagnosticArtifactId": 13603094863,
+      "diagnosticZipSha256": "c4f3c7ba27a7ae30b98e01645f66a36eca27e38a7346b70cc6e9651a67efda6b"
+    },
+    {
+      "run": 42446354877,
+      "head": "5d73adebaee74b73adc49a4a6be2f1dce41da677",
+      "sourceHash": "4debad46004028bb5ee02196bb43bcefccbb33079fade269cdf1272cd1a6c9c7",
+      "passed": "Full release preparation, web/offline and image parity, 36 context cases, 32 evidence cases, 48 Explore cases and 56 recorded reader cases.",
+      "failed": "Picker-restoration baseline could be captured before asynchronous wheel motion finished. Capture ends at scrollY=650, focus reader-floating-picker, no dialogs and visible controls.",
+      "diagnosticArtifactId": 13604550609,
+      "diagnosticZipSha256": "c0d4bd15ee0179477d6f417bc418dc26449692d08e46489370b74117e71a20a2"
+    }
+  ],
+  "finalCiChecks": {
+    "result": "PASS",
+    "fullReleasePreparation": "PASS: build:mobile, full check, check:sync, check:release and check:mobile",
+    "imageParity": "PASS",
+    "actualWebOfflineReviewParity": "PASS: all eight review objects match canonical source; zero external requests",
+    "browserCases": {
+      "contradictionContexts": 36,
+      "reader": 112,
+      "evidence": 32,
+      "explore": 48,
+      "total": 228
+    },
+    "readerMotion": {
+      "wheelScrollMin": 650,
+      "wheelScrollMax": 650,
+      "maximumPickerRestorationDelta": 0
+    },
+    "chromiumSandbox": "enforced on the separate GitHub runner"
+  },
+  "publication": "Not attempted here. Exact accepted Worker-only package is ready for the parent supported publishing route. Post-publication release:verify remains pending.",
+  "deviceInstallation": "not attempted; prohibited from this cloud session. Parent confirms build 394 already installed/launched on both devices. Build 395 signed assets and installation remain unverified.",
+  "authorizationBlocker": null,
+  "transferBlocker": "Genesis final payload is unavailable. Do not repeat reviews or bypass the failed list-origin Library helper route.",
+  "artifacts": {
+    "bundles": {
+      "id": 13604996694,
+      "name": "build-395-verified-bundles-42447875850-1",
+      "bytes": 452908628,
+      "zipSha256": "e11ac973567a21937820331c3c2dc2646a49ef709ce43f7bd0b86055191817d3",
+      "innerTarSha256": "770dd7d72ac1dab925761c0383479977f3971a2720df89919a1414f23dc1e519"
+    },
+    "browserResults": {
+      "id": 13604523424,
+      "name": "build-395-browser-results-42447875850-1",
+      "bytes": 108883728,
+      "zipSha256": "8fe1b4edf324aa40dbeff9376232ca60fe16ad9d0e35204ccf88bd6f5eafd605"
+    },
+    "worker": {
+      "bytes": 59189965,
+      "sha256": "bb84fd0deda110b13955352ec63ec99fbbfd7cf32ac04163a6765dbb49e4c02b"
+    },
+    "localExactBundles": "/workspace/shared/build395-exact-bundles",
+    "localSitesPackage": "/workspace/shared/build395-final-sites-package",
+    "sitesPackageEntries": [
+      ".openai",
+      "server"
+    ],
+    "signedNativeAssets": false
+  },
+  "manualVisualReview": {
+    "screenshots": [
+      "webkit-390-web-exodus-crops-surviving-hail-context.png",
+      "chromium-1157-asv-deuteronomy-ark-builder-context.png",
+      "webkit-1157-kjv-early-sabbath-context.png"
+    ],
+    "result": "Context text, selected ranges, editions, readable margins and long-range scroll surfaces inspected.",
+    "observation": "Some wide context captures show a transient Retrying toast during route changes. Its cause was not diagnosed. Core record, text, range, focus and offline checks passed."
+  },
+  "acceptedLogDigests": {
+    "evidence-pills.log": {
+      "bytes": 1454,
+      "sha256": "47f2fc363af4ea0d3d455e5d16c3634d46f231157bdad97b7be0ed84cf755e19"
+    },
+    "images.log": {
+      "bytes": 1847,
+      "sha256": "25bc38c8119e2973e30879db1a8397ffbd9416be898f1949b9728d71ccec537a"
+    },
+    "explore.log": {
+      "bytes": 1971,
+      "sha256": "0f480b2334deb7e5c42f9cf6421a297784bc5d0597410cb3c0b1d20b55115ab3"
+    },
+    "release-prepare.log": {
+      "bytes": 30658,
+      "sha256": "3cc3b8d827ecc3bd295973ebac874a4ddc168a3e5f099ddcda1008def6d746f2"
+    },
+    "contradiction-bundles.log": {
+      "bytes": 628,
+      "sha256": "a1965927014e12a9d8f6a81ef254a897433ebda054c15c3c86cefce5367ecf6b"
+    },
+    "reader-controls.log": {
+      "bytes": 1419375,
+      "sha256": "22ae27e5347c2409c66b88b21578cc99892c31bc2d722c5bf84f1ad5393b5080"
+    },
+    "compact-style-diagnostics.log": {
+      "bytes": 25141,
+      "sha256": "d33f94a84a291049259b54396126d6d3c629bf97dd856b7bfe94fa11c911dc34"
+    },
+    "contradiction-context.log": {
+      "bytes": 2313,
+      "sha256": "59f2e769e531cbd5ac05d30f0ea76c59dec2e56021ad961a90e722e63e4ec6d3"
+    },
+    "server.log": {
+      "bytes": 38,
+      "sha256": "bb6b38a7db44e3c87ee8efd9c738c70f5f4e0a9d8fb6d92fef3b081ab08fcbae"
+    }
+  }
+}
