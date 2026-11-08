@@ -60,7 +60,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     const actions=panel.locator('.lens-summary-icon');for(const action of await actions.all()){
      const box=await action.boundingBox();assert(box.width>=44&&box.height>=44);assert.equal((await action.innerText()).trim(),'','Actions use icons instead of visible text');assert(await action.getAttribute('aria-label'));assert(await action.getAttribute('title'));assert.equal(await action.locator('svg[aria-hidden=true]').count(),1);
     }
-    if([320,469,1440].includes(width))await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${key}-summary.png`,fullPage:false});
+    if([320,469,601,1440].includes(width))await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${key}-summary.png`,fullPage:false});
     const info=panel.locator('[data-lens-context-info]');assert.equal(await info.count(),key==='academic'?1:0,'Only supporting-context records get a metadata action');
     if(await info.count()){
      const note=page.locator('#'+await info.getAttribute('aria-controls'));assert.equal(await info.getAttribute('aria-expanded'),'false');assert(!(await note.isVisible()));
@@ -68,7 +68,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      assert.equal(await info.evaluate(node=>getComputedStyle(node).outlineStyle),'solid','Keyboard focus is visible');
      await page.keyboard.press('Space');assert.equal(await info.getAttribute('aria-expanded'),'false');assert(!(await note.isVisible()));
      if(width<=820)await info.tap();else await info.click();assert(await note.isVisible());assert.equal(await panel.getAttribute('data-evidence-view'),'summary','Metadata does not navigate to an unrelated destination');
-     if([320,469,1440].includes(width))await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${key}-info.png`,fullPage:false});
+     if([320,469,601,1440].includes(width))await page.screenshot({path:`${output}/${engine}-${width}-${theme}-${key}-info.png`,fullPage:false});
     }
     const evidenceAction=panel.locator('[data-lens-evidence-record]').last();await evidenceAction.focus();if(width<=820)await evidenceAction.tap();else await page.keyboard.press('Enter');assert.equal(await panel.getAttribute('data-evidence-view'),'full');
     assert.equal(await panel.locator('.lens-evidence').count(),count);assert.equal(await page.evaluate(()=>document.activeElement.dataset.lensEvidenceIndex),String(count-1));
@@ -80,7 +80,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.locator('[data-lens-chapter]').click();await page.keyboard.press('Escape');
    await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});assert(await launch.evaluate(node=>node===document.activeElement),'Whole Chapter returns focus to the launching pill');
    const preserved=await page.locator('#verse-3 [data-scripture]').evaluate(node=>{const text=node.firstChild;BibleLensWorkspace.refresh();return node.firstChild===text;});assert(preserved,'Evidence refresh preserves scripture nodes');
-   if([469,1440].includes(width)){
+   if([469,601,1440].includes(width)){
     // The annotated real Genesis 1:16 cards, without fixture replacement.
     await page.unroute('**/api/comparisons?**');await page.reload();await page.waitForFunction(()=>reading?.chapter===1&&comparisonModes.every(mode=>comparisonCache.get(comparisonKey(mode))?.status==='ready'));
     await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);await page.locator('#verse-16 [data-lens-category=academic]').click();await page.locator('#lens-inspector-sheet[open]').waitFor();
@@ -89,7 +89,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     const about=actual.locator('[data-lens-context-info]').first();await about.click();assert.equal(await about.getAttribute('aria-expanded'),'true');await actual.locator('[data-lens-evidence-record]').first().click();assert.equal(await actual.getAttribute('data-evidence-view'),'full');await actual.locator('[data-lens-summary]').click();assert.equal(await actual.getAttribute('data-evidence-view'),'summary');await page.locator('[data-lens-chapter]').click();await page.keyboard.press('Escape');
    }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);runs++;console.log('PASS evidence pills',engine,width,theme);
-   results.push({engine,width,height:[469,601].includes(width)?1184:1024,theme,status:'PASS',categories:Object.keys(expected),realGenesisContext:[469,1440].includes(width)});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');
+   results.push({engine,width,height:[469,601].includes(width)?1184:1024,theme,status:'PASS',categories:Object.keys(expected),realGenesisContext:[469,601,1440].includes(width)});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');
   }finally{await context.close();}
  }}finally{await browser.close();}
 }
