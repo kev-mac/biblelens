@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 397 source
         run: |
-          git merge-base --is-ancestor dd1a74213ba3fe71969ccc3c1d63dbdbf1afa5a4 HEAD
+          git merge-base --is-ancestor f456a1c9305cafb6de3e2bb5d5669accf16fc9dc HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,397);
-          assert.equal(release.sourceHash,'a3febd91fafb20f93419f1ebc0ba2c52d91649b845cf7a0d89541d4a652fb692');
+          assert.equal(release.sourceHash,'d728d2a075b243d9c89626c664616687eac7d54ac6d6f46b0ade6c598cfd2692');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -74,6 +74,17 @@ jobs:
         env:
           NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
         run: npm run release:prepare 2>&1 | tee .release/browser-ci/release-prepare.log
+
+      - name: Retain a required preparation failure immediately
+        if: ${{ !cancelled() && steps.prepare.outcome == 'failure' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-397-preparation-failure-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/release-prepare.log
+            .release/browser-ci/source-release.json
+          retention-days: 7
+          include-hidden-files: true
 
       - name: Verify all thirteen reviews in web and actual offline bundles
         if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
@@ -214,7 +225,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'dd1a74213ba3fe71969ccc3c1d63dbdbf1afa5a4',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'f456a1c9305cafb6de3e2bb5d5669accf16fc9dc',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
