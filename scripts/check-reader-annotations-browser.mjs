@@ -152,7 +152,9 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    assert.equal(await page.locator('#reader-edition').inputValue(),'web','Chapter navigation retains the selected translation');
    const selectedText=await page.evaluate(()=>({expected:reading.verses.find(verse=>verse.n===3).web,actual:document.querySelector('#verse-3 [data-scripture]').textContent}));assert(selectedText.actual.includes(selectedText.expected),'The reader renders the chosen translation');
    if(width===546){await page.evaluate(native=>{document.documentElement.classList.toggle('native-ios',native);document.body.style.setProperty('--app-safe-top',native?'24px':'0px');scrollTo({top:0,behavior:'instant'});},native);await page.evaluate(()=>document.fonts.ready);await page.screenshot({path:`${output}/${engine}-${width}x${height}-${native?'native':'web'}-genesis-2-web.png`,fullPage:false});}
-   await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
+   // Reload above clears focus. Establish the comparison opener explicitly.
+   await page.locator('#ux-chapter-picker').focus();assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
+   await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});await page.waitForFunction(()=>document.activeElement.id==='ux-chapter-picker');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    if(width===601)await checkBottomNavigation(page);
    assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
    }catch(error){
