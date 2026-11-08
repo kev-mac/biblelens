@@ -40,9 +40,9 @@ jobs:
 
       - name: Verify exact build 400 source
         run: |
-          git merge-base --is-ancestor effdba0f2998e974aa8c49cd5f480cfb02d56c64 HEAD
-          git cat-file -e effdba0f2998e974aa8c49cd5f480cfb02d56c64^{commit}
-          git diff --exit-code effdba0f2998e974aa8c49cd5f480cfb02d56c64 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
+          git merge-base --is-ancestor dc55fee566fb2ed7dde2a9cf58dca53d432ec0ea HEAD
+          git cat-file -e dc55fee566fb2ed7dde2a9cf58dca53d432ec0ea^{commit}
+          git diff --exit-code dc55fee566fb2ed7dde2a9cf58dca53d432ec0ea HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -50,10 +50,10 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,400);
-          assert.equal(release.sourceHash,'86e92ab472c472e9b1be83636f62ccce64953ea770c7b8cb1acb563ff5a19bcc');
+          assert.equal(release.sourceHash,'d35b41ff84fb7e1dd00e7a5e80a27436ddd024a4a8ce9273b947c6a9c9921e09');
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: effdba0f2998e974aa8c49cd5f480cfb02d56c64');
+          console.log('Pinned source commit: dc55fee566fb2ed7dde2a9cf58dca53d432ec0ea');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -250,7 +250,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'effdba0f2998e974aa8c49cd5f480cfb02d56c64',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'xLenz: Bible'},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'dc55fee566fb2ed7dde2a9cf58dca53d432ec0ea',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'xLenz: Bible'},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
