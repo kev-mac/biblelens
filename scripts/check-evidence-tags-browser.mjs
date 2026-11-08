@@ -74,11 +74,11 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     assert.equal(await panel.locator('.lens-evidence').count(),count);assert.equal(await page.evaluate(()=>document.activeElement.dataset.lensEvidenceIndex),String(count-1));
     await panel.locator('.lens-evidence details summary').last().click();assert.match(await panel.innerText(),/Full supporting evidence/);
     await panel.locator('[data-lens-summary]').click();assert.equal(await panel.getAttribute('data-evidence-view'),'summary');
-    await page.keyboard.press('Escape');await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});assert(await pill.evaluate(node=>node===document.activeElement),'Focus returns to the current category pill');
+    await page.keyboard.press('Escape');await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});await page.waitForFunction(key=>document.querySelector('#verse-3 [data-lens-category="'+key+'"]')===document.activeElement,key);assert(await pill.evaluate(node=>node===document.activeElement),'Focus returns to the current category pill');
    }
    const launch=page.locator('#verse-3 [data-lens-category="T"]');await launch.click();await page.locator('#lens-inspector-sheet[open]').waitFor();
    await page.locator('[data-lens-chapter]').click();await page.keyboard.press('Escape');
-   await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});assert(await launch.evaluate(node=>node===document.activeElement),'Whole Chapter returns focus to the launching pill');
+   await page.locator('#lens-inspector-sheet').waitFor({state:'hidden'});await page.waitForFunction(key=>document.querySelector('#verse-3 [data-lens-category="'+key+'"]')===document.activeElement,'T');assert(await launch.evaluate(node=>node===document.activeElement),'Whole Chapter returns focus to the launching pill');
    const preserved=await page.locator('#verse-3 [data-scripture]').evaluate(node=>{const text=node.firstChild;BibleLensWorkspace.refresh();return node.firstChild===text;});assert(preserved,'Evidence refresh preserves scripture nodes');
    if([469,601,1440].includes(width)){
     // The annotated real Genesis 1:16 cards, without fixture replacement.
@@ -90,6 +90,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    }
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);runs++;console.log('PASS evidence pills',engine,width,theme);
    results.push({engine,width,height:[469,601].includes(width)?1184:1024,theme,status:'PASS',categories:Object.keys(expected),realGenesisContext:[469,601,1440].includes(width)});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');
+  }catch(error){
+   const failure=await page.evaluate(()=>({route:location.hash,scrollY,viewport:{width:innerWidth,height:innerHeight},active:{tag:document.activeElement?.tagName,id:document.activeElement?.id,category:document.activeElement?.dataset?.lensCategory,verse:document.activeElement?.dataset?.lensInspect},inspectorOpen:document.querySelector('#lens-inspector-sheet')?.open,pills:[...document.querySelectorAll('#verse-3 [data-lens-category]')].map(node=>({category:node.dataset.lensCategory,connected:node.isConnected,focused:node===document.activeElement}))})).catch(()=>({unavailable:true}));
+   const report={error:error.message,engine,width,theme,...failure};console.log('EVIDENCE_FAILURE',JSON.stringify(report));fs.writeFileSync(`${output}/failure-${engine}-${width}-${theme}.json`,JSON.stringify(report,null,2)+'\n');await page.screenshot({path:`${output}/failure-${engine}-${width}-${theme}.png`,fullPage:false}).catch(()=>{});throw error;
   }finally{await context.close();}
  }}finally{await browser.close();}
 }
