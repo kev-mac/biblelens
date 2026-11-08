@@ -83,3 +83,10 @@ app font size, keeps its caption on one line and preserves the compact 32px
 select height. The toolbar has the existing opaque theme background. New
 assertions check caption fit, room for selected text beside the native arrow,
 and background opacity; screenshots still require inspection.
+
+Run 42432314875 passed preparation/images and 32 evidence cases, then the new
+opacity assertion correctly rejected the reader. An older `:is()` glass rule
+includes the more specific masthead navigation selector, so its background
+won over a simple reader-bar override. The final rule is scoped through both
+Read-view and reader-bar IDs and disables the bar's obsolete backdrop filters.
+The opacity assertion remains unchanged; bottom-tab styling is preserved.
