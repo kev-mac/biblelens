@@ -395,7 +395,32 @@
         "label": "Genesis 7:3"
       }
     ],
-    "checked": "2026-10-11"
+    "checked": "2026-10-11",
+    "contradictionReview": {
+      "conflict": "Genesis 6 calls for two of each kind. Genesis 7 gives larger numbers for clean animals and birds.",
+      "passages": [
+        "Genesis 6:19-20",
+        "Genesis 7:2-3",
+        "Genesis 7:8-9",
+        "Genesis 8:20"
+      ],
+      "context": "God gives Noah instructions before the flood. The later instructions distinguish clean animals from others. Animals enter in pairs, and Noah later offers clean animals on an altar.",
+      "explanations": [
+        {
+          "reading": "The later rule adds an exception for clean animals",
+          "support": "Genesis 7 names different counts for clean and unclean animals. Reading two as a minimum allows both instructions, though Genesis 6 does not expressly say at least."
+        },
+        {
+          "reading": "Read two as the fixed total for every kind",
+          "support": "Genesis 6 repeats two of every kind. If that excludes extras, the larger number in Genesis 7 conflicts with it. Entering in pairs does not itself set the total."
+        }
+      ],
+      "assessment": "The counts differ. They fit together if the instruction to bring two allows more. The later rule can be read as an exception for clean animals.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Their larger-number wording differs. Hebrew counts, source history and the flood as history remain unresolved.",
+      "book": "Genesis",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "early-sabbath",
@@ -31734,7 +31759,31 @@
         "ref": "Genesis 7:6",
         "quote": "Noah was six hundred years old when the flood of waters was upon the earth"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Noah’s sons are named when he is five hundred. Shem is one hundred two years after the flood, when Noah had been six hundred.",
+      "passages": [
+        "Genesis 5:32",
+        "Genesis 7:6",
+        "Genesis 11:10"
+      ],
+      "context": "These family lists give age notices. Genesis 5 names three brothers together. Later verses give Noah’s age at the flood and Shem’s age two years afterward.",
+      "explanations": [
+        {
+          "reading": "The grouped notice can mark the start of fatherhood",
+          "support": "Genesis 5:32 does not give each son a separate birth date or say they were all born together. Naming Shem first does not itself date his birth."
+        },
+        {
+          "reading": "Five hundred specifically dates Shem’s birth",
+          "support": "That reading gives Shem one hundred years before the flood, conflicting with being one hundred two years later. It adds a date that the grouped notice does not specify."
+        }
+      ],
+      "assessment": "The age conflict depends on assigning Shem the first notice’s date. If the age figures align, the later notices place his birth about two years later. The first notice does not exclude this.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. This does not establish exact calendar dates, birth order or the ages as history.",
+      "book": "Genesis",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke",
@@ -94167,7 +94216,29 @@
         "ref": "Genesis 4:17",
         "quote": "he builded a city"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Cain is told he will be a fugitive and wanderer. The narrator later says he lives in Nod and builds a city.",
+      "passages": [
+        "Genesis 4:12-17"
+      ],
+      "context": "God speaks to Cain after Abel is killed. The speech concerns failing farmland and danger. The narrator then describes Cain leaving God’s presence, his family and a city.",
+      "explanations": [
+        {
+          "reading": "The sentence concerns exile and an unsafe life",
+          "support": "Cain loses fruitful farmland and fears being killed. Building outside his former home does not by itself end his exile or danger."
+        },
+        {
+          "reading": "Cain tries to resist or cope with the sentence",
+          "support": "The narrator reports building without saying Cain gained lasting safety. This allows such a reading, but the text does not state that motive."
+        }
+      ],
+      "assessment": "Constant wandering would sit uneasily with settled city life. Yet building alone does not establish permanent safety or the end of exile. The account leaves those points open.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Cain’s motive, the length of his stay and the events as history remain unverified.",
+      "book": "Genesis",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent",
@@ -94377,7 +94448,32 @@
         "ref": "Genesis 11:1",
         "quote": "the whole earth was of one language"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Genesis 10 lists peoples with different languages. Genesis 11 begins with one language before the Babel story.",
+      "passages": [
+        "Genesis 10:5",
+        "Genesis 10:20",
+        "Genesis 10:31",
+        "Genesis 11:1-9"
+      ],
+      "context": "A family table groups peoples by language and land. The next story describes a city, a tower, confusion of language and the people’s scattering.",
+      "explanations": [
+        {
+          "reading": "The table summarizes what the next story explains",
+          "support": "The family table can describe later groups before the story returns to an earlier event. Genesis 11 does not explicitly mark a move backward in time."
+        },
+        {
+          "reading": "Chapter order gives the order of events",
+          "support": "Under a strict sequence, the many languages already listed precede the statement about one language. This reading treats the family table as consecutive events rather than a summary."
+        }
+      ],
+      "assessment": "The passages are in tension if chapter order strictly gives event order. The family table can also be read as a summary before an earlier explanatory story. The text does not expressly state that sequence.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. The origin of languages, source history and the events as history remain unverified.",
+      "book": "Genesis",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "who-named-beersheba-abraham-or-isaac",
@@ -94454,7 +94550,31 @@
         "relationship": "narrative-doublet",
         "group": "genesis-beersheba-naming"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "conflict": "Genesis links Beersheba’s name with Abraham’s oath. A later account links the city’s name with a well named by Isaac.",
+      "passages": [
+        "Genesis 21:30-32",
+        "Genesis 26:18",
+        "Genesis 26:32-33"
+      ],
+      "context": "Abraham names a place during an agreement about a well. Isaac later restores his father’s well names. His servants then report water, and another naming notice follows.",
+      "explanations": [
+        {
+          "reading": "Isaac renews an established name",
+          "support": "Genesis 26:18 expressly says Isaac reused his father’s names for reopened wells. This supports reading it as a renewed name, though it does not identify every well as the same one."
+        },
+        {
+          "reading": "The notices concern related naming occasions",
+          "support": "The earlier account names a place. The later one names a well and explains the city’s name. Neither expressly says this was the only or first naming."
+        }
+      ],
+      "assessment": "The naming explanations repeat, but need not exclude each other. Reusing earlier names fits the nearby account. The exact relationship between the wells remains uncertain.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Hebrew wordplay, the history of the accounts and the physical identity of the wells remain unresolved.",
+      "book": "Genesis",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "commanded-to-offer-isaac-yet-child-burning-commanded-not",

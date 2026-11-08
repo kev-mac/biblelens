@@ -1,0 +1,27 @@
+# Bounded Genesis integration: build 398
+
+Baseline: accepted Exodus checkpoint build 397, `887b93fcbfb0f8e9ab9166f85baa436f5b4d352d`. All thirteen accepted Exodus review objects and all 1,933 original evidence records remain intact. All UI, Worker, schema and native configuration source remains equal to build 396. No new book research session was started.
+
+The originating Genesis session supplied its actual final ZIP. Supported Library materialization succeeded on this executor, retaining version 0 and the confirmed identity. The file is 2,291,824 bytes, SHA-256 `c090f1bdf520a21ad7e510aa0b0062e9643740539da55696d4f1f6e2e2e20cf1`. All 39 inner checksums and 38 manifest entries match. The full 1,933-record snapshot has SHA-256 `d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4`, matching the declared Git data at `d5aa79ab2ac2b6137b517eb7fcc0f6b85e12ed48`. This does not claim that checkout is current main or certify the whole producing environment.
+
+Actual JSON contains 109 unique reviews and 109 mappings: 37 groups map to 42 existing application IDs; 72 drafts have no app ID. Every mapped record hash matches using sorted-key UTF-8 JSON with default separators and no final newline. All 1,933 original record bodies match current source when the accepted review additions are excluded. All 5,502 embedded KJV verses in 172 chapters match the app package. All 110 guide rows point to real review identities. These are byte/text and mapping checks, not certification of each report claim. No script supplied by the export was executed, and its source snapshot was never applied over current evidence.
+
+Five bounded English-text assessments are attached to existing records:
+
+- `early-ark-count` from source review `ark-count`.
+- `cain-fugitive-and-vagabond-yet-builds-a-city` from `cain-city`.
+- `shem-a-hundred-years-old-two-years-after-the-flood` from `shem-age`.
+- `nations-after-their-tongues-before-babel` from `babel`.
+- `who-named-beersheba-abraham-or-isaac` from `beersheba`.
+
+All 34 newly cited verse instances were read in the current KJV, ASV and WEB, with surrounding speaker and story context. Passage labels normalize the report's en dashes for application ranges. Genesis 8:20 is added as a clickable support passage because the report context cites the later offering; that verse was checked in all three editions. The English editions differ in the larger animal-count wording. No Hebrew seven/seven-pairs ruling, commentary attribution or history of flood-story composition is newly asserted. The new assessment instead makes the primary-text maximum/exception readings and their limits explicit. Cain's motive, exact calendar alignment, Babel's narrative timing and the wells' identity remain interpretations or unresolved details, not established historical events.
+
+The 40 new prose fields average FK 6.49. Focused checks pass for all eighteen scoped assessments, 281 cited verse instances in each edition, original fields, the previous thirteen review objects, escaped rendering and clickable context links. All review prose averages FK 6.67 with no detail-tier sentence or jargon violations. Repository readability remains report-only with inherited corpus findings.
+
+The inventory retains every source review identity and exact mapped ID. Five groups have bounded app assessments; 104 groups remain deferred, including 72 drafts without app IDs and 32 mapped groups covering 37 existing IDs. Ancillary claims within the five integrated groups remain pending as stated per item. Romans 5:12 remains the export's `adam-and-eve` draft without an app ID; it was not dropped or assigned an invented identifier. All six edition-source audits, eight other-book reviews and broader topic-page claims remain unresolved. Earlier report behavior was simulated; real browser/touch verification applies only to any later tested application subset. No book is fully integrated.
+
+B4 changes only its evidence source hash. Its proposal list remains byte-equivalent as data, with `ownerAccepted: false`. Direct neutral framing and draft-consistency checks pass; the draft overlay is not accepted or applied. Original report and snapshot files remain outside the application repository.
+
+Native Sites metadata was refreshed and remains public. The source helper is unavailable here, so source comparison and publication remain with the parent's supported route. No custom authentication fallback, Site mutation, audience change, device installation or security/account change was attempted. Local browser restrictions remain respected; CI uses the authorized separate runner and enforces Chromium sandboxing.
+
+Final exact-source release and browser gates are pending. The planned matrices contain 156 context cases for all new Genesis and retained Exodus passages, plus the existing 56 directory, 32 evidence, 112 reader and 48 Explore cases. No publication, signed asset parity or installed device version is established by this source checkpoint.

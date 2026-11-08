@@ -11,7 +11,8 @@ const reviewed=records.filter(row=>row.contradictionReview);
 const originalIds=['exodus-hardening-agency','moses-father-in-law-names','angel-of-the-lord-speaks-as-god-identity-unstated','moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king','i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22'];
 const addedIds=['exodus-crops-surviving-hail','early-sabbath','deuteronomy-ark-builder'];
 const batch397Ids=['exodus-manna-storage','exodus-impartial-judgment','exodus-curtain-layers','exodus-aaron-calf-account','exodus-voluntary-and-fixed-giving'];
-assert.deepEqual(reviewed.map(row=>row.id).sort(),[...originalIds,...addedIds,...batch397Ids].sort(),'Thirteen Exodus-scoped assessments; no complete book');
+const batch398Ids=["early-ark-count","cain-fugitive-and-vagabond-yet-builds-a-city","shem-a-hundred-years-old-two-years-after-the-flood","nations-after-their-tongues-before-babel","who-named-beersheba-abraham-or-isaac"];
+assert.deepEqual(reviewed.map(row=>row.id).sort(),[...originalIds,...addedIds,...batch397Ids,...batch398Ids].sort(),'Eighteen scoped assessments; no complete book');
 function stable(value){
  if(Array.isArray(value))return value.map(stable);
  if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(key=>[key,stable(value[key])]));
@@ -22,7 +23,8 @@ const digest=value=>createHash('sha256').update(JSON.stringify(stable(value))).d
 assert.equal(records.length,1933);
 assert.equal(digest(records.map(({contradictionReview,...row})=>row)),'e606094ecd328dca081d630facc7f803bcc10e5c21c258735b1b3eaba164f6d1','Original evidence fields changed');
 assert.equal(digest(reviewed.filter(row=>originalIds.includes(row.id)).map(row=>({id:row.id,review:row.contradictionReview}))),'a04e9a73512403f1694259347f14247bdb552b59ebe3a184bb5dfaeac9d408ba','Previously accepted reviews changed');
-assert.equal(digest(reviewed.filter(row=>!batch397Ids.includes(row.id)).map(row=>({id:row.id,review:row.contradictionReview}))),'bd87e605c7e45c66daef0f1f24f683b3bf26232a842da6fcef6c04a0bd70699e','Previously accepted eight reviews changed');
+assert.equal(digest(reviewed.filter(row=>!batch397Ids.includes(row.id)&&!batch398Ids.includes(row.id)).map(row=>({id:row.id,review:row.contradictionReview}))),'bd87e605c7e45c66daef0f1f24f683b3bf26232a842da6fcef6c04a0bd70699e','Previously accepted eight reviews changed');
+assert.equal(digest(reviewed.filter(row=>!batch398Ids.includes(row.id)).map(row=>({id:row.id,review:row.contradictionReview}))),"c13602e45403dd36042241e56c70508f26e67bce3e7d7bd7f18ca1319a00d8c4",'Previously accepted thirteen reviews changed');
 const inventory=JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-395.json'));
 assert.equal(inventory.exodus.assessments.length,88);
 assert.equal(inventory.exodus.assessments.filter(row=>row.integration==='deferred').length,80);
@@ -33,11 +35,13 @@ assert.equal(currentInventory.exodus.assessments.length,88);
 assert.equal(currentInventory.exodus.assessments.filter(row=>row.integration==='deferred').length,75);
 assert.deepEqual(currentInventory.exodus.addedRecordIds.slice().sort(),batch397Ids.slice().sort());
 assert.equal(currentInventory.genesis.addedRecordIds.length,0);
+const genesisInventory=JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-398.json'));
+assert.equal(genesisInventory.reviews.length,109);assert.equal(genesisInventory.reviews.filter(r=>r.integration==='deferred').length,104);assert.deepEqual(genesisInventory.addedRecordIds.slice().sort(),batch398Ids.slice().sort());
 let count=0;
 const grades=[];
 for(const row of reviewed){
  const review=row.contradictionReview;
- assert.equal(review.book,'Exodus');assert.equal(review.checked,batch397Ids.includes(row.id)?'2026-11-08':'2026-11-07');
+ assert.equal(review.book,batch398Ids.includes(row.id)?'Genesis':'Exodus');assert.equal(review.checked,(batch397Ids.includes(row.id)||batch398Ids.includes(row.id))?'2026-11-08':'2026-11-07');
  for(const key of ['conflict','context','assessment','verification','sourceReport'])assert(review[key]?.trim(),row.id+' missing '+key);
  assert(review.explanations.length>=2);
  for(const text of [review.conflict,review.context,review.assessment,review.verification,...review.explanations.flatMap(row=>[row.reading,row.support])]){
@@ -63,10 +67,10 @@ const html=ctx.contradictionReviewHtml({...hardening,contradictionReview:{...har
 assert(!html.includes('<script>'));assert(html.includes('&lt;script&gt;'));
 assert(html.includes('data-cite-end="23"'));assert(html.includes('data-cite-context="true"'));assert(html.includes('aria-haspopup="dialog"'));
 assert(html.includes('Common Explanations'));assert(html.includes('Assessment and Limits'));
-for(const id of [...addedIds,...batch397Ids]){
+for(const id of [...addedIds,...batch397Ids,...batch398Ids]){
  const review=reviewed.find(row=>row.id===id);
  const rendered=ctx.contradictionReviewHtml(review);
  assert.equal((rendered.match(/data-cite-context="true"/g)||[]).length,review.contradictionReview.passages.length,id+' lost clickable passage links');
  for(const label of ['Conflict and Context','Context','Common Explanations','Assessment and Limits'])assert(rendered.includes(label),id+' lost '+label);
 }
-console.log(`PASS: thirteen scoped reviews, ${count} passage verses in all three packaged editions, original data preservation, escaped review text and clickable context ranges. Detail prose FK ${(grades.reduce((sum,value)=>sum+value,0)/grades.length).toFixed(2)}.`);
+console.log(`PASS: eighteen scoped reviews (13 Exodus, 5 Genesis), ${count} passage verses in all three packaged editions, original data preservation, escaped review text and clickable context ranges. Detail prose FK ${(grades.reduce((sum,value)=>sum+value,0)/grades.length).toFixed(2)}.`);
