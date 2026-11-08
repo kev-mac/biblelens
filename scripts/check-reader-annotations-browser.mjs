@@ -100,7 +100,9 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     const sticky=await page.locator('#lensMasthead,#lensReadingBar').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().toJSON())),scenario=JSON.stringify({engine,width,native,dark,sticky});assert(sticky[0].top>=(native?24:0)-1,scenario);assert(sticky[1].top>=sticky[0].bottom-1,scenario);
     assert(Math.abs(await page.locator('body').evaluate(node=>parseFloat(getComputedStyle(node).getPropertyValue('--ux13-masthead-height')))-sticky[0].height)<=1,'Measured header height reaches the body after scrolling');
     assert((await page.locator('#ux-chapter-picker').evaluate(n=>parseFloat(getComputedStyle(n).fontSize)))>=18);
-    await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await page.mouse.wheel(0,650);await page.waitForFunction(()=>Math.abs(scrollY-650)<2);const floating=page.locator('#reader-floating-navigation'),floatingPicker=page.locator('#reader-floating-picker');await floating.waitFor({state:'visible'});
+    await page.evaluate(()=>scrollTo({top:0,behavior:'instant'}));await page.waitForFunction(()=>scrollY<2);
+    await page.mouse.move(width/2,height*.6);await page.mouse.wheel(0,650);await page.waitForFunction(()=>scrollY>300);
+    const wheelScroll=await page.evaluate(()=>scrollY),floating=page.locator('#reader-floating-navigation'),floatingPicker=page.locator('#reader-floating-picker');await floating.waitFor({state:'visible'});
     await page.locator('#reader-floating-prev').waitFor({state:'visible'});await page.locator('#reader-floating-next').waitFor({state:'visible'});
     const floatGeometry=await floating.evaluate(node=>{const tabs=document.querySelector('#lensMasthead nav.lens-primary'),style=getComputedStyle(tabs);return {box:node.getBoundingClientRect().toJSON(),tabs:tabs.getBoundingClientRect().toJSON(),fixedTabs:style.position==='fixed',buttons:[...node.children].map(button=>({id:button.id,...button.getBoundingClientRect().toJSON()}))};});
     assert.deepEqual(floatGeometry.buttons.map(button=>button.id),['reader-floating-prev','reader-floating-picker','reader-floating-next']);assert(floatGeometry.buttons.every(button=>button.width>=44&&button.height>=44&&button.left>=0&&button.right<=width),'Floating controls retain separate reachable targets');assert(floatGeometry.box.bottom<=(floatGeometry.fixedTabs?floatGeometry.tabs.top:height)-8,'Floating controls clear the app navigation');
@@ -109,7 +111,7 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     await page.locator('#chapter-footer').scrollIntoViewIfNeeded();await page.locator('#reader-floating-prev').waitFor({state:'hidden'});assert(await floatingPicker.isVisible(),'Book selection stays available at the bottom');assert(await page.locator('#prev-bottom').isVisible()&&await page.locator('#next-bottom').isVisible(),'Existing bottom arrows remain');
     if([601,1157].includes(width))await page.screenshot({path:`${output}/${caseName}-bottom.png`,fullPage:false});
     await floatingPicker.focus();await page.keyboard.press('Enter');await page.locator('#passage-picker[open]').waitFor();await page.keyboard.press('Escape');await floating.waitFor({state:'visible'});assert(await floatingPicker.evaluate(node=>node===document.activeElement),'Keyboard opening at the bottom retains opener focus');
-    await page.evaluate(()=>scrollTo(0,0));contextResults.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox});
+    await page.evaluate(()=>scrollTo(0,0));contextResults.push({engine,width,height,native,dark,status:'PASS',bookLabels,reference:referenceGeometry.input,globalSearch:searchBox,wheelScroll});
    }
    await page.locator('#lens-edition').focus();await page.keyboard.press('Home');await page.keyboard.press('Tab');await page.waitForFunction(()=>document.getElementById('reader-edition').value==='kjv'&&document.getElementById('lens-edition').value==='kjv');
    await page.evaluate(()=>BibleLensWorkspace.navigate('#read/21/8'));await page.locator('#ux-chapter-picker').filter({hasText:'Song of Solomon'}).waitFor();
@@ -121,7 +123,11 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
    await page.evaluate(()=>BibleLensWorkspace.navigate('#compare?left=Exodus%201&right=Genesis%201'));await page.locator('.lens-comparison-passage').first().waitFor();await page.keyboard.press('Escape');assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
    if(width===601)await checkBottomNavigation(page);
    assert.deepEqual(errors,[]);matrix.push(...contextResults);console.log('PASS reader',engine,width,height,native?'native safe area':'web');
-   }catch(error){await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;}
+   }catch(error){
+    const failure=await page.evaluate(()=>({route:location.hash,scrollY,scrollHeight:document.scrollingElement?.scrollHeight,viewport:{width:innerWidth,height:innerHeight},focus:document.activeElement?.id,dialogs:[...document.querySelectorAll('dialog[open]')].map(node=>node.id),floating:{hidden:document.querySelector('#reader-floating-navigation')?.hidden,display:getComputedStyle(document.querySelector('#reader-floating-navigation')).display}})).catch(()=>({unavailable:true}));
+    fs.writeFileSync(`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.json`,JSON.stringify({error:error.message,...failure},null,2)+'\n');
+    await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${native?'native':'web'}.png`,fullPage:false}).catch(()=>{});throw error;
+   }
    finally{fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-network.json`,JSON.stringify(network,null,2)+'\n');fs.writeFileSync(`${output}/${engine}-${width}x${height}-${native?'native':'web'}-search-events.json`,JSON.stringify(await page.evaluate(()=>window.__readerSearchEvents||[]).catch(()=>[]),null,2)+'\n');await context.close();}
   }
  }finally{await browser.close();}
