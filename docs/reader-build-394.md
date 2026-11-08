@@ -9,7 +9,7 @@ The visible pills change from .625rem text with 2px/4px padding to .5rem text wi
 1px/3px padding (9px text at the default 18px root). Their separate, non-overlapping targets are at least 24px
 high and wide, replacing the extra 44px inline spacing. Category colors,
 ALL CAPS labels, counts, context summaries and evidence navigation remain.
-The toolbar translation selector changes from 80×44px to 64×32px, retaining
+The toolbar translation selector changes from 80×44px to 72×32px at the default font size, retaining
 its Translation caption, site colors/corners and native selection affordance.
 Other dialog controls and context-card actions retain their larger targets.
 
@@ -72,3 +72,14 @@ the select height. The final selector resets its own flex basis with
 `flex:none`; the rendered-size assertion is retained. Scroll setup for
 cross-book actions is immediate; the visibility check uses an actual downward
 mouse wheel event. Both changes require a fresh exact-source run.
+
+Run 42430762034 passed preparation/images and all 192 browser cases. Manual
+review nevertheless found WebKit clipping the selected edition and wrapping
+the Translation caption at 64px, plus scripture visible through the sticky
+reading toolbar. This first green candidate is preserved as
+`/workspace/shared/build394-first-green-{visual-qa,verified-bundles}` (and ZIPs),
+not accepted for publication. The final label uses at least 72px, scales with
+app font size, keeps its caption on one line and preserves the compact 32px
+select height. The toolbar has the existing opaque theme background. New
+assertions check caption fit, room for selected text beside the native arrow,
+and background opacity; screenshots still require inspection.
