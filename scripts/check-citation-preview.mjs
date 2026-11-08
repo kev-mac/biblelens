@@ -80,6 +80,8 @@ console.log('PASS: explicit actions label their effect, allow independent/title-
 // A comparison click stays in place and distinguishes the cited range from context.
 ctx.fetch=async()=>({ok:true,json:async()=>({verses:Array.from({length:9},(_,i)=>({n:i+1,kjv:'KJV '+(i+1),web:i===3?'':'WEB '+(i+1)}))})});
 const contextRange=chip(3,4);Object.assign(contextRange.dataset,{cite:'1/9/3',citePreview:'',citeContext:'true',citeEdition:'web'});
+handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();assert(popup.hidden,'Comparison context waits for activation instead of covering its citation on hover');
+handlers.focusin({target:target(contextRange)});await settle();assert(popup.hidden,'Tab focus alone does not open the full context window');
 const beforeContext=loads.length;handlers.click({target:target(contextRange),preventDefault(){}});await settle();
 const contextText=child('.preview-text').innerHTML;
 assert(!popup.hidden);assert.equal(loads.length,beforeContext,'Comparison citations must not navigate away');
@@ -95,9 +97,7 @@ assert(popup.hidden);assert.equal(doc.activeElement,contextRange,'Shared close r
 handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();
 assert(popup.hidden,'An explicit close stays closed when the same citation is exposed beneath the mouse');
 handlers.pointerout({pointerType:'mouse',target:target(contextRange),relatedTarget:null});
-handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();
-assert(!popup.hidden,'Leaving and reentering the citation permits a fresh hover preview');
-handlers.keydown({key:'Escape',preventDefault(){}});
+handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();assert(popup.hidden,'Comparison hover remains inactive after dismissal');
 console.log('PASS: comparison clicks open selected-edition context, mark ranges, retain missing-verse notices and restore focus without navigation.');
 
 

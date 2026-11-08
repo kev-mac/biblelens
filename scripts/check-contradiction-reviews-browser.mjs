@@ -37,7 +37,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      const response=await page.request.get(`${base}/api/chapter?book=${book}&chapter=${chapter}`);
      assert(response.ok());const data=await response.json();
      await link.scrollIntoViewIfNeeded();
-     if(index%2){await link.focus();await page.keyboard.press('Enter');}
+     if(width===1157){await link.hover();assert(await page.locator('#verse-preview').isHidden(),'Hover leaves the comparison citation available for activation');}
+     if(index%2){await link.focus();assert(await page.locator('#verse-preview').isHidden(),'Focus alone preserves the context link');await page.keyboard.press('Enter');}
      else if(width===390)await link.tap();
      else await link.click();
      const preview=page.locator('#verse-preview');await preview.waitFor({state:'visible'});
