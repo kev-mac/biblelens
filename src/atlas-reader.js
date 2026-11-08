@@ -24,7 +24,6 @@
   typePanel.append(document.getElementById('ux-font-less'),document.getElementById('ux-font-more'),document.getElementById('ux-font-style'));readingBar.after(typePanel);
   const aa=document.createElement('button');aa.type='button';aa.textContent='Aa';aa.setAttribute('aria-label','Text size');aa.setAttribute('aria-expanded','false');aa.onclick=()=>{typePanel.hidden=!typePanel.hidden;aa.setAttribute('aria-expanded',String(!typePanel.hidden));};
   controls.append(aa);
-  controls.querySelector('#ux-chapter-picker').after(document.querySelector('.lens-edition-label'));
   readingBar.append(document.getElementById('lens-focus'));
   document.querySelector('.lens-reading-actions').hidden=true;
   const control=id=>document.getElementById(id);
@@ -36,12 +35,10 @@
    if(!reading)return;
    const lost=!!books[readingBook]?.collection;
    control('lens-focus').disabled=lost;control('lens-focus').title=lost?'Evidence links are not available for these books yet.':'';
-   control('lens-edition').disabled=lost;control('reader-edition').disabled=lost;
-   control('lens-edition').value=lost?'kjv':control('reader-edition').value;
+   control('reader-edition').disabled=lost;
    let label=control('lost-reader-edition');
    if(!label){label=document.createElement('p');label.id='lost-reader-edition';label.className='lost-edition-label';readingBar.after(label);}
    label.hidden=!lost;label.textContent=lost?reading.editionLabel+' · Evidence links not added yet.':'';
-   control('lens-edition').closest('label').hidden=lost;
 
    const bookLabel=document.createElement('span');bookLabel.className='ux-picker-book';bookLabel.textContent=reading.name;
    const chapterLabel=document.createElement('span');chapterLabel.className='ux-picker-chapter';chapterLabel.textContent=' '+reading.chapter;

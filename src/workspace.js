@@ -46,7 +46,7 @@
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
  const readingBar = document.createElement('div'); readingBar.id='lensReadingBar'; readingBar.className='lens-reading-bar';
- readingBar.innerHTML=`<div class="lens-reading-location"><span class="lens-kicker">The reading room</span><span id="lens-reading-meta"></span></div><div class="lens-reading-actions"><label class="lens-edition-label"><span class="lens-translation-caption">Translation</span><select id="lens-edition" aria-label="Reading translation" title="Select a Bible translation"><option value="kjv">KJV</option><option value="web">WEB</option><option value="asv">ASV</option></select></label><button type="button" id="lens-focus" class="lens-button" aria-pressed="false">Focus</button></div>`;
+ readingBar.innerHTML=`<div class="lens-reading-location"><span class="lens-kicker">The reading room</span><span id="lens-reading-meta"></span></div><div class="lens-reading-actions"><button type="button" id="lens-focus" class="lens-button" aria-pressed="false">Focus</button></div>`;
  layout.before(readingBar);
  const inspector = document.createElement('aside'); inspector.id='lensInspector'; inspector.className='lens-inspector'; inspector.setAttribute('aria-label','Passage evidence and notes'); layout.append(inspector);
  const inspectorSheet=document.createElement('dialog');inspectorSheet.id='lens-inspector-sheet';inspectorSheet.className='lens-inspector-sheet';inspectorSheet.setAttribute('aria-label','Passage evidence');inspectorSheet.innerHTML='<div class="sheet-handle" aria-hidden="true"></div><button type="button" class="lens-inspector-sheet-close lens-button" aria-label="Close passage evidence">Close <span aria-hidden="true">×</span></button>';document.body.append(inspectorSheet);
@@ -93,8 +93,6 @@
   document.body.classList.toggle('lens-focus-mode',on); inspector.hidden=on; updateEvidenceControl();
  }
  el('lens-focus').onclick=()=>{evidenceVisible=!evidenceVisible;saveDisplayChoice('biblelens-evidence-visible',String(evidenceVisible));updateEvidenceControl();refreshVerseHighlights();renderInspector();};updateEvidenceControl();
- el('lens-edition').value=edition();
- el('lens-edition').onchange=()=>{el('reader-edition').value=el('lens-edition').value; el('reader-edition').dispatchEvent(new Event('change')); if(comparison&&!compare.hidden)runComparison(comparison.left,comparison.right);};
  el('lens-compare-close').onclick=()=>compare.close();
  inspectorSheet.addEventListener('close',()=>{const wasComparing=compare.open;compare.hidden=true;compare.open=false;document.body.classList.remove('lens-comparing'); ++compareVersion; if(location.hash.startsWith('#compare')||location.hash.startsWith('#investigation'))navigateHash(refHash({book:readingBook,chapter:readingChapter})); if(wasComparing)(comparisonOpener?.isConnected&&comparisonOpener.getClientRects().length?comparisonOpener:el('ux-chapter-picker')||el('lens-focus')).focus({preventScroll:true});});
  function uniqueRecords(items) {const seen=new Set();return items.filter(item=>{const key=evidenceRecordKey(item);if(seen.has(key))return false;seen.add(key);return true;});}
@@ -148,7 +146,6 @@
   const category=activeVerse?evidenceGroups(verseComparisons(activeVerse)).find(group=>group.key===activeEvidenceCategory):null;
   if(activeEvidenceCategory)records=category?.records||[];
   el('lens-reading-meta').classList.remove('loading-state');el('lens-reading-meta').textContent=`${reading.verses.length} verses · ${reading.editionLabel||edition().toUpperCase()}`;
-  el('lens-edition').value=edition();
   document.querySelectorAll('#chapter-text .verse').forEach(node=>node.classList.toggle('lens-active-verse',(inspectorSheet.open||!emptyStrip.hidden)&&node.id===`verse-${activeVerse}`));
   // Keep each pill in the scripture's inline flow; never replace the verse text nodes.
   const focusedMarker=document.activeElement?.closest('[data-lens-inspect]');
