@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: build-395-browser-checks-${{ github.event.pull_request.number }}
+  group: build-395-browser-checks-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
   cancel-in-progress: false
 
 jobs:
@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 395 source
         run: |
-          git merge-base --is-ancestor 2700565ab5887f1023cee0d3b3b8370ff610e407 HEAD
+          git merge-base --is-ancestor b38375e49137f08fe5854156468c4ec0b7bcccf6 HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,395);
-          assert.equal(release.sourceHash,'742cf176f16493fa71975ad21c8453313239e5047936a7c1157e73ba6640b13f');
+          assert.equal(release.sourceHash,'5088d3e367c83453df464bfbc7f2f2c4ebfc234c845a3412f767c3412e80ff3d');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -205,7 +205,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'2700565ab5887f1023cee0d3b3b8370ff610e407',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'b38375e49137f08fe5854156468c4ec0b7bcccf6',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
