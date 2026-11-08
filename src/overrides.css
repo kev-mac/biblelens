@@ -3446,21 +3446,29 @@ html body.lens-app #chapter-text .verse-body .lens-verse-evidence {
 }
 html body.lens-app.dark #chapter-text .verse-body .lens-verse-evidence {color:color-mix(in srgb,rgb(var(--theme-rgb)) 70%,white);}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence .verse-study-pill {
- display:inline-block;font:500 .5625rem/1.2 var(--ui-font);letter-spacing:.01em;
+ display:inline-block;font:500 .5rem/1.2 var(--ui-font);letter-spacing:.01em;
  color:inherit;background:transparent;border:1px solid currentColor;border-radius:4px;padding:1px 3px;
 }
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence:focus-visible {outline:2px solid currentColor;outline-offset:1px;}
 html body.lens-app #chapter-text .verse-body .lens-verse-evidence:hover .verse-study-pill {background:rgba(var(--theme-rgb),.12);}
-/* Keep the familiar paging row and let its passage label choose another book. */
-html body.lens-app .chapter-bottom #chapter-footer {
- display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;
- width:auto;max-width:calc(100% - 120px);min-width:44px;min-height:44px;height:auto;
- padding:8px;margin:0 auto;border:0;border-radius:var(--control-radius,12px);
- background:transparent;color:var(--lens-link);font:600 .875rem/1.4 var(--ui-font);
- white-space:normal;overflow-wrap:normal;text-align:center;
+/* Historical three-button floating navigation, above the current app tabs. */
+html body.lens-app #reader-floating-navigation {
+ position:fixed;z-index:43;left:50%;bottom:calc(var(--reader-floating-clearance,0px) + 18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);
+ display:grid;grid-template-columns:44px 72px 44px;justify-content:space-between;align-items:center;
+ width:min(380px,calc(100vw - 32px));max-width:none;margin:0;padding:0;border:0;background:none;pointer-events:none;
 }
-html body.lens-app .chapter-bottom #chapter-footer:hover {background:var(--lens-control-hover);}
-html body.lens-app .chapter-bottom #chapter-footer:focus-visible {outline:3px solid var(--lens-focus);outline-offset:3px;}
+html body.lens-app #reader-floating-navigation[hidden],html body.lens-app #reader-floating-navigation button[hidden] {display:none;}
+html body.lens-app #reader-floating-navigation button {
+ display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:10px;
+ border:1px solid var(--lens-rule);border-radius:50%;background:var(--lens-control-bg);color:var(--lens-ink);pointer-events:auto;
+}
+html body.lens-app #reader-floating-navigation #reader-floating-prev {grid-column:1;grid-row:1;}
+html body.lens-app #reader-floating-navigation #reader-floating-picker {grid-column:2;grid-row:1;width:72px;height:72px;padding:20px;box-shadow:0 4px 14px #0003;}
+html body.lens-app #reader-floating-navigation #reader-floating-next {grid-column:3;grid-row:1;}
+html body.lens-app #reader-floating-navigation svg {width:22px;height:22px;}
+html body.lens-app #reader-floating-navigation #reader-floating-picker svg {width:30px;height:30px;}
+html body.lens-app #reader-floating-navigation button:hover:not(:disabled) {background:var(--lens-control-hover);color:var(--lens-link);}
+html body.lens-app #reader-floating-navigation button:focus-visible {outline:3px solid var(--lens-focus);outline-offset:3px;}
 html body.lens-app #lensInspector .lens-category-actions {display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
 html body.lens-app #lensInspector :is(.lens-category-actions button,.lens-evidence-summary button) {min-width:44px;min-height:44px;white-space:normal;}
 html body.lens-app #lensInspector .lens-category-title {font:600 1rem/1.4 var(--ui-font);margin:16px 0 8px;}

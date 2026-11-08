@@ -15,7 +15,7 @@ function randomConversationTone(){const palette=['168,85,247','34,197,94','234,1
 function chapterStudies(){if(!reading)return [];return ENTRIES.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter}));}
 function applicableStudies(){const entries=chapterStudies();if(!selectedVerses.size)return entries;const matching=entries.filter(e=>e.refs.some(r=>{const p=readRef(r);return p&&p.book===readingBook&&p.chapter===readingChapter&&selectedVerses.has(p.verse)}));return matching.length?matching:entries;}
 function chapterOptions(){comparisonSelections.clear();comparisonEvidenceOpen.clear();comparisonRecordSelections.clear();comparisonHighlightOrder.clear();const book=books[readingBook];$('#chapter-select').innerHTML=Array.from({length:book.chapters},(_,i)=>`<option value="${i+1}" ${i+1===readingChapter?'selected':''}>${i+1}</option>`).join('');$('#book-select').value=String(readingBook);}
-function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${reading?.editionLabel||$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#chapter-footer').setAttribute('aria-label',label+'. Choose book, chapter or verse');$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.description=CHAPTER_NAMES[books[readingBook].name]?.[readingChapter]||'';context.dataset.passage=`${label} · ${reading?.editionLabel||$('#reader-edition').value.toUpperCase()}`;if(view==='read'){context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());context.parentElement?.setAttribute('aria-label',label+' — Open navigation');}if(typeof updateHeaderContext==='function')updateHeaderContext();if(view==='read')$('#lens-settings').setAttribute('aria-label',`Settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
+function updateContext(){if(!books.length)return;const label=`${books[readingBook].name} ${readingChapter}`;$('#reader-status').textContent=selectedVerses.size?`${selectedVerses.size} ${selectedVerses.size===1?'verse':'verses'} selected`:`${reading?.verses.length||0} verses · ${reading?.editionLabel||$('#reader-edition').value.toUpperCase()}`;$('#clear-selection').hidden=!selectedVerses.size;$('#chapter-footer').textContent=label;$('#reader-picker-label').textContent=label;const context=$('#header-context');context.dataset.description=CHAPTER_NAMES[books[readingBook].name]?.[readingChapter]||'';context.dataset.passage=`${label} · ${reading?.editionLabel||$('#reader-edition').value.toUpperCase()}`;if(view==='read'){context.innerHTML=esc(label)+' <span class="passage-bullet">•</span> '+esc($('#reader-edition').value.toUpperCase());context.parentElement?.setAttribute('aria-label',label+' — Open navigation');}if(typeof updateHeaderContext==='function')updateHeaderContext();if(view==='read')$('#lens-settings').setAttribute('aria-label',`Settings for ${label}`);const first=readingBook===0&&readingChapter===1,last=readingBook===books.length-1&&readingChapter===books[readingBook].chapters;$('#prev-bottom').disabled=first;$('#next-bottom').disabled=last;}
 async function readerJson(url){
  // Bound the response body as well as the initial connection. The explicit
  // timer also works where AbortSignal.timeout is unavailable.
@@ -470,13 +470,13 @@ function openPassagePicker(opener=document.activeElement){
   });
   passagePicker.querySelector('[data-picker-close]').onclick=()=>passagePicker.close();
   $('#passage-picker-form').onsubmit=ev=>{ev.preventDefault();if($('#passage-go').disabled)return;const b=Number($('#passage-book').value),ch=Number($('#passage-chapter').value),v=Number($('#passage-verse').value);passagePicker.close();setView('read',false);loadChapter(b,ch,v);};
-  passagePicker.addEventListener('close',()=>{passagePickerRequest++;passageReferenceRequest++;const opener=passagePickerOpener?.isConnected&&passagePickerOpener.getClientRects().length?passagePickerOpener:$('#ux-chapter-picker')||document.querySelector('.passage-heading-picker');opener?.focus({preventScroll:true});});
+  passagePicker.addEventListener('close',()=>{passagePickerRequest++;passageReferenceRequest++;window.BibleLensReaderFloating?.refresh();const opener=passagePickerOpener?.isConnected&&passagePickerOpener.getClientRects().length?passagePickerOpener:$('#ux-chapter-picker')||document.querySelector('.passage-heading-picker');opener?.focus({preventScroll:true});});
  }
  $('#passage-reference').value='';$('#passage-reference').removeAttribute('aria-invalid');$('#passage-reference-status').textContent='';$('#passage-reference-go').disabled=false;
  $('#passage-book').value=readingBook;renderPassageBooks();setPassageStep('book');updatePassagePickerChapters(readingChapter);updatePassagePickerVerses([...selectedVerses][0]||1);setPassageStep('book');passagePicker.showModal();fitPassageBookLabels();
 }
 document.addEventListener('click',ev=>{
- const opener=ev.target.closest('.passage-picker-trigger,.passage-heading-picker');if(opener)openPassagePicker(opener);
+ const opener=ev.target.closest('.passage-picker-trigger,.passage-heading-picker,.reader-floating-picker');if(opener)openPassagePicker(opener);
 });
 const readerSheet=$('#reader-settings'),readerToolbar=document.querySelector('.reader-toolbar');
 // Settings is shared by Read, Chat and Marked; never leave it under a hidden page.
@@ -659,6 +659,37 @@ window.addEventListener('resize',fitContextCitations);
  new MutationObserver(update).observe(document.body,{attributes:true,attributeFilter:['class']});
  originals.forEach(button=>new MutationObserver(update).observe(button,{attributes:true,attributeFilter:['disabled']}));
  window.addEventListener('resize',update);window.addEventListener('scroll',update,{passive:true});update();
+})();
+
+// Restore the three independent floating passage controls from 72a278e.
+// Keep the current picker/data and clear the app's newer bottom navigation.
+(() => {
+ const nav=document.createElement('nav');nav.id='reader-floating-navigation';nav.hidden=true;nav.setAttribute('aria-label','Floating chapter navigation');
+ const arrow=path=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="${path}"/></svg>`;
+ nav.innerHTML=`<button type="button" id="reader-floating-prev" aria-label="Previous chapter">${arrow('m15 5-7 7 7 7')}</button><button type="button" id="reader-floating-picker" class="reader-floating-picker" aria-label="Choose book, chapter and verse" aria-haspopup="dialog" aria-controls="passage-picker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14m-10-3V3h6a4 4 0 0 1 4 4 4 4 0 0 1 4-4h6v15h-6a4 4 0 0 0-4 3 4 4 0 0 0-4-3Z"/></svg></button><button type="button" id="reader-floating-next" aria-label="Next chapter">${arrow('m9 5 7 7-7 7')}</button>`;
+ document.body.append(nav);
+ const originals=[$('#prev-bottom'),$('#next-bottom')],paging=[$('#reader-floating-prev'),$('#reader-floating-next')],picker=$('#reader-floating-picker');
+ paging.forEach((button,index)=>button.onclick=()=>originals[index].click());
+ let frame=0,readingY=window.scrollY;
+ const visible=node=>{const rect=node.getBoundingClientRect();return rect.width>0&&rect.height>0&&rect.bottom>0&&rect.top<innerHeight;};
+ function sync(){
+  frame=0;if(!document.body.classList.contains('dialog-scroll-locked'))readingY=window.scrollY;
+  const modal=!!document.querySelector('dialog[open]');
+  nav.hidden=view!=='read'||!reading||readingY<80||modal||document.body.classList.contains('highlight-selecting')||$('#chapter-text').getAttribute('aria-busy')==='true';
+  const tabs=document.querySelector('#lensMasthead nav.lens-primary'),rect=tabs?.getBoundingClientRect();
+  const clearance=tabs&&getComputedStyle(tabs).position==='fixed'&&rect.top<innerHeight?innerHeight-rect.top:0;
+  nav.style.setProperty('--reader-floating-clearance',Math.ceil(clearance)+'px');
+  const bottomVisible=originals.some(visible);
+  paging.forEach((button,index)=>{button.disabled=originals[index].disabled;button.hidden=bottomVisible;});
+  if(reading){const label=books[readingBook].name+' '+readingChapter;picker.title=label+' — Choose book, chapter and verse';picker.setAttribute('aria-label',label+'. Choose book, chapter and verse');}
+ }
+ function schedule(){if(!frame)frame=requestAnimationFrame(sync);}
+ window.BibleLensReaderFloating={refresh:sync};
+ window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);
+ for(const event of ['viewchange','biblelens:readerchange','biblelens:readerloading','biblelens:statechange'])window.addEventListener(event,schedule);
+ new MutationObserver(schedule).observe(document.body,{subtree:true,attributes:true,attributeFilter:['open','class']});
+ const tabs=document.querySelector('#lensMasthead nav.lens-primary');if(tabs)new ResizeObserver(schedule).observe(tabs);
+ sync();
 })();
 
 // Match the reader's draggable floating control, with a separate saved position.
