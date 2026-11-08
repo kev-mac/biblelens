@@ -51,7 +51,7 @@ assert.equal(declaration('html body.lens-app #passage-picker .passage-number spa
 assert.equal(declaration('html body.lens-app #passage-picker #passage-reference-go','width'),'auto','The Go button must override the narrow-screen form button width so the input has room');
 assert.equal(declaration('html body.lens-app #passage-picker #passage-reference','width'),'100%');assert.equal(declaration('html body.lens-app #passage-picker .passage-reference-controls','grid-template-columns'),'minmax(0,1fr) auto');
 assert.equal(declaration('html body.lens-app #passage-picker .passage-book-grid .passage-number span','white-space'),'nowrap');assert(declaration('html body.lens-app #passage-picker .passage-steps button','border').includes('1px solid'));
-assert.equal(declaration('html body.lens-app #lensReadingBar #lens-edition','appearance'),'auto');assert(workspace.includes('class="lens-translation-caption">Translation</span>'));
+assert.equal(declaration('html body.lens-app #lensReadingBar #lens-edition','appearance'),'auto');assert.equal(declaration('html body.lens-app #lensReadingBar #lens-edition','flex'),'none','Reset the inherited narrow-screen 44px flex basis in the column label');assert(workspace.includes('class="lens-translation-caption">Translation</span>'));
 assert.equal(declaration('html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip)','text-decoration'),'none');
 assert(declaration('html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible','outline').includes('3px solid'));
 const storySource=read('src/stories.js').split('let storiesActive=')[0].replace('/*__STORY_IMAGES__*/{}',JSON.stringify({'A <title>':{src:'/art.webp',alt:'Imagined scene: source description',width:1200,height:675}}));

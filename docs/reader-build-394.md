@@ -62,3 +62,13 @@ intended 15px visual limit. The final .5rem pill corrects that size. The
 601px translation selector measured 64×32px in both engines, while the reader
 fixture reported 64×44px at 320px; that narrower case remains under investigation.
 These failed candidates are not accepted release artifacts.
+
+Run 42429883603 passed preparation, image parity and all 32 evidence cases;
+the reader stopped at 320px because the toolbar select still rendered 44px
+high. Rendered diagnostics showed a 32px minimum and the intended new font.
+Source inspection then identified the max-360px rule setting a 44px flex basis
+on both the label and select. In the newer column label that basis controls
+the select height. The final selector resets its own flex basis with
+`flex:none`; the rendered-size assertion is retained. Scroll setup for
+cross-book actions is immediate; the visibility check uses an actual downward
+mouse wheel event. Both changes require a fresh exact-source run.
