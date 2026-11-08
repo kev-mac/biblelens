@@ -3379,7 +3379,7 @@ html body.lens-app #ux-chapter-picker .ux-picker-chapter {flex:none;white-space:
 html body.lens-app #lensReadingBar .lens-edition-label {display:flex;flex-direction:column;align-items:stretch;gap:2px;position:static;flex:0 0 max(72px,4rem);width:max(72px,4rem);min-width:72px;height:auto;margin:0;color:var(--lens-ink);}
 html body.lens-app #lensReadingBar .lens-edition-label::before,html body.lens-app #lensReadingBar .lens-edition-label::after {content:none;display:none;}
 html body.lens-app #lensReadingBar .lens-translation-caption {font:500 .6875rem/1.2 var(--ui-font);color:var(--lens-muted);white-space:nowrap;}
-html body.lens-app #lensReadingBar {background:var(--lens-paper);}
+html body.lens-app #read-view #lensReadingBar {background:var(--lens-paper);backdrop-filter:none;-webkit-backdrop-filter:none;}
 html body.lens-app #lensReadingBar #lens-edition {appearance:auto;flex:none;width:100%;min-width:0;min-height:32px;height:32px;padding:3px 6px;border:1px solid var(--lens-rule);border-radius:var(--control-radius,12px);font:500 .75rem/1.3 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
 html body.lens-app #chapter-text :is(.verse,.chapter-heading-row) {scroll-margin-top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + var(--reader-bar-height,64px) + 16px);}
 html body.lens-app #main .directory-hub .stories-header {top:calc(var(--app-safe-top) + var(--ux13-masthead-height));}
