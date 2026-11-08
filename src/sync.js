@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(meta.disconnectPending)await retryDisconnect();else say('Sync is off. Your notes remain on this device.');
  }
  function button(label,action){const b=document.createElement('button');b.type='button';b.className='secondary';b.textContent=label;b.onclick=async()=>{b.disabled=true;try{await action();}catch(error){say(error.message);}finally{b.disabled=false;}};actions.append(b);return b;}
- function downloadBackup(){const value=localStorage.getItem('biblelens-before-cloud-sync');if(!value){say('A safety backup is created when sync first starts.');return;}const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([value],{type:'application/json'}));a.download='BibleLens-before-cloud-sync.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+ function downloadBackup(){const value=localStorage.getItem('biblelens-before-cloud-sync');if(!value){say('A safety backup is created when sync first starts.');return;}const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([value],{type:'application/json'}));a.download='xLenz-Bible-before-cloud-sync.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
  function render(){
   actions.replaceChildren();pair.hidden=true;
   if(meta.disconnectPending){
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }else if(native){
    const p=document.createElement('p');p.textContent='Sign in and enable sync on the website, choose Connect iPhone, then paste its one-time code here.';const input=document.createElement('input');input.placeholder='xxxx-xxxx-xxxx-xxxx';input.autocomplete='off';input.setAttribute('aria-label','Website connection code');pair.replaceChildren(p,input);pair.hidden=false;
    button('Connect',async()=>{const data=await api('/pair/redeem',{method:'POST',body:JSON.stringify({code:input.value})});backup();meta={enabled:true,base:{},owner:data.userId,token:data.token};saveMeta();render();await sync();});
-   const a=document.createElement('a');a.href=cloud+'/#sync';a.target='_blank';a.rel='noopener';a.textContent='Open BibleLens Website';actions.append(a);
+   const a=document.createElement('a');a.href=cloud+'/#sync';a.target='_blank';a.rel='noopener';a.textContent='Open xLenz: Bible Website';actions.append(a);
   }else if(identity){
    button('Enable Cloud Sync',async()=>{backup();meta={enabled:true,base:{},owner:identity.userId,token:null};saveMeta();render();await sync();});
   }else{
