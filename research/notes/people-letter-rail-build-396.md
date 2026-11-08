@@ -1,0 +1,11 @@
+# People alphabet rail: build 396
+
+Baseline: accepted contradiction checkpoint build 395, GitHub main `d276ba85e7fda86867fb3517b291a29480c50dab`. The eight scoped assessments and all original evidence fields remain unchanged. No new book results belong to this UI correction.
+
+The supplied native iPad screenshot was materialized through the current known-ID Library workflow and viewed on this executor. It is 1,345 × 2,048 pixels, 330,829 bytes, SHA-256 `fb246fd413c7a08803866c6ae1ece4e4865fdaf5bc0b62af662b7d4372b0bc22`, Library version metadata `0`. The original image remains outside the repository. It shows the People list at J, A behind the masthead, B as the first visible letter and a large gap below Z.
+
+The shared directory rail used a 64-pixel header fallback and a 572-pixel maximum height. The correction measures the actual masthead, visible directory controls, main content, visual viewport, fixed navigation and safe areas. Both the edge activation surface and open rail use the resulting height. Header/navigation resize, viewport resize/pan, native inset and app-style changes schedule fresh measurements. Letter glyphs compress with short viewports; disabled state, hold delay, tap, slide selection, keyboard access and the large active-letter preview remain.
+
+Focused unit checks pass for bounds, native insets, changed headers, visual viewport and main bounds, plus existing activation/drag/cancel/filter behavior. Evidence preservation passes. Browser validation is pending: the planned 56 People/Places cases cover iPad portrait/landscape, split/short heights, phone and desktop, native safe-area fixtures, A/Z hit testing, disabled letters, keyboard, real taps, mouse dragging and Chromium engine touch input. Dynamic resize and header/safe-area changes are exercised without reopening the rail.
+
+Publication and installation remain unperformed in this cloud task. Required release gates must pass for the final source. The parent owns the supported publication route; signed native asset parity and actual device build numbers require separate verification.

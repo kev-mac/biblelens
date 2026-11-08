@@ -33,10 +33,27 @@ export function createDirectoryLetterRail(host, list, label, onJump) {
  function measure() {
   frame = 0;
   if (host.hidden || !host.getClientRects().length) return;
+  const viewport = window.visualViewport;
+  const viewportTop = viewport?.offsetTop || 0;
+  const viewportBottom = viewportTop + (viewport?.height || window.innerHeight);
+  const insets = getComputedStyle(control);
+  const safeTop = Math.max(parseFloat(insets.getPropertyValue('--app-safe-top')) || 0, parseFloat(insets.getPropertyValue('--letter-safe-top')) || 0);
+  const safeBottom = Math.max(parseFloat(insets.getPropertyValue('--app-safe-bottom')) || 0, parseFloat(insets.getPropertyValue('--letter-safe-bottom')) || 0);
+  const rect = node => node?.getClientRects().length ? node.getBoundingClientRect() : null;
+  const header = rect(document.querySelector('#lensMasthead'));
+  const main = rect(document.querySelector('#main'));
+  const navigation = document.querySelector('#lensMasthead nav.lens-primary');
+  const navigationRect = rect(navigation);
+  const headerBottom = Math.max(viewportTop + safeTop, header?.bottom || 0);
+  let bottom = Math.min(viewportBottom - safeBottom, main?.bottom ?? viewportBottom);
+  if (navigationRect && getComputedStyle(navigation).position === 'fixed' && navigationRect.top > headerBottom && navigationRect.top < viewportBottom) bottom = Math.min(bottom, navigationRect.top);
   const controls = host.querySelectorAll('.stories-header,.characters-search-box,.filter-carousel');
-  const top = Math.max(64, ...[...controls].map(node => node.getBoundingClientRect().bottom)) + 8;
+  const top = Math.max(headerBottom, main?.top || 0, host.getBoundingClientRect().top, ...[...controls].map(node => rect(node)?.bottom || 0)) + 8;
+  const height = Math.max(0, bottom - 8 - top);
   control.style.setProperty('--letter-rail-top', top + 'px');
-  const jumpTop = Math.max(64, host.querySelector('.stories-header')?.getBoundingClientRect().bottom || 0) + 8;
+  control.style.setProperty('--letter-rail-height', height + 'px');
+  control.style.setProperty('--letter-rail-visibility', height ? 'visible' : 'hidden');
+  const jumpTop = Math.max(headerBottom, rect(host.querySelector('.stories-header'))?.bottom || 0) + 8;
   const pageOffset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
   host.style.setProperty('--directory-letter-top', Math.max(0, jumpTop - pageOffset) + 'px');
   if (pointer !== null) return;
@@ -96,8 +113,13 @@ export function createDirectoryLetterRail(host, list, label, onJump) {
  document.addEventListener('pointerdown', event => { if (opened && !control.contains(event.target)) conceal(); }, true);
  document.addEventListener('scroll', schedule, {capture:true, passive:true});
  window.addEventListener('resize', schedule);
+ window.visualViewport?.addEventListener('resize', schedule);
+ window.visualViewport?.addEventListener('scroll', schedule);
  window.addEventListener('viewchange', () => { conceal(); schedule(); });
- new ResizeObserver(schedule).observe(host);
+ const observer = new ResizeObserver(schedule);
+ for (const node of [host, document.querySelector('#lensMasthead'), document.querySelector('#lensMasthead nav.lens-primary')]) if (node) observer.observe(node);
+ const styleObserver = new MutationObserver(schedule);
+ for (const node of [document.body, document.documentElement]) styleObserver.observe(node, {attributes:true, attributeFilter:['class','style']});
  return {
   element: control,
   update(names) {
