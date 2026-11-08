@@ -467,7 +467,30 @@
         "verse": 14
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "Exodus links Sabbath rest to creation. Deuteronomy links it to release from slavery.",
+      "passages": [
+        "Exodus 20:8-11",
+        "Deuteronomy 5:12-15"
+      ],
+      "context": "Exodus presents the command at Sinai. Moses later repeats it to Israel in Deuteronomy, stressing that servants should rest too.",
+      "explanations": [
+        {
+          "reading": "One practice can have more than one reason",
+          "support": "Both passages require weekly rest for the household and servants. Neither says its stated reason is the only one."
+        },
+        {
+          "reading": "The repeated command has a changed emphasis",
+          "support": "Deuteronomy asks Israel to remember slavery and gives servants rest. This supports a changed focus in the retelling, without dating either account."
+        }
+      ],
+      "assessment": "The reasons differ, while the command to rest is shared. These verses alone do not make the commands incompatible or establish which account came first.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Only the cited KJV, ASV and WEB wording and context were checked. Earlier language and historical claims remain pending.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "early-servitude",
@@ -6802,7 +6825,32 @@
         "url": "https://ebible.org/eng-kjv/EXO10.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "Hail strikes every field plant, but locusts later eat what the hail left.",
+      "passages": [
+        "Exodus 9:25",
+        "Exodus 9:31-32",
+        "Exodus 10:4-5",
+        "Exodus 10:12-15"
+      ],
+      "context": "Moses warns Pharaoh about locusts after the hail. The hail account names damaged flax and barley, then says wheat and another late crop survived.",
+      "explanations": [
+        {
+          "reading": "The stated exception limits the broad wording",
+          "support": "Exodus 9:31-32 directly names crops that were not struck. Exodus 10 repeatedly says the locusts ate what the hail left."
+        },
+        {
+          "reading": "Read every plant as an unrestricted claim",
+          "support": "The broad wording of Exodus 9:25 supports this reading in isolation. It conflicts with the crop exception stated later in the same chapter."
+        }
+      ],
+      "assessment": "The passage itself states that some crops survived. No added regrowth story is needed. This does not identify every crop term or verify the event as history.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Only the cited KJV, ASV and WEB wording and context were checked. Earlier language and historical claims remain pending.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-last-audience",
@@ -19364,7 +19412,32 @@
         "url": "https://ebible.org/eng-kjv/EXO37.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "Exodus says Bezalel made the ark. In Deuteronomy, Moses says that he made it.",
+      "passages": [
+        "Exodus 25:10-22",
+        "Exodus 31:1-11",
+        "Exodus 37:1-9",
+        "Deuteronomy 10:1-5"
+      ],
+      "context": "God gives Moses ark instructions and names skilled makers in Exodus. Exodus describes Bezalel doing the work. Moses later recalls replacing the tablets in Deuteronomy.",
+      "explanations": [
+        {
+          "reading": "A leader receives credit for work done under his direction",
+          "support": "Exodus 31 assigns the skilled workers tasks that God commanded Moses. This allows shared credit, though Deuteronomy does not state that Moses delegated the work."
+        },
+        {
+          "reading": "Moses made a separate wooden ark",
+          "support": "Deuteronomy mentions a wooden ark without describing gold. This allows a separate-ark proposal, but these passages do not explicitly identify two arks."
+        }
+      ],
+      "assessment": "If both claims mean direct personal work on the same ark, the named builder differs. Shared credit could reconcile them. Omitted gold does not deny gold. The history of the accounts remains unsettled.",
+      "book": "Exodus",
+      "checked": "2026-11-07",
+      "verification": "Only the cited KJV, ASV and WEB wording and context were checked. Earlier language and historical claims remain pending.",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "deuteronomy-eyewitness-audience",

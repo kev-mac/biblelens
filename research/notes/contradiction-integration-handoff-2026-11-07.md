@@ -1,3 +1,5 @@
+> Historical build 389 record. Its publication, browser and device blockers below describe that attempt, not the current release. The parent confirms build 394 is published and installed on both devices. See `contradiction-integration-batch-395.json` and `contradiction-integration-handoff-build-395.md` for the new bounded integration.
+
 # Contradiction integration handoff
 
 Kevin authorized saving the Esther, Ecclesiastes and Nehemiah reports/bundles, and committing, pushing, publishing and installing. Preserve that authorization. The parent coordinates one session per book with at most ten concurrently. This integration session started no book sessions and did not change their work.
