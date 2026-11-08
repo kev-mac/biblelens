@@ -61,14 +61,14 @@ async function jump(page,rail,kind,letter){
 async function drag(page,context,engine,kind,touch){
  let {edge,rail}=await openWithKeyboard(page,kind);await page.keyboard.press('Escape');await rail.waitFor({state:'hidden'});
  const edgeBox=await edge.boundingBox(),x=edgeBox.x+edgeBox.width/2,y=edgeBox.y+edgeBox.height*9.5/26;
- const cdp=touch?await context.newCDPSession(page):null;
+ const cdp=touch?await context.newCDPSession(page):null;let disabledSkipped=false;
  const move=async (yy,steps=5)=>{if(cdp)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:yy}]});else await page.mouse.move(x,yy,{steps});};
  try{
   if(cdp)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});else {await page.mouse.move(x,y);await page.mouse.down();}
   await rail.waitFor({state:'visible'});await frames(page);
   const preview=page.locator((kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');
   await page.waitForFunction(selector=>document.querySelector(selector)?.textContent==='J',(kind==='People'?'#characters-view':'#places-view')+' .directory-letter-preview');
-  const disabled=rail.locator('button:disabled').first(),disabledSkipped=(await disabled.count())>0;
+  const disabled=rail.locator('button:disabled').first();disabledSkipped=(await disabled.count())>0;
   if(disabledSkipped){
    const before=await preview.innerText(),box=await disabled.boundingBox();await move(box.y+box.height/2,1);await frames(page);assert.equal(await preview.innerText(),before,'Dragging over a disabled letter keeps the current selection');
   }
