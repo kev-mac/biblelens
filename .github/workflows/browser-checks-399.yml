@@ -41,8 +41,8 @@ jobs:
       - name: Verify exact build 399 source
         run: |
           git merge-base --is-ancestor 0ad1d007bf99dc5c8263592d75f176cd8b456d1d HEAD
-          git cat-file -e 315edfca1d67feeb6b0631912c0d581619c021c4^{commit}
-          git diff --exit-code 315edfca1d67feeb6b0631912c0d581619c021c4 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle
+          git cat-file -e fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895^{commit}
+          git diff --exit-code fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -52,7 +52,7 @@ jobs:
           assert.equal(release.buildNumber,399);
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: 315edfca1d67feeb6b0631912c0d581619c021c4');
+          console.log('Pinned source commit: fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -127,9 +127,16 @@ jobs:
           assert(ready,'The exact build 399 preview did not become ready.');
           JS
 
+      - name: Check inline evidence pills in Chromium and WebKit
+        id: evidence
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
+
       - name: Check reader controls on phones, iPad and desktop
         id: reader
-        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.evidence.outcome == 'success' }}
         env:
           NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
         run: node scripts/check-reader-annotations-browser.mjs 2>&1 | tee .release/browser-ci/reader-controls.log
@@ -198,12 +205,6 @@ jobs:
           retention-days: 7
           include-hidden-files: true
 
-      - name: Check inline evidence pills in Chromium and WebKit
-        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.rail.outcome == 'success' }}
-        env:
-          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
-        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
-
       - name: Check Explore search and responsive portrait/landscape tiles
         if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.rail.outcome == 'success' }}
         env:
@@ -230,7 +231,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'315edfca1d67feeb6b0631912c0d581619c021c4',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
