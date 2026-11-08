@@ -88,6 +88,10 @@ assert(contextText.includes('class="preview-selected"><b>3</b> WEB 3'));
 assert(contextText.includes('class="preview-selected"><b>4</b> This verse is absent'));
 assert(contextText.includes('class="preview-context"><b>5</b> WEB 5'));
 handlers.keydown({key:'Escape',preventDefault(){}});assert(popup.hidden);assert.equal(doc.activeElement,contextRange);
+handlers.click({target:target(contextRange),preventDefault(){}});await settle();
+let ownedFocus=false;popupHandlers.uxpopupclose({preventDefault(){ownedFocus=true;}});
+assert(ownedFocus,'Citation owner cancels the shared popup focus fallback');
+assert(popup.hidden);assert.equal(doc.activeElement,contextRange,'Shared close retains the current citation opener');
 console.log('PASS: comparison clicks open selected-edition context, mark ranges, retain missing-verse notices and restore focus without navigation.');
 
 

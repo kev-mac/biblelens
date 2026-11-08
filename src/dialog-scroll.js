@@ -32,7 +32,7 @@
  let activation=null;
  document.addEventListener('click',event=>{const element=event.target.closest('button,a,input,[tabindex]');if(element)activation={element,at:performance.now()};},true);
  const opener=()=>activation&&performance.now()-activation.at<1500?activation.element:document.activeElement;
- const close=surface=>{if(surface instanceof HTMLDialogElement)surface.close();else if(surface.hasAttribute('popover'))surface.hidePopover();else {surface.hidden=true;surface.dispatchEvent(new Event('uxpopupclose'));const opener=openers.get(surface);if(opener?.isConnected)opener.focus({preventScroll:true});}};
+ const close=surface=>{if(surface instanceof HTMLDialogElement)surface.close();else if(surface.hasAttribute('popover'))surface.hidePopover();else {surface.hidden=true;const restoreDefault=surface.dispatchEvent(new Event('uxpopupclose',{cancelable:true}));const opener=openers.get(surface);if(restoreDefault&&opener?.isConnected)opener.focus({preventScroll:true});}};
  const previews=()=>document.querySelectorAll('.ux-popup[role=dialog]:not(dialog):not([popover]):not([hidden])');
  document.addEventListener('pointerdown',event=>{for(const surface of previews())if(!surface.contains(event.target))close(surface);});
  document.addEventListener('keydown',event=>{if(event.key==='Escape')for(const surface of previews()){event.preventDefault();close(surface);}});

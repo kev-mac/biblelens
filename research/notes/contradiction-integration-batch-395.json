@@ -9,7 +9,7 @@
     "existingFiveReviewsSemanticSha256": "a04e9a73512403f1694259347f14247bdb552b59ebe3a184bb5dfaeac9d408ba",
     "baselineEvidenceSha256": "898d56733e9c824d1412e64f3b56c78dc4c0cdc62775b92fbf806f1d85d71480",
     "batchEvidenceSha256": "00b0e8dff592b96e7181f7d5f3d61f6d8c057102f5ac569c06fd8794cf37512a",
-    "ui": "No src files changed.",
+    "ui": "Build 394 layouts, styles and controls preserved. Only citation/shared-popup focus ownership is corrected after the real browser regression test failed.",
     "b4": "Only the evidence source hash changes. Draft wording remains unaccepted."
   },
   "exodus": {

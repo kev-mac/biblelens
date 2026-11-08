@@ -16,6 +16,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   page.on('pageerror',error=>errors.push(error.message));
   try{
    await page.goto(base+'/#read/1/9');
+   await page.locator('#verse-25').waitFor();
    await page.locator('#lens-edition').selectOption(edition);
    await page.waitForFunction(edition=>document.querySelector('#reader-edition').value===edition,edition);
    for(const row of records){
@@ -23,6 +24,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
     await page.evaluate(route=>BibleLensWorkspace.navigate(route),route);
     const review=page.locator('.contradiction-review:visible');
     await review.waitFor();
+    await page.locator('#debate-view .phase2-sides:not([aria-busy])').waitFor();
     assert.equal(await review.locator('p').first().innerText(),row.contradictionReview.conflict);
     assert.match(await review.innerText(),/Common Explanations/);
     assert.match(await review.innerText(),/Assessment and Limits/);
@@ -51,7 +53,8 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      const geometry=await preview.boundingBox();assert(geometry.x>=0&&geometry.x+geometry.width<=width+1);
      if(index===0)await page.screenshot({path:`${output}/${engine}-${width}-${edition}-${row.id}-context.png`,fullPage:false});
      await page.keyboard.press('Escape');await preview.waitFor({state:'hidden'});
-     assert(await link.evaluate(node=>node===document.activeElement),'Escape returns focus to the citation');
+     const focus=await link.evaluate(node=>({correct:node===document.activeElement,expected:node.outerHTML,actual:document.activeElement?.outerHTML}));
+     assert(focus.correct,'Escape returns focus to the current citation: '+JSON.stringify({id:row.id,index,ref,focus}));
     }
     assert.deepEqual(errors,[]);
     results.push({engine,width,edition,id:row.id,passages:row.contradictionReview.passages,status:'PASS'});
