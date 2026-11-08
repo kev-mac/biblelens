@@ -1141,17 +1141,37 @@
     ]
   },
   "genesis": {
-    "payloadStatus": "Originating session has supplied a confirmed final export identity and hash; retrieval on this executor queued after this Exodus checkpoint.",
+    "payloadStatus": "Actual final export successfully materialized and checksum/mapping verified on this executor; no Genesis assessment included in build 397.",
     "addedRecordIds": [],
     "verifiedDispositionIds": [],
-    "sourceSnapshot": "unavailable",
+    "sourceSnapshot": {
+      "sha256": "d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4",
+      "gitCommit": "d5aa79ab2ac2b6137b517eb7fcc0f6b85e12ed48",
+      "dataHashMatches": true
+    },
     "completeBook": false,
     "coordinationOnly": {
       "parentReported": "Final export reportedly includes 109 reviews, mappings/hashes for 42 existing evidence IDs and the original 1933-record snapshot. Contents unverified here until supported retrieval."
     },
-    "missing": "Readable final report or structured package, its source snapshot, stable disposition-to-record mapping and six edition audits.",
-    "transfer": "Known final export identified by originating session. No new retrieval attempted during the Exodus batch.",
-    "handoff": "Retrieve and verify the confirmed export through current Library known-ID workflow after this checkpoint; preserve six edition-audit, eight other-book, broader-claim and browser/touch limits."
+    "missing": "Substantive review of remaining content, six edition-source audits, eight other-book reviews, broader claims and real-browser/touch validation beyond any separately integrated subset.",
+    "transfer": "Supported known-ID Library transfer succeeded. Original ZIP and its Library identity/version remain outside the repository; source snapshot was not applied.",
+    "handoff": "Continue with a separate bounded Genesis integration from the verified actual payload, preserving all unresolved claims and existing IDs.",
+    "exportVerification": {
+      "sha256": "c090f1bdf520a21ad7e510aa0b0062e9643740539da55696d4f1f6e2e2e20cf1",
+      "bytes": 2291824,
+      "version": "0",
+      "innerChecksumsVerified": 39,
+      "manifestEntriesVerified": 38,
+      "reviewsVerified": 109,
+      "mappedReviewGroups": 37,
+      "draftReviewGroupsWithoutAppIds": 72,
+      "mappedExistingIdsVerified": 42,
+      "all1933OriginalRecordBodiesMatchCurrent": true,
+      "embeddedKjvChaptersMatched": 172,
+      "embeddedKjvVersesMatched": 5502,
+      "guideDispositionsVerified": 110,
+      "guideReviewReferencesResolve": true
+    }
   },
-  "releaseStatusAtSourceCommit": "Build 396 source and artifacts verified. No Site publication or device installation claimed here. Build 397 requires final exact-source gates; no cloud device installation."
+  "releaseStatusAtSourceCommit": "Build 397 exact source passed required release preparation and all 344 browser cases; downloaded web/offline artifacts and all thirteen reviews verified. No Site publication or device installation occurred here."
 }

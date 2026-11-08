@@ -17,5 +17,97 @@
   "b4Accepted": false,
   "sourceUiChanged": false,
   "verification": "101 new cited verse instances read in each of the packaged KJV, ASV and WEB editions. No edition-source, ancient-language or historical certification.",
-  "genesis": "Confirmed final export transfer queued after this checkpoint; no Genesis content accepted."
+  "genesis": "Actual final export byte/text and mapping verified during read-only preparation; no Genesis assessment added to build 397. Separate bounded integration follows.",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 397,
+    "sourceHash": "d728d2a075b243d9c89626c664616687eac7d54ac6d6f46b0ade6c598cfd2692",
+    "sourceCodeCommit": "f456a1c9305cafb6de3e2bb5d5669accf16fc9dc"
+  },
+  "acceptedCI": {
+    "head": "6646ccdf2df92157bdf2fd95a89931cb1a2403c9",
+    "runId": 42462068587,
+    "jobId": 128673306098,
+    "conclusion": "success",
+    "requiredReleasePreparation": "PASS",
+    "webOfflineThirteenReviewParity": "PASS",
+    "imageParity": "PASS",
+    "browserCases": 344
+  },
+  "matrices": {
+    "contradiction-reviews": {
+      "cases": 96,
+      "sha256": "ed24a5d036c98bfff4faa105c83d2d3c628aca39563a5d001216f150ba929ae3"
+    },
+    "directory-letter-rail": {
+      "cases": 56,
+      "sha256": "b1af3b9f49e00961be3c6f21183864446d0ea3ec337e5cd4aa11a3f2555554c7"
+    },
+    "evidence-tags": {
+      "cases": 32,
+      "sha256": "81203077e3db6341fcffc21e1083218bfc9d25985f9b95a6b008d36d6112fafe"
+    },
+    "reader-annotations": {
+      "cases": 112,
+      "sha256": "37507a703c6534c132b243464e142a4e655a32b25bf7579569c154fcc04611e0"
+    },
+    "explore-annotations": {
+      "cases": 48,
+      "sha256": "58978363bf305924795a869174738768a1b3debd2f1752d15a0aa70d98d6402f"
+    },
+    "maxReaderScrollRestoreDriftPx": 0
+  },
+  "newProse": {
+    "fields": 40,
+    "fkGrade": 5.926959905290914,
+    "sentenceOrJargonViolations": 0
+  },
+  "artifacts": {
+    "bundlesId": 13610862180,
+    "bundlesBytes": 452919875,
+    "bundlesZipSha256": "9d5d5f3d5adc660833ba27eaef78011b61ddfabbe5b7fd8f08d9cf5091ad970a",
+    "resultsId": 13611395737,
+    "resultsBytes": 123481317,
+    "resultsZipSha256": "512a9ae4ba080e4d1bf86a013953719f3a02f51404540f99455db84cbb7f5637",
+    "innerTarSha256": "7f2d751a688cc57cb9b630b2ab51272e65a4e5767d67a13b7e905574a38aabd9",
+    "workerBytes": 59194290,
+    "workerSha256": "c5721669e8b296d4350a219841f128ff674f9f0fd2f0a13c91249da73740ea25",
+    "downloadedAndVerified": true
+  },
+  "screenshotsInspected": [
+    {
+      "path": "contradiction-reviews/webkit-390-web-exodus-manna-storage-context.png",
+      "sha256": "8f72a35f4a1da9e9fd3a051da73ace83cb6118ef0e1652116a0c04a4902d4335"
+    },
+    {
+      "path": "contradiction-reviews/chromium-1157-asv-exodus-curtain-layers-context.png",
+      "sha256": "dafe2a207daabad73281bdf71b83285de8925463b2349abd89d562b4e060c88a"
+    },
+    {
+      "path": "contradiction-reviews/webkit-390-kjv-exodus-impartial-judgment-context.png",
+      "sha256": "1b22f956106d2263d86c567f3f8bc2fad7319bd762907bc7d536f314b1d84c46"
+    },
+    {
+      "path": "contradiction-reviews/chromium-1157-web-exodus-aaron-calf-account-context.png",
+      "sha256": "62745936bc5f41d1016d6c01a4804cc76d51e365ff2d6b9890902cf3ff446ad3"
+    },
+    {
+      "path": "contradiction-reviews/webkit-390-asv-exodus-voluntary-and-fixed-giving-context.png",
+      "sha256": "c6992f0195e1fe64de87a50c45a823e0694dc0c73d98e1933c38fb14923394db"
+    }
+  ],
+  "releaseHandoff": {
+    "exactLocalBundles": "/workspace/shared/build397-exact-bundles",
+    "sitesPackage": "/workspace/shared/build397-final-sites-package",
+    "sitesPackageEntries": [
+      ".openai",
+      "server"
+    ],
+    "independentMirrorBuild": false,
+    "sitePublishedHere": false,
+    "deviceInstallInitiated": false,
+    "signedAssetParity": "not verified",
+    "actualDeviceBuildNumbers": "not verified for 397",
+    "postPublicationVerify": "pending parent supported publication and fresh mirror comparison"
+  }
 }
