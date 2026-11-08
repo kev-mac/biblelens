@@ -1,0 +1,285 @@
+{
+  "baseline": {
+    "build": 395,
+    "commit": "d276ba85e7fda86867fb3517b291a29480c50dab",
+    "evidenceSha256": "00b0e8dff592b96e7181f7d5f3d61f6d8c057102f5ac569c06fd8794cf37512a",
+    "reviewCount": 8,
+    "exodusReportGroupsIntegrated": 8,
+    "exodusReportGroupsDeferred": 80,
+    "genesisAdded": 0
+  },
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 396,
+    "sourceHash": "d663f6d42579908d8d4e835780a523f059303f6b568dddfe861eb3dd4ede5bbb",
+    "sourceCodeCommit": "ae501cbf76f52828a8b639cc89c808356231f21f"
+  },
+  "reference": {
+    "fileName": "IMG_0174.png",
+    "width": 1345,
+    "height": 2048,
+    "bytes": 330829,
+    "sha256": "fb246fd413c7a08803866c6ae1ece4e4865fdaf5bc0b62af662b7d4372b0bc22",
+    "materialized": true,
+    "viewed": true,
+    "originalImageCommitted": false
+  },
+  "runs": [
+    {
+      "runId": 42451200573,
+      "ciHead": "08b1a10615324c9e7e061777955536b6386d82a9",
+      "conclusion": "failure",
+      "releasePreparation": "passed",
+      "chromiumDirectoryCases": 28,
+      "failure": "WebKit held-drag edge and rail geometry mismatch; general pressed-button scale applies to edge.",
+      "acceptedArtifact": false
+    },
+    {
+      "runId": 42451901994,
+      "ciHead": "90ff2478b3d4f0bbc317be48a90eb704984ed7f0",
+      "conclusion": "failure",
+      "releasePreparation": "passed",
+      "failure": "Browser harness result variable was scoped inside try and returned outside; corrected without app change.",
+      "acceptedArtifact": false
+    }
+  ],
+  "candidateCI": {
+    "runId": 42452330743,
+    "jobId": 128644006326,
+    "ciHead": "9da3f307e54b0968cf610f0d616d0c82aa78bda2",
+    "pullRequest": 6,
+    "conclusion": "success",
+    "url": "https://github.com/kev-mac/biblelens/actions/runs/42452330743"
+  },
+  "limitations": {
+    "hardwareTested": false,
+    "webKitPhysicalTouchDrag": false,
+    "signedNativeAssets": false,
+    "sitePublishedHere": false,
+    "devicesInstalledHere": false
+  },
+  "checks": {
+    "requiredReleasePreparation": "PASS",
+    "webOfflineReviewParity": "PASS",
+    "imageParity": "PASS",
+    "matrices": {
+      "directory-letter-rail": {
+        "cases": 56,
+        "sha256": "b1af3b9f49e00961be3c6f21183864446d0ea3ec337e5cd4aa11a3f2555554c7",
+        "fields": [
+          "engine",
+          "width",
+          "height",
+          "native",
+          "kind",
+          "status",
+          "initial",
+          "dynamic",
+          "gestures"
+        ]
+      },
+      "contradiction-reviews": {
+        "cases": 36,
+        "sha256": "031bf8918a0a3685541e76834624d92438c3f8c1db38630a9dcad43710afe172",
+        "fields": [
+          "engine",
+          "width",
+          "edition",
+          "id",
+          "passages",
+          "status"
+        ]
+      },
+      "evidence-tags": {
+        "cases": 32,
+        "sha256": "81203077e3db6341fcffc21e1083218bfc9d25985f9b95a6b008d36d6112fafe",
+        "fields": [
+          "engine",
+          "width",
+          "height",
+          "theme",
+          "status",
+          "categories",
+          "realGenesisContext"
+        ]
+      },
+      "reader-annotations": {
+        "cases": 112,
+        "sha256": "0f27bf8f612d4545f31dbfb7bc2fb03e3fd10bdf3959df1b21bb57dfb22da418",
+        "fields": [
+          "engine",
+          "width",
+          "height",
+          "native",
+          "dark",
+          "status",
+          "bookLabels",
+          "reference",
+          "globalSearch",
+          "wheelScroll",
+          "scrollBefore",
+          "scrollAfter"
+        ]
+      },
+      "explore-annotations": {
+        "cases": 48,
+        "sha256": "58978363bf305924795a869174738768a1b3debd2f1752d15a0aa70d98d6402f",
+        "fields": [
+          "engine",
+          "width",
+          "height",
+          "theme",
+          "status",
+          "tile"
+        ]
+      }
+    },
+    "directory": {
+      "byEngine": {
+        "chromium": 28,
+        "webkit": 28
+      },
+      "byKind": {
+        "People": 44,
+        "Places": 12
+      },
+      "allPassed": true,
+      "dynamicMeasurements": 8,
+      "mouseDrags": 56,
+      "chromiumTouchDrags": 5,
+      "disabledSkipGestures": 61,
+      "minFirstGlyphHeaderClearancePx": 7.203125,
+      "minLastGlyphBottomClearancePx": 7.890625,
+      "maxAdjacentGlyphOverlapPx": 0.234375,
+      "maxRailHeightPx": 1274,
+      "screens": [
+        [
+          320,
+          844
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          598,
+          512
+        ],
+        [
+          672,
+          1024
+        ],
+        [
+          744,
+          600
+        ],
+        [
+          834,
+          1194
+        ],
+        [
+          1024,
+          1366
+        ],
+        [
+          1194,
+          834
+        ],
+        [
+          1366,
+          1024
+        ],
+        [
+          844,
+          390
+        ],
+        [
+          1440,
+          900
+        ]
+      ]
+    },
+    "screenshotsInspected": [
+      {
+        "path": "directory-letter-rail/webkit-672x1024-native-people-J.png",
+        "sha256": "6dfd08be9803f6ff91aa7e6b9e2b85c3860b1a3aa61f9e5f52d5ec106c8b0812"
+      },
+      {
+        "path": "directory-letter-rail/webkit-1194x834-native-people-J.png",
+        "sha256": "8ad6e3d9a5d982bb524cbc6bfefc658b1ac0b662348b96f17a0aff3c7660abe2"
+      },
+      {
+        "path": "directory-letter-rail/chromium-598x512-native-people-J.png",
+        "sha256": "f5e28153bc90421cf014932fa45bee7ad5486847c1f3c2e1b4a04497d31a0220"
+      },
+      {
+        "path": "directory-letter-rail/webkit-844x390-native-people-J.png",
+        "sha256": "e791f5977fc6a208386e3422e0e5065e84ad553ab1772a413f52366be615dc9e"
+      },
+      {
+        "path": "directory-letter-rail/webkit-1024x1366-native-people-resized.png",
+        "sha256": "1b778f44944d5a5923435dc27887081ad3e2d11beb278ca90f41b84908f9161b"
+      },
+      {
+        "path": "directory-letter-rail/chromium-390x844-native-people-J.png",
+        "sha256": "e133c83d4fd36412ad419e3fba2f17f0db8b9f41946f971cb481849c1cb12931"
+      },
+      {
+        "path": "directory-letter-rail/chromium-1440x900-web-people-J.png",
+        "sha256": "fb32ae174c01a6e3e98e5b720a5cc0a86ec4eab5832b45e4ece3d4bfaaeac643"
+      },
+      {
+        "path": "directory-letter-rail/webkit-834x1194-native-people-header-safe-area.png",
+        "sha256": "18bbd0d3d0122a3a763b95c705668f3464d777d755bd897c05394408c87390c7"
+      },
+      {
+        "path": "directory-letter-rail/webkit-390x844-native-places-J.png",
+        "sha256": "6994acbaf68338c2af764f264e3177372b20e86b53a00ea78715de168a8e0fa3"
+      }
+    ],
+    "totalBrowserCases": 284,
+    "allBrowserCases": "PASS",
+    "allOriginalDataAndB4BytesUnchanged": true,
+    "evidenceSha256": "00b0e8dff592b96e7181f7d5f3d61f6d8c057102f5ac569c06fd8794cf37512a",
+    "readability": "Repository report-only check passed with inherited findings; UI copy is unchanged."
+  },
+  "artifacts": {
+    "bundles": {
+      "id": 13607091205,
+      "name": "build-396-verified-bundles-42452330743-1",
+      "bytes": 452915221,
+      "zipSha256": "02cb3304ef6ff5fd6990a2a4d7f31dfe65f98032953737d6f351c6ff221025c9",
+      "innerTarSha256": "566ad937989f4581743733f4679042526d7f9fd2ec6bd20f3dc0a2f7f42330c6"
+    },
+    "results": {
+      "id": 13606572644,
+      "name": "build-396-browser-results-42452330743-1",
+      "bytes": 114019686,
+      "zipSha256": "7906008e4a0b578b0af7a4f03ea0d4c19ce1c4eca44b119fab3db4d2592588fd"
+    },
+    "downloadedAndVerified": true,
+    "workerBytes": 59192240,
+    "workerSha256": "0d31cec5cf5c6b047665997ddd121ee9cb44569b520e82af7e5a2bfdc3b3b254",
+    "localExactBundles": "/workspace/shared/build396-exact-bundles",
+    "localSitesPackage": "/workspace/shared/build396-final-sites-package",
+    "sitesPackageEntries": [
+      ".openai",
+      "server"
+    ],
+    "independentSitesRebuild": false
+  },
+  "observations": [
+    "Nine final screenshots were viewed at original detail across iPad portrait/landscape, split/short heights, phone, desktop, header/safe-area changes and Places.",
+    "A final Places screenshot shows a transient Retrying… toast. Its cause remains undiagnosed; this is not a clean network claim.",
+    "Chromium engine touch dragging passed in five cases; WebKit taps and mouse drags passed. Actual iPad/iPhone hardware and native touch dragging were not tested here."
+  ],
+  "releaseHandoff": {
+    "siteMutationPerformed": false,
+    "sitePublicationPerformed": false,
+    "deviceInstallInitiated": false,
+    "postPublicationVerification": "pending parent publication",
+    "signedAssetParity": "pending",
+    "actualDeviceBuildNumbers": "not verified for 396",
+    "parentAction": "Refresh and compare Sites source, publish the exact tested package, run release:verify, compare signed public assets with this www, and verify actual installed iPhone/iPad build numbers."
+  }
+}
