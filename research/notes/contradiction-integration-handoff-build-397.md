@@ -1,0 +1,19 @@
+# Bounded Exodus continuation: build 397
+
+Baseline: canonical build 396, `d81f94761d9d9249a2501af23e419edc7eb8e605`. All `src/`, Worker, schema and native configuration files remain equal to that baseline. The People alphabet rail, reader controls, evidence pills, selector and Explore corrections are preserved.
+
+Five assessments are appended to existing records: `exodus-manna-storage`, `exodus-impartial-judgment`, `exodus-curtain-layers`, `exodus-aaron-calf-account` and `exodus-voluntary-and-fixed-giving`. No record or original evidence field is removed or replaced. All eight accepted review objects remain equal to build 396. B4 changes only `/sourceHashes/data/evidence.json`; its draft wording remains unaccepted.
+
+The same readable Exodus report was used: 1,081,196 bytes, SHA-256 `c1969a023fa99b56c4569de7d3dc478277c6706efd097f1fa2c5d71e78bd051d`. Its actual article passages and stated stable IDs match these five records. Article text hashes match the accepted build 395 inventory. No ZIP contents were inferred. That report's declared evidence hash identifies the snapshot documented in the earlier handoff; it does not establish the entire report-producing checkout.
+
+All 101 newly cited verse instances were read in the current packaged KJV, ASV and WEB, including the stated exceptions, differing material layers, court-case setting, speaker distinction and separate payment rules. The manna jar is ordered kept; no independent claim that a sample was chemically tested or survived until today is added. Curtain animal-hide identities and modern unit lengths remain unsettled. Aaron's evasive-defense reading is an interpretation supported by omitted workmanship and shifted blame; intent is not treated as proved. Census dates, totals, enforcement and construction history are not recertified. No ancient-language or edition-source audit is claimed.
+
+The 40 new prose fields average FK 5.91, with no detail-tier sentence-length or jargon violations. All 13 reviews average FK 6.74. Focused checks pass for 247 cited verse instances in each packaged edition, original-field preservation, the previous eight review objects, escaped rendering and clickable context links. Repository readability is report-only and retains inherited findings; it is not a clean strict pass for the whole corpus.
+
+The new inventory keeps every one of the 88 report groups. Thirteen are accepted and 75 remain deferred; among the deferred groups, 37 have listed current record IDs and 38 lack a listed match. Empty mappings do not establish that the app has no semantic equivalent. No book is fully integrated, and no new book research session was started. Build 395's inventory remains an unchanged historical checkpoint.
+
+The originating Genesis session has now supplied a confirmed final export identity and hash. Its reported 109 reviews and 42 mapped existing IDs are coordination metadata until the actual file is retrieved and checked here. Supported Library retrieval and reconciliation follow this Exodus checkpoint. Six edition-source audits, eight other-book record reviews, broader claims and real-browser/touch limits remain unresolved. No Genesis content is added to build 397.
+
+Native Sites metadata was refreshed. The documented source helper remains unavailable on this executor, and the available credential uses the HTTP-header mode rather than the ordinary-Git work-proxy route. No substitute authentication helper, source update, Site publication or device installation was attempted. The parent must refresh and compare the Sites mirror through its supported route before publication. Local browser restrictions remain respected; exact-source checks use the authorized separate GitHub runner with Chromium sandboxing enforced.
+
+Final exact-source release and browser results, commit and accepted artifact identities will be appended after verification. No publication may be inferred from this source checkpoint.

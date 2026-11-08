@@ -1,0 +1,1157 @@
+{
+  "scope": "Build 397 bounded Exodus continuation; preserve all build 396 UI and the eight accepted assessments. No complete book.",
+  "canonicalBaseline": "d81f94761d9d9249a2501af23e419edc7eb8e605",
+  "mirrorBaseline": null,
+  "mirrorComparison": "Native Site metadata refreshed. Source helper is unavailable on this executor; no Site source mutation or publication. Parent must refresh and compare the mirror before release.",
+  "preservation": {
+    "recordCount": 1933,
+    "originalFieldsSemanticSha256": "e606094ecd328dca081d630facc7f803bcc10e5c21c258735b1b3eaba164f6d1",
+    "existingFiveReviewsSemanticSha256": "a04e9a73512403f1694259347f14247bdb552b59ebe3a184bb5dfaeac9d408ba",
+    "baselineEvidenceSha256": "00b0e8dff592b96e7181f7d5f3d61f6d8c057102f5ac569c06fd8794cf37512a",
+    "batchEvidenceSha256": "a350b771f26ea8796f7767704d247813b3ef5b5c6d638410dd476a860ae103aa",
+    "ui": "All src files equal accepted build 396; no UI edits.",
+    "b4": "Only evidence source hash changes; draft remains unaccepted.",
+    "existingEightReviewsSemanticSha256": "bd87e605c7e45c66daef0f1f24f683b3bf26232a842da6fcef6c04a0bd70699e"
+  },
+  "exodus": {
+    "libraryFileId": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+    "libraryVersionFromMaterializedXattr": "0",
+    "fileName": "exodus-review.html",
+    "bytes": 1081196,
+    "sha256": "c1969a023fa99b56c4569de7d3dc478277c6706efd097f1fa2c5d71e78bd051d",
+    "readableLocalBytes": true,
+    "zipContentsVerified": false,
+    "sourceSnapshot": {
+      "declaredEvidenceSha256": "d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4",
+      "matchingEvidenceGitCommit": "b3c4713c98c7b418d44585bca38d3e5607cb570b",
+      "limit": "The report declares a data hash, not this Git commit. Equality establishes the evidence snapshot, not the entire producing checkout."
+    },
+    "verification": {
+      "reportEmbeddedKjvChapters": 168,
+      "reportEmbeddedKjvVerses": 5238,
+      "packagedKjvMismatches": 0,
+      "selectedAssessments": "All new cited passage wording and context read in the current packaged KJV, ASV and WEB. Existing eight assessments preserved.",
+      "limits": "No ancient-language, animal/food identification, edition-source, construction, census or historical-event claims recertified.",
+      "mappingMethod": "Report-listed stable IDs were checked for exact existence. Groups without listed IDs remain unmapped, except the accepted burning-bush review matched by subject and all cited ranges. Empty currentRecordIds does not establish that the application has no equivalent.",
+      "mappingCounts": {
+        "groupsWithCurrentIds": 50,
+        "uniqueCurrentIds": 55,
+        "deferredGroupsWithCurrentIds": 37,
+        "deferredGroupsWithoutListedMatch": 38
+      }
+    },
+    "groupedAssessments": 88,
+    "previouslyIntegratedRecordIds": [
+      "early-sabbath",
+      "exodus-hardening-agency",
+      "exodus-crops-surviving-hail",
+      "deuteronomy-ark-builder",
+      "moses-father-in-law-names",
+      "angel-of-the-lord-speaks-as-god-identity-unstated",
+      "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+      "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+    ],
+    "addedRecordIds": [
+      "exodus-manna-storage",
+      "exodus-impartial-judgment",
+      "exodus-curtain-layers",
+      "exodus-aaron-calf-account",
+      "exodus-voluntary-and-fixed-giving"
+    ],
+    "integratedGroups": 13,
+    "deferredGroups": 75,
+    "completeBook": false,
+    "assessments": [
+      {
+        "sourceReviewId": "exodus-01",
+        "heading": "1. Seventy or seventy-five people?",
+        "sourceRecordIds": [
+          "exodus-family-counts"
+        ],
+        "currentRecordIds": [
+          "exodus-family-counts"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b937a14e1566090270b5e62ced8dcd5041737e79e34835f39df1d3e63e8dfd59",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-02",
+        "heading": "2. The midwives’ answer and the ban on lying",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "eb8789f2412530bb4ddfb0b4a0eedce6c0bcb5e86837e08b06c24c5af0e21a5b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-03",
+        "heading": "3. Moses fled in fear or left without fear?",
+        "sourceRecordIds": [
+          "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+        ],
+        "currentRecordIds": [
+          "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "8dbde7d67d3dbbf74cb02fb58d9a7aa036037041179fb02917a58f24313f569a"
+      },
+      {
+        "sourceReviewId": "exodus-04",
+        "heading": "4. Concern for Israel and impartial judgment",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4f6ca19201b5cb18d803be4bfecc1d5662052944dda050606a78226b0a295594",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-05",
+        "heading": "5. Reuel, Jethro, and Hobab",
+        "sourceRecordIds": [
+          "moses-father-in-law-names"
+        ],
+        "currentRecordIds": [
+          "moses-father-in-law-names"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "6e88e43a176f53f897d5567983a897fc99cd2437287b486b561af17540537150"
+      },
+      {
+        "sourceReviewId": "exodus-06",
+        "heading": "6. God or an angel in the bush?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [
+          "angel-of-the-lord-speaks-as-god-identity-unstated"
+        ],
+        "unmatchedSourceIds": [],
+        "mappingNote": "No stable ID listed by report; subject and all three passage ranges match the existing accepted review.",
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "989a473bd7c1492c637d4785d8d21867e06a82ce5138ac01985662c56094d58b"
+      },
+      {
+        "sourceReviewId": "exodus-07",
+        "heading": "7. Miraculous signs and forbidden magic",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "03df262bf1745df97808e67870adfc0836da2657dfb38b01e87461f47aff623d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-08",
+        "heading": "8. Moses’s speech and Stephen’s praise",
+        "sourceRecordIds": [
+          "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+        ],
+        "currentRecordIds": [
+          "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "876126166a26c9356b2acd7b2dc4221798235f49f03a3d7340f6ff804afb831a"
+      },
+      {
+        "sourceReviewId": "exodus-09",
+        "heading": "9. Who hardens Pharaoh’s heart?",
+        "sourceRecordIds": [
+          "exodus-hardening-agency"
+        ],
+        "currentRecordIds": [
+          "exodus-hardening-agency"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "74a3f2bb5f8fac65eac62d7bec648b4936bef5479352a6c90ac6d8c11f155157"
+      },
+      {
+        "sourceReviewId": "exodus-10",
+        "heading": "10. One son and many sons",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3106fc189a121706a0c6ce88347cc99e920b168849619c35922d421542d6f44d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-11",
+        "heading": "11. Several divine names and titles",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a6165f7846e99907dbee4dca95723a56f18c3ee96266dec0a97c14c734033f72",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-12",
+        "heading": "12. Seeing God and speaking face to face",
+        "sourceRecordIds": [
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god",
+          "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10"
+        ],
+        "currentRecordIds": [
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god",
+          "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b52c0f4c09d3069e607b04097850f76fd5d5ddbe5ff859753e87be67d5e830f2",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-13",
+        "heading": "13. Was the name already known to Abraham?",
+        "sourceRecordIds": [
+          "exodus-divine-name"
+        ],
+        "currentRecordIds": [
+          "exodus-divine-name"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "af8609ced372b3d178e198831d67ba2c5dd1e71de70b539d3bd15e1ef9494670",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-14",
+        "heading": "14. What does the fourth generation count?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "970af8412f7416d5186a29eead7a63c6b428b26b644275b015a92bb4673e18b9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-15",
+        "heading": "15. Mahli: son or descendant of Levi?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "f99f1b0895bde9d700e8cfc650367eba7ac39f11adf097dcdc0ac586ab9d6ca4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-16",
+        "heading": "16. Two men named Libni?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1ae6542e9cb3f241e94664d1930554c6ccfddac3d95fb9f054863335fb5e13e9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-17",
+        "heading": "17. Jochebed’s marriage and the later kinship law",
+        "sourceRecordIds": [
+          "jochebed-his-fathers-sister-or-his-fathers-brothers-daughter-greek"
+        ],
+        "currentRecordIds": [
+          "jochebed-his-fathers-sister-or-his-fathers-brothers-daughter-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "50e2ef9df1cce7da356f370717324cd20afb24ef56819c2c8f169485bac5fd7b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-18",
+        "heading": "18. Commanded sacrifices and rejected sacrifices",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "97ea7b6a521668299e91d1440ff73855dd1d983f5a848d7cc3cec93682f446e5",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-19",
+        "heading": "19. Livestock after all livestock die",
+        "sourceRecordIds": [
+          "exodus-livestock-scope"
+        ],
+        "currentRecordIds": [
+          "exodus-livestock-scope"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "f451d136ee9e3d0d3582233ce932d0ac7a1ee4afed7b9ce8e560cb50a2534778",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-20",
+        "heading": "20. Ownership of the earth",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a77affe516667f9f0dd7e20dae26a3780dd9a5e33618eaf38fa49961be3b2f5c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-21",
+        "heading": "21. Six or seven days of unleavened bread?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1cdc53885695d368eccfec388dc980bdb9b85d8d08af86348fc5abbc97b21444",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-22",
+        "heading": "22. Four hundred or 430 years?",
+        "sourceRecordIds": [
+          "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+          "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek"
+        ],
+        "currentRecordIds": [
+          "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+          "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bf65e9a45d84d794ed55b2847e52b4fa41d0b97640e3229068fb144a6671455e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-23",
+        "heading": "23. Slavery permitted and liberty affirmed",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ffc1e0bdf9b49a9506fab8eaa428f05ad9491bd242d0a65dce2b6a042cb5aa1d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-24",
+        "heading": "24. Can a foreigner eat Passover?",
+        "sourceRecordIds": [
+          "exodus-passover-membership"
+        ],
+        "currentRecordIds": [
+          "exodus-passover-membership"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "01df025affae6bbf0a005a8a8191871aa425c48e8061e56ce96f63ec1460db3b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-25",
+        "heading": "25. Warrior and God of peace",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "9281801a72040eef1ec29b707c9f4d3fd151a3fa84e769349c55bc4d0be66dd9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-26",
+        "heading": "26. Other gods and only one God",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2ab3cad9daf478f9298313618c36a43a4700887fd557601b4d7ea8c83d871bc3",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-27",
+        "heading": "27. What was inside the ark?",
+        "sourceRecordIds": [
+          "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+        ],
+        "currentRecordIds": [
+          "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "5355873fb8be4eff3b92b036e80ee0d609e3e9c5ca3d80be2e3b450f5f38e335",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-28",
+        "heading": "28. Two rock-water scenes",
+        "sourceRecordIds": [
+          "numbers-rock-instructions-differ"
+        ],
+        "currentRecordIds": [
+          "numbers-rock-instructions-differ"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "02ef22a7369d4a734de81c84f6725020bda5e2f3cc9789dc8ce5ded797418ea1",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-29",
+        "heading": "29. Testing God and being tempted by evil",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "64812f45bba9c6818e2c14e5633101318dd5f3745974ccefb9b33c08bf0c4f92",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-31",
+        "heading": "30. God’s law through angels",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "906aed775034919fd3e98eff52fb2151b98578eb16b49b5c602f8da419635a11",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-32",
+        "heading": "31. Children and ancestral wrongdoing",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "050382b40b2ae9ae2a3fa78e4f134bb06d18fae637c9f2d7b21814c294d0378f",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-33",
+        "heading": "32. Is Sabbath observance required?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c5e967947dea22db28bdd9fd2fb1f1d564dc7a7c4550b9ea310151cb709623a6",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-34",
+        "heading": "33. Honoring parents and costly discipleship",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "77ecbf57aaa1d0ea7c74d630e8b182ad2db9c2af7c5755f6c0e571b8bd948c3c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-35",
+        "heading": "34. Calling someone father",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8410a970ce64356815557ae2c6e4323941b5d31df93f24db64cfd98469a4d459",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-36",
+        "heading": "35. Adultery and Hosea’s marriage",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1c0bd370414c6c4984fdf04ba489f4f69148ada52aaecb4b4ea2f43bc2cc023d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-37",
+        "heading": "36. Egyptian valuables and the ban on theft",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0ec55d0306ff0b68f75f8dc562b0207f3c979c93ff71ae62715848b8ca5ded65",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-38",
+        "heading": "37. Coveting property and desiring gifts",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "d55e564b59a6043aa5825fdc5d17290a94ea9e0cfe0f234b0e9e2b9fe05112d7",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-40",
+        "heading": "38. Several wives and marriage ideals",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ba1c2856847d0ab777e3eaa281c1b255125ddba805819373c3a1c6146ae6b484",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-41",
+        "heading": "39. The killing command and executions",
+        "sourceRecordIds": [
+          "exodus-command-and-penalties"
+        ],
+        "currentRecordIds": [
+          "exodus-command-and-penalties"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8fb782ed0fb996ed370b0dfb2dc920ad861aed1d6650fecdf98fc29a87250a0e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-43",
+        "heading": "40. Protection of strangers and restricted groups",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3f8c943a2f5dbb67381802d944f4e0fd3595d4c40ad32b6ef33166bda25a70e6",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-44",
+        "heading": "41. Interest on loans and a parable’s banker",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a8d4405525239aadea14628c754e2c36cfa54dd51a16958c468d14ca20d2073e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-45",
+        "heading": "42. Giving firstborn sons and redeeming them",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3c3e1b776d6fae73fca854e05225911bbaad800e1efce136ac707d1b5893a15b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-46",
+        "heading": "43. Only God holy and a holy people",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "7847fb7875b393551f4dfa0af1c587bdca824c194e20cf54050044f49477303f",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-47",
+        "heading": "44. Driving out, destroying, and remaining nations",
+        "sourceRecordIds": [
+          "early-conquest"
+        ],
+        "currentRecordIds": [
+          "early-conquest"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "584c41601f671ce6e205fb7341a3dbbd28f07d39a29ff45a70d430690a87d37b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-48",
+        "heading": "45. Different land boundaries",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "29cd0f97df679072ea9fd17b45bb1711d94bf6bf532b14905a5d68b497bbf4cc",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-49",
+        "heading": "46. Forbidden images and commanded cherubim",
+        "sourceRecordIds": [
+          "exodus-commanded-cherubim"
+        ],
+        "currentRecordIds": [
+          "exodus-commanded-cherubim"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "90cbf250d0abe18761d213a97cd2fd8e3239e12d6bd28ed09c7ba34bb90225d1",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-50",
+        "heading": "47. Daily bull or daily lambs?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2806d28a4781ac7d80831ddcbb28941e7f37c83d3588868ff4402e7886179a72",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-51",
+        "heading": "48. Wine offerings and alcohol restrictions",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2fd0b498c1edb2cadf5a31c9370d780d6f62e5c31ed74387474098700c031da4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-52",
+        "heading": "49. Commanded census and David’s census",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3f91880da207d87e22059f04b08a50cc000e743138e36e1e1ce5d5236d51e411",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-53",
+        "heading": "50. Sacred incense and ordinary perfume",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "574c3e25ad2e7edb16c4f4881d809d429623f66ace04c9d87bc10d4f481bc5f2",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-54",
+        "heading": "51. Cut off or executed for Sabbath work?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8ab08ab2c85058d2fdf445a885d559bf770613b8a633d45ec36094b9a966d733",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-55",
+        "heading": "52. Refreshed and never weary",
+        "sourceRecordIds": [
+          "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
+        ],
+        "currentRecordIds": [
+          "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "e3eb2e1bc413b241468dd65336472a9b20fb7ac4dbfde0dfb0db9d93e743ed74",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-56",
+        "heading": "53. Sinai or Horeb?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "987cbe0f96c82ed13e0a8a33b06ed03da47b80b4252b098b0a1a1e53ce6f97fb",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-57",
+        "heading": "54. Relenting after Moses’s plea",
+        "sourceRecordIds": [
+          "exodus-presence-negotiation",
+          "numbers-blessing-stability-and-relenting"
+        ],
+        "currentRecordIds": [
+          "exodus-presence-negotiation",
+          "numbers-blessing-stability-and-relenting"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c3e02c00544dbe8e9ef6cef58b06c44af918fc91592e32b7874d1c8dc2f19dae",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-58",
+        "heading": "55. Dancing at the sea and at the calf",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "adf2b4c1bd8da912997d866afd40022ab813f5cbee668fca8933fb0ed8454eb1",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-61",
+        "heading": "56. God’s bodily descriptions and spirit",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3757cae591afd9b604102688250ef63b6d463f8e2eb4dfd5b5d79c484c3fab76",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-62",
+        "heading": "57. Who writes the replacement tablets?",
+        "sourceRecordIds": [
+          "exodus-replacement-tablets"
+        ],
+        "currentRecordIds": [
+          "exodus-replacement-tablets"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1ebadf3d933746cdc0e2f19d5d069ebff5b2567af74a297786b81afac6781a7b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-63",
+        "heading": "58. Mercy alongside severe judgment",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bb3053a9b2b7578e544ef3b77c0f6145249e86788e77c6a6f1503b985edac5a7",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-64",
+        "heading": "59. Moses or Bezalel makes the ark?",
+        "sourceRecordIds": [
+          "deuteronomy-ark-builder"
+        ],
+        "currentRecordIds": [
+          "deuteronomy-ark-builder"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "1fa13ee84ae926a2d53cfb1d0b342e7583aa4147c1a24840b2968bc8a5ebdd77"
+      },
+      {
+        "sourceReviewId": "exodus-existing-sabbath-reasons",
+        "heading": "60. Two reasons for Sabbath rest",
+        "sourceRecordIds": [
+          "early-sabbath"
+        ],
+        "currentRecordIds": [
+          "early-sabbath"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "44d33b17d6d70be4af996aade10880a2a8e78b8217226ce6d10ac66e940d5961"
+      },
+      {
+        "sourceReviewId": "exodus-existing-crops",
+        "heading": "61. Crops surviving the hail",
+        "sourceRecordIds": [
+          "exodus-crops-surviving-hail"
+        ],
+        "currentRecordIds": [
+          "exodus-crops-surviving-hail"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "4128b0632ca03ba0bd6470830f302cf32ea88ac51f08c96769f1c27908f8f977"
+      },
+      {
+        "sourceReviewId": "exodus-existing-audience",
+        "heading": "62. Moses’s last audience with Pharaoh",
+        "sourceRecordIds": [
+          "exodus-last-audience"
+        ],
+        "currentRecordIds": [
+          "exodus-last-audience"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "621c3c9d06c60078cf83925eae530d966a3b8dcfd3c711e962724522f5d4723d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-manna-storage",
+        "heading": "63. Manna that spoils and manna that keeps",
+        "sourceRecordIds": [
+          "exodus-manna-storage"
+        ],
+        "currentRecordIds": [
+          "exodus-manna-storage"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "3b4117c94d069b471c73b407ff61b81a882ffecc7da4cd27fdf182e90a921aec"
+      },
+      {
+        "sourceReviewId": "exodus-existing-priest-access",
+        "heading": "64. A kingdom of priests and restricted access",
+        "sourceRecordIds": [
+          "exodus-priesthood-access"
+        ],
+        "currentRecordIds": [
+          "exodus-priesthood-access"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "fcd07461bba8703f0219926bb071365abc62757fab95382ad12aa8070a19fdea",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-judgment",
+        "heading": "65. Do not favor or disadvantage the poor",
+        "sourceRecordIds": [
+          "exodus-impartial-judgment"
+        ],
+        "currentRecordIds": [
+          "exodus-impartial-judgment"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "aa9974100deb2b08841f5324ed7009a4644a749dd17eed2292d8d4ab57df552b"
+      },
+      {
+        "sourceReviewId": "exodus-existing-curtains",
+        "heading": "66. Ten or eleven curtains?",
+        "sourceRecordIds": [
+          "exodus-curtain-layers"
+        ],
+        "currentRecordIds": [
+          "exodus-curtain-layers"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "53017c75c87c8f6a06733e828fba6c64c8afdc3c82f3791c7a7420b0261aaf5a"
+      },
+      {
+        "sourceReviewId": "exodus-existing-calf",
+        "heading": "67. Aaron’s account of the calf",
+        "sourceRecordIds": [
+          "exodus-aaron-calf-account"
+        ],
+        "currentRecordIds": [
+          "exodus-aaron-calf-account"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "1f62f5c3211ee03eb710b3e3342c00df5629fe4814acc5185096799625b27487"
+      },
+      {
+        "sourceReviewId": "exodus-existing-giving",
+        "heading": "68. Voluntary gifts and the fixed payment",
+        "sourceRecordIds": [
+          "exodus-voluntary-and-fixed-giving"
+        ],
+        "currentRecordIds": [
+          "exodus-voluntary-and-fixed-giving"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "18e6a1ea13ca09baf146a9f55d8262c85fd7c1a0cc03c0e57e274581e6f986b4"
+      },
+      {
+        "sourceReviewId": "exodus-existing-altar-steps",
+        "heading": "69. No altar steps and a later altar stairway",
+        "sourceRecordIds": [
+          "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+        ],
+        "currentRecordIds": [
+          "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b83194226ac07081e2310b9fe2f141d0e5cf9c69581861c093105690438fb867",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-census-timing",
+        "heading": "70. A census total before the dated census",
+        "sourceRecordIds": [
+          "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
+        ],
+        "currentRecordIds": [
+          "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "9b600e3a4744452bce5e5ca57f850f4c68b37ba282ad864edbed43d693f3779e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-korah",
+        "heading": "71. Korah’s father in two genealogies",
+        "sourceRecordIds": [
+          "korah-son-of-amminadab-or-son-of-izhar"
+        ],
+        "currentRecordIds": [
+          "korah-son-of-amminadab-or-son-of-izhar"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4cfb9c1cfebcd43bdb07ae58d818767632a342cbbd4ee65c685a5d6eceefd1f5",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-first-promise",
+        "heading": "72. The first commandment with a promise",
+        "sourceRecordIds": [
+          "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
+        ],
+        "currentRecordIds": [
+          "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0d6f7c3638374755c404597df47d21f00ff65dcf5f0fa4bfb1bcad8ae0ee8178",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-passover-place",
+        "heading": "73. Passover at home or at one sanctuary?",
+        "sourceRecordIds": [
+          "deuteronomy-passover-place"
+        ],
+        "currentRecordIds": [
+          "deuteronomy-passover-place"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0c4da8f07f3e7b473e8ffe4efbe0d49b814866027fe9e8cd1d4457ae397c4d52",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-passover-cooking",
+        "heading": "74. Roasting, boiling, and the Passover meal",
+        "sourceRecordIds": [
+          "passover-thou-shalt-roast-or-boil-and-roast-greek"
+        ],
+        "currentRecordIds": [
+          "passover-thou-shalt-roast-or-boil-and-roast-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "742ac12c811b7d7c6e08acf6f75756d32d5e98d356e14dea16f85695729c5e3e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-testing-people",
+        "heading": "75. God tests people but does not entice evil",
+        "sourceRecordIds": [
+          "god-did-tempt-abraham-or-god-tempteth-no-man"
+        ],
+        "currentRecordIds": [
+          "god-did-tempt-abraham-or-god-tempteth-no-man"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1347d5b38556a2029972af9a24b3496ac0bee5b907107be9562020351afda2f4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-hornet",
+        "heading": "76. Hornets, swords, and victory",
+        "sourceRecordIds": [
+          "joshua-hornet-and-military-victory"
+        ],
+        "currentRecordIds": [
+          "joshua-hornet-and-military-victory"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a4a9222ba53ad0f9802e1ac42e491d70dd59002f27d4db329193929f4962e4eb",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-1",
+        "heading": "77. A third city in the old Greek translation",
+        "sourceRecordIds": [
+          "treasure-cities-pithom-and-raamses-greek-adds-on"
+        ],
+        "currentRecordIds": [
+          "treasure-cities-pithom-and-raamses-greek-adds-on"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "19ffebb7702e6de9e28c4ddef0b09e6119a7c0ca4f6d3fdc58dd4dc2347b993b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-2",
+        "heading": "78. Two renderings of the divine self-identification",
+        "sourceRecordIds": [
+          "i-am-that-i-am-or-i-am-the-one-who-is-greek"
+        ],
+        "currentRecordIds": [
+          "i-am-that-i-am-or-i-am-the-one-who-is-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4886ede9cc75a37a03117d4b9ad0b28940f74dce2bdd32fbaf6e8cef87475a9d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-3",
+        "heading": "79. Who threatens the traveler?",
+        "sourceRecordIds": [
+          "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
+        ],
+        "currentRecordIds": [
+          "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c00eba53e2462aa4b626ae3569e811287656bffb7a2ce741da6771b4119cf977",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-4",
+        "heading": "80. Armed or in a fifth generation?",
+        "sourceRecordIds": [
+          "israel-went-up-harnessed-or-in-the-fifth-generation-greek"
+        ],
+        "currentRecordIds": [
+          "israel-went-up-harnessed-or-in-the-fifth-generation-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2699b912489a3c4fa942f4008a6258cda7902bc7007826391fd7784ce9299c7a",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-5",
+        "heading": "81. Warrior or crusher of wars?",
+        "sourceRecordIds": [
+          "the-lord-is-a-man-of-war-or-the-lord-who-crushes-wars-greek"
+        ],
+        "currentRecordIds": [
+          "the-lord-is-a-man-of-war-or-the-lord-who-crushes-wars-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a12f80dd61671a0f6fb5275c8d160fb6407e6168bc6632e5fab5b7910e34e62c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-6",
+        "heading": "82. Identifying manna or asking about it?",
+        "sourceRecordIds": [
+          "it-is-manna-or-what-is-this-greek"
+        ],
+        "currentRecordIds": [
+          "it-is-manna-or-what-is-this-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "5f8e9c11d583b3ba5ea6ff88ed58c6ddcddaa49ec8bb02dafa2b2fce46959eb9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-7",
+        "heading": "83. An oath or a raised hand?",
+        "sourceRecordIds": [
+          "because-the-lord-hath-sworn-or-with-a-secret-hand-greek"
+        ],
+        "currentRecordIds": [
+          "because-the-lord-hath-sworn-or-with-a-secret-hand-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "e1f3188269fed7111c9b5699ba10f7f8b11b94be91433edc8627dc7af7565172",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-8",
+        "heading": "84. The order of three commandments",
+        "sourceRecordIds": [
+          "kill-adultery-steal-or-adultery-steal-kill-greek-order"
+        ],
+        "currentRecordIds": [
+          "kill-adultery-steal-or-adultery-steal-kill-greek-order"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ea700ba33a62643a4bb1e9fe5c4322b9c7ad766e68f53014ba09b4442e4da696",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-9",
+        "heading": "85. Legal cases before judges or God",
+        "sourceRecordIds": [
+          "brought-unto-the-judges-or-before-god-greek"
+        ],
+        "currentRecordIds": [
+          "brought-unto-the-judges-or-before-god-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "cad99e6d736f37527850bc65626eabfdfb3b5fee03102d824e63a8360524754d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-10",
+        "heading": "86. Different criteria after a pregnancy injury",
+        "sourceRecordIds": [
+          "no-mischief-follow-or-the-child-not-fully-formed-greek"
+        ],
+        "currentRecordIds": [
+          "no-mischief-follow-or-the-child-not-fully-formed-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bc453846161e28e00ac16b5ea6093c0ccac46e01b5031e99ebd27b1283ba7303",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-11",
+        "heading": "87. A meeting tent before the sanctuary is built",
+        "sourceRecordIds": [
+          "moses-took-the-tabernacle-or-his-own-tent-greek"
+        ],
+        "currentRecordIds": [
+          "moses-took-the-tabernacle-or-his-own-tent-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "56ec47240f4ac1acb7e74ae6e100ca437605eb3da79f74f53ba7831937b166d8",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-12",
+        "heading": "88. Red Sea and the Hebrew place-name",
+        "sourceRecordIds": [
+          "red-sea-or-sea-of-suph-hebrew"
+        ],
+        "currentRecordIds": [
+          "red-sea-or-sea-of-suph-hebrew"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "cee97b715729cd2c4bffd8e2d2961b9cd53bd4625a848a33fedfe75550e47a1c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      }
+    ]
+  },
+  "genesis": {
+    "payloadStatus": "Originating session has supplied a confirmed final export identity and hash; retrieval on this executor queued after this Exodus checkpoint.",
+    "addedRecordIds": [],
+    "verifiedDispositionIds": [],
+    "sourceSnapshot": "unavailable",
+    "completeBook": false,
+    "coordinationOnly": {
+      "parentReported": "Final export reportedly includes 109 reviews, mappings/hashes for 42 existing evidence IDs and the original 1933-record snapshot. Contents unverified here until supported retrieval."
+    },
+    "missing": "Readable final report or structured package, its source snapshot, stable disposition-to-record mapping and six edition audits.",
+    "transfer": "Known final export identified by originating session. No new retrieval attempted during the Exodus batch.",
+    "handoff": "Retrieve and verify the confirmed export through current Library known-ID workflow after this checkpoint; preserve six edition-audit, eight other-book, broader-claim and browser/touch limits."
+  },
+  "releaseStatusAtSourceCommit": "Build 396 source and artifacts verified. No Site publication or device installation claimed here. Build 397 requires final exact-source gates; no cloud device installation."
+}

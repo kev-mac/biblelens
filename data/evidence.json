@@ -7720,7 +7720,30 @@
         "url": "https://ebible.org/eng-kjv/EXO16.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "Manna left overnight spoils, but food kept for Sabbath does not. A sample is also set aside for later generations.",
+      "passages": [
+        "Exodus 16:16-30",
+        "Exodus 16:32-35"
+      ],
+      "context": "Moses gives Israel rules for gathering food. He first bans overnight storage, then orders extra food kept before Sabbath. He later tells Aaron to keep a sample.",
+      "explanations": [
+        {
+          "reading": "The story states an exception to the storage rule",
+          "support": "Verses 22-24 give different instructions for the sixth day and say the stored food did not spoil. The two outcomes concern different instructions."
+        },
+        {
+          "reading": "The kept sample has a separate purpose",
+          "support": "Verses 32-34 order a sample kept so later generations can see the food. This is a claim within the story, not an independent test of its properties."
+        }
+      ],
+      "assessment": "The Sabbath exception is explicit. The sample has a separate stated purpose. These passages do not make opposite claims about ordinary overnight storage.",
+      "verification": "The cited KJV, ASV and WEB wording and context were checked. Manna’s identity, its lasting properties and the events as history remain unverified.",
+      "book": "Exodus",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-amalek-memory",
@@ -8429,7 +8452,29 @@
         "url": "https://ebible.org/eng-kjv/EXO23.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "One rule forbids favoring a poor person in court. Another forbids denying that person justice.",
+      "passages": [
+        "Exodus 23:1-9"
+      ],
+      "context": "These laws address court cases and fair treatment. Nearby rules reject false reports, pressure from a crowd and bribes.",
+      "explanations": [
+        {
+          "reading": "A person’s poverty must not decide the verdict",
+          "support": "Verse 3 rejects favoring the poor in a case. Verses 1-2 reject false reports and following a crowd into an unjust judgment."
+        },
+        {
+          "reading": "A poor person must still receive fair judgment",
+          "support": "Verses 6-8 reject denying justice, false charges and bribes. Protecting a fair hearing does not require favoring either side."
+        }
+      ],
+      "assessment": "The rules work together: neither favor nor deny justice because a person is poor. They do not order opposite verdicts in the same case.",
+      "verification": "The cited KJV, ASV and WEB wording and context were checked. The laws’ presence does not show that courts followed them or settle wider claims about inequality.",
+      "book": "Exodus",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-covenant-ratification",
@@ -8775,7 +8820,30 @@
         "url": "https://ebible.org/eng-kjv/EXO36.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "One instruction counts ten curtains for the sacred tent. The next counts eleven.",
+      "passages": [
+        "Exodus 26:1-14",
+        "Exodus 36:8-19"
+      ],
+      "context": "The instructions first name ten linen curtains, then eleven goats’ hair curtains for an outer covering. The later work account repeats both sets.",
+      "explanations": [
+        {
+          "reading": "The counts describe different layers",
+          "support": "Exodus 26 gives the linen and goats’ hair sets different materials and lengths. Exodus 36 repeats their distinct counts."
+        },
+        {
+          "reading": "Treat both counts as one set",
+          "support": "The numbers differ if both are read as counts of the same curtains. That reading leaves out the materials and covering roles named in both accounts."
+        }
+      ],
+      "assessment": "The named layers explain the different totals. The passages do not give two counts for one set of curtains.",
+      "verification": "The cited KJV, ASV and WEB wording and context were checked. Animal-hide identities, modern unit lengths and whether the tent was built remain unsettled.",
+      "book": "Exodus",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-continuous-service",
@@ -9539,7 +9607,30 @@
         "url": "https://ebible.org/eng-kjv/EXO32.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "The narrator says Aaron shaped the calf. Aaron later says he put gold into the fire and the calf came out.",
+      "passages": [
+        "Exodus 32:1-8",
+        "Exodus 32:21-24"
+      ],
+      "context": "The people ask Aaron for gods while Moses is away. The narrator describes Aaron’s work. Moses then confronts Aaron, who blames the people and describes the fire.",
+      "explanations": [
+        {
+          "reading": "Aaron is playing down his part",
+          "support": "His reply blames the people and leaves out his work with a tool. This supports reading his answer as a defense that shifts blame."
+        },
+        {
+          "reading": "A short account can leave out steps",
+          "support": "Aaron admits asking for gold and putting it into the fire. He does not directly deny shaping it. The passage does not explicitly call his answer a lie."
+        }
+      ],
+      "assessment": "The accounts differ in how they present Aaron’s work. An evasive defense fits the scene, but the words do not prove every motive. Keep the speaker distinction.",
+      "verification": "The cited KJV, ASV and WEB wording and context were checked. Aaron’s intent, details not stated by the text and the event as history remain unverified.",
+      "book": "Exodus",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-intercession-relenting",
@@ -10259,7 +10350,33 @@
         "url": "https://ebible.org/eng-kjv/EXO38.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "conflict": "Gifts for the sacred tent are willing offerings. A separate payment tied to counting the people has a fixed amount.",
+      "passages": [
+        "Exodus 25:1-9",
+        "Exodus 30:11-16",
+        "Exodus 35:20-29",
+        "Exodus 36:3-7",
+        "Exodus 38:24-28"
+      ],
+      "context": "God gives Moses two sets of payment rules. The people later bring willing gifts, and Moses stops the excess. The account separately reports silver from those counted.",
+      "explanations": [
+        {
+          "reading": "Different contributions follow different rules",
+          "support": "Exodus 25 invites willing gifts. Exodus 30 fixes a half-shekel payment for each counted man aged twenty or more, with no change for wealth."
+        },
+        {
+          "reading": "Apply the willing-gift rule to every payment",
+          "support": "Exodus 25:2 stresses willingness. Reading it as a rule for all funding clashes with the fixed payment, but the text does not make that wider claim."
+        }
+      ],
+      "assessment": "The willing gifts and fixed payment are separate contributions to the same project. Their different rules do not require opposite instructions for one payment.",
+      "verification": "The cited KJV, ASV and WEB wording and context were checked. This does not verify the census, material totals, dates or how payments were enforced.",
+      "book": "Exodus",
+      "checked": "2026-11-08",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-instructions-and-completion",
