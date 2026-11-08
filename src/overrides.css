@@ -3367,7 +3367,7 @@ html body.lens-app #lensReadingBar {
 html.native-ios body.lens-app > #lensMasthead.lens-masthead {top:calc(var(--app-safe-top) + var(--visual-offset-top,0px));}
 html.native-ios body.lens-app #lensReadingBar {top:calc(var(--app-safe-top) + var(--visual-offset-top,0px) + var(--ux13-masthead-height));}
 html.native-ios body.lens-app::before {height:calc(var(--app-safe-top) + var(--visual-offset-top,0px));}
-html body.lens-app #lensReadingBar .ux-reader-controls {display:flex;flex:1 1 180px;flex-wrap:wrap;align-items:center;min-width:0;gap:8px;}
+html body.lens-app #lensReadingBar .ux-reader-controls {display:flex;flex:1 1 0;flex-wrap:wrap;align-items:center;min-width:0;gap:8px;}
 html body.lens-app #lensReadingBar #ux-chapter-picker {
  display:inline-flex;align-items:center;flex:0 1 auto;width:auto;max-width:100%;min-width:44px;min-height:44px;height:auto;
  padding:6px 0;margin:0;gap:4px;font:600 1.125rem/1.35 var(--ui-font);
