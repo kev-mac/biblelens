@@ -40,7 +40,7 @@ jobs:
 
       - name: Verify exact build 395 source
         run: |
-          git merge-base --is-ancestor 77bb95865e60b2c23673546044ba3471599a56f8 HEAD
+          git merge-base --is-ancestor 3d1d6d24f8bef5a9bf3d885eaa884d8ef5b0b476 HEAD
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -48,7 +48,7 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,395);
-          assert.equal(release.sourceHash,'c07639c472f4454dcf935d5378d5ee482d1aa1a43e61eca58bd573910bbe24d1');
+          assert.equal(release.sourceHash,'df8e16560ec1ed1afeda12cbd2796009c18ca4641fb77bd05678dc41e6d43db1');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -153,19 +153,7 @@ jobs:
           NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
         run: node scripts/check-contradiction-reviews-browser.mjs 2>&1 | tee .release/browser-ci/contradiction-context.log
 
-      - name: Check inline evidence pills in Chromium and WebKit
-        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
-        env:
-          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
-        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
-
-      - name: Check reader controls on phones, iPad and desktop
-        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
-        env:
-          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
-        run: node scripts/check-reader-annotations-browser.mjs 2>&1 | tee .release/browser-ci/reader-controls.log
-
-      - name: Retain an earlier browser failure before the remaining matrix
+      - name: Retain an earlier browser failure before the remaining matrices
         if: ${{ !cancelled() && failure() }}
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
@@ -178,6 +166,18 @@ jobs:
             .release/contradiction-reviews/**
           retention-days: 7
           include-hidden-files: true
+
+      - name: Check inline evidence pills in Chromium and WebKit
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
+
+      - name: Check reader controls on phones, iPad and desktop
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-reader-annotations-browser.mjs 2>&1 | tee .release/browser-ci/reader-controls.log
 
       - name: Check Explore search and responsive portrait/landscape tiles
         if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
@@ -205,7 +205,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'77bb95865e60b2c23673546044ba3471599a56f8',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'3d1d6d24f8bef5a9bf3d885eaa884d8ef5b0b476',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
