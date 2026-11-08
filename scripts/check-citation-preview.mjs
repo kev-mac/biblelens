@@ -92,6 +92,12 @@ handlers.click({target:target(contextRange),preventDefault(){}});await settle();
 let ownedFocus=false;popupHandlers.uxpopupclose({preventDefault(){ownedFocus=true;}});
 assert(ownedFocus,'Citation owner cancels the shared popup focus fallback');
 assert(popup.hidden);assert.equal(doc.activeElement,contextRange,'Shared close retains the current citation opener');
+handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();
+assert(popup.hidden,'An explicit close stays closed when the same citation is exposed beneath the mouse');
+handlers.pointerout({pointerType:'mouse',target:target(contextRange),relatedTarget:null});
+handlers.pointerover({pointerType:'mouse',target:target(contextRange),relatedTarget:null});await settle();
+assert(!popup.hidden,'Leaving and reentering the citation permits a fresh hover preview');
+handlers.keydown({key:'Escape',preventDefault(){}});
 console.log('PASS: comparison clicks open selected-edition context, mark ranges, retain missing-verse notices and restore focus without navigation.');
 
 

@@ -47,6 +47,9 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
      assert.equal(await preview.locator('strong').first().innerText(),ref);
      const selected=await preview.locator('.preview-selected b').allTextContents();
      assert.deepEqual(selected,Array.from({length:end-verse+1},(_,i)=>String(verse+i)),'Every cited verse is marked');
+     const displayed=await preview.locator('.preview-selected').allTextContents();
+     const plain=value=>value.replace(/\s+/g,' ').trim();
+     assert.deepEqual(displayed.map(value=>plain(value.replace(/^\d+\s*/,''))),data.verses.filter(v=>v.n>=verse&&v.n<=end).map(v=>plain(v[edition])),'The window displays the selected edition’s actual verse text');
      const numbers=await preview.locator('.preview-text b').allTextContents();
      assert.deepEqual(numbers,data.verses.filter(v=>v.n>=Math.max(1,verse-2)&&v.n<=end+2).map(v=>String(v.n)),'Context stays within the chapter');
      assert(!/Loading verse|Could not load|absent from/.test(await preview.locator('.preview-text').innerText()));
