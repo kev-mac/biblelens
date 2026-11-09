@@ -24,6 +24,11 @@ function storyReference(reference){
 }
 function storySlug(value){return value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(location.hash);}
+// Excerpts are visibly unfinished when shortened; the complete wording remains below.
+function storyPreview(text){
+ const words=String(text||'').replace(/<br\s*\/?>(?:\s*<br\s*\/?>)?/gi,' ').trim().split(/(?<=[.!?])\s+/)[0].split(/\s+/);
+ return words.length<=15?words.join(' '):words.slice(0,15).join(' ').replace(/[.,;:]$/,'')+'…';
+}
 function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)}</button>`:`<span>${esc(story.passage)}</span>`;
@@ -36,7 +41,7 @@ function storyCard(story, pivot=false){
  const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
  const media=(!pivot&&window.BibleLensStoryVideo?.render(story.title,STORY_IMAGES[story.title]))||storyIllustration(story.title);
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}><div class="story-summary">${media}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}<div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}>${storyIllustration(story.title,'preview')}<p class="browse-excerpt">${esc(storyPreview(story.summary))}</p><details class="story-full-details"${!pivot&&typeof location!=='undefined'&&storyRoute()?' open':''}><summary>Open story <span aria-hidden="true">＋</span></summary><div class="story-summary">${media}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}</details><div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -167,3 +172,5 @@ new MutationObserver(()=>{storyFooterObserver.disconnect();for(const footer of d
 document.fonts.ready.then(fitStoryFooters);
 window.addEventListener('biblelens:statechange',fitStoryFooters);
 }
+
+document.addEventListener('toggle',event=>{if(event.target.matches?.('.story-full-details')&&!event.target.open)window.BibleLensStoryVideo?.stop();},true);
