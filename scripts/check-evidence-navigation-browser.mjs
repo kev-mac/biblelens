@@ -6,12 +6,14 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to the exact prepared app.');
 const live=process.env.BIBLELENS_LIVE_BASE_URL||'https://scripture-lens.kvn-mcgwn.chatgpt.site';
-const output='.release/evidence-navigation',matrix=[],baseline=[],coldDetails=[];
+const output='.release/evidence-navigation',matrix=[],baseline=[],recordBaseline=[],coldDetails=[];
 fs.mkdirSync(output,{recursive:true});
 const get=async url=>{const r=await fetch(url);assert(r.ok,url+' '+r.status);return r.json();};
 const release=await get(base+'/release.json');
 const queries=['mode=text','mode=science','mode=history','filter=T'];
 const expected=await Promise.all(queries.map(query=>get(base+'/api/debates?'+query)));
+const firstText=expected[0].records[0];
+assert.equal(firstText.ref,'Genesis 1:3');assert.equal(firstText.mode,'questions');assert.equal(firstText.status,'Context');
 const questions=JSON.parse(fs.readFileSync('www/accepted-questions.json'));
 const topics=JSON.parse(fs.readFileSync('www/comparison-topics.json'));
 const featured=[...questions,...topics];
@@ -20,7 +22,7 @@ const historyTotal=featured.filter(row=>row.comparison==='text-vs-history').leng
 const conflicts=questions.filter(row=>row.labels.includes('Conflicts with evidence')).length;
 assert(total>0&&textTotal>0&&historyTotal>0&&conflicts>0);
 assert.equal(questions.filter(row=>row.comparison==='text-vs-text'&&row.labels.includes('Conflicts with evidence')).length,0,'The original incompatible-filter case is present in real packaged data.');
-const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');fs.writeFileSync(output+'/cold-details.json',JSON.stringify(coldDetails,null,2)+'\n');};
+const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');fs.writeFileSync(output+'/live-record-baseline.json',JSON.stringify(recordBaseline,null,2)+'\n');fs.writeFileSync(output+'/cold-details.json',JSON.stringify(coldDetails,null,2)+'\n');};
 async function settle(page){await page.evaluate(()=>document.fonts.ready);await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});}
 async function fit(page){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Evidence page stays inside its margins.');}
 async function acceptedReady(page){await page.locator('#debates-view:not([hidden]) .accepted-questions:not([role])').waitFor();}
@@ -46,6 +48,22 @@ async function liveCase(browser,engine,width,height){
  finally{await context.close();}
 }
 
+async function liveRecordCase(browser,engine,width,height){
+ const context=await browser.newContext({viewport:{width,height},hasTouch:width<1024,serviceWorkers:'block',reducedMotion:'reduce'}),page=await context.newPage();page.setDefaultTimeout(30000);
+ try{
+  const response=await page.goto(live+'/#questions?mode=text');assert(response?.ok());await regularReady(page);
+  const initial=await page.evaluate(async()=>({release:await(await fetch('/release.json')).json(),record:(await(await fetch('/api/debates?mode=text')).json()).records[0]}));
+  const tile=page.locator('#debate-results .phase2-debate-card').first();assert.equal(await tile.getAttribute('href'),'#debate/'+encodeURIComponent(initial.record.id));
+  await settle(page);await page.screenshot({path:`${output}/live-${engine}-${width}-first-text-tile.png`,fullPage:false});
+  await tile.getByText('View record',{exact:true}).click();
+  await page.waitForFunction(()=>!!document.querySelector('[data-debate-save]')||/Record Unavailable|We Couldn’t Find That/.test(document.getElementById('debate-view')?.innerText||''));await settle(page);
+  const state=await page.evaluate(()=>({route:location.hash,heading:document.querySelector('.lens-context h1')?.textContent,recordHeading:document.querySelector('#debate-view h1')?.textContent,rendered:!!document.querySelector('[data-debate-save]'),detailText:document.getElementById('debate-view')?.innerText.slice(0,1400)}));
+  const observation={engine,width,height,release:initial.release,id:initial.record.id,ref:initial.record.ref,mode:initial.record.mode,assessment:initial.record.verdict||initial.record.status,...state,wrongHeading:initial.record.mode==='questions'&&state.heading==='Contradictions',unavailable:!state.rendered};
+  recordBaseline.push(observation);save();await page.screenshot({path:`${output}/live-${engine}-${width}-first-text-record.png`,fullPage:false});console.log('LIVE first Text Comparisons record',JSON.stringify(observation));
+ }catch(error){recordBaseline.push({engine,width,height,status:'BLOCKED',error:error.message});save();await page.screenshot({path:`${output}/live-${engine}-${width}-first-record-blocked.png`,fullPage:false}).catch(()=>{});throw error;}
+ finally{await context.close();}
+}
+
 const mobile=spawn(process.execPath,['scripts/serve-mobile.mjs'],{stdio:['ignore','pipe','pipe']});
 const mobileLog=fs.createWriteStream(output+'/mobile-preview.log');mobile.stdout.pipe(mobileLog,{end:false});mobile.stderr.pipe(mobileLog,{end:false});
 const offline='http://127.0.0.1:8788';
@@ -59,15 +77,26 @@ try{
  for(const [engine,kind] of Object.entries({chromium,webkit})){
   const browser=await kind.launch(engine==='chromium'?{chromiumSandbox:true}:{});
   try{
-   for(const [width,height] of [[601,1184],[1366,1024]])await liveCase(browser,engine,width,height);
-   for(const bundle of ['web','offline'])for(const id of [expected[1].records[0].id,'early-ark-count']){
+   for(const [width,height] of [[601,1184],[1366,1024]]){await liveCase(browser,engine,width,height);await liveRecordCase(browser,engine,width,height);}
+   for(const bundle of ['web','offline'])for(const id of [firstText.id,expected[1].records[0].id,'early-ark-count']){
     const address=bundle==='web'?base:offline,context=await browser.newContext({viewport:{width:601,height:1184},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage();page.setDefaultTimeout(30000);
     try{
-     await page.goto(address+'/#debate/'+id);await page.locator('#debate-view .phase2-sides:not([aria-busy])').waitFor();await page.locator('[data-debate-save]').waitFor();
+     if(id===firstText.id){
+      await page.goto(address+'/#questions?mode=text');await regularReady(page);const tile=page.locator('#debate-results .phase2-debate-card').first();assert.equal(await tile.getAttribute('href'),'#debate/'+encodeURIComponent(id));
+      await settle(page);await page.screenshot({path:`${output}/${engine}-${bundle}-first-text-tile.png`,fullPage:false});await tile.getByText('View record',{exact:true}).click();
+     }else await page.goto(address+'/#debate/'+id);
+     await page.locator('#debate-view .phase2-sides:not([aria-busy])').waitFor();await page.locator('[data-debate-save]').waitFor();
      assert(await page.evaluate(()=>typeof referenceLink==='function'&&typeof contradictionReviewHtml==='function'));
+     if(id===firstText.id){await page.waitForFunction(()=>document.querySelector('.lens-context h1')?.textContent==='Questions');assert.equal(await page.locator('#debate-view .phase2-summary p').innerText(),firstText.summary);assert.match(await page.locator('#debate-view .phase2-verdict').innerText(),/Interpretation Remains Open/);assert(await page.locator('#debate-view .phase2-sides blockquote').count()>0);}
      if(id==='early-ark-count')assert(await page.locator('#debate-view .contradiction-review').isVisible(),'A cold comparison shows its verified review.');
      await settle(page);await fit(page);await page.screenshot({path:`${output}/${engine}-${bundle}-cold-${id}.png`,fullPage:false});
-     coldDetails.push({engine,bundle,id,status:'PASS',route:await page.evaluate(()=>location.hash)});save();console.log('PASS cold Evidence detail',engine,bundle,id);
+     const recordRoute=await page.evaluate(()=>location.hash);
+     if(id===firstText.id){
+      const cite=page.locator('#debate-view [data-cite]').first();await cite.click();await page.locator('#verse-preview:not([hidden]) .preview-selected').first().waitFor();await settle(page);await page.screenshot({path:`${output}/${engine}-${bundle}-first-text-citation.png`,fullPage:false});await page.locator('#verse-preview .preview-close').click();assert(await cite.evaluate(node=>document.activeElement===node));
+      await page.locator('.lens-context [data-ux-back]').click();await regularReady(page);assert.equal(await page.locator('#debates-view h1').innerText(),'Text Comparisons');assert.equal(await page.evaluate(()=>location.hash),'#questions?mode=text');
+      await page.locator('#debate-results .phase2-debate-card').first().getByText('View record',{exact:true}).click();await page.locator('[data-debate-save]').waitFor();await page.goBack();await regularReady(page);assert.equal(await page.evaluate(()=>location.hash),'#questions?mode=text');
+     }
+     coldDetails.push({engine,bundle,id,status:'PASS',route:recordRoute,viaFirstTextTile:id===firstText.id,classificationPreserved:id===firstText.id?'Questions / Interpretation Remains Open':undefined});save();console.log('PASS cold Evidence detail',engine,bundle,id);
     }catch(error){console.error('FAIL cold Evidence detail',JSON.stringify({engine,bundle,id,error:error.message,state:await page.evaluate(()=>({route:location.hash,text:document.getElementById('debate-view')?.innerText.slice(0,1200)})).catch(()=>({}))}));await page.screenshot({path:`${output}/${engine}-${bundle}-cold-${id}-failure.png`,fullPage:false}).catch(()=>{});throw error;}
     finally{await context.close();}
    }
@@ -94,6 +123,7 @@ try{
      await type(page,'#accepted-search','Goliath');await page.waitForFunction(()=>new URLSearchParams(location.hash.split('?')[1]).get('q')==='Goliath');await acceptedReady(page);
      assert.equal(await page.locator('.accepted-questions .phase2-debate-card').count(),1);const listHash=await page.evaluate(()=>location.hash);
      await page.locator('.accepted-questions .phase2-debate-card').first().click();await page.locator('[data-accepted-save]').waitFor();assert.equal(await page.locator('#debate-view .phase2-sides section').count(),2);
+     await page.waitForFunction(()=>document.querySelector('.lens-context h1')?.textContent==='Contradictions');
      await page.locator('#debate-view').getByText('Passages and Research Limits',{exact:true}).click();
      const recordHash=await page.evaluate(()=>location.hash),citation=page.locator('#debate-view [data-cite]').first(),citationLabel=await citation.getAttribute('data-cite-label');
      await citation.click();await page.locator('#verse-preview:not([hidden]) .preview-selected').first().waitFor();await page.waitForFunction(()=>!document.querySelector('#verse-preview .preview-text').classList.contains('loading-state'));assert.equal(await page.locator('#verse-preview strong').innerText(),citationLabel);assert.equal(await page.evaluate(()=>location.hash),recordHash);
@@ -134,6 +164,6 @@ try{
    }
   }finally{await browser.close();}
  }
- assert.equal(matrix.length,16);assert.equal(baseline.length,4);assert.equal(coldDetails.length,8);
- console.log('PASS: 16 web/offline Chromium/WebKit Evidence navigation cases; real records, incompatible findings, category/search transitions, Back, empty/error distinction, keyboard, margins and API parity. Eight cold regular-detail cases and four live baseline observations/screenshots retained.');
+ assert.equal(matrix.length,16);assert.equal(baseline.length,4);assert.equal(recordBaseline.length,4);assert.equal(coldDetails.length,12);
+ console.log('PASS: 16 web/offline Chromium/WebKit navigation cases and12 cold detail cases, including the exact first Genesis1:3 tile, its Questions classification, real content/citations and Back. Eight live baseline observations/screenshots retained.');
 }finally{mobile.kill('SIGTERM');mobileLog.end();save();}

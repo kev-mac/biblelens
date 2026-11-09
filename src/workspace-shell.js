@@ -88,7 +88,7 @@
   contextNav.hidden=top;
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
-   const headerTitle=view==='debate'?({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Contradictions'}[document.body.dataset.topic]||'Research Record'):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
+   const headerTitle=view==='debate'?(host.dataset.evidenceHeading||({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Questions'}[document.body.dataset.topic]||'Research Record')):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
    const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
    const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
    host.classList.add('ux-compact-interior');
