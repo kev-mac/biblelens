@@ -19,7 +19,7 @@ async function settle(page){
  });
 }
 async function geometry(page){return page.evaluate(()=>{
- const field=document.querySelector('#ux-explore-search'),button=field.form.querySelector('button'),lane=document.querySelector('#ux-lane-collections');
+ const field=document.querySelector('#ux-explore-search'),button=field.form.querySelector(':scope>button[type=submit]'),lane=document.querySelector('#ux-lane-collections');
  const rect=node=>node.getBoundingClientRect().toJSON(),cards=[...lane.querySelectorAll('.ux-topic')],current=lane.querySelector('.ux-topic-centered'),next=current.nextElementSibling;
  const active=rect(current),row=rect(lane),background=rect(next),style=getComputedStyle(field);
  return {active:{...active,id:current.id,filter:getComputedStyle(current).filter,color:getComputedStyle(current).color,overlay:getComputedStyle(current,'::after').backgroundImage},inactiveFilter:getComputedStyle(next).filter,peek:Math.max(0,Math.min(background.right,row.right)-Math.max(active.right,background.left,row.left)),field:{...rect(field),radius:parseFloat(style.borderTopRightRadius),paddingRight:parseFloat(style.paddingRight)},button:{...rect(button),name:button.getAttribute('aria-label')||button.textContent,visibleText:button.textContent,svg:!!button.querySelector('svg')},count:cards.length,pageOverflow:document.documentElement.scrollWidth>innerWidth+1};
