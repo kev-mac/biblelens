@@ -31,7 +31,7 @@ import {validateCommandments} from './commandments.mjs';
 import zlib from 'node:zlib';
 import {validateRelatedPassages} from './study-relationships.mjs';
 import {releaseInfo} from './release-info.mjs';
-import {consolidateStartupAssets} from './startup-assets.mjs';
+import {assetDigest,consolidateStartupAssets} from './startup-assets.mjs';
 import MiniSearch from 'minisearch';
 import {buildVocabulary,searchLicenses} from './search-vocabulary.mjs';
 import {loadReferenceResources} from './reference-resources.mjs';
@@ -70,6 +70,19 @@ for(const name of fs.readdirSync('src/assets/fonts'))assets['/assets/fonts/'+nam
 // Raster illustrations stay separate from startup JavaScript and decode only
 // when requested. The same bytes are written directly into the native bundle.
 for(const name of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+\.webp$/.test(name)))assets['/assets/'+name]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src/assets/'+name).toString('base64')};
+const exploreRenditions=JSON.parse(fs.readFileSync('src/assets/explore-renditions.json','utf8'));
+assets['/atlas-explore.js'].body=assets['/atlas-explore.js'].body.replace('/*__EXPLORE_RENDITIONS__*/{}',JSON.stringify(exploreRenditions.images));
+for(const art of Object.values(exploreRenditions.images))for(const variant of [art.small,art.large]){
+ const bytes=fs.readFileSync('src/assets/'+variant.file);
+ if(assetDigest(bytes)!==variant.sha256||bytes.length!==variant.bytes)throw Error('Explore rendition manifest mismatch: '+variant.file);
+}
+// Retain prior hashed URLs when later artwork versions are added to source.
+for(const file of fs.readdirSync('src/assets').filter(name=>/^explore-[a-z]+-\d+-v\d+-[a-f0-9]{12}\.webp$/.test(name))){
+ const bytes=fs.readFileSync('src/assets/'+file),sha256=assetDigest(bytes);
+ if(!file.endsWith('-'+sha256.slice(0,12)+'.webp'))throw Error('Changed immutable Explore artwork: '+file);
+ assets['/assets/'+file]={type:'image/webp',encoding:'base64',body:bytes.toString('base64'),immutable:sha256,bytes:bytes.length};
+}
+
 assets['/commandments.js'].body=assets['/commandments.js'].body.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8')).records));
 const uxRead=name=>JSON.parse(releaseContent(name));
 const storyImages=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));

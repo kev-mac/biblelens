@@ -7,7 +7,7 @@ import worker from './built-worker.mjs';
 const server=http.createServer(async(req,res)=>{const r=await worker.fetch(new Request(new URL(req.url,'http://preview.test')),{},{});res.writeHead(r.status,Object.fromEntries(r.headers));res.end(Buffer.from(await r.arrayBuffer()));});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const base='http://127.0.0.1:'+server.address().port;
-fs.mkdirSync('.release/browse',{recursive:true});
+const results=[];fs.mkdirSync('.release/browse',{recursive:true});
 try{for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch();
  try{for(const width of [320,390,1280]){
@@ -65,7 +65,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
   await record.click();await page.locator('.phase2-summary').waitFor();
   assert((await page.locator('.phase2-summary').innerText()).length>100,'full record summary preserved');
   assert(await page.locator('.phase2-deeper').count(),'research limits retained');
-  await page.close();
+  results.push({engine,width,status:'PASS'});await page.close();
  }}finally{await browser.close();}
-}}finally{server.close();}
-console.log('PASS: collection grid, direct navigation, 15-word excerpts, full story/research details, Inter, mobile and desktop in Chromium/WebKit.');
+}}finally{fs.writeFileSync('.release/browse/matrix.json',JSON.stringify(results,null,2)+'\n');server.close();}
+assert.equal(results.length,6);console.log('PASS: six cases, collection grid, direct navigation, 15-word excerpts, full story/research details, Inter, mobile and desktop in Chromium/WebKit.');
