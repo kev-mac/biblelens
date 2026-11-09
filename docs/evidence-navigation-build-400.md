@@ -1,0 +1,29 @@
+# Evidence navigation correction — pending build 400
+
+This work follows Kevin's request to organize Evidence and fix a Bible vs. Bible selection that opens Contradictions without results. It starts from the preserved `zLenz: Bible` rename source `fa8694f2e84f40dae28925108a977d0bb258a653`. The name-only CI checkpoint is run 42541117459, head `3a7622c3d2ee39fcdffa166ca3df51a770eeba0b`, fingerprint `a15b438d0c873cd99f70051591338535282c2e38e4b18814b5a00b20f9d700dd`. That run does not include this correction. Keep the current rename, app identity, data, routes, accepted Explore/reader UI and native release workflow.
+
+## Causes established from source and actual packaged data
+
+The bare `#questions` route lists 30 selected questions plus one passage overview. It is distinct from the full Text Comparisons catalog at `#questions?mode=text`. The selected list has 17 Bible vs. Bible items. A finding chosen in its filter dialog remains selected when another subject is clicked. All nine items labelled "Conflicts with evidence" belong to other subjects, so carrying that hidden finding into Bible vs. Bible produces zero results despite those 17 available items. The selected-subject heading previously stayed "Contradictions", and finding/search/page state existed only in the current DOM, so returning from a detail could lose that context.
+
+The broader record browser also retained selected record IDs and daily constraints when switching categories. With the real Science record `science-sky-dome` retained as an ID constraint, Text Comparisons returns zero results while its available catalog has 1,832 records. The old empty state offered Retry even for valid zero-result filtering, which repeats the same query.
+
+An actual locally built Worker audit resolved all 2,015 unique record targets (1,985 effective evidence records and 30 selected questions), found no missing targets or records without body content, and verified the passage overview's destination. This is API/source verification, not a claim of browser reproduction. The base 1,933-record evidence file and all eighteen review objects remain unchanged; the larger effective catalog includes the existing accepted imports.
+
+## Scoped correction
+
+Subject changes clear incompatible findings. Selected-list subject, finding, query and pagination live in explicit featured-collection URLs so Back and detail-return links preserve context; the bare route and existing record links remain supported. The selected subject becomes the page heading. The page explains that these are selected questions and links to the full Text Comparisons catalog. Finding counts reflect the selected subject/search; unavailable findings are disabled.
+
+Both lists show active search/finding constraints and provide a clear action that retains the chosen collection. Filtered-empty, genuinely empty and failed-load states have different wording/actions. Missing optional overview data is acknowledged instead of silently presented as complete. The broad browser clears record/day constraints on category changes and consistently labels its full text catalog "Text Comparisons". No new Explore cards/rows or unrelated redesigns are added. Evidence data, classifications, passages, source links, private notes and app identity are unchanged.
+
+## Verification status
+
+Modified JavaScript syntax, JSON scripts, local shared mobile build, source/data target audit and strict new UI prose readability pass (FK average 6.43, no checked length/jargon violations). Full-corpus readability remains report-only with inherited findings. Browser navigation, interaction, visual review and final release preparation remain pending for this correction.
+
+Additional local checks passed for mobile chrome, the actual offline worker (zero network requests), built branding metadata, RC1 accepted content/quotes and all eighteen review objects in web/offline bundles. The optional `check:rc1b` legacy whole-record hash guard failed on the same eighteen review additions already present on main. All eighteen records are identical to main; removing only `contradictionReview` matches each historical hash. No data, research pin or test was changed to hide that inherited failure. This optional audit is distinct from the required `release:prepare` gates and must remain disclosed.
+
+The new browser regression script retains four live baseline observations/screenshots in Chromium/WebKit at 601 and 1366 pixels, then tests sixteen web/actual-offline-bundle cases at 320, 601, 820 and 1366 pixels. It covers incompatible findings, heading/subject alignment, real typing, search/category changes, in-app and browser Back, missing records, retry versus filtered-empty and a clearly identified empty-collection fixture. It compares actual web/offline API results and verifies offline API calls do not reach a server. Simulated safe areas do not establish a signed iOS installation.
+
+The shared cloud desktop advertises capability but supplies no desktop JavaScript/control tool here. The web reader could not access the public release/accepted-question URLs. Live reproduction therefore remains pending the supported hosted-browser runner; no browser screenshot has been inspected by this worker and no unavailable check is called passed. Use the actual new screenshot/artifact results before source acceptance. Keep prior local artifact connection errors distinct from an explicit policy denial and honor executor-specific access.
+
+Keep the product PR in draft and preserve the prior readiness rejection. Do not merge/publish/install without appropriate approval and release gates. The parent owns supported Sites publication and signed-device installation; this task does not operate the Mac/devices or change security/account settings. Old-name artifacts and even the name-only zLenz checkpoint are not acceptance of this changed source.
