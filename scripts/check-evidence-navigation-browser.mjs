@@ -6,7 +6,7 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to the exact prepared app.');
 const live=process.env.BIBLELENS_LIVE_BASE_URL||'https://scripture-lens.kvn-mcgwn.chatgpt.site';
-const output='.release/evidence-navigation',matrix=[],baseline=[],recordBaseline=[],coldDetails=[];
+const output='.release/evidence-navigation',matrix=[],baseline=[],recordBaseline=[],coldDetails=[],introLayouts=[];
 fs.mkdirSync(output,{recursive:true});
 const get=async url=>{const r=await fetch(url);assert(r.ok,url+' '+r.status);return r.json();};
 const release=await get(base+'/release.json');
@@ -22,9 +22,25 @@ const historyTotal=featured.filter(row=>row.comparison==='text-vs-history').leng
 const conflicts=questions.filter(row=>row.labels.includes('Conflicts with evidence')).length;
 assert(total>0&&textTotal>0&&historyTotal>0&&conflicts>0);
 assert.equal(questions.filter(row=>row.comparison==='text-vs-text'&&row.labels.includes('Conflicts with evidence')).length,0,'The original incompatible-filter case is present in real packaged data.');
-const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');fs.writeFileSync(output+'/live-record-baseline.json',JSON.stringify(recordBaseline,null,2)+'\n');fs.writeFileSync(output+'/cold-details.json',JSON.stringify(coldDetails,null,2)+'\n');};
+const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');fs.writeFileSync(output+'/live-record-baseline.json',JSON.stringify(recordBaseline,null,2)+'\n');fs.writeFileSync(output+'/cold-details.json',JSON.stringify(coldDetails,null,2)+'\n');fs.writeFileSync(output+'/intro-layout.json',JSON.stringify(introLayouts,null,2)+'\n');};
 async function settle(page){await page.evaluate(()=>document.fonts.ready);await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});}
 async function fit(page){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Evidence page stays inside its margins.');}
+async function introLayout(page,name,stage){
+ await settle(page);
+ const result=await page.locator('#debates-view .accepted-collection-intro').evaluate(node=>{
+  const link=node.querySelector('a'),range=document.createRange();range.selectNodeContents(link);
+  const fragments=[...range.getClientRects()].filter(box=>box.width>0).map(box=>box.toJSON());
+  const trailing=node.lastChild;range.selectNodeContents(trailing);const period=range.getBoundingClientRect().toJSON();
+  return {display:getComputedStyle(node).display,paragraph:node.getBoundingClientRect().toJSON(),scrollWidth:node.scrollWidth,clientWidth:node.clientWidth,linkText:link.textContent,href:link.getAttribute('href'),fragments,punctuation:trailing.textContent,period};
+ });
+ assert.equal(result.linkText,'Browse all Text Comparisons');assert.equal(result.href,'#questions?mode=text');assert.equal(result.display,'block','Explanatory copy must use normal paragraph flow.');
+ assert(result.fragments.length>=1&&result.fragments.length<=2,'The link must not form a thin word-by-word column: '+JSON.stringify(result));
+ assert(result.scrollWidth<=result.clientWidth+1,'The explanatory row fits its margins.');
+ assert.equal(result.punctuation,'.');const last=result.fragments.at(-1);
+ assert(Math.abs(result.period.top-last.top)<=3&&Math.abs(result.period.left-last.right)<=4,'The full stop stays beside the final link text, on the same line: '+JSON.stringify(result));
+ await page.locator('.accepted-collection-intro').screenshot({path:`${output}/${name}-${stage}-intro.png`});
+ introLayouts.push({name,stage,...result,status:'PASS'});save();
+}
 async function acceptedReady(page){await page.locator('#debates-view:not([hidden]) .accepted-questions:not([role])').waitFor();}
 async function regularReady(page){await page.waitForFunction(()=>document.getElementById('debate-count')?.textContent.startsWith('Showing'));}
 async function go(page,hash){await page.evaluate(hash=>BibleLensWorkspace.navigate(hash),hash);}
@@ -119,7 +135,8 @@ try{
      assert.equal(await page.locator('#debates-view h1').innerText(),'Bible vs. Bible');assert.match(await page.locator('#debates-view .directory-results').innerText(),new RegExp('of '+textTotal+' questions'));
      assert(await page.locator('.accepted-questions .phase2-debate-card').count()>0);
      await page.locator('[data-accepted-filters]').click();await sheet.waitFor({state:'visible'});assert(await sheet.getByRole('button',{name:/^Conflicts with Evidence \(0\)$/i}).isDisabled());await settle(page);await page.screenshot({path:`${output}/${name}-filter-sheet.png`,fullPage:false});await page.keyboard.press('Escape');
-     await settle(page);await fit(page);await page.screenshot({path:`${output}/${name}-subject.png`,fullPage:false});
+     await introLayout(page,name,'subject');await fit(page);await page.screenshot({path:`${output}/${name}-subject.png`,fullPage:false});
+     if(width===320){const subjectHash=await page.evaluate(()=>location.hash),link=page.locator('.accepted-collection-intro a');await link.focus();await page.keyboard.press('Enter');await regularReady(page);await page.locator('#debate-results .phase2-debate-card').first().waitFor();assert.equal(await page.locator('#debates-view h1').innerText(),'Text Comparisons');await page.goBack();await acceptedReady(page);assert.equal(await page.evaluate(()=>location.hash),subjectHash);}
      await type(page,'#accepted-search','Goliath');await page.waitForFunction(()=>new URLSearchParams(location.hash.split('?')[1]).get('q')==='Goliath');await acceptedReady(page);
      assert.equal(await page.locator('.accepted-questions .phase2-debate-card').count(),1);const listHash=await page.evaluate(()=>location.hash);
      await page.locator('.accepted-questions .phase2-debate-card').first().click();await page.locator('[data-accepted-save]').waitFor();assert.equal(await page.locator('#debate-view .phase2-sides section').count(),2);
@@ -136,7 +153,7 @@ try{
      assert.equal(await page.getByRole('button',{name:'Clear filters',exact:true}).count(),1);
      await page.getByRole('button',{name:'Clear filters',exact:true}).click();await acceptedReady(page);await page.waitForFunction(()=>!new URLSearchParams(location.hash.split('?')[1]).has('q'));
      assert.equal(await page.locator('#debates-view h1').innerText(),'Bible vs. History');assert.match(await page.locator('#debates-view .directory-results').innerText(),new RegExp('of '+historyTotal+' questions'));
-     await type(page,'#accepted-search','zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz');await page.locator('.accepted-questions .lens-empty [data-accepted-reset]').waitFor();await fit(page);await settle(page);await page.screenshot({path:`${output}/${name}-filtered-empty.png`,fullPage:false});
+     await type(page,'#accepted-search','zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz');await page.locator('.accepted-questions .lens-empty [data-accepted-reset]').waitFor();await fit(page);await introLayout(page,name,'filtered-empty');await page.screenshot({path:`${output}/${name}-filtered-empty.png`,fullPage:false});
      await page.getByRole('button',{name:'Clear filters',exact:true}).click();await acceptedReady(page);
      await go(page,'#questions?mode=science&q=zzzz-no-evidence-match');await regularReady(page);await page.locator('#debate-results .lens-empty [data-debate-clear]').waitFor();assert.match(await page.locator('[data-evidence-active-filters]').innerText(),/zzzz-no-evidence-match/);
      await page.getByRole('button',{name:'Clear filters',exact:true}).click();await regularReady(page);await page.locator('#debate-results .phase2-debate-card').first().waitFor();assert.equal(await page.locator('[data-debate-mode=science]').getAttribute('aria-pressed'),'true');
@@ -164,6 +181,6 @@ try{
    }
   }finally{await browser.close();}
  }
- assert.equal(matrix.length,16);assert.equal(baseline.length,4);assert.equal(recordBaseline.length,4);assert.equal(coldDetails.length,12);
+ assert.equal(matrix.length,16);assert.equal(baseline.length,4);assert.equal(recordBaseline.length,4);assert.equal(coldDetails.length,12);assert.equal(introLayouts.length,32);
  console.log('PASS: 16 web/offline Chromium/WebKit navigation cases and12 cold detail cases, including the exact first Genesis1:3 tile, its Questions classification, real content/citations and Back. Eight live baseline observations/screenshots retained.');
 }finally{mobile.kill('SIGTERM');mobileLog.end();save();}
