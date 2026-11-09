@@ -40,9 +40,9 @@ jobs:
 
       - name: Verify exact build 400 source
         run: |
-          git merge-base --is-ancestor c8f892801a89342764fe16131b6b6cdd3a1524b7 HEAD
-          git cat-file -e c8f892801a89342764fe16131b6b6cdd3a1524b7^{commit}
-          git diff --exit-code c8f892801a89342764fe16131b6b6cdd3a1524b7 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
+          git merge-base --is-ancestor 5c582b7ae11642b5983a73aed563e1488f03c89e HEAD
+          git cat-file -e 5c582b7ae11642b5983a73aed563e1488f03c89e^{commit}
+          git diff --exit-code 5c582b7ae11642b5983a73aed563e1488f03c89e HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -50,10 +50,10 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,400);
-          assert.equal(release.sourceHash,'954e505163448aee8e210f60a620c7ffbd02ff0e79c82d9a70083ad37dddff69');
+          assert.equal(release.sourceHash,'97ff16c48aa791f7381ea89ebf597b9d45a9ea2e6940d5d9e24d98d648401f74');
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: c8f892801a89342764fe16131b6b6cdd3a1524b7');
+          console.log('Pinned source commit: 5c582b7ae11642b5983a73aed563e1488f03c89e');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -260,7 +260,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'c8f892801a89342764fe16131b6b6cdd3a1524b7',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible',evidenceNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/matrix.json')).length,coldEvidenceDetailCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/cold-details.json')).length,liveEvidenceReproductions:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-baseline.json')).filter(row=>row.reproduced).length},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'5c582b7ae11642b5983a73aed563e1488f03c89e',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible',evidenceNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/matrix.json')).length,coldEvidenceDetailCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/cold-details.json')).length,liveRecordNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).length,liveRecordIssues:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).filter(row=>row.wrongHeading||row.unavailable).length,liveEvidenceReproductions:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-baseline.json')).filter(row=>row.reproduced).length},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
