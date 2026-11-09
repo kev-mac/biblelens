@@ -20,7 +20,13 @@ Subject changes clear incompatible findings. Selected-list subject, finding, que
 
 Both lists show active search/finding constraints and provide a clear action that retains the chosen collection. Filtered-empty, genuinely empty and failed-load states have different wording/actions. Missing optional overview data is acknowledged instead of silently presented as complete. The broad browser clears record/day constraints on category changes and consistently labels its full text catalog "Text Comparisons". No new Explore cards/rows or unrelated redesigns are added. Evidence data, classifications, passages, source links, private notes and app identity are unchanged.
 
-## Verification status and exact handoff
+## Visual correction after the previous automated run
+
+The parent inspected artifact 13646270192 and rejected the selected-list explanatory row in `webkit-web-320x844-dark-filtered-empty.png` and `webkit-offline-1366x1024-light-subject.png`. The shared `.lens-collection-meta` rule in `src/pages.css` used `display:flex` and `justify-content:space-between`. It treated the introductory text, link and final period as three separate items, squeezing the narrow link and separating punctuation on desktop. The explanation now has a scoped class with normal block paragraph flow; wording, link target, colors and all other metadata rows are preserved.
+
+The navigation browser checks now measure both populated and filtered-empty intro rows across the existing sixteen engine/bundle/viewport combinations (32 checks): actual link fragments, inline period position, margins, preserved destination and keyboard activation/Back at 320 pixels. Cropped PNGs accompany full screenshots, and a small CI review artifact is retained early so manual review can happen without waiting for the remaining matrices. These geometry assertions do not replace actual visual inspection. The new exact-source run and visual review remain pending; the previous passing automated run below is superseded and is not an accepted release.
+
+## Superseded automated candidate and artifact record
 
 Product source is `5c582b7ae11642b5983a73aed563e1488f03c89e`; CI head is `4c55cb0b2f50d99c51ba36d8446256824c888780`. Both identify version 1.1.0, build 400, fingerprint `97ff16c48aa791f7381ea89ebf597b9d45a9ea2e6940d5d9e24d98d648401f74`. [Run 42548660263](https://github.com/kev-mac/biblelens/actions/runs/42548660263), job 128939099831, succeeded against that exact source. Main remains build 399 at `a5e34265f32cfb513d3baf40289d2d973240b41f` at the final remote check. Documentation checkpoints do not change the fingerprint.
 
