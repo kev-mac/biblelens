@@ -65,6 +65,121 @@
     "newReadability": "PASS FK7.075/no length or jargon findings",
     "repositoryReadability": "Report-only inherited findings",
     "currentDraftGuardAndFraming": "PASS; B4 remains unaccepted and proposal collections unchanged",
-    "realBrowser": "PENDING separate authorized runner"
-  }
+    "realBrowser": "Not run locally. Final separate runner passed 228 cases on 19 real records; actual screenshots not inspected here."
+  },
+  "ci": {
+    "productCodeCommit": "a4e5e3d8334c395de8cfe826fbd95524a0f1097f",
+    "testedCiCommit": "30008ba82bb54746b638fc14440b5a950881e3d0",
+    "sourceHash": "80ea78e29c620b0e1aeb3cfefc215fdc8729234ff7cd87032184865f44be361a",
+    "productDraftPr": 13,
+    "ciDraftPr": 14,
+    "runId": 42567628377,
+    "jobId": 128997533010,
+    "url": "https://github.com/kev-mac/biblelens/actions/runs/42567628377",
+    "conclusion": "success",
+    "requiredReleasePrepare": "PASS including Chromium/WebKit release smoke, sync, release, mobile and shared builds",
+    "sourceAndBaselineUiGuard": "PASS",
+    "currentDraftBoundary": "PASS, every equality and ownerAccepted:false assertion retained",
+    "all24WebOfflineReviewParity": "PASS, zero external requests",
+    "branding": "PASS exact zLenz: Bible metadata",
+    "artworkParity": "PASS",
+    "contextMatrix": {
+      "status": "PASS",
+      "cases": 228,
+      "records": 19,
+      "newRecords": 6,
+      "engines": [
+        "Chromium",
+        "WebKit"
+      ],
+      "widths": [
+        390,
+        1157
+      ],
+      "height": 1184,
+      "editions": [
+        "KJV",
+        "ASV",
+        "WEB"
+      ],
+      "checks": [
+        "actual edition text",
+        "full selected ranges",
+        "two surrounding verses within chapter bounds",
+        "touch/mouse/keyboard activation",
+        "horizontal dialog margins",
+        "Escape and focus return",
+        "page errors"
+      ],
+      "screenshots": "Generated on runner; not materialized or visually inspected on this executor"
+    },
+    "chromiumSandbox": true,
+    "canonicalBundlePackaging": "PASS exact source/candidate/web/offline identities and matrix count asserted",
+    "artifacts": [
+      {
+        "id": 13652721367,
+        "name": "build-401-verified-bundles-42567628377-1",
+        "bytes": 452944802,
+        "githubReportedZipSha256": "55d5b36e905cdd65b36934f7c96ba7943d5221d0e0bd78c82bcb221767731e8d",
+        "expiresAt": "2026-11-16T05:42:22Z"
+      },
+      {
+        "id": 13652338128,
+        "name": "build-401-contradiction-results-42567628377-1",
+        "bytes": 34390538,
+        "githubReportedZipSha256": "4b443d8f41116defad57315616b5922cb6f8d452c719869f4bbab0c9cd9e696a",
+        "expiresAt": "2026-11-16T05:42:37Z"
+      }
+    ],
+    "independentlyDownloadedArchiveBytesVerifiedHere": false,
+    "innerBundleAndWorkerHashesVerifiedHere": false,
+    "screenshotsInspectedHere": false,
+    "firstAttempt": {
+      "runId": 42567017102,
+      "jobId": 128995621914,
+      "ciCommit": "587df91722ffc5cfcac69f234aca8a8796589ea9",
+      "conclusion": "failure",
+      "requiredPrepare": "PASS",
+      "contextCases": 228,
+      "contextResult": "PASS",
+      "failure": "CI guard's execFileSync default buffer could not hold the 1,245,696-byte baseline draft (ENOBUFS). Corrected only maxBuffer to 16 MiB; no assertion, source, pin or sandbox change.",
+      "resultArtifactId": 13652331882,
+      "resultGithubReportedZipSha256": "8204a6aa466aca3148a783973e61e8503e1e70edff3b84c8e5edb4445a1e2267",
+      "candidatePackaged": false
+    },
+    "transfer": {
+      "environment": "ccarenv_b64_Y2NhcmVudl81NDczYzdmNmU3Njg4MTkxYjkyMGE1YTJmMjEzNzMwNQ",
+      "specRevision": "1",
+      "observedSpecRevision": "1",
+      "observationsCurrent": true,
+      "networkMode": "restricted",
+      "policyState": "enforced",
+      "artifactHost": "sdmntpreastus2.oaiusercontent.com",
+      "artifactHostAllowed": false,
+      "oaiAllowedHosts": [
+        "sdmntprwestus2.oaiusercontent.com",
+        "sdmntprwestus3.oaiusercontent.com"
+      ],
+      "firstArtifactId": 13652331882,
+      "fileId": "file_00000000ae1c81f68cec7db49a8bdab8",
+      "localArtifactDownloadAttempted": false,
+      "policyChanged": false,
+      "reason": "Broker returned a file reference successfully; local transfer was not attempted because its host is absent from this executor's current enforced allowlist. No new HTTP or automatic-approval denial occurred.",
+      "finalArtifactIds": [
+        13652721367,
+        13652338128
+      ],
+      "brokerCallsSucceeded": true,
+      "localTransferAttempted": false
+    },
+    "merged": false,
+    "published": false,
+    "deviceInstalled": false
+  },
+  "remainingReleaseGates": [
+    "Independently materialize final archives in a permitted environment and verify GitHub ZIP digests, inner tar and Worker hashes against prepared-manifest.json.",
+    "Inspect actual final screenshots; automated geometry/text assertions are not a visual review.",
+    "Review the bounded product change and obtain any required draft-readiness/merge approval before release.",
+    "Reconcile current canonical and Site state, stage exact tested artifacts and verify publication under RELEASING.md; no installation from this task."
+  ]
 }
