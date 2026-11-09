@@ -81,13 +81,20 @@ jobs:
           git worktree add --detach .release/baseline-401 9c4dee52ff66c01c10a3f30420d7f21d74e85322
           ln -s "$GITHUB_WORKSPACE/node_modules" .release/baseline-401/node_modules
           npm --prefix .release/baseline-401 run build 2>&1 | tee .release/explore-402/baseline-build.log
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          const source=fs.readFileSync('.release/baseline-401/scripts/serve.mjs','utf8');assert(source.includes('const port=8787;'));assert(source.includes("import worker from './built-worker.mjs';"));
+          // An ignored QA adapter changes only its listen port and relative import.
+          // Accepted baseline source and its actual production bundle stay intact.
+          fs.mkdirSync('.release/baseline-401/.release',{recursive:true});fs.writeFileSync('.release/baseline-401/.release/serve-8788.mjs',source.replace('const port=8787;','const port=8788;').replace("import worker from './built-worker.mjs';","import worker from '../scripts/built-worker.mjs';"));
+          JS
 
       - name: Open exact before and after builds on runner loopback
         id: preview
         run: |
-          PORT=8787 node scripts/serve.mjs > .release/explore-402/after-server.log 2>&1 &
+          node scripts/serve.mjs > .release/explore-402/after-server.log 2>&1 &
           printf '%s\n' "$!" > .release/explore-402/after-server.pid
-          (cd .release/baseline-401 && PORT=8788 exec node scripts/serve.mjs) > .release/explore-402/before-server.log 2>&1 &
+          (cd .release/baseline-401 && exec node .release/serve-8788.mjs) > .release/explore-402/before-server.log 2>&1 &
           printf '%s\n' "$!" > .release/explore-402/before-server.pid
           node --input-type=module <<'JS'
           import fs from 'node:fs';import assert from 'node:assert/strict';import {setTimeout} from 'node:timers/promises';
