@@ -1,4 +1,4 @@
-name: "Build 400 zLenz: Bible browser checks"
+name: "Build 400 zLenz: Bible and Evidence checks"
 
 on:
   pull_request:
@@ -17,7 +17,7 @@ jobs:
   browser-checks:
     if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/browser-checks-400'
     runs-on: ubuntu-22.04
-    timeout-minutes: 40
+    timeout-minutes: 50
     defaults:
       run:
         shell: bash
@@ -40,9 +40,9 @@ jobs:
 
       - name: Verify exact build 400 source
         run: |
-          git merge-base --is-ancestor fa8694f2e84f40dae28925108a977d0bb258a653 HEAD
-          git cat-file -e fa8694f2e84f40dae28925108a977d0bb258a653^{commit}
-          git diff --exit-code fa8694f2e84f40dae28925108a977d0bb258a653 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
+          git merge-base --is-ancestor d3f11106d1a9d18e795fa0ceead6f4bbac12c9af HEAD
+          git cat-file -e d3f11106d1a9d18e795fa0ceead6f4bbac12c9af^{commit}
+          git diff --exit-code d3f11106d1a9d18e795fa0ceead6f4bbac12c9af HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -50,10 +50,10 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,400);
-          assert.equal(release.sourceHash,'a15b438d0c873cd99f70051591338535282c2e38e4b18814b5a00b20f9d700dd');
+          assert.equal(release.sourceHash,'af8df452eee6d32d593bb6c8f3c7f15a2ba872e6a051ac5f12bb3e59d7a94fd0');
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: fa8694f2e84f40dae28925108a977d0bb258a653');
+          console.log('Pinned source commit: d3f11106d1a9d18e795fa0ceead6f4bbac12c9af');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -98,6 +98,7 @@ jobs:
             .release/browser-ci/release-prepare.log
             .release/browser-ci/source-release.json
             .release/branding/**
+            .release/evidence-navigation/**
           retention-days: 7
           include-hidden-files: true
 
@@ -138,9 +139,17 @@ jobs:
           assert(ready,'The exact build 400 preview did not become ready.');
           JS
 
+      - name: Reproduce live Evidence filtering and check actual web/offline navigation
+        id: navigation
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+          BIBLELENS_LIVE_BASE_URL: https://scripture-lens.kvn-mcgwn.chatgpt.site
+        run: node scripts/check-evidence-navigation-browser.mjs 2>&1 | tee .release/browser-ci/evidence-navigation.log
+
       - name: Check exact branding, responsive headers and legacy saved-data compatibility
         id: branding
-        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.navigation.outcome == 'success' }}
         env:
           NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
         run: node scripts/check-branding-browser.mjs 2>&1 | tee .release/browser-ci/branding.log
@@ -217,6 +226,7 @@ jobs:
             .release/browser-ci/*.log
             .release/browser-ci/source-release.json
             .release/branding/**
+            .release/evidence-navigation/**
             .release/reader-annotations/**
             .release/evidence-tags/**
             .release/contradiction-reviews/**
@@ -250,7 +260,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'fa8694f2e84f40dae28925108a977d0bb258a653',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible'},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'d3f11106d1a9d18e795fa0ceead6f4bbac12c9af',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible',evidenceNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/matrix.json')).length,liveEvidenceReproductions:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-baseline.json')).filter(row=>row.reproduced).length},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
@@ -263,6 +273,7 @@ jobs:
           path: |
             .release/browser-ci/source-release.json
             .release/branding/**
+            .release/evidence-navigation/**
             .release/browser-ci/prepared-manifest.json
             .release/browser-ci/prepared-bundles.tar.gz
             .release/browser-ci/prepared-bundles.sha256
@@ -281,6 +292,7 @@ jobs:
             .release/browser-ci/*.log
             .release/browser-ci/source-release.json
             .release/branding/**
+            .release/evidence-navigation/**
             .release/browser-ci/prepared-manifest.json
             .release/browser-ci/prepared-bundles.sha256
             .release/explore-annotations/**
