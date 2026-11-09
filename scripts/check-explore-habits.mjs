@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const source=fs.readFileSync('src/atlas-explore.js','utf8');
+let saved=null;
+const context={localStorage:{getItem:()=>saved},Date};
+const api=vm.runInNewContext('(()=>{'+source.slice(source.indexOf(' const habitKey='),source.indexOf(' function updateCounts()'))+'return {habits,streak,dayKey,dailyVerse};})()',context);
+const day=new Date(2026,10,9,12);
+assert.equal(api.streak({days:[]},day),0,'new readers have no invented streak');
+assert.equal(api.streak({days:['2026-11-07','2026-11-08']},day),2,'yesterday grace period');
+assert.equal(api.streak({days:['2026-11-07','2026-11-09']},day),1,'missed days break a streak');
+assert.equal(api.streak({days:['2026-10-31','2026-11-01','2026-11-02']},new Date(2026,10,2,12)),3,'local calendar days cross DST');
+assert.equal(api.streak({days:['2024-02-28','2024-02-29','2024-03-01']},new Date(2024,2,1,12)),3,'leap day continuity');
+saved='{broken';assert.equal(api.habits().days.length,0);
+saved='{"days":["2026-11-09",null,{}],"done":["genesis-1","unknown"]}';assert.equal(api.habits().days.length,1);assert.equal(api.habits().done.length,1);
+context.localStorage.getItem=()=>{throw Error('blocked');};assert.equal(api.habits().done.length,0,'storage failure leaves Explore usable');
+console.log('PASS: honest streaks, local dates, grace period, missed days, DST, leap days, invalid data and unavailable storage.');

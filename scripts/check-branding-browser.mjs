@@ -15,11 +15,11 @@ async function settle(page){
 }
 async function header(page,width,native){
  const result=await page.locator('#lensMasthead').evaluate(node=>{
-  const brand=node.querySelector('.lens-brand'),word=brand.lastElementChild,range=document.createRange();range.selectNode(word.firstChild);
+  const brand=node.querySelector('.lens-brand'),word=[...brand.children].find(n=>!n.classList.contains('lens-mark')&&getComputedStyle(n).display!=='none'),range=document.createRange();range.selectNodeContents(word);
   const rect=n=>n.getBoundingClientRect().toJSON(),nav=node.querySelector('.lens-primary'),tools=node.querySelector('.lens-tools');
-  return {header:rect(node),brand:rect(brand),word:rect(word),text:range.getBoundingClientRect().toJSON(),name:word.firstChild.textContent,label:brand.getAttribute('aria-label'),target:brand.getAttribute('href'),tools:rect(tools),nav:getComputedStyle(nav).position==='fixed'?null:rect(nav),overflow:word.scrollWidth>word.clientWidth+1};
+  return {header:rect(node),brand:rect(brand),word:rect(word),text:range.getBoundingClientRect().toJSON(),name:word.classList.contains('explore-brand-name')?word.textContent:word.firstChild.textContent,explore:word.classList.contains('explore-brand-name'),label:brand.getAttribute('aria-label'),target:brand.getAttribute('href'),tools:rect(tools),nav:getComputedStyle(nav).position==='fixed'?null:rect(nav),overflow:word.scrollWidth>word.clientWidth+1};
  });
- assert.equal(result.name,name);assert.equal(result.label,name+' · Explore');assert.equal(result.target,'#discover');
+ assert.equal(result.name,result.explore?'zLenz Bible':name);assert.equal(result.label,name+' · Explore');assert.equal(result.target,'#discover');
  assert(!result.overflow&&result.text.width>0&&result.text.right<=result.word.right+1,'The full name fits without clipping: '+JSON.stringify(result));
  assert(result.header.top>=(native?24:0)-1&&result.brand.left>=0&&result.brand.right<=width+1);
  assert(result.brand.top>=result.header.top-1&&result.brand.bottom<=result.header.bottom+1);
