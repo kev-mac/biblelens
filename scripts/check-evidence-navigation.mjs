@@ -3,6 +3,11 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source=fs.readFileSync('src/accepted-questions.js','utf8');
+const loader=fs.readFileSync('src/feature-loader.js','utf8');
+const requirements=vm.runInNewContext(loader.slice(loader.indexOf(' function requirements(hash){'),loader.indexOf(' let routing=null;'))+';requirements');
+for(const route of ['#debate/early-ark-count','#debate/headline-01'])assert.deepEqual(Array.from(requirements(route)),['study','debates'],'Cold records require citation/review rendering before detail execution.');
+assert.deepEqual(Array.from(requirements('#questions')),['debates'],'Collection browsing keeps its existing lightweight dependency.');
+
 const questions=JSON.parse(fs.readFileSync('data/rc1-accepted.json')).questions;
 function fixture({fail=false,deferred=false}={}){
  let html='',finish;const calls=[];
