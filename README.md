@@ -1,4 +1,4 @@
-# xLenz: Bible
+# zLenz: Bible
 
 This snapshot packages KJV, WEB and ASV scripture for all 66 books and 1,189 chapters, with KJV as the default. Reading and existing annotations do not require AI requests.
 
