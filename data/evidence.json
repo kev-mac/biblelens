@@ -6782,7 +6782,32 @@
         "url": "https://ebible.org/eng-kjv/EXO12.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "book": "Exodus",
+      "passages": [
+        "Exodus 9:1-7",
+        "Exodus 9:9-10",
+        "Exodus 9:18-25",
+        "Exodus 12:29"
+      ],
+      "conflict": "Exodus says all Egyptian livestock died in one plague. Later plagues still affect animals or warn their owners to bring them indoors.",
+      "context": "God tells Moses to warn Pharaoh during the plague account. The first warning names livestock in the field. The later hail warning distinguishes animals brought indoors from those left outside.",
+      "explanations": [
+        {
+          "reading": "The first warning limits which animals are affected",
+          "support": "Exodus 9:3 names livestock in the field. That can limit the later word all. The hail account shows that some owners shelter animals, but does not list survivors of the earlier plague."
+        },
+        {
+          "reading": "All means every Egyptian animal without a limit",
+          "support": "Exodus 9:6 sounds complete when read alone. Under that reading, the later animals create a real gap in the story. New animals could have been acquired, but no such purchase is narrated."
+        }
+      ],
+      "assessment": "The broadest reading of all clashes with the later animals. The earlier field limit offers a text-based explanation. It does not show that sheltered animals survived that first plague or that herds were replaced.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Ancient animal terms and events as history were not checked.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-crops-surviving-hail",
@@ -7230,7 +7255,29 @@
         "url": "https://ebible.org/eng-kjv/EXO12.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "book": "Exodus",
+      "passages": [
+        "Exodus 12:43-49"
+      ],
+      "conflict": "The Passover rules exclude a foreigner, yet allow a resident outsider to take part after circumcision.",
+      "context": "God gives Moses and Aaron rules for the Passover meal. The passage treats enslaved people bought for money, hired workers and resident outsiders differently. Verse 48 states a condition for joining the meal.",
+      "explanations": [
+        {
+          "reading": "Admission depends on the stated condition",
+          "support": "Verse 48 allows the resident outsider to join after all his males are circumcised. Verse 49 gives one rule for local people and resident outsiders. The permission is therefore qualified."
+        },
+        {
+          "reading": "Every outsider term describes one excluded group",
+          "support": "Taking the opening exclusion as absolute makes the later permission look opposed to it. That reading must account for the condition stated in verse 48 and the separate household rules."
+        }
+      ],
+      "assessment": "The same passage gives both the restriction and the condition for joining. A clash follows only if the opening exclusion has no exception. Equal access to this meal does not establish equal rights under every other law.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. The ancient terms for outsider groups and wider legal history were not audited.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-firstborn-redemption",
@@ -8728,7 +8775,34 @@
         "url": "https://ebible.org/eng-kjv/EXO37.htm"
       }
     ],
-    "checked": "2026-10-12"
+    "checked": "2026-10-12",
+    "contradictionReview": {
+      "book": "Exodus",
+      "passages": [
+        "Exodus 20:4-6",
+        "Exodus 25:18-22",
+        "Exodus 26:1",
+        "Exodus 32:1-8",
+        "Numbers 21:8-9",
+        "2 Kings 18:4"
+      ],
+      "conflict": "One command bans making likenesses. Other commands require winged figures, called cherubim, and a snake image.",
+      "context": "God gives the image command with rules against other gods and bowing to images. Later instructions to Moses require figures for the ark and worship tent. Numbers reports a commanded snake image. Kings later reports its destruction because people burned incense to it.",
+      "explanations": [
+        {
+          "reading": "The ban targets images used for worship",
+          "support": "Exodus 20:5 forbids bowing to and serving the images. Exodus 32 condemns worship of the calf. The snake's later destruction follows the report of offerings to it. These contexts support a limit based on use."
+        },
+        {
+          "reading": "The making ban covers every likeness",
+          "support": "Read without a limit from the next verse, Exodus 20:4 forbids the very act of making likenesses. The later commands to make figures then require exceptions. Calling them authorized does not remove the need to explain those exceptions."
+        }
+      ],
+      "assessment": "A ban on every likeness clashes with the commanded figures. The worship context supports a narrower reading. It does not define every boundary for religious art or show that all ancient readers applied one rule.",
+      "verification": "Only the packaged KJV, ASV and WEB passages were checked. Ancient image practices, source history and broader rules about religious art were not audited.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "exodus-curtain-layers",
@@ -31475,7 +31549,37 @@
         "ref": "Genesis 3:6",
         "quote": "and he did eat"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "book": "Genesis",
+      "passages": [
+        "Genesis 2:17",
+        "Genesis 3:6",
+        "Genesis 3:19",
+        "Genesis 3:22-24",
+        "Genesis 5:5"
+      ],
+      "conflict": "God warns the man of death on the day he eats the fruit. The man eats, but a later account gives Adam's lifespan as 930 years.",
+      "context": "God gives the warning to the man in the garden. The story then reports the eating, a future return to dust and removal from the garden. A later family account records Adam's death.",
+      "explanations": [
+        {
+          "reading": "Bodily death must occur on that same day",
+          "support": "The warning ties death to the day of eating. The eating scene and later lifespan then clash with that deadline. Neither passage states an exception to the deadline in those words."
+        },
+        {
+          "reading": "The warning announces the sentence or certainty of death",
+          "support": "Genesis 3:19 describes a future return to dust while addressing the man's ongoing work. That supports eventual bodily death. It does not expressly say that a sentence starts that day but is carried out later."
+        },
+        {
+          "reading": "Death includes separation from life with God",
+          "support": "The loss of access to the garden and tree of life can support this theological reading. The story does not call being sent out death, so the reading adds a meaning beyond an explicit definition in the warning."
+        }
+      ],
+      "assessment": "There is a strong tension if the warning requires bodily death within that day. A later death sentence or loss of life with God can explain the story. Those remain readings of the warning rather than definitions the text supplies.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Hebrew and Greek claims and named commentary readings were not rechecked. No date or event was verified as history.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "cain-talked-with-abel-greek-gives-his-words",
@@ -32714,7 +32818,31 @@
         "ref": "Genesis 35:18",
         "quote": "but his father called him Benjamin"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "book": "Genesis",
+      "passages": [
+        "Genesis 35:6-9",
+        "Genesis 35:16-18",
+        "Genesis 35:23-26"
+      ],
+      "conflict": "The birth scene puts Benjamin near Ephrath after Jacob's return from Paddan Aram. A later list includes Benjamin among the sons born in Paddan Aram.",
+      "context": "The same chapter places Jacob in Canaan after his return from Paddan Aram. It then describes Rachel's last childbirth near Ephrath. A family list follows, grouping Jacob's twelve sons by their mothers.",
+      "explanations": [
+        {
+          "reading": "The closing line is a broad family summary",
+          "support": "The nearby birth scene gives Benjamin's setting in detail. A summary can group the sons by the main place where the family grew. This reading needs an exception for Benjamin that the final sentence does not state."
+        },
+        {
+          "reading": "The location clause applies to each listed son",
+          "support": "Benjamin is named in the list, and the closing line says these sons were born in Paddan Aram. If the clause covers every son, it gives a birthplace opposed to the nearby birth scene."
+        }
+      ],
+      "assessment": "The location clause and birth scene clash if the clause applies to every listed son. A broad summary explains the list only with an unstated exception for Benjamin. The chapter does not expressly mark that exception.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Earlier Hebrew and Greek claims were not rechecked. Birth locations were not verified as history.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "benjamin-ten-sons-or-sons-and-grandsons-greek",
@@ -93636,7 +93764,30 @@
         "ref": "Romans 5:13",
         "quote": "sin is not imputed when there is no law"
       }
-    ]
+    ],
+    "contradictionReview": {
+      "book": "Genesis",
+      "passages": [
+        "Genesis 6:11-13",
+        "Romans 5:13-14"
+      ],
+      "conflict": "Genesis describes God judging violence before the law of Moses. Romans says sin is not charged where there is no law.",
+      "context": "God explains the coming judgment to Noah. Paul writes to believers in Rome while comparing Adam and Christ. Immediately after the statement about law, he says death ruled from Adam to Moses.",
+      "explanations": [
+        {
+          "reading": "Paul distinguishes the time before Moses from the absence of every moral rule",
+          "support": "Romans 5:13 says sin already existed before the law. Verse 14 says death also ruled before Moses. Those statements allow wrongdoing before that law without defining every way guilt is charged."
+        },
+        {
+          "reading": "No law means no possible responsibility",
+          "support": "Under this absolute reading, judgment on the earlier world conflicts with the rule in Romans. The reading must still explain why the very next verse describes death before Moses."
+        }
+      ],
+      "assessment": "Romans itself places both sin and death before Moses. A clash with Genesis requires the added premise that no law means no responsibility under any rule. The passages do not fully define how guilt is charged.",
+      "verification": "Only the packaged KJV, ASV and WEB text and context were checked. Hebrew and Greek claims and named commentary readings were not rechecked. No historical or full theological ruling is made.",
+      "checked": "2026-11-09",
+      "sourceReport": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429"
+    }
   },
   {
     "id": "no-respect-of-persons-with-god-or-jacob-have-i-loved-but-esau-have-i-hated-romans-2-11-romans-9-13",
