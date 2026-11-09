@@ -6,7 +6,7 @@ import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to the exact prepared app.');
 const live=process.env.BIBLELENS_LIVE_BASE_URL||'https://scripture-lens.kvn-mcgwn.chatgpt.site';
-const output='.release/evidence-navigation',matrix=[],baseline=[];
+const output='.release/evidence-navigation',matrix=[],baseline=[],coldDetails=[];
 fs.mkdirSync(output,{recursive:true});
 const get=async url=>{const r=await fetch(url);assert(r.ok,url+' '+r.status);return r.json();};
 const release=await get(base+'/release.json');
@@ -20,7 +20,7 @@ const historyTotal=featured.filter(row=>row.comparison==='text-vs-history').leng
 const conflicts=questions.filter(row=>row.labels.includes('Conflicts with evidence')).length;
 assert(total>0&&textTotal>0&&historyTotal>0&&conflicts>0);
 assert.equal(questions.filter(row=>row.comparison==='text-vs-text'&&row.labels.includes('Conflicts with evidence')).length,0,'The original incompatible-filter case is present in real packaged data.');
-const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');};
+const save=()=>{fs.writeFileSync(output+'/matrix.json',JSON.stringify(matrix,null,2)+'\n');fs.writeFileSync(output+'/live-baseline.json',JSON.stringify(baseline,null,2)+'\n');fs.writeFileSync(output+'/cold-details.json',JSON.stringify(coldDetails,null,2)+'\n');};
 async function settle(page){await page.evaluate(()=>document.fonts.ready);await page.evaluate(async()=>{await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);});}
 async function fit(page){assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Evidence page stays inside its margins.');}
 async function acceptedReady(page){await page.locator('#debates-view:not([hidden]) .accepted-questions:not([role])').waitFor();}
@@ -60,6 +60,17 @@ try{
   const browser=await kind.launch(engine==='chromium'?{chromiumSandbox:true}:{});
   try{
    for(const [width,height] of [[601,1184],[1366,1024]])await liveCase(browser,engine,width,height);
+   for(const bundle of ['web','offline'])for(const id of [expected[1].records[0].id,'early-ark-count']){
+    const address=bundle==='web'?base:offline,context=await browser.newContext({viewport:{width:601,height:1184},hasTouch:true,reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage();page.setDefaultTimeout(30000);
+    try{
+     await page.goto(address+'/#debate/'+id);await page.locator('#debate-view .phase2-sides:not([aria-busy])').waitFor();await page.locator('[data-debate-save]').waitFor();
+     assert(await page.evaluate(()=>typeof referenceLink==='function'&&typeof contradictionReviewHtml==='function'));
+     if(id==='early-ark-count')assert(await page.locator('#debate-view .contradiction-review').isVisible(),'A cold comparison shows its verified review.');
+     await settle(page);await fit(page);await page.screenshot({path:`${output}/${engine}-${bundle}-cold-${id}.png`,fullPage:false});
+     coldDetails.push({engine,bundle,id,status:'PASS',route:await page.evaluate(()=>location.hash)});save();console.log('PASS cold Evidence detail',engine,bundle,id);
+    }catch(error){console.error('FAIL cold Evidence detail',JSON.stringify({engine,bundle,id,error:error.message,state:await page.evaluate(()=>({route:location.hash,text:document.getElementById('debate-view')?.innerText.slice(0,1200)})).catch(()=>({}))}));await page.screenshot({path:`${output}/${engine}-${bundle}-cold-${id}-failure.png`,fullPage:false}).catch(()=>{});throw error;}
+    finally{await context.close();}
+   }
    for(const bundle of ['web','offline'])for(const [width,height] of [[320,844],[601,1184],[820,1180],[1366,1024]]){
     const address=bundle==='web'?base:offline,theme=[320,820].includes(width)?'dark':'light',name=`${engine}-${bundle}-${width}x${height}-${theme}`;
     const context=await browser.newContext({viewport:{width,height},hasTouch:width<=1024,reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage(),errors=[],apiRequests=[];
@@ -123,6 +134,6 @@ try{
    }
   }finally{await browser.close();}
  }
- assert.equal(matrix.length,16);assert.equal(baseline.length,4);
- console.log('PASS: 16 web/offline Chromium/WebKit Evidence navigation cases; real records, incompatible findings, category/search transitions, Back, empty/error distinction, keyboard, margins and API parity. Four live baseline observations and screenshots retained.');
+ assert.equal(matrix.length,16);assert.equal(baseline.length,4);assert.equal(coldDetails.length,8);
+ console.log('PASS: 16 web/offline Chromium/WebKit Evidence navigation cases; real records, incompatible findings, category/search transitions, Back, empty/error distinction, keyboard, margins and API parity. Eight cold regular-detail cases and four live baseline observations/screenshots retained.');
 }finally{mobile.kill('SIGTERM');mobileLog.end();save();}

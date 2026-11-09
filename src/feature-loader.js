@@ -52,7 +52,8 @@
  function requirements(hash){
   const path=hash.split('?')[0];
   if(!path||['#','#discover','#sync'].includes(path))return [];
-  if(/^#(?:questions|debates?)$|^#debate\//.test(path))return ['debates'];
+  if(/^#debate(?:\/|$)/.test(path))return ['study','debates'];
+  if(/^#(?:questions|debates)$/.test(path))return ['debates'];
   const directory=/^#(?:evidence|categories|saved)(?:[/?]|$)/.test(path)?'evidence':/^#(?:people|characters)(?:\/|$)/.test(path)?'characters':/^#places(?:\/|$)/.test(path)?'places-directory':/^#timeline(?:\/|$)/.test(path)?'timeline':/^#commandments(?:\/|$)/.test(path)?'commandments':/^#prophecies(?:\/|$)/.test(path)?'prophecies':null;
   return ['study',...(directory?[directory]:[])];
  }
