@@ -317,7 +317,7 @@ function buildVerseShareUrl(book,chapter,verses){
 async function shareVerseLink(book,chapter,verse){
  const url=buildVerseShareUrl(book,chapter,[verse]);
  try{
-  if(typeof navigator.share==='function')await navigator.share({title:`${books[book].name} ${chapter}:${verse} · xLenz: Bible`,url});
+  if(typeof navigator.share==='function')await navigator.share({title:`${books[book].name} ${chapter}:${verse} · zLenz: Bible`,url});
   else{await navigator.clipboard.writeText(url);toast('Passage link copied');}
   return true;
  }catch(error){if(error?.name!=='AbortError')toast('Could not share this passage. Try Copy instead.');return false;}

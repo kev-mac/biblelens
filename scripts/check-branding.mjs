@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {packageOfflineApp} from './offline-app.mjs';
 
-const name='xLenz: Bible',read=path=>fs.readFileSync(path,'utf8');
+const name='zLenz: Bible',read=path=>fs.readFileSync(path,'utf8');
 const config=JSON.parse(read('capacitor.config.json'));
 assert.equal(config.appName,name);assert.equal(config.appId,'com.scripturelens.app');assert.equal(config.webDir,'www');
 assert.equal(JSON.parse(read('package.json')).name,'scripture-lens');

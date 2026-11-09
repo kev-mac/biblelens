@@ -353,7 +353,7 @@
   persist();row.querySelector('.lens-note-save-status').textContent=storageAvailable?'Saved on this device':'Storage unavailable — export to keep your work';
  });
  el('lens-backup').onclick=()=>el('export-backup').click();
- el('lens-export').onclick=()=>download('xLenz-Bible-notebook.md','# xLenz: Bible notebook\n\n'+noteRows().map(note=>`## ${note.title||note.label}\n\n${note.label}\n\n${note.text||'(Bookmark; no note)'}\n`).join('\n'),'text/markdown');
+ el('lens-export').onclick=()=>download('zLenz-Bible-notebook.md','# zLenz: Bible notebook\n\n'+noteRows().map(note=>`## ${note.title||note.label}\n\n${note.label}\n\n${note.text||'(Bookmark; no note)'}\n`).join('\n'),'text/markdown');
  function parseReference(value){
   const match=/^(.+?)\s*(\d{1,3})(?::(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)?$/.exec(BibleLensSearch.canonicalBooks(value,books).trim());if(!match)return null;
   const name=match[1].toLowerCase().replace(/[.\s]/g,''),book=books.find(b=>b.name.toLowerCase().replace(/\s/g,'')===name)||books.filter(b=>b.name.toLowerCase().replace(/\s/g,'').startsWith(name)&&name.length>=3).reduce((only,b,i,all)=>all.length===1?b:null,null);

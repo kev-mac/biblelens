@@ -23,7 +23,7 @@ try{
  const expectedRelease=await (await fetch(base+'/release.json')).json();
  const expected=await (await fetch(base+'/api/chapter?book=65&chapter=22')).json();
  const manifest=await(await fetch(base+'/manifest.webmanifest')).json();
- assert.equal(manifest.name,'xLenz: Bible');assert.equal(manifest.display,'standalone');
+ assert.equal(manifest.name,'zLenz: Bible');assert.equal(manifest.display,'standalone');
  assert((await fetch(base+manifest.icons[0].src)).ok);
  assert.equal((await fetch(base)).headers.get('content-security-policy'),"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'");
  for(const [name,engine] of [['Chromium',chromium],['WebKit',webkit]]){
