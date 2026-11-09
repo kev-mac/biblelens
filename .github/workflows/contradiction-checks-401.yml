@@ -74,7 +74,7 @@ jobs:
         run: |
           node --input-type=module <<'JS' | tee .release/contradiction-401/draft-boundary.log
           import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {b4Proposals,b4Content} from './scripts/b4-neutral.mjs';import {framingAudit} from './scripts/check-neutral-framing.mjs';
-          const current=JSON.parse(fs.readFileSync('research/b4/wording-proposals.json')),baseline=JSON.parse(execFileSync('git',['show','b5e89a902202edfc723fa6a46fe01e4374f9039c:research/b4/wording-proposals.json']));
+          const current=JSON.parse(fs.readFileSync('research/b4/wording-proposals.json')),baseline=JSON.parse(execFileSync('git',['show','b5e89a902202edfc723fa6a46fe01e4374f9039c:research/b4/wording-proposals.json'],{maxBuffer:16*1024*1024}));
           assert.equal(current.ownerAccepted,false);assert.deepEqual(current.collections,baseline.collections);assert.deepEqual(current,b4Proposals());assert.equal(b4Content('data/evidence.json',{}),fs.readFileSync('data/evidence.json','utf8'));
           const framing=framingAudit();assert.deepEqual(framing.violations,[]);assert.deepEqual(framing.renames,[]);console.log('PASS: B4 remains unaccepted, original proposal collections intact, production overlay excluded and current framing clean.');
           JS
