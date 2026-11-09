@@ -40,13 +40,13 @@ jobs:
 
       - name: Verify exact product source and preserved build 401 data
         run: |
-          git merge-base --is-ancestor 7b137efe105d59b4d471dc2e4dd257ac6b543674 HEAD
-          git diff --exit-code 7b137efe105d59b4d471dc2e4dd257ac6b543674 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research
+          git merge-base --is-ancestor 8ce5bd48d653d2d8a9832dcd4acbb040d5c4d50e HEAD
+          git diff --exit-code 8ce5bd48d653d2d8a9832dcd4acbb040d5c4d50e HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research
           git diff --exit-code 9c4dee52ff66c01c10a3f30420d7f21d74e85322 HEAD -- data worker ios android package-lock.json capacitor.config.json .openai/hosting.json db drizzle research
           mkdir -p .release/explore-402
           node --input-type=module <<'JS'
           import fs from 'node:fs';import assert from 'node:assert/strict';import {releaseInfo} from './scripts/release-info.mjs';
-          const release=releaseInfo();assert.equal(release.buildNumber,402);assert.equal(release.sourceHash,'a1831902cb055b97497c75ee2e9627af836aa09e7e6852f9c88a6d8beaa3be29');fs.writeFileSync('.release/explore-402/source-release.json',JSON.stringify(release,null,2)+'\n');console.log(release);
+          const release=releaseInfo();assert.equal(release.buildNumber,402);assert.equal(release.sourceHash,'207dd6982da2a70007bde2e96754220f19542660293cb4807c3b1770b9c73184');fs.writeFileSync('.release/explore-402/source-release.json',JSON.stringify(release,null,2)+'\n');console.log(release);
           JS
 
       - name: Install locked dependencies
@@ -147,7 +147,7 @@ jobs:
           const expected=JSON.parse(fs.readFileSync('.release/explore-402/source-release.json')),candidate=JSON.parse(fs.readFileSync('.release/candidate.json')),{canonicalCommit,...release}=candidate;assert.deepEqual(release,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const before=JSON.parse(fs.readFileSync('.release/explore-comparison/before/matrix.json')),after=JSON.parse(fs.readFileSync('.release/explore-comparison/after/matrix.json')),annotations=JSON.parse(fs.readFileSync('.release/explore-annotations/matrix.json'));assert.equal(before.length,28);assert.equal(after.length,28);assert.equal(annotations.length,56);for(const rows of [before,after,annotations])assert(rows.every(row=>row.status==='PASS'));
-          const worker=fs.readFileSync('dist/server/index.js');fs.writeFileSync('.release/explore-402/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'7b137efe105d59b4d471dc2e4dd257ac6b543674',baselineCommit:'9c4dee52ff66c01c10a3f30420d7f21d74e85322',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),comparisonBefore:28,comparisonAfter:28,annotationCases:56,screenshotsVisuallyInspected:false,signedNativeAssets:false},null,2)+'\n');
+          const worker=fs.readFileSync('dist/server/index.js');fs.writeFileSync('.release/explore-402/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'8ce5bd48d653d2d8a9832dcd4acbb040d5c4d50e',baselineCommit:'9c4dee52ff66c01c10a3f30420d7f21d74e85322',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),comparisonBefore:28,comparisonAfter:28,annotationCases:56,screenshotsVisuallyInspected:false,signedNativeAssets:false},null,2)+'\n');
           JS
           tar -czf .release/explore-402/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/explore-402/prepared-bundles.tar.gz > .release/explore-402/prepared-bundles.sha256
