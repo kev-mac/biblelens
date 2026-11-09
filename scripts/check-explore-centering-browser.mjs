@@ -23,16 +23,18 @@ async function settle(page){
 async function measure(page){return page.evaluate(()=>{
  const main=document.getElementById('main'),view=document.getElementById('explore-view'),section=view.querySelector('.ux-topic-section'),row=document.getElementById('ux-lane-collections'),card=row.querySelector('.ux-topic-centered'),field=document.getElementById('ux-explore-search');
  const rect=node=>node.getBoundingClientRect().toJSON(),style=node=>{const s=getComputedStyle(node);return {display:s.display,gridTemplateColumns:s.gridTemplateColumns,paddingLeft:s.paddingLeft,paddingRight:s.paddingRight,marginInlineStart:s.marginInlineStart,marginInlineEnd:s.marginInlineEnd,filter:s.filter};};
- const available=document.documentElement.clientWidth,center=available/2,c=rect(card),r=rect(row);
+ const root=document.documentElement,available=root.clientWidth,center=available/2,c=rect(card),r=rect(row),activeStyle=getComputedStyle(card);
  const visible=node=>{const s=getComputedStyle(node),b=rect(node);return s.display!=='none'&&s.visibility!=='hidden'&&s.opacity!=='0'&&b.width>0&&b.height>0&&b.right>0&&b.left<available&&b.bottom>0&&b.top<innerHeight;};
  const rails=[...document.querySelectorAll('aside,[role=complementary],.directory-letter-rail,.directory-letter-edge')].filter(visible).map(node=>({id:node.id,className:node.className,rect:rect(node)}));
  const inactive=[...row.querySelectorAll('.ux-topic:not(.ux-topic-centered)')].map(node=>({id:node.id,filter:getComputedStyle(node).filter}));
- return {id:card.id,viewport:{innerWidth,clientWidth:available,visualWidth:visualViewport?.width,visualOffsetLeft:visualViewport?.offsetLeft,scrollbarWidth:innerWidth-available,mobileLaneQuery:matchMedia('(max-width:767px)').matches,center},active:{...c,center:(c.left+c.right)/2,error:(c.left+c.right)/2-center,filter:getComputedStyle(card).filter,color:getComputedStyle(card).color,overlay:getComputedStyle(card,'::after').backgroundImage},main:{rect:rect(main),style:style(main)},view:rect(view),section:rect(section),row:{rect:r,center:(r.left+r.right)/2,style:style(row),scrollLeft:row.scrollLeft},field:rect(field),visibleRails:rails,inactive,pageOverflow:document.documentElement.scrollWidth>available+1};
+ return {id:card.id,viewport:{innerWidth,clientWidth:available,layoutWidth:rect(root).width,reservedGutterPixels:available-rect(root).width,scrollbarGutter:getComputedStyle(root).scrollbarGutter,actualVerticalOverflow:root.scrollHeight>root.clientHeight,visualWidth:visualViewport?.width,visualOffsetLeft:visualViewport?.offsetLeft,scrollbarWidth:innerWidth-available,mobileLaneQuery:matchMedia('(max-width:767px)').matches,center},active:{...c,center:(c.left+c.right)/2,error:(c.left+c.right)/2-center,filter:activeStyle.filter,color:activeStyle.color,aspectRatio:activeStyle.aspectRatio,minHeight:activeStyle.minHeight,borderRadius:activeStyle.borderRadius,imageFit:getComputedStyle(card.querySelector('img')).objectFit,imagePosition:getComputedStyle(card.querySelector('img')).objectPosition,overlay:getComputedStyle(card,'::after').backgroundImage},main:{rect:rect(main),style:style(main)},view:rect(view),section:rect(section),row:{rect:r,center:(r.left+r.right)/2,style:style(row),scrollLeft:row.scrollLeft},field:rect(field),visibleRails:rails,inactive,pageOverflow:root.scrollWidth>available+1};
  });}
 function assertCentered(value){
  assert(Math.abs(value.active.error)<=1.5,'Active card misses the usable viewport center: '+JSON.stringify(value));
  assert(Math.abs(value.row.center-value.viewport.center)<=1,'Lane itself must be centered in the usable viewport');
  assert(Math.abs((value.field.left+value.field.right)/2-value.viewport.center)<=1,'Search and carousel share the viewport center');
+ assert.equal(value.viewport.scrollbarGutter,'auto','Explore does not reserve a scrollbar gutter when it does not need scrolling');
+ assert(Math.abs(value.viewport.reservedGutterPixels)<=1,'No empty right-side root gutter remains');
  assert(!value.pageOverflow);assert.equal(value.active.filter,'none');assert.equal(value.visibleRails.length,0,'Explore must not display a directory/complementary rail');
 }
 async function choose(page,index){await page.locator('#explore-view .ux-lane-page').nth(index).tap();await page.waitForFunction(id=>document.getElementById('ux-topic-'+id)?.classList.contains('ux-topic-centered'),ids[index]);await settle(page);}
@@ -49,10 +51,12 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    for(let index=0;index<ids.length;index++){
     await choose(page,index);const value=await measure(page);assert.equal(value.id,'ux-topic-'+ids[index]);assert.equal(value.active.filter,'none');assert(!value.pageOverflow);assert.equal(value.visibleRails.length,0);
     if(phase==='before'){
-     const offset=value.viewport.mobileLaneQuery?-24:0;assert(Math.abs(value.active.error-offset)<=1.5,'Actual build 402 differs from the source-proven mobile offset: '+JSON.stringify({engine,width,height,value}));
+     const offset=value.viewport.mobileLaneQuery?-24:0,mainCenter=(value.main.rect.left+value.main.rect.right)/2;assert(Math.abs(value.active.center-mainCenter-offset)<=1.5,'Record the lane offset separately from the additional reserved root gutter: '+JSON.stringify({engine,width,height,value}));
     }else{
      assertCentered(value);assert(old&&old.positions[index].id===value.id,'Missing actual build 402 position');const prior=old.positions[index];
-     assert(Math.abs(value.active.width-prior.active.width)<=1&&Math.abs(value.active.height-prior.active.height)<=1,'Centering must preserve card dimensions');
+     for(const key of ['aspectRatio','minHeight','borderRadius','imageFit','imagePosition'])assert.equal(value.active[key],prior.active[key],'Preserve responsive card sizing and artwork rules: '+key);
+     if(Math.abs(value.section.width-prior.section.width)<=1)assert(Math.abs(value.active.width-prior.active.width)<=1&&Math.abs(value.active.height-prior.active.height)<=1,'Unchanged available width preserves actual card dimensions');
+     else assert(value.active.width>=prior.active.width-1&&value.active.width-prior.active.width<=Math.abs(value.section.width-prior.section.width)+1,'Responsive cards may use only the space reclaimed from the gutter');
      assert.equal(value.active.color,prior.active.color);assert.equal(value.active.overlay,prior.active.overlay,'Active artwork shading remains unchanged');
      const brightness=filter=>Number(/brightness\(([^)]+)\)/.exec(filter)?.[1]);for(let i=0;i<value.inactive.length;i++)assert(brightness(value.inactive[i].filter)<brightness(prior.inactive[i].filter),'Every inactive card becomes darker');
      if(prior.viewport.mobileLaneQuery)assert(Math.abs(value.active.error)<Math.abs(prior.active.error)-20,'The existing phone offset is resolved, not ignored as a stale report');
