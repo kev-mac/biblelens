@@ -16,6 +16,8 @@ assert(!markup.includes('ux-lane-manuscripts')&&!markup.includes('ux-topic-text'
 assert(markup.includes('id="ux-topic-evidence" data-topic="evidence" href="#questions?mode=text"'),'Text Comparisons remains the Evidence destination');
 const debates=read('src/debates.js');for(const href of ['#questions?mode=text','#questions?filter=T'])assert(debates.includes('href="'+href+'"'),'Evidence filters retain '+href);
 assert(markup.includes('<h1 class="sr-only" tabindex="-1">Explore</h1>'));assert(markup.includes('role="search"'));assert(markup.includes('for="ux-explore-search"'));assert(markup.includes('type="search" maxlength="300"'));
+assert(markup.includes('class="lens-button ux-explore-submit" aria-label="Search" title="Search"><svg'),'Search has a named icon submit control');
+assert(!markup.includes('>Search</button>'),'No separate visible text Search button');
 input.value='  John 3:16  ';form.onsubmit({preventDefault(){}});assert.deepEqual(searches,['John 3:16']);
 fixture.render();assert.equal(renders,1,'Counts and return navigation preserve the mounted input');assert.equal(input.value,'  John 3:16  ');
 input.value=' ';form.onsubmit({preventDefault(){}});assert.equal(searches.length,1);assert.match(status.textContent,/Enter a Bible reference/);assert(focused);
@@ -35,10 +37,11 @@ closeContext.location.hash='#read/0/1';frame=null;close();assert.equal(frame,nul
 const tree=postcss.parse(read('src/overrides.css')),rules=[];tree.walkRules(rule=>rules.push(rule));
 const last=(selector,prop,media=false)=>rules.filter(rule=>rule.selector===selector&&!!rule.parent.name===media).flatMap(rule=>rule.nodes.filter(node=>node.prop===prop)).at(-1)?.value;
 assert.equal(last('html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead .ux-search','display'),'none');
-assert.equal(last('html body.lens-app #explore-view','--lane-card-width'),'min(88cqw,64dvh)');assert.equal(last('html body.lens-app #explore-view','--lane-card-width',true),'min(88cqw,96dvh)');
+assert.equal(last('html body.lens-app #explore-view','--lane-card-width'),'min(82cqw,60dvh)');assert.equal(last('html body.lens-app #explore-view','--lane-card-width',true),'min(82cqw,90dvh)');
 assert.equal(last('html body.lens-app #explore-view .ux-topic-section','container-type'),'inline-size');assert.equal(last('html body.lens-app #explore-view a.ux-topic','aspect-ratio'),'var(--lane-card-aspect)');
 assert.equal(last('html body.lens-app #explore-view a.ux-topic>img','object-fit'),'cover');assert.equal(last('html body.lens-app #explore-view a.ux-topic','border-radius'),'21px');
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','min-height'),'48px');assert(atlas.includes('stops[Math.min(active,stops.length-1)]'),'Resize retains the active carousel position');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-direction'),'row');assert.equal(last('html body.lens-app #explore-view [data-topic=stories] img','object-position'),'88% center');
-assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wrap'),'nowrap');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'auto');
+assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wrap'),'nowrap');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','position'),'absolute');
+assert.equal(last('html body.lens-app #explore-view #ux-explore-search','border-radius'),'999px');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'44px');
 console.log('PASS: one Collections carousel with seven destinations, text/translation routes retained in Evidence filters, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry and actual destination navigation remain separate.');

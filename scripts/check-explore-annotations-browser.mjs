@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {chromium,webkit} from 'playwright';
 const base=process.env.BIBLELENS_PREVIEW_URL;if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an approved preview.');
 const output='.release/explore-annotations';fs.mkdirSync(output,{recursive:true});const results=[];
-const screens=[[320,844],[844,320],[390,844],[844,390],[525,985],[985,525],[820,1180],[1180,820],[1024,1366],[1366,1024],[1440,900],[1920,1080]];
+const screens=[[320,844],[844,320],[390,844],[844,390],[493,983],[983,493],[525,985],[985,525],[820,1180],[1180,820],[1024,1366],[1366,1024],[1440,900],[1920,1080]];
 const ids=['stories','people','places','commandments','lost','evidence','timeline'];
 try{for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
@@ -24,7 +24,10 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    assert(width>height?measures.width>measures.height:measures.height>measures.width,JSON.stringify({width,height,measures}));
    assert.deepEqual(await page.locator('#explore-view .ux-topic').evaluateAll(nodes=>nodes.filter(node=>node.scrollHeight>node.clientHeight+1||node.scrollWidth>node.clientWidth+1).map(node=>node.id)),[],'Overlay copy fits all cards');
    for(const selector of ['#ux-explore-search','#ux-explore-search-form>button']){const box=await page.locator(selector).boundingBox();assert(box.width>=44&&box.height>=44&&box.x>=0&&box.x+box.width<=width);}
-   const fieldBox=await input.boundingBox(),submitBox=await page.locator('#ux-explore-search-form>button').boundingBox();assert(Math.abs(fieldBox.y-submitBox.y)<=1,'Search stays in one compact row: '+JSON.stringify({engine,width,height,fieldBox,submitBox}));
+   const fieldBox=await input.boundingBox(),submitBox=await page.locator('#ux-explore-search-form>button').boundingBox();
+   assert(submitBox.x>=fieldBox.x&&submitBox.x+submitBox.width<=fieldBox.x+fieldBox.width+1&&submitBox.y>=fieldBox.y&&submitBox.y+submitBox.height<=fieldBox.y+fieldBox.height+1,'Submit icon stays inside the search field: '+JSON.stringify({engine,width,height,fieldBox,submitBox}));
+   assert.equal(await page.getByRole('button',{name:'Search',exact:true}).count(),1);assert.equal(await page.locator('#ux-explore-search-form>button').innerText(),'');
+   const searchStyle=await input.evaluate(node=>({radius:parseFloat(getComputedStyle(node).borderTopRightRadius),padding:parseFloat(getComputedStyle(node).paddingRight)}));assert(searchStyle.radius>=fieldBox.height/2&&searchStyle.padding>=submitBox.width+6,'Pill corners and text clearance remain usable');
    assert.equal(await card.locator('img').evaluate(node=>getComputedStyle(node).objectPosition),'88% 50%','The portrait crop retains the people at the doorway');
    if(width<height){const bounds=await card.boundingBox(),badge=await card.locator('.ux-count').boundingBox();assert(badge.x+badge.width<bounds.x+bounds.width*.65,'The portrait count stays away from the face at the upper right');}
    await lane.focus();await page.keyboard.press('End');await page.waitForFunction(()=>document.getElementById('ux-topic-timeline').classList.contains('ux-topic-centered'));
@@ -62,10 +65,10 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     await page.evaluate(()=>BibleLensWorkspace.navigate('#discover'));await input.waitFor();assert.equal(await page.locator('#explore-view .ux-topic').count(),7);assert.equal(await page.locator('#explore-view .ux-topic-section').count(),1);
    }
    assert.deepEqual(errors,[]);
-   if([525,985,820,1180,1440].includes(width)){await input.fill('');await page.locator('.ux-topic-section').first().locator('.ux-lane-page').first().click();await page.waitForFunction(()=>document.getElementById('ux-topic-stories').classList.contains('ux-topic-centered'));await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`${output}/${engine}-${width}x${height}-${theme}.png`,fullPage:true});}
+   if([320,390,493,983,525,985,820,1180,1440].includes(width)){await input.fill('');await page.locator('.ux-topic-section').first().locator('.ux-lane-page').first().click();await page.waitForFunction(()=>document.getElementById('ux-topic-stories').classList.contains('ux-topic-centered'));await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:`${output}/${engine}-${width}x${height}-${theme}.png`,fullPage:true});}
    results.push({engine,width,height,theme,status:'PASS',tile:measures});console.log('PASS Explore',engine,width,height,theme);
   }catch(error){results.push({engine,width,height,theme,status:'FAIL',error:error.message});await page.screenshot({path:`${output}/failure-${engine}-${width}x${height}-${theme}.png`,fullPage:true}).catch(()=>{});throw error;}
   finally{await context.close();}
  }}finally{await browser.close();}
 }}finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');}
-assert.equal(results.length,48);console.log('PASS: 48 portrait/landscape phone, annotated viewport, iPad and desktop cases; one Collections row, seven destinations, Text Comparisons/Translations reached through Evidence filters, fluid tile cropping, search, dismissal, focus, masthead actions and keyboard/touch navigation.');
+assert.equal(results.length,56);console.log('PASS: 56 portrait/landscape phone, both annotated viewports, iPad and desktop cases; one Collections row, seven destinations, Text Comparisons/Translations reached through Evidence filters, fluid tile cropping, inset search icon, pill geometry, dismissal, focus, masthead actions and keyboard/touch navigation.');
