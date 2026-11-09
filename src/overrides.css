@@ -3491,7 +3491,9 @@ html body.lens-app #explore-view {
 }
 html body.lens-app #explore-view .ux-explore-search {--control-radius:999px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch;gap:8px;position:relative;margin:8px auto 20px;max-width:64rem;}
 html body.lens-app #explore-view .ux-explore-search>.ux-search-field {border-radius:999px;}
-html body.lens-app #explore-view #ux-explore-search {flex:1 1 0;min-width:0;width:100%;min-height:48px;padding:10px 52px 10px 16px;border:1px solid var(--lens-rule);border-radius:999px;font:400 1rem/1.4 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
+html body.lens-app #explore-view #ux-explore-search {appearance:none;-webkit-appearance:none;flex:1 1 0;min-width:0;width:100%;min-height:48px;padding:10px 52px 10px 16px;border:1px solid var(--lens-rule);border-radius:999px;font:400 1rem/1.4 var(--ui-font);background:var(--lens-control-bg);color:var(--lens-ink);}
+html body.lens-app #explore-view #ux-explore-search::-webkit-search-cancel-button,
+html body.lens-app #explore-view #ux-explore-search::-webkit-search-decoration {display:none;-webkit-appearance:none;}
 html body.lens-app #explore-view .ux-explore-search>button {position:absolute;inset-inline-end:2px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;min-width:44px;height:44px;min-height:44px;padding:12px;border:0;border-radius:50%;background:transparent;color:var(--lens-ink);}
 html body.lens-app #explore-view .ux-explore-submit svg {display:block;width:20px;height:20px;}
 html body.lens-app #explore-view .ux-explore-search .ux-search-clear {right:46px;}

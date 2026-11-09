@@ -17,6 +17,8 @@ async function settle(page){
   await Promise.all(document.getAnimations().filter(a=>'transitionProperty' in a).map(a=>a.finished.catch(()=>{})));
   await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
  });
+ await page.evaluate(()=>new Promise((resolve,reject)=>{const row=document.getElementById('ux-lane-collections');let previous=row.scrollLeft,stable=0;const started=performance.now();function frame(){const current=row.scrollLeft;stable=Math.abs(current-previous)<.1?stable+1:0;previous=current;if(stable>=8)return resolve();if(performance.now()-started>5000)return reject(Error('Carousel scroll did not settle'));requestAnimationFrame(frame);}requestAnimationFrame(frame);}));
+ await page.locator('.fetch-retry-status').waitFor({state:'hidden'});
 }
 async function geometry(page){return page.evaluate(()=>{
  const field=document.querySelector('#ux-explore-search'),button=field.form.querySelector(':scope>button[type=submit]'),lane=document.querySelector('#ux-lane-collections');
@@ -45,7 +47,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     const brightness=value=>Number(/brightness\(([^)]+)\)/.exec(value)?.[1]);
     assert(brightness(measures.inactiveFilter)<brightness(old.geometry.inactiveFilter),'Only the inactive filter is darker');
     assert.equal(measures.active.color,old.geometry.active.color);assert.equal(measures.active.overlay,old.geometry.active.overlay,'Active card shading remains unchanged');
-    const {field,button}=measures;
+    const {field,button}=measures;assert(await input.evaluate(node=>getComputedStyle(node).appearance==='none'),'The custom field suppresses duplicate platform search chrome');
     assert.equal(button.name,'Search');assert.equal(button.visibleText,'');assert(button.svg);
     assert(button.width>=44&&button.height>=44&&field.height>=48);
     assert(button.left>=field.left&&button.right<=field.right+1&&button.top>=field.top&&button.bottom<=field.bottom+1,'Icon touch target lies inside the input boundary');
@@ -66,7 +68,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     }else{
      await lane.hover();await page.mouse.wheel(500,0);await page.waitForFunction(()=>!document.querySelector('#ux-topic-people').classList.contains('ux-topic-centered'));gesture='horizontal wheel plus touch pager';
     }
-    assert.equal(await page.evaluate(()=>location.hash),'#discover','Scrolling does not open a tile accidentally');
+    await settle(page);assert.equal(await page.evaluate(()=>location.hash),'#discover','Scrolling does not open a tile accidentally');
     await input.click();await page.keyboard.type('John 3:16');assert.equal(await input.inputValue(),'John 3:16');
     const clear=page.locator('#ux-explore-search-form .ux-search-clear');await clear.waitFor({state:'visible'});const clearBox=await clear.boundingBox(),submitBox=await submit.boundingBox(),fieldBox=await input.boundingBox();
     assert(clearBox.x+clearBox.width<=submitBox.x+1,'Clear and submit touch targets remain separate');assert(fieldBox.x+fieldBox.width-await input.evaluate(n=>parseFloat(getComputedStyle(n).paddingRight))<=clearBox.x-4,'Typed text stops before both controls');
