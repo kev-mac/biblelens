@@ -1,0 +1,295 @@
+{
+  "baselineCommit": "9c4dee52ff66c01c10a3f30420d7f21d74e85322",
+  "productCodeCommit": "c34cf3178abe8403977a25431a810f0130d9ca2c",
+  "ciCommit": "928e6b3e16a0b29e95da39fbb38d8e242ce0d95f",
+  "release": {
+    "version": "1.1.0",
+    "buildNumber": 402,
+    "sourceHash": "ff4463907cb1ca89830974c21bf83ad514e43f733b7d7ba8a50ece757ec66544"
+  },
+  "productDraftPr": 15,
+  "ciDraftPr": 16,
+  "run": 42644440182,
+  "job": 129253775402,
+  "ciConclusion": "success",
+  "checks": {
+    "requiredReleasePrepare": "PASS including Chromium/WebKit release smoke, sync, release, mobile and shared builds",
+    "beforeCaptureCases": 28,
+    "afterComparisonCases": 28,
+    "responsiveExploreCases": 56,
+    "retainedCarouselCases": 12,
+    "webOfflineReviews": 24,
+    "reviewParityExternalRequests": 0,
+    "branding": "PASS",
+    "artwork": "PASS",
+    "sourcePreservation": "PASS: evidence, research, Worker, native config and dependency lock unchanged",
+    "chromiumSandboxRequired": true
+  },
+  "reference493": [
+    {
+      "engine": "chromium",
+      "beforeWidth": 378.390625,
+      "afterWidth": 352.59375,
+      "beforePeek": 25.8125,
+      "afterPeek": 38.71875,
+      "inputHeight": 48,
+      "submitTarget": 44
+    },
+    {
+      "engine": "webkit",
+      "beforeWidth": 391.59375,
+      "afterWidth": 364.890625,
+      "beforePeek": 26.71875,
+      "afterPeek": 40.0625,
+      "inputHeight": 48,
+      "submitTarget": 44
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13687452509,
+      "name": "build-402-verified-bundles-42644440182-1",
+      "bytes": 452948590,
+      "githubReportedZipSha256": "2bd3aba853ce8f8f5d7031c77e08f34f08074e0b50923491243fcb68733ed511",
+      "downloadedHere": false,
+      "zipHashIndependentlyVerifiedHere": false
+    },
+    {
+      "id": 13687402642,
+      "name": "build-402-explore-results-42644440182-1",
+      "bytes": 63332900,
+      "githubReportedZipSha256": "aedcf146a002fb9d7d803f26d6111f354fcd73c8991ebb4a149ddceb4d8fd911",
+      "downloadedHere": true,
+      "zipHashIndependentlyVerifiedHere": true
+    }
+  ],
+  "ciReportedInnerArchiveSha256": "5dafc0694a4717a1c1e8df7b538da9f8ba5df47e21d17b2f979d8f902e6994b0",
+  "ciReportedWorkerSha256": "ed1468cddf81945c9661ac15e0a77ccc2f3fac2b3716dde8a6908f898ca4dd14",
+  "ciReportedWorkerBytes": 59204075,
+  "innerArchiveAndWorkerBytesIndependentlyVerifiedHere": false,
+  "visualReview": {
+    "reviewer": "Codex",
+    "date": "2026-11-09",
+    "result": "PASS for the requested scope",
+    "inspectedCount": 16,
+    "pngsInVerifiedResultsArchive": 173,
+    "observations": [
+      "Active cards are slightly narrower and expose more of the darkened neighbors.",
+      "Active colors, artwork, readable text and the single carousel remain.",
+      "Pill field and inset search icon fit across phone, tablet and desktop.",
+      "Filled Chromium and WebKit fields show one custom Clear control plus Search, with visible focus and no overlapping native erase control.",
+      "Final captures wait for natural loading/scroll settlement; no retry toast or mid-snap card was used to approve the final views."
+    ],
+    "screenshots": [
+      {
+        "artifactRelativePath": "explore-comparison/after/webkit-493x983-dark-typed-search.png",
+        "sha256": "c074a0c8e61cf5a69737926103f5fb8e7e86186bc6704246af3b627f186b9d18",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/chromium-493x983-dark-typed-search.png",
+        "sha256": "b2c406f48c621abf8e5d0034feac3398bb891774edf6287da523dfeb572d2b6c",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/chromium-493x983-dark-stories.png",
+        "sha256": "9c8a107f97d853e796becc229cc43048ddb8e1d4f8e7bb11d0daef3cce8fdbff",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/chromium-493x983-dark-stories.png",
+        "sha256": "61b101b0156a73ddef5eaaf357d12e0123f2fd4d8fba12a749a02abc22b822d4",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/webkit-493x983-dark-stories.png",
+        "sha256": "1dcc2779d79c1ff67512e9c5a2cbe23497bbdf4910fc6966af1b109ecddfab7c",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/webkit-493x983-dark-stories.png",
+        "sha256": "03d58215f49a1a20ffc3d22de9b0326fb78e786d0c4a5874c32759bfbd4a8920",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/webkit-320x844-dark-stories.png",
+        "sha256": "15baf2a3f0a89dbe60a8dd96828825482e7970459c421104aa742c7f5229453c",
+        "pngWidth": 320,
+        "pngHeight": 844,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/webkit-320x844-dark-stories.png",
+        "sha256": "e60cae3f57a8d9961a77ee34524788d6b0e2843da90faf4235ab18236b52b4a2",
+        "pngWidth": 320,
+        "pngHeight": 844,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/webkit-820x1180-light-stories.png",
+        "sha256": "a32337b150aab99cdf16724b3385371f351f8990d411e5391e018544498af909",
+        "pngWidth": 820,
+        "pngHeight": 1252,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/webkit-820x1180-light-stories.png",
+        "sha256": "133740b55e4f41cd5e7c93ef396b68d6341fe99d2552135c950e4e2fa02e2a57",
+        "pngWidth": 820,
+        "pngHeight": 1200,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/chromium-1180x820-light-stories.png",
+        "sha256": "cb38763191afdaee8d38e90f40ac6456721ab8f0e4d3158a68a719cfaf574800",
+        "pngWidth": 1180,
+        "pngHeight": 940,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/chromium-1180x820-light-stories.png",
+        "sha256": "4647582331b7a02ff40a3ad3e36ab08898741a2f1138bb2fc7ebd3d31c0c5f94",
+        "pngWidth": 1180,
+        "pngHeight": 912,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/chromium-1440x900-light-stories.png",
+        "sha256": "496dc1a5019f6b58a978948bcb1650d0842acbb3c052f3fee547e69e98e0638b",
+        "pngWidth": 1440,
+        "pngHeight": 948,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/chromium-1440x900-light-stories.png",
+        "sha256": "1e91c6065c9c222ef4ad13068b749fc67d079816a70ef38acbf07c7c3f3428e7",
+        "pngWidth": 1440,
+        "pngHeight": 918,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/before/chromium-493x983-dark-people.png",
+        "sha256": "3f40ae3dbe9e8c66c102d72f3d587ef5fa01ede23bf1f5c91a52ac962e3fc284",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      },
+      {
+        "artifactRelativePath": "explore-comparison/after/chromium-493x983-dark-people.png",
+        "sha256": "01ff0d838f17df80ec5927039475368b733797862a3dcf7d66ff033b67e54ee6",
+        "pngWidth": 493,
+        "pngHeight": 983,
+        "inspected": true
+      }
+    ],
+    "originalAnnotationImagesAvailable": false,
+    "freshBaselineNotArchivedScreenshot": true
+  },
+  "transfer": {
+    "current": true,
+    "spec": "1",
+    "observed": "1",
+    "policyState": "enforced",
+    "allowedDownloadHosts": [
+      "sdmntprwestus2.oaiusercontent.com",
+      "sdmntprwestus3.oaiusercontent.com"
+    ],
+    "bundleArtifact": 13687452509,
+    "bundleFileId": "file_000000004e6882308615cfdac6da8190",
+    "bundleHost": "sdmntprwestus.oaiusercontent.com",
+    "bundleHostAllowed": false,
+    "localBundleTransferAttempted": false,
+    "resultsArtifact": 13687402642,
+    "resultsHost": "sdmntprwestus3.oaiusercontent.com",
+    "policyChanged": false,
+    "urlsRewritten": false,
+    "newDenial": false
+  },
+  "previousAttempts": [
+    {
+      "run": 42637576862,
+      "ciCommit": "55b3d5fd971d12e1aab98a231c28b95eb8f790a2",
+      "sourceCommit": "42984985d1dbc779249ae922742e230e857af987",
+      "fingerprint": "d86e33e9ef466d305d4b69f0b82ad532858758d17cc9211a74e50f1ea3260129",
+      "requiredPrepare": "PASS",
+      "reviewBrandArtworkParity": "PASS",
+      "carouselCases": "12 PASS",
+      "baselineFailure": "New comparison incorrectly required underlap at wide landscape sizes; corrected to visible neighbor edges. Existing mobile-underlap regressions retained.",
+      "annotationFailure": "Shared important control radius overrode pill radius; corrected with form-scoped variable. Existing enhanced clear button also received separate space.",
+      "artifact": 13684437098,
+      "githubReportedDigest": "5619de0e2429d6a21bfc9475568f33a5f5f5690241e9c094a9d7820c10b2c9a6",
+      "candidatePackaged": false
+    },
+    {
+      "run": 42638996271,
+      "job": 129234713693,
+      "ciCommit": "d938645c0d4f29ca86555958fa0fa13ba9e231f0",
+      "sourceCommit": "7b137efe105d59b4d471dc2e4dd257ac6b543674",
+      "fingerprint": "a1831902cb055b97497c75ee2e9627af836aa09e7e6852f9c88a6d8beaa3be29",
+      "requiredPrepare": "PASS",
+      "baselineCases": 28,
+      "baselineResult": "PASS",
+      "carouselCases": "12 PASS",
+      "failures": [
+        "Comparison helper selected the existing Clear button, corrected to the direct submit.",
+        "Short 844x320 landscape card measured 288x288, corrected with proportional 15rem landscape height floor."
+      ],
+      "artifact": 13682899738,
+      "githubReportedDigest": "890eeece8bd8922627276ee061f5073f5fbd088525d0370020f7a58ac2991337",
+      "candidatePackaged": false
+    },
+    {
+      "run": 42640530633,
+      "job": 129240114969,
+      "ciCommit": "818cd19f677ea447eb25ec22c0a3f9edcaab0c0f",
+      "sourceCommit": "8ce5bd48d653d2d8a9832dcd4acbb040d5c4d50e",
+      "fingerprint": "207dd6982da2a70007bde2e96754220f19542660293cb4807c3b1770b9c73184",
+      "ciResult": "PASS",
+      "beforeCases": 28,
+      "afterCases": 28,
+      "annotationCases": 56,
+      "carouselCases": 12,
+      "bundleArtifact": 13684893898,
+      "resultArtifact": 13685139571,
+      "bundleZipVerified": "a1a81d4a58b18453ce820189bec04dc9c338e3918f411f58cc5fce5d349c207b",
+      "resultZipVerified": "33e537015a1cdd799fc27026becf26478d36d38839ac8c3ee6553c8762d1666b",
+      "innerArchiveVerified": "8462340990554cb0c84e06cda0dbeaa7bc04f410d2c0ebf5ed5c2b68436cf5ca",
+      "workerVerified": "284f932c08e13b4d5be1af4df93d2bd4708d52e6b37460670fa615c61f74f640",
+      "imagesInspected": 17,
+      "candidateRejectedByVisualReview": true,
+      "visualFinding": "Filled WebKit input showed native erase control beside custom Clear and Search. Narrowly scoped native appearance/cancel suppression added; capture also now waits for natural scroll/retry settlement. Earlier candidate must not be published."
+    }
+  ],
+  "releaseState": {
+    "draftsReadyForReview": true,
+    "markedReady": false,
+    "merged": false,
+    "published": false,
+    "installed": false,
+    "signedNativeAssetsVerified": false,
+    "unrelatedCiPr14Modified": false
+  },
+  "remaining": [
+    "Download final bundle artifact 13687452509 in a permitted environment; verify ZIP, inner tar and actual Worker bytes against the receipts.",
+    "Obtain the established product PR readiness/merge approval.",
+    "Reconcile fresh Sites source through the supported parent workflow before publication.",
+    "Stage only the exact final tested bundle, verify release, and perform signed-asset/device build-number checks when installing."
+  ],
+  "limits": [
+    "Physical device rendering and physical WebKit touch swipes are not verified. Chromium touch swipe and WebKit wheel/pager interactions were exercised.",
+    "The source helper resource attempted in this executor failed to read; no Site source or access policy was changed.",
+    "The frozen CI manifest says screenshotsVisuallyInspected:false because this review occurred after capture. This separate receipt records the subsequent inspection without changing the archive."
+  ]
+}
