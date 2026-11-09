@@ -46,7 +46,8 @@
     "check:reader-annotations": "node scripts/check-reader-annotations.mjs && node scripts/check-typed-passage.mjs",
     "check:reader-annotations:browser": "node scripts/check-reader-annotations-browser.mjs",
     "check:branding": "node scripts/check-branding.mjs",
-    "check:branding:browser": "node scripts/check-branding-browser.mjs"
+    "check:branding:browser": "node scripts/check-branding-browser.mjs",
+    "check:evidence-navigation:browser": "node scripts/check-evidence-navigation-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",
