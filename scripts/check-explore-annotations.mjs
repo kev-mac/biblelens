@@ -44,4 +44,6 @@ assert.equal(last('html body.lens-app #explore-view #ux-explore-search','min-hei
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-direction'),'row');assert.equal(last('html body.lens-app #explore-view [data-topic=stories] img','object-position'),'88% center');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wrap'),'nowrap');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','position'),'absolute');
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','border-radius'),'999px');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'44px');
+assert.equal(last('html body.lens-app #explore-view .ux-explore-search','--control-radius'),'999px','The shared important radius uses the form-scoped pill shape');
+assert.equal(last('html body.lens-app #explore-view .ux-explore-search .ux-search-clear','right'),'46px','Clear remains beside the inset submit icon');
 console.log('PASS: one Collections carousel with seven destinations, text/translation routes retained in Evidence filters, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry and actual destination navigation remain separate.');

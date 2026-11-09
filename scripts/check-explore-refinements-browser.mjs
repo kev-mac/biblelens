@@ -54,7 +54,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     assert(await submit.evaluate(node=>getComputedStyle(node).outlineStyle!=='none'&&parseFloat(getComputedStyle(node).outlineWidth)>=2),'Keyboard focus is visible');
    }
    await page.locator('.ux-lane-page').nth(1).tap();await page.waitForFunction(()=>document.querySelector('#ux-topic-people').classList.contains('ux-topic-centered'));await settle(page);
-   const neighbors=await lane.locator('.ux-topic').evaluateAll(([previous,current,next])=>{const [a,b,c]=[previous,current,next].map(n=>n.getBoundingClientRect());return a.left<b.left&&a.right>b.left&&c.left<b.right&&c.right>b.right;});assert(neighbors,'Both background cards remain visible beside People');
+   const neighbors=await lane.evaluate(row=>{const [a,b,c]=[...row.querySelectorAll('.ux-topic')].slice(0,3).map(n=>n.getBoundingClientRect().toJSON()),bounds=row.getBoundingClientRect().toJSON();return {leftVisible:Math.max(0,Math.min(a.right,b.left)-Math.max(a.left,bounds.left)),rightVisible:Math.max(0,Math.min(c.right,bounds.right)-Math.max(c.left,b.right)),a,b,c,row:bounds};});assert(neighbors.leftVisible>4&&neighbors.rightVisible>4,'Both background cards remain visible beside People: '+JSON.stringify({engine,width,height,neighbors}));
    assert.equal(await page.locator('#ux-topic-people').evaluate(n=>getComputedStyle(n).filter),'none','Selecting a background card restores its active brightness');
    await page.screenshot({path:`${output}/${engine}-${width}x${height}-${theme}-people.png`,fullPage:true});
    let gesture='not required for baseline capture';
@@ -68,12 +68,15 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
     }
     assert.equal(await page.evaluate(()=>location.hash),'#discover','Scrolling does not open a tile accidentally');
     await input.click();await page.keyboard.type('John 3:16');assert.equal(await input.inputValue(),'John 3:16');
+    const clear=page.locator('#ux-explore-search-form .ux-search-clear');await clear.waitFor({state:'visible'});const clearBox=await clear.boundingBox(),submitBox=await submit.boundingBox(),fieldBox=await input.boundingBox();
+    assert(clearBox.x+clearBox.width<=submitBox.x+1,'Clear and submit touch targets remain separate');assert(fieldBox.x+fieldBox.width-await input.evaluate(n=>parseFloat(getComputedStyle(n).paddingRight))<=clearBox.x-4,'Typed text stops before both controls');
     if(width===493){await page.screenshot({path:`${output}/${engine}-${width}x${height}-${theme}-typed-search.png`,fullPage:true});}
     await submit.tap();await page.locator('#lens-search-overlay[open]').waitFor();const result=page.locator('#lens-results-scripture .lens-result').first();await result.waitFor();
     const destination=await result.getAttribute('href');assert.match(destination,/^#read\//);await result.click();await page.waitForFunction(destination=>location.hash===destination,destination);await page.locator('#verse-16').waitFor();
     await page.evaluate(()=>BibleLensWorkspace.navigate('#discover'));await input.waitFor();await input.focus();await input.press('Escape');await page.keyboard.type('mercy');await input.press('Enter');
     await page.locator('#lens-search-overlay[open]').waitFor();assert.equal(await page.locator('#lens-search-input').inputValue(),'mercy');await page.locator('#lens-search-results .lens-result').first().waitFor();await page.keyboard.press('Escape');await page.waitForFunction(()=>document.activeElement?.id==='ux-explore-search'&&location.hash==='#discover');
     await input.fill('Genesis '.repeat(37));assert(await submit.evaluate(button=>{const r=button.getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return button===hit||button.contains(hit);}), 'Long input cannot cover the submit target');
+    await clear.tap();assert.equal(await input.inputValue(),'');assert(await input.evaluate(n=>document.activeElement===n),'The existing Clear search control still works and restores input focus');
     if(width===320||width===493){await page.evaluate(()=>document.documentElement.style.fontSize='200%');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Large text stays inside page margins');const box=await input.boundingBox(),button=await submit.boundingBox();assert(button.y>=box.y&&button.y+button.height<=box.y+box.height+1);}
    }
    assert.deepEqual(errors,[]);results.push({phase,engine,width,height,theme,status:'PASS',release,geometry:measures,gesture});console.log('PASS Explore comparison',phase,engine,width,height,theme);
