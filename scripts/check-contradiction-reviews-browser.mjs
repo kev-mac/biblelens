@@ -12,7 +12,7 @@ async function waitForScrollIdle(page){
 }
 const base=process.env.BIBLELENS_PREVIEW_URL;
 if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an authorized running preview.');
-const ids=['exodus-crops-surviving-hail','early-sabbath','deuteronomy-ark-builder',...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-397.json')).exodus.addedRecordIds,...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-398.json')).addedRecordIds];
+const ids=['exodus-crops-surviving-hail','early-sabbath','deuteronomy-ark-builder',...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-397.json')).exodus.addedRecordIds,...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-398.json')).addedRecordIds,...JSON.parse(fs.readFileSync('research/notes/contradiction-integration-batch-401.json')).newItems.map(row=>row.id)];
 const records=JSON.parse(fs.readFileSync('data/evidence.json')).filter(row=>ids.includes(row.id));
 assert.deepEqual(records.map(row=>row.id).sort(),ids.slice().sort());
 const output='.release/contradiction-reviews',results=[];
@@ -87,5 +87,5 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
   finally{fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');await context.close();}
  }}finally{await browser.close();}
 }
-assert.equal(results.length,156);
-console.log('PASS: 156 real-record cases; all new passage ranges, three selected editions, touch/keyboard context windows, margins and focus return.');
+assert.equal(results.length,228);
+console.log('PASS: 228 real-record cases; six new bounded reviews and retained ranges in three editions, touch/keyboard context windows, margins and focus return.');

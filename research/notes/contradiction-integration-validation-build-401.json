@@ -1,0 +1,185 @@
+{
+  "baselineCommit": "b5e89a902202edfc723fa6a46fe01e4374f9039c",
+  "sourceBytesVerifiedOnThisExecutor": true,
+  "sourceVersions": {
+    "Exodus": "0",
+    "Genesis": "0"
+  },
+  "exodusSourceSha256": "c1969a023fa99b56c4569de7d3dc478277c6706efd097f1fa2c5d71e78bd051d",
+  "genesisSourceSha256": "c090f1bdf520a21ad7e510aa0b0062e9643740539da55696d4f1f6e2e2e20cf1",
+  "genesisInnerChecksumsVerified": 39,
+  "genesisManifestEntriesVerified": 38,
+  "genesisSourceReviewsVerified": 109,
+  "genesisMappedRecordHashesVerified": 42,
+  "all1933OriginalBodiesMatchSnapshot": true,
+  "embeddedKjv": {
+    "Genesis": {
+      "chapters": 172,
+      "verses": 5502
+    },
+    "Exodus": {
+      "chapters": 168,
+      "verses": 5238
+    }
+  },
+  "baselineEighteenReviewSemanticSha256": "c2f88e2ae60b537d9d23220e5a1c56a289b4a36efab6ff6aa1d41cf0bc92db75",
+  "originalEvidenceSemanticSha256": "e606094ecd328dca081d630facc7f803bcc10e5c21c258735b1b3eaba164f6d1",
+  "newCitedVerseInstances": 68,
+  "newEditionVerseInstances": 204,
+  "contextAuditVerseRows": 124,
+  "sourceScriptsExecuted": false,
+  "newIdsCreated": false,
+  "uiAndNativeInputsUnchanged": true,
+  "b4CollectionsUnchanged": true,
+  "b4OwnerAccepted": false,
+  "rawSourcePacketsApplied": false,
+  "published": false,
+  "deviceInstallInitiated": false,
+  "newProse": {
+    "fields": 50,
+    "averageFk": 7.075081366504395,
+    "violations": 0
+  },
+  "optionalChecks": {
+    "legacyRc1b": {
+      "result": "FAIL",
+      "mismatches": 24,
+      "baselineReviewAdditions": 18,
+      "newReviewAdditions": 6,
+      "allOriginalFieldsMatchHistoricalPins": true,
+      "pinsChanged": false
+    },
+    "archivedB4": {
+      "result": "NOT COMPATIBLE WITH CURRENT CHECKOUT",
+      "reason": "Missing codex/b3 historical ref; script also pins build276. Direct current draft/production/framing guards used; no source pins changed."
+    }
+  },
+  "evidenceSha256": "0ce96d5d24eb170e670ae8f9fe780b8751500e6c8731acdc6fef62273558cce8",
+  "localChecks": {
+    "scopedReviewSchemaPreservation": "PASS",
+    "sharedBuild": "PASS before last wording refinement; exact committed source rebuilt in CI",
+    "webOfflineParity": "24 reviews passed before last wording refinement; final source pending CI",
+    "mobileEngine": "PASS zero external requests",
+    "branding": "PASS exact zLenz metadata/identity",
+    "rc1": "PASS originals and accepted quote/import boundaries",
+    "newReadability": "PASS FK7.075/no length or jargon findings",
+    "repositoryReadability": "Report-only inherited findings",
+    "currentDraftGuardAndFraming": "PASS; B4 remains unaccepted and proposal collections unchanged",
+    "realBrowser": "Not run locally. Final separate runner passed 228 cases on 19 real records; actual screenshots not inspected here."
+  },
+  "ci": {
+    "productCodeCommit": "a4e5e3d8334c395de8cfe826fbd95524a0f1097f",
+    "testedCiCommit": "30008ba82bb54746b638fc14440b5a950881e3d0",
+    "sourceHash": "80ea78e29c620b0e1aeb3cfefc215fdc8729234ff7cd87032184865f44be361a",
+    "productDraftPr": 13,
+    "ciDraftPr": 14,
+    "runId": 42567628377,
+    "jobId": 128997533010,
+    "url": "https://github.com/kev-mac/biblelens/actions/runs/42567628377",
+    "conclusion": "success",
+    "requiredReleasePrepare": "PASS including Chromium/WebKit release smoke, sync, release, mobile and shared builds",
+    "sourceAndBaselineUiGuard": "PASS",
+    "currentDraftBoundary": "PASS, every equality and ownerAccepted:false assertion retained",
+    "all24WebOfflineReviewParity": "PASS, zero external requests",
+    "branding": "PASS exact zLenz: Bible metadata",
+    "artworkParity": "PASS",
+    "contextMatrix": {
+      "status": "PASS",
+      "cases": 228,
+      "records": 19,
+      "newRecords": 6,
+      "engines": [
+        "Chromium",
+        "WebKit"
+      ],
+      "widths": [
+        390,
+        1157
+      ],
+      "height": 1184,
+      "editions": [
+        "KJV",
+        "ASV",
+        "WEB"
+      ],
+      "checks": [
+        "actual edition text",
+        "full selected ranges",
+        "two surrounding verses within chapter bounds",
+        "touch/mouse/keyboard activation",
+        "horizontal dialog margins",
+        "Escape and focus return",
+        "page errors"
+      ],
+      "screenshots": "Generated on runner; not materialized or visually inspected on this executor"
+    },
+    "chromiumSandbox": true,
+    "canonicalBundlePackaging": "PASS exact source/candidate/web/offline identities and matrix count asserted",
+    "artifacts": [
+      {
+        "id": 13652721367,
+        "name": "build-401-verified-bundles-42567628377-1",
+        "bytes": 452944802,
+        "githubReportedZipSha256": "55d5b36e905cdd65b36934f7c96ba7943d5221d0e0bd78c82bcb221767731e8d",
+        "expiresAt": "2026-11-16T05:42:22Z"
+      },
+      {
+        "id": 13652338128,
+        "name": "build-401-contradiction-results-42567628377-1",
+        "bytes": 34390538,
+        "githubReportedZipSha256": "4b443d8f41116defad57315616b5922cb6f8d452c719869f4bbab0c9cd9e696a",
+        "expiresAt": "2026-11-16T05:42:37Z"
+      }
+    ],
+    "independentlyDownloadedArchiveBytesVerifiedHere": false,
+    "innerBundleAndWorkerHashesVerifiedHere": false,
+    "screenshotsInspectedHere": false,
+    "firstAttempt": {
+      "runId": 42567017102,
+      "jobId": 128995621914,
+      "ciCommit": "587df91722ffc5cfcac69f234aca8a8796589ea9",
+      "conclusion": "failure",
+      "requiredPrepare": "PASS",
+      "contextCases": 228,
+      "contextResult": "PASS",
+      "failure": "CI guard's execFileSync default buffer could not hold the 1,245,696-byte baseline draft (ENOBUFS). Corrected only maxBuffer to 16 MiB; no assertion, source, pin or sandbox change.",
+      "resultArtifactId": 13652331882,
+      "resultGithubReportedZipSha256": "8204a6aa466aca3148a783973e61e8503e1e70edff3b84c8e5edb4445a1e2267",
+      "candidatePackaged": false
+    },
+    "transfer": {
+      "environment": "ccarenv_b64_Y2NhcmVudl81NDczYzdmNmU3Njg4MTkxYjkyMGE1YTJmMjEzNzMwNQ",
+      "specRevision": "1",
+      "observedSpecRevision": "1",
+      "observationsCurrent": true,
+      "networkMode": "restricted",
+      "policyState": "enforced",
+      "artifactHost": "sdmntpreastus2.oaiusercontent.com",
+      "artifactHostAllowed": false,
+      "oaiAllowedHosts": [
+        "sdmntprwestus2.oaiusercontent.com",
+        "sdmntprwestus3.oaiusercontent.com"
+      ],
+      "firstArtifactId": 13652331882,
+      "fileId": "file_00000000ae1c81f68cec7db49a8bdab8",
+      "localArtifactDownloadAttempted": false,
+      "policyChanged": false,
+      "reason": "Broker returned a file reference successfully; local transfer was not attempted because its host is absent from this executor's current enforced allowlist. No new HTTP or automatic-approval denial occurred.",
+      "finalArtifactIds": [
+        13652721367,
+        13652338128
+      ],
+      "brokerCallsSucceeded": true,
+      "localTransferAttempted": false
+    },
+    "merged": false,
+    "published": false,
+    "deviceInstalled": false
+  },
+  "remainingReleaseGates": [
+    "Independently materialize final archives in a permitted environment and verify GitHub ZIP digests, inner tar and Worker hashes against prepared-manifest.json.",
+    "Inspect actual final screenshots; automated geometry/text assertions are not a visual review.",
+    "Review the bounded product change and obtain any required draft-readiness/merge approval before release.",
+    "Reconcile current canonical and Site state, stage exact tested artifacts and verify publication under RELEASING.md; no installation from this task."
+  ]
+}

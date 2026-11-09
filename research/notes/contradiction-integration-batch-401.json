@@ -1,0 +1,3532 @@
+{
+  "scope": "Six bounded English-text assessments; no complete book integration",
+  "baselineCommit": "b5e89a902202edfc723fa6a46fe01e4374f9039c",
+  "checked": "2026-11-09",
+  "newItems": [
+    {
+      "id": "exodus-livestock-scope",
+      "book": "Exodus",
+      "sourceReviewId": "exodus-19",
+      "sourceLibraryIdentity": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceArticleHtmlSha256": "7bb0e49cdfd982ed50cf016c3bddc28f294f4cd0450418580ea47f3f1383dd03",
+      "priorArticleTextSha256": "f451d136ee9e3d0d3582233ce932d0ac7a1ee4afed7b9ce8e560cb50a2534778",
+      "priorTextDigestStatus": "Retained, not re-created: original text serialization was not recorded. Whole HTML SHA-256 matches the prior inventory exactly.",
+      "passages": [
+        "Exodus 9:1-7",
+        "Exodus 9:9-10",
+        "Exodus 9:18-25",
+        "Exodus 12:29"
+      ],
+      "reviewSemanticSha256": "69332c8f03486e95285736485535d1d83e0000961c7123938e232d907ec81317",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    },
+    {
+      "id": "exodus-passover-membership",
+      "book": "Exodus",
+      "sourceReviewId": "exodus-24",
+      "sourceLibraryIdentity": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceArticleHtmlSha256": "dd886d56e691d95f61eb4b21ec1929724dbe1af09e3364e16c07ce03b1267bbd",
+      "priorArticleTextSha256": "01df025affae6bbf0a005a8a8191871aa425c48e8061e56ce96f63ec1460db3b",
+      "priorTextDigestStatus": "Retained, not re-created: original text serialization was not recorded. Whole HTML SHA-256 matches the prior inventory exactly.",
+      "passages": [
+        "Exodus 12:43-49"
+      ],
+      "reviewSemanticSha256": "0adb32c4d40f4367cb50fdddfcf80b1d558a4c39025bc7f485187966257caabb",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    },
+    {
+      "id": "exodus-commanded-cherubim",
+      "book": "Exodus",
+      "sourceReviewId": "exodus-49",
+      "sourceLibraryIdentity": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceArticleHtmlSha256": "1a878c84261f39aa13f9ca6ba139b994c13f2d2a77d014ab7bb151341958382c",
+      "priorArticleTextSha256": "90cbf250d0abe18761d213a97cd2fd8e3239e12d6bd28ed09c7ba34bb90225d1",
+      "priorTextDigestStatus": "Retained, not re-created: original text serialization was not recorded. Whole HTML SHA-256 matches the prior inventory exactly.",
+      "passages": [
+        "Exodus 20:4-6",
+        "Exodus 25:18-22",
+        "Exodus 26:1",
+        "Exodus 32:1-8",
+        "Numbers 21:8-9",
+        "2 Kings 18:4"
+      ],
+      "reviewSemanticSha256": "2c8f09672aee88b729a1f3471acdb539e3f62b75f3559d9f6a145770958d63aa",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    },
+    {
+      "id": "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years",
+      "book": "Genesis",
+      "sourceReviewId": "death-warning",
+      "sourceLibraryIdentity": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceReviewSha256": "ab989af9d51c62e769277e38d3e7192313dd5c2734c8588a554eb9e69715dbfd",
+      "passages": [
+        "Genesis 2:17",
+        "Genesis 3:6",
+        "Genesis 3:19",
+        "Genesis 3:22-24",
+        "Genesis 5:5"
+      ],
+      "reviewSemanticSha256": "6932463c3075581f4b3968af6bc96289efbc14a97696e4834e832442685b7d12",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    },
+    {
+      "id": "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13",
+      "book": "Genesis",
+      "sourceReviewId": "prelaw-judgment",
+      "sourceLibraryIdentity": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceReviewSha256": "65a197afd41ba4a69c8d6e64078077c05adb0bc097205883d68dc98ffedba418",
+      "passages": [
+        "Genesis 6:11-13",
+        "Romans 5:13-14"
+      ],
+      "reviewSemanticSha256": "a76a88df769f74aeaa9585c9b61325593467a7a13589d118a4247fbeff5c8d23",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    },
+    {
+      "id": "benjamin-born-near-ephrath-or-in-padanaram",
+      "book": "Genesis",
+      "sourceReviewId": "benjamin-birthplace",
+      "sourceLibraryIdentity": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429",
+      "sourceReviewSha256": "d3ac88d123f0ab7ebddd6a83243ff709e092dca5d344d62ebcb07782397823a1",
+      "passages": [
+        "Genesis 35:6-9",
+        "Genesis 35:16-18",
+        "Genesis 35:23-26"
+      ],
+      "reviewSemanticSha256": "e9e693193c1af2b224b554a825b6dd330e3d452e3ff49a8ec3189ea60eb66dc1",
+      "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification."
+    }
+  ],
+  "validation": {
+    "baselineCommit": "b5e89a902202edfc723fa6a46fe01e4374f9039c",
+    "sourceBytesVerifiedOnThisExecutor": true,
+    "sourceVersions": {
+      "Exodus": "0",
+      "Genesis": "0"
+    },
+    "exodusSourceSha256": "c1969a023fa99b56c4569de7d3dc478277c6706efd097f1fa2c5d71e78bd051d",
+    "genesisSourceSha256": "c090f1bdf520a21ad7e510aa0b0062e9643740539da55696d4f1f6e2e2e20cf1",
+    "genesisInnerChecksumsVerified": 39,
+    "genesisManifestEntriesVerified": 38,
+    "genesisSourceReviewsVerified": 109,
+    "genesisMappedRecordHashesVerified": 42,
+    "all1933OriginalBodiesMatchSnapshot": true,
+    "embeddedKjv": {
+      "Genesis": {
+        "chapters": 172,
+        "verses": 5502
+      },
+      "Exodus": {
+        "chapters": 168,
+        "verses": 5238
+      }
+    },
+    "baselineEighteenReviewSemanticSha256": "c2f88e2ae60b537d9d23220e5a1c56a289b4a36efab6ff6aa1d41cf0bc92db75",
+    "originalEvidenceSemanticSha256": "e606094ecd328dca081d630facc7f803bcc10e5c21c258735b1b3eaba164f6d1",
+    "newCitedVerseInstances": 68,
+    "newEditionVerseInstances": 204,
+    "contextAuditVerseRows": 124,
+    "sourceScriptsExecuted": false,
+    "newIdsCreated": false,
+    "uiAndNativeInputsUnchanged": true,
+    "b4CollectionsUnchanged": true,
+    "b4OwnerAccepted": false,
+    "rawSourcePacketsApplied": false,
+    "published": false,
+    "deviceInstallInitiated": false,
+    "newProse": {
+      "fields": 50,
+      "averageFk": 7.075081366504395,
+      "violations": 0
+    },
+    "optionalChecks": {
+      "legacyRc1b": {
+        "result": "FAIL",
+        "mismatches": 24,
+        "baselineReviewAdditions": 18,
+        "newReviewAdditions": 6,
+        "allOriginalFieldsMatchHistoricalPins": true,
+        "pinsChanged": false
+      },
+      "archivedB4": {
+        "result": "NOT COMPATIBLE WITH CURRENT CHECKOUT",
+        "reason": "Missing codex/b3 historical ref; script also pins build276. Direct current draft/production/framing guards used; no source pins changed."
+      }
+    },
+    "evidenceSha256": "0ce96d5d24eb170e670ae8f9fe780b8751500e6c8731acdc6fef62273558cce8",
+    "localChecks": {
+      "scopedReviewSchemaPreservation": "PASS",
+      "sharedBuild": "PASS before last wording refinement; exact committed source rebuilt in CI",
+      "webOfflineParity": "24 reviews passed before last wording refinement; final source pending CI",
+      "mobileEngine": "PASS zero external requests",
+      "branding": "PASS exact zLenz metadata/identity",
+      "rc1": "PASS originals and accepted quote/import boundaries",
+      "newReadability": "PASS FK7.075/no length or jargon findings",
+      "repositoryReadability": "Report-only inherited findings",
+      "currentDraftGuardAndFraming": "PASS; B4 remains unaccepted and proposal collections unchanged",
+      "realBrowser": "PENDING separate authorized runner"
+    }
+  },
+  "exodus": {
+    "libraryFileId": "libfile_fde3_f-5423b329e1788191a7e8faef252a28a7_2cd39a2a50248191b2b8d2ef3ad1f429",
+    "libraryVersionFromMaterializedXattr": "0",
+    "fileName": "exodus-review.html",
+    "bytes": 1081196,
+    "sha256": "c1969a023fa99b56c4569de7d3dc478277c6706efd097f1fa2c5d71e78bd051d",
+    "readableLocalBytes": true,
+    "zipContentsVerified": false,
+    "sourceSnapshot": {
+      "declaredEvidenceSha256": "d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4",
+      "matchingEvidenceGitCommit": "b3c4713c98c7b418d44585bca38d3e5607cb570b",
+      "limit": "The report declares a data hash, not this Git commit. Equality establishes the evidence snapshot, not the entire producing checkout."
+    },
+    "verification": {
+      "reportEmbeddedKjvChapters": 168,
+      "reportEmbeddedKjvVerses": 5238,
+      "packagedKjvMismatches": 0,
+      "selectedAssessments": "All new cited passage wording and context read in the current packaged KJV, ASV and WEB. Existing eight assessments preserved.",
+      "limits": "No ancient-language, animal/food identification, edition-source, construction, census or historical-event claims recertified.",
+      "mappingMethod": "Report-listed stable IDs were checked for exact existence. Groups without listed IDs remain unmapped, except the accepted burning-bush review matched by subject and all cited ranges. Empty currentRecordIds does not establish that the application has no equivalent.",
+      "mappingCounts": {
+        "groupsWithCurrentIds": 50,
+        "uniqueCurrentIds": 55,
+        "deferredGroupsWithCurrentIds": 34,
+        "deferredGroupsWithoutListedMatch": 38
+      }
+    },
+    "groupedAssessments": 88,
+    "previouslyIntegratedRecordIds": [
+      "early-sabbath",
+      "exodus-hardening-agency",
+      "exodus-crops-surviving-hail",
+      "exodus-manna-storage",
+      "exodus-impartial-judgment",
+      "exodus-curtain-layers",
+      "exodus-aaron-calf-account",
+      "exodus-voluntary-and-fixed-giving",
+      "deuteronomy-ark-builder",
+      "moses-father-in-law-names",
+      "angel-of-the-lord-speaks-as-god-identity-unstated",
+      "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+      "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+    ],
+    "addedRecordIds": [
+      "exodus-livestock-scope",
+      "exodus-passover-membership",
+      "exodus-commanded-cherubim"
+    ],
+    "integratedGroups": 16,
+    "deferredGroups": 72,
+    "completeBook": false,
+    "assessments": [
+      {
+        "sourceReviewId": "exodus-01",
+        "heading": "1. Seventy or seventy-five people?",
+        "sourceRecordIds": [
+          "exodus-family-counts"
+        ],
+        "currentRecordIds": [
+          "exodus-family-counts"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b937a14e1566090270b5e62ced8dcd5041737e79e34835f39df1d3e63e8dfd59",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-02",
+        "heading": "2. The midwives’ answer and the ban on lying",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "eb8789f2412530bb4ddfb0b4a0eedce6c0bcb5e86837e08b06c24c5af0e21a5b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-03",
+        "heading": "3. Moses fled in fear or left without fear?",
+        "sourceRecordIds": [
+          "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+        ],
+        "currentRecordIds": [
+          "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "8dbde7d67d3dbbf74cb02fb58d9a7aa036037041179fb02917a58f24313f569a"
+      },
+      {
+        "sourceReviewId": "exodus-04",
+        "heading": "4. Concern for Israel and impartial judgment",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4f6ca19201b5cb18d803be4bfecc1d5662052944dda050606a78226b0a295594",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-05",
+        "heading": "5. Reuel, Jethro, and Hobab",
+        "sourceRecordIds": [
+          "moses-father-in-law-names"
+        ],
+        "currentRecordIds": [
+          "moses-father-in-law-names"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "6e88e43a176f53f897d5567983a897fc99cd2437287b486b561af17540537150"
+      },
+      {
+        "sourceReviewId": "exodus-06",
+        "heading": "6. God or an angel in the bush?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [
+          "angel-of-the-lord-speaks-as-god-identity-unstated"
+        ],
+        "unmatchedSourceIds": [],
+        "mappingNote": "No stable ID listed by report; subject and all three passage ranges match the existing accepted review.",
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "989a473bd7c1492c637d4785d8d21867e06a82ce5138ac01985662c56094d58b"
+      },
+      {
+        "sourceReviewId": "exodus-07",
+        "heading": "7. Miraculous signs and forbidden magic",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "03df262bf1745df97808e67870adfc0836da2657dfb38b01e87461f47aff623d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-08",
+        "heading": "8. Moses’s speech and Stephen’s praise",
+        "sourceRecordIds": [
+          "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+        ],
+        "currentRecordIds": [
+          "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "876126166a26c9356b2acd7b2dc4221798235f49f03a3d7340f6ff804afb831a"
+      },
+      {
+        "sourceReviewId": "exodus-09",
+        "heading": "9. Who hardens Pharaoh’s heart?",
+        "sourceRecordIds": [
+          "exodus-hardening-agency"
+        ],
+        "currentRecordIds": [
+          "exodus-hardening-agency"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "74a3f2bb5f8fac65eac62d7bec648b4936bef5479352a6c90ac6d8c11f155157"
+      },
+      {
+        "sourceReviewId": "exodus-10",
+        "heading": "10. One son and many sons",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3106fc189a121706a0c6ce88347cc99e920b168849619c35922d421542d6f44d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-11",
+        "heading": "11. Several divine names and titles",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a6165f7846e99907dbee4dca95723a56f18c3ee96266dec0a97c14c734033f72",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-12",
+        "heading": "12. Seeing God and speaking face to face",
+        "sourceRecordIds": [
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god",
+          "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10"
+        ],
+        "currentRecordIds": [
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "they-saw-the-god-of-israel-or-the-place-where-he-stood-greek",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god",
+          "whom-no-man-hath-seen-nor-can-see-or-they-saw-the-god-of-israel-1-timothy-6-16-exodus-24-10"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b52c0f4c09d3069e607b04097850f76fd5d5ddbe5ff859753e87be67d5e830f2",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-13",
+        "heading": "13. Was the name already known to Abraham?",
+        "sourceRecordIds": [
+          "exodus-divine-name"
+        ],
+        "currentRecordIds": [
+          "exodus-divine-name"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "af8609ced372b3d178e198831d67ba2c5dd1e71de70b539d3bd15e1ef9494670",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-14",
+        "heading": "14. What does the fourth generation count?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "970af8412f7416d5186a29eead7a63c6b428b26b644275b015a92bb4673e18b9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-15",
+        "heading": "15. Mahli: son or descendant of Levi?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "f99f1b0895bde9d700e8cfc650367eba7ac39f11adf097dcdc0ac586ab9d6ca4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-16",
+        "heading": "16. Two men named Libni?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1ae6542e9cb3f241e94664d1930554c6ccfddac3d95fb9f054863335fb5e13e9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-17",
+        "heading": "17. Jochebed’s marriage and the later kinship law",
+        "sourceRecordIds": [
+          "jochebed-his-fathers-sister-or-his-fathers-brothers-daughter-greek"
+        ],
+        "currentRecordIds": [
+          "jochebed-his-fathers-sister-or-his-fathers-brothers-daughter-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "50e2ef9df1cce7da356f370717324cd20afb24ef56819c2c8f169485bac5fd7b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-18",
+        "heading": "18. Commanded sacrifices and rejected sacrifices",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "97ea7b6a521668299e91d1440ff73855dd1d983f5a848d7cc3cec93682f446e5",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-19",
+        "heading": "19. Livestock after all livestock die",
+        "sourceRecordIds": [
+          "exodus-livestock-scope"
+        ],
+        "currentRecordIds": [
+          "exodus-livestock-scope"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-bounded-English-text-assessment",
+        "sourceArticleTextSha256": "f451d136ee9e3d0d3582233ce932d0ac7a1ee4afed7b9ce8e560cb50a2534778",
+        "applicationPassages": [
+          "Exodus 9:1-7",
+          "Exodus 9:9-10",
+          "Exodus 9:18-25",
+          "Exodus 12:29"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "exodus-20",
+        "heading": "20. Ownership of the earth",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a77affe516667f9f0dd7e20dae26a3780dd9a5e33618eaf38fa49961be3b2f5c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-21",
+        "heading": "21. Six or seven days of unleavened bread?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1cdc53885695d368eccfec388dc980bdb9b85d8d08af86348fc5abbc97b21444",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-22",
+        "heading": "22. Four hundred or 430 years?",
+        "sourceRecordIds": [
+          "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+          "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek"
+        ],
+        "currentRecordIds": [
+          "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+          "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bf65e9a45d84d794ed55b2847e52b4fa41d0b97640e3229068fb144a6671455e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-23",
+        "heading": "23. Slavery permitted and liberty affirmed",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ffc1e0bdf9b49a9506fab8eaa428f05ad9491bd242d0a65dce2b6a042cb5aa1d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-24",
+        "heading": "24. Can a foreigner eat Passover?",
+        "sourceRecordIds": [
+          "exodus-passover-membership"
+        ],
+        "currentRecordIds": [
+          "exodus-passover-membership"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-bounded-English-text-assessment",
+        "sourceArticleTextSha256": "01df025affae6bbf0a005a8a8191871aa425c48e8061e56ce96f63ec1460db3b",
+        "applicationPassages": [
+          "Exodus 12:43-49"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "exodus-25",
+        "heading": "25. Warrior and God of peace",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "9281801a72040eef1ec29b707c9f4d3fd151a3fa84e769349c55bc4d0be66dd9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-26",
+        "heading": "26. Other gods and only one God",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2ab3cad9daf478f9298313618c36a43a4700887fd557601b4d7ea8c83d871bc3",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-27",
+        "heading": "27. What was inside the ark?",
+        "sourceRecordIds": [
+          "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+        ],
+        "currentRecordIds": [
+          "ark-nothing-save-the-two-tables-or-pot-of-manna-and-rod-also"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "5355873fb8be4eff3b92b036e80ee0d609e3e9c5ca3d80be2e3b450f5f38e335",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-28",
+        "heading": "28. Two rock-water scenes",
+        "sourceRecordIds": [
+          "numbers-rock-instructions-differ"
+        ],
+        "currentRecordIds": [
+          "numbers-rock-instructions-differ"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "02ef22a7369d4a734de81c84f6725020bda5e2f3cc9789dc8ce5ded797418ea1",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-29",
+        "heading": "29. Testing God and being tempted by evil",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "64812f45bba9c6818e2c14e5633101318dd5f3745974ccefb9b33c08bf0c4f92",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-31",
+        "heading": "30. God’s law through angels",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "906aed775034919fd3e98eff52fb2151b98578eb16b49b5c602f8da419635a11",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-32",
+        "heading": "31. Children and ancestral wrongdoing",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "050382b40b2ae9ae2a3fa78e4f134bb06d18fae637c9f2d7b21814c294d0378f",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-33",
+        "heading": "32. Is Sabbath observance required?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c5e967947dea22db28bdd9fd2fb1f1d564dc7a7c4550b9ea310151cb709623a6",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-34",
+        "heading": "33. Honoring parents and costly discipleship",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "77ecbf57aaa1d0ea7c74d630e8b182ad2db9c2af7c5755f6c0e571b8bd948c3c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-35",
+        "heading": "34. Calling someone father",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8410a970ce64356815557ae2c6e4323941b5d31df93f24db64cfd98469a4d459",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-36",
+        "heading": "35. Adultery and Hosea’s marriage",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1c0bd370414c6c4984fdf04ba489f4f69148ada52aaecb4b4ea2f43bc2cc023d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-37",
+        "heading": "36. Egyptian valuables and the ban on theft",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0ec55d0306ff0b68f75f8dc562b0207f3c979c93ff71ae62715848b8ca5ded65",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-38",
+        "heading": "37. Coveting property and desiring gifts",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "d55e564b59a6043aa5825fdc5d17290a94ea9e0cfe0f234b0e9e2b9fe05112d7",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-40",
+        "heading": "38. Several wives and marriage ideals",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ba1c2856847d0ab777e3eaa281c1b255125ddba805819373c3a1c6146ae6b484",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-41",
+        "heading": "39. The killing command and executions",
+        "sourceRecordIds": [
+          "exodus-command-and-penalties"
+        ],
+        "currentRecordIds": [
+          "exodus-command-and-penalties"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8fb782ed0fb996ed370b0dfb2dc920ad861aed1d6650fecdf98fc29a87250a0e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-43",
+        "heading": "40. Protection of strangers and restricted groups",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3f8c943a2f5dbb67381802d944f4e0fd3595d4c40ad32b6ef33166bda25a70e6",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-44",
+        "heading": "41. Interest on loans and a parable’s banker",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a8d4405525239aadea14628c754e2c36cfa54dd51a16958c468d14ca20d2073e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-45",
+        "heading": "42. Giving firstborn sons and redeeming them",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3c3e1b776d6fae73fca854e05225911bbaad800e1efce136ac707d1b5893a15b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-46",
+        "heading": "43. Only God holy and a holy people",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "7847fb7875b393551f4dfa0af1c587bdca824c194e20cf54050044f49477303f",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-47",
+        "heading": "44. Driving out, destroying, and remaining nations",
+        "sourceRecordIds": [
+          "early-conquest"
+        ],
+        "currentRecordIds": [
+          "early-conquest"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "584c41601f671ce6e205fb7341a3dbbd28f07d39a29ff45a70d430690a87d37b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-48",
+        "heading": "45. Different land boundaries",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "29cd0f97df679072ea9fd17b45bb1711d94bf6bf532b14905a5d68b497bbf4cc",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-49",
+        "heading": "46. Forbidden images and commanded cherubim",
+        "sourceRecordIds": [
+          "exodus-commanded-cherubim"
+        ],
+        "currentRecordIds": [
+          "exodus-commanded-cherubim"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-bounded-English-text-assessment",
+        "sourceArticleTextSha256": "90cbf250d0abe18761d213a97cd2fd8e3239e12d6bd28ed09c7ba34bb90225d1",
+        "applicationPassages": [
+          "Exodus 20:4-6",
+          "Exodus 25:18-22",
+          "Exodus 26:1",
+          "Exodus 32:1-8",
+          "Numbers 21:8-9",
+          "2 Kings 18:4"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "exodus-50",
+        "heading": "47. Daily bull or daily lambs?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2806d28a4781ac7d80831ddcbb28941e7f37c83d3588868ff4402e7886179a72",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-51",
+        "heading": "48. Wine offerings and alcohol restrictions",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2fd0b498c1edb2cadf5a31c9370d780d6f62e5c31ed74387474098700c031da4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-52",
+        "heading": "49. Commanded census and David’s census",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3f91880da207d87e22059f04b08a50cc000e743138e36e1e1ce5d5236d51e411",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-53",
+        "heading": "50. Sacred incense and ordinary perfume",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "574c3e25ad2e7edb16c4f4881d809d429623f66ace04c9d87bc10d4f481bc5f2",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-54",
+        "heading": "51. Cut off or executed for Sabbath work?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "8ab08ab2c85058d2fdf445a885d559bf770613b8a633d45ec36094b9a966d733",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-55",
+        "heading": "52. Refreshed and never weary",
+        "sourceRecordIds": [
+          "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
+        ],
+        "currentRecordIds": [
+          "he-rested-and-was-refreshed-or-fainteth-not-neither-is-weary"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "e3eb2e1bc413b241468dd65336472a9b20fb7ac4dbfde0dfb0db9d93e743ed74",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-56",
+        "heading": "53. Sinai or Horeb?",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "987cbe0f96c82ed13e0a8a33b06ed03da47b80b4252b098b0a1a1e53ce6f97fb",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-57",
+        "heading": "54. Relenting after Moses’s plea",
+        "sourceRecordIds": [
+          "exodus-presence-negotiation",
+          "numbers-blessing-stability-and-relenting"
+        ],
+        "currentRecordIds": [
+          "exodus-presence-negotiation",
+          "numbers-blessing-stability-and-relenting"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c3e02c00544dbe8e9ef6cef58b06c44af918fc91592e32b7874d1c8dc2f19dae",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-58",
+        "heading": "55. Dancing at the sea and at the calf",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "adf2b4c1bd8da912997d866afd40022ab813f5cbee668fca8933fb0ed8454eb1",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-61",
+        "heading": "56. God’s bodily descriptions and spirit",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "3757cae591afd9b604102688250ef63b6d463f8e2eb4dfd5b5d79c484c3fab76",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-62",
+        "heading": "57. Who writes the replacement tablets?",
+        "sourceRecordIds": [
+          "exodus-replacement-tablets"
+        ],
+        "currentRecordIds": [
+          "exodus-replacement-tablets"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1ebadf3d933746cdc0e2f19d5d069ebff5b2567af74a297786b81afac6781a7b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-63",
+        "heading": "58. Mercy alongside severe judgment",
+        "sourceRecordIds": [],
+        "currentRecordIds": [],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bb3053a9b2b7578e544ef3b77c0f6145249e86788e77c6a6f1503b985edac5a7",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-64",
+        "heading": "59. Moses or Bezalel makes the ark?",
+        "sourceRecordIds": [
+          "deuteronomy-ark-builder"
+        ],
+        "currentRecordIds": [
+          "deuteronomy-ark-builder"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "1fa13ee84ae926a2d53cfb1d0b342e7583aa4147c1a24840b2968bc8a5ebdd77"
+      },
+      {
+        "sourceReviewId": "exodus-existing-sabbath-reasons",
+        "heading": "60. Two reasons for Sabbath rest",
+        "sourceRecordIds": [
+          "early-sabbath"
+        ],
+        "currentRecordIds": [
+          "early-sabbath"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "44d33b17d6d70be4af996aade10880a2a8e78b8217226ce6d10ac66e940d5961"
+      },
+      {
+        "sourceReviewId": "exodus-existing-crops",
+        "heading": "61. Crops surviving the hail",
+        "sourceRecordIds": [
+          "exodus-crops-surviving-hail"
+        ],
+        "currentRecordIds": [
+          "exodus-crops-surviving-hail"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "previously-integrated",
+        "sourceArticleTextSha256": "4128b0632ca03ba0bd6470830f302cf32ea88ac51f08c96769f1c27908f8f977"
+      },
+      {
+        "sourceReviewId": "exodus-existing-audience",
+        "heading": "62. Moses’s last audience with Pharaoh",
+        "sourceRecordIds": [
+          "exodus-last-audience"
+        ],
+        "currentRecordIds": [
+          "exodus-last-audience"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "621c3c9d06c60078cf83925eae530d966a3b8dcfd3c711e962724522f5d4723d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-manna-storage",
+        "heading": "63. Manna that spoils and manna that keeps",
+        "sourceRecordIds": [
+          "exodus-manna-storage"
+        ],
+        "currentRecordIds": [
+          "exodus-manna-storage"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "3b4117c94d069b471c73b407ff61b81a882ffecc7da4cd27fdf182e90a921aec"
+      },
+      {
+        "sourceReviewId": "exodus-existing-priest-access",
+        "heading": "64. A kingdom of priests and restricted access",
+        "sourceRecordIds": [
+          "exodus-priesthood-access"
+        ],
+        "currentRecordIds": [
+          "exodus-priesthood-access"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "fcd07461bba8703f0219926bb071365abc62757fab95382ad12aa8070a19fdea",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-judgment",
+        "heading": "65. Do not favor or disadvantage the poor",
+        "sourceRecordIds": [
+          "exodus-impartial-judgment"
+        ],
+        "currentRecordIds": [
+          "exodus-impartial-judgment"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "aa9974100deb2b08841f5324ed7009a4644a749dd17eed2292d8d4ab57df552b"
+      },
+      {
+        "sourceReviewId": "exodus-existing-curtains",
+        "heading": "66. Ten or eleven curtains?",
+        "sourceRecordIds": [
+          "exodus-curtain-layers"
+        ],
+        "currentRecordIds": [
+          "exodus-curtain-layers"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "53017c75c87c8f6a06733e828fba6c64c8afdc3c82f3791c7a7420b0261aaf5a"
+      },
+      {
+        "sourceReviewId": "exodus-existing-calf",
+        "heading": "67. Aaron’s account of the calf",
+        "sourceRecordIds": [
+          "exodus-aaron-calf-account"
+        ],
+        "currentRecordIds": [
+          "exodus-aaron-calf-account"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "1f62f5c3211ee03eb710b3e3342c00df5629fe4814acc5185096799625b27487"
+      },
+      {
+        "sourceReviewId": "exodus-existing-giving",
+        "heading": "68. Voluntary gifts and the fixed payment",
+        "sourceRecordIds": [
+          "exodus-voluntary-and-fixed-giving"
+        ],
+        "currentRecordIds": [
+          "exodus-voluntary-and-fixed-giving"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "added-this-batch",
+        "sourceArticleTextSha256": "18e6a1ea13ca09baf146a9f55d8262c85fd7c1a0cc03c0e57e274581e6f986b4"
+      },
+      {
+        "sourceReviewId": "exodus-existing-altar-steps",
+        "heading": "69. No altar steps and a later altar stairway",
+        "sourceRecordIds": [
+          "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+        ],
+        "currentRecordIds": [
+          "neither-shalt-thou-go-up-by-steps-unto-mine-altar-or-his-stairs-toward-the-east"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "b83194226ac07081e2310b9fe2f141d0e5cf9c69581861c093105690438fb867",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-census-timing",
+        "heading": "70. A census total before the dated census",
+        "sourceRecordIds": [
+          "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
+        ],
+        "currentRecordIds": [
+          "silver-from-603550-numbered-before-the-numbering-of-the-second-month"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "9b600e3a4744452bce5e5ca57f850f4c68b37ba282ad864edbed43d693f3779e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-korah",
+        "heading": "71. Korah’s father in two genealogies",
+        "sourceRecordIds": [
+          "korah-son-of-amminadab-or-son-of-izhar"
+        ],
+        "currentRecordIds": [
+          "korah-son-of-amminadab-or-son-of-izhar"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4cfb9c1cfebcd43bdb07ae58d818767632a342cbbd4ee65c685a5d6eceefd1f5",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-first-promise",
+        "heading": "72. The first commandment with a promise",
+        "sourceRecordIds": [
+          "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
+        ],
+        "currentRecordIds": [
+          "honour-thy-father-the-first-commandment-with-promise-or-mercy-unto-thousands-ephesians-6-2-exodus-20-6"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0d6f7c3638374755c404597df47d21f00ff65dcf5f0fa4bfb1bcad8ae0ee8178",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-passover-place",
+        "heading": "73. Passover at home or at one sanctuary?",
+        "sourceRecordIds": [
+          "deuteronomy-passover-place"
+        ],
+        "currentRecordIds": [
+          "deuteronomy-passover-place"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "0c4da8f07f3e7b473e8ffe4efbe0d49b814866027fe9e8cd1d4457ae397c4d52",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-passover-cooking",
+        "heading": "74. Roasting, boiling, and the Passover meal",
+        "sourceRecordIds": [
+          "passover-thou-shalt-roast-or-boil-and-roast-greek"
+        ],
+        "currentRecordIds": [
+          "passover-thou-shalt-roast-or-boil-and-roast-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "742ac12c811b7d7c6e08acf6f75756d32d5e98d356e14dea16f85695729c5e3e",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-testing-people",
+        "heading": "75. God tests people but does not entice evil",
+        "sourceRecordIds": [
+          "god-did-tempt-abraham-or-god-tempteth-no-man"
+        ],
+        "currentRecordIds": [
+          "god-did-tempt-abraham-or-god-tempteth-no-man"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "1347d5b38556a2029972af9a24b3496ac0bee5b907107be9562020351afda2f4",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-hornet",
+        "heading": "76. Hornets, swords, and victory",
+        "sourceRecordIds": [
+          "joshua-hornet-and-military-victory"
+        ],
+        "currentRecordIds": [
+          "joshua-hornet-and-military-victory"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a4a9222ba53ad0f9802e1ac42e491d70dd59002f27d4db329193929f4962e4eb",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-1",
+        "heading": "77. A third city in the old Greek translation",
+        "sourceRecordIds": [
+          "treasure-cities-pithom-and-raamses-greek-adds-on"
+        ],
+        "currentRecordIds": [
+          "treasure-cities-pithom-and-raamses-greek-adds-on"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "19ffebb7702e6de9e28c4ddef0b09e6119a7c0ca4f6d3fdc58dd4dc2347b993b",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-2",
+        "heading": "78. Two renderings of the divine self-identification",
+        "sourceRecordIds": [
+          "i-am-that-i-am-or-i-am-the-one-who-is-greek"
+        ],
+        "currentRecordIds": [
+          "i-am-that-i-am-or-i-am-the-one-who-is-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "4886ede9cc75a37a03117d4b9ad0b28940f74dce2bdd32fbaf6e8cef87475a9d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-3",
+        "heading": "79. Who threatens the traveler?",
+        "sourceRecordIds": [
+          "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
+        ],
+        "currentRecordIds": [
+          "the-lord-met-him-and-sought-to-kill-him-or-an-angel-of-the-lord-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "c00eba53e2462aa4b626ae3569e811287656bffb7a2ce741da6771b4119cf977",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-4",
+        "heading": "80. Armed or in a fifth generation?",
+        "sourceRecordIds": [
+          "israel-went-up-harnessed-or-in-the-fifth-generation-greek"
+        ],
+        "currentRecordIds": [
+          "israel-went-up-harnessed-or-in-the-fifth-generation-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "2699b912489a3c4fa942f4008a6258cda7902bc7007826391fd7784ce9299c7a",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-5",
+        "heading": "81. Warrior or crusher of wars?",
+        "sourceRecordIds": [
+          "the-lord-is-a-man-of-war-or-the-lord-who-crushes-wars-greek"
+        ],
+        "currentRecordIds": [
+          "the-lord-is-a-man-of-war-or-the-lord-who-crushes-wars-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "a12f80dd61671a0f6fb5275c8d160fb6407e6168bc6632e5fab5b7910e34e62c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-6",
+        "heading": "82. Identifying manna or asking about it?",
+        "sourceRecordIds": [
+          "it-is-manna-or-what-is-this-greek"
+        ],
+        "currentRecordIds": [
+          "it-is-manna-or-what-is-this-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "5f8e9c11d583b3ba5ea6ff88ed58c6ddcddaa49ec8bb02dafa2b2fce46959eb9",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-7",
+        "heading": "83. An oath or a raised hand?",
+        "sourceRecordIds": [
+          "because-the-lord-hath-sworn-or-with-a-secret-hand-greek"
+        ],
+        "currentRecordIds": [
+          "because-the-lord-hath-sworn-or-with-a-secret-hand-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "e1f3188269fed7111c9b5699ba10f7f8b11b94be91433edc8627dc7af7565172",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-8",
+        "heading": "84. The order of three commandments",
+        "sourceRecordIds": [
+          "kill-adultery-steal-or-adultery-steal-kill-greek-order"
+        ],
+        "currentRecordIds": [
+          "kill-adultery-steal-or-adultery-steal-kill-greek-order"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "ea700ba33a62643a4bb1e9fe5c4322b9c7ad766e68f53014ba09b4442e4da696",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-9",
+        "heading": "85. Legal cases before judges or God",
+        "sourceRecordIds": [
+          "brought-unto-the-judges-or-before-god-greek"
+        ],
+        "currentRecordIds": [
+          "brought-unto-the-judges-or-before-god-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "cad99e6d736f37527850bc65626eabfdfb3b5fee03102d824e63a8360524754d",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-10",
+        "heading": "86. Different criteria after a pregnancy injury",
+        "sourceRecordIds": [
+          "no-mischief-follow-or-the-child-not-fully-formed-greek"
+        ],
+        "currentRecordIds": [
+          "no-mischief-follow-or-the-child-not-fully-formed-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "bc453846161e28e00ac16b5ea6093c0ccac46e01b5031e99ebd27b1283ba7303",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-11",
+        "heading": "87. A meeting tent before the sanctuary is built",
+        "sourceRecordIds": [
+          "moses-took-the-tabernacle-or-his-own-tent-greek"
+        ],
+        "currentRecordIds": [
+          "moses-took-the-tabernacle-or-his-own-tent-greek"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "56ec47240f4ac1acb7e74ae6e100ca437605eb3da79f74f53ba7831937b166d8",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      },
+      {
+        "sourceReviewId": "exodus-existing-witness-12",
+        "heading": "88. Red Sea and the Hebrew place-name",
+        "sourceRecordIds": [
+          "red-sea-or-sea-of-suph-hebrew"
+        ],
+        "currentRecordIds": [
+          "red-sea-or-sea-of-suph-hebrew"
+        ],
+        "unmatchedSourceIds": [],
+        "integration": "deferred",
+        "sourceArticleTextSha256": "cee97b715729cd2c4bffd8e2d2961b9cd53bd4625a848a33fedfe75550e47a1c",
+        "reason": "Outside this bounded batch; assessment not accepted. Language, translation and historical assertions require separate verification."
+      }
+    ],
+    "priorCheckpointPreviouslyIntegratedRecordIds": [
+      "early-sabbath",
+      "exodus-hardening-agency",
+      "exodus-crops-surviving-hail",
+      "deuteronomy-ark-builder",
+      "moses-father-in-law-names",
+      "angel-of-the-lord-speaks-as-god-identity-unstated",
+      "moses-feared-and-fled-from-pharaoh-or-forsook-egypt-not-fearing-the-king",
+      "i-am-not-eloquent-or-mighty-in-words-and-in-deeds-exodus-4-10-acts-7-22"
+    ]
+  },
+  "genesis": {
+    "book": "Genesis",
+    "sourceFile": "biblelens-genesis-review-2026-11-08.zip",
+    "sourceFileSha256": "c090f1bdf520a21ad7e510aa0b0062e9643740539da55696d4f1f6e2e2e20cf1",
+    "sourceLibraryIdentity": "libfile_fde3_f-b34518178f8c8191855f17fb943946b2_2cd39a2a50248191b2b8d2ef3ad1f429",
+    "sourceLibraryVersion": "0",
+    "sourceEvidenceSha256": "d144fb0ce9082ce8730bf293d4986c0189df9d399bc17bf81c37b3934d62e3f4",
+    "sourceSnapshotCommit": "d5aa79ab2ac2b6137b517eb7fcc0f6b85e12ed48",
+    "verification": {
+      "innerChecksumsVerified": 39,
+      "reviewsVerified": 109,
+      "mappedReviewGroups": 37,
+      "draftReviewGroupsWithoutAppIds": 72,
+      "mappedExistingIdsVerified": 42,
+      "mappedHashSerialization": "UTF-8 json.dumps(record, sort_keys=True, ensure_ascii=False), default separators, no final newline",
+      "all1933OriginalRecordBodiesMatchCurrent": true,
+      "embeddedKjvChaptersMatched": 172,
+      "embeddedKjvVersesMatched": 5502,
+      "declaredCommitDataHashMatches": true,
+      "manifestEntriesVerified": 38,
+      "guideDispositionsVerified": 110,
+      "guideReviewReferencesResolve": true
+    },
+    "limitations": {
+      "unmapped_genesis_guide_leads": 0,
+      "genesis_edition_only_source_audits": [
+        "cain-talked-with-abel-greek-gives-his-words",
+        "men-began-to-call-on-the-name-of-the-lord-or-enos-hoped-greek",
+        "ages-at-fatherhood-before-the-flood-greek-differs",
+        "he-gave-him-tithes-of-all-greek-names-abram",
+        "simeon-and-levi-digged-down-a-wall-or-houghed-an-ox",
+        "until-shiloh-come-or-until-the-things-laid-up-for-him-come-greek"
+      ],
+      "other_book_records_pending": [
+        "deuteronomy-levi-blessing-and-rebuke",
+        "joshua-wilderness-circumcision",
+        "shechem-burial-land-purchaser",
+        "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek",
+        "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+        "israel-went-up-harnessed-or-in-the-fifth-generation-greek",
+        "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+        "so-job-died-being-old-and-full-of-days-greek-adds-an-ending"
+      ],
+      "other_book_pending_count": 8,
+      "broader_topic_footnotes": "Not exhaustively audited beyond the Genesis-linked passages identified by each review; no complete numerical inventory claimed",
+      "retained_language_claims": "Existing ancient-language claims inside reviewed comparisons are explicitly retained without a fresh source audit; comparison review is not manuscript verification",
+      "browser": "The standalone109-review report was simulated. Current application subset coverage is tracked by this batch validation and CI; no hardware verification is claimed.",
+      "historicalReportBrowserStatus": "Real layout/touch QA remains unavailable; simulated passage checks passed"
+    },
+    "counts": {
+      "reviewGroups": 109,
+      "groupsWithMappedIds": 37,
+      "mappedExistingIds": 42,
+      "draftGroupsWithoutAppIds": 72,
+      "integratedGroups": 8,
+      "deferredGroups": 101,
+      "integratedExistingRecordIds": 8,
+      "deferredMappedExistingIds": 34
+    },
+    "reviews": [
+      {
+        "sourceReviewId": "adam-and-eve",
+        "exportKey": "biblelens:genesis:2026-11-07:adam-and-eve",
+        "heading": "Did sin enter through Adam if Eve ate first?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "477243ce1202aa80d06dca37c2d920b3a09addef17ddcaaba3975f99fa90ca3d",
+        "sourcePassages": [
+          "Genesis 3:6",
+          "Romans 5:12–19"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "ark-count",
+        "exportKey": "biblelens:genesis:2026-11-07:ark-count",
+        "heading": "Two animals or larger numbers?",
+        "currentRecordIds": [
+          "early-ark-count"
+        ],
+        "sourceRecordHashes": {
+          "early-ark-count": "36e7178550cf13345333322e136c227423a96dbb5037e9516989a83f92abfb77"
+        },
+        "sourceReviewSha256": "beb171756af13cb3a0f533e74cff163fc88f5522325aa29b62846b4bd9f54d80",
+        "sourcePassages": [
+          "Genesis 6:19–20",
+          "Genesis 7:2–3",
+          "Genesis 7:8–9"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "verificationScope": "Only the cited packaged KJV, ASV and WEB wording, context and stated logical alternatives. No fresh commentary, language, source-history or event-history audit.",
+        "deferredSourceClaims": [
+          "Named commentary attributions and broader source-history or language claims from the source report were not re-audited or newly asserted. The full source review remains preserved in the verified packet.",
+          "The proposed history of flood-story composition and the underlying seven-animals/seven-pairs reading remain pending. The app assessment presents primary-text maximum/exception readings instead."
+        ],
+        "applicationPassages": [
+          "Genesis 6:19-20",
+          "Genesis 7:2-3",
+          "Genesis 7:8-9",
+          "Genesis 8:20"
+        ],
+        "addedContextPassage": "Genesis 8:20 is cited in the source review context and was checked in all three packaged editions."
+      },
+      {
+        "sourceReviewId": "wife-sister",
+        "exportKey": "biblelens:genesis:2026-11-07:wife-sister",
+        "heading": "Are the wife-sister stories contradictory versions?",
+        "currentRecordIds": [
+          "genesis-wife-sister-12",
+          "genesis-wife-sister-20",
+          "genesis-wife-sister-26"
+        ],
+        "sourceRecordHashes": {
+          "genesis-wife-sister-12": "99b40222c843030a109cc61066da75e420730a174606e04011abba2cd77fef5b",
+          "genesis-wife-sister-20": "d370c5d4200660f3f45fe26bacd78fb5c211c1774d97ee6d6b33f41e036513da",
+          "genesis-wife-sister-26": "b1dfffb94990f70bf69f918b71751d707a316b29efbf0afc4b602a3060a8ae64"
+        },
+        "sourceReviewSha256": "a3aaa8ec09dcf4d399faf3a356104d6c1ee66e69d88487f954ab8c6934e62d4c",
+        "sourcePassages": [
+          "Genesis 12:11–20",
+          "Genesis 20:1–18",
+          "Genesis 26:1–11"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "creation-order",
+        "exportKey": "biblelens:genesis:2026-11-07:creation-order",
+        "heading": "Were animals created before or after the man?",
+        "currentRecordIds": [
+          "beasts-and-fowl-formed-before-man-or-after"
+        ],
+        "sourceRecordHashes": {
+          "beasts-and-fowl-formed-before-man-or-after": "92b159b3a8402705e6d556b42582542db80599458baab2c2801145c00240dfd5"
+        },
+        "sourceReviewSha256": "a66904a9b217da090bbb7308e2ac42a640a28614e27a82d571585ba8b42d0762",
+        "sourcePassages": [
+          "Genesis 1:21–27",
+          "Genesis 2:7",
+          "Genesis 2:18–22"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "woman-order",
+        "exportKey": "biblelens:genesis:2026-11-07:woman-order",
+        "heading": "Were man and woman created simultaneously?",
+        "currentRecordIds": [
+          "woman-made-with-man-or-after-the-animals"
+        ],
+        "sourceRecordHashes": {
+          "woman-made-with-man-or-after-the-animals": "a3091babadf4ba7e23ed306ab6ce7a3f59abf47be33be624580cc5d95d3f4fb4"
+        },
+        "sourceReviewSha256": "84f2f30f538ad80a6c26abd5e500cc46608ec88e036db129d506bcf4d3636023",
+        "sourcePassages": [
+          "Genesis 1:27",
+          "Genesis 2:18–22",
+          "Matthew 19:4"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "fowl-origin",
+        "exportKey": "biblelens:genesis:2026-11-07:fowl-origin",
+        "heading": "Were birds formed from water or ground?",
+        "currentRecordIds": [
+          "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm"
+        ],
+        "sourceRecordHashes": {
+          "fowl-from-the-waters-or-from-the-ground-hebrew-says-the-waters-swarm": "768aaf623b9310e6f217f2a30b1d7aecfb7224e2e9f12d0571426b60de5cefad"
+        },
+        "sourceReviewSha256": "93573a5e1a4f533b24f3ac239daf0f0cb101ba6057f5f35e4d67efe627b29325",
+        "sourcePassages": [
+          "Genesis 1:20–21",
+          "Genesis 2:19",
+          "Genesis 1:24"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "finishing-day",
+        "exportKey": "biblelens:genesis:2026-11-07:finishing-day",
+        "heading": "Did God finish on the sixth or seventh day?",
+        "currentRecordIds": [
+          "god-ended-his-work-on-the-seventh-day-or-the-sixth-greek"
+        ],
+        "sourceRecordHashes": {
+          "god-ended-his-work-on-the-seventh-day-or-the-sixth-greek": "941f04fefba983976f43c872ff4534fdfb9c98c95862d1b32d2e246f3f8e32e3"
+        },
+        "sourceReviewSha256": "233002b9602f50d7985df5daafc84c1e0cd2e446646f289dc619b95a617aecb3",
+        "sourcePassages": [
+          "Genesis 1:31",
+          "Genesis 2:1–3"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "death-warning",
+        "exportKey": "biblelens:genesis:2026-11-07:death-warning",
+        "heading": "Why did Adam not die on the day he ate?",
+        "currentRecordIds": [
+          "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years"
+        ],
+        "sourceRecordHashes": {
+          "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years": "95efe5a4fbd55cf74fa6208d3a3c3f2b8f7846f023d1e85f75c8c38e77ccd0cf"
+        },
+        "sourceReviewSha256": "ab989af9d51c62e769277e38d3e7192313dd5c2734c8588a554eb9e69715dbfd",
+        "sourcePassages": [
+          "Genesis 2:17",
+          "Genesis 3:6",
+          "Genesis 3:19",
+          "Genesis 5:5"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "applicationPassages": [
+          "Genesis 2:17",
+          "Genesis 3:6",
+          "Genesis 3:19",
+          "Genesis 3:22-24",
+          "Genesis 5:5"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "cain-city",
+        "exportKey": "biblelens:genesis:2026-11-07:cain-city",
+        "heading": "How can a wanderer build a city?",
+        "currentRecordIds": [
+          "cain-fugitive-and-vagabond-yet-builds-a-city"
+        ],
+        "sourceRecordHashes": {
+          "cain-fugitive-and-vagabond-yet-builds-a-city": "78ee0bd5b0ab828b53bc5572cbc7c15a871792565ab5d221cbd452e3f9ebda28"
+        },
+        "sourceReviewSha256": "47788694fb623022d98e6adec3514b156e39a0c48237e9ede99dc5270542b608",
+        "sourcePassages": [
+          "Genesis 4:12–17"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "verificationScope": "Only the cited packaged KJV, ASV and WEB wording, context and stated logical alternatives. No fresh commentary, language, source-history or event-history audit.",
+        "deferredSourceClaims": [
+          "Named commentary attributions and broader source-history or language claims from the source report were not re-audited or newly asserted. The full source review remains preserved in the verified packet."
+        ],
+        "applicationPassages": [
+          "Genesis 4:12-17"
+        ]
+      },
+      {
+        "sourceReviewId": "divine-regret",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-regret",
+        "heading": "Does God regret or change his mind?",
+        "currentRecordIds": [
+          "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent"
+        ],
+        "sourceRecordHashes": {
+          "it-repented-the-lord-or-god-is-not-a-man-that-he-should-repent": "2115cccf2689a29da0618682dfa000d760c194153e81ae14b4b0c40fe7977411"
+        },
+        "sourceReviewSha256": "28c43fdd456d16d43b3d908c26877446cee1b01f7df881e9757b1027b845466b",
+        "sourcePassages": [
+          "Genesis 6:6–7",
+          "Numbers 23:19",
+          "1 Samuel 15:11",
+          "1 Samuel 15:29"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "prelaw-judgment",
+        "exportKey": "biblelens:genesis:2026-11-07:prelaw-judgment",
+        "heading": "Why judge violence before the law?",
+        "currentRecordIds": [
+          "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13"
+        ],
+        "sourceRecordHashes": {
+          "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13": "d27e74237916e09293708223582b000037834ae7a595d9aee581092b03a2e1ba"
+        },
+        "sourceReviewSha256": "65a197afd41ba4a69c8d6e64078077c05adb0bc097205883d68dc98ffedba418",
+        "sourcePassages": [
+          "Genesis 6:11–13",
+          "Romans 5:13–14"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "applicationPassages": [
+          "Genesis 6:11-13",
+          "Romans 5:13-14"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "noah-entry",
+        "exportKey": "biblelens:genesis:2026-11-07:noah-entry",
+        "heading": "When did Noah enter the ark?",
+        "currentRecordIds": [
+          "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began"
+        ],
+        "sourceRecordHashes": {
+          "noah-entered-the-ark-seven-days-before-or-the-day-the-flood-began": "6d3598fa4d6f079077a54da86d07bad4682483e6357d3eded61ba395c580f59c"
+        },
+        "sourceReviewSha256": "b91df857f74397afd3f4ecebd6b0d5342cf01b7b899db95d77bde90bd93d5c59",
+        "sourcePassages": [
+          "Genesis 7:1–13"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "shem-age",
+        "exportKey": "biblelens:genesis:2026-11-07:shem-age",
+        "heading": "Was Shem born when Noah was five hundred?",
+        "currentRecordIds": [
+          "shem-a-hundred-years-old-two-years-after-the-flood"
+        ],
+        "sourceRecordHashes": {
+          "shem-a-hundred-years-old-two-years-after-the-flood": "a9f01962126f4171987b16ca968958c0410b91181d7cadd7ae894e5bf1faff8e"
+        },
+        "sourceReviewSha256": "bded87cc154a564e254c696047f56e70a218a16fb0bed6d68961ad543e149806",
+        "sourcePassages": [
+          "Genesis 5:32",
+          "Genesis 7:6",
+          "Genesis 11:10"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "verificationScope": "Only the cited packaged KJV, ASV and WEB wording, context and stated logical alternatives. No fresh commentary, language, source-history or event-history audit.",
+        "deferredSourceClaims": [
+          "Named commentary attributions and broader source-history or language claims from the source report were not re-audited or newly asserted. The full source review remains preserved in the verified packet."
+        ],
+        "applicationPassages": [
+          "Genesis 5:32",
+          "Genesis 7:6",
+          "Genesis 11:10"
+        ]
+      },
+      {
+        "sourceReviewId": "babel",
+        "exportKey": "biblelens:genesis:2026-11-07:babel",
+        "heading": "Why are languages divided before Babel?",
+        "currentRecordIds": [
+          "nations-after-their-tongues-before-babel"
+        ],
+        "sourceRecordHashes": {
+          "nations-after-their-tongues-before-babel": "e2c5d8bb15b7953c2a67e9c569d900aee714b9344f14ee7a11d47ecf69fde1da"
+        },
+        "sourceReviewSha256": "1cd2e66a055574635884f2308fad43e2c6d19202cc85ae863682de6792b84d03",
+        "sourcePassages": [
+          "Genesis 10:5",
+          "Genesis 10:20",
+          "Genesis 10:31",
+          "Genesis 11:1–9"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "verificationScope": "Only the cited packaged KJV, ASV and WEB wording, context and stated logical alternatives. No fresh commentary, language, source-history or event-history audit.",
+        "deferredSourceClaims": [
+          "Named commentary attributions and broader source-history or language claims from the source report were not re-audited or newly asserted. The full source review remains preserved in the verified packet."
+        ],
+        "applicationPassages": [
+          "Genesis 10:5",
+          "Genesis 10:20",
+          "Genesis 10:31",
+          "Genesis 11:1-9"
+        ]
+      },
+      {
+        "sourceReviewId": "cainan",
+        "exportKey": "biblelens:genesis:2026-11-07:cainan",
+        "heading": "Who was Salah’s father?",
+        "currentRecordIds": [
+          "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke"
+        ],
+        "sourceRecordHashes": {
+          "arphaxad-begat-salah-or-cainan-greek-genesis-and-luke": "da1d7780723308821396b8401b87ca8c71b0e376c25b07b97aaf8dec36195183"
+        },
+        "sourceReviewSha256": "c03b1fa3e0c586845da02ade8ca68f18045545f407580646d0e3f4eb8a69e2c6",
+        "sourcePassages": [
+          "Genesis 10:24",
+          "Genesis 11:12–13",
+          "Luke 3:35–36"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "terah-age",
+        "exportKey": "biblelens:genesis:2026-11-07:terah-age",
+        "heading": "Was Terah dead when Abram left Haran?",
+        "currentRecordIds": [
+          "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death"
+        ],
+        "sourceRecordHashes": {
+          "terah-died-at-205-yet-abram-left-haran-at-75-after-his-death": "734d260c621aa1759ee2955ca738e63dd4220562deea2189f05ab623544c56ce"
+        },
+        "sourceReviewSha256": "085f1bfbe41f7a2f9559c6ae71bdcf8dec002cd69a0f1740f700573d1f89c691",
+        "sourcePassages": [
+          "Genesis 11:26",
+          "Genesis 11:32",
+          "Genesis 12:4",
+          "Acts 7:2–4",
+          "Genesis 16:16"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "seeing-god",
+        "exportKey": "biblelens:genesis:2026-11-07:seeing-god",
+        "heading": "Can God be seen?",
+        "currentRecordIds": [
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god"
+        ],
+        "sourceRecordHashes": {
+          "jacob-saw-god-face-to-face-or-no-man-hath-seen-god": "5d2cb28bd006d8329e90217240efd1d0eeb6f2f2d9a879bb1bec74eb97490e2b",
+          "lord-appeared-to-abram-or-no-man-hath-seen-god": "1a3da1af516fa9558ba1c7ca0e309bf7db40583c583b271c9307ca94a7ba1972"
+        },
+        "sourceReviewSha256": "08d3070d253dea07e4e081f687637d5501221b2af569b26b2955b3ff25aee1ce",
+        "sourcePassages": [
+          "Genesis 12:7",
+          "Genesis 17:1",
+          "Genesis 18:1–2",
+          "Genesis 32:24–30",
+          "Exodus 33:20",
+          "John 1:18",
+          "Hosea 12:2–5"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "shechem-land",
+        "exportKey": "biblelens:genesis:2026-11-07:shechem-land",
+        "heading": "Did Jacob buy land or take it by force?",
+        "currentRecordIds": [
+          "jacob-shechem-portion-bought-or-taken"
+        ],
+        "sourceRecordHashes": {
+          "jacob-shechem-portion-bought-or-taken": "e9436816f1d9e387cd846095eac08b3a6521e76b08d052ec20d8bd9de24c89b8"
+        },
+        "sourceReviewSha256": "635082af9d47c88b9296566d8d7993437640f3d3f68705e390942057fffbccf8",
+        "sourcePassages": [
+          "Genesis 33:19",
+          "Genesis 34:25–30",
+          "Genesis 48:22",
+          "Joshua 24:32"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "ishmael-age",
+        "exportKey": "biblelens:genesis:2026-11-07:ishmael-age",
+        "heading": "Was Ishmael a small child when sent away?",
+        "currentRecordIds": [
+          "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek"
+        ],
+        "sourceRecordHashes": {
+          "ishmael-past-fourteen-or-a-child-set-on-hagars-shoulder-greek": "f0d34c0dfe817290cc2c0c1f8b2b22ffd2a60e2bb37943b117bbd254e6f17d81"
+        },
+        "sourceReviewSha256": "82214012cffd4874195f961384b5153eff7168151795c797cfdb1a581ac4eff4",
+        "sourcePassages": [
+          "Genesis 16:16",
+          "Genesis 21:5",
+          "Genesis 21:8",
+          "Genesis 21:14–18"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "beersheba",
+        "exportKey": "biblelens:genesis:2026-11-07:beersheba",
+        "heading": "Who named Beersheba?",
+        "currentRecordIds": [
+          "who-named-beersheba-abraham-or-isaac"
+        ],
+        "sourceRecordHashes": {
+          "who-named-beersheba-abraham-or-isaac": "572db9612f757fada69ad4a030c1b2d18bbff27060ff11083b93678d6f6af4e8"
+        },
+        "sourceReviewSha256": "ccb0329d0d68037eb5949ccf716ce282f6bd29655661615e04b46ccb4c5d5a98",
+        "sourcePassages": [
+          "Genesis 21:30–32",
+          "Genesis 26:18",
+          "Genesis 26:32–33"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "verificationScope": "Only the cited packaged KJV, ASV and WEB wording, context and stated logical alternatives. No fresh commentary, language, source-history or event-history audit.",
+        "deferredSourceClaims": [
+          "Named commentary attributions and broader source-history or language claims from the source report were not re-audited or newly asserted. The full source review remains preserved in the verified packet."
+        ],
+        "applicationPassages": [
+          "Genesis 21:30-32",
+          "Genesis 26:18",
+          "Genesis 26:32-33"
+        ]
+      },
+      {
+        "sourceReviewId": "only-son",
+        "exportKey": "biblelens:genesis:2026-11-07:only-son",
+        "heading": "Why call Isaac Abraham’s only son?",
+        "currentRecordIds": [
+          "thine-only-son-isaac-or-thy-beloved-son-greek"
+        ],
+        "sourceRecordHashes": {
+          "thine-only-son-isaac-or-thy-beloved-son-greek": "3d4cc4d4dd2a2a9016d4c38769ca8a114e01ea7d0160377007598965fc1f31fc"
+        },
+        "sourceReviewSha256": "dda0db26708745de6d5426d2a2179f8bb07dc43ff52fec57360742c8f1541e44",
+        "sourcePassages": [
+          "Genesis 16:15",
+          "Genesis 21:12–14",
+          "Genesis 22:2",
+          "Genesis 22:12",
+          "Genesis 25:9"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "tempting",
+        "exportKey": "biblelens:genesis:2026-11-07:tempting",
+        "heading": "Does God tempt people?",
+        "currentRecordIds": [
+          "god-did-tempt-abraham-or-god-tempteth-no-man"
+        ],
+        "sourceRecordHashes": {
+          "god-did-tempt-abraham-or-god-tempteth-no-man": "3f232098b84ceddeee71eed1d4f3846e16577921bd544542682cbf55de1a15d5"
+        },
+        "sourceReviewSha256": "b2552bfc240b65c5a2af71406a550391194a607ff96e5f3c26e6583908f98c06",
+        "sourcePassages": [
+          "Genesis 22:1–2",
+          "James 1:13–14",
+          "Hebrews 11:17"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "isaac-sacrifice",
+        "exportKey": "biblelens:genesis:2026-11-07:isaac-sacrifice",
+        "heading": "Did God command a human sacrifice?",
+        "currentRecordIds": [
+          "commanded-to-offer-isaac-yet-child-burning-commanded-not"
+        ],
+        "sourceRecordHashes": {
+          "commanded-to-offer-isaac-yet-child-burning-commanded-not": "83b7dce8d740d42d9b6be9f5600111d842da4adfbc2539679bff602e9e8a536e"
+        },
+        "sourceReviewSha256": "322976f63a1f0392c1a9446b896ebab97fd9d544beb87a8902a4a2ed20960f7e",
+        "sourcePassages": [
+          "Genesis 22:1–2",
+          "Genesis 22:11–13",
+          "Jeremiah 7:31",
+          "Jeremiah 19:5",
+          "Deuteronomy 12:31"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "esau-wives",
+        "exportKey": "biblelens:genesis:2026-11-07:esau-wives",
+        "heading": "Why do Esau’s wives have different names and fathers?",
+        "currentRecordIds": [
+          "bashemath-daughter-of-elon-the-hittite-or-of-ishmael"
+        ],
+        "sourceRecordHashes": {
+          "bashemath-daughter-of-elon-the-hittite-or-of-ishmael": "c215ff52cf8f8b7e83fc9a0ae4c1e3e204f6f0d4591e8dc113b2ec5e4b6f5c3c"
+        },
+        "sourceReviewSha256": "4c4c36a59ce5eaf2e2f77bb776570d8cd6a496a9eb436ca7d68c715d656710e0",
+        "sourcePassages": [
+          "Genesis 26:34",
+          "Genesis 28:9",
+          "Genesis 36:2–3"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "benjamin-birthplace",
+        "exportKey": "biblelens:genesis:2026-11-07:benjamin-birthplace",
+        "heading": "Was Benjamin born in Canaan or Padanaram?",
+        "currentRecordIds": [
+          "benjamin-born-near-ephrath-or-in-padanaram"
+        ],
+        "sourceRecordHashes": {
+          "benjamin-born-near-ephrath-or-in-padanaram": "f86357d839103a1df5f5c868108b350262ec3b63d7cbbbb65e0fed68aa3de046"
+        },
+        "sourceReviewSha256": "d3ac88d123f0ab7ebddd6a83243ff709e092dca5d344d62ebcb07782397823a1",
+        "sourcePassages": [
+          "Genesis 35:16–18",
+          "Genesis 35:23–26"
+        ],
+        "integration": "added-bounded-English-text-assessment",
+        "appIdAssignedByThisTask": false,
+        "applicationPassages": [
+          "Genesis 35:6-9",
+          "Genesis 35:16-18",
+          "Genesis 35:23-26"
+        ],
+        "verificationScope": "Bounded packaged KJV/ASV/WEB wording and context, with proposed readings and limits. No fresh ancient-language, commentary-attribution, source-history or event-history certification.",
+        "integrationBatch": 401,
+        "deferredSourceClaims": [
+          "Ancient-language and manuscript assertions, named commentary attributions, composition history and events as history were not re-audited. Original source material remains preserved."
+        ]
+      },
+      {
+        "sourceReviewId": "anah",
+        "exportKey": "biblelens:genesis:2026-11-07:anah",
+        "heading": "How is Anah related to Zibeon?",
+        "currentRecordIds": [
+          "anah-brother-of-zibeon-or-son-of-zibeon"
+        ],
+        "sourceRecordHashes": {
+          "anah-brother-of-zibeon-or-son-of-zibeon": "d3003b2872577393172b91652dc9f09f642a7a4e27f60ded582205ad32fd1a27"
+        },
+        "sourceReviewSha256": "0ced8b84b6efbd1323c374efc9f483a51ed9c6c4c6112507f48d871e6076850f",
+        "sourcePassages": [
+          "Genesis 36:2",
+          "Genesis 36:14",
+          "Genesis 36:20",
+          "Genesis 36:24–25"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "dishon",
+        "exportKey": "biblelens:genesis:2026-11-07:dishon",
+        "heading": "Was Dishon Seir’s son or Anah’s son?",
+        "currentRecordIds": [
+          "dishon-son-of-seir-or-son-of-anah"
+        ],
+        "sourceRecordHashes": {
+          "dishon-son-of-seir-or-son-of-anah": "b2b6c8273221c321fcd8fab84074016d108e45dd72e7b8374ef12048fff76548"
+        },
+        "sourceReviewSha256": "8eb67c6f324414b652b87d9482f408f86c88e3d85a697cb6c931401d138e6b4b",
+        "sourcePassages": [
+          "Genesis 36:20–21",
+          "Genesis 36:25"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "korah",
+        "exportKey": "biblelens:genesis:2026-11-07:korah",
+        "heading": "Why is Korah placed under two family branches?",
+        "currentRecordIds": [
+          "korah-son-of-esau-or-chief-of-eliphaz"
+        ],
+        "sourceRecordHashes": {
+          "korah-son-of-esau-or-chief-of-eliphaz": "f377dc6b49609d612e4c56445e163d02c42d9033a7bce139c904aa169c413f08"
+        },
+        "sourceReviewSha256": "be21eea2b66ebf4ddbee284cd8764872e7180bffcc735b26510391789af3ccc3",
+        "sourcePassages": [
+          "Genesis 36:5",
+          "Genesis 36:14–16",
+          "Genesis 36:18"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "joseph-sellers",
+        "exportKey": "biblelens:genesis:2026-11-07:joseph-sellers",
+        "heading": "Who sold Joseph in Egypt?",
+        "currentRecordIds": [
+          "midianites-and-ishmaelites"
+        ],
+        "sourceRecordHashes": {
+          "midianites-and-ishmaelites": "0bf23475efe0f1398e094e487ffb9c2dc3d0892db9d2a0c5308e3a614bab231b"
+        },
+        "sourceReviewSha256": "535b0c9d1fa41445cd4fd2d762e2a09e91aa07c1ac842aeec37f05d64786560f",
+        "sourcePassages": [
+          "Genesis 37:25–28",
+          "Genesis 37:36",
+          "Genesis 39:1"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "benjamin-age",
+        "exportKey": "biblelens:genesis:2026-11-07:benjamin-age",
+        "heading": "Was Benjamin too young to have ten sons?",
+        "currentRecordIds": [
+          "benjamin-a-little-one-or-father-of-ten-sons"
+        ],
+        "sourceRecordHashes": {
+          "benjamin-a-little-one-or-father-of-ten-sons": "13374882d16c567bec1736bd42eec82b1e550e1af4d47f7b7c0a6df9e468d3a4"
+        },
+        "sourceReviewSha256": "2babe4ac63046216c899d48e520d74c4a0d70da6ebefc671e40e18d82ea04cb2",
+        "sourcePassages": [
+          "Genesis 44:20–22",
+          "Genesis 46:21"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "simeon-sons",
+        "exportKey": "biblelens:genesis:2026-11-07:simeon-sons",
+        "heading": "Why does one list give Simeon six sons and others five?",
+        "currentRecordIds": [
+          "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24"
+        ],
+        "sourceRecordHashes": {
+          "simeon-six-sons-or-five-genesis-46-10-1-chronicles-4-24": "3a19c8785ea142b3d6cc8bbce525be04964c0b609884f91ad076730ab661a7ed"
+        },
+        "sourceReviewSha256": "854cc336e90052ba7a05f2b54a2cc38b358cdc2380c814cd792fda0d0e243ebf",
+        "sourcePassages": [
+          "Genesis 46:10",
+          "Numbers 26:12–14",
+          "1 Chronicles 4:24"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "benjamin-descendants",
+        "exportKey": "biblelens:genesis:2026-11-07:benjamin-descendants",
+        "heading": "Why do Benjamin’s descendant lists differ?",
+        "currentRecordIds": [
+          "benjamin-ten-sons-or-sons-and-grandsons-greek",
+          "sons-of-benjamin-three-or-five-in-chronicles"
+        ],
+        "sourceRecordHashes": {
+          "benjamin-ten-sons-or-sons-and-grandsons-greek": "269c46c775fd7eeb2867161c455dfde54945ec0034994bb81d86202193d082c0",
+          "sons-of-benjamin-three-or-five-in-chronicles": "e838c8b86bdd860ae95d1c25e51cd5293fdfa0a9943f7b4e728dbf53bf7bb104"
+        },
+        "sourceReviewSha256": "dcf7288fc9d09745ab011c282b67ebca91bd986bee62474145bc6c13806e57d2",
+        "sourcePassages": [
+          "Genesis 46:21",
+          "Numbers 26:38–40",
+          "1 Chronicles 7:6",
+          "1 Chronicles 8:1–2"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "bed-staff",
+        "exportKey": "biblelens:genesis:2026-11-07:bed-staff",
+        "heading": "Did Jacob bow on a bed or a staff?",
+        "currentRecordIds": [
+          "israel-bowed-upon-the-beds-head-or-the-top-of-his-staff"
+        ],
+        "sourceRecordHashes": {
+          "israel-bowed-upon-the-beds-head-or-the-top-of-his-staff": "6211e662b897449ee58e956c6788e7525697a97d239b45378020565d365463fe"
+        },
+        "sourceReviewSha256": "c9fd6dab5d477426e4e71206574d3980b506bee10da3c40b8da4dd9f5a3ca10e",
+        "sourcePassages": [
+          "Genesis 47:29–31",
+          "Genesis 48:1–2",
+          "Hebrews 11:21"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "jacob-burial",
+        "exportKey": "biblelens:genesis:2026-11-07:jacob-burial",
+        "heading": "Was Jacob buried at Machpelah or Shechem?",
+        "currentRecordIds": [
+          "jacob-buried-at-machpelah-or-at-sychem"
+        ],
+        "sourceRecordHashes": {
+          "jacob-buried-at-machpelah-or-at-sychem": "11e0bfb5faed07492a3558e7687e4e4cc969ce2755ee6d11316fde24c55ffc5c"
+        },
+        "sourceReviewSha256": "32b2dfe78bfd3a9b1c9d62c2116b4981fc6889b74e4ef17b00d46ab14b4d4bd3",
+        "sourcePassages": [
+          "Genesis 49:29–30",
+          "Genesis 50:12–13",
+          "Acts 7:15–16"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "plants-and-man",
+        "exportKey": "biblelens:genesis:2026-11-07:plants-and-man",
+        "heading": "Were plants made before or after humans?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "6dcd6427afccc0a987d31882d3955070f8059cd61c1cce7266e7a439b00c59d8",
+        "sourcePassages": [
+          "Genesis 1:11–13",
+          "Genesis 1:27",
+          "Genesis 2:5–9"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "tree-permission",
+        "exportKey": "biblelens:genesis:2026-11-07:tree-permission",
+        "heading": "Could the man eat from every tree?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "617316b6d65e353c286749062a098f67f059ba2f299b53913e06e10770c3917d",
+        "sourcePassages": [
+          "Genesis 1:29",
+          "Genesis 2:16–17"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "enoch-death",
+        "exportKey": "biblelens:genesis:2026-11-07:enoch-death",
+        "heading": "Does Hebrews say Enoch died?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "d5c419180c56b03af6773216a0a34acab2b72f10a1fa1e4832a386c8f83fbb21",
+        "sourcePassages": [
+          "Genesis 5:24",
+          "Hebrews 11:5",
+          "Hebrews 11:8–13"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "flood-duration",
+        "exportKey": "biblelens:genesis:2026-11-07:flood-duration",
+        "heading": "Did the flood last forty or 150 days?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "e8d2e569181529ef0e6c6faf8543a0bbae53d1f814f3d4e96956113bceef61c5",
+        "sourcePassages": [
+          "Genesis 7:4",
+          "Genesis 7:12",
+          "Genesis 7:17",
+          "Genesis 7:24",
+          "Genesis 8:3"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "stars-and-earth",
+        "exportKey": "biblelens:genesis:2026-11-07:stars-and-earth",
+        "heading": "Were the stars present before Earth?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "13f3b6ec7c5962cd12c64782a8159e3250471555478a64b27c00faf47a94edaa",
+        "sourcePassages": [
+          "Genesis 1:1",
+          "Genesis 1:16–19",
+          "Job 38:4–7"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "heaven-creation",
+        "exportKey": "biblelens:genesis:2026-11-07:heaven-creation",
+        "heading": "When was heaven made or prepared?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3a428936df3b5f6a887b99dae0b344db6abdfe7c47e9470b7aa222587c21b1e0",
+        "sourcePassages": [
+          "Genesis 1:1",
+          "Genesis 1:6–8",
+          "Matthew 25:34",
+          "John 14:2–3"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "creator-agency",
+        "exportKey": "biblelens:genesis:2026-11-07:creator-agency",
+        "heading": "Who created the world?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3fabe64be2e6b743b067aedb89d3b0f0339dfa964a3e03d8b1ed87d899bca69f",
+        "sourcePassages": [
+          "Genesis 1:1",
+          "Isaiah 44:24",
+          "John 1:1–3",
+          "Colossians 1:16",
+          "1 Corinthians 8:6"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "light-division",
+        "exportKey": "biblelens:genesis:2026-11-07:light-division",
+        "heading": "Was light divided from darkness twice?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "24a91987de816d48f6fc4d5f342acb4f2025cbdd4c187c78199276307cfc6a99",
+        "sourcePassages": [
+          "Genesis 1:3–5",
+          "Genesis 1:14–19"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "heavenly-signs",
+        "exportKey": "biblelens:genesis:2026-11-07:heavenly-signs",
+        "heading": "Do celestial signs authorize astrology?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "2e1a26f4a6eecf597db320ad8bee445ba1f219f2c53b8552984c8c6299dd80dc",
+        "sourcePassages": [
+          "Genesis 1:14",
+          "Leviticus 19:26",
+          "Deuteronomy 18:10–12",
+          "Isaiah 47:13–14",
+          "Judges 5:20",
+          "Matthew 2:1–2",
+          "Luke 21:25"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "plural-divine-speech",
+        "exportKey": "biblelens:genesis:2026-11-07:plural-divine-speech",
+        "heading": "Do plural divine pronouns mean several gods?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b69c2f91a70c27933756fb4bc6dcd5fbafa812ce311efa19c9cf3763f174db4f",
+        "sourcePassages": [
+          "Genesis 1:26–27",
+          "Genesis 3:22",
+          "Genesis 11:7",
+          "Deuteronomy 4:35",
+          "Deuteronomy 6:4",
+          "Isaiah 45:5"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "childbirth-ritual",
+        "exportKey": "biblelens:genesis:2026-11-07:childbirth-ritual",
+        "heading": "Does a childbirth offering make childbirth morally sinful?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b90ec6e9d66febec52bcc4df99cfadffeac696876a15502b382245b0a3253391",
+        "sourcePassages": [
+          "Genesis 1:28",
+          "Genesis 9:1",
+          "Leviticus 12:2–8",
+          "1 Timothy 2:15"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "food-permissions",
+        "exportKey": "biblelens:genesis:2026-11-07:food-permissions",
+        "heading": "Why do food permissions differ?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "08d3b2c5288957639c130979bc0d6304122993554be51fb0d69c60f60f60324b",
+        "sourcePassages": [
+          "Genesis 1:29",
+          "Genesis 9:3–4",
+          "Leviticus 11:2–4",
+          "Deuteronomy 12:15–16",
+          "Acts 10:13–15",
+          "Romans 14:14–21"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "creation-evaluation",
+        "exportKey": "biblelens:genesis:2026-11-07:creation-evaluation",
+        "heading": "Was creation good if God later regretted making humans?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "f5c5b01394562e10b0442cbd5a886794503e86530a90abaca21a836b5ff1c554",
+        "sourcePassages": [
+          "Genesis 1:31",
+          "Genesis 6:5–7"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sabbath-divine-work",
+        "exportKey": "biblelens:genesis:2026-11-07:sabbath-divine-work",
+        "heading": "Does God rest or continue working?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "525910ecffe483c20ee5d2c69bdfdfc65a23a81e44b31e76b36b2d0dd2c3389f",
+        "sourcePassages": [
+          "Genesis 2:1–3",
+          "John 5:8–18"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "creation-days",
+        "exportKey": "biblelens:genesis:2026-11-07:creation-days",
+        "heading": "Does Genesis say creation took one day or six?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "721147bf9d35b924e706f7fc37aae13d0a4c636d285a2f37c6613591f7c85750",
+        "sourcePassages": [
+          "Genesis 1:3–5",
+          "Genesis 1:31",
+          "Genesis 2:1–4"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "marriage-celibacy",
+        "exportKey": "biblelens:genesis:2026-11-07:marriage-celibacy",
+        "heading": "Is marriage good or is celibacy preferable?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "8ae571d39b1acd862917a4213b219a01516d517648f75d9436145012d1b5396b",
+        "sourcePassages": [
+          "Genesis 2:18–24",
+          "1 Corinthians 7:7–9",
+          "1 Corinthians 7:26–28",
+          "Matthew 19:10–12",
+          "Luke 20:34–36"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "wisdom-and-fruit",
+        "exportKey": "biblelens:genesis:2026-11-07:wisdom-and-fruit",
+        "heading": "Does condemning the fruit condemn wisdom?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3cf345fd31259d7c64bf27a7f1bffba90cff6547b62980d85fffdcbf4df747f3",
+        "sourcePassages": [
+          "Genesis 2:17",
+          "Genesis 3:6",
+          "Proverbs 4:7",
+          "Job 37:24",
+          "1 Corinthians 1:19–25"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "divine-body",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-body",
+        "heading": "Does bodily imagery say God has a human body?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "6cd0297bfcf333e674f7ad11f73d2bea9ed286c6af47d6dfcb710e4cbabbf989",
+        "sourcePassages": [
+          "Genesis 3:8",
+          "Exodus 33:11",
+          "Exodus 33:20–23",
+          "John 4:24",
+          "Luke 24:39"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "divine-knowledge",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-knowledge",
+        "heading": "Do God’s questions imply ignorance?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b8f6eae90632e27afcb1346c907a748ec2538a34fbb7d1ba486463da85a8f4ba",
+        "sourcePassages": [
+          "Genesis 3:8–11",
+          "Genesis 4:9–10",
+          "Genesis 11:5",
+          "Genesis 18:9",
+          "Genesis 18:20–21",
+          "Genesis 22:12",
+          "Genesis 32:27",
+          "1 John 3:20"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "human-ancestry",
+        "exportKey": "biblelens:genesis:2026-11-07:human-ancestry",
+        "heading": "Do Melchizedek or the giants contradict common human ancestry?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "aedc49060e11ca9db6e2ad8a4dd37dc01222d0b1aaca5fc57e8a555c73aa0453",
+        "sourcePassages": [
+          "Genesis 3:20",
+          "Genesis 6:2–4",
+          "Genesis 14:18",
+          "Hebrews 7:1–3",
+          "Hebrews 7:6"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sacrifice-and-obedience",
+        "exportKey": "biblelens:genesis:2026-11-07:sacrifice-and-obedience",
+        "heading": "Does God accept or reject sacrifice?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "89054ef1d501833d7deb372d87588998763280d5a340738c8aad6a015ea5e589",
+        "sourcePassages": [
+          "Genesis 4:3–7",
+          "Genesis 8:20–21",
+          "Genesis 15:9–17",
+          "Psalms 51:16–19",
+          "Isaiah 1:11–17",
+          "Hosea 6:6",
+          "Jeremiah 7:21–23"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "respect-impartiality",
+        "exportKey": "biblelens:genesis:2026-11-07:respect-impartiality",
+        "heading": "Does favor for Abel contradict impartial judgment?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "0fab6a21d0154c558e646d3b1504d7ed6390f468892f2dd02234b7cb17c42e46",
+        "sourcePassages": [
+          "Genesis 4:3–7",
+          "Deuteronomy 10:17",
+          "Acts 10:34–35",
+          "Romans 2:6–11"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "plural-marriages",
+        "exportKey": "biblelens:genesis:2026-11-07:plural-marriages",
+        "heading": "Do plural marriages contradict the one-flesh pattern?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "033ea41bade64a87e9be94d5d94fbf25ab814199eef293e3a16fb4302b1d834d",
+        "sourcePassages": [
+          "Genesis 2:21–24",
+          "Genesis 4:19",
+          "Genesis 16:1–4",
+          "Genesis 31:17",
+          "Deuteronomy 21:15–17",
+          "Matthew 19:4–8",
+          "1 Timothy 3:2"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "enoch-position",
+        "exportKey": "biblelens:genesis:2026-11-07:enoch-position",
+        "heading": "Is Enoch sixth or seventh from Adam?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b2b34f19d51c0a42ceef90283905b679fc9e4251c7cb3ef52fe3764f9490ed80",
+        "sourcePassages": [
+          "Genesis 5:3–18",
+          "1 Chronicles 1:1–3",
+          "Luke 3:37–38",
+          "Jude 1:14"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "mortality-exceptions",
+        "exportKey": "biblelens:genesis:2026-11-07:mortality-exceptions",
+        "heading": "Must every person die without exception?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "5807b7b76b0d7cae239bceaf41566299041d2c39976ae5b81b3e61912cdac21a",
+        "sourcePassages": [
+          "Genesis 5:24",
+          "Hebrews 11:5",
+          "Romans 5:12",
+          "Hebrews 9:27",
+          "1 Corinthians 15:51–52"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "ascent-to-heaven",
+        "exportKey": "biblelens:genesis:2026-11-07:ascent-to-heaven",
+        "heading": "Had anyone entered heaven before Jesus?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "70a0c4524b3d678c38dcfaa16d225b12a02fbecea63c2e54615b89b12740b1dd",
+        "sourcePassages": [
+          "Genesis 5:24",
+          "Hebrews 11:5",
+          "2 Kings 2:11",
+          "John 3:11–13"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "angel-marriage",
+        "exportKey": "biblelens:genesis:2026-11-07:angel-marriage",
+        "heading": "Do angels marry women?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "89c0218ea97aaf87de39158a733c978c5238bcff969d1e21ea1c2a5b43291fbd",
+        "sourcePassages": [
+          "Genesis 6:1–4",
+          "Genesis 19:1–5",
+          "Matthew 22:30",
+          "Mark 12:25",
+          "Jude 1:6–7"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "divine-sonship",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-sonship",
+        "heading": "How can God have one Son and many sons?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "9876b4d022af8f178bc38fec2d96e576e75ef113719ba5557e2a18c085d0f1cc",
+        "sourcePassages": [
+          "Genesis 6:2–4",
+          "John 1:12–14",
+          "John 3:18",
+          "Luke 3:38",
+          "Exodus 4:22"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "lifespan-limit",
+        "exportKey": "biblelens:genesis:2026-11-07:lifespan-limit",
+        "heading": "Was human life capped at 120 years?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "80958d57150268749089b12afcb3cd62bde6ff9e2abb6744ef20859b93ead3ba",
+        "sourcePassages": [
+          "Genesis 6:3",
+          "Genesis 9:29",
+          "Genesis 11:10–11",
+          "Genesis 23:1",
+          "Genesis 25:7",
+          "Psalms 90:10"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "righteous-and-sin",
+        "exportKey": "biblelens:genesis:2026-11-07:righteous-and-sin",
+        "heading": "Can a person be righteous and still sin?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "a41460dfe78dbc0ff4a24ae9b39829ceec324f63d0a080afb1309a6f2935da71",
+        "sourcePassages": [
+          "Genesis 6:9",
+          "Genesis 7:1",
+          "Genesis 9:20–21",
+          "Ecclesiastes 7:20",
+          "Romans 3:9–23"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "slavery-and-love",
+        "exportKey": "biblelens:genesis:2026-11-07:slavery-and-love",
+        "heading": "Do servitude practices conflict with commands to love?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3ee46af8af6997e23578b4064eedb05031628451694974ce1fb9278b49a68ac9",
+        "sourcePassages": [
+          "Genesis 9:25–27",
+          "Genesis 16:6–9",
+          "Genesis 17:12–13",
+          "Genesis 24:35",
+          "Leviticus 19:18",
+          "Exodus 21:16",
+          "1 Corinthians 7:21–23"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "killing-and-punishment",
+        "exportKey": "biblelens:genesis:2026-11-07:killing-and-punishment",
+        "heading": "Does a killing ban contradict flood judgment or execution?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "182f4a10267b50854c793a57c207ebb884c3c0d0d6709ac965587e17645cb5f4",
+        "sourcePassages": [
+          "Genesis 4:13–15",
+          "Genesis 7:4",
+          "Genesis 9:6",
+          "Exodus 20:13",
+          "Matthew 19:18",
+          "Romans 13:4"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "noah-preaching",
+        "exportKey": "biblelens:genesis:2026-11-07:noah-preaching",
+        "heading": "Does Genesis deny that Noah preached?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "de5c9bdee5ac4f651f8a420257504ce6ebb9c24811cea84843cb7843ee7fa072",
+        "sourcePassages": [
+          "Genesis 6:12–13",
+          "Genesis 7:12–13",
+          "Genesis 9:20–25",
+          "2 Peter 2:5"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "giants-after-flood",
+        "exportKey": "biblelens:genesis:2026-11-07:giants-after-flood",
+        "heading": "Do later giants prove flood survivors outside the ark?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "14469b13a21855f1e56a8cbd1de588816ebfbadce7e303cf8e50d8e6d5d36225",
+        "sourcePassages": [
+          "Genesis 6:4",
+          "Genesis 7:21–23",
+          "Numbers 13:30–33",
+          "Numbers 14:36–37"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "ark-grounding",
+        "exportKey": "biblelens:genesis:2026-11-07:ark-grounding",
+        "heading": "Could the ark ground before mountaintops became visible?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b5a4da283269b0a3ba3ff760a933fcbea284639224a6914e1fb0ceca661e0e1e",
+        "sourcePassages": [
+          "Genesis 7:11",
+          "Genesis 8:4–5"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "earth-drying",
+        "exportKey": "biblelens:genesis:2026-11-07:earth-drying",
+        "heading": "Why are two dates given for dry ground?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "bfdc63ce039a1095aa207705aad5abf2b46c3175686f2bc12f8c2fa68acc0dcf",
+        "sourcePassages": [
+          "Genesis 8:13–16"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "ground-curse",
+        "exportKey": "biblelens:genesis:2026-11-07:ground-curse",
+        "heading": "Did God promise never to curse the earth again?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "2e401e94547bff5b0ce7ac229cd522733ac4959827ed6dd2f61310e5a3fe938a",
+        "sourcePassages": [
+          "Genesis 8:21–22",
+          "Isaiah 24:1–6",
+          "Malachi 4:6"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "blood-prohibition",
+        "exportKey": "biblelens:genesis:2026-11-07:blood-prohibition",
+        "heading": "Does Jesus’ blood language conflict with the ban on blood?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "9875c87212a81d6fb3155e39bb0f95c965bb214562657d0eeca5566cd305284a",
+        "sourcePassages": [
+          "Genesis 9:4",
+          "Leviticus 17:10–14",
+          "John 6:35",
+          "John 6:53–63",
+          "Acts 15:20"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "flood-promise",
+        "exportKey": "biblelens:genesis:2026-11-07:flood-promise",
+        "heading": "Does Nahum predict a second worldwide flood?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "76cce9c450a8fd273210de5693cfb2241769c79f7aaa6273ac8209da72e726ae",
+        "sourcePassages": [
+          "Genesis 9:11–15",
+          "Nahum 1:1",
+          "Nahum 1:8"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "inherited-consequences",
+        "exportKey": "biblelens:genesis:2026-11-07:inherited-consequences",
+        "heading": "Are children punished for someone else’s actions?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "7935fc35630e9ec231fe8ad3fca07985df110966674bf19bb934f1c33b4a21d2",
+        "sourcePassages": [
+          "Genesis 9:21–27",
+          "Genesis 20:17–18",
+          "Deuteronomy 24:16",
+          "Ezekiel 18:19–20",
+          "Romans 5:12"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "noah-birth-order",
+        "exportKey": "biblelens:genesis:2026-11-07:noah-birth-order",
+        "heading": "Was Ham or Japheth Noah’s youngest?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "bd2266480a4896d88660b3d83554da24a9d3328c456cc1a9a02d826a4ca7d769",
+        "sourcePassages": [
+          "Genesis 5:32",
+          "Genesis 9:18–24",
+          "Genesis 10:21"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sheba-dedan-lines",
+        "exportKey": "biblelens:genesis:2026-11-07:sheba-dedan-lines",
+        "heading": "Do Sheba and Dedan have different fathers?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3c215c94b41ca19b3c487bd6f0d8b5f3444f46a0d291a2106349f49f6985c70a",
+        "sourcePassages": [
+          "Genesis 10:7",
+          "Genesis 10:26–28",
+          "Genesis 25:1–3"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "aram-descendants",
+        "exportKey": "biblelens:genesis:2026-11-07:aram-descendants",
+        "heading": "Are Uz, Hul and Gether sons of Shem or Aram?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "7824dd01b087572a074315da1722069c706d934f7267e053c71932179c1cdef6",
+        "sourcePassages": [
+          "Genesis 10:22–23",
+          "1 Chronicles 1:17"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "babel-confusion",
+        "exportKey": "biblelens:genesis:2026-11-07:babel-confusion",
+        "heading": "Does God cause confusion?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "615d36513f7383f26c30277c3a8a1f6251dd6274e36a4157bb15bcad43e6607f",
+        "sourcePassages": [
+          "Genesis 11:7–9",
+          "1 Corinthians 14:26–33"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "abraham-call",
+        "exportKey": "biblelens:genesis:2026-11-07:abraham-call",
+        "heading": "Was Abraham called before or after leaving Haran?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "e607579648fe5df1171535e9ba13d5ffd629425f59654b1568c51db0cab43ebe",
+        "sourcePassages": [
+          "Genesis 11:31–32",
+          "Genesis 12:1–4",
+          "Acts 7:2–4"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "dan-name",
+        "exportKey": "biblelens:genesis:2026-11-07:dan-name",
+        "heading": "Why does Abraham’s story name Dan before its renaming?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "ca39fe0da26c4d4c577869a3f69bb7e192b742c542e166ca8c7a42d8a2c1f9b6",
+        "sourcePassages": [
+          "Genesis 14:14",
+          "Judges 18:27–29"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "earth-ownership",
+        "exportKey": "biblelens:genesis:2026-11-07:earth-ownership",
+        "heading": "Does the earth belong to God, humans or Satan?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "48532faf8485e162184cd27bda039bc94afb86a578244f3988edcf8b8ce5276d",
+        "sourcePassages": [
+          "Genesis 14:19–22",
+          "Psalms 115:16",
+          "Matthew 4:8–10",
+          "Luke 4:5–8"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sojourn-duration",
+        "exportKey": "biblelens:genesis:2026-11-07:sojourn-duration",
+        "heading": "Was the promised sojourn 400 or 430 years?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "a988e83b2364ab07023286245067d9e2ca71f5cdebece1313ba2c9c032f77fb8",
+        "sourcePassages": [
+          "Genesis 15:13–16",
+          "Exodus 12:40–41",
+          "Acts 7:6",
+          "Galatians 3:16–17"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "fourth-generation",
+        "exportKey": "biblelens:genesis:2026-11-07:fourth-generation",
+        "heading": "Which generation would return to Canaan?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "31d9ff0c5d99684b5cc36300494a3b1e49c950856af4ed04dd4de736d3471da1",
+        "sourcePassages": [
+          "Genesis 15:13–16",
+          "Genesis 35:23",
+          "Exodus 6:16–20",
+          "Numbers 26:58–59"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "land-boundaries",
+        "exportKey": "biblelens:genesis:2026-11-07:land-boundaries",
+        "heading": "Why do promised land boundaries differ?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "127ca3ec230690aaca6fe598f52fc8e9d3ef06556b1ea7a369aa7f9b06c4ed7b",
+        "sourcePassages": [
+          "Genesis 15:18–21",
+          "Genesis 17:8",
+          "Numbers 34:1–15",
+          "Ezekiel 47:13–21"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "circumcision-scope",
+        "exportKey": "biblelens:genesis:2026-11-07:circumcision-scope",
+        "heading": "Is circumcision an enduring requirement or unnecessary?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "cb2edf6ce7f2b682c5a7b0b62c5967ea11b14bcf979bd1fadc8e690cb30ea9bf",
+        "sourcePassages": [
+          "Genesis 17:7–14",
+          "Acts 15:1–20",
+          "Acts 16:1–3",
+          "1 Corinthians 7:18–19",
+          "Galatians 5:2–6"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sarah-faith",
+        "exportKey": "biblelens:genesis:2026-11-07:sarah-faith",
+        "heading": "Did Sarah believe the birth promise?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "dc45db6441430b5f20fa297ec0209be4c030947440a130d28b008cfc0fde1623",
+        "sourcePassages": [
+          "Genesis 18:10–15",
+          "Hebrews 11:11"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "divine-power",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-power",
+        "heading": "Can God do anything?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3fb632040af00a2008f18c6db76f19070dda21580ef8fdf5702e1071706ee4c2",
+        "sourcePassages": [
+          "Genesis 18:14",
+          "Judges 1:19",
+          "Mark 6:5–6",
+          "Titus 1:2",
+          "Hebrews 6:18"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sodom-sins",
+        "exportKey": "biblelens:genesis:2026-11-07:sodom-sins",
+        "heading": "Why was Sodom condemned?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "42af91fce9a3a51f366c288d6601ff0061890404401340d477b78fffc23756ac",
+        "sourcePassages": [
+          "Genesis 18:20–21",
+          "Genesis 19:1–9",
+          "Ezekiel 16:49–50",
+          "Jude 1:7",
+          "Matthew 10:14–15"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "lot-righteous",
+        "exportKey": "biblelens:genesis:2026-11-07:lot-righteous",
+        "heading": "Why is Lot called righteous?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "2dd269420122bf2a97402883a0da95c52c9eaa33c623d1e4acb8d08a97ba1fe3",
+        "sourcePassages": [
+          "Genesis 19:7–8",
+          "Genesis 19:30–36",
+          "2 Peter 2:7–8"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sodom-agency",
+        "exportKey": "biblelens:genesis:2026-11-07:sodom-agency",
+        "heading": "Did angels or God destroy Sodom?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "cfeb1a179daa808a91e794ea0c9c705c65743411ad47dd36de554d9617600bae",
+        "sourcePassages": [
+          "Genesis 19:12–13",
+          "Genesis 19:24–25"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "kin-marriage",
+        "exportKey": "biblelens:genesis:2026-11-07:kin-marriage",
+        "heading": "Why are earlier relatives married before later prohibitions?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "2b3f946a34f6ebbac2e73ec7b8bc3020fb254c1c8ac914d31c7830c0c3323bb6",
+        "sourcePassages": [
+          "Genesis 20:12",
+          "Genesis 17:15–16",
+          "Exodus 6:20",
+          "Leviticus 18:9",
+          "Leviticus 18:12",
+          "Leviticus 20:17"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "oaths",
+        "exportKey": "biblelens:genesis:2026-11-07:oaths",
+        "heading": "Are oaths permitted or forbidden?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3d7402b8e9f74070834d987ffcf52e14bd88a2c53f662e53f63d96bfd8f630f1",
+        "sourcePassages": [
+          "Genesis 21:23–24",
+          "Genesis 22:16",
+          "Genesis 24:2–9",
+          "Deuteronomy 6:13",
+          "Matthew 5:33–37",
+          "James 5:12"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "divine-name",
+        "exportKey": "biblelens:genesis:2026-11-07:divine-name",
+        "heading": "Was the divine name known before Moses?",
+        "currentRecordIds": [
+          "exodus-divine-name"
+        ],
+        "sourceRecordHashes": {
+          "exodus-divine-name": "04d644648f2b8fc277c5822416618a835d8b0bc2c74689b88b27cc584aaa4d51"
+        },
+        "sourceReviewSha256": "91f0a34d5857ffea19bfc07b117e329d2f2fb9ea95523d13d823405e55747131",
+        "sourcePassages": [
+          "Genesis 12:8",
+          "Genesis 15:7",
+          "Genesis 22:14",
+          "Exodus 3:13–15",
+          "Exodus 6:2–8"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "numerous-seed",
+        "exportKey": "biblelens:genesis:2026-11-07:numerous-seed",
+        "heading": "Would Abraham’s descendants be many or few?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "abc711d7a20aad7e59476a6decff8849a5dfc6d4d43a44b4c498ce0dd274115e",
+        "sourcePassages": [
+          "Genesis 22:17–18",
+          "Genesis 26:4",
+          "Deuteronomy 4:23–31"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "keturah-status",
+        "exportKey": "biblelens:genesis:2026-11-07:keturah-status",
+        "heading": "Was Keturah a wife or concubine?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "55c3cd3016dd58151e42ab3e5ee5db1f8e425d840ce816044d1265a450435982",
+        "sourcePassages": [
+          "Genesis 25:1–6",
+          "1 Chronicles 1:32"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "abraham-burial",
+        "exportKey": "biblelens:genesis:2026-11-07:abraham-burial",
+        "heading": "Does Acts place Abraham’s grave in Shechem?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "816d5cb3fd0ff01f1af62d13d3938f08a65d56a4c031052f26fd19009c0fd870",
+        "sourcePassages": [
+          "Genesis 25:8–10",
+          "Acts 7:15–16"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "wine-use",
+        "exportKey": "biblelens:genesis:2026-11-07:wine-use",
+        "heading": "Is wine a blessing or forbidden?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "80607ff8f397715aec1fa50647844a7a6db982cbea3bfa523934f88ac09d4a85",
+        "sourcePassages": [
+          "Genesis 27:28",
+          "Genesis 9:20–21",
+          "Numbers 6:1–3",
+          "Leviticus 10:9",
+          "Proverbs 23:29–35",
+          "Ephesians 5:18",
+          "1 Timothy 5:23"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "laban-parentage",
+        "exportKey": "biblelens:genesis:2026-11-07:laban-parentage",
+        "heading": "Was Laban the son of Bethuel or Nahor?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3d7868a63a2c9136f076e3fd31d3b2d2e455fddc0700adf0d473392866883d1a",
+        "sourcePassages": [
+          "Genesis 24:15",
+          "Genesis 24:24",
+          "Genesis 24:29",
+          "Genesis 28:5",
+          "Genesis 29:5"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "bethel-renaming",
+        "exportKey": "biblelens:genesis:2026-11-07:bethel-renaming",
+        "heading": "Was Bethel named twice?",
+        "currentRecordIds": [
+          "genesis-bethel-naming-28",
+          "genesis-bethel-naming-35"
+        ],
+        "sourceRecordHashes": {
+          "genesis-bethel-naming-28": "cb9cd60a5ed33cdc459bc418d01c82fb8d8c7bc116070bfe390f94663d9d3975",
+          "genesis-bethel-naming-35": "7e73f49efb8803991b317811ad97c8ad78acc83a351abb89bbcfd0f0d654df76"
+        },
+        "sourceReviewSha256": "20f513a61ff863e26da9a9ac371f9ce1271d4ded05af75966d25d2f0eab9d998",
+        "sourcePassages": [
+          "Genesis 28:18–19",
+          "Genesis 35:1",
+          "Genesis 35:6–7",
+          "Genesis 35:14–15"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "sister-marriage",
+        "exportKey": "biblelens:genesis:2026-11-07:sister-marriage",
+        "heading": "Was marrying two sisters permitted?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "38b3abe594575f7ae65edeac602996a4f74d3ae5dfc02c27485a9d97b4a39628",
+        "sourcePassages": [
+          "Genesis 29:23–30",
+          "Leviticus 18:18",
+          "Ezekiel 23:1–4"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "rachel-theft",
+        "exportKey": "biblelens:genesis:2026-11-07:rachel-theft",
+        "heading": "Does Rachel’s theft make stealing permissible?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "83d9a60cfc12abd1f17d27befb84a8abf9bb1c7734aabaeb493c648a97abd2f6",
+        "sourcePassages": [
+          "Genesis 31:19",
+          "Genesis 31:30–35",
+          "Exodus 20:15"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "timna-roles",
+        "exportKey": "biblelens:genesis:2026-11-07:timna-roles",
+        "heading": "Was Timna a son, sister or concubine?",
+        "currentRecordIds": [
+          "timna-son-of-eliphaz-or-his-concubine"
+        ],
+        "sourceRecordHashes": {
+          "timna-son-of-eliphaz-or-his-concubine": "81cf18d55c6889b4ec21a47bb6a817a4f25704f3954338ef3e9d56a9b12ccc3d"
+        },
+        "sourceReviewSha256": "f3b610cace2048e6d4c84634ab51885b0030b1d0eddd3b364fce7d5be06d5731",
+        "sourcePassages": [
+          "Genesis 36:10–12",
+          "Genesis 36:20–22",
+          "1 Chronicles 1:35–39"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "perez-exclusion",
+        "exportKey": "biblelens:genesis:2026-11-07:perez-exclusion",
+        "heading": "Would Perez’s ancestry exclude David?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "efcefaa222bb78d3a55fad87e7d01b74a04092be6894c7a06ab463efee6686cd",
+        "sourcePassages": [
+          "Genesis 38:24–30",
+          "Deuteronomy 23:2",
+          "Ruth 4:18–22",
+          "Matthew 1:3–6"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "money-discovery",
+        "exportKey": "biblelens:genesis:2026-11-07:money-discovery",
+        "heading": "When did Joseph’s brothers find the money?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "84f03479913bedd17a5bc38698913880338a0070952aee0942c58da4ca7b0e99",
+        "sourcePassages": [
+          "Genesis 42:27–28",
+          "Genesis 42:29–35",
+          "Genesis 43:20–23"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "leah-total",
+        "exportKey": "biblelens:genesis:2026-11-07:leah-total",
+        "heading": "Do Leah’s listed descendants total thirty-three?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "050cfdb79fec4dbc04771e7c6b544717926df6694e86dcc2bc53393cf8d4525f",
+        "sourcePassages": [
+          "Genesis 46:8–15",
+          "Genesis 46:26–27"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "mahli-descent",
+        "exportKey": "biblelens:genesis:2026-11-07:mahli-descent",
+        "heading": "Was Mahli a son of Merari or Levi?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "b44d41ee2132da4ecb76f6ce6e55b4115a0401434c3280c8c966a97b63d04407",
+        "sourcePassages": [
+          "Genesis 46:11",
+          "Numbers 3:20",
+          "1 Chronicles 6:19",
+          "Ezra 8:18"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "foreign-marriage",
+        "exportKey": "biblelens:genesis:2026-11-07:foreign-marriage",
+        "heading": "Did Joseph’s marriage violate a ban on foreigners?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "9ebb446a5a648de8ad8679f905b45dd33ab81726ec5672abd5c6c8f7e1a67263",
+        "sourcePassages": [
+          "Genesis 41:45",
+          "Genesis 46:20",
+          "Deuteronomy 7:1–4",
+          "Numbers 12:1",
+          "Numbers 12:9–10"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "family-total",
+        "exportKey": "biblelens:genesis:2026-11-07:family-total",
+        "heading": "Did seventy or seventy-five enter Egypt?",
+        "currentRecordIds": [
+          "exodus-family-counts"
+        ],
+        "sourceRecordHashes": {
+          "exodus-family-counts": "4badb8ca10438848fe1e4b2b215620b22bdb4e722c50a4e15ff6c34fb6e38866"
+        },
+        "sourceReviewSha256": "ea616b64e34d92cce0e2c25c671c69cc2af041382f421414211e5abfc00ac3ba",
+        "sourcePassages": [
+          "Genesis 46:26–27",
+          "Exodus 1:5",
+          "Deuteronomy 10:22",
+          "Acts 7:14"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      },
+      {
+        "sourceReviewId": "tribal-lists",
+        "exportKey": "biblelens:genesis:2026-11-07:tribal-lists",
+        "heading": "Why do lists of twelve tribes differ?",
+        "currentRecordIds": [],
+        "sourceRecordHashes": {},
+        "sourceReviewSha256": "3839b63dd001f9dc4ac732699e2137e8b77ddb5552d6aef555d33b14c525a045",
+        "sourcePassages": [
+          "Genesis 48:5",
+          "Genesis 49:1–28",
+          "Numbers 1:4–16",
+          "Numbers 1:47–49",
+          "Numbers 13:11",
+          "Deuteronomy 33:6–25",
+          "Ezekiel 48:1–14",
+          "Revelation 7:4–8"
+        ],
+        "integration": "deferred",
+        "appIdAssignedByThisTask": false,
+        "reason": "Outside this bounded batch; existing IDs remain unaccepted, or the review is a draft without an application ID. No IDs created."
+      }
+    ],
+    "completeBook": false,
+    "addedRecordIds": [
+      "in-the-day-thou-eatest-thou-shalt-surely-die-adam-lived-930-years",
+      "the-earth-is-filled-with-violence-through-them-or-sin-is-not-imputed-when-there-is-no-law-genesis-6-13-romans-5-13",
+      "benjamin-born-near-ephrath-or-in-padanaram"
+    ],
+    "priorBuild398Checkpoint": {
+      "canonicalBaseline": "887b93fcbfb0f8e9ab9166f85baa436f5b4d352d",
+      "baselineEvidenceSha256": "1c455e0e96167e0e7017824e7ab3acc4c8644c917dcdf3f38eb834db33956cc9",
+      "evidenceSha256": "679650378769a755a32fb908353d1b156b47656cfdd5abf8130c514f64153f0f",
+      "previousThirteenReviewsSemanticSha256": "c13602e45403dd36042241e56c70508f26e67bce3e7d7bd7f18ca1319a00d8c4",
+      "releaseVerification": {
+        "build": 398,
+        "fingerprint": "07a19e5f10d2ba8678fc620e38f61e1f90c0ffdfaeb614fee35c975dc2eb929b",
+        "ciHead": "78d62955ab57404ea41abd9b79b27980b4ba108c",
+        "runId": 42465627248,
+        "all404BrowserCasesPassed": true,
+        "noPublicationOrDeviceInstallHere": true
+      },
+      "changesToApplication": "Append five contradictionReview objects to existing records; preserve all original fields and the accepted thirteen Exodus assessments.",
+      "executionPolicy": "No review/export script executed. Inventory derived from actual verified JSON bytes; current evidence remains unchanged."
+    },
+    "previouslyIntegratedRecordIds": [
+      "early-ark-count",
+      "shem-a-hundred-years-old-two-years-after-the-flood",
+      "cain-fugitive-and-vagabond-yet-builds-a-city",
+      "nations-after-their-tongues-before-babel",
+      "who-named-beersheba-abraham-or-isaac"
+    ]
+  },
+  "crossBookMappedIds": [
+    "exodus-divine-name",
+    "exodus-family-counts",
+    "god-did-tempt-abraham-or-god-tempteth-no-man",
+    "jacob-saw-god-face-to-face-or-no-man-hath-seen-god",
+    "lord-appeared-to-abram-or-no-man-hath-seen-god"
+  ],
+  "crossBookStatus": "Shared mapped IDs remain deferred in both source inventories; this batch does not touch them.",
+  "addedContextPassages": {
+    "death-warning": [
+      "Genesis 3:22-24"
+    ],
+    "benjamin-birthplace": [
+      "Genesis 35:6-9"
+    ]
+  },
+  "retainedGaps": {
+    "genesisEditionAudits": [
+      "cain-talked-with-abel-greek-gives-his-words",
+      "men-began-to-call-on-the-name-of-the-lord-or-enos-hoped-greek",
+      "ages-at-fatherhood-before-the-flood-greek-differs",
+      "he-gave-him-tithes-of-all-greek-names-abram",
+      "simeon-and-levi-digged-down-a-wall-or-houghed-an-ox",
+      "until-shiloh-come-or-until-the-things-laid-up-for-him-come-greek"
+    ],
+    "otherBookRecordReviews": [
+      "deuteronomy-levi-blessing-and-rebuke",
+      "joshua-wilderness-circumcision",
+      "shechem-burial-land-purchaser",
+      "sojourning-430-years-in-egypt-or-in-egypt-and-canaan-greek",
+      "four-hundred-and-thirty-years-in-egypt-and-the-ages-of-kohath-amram-and-moses",
+      "israel-went-up-harnessed-or-in-the-fifth-generation-greek",
+      "uz-hul-gether-sons-of-shem-or-sons-of-aram-greek-shorter",
+      "so-job-died-being-old-and-full-of-days-greek-adds-an-ending"
+    ],
+    "unmappedGenesisDraftGroups": 72,
+    "exodusGroupsWithoutListedMapping": 38,
+    "romans512": "adam-and-eve remains a draft without an application ID. The distinct, already-mapped prelaw-judgment review is not integration of that draft."
+  }
+}
