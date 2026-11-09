@@ -24,7 +24,7 @@ async function geometry(page){return page.evaluate(()=>{
  const field=document.querySelector('#ux-explore-search'),button=field.form.querySelector(':scope>button[type=submit]'),lane=document.querySelector('#ux-lane-collections');
  const rect=node=>node.getBoundingClientRect().toJSON(),cards=[...lane.querySelectorAll('.ux-topic')],current=lane.querySelector('.ux-topic-centered'),next=current.nextElementSibling;
  const active=rect(current),row=rect(lane),background=rect(next),style=getComputedStyle(field);
- return {active:{...active,id:current.id,filter:getComputedStyle(current).filter,color:getComputedStyle(current).color,overlay:getComputedStyle(current,'::after').backgroundImage},inactiveFilter:getComputedStyle(next).filter,peek:Math.max(0,Math.min(background.right,row.right)-Math.max(active.right,background.left,row.left)),field:{...rect(field),radius:parseFloat(style.borderTopRightRadius),paddingRight:parseFloat(style.paddingRight)},button:{...rect(button),name:button.getAttribute('aria-label')||button.textContent,visibleText:button.textContent,svg:!!button.querySelector('svg')},count:cards.length,pageOverflow:document.documentElement.scrollWidth>innerWidth+1};
+ return {section:rect(lane.closest('.ux-topic-section')),active:{...active,id:current.id,filter:getComputedStyle(current).filter,color:getComputedStyle(current).color,overlay:getComputedStyle(current,'::after').backgroundImage},inactiveFilter:getComputedStyle(next).filter,peek:Math.max(0,Math.min(background.right,row.right)-Math.max(active.right,background.left,row.left)),field:{...rect(field),radius:parseFloat(style.borderTopRightRadius),paddingRight:parseFloat(style.paddingRight)},button:{...rect(button),name:button.getAttribute('aria-label')||button.textContent,visibleText:button.textContent,svg:!!button.querySelector('svg')},count:cards.length,pageOverflow:document.documentElement.scrollWidth>innerWidth+1};
  });}
 try{for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
@@ -41,8 +41,10 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
    await page.screenshot({path:`${output}/${engine}-${width}x${height}-${theme}-stories.png`,fullPage:true});
    if(phase==='after'){
     const old=baseline.find(r=>r.engine===engine&&r.width===width&&r.height===height&&r.theme===theme);assert(old,'Missing actual baseline geometry');
-    const ratio=measures.active.width/old.geometry.active.width;
-    assert(ratio>.88&&ratio<.98,'Active tile is slightly narrower: '+JSON.stringify({ratio,measures,old:old.geometry}));
+    // Build 403 reclaims the obsolete root gutter, so compare the card's share
+    // of the actual lane rather than treating that newly available width as a regression.
+    const ratio=(measures.active.width/measures.section.width)/(old.geometry.active.width/old.geometry.section.width);
+    assert(ratio>.88&&ratio<.98,'Active tile retains its narrower share of available lane width: '+JSON.stringify({ratio,measures,old:old.geometry}));
     assert(measures.peek>old.geometry.peek+2,'More of the neighboring card is exposed');
     const brightness=value=>Number(/brightness\(([^)]+)\)/.exec(value)?.[1]);
     assert(brightness(measures.inactiveFilter)<brightness(old.geometry.inactiveFilter),'Only the inactive filter is darker');
