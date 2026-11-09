@@ -40,9 +40,9 @@ jobs:
 
       - name: Verify exact build 400 source
         run: |
-          git merge-base --is-ancestor 5c582b7ae11642b5983a73aed563e1488f03c89e HEAD
-          git cat-file -e 5c582b7ae11642b5983a73aed563e1488f03c89e^{commit}
-          git diff --exit-code 5c582b7ae11642b5983a73aed563e1488f03c89e HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
+          git merge-base --is-ancestor 9726122407e86413c9372af9b903a46c9624c5c7 HEAD
+          git cat-file -e 9726122407e86413c9372af9b903a46c9624c5c7^{commit}
+          git diff --exit-code 9726122407e86413c9372af9b903a46c9624c5c7 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android
           mkdir -p .release/browser-ci
           node --input-type=module <<'JS'
           import fs from 'node:fs';
@@ -50,10 +50,10 @@ jobs:
           import {releaseInfo} from './scripts/release-info.mjs';
           const release=releaseInfo();
           assert.equal(release.buildNumber,400);
-          assert.equal(release.sourceHash,'97ff16c48aa791f7381ea89ebf597b9d45a9ea2e6940d5d9e24d98d648401f74');
+          assert.equal(release.sourceHash,'ec04959c6cc0135ff2a0346210d09b852bc8d3a178da3c9901f80c03e08d4304');
           // Every fingerprint input matches the frozen source commit above.
           // Preserve that identity through all release preparation and archives.
-          console.log('Pinned source commit: 5c582b7ae11642b5983a73aed563e1488f03c89e');
+          console.log('Pinned source commit: 9726122407e86413c9372af9b903a46c9624c5c7');
           fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
           console.log(release);
           JS
@@ -146,6 +146,22 @@ jobs:
           NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
           BIBLELENS_LIVE_BASE_URL: https://scripture-lens.kvn-mcgwn.chatgpt.site
         run: node scripts/check-evidence-navigation-browser.mjs 2>&1 | tee .release/browser-ci/evidence-navigation.log
+
+      # This is an early visual-review package, never release acceptance.
+      - name: Retain corrected introduction screenshots for manual review
+        if: ${{ !cancelled() && steps.navigation.outcome == 'success' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-400-intro-visual-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/source-release.json
+            .release/evidence-navigation/intro-layout.json
+            .release/evidence-navigation/*-intro.png
+            .release/evidence-navigation/webkit-web-320x844-dark-filtered-empty.png
+            .release/evidence-navigation/webkit-offline-1366x1024-light-subject.png
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: error
 
       - name: Check exact branding, responsive headers and legacy saved-data compatibility
         id: branding
@@ -260,7 +276,7 @@ jobs:
           assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
           for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
           const worker=fs.readFileSync('dist/server/index.js');
-          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'5c582b7ae11642b5983a73aed563e1488f03c89e',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible',evidenceNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/matrix.json')).length,coldEvidenceDetailCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/cold-details.json')).length,liveRecordNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).length,liveRecordIssues:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).filter(row=>row.wrongHeading||row.unavailable).length,liveEvidenceReproductions:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-baseline.json')).filter(row=>row.reproduced).length},null,2)+'\n');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'9726122407e86413c9372af9b903a46c9624c5c7',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false,requestedDisplayName:'zLenz: Bible',evidenceNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/matrix.json')).length,introLayoutCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/intro-layout.json')).length,coldEvidenceDetailCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/cold-details.json')).length,liveRecordNavigationCases:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).length,liveRecordIssues:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-record-baseline.json')).filter(row=>row.wrongHeading||row.unavailable).length,liveEvidenceReproductions:JSON.parse(fs.readFileSync('.release/evidence-navigation/live-baseline.json')).filter(row=>row.reproduced).length},null,2)+'\n');
           JS
           tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
           sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
