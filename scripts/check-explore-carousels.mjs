@@ -19,14 +19,14 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
   assert(Math.abs(cards[0].top-cards[1].top)<1,'two collections visible in the same row');
   assert(cards[0].right<=cards[1].left,'no overlapping cards');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'no horizontal page overflow');
-  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>n.decode().catch(()=>{}))));
+  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.checkVisibility()&&n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>Promise.race([n.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,5000))]))));
   await page.screenshot({path:`.release/browse/${engine}-${width}-explore.png`,fullPage:true});
   await page.locator('#ux-topic-stories').click();await page.locator('#story-the-creation').waitFor();
   const first=page.locator('#story-the-creation');
   assert(!(await first.locator('details').getAttribute('open')));
   assert((await first.locator('.browse-excerpt').innerText()).split(/\s+/).length<=15);
   assert(!(await first.locator('.story-summary').isVisible()));
-  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>n.decode().catch(()=>{}))));
+  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.checkVisibility()&&n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>Promise.race([n.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,5000))]))));
   await page.screenshot({path:`.release/browse/${engine}-${width}-stories.png`,fullPage:false});
   await first.locator('.story-full-details>summary').click();
   assert(await first.locator('.story-summary').isVisible());
@@ -36,7 +36,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
   await page.goto(base+'/#questions?mode=text');await page.locator('.phase2-debate-card').first().waitFor();
   const record=page.locator('.phase2-debate-card').first();
   assert((await record.locator('.story-summary').innerText()).split(/\s+/).length<=15);
-  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>n.decode().catch(()=>{}))));
+  await page.locator('img').evaluateAll(ns=>Promise.all(ns.filter(n=>n.checkVisibility()&&n.getBoundingClientRect().top<844&&n.getBoundingClientRect().bottom>0).map(n=>Promise.race([n.decode().catch(()=>{}),new Promise(resolve=>setTimeout(resolve,5000))]))));
   await page.screenshot({path:`.release/browse/${engine}-${width}-comparisons.png`,fullPage:false});
   await record.click();await page.locator('.phase2-summary').waitFor();
   assert((await page.locator('.phase2-summary').innerText()).length>100,'full record summary preserved');
