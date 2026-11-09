@@ -43,8 +43,8 @@
   if(!pending.has(name))pending.set(name,new Promise((resolve,reject)=>{
    const script=document.createElement('script');
    const fail=message=>{clearTimeout(timer);script.remove();pending.delete(name);void recoverVersion();reject(Error(message));};
-   const timer=setTimeout(()=>fail('This screen could not start. Reload BibleLens to retry.'),20000);script.src=manifest[name];if(nonce)script.nonce=nonce;
-   script.onload=()=>{clearTimeout(timer);script.remove();if(script.dataset.biblelensReady!=='true'){pending.delete(name);reject(Error('This screen could not start. Reload BibleLens to retry.'));return;}resolve();};
+   const timer=setTimeout(()=>fail('This screen could not start. Reload zLenz: Bible to retry.'),20000);script.src=manifest[name];if(nonce)script.nonce=nonce;
+   script.onload=()=>{clearTimeout(timer);script.remove();if(script.dataset.biblelensReady!=='true'){pending.delete(name);reject(Error('This screen could not start. Reload zLenz: Bible to retry.'));return;}resolve();};
    script.onerror=()=>fail('This screen could not load. Check your connection and retry.');document.head.append(script);
   }));
   await pending.get(name);loaded.add(name);
@@ -52,7 +52,8 @@
  function requirements(hash){
   const path=hash.split('?')[0];
   if(!path||['#','#discover','#sync'].includes(path))return [];
-  if(/^#(?:questions|debates?)$|^#debate\//.test(path))return ['debates'];
+  if(/^#debate(?:\/|$)/.test(path))return ['study','debates'];
+  if(/^#(?:questions|debates)$/.test(path))return ['debates'];
   const directory=/^#(?:evidence|categories|saved)(?:[/?]|$)/.test(path)?'evidence':/^#(?:people|characters)(?:\/|$)/.test(path)?'characters':/^#places(?:\/|$)/.test(path)?'places-directory':/^#timeline(?:\/|$)/.test(path)?'timeline':/^#commandments(?:\/|$)/.test(path)?'commandments':/^#prophecies(?:\/|$)/.test(path)?'prophecies':null;
   return ['study',...(directory?[directory]:[])];
  }
@@ -63,7 +64,7 @@
   if(routing?.hash===hash)return true;
   const job={hash};routing=job;
   const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Laws':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Events':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
-  const context=document.querySelector('#header-context');if(context)context.textContent=label;const nav=document.querySelector('.lens-context');if(nav){nav.hidden=false;nav.innerHTML='<h1>'+label+'</h1>';}document.title=label+' · BibleLens';document.querySelector('#lens-settings')?.setAttribute('aria-label','Settings for '+label);
+  const context=document.querySelector('#header-context');if(context)context.textContent=label;const nav=document.querySelector('.lens-context');if(nav){nav.hidden=false;nav.innerHTML='<h1>'+label+'</h1>';}document.title=label+' · zLenz: Bible';document.querySelector('#lens-settings')?.setAttribute('aria-label','Settings for '+label);
   queueMicrotask(async()=>{
    if(routing!==job||location.hash!==hash)return;
    const main=document.getElementById('main');let panel=document.getElementById('route-loading');

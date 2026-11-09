@@ -2828,6 +2828,8 @@ html body.lens-app dialog.stories-filter-sheet .commandments-sheet-scroll{backgr
 @media(max-width:767px){html body.lens-app #lensMasthead .lens-primary a:not([aria-current]){color:var(--ux13-subtle)}}
 
 html body.lens-app #main #debates-view.directory-hub :is(#debate-results,.accepted-questions){display:flex;flex-direction:column;gap:12px;padding:0;margin:0}
+html body.lens-app #main #debates-view :is([data-accepted-active-filters],[data-evidence-active-filters]){overflow-wrap:anywhere}
+html body.lens-app #main #debates-view .accepted-collection-intro{display:block}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card{container-type:normal;text-decoration:none}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .story-title{font:700 1.15rem/1.3 var(--ui-font);margin:0;color:var(--ux13-white)}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card>.story-top-row{margin:0;display:flex;justify-content:space-between}

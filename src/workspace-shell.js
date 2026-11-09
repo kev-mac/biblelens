@@ -74,21 +74,21 @@
   if(el('main').hasAttribute('aria-busy')){
    const title=el('route-loading')?.dataset.destinationLabel||'Opening this screen…';
    contextNav.hidden=false;if(contextNav.querySelector('h1')?.textContent!==title)contextNav.innerHTML='<h1 tabindex="-1" aria-current="page">'+esc(title)+'</h1>';
-   document.title=title+' · BibleLens';el('lens-settings').setAttribute('aria-label','Settings for '+title);return;
+   document.title=title+' · zLenz: Bible';el('lens-settings').setAttribute('aria-label','Settings for '+title);return;
   }
   const active=primary();
   for(const link of masthead.querySelectorAll('[data-lens-view]')){if(link.dataset.lensView===active)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');}
   const host=el(view+'-view');if(!host)return;
   const pageHeading=host.querySelector('h1');
   if(view==='read'&&pageHeading){const readerTitle=/^#(?:compare|investigation)/.test(location.hash)?'Compare Passages':'Read';if(pageHeading.textContent!==readerTitle)pageHeading.textContent=readerTitle;}
-  let title=pageHeading?.textContent.trim()||labels[view]||'BibleLens';
+  let title=pageHeading?.textContent.trim()||labels[view]||'zLenz: Bible';
   if(/^#(?:compare|investigation)/.test(location.hash))title='Compare Passages';
   if(/^#stories\//.test(location.hash))title=host.querySelector('.story-card h2')?.textContent.trim()||title;
   const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash);
   contextNav.hidden=top;
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
-   const headerTitle=view==='debate'?({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Contradictions'}[document.body.dataset.topic]||'Research Record'):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
+   const headerTitle=view==='debate'?(host.dataset.evidenceHeading||({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Questions'}[document.body.dataset.topic]||'Research Record')):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
    const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
    const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
    host.classList.add('ux-compact-interior');
@@ -97,7 +97,7 @@
    contextNav.dataset.fallback=rootHash;
   }
   const profileTitle=document.querySelector('#character-sheet[open] #character-detail-name')?.textContent;
-  document.title=(profileTitle||title)+' · BibleLens';el('lens-settings').setAttribute('aria-label','Settings for '+(view==='read'?el('ux-chapter-picker')?.textContent.trim()||'Read':profileTitle||title));
+  document.title=(profileTitle||title)+' · zLenz: Bible';el('lens-settings').setAttribute('aria-label','Settings for '+(view==='read'?el('ux-chapter-picker')?.textContent.trim()||'Read':profileTitle||title));
  }
  contextNav.addEventListener('click',event=>{if(event.target.closest('[data-ux-back]')){back(contextNav.dataset.fallback);return;}const link=event.target.closest('a');if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();routeTo(link.hash);});
  document.addEventListener('click',event=>{if(event.target.closest('[data-ux-commandment-filters]'))el('commandments-more').click();if(event.target.closest('.ux-search'))searchParent=primary();if(event.target.closest('[data-open-settings]'))el('lens-settings').click();});
@@ -120,7 +120,7 @@
  const dialogObserver=new MutationObserver(records=>{if(records.some(record=>!record.target.closest?.('.ux-dialog-path')))requestAnimationFrame(()=>{dialogPaths();updateContext();});});
  dialogObserver.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['open']});
  const aboutHeading=el('method-view')?.querySelector('h1');if(aboutHeading)aboutHeading.textContent='Method & Sources';
- const footerLink=document.querySelector('body > footer .brand');if(footerLink){footerLink.textContent='Method & Sources';footerLink.setAttribute('aria-label','BibleLens Method & Sources');}
+ const footerLink=document.querySelector('body > footer .brand');if(footerLink){footerLink.textContent='Method & Sources';footerLink.setAttribute('aria-label','zLenz: Bible Method & Sources');}
  function section(id, html) {const node = document.createElement('section'); node.id = id + '-view'; node.className = 'lens-workspace'; node.hidden = true; node.innerHTML = html; main.append(node); return node;}
  const heading = (kicker, title, copy) => `<div class="lens-page-heading"><span class="lens-kicker">${kicker}</span><h1 tabindex="-1">${title}</h1><p>${copy}</p></div>`;
  section('explore','');

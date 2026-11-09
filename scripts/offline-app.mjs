@@ -6,7 +6,7 @@ export function packageOfflineApp(assets) {
  const release = JSON.parse(assets['/release.json'].body);
  assets['/assets/app-icon.png'] = {type:'image/png', encoding:'base64', body:fs.readFileSync('src/assets/app-icon.png').toString('base64')};
  assets['/manifest.webmanifest'] = {type:'application/manifest+json', body:JSON.stringify({
-  id:'/', name:'BibleLens', short_name:'BibleLens', description:'Read and compare Bible texts.',
+  id:'/', name:'zLenz: Bible', short_name:'zLenz: Bible', description:'Read and compare Bible texts.',
   start_url:'/#discover', scope:'/', display:'standalone', background_color:'#f7f8fa', theme_color:'#f7f8fa',
   icons:[{src:'/assets/app-icon.png',sizes:'1024x1024',type:'image/png',purpose:'any'}]
  })};
