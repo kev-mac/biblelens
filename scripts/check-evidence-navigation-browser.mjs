@@ -78,11 +78,15 @@ try{
      await page.waitForFunction(()=>new URLSearchParams(location.hash.split('?')[1]).get('subject')==='text-vs-text'&&!new URLSearchParams(location.hash.split('?')[1]).has('finding'));
      assert.equal(await page.locator('#debates-view h1').innerText(),'Bible vs. Bible');assert.match(await page.locator('#debates-view .directory-results').innerText(),new RegExp('of '+textTotal+' questions'));
      assert(await page.locator('.accepted-questions .phase2-debate-card').count()>0);
-     await page.locator('[data-accepted-filters]').click();await sheet.waitFor({state:'visible'});assert(await sheet.getByRole('button',{name:/^Conflicts with Evidence \(0\)$/i}).isDisabled());await page.keyboard.press('Escape');
+     await page.locator('[data-accepted-filters]').click();await sheet.waitFor({state:'visible'});assert(await sheet.getByRole('button',{name:/^Conflicts with Evidence \(0\)$/i}).isDisabled());await settle(page);await page.screenshot({path:`${output}/${name}-filter-sheet.png`,fullPage:false});await page.keyboard.press('Escape');
      await settle(page);await fit(page);await page.screenshot({path:`${output}/${name}-subject.png`,fullPage:false});
      await type(page,'#accepted-search','Goliath');await page.waitForFunction(()=>new URLSearchParams(location.hash.split('?')[1]).get('q')==='Goliath');await acceptedReady(page);
      assert.equal(await page.locator('.accepted-questions .phase2-debate-card').count(),1);const listHash=await page.evaluate(()=>location.hash);
      await page.locator('.accepted-questions .phase2-debate-card').first().click();await page.locator('[data-accepted-save]').waitFor();assert.equal(await page.locator('#debate-view .phase2-sides section').count(),2);
+     await page.locator('#debate-view').getByText('Passages and Research Limits',{exact:true}).click();
+     const recordHash=await page.evaluate(()=>location.hash),citation=page.locator('#debate-view [data-cite]').first(),citationLabel=await citation.getAttribute('data-cite-label');
+     await citation.click();await page.locator('#verse-preview:not([hidden]) .preview-selected').first().waitFor();await page.waitForFunction(()=>!document.querySelector('#verse-preview .preview-text').classList.contains('loading-state'));assert.equal(await page.locator('#verse-preview strong').innerText(),citationLabel);assert.equal(await page.evaluate(()=>location.hash),recordHash);
+     await settle(page);await page.screenshot({path:`${output}/${name}-citation-context.png`,fullPage:false});await page.locator('#verse-preview .preview-close').click();await page.locator('#verse-preview').waitFor({state:'hidden'});assert(await citation.evaluate(node=>node===document.activeElement));
      assert.equal(await page.locator('#debate-view>a.lens-button').getAttribute('href'),listHash);
      await page.locator('.lens-context [data-ux-back]').click();await acceptedReady(page);assert.equal(await page.evaluate(()=>location.hash),listHash);assert.equal(await page.locator('#accepted-search').inputValue(),'Goliath');
      await page.locator('.accepted-questions .phase2-debate-card').first().click();await page.locator('[data-accepted-save]').waitFor();await page.goBack();await acceptedReady(page);assert.equal(await page.evaluate(()=>location.hash),listHash);
@@ -114,7 +118,7 @@ try{
      await fit(page);await settle(page);await page.screenshot({path:`${output}/${name}-records.png`,fullPage:false});assert((await page.title()).endsWith(' · zLenz: Bible'));assert.deepEqual(errors,[]);
      if(bundle==='offline')assert.deepEqual(apiRequests,[],'The actual offline engine handles all Evidence API calls without server requests.');
      matrix.push({engine,bundle,width,height,theme,status:'PASS',release,featured:total,bibleVsBible:textTotal,history:historyTotal,webOfflinePagesIdentical:true,apiRequests:bundle==='offline'?apiRequests.length:undefined,emptyCollectionFixture:bundle==='web'});save();console.log('PASS Evidence navigation',name);
-    }catch(error){fs.writeFileSync(`${output}/failure-${name}.json`,JSON.stringify({error:error.message,route:await page.evaluate(()=>location.hash).catch(()=>null)},null,2)+'\n');await page.screenshot({path:`${output}/failure-${name}.png`,fullPage:false}).catch(()=>{});throw error;}
+    }catch(error){const diagnostic=await page.evaluate(()=>({route:location.hash,view:typeof view==='undefined'?null:view,readerHelper:typeof referenceLink,headings:[...document.querySelectorAll('#main h1')].filter(n=>n.getClientRects().length).map(n=>n.textContent),detailText:document.getElementById('debate-view')?.innerText.slice(0,1800),focus:document.activeElement?.id})).catch(()=>({unavailable:true}));const failure={error:error.message,engine,bundle,width,height,errors,...diagnostic};console.error('FAIL Evidence navigation',JSON.stringify(failure));fs.writeFileSync(`${output}/failure-${name}.json`,JSON.stringify(failure,null,2)+'\n');await page.screenshot({path:`${output}/failure-${name}.png`,fullPage:false}).catch(()=>{});throw error;}
     finally{await context.close();}
    }
   }finally{await browser.close();}
