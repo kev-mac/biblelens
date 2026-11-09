@@ -1,0 +1,226 @@
+name: "Build 403 Explore viewport centering checks"
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/explore-centering-checks-403.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: explore-centering-403-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: false
+
+jobs:
+  explore-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/explore-centering-checks-403'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+      BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+    steps:
+      - name: Check out frozen build 403 source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify exact product source and preserved build 402 data
+        run: |
+          git merge-base --is-ancestor a30ede7786c393fd93b0de9b81e3edcb2c1ab828 HEAD
+          git diff --exit-code a30ede7786c393fd93b0de9b81e3edcb2c1ab828 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research
+          git diff --exit-code 749a01f9faf71768f80a550eba69045bc5c7fdca HEAD -- data worker ios android package-lock.json capacitor.config.json .openai/hosting.json db drizzle research
+          mkdir -p .release/explore-403
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {releaseInfo} from './scripts/release-info.mjs';
+          const changed=fs.readFileSync('src/overrides.css','utf8');
+          const {execFileSync}=await import('node:child_process');const original=execFileSync('git',['show','749a01f9faf71768f80a550eba69045bc5c7fdca:src/overrides.css'],{encoding:'utf8',maxBuffer:16*1024*1024});assert.equal(changed,original.replace('filter:brightness(.5) saturate(.65);','filter:brightness(.35) saturate(.55);').replace('margin-inline:calc(-1 * var(--lane-gutter));padding-block:6px 16px;','margin-inline:0;padding-block:6px 16px;'));assert.equal(execFileSync('git',['diff','--name-only','749a01f9faf71768f80a550eba69045bc5c7fdca','HEAD','--','src'],{encoding:'utf8'}).trim(),'src/overrides.css');
+          const release=releaseInfo();assert.equal(release.buildNumber,403);assert.equal(release.sourceHash,'24a9c8af6b91d2b4509aead8a68f02068d2bf1f7160a2775842c30dc0ebb48a0');fs.writeFileSync('.release/explore-403/source-release.json',JSON.stringify(release,null,2)+'\n');console.log(release);
+          JS
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Install Chromium and WebKit on the separate runner
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Require Chromium sandboxing
+        run: |
+          cat > .release/explore-403/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';const launch=chromium.launch.bind(chromium);chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+          node --check .release/explore-403/require-sandbox.mjs
+
+      - name: Run required final-source shared release preparation
+        id: prepare
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/explore-403/release-prepare.log
+
+      - name: Verify all preserved reviews in actual web and offline workers
+        run: node scripts/check-contradiction-bundles.mjs 2>&1 | tee .release/explore-403/review-parity.log
+
+      - name: Verify exact branding and artwork parity
+        run: |
+          node scripts/check-branding.mjs --built 2>&1 | tee .release/explore-403/branding.log
+          npm run check:images 2>&1 | tee .release/explore-403/images.log
+
+      - name: Build actual accepted build 401 for a fresh before rendering
+        run: |
+          git worktree add --detach .release/baseline-401 9c4dee52ff66c01c10a3f30420d7f21d74e85322
+          ln -s "$GITHUB_WORKSPACE/node_modules" .release/baseline-401/node_modules
+          npm --prefix .release/baseline-401 run build 2>&1 | tee .release/explore-403/baseline-build.log
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          const source=fs.readFileSync('.release/baseline-401/scripts/serve.mjs','utf8');assert(source.includes('const port=8787;'));assert(source.includes("import worker from './built-worker.mjs';"));
+          // An ignored QA adapter changes only its listen port and relative import.
+          // Accepted baseline source and its actual production bundle stay intact.
+          fs.mkdirSync('.release/baseline-401/.release',{recursive:true});fs.writeFileSync('.release/baseline-401/.release/serve-8789.mjs',source.replace('const port=8787;','const port=8789;').replace("import worker from './built-worker.mjs';","import worker from '../scripts/built-worker.mjs';"));
+          JS
+
+      - name: Build actual current build 402 for the reported alignment
+        run: |
+          git worktree add --detach .release/baseline-402 749a01f9faf71768f80a550eba69045bc5c7fdca
+          ln -s "$GITHUB_WORKSPACE/node_modules" .release/baseline-402/node_modules
+          npm --prefix .release/baseline-402 run build 2>&1 | tee .release/explore-403/baseline-402-build.log
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          const source=fs.readFileSync('.release/baseline-402/scripts/serve.mjs','utf8');assert(source.includes('const port=8787;'));assert(source.includes("import worker from './built-worker.mjs';"));
+          fs.mkdirSync('.release/baseline-402/.release',{recursive:true});fs.writeFileSync('.release/baseline-402/.release/serve-8788.mjs',source.replace('const port=8787;','const port=8788;').replace("import worker from './built-worker.mjs';","import worker from '../scripts/built-worker.mjs';"));
+          JS
+
+      - name: Open exact before and after builds on runner loopback
+        id: preview
+        run: |
+          node scripts/serve.mjs > .release/explore-403/after-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-403/after-server.pid
+          (cd .release/baseline-401 && exec node .release/serve-8789.mjs) > .release/explore-403/before-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-403/before-server.pid
+          (cd .release/baseline-402 && exec node .release/serve-8788.mjs) > .release/explore-403/baseline402-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-403/baseline402-server.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {setTimeout} from 'node:timers/promises';
+          const final=JSON.parse(fs.readFileSync('.release/explore-403/source-release.json')),before={version:'1.1.0',buildNumber:401,sourceHash:'80ea78e29c620b0e1aeb3cfefc215fdc8729234ff7cd87032184865f44be361a'};
+          const currentBefore={version:'1.1.0',buildNumber:402,sourceHash:'ff4463907cb1ca89830974c21bf83ad514e43f733b7d7ba8a50ece757ec66544'};
+          for(const [port,expected]of [[8787,final],[8789,before],[8788,currentBefore]]){let ready=false;for(let attempt=0;attempt<100;attempt++){try{const r=await fetch(`http://127.0.0.1:${port}/release.json`,{signal:AbortSignal.timeout(2000)});assert(r.ok);assert.deepEqual(await r.json(),expected);ready=true;break;}catch{await setTimeout(200);}}assert(ready,'Exact preview identity unavailable on '+port);}
+          assert.deepEqual(JSON.parse(fs.readFileSync('www/release.json')),final);
+          JS
+
+      - name: Capture actual build 401 before geometry and screenshots
+        id: before
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8789
+          BIBLELENS_COMPARISON_PHASE: before
+        run: node scripts/check-explore-refinements-browser.mjs 2>&1 | tee .release/explore-403/before.log
+
+      - name: Compare final build 403 and exercise inset search and gestures
+        id: after
+        if: ${{ !cancelled() && steps.before.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+          BIBLELENS_COMPARISON_PHASE: after
+        run: node scripts/check-explore-refinements-browser.mjs 2>&1 | tee .release/explore-403/after.log
+
+      - name: Diagnose actual build 402 centers and capture all positions
+        id: center_before
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8788
+          BIBLELENS_CENTERING_PHASE: before
+        run: node scripts/check-explore-centering-browser.mjs 2>&1 | tee .release/explore-403/centering-before.log
+
+      - name: Verify viewport centers and darker inactive cards in build 403
+        id: center_after
+        if: ${{ !cancelled() && steps.center_before.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+          BIBLELENS_CENTERING_PHASE: after
+        run: node scripts/check-explore-centering-browser.mjs 2>&1 | tee .release/explore-403/centering-after.log
+
+      - name: Retain and extend all responsive Explore annotation regressions
+        id: annotations
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+        run: node scripts/check-explore-annotations-browser.mjs 2>&1 | tee .release/explore-403/annotations.log
+
+      - name: Exercise existing carousel destinations and large text
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+        run: node scripts/check-explore-carousels.mjs 2>&1 | tee .release/explore-403/carousels.log
+
+      - name: Preserve People and Places letter rails in all existing cases
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-403/require-sandbox.mjs
+        run: node scripts/check-directory-letter-rail-browser.mjs 2>&1 | tee .release/explore-403/directory-rails.log
+
+      - name: Stop only these owned previews
+        if: always()
+        run: |
+          for stage in before after baseline402; do
+            if test -f ".release/explore-403/$stage-server.pid"; then kill "$(cat ".release/explore-403/$stage-server.pid")" 2>/dev/null || true; fi
+          done
+
+      - name: Package only the successful final candidate
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/explore-403/source-release.json')),candidate=JSON.parse(fs.readFileSync('.release/candidate.json')),{canonicalCommit,...release}=candidate;assert.deepEqual(release,expected);assert.deepEqual(releaseInfo(),expected);
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
+          const before=JSON.parse(fs.readFileSync('.release/explore-comparison/before/matrix.json')),after=JSON.parse(fs.readFileSync('.release/explore-comparison/after/matrix.json')),annotations=JSON.parse(fs.readFileSync('.release/explore-annotations/matrix.json'));assert.equal(before.length,28);assert.equal(after.length,28);assert.equal(annotations.length,56);for(const rows of [before,after,annotations])assert(rows.every(row=>row.status==='PASS'));
+          const centerBefore=JSON.parse(fs.readFileSync('.release/explore-centering/before/matrix.json')),centerAfter=JSON.parse(fs.readFileSync('.release/explore-centering/after/matrix.json')),rails=JSON.parse(fs.readFileSync('.release/directory-letter-rail/matrix.json'));assert.equal(centerBefore.length,36);assert.equal(centerAfter.length,36);assert.equal(centerBefore.flatMap(r=>r.positions).length,252);assert.equal(centerAfter.flatMap(r=>r.positions).length,252);assert.equal(rails.length,56);for(const rows of [centerBefore,centerAfter,rails])assert(rows.every(row=>row.status==='PASS'));
+          const reference=centerAfter.filter(row=>row.width===493&&row.height===983&&row.theme==='dark').map(row=>{const prior=centerBefore.find(p=>p.engine===row.engine&&p.width===493&&p.height===983&&p.theme==='dark');return {engine:row.engine,beforeEvidence:prior.positions.find(p=>p.id==='ux-topic-evidence'),afterEvidence:row.positions.find(p=>p.id==='ux-topic-evidence')};});console.log('MEASURED 493x983 EVIDENCE CENTERS',JSON.stringify(reference));
+          const worker=fs.readFileSync('dist/server/index.js');fs.writeFileSync('.release/explore-403/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'a30ede7786c393fd93b0de9b81e3edcb2c1ab828',baselineCommit:'749a01f9faf71768f80a550eba69045bc5c7fdca',legacyBaselineCommit:'9c4dee52ff66c01c10a3f30420d7f21d74e85322',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),comparisonBefore:28,comparisonAfter:28,centeringBefore:36,centeringAfter:36,centerPositionsPerPhase:252,annotationCases:56,directoryRailCases:56,screenshotsVisuallyInspected:false,signedNativeAssets:false},null,2)+'\n');
+          JS
+          tar -czf .release/explore-403/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/explore-403/prepared-bundles.tar.gz > .release/explore-403/prepared-bundles.sha256
+
+      - name: Retain exact tested bundles without publication
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-403-verified-bundles-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-403/source-release.json
+            .release/explore-403/prepared-manifest.json
+            .release/explore-403/prepared-bundles.tar.gz
+            .release/explore-403/prepared-bundles.sha256
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Retain actual before and after captures and results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-403-centering-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-403/*.log
+            .release/explore-403/*.json
+            .release/explore-403/*.sha256
+            .release/explore-comparison/**
+            .release/explore-annotations/**
+            .release/explore-centering/**
+            .release/directory-letter-rail/**
+            .release/carousels/**
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
