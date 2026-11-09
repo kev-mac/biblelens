@@ -3220,7 +3220,7 @@ html body.lens-app #explore-view a.ux-topic{
  min-height:clamp(20rem,86vw,26rem);padding:20px;gap:14px;scroll-snap-align:center;
  border:1px solid rgba(var(--tile-rgb),.58);border-radius:21px;color:#fff;isolation:isolate;--tile-shade:color-mix(in srgb,rgb(var(--tile-rgb)) 12%,#0a0f16);
  background-color:var(--tile-shade);
- filter:brightness(.5) saturate(.65);transform:scale(.9);
+ filter:brightness(.35) saturate(.55);transform:scale(.9);
  transition:transform .2s,filter .2s,box-shadow .2s;
 }
 html body.lens-app #explore-view a.ux-topic::after{
@@ -3293,7 +3293,7 @@ html body.lens-app #lensMasthead .lens-primary a > span {
  html body.lens-app #explore-view .ux-explore-filters{margin-top:0;margin-bottom:8px;padding-top:4px;padding-bottom:4px;padding-left:var(--lane-inset);}
  html body.lens-app #explore-view .ux-topic-section{margin-bottom:4px;}
  html body.lens-app #explore-view .ux-lane-heading{min-height:24px;margin-bottom:4px;}
- html body.lens-app #explore-view .ux-topic-row{margin-inline:calc(-1 * var(--lane-gutter));padding-block:6px 16px;}
+ html body.lens-app #explore-view .ux-topic-row{margin-inline:0;padding-block:6px 16px;}
  html body.lens-app #explore-view .ux-lane-pages{margin-top:-8px;}
 }
 

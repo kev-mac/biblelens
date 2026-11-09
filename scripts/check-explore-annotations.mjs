@@ -39,6 +39,7 @@ const last=(selector,prop,media=false)=>rules.filter(rule=>rule.selector===selec
 assert.equal(last('html body.lens-app:has(#explore-view:not([hidden])) #lensMasthead .ux-search','display'),'none');
 assert.equal(last('html body.lens-app #explore-view','--lane-card-width'),'min(82cqw,60dvh)');assert.equal(last('html body.lens-app #explore-view','--lane-card-width',true),'min(82cqw,90dvh)');
 assert.equal(last('html body.lens-app #explore-view .ux-topic-section','container-type'),'inline-size');assert.equal(last('html body.lens-app #explore-view a.ux-topic','aspect-ratio'),'var(--lane-card-aspect)');
+assert.equal(last('html body.lens-app #explore-view .ux-topic-row','margin-inline',true),'0','A full-width mobile lane must not retain the old negative full-bleed margin');
 assert.equal(last('html body.lens-app #explore-view a.ux-topic>img','object-fit'),'cover');assert.equal(last('html body.lens-app #explore-view a.ux-topic','border-radius'),'21px');
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','min-height'),'48px');assert(atlas.includes('stops[Math.min(active,stops.length-1)]'),'Resize retains the active carousel position');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-direction'),'row');assert.equal(last('html body.lens-app #explore-view [data-topic=stories] img','object-position'),'88% center');
