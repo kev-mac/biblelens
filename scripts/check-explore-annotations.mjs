@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import postcss from 'postcss';
-const read=file=>fs.readFileSync(file,'utf8'),atlas=read('src/atlas-explore.js'),shell=read('src/workspace-shell.js'),workspace=read('src/workspace.js');
+const read=file=>fs.readFileSync(file,'utf8'),atlas=read('src/atlas-explore.js').replace('/*__EXPLORE_RENDITIONS__*/{}',JSON.stringify(JSON.parse(read('src/assets/explore-renditions.json')).images)),shell=read('src/workspace-shell.js'),workspace=read('src/workspace.js');
 const inputHandlers={},searches=[],routes=[];let renders=0,markup='',focused=0;
 const input={value:'',focus:()=>focused++,addEventListener:(type,fn)=>inputHandlers[type]=fn,dispatchEvent:event=>inputHandlers[event.type]?.(event)},form={},status={textContent:''};
 const host={set innerHTML(value){markup=value;renders++;},querySelector:selector=>({'#ux-explore-search':input,'#ux-explore-search-form':form,'#ux-explore-search-status':status}[selector]),querySelectorAll:()=>[]};

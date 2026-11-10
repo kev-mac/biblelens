@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {createEmbeddedByteCache} from '../worker/embedded-bytes.mjs';
+const reads=[];
+const read=createEmbeddedByteCache(async key=>{reads.push(key);return new Uint8Array([key.charCodeAt(0),1,2]);},{maxBytes:6,maxEntries:2});
+const [a,b]=await Promise.all([read('a'),read('a')]);assert.deepEqual(reads,['a']);assert.deepEqual(a,b,'Concurrent requests share one decode');
+assert.deepEqual(new Uint8Array(await new Response(a).arrayBuffer()),a);
+assert.deepEqual(new Uint8Array(await new Response(await read('a')).arrayBuffer()),a,'A consumed response does not consume cached bytes');
+await read('b');await read('a');await read('c');await read('a');assert.deepEqual(reads,['a','b','c'],'Recent bytes remain cached');
+await read('b');assert.deepEqual(reads,['a','b','c','b'],'Byte/entry bounds evict the least recent image');
+let attempts=0;const retry=createEmbeddedByteCache(async()=>{if(++attempts===1)throw Error('decode failed');return new Uint8Array([1]);});
+await assert.rejects(retry('x'),/decode failed/);assert.deepEqual(await retry('x'),new Uint8Array([1]));assert.equal(attempts,2,'Failures are retried, not retained');
+let largeReads=0;const oversized=createEmbeddedByteCache(async()=>{largeReads++;return new Uint8Array(7);},{maxBytes:6,maxEntries:2});await oversized('large');await oversized('large');assert.equal(largeReads,2,'Oversized bodies do not grow the cache');
+console.log('PASS: embedded binary decode coalescing, reusable bytes/fresh response streams, bounded LRU retention, oversized bodies and failure recovery.');

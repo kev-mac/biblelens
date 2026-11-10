@@ -82,6 +82,10 @@ if (!process.argv.includes('--fixtures-only')) {
     for (const source of packed[kind].sources) assert.equal(assetDigest((await get(source.path)).body), source.sha256, source.path);
     assert.match(bundle.type, kind === 'css' ? /text\/css/ : /application\/javascript/);
   }
+  const explore=(await get('/atlas-explore.js')).body;
+  assert(explore.includes('data-explore-srcset=')&&explore.includes('loading=\"lazy\"'),'Startup retains deferred responsive Explore images');
+  assert(!/<img\s+src=/.test(explore),'Hidden Explore has no eager image source in its markup');
+  assert(!explore.includes('/*__EXPLORE_RENDITIONS__*/{}'),'The startup source uses the checked rendition manifest');
   const packedSources = [...packed.css.sources, ...packed.js.sources].map(item => item.path);
   assert(!packedSources.some(path => /device-engine|beginnings-landscape|chapters\.json/.test(path)), 'Corpus and illustration are not duplicated into the browser startup bundle');
   console.log(`PASS: packaged worker serves ${packedSources.length} original startup assets through two correct, content-fingerprinted bundles.`);

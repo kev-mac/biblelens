@@ -60,5 +60,208 @@
       "sourceFile": "exec-6a5eb125-cea1-487c-aac9-6126cd9209aa.png",
       "packaging": "Generated PNG resized proportionally to 1200×800 and encoded WebP at quality 83. No content edits during conversion."
     }
+  ],
+  "renditionBatches": [
+    {
+      "id": "explore-responsive-v1",
+      "date": "2026-11-09",
+      "generator": "scripts/create-explore-renditions.py",
+      "toolVersions": {
+        "python": "3.12.14",
+        "pillow": "13.0.0",
+        "libwebp": "1.6.0"
+      },
+      "contentEdits": "None. Existing artwork only; no generation, crop, retouch, or semantic edits.",
+      "smallConversion": {
+        "width": 640,
+        "height": "Proportional, nearest integer with halves rounded up",
+        "upscale": false,
+        "resample": "Pillow Image.Resampling.LANCZOS",
+        "box": null,
+        "reducingGap": null,
+        "format": "WEBP",
+        "lossless": false,
+        "quality": 83,
+        "qualityByRole": {
+          "hero": 75
+        },
+        "qualityException": "The hero source is already 43,060 bytes. At 640px, quality 83 produces 52,824 bytes; quality 75 produces 40,050 bytes.",
+        "method": 6,
+        "mode": "RGB (unchanged)",
+        "metadata": "No metadata passed to the encoder"
+      },
+      "largeConversion": "Exact original source bytes; no resize, upscale, or re-encoding.",
+      "filename": "explore-{role}-{actualWidth}-v1-{sha256First12}.webp",
+      "images": {
+        "stories": {
+          "source": "explore-ark.webp",
+          "width": 960,
+          "height": 540,
+          "small": {
+            "file": "explore-stories-640-v1-a62a1a1e30c3.webp",
+            "width": 640,
+            "height": 360,
+            "sha256": "a62a1a1e30c3dc98a335fa7635caacf3ff59a790e475fb0339b4f4c65252ad4f",
+            "bytes": 50692
+          },
+          "large": {
+            "file": "explore-stories-960-v1-a1ddf2b31a3b.webp",
+            "width": 960,
+            "height": 540,
+            "sha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+            "bytes": 107786
+          },
+          "sourceSha256": "a1ddf2b31a3bfe6af2c984de9ba9b0e8874001c327d9526e36154290248b82b0",
+          "sourceBytes": 107786
+        },
+        "people": {
+          "source": "story-david-and-goliath-v1.webp",
+          "width": 1200,
+          "height": 675,
+          "small": {
+            "file": "explore-people-640-v1-c342313c4f03.webp",
+            "width": 640,
+            "height": 360,
+            "sha256": "c342313c4f0301eb5a1a19a1d99e752cd8c08408bcbf49f3330545513482f955",
+            "bytes": 65910
+          },
+          "large": {
+            "file": "explore-people-1200-v1-6b117546a138.webp",
+            "width": 1200,
+            "height": 675,
+            "sha256": "6b117546a13831f42bf6accf699e3077b23557e74d454fb2b01f42274f361738",
+            "bytes": 131434
+          },
+          "sourceSha256": "6b117546a13831f42bf6accf699e3077b23557e74d454fb2b01f42274f361738",
+          "sourceBytes": 131434
+        },
+        "places": {
+          "source": "story-the-dedication-of-jerusalem-s-wall-v1.webp",
+          "width": 1200,
+          "height": 675,
+          "small": {
+            "file": "explore-places-640-v1-c630fb9bf860.webp",
+            "width": 640,
+            "height": 360,
+            "sha256": "c630fb9bf86099a585fa5ee03cf3ebf56d5d05cba7f29e23fb89d6feaee3e027",
+            "bytes": 69700
+          },
+          "large": {
+            "file": "explore-places-1200-v1-f50eb9191cc4.webp",
+            "width": 1200,
+            "height": 675,
+            "sha256": "f50eb9191cc4d16ca41a1c65a6ef6601ad12a28a184cacdc4201836f22761aec",
+            "bytes": 146662
+          },
+          "sourceSha256": "f50eb9191cc4d16ca41a1c65a6ef6601ad12a28a184cacdc4201836f22761aec",
+          "sourceBytes": 146662
+        },
+        "commandments": {
+          "source": "explore-commandments.webp",
+          "width": 1200,
+          "height": 800,
+          "small": {
+            "file": "explore-commandments-640-v1-fe2d65558df1.webp",
+            "width": 640,
+            "height": 427,
+            "sha256": "fe2d65558df1e182599c501a12f68b91cfe68f92e7570af793784675942b07a4",
+            "bytes": 73394
+          },
+          "large": {
+            "file": "explore-commandments-1200-v1-cfc17c910f4b.webp",
+            "width": 1200,
+            "height": 800,
+            "sha256": "cfc17c910f4b3a27783a470e213e8b3d4ef9336939a1f7620095dfe70395f7b0",
+            "bytes": 224364
+          },
+          "sourceSha256": "cfc17c910f4b3a27783a470e213e8b3d4ef9336939a1f7620095dfe70395f7b0",
+          "sourceBytes": 224364
+        },
+        "lost": {
+          "source": "story-the-scroll-burned-v1.webp",
+          "width": 1200,
+          "height": 675,
+          "small": {
+            "file": "explore-lost-640-v1-51c698500cfc.webp",
+            "width": 640,
+            "height": 360,
+            "sha256": "51c698500cfc93de0e2ce1e57495fef87d22d28157009148773a7dcca475b823",
+            "bytes": 43388
+          },
+          "large": {
+            "file": "explore-lost-1200-v1-6deddc004b1b.webp",
+            "width": 1200,
+            "height": 675,
+            "sha256": "6deddc004b1bddb7c6dd78fc6ef2899efa0a55d2845f8793a882a1c2335ae430",
+            "bytes": 83178
+          },
+          "sourceSha256": "6deddc004b1bddb7c6dd78fc6ef2899efa0a55d2845f8793a882a1c2335ae430",
+          "sourceBytes": 83178
+        },
+        "evidence": {
+          "source": "explore-evidence.webp",
+          "width": 1200,
+          "height": 800,
+          "small": {
+            "file": "explore-evidence-640-v1-38e89900ec4e.webp",
+            "width": 640,
+            "height": 427,
+            "sha256": "38e89900ec4ebfa5f7fa81a082ddc6ea9a49ba84485fa87a6e153bc569c5e7cd",
+            "bytes": 52888
+          },
+          "large": {
+            "file": "explore-evidence-1200-v1-75347e8a2715.webp",
+            "width": 1200,
+            "height": 800,
+            "sha256": "75347e8a2715d1af484b03ef6e96a6d2a3cd75a45b5079ea3e87c7bb65b4333c",
+            "bytes": 137726
+          },
+          "sourceSha256": "75347e8a2715d1af484b03ef6e96a6d2a3cd75a45b5079ea3e87c7bb65b4333c",
+          "sourceBytes": 137726
+        },
+        "timeline": {
+          "source": "explore-timeline.webp",
+          "width": 1200,
+          "height": 800,
+          "small": {
+            "file": "explore-timeline-640-v1-e5b5ba13d4e3.webp",
+            "width": 640,
+            "height": 427,
+            "sha256": "e5b5ba13d4e3a57b1709da513f2dcc52c09ea55a116c7ba40be5a8f7614e41d5",
+            "bytes": 77468
+          },
+          "large": {
+            "file": "explore-timeline-1200-v1-34ea21a8b7f8.webp",
+            "width": 1200,
+            "height": 800,
+            "sha256": "34ea21a8b7f8487907aa9640e08653cb7d1bcb2380ab167e63ac01d479957955",
+            "bytes": 234028
+          },
+          "sourceSha256": "34ea21a8b7f8487907aa9640e08653cb7d1bcb2380ab167e63ac01d479957955",
+          "sourceBytes": 234028
+        },
+        "hero": {
+          "source": "chapter-genesis-07-v1.webp",
+          "width": 960,
+          "height": 540,
+          "small": {
+            "file": "explore-hero-640-v1-464297c0b115.webp",
+            "width": 640,
+            "height": 360,
+            "sha256": "464297c0b1151fe65c9a99d28e4b846836a7a6401522ff55b006a580da8493c1",
+            "bytes": 40050
+          },
+          "large": {
+            "file": "explore-hero-960-v1-12642542dd67.webp",
+            "width": 960,
+            "height": 540,
+            "sha256": "12642542dd673d161d772c172e150bbe67845e6983a705fa21c5891194ad15f0",
+            "bytes": 43060
+          },
+          "sourceSha256": "12642542dd673d161d772c172e150bbe67845e6983a705fa21c5891194ad15f0",
+          "sourceBytes": 43060
+        }
+      }
+    }
   ]
 }
