@@ -3672,7 +3672,7 @@ html body.lens-app .ux-filter-strip {--ux-filter-mask:none;}
 html body.lens-app .ux-filter-strip.ux-overflow-right {--ux-filter-mask:linear-gradient(to right,#000 calc(100% - 24px),transparent);}
 html body.lens-app .ux-filter-strip.ux-overflow-left {--ux-filter-mask:linear-gradient(to right,transparent,#000 24px);}
 html body.lens-app .ux-filter-strip.ux-overflow-left.ux-overflow-right {--ux-filter-mask:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
-html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel,
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel.ux-filter-strip,
 html body.lens-app #main #timeline-view .evidence-collection-links {
  display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;scroll-padding-inline:24px;
  padding:4px 0 6px;mask-image:var(--ux-filter-mask,none);-webkit-mask-image:var(--ux-filter-mask,none);
@@ -3680,7 +3680,7 @@ html body.lens-app #main #timeline-view .evidence-collection-links {
 html body.lens-app #main :is(#debates-view,#evidence-view).directory-hub .evidence-section-tabs :is(button,a) {flex:0 0 auto;white-space:nowrap;}
 html body.lens-app #main .ux-filter-strip :is(button,a):focus-visible {outline:2px solid var(--lens-focus);outline-offset:-2px;}
 @media(min-width:768px){
- html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel,
+ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel.ux-filter-strip,
  html body.lens-app #main #timeline-view .evidence-collection-links {
   flex-wrap:wrap;overflow:visible;--ux-filter-mask:none;
  }
