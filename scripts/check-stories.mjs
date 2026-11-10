@@ -2,9 +2,13 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import zlib from 'node:zlib';
 import assert from 'node:assert/strict';
-import {validateStories} from './stories.mjs';
+import {MAX_STORY_WORDS,validateStories,validateStorySummary} from './stories.mjs';
+import {addUX13Events,ux13Events} from './ux13-content.mjs';
+import {assess} from './check-readability.mjs';
+import {releaseContent} from './rc1-content.mjs';
 
 const catalog=JSON.parse(fs.readFileSync('data/stories.json','utf8'));
+assert.deepEqual(JSON.parse(releaseContent('data/stories.json')),catalog,'Reviewed full summaries must not be overwritten by legacy short-summary overlays');
 const books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
 const chapters=JSON.parse(fs.readFileSync('data/chapters.json','utf8'));
 const topics=JSON.parse(fs.readFileSync('data/reference/topics.json','utf8'));
@@ -14,6 +18,27 @@ const genesis=catalog.find(entry=>entry.book==='Genesis');
 const exodus=catalog.find(entry=>entry.book==='Exodus');
 assert(genesis&&exodus,'Both reviewed story batches must be present');
 const changed=mutate=>{const copy=structuredClone(catalog);mutate(copy);return copy;};
+assert.equal(MAX_STORY_WORDS,500);
+for(const count of [301,500]){
+ assert.equal(validateStories(changed(c=>c[0].stories[0].summary=Array(count).fill('word').join(' ')),options),total);
+}
+assert.throws(()=>validateStories(changed(c=>c[0].stories[0].summary=Array(501).fill('word').join(' ')),options),/exceeds 500 words/);
+const fullStories=addUX13Events(catalog).flatMap(group=>group.stories);
+const detailGrades=[];
+for(const story of fullStories){
+ validateStorySummary(story);
+ const result=assess(story.summary,{tier:'detail'});
+ assert(!result.tooLong,story.title+' exceeds the 30-word detail sentence limit');
+ detailGrades.push(result.grade);
+}
+assert(detailGrades.reduce((sum,grade)=>sum+grade,0)/detailGrades.length<=10,'Full-story collection exceeds detail reading grade 10');
+const originalSupplement=ux13Events[0].summary;
+try{
+ for(const count of [301,500]){ux13Events[0].summary=Array(count).fill('word').join(' ');assert.doesNotThrow(()=>addUX13Events(catalog));}
+ ux13Events[0].summary=Array(501).fill('word').join(' ');
+ assert.throws(()=>addUX13Events(catalog),/exceeds 500 words/);
+}finally{ux13Events[0].summary=originalSupplement;}
+console.log('PASS: Core and supplemental stories accept 301–500 words and reject 501 words.');
 assert.throws(()=>validateStories(changed(c=>c.reverse()),options),/book order/);
 assert.throws(()=>validateStories(changed(c=>c[1].stories[0].title=c[0].stories[0].title),options),/Duplicate story/);
 assert.throws(()=>validateStories(changed(c=>c[0].stories.push({...c[0].stories[0],title:c[0].stories[0].title+'!'})),options),/Duplicate story/);
@@ -39,7 +64,7 @@ for(const entry of catalog){
   assert.deepEqual(Object.keys(story).sort(),['cross_references','passage','summary','title','topics']);
   for(const field of ['title','passage','summary'])assert.equal(typeof story[field],'string');
   assert(Array.isArray(story.cross_references));
-  assert(story.summary.trim().split(/\s+/).length<=300,story.title+' exceeds the approved word limit');
+  assert(story.summary.trim().split(/\s+/).length<=MAX_STORY_WORDS,story.title+' exceeds the approved word limit');
   assert(story.topics.length<=5);assert.equal(new Set(story.topics).size,story.topics.length);
   for(const label of [story.passage,...story.cross_references]){
    const ref=c.storyReference(label);assert(ref,label);
@@ -138,5 +163,5 @@ const sectionCard=c.storyCard(genesis.stories[0]);
 assert(sectionCard.includes('data-story-book="0" data-story-chapter="1" data-story-verse="1" data-story-end-chapter="2" data-story-end-verse="3"'));
 assert(sectionCard.includes('Read story</button>'));
 assert(!sectionCard.includes('data-story-section'));
-assert(sectionCard.includes('<div class="story-summary"><p>'+genesis.stories[0].summary.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')+'</p></div>'));
+for(const paragraph of genesis.stories[0].summary.split(/\n\s*\n/))assert(sectionCard.includes('<p>'+paragraph.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')+'</p>'));
 console.log('PASS: Full-range story anchors, direct reader action and unchanged narrative summary.');

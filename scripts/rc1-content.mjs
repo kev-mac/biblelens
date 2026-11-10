@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 export const accepted=JSON.parse(fs.readFileSync(new URL('../data/rc1-accepted.json',import.meta.url),'utf8'));
 for (const question of accepted.questions) if (question.comparison === 'text-vs-science' && !['Astronomy','Geology','Biology'].includes(question.branch)) throw Error('Missing science branch: ' + question.id);
-const slug=text=>text.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function releaseContent(file,text=fs.readFileSync(file,'utf8')){
  const value=JSON.parse(text);
  const merge=(rows,additions)=>{const map=new Map(rows.map(row=>[row.id,row]));for(const row of additions)map.set(row.id,row);return [...map.values()];};
@@ -11,10 +10,8 @@ export function releaseContent(file,text=fs.readFileSync(file,'utf8')){
   for(const pair of accepted.meaning.filter(row=>row.targetCollection==='people')){const row=rows.find(row=>row.id===pair.targetId);if(!row||row.summary!==pair.original)throw Error('Meaning target changed: '+pair.id);row.summary=pair.record.summary;}
   return JSON.stringify(rows);
  }
- if(file==='data/stories.json'){
-  for(const pair of accepted.meaning.filter(row=>row.targetCollection==='stories')){const row=value.flatMap(group=>group.stories.map(row=>({row,id:slug(group.book)+'-'+slug(row.title)}))).find(row=>row.id===pair.targetId)?.row;if(!row||row.summary!==pair.original)throw Error('Meaning target changed: '+pair.id);row.summary=pair.record.summary;}
-  return JSON.stringify(value);
- }
+ // The 2026-11-10 full-story review supersedes the old short-summary overlays.
+ // Keep their accepted provenance, but publish the canonical story prose unchanged.
  if(file==='data/timeline-events.json')return JSON.stringify({...value,events:merge(value.events,accepted.timeline)});
  if(file==='src/data/character-reference-ids.json')return JSON.stringify({...value,...Object.fromEntries(accepted.people.map(row=>[row.id,row.reference_binding.reference_id]))});
  return text;

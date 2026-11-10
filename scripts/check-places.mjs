@@ -19,12 +19,24 @@ assert.equal(match('Ur, father of Eliphalet.',storyContext).filter(hit=>hit.labe
 assert.equal(match('They travel from Ur.').length,0,'The short-name exception is narrative-only');
 assert.equal(match('Ur of the Chaldees',storyContext).length,1,'Prefer the existing full place name without nested chips');
 const matchPeople=createPersonMatcher(JSON.parse(fs.readFileSync('data/reference/people.json','utf8')));
-const abramStory=JSON.parse(fs.readFileSync('data/stories.json','utf8'))[0].stories.find(story=>story.title==='The Call of Abram').summary;
+// Keep the original movement/residence regression independent of editorial rewrites.
+const abramStory="Abram’s family leaves Ur for Haran. God calls Abram to another land, and he travels to Canaan with Sarai and Lot. Terah takes Abram, Sarai and Lot from Ur toward Canaan, but the family settles in Haran. After Terah's death, the narrative turns to God's call for Abram to leave his country and kindred. God promises to make him a great nation and a blessing to other families. Abram departs at seventy-five, travels through Canaan and builds altars at places along his route.";
 const linkedStory=wrapReferenceNames(abramStory,match,matchPeople,storyContext);
 for(const [label,id,count] of [['Haran','recyuzIRhPm1IFEu0',2],['Canaan','recRxBBePxyyV6TFO',3],['Ur','recgQtoCtBjbsPwAw',2]]){
  assert.equal((linkedStory.match(new RegExp('data-place-id="'+id+'"','g'))||[]).length,count,label+' resolves to the geographical record in narrative movement/residence phrases');
  assert(!new RegExp('class="person-chip"[^>]*>'+label+'</button>').test(linkedStory),label+' must not be linked as a person in this story');
 }
+// The expanded account also names Haran the person. Resolve each use by context.
+const fullAbramStory=JSON.parse(fs.readFileSync('data/stories.json','utf8'))[0].stories.find(story=>story.title==='The Call of Abram').summary;
+const linkedFullStory=wrapReferenceNames(fullAbramStory,match,matchPeople,storyContext);
+for(const [label,id,count] of [['Haran','recyuzIRhPm1IFEu0',2],['Canaan','recRxBBePxyyV6TFO',2]])assert.equal((linkedFullStory.match(new RegExp('data-place-id="'+id+'"','g'))||[]).length,count,label+' geographical mentions in expanded account');
+assert.equal((linkedFullStory.match(/class="person-chip"[^>]*>Haran<\/button>/g)||[]).length,2,'Haran the family member retains his People links');
+assert(!/class="person-chip"[^>]*>Canaan<\/button>/.test(linkedFullStory),'Entering Canaan means the place, not the person');
+const pluralMovement='They enter Canaan, reach Haran, then leave Haran.';
+const linkedMovement=wrapReferenceNames(pluralMovement,match,matchPeople,storyContext);
+assert.equal((linkedMovement.match(/data-place-id=/g)||[]).length,3,'Base verb forms preserve narrative location disambiguation');
+assert(!linkedMovement.includes('class="person-chip"'));
+assert(!wrapReferenceNames(pluralMovement,()=>[],matchPeople,{...storyContext,placesReady:false}).includes('class="person-chip"'),'Plural movement has no provisional personal links');
 const personalMentions=wrapReferenceNames('Terah is the father of Haran. Noah curses Canaan.',match,matchPeople,{scope:'story',book:0,chapter:9,verse:1,endChapter:12,endVerse:9});
 assert(!personalMentions.includes('data-place-id='),'Genealogy and personal actions are not locations');
 assert(/class="person-chip"[^>]*>Canaan<\/button>/.test(personalMentions));

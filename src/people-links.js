@@ -4,7 +4,7 @@ const commonNames=new Set(['on','no','an','as','is','us','and','the','all','or',
 const titleAliases=new Set('son,lamb,saviour,holy,word,prophet,master,light,prince,branch,root,judge,sun,king,messiah,wonderful,counsellor,sceptre,star,shiloh,father,fathers,hosts,host,almighty,last,lawgiver,dayspring,ancient,spirits,comforter'.split(','));
 export function isNarrativeLocationMention(text,hit,leadingText=''){
  const before=leadingText+String(text).slice(0,hit.start);
- return /\b(?:leaves|left|reaches|reached|enters|entered)\s+$|\b(?:settles?|settled|lives?|lived|resides?|resided|stays?|stayed|remains?|remained)\s+(?:in|at)\s+$|\b(?:travels?|traveled|travelled|journeys?|journeyed|returns?|returned|goes|went|moves?|moved)\s+(?:back\s+)?(?:to|through|toward|towards|into|from)\s+$|\b(?:leaves|left|departs?|departed)\s+[^,;.!?]{1,60}\s+for\s+$|\b(?:takes?|took|travels?|traveled|travelled|journeys?|journeyed|departs?|departed)\b[^;.!?]{0,120}\b(?:from|toward|towards|through|into)\s+$/i.test(before);
+ return /\b(?:leaves?|left|reach(?:es|ed)?|enter(?:s|ed)?)\s+$|\b(?:settles?|settled|lives?|lived|resides?|resided|stays?|stayed|remains?|remained)\s+(?:in|at)\s+$|\b(?:travels?|traveled|travelled|journeys?|journeyed|returns?|returned|goes|went|moves?|moved)\s+(?:back\s+)?(?:to|through|toward|towards|into|from)\s+$|\b(?:leaves|left|departs?|departed)\s+[^,;.!?]{1,60}\s+for\s+$|\b(?:takes?|took|travels?|traveled|travelled|journeys?|journeyed|departs?|departed)\b[^;.!?]{0,120}\b(?:from|toward|towards|through|into)\s+$/i.test(before);
 }
 export function createPersonMatcher(people){
  const names=new Map();

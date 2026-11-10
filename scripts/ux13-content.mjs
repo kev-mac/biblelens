@@ -2,12 +2,13 @@ import fs from 'node:fs';
 import zlib from 'node:zlib';
 import assert from 'node:assert/strict';
 import {passageReference} from './story-topics.mjs';
+import {validateStorySummary} from './stories.mjs';
 export const ux13Events=JSON.parse(fs.readFileSync(new URL('../data/ux13-events.json',import.meta.url),'utf8'));
 // Screen authored prose only: exact KJV source quotations retain their wording.
 export const vaguePlaceActor=/\b(?:travell?ers?|speaker|a man|someone|he|she|they)\b/i;
 export function addUX13Events(catalog){
  const groups=structuredClone(catalog),books=JSON.parse(fs.readFileSync('data/books.json','utf8'));
- for(const event of ux13Events){if(groups.some(g=>g.stories.some(s=>s.title===event.title)))continue;const [id]=passageReference(event.passage,books),name=books[id].name;let group=groups.find(g=>g.book===name);if(!group){group={book:name,stories:[]};groups.push(group);}group.stories.push(event);}
+ for(const event of ux13Events){validateStorySummary(event);if(groups.some(g=>g.stories.some(s=>s.title===event.title)))continue;const [id]=passageReference(event.passage,books),name=books[id].name;let group=groups.find(g=>g.book===name);if(!group){group={book:name,stories:[]};groups.push(group);}group.stories.push(event);}
  return groups;
 }
 export function validateUX13Content(){
@@ -38,6 +39,6 @@ export function validateUX13Content(){
  const evidence=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
  assert(!addUX13Events(JSON.parse(fs.readFileSync('data/stories.json','utf8'))).some(group=>group.stories.some(event=>event.title==='Parallel Accounts in Genesis')));
  for(const comparison of comparisons){assert(evidence.some(record=>comparison.href==='#debate/'+record.id&&record.mode==='contradictions'));for(const ref of comparison.passages){const [b,c,v,ec,ev]=passageReference(ref,books);assert(verse([b,c,v])&&verse([b,ec,ev]));}}
- for(const e of ux13Events){assert(e.passages.includes(e.passage)&&e.review&&e.summary);for(const ref of e.passages){const [b,c,v,ec,ev]=passageReference(ref,books);assert(verse([b,c,v])&&verse([b,ec,ev]),'Invalid event reference '+ref);}}
+ for(const e of ux13Events){validateStorySummary(e);assert(e.passages.includes(e.passage)&&e.review&&e.summary);for(const ref of e.passages){const [b,c,v,ec,ev]=passageReference(ref,books);assert(verse([b,c,v])&&verse([b,ec,ev]),'Invalid event reference '+ref);}}
  return `${places.length} place summaries, refs and KJV source quotes; ${ux13Events.length} events (6 covenants)`;
 }

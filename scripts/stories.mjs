@@ -1,6 +1,15 @@
 import {gunzipSync} from 'node:zlib';
 import {passageReference} from './story-topics.mjs';
 
+export const MAX_STORY_WORDS = 500;
+export function validateStorySummary(story) {
+ const summary = story.summary;
+ if (typeof summary !== 'string' || !summary.trim()) throw Error(`Missing story summary: ${story.title}`);
+ const count = summary.trim().split(/\s+/).length;
+ if (count > MAX_STORY_WORDS) throw Error(`Story exceeds ${MAX_STORY_WORDS} words: ${story.title}`);
+ return count;
+}
+
 const slug = value => value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export function validateStories(catalog, {books, chapters, topics}) {
  const seenBooks = new Set(), titles = new Set(), slugs = new Set(), decoded = new Map();
@@ -14,7 +23,7 @@ export function validateStories(catalog, {books, chapters, topics}) {
   seenBooks.add(entry.book); previous = index;
   for (const story of entry.stories) {
    if (Object.keys(story).sort().join(',') !== 'cross_references,passage,summary,title,topics' || !['title','passage','summary'].every(key => nonempty(story[key]))) throw Error('Invalid story metadata');
-   if(story.summary.trim().split(/\s+/).length>300)throw Error(`Story exceeds 300 words: ${story.title}`);
+   validateStorySummary(story);
    const title = story.title.trim().toLowerCase(), id = slug(story.title);
    if (!id || titles.has(title) || slugs.has(id)) throw Error(`Duplicate story title or slug: ${story.title}`);
    titles.add(title); slugs.add(id);

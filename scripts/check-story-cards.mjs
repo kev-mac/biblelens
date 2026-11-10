@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import {addUX13Events} from './ux13-content.mjs';
 import {assess,words} from './check-readability.mjs';
@@ -21,7 +22,26 @@ assert(!source.includes('class="story-linked-meta"'));
 assert(!source.includes('Open story'));
 assert(source.includes('class="story-expand-icon"')&&source.includes('class="story-collapse-icon"'));
 assert(source.includes('class="story-actions"><div class="story-entities"'));
+// Check the shared renderer, including topic pivots and auto-expanded direct routes.
+const renderer=vm.createContext({window:{},location:{hash:'#stories'},esc:String,readRef:()=>null,passagePillText:refs=>refs.join(', ')});
+vm.runInContext(source.slice(0,source.indexOf('async function renderStoriesView')),renderer);
+for(const hash of ['#stories','#stories/genesis/cain-and-abel']){
+ renderer.location.hash=hash;
+ for(const story of catalog)for(const pivot of [false,true]){
+  renderer.story=story;renderer.pivot=pivot;
+  const html=vm.runInContext('storyCard(story,pivot)',renderer);
+  const disclosureStart=html.indexOf('<details class="story-full-details"');
+  const disclosureEnd=html.lastIndexOf('</details>');
+  const action=html.indexOf('>Read story</button>');
+  assert(action>disclosureStart&&action<disclosureEnd,story.title+' read action must be inside the disclosure');
+  assert.equal(html.match(/>Read story<\/button>/g)?.length,1);
+  assert(html.indexOf('class="story-entities"')>disclosureEnd,story.title+' entity chips must retain their collapsed-card placement');
+  assert.equal(html.slice(disclosureStart,html.indexOf('>',disclosureStart)).includes(' open'),!pivot&&hash!=='#stories');
+ }
+}
+
 const cain=catalog.find(s=>s.title==='Cain and Abel');
-assert(cain.summary.indexOf('Abel keeps sheep')<cain.summary.indexOf('Cain kills Abel'));
-assert(cain.summary.indexOf('Cain kills Abel')<cain.summary.indexOf('protective mark'));
+const cainSequence=[/Abel (?:keeps|tends) sheep/,/Cain (?:attacks and )?kills Abel/,/protective (?:mark|sign)/].map(pattern=>cain.summary.search(pattern));
+assert(cainSequence.every(index=>index>=0),'Cain narrative retains the occupations, killing and protective sign');
+assert(cainSequence[0]<cainSequence[1]&&cainSequence[1]<cainSequence[2],'Cain narrative remains in passage order');
 console.log('PASS: '+catalog.length+' independent excerpts, compact actions, disclosure icons and Cain narrative order.');
