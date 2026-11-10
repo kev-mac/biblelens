@@ -49,7 +49,8 @@
     "check:branding:browser": "node scripts/check-branding-browser.mjs",
     "check:evidence-navigation:browser": "node scripts/check-evidence-navigation-browser.mjs",
     "check:story-cards": "node scripts/check-story-cards.mjs",
-    "check:story-cards:browser": "node scripts/check-story-cards-browser.mjs"
+    "check:story-cards:browser": "node scripts/check-story-cards-browser.mjs",
+    "check:story-cards:mobile": "node scripts/check-story-cards-browser.mjs --mobile"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

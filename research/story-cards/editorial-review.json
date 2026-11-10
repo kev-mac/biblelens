@@ -1,0 +1,1761 @@
+{
+  "reviewed_entries": 283,
+  "method": "Compared excerpts against claim-bearing local scripture passages, independently from drafting. Not a historical or theological adjudication.",
+  "excerpt_sha256": "bf93a5a7967d1290002483b18f205b3db262a81e09b22a2ebae1e9fbf3168507",
+  "coverage": [
+    {
+      "title": "The Creation",
+      "checked_verses": "Genesis 1:1,3,9,11,20,24,26,28,31; 2:1-3"
+    },
+    {
+      "title": "The Fall of Man",
+      "checked_verses": "Genesis 3:6,8-9,16-17,19,23-24"
+    },
+    {
+      "title": "Cain and Abel",
+      "checked_verses": "Genesis 4:3-8,11-12,14-16"
+    },
+    {
+      "title": "The Line of Seth",
+      "checked_verses": "Genesis 4:25-26; 5:1,3,24,28-29,32"
+    },
+    {
+      "title": "Noah and the Flood",
+      "checked_verses": "Genesis 6:9,11,17-19; 7:7,17,19-20; 8:18-20; 9:11-15"
+    },
+    {
+      "title": "The Family of Noah",
+      "checked_verses": "Genesis 9:20-27; 10:5,20,31-32"
+    },
+    {
+      "title": "The Tower of Babel",
+      "checked_verses": "Genesis 11:1-4,7-9"
+    },
+    {
+      "title": "The Call of Abram",
+      "checked_verses": "Genesis 11:31-32; 12:1-8"
+    },
+    {
+      "title": "Abram and Lot",
+      "checked_verses": "Genesis 13:5-12; 14:11-12,14-16,21-23"
+    },
+    {
+      "title": "Hagar and Ishmael",
+      "checked_verses": "Genesis 16:1-7,9-12,15"
+    },
+    {
+      "title": "Abraham and Sarah’s Covenant",
+      "checked_verses": "Genesis 17:5,10-11,15-17,19,23; 18:1-2,10-12"
+    },
+    {
+      "title": "Lot Leaves Sodom",
+      "checked_verses": "Genesis 19:15-17,24-26,30-38"
+    },
+    {
+      "title": "Isaac and Ishmael",
+      "checked_verses": "Genesis 21:1-3,6,9-12,14-17,19-21"
+    },
+    {
+      "title": "The Binding of Isaac",
+      "checked_verses": "Genesis 22:1-2,9-13,15-18"
+    },
+    {
+      "title": "Isaac and Rebekah",
+      "checked_verses": "Genesis 24:3-4,14-15,18-19,24,50-51,57-58,61,67"
+    },
+    {
+      "title": "Jacob and Esau",
+      "checked_verses": "Genesis 25:29-31,33-34; 27:6,8-10,18-19,35-36,41-44,46; 28:1-2,5"
+    },
+    {
+      "title": "Jacob’s Household",
+      "checked_verses": "Genesis 29:18,20,23,25-28,30-31; 30:3-4,7,9-10,19-24"
+    },
+    {
+      "title": "Jacob Returns to Canaan",
+      "checked_verses": "Genesis 31:20-23,44; 32:6-7,24-28,31; 33:4,16-17"
+    },
+    {
+      "title": "Dinah at Shechem",
+      "checked_verses": "Genesis 34:2,4,8,13,15,25-30"
+    },
+    {
+      "title": "The Death of Rachel",
+      "checked_verses": "Genesis 35:1,7,9,11-12,16-19,29"
+    },
+    {
+      "title": "Joseph and His Brothers",
+      "checked_verses": "Genesis 37:3-5,8,23-24,26-28,31-36"
+    },
+    {
+      "title": "Judah and Tamar",
+      "checked_verses": "Genesis 38:7-8,10-11,14,16,18,24-27"
+    },
+    {
+      "title": "Joseph in Egypt",
+      "checked_verses": "Genesis 39:3-4,17-23; 40:5,8-9,12-13,16,18-19; 41:9,12,14,25,29-30,34-35,39-40,48-49,56-57"
+    },
+    {
+      "title": "Joseph Reunites His Family",
+      "checked_verses": "Genesis 42:1-2,6-8,15-17,24; 44:2,33; 45:1-4,9-11; 46:5-6,28-29; 47:11-12"
+    },
+    {
+      "title": "Jacob Blesses His Family",
+      "checked_verses": "Genesis 48:15-16; 49:28-30,33; 50:19-21,24-26"
+    },
+    {
+      "title": "Israel Oppressed in Egypt",
+      "checked_verses": "Exodus 1:8-11,15-17,22"
+    },
+    {
+      "title": "The Birth and Rescue of Moses",
+      "checked_verses": "Exodus 2:3-10"
+    },
+    {
+      "title": "Moses Flees to Midian",
+      "checked_verses": "Exodus 2:11-12,15-18,21-24"
+    },
+    {
+      "title": "The Burning Bush",
+      "checked_verses": "Exodus 3:1-2,4,7-8,10-12; 4:1-3,6-7,9-17"
+    },
+    {
+      "title": "Moses Returns to Egypt",
+      "checked_verses": "Exodus 4:18-20,24-31"
+    },
+    {
+      "title": "Moses and Aaron Before Pharaoh",
+      "checked_verses": "Exodus 5:1-2,7-9,15-16,20-21; 6:1,6-9"
+    },
+    {
+      "title": "The Plagues of Egypt",
+      "checked_verses": "Exodus 7:17,20; 8:5-6,8,15,17,20-21,25,28,32; 9:3,6,10,13,18,22,27,34; 10:4,7-11,13,21-22,24,26-27"
+    },
+    {
+      "title": "The Passover and the Death of the Firstborn",
+      "checked_verses": "Exodus 11:4-8; 12:3,7-8,11-13,29-36"
+    },
+    {
+      "title": "The Exodus from Egypt",
+      "checked_verses": "Exodus 12:37-39; 13:3,6-8,12,14-15,17-19,21-22"
+    },
+    {
+      "title": "Crossing the Sea",
+      "checked_verses": "Exodus 14:10-12,21-23,27-30; 15:1,20-21"
+    },
+    {
+      "title": "Bitter Water, Manna and Quail",
+      "checked_verses": "Exodus 15:23-25; 16:2-4,12-15,22-23,26,32-34"
+    },
+    {
+      "title": "Water from the Rock and the Battle with Amalek",
+      "checked_verses": "Exodus 17:1-3,5-6,8-13"
+    },
+    {
+      "title": "Jethro Advises Moses",
+      "checked_verses": "Exodus 18:13-14,17-18,21-22,24-26"
+    },
+    {
+      "title": "The Covenant and Ten Commandments at Sinai",
+      "checked_verses": "Exodus 19:10-11,16-19; 20:1,3,12-19"
+    },
+    {
+      "title": "The Covenant Is Sealed at Sinai",
+      "checked_verses": "Exodus 24:3-4,6-12,15,18"
+    },
+    {
+      "title": "The Golden Calf",
+      "checked_verses": "Exodus 32:1-6,19-20,26-28,30-32,35"
+    },
+    {
+      "title": "Moses Sees God's Glory",
+      "checked_verses": "Exodus 33:14-16,18-23; 34:1,4,10,27-30,33-35"
+    },
+    {
+      "title": "Building the Tabernacle",
+      "checked_verses": "Exodus 35:21-22,25-26,30-35; 36:3-7; 39:42-43; 40:1-2,17,34-38"
+    },
+    {
+      "title": "Aaron and His Sons Are Ordained",
+      "checked_verses": "Leviticus 8:2-3,6-14,18,22,30-36; 9:1-2,6-9,15,22-24"
+    },
+    {
+      "title": "Nadab and Abihu",
+      "checked_verses": "Leviticus 10:1-20"
+    },
+    {
+      "title": "The Blasphemer Stoned",
+      "checked_verses": "Leviticus 24:10-23"
+    },
+    {
+      "title": "Counting the Camp",
+      "checked_verses": "Numbers 1:1-3,17-18,47,49-50,53"
+    },
+    {
+      "title": "Offerings and the Passover at Sinai",
+      "checked_verses": "Numbers 7:1-3,5,10-11,84,88-89; 8:6-7,11,14,18-19,22,24; 9:1-3,5-6,9-11,15,17-18,22-23"
+    },
+    {
+      "title": "Leaving Sinai and the Complaints",
+      "checked_verses": "Numbers 10:11-13,28,33-34; 11:1,4-6,14,16-17,24-25,31-34"
+    },
+    {
+      "title": "Miriam and Aaron Speak Against Moses",
+      "checked_verses": "Numbers 12:1-16"
+    },
+    {
+      "title": "The Twelve Spies",
+      "checked_verses": "Numbers 13:2,25-28,30-32; 14:1-4,6-9,29-34,36-38"
+    },
+    {
+      "title": "Korah's Rebellion",
+      "checked_verses": "Numbers 16:1-3,30-35,41,44-49; 17:1-10"
+    },
+    {
+      "title": "Water from the Rock at Meribah",
+      "checked_verses": "Numbers 20:1-2,7-13"
+    },
+    {
+      "title": "Edom Refuses Passage and Aaron Dies",
+      "checked_verses": "Numbers 20:17-21,23-29"
+    },
+    {
+      "title": "The Bronze Serpent",
+      "checked_verses": "Numbers 21:4-9"
+    },
+    {
+      "title": "Victories over Sihon and Og",
+      "checked_verses": "Numbers 21:11,16-18,21-25,31,33-35"
+    },
+    {
+      "title": "Balaam and Balak",
+      "checked_verses": "Numbers 22:2-7,12,17-18,20,22-23,25,27-28,31,35-38; 23:5,8,11-12,20; 24:10-11,13,17,25"
+    },
+    {
+      "title": "Baal of Peor",
+      "checked_verses": "Numbers 25:1-18"
+    },
+    {
+      "title": "A New Census and Joshua Appointed",
+      "checked_verses": "Numbers 26:1-2,51,63-65; 27:1-8,15-23"
+    },
+    {
+      "title": "Vengeance on Midian",
+      "checked_verses": "Numbers 31:1-24,26-30,47-54"
+    },
+    {
+      "title": "Tribes Settle East of the Jordan",
+      "checked_verses": "Numbers 32:1-6,16-33,39-42"
+    },
+    {
+      "title": "Moses Recalls the Wilderness Years",
+      "checked_verses": "Deuteronomy 1:1,3,5,19,22,26-28,32,34-38; 2:1-3,7,14,24,32-34; 3:1-3,21-28"
+    },
+    {
+      "title": "Moses Sets Apart Three Cities of Refuge",
+      "checked_verses": "Deuteronomy 4:41-43"
+    },
+    {
+      "title": "Moses Recalls the Golden Calf",
+      "checked_verses": "Deuteronomy 9:8-10,12-14,16-29"
+    },
+    {
+      "title": "Moses Recalls the Second Tablets",
+      "checked_verses": "Deuteronomy 10:1-5,10-11"
+    },
+    {
+      "title": "Joshua Commissioned and the Law Entrusted",
+      "checked_verses": "Deuteronomy 31:1-3,6-12,14,16,19-30"
+    },
+    {
+      "title": "The Death of Moses",
+      "checked_verses": "Deuteronomy 34:1-5,7-9"
+    },
+    {
+      "title": "Joshua Commissioned",
+      "checked_verses": "Joshua 1:1-2,6-8,12-18"
+    },
+    {
+      "title": "Rahab and the Spies",
+      "checked_verses": "Joshua 2:1,4,6,9-14,17-19,21"
+    },
+    {
+      "title": "Crossing the Jordan",
+      "checked_verses": "Joshua 3:13,15-17; 4:4-8,19-24"
+    },
+    {
+      "title": "Circumcision and Passover at Gilgal",
+      "checked_verses": "Joshua 5:2-8,10-15"
+    },
+    {
+      "title": "The Fall of Jericho",
+      "checked_verses": "Joshua 6:3-4,14-25"
+    },
+    {
+      "title": "Achan's Sin and Ai",
+      "checked_verses": "Joshua 6:18-19; 7:1,4-5,10-11,19-26; 8:2-3,12,18-22,24-25,30-35"
+    },
+    {
+      "title": "The Gibeonite Deception",
+      "checked_verses": "Joshua 9:3-6,14-16,18-23,26-27"
+    },
+    {
+      "title": "The Sun Stands Still",
+      "checked_verses": "Joshua 10:3-7,10-14,40,42"
+    },
+    {
+      "title": "Northern Campaign and the Land Taken",
+      "checked_verses": "Joshua 11:1-12,23; 12:1,7,24"
+    },
+    {
+      "title": "Caleb Receives Hebron",
+      "checked_verses": "Joshua 14:6-7,9-14"
+    },
+    {
+      "title": "The Altar by the Jordan",
+      "checked_verses": "Joshua 22:10-14,16,23-31,33-34"
+    },
+    {
+      "title": "Joshua's Farewell and Covenant at Shechem",
+      "checked_verses": "Joshua 23:2-4,6-8,11-13; 24:2-3,13-16,21-25,29-30,32-33"
+    },
+    {
+      "title": "Incomplete Conquest",
+      "checked_verses": "Judges 1:1-4,8,19,21,27-35; 2:1-5"
+    },
+    {
+      "title": "The Cycle of the Judges",
+      "checked_verses": "Judges 2:7-8,10-14,16-19; 3:5-6"
+    },
+    {
+      "title": "Othniel, Ehud and Shamgar",
+      "checked_verses": "Judges 3:7-12,15-17,20-22,27-31"
+    },
+    {
+      "title": "Deborah and Barak",
+      "checked_verses": "Judges 4:4-10,12-18,21-24; 5:1-2,24-27,31"
+    },
+    {
+      "title": "Gideon and the Midianites",
+      "checked_verses": "Judges 6:1-2,6,11-12,14-16,25-27,36-40; 7:2-7,16-23; 8:10-28,32-35"
+    },
+    {
+      "title": "Abimelech",
+      "checked_verses": "Judges 9:5-9,15-16,20,22-29,50-57"
+    },
+    {
+      "title": "Jephthah's Vow",
+      "checked_verses": "Judges 10:6-8,10,16-18; 11:1,4-11,29-40; 12:1-7"
+    },
+    {
+      "title": "Samson",
+      "checked_verses": "Judges 13:2-5,24-25; 14:5-6,19; 15:3-5,14-15; 16:4-5,16-23,25-30"
+    },
+    {
+      "title": "Micah's Idols and the Danites",
+      "checked_verses": "Judges 17:4-5,7,10-13; 18:5-7,14-24,27-31"
+    },
+    {
+      "title": "The Levite and Gibeah",
+      "checked_verses": "Judges 19:1-2,22-30; 20:4-6,8-14,35,46-48; 21:1-25"
+    },
+    {
+      "title": "Naomi and Ruth Return to Bethlehem",
+      "checked_verses": "Ruth 1:1-8,14-19,22"
+    },
+    {
+      "title": "Ruth Gleans in Boaz's Field",
+      "checked_verses": "Ruth 2:1-3,8-12,14-20,22-23; 3:15-17"
+    },
+    {
+      "title": "The Threshing Floor",
+      "checked_verses": "Ruth 3:1-18"
+    },
+    {
+      "title": "Boaz Redeems and Marries Ruth",
+      "checked_verses": "Ruth 4:1-10,13,17,21-22"
+    },
+    {
+      "title": "Hannah and the Birth of Samuel",
+      "checked_verses": "1 Samuel 1:2-3,10-12,17,19-20,22,24-28; 2:1-11"
+    },
+    {
+      "title": "Eli's Sons and Samuel's Call",
+      "checked_verses": "1 Samuel 2:12-13,17,22-23,27,29-34; 3:1-14,19-21"
+    },
+    {
+      "title": "The Ark Captured and Returned",
+      "checked_verses": "1 Samuel 4:10-22; 5:1-12; 6:1-21; 7:1"
+    },
+    {
+      "title": "Samuel Judges Israel",
+      "checked_verses": "1 Samuel 7:2-17"
+    },
+    {
+      "title": "Israel Demands a King",
+      "checked_verses": "1 Samuel 8:1-9,19-22; 9:15-27; 10:1,17-27; 11:1-15; 12:1-7,16-25"
+    },
+    {
+      "title": "Saul Rejected",
+      "checked_verses": "1 Samuel 13:7-15; 15:1-35"
+    },
+    {
+      "title": "David Anointed",
+      "checked_verses": "1 Samuel 16:1-23"
+    },
+    {
+      "title": "David and Goliath",
+      "checked_verses": "1 Samuel 17:4-11,16,32-51"
+    },
+    {
+      "title": "Saul's Jealousy and David's Flight",
+      "checked_verses": "1 Samuel 18:1-16; 19:1-18; 20:30-42; 21:1-10; 22:11-23"
+    },
+    {
+      "title": "David in the Wilderness",
+      "checked_verses": "1 Samuel 22:1-5,11-23; 24:1-22; 25:14-35; 26:1-25"
+    },
+    {
+      "title": "Saul and the Medium at Endor; Saul's Death",
+      "checked_verses": "1 Samuel 28:3-25; 29:1-11; 30:1-20; 31:1-13"
+    },
+    {
+      "title": "David Becomes King",
+      "checked_verses": "2 Samuel 1:1-17; 2:1-11; 3:20-39; 4:1-12; 5:1-5"
+    },
+    {
+      "title": "Jerusalem and the Ark",
+      "checked_verses": "2 Samuel 5:6-10,17-25; 6:2-23"
+    },
+    {
+      "title": "The Davidic Covenant",
+      "checked_verses": "2 Samuel 7:1-17"
+    },
+    {
+      "title": "David and Mephibosheth",
+      "checked_verses": "2 Samuel 8:1-14; 9:1-13; 10:13-19"
+    },
+    {
+      "title": "David, Bathsheba and Uriah",
+      "checked_verses": "2 Samuel 11:2-5,14-17,26-27; 12:1-15,18-25"
+    },
+    {
+      "title": "Amnon, Tamar and Absalom",
+      "checked_verses": "2 Samuel 13:1-2,11-17,23-33,37-38; 14:21-24,28-33"
+    },
+    {
+      "title": "Absalom's Rebellion",
+      "checked_verses": "2 Samuel 15:1-6,13-18; 18:6-15,31-33; 19:11-18"
+    },
+    {
+      "title": "Sheba's Revolt and the Gibeonites",
+      "checked_verses": "2 Samuel 20:1-3,14-22; 21:1-14"
+    },
+    {
+      "title": "The Exploits of David's Mighty Men",
+      "checked_verses": "2 Samuel 23:8-23"
+    },
+    {
+      "title": "The Census and the Plague",
+      "checked_verses": "2 Samuel 24:1-4,10-25"
+    },
+    {
+      "title": "Solomon Becomes King",
+      "checked_verses": "1 Kings 1:5-7,11-14,29-40; 2:1-4,10-12,24-27,31-35,44-46"
+    },
+    {
+      "title": "Solomon's Wisdom",
+      "checked_verses": "1 Kings 3:5-12,23-28; 4:29-34"
+    },
+    {
+      "title": "The Temple Built",
+      "checked_verses": "1 Kings 5:7-10; 8:6-11,22-24,54-55,62-66"
+    },
+    {
+      "title": "The Queen of Sheba and Solomon's Decline",
+      "checked_verses": "1 Kings 10:1-10; 11:1-9,14,23-26"
+    },
+    {
+      "title": "The Kingdom Divides",
+      "checked_verses": "1 Kings 12:8-16,20,26-33"
+    },
+    {
+      "title": "The Man of God from Judah",
+      "checked_verses": "1 Kings 13:1-5,15-26; 14:7-11,17-18"
+    },
+    {
+      "title": "Zimri's Coup and Omri's Rise",
+      "checked_verses": "1 Kings 16:8-12,15-18,21-24"
+    },
+    {
+      "title": "Elijah and the Drought",
+      "checked_verses": "1 Kings 17:1-9,12-16,19-24"
+    },
+    {
+      "title": "Elijah on Mount Carmel",
+      "checked_verses": "1 Kings 18:21-26,36-40,44-46; 19:1"
+    },
+    {
+      "title": "Elijah at Horeb",
+      "checked_verses": "1 Kings 19:1-8,11-16,19-21"
+    },
+    {
+      "title": "Naboth's Vineyard",
+      "checked_verses": "1 Kings 21:1-4,8-19,27-29"
+    },
+    {
+      "title": "Ahab and Micaiah",
+      "checked_verses": "1 Kings 22:5-9,13-17,29-38"
+    },
+    {
+      "title": "Elijah Taken Up",
+      "checked_verses": "2 Kings 1:9-16; 2:9-15,19-22"
+    },
+    {
+      "title": "Elisha and Moab",
+      "checked_verses": "2 Kings 3:8-10,16-20,24-27"
+    },
+    {
+      "title": "The Widow's Oil and the Shunammite's Son",
+      "checked_verses": "2 Kings 4:1-7,16-17,32-44"
+    },
+    {
+      "title": "Naaman Healed",
+      "checked_verses": "2 Kings 5:1-3,9-16,20-27"
+    },
+    {
+      "title": "Elisha and the Arameans",
+      "checked_verses": "2 Kings 6:5-7,18-25; 7:1-8,16-20"
+    },
+    {
+      "title": "Jehu's Revolt",
+      "checked_verses": "2 Kings 9:1-7,23-27,30-37; 10:6-11,24-29"
+    },
+    {
+      "title": "Athaliah and Joash",
+      "checked_verses": "2 Kings 11:1-4,12-16,21; 12:4-6,11-14"
+    },
+    {
+      "title": "Elisha's Death and Israel's Victories",
+      "checked_verses": "2 Kings 13:14-21; 14:12-14,23-27"
+    },
+    {
+      "title": "The Fall of Samaria",
+      "checked_verses": "2 Kings 17:5-7,23-24,29-33"
+    },
+    {
+      "title": "Hezekiah and Sennacherib",
+      "checked_verses": "2 Kings 18:3-4,13-17; 19:5-7,20,32-37"
+    },
+    {
+      "title": "Hezekiah's Illness and the Babylonian Envoys",
+      "checked_verses": "2 Kings 20:1-18"
+    },
+    {
+      "title": "Manasseh, Amon and Josiah",
+      "checked_verses": "2 Kings 21:1-6,19-22; 22:8-13; 23:1-4,21-23,29-30"
+    },
+    {
+      "title": "The Fall of Jerusalem",
+      "checked_verses": "2 Kings 25:1-2,7-12,25-30"
+    },
+    {
+      "title": "The Death of Saul",
+      "checked_verses": "1 Chronicles 10:1-7,13-14"
+    },
+    {
+      "title": "David Takes Jerusalem and Gathers His Warriors",
+      "checked_verses": "1 Chronicles 11:1-9; 12:38-40"
+    },
+    {
+      "title": "The Ark Brought to Jerusalem",
+      "checked_verses": "1 Chronicles 13:9-14; 15:2-3,13-15,25-29; 16:1-7,37-43"
+    },
+    {
+      "title": "God's Covenant with David and His Wars",
+      "checked_verses": "1 Chronicles 17:1-5,10-14; 18:1-7; 19:16-19; 20:1-3"
+    },
+    {
+      "title": "The Census and the Temple Site",
+      "checked_verses": "1 Chronicles 21:1-7,14-15,22-26; 22:1-9"
+    },
+    {
+      "title": "David's Last Charge and Death",
+      "checked_verses": "1 Chronicles 28:11-13,19-21; 29:6-10,21-23,26-28"
+    },
+    {
+      "title": "Solomon Builds the Temple",
+      "checked_verses": "2 Chronicles 1:7-12; 2:3-5,11-15; 5:7,13-14; 6:12-14; 7:1-5"
+    },
+    {
+      "title": "Solomon's Reign and the Queen of Sheba",
+      "checked_verses": "2 Chronicles 8:1-6,12-14; 9:1-12,23-24,30-31"
+    },
+    {
+      "title": "Rehoboam and the Division",
+      "checked_verses": "2 Chronicles 10:13-17; 12:1-7"
+    },
+    {
+      "title": "Abijah and Asa",
+      "checked_verses": "2 Chronicles 13:14-18; 14:2-5,9-13; 16:2-3,7-10,12-13"
+    },
+    {
+      "title": "Jehoshaphat",
+      "checked_verses": "2 Chronicles 17:7-9; 18:1-3; 20:1-4,20-24"
+    },
+    {
+      "title": "Jehoram, Ahaziah, Athaliah and Joash",
+      "checked_verses": "2 Chronicles 21:1-4; 22:10-12; 23:9-15; 24:15-22"
+    },
+    {
+      "title": "Amaziah, Uzziah and Jotham",
+      "checked_verses": "2 Chronicles 25:11-16; 26:5,15-21; 27:1-2,6"
+    },
+    {
+      "title": "Ahaz and Hezekiah's Reforms",
+      "checked_verses": "2 Chronicles 28:22-25; 29:1-5,27-28; 30:1-5"
+    },
+    {
+      "title": "Sennacherib's Invasion and Hezekiah's Pride",
+      "checked_verses": "2 Chronicles 32:1-5,21-31"
+    },
+    {
+      "title": "Manasseh's Repentance and Josiah's Reforms",
+      "checked_verses": "2 Chronicles 33:10-17; 34:14-19,29-33; 35:1,17-27"
+    },
+    {
+      "title": "The Fall of Judah and Cyrus's Decree",
+      "checked_verses": "2 Chronicles 36:17-23"
+    },
+    {
+      "title": "Cyrus's Decree and the Return",
+      "checked_verses": "Ezra 1:1-8; 2:1-2"
+    },
+    {
+      "title": "Rebuilding the Altar and Foundation",
+      "checked_verses": "Ezra 3:1-4,8-13"
+    },
+    {
+      "title": "Opposition and Delay",
+      "checked_verses": "Ezra 4:1-6,11-13,21-24"
+    },
+    {
+      "title": "The Temple Completed",
+      "checked_verses": "Ezra 5:1-2; 6:1-8,14-16,19-22"
+    },
+    {
+      "title": "Ezra Comes to Jerusalem",
+      "checked_verses": "Ezra 7:6-14,25-26; 8:21-23,31-36"
+    },
+    {
+      "title": "Ezra and Mixed Marriages",
+      "checked_verses": "Ezra 9:1-6; 10:1-5,10-17,44"
+    },
+    {
+      "title": "Nehemiah's Prayer and Commission",
+      "checked_verses": "Nehemiah 1:1-5,11; 2:1-9"
+    },
+    {
+      "title": "Rebuilding the Wall",
+      "checked_verses": "Nehemiah 2:11-18; 4:1-9,15-23"
+    },
+    {
+      "title": "Debt Relief",
+      "checked_verses": "Nehemiah 5:1-18"
+    },
+    {
+      "title": "The Wall Completed",
+      "checked_verses": "Nehemiah 6:1-2,8-9,12-16; 7:1-5"
+    },
+    {
+      "title": "Ezra Reads the Law",
+      "checked_verses": "Nehemiah 8:1-3,7-9,14-18; 9:1-5,36-38"
+    },
+    {
+      "title": "The Dedication of Jerusalem’s Wall",
+      "checked_verses": "Nehemiah 12:27-31,38-43"
+    },
+    {
+      "title": "Nehemiah's Reforms",
+      "checked_verses": "Nehemiah 13:4-12,19-27"
+    },
+    {
+      "title": "Vashti Deposed",
+      "checked_verses": "Esther 1:4-5,10-13,19-22"
+    },
+    {
+      "title": "Esther Becomes Queen",
+      "checked_verses": "Esther 2:5-7,10,17,21-23"
+    },
+    {
+      "title": "Haman's Plot",
+      "checked_verses": "Esther 3:2-6,8-13; 4:8,13-17"
+    },
+    {
+      "title": "Esther's Banquets",
+      "checked_verses": "Esther 5:4-8,14; 6:1-3,10-11; 7:1-6,9-10"
+    },
+    {
+      "title": "The Jews Delivered and Purim",
+      "checked_verses": "Esther 8:1-2,8-11; 9:1-5,13-17,20-28; 10:1-3"
+    },
+    {
+      "title": "Job's Testing",
+      "checked_verses": "Job 1:1-3,8-12,18-22; 2:3-13"
+    },
+    {
+      "title": "Elihu Speaks",
+      "checked_verses": "Job 32:1-6,10-13"
+    },
+    {
+      "title": "God Answers from the Whirlwind",
+      "checked_verses": "Job 38:1-7,39-41; 39:1-6,9-13,19-20,26-30; 40:6-9,15-24; 41:1-7"
+    },
+    {
+      "title": "Job Restored",
+      "checked_verses": "Job 42:1-17"
+    },
+    {
+      "title": "Isaiah's Call",
+      "checked_verses": "Isaiah 6:1-13"
+    },
+    {
+      "title": "Ahaz and the Sign of Immanuel",
+      "checked_verses": "Isaiah 7:1-5,7-17"
+    },
+    {
+      "title": "Sennacherib's Threat and Hezekiah",
+      "checked_verses": "Isaiah 36:13-18; 37:14-21,33-38"
+    },
+    {
+      "title": "Hezekiah's Illness",
+      "checked_verses": "Isaiah 38:1-8; 39:1-8"
+    },
+    {
+      "title": "Jeremiah's Call",
+      "checked_verses": "Jeremiah 1:4-19"
+    },
+    {
+      "title": "The Potter's House and the Broken Jar",
+      "checked_verses": "Jeremiah 18:1-12; 19:1-4,10-15"
+    },
+    {
+      "title": "Jeremiah and Pashhur",
+      "checked_verses": "Jeremiah 20:1-10,14-18"
+    },
+    {
+      "title": "Hananiah's False Prophecy",
+      "checked_verses": "Jeremiah 28:1-17"
+    },
+    {
+      "title": "The Scroll Burned",
+      "checked_verses": "Jeremiah 36:1-10,21-32"
+    },
+    {
+      "title": "Jeremiah in the Cistern",
+      "checked_verses": "Jeremiah 37:11-16; 38:1-17"
+    },
+    {
+      "title": "The Fall of Jerusalem and Flight to Egypt",
+      "checked_verses": "Jeremiah 39:1-3,11-14; 40:1-6; 41:1-3,16-18; 42:1-4,9-19; 43:1-7"
+    },
+    {
+      "title": "Ezekiel's Vision and Commission",
+      "checked_verses": "Ezekiel 1:1-5,15-21,26-28; 2:1-10; 3:1-7,16-19"
+    },
+    {
+      "title": "The Glory Leaves the Temple",
+      "checked_verses": [
+        "Ezekiel 8:1 - 11:25"
+      ]
+    },
+    {
+      "title": "The Death of Ezekiel's Wife",
+      "checked_verses": [
+        "Ezekiel 24:15 - 24:27"
+      ]
+    },
+    {
+      "title": "The Valley of Dry Bones",
+      "checked_verses": [
+        "Ezekiel 37:1 - 37:28"
+      ]
+    },
+    {
+      "title": "Ezekiel Is Shown the Temple in a Vision",
+      "checked_verses": [
+        "Ezekiel 40:1 - 40:4"
+      ]
+    },
+    {
+      "title": "Daniel and His Friends in Babylon",
+      "checked_verses": [
+        "Daniel 1:1 - 1:21"
+      ]
+    },
+    {
+      "title": "Nebuchadnezzar's Dream of the Statue",
+      "checked_verses": [
+        "Daniel 2:1 - 2:49"
+      ]
+    },
+    {
+      "title": "The Fiery Furnace",
+      "checked_verses": [
+        "Daniel 3:1 - 3:30"
+      ]
+    },
+    {
+      "title": "Nebuchadnezzar's Humbling",
+      "checked_verses": [
+        "Daniel 4:1 - 4:37"
+      ]
+    },
+    {
+      "title": "Belshazzar's Feast",
+      "checked_verses": [
+        "Daniel 5:1 - 5:31"
+      ]
+    },
+    {
+      "title": "Daniel in the Lions' Den",
+      "checked_verses": [
+        "Daniel 6:1 - 6:28"
+      ]
+    },
+    {
+      "title": "Daniel's Visions",
+      "checked_verses": [
+        "Daniel 7:1 - 12:13"
+      ]
+    },
+    {
+      "title": "Hosea's Marriage to Gomer",
+      "checked_verses": [
+        "Hosea 1:1 - 1:9"
+      ]
+    },
+    {
+      "title": "Amaziah Opposes Amos",
+      "checked_verses": [
+        "Amos 7:10 - 7:17"
+      ]
+    },
+    {
+      "title": "Jonah Flees and Is Swallowed",
+      "checked_verses": [
+        "Jonah 1:1 - 2:10"
+      ]
+    },
+    {
+      "title": "Nineveh Repents",
+      "checked_verses": [
+        "Jonah 3:1 - 3:10"
+      ]
+    },
+    {
+      "title": "Jonah's Anger",
+      "checked_verses": [
+        "Jonah 4:1 - 4:11"
+      ]
+    },
+    {
+      "title": "The Birth of Jesus and the Magi",
+      "checked_verses": [
+        "Matthew 1:18 - 2:12"
+      ]
+    },
+    {
+      "title": "Flight to Egypt and Return to Nazareth",
+      "checked_verses": [
+        "Matthew 2:13 - 2:23"
+      ]
+    },
+    {
+      "title": "The Baptism and Temptation of Jesus",
+      "checked_verses": [
+        "Matthew 3:1 - 4:11"
+      ]
+    },
+    {
+      "title": "Calling the First Disciples",
+      "checked_verses": [
+        "Matthew 4:12 - 4:25"
+      ]
+    },
+    {
+      "title": "Healings and Calming the Storm",
+      "checked_verses": [
+        "Matthew 8:1 - 9:38"
+      ]
+    },
+    {
+      "title": "Sending Out the Twelve",
+      "checked_verses": [
+        "Matthew 10:1 - 10:5"
+      ]
+    },
+    {
+      "title": "Jesus and John the Baptist",
+      "checked_verses": [
+        "Matthew 11:1 - 11:30"
+      ]
+    },
+    {
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "checked_verses": [
+        "Matthew 12:1 - 12:50"
+      ]
+    },
+    {
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "checked_verses": [
+        "Matthew 14:1 - 14:36"
+      ]
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration",
+      "checked_verses": [
+        "Matthew 16:13 - 17:27"
+      ]
+    },
+    {
+      "title": "The Rich Young Man",
+      "checked_verses": [
+        "Matthew 19:1 - 20:34"
+      ]
+    },
+    {
+      "title": "The Triumphal Entry and Temple Cleansing",
+      "checked_verses": [
+        "Matthew 21:1 - 21:46"
+      ]
+    },
+    {
+      "title": "The Last Supper and Gethsemane",
+      "checked_verses": [
+        "Matthew 26:1 - 26:56"
+      ]
+    },
+    {
+      "title": "Trial, Crucifixion and Burial",
+      "checked_verses": [
+        "Matthew 26:57 - 27:66"
+      ]
+    },
+    {
+      "title": "The Resurrection and the Great Commission",
+      "checked_verses": [
+        "Matthew 28:1 - 28:20"
+      ]
+    },
+    {
+      "title": "John the Baptist and the Baptism of Jesus",
+      "checked_verses": [
+        "Mark 1:1 - 1:13"
+      ]
+    },
+    {
+      "title": "Calling the Disciples and Healing in Capernaum",
+      "checked_verses": [
+        "Mark 1:14 - 1:45"
+      ]
+    },
+    {
+      "title": "The Paralytic and Controversies",
+      "checked_verses": [
+        "Mark 2:1 - 3:6"
+      ]
+    },
+    {
+      "title": "Parables and Calming the Storm",
+      "checked_verses": [
+        "Mark 4:1 - 4:41"
+      ]
+    },
+    {
+      "title": "The Gadarene Demoniac, Jairus and the Woman",
+      "checked_verses": [
+        "Mark 5:1 - 5:43"
+      ]
+    },
+    {
+      "title": "Feeding the Multitude",
+      "checked_verses": [
+        "Mark 6:30 - 6:56"
+      ]
+    },
+    {
+      "title": "Peter's Confession and the Transfiguration in Mark",
+      "checked_verses": [
+        "Mark 8:27 - 9:29"
+      ]
+    },
+    {
+      "title": "Blind Bartimaeus",
+      "checked_verses": [
+        "Mark 10:46 - 10:52"
+      ]
+    },
+    {
+      "title": "Triumphal Entry and the Temple",
+      "checked_verses": [
+        "Mark 11:1 - 11:33"
+      ]
+    },
+    {
+      "title": "The Last Supper and Gethsemane in Mark",
+      "checked_verses": [
+        "Mark 14:1 - 14:52"
+      ]
+    },
+    {
+      "title": "Trial, Crucifixion and Burial in Mark",
+      "checked_verses": [
+        "Mark 14:53 - 15:47"
+      ]
+    },
+    {
+      "title": "The Empty Tomb",
+      "checked_verses": [
+        "Mark 16:1 - 16:8"
+      ]
+    },
+    {
+      "title": "The Births of John and Jesus",
+      "checked_verses": [
+        "Luke 1:5 - 2:20"
+      ]
+    },
+    {
+      "title": "Presentation and the Boy Jesus in the Temple",
+      "checked_verses": [
+        "Luke 2:21 - 2:52"
+      ]
+    },
+    {
+      "title": "Noahic Covenant",
+      "checked_verses": [
+        "Genesis 9:8-17"
+      ]
+    },
+    {
+      "title": "Abrahamic Covenant",
+      "checked_verses": [
+        "Genesis 12:1-3",
+        "Genesis 15:1-21",
+        "Genesis 17:1-14"
+      ]
+    },
+    {
+      "title": "Sinai / Mosaic Covenant",
+      "checked_verses": [
+        "Exodus 19:3-6",
+        "Exodus 24:3-8"
+      ]
+    },
+    {
+      "title": "Priestly Covenant with Phinehas",
+      "checked_verses": [
+        "Numbers 25:10-13"
+      ]
+    },
+    {
+      "title": "Davidic Covenant",
+      "checked_verses": [
+        "2 Samuel 7:8-17",
+        "Psalms 89:3-4"
+      ]
+    },
+    {
+      "title": "New Covenant",
+      "checked_verses": [
+        "Jeremiah 31:31-34",
+        "Luke 22:20",
+        "Hebrews 8:6-13"
+      ]
+    },
+    {
+      "title": "Aaronic Blessing",
+      "checked_verses": [
+        "Numbers 6:22-27"
+      ]
+    },
+    {
+      "title": "Rejection at Nazareth",
+      "checked_verses": "Luke 4:16-30"
+    },
+    {
+      "title": "The Miraculous Catch",
+      "checked_verses": "Luke 5:4-11"
+    },
+    {
+      "title": "The Centurion and the Widow's Son",
+      "checked_verses": "Luke 7:6-16"
+    },
+    {
+      "title": "The Sinful Woman Anoints Jesus",
+      "checked_verses": "Luke 7:37-50"
+    },
+    {
+      "title": "The Good Samaritan and Mary and Martha",
+      "checked_verses": "Luke 10:29-42"
+    },
+    {
+      "title": "The Lost Sheep, Coin and Son",
+      "checked_verses": "Luke 15:4-10,20-32"
+    },
+    {
+      "title": "The Rich Man and Lazarus",
+      "checked_verses": "Luke 16:19-31"
+    },
+    {
+      "title": "Zacchaeus",
+      "checked_verses": "Luke 19:2-10"
+    },
+    {
+      "title": "The Road to Emmaus",
+      "checked_verses": "Luke 24:15-16,30-35"
+    },
+    {
+      "title": "The Ascension",
+      "checked_verses": "Luke 24:36,44-53"
+    },
+    {
+      "title": "The First Disciples and the Wedding at Cana",
+      "checked_verses": "John 1:35-51; 2:1-11"
+    },
+    {
+      "title": "Cleansing the Temple and Nicodemus",
+      "checked_verses": "John 2:13-16; 3:1-5"
+    },
+    {
+      "title": "The Woman at the Well",
+      "checked_verses": "John 4:7-15,39-42"
+    },
+    {
+      "title": "Healing at Bethesda",
+      "checked_verses": "John 5:5-18"
+    },
+    {
+      "title": "Bread of Life",
+      "checked_verses": "John 6:10-21,35,59-69"
+    },
+    {
+      "title": "The Woman Caught in Adultery",
+      "checked_verses": "John 8:3-11"
+    },
+    {
+      "title": "The Man Born Blind",
+      "checked_verses": "John 9:1-7,18-23,30-38"
+    },
+    {
+      "title": "Jesus at the Feast of Dedication",
+      "checked_verses": "John 10:22-42"
+    },
+    {
+      "title": "The Raising of Lazarus",
+      "checked_verses": "John 11:17,38-44,47-53"
+    },
+    {
+      "title": "Anointing and Triumphal Entry",
+      "checked_verses": "John 12:1-3,12-21"
+    },
+    {
+      "title": "Jesus Washes the Disciples' Feet",
+      "checked_verses": "John 13:4-15,21-30,37-38"
+    },
+    {
+      "title": "Arrest, Trial and Crucifixion",
+      "checked_verses": "John 18:1-5,12-13,19-24,28-35; 19:16-18,30,38-42"
+    },
+    {
+      "title": "The Resurrection Appearances",
+      "checked_verses": "John 20:1-2,14-29"
+    },
+    {
+      "title": "Breakfast by the Sea of Tiberias",
+      "checked_verses": "John 21:1-17"
+    },
+    {
+      "title": "The Ascension and the Replacement of Judas",
+      "checked_verses": "Acts 1:4-11,21-26"
+    },
+    {
+      "title": "Pentecost",
+      "checked_verses": "Acts 2:1-8,38-47"
+    },
+    {
+      "title": "The Lame Man Healed and Arrest of Peter and John",
+      "checked_verses": "Acts 3:1-8,12,16; 4:1-3,8-13,23-31"
+    },
+    {
+      "title": "Ananias and Sapphira",
+      "checked_verses": "Acts 4:32-35; 5:1-11"
+    },
+    {
+      "title": "Stephen",
+      "checked_verses": "Acts 6:1-6,11-15; 7:2,8,15,20,30,45,47,51-60"
+    },
+    {
+      "title": "Philip and the Ethiopian",
+      "checked_verses": "Acts 8:1-8,26-40"
+    },
+    {
+      "title": "Saul's Conversion",
+      "checked_verses": "Acts 9:1-9,17-22"
+    },
+    {
+      "title": "Peter, Cornelius and the Gentiles",
+      "checked_verses": "Acts 10:11-20,24,44-48; 11:1-4,15-18"
+    },
+    {
+      "title": "Peter's Escape and Herod's Death",
+      "checked_verses": "Acts 12:1-11,21-23"
+    },
+    {
+      "title": "Paul's First Journey",
+      "checked_verses": "Acts 13:1-5,13-16; 14:6-7,19-28"
+    },
+    {
+      "title": "The Jerusalem Council",
+      "checked_verses": "Acts 15:1-2,5-7,19-29"
+    },
+    {
+      "title": "Paul in Philippi",
+      "checked_verses": "Acts 16:1-3,9-15,22-40"
+    },
+    {
+      "title": "Thessalonica, Athens and Corinth",
+      "checked_verses": "Acts 17:1-4,10-12,19-23; 18:1,9-11,18-19"
+    },
+    {
+      "title": "Ephesus",
+      "checked_verses": "Acts 19:8-10,23-29,35-40; 20:7-12,17,31,36-38"
+    },
+    {
+      "title": "Paul Arrested in Jerusalem",
+      "checked_verses": "Acts 21:27-36,39-40; 22:30; 23:12-16,23-24,31-35"
+    },
+    {
+      "title": "Paul Before Felix, Festus and Agrippa",
+      "checked_verses": "Acts 24:10,24-27; 25:6-12,23; 26:1-3,31-32"
+    },
+    {
+      "title": "Shipwreck and Rome",
+      "checked_verses": "Acts 27:1,14,18,20,41-44; 28:1,16,30-31"
+    }
+  ],
+  "revisions": [
+    {
+      "title": "The Family of Noah",
+      "finding": "Calling the drunkenness and curse merely an 'incident' followed by 'words' removes the substance of this half of the passage. Naming Ham's seeing Noah and the curse on Canaan is clearer without adding an explanation for the curse.",
+      "source_verses": [
+        "Genesis 9:20-27",
+        "Genesis 10:5,20,31-32"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Hagar and Ishmael",
+      "finding": "The wording 'conflict with Sarai sends' obscures the immediate cause: Sarai deals harshly with Hagar, who flees. The angel also commands her return, rather than merely promising descendants. This is a precision improvement, not a claim that the original contradicts every detail.",
+      "source_verses": [
+        "Genesis 16:4-10,15"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jacob and Esau",
+      "finding": "Finding a wife is a stated reason for the journey, but Esau's specific death threat and Rebekah's instruction to flee are also central. Merely mentioning anger before a marriage trip understates the danger driving Jacob's departure.",
+      "source_verses": [
+        "Genesis 25:29-34",
+        "Genesis 27:6,8-10,18-19,35-36,41-44,46",
+        "Genesis 28:1-2,5"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jacob Returns to Canaan",
+      "finding": "The final sentence removes only 'then' from the existing summary sentence. Its facts are sound, but it is an almost verbatim copy rather than independently phrased preview text.",
+      "source_verses": [
+        "Genesis 31:20-23",
+        "Genesis 32:6-7,24-28,31",
+        "Genesis 33:4,16-17"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Judah and Tamar",
+      "finding": "'Father of her pregnancy' is unnatural English. Also specify that two sons die, since Shelah remains alive and his withheld marriage is the point of Tamar's complaint.",
+      "source_verses": [
+        "Genesis 38:7-11,14,16,18,24-27"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Joseph in Egypt",
+      "finding": "The opening makes dream interpretation seem responsible for Joseph's recognition throughout Potiphar's household and prison. Genesis 39 attributes his advancement there to successful service; dream interpretation starts with the prisoners in chapter 40 and reaches Pharaoh in chapter 41.",
+      "source_verses": [
+        "Genesis 39:3-4,17-23",
+        "Genesis 40:5,8-13,16,18-19",
+        "Genesis 41:9,12,14,25,29-30,34-35,39-40,48-49"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Birth and Rescue of Moses",
+      "finding": "The basket does not carry Moses toward the princess. His mother places it among reeds at the bank; Pharaoh's daughter notices it and sends her servant to fetch it.",
+      "source_verses": [
+        "Exodus 2:3-10"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Nadab and Abihu",
+      "finding": "Moses forbids particular mourning gestures, not all grief or mourning as a mental state. The verse explicitly permits the wider community to mourn. Naming the gestures preserves that distinction.",
+      "source_verses": [
+        "Leviticus 10:1-7,9-20"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Twelve Spies",
+      "finding": "The sentence about 'that generation' facing death fails to identify the two named exceptions and can include the children, who are expressly promised entry. Specify the older generation and Joshua and Caleb's exemption.",
+      "source_verses": [
+        "Numbers 13:2,25-32",
+        "Numbers 14:1-9,29-34,36-38"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Vengeance on Midian",
+      "finding": "The excerpt stops at Moses objecting that women survived, then jumps to goods and an offering. It omits his command to kill captured boys and women who have slept with men, retain the virgin girls, and divide human captives. These are material parts of the passage, not incidental details.",
+      "source_verses": [
+        "Numbers 31:7-18,26-30,47-54"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Tribes Settle East of the Jordan",
+      "finding": "Only Reuben and Gad present the request in verses 1-5 and negotiate the condition. Half of Manasseh receives land in the later allocation; the text does not include it in the initial petition.",
+      "source_verses": [
+        "Numbers 32:1-6,16-33,39-42"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Joshua Commissioned and the Law Entrusted",
+      "finding": "The song's stated purpose is to serve as a witness against Israel when the people abandon the covenant, not simply to remind them of a duty. The original also omits the elders from the recipients of the law, though that omission alone is not material.",
+      "source_verses": [
+        "Deuteronomy 31:3,7-12,16,19-30"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Fall of Jericho",
+      "finding": "Joshua declares the destruction before the walls fall (verse 17 before verse 20), not afterward. The chapter then describes killings and burning, not merely a decision to set the city apart. The replacement preserves the promised rescue of Rahab's household without softening the city's fate.",
+      "source_verses": [
+        "Joshua 6:3-4,14-25"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Achan's Sin and Ai",
+      "finding": "Achan takes a robe, silver and gold. Jericho's precious metals were reserved for the treasury (Joshua 6:19), not destruction. 'Forbidden goods' covers the common prohibition without assigning the wrong destination to the metals.",
+      "source_verses": [
+        "Joshua 6:18-19",
+        "Joshua 7:1,4-5,10-11,19-26",
+        "Joshua 8:2-3,12,18-25,30-35"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Gideon and the Midianites",
+      "finding": "Ending the account on refusal of kingship leaves out its immediate reversal: Gideon makes a gold ephod, which Israel worships and which becomes a snare to his household. Because the preview chooses the concluding leadership episode, retaining this counterpoint better represents the actual ending. The new wording also limits the 300 men's victory to the initial rout, before other Israelite troops join the pursuit.",
+      "source_verses": [
+        "Judges 6:25-27",
+        "Judges 7:6-7,16-23",
+        "Judges 8:22-28,32-35"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jephthah's Vow",
+      "finding": "The central outcome of the titular vow is missing. Judges 11:39 says that Jephthah does to his daughter according to his vow. Report that wording rather than silently dropping the outcome or adding a disputed explanation of precisely how it was fulfilled.",
+      "source_verses": [
+        "Judges 11:29-40",
+        "Judges 12:1-7"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Levite and Gibeah",
+      "finding": "'Arrange wives' conceals the means: killing the people of Jabesh-gilead except virgin girls and giving those captives to Benjamin, followed by abductions of women at Shiloh. The apparent neutral wording changes the moral substance of the ending.",
+      "source_verses": [
+        "Judges 19:22-30",
+        "Judges 20:4-6,12-14,35,46-48",
+        "Judges 21:1-25"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Ruth Gleans in Boaz's Field",
+      "finding": "The current final sentence suggests a distinct gift of grain in addition to gleaning, resembling the six measures in Ruth 3:15-17. In chapter 2 Boaz directs workers to leave extra grain for her to glean and provides a meal. Specify the actual means of help within this passage.",
+      "source_verses": [
+        "Ruth 2:1-3,8-12,14-20,22-23",
+        "Ruth 3:15-17"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Threshing Floor",
+      "finding": "The first sentence closely reproduces the existing summary, chiefly changing 'On' to 'Following' and 'at' to 'on'. Its facts are supported; the replacement supplies independent phrasing without asserting a sexual encounter or an immediate unconditional marriage promise.",
+      "source_verses": [
+        "Ruth 3:1-18"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Samuel Judges Israel",
+      "finding": "The new opening locates the instruction to abandon foreign gods at Mizpah. The instruction and the people’s response occur in verses 3–4, before Samuel calls the gathering at Mizpah in verse 5.",
+      "source_verses": [
+        "1 Samuel 7:3-6",
+        "1 Samuel 7:10-12"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Saul Rejected",
+      "finding": "“An early sacrifice” can imply that Saul did not wait the specified seven days. Verse 8 says he waited seven days; the concrete fact is that he sacrificed before Samuel arrived.",
+      "source_verses": [
+        "1 Samuel 13:8-14",
+        "1 Samuel 15:3,8-9,22-28"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "David, Bathsheba and Uriah",
+      "finding": "“Bathsheba’s first child” asserts her complete birth history. The passage identifies the child born to David, but does not say Bathsheba had never had another child.",
+      "source_verses": [
+        "2 Samuel 11:4-5,26-27",
+        "2 Samuel 12:13-18,24"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Sheba's Revolt and the Gibeonites",
+      "finding": "“Treatment” and “handed over” omit the killings central to the famine episode. Saul had killed Gibeonites; David hands over seven descendants, and the Gibeonites execute them. The first sentence can also preserve the townspeople’s role in ending Sheba’s revolt.",
+      "source_verses": [
+        "2 Samuel 20:16-22",
+        "2 Samuel 21:1-9"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Elisha and Moab",
+      "finding": "The ending omits the allied withdrawal immediately following the sacrifice. With a prediction of victory as the preceding sentence, omitting the retreat hides the account’s crucial reversal. Do not identify the cause or owner of the “wrath,” which the verse leaves unspecified.",
+      "source_verses": [
+        "2 Kings 3:9,16-20,24-27"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Naaman Healed",
+      "finding": "Gehazi does not simply accept a reward. Elisha refuses a gift; Gehazi lies to obtain one and then lies to Elisha about it. Omitting the deception changes the apparent reason for his punishment.",
+      "source_verses": [
+        "2 Kings 5:10-16,20-27"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jehu's Revolt",
+      "finding": "“Brings down” obscures that Jezebel, Ahab’s family and Baal’s worshipers are killed, not simply removed from power. Distinguishing Jehu’s direct killing of Joram from his orders concerning Ahaziah also improves precision.",
+      "source_verses": [
+        "2 Kings 9:24,27,33",
+        "2 Kings 10:6-11,24-29"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Solomon Builds the Temple",
+      "finding": "Fire does not fill the temple. The passage distinguishes fire consuming the offerings from the LORD’s glory filling the house. The underlying summary has the same conflation.",
+      "source_verses": [
+        "2 Chronicles 5:7,13-14",
+        "2 Chronicles 6:12-14",
+        "2 Chronicles 7:1-3"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Sennacherib's Invasion and Hezekiah's Pride",
+      "finding": "“Is brought low” replaces Hezekiah’s voluntary humbling with an unspecified external defeat. Verse 26 says that he and Jerusalem’s inhabitants humble themselves and that wrath does not come during his lifetime.",
+      "source_verses": [
+        "2 Chronicles 32:1-5,21,24-30"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Ezra and Mixed Marriages",
+      "finding": "The agreement covers the wives and their children, not wives alone. Omitting the children understates the scope and consequence of the separation described in Ezra 10:3.",
+      "source_verses": [
+        "Ezra 9:1-6",
+        "Ezra 10:1-5,10-17,44"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Nehemiah's Reforms",
+      "finding": "“The Sabbath gates” invents a type or name of gate. These are Jerusalem’s city gates, closed before and throughout the Sabbath.",
+      "source_verses": [
+        "Nehemiah 13:4-12,19-27"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Haman's Plot",
+      "finding": "“A decree against all Jews” and “seek” weaken a decree that is actually issued to kill them. Naming the threatened killing is essential to understanding Esther’s action and risk.",
+      "source_verses": [
+        "Esther 3:5-13",
+        "Esther 4:8,13-17"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Jews Delivered and Purim",
+      "finding": "Mordecai receives the king’s signet and authority in Esther 8:2–10, before the defensive decree and fighting, not only after the threat passes. Also, “those attacking them” is narrower than the narrative’s enemies or people seeking their harm.",
+      "source_verses": [
+        "Esther 8:1-11",
+        "Esther 9:1-5,15-17,20-28",
+        "Esther 10:2-3"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jerusalem and the Ark",
+      "finding": "The excerpt mentions Uzzah’s death without the ark-touching action or God’s agency, turning the central incident into an unexplained interruption. This is not a factual contradiction, but the cause is more useful than “transfer interrupted.”",
+      "source_verses": [
+        "2 Samuel 6:6-12,14-16,20-23"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Davidic Covenant",
+      "finding": "“House” shifts from building to dynasty without explaining that change. “Royal line” preserves the passage’s meaning for readers without biblical background.",
+      "source_verses": [
+        "2 Samuel 7:1-5,11-16"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Solomon Becomes King",
+      "finding": "“Removes his rivals” hides the executions and the priest’s dismissal. A short, direct alternative can describe the outcome without listing every death.",
+      "source_verses": [
+        "1 Kings 1:29-40",
+        "1 Kings 2:10-12,24-27,31-35,44-46"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Man of God from Judah",
+      "finding": "“Disobeys” omits the other prophet’s explicit lie, and “dies in an encounter” is less clear than the source’s “a lion ... killed him.” Including the deception avoids implying unexplained willful rebellion.",
+      "source_verses": [
+        "1 Kings 13:1-5,15-26",
+        "1 Kings 14:7-11"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Elijah on Mount Carmel",
+      "finding": "The passive account of the prophets’ deaths omits Elijah’s explicit responsibility. This is not an invented claim, but active wording better preserves the account’s difficult events.",
+      "source_verses": [
+        "1 Kings 18:21-26,36-40,44-46",
+        "1 Kings 19:1"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Elijah Taken Up",
+      "finding": "“Fire falls on soldiers” omits both Elijah’s call and the soldiers’ deaths. The rest of the excerpt is sound, including the whirlwind rather than an invented ride in the fiery chariot.",
+      "source_verses": [
+        "2 Kings 1:9-15",
+        "2 Kings 2:9-15,19-22"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Manasseh's Repentance and Josiah's Reforms",
+      "finding": "“Dies in battle” blurs the version in Chronicles: Josiah is wounded in battle, carried to Jerusalem, and dies there. The distinction matters because Kings instead reports him carried dead from Megiddo.",
+      "source_verses": [
+        "2 Chronicles 33:10-17",
+        "2 Chronicles 34:14-19,29-33",
+        "2 Chronicles 35:20-24"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Debt Relief",
+      "finding": "Debt “costs ... their children” can suggest deaths. The specific harm is debt slavery, stated explicitly in Nehemiah 5:5.",
+      "source_verses": [
+        "Nehemiah 5:1-13,14-18"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Fall of Jerusalem and Flight to Egypt",
+      "finding": "The first sentence introduces Jeremiah’s warning before the second introduces Gedaliah’s death. The literal clauses are not incompatible, but they invite a mistaken sequence. Gedaliah is killed before the survivors seek Jeremiah’s counsel.",
+      "source_verses": [
+        "Jeremiah 39:11-14",
+        "Jeremiah 40:1-6",
+        "Jeremiah 41:1-3,16-18",
+        "Jeremiah 42:9-19",
+        "Jeremiah 43:1-7"
+      ],
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Death of Ezekiel's Wife",
+      "finding": "Saying the LORD merely warns Ezekiel softens the stated divine agency: 'I will take away from you the desire of your eyes.' 'About the sanctuary and their families' also hides the threatened defilement and deaths. This is an omission/clarity concern, not a contradictory stated fact.",
+      "source_verses": "Ezekiel 24:16-24",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Daniel in the Lions' Den",
+      "finding": "Daniel 6 describes officials plotting after Daniel is favored for promotion, but does not state jealousy. Presenting them as jealous converts an inferred motive into fact.",
+      "source_verses": "Daniel 6:3-10,16-23",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Hosea's Marriage to Gomer",
+      "finding": "The excerpt says the marriage is commanded and the names are symbolic, without saying what either signifies. The passage explicitly compares Israel's religious unfaithfulness with adultery and contrasts judgment on Israel with mercy for Judah. Suggested for clarity, not as a factual correction.",
+      "source_verses": "Hosea 1:2-9",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jonah Flees and Is Swallowed",
+      "finding": "The sailors throw Jonah overboard at his own request and only after unsuccessfully trying to row ashore. Adding 'at his request' preserves their role and avoids an impression of an unprompted attack.",
+      "source_verses": "Jonah 1:12-15; 2:1,10",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Sabbath Controversies and the Sign of Jonah",
+      "finding": "The question about healing on the Sabbath precedes the healing in Matthew 12:10-13. Saying questions follow both the grain picking and healing reverses that second sequence.",
+      "source_verses": "Matthew 12:1-14,38-40",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Feeding the Five Thousand and Walking on Water",
+      "finding": "Matthew counts about five thousand men in addition to women and children, not an exact total of five thousand. Preserve that scope when using the count in prose.",
+      "source_verses": "Matthew 14:17-21,25-31",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Paralytic and Controversies",
+      "finding": "Mark identifies four people carrying the man but never says they are his friends. That familiar retelling detail should not be asserted as part of this passage.",
+      "source_verses": "Mark 2:3-12,14-28; 3:1-6",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Feeding the Multitude",
+      "finding": "Mark 6:44 counts five thousand men. 'A crowd of five thousand people' turns that into a total headcount. Do not import women and children from Matthew into this Mark-specific excerpt; retain Mark's own wording.",
+      "source_verses": "Mark 6:38-44,48-51",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Blind Bartimaeus",
+      "finding": "The second sentence repeats that Bartimaeus called out rather than adding the text's resolution: he follows Jesus. This is a prose improvement, not a factual correction.",
+      "source_verses": "Mark 10:46-52",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Empty Tomb",
+      "finding": "A stone 'meets' the women is awkward personification. The excerpt also omits the distinctive ending of the specified Mark 16:1-8 range: the women say nothing to anyone despite the instruction to tell the disciples. Suggested for clarity and completeness.",
+      "source_verses": "Mark 16:4-8",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Noahic Covenant",
+      "finding": "The excerpt names the rainbow and recipients but never states the covenant's promise: no flood will again destroy all life. Suggested for useful standalone card content, not because its stated facts are false.",
+      "source_verses": "Genesis 9:8-17",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Priestly Covenant with Phinehas",
+      "finding": "'Phinehas's action' and 'the event' hide the killing of an Israelite man and Midianite woman that precedes this promise. That omission particularly obscures the relationship between violence and the 'covenant of peace.' The killing is in immediately preceding Numbers 25:7-8, outside the current linked range; expand its contextual citation if this detail is included.",
+      "source_verses": "Numbers 25:7-13",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Davidic Covenant",
+      "finding": "Calling Psalm 89 a 'later psalm' adds a compositional chronology that the cited passages do not establish. It is enough to identify the psalm and what it recalls. This is a qualification concern, not a claim that the proposed dating is necessarily false.",
+      "source_verses": "2 Samuel 7:12-16; Psalms 89:3-4",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "New Covenant",
+      "finding": "The coordinated subject 'Luke and Hebrews' makes both sources seem to quote/revisit Jeremiah and contrast old and new covenants in the same way. Luke 22:20 connects the cup with the new covenant; Hebrews explicitly quotes Jeremiah and contrasts the covenants. Preserve those distinct contributions and Jeremiah's named recipients.",
+      "source_verses": "Jeremiah 31:31-34; Luke 22:20; Hebrews 8:6-13",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Jesus Washes the Disciples' Feet",
+      "finding": "The opening is effectively the existing summary sentence with 'During' changed to 'At' and punctuation changed. Normalized character similarity is about 95%; no complete sentence in the reviewed range is an exact normalized copy.",
+      "source_verses": "John 13:4-15,21-30,36-38",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Rejection at Nazareth",
+      "finding": "The jump from the Isaiah claim to violence omits the intervening examples of outsiders helped by Elijah and Elisha. Luke links the anger to those examples, not directly to the reading.",
+      "source_verses": "Luke 4:21-30",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Sinful Woman Anoints Jesus",
+      "finding": "The woman washes with tears, wipes with her hair, and anoints with ointment. Washing with tears and oil merges separate actions.",
+      "source_verses": "Luke 7:37-48",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Zacchaeus",
+      "finding": "The excerpt treats cheating as an established confession. Zacchaeus states a conditional promise: if he has taken anything by false accusation, he restores it fourfold. Preserve that qualification.",
+      "source_verses": "Luke 19:3-9",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Woman Caught in Adultery",
+      "finding": "The central outcome is missing: the accusers leave, Jesus declines to condemn her, and he tells her to stop sinning. Sends the woman away loses this resolution.",
+      "source_verses": "John 8:3-11",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Breakfast by the Sea of Tiberias",
+      "finding": "John explicitly depicts Jesus giving bread and fish to the disciples. It does not explicitly say he eats with them. Serving breakfast avoids adding an action.",
+      "source_verses": "John 21:3-17",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Lame Man Healed and Arrest of Peter and John",
+      "finding": "While suggests the believers pray during the council hearing, but Acts places the prayer after release. Peter also expressly denies healing by their own power; name Jesus in the healing.",
+      "source_verses": "Acts 3:6-8,12-16; 4:8-13,23-31",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Saul's Conversion",
+      "finding": "The conversion is reduced to light and a restored disability. The voice identifying itself as Jesus supplies the narrative link between Saul persecuting believers and preaching Jesus.",
+      "source_verses": "Acts 9:1-9,17-22",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "The Jerusalem Council",
+      "finding": "Whether ... brings is awkward. More importantly, only a few requirements does not answer the question the excerpt raises: the letter rejects the imposed circumcision requirement.",
+      "source_verses": "Acts 15:1-6,19-29",
+      "resolution": "Applied suggested excerpt."
+    },
+    {
+      "title": "Ephesus",
+      "finding": "Two years specifically describes teaching in the school after three months in the synagogue; Paul later recalls three years. Avoid making two years the apparent total teaching period.",
+      "source_verses": "Acts 19:8-10,23-29; 20:7-12,17,31,36-38",
+      "resolution": "Applied suggested excerpt."
+    }
+  ],
+  "additional_resolution": "Cain excerpt avoids assigning a motive to potential killers; Phinehas passage expanded to Numbers 25:7–13."
+}

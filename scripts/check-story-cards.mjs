@@ -11,6 +11,7 @@ for(const story of catalog){
  assert(!story.summary.startsWith(text),story.title+' duplicates narrative opener');
  const first=story.summary.match(/^.*?[.!?](?:\s|$)/)?.[0].trim();
  assert(!text.startsWith(first),story.title+' copies first sentence');
+ for(const sentence of story.summary.split(/(?<=[.!?])\s+/)){if(words(sentence).length>4)assert(!text.includes(sentence),story.title+' copies a full narrative sentence');}
  assert(!assess(text).tooLong,story.title+' excerpt sentence too long');
 }
 const source=fs.readFileSync('src/stories.js','utf8');
