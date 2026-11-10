@@ -14,7 +14,8 @@ const server=http.createServer(async(req,res)=>{
   const file=path.resolve(mobileRoot,'.'+(url.pathname==='/'?'/index.html':decodeURIComponent(url.pathname)));
   if(!file.startsWith(mobileRoot+path.sep)){res.writeHead(403);res.end();return;}
   const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webp':'image/webp','.woff2':'font/woff2','.svg':'image/svg+xml'};
-  res.writeHead(200,{'content-type':types[path.extname(file)]||'application/octet-stream'});res.end(fs.readFileSync(file));return;
+  if(!fs.existsSync(file)){res.writeHead(404);res.end();return;}
+  const contents=fs.readFileSync(file);res.writeHead(200,{'content-type':types[path.extname(file)]||'application/octet-stream'});res.end(contents);return;
  }
 
  // Local originals stand in for hosted image transport. No outbound fallback.
@@ -24,14 +25,14 @@ const server=http.createServer(async(req,res)=>{
  }
  const response=await worker.fetch(new Request(url,{headers:req.headers}),{DB:{prepare(){throw Error('Unexpected SQL');}}},{});
  res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));
- }catch(e){res.writeHead(500);res.end(e.message);}
+ }catch(e){if(!res.headersSent)res.writeHead(500);res.end(e.message);}
 });
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;
 const results=[];
 try{for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch();
  try{for(const width of [320,390,550,820,1440]){
- const context=await browser.newContext({viewport:{width,height:983},reducedMotion:'reduce'});
+ const context=await browser.newContext({viewport:{width,height:983},reducedMotion:'reduce',serviceWorkers:'block'});
  await context.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
  if(mobile)await context.addInitScript(()=>Object.defineProperty(navigator,'onLine',{get:()=>false}));
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
