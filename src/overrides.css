@@ -2470,6 +2470,12 @@ html body.lens-app #lens-search-overlay .lens-search-form input[type=search]:pla
 html body.lens-app #lens-search-overlay .lens-search-form>.ux-search-field{flex:1 1 0;min-width:0;width:auto}
 html body.lens-app #lens-search-overlay .lens-search-form>[data-search-cancel]{flex:none;width:auto;padding-inline:10px}
 html body.lens-app #lens-search-overlay{width:min(1120px,calc(100% - 24px));padding-top:20px}
+/* Keep tablet search anchored when input blur dismisses mobile-editing.
+   Recentring between pointer-down and pointer-up loses the tab click.
+   Phone bottom sheets and desktop centering keep their existing positions. */
+@media (min-width:601px) and (max-width:850px){
+ html body.lens-app #lens-search-overlay[open]{top:12px;bottom:auto;margin:0 auto;max-height:min(85dvh,calc(var(--visual-height,100dvh) - 24px))}
+}
 html body.lens-app #lens-search-overlay .lens-search-suggestions[hidden]{display:none}
 html body.lens-app #lens-search-overlay #lens-search-status{margin:10px 0;min-height:0}
 html body.lens-app #lens-search-overlay .lens-search-results{display:block;margin-top:8px}

@@ -49,6 +49,28 @@ try{
     await page.screenshot({path:`${output}/${name}-${width}-empty.png`});
     const search=async query=>{await input.fill(query);await page.locator('#lens-search-form').evaluate(form=>form.requestSubmit());await page.waitForFunction(q=>new URLSearchParams(location.hash.split('?')[1]).get('q')===q,query);await page.waitForFunction(()=>!document.getElementById('lens-search-results').hasAttribute('aria-busy')&&!document.getElementById('lens-search-tabs').hidden);};
     const count=async key=>Number(await page.locator('#lens-search-count-'+key).innerText());
+    // A tab must switch from inactive through a real pointer click after input
+    // focus. A selected-tab no-op can hide a dialog that moves during blur.
+    const switchFromInput=async key=>{
+     const button=page.locator('#lens-search-tab-'+key),panel=page.locator('#lens-search-panel-'+key);
+     assert.equal(await button.getAttribute('aria-selected'),'false','Regression starts with an inactive tab');
+     await input.focus();assert(await input.evaluate(n=>document.activeElement===n));
+     await page.evaluate(()=>{
+      window.searchPointerTrace=[];
+      const record=event=>{
+       const dialog=document.getElementById('lens-search-overlay');
+       window.searchPointerTrace.push({type:event.type,tab:event.target.closest('[data-search-tab]')?.dataset.searchTab,top:dialog.getBoundingClientRect().top});
+      };
+      document.addEventListener('pointerdown',record,{capture:true,once:true});
+      document.addEventListener('pointerup',record,{capture:true,once:true});
+     });
+     await button.click();
+     const trace=await page.evaluate(()=>window.searchPointerTrace);
+     assert.deepEqual(trace.map(event=>[event.type,event.tab]),[['pointerdown',key],['pointerup',key]],'The same tab receives pointer-down and pointer-up');
+     assert(Math.abs(trace[0].top-trace[1].top)<1,'Input blur must not move the search dialog during the click');
+     assert.equal(await button.getAttribute('aria-selected'),'true','Pointer click selects the previously inactive tab');
+     assert(await panel.isVisible());assert(!(await page.locator('#lens-search-panel-'+(key==='scripture'?'evidence':'scripture')).isVisible()));
+    };
     await search('Genesis 1');assert(!(await page.locator('#lens-search-suggestions').isVisible()));assert.equal(await count('scripture'),24);assert((await count('evidence'))<=12);
     assert(await tabs.evaluate(n=>[...n.querySelectorAll('button')].every(e=>e.scrollWidth<=e.clientWidth+1)&&n.scrollWidth<=n.clientWidth+1),'Tab labels and counts fit without overflow');
     assert.match(await status.innerText(),/returned/);await page.locator('#lens-search-tab-scripture').click();await page.locator('#lens-search-panel-scripture .lens-more-results summary').click();assert.equal(await page.locator('#lens-search-panel-scripture .lens-result:visible').count(),24);
@@ -60,8 +82,9 @@ try{
     await page.locator('#lens-search-tab-evidence').focus();await page.keyboard.press('Home');assert.equal(await page.locator('#lens-search-tab-scripture').getAttribute('aria-selected'),'true');await page.keyboard.press('End');assert.equal(await page.locator('#lens-search-tab-evidence').getAttribute('aria-selected'),'true');
     await search('zqxvblorp');assert.equal(await count('scripture'),0);assert.equal(await count('evidence'),0);assert(await page.locator('#lens-search-panel-evidence').getByText('No Evidence Results').isVisible());await page.screenshot({path:`${output}/${name}-${width}-zero.png`});
     await search('mercy');assert((await count('scripture'))>0);assert((await count('evidence'))>0);assert(await page.locator('.lens-search-related').isVisible());
-    await input.fill('');assert(await page.locator('#lens-search-suggestions').isVisible());await page.locator('[data-search-cancel]').click();await page.waitForFunction(()=>!document.getElementById('lens-search-overlay').open);assert.match(page.url(),/#discover$/);await page.waitForTimeout(250);assert(!(await page.locator('#lens-search-overlay').isVisible()));
-    await page.locator('#ux-explore-search').fill('John 3:16');await page.locator('#ux-explore-search-form').evaluate(form=>form.requestSubmit());await page.locator('#lens-search-overlay[open]').waitFor();await search('John 3:16');assert.equal(await count('scripture'),1);await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.getElementById('lens-search-overlay').open);assert.match(page.url(),/#discover$/);
+    await page.locator('#lens-search-tab-evidence').click();await switchFromInput('scripture');await switchFromInput('evidence');
+    await input.fill('');assert(await page.locator('#lens-search-suggestions').isVisible());await page.locator('[data-search-cancel]').click();await page.waitForFunction(()=>!document.getElementById('lens-search-overlay').open&&location.hash==='#discover');assert.match(page.url(),/#discover$/);await page.waitForTimeout(250);assert(!(await page.locator('#lens-search-overlay').isVisible()));
+    await page.locator('#ux-explore-search').fill('John 3:16');await page.locator('#ux-explore-search-form').evaluate(form=>form.requestSubmit());await page.locator('#lens-search-overlay[open]').waitFor();await search('John 3:16');assert.equal(await count('scripture'),1);await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.getElementById('lens-search-overlay').open&&location.hash==='#discover');assert.match(page.url(),/#discover$/);
     await page.locator('#ux-explore-search').fill('John 3:16');await page.locator('#ux-explore-search-form').evaluate(form=>form.requestSubmit());await page.locator('#lens-search-overlay[open]').waitFor();await search('John 3:16');await page.locator('#lens-search-tab-scripture').click();await page.locator('#lens-search-panel-scripture .lens-result').click();await page.locator('#verse-16').waitFor();assert.match(page.url(),/#read\/42\/3\/16/);
     await page.goto(base+'/#questions?mode=history');await page.locator('#debate-results .phase2-debate-card').first().waitFor();
     const checkOrder=async(searchSelector,filterSelector)=>{const nav=page.locator('#debates-view .evidence-section-tabs'),searchBox=page.locator(searchSelector),filters=page.locator(filterSelector);assert(await nav.isVisible());const a=await nav.boundingBox(),b=await searchBox.boundingBox(),c=await filters.boundingBox();assert(a.y+a.height<=b.y+1,'Sections precede search');assert(b.y+b.height<=c.y+1,'Category filters follow search');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));};
