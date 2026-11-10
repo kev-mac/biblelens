@@ -93,7 +93,7 @@
    const html='<button type="button" data-ux-back aria-label="Back">‹ Back</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
    const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
    host.classList.add('ux-compact-interior');
-   if(!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==headerTitle)contextNav.innerHTML=html;
+   if(!contextNav.querySelector('[data-ux-back]')||!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==headerTitle)contextNav.innerHTML=html;
    if(headingHadFocus)contextNav.querySelector('h1').focus({preventScroll:true});
    contextNav.dataset.fallback=rootHash;
   }

@@ -121,7 +121,9 @@ try{
      await page.evaluate(()=>{const note=document.createElement('span');note.textContent='';document.getElementById('stories-results').append(note);note.remove();});await settle(page);
      assert(Math.abs((await stripMetrics(row)).left-end.left)<2,'Unrelated updates preserve filter scroll');
      const last=row.locator('button').last();assert(await last.evaluate(n=>{const a=n.getBoundingClientRect(),b=n.parentElement.getBoundingClientRect();return a.left>=b.left-1&&a.right<=b.right+1;}),'Keyboard-focused final filter is fully visible');
-     await page.keyboard.press('Shift+Tab');assert(await row.evaluate(n=>n.contains(document.activeElement)),'Tab stays in normal filter order');
+     // macOS WebKit uses Option-Tab to include all controls when the system's
+     // full keyboard access setting is off. Do not change the user's setting.
+     await page.keyboard.press(engine==='webkit'&&process.platform==='darwin'?'Alt+Shift+Tab':'Shift+Tab');assert(await row.evaluate(n=>n.contains(document.activeElement)),'Tab stays in normal filter order');
      assert(await page.evaluate(()=>{const css=getComputedStyle(document.activeElement);return css.outlineStyle==='solid'&&parseFloat(css.outlineWidth)>=2&&parseFloat(css.outlineOffset)<=0;}),'Visible inset focus outline is not clipped by the scroll viewport');
      await row.locator('button').first().focus();await settle(page);assert(!(await stripMetrics(row)).start);
     }else assert(start.rows>1,'Long desktop filter set actually wraps');
@@ -152,7 +154,7 @@ try{
     for(const chapter of [4,7]){
      await go(page,`#read/0/${chapter}`,'#verse-1');
      const title=page.locator('#chapter-text h2.chapter-subtitle'),eyebrow=page.locator('#chapter-text .ux-reader-eyebrow');
-     await eyebrow.waitFor();assert.equal(await eyebrow.innerText(),`Genesis ${chapter}`);
+     await eyebrow.waitFor();assert.equal(await eyebrow.textContent(),`Genesis ${chapter}`);
      assert((await title.innerText()).trim().length>0);assert(await title.isVisible());
      const image=page.locator('#chapter-text > .chapter-heading-row + .story-illustration > img');await image.waitFor();
      await image.evaluate(n=>n.complete?undefined:new Promise(resolve=>{n.addEventListener('load',resolve,{once:true});n.addEventListener('error',resolve,{once:true});}));

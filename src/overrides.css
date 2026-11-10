@@ -3718,5 +3718,5 @@ html body.lens-app #chapter-text h2.chapter-subtitle {font:600 1.15rem/1.4 var(-
 html body.lens-app #chapter-text .story-illustration figcaption {font:italic 400 .8rem/1.5 var(--ui-font);color:var(--lens-muted);}
 @media(min-width:768px){
  html body.lens-app #reader-layout {max-width:700px;}
- html body.lens-app #chapter-text > .chapter-heading-row + .story-illustration > img {height:240px;aspect-ratio:auto;object-fit:cover;}
+ html body.lens-app #chapter-text > .chapter-heading-row + .story-illustration > img {height:240px;aspect-ratio:auto;object-fit:cover;object-position:center top;}
 }
