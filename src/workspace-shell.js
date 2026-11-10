@@ -189,8 +189,13 @@
   const searchBox=host.querySelector('.characters-search-box,#commandments-search-box');
   const chips=host.querySelector('.directory-categories');
   if(chips){chips.classList.add('filter-carousel');chips.remove();}
+  if(section==='evidence'&&id==='debates-view'){
+   const tabs=chips?.classList.contains('phase2-modes')?chips:document.createElement('nav');
+   tabs.classList.add('evidence-section-tabs','filter-carousel');tabs.setAttribute('aria-label','Evidence sections');
+   content.append(tabs);
+  }
   if(searchBox){prepareSearchBox(searchBox);content.append(searchBox);}
-  if(chips)content.append(chips);
+  if(chips&&!chips.classList.contains('evidence-section-tabs'))content.append(chips);
   if(section==='evidence'&&id==='evidence-view'){
    const box=document.createElement('div');box.className='stories-search-box';box.innerHTML='<input id="directory-evidence-search" class="directory-search" type="search" aria-label="Search evidence records" placeholder="Search records, titles, references…">';if(typeof categorySearch==='string')box.querySelector('input').value=categorySearch;prepareSearchBox(box);content.append(box);
   }
@@ -204,11 +209,11 @@
  }
  function evidenceCollectionLinks(){
   const collections=[['History','#questions?mode=history'],['Science','#questions?mode=science'],['Text Comparisons','#questions?mode=text'],['Translations','#questions?filter=T'],['Timeline','#timeline'],['Contradictions','#questions']];
-  const debates=document.querySelector('#debates-view.directory-hub .filter-carousel');
-  if(debates)for(const [name,href]of collections.slice(4)){
+  const debates=document.querySelector('#debates-view.directory-hub .evidence-section-tabs');
+  if(debates)for(const [name,href]of (debates.querySelector('[data-debate-mode]')?collections.slice(4):collections)){
    if(debates.querySelector('[data-evidence-collection="'+name+'"]'))continue;
    const link=document.createElement('a');link.className='filter-pill';link.dataset.evidenceCollection=name;link.href=href;link.textContent=name;
-   if(location.hash===href){link.classList.add('active');link.setAttribute('aria-current','page');}
+   if(location.hash===href||name==='Contradictions'&&(!location.hash.includes('?')||new URLSearchParams(location.hash.split('?')[1]).get('collection')==='featured')){link.classList.add('active');link.setAttribute('aria-current','page');}
    debates.append(link);
   }
   const timeline=document.querySelector('#timeline-view .timeline-controls');
@@ -221,6 +226,8 @@
  function enhance(){
   mount('characters-view','people');mount('places-view','places');mount('commandments-view','commandments');mount('debates-view','evidence');
   if(/^#evidence\//.test(location.hash))mount('evidence-view','evidence');
+  const evidenceTabs=document.getElementById('evidence-directory-chips'),evidenceSearch=document.getElementById('directory-evidence-search')?.closest('.stories-search-box');
+  if(evidenceTabs&&evidenceSearch&&evidenceTabs.nextElementSibling!==evidenceSearch)evidenceSearch.before(evidenceTabs);
   for(const host of document.querySelectorAll('.directory-hub')){
    for(const box of host.querySelectorAll('.stories-search-box')){const input=box.querySelector('input'),clear=box.querySelector('.directory-search-clear');if(input&&clear)clear.hidden=!input.value;}
    for(const chip of host.querySelectorAll('.filter-carousel button')){chip.classList.add('filter-pill');chip.classList.toggle('active',chip.getAttribute('aria-pressed')==='true');}

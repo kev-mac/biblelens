@@ -33,9 +33,9 @@
  const routeTo=window.BibleLensWorkspace.navigate;
  function section(id, html) {const node = document.createElement('section'); node.id = id + '-view'; node.className = 'lens-workspace'; node.hidden = true; node.innerHTML = html; main.append(node); return node;}
  const heading = (kicker, title, copy) => `<div class="lens-page-heading"><span class="lens-kicker">${kicker}</span><h1 tabindex="-1">${title}</h1><p>${copy}</p></div>`;
- const searchView=section('search', `<form class="lens-search-form" id="lens-search-form"><label class="sr-only" for="lens-search-input">Search the Library</label><input id="lens-search-input" type="search" maxlength="300" placeholder="A passage, a person, a question…" autocomplete="off"><button class="lens-button" type="button" data-search-cancel>Cancel</button></form><div class="lens-search-suggestions"><span>Try</span>${['Genesis 1','mercy','Mary','Jerusalem'].map(q=>`<button class="lens-button" data-lens-query="${q}">${q}</button>`).join('')}<a href="#chat">Ask a question</a></div><p id="lens-search-status" role="status"></p><div id="lens-search-results" class="lens-search-results"></div>`);
+ const searchView=section('search', `<form class="lens-search-form" id="lens-search-form"><label class="sr-only" for="lens-search-input">Search the Library</label><input id="lens-search-input" type="search" maxlength="300" placeholder="Search scripture" autocomplete="off"><button class="lens-button" type="button" data-search-cancel>Cancel</button></form><div id="lens-search-suggestions" class="lens-search-suggestions"><span>Try</span>${['Genesis 1','mercy','Mary','Jerusalem'].map(q=>`<button class="lens-button" data-lens-query="${q}">${q}</button>`).join('')}<a href="#chat">Ask a question</a></div><p id="lens-search-status" role="status"></p><div id="lens-search-tabs" class="lens-search-tabs" role="tablist" aria-label="Search result type" hidden><button type="button" role="tab" id="lens-search-tab-scripture" aria-controls="lens-search-panel-scripture" aria-selected="true" tabindex="0" data-search-tab="scripture">Scripture <span id="lens-search-count-scripture">0</span></button><button type="button" role="tab" id="lens-search-tab-evidence" aria-controls="lens-search-panel-evidence" aria-selected="false" tabindex="-1" data-search-tab="evidence">Evidence <span id="lens-search-count-evidence">0</span></button></div><div id="lens-search-results" class="lens-search-results"></div><details class="lens-search-limits"><summary>Search limits</summary><p>Counts show returned results, including those behind See All. Scripture returns up to 24 verses; Evidence returns up to 12 records. Passage searches may share the verse allowance across references.</p><p>Events, People and Places each return up to 8 matches; Your notebook returns up to 12. Laws lists all matches. These limits apply separately. Broader searches may have more matches. Your private notes stay on this device.</p></details>`);
  const searchDialog=document.createElement('dialog');searchDialog.id='lens-search-overlay';searchDialog.setAttribute('aria-label','Search the library');document.body.append(searchDialog);searchDialog.append(searchView);searchView.hidden=false;
- let includeLost=false,inputTimer;
+ let includeLost=false,inputTimer,searchTab='scripture';
  const lostToggle=document.createElement('button');lostToggle.type='button';lostToggle.className='lens-button lost-search-toggle';lostToggle.id='lost-search-toggle';lostToggle.textContent='Include Lost Books';lostToggle.setAttribute('aria-pressed','false');searchView.querySelector('.lens-search-suggestions').before(lostToggle);lostToggle.onclick=()=>{includeLost=!includeLost;lostToggle.setAttribute('aria-pressed',String(includeLost));runSearch(el('lens-search-input').value);};
  let searchReturn=location.hash.startsWith('#search')?'#discover':location.hash||'#discover';
  function cancelSearchInput(){clearTimeout(inputTimer);inputTimer=undefined;++searchVersion;}
@@ -256,8 +256,32 @@
   const render=item=>item.html||`<a class="lens-result" href="${esc(item.url)}"><strong>${esc(item.title)}</strong>${item.meta?`<small>${esc(item.meta)}</small>`:''}<span>${esc(excerpt(item.text))}</span></a>`;
   return `<section class="lens-result-group" id="lens-results-${title.toLowerCase().replace(/ /g,'-')}"><h2>${title==='Research'?'Evidence':title}</h2><div class="lens-result-list">${items.slice(0,5).map(render).join('')}</div>${items.length>5?`<details class="lens-more-results"><summary>See All ${items.length}</summary><div class="lens-result-list">${items.slice(5).map(render).join('')}</div></details>`:''}</section>`;
  }
+ function updateSearchSuggestions(query){el('lens-search-suggestions').hidden=!!query.trim();}
+ function selectSearchTab(key,focus=false){
+  searchTab=key;
+  for(const name of ['scripture','evidence']){
+   const button=el('lens-search-tab-'+name),panel=el('lens-search-panel-'+name),active=name===key;
+   button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;if(panel)panel.hidden=!active;
+   if(active&&focus)button.focus({preventScroll:true});
+  }
+ }
+ el('lens-search-tabs').addEventListener('click',event=>{const button=event.target.closest('[data-search-tab]');if(button)selectSearchTab(button.dataset.searchTab);});
+ el('lens-search-tabs').addEventListener('keydown',event=>{
+  if(!event.target.closest('[data-search-tab]')||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+  event.preventDefault();event.stopPropagation();selectSearchTab(event.key==='Home'?'scripture':event.key==='End'?'evidence':searchTab==='scripture'?'evidence':'scripture',true);
+ });
+ function renderSearchResults(sections,order,available){
+  const empty=title=>`<div class="lens-empty"><h2>No ${title} Results</h2><p>Try a shorter phrase, a full book name, or a passage such as John 3:16.</p></div>`;
+  const panels=[['scripture','Scripture'],['evidence','Research']].map(([key,title])=>`<section id="lens-search-panel-${key}" class="lens-search-panel" role="tabpanel" aria-labelledby="lens-search-tab-${key}" tabindex="0">${resultGroup(title,sections[title])||(available?empty(key==='scripture'?'Scripture':'Evidence'):'<p class="lens-empty">This search could not load. Try again.</p>')}</section>`).join('');
+  const related=order.filter(title=>!['Scripture','Research'].includes(title)).map(title=>resultGroup(title,sections[title])).join('');
+  el('lens-search-results').innerHTML=panels+(related?`<section class="lens-search-related" aria-label="Related collections">${related}</section>`:'');
+  for(const [key,title] of [['scripture','Scripture'],['evidence','Research']])el('lens-search-count-'+key).textContent=available?sections[title].length:'—';
+  if(!sections[searchTab==='scripture'?'Scripture':'Research'].length&&sections[searchTab==='scripture'?'Research':'Scripture'].length)searchTab=searchTab==='scripture'?'evidence':'scripture';
+  el('lens-search-tabs').hidden=false;selectSearchTab(searchTab);
+ }
  async function runSearch(query){
   const version=++searchVersion,searchEdition=edition();el('lens-search-input').value=query;
+  updateSearchSuggestions(query);el('lens-search-tabs').hidden=true;
   const box=el('lens-search-results'),status=el('lens-search-status');box.innerHTML='';box.removeAttribute('aria-busy');status.classList.remove('loading-state');
   if(!query.trim()){status.textContent='Search by reference or keywords. Your private notes are searched only on this device.';return;}
   status.classList.add('loading-state');status.textContent='Searching the library…';box.setAttribute('aria-busy','true');
@@ -288,14 +312,13 @@
    const sections={Laws:commandments,Scripture:data.passages.map(p=>({title:p.label,url:p.url,text:p.text,meta:p.collection?p.collection+' · '+p.edition:(data.edition||searchEdition).toUpperCase()})),Research:data.research.map(r=>({title:r.title,url:r.kind==='annotation'?'#debate/'+encodeURIComponent(r.id):r.url,text:r.summary,meta:'Editorial interpretation · '+(r.ref||r.kind||'')})),Events:stories,People:people,Places:places,'Your notebook':notes};
    const entityQuestion=BibleLensSearch.entityQuestion(query);
    const order=entityQuestion?.kind==='people'&&people.length?['People','Scripture','Research','Events','Places']:entityQuestion?.kind==='places'&&places.length?['Places','Scripture','Research','Events','People']:passageRefs.length?['Scripture','Research','Events','People','Places']:/^where\b/i.test(query)?['Places','Research','Scripture','Events','People']:/^(who|what|why|how|did|does|is|can)\b/i.test(query)?['Research','Events','People','Places','Scripture']:people.length?['People','Places','Scripture','Research','Events']:places.length?['Places','People','Scripture','Research','Events']:['Scripture','Research','Events','People','Places'];
-   box.innerHTML=[...order,'Laws','Your notebook'].map(title=>resultGroup(title,sections[title])).join('');
+   renderSearchResults(sections,[...order,'Laws','Your notebook'],search.status==='fulfilled');
 
    const total=data.passages.length+data.research.length+stories.length+people.length+places.length+commandments.length+notes.length;
-   status.textContent=`${total} ${total===1?'result':'results'} shown${data.limited?' · Refine your search for more specific matches':''}${search.status==='rejected'?' · Scripture and research search unavailable. Try again.':''}${catalogs.some(r=>r.status==='rejected')?' · Some reference collections are unavailable.':''}.`;
-   if(!total)box.innerHTML='<div class="lens-empty"><h2>No Connections Found Yet.</h2><p>Try a shorter phrase, a full book name, or a passage such as John 3:16. The reference collections have uneven coverage.</p></div>';
+   status.textContent=`${total} ${total===1?'result':'results'} returned${data.limited?' · Refine your search for more specific matches':''}${search.status==='rejected'?' · Scripture and research search unavailable. Try again.':''}${catalogs.some(r=>r.status==='rejected')?' · Some reference collections are unavailable.':''}.`;
   }catch(error){if(version===searchVersion)status.textContent=error.message||'Search could not finish. Try again.';}finally{if(version===searchVersion){box.removeAttribute('aria-busy');status.classList.remove('loading-state');}}
  }
- el('lens-search-input').addEventListener('input',()=>{clearTimeout(inputTimer);if(!searchDialog.open)return;inputTimer=setTimeout(()=>{if(searchDialog.open)el('lens-search-form').requestSubmit();},150);});
+ el('lens-search-input').addEventListener('input',()=>{clearTimeout(inputTimer);if(!searchDialog.open)return;updateSearchSuggestions(el('lens-search-input').value);inputTimer=setTimeout(()=>{if(searchDialog.open)el('lens-search-form').requestSubmit();},150);});
  el('lens-search-form').onsubmit=event=>{event.preventDefault();clearTimeout(inputTimer);if(!searchDialog.open)return;const q=el('lens-search-input').value;routeTo('#search?lost='+(includeLost?'1':'0')+(q?'&q='+encodeURIComponent(q):''));};
  let savedRender=0;
  function renderNotebook(){

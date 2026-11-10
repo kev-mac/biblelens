@@ -7,7 +7,7 @@ const tasks=new Map(),routes=[];let next=0,inputListener,keyListener,submitted=0
 const input={value:'mercy',addEventListener:(_event,fn)=>inputListener=fn};
 const form={requestSubmit(){submitted++;form.onsubmit({preventDefault(){}});}};
 const dialog={open:true,addEventListener:(_event,fn)=>keyListener=fn,close(){this.open=false;}};
-const context={inputTimer:undefined,searchVersion:0,includeLost:false,searchDialog:dialog,el:id=>id==='lens-search-input'?input:form,routeTo:route=>routes.push(route),setTimeout:fn=>{const id=++next;tasks.set(id,fn);return id;},clearTimeout:id=>tasks.delete(id)};
+const context={updateSearchSuggestions(){},inputTimer:undefined,searchVersion:0,includeLost:false,searchDialog:dialog,el:id=>id==='lens-search-input'?input:form,routeTo:route=>routes.push(route),setTimeout:fn=>{const id=++next;tasks.set(id,fn);return id;},clearTimeout:id=>tasks.delete(id)};
 vm.createContext(context);
 vm.runInContext([line(' function cancelSearchInput('),line(" el('lens-search-input').addEventListener('input'"),line(" el('lens-search-form').onsubmit="),line(" searchDialog.addEventListener('keydown'")].join('\n'),context);
 inputListener();const pending=[...tasks.values()][0];assert(pending);

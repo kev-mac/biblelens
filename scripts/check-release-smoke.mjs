@@ -27,8 +27,11 @@ globalThis.fetch = async (input, options) => {
   artworkOriginRequests++;
   return new Response(fs.readFileSync('src' + src), {headers: {'content-type': 'image/webp'}});
 };
-try { for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]]) {
-  const browser = await engine.launch({headless: true});
+const selectedBrowser=process.env.BIBLELENS_TEST_BROWSER||'all';
+assert(['all','chromium','webkit'].includes(selectedBrowser),'Unknown BIBLELENS_TEST_BROWSER');
+if(selectedBrowser!=='all')console.log(`NOT RUN: ${selectedBrowser==='chromium'?'WebKit':'Chromium'} (explicit BIBLELENS_TEST_BROWSER selection).`);
+try { for (const [name, engine] of [['Chromium', chromium], ['WebKit', webkit]].filter(([name])=>selectedBrowser==='all'||name.toLowerCase()===selectedBrowser)) {
+  const browser = await engine.launch({headless: true,...(name==='Chromium'&&process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});
   const failures = [], requests = [];
   let mode = 'healthy', searchCount = 0;
   const server = http.createServer(async (req, res) => {

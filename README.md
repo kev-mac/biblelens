@@ -41,6 +41,8 @@ Open http://127.0.0.1:8787 after starting. The local reader and packaged annotat
 
 The automated check exercises all 1,189 chapters and every comparison mode, verifies reference bounds, confirms each evidence placement and checks duplicate annotation IDs. These checks do not certify scholarly completeness or visual browser behavior.
 
+Search layout checks use Playwright Chromium and WebKit. Run `npm run check:search:browser` after the web build, or `npm run check:search:mobile:browser` after `build:mobile` to test the offline assets. Screenshots and results go in `.release/search-refinement` and `.release/search-refinement-mobile`. `CHROME_PATH` selects an installed Chromium executable. If only one engine is available, `BIBLELENS_TEST_BROWSER=chromium` or `webkit` explicitly selects it and reports the other as not run; the default checks both. Browser checks cover the named layouts and interactions, and do not replace physical-device testing.
+
 ## Mobile app development
 
 The Capacitor target bundles the reader, scripture, annotations, reference aids and search in `www/`. Its `/api/` requests are handled inside a local Web Worker. There is no remote `server.url`, paid inference API, account requirement or hosted backend in this target. Source links remain external and require internet when opened.

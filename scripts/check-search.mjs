@@ -16,7 +16,7 @@ const between=(text,start,end)=>{
 };
 const nodes=new Map(),groups=[];
 const el=id=>{
- if(!nodes.has(id))nodes.set(id,{value:'',textContent:'',innerHTML:'',classList:{add(){},remove(){}},setAttribute(){},removeAttribute(){},querySelectorAll(){return [];},insertAdjacentHTML(){}});
+ if(!nodes.has(id))nodes.set(id,{value:'',textContent:'',innerHTML:'',attributes:{},listeners:{},classList:{add(){},remove(){}},setAttribute(key,value){this.attributes[key]=value;},removeAttribute(key){delete this.attributes[key];},querySelectorAll(){return [];},addEventListener(key,fn){this.listeners[key]=fn;},focus(){this.focused=true;},insertAdjacentHTML(){}});
  return nodes.get(id);
 };
 let externalRequests=0,lastSearch;const requests=[],privateNotes=[];
@@ -33,14 +33,15 @@ const context=vm.createContext({console,el,books,fetch:localFetch,AbortSignal,UR
  edition:()=>suite.edition,esc:value=>String(value??'').replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;'),
  refLabel:ref=>`${books[ref.book].name} ${ref.chapter}${ref.verse?':'+ref.verse:''}`,refHash:ref=>`#read/${ref.book}/${ref.chapter}${ref.verse?'/'+ref.verse:''}`,
  excerpt:value=>String(value??''),noteRows:()=>privateNotes,
- resultGroup:(name,items)=>{const previous=groups.findIndex(row=>row.name===name);if(previous>=0)groups.splice(previous,1);groups.push({name,items});return '';},
+ resultGroup:(name,items)=>{const previous=groups.findIndex(row=>row.name===name);if(previous>=0)groups.splice(previous,1);groups.push({name,items});return context.renderResultGroup(name,items);},
 });
 vm.runInContext(fs.readFileSync('src/data.js','utf8'),context);
 // Search helpers are plain shared JavaScript, also bundled into the browser.
 if(fs.existsSync('src/search-core.js'))vm.runInContext(fs.readFileSync('src/search-core.js','utf8'),context);
-vm.runInContext(`let searchVersion=0,resources,includeLost=false;\n`+
+vm.runInContext(`let searchVersion=0,resources,includeLost=false,searchTab='scripture';\n`+
+ between(source,' function resultGroup(title,items)',' function updateSearchSuggestions(query)').replace('function resultGroup(', 'function renderResultGroup(')+
  between(source,' async function getResources()',' function noteRows()')+
- between(source,' async function runSearch(query)'," el('lens-search-input').addEventListener")+
+ between(source,' function updateSearchSuggestions(query)'," el('lens-search-input').addEventListener")+
  between(source,' function parseReference(value)',' function openCompare()')+
  between(fs.readFileSync('src/stories.js','utf8'),'function storyReference(','function storyRoute(')+
  between(fs.readFileSync('src/reader-state.js','utf8'),'function readRef(','\n'),context);
@@ -50,6 +51,9 @@ try{
  for(const test of suite.cases){
   groups.length=0;const start=performance.now();
   await context.runSearch(test.query);
+  assert.equal(String(el('lens-search-count-scripture').textContent),String(lastSearch.passages.length),test.id+' Scripture count');
+  assert.equal(String(el('lens-search-count-evidence').textContent),String(lastSearch.research.length),test.id+' Evidence count');
+  assert.equal(el('lens-search-suggestions').hidden,true,test.id+' typed suggestions');
   const elapsedMs=performance.now()-start;
   assert(!/unavailable|could not|Try again/.test(el('lens-search-status').textContent),`${test.id}: ${el('lens-search-status').textContent}`);
   let visible=0;
@@ -89,6 +93,33 @@ try{
  assert.equal(groups.find(g=>g.name==='Your notebook').items.length,1,'Local notes still match');
  assert.equal(JSON.stringify(privateNotes),noteSnapshot,'Search does not mutate private notes');
  assert(!requests.some(request=>request.includes('PRIVATE-NOTE-SEARCH-SENTINEL')||request.includes('Local mercy note')),'Private note contents never enter corpus requests');
+ // Tabs use actual returned counts and never trigger another search or mix in
+ // related collection counts. Keep both panels, links and expanded result lists.
+ await search('Genesis 1');
+ assert.equal(lastSearch.passages.length,24);assert(lastSearch.limited);
+ assert(el('lens-search-results').innerHTML.includes('See All 24'));
+ assert(el('lens-search-results').innerHTML.includes('aria-label="Related collections"'));
+ const requestCount=requests.length;
+ context.selectSearchTab('evidence',true);
+ assert.equal(el('lens-search-panel-scripture').hidden,true);assert.equal(el('lens-search-panel-evidence').hidden,false);
+ assert.equal(el('lens-search-tab-evidence').attributes['aria-selected'],'true');assert.equal(el('lens-search-tab-evidence').tabIndex,0);
+ const key=(value)=>{let prevented=false,stopped=false;el('lens-search-tabs').listeners.keydown({key:value,target:{closest:()=>({})},preventDefault(){prevented=true;},stopPropagation(){stopped=true;}});assert(prevented&&stopped);};
+ key('Home');assert.equal(el('lens-search-panel-scripture').hidden,false);
+ key('End');assert.equal(el('lens-search-panel-evidence').hidden,false);
+ key('ArrowRight');assert.equal(el('lens-search-panel-scripture').hidden,false);
+ el('lens-search-tabs').listeners.click({target:{closest:()=>({dataset:{searchTab:'evidence'}})}});
+ assert.equal(el('lens-search-panel-evidence').hidden,false);assert.equal(requests.length,requestCount,'Tab switches do not fetch again');
+ await search('zqxvblorp');assert.equal(el('lens-search-count-scripture').textContent,0);assert.equal(el('lens-search-count-evidence').textContent,0);
+ assert(el('lens-search-results').innerHTML.includes('No Scripture Results'));assert(el('lens-search-results').innerHTML.includes('No Evidence Results'));
+ await context.runSearch('');assert.equal(el('lens-search-tabs').hidden,true);assert.equal(el('lens-search-suggestions').hidden,false);assert.equal(el('lens-search-results').innerHTML,'');
+ const realFetch=context.fetch;context.fetch=async()=>{throw Error('Controlled outage');};
+ await context.runSearch('Genesis 1');assert.equal(el('lens-search-count-scripture').textContent,'—');assert.equal(el('lens-search-count-evidence').textContent,'—');assert(el('lens-search-results').innerHTML.includes('This search could not load'));
+ context.fetch=realFetch;await search('John 3:16');assert.equal(el('lens-search-count-scripture').textContent,1);assert.equal(el('lens-search-panel-evidence').hidden,false,'Repeated searches retain the chosen tab when it has matches');context.selectSearchTab('scripture');
+ // A response from the prior query must not replace newer counts or cards.
+ let releaseOld;context.fetch=async input=>{if(String(input).includes('q=mercy'))await new Promise(resolve=>releaseOld=resolve);return realFetch(input);};
+ const stale=context.runSearch('mercy');await search('John 3:16');releaseOld();await stale;
+ assert.equal(el('lens-search-count-scripture').textContent,1);assert(el('lens-search-results').innerHTML.includes('John 3:16'));
+ context.fetch=realFetch;
  assert.equal(externalRequests,0);
 }finally{globalThis.fetch=originalFetch;}
 const summarize=cases=>({queries:cases.length,found:cases.filter(row=>row.found).length,expectedHit:cases.filter(row=>row.expectedHit).length,complete:cases.filter(row=>row.complete).length,expectedFound:cases.reduce((sum,row)=>sum+row.expectedFound,0),expectedTotal:cases.reduce((sum,row)=>sum+row.expectedTotal,0),top5:cases.filter(row=>row.firstGoodRank&&row.firstGoodRank<=5).length,visibleTop5:cases.filter(row=>row.firstVisibleRank!==null&&row.firstVisibleRank<=5).length});
@@ -102,4 +133,5 @@ const minimum=args.includes('--min')?Number(args[args.indexOf('--min')+1]):50;
 assert(Number.isInteger(minimum)&&minimum>=0&&minimum<=suite.cases.length);
 assert(report.summary.found>=minimum,`Useful hits ${report.summary.found}/${suite.cases.length}; minimum ${minimum}`);
 console.log('PASS: reference formats, ranges, aliases, ambiguous names, spelling, unknown queries and local private-note contracts.');
+console.log('PASS: real capped/mixed/zero/repeated searches, accurate tab counts, click/keyboard tab switching without fetch, empty suggestions, unavailable counts and stale-response protection (module tests; browser layout unverified).');
 console.log(`PASS: search useful-hit threshold ${minimum}/${suite.cases.length}; original targets and alternatives preserved.`);

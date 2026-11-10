@@ -68,8 +68,9 @@ async function renderPagedCategories(){
   const key=route.key;
   const search=document.getElementById('directory-evidence-search');if(search)search.placeholder=`Search ${(counts[key]||0).toLocaleString()} records, titles, references…`;
   let chips=document.getElementById('evidence-directory-chips');
-  if(!chips){chips=document.createElement('nav');chips.id='evidence-directory-chips';chips.className='filter-carousel';chips.setAttribute('aria-label','Evidence collections');document.querySelector('#saved-passages').before(chips);}
-  chips.innerHTML=MARKED_CATEGORIES.filter(([kind])=>['T','V','Q','academic','contradictions'].includes(kind)).map(([kind,label])=>`<a class="filter-pill${key===kind?' active':''}" href="${esc(categoryLocation(kind))}">${esc(label)} (${(counts[kind]||0).toLocaleString()})</a>`).join('');
+  if(!chips){chips=document.createElement('nav');chips.id='evidence-directory-chips';chips.className='filter-carousel evidence-section-tabs';chips.setAttribute('aria-label','Evidence sections');document.querySelector('#saved-passages').before(chips);}
+  const searchBox=search?.closest('.stories-search-box');if(searchBox&&chips.nextElementSibling!==searchBox)searchBox.before(chips);
+  chips.innerHTML=MARKED_CATEGORIES.filter(([kind])=>['T','V','Q','academic','contradictions'].includes(kind)).map(([kind,label])=>`<a class="filter-pill${key===kind?' active':''}" ${key===kind?'aria-current="page"':''} href="${esc(categoryLocation(kind))}">${esc(label)} (${(counts[kind]||0).toLocaleString()})</a>`).join('');
   box.innerHTML='<div class="marked-category-content" aria-live="polite"></div>';
   const content=box.querySelector('.marked-category-content');
   async function fill(page){

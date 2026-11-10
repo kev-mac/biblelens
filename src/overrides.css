@@ -2464,8 +2464,30 @@ html body.lens-app .ux-compare-layout button{min-height:44px;padding:8px 14px;co
 html body.lens-app .ux-compare-layout button[aria-pressed=true]{background:var(--lens-copper-soft);border-color:var(--lens-link)}
 html body.lens-app #lensComparison[data-layout=stacked] .lens-comparison-grid{grid-template-columns:minmax(0,1fr)}
 html body.lens-app #lensComparison[data-layout=side] .lens-comparison-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-html body.lens-app #lens-search-overlay .lens-search-form{display:flex;gap:8px;align-items:center;margin-top:0}
-html body.lens-app #lens-search-overlay{padding-top:20px}
+html body.lens-app #lens-search-overlay .lens-search-form{display:flex;flex-wrap:nowrap;gap:8px;align-items:center;margin-top:0;max-width:none}
+html body.lens-app #lens-search-overlay .lens-search-form input[type=search]{flex:1 1 0;min-width:0;width:0}
+html body.lens-app #lens-search-overlay .lens-search-form input[type=search]:placeholder-shown{padding-right:12px}
+html body.lens-app #lens-search-overlay .lens-search-form>.ux-search-field{flex:1 1 0;min-width:0;width:auto}
+html body.lens-app #lens-search-overlay .lens-search-form>[data-search-cancel]{flex:none;width:auto;padding-inline:10px}
+html body.lens-app #lens-search-overlay{width:min(1120px,calc(100% - 24px));padding-top:20px}
+html body.lens-app #lens-search-overlay .lens-search-suggestions[hidden]{display:none}
+html body.lens-app #lens-search-overlay #lens-search-status{margin:10px 0;min-height:0}
+html body.lens-app #lens-search-overlay .lens-search-results{display:block;margin-top:8px}
+html body.lens-app #lens-search-overlay .lens-search-tabs{display:flex;gap:8px;border-bottom:1px solid var(--lens-rule);margin-top:12px}
+html body.lens-app #lens-search-overlay .lens-search-tabs[hidden],html body.lens-app #lens-search-overlay .lens-search-panel[hidden]{display:none}
+html body.lens-app #lens-search-overlay .lens-search-tabs button{display:flex;flex:1;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:8px 6px;white-space:nowrap;border:0;border-bottom:3px solid transparent;background:none;color:var(--lens-muted);font:600 .875rem/1.5 var(--ui-font)}
+html body.lens-app #lens-search-overlay .lens-search-tabs button[aria-selected=true]{border-bottom-color:var(--lens-link);color:var(--lens-ink)}
+html body.lens-app #lens-search-overlay .lens-search-tabs span{flex:none;padding:1px 5px;border-radius:12px;background:var(--lens-control-bg);font-size:inherit;font-variant-numeric:tabular-nums}
+html body.lens-app #lens-search-overlay .lens-search-panel .lens-result-group{display:block;padding-top:12px;border:0}
+html body.lens-app #lens-search-overlay .lens-search-panel .lens-result-group>h2{display:none}
+html body.lens-app #lens-search-overlay .lens-search-related{display:grid;grid-template-columns:minmax(0,1fr);gap:0 32px;margin-top:16px}
+html body.lens-app #lens-search-overlay .lens-search-limits{margin-top:16px;color:var(--lens-muted);font-size:.8125rem}
+html body.lens-app #lens-search-overlay .lens-search-limits summary{min-height:44px;padding:10px 0;cursor:pointer}
+html body.lens-app #lens-search-overlay .lens-search-limits p{margin:4px 0 10px}
+@media(min-width:900px){
+ html body.lens-app #lens-search-overlay .lens-search-panel .lens-result-list{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+ html body.lens-app #lens-search-overlay .lens-search-related{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 html body.lens-app #lens-search-overlay > :is(.ux-popup-close,.ux-dialog-path){display:none}
 html body.lens-app .ux-letter-heading{position:sticky;top:var(--ux-letter-sticky-top,210px);z-index:4;background:var(--lens-paper);padding:8px 0;margin:0;scroll-margin-top:calc(var(--ux-letter-sticky-top,210px) + 8px)}
 html body.lens-app .ux-letter-bubble[hidden]{display:none}
@@ -2839,6 +2861,11 @@ html body.lens-app #main #debates-view.directory-hub .phase2-verdict{font:400 .7
 html body.lens-app #main #debates-view.directory-hub .action-link{display:inline-flex;align-items:center}
 html body.lens-app #main #debates-view.directory-hub .ux-interior-chips:empty{display:none}
 html body.lens-app #main #debates-view.directory-hub .phase2-modes{display:flex;background:none;padding:2px 0 4px;margin:0;border-radius:0}
+/* Evidence section navigation precedes search; category choices follow it. */
+html body.lens-app #main :is(#debates-view,#evidence-view).directory-hub .evidence-section-tabs{display:flex;flex-wrap:wrap;gap:6px 8px;overflow:visible;margin:0 0 16px;padding:0 0 12px;border-bottom:1px solid var(--lens-rule);mask-image:none;-webkit-mask-image:none}
+html body.lens-app #main :is(#debates-view,#evidence-view).directory-hub .evidence-section-tabs :is(button,a){flex:0 1 auto;max-width:100%;min-height:44px;white-space:normal;overflow-wrap:anywhere}
+html body.lens-app #main #debates-view.directory-hub .directory-categories:not(.evidence-section-tabs),html body.lens-app #main #debates-view.directory-hub .evidence-category-filters{display:flex;flex-wrap:wrap;gap:8px;overflow:visible;margin:0 0 16px;padding:0;mask-image:none;-webkit-mask-image:none}
+html body.lens-app #main #debates-view.directory-hub .evidence-category-filters button{max-width:100%;white-space:normal}
 
 html body.lens-app dialog.stories-filter-sheet>a{display:flex;align-items:center;min-height:44px;max-width:100%}
 html body.lens-app dialog.stories-filter-sheet summary{min-height:44px;padding-block:12px}
