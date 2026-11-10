@@ -845,3 +845,31 @@ device was locked (`FBSOpenApplicationErrorDomain`, error 7); installation is
 verified, but launch needs Kevin to unlock it and open BibleLens. No lock
 bypass or repeat launch was attempted. Physical-device video playback,
 audible quality, fullscreen and cold offline operation remain unverified.
+
+## Ten Exodus videos: build 410 (2026-11-10)
+
+Kevin confirmed the manual R2 upload of the next ten Story videos, from Moses
+and Aaron Before Pharaoh through The Covenant Is Sealed at Sinai. The release
+uses the existing approved public media origin. Each public object was downloaded
+on the Mac and matched the reviewed package's exact byte length and SHA-256;
+all ten files also fully decoded without FFmpeg errors. The existing 29 ready
+records are unchanged, bringing the total to 39. No duplicate upload occurred.
+
+The ten films total 43,920,748 bytes and last 7.25–12.75 seconds. Their actual-frame
+1280×720 WebP posters total 717,280 bytes, with every poster below 100 KB. Source
+metadata, poster timestamps, hashes, scene descriptions and review limits are in
+`docs/story-video-batch-410.json`. No MP4 bytes enter the repository, Worker or
+native bundle. Existing Reader images, previews, summaries and offline fallback
+art are unchanged.
+
+These are selective wordless montages, not complete retellings. Descriptions
+state the visible scenes and do not claim to show omitted events. The production
+review used sampled source frames and final contact sheets, not every motion
+frame. Audio fully decodes but was not listening-reviewed. These limits are not
+claims of physical-device playback quality.
+
+The targeted `npm run check:videos:exodus` runner checks the ten additions in
+Chromium and WebKit at phone and iPad viewport sizes. It uses actual public media,
+the enforced application CSP and the production app, with duration-aware seeks
+rather than assuming all films last more than ten seconds. The older MP4 runner
+also supports the shorter, story-driven duration policy.

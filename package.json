@@ -1,7 +1,7 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 409,
+  "buildNumber": 410,
   "private": true,
   "type": "module",
   "scripts": {
@@ -54,7 +54,8 @@
     "check:story-cards:browser": "node scripts/check-story-cards-browser.mjs",
     "check:story-cards:mobile": "node scripts/check-story-cards-browser.mjs --mobile",
     "check:collection-layout:browser": "node scripts/check-collection-layout-browser.mjs",
-    "check:collection-layout:mobile": "node scripts/check-collection-layout-browser.mjs --mobile"
+    "check:collection-layout:mobile": "node scripts/check-collection-layout-browser.mjs --mobile",
+    "check:videos:exodus": "node scripts/check-exodus-videos-browser.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",
