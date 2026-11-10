@@ -5,6 +5,9 @@ import {accepted,releaseContent} from './rc1-content.mjs';
 import {debateVerdict} from '../worker/debates.mjs';
 import {assess} from './check-readability.mjs';
 import worker from './built-worker.mjs';
+// Run 7 predates the later bounded reviews. Verify those additions independently
+// before comparing the original evidence bodies with their historical pins.
+import './check-contradiction-reviews.mjs';
 const read=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 const decisions=read('data/rc1-rulings.json');
 const proposals=read('research/run7/label-proposals.json').records;
@@ -22,10 +25,36 @@ assert.equal(defaults.length,66);
 for(const row of group){const cells=defaults.find(cells=>cells[1]===row.group);assert(cells[2].startsWith('['+row.id+']'));assert.equal(cells[4].startsWith('HOLD'),!row.proposed_label,row.id);}
 const originals=read('data/evidence.json'), production=JSON.parse(releaseContent('data/evidence.json'));
 const native=(await import('../www/device-engine.js')).default;
+const verifiedReviews=new Map(originals.filter(record=>record.contradictionReview).map(record=>[record.id,structuredClone(record.contradictionReview)]));
+function assertHistoricalEvidence(record,expectedHash){
+ let source=record;
+ if(verifiedReviews.has(record.id)){
+  assert.deepEqual(record.contradictionReview,verifiedReviews.get(record.id),record.id+' reviewed extension changed');
+  const {contradictionReview,...historical}=record;source=historical;
+ }
+ // Unrecognized fields, including null/false review additions, remain hashed.
+ assert.equal(createHash('sha256').update(JSON.stringify(source)).digest('hex'),expectedHash,record.id+' historical evidence changed');
+}
+const plainFixture=originals.find(record=>!Object.hasOwn(record,'contradictionReview'));
+const reviewFixture=originals.find(record=>verifiedReviews.has(record.id));
+for(const [record,mutate] of [
+ [plainFixture,copy=>{copy.title='Changed original title';}],
+ [plainFixture,copy=>{delete copy.id;}],
+ [plainFixture,copy=>{copy.unreviewedExtension=true;}],
+ ...[null,false,'',0,{assessment:'Unrecognized review'}].map(value=>[plainFixture,copy=>{copy.contradictionReview=value;}]),
+ [reviewFixture,copy=>{delete copy.contradictionReview;}],
+ [reviewFixture,copy=>{copy.contradictionReview=null;}],
+ [reviewFixture,copy=>{copy.contradictionReview.assessment+=' Changed review.';}],
+ [reviewFixture,copy=>{copy.unreviewedExtension=true;}],
+]){
+ const copy=structuredClone(record);mutate(copy);
+ assert.throws(()=>assertHistoricalEvidence(copy,proposals.find(row=>row.id===record.id).evidence_sha256),'Historical evidence guard must reject unapproved changes');
+}
+
 const legacy=record=>record.mode==='commandments'?'Instruction in context':(['science','history'].includes(record.mode)?{Agrees:'Evidence matches the text',Disagrees:'Conflicts with evidence',Context:'Not settled'}:{'Textual conflict':'Wording differs',Context:'Interpretation remains open'})[record.status]||record.status;
 for(const row of proposals){
  const original=originals.find(record=>record.id===row.id);
- assert.equal(createHash('sha256').update(JSON.stringify(original)).digest('hex'),row.evidence_sha256);
+ assertHistoricalEvidence(original,row.evidence_sha256);
  const approved=decisions.rulings.find(record=>record.id===row.id);
  assert.equal(debateVerdict(original),approved?.label||legacy(original),row.id);
  if(!accepted.evidence.some(record=>record.id===row.id))assert.deepEqual(production.find(record=>record.id===row.id),original);
@@ -44,4 +73,4 @@ for(const row of held){assert(!decisions.rulings.some(accepted=>accepted.id===ro
 for(const id of ['history-jericho-destruction-date','history-darius-mede-succession','history-theudas-revolt-order'])assert.equal(debateVerdict(originals.find(row=>row.id===id)),'Not settled');
 for(const file of ['src/debates.js','src/accepted-questions.js'])assert(fs.readFileSync(file,'utf8').includes('Evidence strength: Not assigned'));
 assert.equal(read('www/release.json').draftOnly,undefined);
-console.log('PASS: 47 exact Group A defaults in web/native detail and lists; 19 holds and 1867 remaining rulings excluded; originals/source hashes preserved; approved short labels and Not assigned strength.');
+console.log('PASS: 47 exact Group A defaults in web/native detail and lists; 19 holds and 1867 remaining rulings excluded; historical evidence bodies and separately pinned review extensions preserved; negative mutation fixtures rejected; approved short labels and Not assigned strength.');

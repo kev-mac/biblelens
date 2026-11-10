@@ -35,7 +35,7 @@ The Read story button is inside the native story disclosure. It is hidden and ex
 - Passed `npm run build:mobile`, which builds the shared web and offline mobile bundles.
 - Passed `npm run check`, `npm run check:mobile`, `npm run check:release` and the supplemental content checks.
 - Confirmed that all 283 authored summaries match the packaged web catalog exactly, the complete web/mobile catalogs match, and both release fingerprints match the current source.
-- Passed the first suite in `npm run check:rc1`. Its subsequent RC1b suite fails on an unrelated historical evidence hash. `data/evidence.json` is byte-identical to the baseline, which already has 24 mismatches against `research/run7/label-proposals.json`, beginning with `early-ark-count`. Neither file was changed or its expected hashes weakened.
+- The initial RC1b run exposed a historical invariant that predated 24 bounded review additions. The follow-up repair preserves the original evidence hashes and independently verifies those additions. See `rc1b-evidence-hash-review.md` for the cause, safeguards and final verification. Evidence content and expected historical hashes remain unchanged.
 - Passed 20 responsive browser configurations: Chromium and WebKit at five widths, on both web and offline mobile bundles. Reviewed final collapsed and expanded screenshots.
 
 Browser checks cover Chromium and WebKit at 320, 390, 550, 820 and 1440 pixels, for both the web Worker and offline mobile bundle. Scenarios include repeated Enter/Space toggles, hidden-action focus exclusion, passage navigation, direct routes, topic pivots, supplemental nested passages, and an unclipped 500-word layout fixture. All browser traffic is limited to the local test server.
