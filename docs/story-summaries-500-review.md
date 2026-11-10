@@ -8,7 +8,7 @@ Date: 2026-11-10. Baseline: `d29af2d4adf6a30b470eeb5994fd020012a4091f`, app 1.1.
 - Read the cited passage ranges from the packaged Scripture text. Supplemental stories use every reference in their `passages` array. Retained each account's own sequence and ending rather than combining parallel accounts.
 - Stored titles, primary passages, cross-references, topics, collection metadata, review metadata and record order remain unchanged. Scripture text, illustrations, video mappings and all 283 independent preview summaries remain unchanged.
 - Preview-file SHA-256: `bf93a5a7967d1290002483b18f205b3db262a81e09b22a2ebae1e9fbf3168507`.
-- No changes to the pending collection-layout batch's `src/overrides.css`, `src/workspace-shell.js` or package commands.
+- The standalone story commits did not change `src/overrides.css`, `src/workspace-shell.js` or package commands. The later, independently recreated collection layout is documented in `collection-reader-layout-409.md`.
 
 ## Editorial checks
 

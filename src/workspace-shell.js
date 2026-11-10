@@ -86,10 +86,11 @@
   if(/^#stories\//.test(location.hash))title=host.querySelector('.story-card h2')?.textContent.trim()||title;
   const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash);
   contextNav.hidden=top;
+  contextNav.classList.toggle('collection-header',['timeline','prophecies'].includes(view));
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
    const headerTitle=view==='debate'?(host.dataset.evidenceHeading||({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Questions'}[document.body.dataset.topic]||'Research Record')):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
-   const html='<button type="button" data-ux-back aria-label="Back">‹</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
+   const html='<button type="button" data-ux-back aria-label="Back">‹ Back</button><h1 tabindex="-1" aria-current="page">'+esc(headerTitle)+'</h1>';
    const headingHadFocus=document.activeElement===pageHeading||document.activeElement===contextNav.querySelector('h1');
    host.classList.add('ux-compact-interior');
    if(!contextNav.querySelector('h1')||contextNav.querySelector('h1').textContent!==headerTitle)contextNav.innerHTML=html;
@@ -138,8 +139,29 @@
 // Search fields retain their existing handlers; clearing fires the same input event.
 (() => {
  const strips=new WeakSet();
- const overflow=strip=>{strip.classList.toggle('ux-overflow-right',strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);strip.classList.toggle('ux-overflow-left',strip.scrollLeft>2);};
- function enhance(){for(const strip of document.querySelectorAll('.stories-filters,.ux-interior-chips,.directory-categories,.ux-context-tabs,.phase2-modes,.phase2-chips,.lens-notebook-tools>div,.tabs,.reader-category-filters,.reader-filter-chips,.commandments-quick,.prophecy-quick,.chips,.filters,.comparison-tabs,#comparison-status,.ux-quick-links,.phase2-rail')){if(!strips.has(strip)){strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});new ResizeObserver(()=>overflow(strip)).observe(strip);}overflow(strip);}
+ const overflow=strip=>{
+  const scrollable=strip.clientWidth>0&&strip.scrollWidth-strip.clientWidth>2;
+  strip.classList.toggle('ux-overflow-right',scrollable&&strip.scrollWidth-strip.clientWidth-strip.scrollLeft>2);
+  strip.classList.toggle('ux-overflow-left',scrollable&&strip.scrollLeft>2);
+ };
+ const resizeObserver=new ResizeObserver(entries=>{for(const {target} of entries)overflow(target);});
+ function enhance(){for(const strip of document.querySelectorAll('.filter-carousel,.evidence-collection-links,.stories-filters,.ux-interior-chips,.directory-categories,.ux-context-tabs,.phase2-modes,.phase2-chips,.lens-notebook-tools>div,.tabs,.reader-category-filters,.reader-filter-chips,.commandments-quick,.prophecy-quick,.chips,.filters,.comparison-tabs,#comparison-status,.ux-quick-links,.phase2-rail')){
+  if(strip.matches('.filter-carousel,.evidence-collection-links'))strip.classList.add('ux-filter-strip');
+  if(!strips.has(strip)){
+   strips.add(strip);strip.addEventListener('scroll',()=>overflow(strip),{passive:true});resizeObserver.observe(strip);
+   // Native Tab order still owns focus. Keep a focused filter clear of either
+   // fade, without moving focus or intercepting arrow keys, clicks or swipes.
+   strip.addEventListener('focusin',event=>{
+    if(!strip.classList.contains('ux-filter-strip')||strip.scrollWidth<=strip.clientWidth+2)return;
+    const target=event.target.closest('button,a');if(!target||!strip.contains(target))return;
+    const box=strip.getBoundingClientRect(),item=target.getBoundingClientRect();
+    if(item.left<box.left+24)strip.scrollLeft+=item.left-box.left-24;
+    else if(item.right>box.right-24)strip.scrollLeft+=item.right-box.right+24;
+    overflow(strip);
+   });
+  }
+  overflow(strip);
+ }
  for(const input of document.querySelectorAll('input[type="search"]')){
   let wrap=input.parentElement;
   if(!wrap.classList.contains('ux-search-field')){
@@ -150,7 +172,7 @@
   }
   wrap.querySelector('.ux-search-clear').hidden=!input.value;
  }}
- new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});window.addEventListener('hashchange',enhance);enhance();
+ new MutationObserver(enhance).observe(document.body,{childList:true,subtree:true});window.addEventListener('hashchange',enhance);document.fonts.ready.then(enhance);enhance();
 })();
 
 // The directory canvas uses the Events components; collection modules keep
@@ -159,6 +181,7 @@
  const icon='<svg class="header-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg>';
  const searchIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4-4"/></svg>';
  const filterIcon='<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 14h16M4 21h16"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="14" r="2"/></svg></span>';
+ const selectedFilters=new WeakMap();
  function prepareSearchBox(box){
   box.classList.add('stories-search-box');box.insertAdjacentHTML('afterbegin',searchIcon);const input=box.querySelector('input');input.classList.add('directory-search');
   const clear=document.createElement('button');clear.type='button';clear.className='directory-search-clear';clear.setAttribute('aria-label','Clear Search');clear.textContent='×';clear.hidden=!input.value;
@@ -229,9 +252,19 @@
   const evidenceTabs=document.getElementById('evidence-directory-chips'),evidenceSearch=document.getElementById('directory-evidence-search')?.closest('.stories-search-box');
   if(evidenceTabs&&evidenceSearch&&evidenceTabs.nextElementSibling!==evidenceSearch)evidenceSearch.before(evidenceTabs);
   for(const host of document.querySelectorAll('.directory-hub')){
+   const header=host.querySelector('.stories-header'),back=header?.querySelector('.back-action');
+   header?.classList.add('collection-header');
+   if(back&&back.textContent!=='‹ Back')back.textContent='‹ Back';
    for(const box of host.querySelectorAll('.stories-search-box')){const input=box.querySelector('input'),clear=box.querySelector('.directory-search-clear');if(input&&clear)clear.hidden=!input.value;}
    for(const chip of host.querySelectorAll('.filter-carousel button')){chip.classList.add('filter-pill');chip.classList.toggle('active',chip.getAttribute('aria-pressed')==='true');}
-   for(const row of host.querySelectorAll('.filter-carousel')){const selected=row.querySelector('.active,[aria-pressed=true]');if(selected){const r=selected.getBoundingClientRect(),box=row.getBoundingClientRect();if(r.left<box.left||r.right>box.right-16)row.scrollLeft+=r.left-box.left-Math.max(0,(box.width-r.width)/2);}}
+   for(const row of host.querySelectorAll('.filter-carousel')){
+    if(!row.clientWidth){selectedFilters.delete(row);continue;}
+    const selected=row.querySelector('.active,[aria-pressed=true]');
+    const previous=selectedFilters.get(row);
+    if(selected===previous?.selected&&row.clientWidth===previous?.width)continue;
+    selectedFilters.set(row,{selected,width:row.clientWidth});
+    if(selected&&row.clientWidth>0&&row.scrollWidth>row.clientWidth+2){const r=selected.getBoundingClientRect(),box=row.getBoundingClientRect();if(r.left<box.left||r.right>box.right-16)row.scrollLeft+=r.left-box.left-Math.max(0,(box.width-r.width)/2);}
+   }
    for(const result of host.querySelectorAll('.characters-count,#places-count,#commandments-count')){result.classList.add('directory-results');if(/^\d/.test(result.textContent))result.textContent='Showing '+result.textContent;}
    for(const card of host.querySelectorAll('.ux-contact,.place-profile-card,.commandment-card,.marked-comparison-card,.phase2-debate-card')){
     if(card.classList.contains('story-card'))continue;card.classList.add('story-card');
@@ -250,5 +283,5 @@
  }
  let scheduled=false;const schedule=()=>{if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;observer.disconnect();enhance();observer.observe(document.getElementById('main'),{subtree:true,childList:true});});};
  const observer=new MutationObserver(schedule);observer.observe(document.getElementById('main'),{subtree:true,childList:true});
- window.addEventListener('hashchange',schedule);schedule();
+ window.addEventListener('hashchange',schedule);window.addEventListener('resize',schedule);schedule();
 })();

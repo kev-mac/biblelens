@@ -3666,3 +3666,57 @@ html body.lens-app:is(.dark,:not(.dark)):has(#explore-view:not([hidden])) #lensM
 @media(prefers-reduced-transparency:reduce){html body.lens-app:is(.dark,:not(.dark)):has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary {background:#020617;backdrop-filter:none;-webkit-backdrop-filter:none;}}
 
 html body.lens-app .story-actions :is(.person-chip,.location-chip):focus-visible {outline:2px solid var(--lens-focus);outline-offset:2px;}
+
+/* Collection filters: a fade only where more controls are off screen. */
+html body.lens-app .ux-filter-strip {--ux-filter-mask:none;}
+html body.lens-app .ux-filter-strip.ux-overflow-right {--ux-filter-mask:linear-gradient(to right,#000 calc(100% - 24px),transparent);}
+html body.lens-app .ux-filter-strip.ux-overflow-left {--ux-filter-mask:linear-gradient(to right,transparent,#000 24px);}
+html body.lens-app .ux-filter-strip.ux-overflow-left.ux-overflow-right {--ux-filter-mask:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent);}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel,
+html body.lens-app #main #timeline-view .evidence-collection-links {
+ display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;scroll-padding-inline:24px;
+ padding:4px 0 6px;mask-image:var(--ux-filter-mask,none);-webkit-mask-image:var(--ux-filter-mask,none);
+}
+html body.lens-app #main :is(#debates-view,#evidence-view).directory-hub .evidence-section-tabs :is(button,a) {flex:0 0 auto;white-space:nowrap;}
+html body.lens-app #main .ux-filter-strip :is(button,a):focus-visible {outline:2px solid var(--lens-focus);outline-offset:-2px;}
+@media(min-width:768px){
+ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel,
+ html body.lens-app #main #timeline-view .evidence-collection-links {
+  flex-wrap:wrap;overflow:visible;--ux-filter-mask:none;
+ }
+ html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .filter-carousel :is(button,a) {max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;}
+}
+
+/* One collection header rhythm, with room for complete titles and 44px actions. */
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header {
+ display:grid;grid-template-columns:56px minmax(0,1fr) 44px;gap:8px;
+ height:auto;min-height:60px;padding:4px 12px;border-bottom:1px solid var(--ux13-rule);
+}
+html body.lens-app #main .directory-hub .stories-header:has(.directory-settings-open) {grid-template-columns:56px minmax(0,1fr) 44px 44px;}
+html body.lens-app #main .directory-hub .stories-header .directory-settings-open {position:static;order:2;}
+html body.lens-app #main .directory-hub .stories-header .directory-filter-open {order:3;}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .header-center-title {
+ position:static;transform:none;min-width:0;max-width:none;justify-content:center;gap:8px;
+}
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .header-center-title .directory-heading {
+ white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;text-align:center;
+ font:700 1.05rem/1.3 var(--ui-font);letter-spacing:-.01em;
+}
+html body.lens-app #main .lens-context [data-ux-back],
+html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .back-action {
+ display:inline-flex;align-items:center;justify-content:flex-start;flex:0 0 auto;min-width:44px;width:auto;min-height:44px;
+ padding:0;margin:0;font:500 .8rem/1.3 var(--ui-font);white-space:nowrap;color:var(--ux13-muted);
+}
+html body.lens-app #main .lens-context.collection-header:not([hidden]) {
+ display:grid;grid-template-columns:56px minmax(0,1fr) 44px;gap:8px;min-height:60px;
+ padding:4px 12px;margin:0 0 16px;background:var(--ux13-header);border-bottom:1px solid var(--ux13-rule);
+}
+html body.lens-app #main .lens-context.collection-header h1 {font:700 1.05rem/1.3 var(--ui-font);color:var(--ux13-ink);text-align:center;overflow-wrap:anywhere;}
+
+/* Keep both labels: a chapter heading above, a quieter story caption below. */
+html body.lens-app #chapter-text h2.chapter-subtitle {font:600 1.15rem/1.4 var(--ui-font);color:var(--lens-ink);}
+html body.lens-app #chapter-text .story-illustration figcaption {font:italic 400 .8rem/1.5 var(--ui-font);color:var(--lens-muted);}
+@media(min-width:768px){
+ html body.lens-app #reader-layout {max-width:700px;}
+ html body.lens-app #chapter-text > .chapter-heading-row + .story-illustration > img {height:240px;aspect-ratio:auto;object-fit:cover;}
+}
