@@ -78,6 +78,7 @@ export function collections(directory = root) {
     { name: 'Contradiction reviews', tier: 'detail', lines: json('data/evidence.json').filter(row=>row.contradictionReview).flatMap(({contradictionReview:r})=>[r.conflict,r.context,r.assessment,r.verification,...r.explanations.flatMap(e=>[e.reading,e.support])]) },
     { name: 'UX13 place summaries', lines: Object.values(json('data/reference/place-summaries.json')).map(s=>s.summary.replace(/ \([^)]*\)$/,'')) },
     { name: 'UX13 Events', lines: json('data/ux13-events.json').map(e=>e.title+'. '+e.summary) },
+    { name: 'Story card excerpts', lines: Object.values(json('data/story-excerpts.json')) },
     { name: 'Events', lines: lines(json('data/stories.json').flatMap(book => book.stories), ['title','summary']) },
     { name: 'People', lines: lines(json('src/data/characters.json'), ['name','summary']) },
     { name: 'Timeline', lines: lines(json('data/timeline-events.json').events || json('data/timeline-events.json'), ['title','display_title','summary']) },

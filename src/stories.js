@@ -1,5 +1,6 @@
 'use strict';
 // Book-wide narratives are separate from verse-aligned evidence classifications.
+const STORY_EXCERPTS=/*__STORY_EXCERPTS__*/{};
 const STORY_IMAGES=/*__STORY_IMAGES__*/{};
 const STORY_IMAGE_TITLES=Object.fromEntries(Object.keys(STORY_IMAGES).map(title=>[title.replace(/\bCommandments\b/g,'Laws'),title]));
 function storyIllustration(title,placement='summary'){
@@ -24,24 +25,15 @@ function storyReference(reference){
 }
 function storySlug(value){return value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function storyRoute(){return /^#stories\/([a-z0-9-]+)\/([a-z0-9-]+)$/.exec(location.hash);}
-// Excerpts are visibly unfinished when shortened; the complete wording remains below.
-function storyPreview(text){
- const words=String(text||'').replace(/<br\s*\/?>(?:\s*<br\s*\/?>)?/gi,' ').trim().split(/(?<=[.!?])\s+/)[0].split(/\s+/);
- return words.length<=15?words.join(' '):words.slice(0,15).join(' ').replace(/[.,;:]$/,'')+'…';
-}
+// Card copy is authored independently from the expanded narrative.
+function storyPreview(story){return STORY_EXCERPTS[story.title]||story.excerpt||'';}
 function storyCard(story, pivot=false){
  const reference=storyReference(story.passage);
  const passage=reference?`<button type="button" class="story-passage" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.passage)} starting at verse ${reference.verse}">${esc(story.passage)}</button>`:`<span>${esc(story.passage)}</span>`;
  const id=(pivot?'topic-story-':'story-')+storySlug(story.title);
- const counts=story.linkedCounts||{};
- const parts=[[counts.crossReferences,'cross-reference'],[counts.science,'science note'],[counts.history,'history note'],[counts.text,'text note']].filter(([n])=>n>0);
- const label=([n,text])=>`${n} ${text}${n===1?'':'s'}`,fullMeta=parts.map(label).join(' • ');
- const ranked=[...parts].sort((a,b)=>b[0]-a[0]);
- const candidates=[ranked.slice(0,2).map(label).join(' · ')+(ranked.length>2?` · +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:''),ranked.slice(0,1).map(label).join('')+(ranked.length>1?` · +${ranked.slice(1).reduce((n,[count])=>n+count,0)} more`:'')];
- const meta=parts.length>2?ranked.slice(0,2).map(label).join(' • ')+` • +${ranked.slice(2).reduce((n,[count])=>n+count,0)} more`:fullMeta;
  const context=reference?` data-story-book="${reference.book}" data-story-chapter="${reference.chapter}" data-story-verse="${reference.verse}" data-story-end-chapter="${reference.endChapter}" data-story-end-verse="${reference.endVerse}"`:'';
  const media=(!pivot&&window.BibleLensStoryVideo?.render(story.title,STORY_IMAGES[story.title]))||storyIllustration(story.title);
- return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}>${storyIllustration(story.title,'preview')}<p class="browse-excerpt">${esc(storyPreview(story.summary))}</p><details class="story-full-details"${!pivot&&typeof location!=='undefined'&&storyRoute()?' open':''}><summary>Open story <span aria-hidden="true">＋</span></summary><div class="story-summary">${media}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}</details><div class="story-footer">${meta?`<span class="story-linked-meta" data-meta-options="${esc(JSON.stringify(candidates))}" title="${esc(fullMeta)}" aria-label="${esc(fullMeta)}">${esc(meta)}</span>`:''}<button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
+ return `<article class="story-card" id="${id}" tabindex="-1"${context}><div class="story-top-row"><span class="passage-badge">${esc(passagePillText(story.passages?.length?story.passages:[story.passage]))}</span>${story.readMinutes?`<span class="read-badge">${story.readMinutes} min read</span>`:''}</div><h${pivot?3:2} class="story-title">${esc(story.title.replace(/\bCommandments\b/g,'Laws'))}</h${pivot?3:2}>${storyIllustration(story.title,'preview')}<p class="browse-excerpt">${esc(storyPreview(story))}</p><details class="story-full-details"${!pivot&&typeof location!=='undefined'&&storyRoute()?' open':''}><summary aria-label="Story details: ${esc(story.title)}"><svg class="story-expand-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg><svg class="story-collapse-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg></summary><div class="story-summary">${media}${String(story.summary).split(/\n\s*\n|<br\s*\/?>(?:\s*<br\s*\/?>)?/gi).map(p=>`<p>${esc(p)}</p>`).join('')}</div>${story.passages?.length>1?`<details class="story-passages"><summary>All passages</summary>${story.passages.map(ref=>`<button type="button" data-story-passage="${esc(ref)}">${esc(passagePillText([ref]))}</button>`).join('')}</details>`:''}</details><div class="story-actions"><div class="story-entities" aria-label="People and Places in This Story"></div><button type="button" class="action-link" data-story-passage="${esc(story.passage)}" aria-label="Read ${esc(story.title)}">Read story</button></div></article>`;
 }
 async function renderStoriesView(){
  const section=$('#stories-view');if(!section)return;
@@ -65,7 +57,7 @@ async function renderStoriesView(){
   $('#stories-search-clear').hidden=!storiesSearch;
   $('#stories-chips').innerHTML=[['',`All Stories`,total],['Covenants','Covenants',catalog.flatMap(g=>g.stories).filter(s=>s.collection==='Covenants').length],...STORIES_SECTIONS.map(section=>[section,section,catalog.filter(g=>g.section===section).reduce((n,g)=>n+g.stories.length,0)])].filter(([, ,count])=>count).map(([section,label,count])=>`<button type="button" class="filter-pill${storiesSection===section?' active':''}" data-stories-section="${esc(section)}" aria-pressed="${storiesSection===section}">${esc(label)} (${count})</button>`).join('');
   const filtered=!!(query||storiesBook||storiesTheme||storiesSection||route);
-  let stories=catalog.filter(entry=>(!storiesBook||entry.book===storiesBook)&&(!storiesSection||storiesSection==='Covenants'||entry.section===storiesSection)).flatMap(entry=>entry.stories).filter(story=>(storiesSection!=='Covenants'||story.collection==='Covenants')&&(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&terms.every(term=>[story.title,story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(term)));
+  let stories=catalog.filter(entry=>(!storiesBook||entry.book===storiesBook)&&(!storiesSection||storiesSection==='Covenants'||entry.section===storiesSection)).flatMap(entry=>entry.stories).filter(story=>(storiesSection!=='Covenants'||story.collection==='Covenants')&&(!storiesTheme||(story.topics||[]).includes(storiesTheme))&&terms.every(term=>[story.title,storyPreview(story),story.summary,story.passage,...(story.topics||[])].join(' ').toLowerCase().includes(term)));
   if(route)stories=stories.filter(story=>storySlug(story.title)===route[2]);
   $('#stories-results').hidden=false;
   $('#stories-reset').hidden=!filtered;
@@ -148,29 +140,5 @@ $('#story-topic-sheet').addEventListener('close',()=>document.body.classList.rem
 $('#story-topic-sheet').addEventListener('cancel',()=>document.body.classList.remove('story-topic-open'));
 window.addEventListener('hashchange',()=>{closeStoryTopic();if($('#stories-filter-sheet').open)$('#stories-filter-sheet').close();});
 window.addEventListener('viewchange',closeStoryTopic);
-
-// Fit real metadata against the action’s measured width, including after resizing.
-function fitStoryFooters(){
- // Read every footer before changing text, avoiding one layout per candidate.
- const rows=[...document.querySelectorAll('.story-footer:has(.story-linked-meta)')].flatMap(footer=>{
-  const meta=footer.querySelector('.story-linked-meta'),action=footer.querySelector('.action-link');
-  if(!action||!footer.clientWidth)return [];
-  const style=getComputedStyle(meta);
-  return [{meta,options:JSON.parse(meta.dataset.metaOptions),font:style.font,spacing:parseFloat(style.letterSpacing)||0,available:footer.clientWidth-action.getBoundingClientRect().width-8}];
- });
- const ctx=document.createElement('canvas').getContext('2d');
- for(const row of rows){
-  ctx.font=row.font;
-  const chosen=row.options.find(text=>ctx.measureText(text).width+Math.max(0,text.length-1)*row.spacing<=row.available+.5)||row.options.at(-1);
-  if(row.meta.textContent!==chosen)row.meta.textContent=chosen;
- }
-}
-
-if(typeof ResizeObserver!=='undefined'&&typeof MutationObserver!=='undefined'){
-const storyFooterObserver=new ResizeObserver(fitStoryFooters);
-new MutationObserver(()=>{storyFooterObserver.disconnect();for(const footer of document.querySelectorAll('.story-footer:has(.story-linked-meta)'))storyFooterObserver.observe(footer);fitStoryFooters();}).observe(document.getElementById('stories-list'),{childList:true});
-document.fonts.ready.then(fitStoryFooters);
-window.addEventListener('biblelens:statechange',fitStoryFooters);
-}
 
 document.addEventListener('toggle',event=>{if(event.target.matches?.('.story-full-details')&&!event.target.open)window.BibleLensStoryVideo?.stop();},true);

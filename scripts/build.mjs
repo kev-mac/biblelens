@@ -95,6 +95,9 @@ assets['/story-video-player.html'].body=assets['/story-video-player.html'].body.
 for(const video of Object.values(videos))assets[video.poster]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src'+video.poster).toString('base64')};
 for(const art of Object.values(storyImages))assets[art.src]={type:'image/webp',encoding:'base64',body:fs.readFileSync('src'+art.src).toString('base64')};
 assets['/stories.js'].body=assets['/stories.js'].body.replace('/*__STORY_IMAGES__*/{}',JSON.stringify(storyImages));
+const storyExcerpts=JSON.parse(fs.readFileSync('data/story-excerpts.json','utf8'));
+for(const story of addUX13Events(JSON.parse(releaseContent('data/stories.json'))).flatMap(group=>group.stories)){if(story.title!=='Parallel Accounts in Genesis'&&!storyExcerpts[story.title])throw Error('Missing independent story excerpt: '+story.title);}
+assets['/stories.js'].body=assets['/stories.js'].body.replace('/*__STORY_EXCERPTS__*/{}',JSON.stringify(storyExcerpts));
 
 const uxEvidence=uxRead('data/evidence.json');
 const comparisonTopics=uxRead('data/comparison-topics.json');
