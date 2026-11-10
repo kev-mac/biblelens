@@ -43,7 +43,7 @@ try{for(const [engine,type]of Object.entries({chromium,webkit})){
  await toggle.focus();await page.keyboard.press('Enter');assert(await card.locator('.story-summary').isVisible());
  assert(await card.locator('.story-collapse-icon').isVisible());assert(!(await card.locator('.story-expand-icon').isVisible()));
  await card.locator('.story-entities [data-person-id]').first().waitFor();
- await card.locator('.story-entities [data-person-id]').first().focus();assert.equal(await card.locator('.story-entities [data-person-id]').first().evaluate(n=>getComputedStyle(n).outlineStyle),'solid');
+ await page.keyboard.press('Tab');await card.locator('.story-entities [data-person-id]').first().focus();assert.equal(await card.locator('.story-entities [data-person-id]').first().evaluate(n=>getComputedStyle(n).outlineStyle),'solid');
  assert(await card.locator('.story-actions [data-story-passage]').isVisible());
  const metrics=await card.evaluate(n=>{const s=n.querySelector('summary').getBoundingClientRect(),c=n.getBoundingClientRect(),icon=n.querySelector('.story-collapse-icon').getBoundingClientRect(),p=n.querySelector('.browse-excerpt');return {centerError:Math.abs(icon.x+icon.width/2-c.x-c.width/2),toggleHeight:s.height,excerptHeight:p.clientHeight,excerptScrollHeight:p.scrollHeight,lineHeight:parseFloat(getComputedStyle(p).lineHeight),overflow:document.documentElement.scrollWidth>innerWidth};});
  assert(metrics.excerptScrollHeight<=metrics.excerptHeight+1);assert(metrics.centerError<1);assert(metrics.toggleHeight>=44);assert(!metrics.overflow);
