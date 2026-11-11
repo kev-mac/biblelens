@@ -1,8 +1,8 @@
 {
   "build": 410,
-  "verifiedAtUtc": "2026-11-11T01:42:56.528443+00:00",
+  "verifiedAtUtc": "2026-11-11T05:40:02.985507+00:00",
   "baseCommit": "0598f40ea3e3599d1fd2d993e26d712e675691aa",
-  "uploadEvidence": "Kevin authorized the six compatibility replacements to be uploaded to the existing bucket root. The one six-file upload batch succeeded. All ten final public URLs were downloaded and verified against exact reviewed SHA-256 and byte counts, then fully decoded.",
+  "uploadEvidence": "User-approved compatibility copies were uploaded in six-file and three-file batches to the existing public bucket root. All original objects were retained. The complete final ten-object batch passed independent byte, SHA-256 and full-decoding checks.",
   "audioReview": "Technically decoded; not listening-reviewed.",
   "frameReview": "Production review used sampled source frames and final contact sheets. The corrected Water/Amalek support shot was independently compared with approved Aaron and Moses references at 6.0, 8.0 and 9.5 seconds. Samples do not certify every motion frame.",
   "records": [
@@ -38,7 +38,7 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "The Plagues of Egypt",
@@ -58,16 +58,16 @@
       "description": "A farmer shields his face as locusts sweep across fields beside an Egyptian canal. Dense darkness settles over a deserted mudbrick lane.",
       "reviewLimits": "Selective locust and darkness montage; other plagues and Pharaoh's responses are omitted. Nile job EX02A previously stalled at99%, has no retrievable result and was not duplicated. Its ten-credit submitted cost is included as a ceiling; observed account balance suggests that job was not charged or was refunded. The darkness source was cropped to remove generated letterboxing. Later oversized-looking foreground insects are excluded. Audio not listening-reviewed.",
       "status": "ready",
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "The Passover and the Death of the Firstborn",
-      "filename": "BibleLens-The-Passover-and-the-Death-of-the-Firstborn.mp4",
-      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Passover-and-the-Death-of-the-Firstborn.mp4",
-      "bytes": 2580885,
-      "sha256": "880fe49a2e559f1bc251c3b6c55a82aedc2817e1a2e2a811df2255ac509363ee",
-      "duration": 10,
-      "encoding": "1280x720 24fps H264/AAC faststart MP4",
+      "filename": "BibleLens-The-Passover-and-the-Death-of-the-Firstborn-compatibility-v1.mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Passover-and-the-Death-of-the-Firstborn-compatibility-v1.mp4",
+      "bytes": 4418606,
+      "sha256": "eb2ad77601173d682e37540a69cfb5789cbef41a598e1dc075ff6125832ad6c7",
+      "duration": 10.0,
+      "encoding": "1280x720 24fps H.264 Main 3.1, one-second keyframes, no B frames, copied AAC, faststart MP4",
       "fullPublicDecode": "passed",
       "reference": "/assets/story-the-passover-and-the-death-of-the-firstborn-v1.webp",
       "poster": "/assets/story-video-the-passover-and-the-death-of-the-firstborn-poster-v1.webp",
@@ -78,7 +78,23 @@
       "description": "A hand marks an ancient doorway beam. Inside, a household shares flatbread and food by lamplight, with the door closed and travel bundles ready.",
       "reviewLimits": "Selective Passover preparation and meal montage. Deaths, Egyptian mourning and Pharaoh's release order are omitted. Doorway cropped to hand and beam; no claim of a complete retelling. Sampled anatomy and identities reviewed; audio not listening-reviewed.",
       "status": "ready",
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "supersededPublicObject": {
+        "filename": "BibleLens-The-Passover-and-the-Death-of-the-Firstborn.mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Passover-and-the-Death-of-the-Firstborn.mp4",
+        "bytes": 2580885,
+        "sha256": "880fe49a2e559f1bc251c3b6c55a82aedc2817e1a2e2a811df2255ac509363ee"
+      },
+      "compatibilityVerification": {
+        "earlyPausedSeekTrials": 6,
+        "passed": 6,
+        "presentedFramesAndPausedPixels": "verified before Play",
+        "ssim": 0.991981,
+        "psnrDb": 48.218701,
+        "localFullDecode": "passed",
+        "frameAndAudioTiming": "preserved",
+        "publicVerification": "passed"
+      },
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "The Exodus from Egypt",
@@ -112,7 +128,7 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "Crossing the Sea",
@@ -146,16 +162,16 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "Bitter Water, Manna and Quail",
-      "filename": "BibleLens-Bitter-Water-Manna-and-Quail.mp4",
-      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Bitter-Water-Manna-and-Quail.mp4",
-      "bytes": 6095548,
-      "sha256": "622c47cde2c41a947d95c54b13570b6487b2f46be295569a150afb6780e17784",
+      "filename": "BibleLens-Bitter-Water-Manna-and-Quail-compatibility-v1.mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Bitter-Water-Manna-and-Quail-compatibility-v1.mp4",
+      "bytes": 10275671,
+      "sha256": "bb036036d5641784f3bd6f902531b53d1431c86d7696efb80576901a87674ba4",
       "duration": 12.75,
-      "encoding": "1280x720 24fps H264/AAC faststart MP4",
+      "encoding": "1280x720 24fps H.264 Main 3.1, one-second keyframes, no B frames, copied AAC, faststart MP4",
       "fullPublicDecode": "passed",
       "reference": "/assets/story-bitter-water-manna-and-quail-v2.webp",
       "poster": "/assets/story-video-bitter-water-manna-and-quail-poster-v1.webp",
@@ -166,7 +182,23 @@
       "description": "Moses casts wood into bitter water. Quail settle beside a wilderness tent at evening. At dawn, a family gathers white manna into baskets.",
       "reviewLimits": "Selective Marah, quail and manna montage. Omits Elim, Sabbath instructions and disputes over stored manna. Manna is represented as white flakes. Audio not listening-reviewed.",
       "status": "ready",
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "supersededPublicObject": {
+        "filename": "BibleLens-Bitter-Water-Manna-and-Quail.mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Bitter-Water-Manna-and-Quail.mp4",
+        "bytes": 6095548,
+        "sha256": "622c47cde2c41a947d95c54b13570b6487b2f46be295569a150afb6780e17784"
+      },
+      "compatibilityVerification": {
+        "earlyPausedSeekTrials": 6,
+        "passed": 6,
+        "presentedFramesAndPausedPixels": "verified before Play",
+        "ssim": 0.992107,
+        "psnrDb": 45.322798,
+        "localFullDecode": "passed",
+        "frameAndAudioTiming": "preserved",
+        "publicVerification": "passed"
+      },
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "Water from the Rock and the Battle with Amalek",
@@ -200,16 +232,16 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "Jethro Advises Moses",
-      "filename": "BibleLens-Jethro-Advises-Moses.mp4",
-      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jethro-Advises-Moses.mp4",
-      "bytes": 4387763,
-      "sha256": "bc0387e9757aed6b977b7dbeb139b453dc6409e34e91369da83996ed44ecbedc",
+      "filename": "BibleLens-Jethro-Advises-Moses-compatibility-v1.mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jethro-Advises-Moses-compatibility-v1.mp4",
+      "bytes": 7905998,
+      "sha256": "b22e94c4615e61ed34b8e64a03cd0826c5ffdb26a379d7912acb9b814d50902c",
       "duration": 10.75,
-      "encoding": "1280x720 24fps H264/AAC faststart MP4",
+      "encoding": "1280x720 24fps H.264 Main 3.1, one-second keyframes, no B frames, copied AAC, faststart MP4",
       "fullPublicDecode": "passed",
       "reference": "/assets/story-jethro-advises-moses-v1.webp",
       "poster": "/assets/story-video-jethro-advises-moses-poster-v1.webp",
@@ -220,7 +252,23 @@
       "description": "Beneath a woven shade, Jethro gestures toward a waiting line while Moses listens. In the camp, elders hear visitors in smaller groups.",
       "reviewLimits": "Selective counsel and delegated hearings. The second shot is reframed to emphasize hearing groups and exclude an uncertain background portrait. Jethro's arrival, sacrifices and full instructions are omitted. Audio not listening-reviewed.",
       "status": "ready",
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "supersededPublicObject": {
+        "filename": "BibleLens-Jethro-Advises-Moses.mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jethro-Advises-Moses.mp4",
+        "bytes": 4387763,
+        "sha256": "bc0387e9757aed6b977b7dbeb139b453dc6409e34e91369da83996ed44ecbedc"
+      },
+      "compatibilityVerification": {
+        "earlyPausedSeekTrials": 6,
+        "passed": 6,
+        "presentedFramesAndPausedPixels": "verified before Play",
+        "ssim": 0.991622,
+        "psnrDb": 45.029516,
+        "localFullDecode": "passed",
+        "frameAndAudioTiming": "preserved",
+        "publicVerification": "passed"
+      },
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "The Covenant and Ten Commandments at Sinai",
@@ -254,7 +302,7 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     },
     {
       "title": "The Covenant Is Sealed at Sinai",
@@ -288,8 +336,8 @@
         "frameAndAudioTiming": "preserved",
         "publicVerification": "passed"
       },
-      "publicVerifiedAtUtc": "2026-11-11T01:42:56.528443+00:00"
+      "publicVerifiedAtUtc": "2026-11-11T05:40:02.985507+00:00"
     }
   ],
-  "releaseStatus": "All ten media objects verified and accepted for build 410. Publication and native installation remain gated on the final combined release checks."
+  "releaseStatus": "Public objects are verified. The release workflow validates the immutable built app before publication."
 }
