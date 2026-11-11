@@ -3774,3 +3774,6 @@ html body.lens-app #main #debates-view .evidence-group-members a:focus-visible {
 
 /* Separate expanded narrative paragraphs without changing the preview copy. */
 html body.lens-app :is(#main #stories-view,#story-topic-body) .story-card .story-summary>p+p {margin-top:1em;}
+/* Story passage headings link directly to Read without changing their badge layout. */
+html body.lens-app .story-card .story-passage-link{cursor:pointer;text-decoration:none}
+html body.lens-app .story-card .story-passage-link:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
