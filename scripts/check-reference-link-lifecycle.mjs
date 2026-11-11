@@ -55,4 +55,12 @@ flush();
 assert(!stale.html,'The disconnected prior story must not be decorated');
 assert(replacement.html.includes('data-person-id="recVMHzYdllgvTo09"'),'A replacement rendered before flush retains its pending mutation and receives links');
 assert(observer.active);
+// Story summary and preview roots no longer generate inline or footer links.
+for(const selector of ['.story-summary','.browse-excerpt']) {
+ const plain=story('Cain and Abel');const originalClosest=plain.closest.bind(plain);
+ plain.closest=target=>target==='.story-summary,.browse-excerpt'?{className:selector.slice(1)}:originalClosest(target);
+ observer.callback([{type:'childList',addedNodes:[plain]}]);flush();
+ assert.equal(plain.html,'','Story copy stays plain without regenerated entity links');
+ assert.equal(plain.nodes[0].data,'Cain and Abel');
+}
 console.log('PASS: rendered story decoration, independent reference availability, missing-data retry, failure isolation, observer reconnection and replacement-render race protection.');

@@ -3771,3 +3771,6 @@ html body.lens-app #main #debates-view .evidence-group-members li {min-width:0;b
 html body.lens-app #main #debates-view .evidence-group-members a {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:6px 0;color:var(--lens-ink);font:600 .875rem/1.4 var(--ui-font);text-decoration:none;overflow-wrap:anywhere;}
 html body.lens-app #main #debates-view .evidence-group-members .action-link {flex-shrink:0;font-size:.75rem;}
 html body.lens-app #main #debates-view .evidence-group-members a:focus-visible {outline:2px solid var(--lens-link);outline-offset:3px;border-radius:3px;}
+
+/* Separate expanded narrative paragraphs without changing the preview copy. */
+html body.lens-app :is(#main #stories-view,#story-topic-body) .story-card .story-summary>p+p {margin-top:1em;}

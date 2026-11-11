@@ -21,7 +21,7 @@ assert(!source.includes('class="story-footer"'));
 assert(!source.includes('class="story-linked-meta"'));
 assert(!source.includes('Open story'));
 assert(source.includes('class="story-expand-icon"')&&source.includes('class="story-collapse-icon"'));
-assert(source.includes('class="story-actions"><div class="story-entities"'));
+assert(!source.includes('class="story-entities"'),'Removed people/place footer is not rendered');
 // Check the shared renderer, including topic pivots and auto-expanded direct routes.
 const renderer=vm.createContext({window:{},location:{hash:'#stories'},esc:String,readRef:()=>null,passagePillText:refs=>refs.join(', ')});
 vm.runInContext(source.slice(0,source.indexOf('async function renderStoriesView')),renderer);
@@ -35,7 +35,7 @@ for(const hash of ['#stories','#stories/genesis/cain-and-abel']){
   const action=html.indexOf('>Read story</button>');
   assert(action>disclosureStart&&action<disclosureEnd,story.title+' read action must be inside the disclosure');
   assert.equal(html.match(/>Read story<\/button>/g)?.length,1);
-  assert(html.indexOf('class="story-entities"')>disclosureEnd,story.title+' entity chips must retain their collapsed-card placement');
+  assert(!html.includes('class="story-entities"'),story.title+' has no people/place footer');
   assert.equal(html.slice(disclosureStart,html.indexOf('>',disclosureStart)).includes(' open'),!pivot&&hash!=='#stories');
  }
 }
