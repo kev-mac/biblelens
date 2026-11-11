@@ -4,6 +4,7 @@ import http from 'node:http';
 import path from 'node:path';
 import {chromium,webkit} from 'playwright';
 import {debatePage,groupEvidenceDisplay,compareEvidenceReferences} from '../worker/debates.mjs';
+import {releaseContent} from './rc1-content.mjs';
 
 // Web: BIBLELENS_PREVIEW_URL must point to the approved prepared app.
 // --mobile: serve only the actual www package and exercise its offline engine.
@@ -28,7 +29,7 @@ if(mobile){
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  base='http://127.0.0.1:'+server.address().port;
 }else if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an approved web preview, or use --mobile for the prepared www package.');
-const records=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
+const records=JSON.parse(releaseContent('data/evidence.json'));
 const groups=groupEvidenceDisplay([...records].sort(compareEvidenceReferences)).filter(group=>group.key);
 const output='.release/evidence-display-groups'+(mobile?'-mobile':sourceOverlay?'-source':'');fs.mkdirSync(output,{recursive:true});
 const results=[];

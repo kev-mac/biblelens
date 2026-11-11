@@ -1417,7 +1417,7 @@ html body.lens-app #character-sheet :is(.character-profile-biography, .character
 /* Timeline entries use the shared directory tile surface and spacing. */
 html body.lens-app #timeline-view :is(.timeline-card, .timeline-event-card) {
   border: 1px solid var(--category-border, var(--lens-rule));
-  border-radius: 16px;
+  border-radius: var(--control-radius);
   background: var(--ux13-card);
   box-shadow: 0 4px 16px -4px var(--ux13-shadow);
   backdrop-filter: none;
