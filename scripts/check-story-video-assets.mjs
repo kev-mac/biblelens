@@ -20,7 +20,7 @@ const studyStyle=/"studyStyles":"(\/assets\/study\.[a-f0-9]{16}\.css)"/.exec(fea
 assert(studyStyle,'The current feature manifest identifies the study stylesheet');
 const css=await(await get(studyStyle)).text();
 assert.equal(css,fs.readFileSync('www'+studyStyle,'utf8'),'Web and native use the same current study stylesheet');
-for(const selector of ['.story-video-stage','.story-video-play','.story-video-actions','.story-video-play svg'])assert(css.includes(selector),'The current packaged stylesheet retains '+selector);
+for(const selector of ['.story-video-stage','.story-video-play','.story-video-actions','.story-video-play svg','.story-video-corner-controls','.story-video-corner-controls button','.story-video-corner-controls svg'])assert(css.includes(selector),'The current packaged stylesheet retains '+selector);
 for(const file of ['story-video-player.html','story-video-player.css','story-video-player.js','story-video.js']){
  const served=Buffer.from(await(await get('/'+file)).arrayBuffer());assert.deepEqual(served,fs.readFileSync('www/'+file),file+' shared native/web bytes');
 }

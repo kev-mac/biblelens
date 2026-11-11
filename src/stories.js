@@ -142,4 +142,4 @@ $('#story-topic-sheet').addEventListener('cancel',()=>document.body.classList.re
 window.addEventListener('hashchange',()=>{closeStoryTopic();if($('#stories-filter-sheet').open)$('#stories-filter-sheet').close();});
 window.addEventListener('viewchange',closeStoryTopic);
 
-document.addEventListener('toggle',event=>{if(event.target.matches?.('.story-full-details')&&!event.target.open)window.BibleLensStoryVideo?.stop();},true);
+document.addEventListener('toggle',event=>{if(event.target.matches?.('.story-full-details')){if(event.target.open)window.BibleLensStoryVideo?.expand(event.target);else window.BibleLensStoryVideo?.collapse(event.target);}},true);

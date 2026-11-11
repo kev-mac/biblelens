@@ -45,3 +45,5 @@ const cainSequence=[/Abel (?:keeps|tends) sheep/,/Cain (?:attacks and )?kills Ab
 assert(cainSequence.every(index=>index>=0),'Cain narrative retains the occupations, killing and protective sign');
 assert(cainSequence[0]<cainSequence[1]&&cainSequence[1]<cainSequence[2],'Cain narrative remains in passage order');
 console.log('PASS: '+catalog.length+' independent excerpts, compact actions, disclosure icons and Cain narrative order.');
+
+assert(fs.readFileSync("src/overrides.css","utf8").includes("cursor:pointer;color:var(--directory-accent,var(--lens-link));}"),"Story chevron and X inherit the collection accent");

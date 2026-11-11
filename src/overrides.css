@@ -3570,7 +3570,7 @@ html body.lens-app #main #stories-view.directory-hub .story-illustration-preview
 html body.lens-app #main #stories-view.directory-hub .browse-excerpt {grid-column:2;grid-row:3;margin:0;font:400 .875rem/1.5 var(--ui-font);color:var(--lens-muted);}
 html body.lens-app #main #stories-view.directory-hub .story-card>:is(.story-full-details,.story-actions) {grid-column:1/-1;min-width:0;}
 html body.lens-app .story-full-details {border:0;padding:0;margin:0;}
-html body.lens-app .story-full-details>summary {display:flex;justify-content:center;align-items:center;min-height:44px;padding:0;font:600 .875rem/1.5 var(--ui-font);cursor:pointer;color:var(--lens-link);}
+html body.lens-app .story-full-details>summary {display:flex;justify-content:center;align-items:center;min-height:44px;padding:0;font:600 .875rem/1.5 var(--ui-font);cursor:pointer;color:var(--directory-accent,var(--lens-link));}
 html body.lens-app .story-full-details>summary::-webkit-details-marker {display:none;}
 html body.lens-app .story-full-details>summary::marker {content:'';}
 html body.lens-app .story-full-details>summary .story-collapse-icon {display:none;}
@@ -3777,3 +3777,7 @@ html body.lens-app :is(#main #stories-view,#story-topic-body) .story-card .story
 /* Story passage headings link directly to Read without changing their badge layout. */
 html body.lens-app .story-card .story-passage-link{cursor:pointer;text-decoration:none}
 html body.lens-app .story-card .story-passage-link:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}
+/* Persistent, compact story controls with thumb-sized hit targets. */
+html body.lens-app .story-video-corner-controls{position:absolute;right:8px;top:8px;z-index:2;display:flex;gap:4px;}
+html body.lens-app .story-video-corner-controls button{display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:11px;border:0;border-radius:50%;background:rgba(10,12,16,.72);color:#fff;cursor:pointer;}
+html body.lens-app .story-video-corner-controls svg{width:22px;height:22px;pointer-events:none;}

@@ -892,3 +892,19 @@ These are selective wordless scenes, not complete retellings. Reviews used
 sampled source frames and final montages, not every motion frame. Audio fully
 decodes but was not listening-reviewed. Browser viewport tests do not claim
 physical-device playback verification.
+
+## Disclosure playback controls (2026-11-11, unreleased)
+
+Opening a Stories card with its down chevron now starts its video inline and
+muted when the video is visible (or as it scrolls into view), including when viewport autoplay is disabled by motion/data preferences:
+opening the disclosure is an explicit request. The video loops while active.
+Small corner controls provide Play/Pause and Mute/Unmute with accessible labels
+and 44px touch targets. Manual pause is respected; closing the disclosure stops
+its media without stopping unrelated cards. Leaving the viewport or Stories,
+hiding the app, and connection failure retain the existing teardown/image
+fallback behavior. This supersedes the earlier play-once policy for Stories.
+
+The MP4 tests exercise expansion, collapse, looping, pause/resume and mute state.
+YouTube retains its native controls and trusted-source command validation.
+Real browser/device playback must still be verified before release; deterministic
+fixtures do not prove media decoding or physical iOS behavior.
