@@ -6,23 +6,34 @@ import {releaseInfo} from './release-info.mjs';
 
 // No builds, source substitutions, media fixtures or network fallbacks. Run
 // after the release owner freezes source and builds the production candidate.
-const expected = [
- ['Moses and Aaron Before Pharaoh',11.25],
- ['The Plagues of Egypt',7.25],
- ['The Passover and the Death of the Firstborn',10],
- ['The Exodus from Egypt',11.25],
- ['Crossing the Sea',11.25],
- ['Bitter Water, Manna and Quail',12.75],
- ['Water from the Rock and the Battle with Amalek',10.25],
- ['Jethro Advises Moses',10.75],
- ['The Covenant and Ten Commandments at Sinai',7.5],
- ['The Covenant Is Sealed at Sinai',10],
+const expectedTitles = [
+ 'Moses and Aaron Before Pharaoh',
+ 'The Plagues of Egypt',
+ 'The Passover and the Death of the Firstborn',
+ 'The Exodus from Egypt',
+ 'Crossing the Sea',
+ 'Bitter Water, Manna and Quail',
+ 'Water from the Rock and the Battle with Amalek',
+ 'Jethro Advises Moses',
+ 'The Covenant and Ten Commandments at Sinai',
+ 'The Covenant Is Sealed at Sinai',
 ];
-const plan={engines:['chromium','webkit'],sizes:[{name:'phone',width:390,height:844},{name:'ipad',width:820,height:1180}],titles:expected.map(([title])=>title),checks:['poster, alt text, responsive layout and reduced-motion idle','real public R2 decoding, dimensions, duration and time','native controls, pause, middle seek and changing frames','natural end, poster and manual restart','warm offline fallback and reconnect without autoplay','real failed-source fallback and successful Retry','navigation and detached-media teardown'],policy:'Exact production handler and assets, with its existing CSP enforced. Reduced motion; no autoplay or neighbor preload.'};
+const batchSource=fs.readFileSync('docs/story-video-batch-410.json','utf8');
+const batch=JSON.parse(batchSource);
+const reviewed=new Map(batch.records.map(record=>[record.title,record]));
+const expected=expectedTitles.map(title=>{
+ const matches=batch.records.filter(record=>record.title===title);
+ assert.equal(matches.length,1,'Exactly one reviewed batch record is required: '+title);
+ assert(Number.isFinite(matches[0].duration)&&matches[0].duration>0,'Reviewed clip duration must be finite and positive: '+title);
+ return [title,matches[0].duration];
+});
+const heldTitle='Water from the Rock and the Battle with Amalek';
+const heldReason='Implied Aaron age/identity drift in the supported-arms shot; visual review hold.';
+const plan={held:reviewed.get(heldTitle)?.status==='pending'?[{title:heldTitle,reason:heldReason}]:[],engines:['chromium','webkit'],sizes:[{name:'phone',width:390,height:844},{name:'ipad',width:820,height:1180}],titles:expected.map(([title])=>title),checks:['poster, alt text, responsive layout and reduced-motion idle','real public R2 decoding, dimensions, duration and time','native controls, pause, middle seek and changing frames','natural end, poster and manual restart','warm offline fallback and reconnect without autoplay','real failed-source fallback and successful Retry','navigation and detached-media teardown'],policy:'Exact production handler and assets, with its existing CSP enforced. Reduced motion; no autoplay or neighbor preload.'};
 if(process.argv.includes('--plan')){console.log(JSON.stringify(plan,null,2));process.exit(0);}
 if(process.env.SITES_MANAGED_LINUX_CONTAINER==='1'){console.error('NOT RUN: local runner only; use supported managed browser tools.');process.exit(2);}
 const option=name=>process.argv.find(value=>value.startsWith('--'+name+'='))?.slice(name.length+3);
-const output=path.resolve(option('output')||'.release/videos-410/browser');
+const output=path.resolve(option('output')||'.release/videos-410/browser/final-candidate');
 fs.mkdirSync(output,{recursive:true});
 const report={startedAt:new Date().toISOString(),source:releaseInfo(),plan,results:[],limits:['Phone and iPad sizes are browser viewports, not physical-device or installed-app verification.','Offline checks use an already-loaded page and primed local fallback image, not a cold offline install.','Audio decodes as part of the real MP4 but is not listening-reviewed.','Natural end waits use actual duration. All seek/resume positions stay in the middle of these short clips.']};
 const save=()=>fs.writeFileSync(path.join(output,'results.json'),JSON.stringify(report,null,2)+'\n');
@@ -34,8 +45,19 @@ try{
  const built=JSON.parse(fs.readFileSync('dist/client/release.json','utf8'));
  assert.equal(built.sourceHash,report.source.sourceHash,'Missing/stale candidate. The release owner must build after all edits finish; this runner never builds.');
  assert.equal(built.buildNumber,report.source.buildNumber);
- for(const [title]of expected){const record=catalog[title];assert(record?.status==='ready'&&record.provider==='mp4','Ready MP4 missing: '+title);assert.equal(new URL(record.src).origin,publicOrigin);assert(images[title],'Fallback art missing: '+title);}
+ for(const [title]of expected){
+  const record=catalog[title],review=reviewed.get(title);assert(record?.provider==='mp4','MP4 record missing: '+title);
+  assert(title===heldTitle?['pending','ready'].includes(record.status):record.status==='ready','Unexpected ready/pending state: '+title);
+  assert.equal(record.status,review.status,'Manifest and explicit review status must agree: '+title);
+  assert.equal(record.src,review.src,'Playback must use this exact reviewed public object: '+title);assert.equal(record.poster,review.poster);
+  assert.equal(new URL(record.src).origin,publicOrigin);assert(images[title],'Fallback art missing: '+title);
+ }
  const {default:worker}=await import('./built-worker.mjs'),engines=await import('playwright');
+ const shipped=await(await worker.fetch(new Request('https://biblelens.test/story-video.js'),{},{})).text();
+ for(const [title]of expected){
+  if(catalog[title].status==='pending')assert(!shipped.includes(title)&&!shipped.includes(catalog[title].src),'Explicitly held video must be absent from shipped playback configuration');
+  else assert(shipped.includes(catalog[title].src),'Ready video missing from shipped configuration: '+title);
+ }
  server=http.createServer(async(req,res)=>{
   try{
    const url=new URL(req.url,`http://127.0.0.1:${server.address().port}`);
@@ -65,28 +87,56 @@ try{
     page.on('pageerror',error=>diagnostics.push({event:'pageerror',message:error.message}));
     page.on('response',response=>{if(response.status()>=400){const url=new URL(response.url());diagnostics.push({event:'response',url:url.origin+url.pathname,status:response.status()});}});
     await page.addInitScript(()=>{window.__cspViolations=[];document.addEventListener('securitypolicyviolation',event=>window.__cspViolations.push({directive:event.violatedDirective,blocked:event.blockedURI}));});
-    const result=async(check,run)=>{
-     try{const detail=await run();report.results.push({engine,size:size.name,title,check,status:'PASS',...(detail?{detail}:{})});console.log('PASS',engine,size.name,title,check);return true;}
+    const result=async(check,run,passedStatus='PASS')=>{
+     try{const detail=await run();report.results.push({engine,size:size.name,title,check,status:passedStatus,...(detail?{detail}:{})});console.log(passedStatus,engine,size.name,title,check);return true;}
      catch(error){report.results.push({engine,size:size.name,title,check,status:'FAIL',detail:error.message.slice(0,1600),diagnostics:[...diagnostics]});await page.screenshot({path:path.join(output,`${engine}-${size.name}-${slug}-failure.png`),fullPage:true}).catch(()=>{});console.error('FAIL',engine,size.name,title,check,error.message);return false;}
      finally{save();}
     };
     try{
      const response=await page.goto(base+'/#stories/exodus/'+slug);
      assert(response.ok());assert(response.headers()['content-security-policy']?.includes('media-src'),'Application CSP must be enforced');
-     const figure=page.locator(`#story-${slug} .story-video`);await figure.waitFor();
+     const card=page.locator(`#story-${slug}`);await card.waitFor();
+     if(title===heldTitle&&record.status==='pending'){
+      await result('explicit review hold retains artwork and excludes playback',async()=>{
+       assert.equal(catalog[title].status,'pending');assert.equal(await card.locator('.story-video,video,iframe').count(),0);
+       const fallback=card.locator(`img[src="${images[title].src}"]`).last();await fallback.waitFor();await fallback.evaluate(img=>img.decode());
+       await page.waitForTimeout(450);assert.equal(requests.length,0,'Held title must not request video bytes');
+       assert.deepEqual(await page.evaluate(()=>window.__cspViolations),[]);return heldReason;
+      },'HELD');continue;
+     }
+     const figure=card.locator('.story-video');await figure.waitFor();
      await figure.evaluate(el=>el.scrollIntoView({block:'center',behavior:'instant'}));
      const play=figure.locator('[data-video-play]'),retry=figure.locator('[data-video-retry]'),still=figure.locator('[data-video-still]'),media=figure.locator('video'),status=figure.locator('[data-video-status]');
-     const snapshot=()=>media.evaluate(v=>({time:v.currentTime,duration:v.duration,width:v.videoWidth,height:v.videoHeight,paused:v.paused,ready:v.readyState,controls:v.controls,src:v.getAttribute('src')}));
+     const snapshot=()=>media.evaluate(v=>({time:v.currentTime,duration:v.duration,width:v.videoWidth,height:v.videoHeight,paused:v.paused,ready:v.readyState,controls:v.controls,src:v.getAttribute('src'),seeking:v.seeking,rate:v.playbackRate,error:v.error?.code??null}));
      const advancing=async(minimum=.35)=>{
       await media.waitFor();const handle=await media.elementHandle();
-      await page.waitForFunction(({v,minimum})=>v.error||(!v.paused&&!v.seeking&&v.readyState>=2&&v.currentTime>=minimum),{v:handle,minimum},{timeout:15000});
-      assert.equal(await media.evaluate(v=>v.error?.code??null),null,'The real MP4 must decode');
-      const first=await snapshot();await page.waitForTimeout(220);const second=await snapshot();
-      assert(second.time>first.time+.05&&!second.paused,'Real decoded playback time must advance');return second;
+      await page.waitForFunction(v=>v.error||v.readyState>=1,handle,{timeout:15000});
+      // WebKit can briefly report a pre-seek or frozen clock after metadata.
+      // Require a stable advancing interval. For saved positions, the complete
+      // post-metadata budget is shorter than playing there from zero at 1x.
+      const started=Date.now(),budget=minimum>1?Math.min(2800,(minimum-.4)*1000):15000,samples=[];
+      let goodAt,goodTime;
+      while(Date.now()-started<budget){
+       const sample=await snapshot(),elapsed=Date.now()-started;samples.push({elapsed,...sample});if(samples.length>12)samples.shift();
+       assert.equal(sample.error,null,'The real MP4 must decode');
+       if(!sample.paused&&!sample.seeking&&sample.ready>=2&&sample.rate<=1&&sample.time>=minimum){
+        if(goodAt===undefined||sample.time<goodTime){goodAt=elapsed;goodTime=sample.time;}
+        else if(elapsed-goodAt>=350&&sample.time>goodTime+.15)return sample;
+       }else goodAt=undefined;
+       await page.waitForTimeout(50);
+      }
+      throw Error('Playback did not settle near '+minimum+' within '+budget+' ms after metadata: '+JSON.stringify(samples));
      };
      const seek=async(target)=>{
-      await media.evaluate((v,target)=>{v.pause();v.currentTime=target;},target);
-      const handle=await media.elementHandle();await page.waitForFunction(({v,target})=>!v.seeking&&v.readyState>=2&&Math.abs(v.currentTime-target)<.25,{v:handle,target},{timeout:10000});
+      // Keep the paused-scrub check. Native seeked plus the changed paused
+      // frame below proves visual scrubbing before Play; a stale native clock
+      // is checked only after Play using the stricter bounded interval above.
+      await media.evaluate((v,target)=>new Promise((resolve,reject)=>{
+       v.pause();const done=()=>{clearTimeout(timer);resolve();};
+       const timer=setTimeout(()=>{v.removeEventListener('seeked',done);reject(Error('Paused seek did not emit seeked'));},10000);
+       v.addEventListener('seeked',done,{once:true});v.currentTime=target;
+      }),target);
+      assert(await media.evaluate(v=>v.paused&&!v.seeking),'Seeking while paused must remain paused');
      };
      const retired=async(handle)=>{assert(await handle.evaluate(v=>!v.isConnected&&!v.getAttribute('src')&&v.paused),'Detached media must be paused with its source removed');};
      const framePixels=async()=>{
@@ -148,7 +198,8 @@ try{
   await browser.close();browser=undefined;
  }
  assert.equal(releaseInfo().sourceHash,report.source.sourceHash,'Source changed during browser verification; results are not an immutable candidate pass');
+ assert.equal(fs.readFileSync('docs/story-video-batch-410.json','utf8'),batchSource,'Reviewed media metadata changed during browser verification');
 }catch(error){report.results.push({check:'runner setup or immutable-source gate',status:'FAIL',detail:error.message.slice(0,1600)});}
 finally{await browser?.close();if(server)await new Promise(resolve=>{server.close(resolve);server.closeAllConnections();});report.finishedAt=new Date().toISOString();save();}
 console.log('Browser report: '+path.join(output,'results.json'));
-process.exitCode=report.results.some(result=>result.status!=='PASS')?1:0;
+process.exitCode=report.results.some(result=>!['PASS','HELD'].includes(result.status))?1:0;

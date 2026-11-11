@@ -853,7 +853,10 @@ and Aaron Before Pharaoh through The Covenant Is Sealed at Sinai. The release
 uses the existing approved public media origin. Each public object was downloaded
 on the Mac and matched the reviewed package's exact byte length and SHA-256;
 all ten files also fully decoded without FFmpeg errors. The existing 29 ready
-records are unchanged, bringing the total to 39. No duplicate upload occurred.
+records are unchanged. Nine new videos are accepted, bringing the active
+candidate total to 38. Water from the Rock and the Battle with Amalek is pending
+continuity repair and is excluded from both active clients. No duplicate upload
+occurred. This section describes an unpublished candidate.
 
 The ten films total 43,920,748 bytes and last 7.25–12.75 seconds. Their actual-frame
 1280×720 WebP posters total 717,280 bytes, with every poster below 100 KB. Source
@@ -868,8 +871,23 @@ review used sampled source frames and final contact sheets, not every motion
 frame. Audio fully decodes but was not listening-reviewed. These limits are not
 claims of physical-device playback quality.
 
-The targeted `npm run check:videos:exodus` runner checks the ten additions in
-Chromium and WebKit at phone and iPad viewport sizes. It uses actual public media,
+A fresh full-size review at 6.0, 8.0 and 9.5 seconds found probable Aaron
+appearance drift in the supported-arms scene. His visible profile and striped
+garment imply the named helper; describing him only as one of two men does not
+resolve the mismatch. Both release and production reviewers support this hold.
+The other nine videos passed the sampled visual review.
+
+The targeted `npm run check:videos:exodus` runner checks the nine active additions
+in Chromium and WebKit at phone and iPad viewport sizes, and explicitly verifies
+that the held video stays pending and absent from the shipped video configuration. It uses actual public media,
 the enforced application CSP and the production app, with duration-aware seeks
 rather than assuming all films last more than ten seconds. The older MP4 runner
 also supports the shorter, story-driven duration policy.
+
+The initial browser matrix passed all Chromium lifecycle cases but found a
+WebKit offline-resume timing failure with a fixed 220-millisecond sample. A
+bounded diagnostic proved resumed playback near the saved time after a normal
+settlement interval, without allowing a restart from zero to pass. A separate
+paused-scrub probe observed seeking and seeked, changed displayed pixels while
+paused, and advancing playback afterward. Failed initial runs are retained;
+final release validation must use the stricter settlement check and held title.
