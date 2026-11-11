@@ -33,6 +33,25 @@ export function debateCard(record) {
  return {readingMinutes:recordReadingMinutes(record), id:record.id, title:record.title || `What does ${record.ref} show?`, summary:record.summary || record.text,
   ref:record.ref, refs:record.refs || [], mode:record.mode, status:record.status, verdict:debateVerdict(record), tags:record.tags || [record.tag].filter(Boolean)};
 }
+// Owner-approved presentation groups only. Members remain independent research
+// records; this allowlist never changes IDs, detail routes, claims or placements.
+const evidenceDisplayGroups=[
+ {key:'genesis-wife-sister',title:'Wife-sister accounts',kind:'passages',ids:['genesis-wife-sister-12','genesis-wife-sister-20','genesis-wife-sister-26']},
+ {key:'genesis-bethel-naming',title:'Bethel naming accounts',kind:'passages',ids:['genesis-bethel-naming-28','genesis-bethel-naming-35']},
+ {key:'samuel-repayment-versions',title:'Fourfold or sevenfold repayment',kind:'versions',ids:['restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek','restore-the-lamb-fourfold-or-sevenfold-2-samuel-12-6-greek-new-20261020']},
+ {key:'samuel-bow-versions',title:'Steel or bronze bow',kind:'versions',ids:['a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek','a-bow-of-steel-or-a-bow-of-bronze-2-samuel-22-35-greek-new-20261020']}
+];
+export function groupEvidenceDisplay(records){
+ const membership=new Map(evidenceDisplayGroups.flatMap(group=>group.ids.map(id=>[id,group]))),groups=[],seen=new Set();
+ for(const record of records){
+  const group=membership.get(record.id);
+  if(!group){groups.push({recordIds:[record.id]});continue;}
+  if(seen.has(group.key))continue;seen.add(group.key);
+  const members=records.filter(row=>group.ids.includes(row.id));
+  groups.push(members.length<2?{recordIds:[record.id]}:{key:group.key,title:group.title,kind:group.kind,recordIds:members.map(row=>row.id)});
+ }
+ return groups;
+}
 export function debatePage(records, params) {
  const mode=params.get('mode') || 'text', filter=params.get('filter') || 'all', status=params.get('status') || 'all';
  if(!['text','science','history'].includes(mode)||!['all','Q','T','V','commandments'].includes(filter))return null;
@@ -52,6 +71,10 @@ export function debatePage(records, params) {
  }
  const ids=params.getAll('id');if(ids.length)rows=rows.filter(record=>ids.includes(record.id));
  rows.sort(compareEvidenceReferences);
- const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil(rows.length/24)-1)));
- return {records:rows.slice(page*24,page*24+24).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts, translationTotal:records.filter(record=>(record.tags||[record.tag]).includes('T')).length};
+ // Only the list UI opts in. Saved selections, daily records and other API
+ // consumers keep the original record-based contract unless they request this.
+ const display=params.get('group')==='display'?groupEvidenceDisplay(rows):null;
+ const page=Math.max(0,Math.min(Math.floor(Number(params.get('page'))||0),Math.max(0,Math.ceil((display?.length??rows.length)/24)-1)));
+ const displayPage=display?.slice(page*24,page*24+24),selected=displayPage?new Set(displayPage.flatMap(group=>group.recordIds)):null;
+ return {records:(selected?rows.filter(record=>selected.has(record.id)):rows.slice(page*24,page*24+24)).map(debateCard), total:rows.length, page, counts, collectionTotal, modeCounts, translationTotal:records.filter(record=>(record.tags||[record.tag]).includes('T')).length,...(display?{displayGroups:displayPage,displayTotal:display.length}:{})};
 }

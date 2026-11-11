@@ -3762,3 +3762,12 @@ html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict:is([data-assessment="evidence matches the text"],[data-assessment="readings can fit together"]) {--assessment-rgb:16,185,129;}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment="not settled"] {--assessment-rgb:245,158,11;}
 html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment="interpretation remains open"] {--assessment-rgb:59,130,246;}
+
+/* Approved Evidence groups are list containers, never replacement records. */
+html body.lens-app #main #debates-view .evidence-display-group {min-width:0;}
+html body.lens-app #main #debates-view .evidence-group-count {flex-shrink:0;font:500 .75rem/1.4 var(--ui-font);color:var(--lens-muted);}
+html body.lens-app #main #debates-view .evidence-group-members {list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+html body.lens-app #main #debates-view .evidence-group-members li {min-width:0;border-top:1px solid var(--lens-rule);padding-top:4px;}
+html body.lens-app #main #debates-view .evidence-group-members a {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:6px 0;color:var(--lens-ink);font:600 .875rem/1.4 var(--ui-font);text-decoration:none;overflow-wrap:anywhere;}
+html body.lens-app #main #debates-view .evidence-group-members .action-link {flex-shrink:0;font-size:.75rem;}
+html body.lens-app #main #debates-view .evidence-group-members a:focus-visible {outline:2px solid var(--lens-link);outline-offset:3px;border-radius:3px;}
