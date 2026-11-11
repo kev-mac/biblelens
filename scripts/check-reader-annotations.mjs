@@ -54,8 +54,9 @@ assert.equal(declaration('html body.lens-app #passage-picker .passage-book-grid 
 assert(!workspace.includes('lens-edition')&&!atlas.includes('lens-edition'),'Remove the reading-bar translation label, selector and hooks');
 assert(html.includes('id="reader-edition"')&&readerSource.includes("$('#passage-translation').append($('#reader-edition').closest('label'))"),'Retain the existing passage-picker translation route');
 assert.equal(declaration('html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip)','text-decoration'),'none');
-assert(declaration('html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible','outline').includes('3px solid'));
+assert(declaration('html body.lens-app :is(a,#lens-settings):focus-visible','outline').includes('3px solid'));
 const storySource=read('src/stories.js').split('let storiesActive=')[0].replace('/*__STORY_IMAGES__*/{}',JSON.stringify({'A <title>':{src:'/art.webp',alt:'Imagined scene: source description',width:1200,height:675}}));
 const storyCtx={esc:value=>String(value).replaceAll('<','&lt;').replaceAll('>','&gt;')};vm.createContext(storyCtx);vm.runInContext(storySource,storyCtx);
 const figure=storyCtx.storyIllustration('A <title>','reader');assert(figure.includes('<figcaption>A &lt;title&gt;</figcaption>'));assert(figure.includes('alt="Imagined scene: source description"'),'Retain descriptive alt text');assert(!storyCtx.storyIllustration('A <title>').includes('<figcaption>'));
+assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','outline'),'none','Chapter link uses a non-box focus cue');
 console.log('PASS: single settings entry, safe-area/header geometry, wrapping 44px picker, unadorned links with focus cues, escaped actual captions, hidden reader records and retained comparison routes. Browser layout is a separate check.');

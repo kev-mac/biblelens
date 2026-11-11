@@ -48,4 +48,5 @@ assert.equal(last('html body.lens-app #explore-view .ux-explore-search','flex-wr
 assert.equal(last('html body.lens-app #explore-view #ux-explore-search','border-radius'),'16px');assert.equal(last('html body.lens-app #explore-view .ux-explore-search>button','width'),'44px');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search','--control-radius'),'16px','The shared important radius uses the form-scoped rounded shape');
 assert.equal(last('html body.lens-app #explore-view .ux-explore-search .ux-search-clear','right'),'46px','Clear remains beside the inset submit icon');
+assert(!rules.some(rule=>rule.selector.includes('[data-topic=stories] .ux-count')),'Stories shares the collection badge anchor');
 console.log('PASS: one Collections grid with seven destinations, text/translation routes retained in Evidence filters, accessible Explore search, bounded encoded shared navigation, empty/Escape handling, dismissal focus, scoped masthead action and fluid orientation sizing. Browser geometry and actual destination navigation remain separate.');

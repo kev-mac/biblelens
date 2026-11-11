@@ -2081,7 +2081,7 @@ html body.lens-app :is(.characters-search-box,#chat-form,#commandments-search-bo
 html body.lens-app .lens-mark{background:var(--lens-copper);color:var(--lens-paper)}
 html body.lens-app dialog :is(h1,h2):first-of-type{font-size:1.75rem;line-height:1.2}
 html body.lens-app .ux-dialog-path span{font-size:0.75rem;overflow-wrap:anywhere}
-html body.lens-app :is(button,a,input,textarea,select,summary,[tabindex]):focus-visible{outline:2px solid var(--lens-focus)!important;outline-offset:3px;box-shadow:none}
+html body.lens-app :is(button,a,input,textarea,select,summary,[tabindex]):where(:not(#ux-chapter-picker)):focus-visible{outline:2px solid var(--lens-focus)!important;outline-offset:3px;box-shadow:none}
 html body.lens-app:not(.keyboard-navigation) :is(button,a,input,textarea,select,summary,[tabindex]):focus{outline:none!important;box-shadow:none!important}
 /* People: a name opens one complete profile instead of a stack of card tools. */
 html body.lens-app #characters-list{display:block}
@@ -3405,8 +3405,9 @@ html body.lens-app #lensReadingBar #ux-chapter-picker {
  display:inline-flex;align-items:center;flex:0 1 auto;width:auto;max-width:100%;min-width:44px;min-height:44px;height:auto;
  padding:6px 0;margin:0;gap:4px;font:600 1.125rem/1.35 var(--ui-font);
  white-space:normal;overflow:visible;text-overflow:clip;text-decoration:none;
- border:0;border-radius:4px;background:transparent;color:var(--lens-link);text-align:left;
+ border:0;border-radius:4px;background:transparent;color:var(--lens-link);text-align:left;outline:none;box-shadow:none;
 }
+/* Keep the chapter link borderless; the existing focus-visible underline remains. */
 html body.lens-app #ux-chapter-picker .ux-picker-book {min-width:0;white-space:normal;overflow-wrap:normal;overflow:visible;text-overflow:clip;}
 html body.lens-app #ux-chapter-picker .ux-picker-chapter {flex:none;white-space:nowrap;}
 html body.lens-app #lensReadingBar .lens-edition-label {display:flex;flex-direction:column;align-items:stretch;gap:2px;position:static;flex:0 0 max(72px,4rem);width:max(72px,4rem);min-width:72px;height:auto;margin:0;color:var(--lens-ink);}
@@ -3418,7 +3419,7 @@ html body.lens-app #chapter-text :is(.verse,.chapter-heading-row) {scroll-margin
 html body.lens-app #main .directory-hub .stories-header {top:calc(var(--app-safe-top) + var(--ux13-masthead-height));}
 html body.lens-app #main .directory-hub .ux-letter-heading {top:calc(var(--app-safe-top) + var(--ux13-masthead-height) + 52px);}
 html body.lens-app :is(a,a:hover,a:focus,a:active,[data-cite],.person-chip,.location-chip) {text-decoration:none!important;}
-html body.lens-app :is(a,#ux-chapter-picker,#lens-settings):focus-visible {outline:3px solid var(--lens-focus)!important;outline-offset:3px;}
+html body.lens-app :is(a,#lens-settings):focus-visible {outline:3px solid var(--lens-focus)!important;outline-offset:3px;}
 html body.lens-app a:hover {color:var(--lens-link);}
 @media(min-width:768px) {
  html body.lens-app {--ux13-masthead-height:76px;}
@@ -3541,9 +3542,7 @@ html body.lens-app #explore-view a.ux-topic>img {width:100%;height:100%;object-f
 
 html body.lens-app #explore-view [data-topic=stories] img {object-position:88% center;}
 
-@media (orientation:portrait) {
- html body.lens-app #explore-view [data-topic=stories] .ux-count {left:76px;right:auto;}
-}
+/* Collection counts share the top-right anchor in every orientation. */
 
 /* Browse collections together; retain app-wide font and theme preferences. */
 html body.lens-app #explore-view .browse-heading {font:700 1.7rem/1.2 var(--ui-font);margin:8px 0;}
