@@ -53,8 +53,35 @@
  // One nonmodal action bar for every verse, independent of evidence coverage.
  const emptyStrip=document.createElement('aside');emptyStrip.id='ux-empty-verse-actions';emptyStrip.hidden=true;emptyStrip.setAttribute('aria-label','Verse Actions');document.body.append(emptyStrip);
  const emptyToast=document.createElement('div');emptyToast.id='ux-empty-verse-toast';emptyToast.setAttribute('role','status');emptyToast.hidden=true;document.body.append(emptyToast);
- let emptyRequest=0,actionScroll=0;
- function dismissEmpty(){emptyStrip.hidden=true;if(!inspectorSheet.open)document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));}
+ let emptyRequest=0,actionScroll=0,actionLayoutFrame=0;
+ // Measure the actual navigation, including safe-area padding, rather than
+ // assuming a phone-bar height. A resized viewport keeps the same verse clear.
+ function positionVerseActions(){
+  if(emptyStrip.hidden)return;
+  const nav=masthead.querySelector('nav.lens-primary'),navRect=nav?.getBoundingClientRect();
+  const docked=!!navRect&&getComputedStyle(nav).position==='fixed'&&navRect.top>innerHeight/2;
+  emptyStrip.dataset.docked=String(docked);
+  emptyStrip.style.bottom=(docked?Math.max(0,innerHeight-navRect.top):24)+'px';
+  const top=Math.max(masthead.getBoundingClientRect().bottom,readingBar.getBoundingClientRect().bottom,0)+12;
+  const bottom=docked?navRect.top:innerHeight-24;
+  emptyStrip.style.setProperty('--verse-actions-max-height',Math.max(88,Math.min(360,(bottom-top)*.6))+'px');
+  document.body.classList.add('verse-actions-open');
+  document.body.style.setProperty('--verse-actions-height',emptyStrip.getBoundingClientRect().height+'px');
+  const verse=el('verse-'+activeVerse),rect=verse?.getBoundingClientRect();
+  if(rect){
+   const clearBottom=emptyStrip.getBoundingClientRect().top-12;
+   const delta=rect.top<top||rect.height>clearBottom-top?rect.top-top:Math.max(0,rect.bottom-clearBottom);
+   if(Math.abs(delta)>1)window.scrollTo({top:Math.max(0,window.scrollY+delta),behavior:'instant'});
+  }
+  actionScroll=window.scrollY;
+ }
+ function scheduleVerseActions(){cancelAnimationFrame(actionLayoutFrame);actionLayoutFrame=requestAnimationFrame(()=>{actionLayoutFrame=0;positionVerseActions();});}
+ const actionResize=new ResizeObserver(scheduleVerseActions);
+ actionResize.observe(emptyStrip);actionResize.observe(masthead);actionResize.observe(readingBar);
+ if(masthead.querySelector('nav.lens-primary'))actionResize.observe(masthead.querySelector('nav.lens-primary'));
+ window.addEventListener('resize',scheduleVerseActions);
+ window.visualViewport?.addEventListener('resize',scheduleVerseActions);
+ function dismissEmpty(){emptyStrip.hidden=true;cancelAnimationFrame(actionLayoutFrame);document.body.classList.remove('verse-actions-open');if(!inspectorSheet.open)document.querySelectorAll('.lens-active-verse').forEach(node=>node.classList.remove('lens-active-verse'));}
  const emptyClose=document.createElement('button');emptyClose.type='button';emptyClose.className='ux-verse-actions-close';emptyClose.setAttribute('aria-label','Close verse actions');emptyClose.title='Close verse actions';emptyClose.innerHTML='<span aria-hidden="true">×</span>';
  emptyClose.onclick=()=>{++emptyRequest;dismissEmpty();el('verse-'+activeVerse)?.querySelector('.verse-num')?.focus({preventScroll:true});};
  function showVerseActions(){
@@ -66,11 +93,11 @@
   const context=document.createElement('button');context.type='button';context.className='lens-button ux-context-action';
   context.dataset.contextEvidence='';context.textContent=ready&&count?'✦ View evidence':'Explore chapter context';
   emptyStrip.replaceChildren(emptyClose,emptyToast,inspector.querySelector('.ux-verse-actions').cloneNode(true),context);emptyStrip.hidden=false;
-  actionScroll=window.scrollY;
   el('verse-'+activeVerse)?.classList.add('lens-active-verse');
+  positionVerseActions();scheduleVerseActions();
  }
  document.addEventListener('pointerdown',event=>{if(!event.target.closest('#ux-empty-verse-actions,#chapter-text .verse')){++emptyRequest;dismissEmpty();}});
- window.addEventListener('scroll',()=>{if(!emptyStrip.hidden&&Math.abs(window.scrollY-actionScroll)>20){++emptyRequest;dismissEmpty();}},{passive:true});
+ window.addEventListener('scroll',()=>{if(!emptyStrip.hidden&&!actionLayoutFrame&&Math.abs(window.scrollY-actionScroll)>20){++emptyRequest;dismissEmpty();}},{passive:true});
  window.addEventListener('hashchange',()=>{++emptyRequest;dismissEmpty();emptyToast.hidden=true;});
  document.addEventListener('keydown',event=>{if(event.key==='Escape'){++emptyRequest;dismissEmpty();}});
  let inspectorOpener=null;
