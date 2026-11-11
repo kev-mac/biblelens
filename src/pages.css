@@ -1434,13 +1434,13 @@ html body.lens-app #timeline-view #timeline-reviewed { padding: 0 0 40px; }
 html body.lens-app #timeline-view :is(#timeline-list, .timeline-list) {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 0;
+  gap: 12px;
   margin-top: 24px;
-  border-top: 1px solid var(--lens-rule);
+  border: 0;
 }
 html body.lens-app #timeline-view :is(.timeline-card, .timeline-event-card) {
   min-width: 0;
-  padding: 24px 0;
+  padding: 16px;
   color: var(--lens-ink);
 }
 html body.lens-app #timeline-view .timeline-event-card {

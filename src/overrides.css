@@ -1414,12 +1414,12 @@ html body.lens-app :is(#characters-view, #places-view) :is(.characters-paginatio
 html body.lens-app #character-sheet :is(.character-profile-biography, .character-sheet-body > p) {
   background: transparent;
 }
+/* Timeline entries use the shared directory tile surface and spacing. */
 html body.lens-app #timeline-view :is(.timeline-card, .timeline-event-card) {
-  border: 0;
-  border-bottom: 1px solid var(--lens-rule);
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  border: 1px solid var(--category-border, var(--lens-rule));
+  border-radius: 16px;
+  background: var(--ux13-card);
+  box-shadow: 0 4px 16px -4px var(--ux13-shadow);
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
