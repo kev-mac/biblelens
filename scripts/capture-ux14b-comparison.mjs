@@ -23,7 +23,7 @@ try{for(const width of [320,390,1280])for(const theme of ['light','dark']){
  await p.locator('.fetch-retry-status').waitFor({state:'hidden'});await p.screenshot({path:`${shots}/ux14b-explore-rest-${theme}-${width}.png`,fullPage:true});
  await p.locator('#ux-topic-lost').scrollIntoViewIfNeeded();
  const tile=await p.locator('#ux-topic-lost').evaluate(n=>{const rect=n.getBoundingClientRect(),title=n.querySelector('strong').getBoundingClientRect(),subtitle=n.querySelector('small').getBoundingClientRect(),bar=document.querySelector('#lens-mobile-bar')?.getBoundingClientRect();return {title:n.querySelector('strong').textContent,subtitle:n.querySelector('small').textContent,accent:getComputedStyle(n).getPropertyValue('--topic').trim(),visible:title.top>=rect.top&&subtitle.bottom<=rect.bottom&&subtitle.bottom<=(bar?.top||innerHeight)};});
- assert.equal(tile.title,'Lost Books');assert.equal(tile.subtitle,'Books beyond the 66');assert(tile.visible,JSON.stringify(tile));assert.equal(tile.accent,theme==='dark'?'#fbbf24':'#b45309');
+ assert.equal(tile.title,'Other Books');assert.equal(tile.subtitle,'Books beyond the 66');assert(tile.visible,JSON.stringify(tile));assert.equal(tile.accent,theme==='dark'?'#fbbf24':'#b45309');
  await p.screenshot({path:`${shots}/ux14b-explore-tile-${theme}-${width}.png`});
  await p.close();console.log('PASS shared Events/Lost Books components and Explore tile',width,theme);
 }}finally{await browser.close();}

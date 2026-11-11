@@ -122,7 +122,7 @@ function updateHeaderContext(){
  const context=$('#header-context');if(!context)return;
  const heading=$('#chapter-text .passage-heading>div'),rect=heading?.getBoundingClientRect();
  const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
- let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',lost:'Lost Books',search:'Search',notebook:'Notebook'}[view]||'zLenz: Bible');
+ let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',lost:'Other Books',search:'Search',notebook:'Notebook'}[view]||'zLenz: Bible');
  const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
  const category={academic:'Academic',commandments:'Laws',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Events',T:'Translation'}[key];
  if(category){

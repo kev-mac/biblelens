@@ -40,5 +40,25 @@ assert.equal(vm.runInContext('normalizeVerseRecords({"80:1:180":note})["80:1:180
 assert.equal(vm.runInContext('normalizePassageRecords({"80:1":note})["80:1"].text',context),note.text);
 assert.match(context.buildVerseShareUrl(80,1,[180]),/#read\/80\/1\/180$/);
 assert.throws(()=>context.buildVerseShareUrl(999,1,[1]));
+// The collection has a new display name, while legacy routes and saved IDs stay stable.
+const uiFiles=['app.js','atlas-explore.js','lost-books.js','reader.js','workspace-shell.js','workspace.js'];
+const ui=Object.fromEntries(uiFiles.map(name=>[name,fs.readFileSync('src/'+name,'utf8')]));
+for(const [name,text] of Object.entries(ui)){
+ assert(!/\bLost Books\b/i.test(text),name+' must not expose the old collection label');
+ assert(text.includes('Other Books'),name+' uses the approved display name');
+}
+assert(ui['atlas-explore.js'].includes("['lost','Other Books','Books beyond the 66','#lost']"));
+assert(ui['workspace.js'].includes("lostToggle.textContent='Include Other Books'"));
+assert(ui['reader.js'].includes('data-book-testament="lost">Other Books</button>'));
+for(const label of ['Filter Other Books','Search Other Books','Open Other Books again to retry.'])assert(ui['lost-books.js'].includes(label));
+assert(ui['lost-books.js'].includes('href="#search?lost=1"'));
+assert(ui['lost-books.js'].includes("fetch('/lost-books.json')"));
+assert(ui['lost-books.js'].includes('href="#read/${b.id}/1"'));
+const optionContext=vm.createContext({books:[...JSON.parse(fs.readFileSync('data/books.json','utf8')),...books],esc:value=>String(value)});
+vm.runInContext(ui['reader.js'].slice(ui['reader.js'].indexOf('function readerBookOptions(){'),ui['reader.js'].indexOf('async function initializeReader(){')),optionContext);
+const options=optionContext.readerBookOptions();
+assert.equal((options.match(/<option /g)||[]).length,66+books.length);
+assert.deepEqual([...options.matchAll(/<optgroup label="([^"]+)"/g)].map(match=>match[1]),['Other Books · Apocrypha','Other Books · Gnostic']);
+for(const book of books)assert(options.includes(`<option value="${book.id}">${book.name}</option>`));
 const compressed=zlib.gzipSync(fs.readFileSync('data/lost-books/chapters.json')).length;assert(compressed<5*1024*1024);
-console.log(`PASS: ${books.length} licensed books, ${Object.keys(chapters).length} reading chapters, verified source counts, ${manifest.spotChecks.filter(c=>c.match).length} passage checks, collection readability, no evidence/links; corpus gzip ${compressed} bytes.`);
+console.log(`PASS: ${books.length} licensed books, ${Object.keys(chapters).length} reading chapters, verified source counts, ${manifest.spotChecks.filter(c=>c.match).length} passage checks, Other Books labels and stable routes/IDs, collection readability, no evidence/links; corpus gzip ${compressed} bytes.`);
