@@ -846,48 +846,49 @@ verified, but launch needs Kevin to unlock it and open BibleLens. No lock
 bypass or repeat launch was attempted. Physical-device video playback,
 audible quality, fullscreen and cold offline operation remain unverified.
 
-## Ten Exodus videos: build 410 (2026-11-10)
+## Ten Exodus videos: build 410 (2026-11-11)
 
-Kevin confirmed the manual R2 upload of the next ten Story videos, from Moses
-and Aaron Before Pharaoh through The Covenant Is Sealed at Sinai. The release
-uses the existing approved public media origin. Each public object was downloaded
-on the Mac and matched the reviewed package's exact byte length and SHA-256;
-all ten files also fully decoded without FFmpeg errors. The existing 29 ready
-records are unchanged. Nine new videos are accepted, bringing the active
-candidate total to 38. Water from the Rock and the Battle with Amalek is pending
-continuity repair and is excluded from both active clients. No duplicate upload
-occurred. This section describes an unpublished candidate.
+The final ten Story videos run from Moses and Aaron Before Pharaoh through
+The Covenant Is Sealed at Sinai. Each exact public object was downloaded on
+the Mac, matched its reviewed byte length and SHA-256, and fully decoded.
+The existing 29 ready records remain unchanged; these additions bring the
+ready total to 39. Media activation uses the existing approved public origin.
 
-The ten films total 43,920,748 bytes and last 7.25–12.75 seconds. Their actual-frame
-1280×720 WebP posters total 717,280 bytes, with every poster below 100 KB. Source
-metadata, poster timestamps, hashes, scene descriptions and review limits are in
-`docs/story-video-batch-410.json`. No MP4 bytes enter the repository, Worker or
-native bundle. Existing Reader images, previews, summaries and offline fallback
-art are unchanged.
+The ten films total 60,777,662 bytes and last 7.25–12.75 seconds. Their ten
+active 1280×720 WebP posters total 667,290 bytes, each below 100 KB. The
+versioned Water/Amalek poster is an actual frame of the corrected support
+scene. Earlier assets remain preserved. Metadata, hashes, selected timestamps,
+descriptions and review limits are in `docs/story-video-batch-410.json`.
+No MP4 bytes enter the repository, Worker or native bundle. Reader artwork,
+previews, summaries, evidence records and offline fallback art are unchanged.
 
-These are selective wordless montages, not complete retellings. Descriptions
-state the visible scenes and do not claim to show omitted events. The production
-review used sampled source frames and final contact sheets, not every motion
-frame. Audio fully decodes but was not listening-reviewed. These limits are not
-claims of physical-device playback quality.
+The original Water/Amalek support shot was held because the implied Aaron
+looked different from his approved portrayal. Its replacement retains the
+passed water scene and shows a grey-haired Aaron with the approved shorter
+white beard, distinct from seated Moses and his longer beard. Independent
+full-size comparisons at 6.0, 8.0 and 9.5 seconds support the correction.
+Both wrists/forearms are supported from opposite sides; arms are held outward
+at chest height and the battle remains offscreen.
 
-A fresh full-size review at 6.0, 8.0 and 9.5 seconds found probable Aaron
-appearance drift in the supported-arms scene. His visible profile and striped
-garment imply the named helper; describing him only as one of two men does not
-resolve the mismatch. Both release and production reviewers support this hold.
-The other nine videos passed the sampled visual review.
+Early paused seeking stalled or retained old frames in six original encodes
+under WebKit, including in plain video without the app lifecycle code. Six
+conservative H.264 Main 3.1 versions use one-second keyframes and no B frames.
+All original frame timestamps/counts, dimensions, rate, exact duration and
+AAC packets/timing are preserved. Video recompression is lossy: measured SSIM
+was at least 0.990464 and PSNR at least 44.37 dB. The six new encodes passed all
+18 repeated local paused-seek checks. This identifies an encoding/runtime
+compatibility issue, not GOP length alone. Four unaffected files are unchanged.
 
-The targeted `npm run check:videos:exodus` runner checks the nine active additions
-in Chromium and WebKit at phone and iPad viewport sizes, and explicitly verifies
-that the held video stays pending and absent from the shipped video configuration. It uses actual public media,
-the enforced application CSP and the production app, with duration-aware seeks
-rather than assuming all films last more than ten seconds. The older MP4 runner
-also supports the shorter, story-driven duration policy.
+Kevin authorized uploading the six correct files to the bucket root. The
+single batch completed successfully, preserving old objects. Public verification
+then passed for all ten final URLs, including the repaired Water/Amalek film.
+The targeted `npm run check:videos:exodus` runner uses those actual public URLs,
+the production handler and enforced application CSP. It tests both engines at
+phone and iPad sizes, native controls, changed paused frames, ending/restart,
+offline fallback/reconnect/resume, failed-source Retry and navigation cleanup.
+Final release gates apply to one immutable combined web/native source state.
 
-The initial browser matrix passed all Chromium lifecycle cases but found a
-WebKit offline-resume timing failure with a fixed 220-millisecond sample. A
-bounded diagnostic proved resumed playback near the saved time after a normal
-settlement interval, without allowing a restart from zero to pass. A separate
-paused-scrub probe observed seeking and seeked, changed displayed pixels while
-paused, and advancing playback afterward. Failed initial runs are retained;
-final release validation must use the stricter settlement check and held title.
+These are selective wordless scenes, not complete retellings. Reviews used
+sampled source frames and final montages, not every motion frame. Audio fully
+decodes but was not listening-reviewed. Browser viewport tests do not claim
+physical-device playback verification.
