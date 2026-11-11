@@ -255,3 +255,10 @@ assert(!findPeople('ainan').some(person=>person.name==='Cainan'),'Inner substrin
 assert.equal(CHARACTER_PAGE_SIZE,24);
 assert.equal(findPeople('Moses')[0].name,'Moses');
 console.log('PASS: UX2 K prefix ranking, visible Kenan/King aliases, no inner substring matches, Moses and 24-result paging.');
+
+// Unavailable People contact-card actions must not look like blue active links.
+const peopleStyles=fs.readFileSync('src/overrides.css','utf8');
+assert(peopleStyles.includes('html body.lens-app #main #characters-list .person-section-toggle:disabled{color:#626a75;opacity:1}'));
+assert(!peopleStyles.includes('.person-section-toggle:disabled{color:color-mix(in srgb,var(--directory-accent) 60%,transparent)'));
+assert(peopleStyles.includes('.person-section-toggle:disabled :is(.person-section-icon,.person-section-label){opacity:1}'));
+console.log('PASS disabled People actions use dark gray without stacked opacity');

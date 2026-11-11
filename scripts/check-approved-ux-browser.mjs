@@ -74,7 +74,7 @@ for(const [engine,type] of Object.entries({chromium,webkit})){
    const colors=await page.locator('#characters-list .person-section-toggle').evaluateAll(ns=>ns.map(n=>({disabled:n.disabled,color:getComputedStyle(n).color,icon:getComputedStyle(n.querySelector('.person-section-icon')).color})));
    assert(colors.every(c=>c.color===c.icon),'icon and label inherit the same state color');
    if(theme==='dark')assert(colors.filter(c=>!c.disabled).every(c=>c.color==='rgb(255, 255, 255)'),'available actions are white');
-   assert(colors.filter(c=>c.disabled).every(c=>c.color!=='rgb(255, 255, 255)'),'unavailable actions retain a dim tint');
+   assert(colors.filter(c=>c.disabled).every(c=>c.color==='rgb(98, 106, 117)'),'unavailable People actions use neutral dark gray');
    for(const selector of ['.directory-filter-open','.directory-filter-open>span']){
     assert.equal(await page.locator('#characters-view .stories-header '+selector).evaluate(n=>getComputedStyle(n).borderTopWidth),'0px',selector);
    }

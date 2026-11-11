@@ -3291,11 +3291,12 @@ html body.lens-app #main :is(#debate-view,#study-view).ux-compact-interior>h1{di
 html body.lens-app #main .lens-context h1{min-width:0;font-size:clamp(0.875rem,4vw,1.125rem);line-height:1.4;overflow-wrap:anywhere}
 html body.lens-app .editorial-status-info{margin:12px 0;font-size:.85rem;color:var(--lens-muted)}
 html body.lens-app .editorial-status-info summary{min-height:44px;display:flex;align-items:center;color:var(--lens-link);text-decoration:underline}
-/* Available People actions read white in dark mode; unavailable actions follow the card tint. */
+/* Available People actions read white in dark mode; unavailable actions use neutral dark gray. */
 html body.lens-app #main #characters-list .person-section-toggle:not(:disabled){color:var(--ux13-ink);opacity:1}
 html body.lens-app.dark #main #characters-list .person-section-toggle:not(:disabled){color:#fff}
-html body.lens-app #main #characters-list .person-section-toggle:disabled{color:color-mix(in srgb,var(--directory-accent) 60%,transparent);opacity:1}
+html body.lens-app #main #characters-list .person-section-toggle:disabled{color:#626a75;opacity:1}
 html body.lens-app #main #characters-list .person-section-toggle :is(.person-section-icon,.person-section-label){color:inherit}
+html body.lens-app #main #characters-list .person-section-toggle:disabled :is(.person-section-icon,.person-section-label){opacity:1}
 /* Keep touch targets and keyboard focus, without decorative header borders. */
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header :is(.directory-filter-open,.directory-settings-open),
 html body.lens-app #main :is(#stories-view,#characters-view,#places-view,#commandments-view,#evidence-view,#debates-view,#lost-view).directory-hub .stories-header .directory-filter-open>span{border:0;background:none;box-shadow:none}
