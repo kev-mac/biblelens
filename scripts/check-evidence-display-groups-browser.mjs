@@ -1,16 +1,36 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import http from 'node:http';
+import path from 'node:path';
 import {chromium,webkit} from 'playwright';
 import {debatePage,groupEvidenceDisplay,compareEvidenceReferences} from '../worker/debates.mjs';
 
-// Use an approved prepared preview. Optional source overlay is a no-build UI
-// check, not packaged release verification. It never writes or rebuilds assets.
-const base=process.env.BIBLELENS_PREVIEW_URL;
-if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an approved preview.');
-const sourceOverlay=process.env.BIBLELENS_SOURCE_OVERLAY==='1';
+// Web: BIBLELENS_PREVIEW_URL must point to the approved prepared app.
+// --mobile: serve only the actual www package and exercise its offline engine.
+// Source overlay is a separate no-build diagnostic, never native/package QA.
+const mobile=process.argv.includes('--mobile'),sourceOverlay=process.env.BIBLELENS_SOURCE_OVERLAY==='1';
+if(mobile&&sourceOverlay)throw Error('--mobile cannot use BIBLELENS_SOURCE_OVERLAY. Test the actual www package without API or asset overlays.');
+const mobileRoot=path.resolve('www'),mobileApiRequests=[];
+let base=process.env.BIBLELENS_PREVIEW_URL,server;
+if(mobile){
+ if(!fs.existsSync(path.join(mobileRoot,'index.html'))||!fs.existsSync(path.join(mobileRoot,'device-bootstrap.js')))throw Error('--mobile requires the release owner’s prepared www package. This test never builds it.');
+ const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webp':'image/webp','.woff2':'font/woff2','.svg':'image/svg+xml'};
+ server=http.createServer(async(req,res)=>{
+  try{
+   const url=new URL(req.url,'http://127.0.0.1');
+   if(url.pathname.startsWith('/api/')){mobileApiRequests.push(url.pathname);res.writeHead(503);res.end('Use on-device API');return;}
+   const file=path.resolve(mobileRoot,'.'+(url.pathname==='/'?'/index.html':decodeURIComponent(url.pathname)));
+   if(!file.startsWith(mobileRoot+path.sep)){res.writeHead(403);res.end();return;}
+   if(!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}
+   res.writeHead(200,{'content-type':types[path.extname(file)]||'application/octet-stream'});res.end(fs.readFileSync(file));
+  }catch(error){if(!res.headersSent)res.writeHead(500);res.end(error.message);}
+ });
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ base='http://127.0.0.1:'+server.address().port;
+}else if(!base)throw Error('Set BIBLELENS_PREVIEW_URL to an approved web preview, or use --mobile for the prepared www package.');
 const records=JSON.parse(fs.readFileSync('data/evidence.json','utf8'));
 const groups=groupEvidenceDisplay([...records].sort(compareEvidenceReferences)).filter(group=>group.key);
-const output='.release/evidence-display-groups'+(sourceOverlay?'-source':'');fs.mkdirSync(output,{recursive:true});
+const output='.release/evidence-display-groups'+(mobile?'-mobile':sourceOverlay?'-source':'');fs.mkdirSync(output,{recursive:true});
 const results=[];
 const settle=page=>page.evaluate(async()=>{await document.fonts.ready;await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});
 const ready=page=>page.waitForFunction(()=>document.querySelector('#debates-view:not([hidden]) #debate-count')?.textContent.startsWith('Showing'));
@@ -34,14 +54,17 @@ async function overlay(route){
  await route.continue();
 }
 if(sourceOverlay)console.log('SOURCE OVERLAY: current Evidence JavaScript/API/styles over prepared app; packaged QA still required.');
-for(const [engine,type]of Object.entries({chromium,webkit})){
+try{for(const [engine,type]of Object.entries({chromium,webkit})){
  const browser=await type.launch(engine==='chromium'?{chromiumSandbox:true}:{});
  try{for(const width of [320,390,820,1280])for(const theme of ['light','dark']){
   const name=`${engine}-${width}-${theme}`,context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce',serviceWorkers:'block'}),page=await context.newPage(),errors=[];
   page.setDefaultTimeout(20000);page.on('pageerror',error=>errors.push(error.message));
   await context.route('**/*',route=>new URL(route.request().url()).origin!==base?route.abort():sourceOverlay?overlay(route):route.continue());
+  if(mobile)await context.addInitScript(()=>Object.defineProperty(navigator,'onLine',{get:()=>false}));
   try{
    await page.goto(base+'/'+selection(groups[0]));await ready(page);
+   if(mobile)assert.equal(await page.evaluate(()=>navigator.onLine),false,'Native QA runs offline');
+   const release=await page.evaluate(async()=>{const response=await fetch('/release.json');if(!response.ok)throw Error('Prepared release identity is unavailable');return response.json();});
    await page.evaluate(theme=>{state.theme=theme;applyTheme();persist();},theme);
    for(const group of groups){
     const hash=selection(group);await go(page,hash);
@@ -85,9 +108,10 @@ for(const [engine,type]of Object.entries({chromium,webkit})){
    assert((await page.locator('#debate-count').innerText()).endsWith(`of ${first.displayTotal.toLocaleString()} results · ${first.total.toLocaleString()} records`));
    await page.locator('[data-debate-page="1"]').click();await ready(page);assert((await page.locator('#debate-count').innerText()).startsWith('Showing 25–48'));
    await page.goBack();await ready(page);assert((await page.locator('#debate-count').innerText()).startsWith('Showing 1–24'));
-   await fit(page);assert.deepEqual(errors,[]);results.push({name,sourceOverlay,status:'PASS'});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');console.log('PASS',name);
+   await fit(page);assert.deepEqual(errors,[]);if(mobile)assert.deepEqual(mobileApiRequests,[],'The actual native engine handles every API request without network fallback');results.push({name,mobile,sourceOverlay,release,status:'PASS'});fs.writeFileSync(output+'/matrix.json',JSON.stringify(results,null,2)+'\n');console.log('PASS',name);
   }catch(error){await page.screenshot({path:`${output}/${name}-failure.png`}).catch(()=>{});throw error;}
   finally{await context.close();}
  }}finally{await browser.close();}
 }
-console.log('PASS: four groups, nine original detail/save links, source/scope parity, counts, search, pagination, Back, 44px links, focus, chips and viewport fit in Chromium/WebKit at four widths and both themes.');
+console.log('PASS: four groups, nine original detail/save links, source/scope parity, counts, search, pagination, Back, 44px links, focus, chips and viewport fit in Chromium/WebKit at four widths and both themes.'+(mobile?' Native www package ran offline with zero network API fallbacks.':''));
+}finally{if(server)await new Promise(resolve=>server.close(resolve));}
