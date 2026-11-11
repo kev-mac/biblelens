@@ -6,9 +6,9 @@
  const load=()=>pending||=(fetch('/accepted-questions.json').then(r=>{if(!r.ok)throw Error();return r.json();}).catch(e=>{pending=null;throw e;}));
  const href=row=>row.href||'#debate/'+row.id;
  const readings=row=>row.readings.map((reading,index)=>`<section><h3>${index===0?'A':'B'} · ${esc(reading.label)}</h3><p>${esc(reading.summary)}</p></section>`).join('');
- const labels=row=>row.labels.map(label=>`<span class="phase2-verdict">${esc(uiTitleCase(label))}</span>`).join('');
+ const labels=row=>row.labels.map(label=>`<span class="phase2-verdict" data-assessment="${esc(label.toLowerCase())}">${esc(uiTitleCase(label))}</span>`).join('');
  const order=['B25','B17','B16','B01','B26','B18','B08','B02','B27','B19','B13','B03','B28','B20','B14','B04','B29','B21','B09','B05','B30','B22','B10','B06','B23','B11','B07','B24','B12','B15'];
- const card=row=>`<a class="phase2-debate-card" href="${href(row)}"><div class="story-top-row"><span class="passage-badge">${esc(passagePillText([...row.side_a,...row.side_b].map(p=>p.ref)))}</span></div><h2 class="story-title">${esc(row.question)}</h2>${row.topic?`<p>${esc(row.summary)}</p>`:''}<div class="story-footer"><span class="phase2-verdict">${esc(row.labels.map(uiTitleCase).join(' • ')||(row.topic?'Passage comparison':''))}</span><span class="action-link">View question</span></div></a>`;
+ const card=row=>`<a class="phase2-debate-card" href="${href(row)}"><div class="story-top-row"><span class="passage-badge">${esc(passagePillText([...row.side_a,...row.side_b].map(p=>p.ref)))}</span></div><h2 class="story-title">${esc(row.question)}</h2>${row.topic?`<p>${esc(row.summary)}</p>`:''}<div class="story-footer"><span class="assessment-tags">${row.labels.length?labels(row):`<span class="phase2-verdict">${row.topic?'Passage comparison':''}</span>`}</span><span class="action-link">View question</span></div></a>`;
  const subjects=()=>[['','All'],['text-vs-text',scriptureComparison('text')],['text-vs-history',scriptureComparison('History')],...['Astronomy','Geology','Biology'].map(value=>[value,value])];
  const subjectTitle=value=>subjects().find(([key])=>key===value)?.[1]||'Contradictions';
  const listHref=({subject='',finding='',query='',page=0}={})=>{

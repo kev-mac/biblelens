@@ -3746,3 +3746,19 @@ html body.lens-app.verse-actions-open #chapter-text {padding-bottom:calc(var(--v
  html body.lens-app .story-full-details[open] .story-video-stage>img {object-fit:contain;}
  html body.lens-app .story-full-details[open] .story-illustration-summary>img {width:100%;max-width:640px;height:auto;max-height:360px;aspect-ratio:auto;object-fit:contain;margin-inline:auto;}
 }
+
+/* Editorial assessments use the same visible size and outline as Read verse tags.
+   These are labels inside an existing card link, not separate tap targets. */
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .story-footer .assessment-tags {display:flex;white-space:normal;overflow:visible;text-overflow:clip;flex-wrap:wrap;align-items:center;gap:3px;min-width:0;max-width:100%;}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment] {
+ --assessment-rgb:100,116,139;
+ display:inline-block;align-self:center;font:500 .5rem/1.2 var(--ui-font);letter-spacing:.01em;text-transform:uppercase;
+ color:color-mix(in srgb,rgb(var(--assessment-rgb)) 65%,black);background:transparent;
+ border:1px solid currentColor;border-radius:4px;padding:1px 3px;max-width:100%;white-space:normal;overflow-wrap:anywhere;
+}
+html body.lens-app.dark #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment] {color:color-mix(in srgb,rgb(var(--assessment-rgb)) 70%,white);}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict:is([data-assessment="conflicts with evidence"],[data-assessment="evidence points elsewhere"]) {--assessment-rgb:244,63,94;}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment="wording differs"] {--assessment-rgb:168,85,247;}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict:is([data-assessment="evidence matches the text"],[data-assessment="readings can fit together"]) {--assessment-rgb:16,185,129;}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment="not settled"] {--assessment-rgb:245,158,11;}
+html body.lens-app #main #debates-view.directory-hub .phase2-debate-card .phase2-verdict[data-assessment="interpretation remains open"] {--assessment-rgb:59,130,246;}
