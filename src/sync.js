@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded',()=>{
  const cloud='https://scripture-lens.kvn-mcgwn.chatgpt.site';
  const prefix=native?cloud:'';
  const core=window.BibleLensSync,storageKey='biblelens-cloud-sync-v1';
- let meta={enabled:false,base:{},owner:null,token:null},busy=false,applying=false,revoking=false,timer,identity;
- try{meta={...meta,...JSON.parse(localStorage.getItem(storageKey)||'{}')};}catch{}
+ let meta={enabled:false,base:{},owner:null,token:null},busy=false,applying=false,revoking=false,timer,identity,syncController,metaRaw;
+ try{metaRaw=localStorage.getItem(storageKey);meta={...meta,...JSON.parse(metaRaw||'{}')};}catch{}
  // Web sync uses the signed-in session; never retain an unused device bearer.
  if(!native&&(meta.token||meta.disconnectPending)){meta.token=null;delete meta.disconnectPending;saveMeta();}
  if(meta.disconnectPending)meta.enabled=false;
@@ -14,18 +14,37 @@ document.addEventListener('DOMContentLoaded',()=>{
  document.querySelector('#reader-settings').append(panel);
  const status=panel.querySelector('[data-sync-status]'),actions=panel.querySelector('.sync-actions'),pair=panel.querySelector('.sync-pair');
  function say(text){status.textContent=text;}
- function saveMeta(){try{localStorage.setItem(storageKey,JSON.stringify(meta));}catch{meta.enabled=false;throw Error('Device storage is full. Export your notes before enabling sync.');}}
- function backup(){localStorage.setItem('biblelens-before-cloud-sync',JSON.stringify({...state,backedUpAt:new Date().toISOString()}));}
+ function saveMeta(){try{const raw=JSON.stringify(meta);localStorage.setItem(storageKey,raw);metaRaw=raw;}catch{meta.enabled=false;throw Error('Device storage is full. Export your notes before enabling sync.');}}
+ function refreshMeta(){
+  // Storage events can be delayed. Re-read before each request/response commit,
+  // so a stale tab cannot upload after another tab disables sync.
+  let raw;try{raw=localStorage.getItem(storageKey);}catch{raw=null;}
+  if(raw===metaRaw)return;
+  clearTimeout(timer);syncController?.abort();
+  let stored;try{stored=JSON.parse(raw||'{}');}catch{}
+  meta={enabled:false,base:{},owner:null,token:null,...(stored&&typeof stored==='object'?stored:{})};
+  if(meta.disconnectPending)meta.enabled=false;
+  metaRaw=raw;render();
+  if(!meta.enabled)say('Sync is off. Your notes remain on this device.');
+ }
+ function backup(){localStorage.setItem('biblelens-before-cloud-sync',JSON.stringify({...state,version:1,exportedAt:new Date().toISOString(),backedUpAt:new Date().toISOString(),deviceDebates:window.BibleLensDebateStore?.all()}));}
  async function api(path,options={}){
-  const response=await fetch(prefix+'/api/sync'+path,{...options,credentials:native?'omit':'same-origin',headers:{'content-type':'application/json','x-biblelens-sync':'1',...(native&&meta.token?{authorization:'Bearer '+meta.token}:{}),...options.headers},signal:AbortSignal.timeout(15000)});
-  const data=await response.json();if(!response.ok)throw Object.assign(Error(data.error||'Sync is unavailable.'),{status:response.status});return data;
+  // Compose cancellation without AbortSignal.any, which older iOS WebKit lacks.
+  const timeout=AbortSignal.timeout(15000),controller=new AbortController(),abort=()=>controller.abort();
+  const signals=[timeout,options.signal].filter(Boolean);
+  for(const signal of signals){if(signal.aborted)abort();else signal.addEventListener('abort',abort,{once:true});}
+  try{
+   const response=await fetch(prefix+'/api/sync'+path,{...options,credentials:native?'omit':'same-origin',headers:{'content-type':'application/json','x-biblelens-sync':'1',...(native&&meta.token?{authorization:'Bearer '+meta.token}:{}),...options.headers},signal:controller.signal});
+   const data=await response.json();if(!response.ok)throw Object.assign(Error(data.error||'Sync is unavailable.'),{status:response.status});return data;
+  }finally{for(const signal of signals)signal.removeEventListener('abort',abort);}
  }
  async function retryDisconnect(){
-  if(!meta.disconnectPending||revoking)return;
-  revoking=true;
+  refreshMeta();if(!meta.disconnectPending||revoking)return;
+  revoking=true;const disconnectMeta=meta;
   try{
    if(meta.token)try{await api('/disconnect',{method:'POST'});}catch(error){if(error.status!==401)throw error;}
    // A 401 also means this credential can no longer authorize sync.
+   refreshMeta();if(meta!==disconnectMeta)return;
    meta={enabled:false,owner:null,base:{},token:null};saveMeta();render();
    say('Sync is off. This iPhone is disconnected. Your notes remain on this device.');
   }catch{
@@ -33,7 +52,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }finally{revoking=false;}
  }
  async function disconnect(){
-  clearTimeout(timer);
+  refreshMeta();clearTimeout(timer);syncController?.abort();
   // Persist the off state before the request. Keep a failed revocation available
   // for retry after reload; never resume document sync with this credential.
   meta={enabled:false,owner:null,base:{},token:native?meta.token:null,...(native&&meta.token?{disconnectPending:true}:{})};
@@ -67,17 +86,17 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
  }
  async function sync(){
-  if(!meta.enabled||meta.disconnectPending||busy)return;busy=true;const sessionMeta=meta,active=()=>meta===sessionMeta&&meta.enabled;say('Syncing…');
+  refreshMeta();if(!meta.enabled||meta.disconnectPending||busy)return;busy=true;const sessionMeta=meta,controller=new AbortController();syncController=controller;const active=()=>{refreshMeta();return meta===sessionMeta&&meta.enabled&&!meta.disconnectPending;},sessionApi=(path,options={})=>api(path,{...options,signal:controller.signal});say('Syncing…');
   try{
-   const session=await api('/session');if(!active())return;
+   const session=await sessionApi('/session');if(!active())return;
    if(session.userId!==meta.owner){meta.enabled=false;saveMeta();render();throw Error('The signed-in account changed. Your local notes were kept; enable sync explicitly for this account.');}
    for(let attempt=0;attempt<4;attempt++){
     if(!active())return;
-    const captured=core.snapshot(state),remote=await api('/document');if(!active())return;
+    const captured=core.snapshot(state),remote=await sessionApi('/document');if(!active())return;
     const merged=core.merge(meta.base,captured,remote.data);
     let revision=remote.revision;
     if(!core.equal(merged.data,remote.data)){
-     try{revision=(await api('/document',{method:'PUT',body:JSON.stringify({revision:remote.revision,data:merged.data})})).revision;}catch(error){if(error.status===409)continue;throw error;}
+     try{revision=(await sessionApi('/document',{method:'PUT',body:JSON.stringify({revision:remote.revision,data:merged.data})})).revision;}catch(error){if(error.status===409)continue;throw error;}
     }
     if(!active())return;
     // A user may edit while network requests are in flight. Keep those edits queued.
@@ -95,10 +114,11 @@ document.addEventListener('DOMContentLoaded',()=>{
    }
    throw Error('Another device is still updating. Your edits are saved locally; sync will retry.');
   }catch(error){if(meta===sessionMeta)say(error.status===401?'Sign in again or reconnect this iPhone. Local changes are saved.':navigator.onLine?error.message:'Offline. Changes are saved here and will sync when you reconnect.');}
-  finally{busy=false;}
+  finally{busy=false;if(syncController===controller)syncController=null;}
  }
- function schedule(){if(meta.disconnectPending){retryDisconnect();return;}if(applying||!meta.enabled)return;clearTimeout(timer);timer=setTimeout(sync,800);}
+ function schedule(){refreshMeta();if(meta.disconnectPending){retryDisconnect();return;}if(applying||!meta.enabled)return;clearTimeout(timer);timer=setTimeout(sync,800);}
  window.BibleLensCloud={changed:schedule};
+ window.addEventListener('storage',event=>{if(event.key===storageKey||event.key===null)refreshMeta();});
  window.addEventListener('online',schedule);window.addEventListener('focus',schedule);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)schedule();});
  setInterval(()=>{if(!document.hidden){if(meta.disconnectPending)retryDisconnect();else if(meta.enabled)sync();}},30000);

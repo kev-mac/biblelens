@@ -25,7 +25,7 @@
   const passage=p=>p&&Number.isInteger(p.book)&&p.book>=0&&p.book<66&&Number.isInteger(p.chapter)&&p.chapter>0&&p.chapter<=150&&(p.verse===undefined||Number.isInteger(p.verse)&&p.verse>0&&p.verse<=176)&&(p.endVerse===undefined||Number.isInteger(p.endVerse)&&p.endVerse>=(p.verse||1)&&p.endVerse<=176);
   return !!value&&typeof value==='object'&&!Array.isArray(value)&&typeof value.id==='string'&&safeKey(value.id)&&typeof value.title==='string'&&value.title.length<=200&&typeof value.note==='string'&&value.note.length<=100000&&passage(value.left)&&passage(value.right)&&['kjv','web','asv'].includes(String(value.edition).toLowerCase());
  }
- function mergeInvestigation(base={},local,remote,key,out){
+ function mergeInvestigation(base={},local,remote,key,alternates){
   if(!local||!remote)return copy(local||remote);
   const value={...remote,...local,id:key};let alternate=false;
   for(const field of ['note','title','left','right','edition']){
@@ -35,27 +35,36 @@
    else if(field==='title')value.note=(value.note||'')+'\n\nTitle from another device: '+remote.title;
    else alternate=true;
   }
-  if(alternate){
-   // Keep a separately openable copy when both devices changed the passage pair.
-   let hash=0;for(const character of stable(remote))hash=(Math.imul(hash,31)+character.charCodeAt(0))|0;
-   const id=key+'-conflict-'+(hash>>>0).toString(36);out[id]={...copy(remote),id};
-  }
+  // A combined note (including conflicting titles) must remain loadable. Keep
+  // each complete version separately rather than truncate or invalidate storage.
+  if(!validInvestigation(value)){value.note=local.note;alternate=true;}
+  if(alternate)alternates.push({key,record:copy(remote)});
   return value;
  }
  function merge(base={},local={},remote={}){
   const result={};let conflicts=0;
   for(const namespace of ['bookmarks',...maps,'preferences']){
-   const out=result[namespace]={},b=base[namespace]||{},l=local[namespace]||{},r=remote[namespace]||{};
+   const out=result[namespace]={},b=base[namespace]||{},l=local[namespace]||{},r=remote[namespace]||{},alternates=[];
    for(const key of new Set([...Object.keys(b),...Object.keys(l),...Object.keys(r)])){
     if(!safeKey(key))continue;
     let value;
     if(equal(l[key],b[key]))value=r[key];
     else if(equal(r[key],b[key])||equal(l[key],r[key]))value=l[key];
     else if(namespace==='verseBookmarks'&&l[key]&&r[key]){const highlights=[...(l[key].highlights||[]),...(r[key].highlights||[])];value={...r[key],...l[key],highlights:highlights.filter((h,i)=>highlights.findIndex(other=>h.edition===other.edition&&h.start===other.start&&h.end===other.end&&h.text===other.text)===i).slice(0,200)};}
-    else if(namespace==='investigations'){value=mergeInvestigation(b[key],l[key],r[key],key,out);conflicts++;}
+    else if(namespace==='investigations'){value=mergeInvestigation(b[key],l[key],r[key],key,alternates);conflicts++;}
     else if(['notes','passageNotes','verseNotes','noteTitles'].includes(namespace)){value=preserve(l[key],r[key]);conflicts++;}
     else value=l[key];
     if(value!==undefined)out[key]=copy(value);
+   }
+   // Insert after existing keys so a conflict copy cannot overwrite a real record.
+   for(const {key,record}of alternates){
+    let hash=0;for(const character of stable(record))hash=(Math.imul(hash,31)+character.charCodeAt(0))|0;
+    const stem=key+'-conflict-'+(hash>>>0).toString(36);let id=stem,index=1;
+    while(Object.hasOwn(out,id)||Object.hasOwn(b,id)||Object.hasOwn(l,id)||Object.hasOwn(r,id)){
+     if(equal(out[id],{...record,id}))break;
+     id=stem+'-'+index++;
+    }
+    out[id]={...record,id};
    }
   }
   return {data:result,conflicts};

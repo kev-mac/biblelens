@@ -66,12 +66,40 @@ assert(!Object.hasOwn(core.merge(base,{investigations:{}},base).data.investigati
 assert.equal(core.mergeDraft('Original','Unsaved draft','Original'),'Unsaved draft');
 assert.match(core.mergeDraft('Original','Unsaved draft','Remote edit'),/Unsaved draft[\s\S]*Remote edit/);
 console.log('PASS: concurrent tab edits, deletions, note conflicts, durable journal recovery, storage failure/quarantine and investigation round trips.');
+// Large concurrent investigations remain valid, lossless and separately openable.
+const largeBase={investigations:{test:record}},largeLeft=structuredClone(largeBase),largeRight=structuredClone(largeBase);
+largeLeft.investigations.test.note='L'.repeat(60000);largeRight.investigations.test.note='R'.repeat(60000);
+const largeMerged=core.merge(largeBase,largeLeft,largeRight).data;
+assert.equal(Object.keys(largeMerged.investigations).length,2);
+assert(Object.values(largeMerged.investigations).every(core.validInvestigation));
+assert(Object.values(largeMerged.investigations).some(r=>r.note===largeLeft.investigations.test.note));
+assert(Object.values(largeMerged.investigations).some(r=>r.note===largeRight.investigations.test.note));
+const largeState={bookmarks:['unrelated'],notes:{unrelated:'Keep me'}};core.apply(largeState,{...largeMerged,bookmarks:{unrelated:true},notes:{unrelated:'Keep me'}});
+const largeStorage=new MemoryStorage({[key]:JSON.stringify(largeState)}),largeReload=tab(largeStorage,'large-reload',new Locks());
+assert.equal(largeReload.store.recovery,null);assert.equal(largeReload.state.notes.unrelated,'Keep me');
+assert.equal(Object.keys(largeReload.state.investigations).length,2);
+const repeated=core.merge(largeBase,largeMerged,largeRight).data;
+assert.equal(Object.keys(repeated.investigations).length,2,'Repeated merges reuse the same conflict copy');
+// Conflicting titles must not overflow an otherwise-at-limit note either.
+const titleLeft=structuredClone(largeBase),titleRight=structuredClone(largeBase);
+titleLeft.investigations.test.note=titleRight.investigations.test.note='N'.repeat(100000);
+titleLeft.investigations.test.title='Local title';titleRight.investigations.test.title='Remote title';
+const titleMerged=core.merge(largeBase,titleLeft,titleRight).data.investigations;
+assert.equal(Object.keys(titleMerged).length,2);assert(Object.values(titleMerged).every(core.validInvestigation));
+assert(Object.values(titleMerged).some(r=>r.title==='Remote title'));
+// A deliberately colliding existing ID must not be replaced by the generated copy.
+const conflictId=Object.keys(largeMerged.investigations).find(id=>id!=='test');
+largeLeft.investigations[conflictId]={...record,id:conflictId,note:'Unrelated existing record'};
+const collision=core.merge(largeBase,largeLeft,largeRight).data.investigations;
+assert.equal(collision[conflictId].note,'Unrelated existing record');assert.equal(Object.keys(collision).length,3);
+console.log('PASS: oversized investigation conflicts retain both complete records, survive reload and preserve unrelated records.');
+
 
 // Execute the real cloud sync body: an unchanged poll must perform no UI or note writes.
 const syncSource=fs.readFileSync('src/sync.js','utf8');
 const syncBody=syncSource.slice(syncSource.indexOf(' async function sync(){'),syncSource.indexOf(' function schedule()'));
 let renders=0,persists=0,backups=0;const cloudState={bookmarks:[],notes:{a:'Keep selection'},readerPreferences:{edition:'kjv'}};
-const context={core,state:cloudState,meta:{enabled:true,owner:'owner',base:core.snapshot(cloudState)},busy:false,applying:false,say(){},api:async path=>path==='/session'?{userId:'owner'}:{revision:1,data:core.snapshot(cloudState)},saveMeta(){},render(){},backup(){backups++;},applyWorkspaceSnapshot(){renders++;},persist(){persists++;},schedule(){},navigator:{onLine:true},Date};
+const context={core,state:cloudState,meta:{enabled:true,owner:'owner',base:core.snapshot(cloudState)},busy:false,applying:false,syncController:null,AbortController,refreshMeta(){},say(){},api:async path=>path==='/session'?{userId:'owner'}:{revision:1,data:core.snapshot(cloudState)},saveMeta(){},render(){},backup(){backups++;},applyWorkspaceSnapshot(){renders++;},persist(){persists++;},schedule(){},navigator:{onLine:true},Date};
 vm.createContext(context);vm.runInContext(syncBody,context);await context.sync();
 assert.equal(renders,0);assert.equal(persists,0);assert.equal(backups,0);
 console.log('PASS: unchanged cloud sync leaves the reader, editor, selection and local note storage untouched.');
