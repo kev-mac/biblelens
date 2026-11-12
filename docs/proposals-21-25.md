@@ -17,3 +17,7 @@ Targeted existing checks: lost-books, commandments, characters, places, shared-u
 The full npm check invocation was blocked by the execution network policy at registry.npmjs.org. Do not represent targeted checks as the full aggregate suite. Readability is report-only and reports pre-existing corpus warnings.
 
 No push, deployment or device installation is part of this implementation. Rebuild and verify the integrated source through RELEASING.md before release.
+
+## Reference-review correction
+
+The desktop Laws layout inherited absolute positioning for the P/N badge. It now remains in normal flow below the quotation, with an independent plain-language explanation: P means a command to do something; N means a command not to do something. Browser tests assert no title overlap or truncated badge and exercise N365 as well as P1.

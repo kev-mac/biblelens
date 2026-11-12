@@ -3800,3 +3800,7 @@ html body.lens-app #main #characters-list .ux-contact .directory-save.directory-
 html body.lens-app #main #characters-list .directory-save-label{font-size:.72rem;line-height:1.2}
 html body.lens-app #main #characters-list .person-profile-action{margin-top:16px;width:100%}
 html body.lens-app :is(.lost-source-actions a,.person-profile-action,.place-open-map,.directory-save-labeled):focus-visible{outline:2px solid var(--lens-focus);outline-offset:3px}
+
+/* Keep law metadata in document flow, including the legacy desktop list layout. */
+html body.lens-app #main #commandments-view #commandments-list .commandment-number{position:static;inset:auto;width:auto;max-width:100%;white-space:normal;overflow:visible;text-overflow:clip}
+html body.lens-app #main #commandments-view .commandment-code-help{display:block;margin-top:4px;font-weight:400}
