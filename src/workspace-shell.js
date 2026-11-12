@@ -62,7 +62,7 @@
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
- const labels={read:'Read',explore:'Explore',inspect:'Inspect',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',lost:'Other Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',prophecies:'Prophecies',method:'Method & Sources',chat:'Ask the Text'};
+ const labels={read:'Read',explore:'Explore',inspect:'Inspect',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',lost:'Other Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',method:'Method & Sources',chat:'Ask the Text'};
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
@@ -86,7 +86,7 @@
   if(/^#stories\//.test(location.hash))title=host.querySelector('.story-card h2')?.textContent.trim()||title;
   const top=['read','explore','notebook'].includes(view)&&!/^#(?:compare|investigation|study)/.test(location.hash);
   contextNav.hidden=top;
-  contextNav.classList.toggle('collection-header',['timeline','prophecies'].includes(view));
+  contextNav.classList.toggle('collection-header',['timeline'].includes(view));
   if(!top){
    const root=active==='debates'?'Questions':labels[active],rootHash=roots[active];
    const headerTitle=view==='debate'?(host.dataset.evidenceHeading||({history:'History',science:'Science',text:'Text Comparisons',translation:'Translations',questions:'Questions'}[document.body.dataset.topic]||'Research Record')):view==='study'?'Research Record':/^#stories\//.test(location.hash)?'Stories':title;
@@ -115,7 +115,7 @@
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='Back';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.id==='character-sheet'?dialog.dispatchEvent(new Event('person-context-back')):dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
   nav.querySelector('button').hidden=dialog.dataset.contextBack!=='true';
-  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Laws',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
+  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Laws',timeline:'History & Timeline'}[view];
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
  }}
@@ -266,7 +266,7 @@
     selectedFilters.set(row,{selected,width:row.clientWidth});
     if(selected&&row.clientWidth>0&&row.scrollWidth>row.clientWidth+2){const r=selected.getBoundingClientRect(),box=row.getBoundingClientRect();if(r.left<box.left||r.right>box.right-16)row.scrollLeft+=r.left-box.left-Math.max(0,(box.width-r.width)/2);}
    }
-   for(const result of host.querySelectorAll('.characters-count,#places-count,#commandments-count')){result.classList.add('directory-results');if(/^\d/.test(result.textContent))result.textContent='Showing '+result.textContent;}
+   for(const result of host.querySelectorAll('.characters-count,#places-count,#commandments-count')){result.classList.add('directory-results');if(/^\d/.test(result.textContent))result.textContent='Showing '+result.textContent;if(!result.closest('.list-meta-row')){if(result.parentElement.classList.contains('results-line'))result.parentElement.classList.add('list-meta-row');else{const row=document.createElement('div');row.className='list-meta-row';result.before(row);row.append(result);}}}
    for(const card of host.querySelectorAll('.ux-contact,.place-profile-card,.commandment-card,.marked-comparison-card,.phase2-debate-card')){
     if(card.classList.contains('story-card'))continue;card.classList.add('story-card');
     const title=card.querySelector('h2,h3');title?.classList.add('story-title');

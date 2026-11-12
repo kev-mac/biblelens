@@ -3804,3 +3804,19 @@ html body.lens-app :is(.lost-source-actions a,.person-profile-action,.place-open
 /* Keep law metadata in document flow, including the legacy desktop list layout. */
 html body.lens-app #main #commandments-view #commandments-list .commandment-number{position:static;inset:auto;width:auto;max-width:100%;white-space:normal;overflow:visible;text-overflow:clip}
 html body.lens-app #main #commandments-view .commandment-code-help{display:block;margin-top:4px;font-weight:400}
+
+/* Approved 31–33 and 36: shared outline icons, local plan progress, roomy
+   prompt cards and aligned directory metadata without changing tile badges. */
+html body.lens-app .explore-quick-actions button{justify-content:center;text-align:center}
+html body.lens-app .explore-quick-actions svg{width:18px;height:18px;flex:none}
+html body.lens-app #explore-quick-dialog [data-plan-status]{font-size:.8125rem;margin:8px 0;color:var(--lens-muted)}
+html body.lens-app #explore-quick-dialog progress{display:block;width:100%;height:8px;border:0;border-radius:99px;overflow:hidden;accent-color:var(--lens-copper);background:var(--lens-control-bg)}
+html body.lens-app #explore-quick-dialog progress::-webkit-progress-bar{background:var(--lens-control-bg)}
+html body.lens-app #explore-quick-dialog progress::-webkit-progress-value{background:var(--lens-copper);border-radius:99px}
+html body.lens-app #explore-quick-dialog progress::-moz-progress-bar{background:var(--lens-copper);border-radius:99px}
+html body.lens-app #explore-quick-dialog a{text-decoration:none;text-align:center}
+html body.lens-app #chat-view .chat-starter-grid{gap:16px}
+html body.lens-app #chat-view .chat-starter-grid button{padding:20px;min-height:116px;gap:12px;grid-template-columns:1fr;text-align:center;justify-items:center}
+html body.lens-app #chat-view .chat-starter-grid button b{display:none}
+html body.lens-app #main :is(#characters-view,#places-view,#commandments-view).directory-hub .list-meta-row{min-height:24px;margin:0 0 16px;padding:0 2px;flex-wrap:wrap}
+html body.lens-app #main :is(#characters-view,#places-view,#commandments-view).directory-hub .list-meta-row .directory-results{margin:0;font:inherit;color:inherit;white-space:normal}
