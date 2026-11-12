@@ -3781,3 +3781,22 @@ html body.lens-app .story-card .story-passage-link:is(:hover,:focus-visible){tex
 html body.lens-app .story-video-corner-controls{position:absolute;right:8px;top:8px;z-index:2;display:flex;gap:4px;}
 html body.lens-app .story-video-corner-controls button{display:grid;place-items:center;width:44px;height:44px;min-width:44px;min-height:44px;padding:11px;border:0;border-radius:50%;background:rgba(10,12,16,.72);color:#fff;cursor:pointer;}
 html body.lens-app .story-video-corner-controls svg{width:22px;height:22px;pointer-events:none;}
+
+/* Approved proposals 21–25: explicit, centered actions without arrow icons. */
+html body.lens-app #lost-source-sheet .lost-source-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+html body.lens-app #lost-source-sheet .lost-source-actions a,
+html body.lens-app #main #characters-list .person-profile-action,
+html body.lens-app #main .place-inline-map .place-open-map{display:flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:10px 16px;box-sizing:border-box;border:1px solid var(--ux13-rule);border-radius:10px;background:var(--ux13-surface);color:var(--directory-accent);font:600 .875rem/1.4 var(--ui-font);text-decoration:none}
+html body.lens-app #lost-source-sheet .source-external-note{font-size:.8rem;color:var(--ux13-muted)}
+@media(min-width:768px){html body.lens-app dialog#lost-source-sheet.stories-filter-sheet{inset:0;margin:auto;height:fit-content;width:min(600px,calc(100vw - 48px));max-height:calc(100dvh - 64px);border-radius:18px;padding:24px}}
+@media(max-width:360px){html body.lens-app #lost-source-sheet .lost-source-actions{grid-template-columns:1fr}}
+html body.lens-app .commandment-code-help{font-size:.8rem;color:var(--ux13-muted)}
+html body.lens-app.dark .place-inline-map{--map-water:#101f30;--map-land:#48606b;--map-line:#9ab3bf;--map-label:#fff;--map-halo:#263e49;--map-point:#ffd395}
+html body.lens-app .place-inline-map .place-map-compass{stroke:var(--map-label);fill:var(--map-label)}
+html body.lens-app .place-inline-map .place-map-pin{stroke:var(--map-label);stroke-width:3}
+html body.lens-app .place-inline-map .place-map-halo{fill-opacity:.25}
+html body.lens-app #main .place-inline-map .place-open-map{margin-top:14px;width:100%}
+html body.lens-app #main #characters-list .ux-contact .directory-save.directory-save-labeled{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;width:64px;min-width:64px;height:auto;min-height:56px;padding:6px;text-align:center}
+html body.lens-app #main #characters-list .directory-save-label{font-size:.72rem;line-height:1.2}
+html body.lens-app #main #characters-list .person-profile-action{margin-top:16px;width:100%}
+html body.lens-app :is(.lost-source-actions a,.person-profile-action,.place-open-map,.directory-save-labeled):focus-visible{outline:2px solid var(--lens-focus);outline-offset:3px}

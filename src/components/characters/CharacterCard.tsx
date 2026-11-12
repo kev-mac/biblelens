@@ -112,10 +112,10 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const role=profile.roles?.find(tag=>tag.status==='live')?.role;
  const count=(profile.key_passages||profile.narrative_anchors?.key_verses||[]).length;
  copy.append(element('p','ux-contact-subtitle',(role?role[0].toUpperCase()+role.slice(1)+' · ':'')+count.toLocaleString()+' '+(count===1?'linked verse':'linked verses')));
- open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name));card.append(header);
+ open.append(avatar,copy);header.append(open,directorySaveButton('person',profile.id,profile.name,true));card.append(header);
  if(role)card.prepend(element('span','passage-badge',role[0].toUpperCase()+role.slice(1)));
  const body=element('div','character-contact-body');
  body.append(ProfileBiography(profile));
  body.append(ProfileSections(profile));
- card.append(body);return card;
+ const profileAction=element('a','person-profile-action','View full profile');profileAction.href='#characters/'+encodeURIComponent(profile.id);profileAction.setAttribute('aria-label','View full profile for '+profile.name);body.append(profileAction);card.append(body);return card;
 }
