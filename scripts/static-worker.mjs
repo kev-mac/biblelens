@@ -6,6 +6,17 @@ import {createHash} from 'node:crypto';
 import {encodeEmbeddedAsset,decodeEmbeddedAsset} from './embedded-encoding.mjs';
 import {createEmbeddedByteCache} from '../worker/embedded-bytes.mjs';
 
+// Keep encoded strings inside lazy getter bodies. Initializing a large string
+// table at module scope exceeds the hosted isolate's startup memory budget.
+// Getters preserve property access, enumeration and JSON serialization without
+// retaining decoded public data or changing the embedded bytes.
+export function lazyStringTable(table) {
+ return '{'+Object.entries(table).map(([key,value])=>{
+  if(typeof value!=='string')throw Error('Lazy asset tables require strings');
+  return 'get '+JSON.stringify(key)+'(){return '+JSON.stringify(value)+'}';
+ }).join(',')+'}';
+}
+
 // Default: compressed lazy assets preserve the existing Sites ESM contract.
 // Opt-in static mode removes their bytes and needs Cloudflare's ASSETS binding.
 export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}, preparedAssets) {
@@ -142,9 +153,9 @@ async function prepareAssets(request,env){
     else {bodies.set(body,route);compressed[route]=body;}
   }
   const embedded = external ? 'const EMBEDDED_ASSETS=null;\n' : `
-const COMPRESSED_ASSETS=${JSON.stringify(compressed)};
+const COMPRESSED_ASSETS=${lazyStringTable(compressed)};
 ${decodeEmbeddedAsset.toString()}
-const ASSET_ALIASES=${JSON.stringify(aliases)},CHAPTER_PACKS=${JSON.stringify(data.CHAPTERS)},CHAPTER_PATHS=${JSON.stringify(Object.fromEntries(chapterPaths))};
+const ASSET_ALIASES=${JSON.stringify(aliases)},CHAPTER_PACKS=${lazyStringTable(data.CHAPTERS)},CHAPTER_PATHS=${JSON.stringify(Object.fromEntries(chapterPaths))};
 ${createEmbeddedByteCache.toString()}
 const BINARY_PATHS=new Set(${JSON.stringify(Object.entries(assets).filter(([,asset])=>asset.encoding==='base64').map(([url])=>url))});
 const binaryBytes=createEmbeddedByteCache(async path=>{

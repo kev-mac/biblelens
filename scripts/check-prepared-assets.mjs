@@ -3,7 +3,21 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {splitWorker} from './static-worker.mjs';
+import {splitWorker,lazyStringTable} from './static-worker.mjs';
+import vm from 'node:vm';
+// Asset and chapter data must remain lazy at Worker startup, with exact bytes
+// available through ordinary property access and offline-corpus serialization.
+const lazyFixture={'/empty':'','/quotes':'Quotes " and \\; café \n','/binary':'0123456789'.repeat(1000)};
+const lazy=vm.runInNewContext('('+lazyStringTable(lazyFixture)+')');
+assert.deepEqual(Object.keys(lazy),Object.keys(lazyFixture));
+for(const [key,value] of Object.entries(lazyFixture)){
+ const descriptor=Object.getOwnPropertyDescriptor(lazy,key);
+ assert.equal(typeof descriptor.get,'function','Encoded data is not eagerly materialized');
+ assert(!Object.hasOwn(descriptor,'value'));
+ assert.equal(lazy[key],value);assert.equal(lazy[key],value,'Repeated requests retain exact data');
+}
+assert.equal(JSON.stringify(lazy),JSON.stringify(lazyFixture),'Offline corpus serialization remains unchanged');
+assert.throws(()=>lazyStringTable({'/invalid':{}}),/require strings/);
 const assets={
  '/':{type:'text/html',body:'<p>Prepared assets</p>',csp:"default-src 'self'"},
  '/release.json':{type:'application/json',body:'{"buildNumber":1}'},
