@@ -1,6 +1,13 @@
 import {inspectionSource} from './built-worker.mjs';
 import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
 import worker from './built-worker.mjs';
+// Hydrated fixtures must keep declaration boundaries for either checkout style.
+const packaged=fs.readFileSync('dist/server/index.js','utf8');
+for(const eol of ['\n','\r\n']){
+ const hydrated=inspectionSource(packaged.replace(/\r?\n/g,eol)),end=hydrated.indexOf('async function chat(');
+ assert(end>0,'Hydration preserves the chat boundary');
+ assert.doesNotThrow(()=>new vm.Script(hydrated.slice(0,end)+'\nthis.books=namedBooks;'),'LF and CRLF inspection fixtures compile');
+}
 const code=inspectionSource(),ctx={Response,Blob,DecompressionStream,Uint8Array,atob};vm.createContext(ctx);vm.runInContext(code.slice(0,code.indexOf('async function chat('))+'this.gather=gatherSources;this.books=namedBooks;',ctx);
 const cases=[
  ['did moses kill anyone is exodus?','#read/1/2','slew the Egyptian'],

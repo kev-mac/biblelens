@@ -32,10 +32,13 @@ const ctx={masthead:{getBoundingClientRect:()=>({height:headerHeight})},document
 vm.createContext(ctx);vm.runInContext(geometry,ctx);
 for(const [header,bar] of [[64,52],[76,52],[96.2,82.5]]){headerHeight=header;barHeight=bar;ctx.measureWorkspaceHeader();assert.equal(styles.get('--ux13-masthead-height'),Math.ceil(header)+'px');assert.equal(bodyStyles.get('--ux13-masthead-height'),Math.ceil(header)+'px','Measured height overrides responsive body fallbacks');assert.equal(styles.get('--reader-bar-height'),Math.ceil(bar)+'px');}
 // Parse the real cascade: safe-area handling and readable targets apply outside phone-only media queries.
-const tree=postcss.parse(css),rules=[];tree.walkRules(rule=>rules.push(rule));
-const declaration=(selector,property)=>rules.filter(rule=>!rule.parent.name&&rule.selector===selector).flatMap(rule=>rule.nodes.filter(node=>node.prop===property)).at(-1)?.value;
+const declarations=stylesheet=>{
+ const rules=[];postcss.parse(stylesheet).walkRules(rule=>rules.push(rule));
+ return (selector,property)=>rules.filter(rule=>!rule.parent.name&&rule.selector.replace(/\r\n/g,'\n')===selector).flatMap(rule=>rule.nodes.filter(node=>node.prop===property)).at(-1)?.value;
+};
+const declaration=declarations(css);
 assert.equal(declaration('html body.lens-app #chapter-text :is(.chapter-heading-row,.chapter-heading-row *)','text-shadow'),'none');
-assert.equal(declaration('html body.lens-app,\nhtml.native-ios body.lens-app','padding-top'),'var(--app-safe-top)');
+for(const eol of ['\n','\r\n'])assert.equal(declarations(css.replace(/\r?\n/g,eol))('html body.lens-app,\nhtml.native-ios body.lens-app','padding-top'),'var(--app-safe-top)','Safe-area cascade matches with LF and CRLF selectors');
 assert.equal(declaration('html body.lens-app > #lensMasthead.lens-masthead','top'),'var(--app-safe-top)');
 assert.equal(declaration('html body.lens-app #lensReadingBar','top'),'calc(var(--app-safe-top) + var(--ux13-masthead-height))');
 assert.equal(declaration('html.native-ios body.lens-app > #lensMasthead.lens-masthead','top'),'calc(var(--app-safe-top) + var(--visual-offset-top,0px))');

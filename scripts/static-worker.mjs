@@ -13,8 +13,8 @@ export function splitWorker(source, output = 'dist', external = false, publicArt
   // artwork payload. Stream the same JSON bytes to preserve immutable prefixes.
   const assetBounds = text => {
     const start = text.indexOf('const ASSETS=');
-    const ends = [text.indexOf(';\nconst SEARCH=', start), text.indexOf(';\nlet SEARCH=', start)].filter(end => end >= 0);
-    const end = ends.length ? Math.min(...ends) : -1;
+    const boundary = /;\r?\n(?:const|let) SEARCH=/.exec(text.slice(start));
+    const end = boundary ? start + boundary.index : -1;
     if (start < 0 || end < 0) throw Error('Missing asset declaration boundary');
     return {start, value: start + 'const ASSETS='.length, end};
   };
@@ -71,8 +71,9 @@ export function splitWorker(source, output = 'dist', external = false, publicArt
   source=source.replace("request.method==='GET'?json(CHAPTERS)","request.method==='GET'?json(await readPack("+JSON.stringify(offline)+"))");
   source = source.replace('const MINI_INDEX=' + JSON.stringify(data.MINI_INDEX), 'const MINI_INDEX={}');
   const chapterStart = source.indexOf('const CHAPTERS=');
-  const chapterEnd = source.indexOf(';\nconst STUDIES=', chapterStart);
-  if (chapterEnd < 0) throw Error('Missing chapter boundary');
+  const chapterBoundary = /;\r?\nconst STUDIES=/.exec(source.slice(chapterStart));
+  const chapterEnd = chapterBoundary ? chapterStart + chapterBoundary.index : -1;
+  if (chapterStart < 0 || chapterEnd < 0) throw Error('Missing chapter boundary');
   for (const [key, encoded] of Object.entries(data.CHAPTERS)) pack('chapters/' + key.replace(':', '-'), encoded);
   source = source.slice(0, chapterStart) + 'const CHAPTERS=' + JSON.stringify(Object.fromEntries(Object.keys(data.CHAPTERS).map(key => [key, true]))) + source.slice(chapterEnd);
   source = source.replace('atob(CHAPTERS[key])', "atob(await readPack(PACK_PREFIX+'chapters/'+key.replace(':','-')+'.json'))");

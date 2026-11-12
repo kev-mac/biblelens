@@ -36,11 +36,11 @@ return new Response(asset.encoding==='base64'?Uint8Array.from(atob(asset.body),c
 const directory=fs.mkdtempSync(path.join(os.tmpdir(),'biblelens-prepared-assets-'));
 const files=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):path.join(dir,e.name));
 try{
- for(const external of [false,true]){
+ for(const eol of ['\n','\r\n'])for(const external of [false,true]){
   const outputs=[];
   for(const prepared of [false,true]){
-   const output=path.join(directory,String(external)+'-'+String(prepared));fs.mkdirSync(path.join(output,'server'),{recursive:true});
-   splitWorker(source(prepared?{}:assets),output,external,{},prepared?assets:undefined);outputs.push(output);
+   const output=path.join(directory,(eol==='\n'?'lf':'crlf')+'-'+String(external)+'-'+String(prepared));fs.mkdirSync(path.join(output,'server'),{recursive:true});
+   splitWorker(source(prepared?{}:assets).replace(/\r?\n/g,eol),output,external,{},prepared?assets:undefined);outputs.push(output);
   }
   for(const file of files(outputs[0])){const relative=path.relative(outputs[0],file);assert.deepEqual(fs.readFileSync(file),fs.readFileSync(path.join(outputs[1],relative)),relative+' exact artifact parity');}
   const workers=await Promise.all(outputs.map(p=>import(pathToFileURL(path.join(p,'server/index.js'))).then(m=>m.default)));
@@ -51,5 +51,5 @@ try{
   }
  }
  assert.equal(JSON.stringify(assets),snapshot,'The input asset table is never changed');
- console.log('PASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes; no temporary full Worker is required.');
+ console.log('PASS: prepared assets preserve exact Worker, manifest, immutable prefixes, static files and API/binary response bytes in compressed and static modes with LF and CRLF source; no temporary full Worker is required.');
 }finally{fs.rmSync(directory,{recursive:true,force:true});}
