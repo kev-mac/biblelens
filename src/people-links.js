@@ -1,5 +1,5 @@
+import {escapeHTMLString as escapeHTML} from './html-escape.js';
 // A name shared by several people needs passage evidence before it can link.
-const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const commonNames=new Set(['on','no','an','as','is','us','and','the','all','or','so','he','her','his','she','him','it','can','may','will','god','lord','israel','judah','edom']);
 const titleAliases=new Set('son,lamb,saviour,holy,word,prophet,master,light,prince,branch,root,judge,sun,king,messiah,wonderful,counsellor,sceptre,star,shiloh,father,fathers,hosts,host,almighty,last,lawgiver,dayspring,ancient,spirits,comforter'.split(','));
 export function isNarrativeLocationMention(text,hit,leadingText=''){

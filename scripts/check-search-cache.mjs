@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {performance} from 'node:perf_hooks';
-const source=fs.readFileSync('src/search-core.js','utf8');
+const source=(fs.readFileSync('src/person-identity.js','utf8')+'\n'+fs.readFileSync('src/search-core.js','utf8'));
 // Reference behavior before memoization; independent filtering on every query.
 assert(source.includes("kind==='places'?searchablePlaces(rows):rows"));
 const baseline=source.replace("kind==='places'?searchablePlaces(rows):rows", "kind==='places'?rows.filter(row=>!(/['’]s$/i.test(row.fields?.displayTitle||'')&&rows.some(other=>other.fields?.displayTitle===row.fields.displayTitle.replace(/['’]s$/i,'')))):rows");

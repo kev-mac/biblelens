@@ -46,7 +46,16 @@
   control.type='button';control.classList.add('ux-popup-close');control.setAttribute('aria-label','Close');control.innerHTML='<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 6 12 12M18 6 6 18"/></svg>';
   control.addEventListener('click',()=>close(surface));
   if(bound.has(surface))return;bound.add(surface);
-  surface.addEventListener('click',event=>{if(event.target!==surface)return;const r=surface.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)close(surface);});
+  const outside=event=>{const r=surface.getBoundingClientRect();return event.target===surface&&(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom);};
+  let backdropStart=false;
+  const resetBackdrop=()=>{backdropStart=false;};
+  // Both ends must be on the backdrop: selecting text or dragging a handle
+  // from inside the popup must not become an accidental dismissal.
+  surface.addEventListener('pointerdown',event=>{backdropStart=outside(event);},true);
+  surface.addEventListener('pointercancel',resetBackdrop);
+  surface.addEventListener('click',event=>{const dismiss=backdropStart&&outside(event);resetBackdrop();if(dismiss)close(surface);});
+  surface.addEventListener('close',resetBackdrop);
+  surface.addEventListener('beforetoggle',resetBackdrop);
   surface.addEventListener('cancel',event=>{event.preventDefault();close(surface);});
   const restore=()=>{const opener=openers.get(surface);if(opener?.isConnected)opener.focus({preventScroll:true});};
   surface.addEventListener('close',restore);

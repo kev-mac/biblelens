@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import {readApplicationStyles} from './stylesheets.mjs';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -197,8 +198,9 @@ assert(expanded.indexOf('comparison-summary')<expanded.indexOf('<h3>Legacy card<
 
 // One app font preserves explicit choices and applies to text and controls together.
 const fontNodes=new Map(),fontProperties=new Map();let fontSaves=0;
-const fontsContext={readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
-vm.runInContext(preferences.slice(preferences.indexOf('const READER_FONTS='),preferences.indexOf('function applyTextSize(')),fontsContext);
+const fontsContext={window:{},readerPreferences:{verseFont:'invalid',categoryFont:'georgia'},state:{},persist:()=>fontSaves++,document:{documentElement:{style:{setProperty:(key,value)=>fontProperties.set(key,value)}}},$:id=>{if(!fontNodes.has(id))fontNodes.set(id,{});return fontNodes.get(id)}};vm.createContext(fontsContext);
+vm.runInContext(sharedUISource,fontsContext);
+vm.runInContext(preferences.slice(preferences.indexOf('function applyReaderFonts('),preferences.indexOf('function applyTextSize(')),fontsContext);
 assert.equal(fontNodes.get('#app-font-family').value,'inter','Reading-only legacy preferences do not silently become app-wide choices');
 assert.equal(fontsContext.readerPreferences.categoryFont,'georgia','Legacy preference data is retained');
 fontsContext.readerPreferences={};fontsContext.applyReaderFonts();

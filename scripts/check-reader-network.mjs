@@ -1,3 +1,4 @@
+import {installChapterFixture} from './chapter-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -25,7 +26,7 @@ function fixture({abort=true}={}){
   window:{scrollY:640,dispatchEvent(){},scrollTo(options){scrolls.push(options);this.scrollY=options.top;},BibleLensNavigation:{restore(){restores++;}}}
  };
  if(abort)context.AbortController=AbortController;
- vm.createContext(context);vm.runInContext(requestSource+startupSource,context);
+ installChapterFixture(context,{abort});vm.createContext(context);vm.runInContext(requestSource+startupSource,context);
  return {context,node,requests,timers,scrolls,verseScrolls,get restores(){return restores;},get saves(){return saves;},get renders(){return renders;},get updates(){return updates;},timeout(){const callback=timers.values().next().value;assert(callback,'A deadline is pending');callback();}};
 }
 const flush=async()=>{for(let i=0;i<12;i++)await Promise.resolve();};
@@ -92,10 +93,10 @@ assert.equal(home.renders,1);assert.equal(home.restores,1,'History restoration r
 const active=fixture();active.context.books=catalog;
 const whole=active.context.loadChapter(0,1);respond(active.requests[0],passage);await whole;
 assert.equal(active.context.window.scrollY,0);assert.equal(active.scrolls.length,1);
-const linked=active.context.loadChapter(0,1,1);respond(active.requests[1],passage);await linked;
+const linked=active.context.loadChapter(0,1,1);await linked;assert.equal(active.requests.length,1,'Repeated chapter navigation reuses the shared response');
 assert.equal(active.verseScrolls.length,1);assert.equal(active.verseScrolls[0].id,'#verse-1');
 const leaving=active.context.loadChapter(0,1,1);active.context.view='explore';active.context.window.scrollY=510;
-respond(active.requests[2],passage);await leaving;
+await leaving;
 assert.equal(active.context.window.scrollY,510);assert.equal(active.verseScrolls.length,1);
 assert.equal(active.restores,3,'Every completed chapter can restore browser history');
 console.log('PASS: bounded reader startup/body loading, retry recovery, stale response isolation, preserved private notes, background homepage scroll, and reader chapter/verse navigation.');

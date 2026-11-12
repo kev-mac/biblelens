@@ -1,6 +1,6 @@
 'use strict';
 (() => {
- try{const saved=JSON.parse(localStorage.getItem('scripture-lens-v1')||'{}'),fonts={inter:'"Inter",system-ui,sans-serif',lora:'"Lora",Georgia,serif',georgia:'Georgia,serif',system:'system-ui,sans-serif',mono:'ui-monospace,monospace'};const choice=saved.readerPreferences?.appFont;if(Object.hasOwn(fonts,choice))document.documentElement.style.setProperty('--ui-font',fonts[choice]);}catch{}
+ try{const saved=JSON.parse(localStorage.getItem('scripture-lens-v1')||'{}');window.BibleLensUI.applyAppFont(document.documentElement.style,saved.readerPreferences);}catch{}
  const el = id => document.getElementById(id);
  const node = (tag, text) => { const value = document.createElement(tag); value.textContent = text; return value; };
  let data, limit = 20;

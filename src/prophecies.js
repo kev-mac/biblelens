@@ -1,3 +1,4 @@
+import {escapeHTML as escape} from './html-escape.js';
 import samples from './data/prophecies.json';
 import schema from './data/prophecies.schema.json';
 
@@ -7,7 +8,6 @@ export function filterProphecies(records, filters) {
  return records.filter(item => Object.keys(PROPHECY_FACETS).every(facet =>
   !filters[facet]?.length || filters[facet].includes(item.taxonomy[facet])));
 }
-const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const tones = {Historical:'amber', 'New Testament':'emerald', Unfulfilled:'slate', Disputed:'rose', Messianic:'purple', Israel:'blue', 'The Nations':'orange', Direct:'blue', Typological:'purple', Conditional:'amber'};
 const tone = value => `theme-${tones[value] || 'slate'}`;
 // Presentation only: keep the source titles and research records unchanged.
@@ -63,10 +63,6 @@ export function mountProphecies() {
  more.addEventListener('click', () => { sheet.showModal(); more.setAttribute('aria-expanded', 'true'); document.body.classList.add('prophecy-filter-open'); });
  for (const id of ['#prophecy-close', '#prophecy-done']) sheet.querySelector(id).addEventListener('click', () => sheet.close());
  sheet.addEventListener('close', () => { document.body.classList.remove('prophecy-filter-open'); more.setAttribute('aria-expanded', 'false'); if (!root.hidden) more.focus(); });
- const outside = event => { const r = sheet.getBoundingClientRect(); return event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom; };
- let backdropStart = false;
- sheet.addEventListener('pointerdown', event => { backdropStart = event.target === sheet && outside(event); });
- sheet.addEventListener('click', event => { if (backdropStart && event.target === sheet && outside(event)) sheet.close(); backdropStart = false; });
  window.addEventListener('viewchange', event => { if (event.detail !== 'prophecies' && sheet.open) sheet.close(); });
  root.addEventListener('click', event => {
   const button = event.target.closest('[data-prophecy-passage]');

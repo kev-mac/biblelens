@@ -35,15 +35,14 @@ function commandmentPassageLink(reference){
 function commandmentContextVerses(verses,verse){
  return verses.filter(row=>row.n>=Math.max(1,verse-2)&&row.n<=verse+2);
 }
-const commandmentContextCache=new Map();
+
 async function loadCommandmentContext(panel,reference){
  if(panel.dataset.loaded==='true')return;
  const ref=readRef(reference);if(!ref)return;
  const key=ref.book+'/'+ref.chapter;
  panel.setAttribute('aria-busy','true');panel.innerHTML='<h3>Scripture Context · KJV</h3><p class="loading-state" role="status">Loading surrounding verses…</p>';
  try{
-  if(!commandmentContextCache.has(key))commandmentContextCache.set(key,fetch(`/api/chapter?book=${ref.book}&chapter=${ref.chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();}).catch(error=>{commandmentContextCache.delete(key);throw error;}));
-  const chapter=await commandmentContextCache.get(key);if(!panel.isConnected)return;
+  const chapter=await window.BibleLensChapters.get(ref.book,ref.chapter);if(!panel.isConnected)return;
   const rows=commandmentContextVerses(chapter.verses,ref.verse);
   if(!rows.some(row=>row.n===ref.verse))throw Error('Verse unavailable');
   panel.innerHTML='<h3>Scripture Context · KJV</h3>'+rows.map(row=>`<p class="commandment-context-verse">${commandmentPassageLink(reference.replace(/:\d+$/,':'+row.n))} <q>${esc(String(row.kjv).replace(/\{[HG]\d+\}|<[^>]*>/g,''))}</q></p>`).join('')+`<a class="commandment-inline-reference" href="#read/${key}">Read the full chapter</a>`;
@@ -114,10 +113,6 @@ async function initCommandments() {
  document.querySelector('#commandments-done').onclick=close;
  sheet.addEventListener('close',()=>{document.body.classList.remove('commandments-filter-open');more.setAttribute('aria-expanded','false');more.focus();});
  // Native dialog supplies Escape handling, focus trapping, and background inertness.
- let backdropStart=false;
- sheet.addEventListener('pointerdown',event=>{backdropStart=event.target===sheet&&outside(event);});
- function outside(event){const rect=sheet.getBoundingClientRect();return event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom;}
- sheet.addEventListener('click',event=>{if(backdropStart&&event.target===sheet&&outside(event))close();backdropStart=false;});
  const handle=sheet.querySelector('.commandments-handle');let drag=null;
  handle.addEventListener('pointerdown',event=>{if(!event.isPrimary||event.button!==0)return;drag={id:event.pointerId,y:event.clientY};handle.setPointerCapture(event.pointerId);});
  handle.addEventListener('pointerup',event=>{if(drag?.id===event.pointerId&&event.clientY-drag.y>60)close();drag=null;});

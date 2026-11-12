@@ -1,6 +1,6 @@
 'use strict';
 (() => {
- const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const esc=window.BibleLensUI.escapeHTML;
  const store=window.BibleLensDebateStore;
  let pending,current,version=0;
  const load=()=>pending||=(fetch('/accepted-questions.json').then(r=>{if(!r.ok)throw Error();return r.json();}).catch(e=>{pending=null;throw e;}));

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const context=vm.createContext({books:JSON.parse(fs.readFileSync('data/books.json'))});vm.runInContext(fs.readFileSync('src/search-core.js','utf8')+';this.search=BibleLensSearch;',context);
+const context=vm.createContext({books:JSON.parse(fs.readFileSync('data/books.json'))});vm.runInContext((fs.readFileSync('src/person-identity.js','utf8')+'\n'+fs.readFileSync('src/search-core.js','utf8'))+';this.search=BibleLensSearch;',context);
 const search=context.search,people=JSON.parse(fs.readFileSync('data/reference/people.json'));
 for(const question of ['Who was Moses?','Who is Moses?','Tell me about Moses']){
  const results=search.catalogSearch(people,'people',question);assert.equal(results[0].name,'Moses');

@@ -3,7 +3,7 @@
 (() => {
  const data=/*__DRAFT_DEBATES__*/{};
  if(data.draft_only!==true||data.review_status!=='draft')throw Error('Expected draft Contradiction data');
- const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ const escape=window.BibleLensUI.escapeHTML;
  const el=id=>document.getElementById(id),go=hash=>window.BibleLensWorkspace.navigate(hash);
  const all=data.candidates,byId=new Map(all.map(row=>[row.id,row])),saved=new Set();
  const modes={'text-vs-text':scriptureComparison('text'),'text-vs-science':scriptureComparison('Science'),'text-vs-history':scriptureComparison('History')};

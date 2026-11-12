@@ -7,7 +7,7 @@
  let observer,selected,settle,suspended=false;
  const icon=path=>`<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="${path}"/></svg>`;
  const icons={play:icon("M7 4v16l14-8z"),pause:icon("M6 4h4v16H6zM14 4h4v16h-4z"),muted:icon("M3 9v6h4l5 4V5L7 9zm12-1 2 2 2-2 2 2-2 2 2 2-2 2-2-2-2 2-2-2 2-2-2-2z"),sound:icon("M3 9v6h4l5 4V5L7 9zm12-2v10c4-2 4-8 0-10zm3-4v3c5 3 5 9 0 12v3c9-4 9-14 0-18z")};
- const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const escape=window.BibleLensUI.escapeHTMLString;
  function render(title,art){
   const video=videos[title];if(!video||!art)return '';
   const descriptionId='story-video-description-'+title.toLowerCase().replace(/[^a-z0-9]+/g,'-');

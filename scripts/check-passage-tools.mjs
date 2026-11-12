@@ -1,9 +1,10 @@
+import {installChapterFixture} from './chapter-fixture.mjs';
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';
 const nodes=new Map(),handlers={},downloads=[],links=[],notices=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{id,value:'',hidden:false,disabled:false,attrs:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(type,fn){handlers[id+':'+type]=fn},append(){},replaceChildren(){},remove(){},before(){},focus(){},select(){},showModal(){this.open=true;},close(){this.open=false;}});return nodes.get(id)};
 const bookmark=node('bookmark'),dock=node('dock');
 const c={state:{bookmarks:[],notes:{}},ENTRIES:[],readingBook:0,readingChapter:8,books:[{name:'Genesis'}],reading:{name:'Genesis'},storageAvailable:true,confirm:()=>true,selectedVerseNumbers:()=>[],$:node,esc:s=>String(s).replaceAll('<','&lt;').replaceAll('>','&gt;'),persist(){c.saves++},saves:0,toast:(message,options)=>notices.push({message,...options}),download:(...args)=>downloads.push(args),navigator:{clipboard:{writeText:async text=>links.push(text)}},location:{href:'https://example.com/#read/0/8'},URL,window:{addEventListener:(type,fn)=>handlers['window:'+type]=fn},document:{querySelector:selector=>selector==='[data-passage-save]'?bookmark:dock,addEventListener:(type,fn)=>handlers['document:'+type]=fn}};
-vm.createContext(c);const appSource=fs.readFileSync('src/app.js','utf8');vm.runInContext(appSource.slice(appSource.indexOf('function confirmNoteAction('),appSource.indexOf('function persist(')),c);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),c);
+installChapterFixture(c);vm.createContext(c);const appSource=fs.readFileSync('src/app.js','utf8');vm.runInContext(appSource.slice(appSource.indexOf('function confirmNoteAction('),appSource.indexOf('function persist(')),c);vm.runInContext(fs.readFileSync('src/passage.js','utf8'),c);
 node('#passage-note-editor').hidden=true;node('#passage-note-toggle').onclick();assert.equal(node('#passage-note-editor').hidden,false);
 node('#passage-note').value='Private <note>';
 handlers['#passage-note:input']({target:node('#passage-note')});

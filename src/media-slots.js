@@ -1,7 +1,7 @@
 'use strict';
 // Image metadata is separate from research claims. Empty slots make no image request.
 (() => {
- const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ const escape=window.BibleLensUI.escapeHTML;
  const ratios={landscape:[1600,900],square:[1000,1000],portrait:[900,1200]};
  function render({kind='placeholder',src='',alt='',credit='',licence='',ratio='landscape',context='discovery',caption=''}={}){
   if(!['placeholder','illustration','source'].includes(kind))throw Error('Choose an image kind.');

@@ -1,8 +1,8 @@
+import {escapeHTMLString as escapeHTML} from './html-escape.js';
 import {atlasPreviewLand} from './data/atlas-preview-land.js';
 
 // Modern geographical context from the same vendored Natural Earth geometry
 // used by the atlas. These previews do not claim ancient borders or locations.
-const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function clipRing(ring,bounds){
  let points=ring;
  for(const [axis,bound,sign] of [[0,bounds.west,1],[0,bounds.east,-1],[1,bounds.south,1],[1,bounds.north,-1]]){

@@ -1,3 +1,4 @@
+import '../../person-identity.js';
 import {referenceJson} from '../../reference-cache.js';
 import books from '../../../data/books.json';
 import {characters} from './directory';
@@ -17,6 +18,7 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
   if (!Array.isArray(raw)) throw new Error('Invalid people directory');
   const seen = new Set<string>();
   const records = new Map(raw.filter(row => row && typeof row.id === 'string').map(row => [row.id, row]));
+  const identityIndex = globalThis.BibleLensPersonIdentity.indexPeople(raw.filter(row => row && typeof row.id === 'string'), records);
   const mapped: DirectoryPerson[] = raw.flatMap(record => {
     if (!record || typeof record.id !== 'string' || !record.id || typeof record.name !== 'string' || !record.name.trim() || seen.has(record.id)) return [];
     seen.add(record.id);
@@ -34,18 +36,9 @@ export function mapPeople(raw: unknown): DirectoryPerson[] {
     let label=typeof record.label==='string'&&record.label!==record.name?record.label:'';
     if(label.startsWith(record.name+' (')&&label.endsWith(')'))label=label.slice(record.name.length+2,-1);
     const roles = Array.isArray(record.roles) ? record.roles : [];
-    const role = roles[0];
-    const kingdom = role?.role === 'king' && /king of ([A-Z][a-z]+)/.exec(role.phrase);
-    const roleLabel = role ? (kingdom ? 'King of ' + kingdom[1] : role.role[0].toUpperCase() + role.role.slice(1)) : '';
-    if (roleLabel) {
-      const sameRole = raw.some(other => other.id !== record.id && other.name === record.name && other.roles?.some(tag => tag.role === role.role && (!kingdom || tag.phrase.includes('king of ' + kingdom[1]))));
-      const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map(relation => records.get(relation.id)?.name).find(Boolean);
-      label = roleLabel + (sameRole && parent ? ', child of ' + parent : '');
-    }
-    return [{roles, scripture_context:record.scripture_context,summary_source:record.summary_source,summary_route:record.summary_route,summary_links:record.summary_links, id: record.id, name: record.name.trim(), identity_context: label || (() => {
-      const parent = [...(record.relations?.father || []), ...(record.relations?.mother || [])].map((relation: {id: string}) => records.get(relation.id)?.name).find(Boolean);
-      return parent ? 'child of ' + parent : key_passages[0] || '';
-    })(), aliases, summary, key_passages,
+    const identity = globalThis.BibleLensPersonIdentity.describePersonIdentity({...record, roles}, identityIndex);
+    if (identity.roleLabel) label = identity.qualifier;
+    return [{roles, scripture_context:record.scripture_context,summary_source:record.summary_source,summary_route:record.summary_route,summary_links:record.summary_links, id: record.id, name: record.name.trim(), identity_context: label || identity.qualifier || key_passages[0] || '', aliases, summary, key_passages,
       sex: record.gender === 'Female' ? 'female' : record.gender === 'Male' ? 'male' : 'unspecified',
       era: written?.era || 'Across scripture', geography: written?.geography || {origin: '', residence: []},
       testaments: [...new Set([...referenceBooks].map(book=>book<39?'old':'new'))],

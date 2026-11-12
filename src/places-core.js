@@ -1,7 +1,7 @@
+import {escapeHTMLString as escapeHTML} from './html-escape.js';
 import {referenceJson} from './reference-cache.js';
 // Shared, DOM-free atlas parsing and safe text-to-chip helpers.
 import {isNarrativeLocationMention} from './people-links.js';
-const escapeHTML=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=value=>Array.isArray(value)?value.filter(v=>typeof v==='string'):typeof value==='string'?value.split(/[;,|]/).map(s=>s.trim()).filter(Boolean):[];
 const plain=value=>String(value||'').replace(/\[([^\]]+)\]\([^)]*\)/g,'$1').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
 export function parsePlaces(data){

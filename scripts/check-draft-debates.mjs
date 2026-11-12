@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -39,6 +40,7 @@ const context={window:{addEventListener(){}},document:{addEventListener(){}},URL
 vm.createContext(context);
 // Load the app's shared comparison-label helpers before the draft renderer.
 vm.runInContext(fs.readFileSync('src/app.js','utf8').split("'use strict';")[0],context);
+vm.runInContext(sharedUISource,context);
 vm.runInContext(fs.readFileSync('src/media-slots.js','utf8'),context);
 vm.runInContext(fs.readFileSync('src/draft-debates.js','utf8').replace('/*__DRAFT_DEBATES__*/{}',()=>JSON.stringify(data)),context);
 const hostile=structuredClone(data.candidates[0]);

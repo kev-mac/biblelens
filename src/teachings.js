@@ -1,6 +1,6 @@
 'use strict';
 (async()=>{
- try{const saved=JSON.parse(localStorage.getItem('scripture-lens-v1')||'{}'),fonts={inter:'"Inter",system-ui,sans-serif',lora:'"Lora",Georgia,serif',georgia:'Georgia,serif',system:'system-ui,sans-serif',mono:'ui-monospace,monospace'};const choice=saved.readerPreferences?.appFont;if(Object.hasOwn(fonts,choice))document.documentElement.style.setProperty('--ui-font',fonts[choice]);}catch{}
+ try{const saved=JSON.parse(localStorage.getItem('scripture-lens-v1')||'{}');window.BibleLensUI.applyAppFont(document.documentElement.style,saved.readerPreferences);}catch{}
  const node=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;return el;};
  try{
  const response=await fetch('/teachings.json');if(!response.ok)throw Error();const payload=await response.json();

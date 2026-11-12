@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -16,7 +17,7 @@ const document={activeElement:null,hidden:false,addEventListener:(type,fn)=>docE
 const window={addEventListener(type,fn){if(!events.has(type))events.set(type,new Set());events.get(type).add(fn);},removeEventListener(type,fn){events.get(type)?.delete(fn);}};
 const navigator={onLine:true};
 const c={document,window,navigator,location:{protocol:'https:',origin:'https://biblelens.test'},URL,Map,JSON,Number,Math,setTimeout:fn=>{timers.set(++id,fn);return id;},clearTimeout:id=>timers.delete(id)};
-vm.createContext(c);vm.runInContext(fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',()=>JSON.stringify({'The Fall of Man':video})),c);
+vm.createContext(c);vm.runInContext(sharedUISource+fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',()=>JSON.stringify({'The Fall of Man':video})),c);
 const api=window.BibleLensStoryVideo,dispatch=type=>{for(const fn of events.get(type)||[])fn();},current=()=>parts['[data-video-frame]'].children.at(-1),click=name=>parts['[data-video-'+name+']'].onclick();
 const html=api.render('The Fall of Man',art);assert(html.includes('Play The Fall of Man video'));assert(!html.includes('data-video-image'));assert(!html.includes('Show image'));assert(!html.includes('YouTube'));assert(!html.includes('<video'));assert(!html.includes(video.src),'No browsing fetch from HTML');
 api.mount(root);assert.equal(requests,0);click('play');let media=current();assert.equal(media.src,video.src);assert.equal(media.preload,'none');assert(!media.controls&&media.playsInline);assert.equal(document.activeElement,parts['[data-video-reveal]']);click('reveal');assert(media.controls);assert(parts['[data-video-reveal]'].hidden);assert.equal(document.activeElement,media);assert.equal(media['aria-label'],'The Fall of Man video');assert.equal(timers.size,1);

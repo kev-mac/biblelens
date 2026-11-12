@@ -37,7 +37,7 @@ const context=vm.createContext({console,el,books,fetch:localFetch,AbortSignal,UR
 });
 vm.runInContext(fs.readFileSync('src/data.js','utf8'),context);
 // Search helpers are plain shared JavaScript, also bundled into the browser.
-if(fs.existsSync('src/search-core.js'))vm.runInContext(fs.readFileSync('src/search-core.js','utf8'),context);
+if(fs.existsSync('src/search-core.js'))vm.runInContext((fs.readFileSync('src/person-identity.js','utf8')+'\n'+fs.readFileSync('src/search-core.js','utf8')),context);
 vm.runInContext(`let searchVersion=0,resources,includeLost=false,searchTab='scripture';\n`+
  between(source,' function resultGroup(title,items)',' function updateSearchSuggestions(query)').replace('function resultGroup(', 'function renderResultGroup(')+
  between(source,' async function getResources()',' function noteRows()')+

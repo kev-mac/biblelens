@@ -31,17 +31,20 @@ export function neutralTree(input, path=[], changes=[]) {
  return output;
 }
 export const contentFiles=['data/evidence.json','data/stories.json','src/data/characters.json','data/timeline-events.json','src/data/prophecies.json'];
+// Git may check text out as CRLF on Windows. Review the same canonical bytes
+// on each platform; do not normalize whitespace or any actual content.
+export const b4SourceHash = text => createHash('sha256').update(String(text).replace(/\r\n/g,'\n')).digest('hex');
 export function b4Content(file,env=process.env){
  const text=fs.readFileSync(file,'utf8');
  if(env.BIBLELENS_DRAFTS!=='1'||!contentFiles.includes(file))return text;
  const staged=JSON.parse(fs.readFileSync('research/b4/wording-proposals.json','utf8'));
- if(staged.sourceHashes[file]!==createHash('sha256').update(text).digest('hex'))throw Error('B4 source needs review: '+file);
+ if(staged.sourceHashes[file]!==b4SourceHash(text))throw Error('B4 source needs review: '+file);
  const changes=[],draft=neutralTree(JSON.parse(text),[],changes);
  if(JSON.stringify(changes)!==JSON.stringify(staged.collections[file]))throw Error('B4 wording proposals need review: '+file);
  return JSON.stringify(draft);
 }
 export function b4Proposals(){
- return {draft_only:true,reviewStatus:'draft',ownerAccepted:false,baseline:'c612c17',sourceHashes:Object.fromEntries(contentFiles.map(file=>[file,createHash('sha256').update(fs.readFileSync(file)).digest('hex')])),collections:Object.fromEntries(contentFiles.map(file=>{
+ return {draft_only:true,reviewStatus:'draft',ownerAccepted:false,baseline:'c612c17',sourceHashes:Object.fromEntries(contentFiles.map(file=>[file,b4SourceHash(fs.readFileSync(file,'utf8'))])),collections:Object.fromEntries(contentFiles.map(file=>{
   const changes=[];neutralTree(JSON.parse(fs.readFileSync(file,'utf8')),[],changes);
   return [file,changes];
  }))};

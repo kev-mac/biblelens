@@ -32,12 +32,13 @@ const BibleLensSearch = (() => {
   filtered=rows.filter(row=>!(/['’]s$/i.test(row.fields?.displayTitle||'')&&titles.has(row.fields.displayTitle.replace(/['’]s$/i,''))));
   placeRowsCache.set(rows,filtered);return filtered;
  }
+ const identityCache=new WeakMap();
  const catalogCache=new WeakMap();
  // Call after intentional in-place edits; normal callers replace catalog arrays.
  function invalidateCatalog(rows){
   const filtered=placeRowsCache.get(rows);
   if(filtered)catalogCache.delete(filtered);
-  placeRowsCache.delete(rows);catalogCache.delete(rows);
+  placeRowsCache.delete(rows);catalogCache.delete(rows);identityCache.delete(rows);
  }
  function catalogIndex(rows,kind,curated){
   let indexed=catalogCache.get(rows);if(indexed)return indexed;
@@ -60,15 +61,14 @@ const BibleLensSearch = (() => {
  }
  function personLabel(person,rows){
   if(rows.filter(row=>normalize(row.name)===normalize(person.name)).length<2)return person.name;
-  const role=person.roles?.[0],kingdom=role?.role==='king'&&/king of ([A-Z][a-z]+)/.exec(role.phrase);
-  const roleLabel=role?(kingdom?'King of '+kingdom[1]:role.role[0].toUpperCase()+role.role.slice(1)):'';
+  let identityIndex=identityCache.get(rows);
+  if(!identityIndex){identityIndex=globalThis.BibleLensPersonIdentity.indexPeople(rows);identityCache.set(rows,identityIndex);}
+  const {roleLabel,qualifier:identity}=globalThis.BibleLensPersonIdentity.describePersonIdentity(person,identityIndex);
   if(!roleLabel&&person.label&&person.label!==person.name)return person.label;
-  const parent=[...(person.relations?.father||[]),...(person.relations?.mother||[])].map(r=>rows.find(p=>p.id===r.id)?.name).find(Boolean);
   const first=person.refs?.[0],bookNames=typeof BOOKS!=='undefined'?BOOKS:typeof books!=='undefined'?books:[];
   const firstReference=first&&bookNames.find(book=>book.id===first[0])?.name;
   const reference=firstReference?firstReference+' '+first[1]+':'+first[2]:'';
-  const sameRole=role&&rows.some(row=>row.id!==person.id&&row.name===person.name&&row.roles?.some(tag=>tag.role===role.role&&(!kingdom||tag.phrase.includes('king of '+kingdom[1]))));
-  const qualifier=roleLabel?roleLabel+(sameRole&&parent?', child of '+parent:''):parent?'child of '+parent:reference;
+  const qualifier=identity||reference;
   return person.name+(qualifier?' ('+qualifier+')':'');
  }
  function catalogSearch(rows,kind,query,curated=[],knownEntities=new Set()){

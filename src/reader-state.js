@@ -11,12 +11,10 @@ $('#reader-edition').value=readerPreferences.edition;
 function updateCompareToggle(){const on=readerPreferences.compare!=='none';$('#reader-compare').value=on?'on':'none';$('#reader-compare').setAttribute('aria-checked',String(on));$('#reader-compare-state').textContent=on?'On':'Off';}updateCompareToggle();
 function readRef(ref){const m=/^(.*?) (\d+):(\d+)/.exec(ref);const book=m&&books.find(b=>b.name===m[1]);return book?{book:book.id,chapter:+m[2],verse:+m[3]}:null;}
 
-const READER_FONTS={inter:'"Inter",system-ui,sans-serif',lora:'"Lora",Georgia,serif',georgia:'Georgia,serif',system:'system-ui,sans-serif',mono:'ui-monospace,monospace'};
 function applyReaderFonts(){
  // A legacy reading-only preference must not silently become an app-wide choice.
  // New app-wide choices apply consistently; the updated design starts in Inter.
- const value=Object.hasOwn(READER_FONTS,readerPreferences.appFont)?readerPreferences.appFont:'inter';
- for(const property of ['--verse-font-family','--lens-reading-font','--ui-font','--category-font-family'])document.documentElement.style.setProperty(property,READER_FONTS[value]);
+ const value=window.BibleLensUI.applyAppFont(document.documentElement.style,readerPreferences,{fallback:'inter',properties:['--verse-font-family','--lens-reading-font','--ui-font','--category-font-family']});
  $('#app-font-family').value=value;
 }
 $('#app-font-family').onchange=ev=>{

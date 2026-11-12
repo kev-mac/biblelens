@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -16,7 +17,7 @@ function fixture({fail=false,deferred=false}={}){
  const ready=deferred?new Promise(resolve=>finish=resolve):Promise.resolve();
  const context={window:{BibleLensDebateStore:{read:()=>({saved:false,stance:null})}},document:{addEventListener(){},getElementById:id=>id==='accepted-question-filters'?null:host,querySelector:()=>control},location:{hash:'#debate/headline-01'},fetch:async()=>({ok:true,json:async()=>questions}),URLSearchParams,setTimeout,clearTimeout,navigationRestore:false,restoreNavigation(){},uiTitleCase:value=>value,scriptureComparison:value=>'Bible vs. '+(value==='text'?'Bible':value),passagePillText:refs=>refs.join(', '),readRef(){},setView(value){context.view=value;}};
  context.window.BibleLensFeatures={async load(name){calls.push(name);await ready;if(fail)throw Error('Study feature unavailable');context.referenceLink=ref=>'<a data-cite="fixture" data-cite-context="true">'+ref+'</a>';}};
- vm.createContext(context);vm.runInContext(source,context);
+ vm.createContext(context);vm.runInContext(sharedUISource+source,context);
  return {context,host,control,calls,get html(){return html;},finish:()=>finish?.()};
 }
 const tick=()=>new Promise(resolve=>setImmediate(resolve));

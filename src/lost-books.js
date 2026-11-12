@@ -3,7 +3,7 @@
 (() => {
  const host=document.createElement('section');host.id='lost-view';host.hidden=true;host.className='directory-hub stories-hub lost-hub';host.dataset.directorySection='lost';host.setAttribute('aria-labelledby','lost-heading');document.getElementById('main').append(host);
  let catalog=[],collection='All',query='',request;
- const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const escape=window.BibleLensUI.escapeHTML;
  // Share the directory header layout, with the Other Books tile icon.
  const header=document.querySelector('#stories-view .stories-header').cloneNode(true);
  header.querySelector('h1').id='lost-heading';header.querySelector('h1').textContent='Other Books';header.querySelector('h1').tabIndex=-1;

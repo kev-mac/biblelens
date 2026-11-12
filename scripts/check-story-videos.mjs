@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
@@ -16,7 +17,7 @@ const document={activeElement:null,hidden:false,addEventListener:(type,fn)=>docE
 const window={addEventListener(type,fn){if(!events.has(type))events.set(type,new Set());events.get(type).add(fn);},removeEventListener(type,fn){events.get(type)?.delete(fn);}};
 const navigator={onLine:true},location={protocol:'https:',origin:'https://biblelens.test'};
 const c={document,window,navigator,location,URL,Map,JSON,Number,setTimeout:fn=>{timers.set(++nextTimer,fn);return nextTimer;},clearTimeout:id=>timers.delete(id)};
-vm.createContext(c);vm.runInContext(fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',()=>JSON.stringify({'The Creation':video})),c);
+vm.createContext(c);vm.runInContext(sharedUISource+fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',()=>JSON.stringify({'The Creation':video})),c);
 const api=window.BibleLensStoryVideo,dispatch=(type,event)=>{for(const f of events.get(type)||[])f(event);},current=()=>parts['[data-video-frame]'].children.at(-1);
 const message=(state,extra={})=>dispatch('message',{source:current().contentWindow,origin:new URL(current().src).origin,data:{type:'biblelens:story-video',state,...extra}});
 const click=name=>parts['[data-video-'+name+']'].onclick();

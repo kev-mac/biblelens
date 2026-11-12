@@ -1,9 +1,10 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 
 // Deterministic observer/timer/media fixtures. Live decoding is tested separately.
-const source=fs.readFileSync('src/story-video.js','utf8');
+const source=sharedUISource+fs.readFileSync('src/story-video.js','utf8');
 function fixture({reduced=false,saveData=false,slow=false}={}){
  let now=0,id=0,io;const timers=new Map(),events=new Map(),docEvents=new Map(),created=[];
  const document={hidden:false,activeElement:null,addEventListener:(t,f)=>docEvents.set(t,f)};

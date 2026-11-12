@@ -62,13 +62,6 @@
  });
  const closed = () => { for(const trigger of triggers)trigger.setAttribute('aria-expanded', 'false'); document.body.classList.remove('navigation-open');if(sheet.contains(document.activeElement)||document.activeElement===document.body)document.querySelector('#lens-settings').focus({preventScroll:true}); };
  if(popover)sheet.addEventListener('toggle',event=>{if(event.newState==='closed')closed();});else sheet.addEventListener('close',closed);
- // Older browsers retain the modal dialog's backdrop behavior.
- if(!popover){
-  const outside=event=>{const r=sheet.getBoundingClientRect();return event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom;};
-  let backdropStart=false;
-  sheet.addEventListener('pointerdown',event=>{backdropStart=event.target===sheet&&outside(event);});
-  sheet.addEventListener('click',event=>{if(backdropStart&&event.target===sheet&&outside(event))close();backdropStart=false;});
- }
  window.addEventListener('viewchange', close);
 })();
 

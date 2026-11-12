@@ -1,3 +1,4 @@
+import {installChapterFixture} from './chapter-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -50,8 +51,8 @@ console.log('PASS: context menu recoloring and removal affect only the matching 
  const key='0:6:7',note={text:'Keep my note'},record={book:0,chapter:6,verse:7,name:'Genesis'},text='And the Lord said.';
  let resolveChapter;
  const saved={...context,state:{verseBookmarks:{[key]:{...record}},verseNotes:{[key]:note}},readingBook:0,readingChapter:6,reading:{verses:[{n:7,kjv:text,web:'The Lord said.'}]},fetch:()=>new Promise(resolve=>{resolveChapter=resolve;})};
- vm.createContext(saved);
- vm.runInContext(source.slice(source.indexOf('const markedChapterCache='),source.indexOf('async function hydrateMarkedVerseTexts')),saved);
+ installChapterFixture(saved);vm.createContext(saved);
+ vm.runInContext(source.slice(source.indexOf('let markedRenderGeneration='),source.indexOf('async function hydrateMarkedVerseTexts')),saved);
  // Rebind the shared storage helpers to this isolated state.
  vm.runInContext(source.slice(source.indexOf('function normalizeTextHighlights'),source.indexOf('function normalizeVerseRecords')),saved);
  assert(await saved.toggleSavedVerseHighlight(0,6,7,'web'));

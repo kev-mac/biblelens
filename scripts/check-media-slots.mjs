@@ -1,7 +1,9 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const context=vm.createContext({window:{}});
+vm.runInContext(sharedUISource,context);
 vm.runInContext(fs.readFileSync('src/media-slots.js','utf8'),context);
 const {render}=context.window.BibleLensMedia;
 assert(!render().includes('<img'),'Empty slots must not request an image');

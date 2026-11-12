@@ -156,13 +156,10 @@ function mergePassageBackup(backup){
  for(const [key,item]of Object.entries(normalizeVerseRecords(backup.verseHighlights))){if(item.text||item.title)state.verseNotes[key]=mergePersonalNote(state.verseNotes[key],item);}
  for(const [key,item] of Object.entries(normalizeVerseRecords(backup.verseBookmarks))){const highlights=combineTextHighlights(state.verseBookmarks[key]?.highlights,item.highlights);state.verseBookmarks[key]={...item,...(highlights.length?{highlights}:{})};}state.verseHighlights={};
 }
-const markedChapterCache=new Map();
 let markedRenderGeneration=0;
 async function markedChapter(book,chapter){
  if(book===readingBook&&chapter===readingChapter&&reading?.verses)return reading;
- const key=book+':'+chapter;let request=markedChapterCache.get(key);
- if(!request){request=fetch(`/api/chapter?book=${book}&chapter=${chapter}`).then(response=>{if(!response.ok)throw Error('Chapter unavailable');return response.json();});markedChapterCache.set(key,request);request.catch(()=>markedChapterCache.delete(key));if(markedChapterCache.size>64)markedChapterCache.delete(markedChapterCache.keys().next().value);}
- return request;
+ return window.BibleLensChapters.get(book,chapter);
 }
 async function toggleSavedVerseHighlight(book,chapter,verse,edition){
  const key=`${book}:${chapter}:${verse}`,bookmark=state.verseBookmarks[key];
@@ -325,7 +322,7 @@ async function shareVerseLink(book,chapter,verse){
 async function copyVerseSelection(book,chapter,verses){
  const url=buildVerseShareUrl(book,chapter,verses),reference=new URL(url).hash.split('/').pop(),title=`${books[book].name} ${chapter}:${reference}`;
  let chapterData=book===readingBook&&chapter===readingChapter?reading:null;
- if(!chapterData){try{const response=await fetch(`/api/chapter?book=${book}&chapter=${chapter}`);if(!response.ok)throw Error();chapterData=await response.json();}catch{toast('Could not load the selected verses. Please try again.');return false;}}
+ if(!chapterData){try{chapterData=await window.BibleLensChapters.get(book,chapter);}catch{toast('Could not load the selected verses. Please try again.');return false;}}
  const selected=[...new Set(verses)].sort((a,b)=>a-b),edition=$('#reader-edition')?.value||'kjv',lines=[];
  for(const verse of selected){const item=chapterData?.verses?.find(item=>item.n===verse),value=item?.[edition]||item?.kjv;if(!value){toast('A selected verse is unavailable. Choose another verse.');return false;}const plain=String(value).replace(/\{[HG]\d+\}/g,'').replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();lines.push(`${books[book].name} ${chapter}:${verse} (${books[book]?.edition||(item?.[edition]?edition:'kjv').toUpperCase()})\n${plain}`);}
  const text=lines.join('\n\n'),clipboardText=text+'\n\n'+url;

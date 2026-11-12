@@ -1,3 +1,4 @@
+import {sharedUISource} from './shared-ui-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -21,8 +22,9 @@ assert(mp4,'An approved MP4 record is needed');
 const activeYouTube=Object.values(catalog).filter(v=>v.status==='ready'&&v.provider==='youtube');
 const youtube=activeYouTube[0]||{provider:'youtube',videoId:'BDNJ8-wtaeA',poster:mp4.poster,posterAlt:'Protocol fixture',description:'YouTube protocol fixture; not active story footage.'};
 const fixtureCatalog=Object.fromEntries(Array.from({length:7},(_,i)=>['Fixture '+i,{...(i===2?youtube:mp4),poster:'/fixture.svg',src:'/fixture.mp4?card='+i}]));
-const fixtureSource=fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',JSON.stringify(fixtureCatalog));
-assert(fixtureSource!==fs.readFileSync('src/story-video.js','utf8'),'Fixture catalog injection marker must match');
+const playerFixtureSource=fs.readFileSync('src/story-video.js','utf8').replace('/*__STORY_VIDEOS__*/{}',JSON.stringify(fixtureCatalog));
+assert(playerFixtureSource!==fs.readFileSync('src/story-video.js','utf8'),'Fixture catalog injection marker must match');
+const fixtureSource=sharedUISource+playerFixtureSource;
 const fixtureBootstrap=`const root=document.getElementById('fixture');root.innerHTML=Object.keys(${JSON.stringify(fixtureCatalog)}).map(title=>'<article>'+BibleLensStoryVideo.render(title,{src:'/fixture.svg?fallback',alt:'Fixture artwork'})+'</article>').join('');BibleLensStoryVideo.mount(root);`;
 const fixtureHTML='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/fixture.css"></head><body class="lens-app"><header>Scroll fixture</header><main id="fixture"></main><footer>End</footer><script src="/fixture-source.js"></script><script src="/fixture-bootstrap.js"></script></body></html>';
 const revealCSS=fs.readFileSync('src/overrides.css','utf8').split('\n').filter(line=>line.includes('.story-video-reveal')||line.includes('.story-video-corner-controls')).join('\n');

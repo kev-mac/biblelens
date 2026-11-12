@@ -1,3 +1,4 @@
+import {installChapterFixture} from './chapter-fixture.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
@@ -6,7 +7,7 @@ const catalog=JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8'
 assert.equal(validateCommandmentsCatalog(),613);
 const code=fs.readFileSync('src/commandments.js','utf8');
 const context={document:{querySelector:()=>null},esc:value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))};
-vm.createContext(context);
+installChapterFixture(context);vm.createContext(context);
 vm.runInContext(code.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(catalog.records))+'\nthis.records=COMMANDMENTS;this.facets=COMMANDMENT_FACETS;',context);
 const filter=(state,query='')=>context.filterCommandments(context.records,state,query);
 assert.equal(context.records.length,613);

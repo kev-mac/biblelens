@@ -1,3 +1,4 @@
+import {escapeHTML as escape} from './html-escape.js';
 import academicDiscrepancies from '../data/academic-discrepancies.json';
 import academicSources from '../data/academic-discrepancy-sources.json';
 import {titleCase} from './title-case.js';
@@ -26,7 +27,6 @@ export function mergeAcademicDiscrepancies(events, dictionary = academicDiscrepa
   return {...event, has_academic_conflict: Boolean(key), academic_discrepancy_key: key || null, academic_discrepancy: key ? {...dictionary[key]} : null};
  });
 }
-const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[c]));
 export function formatTimelineDate(value) {
  // Theographic uses ISO astronomical years: 0 = 1 BCE; -2347 = 2348 BCE.
  const match = /^(-?\d+)(?:-\d{2}(?:-\d{2})?)?$/.exec(String(value ?? ''));

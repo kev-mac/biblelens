@@ -9,7 +9,7 @@ function uiTitleCase(value){
 }
 
 const $=s=>document.querySelector(s);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const esc=window.BibleLensUI.escapeHTML;
 let state={bookmarks:[],notes:{},theme:'dark'},storageAvailable=true;
 let storageIssue='',storageRecoveryNotice='';
 function showStorageStatus(status){

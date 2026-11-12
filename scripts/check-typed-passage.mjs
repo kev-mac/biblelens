@@ -9,7 +9,7 @@ const nodes=new Map(),routes=[];
 const node=id=>{if(!nodes.has(id))nodes.set(id,{value:'',disabled:false,textContent:'',attrs:{},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];},focus(){this.focused=true;}});return nodes.get(id);};
 const readChapter=async url=>{const params=new URL(url,'https://test.invalid').searchParams,key=params.get('book')+':'+params.get('chapter');assert(chapters[key]);return JSON.parse(zlib.gunzipSync(Buffer.from(chapters[key],'base64')));};
 const ctx={books,URL,$:node,window:{BibleLensWorkspace:{navigate:route=>routes.push(route)}},readerJson:readChapter};
-vm.createContext(ctx);vm.runInContext(fs.readFileSync('src/search-core.js','utf8'),ctx);
+vm.createContext(ctx);vm.runInContext((fs.readFileSync('src/person-identity.js','utf8')+'\n'+fs.readFileSync('src/search-core.js','utf8')),ctx);
 vm.runInContext(workspace.slice(workspace.indexOf(' function parseReference(value){'),workspace.indexOf(' function openCompare()')),ctx);ctx.window.BibleLensWorkspace.parseReference=ctx.parseReference;
 vm.runInContext('let passageReferenceRequest=0;const passagePicker={open:true,close(){this.open=false;}};'+reader.slice(reader.indexOf('async function navigateTypedPassage(){'),reader.indexOf('function passageNumberGrid(')),ctx);
 const reset=value=>{routes.length=0;const input=node('#passage-reference');input.value=value;input.attrs={};input.focused=false;node('#passage-reference-status').textContent='';vm.runInContext('passagePicker.open=true;',ctx);};
