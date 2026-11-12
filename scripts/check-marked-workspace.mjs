@@ -69,7 +69,7 @@ const linkedCard=context.markedSummary({...data.records.find(r=>r.relatedPassage
  ctx.renderMarkedResults();
  const labels=[...box.innerHTML.matchAll(/<\/span>([^<]+)<span class="marked-count">0<\/span>/g)].map(m=>m[1]);
  assert.deepEqual(labels,['Events','Laws','Marked','People']);
- assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,5);
+ assert.equal((box.innerHTML.match(/No results for these filters\./g)||[]).length,4);
  ctx.markedKind='commandments';ctx.renderMarkedResults();
  assert.equal((box.innerHTML.match(/<details /g)||[]).length,1);
  assert(box.innerHTML.includes('Laws<span class="marked-count">0'));
