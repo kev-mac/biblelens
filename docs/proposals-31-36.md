@@ -17,3 +17,5 @@ Verification
 - Screenshots: `.release/proposals-31-36/` (plans, chat, people, places, commandments for both browser engines and widths). Mobile Chromium plan/chat/People pixels inspected.
 - Set `PLAYWRIGHT_BROWSERS_PATH=C:\Users\kevma\AppData\Local\ms-playwright` to use already installed browsers; otherwise Windows sandbox profile default cannot locate them.
 - No GitHub push, Site publish, iOS build/install, external API use, or network-policy changes. Full npm aggregate not retried because its known registry-network restriction remains; focused checks are not a full aggregate pass.
+
+Combined regression: 21–25 browser suite passed Chromium/WebKit at 320, 390, 820 and 1440px (8 cases). The 26–30 browser suite was blocked when its test server attempted raw.githubusercontent.com artwork access; no network workaround was used, so its combined rerun is not a pass.
