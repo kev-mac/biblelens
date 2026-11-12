@@ -123,15 +123,15 @@ function updateStudyFilterAvailability(){
 }
 $('#taxonomy').innerHTML=Object.entries(TYPES).map(([k,v])=>`<div class="taxonomy-item"><b>${esc(classificationLabel(k))}</b>${esc(classificationLabel(v))}</div>`).join('');
 // Dedicated directories retain their own search and facet controls.
-const CATEGORY_DIRECTORY_VIEWS={places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'};
+const CATEGORY_DIRECTORY_VIEWS={places:'places',stories:'stories',characters:'characters',commandments:'commandments'};
 function categoryDirectoryLocation(key){const page=CATEGORY_DIRECTORY_VIEWS[key];return typeof page==='string'?'#'+(page==='characters'?'people':page):null;}
 function updateHeaderContext(){
  const context=$('#header-context');if(!context)return;
  const heading=$('#chapter-text .passage-heading>div'),rect=heading?.getBoundingClientRect();
  const showPassage=view==='read'&&rect&&(rect.bottom<=document.querySelector('body>header').getBoundingClientRect().bottom||rect.top>=window.innerHeight);
- let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',prophecies:'Prophecies',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',lost:'Other Books',search:'Search',notebook:'Notebook'}[view]||'zLenz: Bible');
+ let label=view==='read'?(showPassage?(context.dataset.passage||'Read'):'Read'):({places:'Places',stories:'Events',timeline:'Timeline',characters:'People',commandments:'Laws',chat:'Chat',evidence:'Evidence',bookmarks:'Bookmarks',method:'About',explore:'Explore',lost:'Other Books',search:'Search',notebook:'Notebook'}[view]||'zLenz: Bible');
  const key=view==='evidence'?/^#evidence\/([^?]+)/.exec(location.hash)?.[1]:null;
- const category={academic:'Academic',commandments:'Laws',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',prophecies:'Prophecies',Q:'Questions',stories:'Events',T:'Translation'}[key];
+ const category={academic:'Academic',commandments:'Laws',contradictions:'Text Comparisons',bookmark:'Marked',characters:'People',Q:'Questions',stories:'Events',T:'Translation'}[key];
  if(category){
   label='Evidence · '+category;
   context.textContent=label;
@@ -161,6 +161,7 @@ function rememberNavigation(){if(navigationRestore)return;navigationPositions.se
 // Keep bookmarked and native legacy destinations while publishing one vocabulary.
 // #discover is Explore; legacy #explore remains a reader link.
 function canonicalRouteHash(hash){
+ if(/^#(?:prophecies(?:[/?]|$)|(?:evidence|categories|saved)\/prophecies(?:[/?]|$))/.test(hash))return '#discover';
  let value=hash.startsWith('#')?hash:'#'+hash;
  value=value.replace(/^#debates(?=[?]|$)/,'#questions').replace(/^#explore(?=[/?]|$)/,'#read')
   .replace(/^#(?:categories|saved)(?=[/?]|$)/,'#evidence')
@@ -213,14 +214,14 @@ window.BibleLensNavigation={navigate:navigateHash,restore:restoreNavigation,reme
 let viewTransition,viewRender=0;
 function setView(v,update=true){
  v=({categories:'evidence',saved:'evidence',discover:'explore',people:'characters'})[v]||v;
- const views=['read','chat','evidence','method','commandments','characters','prophecies','timeline','stories','bookmarks','places','explore','lost','search','notebook','debates','debate'];
+ const views=['read','chat','evidence','method','commandments','characters','timeline','stories','bookmarks','places','explore','lost','search','notebook','debates','debate'];
  const next=views.includes(v)?v:'read';
  if(update){navigateHash('#'+(({characters:'people',explore:'discover',bookmarks:'notebook?section=bookmarks',debates:'questions'})[next]||next));if(window.BibleLensFeatures?.route(location.hash))return;}
  const changed=view!==next;view=next;const renderId=++viewRender;
  const render=()=>{if(renderId!==viewRender)return;
  document.body.classList.toggle('read-view',view==='read');
  for(const name of views){const section=$('#'+name+'-view');if(section)section.hidden=name!==view;}
- document.querySelectorAll('nav [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.closest('header'))b.hidden=['chat','stories','commandments','prophecies','characters'].includes(b.dataset.view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ document.querySelectorAll('nav [data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.closest('header'))b.hidden=['chat','stories','commandments','characters'].includes(b.dataset.view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
  updateHeaderContext();window.dispatchEvent(new CustomEvent('viewchange',{detail:view}));
  };
  if(changed&&document.startViewTransition&&!matchMedia('(prefers-reduced-motion: reduce)').matches){

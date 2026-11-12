@@ -8,8 +8,7 @@ export const featureSources={
  map:['places.js'],
  references:['reference-links.js'],
  timeline:['timeline.js','reviewed-timeline.js'],
- commandments:['commandments.js'],
- prophecies:['prophecies.js']
+ commandments:['commandments.js']
 };
 export function packageFeatures(assets,stylePath,studyStylePath){
  const manifest={styles:stylePath,studyStyles:studyStylePath};

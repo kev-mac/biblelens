@@ -2,7 +2,7 @@
 // Book-scoped comparison browsing uses public records; personal marks use local storage with optional cloud sync.
 const markedComparisonCache=new Map();
 let markedBookSelection=null,markedChapterSelection=0,markedKind='all',markedTheme='all',markedCommandmentType='all',markedWorkspaceGeneration=0,markedData=null;
-const MARKED_CATEGORIES=[['all','All Categories'],['bookmark','Marked'],['commandments','Laws'],['stories','Events'],['characters','People'],['prophecies','Prophecies']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
+const MARKED_CATEGORIES=[['all','All Categories'],['bookmark','Marked'],['commandments','Laws'],['stories','Events'],['characters','People']].sort(([a,al],[b,bl])=>a==='all'?-1:b==='all'?1:al.localeCompare(bl));
 function markedChoices(record,placement){const item={...record,...placement},tags=recordTags(item);return tags.length?tags.map(tag=>({...item,tag})):item.mode==='questions'?[{...item,tag:'Q'}]:[item];}
 const COMMANDMENT_THEMES=["Worship of God","Sabbath and rest","Family","Life and violence","Marriage and sexual conduct","Property and economics","Truth and justice","Food and purity","Festivals and sacrifice","Care for the poor and the stranger","Love of God and neighbor","Prayer and fasting","Baptism and the Lord's Supper","Church life and order"];
 function markedCommandmentMatches(record){return record.mode!=='commandments'||((markedTheme==='all'||record.theme===markedTheme)&&(markedCommandmentType==='all'||record.commandmentType===markedCommandmentType));}
@@ -17,8 +17,8 @@ function markedFilterHasResults(data,{book,chapter=0,kind='all',theme='all',type
   if(ENTRIES.some(e=>(personal.bookmarks?.includes(e.id)||personal.notes?.[e.id]||personal.noteTitles?.[e.id])&&e.refs.some(ref=>(book===-1||readRef(ref)?.book===book))))return true;
  }
  if(kind==='bookmark')return false;
- if(kind==='all'&&['stories','characters','prophecies'].some(key=>data.counts?.[key]))return true;
- if(data.counts&&(!data.records?.length||['stories','characters','prophecies'].includes(kind)))return kind==='all'?Object.values(data.counts).some(Boolean):!!data.counts[kind];
+ if(kind==='all'&&['stories','characters'].some(key=>data.counts?.[key]))return true;
+ if(data.counts&&(!data.records?.length||['stories','characters'].includes(kind)))return kind==='all'?Object.values(data.counts).some(Boolean):!!data.counts[kind];
  return data.records.some(record=>(record.mode!=='commandments'||((theme==='all'||record.theme===theme)&&(type==='all'||record.commandmentType===type)))&&record.placements.some(p=>(!chapter||p.chapter===chapter)&&markedChoices(record,p).some(choice=>visibleComparison(choice)&&(kind==='all'||filterCategory(choice)===kind))));
 }
 function requestMarkedBookData(book,chapter=0){
@@ -147,7 +147,7 @@ function openMarkedFilters(){
   dialog.querySelector('.marked-kind-grid').innerHTML=MARKED_CATEGORIES.map(([key,label])=>`<button type="button" data-marked-kind="${key}" data-tone="${comparisonTone({tag:languageTags[key]?key:undefined,mode:key})}" aria-pressed="${kind===key}">${key==='all'?'':categoryIcon(key)}${label}</button>`).join('');
   const available=choice=>dataBook!==chosen||!draftData||markedFilterHasResults(draftData,{book:chosen,chapter,kind,theme,type,...choice});
   dialog.querySelectorAll('[data-marked-kind]').forEach(button=>{const value=button.dataset.markedKind;button.disabled=value!=='all'&&value!==kind&&!available({kind:value});});
-  if(!['stories','characters','prophecies'].includes(kind))dialog.querySelectorAll('[data-marked-chapter]').forEach(button=>{const value=Number(button.dataset.markedChapter);button.disabled=value!==0&&value!==chapter&&!available({chapter:value});});
+  if(!['stories','characters'].includes(kind))dialog.querySelectorAll('[data-marked-chapter]').forEach(button=>{const value=Number(button.dataset.markedChapter);button.disabled=value!==0&&value!==chapter&&!available({chapter:value});});
   for(const [id,key,current] of [['marked-theme-filter','theme',theme],['marked-type-filter','type',type]])for(const option of dialog.querySelector('#'+id).options){option.disabled=option.value!=='all'&&option.value!==current&&!available({[key]:option.value,kind:'commandments'});}
   dialog.querySelector('#marked-filter-apply').disabled=!available({});
  }

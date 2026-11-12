@@ -26,11 +26,11 @@ assert.equal(browse('book=0&chapter=2&kind=stories').total,1,'Full story ranges 
 assert.equal(browse('book=1&kind=stories').total,0);
 assert.equal(browse('book=all&kind=characters').records.length,24);
 assert.equal(browse('book=all&kind=characters&page=1').records.length,6);
-assert.equal(browse('book=1&chapter=2&kind=prophecies').total,1,'Linked fulfillment is included');
-assert.equal(browse('book=all&kind=prophecies').total,1,'Cross-book links count once');
+assert.equal(browse('book=all&kind=prophecies'),null,'Removed collection cannot be queried');
+assert(!expanded.some(record=>record.mode==='prophecies'));
 assert.equal(browse('book=0&chapter=1&kind=characters').total,0,'People respect chapter references');
 assert.equal(browse('book=all&limit=0').counts.characters,30);
-console.log('PASS: narrative chapter ranges, scoped people pagination and cross-book prophecy links.');
+console.log('PASS: narrative chapter ranges, scoped people pagination and removed collection exclusion.');
 
 // Category pages preserve scope when opened directly or returned to the index.
 const client={URLSearchParams,location:{hash:'#evidence/T?book=1&chapter=2&theme=all&type=all'},markedBookSelection:1,markedChapterSelection:2,markedKind:'T',markedTheme:'all',markedCommandmentType:'all',MARKED_CATEGORIES:[['all','All categories'],['T','Translation'],['bookmark','Marked']]};
@@ -47,13 +47,13 @@ console.log('PASS: independent category routes and filter-preserving page/back l
 const app=fs.readFileSync('src/app.js','utf8');
 const directories={URLSearchParams,URL};vm.createContext(directories);
 vm.runInContext(app.slice(app.indexOf('const CATEGORY_DIRECTORY_VIEWS='),app.indexOf('function updateHeaderContext()')),directories);
-for(const [key,url] of Object.entries({places:'#places',stories:'#stories',characters:'#people',commandments:'#commandments',prophecies:'#prophecies'}))assert.equal(directories.categoryDirectoryLocation(key),url);
+for(const [key,url] of Object.entries({places:'#places',stories:'#stories',characters:'#people',commandments:'#commandments'}))assert.equal(directories.categoryDirectoryLocation(key),url);
 assert.equal(directories.categoryDirectoryLocation('academic'),null);
 vm.runInContext(app.slice(app.indexOf('function canonicalRouteHash('),app.indexOf('function navigateHash(')),directories);
 const routes=[];
 Object.assign(directories,{$:()=>({open:false}),location:{hash:'#evidence/stories?book=0&chapter=1'},history:{replaceState(_a,_b,url){directories.location.hash=url;}},setView:(...args)=>routes.push(args),window:{BibleLensFeatures:{route:()=>false},scrollTo(){},addEventListener(){}}});
 vm.runInContext(app.slice(app.indexOf('function route(){'),app.indexOf('function route(){')+app.slice(app.indexOf('function route(){')).indexOf("window.addEventListener('hashchange',route)")),directories);
-for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments',prophecies:'prophecies'})){directories.location.hash='#evidence/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
+for(const [key,view] of Object.entries({places:'places',stories:'stories',characters:'characters',commandments:'commandments'})){directories.location.hash='#evidence/'+key+'?book=0';directories.route();assert.equal(routes.at(-1)[0],view);assert.equal(directories.location.hash,directories.categoryDirectoryLocation(key));}
 assert(!fs.readFileSync('src/categories.js','utf8').includes('class="category-back"'));
 console.log('PASS: category links and legacy routes restore the original directory controls without a body back link.');
 

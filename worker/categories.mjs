@@ -1,8 +1,8 @@
 // Public evidence only. Private notes are paged locally and never enter this index.
-const categoryOrder=['T','V','commandments','Q','academic','contradictions','stories','characters','prophecies'];
+const categoryOrder=['T','V','commandments','Q','academic','contradictions','stories','characters'];
 export function categoryKinds(record,placements=record.placements){
  const kinds=new Set();
- if(['stories','characters','prophecies'].includes(record.mode))return [record.mode];
+ if(['stories','characters'].includes(record.mode))return [record.mode];
  for(const p of placements){
   const tags=p.activeTags??record.tags??(record.tag?[record.tag]:[]);
   if(record.mode==='commandments'){kinds.add('commandments');continue;}
@@ -43,10 +43,6 @@ export function createCategoryCatalog(evidence,studies,parseRef,readingSources,d
  for(const person of directory.people||[]){
   const placements=(person.refs||[]).filter(ref=>Array.isArray(ref)&&ref.length===3&&ref.every(Number.isInteger)&&ref[0]>=0&&ref[0]<=65&&ref[1]>0&&ref[2]>0).map(([book,chapter,verse])=>({book,chapter,verse,placementRole:'key'}));
   if(placements.length)records.push({id:person.id,key:'characters:'+person.id,mode:'characters',title:person.name,summary:directory.summaries?.[person.id]||person.summary||'',aliases:person.aliases||[],placements});
- }
- for(const item of directory.prophecies||[]){
-  const placements=[item.prediction_passage,item.fulfillment_passage].filter(Boolean).flatMap(placementsFor);
-  if(placements.length)records.push({...item,key:'prophecies:'+item.id,mode:'prophecies',placements});
  }
  return records;
 }

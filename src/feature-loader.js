@@ -54,7 +54,7 @@
   if(!path||['#','#discover','#sync'].includes(path))return [];
   if(/^#debate(?:\/|$)/.test(path))return ['study','debates'];
   if(/^#(?:questions|debates)$/.test(path))return ['debates'];
-  const directory=/^#(?:evidence|categories|saved)(?:[/?]|$)/.test(path)?'evidence':/^#(?:people|characters)(?:\/|$)/.test(path)?'characters':/^#places(?:\/|$)/.test(path)?'places-directory':/^#timeline(?:\/|$)/.test(path)?'timeline':/^#commandments(?:\/|$)/.test(path)?'commandments':/^#prophecies(?:\/|$)/.test(path)?'prophecies':null;
+  const directory=/^#(?:evidence|categories|saved)(?:[/?]|$)/.test(path)?'evidence':/^#(?:people|characters)(?:\/|$)/.test(path)?'characters':/^#places(?:\/|$)/.test(path)?'places-directory':/^#timeline(?:\/|$)/.test(path)?'timeline':/^#commandments(?:\/|$)/.test(path)?'commandments':null;
   return ['study',...(directory?[directory]:[])];
  }
  let routing=null;

@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {featureSources} from './lazy-assets.mjs';
+import {createCategoryCatalog,categoryPage} from '../worker/categories.mjs';
+const app=fs.readFileSync('src/app.js','utf8');
+const context={URL,URLSearchParams};vm.createContext(context);
+vm.runInContext(app.slice(app.indexOf('function canonicalRouteHash('),app.indexOf('function navigateHash(')),context);
+for(const hash of ['#prophecies','#prophecies?target=Israel','#prophecies/immanuel-sign','#evidence/prophecies?book=0','#categories/prophecies','#saved/prophecies'])assert.equal(context.canonicalRouteHash(hash),'#discover',hash);
+assert(!('prophecies' in featureSources));
+for(const file of ['src/navigation.js','src/debates.js','src/marked.js','src/index.html'])assert(!/Prophecies|href="#prophecies|data-navigation-view="prophecies"/.test(fs.readFileSync(file,'utf8')),file);
+const samples=JSON.parse(fs.readFileSync('src/data/prophecies.json','utf8'));
+assert.equal(samples.length,3,'Archived research remains intact');
+const catalog=createCategoryCatalog([],[],()=>({book:0,chapter:1,verse:1}),()=>[],{prophecies:samples});
+assert.deepEqual(catalog,[]);
+assert.equal(categoryPage(catalog,new URLSearchParams('kind=prophecies')),null);
+assert(!('prophecies' in categoryPage(catalog,new URLSearchParams()).counts));
+console.log('PASS: retired Prophecies collection absent from navigation, categories, assets; legacy links redirect and research remains.');

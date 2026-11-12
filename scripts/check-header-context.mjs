@@ -30,5 +30,5 @@ const iconContext=vm.createContext({document:{querySelector(selector){
 }}});
 const reader=fs.readFileSync('src/reader.js','utf8');
 vm.runInContext(reader.slice(reader.indexOf('function categoryIcon('),reader.indexOf('function comparisonIcon(')),iconContext);
-for(const key of ['stories','characters','prophecies'])assert.match(iconContext.categoryIcon(key),/^<svg[\s\S]*<\/svg>$/);
+for(const key of ['stories','characters'])assert.match(iconContext.categoryIcon(key),/^<svg[\s\S]*<\/svg>$/);
 console.log('PASS: live masthead and collection header, direct Settings trigger and retained category icons.');
