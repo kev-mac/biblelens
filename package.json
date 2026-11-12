@@ -11,7 +11,7 @@
     "start": "node scripts/serve.mjs",
     "build:mobile": "node scripts/build-mobile.mjs",
     "check:places": "node scripts/check-places.mjs",
-    "check:mobile": "node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs",
+    "check:mobile": "python3 scripts/check-mobile-swap.py && node scripts/check-mobile-chrome.mjs && node scripts/check-mobile.mjs",
     "mobile:sync": "npm run build:mobile && cap sync",
     "mobile:android": "cap open android",
     "mobile:ios": "cap open ios",
