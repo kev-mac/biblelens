@@ -42,7 +42,7 @@
  window.addEventListener('hashchange',event=>{const previous=new URL(event.oldURL||location.href).hash;if(location.hash.startsWith('#search')&&!previous.startsWith('#search'))searchReturn=previous||'#discover';if(!location.hash.startsWith('#search')){cancelSearchInput();if(searchDialog.open)searchDialog.close();}});
  searchDialog.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();event.stopPropagation();cancelSearchInput();searchDialog.close();}},true);
  searchDialog.addEventListener('close',()=>{cancelSearchInput();const returnToExplore=!searchDialog.open&&location.hash.startsWith('#search')&&searchReturn.startsWith('#discover');if(!searchDialog.open&&location.hash.startsWith('#search'))routeTo(searchReturn);if(returnToExplore)requestAnimationFrame(()=>{if(view==='explore'&&!searchDialog.open)el('ux-explore-search')?.focus({preventScroll:true});});});
- section('notebook', `<div class="lens-page-heading"><h1 tabindex="-1">Saved</h1></div><div class="lens-notebook-tools"><div role="group" aria-label="Filter saved items">${[['all','All'],['notes','Notes'],['bookmarks','Bookmarks'],['saved','Contradictions'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='all'}">${label} (0)</button>`).join('')}</div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div><div class="lens-notebook-exports"><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div>`);
+ section('notebook', `<div class="lens-page-heading"><h1 tabindex="-1">Saved</h1></div><div class="lens-notebook-tools"><div role="group" aria-label="Filter saved items">${[['all','All'],['notes','Notes'],['bookmarks','Bookmarks'],['saved','Contradictions'],['investigations','Comparisons']].map(([id,label])=>`<button type="button" class="lens-button" data-lens-filter="${id}" aria-pressed="${id==='all'}">${label} (0)</button>`).join('')}</div></div><p id="lens-notebook-status" class="lens-collection-meta" role="status"></p><div id="lens-notebook-list" class="lens-notebook-list"></div><div class="lens-notebook-exports"><button type="button" class="lens-button lens-button-primary" id="lens-restore">Restore Backup</button><button class="lens-button" id="lens-export">Export Notes</button><button class="lens-button" id="lens-backup">Full Backup</button></div><p class="lens-backup-help">Full Backup includes your settings, even when nothing is saved.</p><p id="lens-restore-status" role="status"></p>`);
  const layout = document.createElement('div'); layout.className = 'lens-reading-layout';
  el('reader-layout').before(layout); layout.append(el('reader-layout'));
  const readingBar = document.createElement('div'); readingBar.id='lensReadingBar'; readingBar.className='lens-reading-bar';
@@ -352,6 +352,7 @@
   const renderId=++savedRender;
   const savedCount=Object.values(window.BibleLensDebateStore.all()).filter(value=>value.saved).length;
   const source=noteRows(),counts={all:source.length+savedCount,notes:source.filter(n=>n.kind!=='investigation'&&!!(n.text?.trim()||n.title?.trim())).length,bookmarks:source.filter(n=>n.marked).length,saved:savedCount,investigations:source.filter(n=>n.kind==='investigation').length};
+  updateNotebookExport();
   for(const button of document.querySelectorAll('[data-lens-filter]')){const key=button.dataset.lensFilter;button.textContent=({all:'All',notes:'Notes',bookmarks:'Bookmarks',saved:'Contradictions',investigations:'Comparisons'})[key]+' ('+counts[key]+')';button.setAttribute('aria-pressed',String(key===notebookFilter));}
   if(notebookFilter==='saved'){renderSaved(renderId);return;}
   const all=noteRows(),rows=all.filter(note=>notebookFilter==='all'||notebookFilter==='investigations'&&note.kind==='investigation'||notebookFilter==='bookmarks'&&note.marked||notebookFilter==='notes'&&note.kind!=='investigation'&&!!(note.text?.trim()||note.title?.trim()));
@@ -400,10 +401,14 @@
   if(kind==='investigation'){Object.assign(state.investigations[key],{title,note:text,updatedAt:new Date().toISOString()});}
   else if(kind==='study'){state.notes[key]=text;state.noteTitles[key]=title;}
   else{const record=state[kind+'Notes'][key]||state[kind+'Bookmarks'][key];state[kind+'Notes'][key]={...record,title,text};}
-  persist();row.querySelector('.lens-note-save-status').textContent=storageAvailable?'Saved on this device':'Storage unavailable — export to keep your work';
+  persist();updateNotebookExport();row.querySelector('.lens-note-save-status').textContent=storageAvailable?'Saved on this device':'Storage unavailable — export to keep your work';
  });
+ function exportableNotes(){return noteRows().filter(note=>!!(note.text?.trim()||note.title?.trim()));}
+ function updateNotebookExport(){const hasNotes=exportableNotes().length>0;el('lens-export').disabled=!hasNotes;el('lens-export').title=hasNotes?'Download your notes as Markdown':'Add a note to enable Export Notes';}
+ new MutationObserver(()=>{el('lens-restore-status').textContent=el('backup-status').textContent;}).observe(el('backup-status'),{childList:true,subtree:true,characterData:true});
+ el('lens-restore').onclick=()=>el('import-backup').click();
  el('lens-backup').onclick=()=>el('export-backup').click();
- el('lens-export').onclick=()=>download('zLenz-Bible-notebook.md','# zLenz: Bible notebook\n\n'+noteRows().map(note=>`## ${note.title||note.label}\n\n${note.label}\n\n${note.text||'(Bookmark; no note)'}\n`).join('\n'),'text/markdown');
+ el('lens-export').onclick=()=>{if(!exportableNotes().length)return;download('zLenz-Bible-notebook.md','# zLenz: Bible notebook\n\n'+exportableNotes().map(note=>`## ${note.title||note.label}\n\n${note.label}\n\n${note.text||'(Bookmark; no note)'}\n`).join('\n'),'text/markdown');};
  function parseReference(value){
   const match=/^(.+?)\s*(\d{1,3})(?::(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?)?$/.exec(BibleLensSearch.canonicalBooks(value,books).trim());if(!match)return null;
   const name=match[1].toLowerCase().replace(/[.\s]/g,''),book=books.find(b=>b.name.toLowerCase().replace(/\s/g,'')===name)||books.filter(b=>b.name.toLowerCase().replace(/\s/g,'').startsWith(name)&&name.length>=3).reduce((only,b,i,all)=>all.length===1?b:null,null);

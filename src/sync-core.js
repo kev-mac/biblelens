@@ -73,7 +73,7 @@
   state.bookmarks=Object.keys(data.bookmarks||{}).filter(id=>data.bookmarks[id]);
   for(const key of maps)state[key]=copy(data[key]||{});
   const prefs=data.preferences||{};
-  if(['dark','light'].includes(prefs.theme))state.theme=prefs.theme;
+  if(['dark','light','system'].includes(prefs.theme))state.theme=prefs.theme;
   if(Number.isFinite(prefs.textScale))state.textScale=Math.min(1.8,Math.max(.85,prefs.textScale));
   if(['fixed','floating'].includes(prefs.bookPickerPosition))state.bookPickerPosition=prefs.bookPickerPosition;
   state.readerPreferences={...state.readerPreferences};

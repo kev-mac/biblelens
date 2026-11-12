@@ -8,6 +8,7 @@ const context={savedRender:0,markedRenderGeneration:0,notebookFilter:'all',windo
 vm.createContext(context);
 vm.runInContext(source.slice(source.indexOf(' const savedActionIcons ='),source.indexOf(' const masthead=')),context);
 vm.runInContext(source.slice(source.indexOf(' function renderNotebook(){'),source.indexOf(' async function renderSaved(')),context);
+vm.runInContext(source.slice(source.indexOf(' function exportableNotes(){'),source.indexOf(' new MutationObserver(()=>{el(',source.indexOf(' function exportableNotes(){'))),context);
 context.renderNotebook();
 assert(card.innerHTML.includes('data-marked-verse-text="0/6/22"'),'Saved verse text appears in the card');
 assert(card.innerHTML.indexOf('data-marked-verse-text')<card.innerHTML.indexOf('data-lens-note-title'),'Verse text precedes the note editor');
@@ -19,3 +20,7 @@ assert.equal((card.innerHTML.match(/class="lens-button lens-note-action"/g)||[])
 assert(card.innerHTML.includes('&lt;private title&gt;')&&card.innerHTML.includes('&lt;private note&gt;'),'Private content remains escaped');
 assert.equal(hydrated,1);
 console.log('PASS: saved verse preview, exact Read target, four labeled icon actions, no header Open button and escaped private drafts.');
+
+assert.equal(status.disabled,false,'Existing note export enabled');
+context.noteRows=()=>[];context.renderNotebook();assert.equal(status.disabled,true,'Empty notebook cannot export title-only Markdown');
+context.noteRows=()=>[{marked:true,title:'',text:''}];context.updateNotebookExport();assert.equal(status.disabled,true,'Bookmark-only notebook cannot export empty notes');

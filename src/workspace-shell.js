@@ -110,16 +110,17 @@
  observer.observe(main,{childList:true,subtree:true,characterData:true});
  // Sheets are inline tasks. Keep async profile titles and reused sheets current.
  function dialogPaths(){for(const dialog of document.querySelectorAll('dialog[open]')){
-  if(dialog.id==='lens-inspector-sheet'||dialog.id==='lens-search-overlay'||dialog.id==='ux-alphabet-sheet'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
+  if(dialog.id!=='character-sheet'){dialog.querySelector('.ux-dialog-path')?.remove();continue;}
   const title=[...dialog.querySelectorAll('h1,h2,h3')].find(node=>!node.closest('[hidden]'))?.textContent.trim()||dialog.getAttribute('aria-label')||'Details';
   let nav=dialog.querySelector('.ux-dialog-path');
-  if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='←';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.id==='character-sheet'?dialog.dispatchEvent(new Event('person-context-back')):dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
+  if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='Back';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.id==='character-sheet'?dialog.dispatchEvent(new Event('person-context-back')):dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
+  nav.querySelector('button').hidden=dialog.dataset.contextBack!=='true';
   const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Laws',prophecies:'Prophecies',timeline:'History & Timeline'}[view];
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
  }}
  const dialogObserver=new MutationObserver(records=>{if(records.some(record=>!record.target.closest?.('.ux-dialog-path')))requestAnimationFrame(()=>{dialogPaths();updateContext();});});
- dialogObserver.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['open']});
+ dialogObserver.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:['open','data-context-back']});
  const aboutHeading=el('method-view')?.querySelector('h1');if(aboutHeading)aboutHeading.textContent='Method & Sources';
  const footerLink=document.querySelector('body > footer .brand');if(footerLink){footerLink.textContent='Method & Sources';footerLink.setAttribute('aria-label','zLenz: Bible Method & Sources');}
  function section(id, html) {const node = document.createElement('section'); node.id = id + '-view'; node.className = 'lens-workspace'; node.hidden = true; node.innerHTML = html; main.append(node); return node;}

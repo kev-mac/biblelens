@@ -1,0 +1,23 @@
+/* Proposals 26–30: consistent, calm actions without underlined links. */
+html body a, html body a:hover, html body a:focus-visible { text-decoration: none !important; }
+html body :is(.lens-button,.primary,.secondary,.action-link,.settings-notebook-link) {
+  text-align:center; justify-content:center; border-radius:12px;
+}
+html body :is(.lens-button,.primary,.secondary,.action-link,.settings-notebook-link):focus-visible,
+html body a:focus-visible { outline:2px solid var(--directory-accent,var(--lens-link,#a6b5ff)); outline-offset:3px; }
+html body :is(.lens-button,.primary,.secondary):disabled {
+  color:var(--muted,#858b96); background:var(--soft,#24262c); border-color:var(--line,#3b3e46); cursor:not-allowed;
+}
+/* External destinations use a word, not an arrow, and keep source text intact. */
+html body :is(.method-grid,.study-sources,.sources-list) a[href^="http"]::after {
+  content:' (external)'; font-size:.8em; color:var(--muted); font-weight:400;
+}
+html body.lens-app #notebook-view .lens-notebook-exports { flex-wrap:wrap; align-items:center; }
+html body.lens-app #notebook-view .lens-notebook-exports .lens-button { min-height:44px; flex:1 1 140px; }
+html body.lens-app #notebook-view #lens-export:disabled { opacity:.65; }
+html body.lens-app #notebook-view .lens-backup-help { color:var(--muted);font-size:.875rem;margin:12px 0; }
+html body #character-sheet .ux-dialog-path button[hidden] { display:none; }
+/* In-page navigation must not inherit the compact primary-nav button geometry. */
+html body.lens-app #main #method-view .method-navigation { display:grid; grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;margin:0 0 24px; }
+html body.lens-app #main #method-view .method-navigation button { width:100%;max-width:none;min-width:0;min-height:44px;height:auto;padding:10px 12px;white-space:normal;overflow-wrap:anywhere; }
+@media(min-width:700px){html body.lens-app #main #method-view .method-navigation{grid-template-columns:repeat(4,minmax(0,1fr));}}

@@ -260,6 +260,7 @@ function mountCharacters(): void {
     title.textContent=profile?profileDisplayName(profile):'Character Profile';
     body.replaceChildren(element('p', 'loading-state', 'Loading character connections…'));
     body.setAttribute('aria-busy', 'true');
+    sheet.dataset.contextBack = String(familyHistory.length > 0);
     if (!sheet.open) { sheet.showModal(); document.body.classList.add('character-sheet-open'); }
     let graph: Awaited<ReturnType<typeof loadCharacterGraph>> | undefined;
     try {
