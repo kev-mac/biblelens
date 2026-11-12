@@ -6,6 +6,8 @@ import sys
 import tempfile
 from unittest.mock import patch
 
+sys.dont_write_bytecode = True
+
 module_path = Path(__file__).with_name('swap-mobile.py')
 spec = importlib.util.spec_from_file_location('swap_mobile', module_path)
 swap = importlib.util.module_from_spec(spec)
