@@ -23,7 +23,22 @@ const BibleLensSearch = (() => {
  }
  const tolerance=word=>word.length>=7?2:word.length>=4?1:0;
  const names=value=>Array.isArray(value)?value.filter(item=>typeof item==='string'):typeof value==='string'?value.split(/[;,|]/).map(s=>s.trim()).filter(Boolean):[];
+ // Catalog arrays are immutable snapshots: replacing the rows refreshes caches.
+ // Keep filtered Places arrays stable so repeated queries reuse the text index.
+ const placeRowsCache=new WeakMap();
+ function searchablePlaces(rows){
+  let filtered=placeRowsCache.get(rows);if(filtered)return filtered;
+  const titles=new Set(rows.map(row=>row.fields?.displayTitle));
+  filtered=rows.filter(row=>!(/['’]s$/i.test(row.fields?.displayTitle||'')&&titles.has(row.fields.displayTitle.replace(/['’]s$/i,''))));
+  placeRowsCache.set(rows,filtered);return filtered;
+ }
  const catalogCache=new WeakMap();
+ // Call after intentional in-place edits; normal callers replace catalog arrays.
+ function invalidateCatalog(rows){
+  const filtered=placeRowsCache.get(rows);
+  if(filtered)catalogCache.delete(filtered);
+  placeRowsCache.delete(rows);catalogCache.delete(rows);
+ }
  function catalogIndex(rows,kind,curated){
   let indexed=catalogCache.get(rows);if(indexed)return indexed;
   const byId=new Map(rows.map(row=>[row.id,row.fields||row]));
@@ -58,7 +73,7 @@ const BibleLensSearch = (() => {
  }
  function catalogSearch(rows,kind,query,curated=[],knownEntities=new Set()){
   const question=entityQuestion(query);if(question?.kind===kind)query=question.name;
-  const index=catalogIndex(kind==='places'?rows.filter(row=>!(/['’]s$/i.test(row.fields?.displayTitle||'')&&rows.some(other=>other.fields?.displayTitle===(row.fields.displayTitle.replace(/['’]s$/i,''))))):rows,kind,curated),words=queryTokens(query),phrase=words.join(' ');
+  const index=catalogIndex(kind==='places'?searchablePlaces(rows):rows,kind,curated),words=queryTokens(query),phrase=words.join(' ');
   if(!words.length)return [];
   const vocabulary=catalogVocabulary(rows,kind,curated);let correctionBudget=2;
   const choices=words.map(word=>{
@@ -133,5 +148,5 @@ function references(message,books){
  }
  return refs;
 }
- return {entityQuestion,personLabel,references,normalize,tokens,queryTokens,distance,tolerance,names,catalogSearch,catalogVocabulary,canonicalBooks};
+ return {invalidateCatalog,entityQuestion,personLabel,references,normalize,tokens,queryTokens,distance,tolerance,names,catalogSearch,catalogVocabulary,canonicalBooks};
 })();

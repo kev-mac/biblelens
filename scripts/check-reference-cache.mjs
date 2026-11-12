@@ -19,5 +19,10 @@ try {
  requests[5].reject(Error('Offline'));await Promise.resolve();
  assert.equal(requests[6].url,'/reference/people.json','Offline readers can still use the cached public list');
  requests[6].resolve({ok:true,json:async()=>people});assert.equal(await offline,people);
+ const offlinePlaces=referenceJson('/reference/places.json?offline-check=1');
+ requests[7].reject(Error('Offline'));await Promise.resolve();
+ assert.equal(requests[8].url,'/reference/places.json','Offline place profiles use the packaged shared asset');
+ const places=[{id:'place',fields:{summary:'Complete place summary.'}}];
+ requests[8].resolve({ok:true,json:async()=>places});assert.equal(await offlinePlaces,places);
  console.log('PASS: shared pending/resolved reference requests across bundles, failed HTTP/JSON retry, and exclusion of private endpoints.');
 } finally {globalThis.fetch=original;}
