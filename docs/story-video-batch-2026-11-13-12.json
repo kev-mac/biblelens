@@ -1,0 +1,708 @@
+{
+  "batch": 12,
+  "createdAtUtc": "2026-11-13T19:15:43.152Z",
+  "baselineCommit": "b8a061c149e6574b7ae49ce050e22ad7b27662f1",
+  "flowProject": "https://flow.google.com/project/76cc5641-12de-4795-a5df-505ff37b6366",
+  "startingAiCredits": 1300,
+  "endingAiCredits": 1168,
+  "flowCredits": 0,
+  "totalCredits": 132,
+  "creditAccounting": "Observed balance 1300 to 1168 AI credits, 0 Flow. Eleven successful image-reference generations at the displayed 12 credits each. One additional court-portrait request failed and Flow stated it would be refunded; no separate provider billing receipt. No purchases or plan changes.",
+  "model": "Omni 1.1 Flash 720p 8s 16:9 x1",
+  "audioListeningReview": false,
+  "hosting": {
+    "sourceCommit": "b8a061c149e6574b7ae49ce050e22ad7b27662f1",
+    "addedExistingPosters": [
+      {
+        "src": "/assets/story-video-the-fall-of-jericho-poster-v2.webp",
+        "bytes": 99588
+      },
+      {
+        "src": "/assets/story-video-caleb-receives-hebron-poster-v2.webp",
+        "bytes": 99490
+      },
+      {
+        "src": "/assets/story-video-balaam-and-balak-poster-v2.webp",
+        "bytes": 98936
+      },
+      {
+        "src": "/assets/story-video-the-ark-captured-and-returned-poster-v1.webp",
+        "bytes": 98846
+      },
+      {
+        "src": "/assets/story-video-jehoshaphat-poster-v1.webp",
+        "bytes": 98178
+      },
+      {
+        "src": "/assets/story-video-northern-campaign-and-the-land-taken-poster-v2.webp",
+        "bytes": 97552
+      },
+      {
+        "src": "/assets/story-video-sennacherib-s-invasion-and-hezekiah-s-pride-poster-v1.webp",
+        "bytes": 97508
+      },
+      {
+        "src": "/assets/story-video-solomon-s-reign-and-the-queen-of-sheba-poster-v2.webp",
+        "bytes": 97336
+      },
+      {
+        "src": "/assets/story-video-moses-sets-apart-three-cities-of-refuge-poster-v2.webp",
+        "bytes": 96956
+      },
+      {
+        "src": "/assets/story-video-joshua-s-farewell-and-covenant-at-shechem-poster-v2.webp",
+        "bytes": 95258
+      },
+      {
+        "src": "/assets/story-video-naomi-and-ruth-return-to-bethlehem-poster-v1.webp",
+        "bytes": 95212
+      },
+      {
+        "src": "/assets/story-video-othniel-ehud-and-shamgar-poster-v2.webp",
+        "bytes": 94774
+      },
+      {
+        "src": "/assets/story-video-the-plagues-of-egypt-poster-v1.webp",
+        "bytes": 94434
+      },
+      {
+        "src": "/assets/story-video-the-blasphemer-stoned-poster-v1.webp",
+        "bytes": 94152
+      },
+      {
+        "src": "/assets/story-video-abimelech-poster-v2.webp",
+        "bytes": 93230
+      },
+      {
+        "src": "/assets/story-video-ahaz-and-hezekiah-s-reforms-poster-v1.webp",
+        "bytes": 92698
+      },
+      {
+        "src": "/assets/story-video-david-in-the-wilderness-poster-v1.webp",
+        "bytes": 92402
+      },
+      {
+        "src": "/assets/story-video-israel-demands-a-king-poster-v1.webp",
+        "bytes": 91224
+      },
+      {
+        "src": "/assets/story-video-line-of-seth-poster-v1.webp",
+        "bytes": 91064
+      },
+      {
+        "src": "/assets/story-video-the-binding-of-isaac-poster-v1.webp",
+        "bytes": 90962
+      },
+      {
+        "src": "/assets/story-video-hagar-and-ishmael-poster-v1.webp",
+        "bytes": 90834
+      },
+      {
+        "src": "/assets/story-video-cain-and-abel-poster-v1.webp",
+        "bytes": 90734
+      },
+      {
+        "src": "/assets/story-video-bitter-water-manna-and-quail-poster-v1.webp",
+        "bytes": 89848
+      },
+      {
+        "src": "/assets/story-video-joshua-commissioned-poster-v2.webp",
+        "bytes": 88894
+      },
+      {
+        "src": "/assets/story-video-deborah-and-barak-poster-v2.webp",
+        "bytes": 87292
+      },
+      {
+        "src": "/assets/story-video-crossing-the-jordan-poster-v3.webp",
+        "bytes": 86334
+      },
+      {
+        "src": "/assets/story-video-ruth-gleans-in-boaz-s-field-poster-v1.webp",
+        "bytes": 85178
+      },
+      {
+        "src": "/assets/story-video-building-the-tabernacle-poster-v1.webp",
+        "bytes": 85108
+      },
+      {
+        "src": "/assets/story-video-creation-poster-v2.webp",
+        "bytes": 85056
+      },
+      {
+        "src": "/assets/story-video-isaac-and-ishmael-poster-v1.webp",
+        "bytes": 84552
+      },
+      {
+        "src": "/assets/story-video-the-birth-and-rescue-of-moses-poster-v1.webp",
+        "bytes": 84380
+      },
+      {
+        "src": "/assets/story-video-saul-s-jealousy-and-david-s-flight-poster-v1.webp",
+        "bytes": 84032
+      },
+      {
+        "src": "/assets/story-video-fall-of-man-poster-v2.webp",
+        "bytes": 81708
+      },
+      {
+        "src": "/assets/story-video-the-altar-by-the-jordan-poster-v2.webp",
+        "bytes": 81364
+      },
+      {
+        "src": "/assets/story-video-moses-recalls-the-wilderness-years-poster-v2.webp",
+        "bytes": 80444
+      },
+      {
+        "src": "/assets/story-video-achans-sin-and-ai-poster-v2.webp",
+        "bytes": 79934
+      },
+      {
+        "src": "/assets/story-video-aaron-and-his-sons-are-ordained-poster-v1.webp",
+        "bytes": 78586
+      },
+      {
+        "src": "/assets/story-video-vengeance-on-midian-poster-v2.webp",
+        "bytes": 77902
+      },
+      {
+        "src": "/assets/story-video-the-sun-stands-still-poster-v2.webp",
+        "bytes": 77696
+      },
+      {
+        "src": "/assets/story-video-a-new-census-and-joshua-appointed-poster-v2.webp",
+        "bytes": 77546
+      }
+    ],
+    "totalSelectedPosters": 80,
+    "reason": "Mac build 424 exceeded the unchanged Worker limit by 85426 bytes despite Windows passing. Extend established immutable hosting with unchanged existing posters, keeping exact native/offline bytes. Recheck both platforms."
+  },
+  "records": [
+    {
+      "title": "The Fall of Judah and Cyrus's Decree",
+      "book": "2 Chronicles",
+      "passage": "2 Chronicles 36:1 - 36:23",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Fall-of-Judah-and-Cyrus-s-Decree-v1-web.mp4",
+      "poster": "/assets/story-video-the-fall-of-judah-and-cyrus-s-decree-poster-v1.webp",
+      "posterAlt": "Cyrus holds a sealed scroll before an elder. An imagined decree scene.",
+      "description": "This selects Cyrus's decree in 2 Chronicles 36:22-23, not the preceding fall of Judah.",
+      "reference": "/assets/story-the-fall-of-judah-and-cyrus-s-decree-v1.webp",
+      "referenceSha256": "33115887bf3d8537f5bb6d1c16fc73e599767d61476e7915b720ad732f92aada",
+      "actualFlowIngredients": [
+        "reference-1.png"
+      ],
+      "uploadReferenceSha256": "c6b4c41f24fb13378ca674589747c1a3c8b09f9831b1beea47722823ddbad383",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Cyrus issues the return decree, selecting 2 Chronicles 36:22-23. Animate the actual reference: the standing king keeps both hands securely supporting the sealed scroll, inclines it slightly toward the elder and gives a restrained nod. The elder lowers his open hands slightly without taking the scroll. Preserve Cyrus's brown face, strong nose and brow, dense dark natural curls, full beard, tall robust build, blue embroidered robe and fluted crown; keep the elder distinct. Do not animate the vessels being handed over, introduce another king, make the scroll unroll or add legible words. Coherent hands, fingers and scroll geometry. Natural blue daylight and realistic stone and metal. This selects the decree, not Jerusalem's destruction. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "King issues return decree scroll",
+      "credits": 12,
+      "bytes": 2513271,
+      "sha256": "7e579fd9c835790d5f2a55c82aa6ed444e717f6ee221f5735de45046476924f8",
+      "duration": 5,
+      "originalBytes": 4747265,
+      "originalSha256": "a18d8261e65e00c22ae7a00194dd4f9944333b8eda05080515ed0667c2d50bac",
+      "posterTimestamp": 2,
+      "posterBytes": 77444,
+      "posterSha256": "4bbe9858243b20b017b3c59afa9c6ea28d4b5c0f73d889266e43a5a29240e1e1",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 5,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size two-second sample and 1fps contact sheet preserve the approved Cyrus portrait, brown face, strong brow/nose, natural curls and beard, blue robe and fluted crown. The sealed scroll remains supported, distinct elder hands lower, and inspected fingers and limbs are coherent. The scene selects the decree, not the destruction of Jerusalem.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-The-Fall-of-Judah-and-Cyrus-s-Decree-v1-web.mp4",
+        "etag": "\"c511a1f15c8e9f9b510af47b8fcb2198\""
+      }
+    },
+    {
+      "title": "Cyrus's Decree and the Return",
+      "book": "Ezra",
+      "passage": "Ezra 1:1 - 2:70",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Cyrus-s-Decree-and-the-Return-v1-web.mp4",
+      "poster": "/assets/story-video-cyrus-s-decree-and-the-return-poster-v1.webp",
+      "posterAlt": "Returning households walk beside a loaded donkey. An imagined scene.",
+      "description": "This selects returning households in Ezra 1-2; the blue-clad traveler is anonymous, not Cyrus or Ezra.",
+      "reference": "/assets/story-cyrus-s-decree-and-the-return-v2.webp",
+      "referenceSha256": "e47394390e424df1021a4beaa9925f0d7f401b98ec5ed688ab1a5eafb889a6bb",
+      "actualFlowIngredients": [
+        "reference-2.png"
+      ],
+      "uploadReferenceSha256": "133154a76cb7f464b26bb1af5366d8a769beb082948c5c63c5faf657877831f6",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Returning households travel toward Judah, selecting Ezra 1:5-11 and 2:1. Animate the actual reference: the central blue-clad anonymous traveler, woman, child and loaded donkey take one or two slow coordinated steps along the stone path. Keep the sealed scroll held firmly against the traveler's body and his other hand on his staff. Preserve each brown face, natural curls, age and proportions, woman's cream head covering, child's red scarf and all donkey legs, harness and vessel loads. The traveler is not Cyrus, Ezra, Zerubbabel or Sheshbazzar. Natural blue dawn and muted green hills with warm light only at the horizon. No turning, extra limbs, riding or shifting loads. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Travelers journey toward Judah",
+      "credits": 12,
+      "bytes": 4889573,
+      "sha256": "590425c177b039e60a380ab508010e2b6dfa41129602c1c7a55dfcee60cd3dbc",
+      "duration": 6,
+      "originalBytes": 8114206,
+      "originalSha256": "5c75cc8156eb71c7c6d515cd296746e52775391e789ca9c5dd299ab38eb2389e",
+      "posterTimestamp": 2,
+      "posterBytes": 92182,
+      "posterSha256": "e1b20ed414c7d43d42678446f8eb87176def75f9da4ef2a22ac3d68935277c59",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 6,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve the anonymous blue-clad return leader, cream-headcloth woman, red-scarfed child and loaded donkey from approved v2. Visible staff/scroll grips, feet, donkey legs, ears and packs remain coherent. These are returning households, not Cyrus or Ezra, and no completed temple is added to the distant skyline.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Cyrus-s-Decree-and-the-Return-v1-web.mp4",
+        "etag": "\"31bd763ee5828eb49c62ef1bc7850ef7\""
+      }
+    },
+    {
+      "title": "Rebuilding the Altar and Foundation",
+      "book": "Ezra",
+      "passage": "Ezra 3:1 - 3:13",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Rebuilding-the-Altar-and-Foundation-v1-web.mp4",
+      "poster": "/assets/story-video-rebuilding-the-altar-and-foundation-poster-v1.webp",
+      "posterAlt": "A mason holds a foundation stone while elders watch. An imagined scene.",
+      "description": "This selects the mixed joy and tears at the temple foundation in Ezra 3:10-13, not a complete retelling.",
+      "reference": "/assets/story-rebuilding-the-altar-and-foundation-v1.webp",
+      "referenceSha256": "cc503552eebcf4b446efacffa924839aa7d59383057a65d44fc25dc39fd74f4b",
+      "actualFlowIngredients": [
+        "reference-3.png"
+      ],
+      "uploadReferenceSha256": "904d1fdc1624ec835cd45c157d2b26c07c82a8c5fc02110773159c0518fc2dc6",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "The temple foundation is rebuilt amid mixed joy and tears, selecting Ezra 3:10-13. Animate the actual reference: the central mason holds his block securely on the same shoulder with both hands and settles his stance without passing or throwing it; the elderly foreground man remains tearful while the woman beside him looks toward the work. Keep their distinct brown faces, natural curls, age and adult proportions stable, and preserve each finger, wrist and the block's weight. Background workers make only small natural movements, no dangerous scaffold fall or collapsing masonry. No new named leader is invented. Natural neutral daylight, blue sky, green branches and realistic limestone and linen. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Workers rebuilding temple founda…",
+      "credits": 12,
+      "bytes": 4642018,
+      "sha256": "fc37131905c42173776cb85b94501b6187cdcf44f67aafa53585d55b55f3fc25",
+      "duration": 6,
+      "originalBytes": 7631621,
+      "originalSha256": "1364e9f7031cd6beff72e5ada334ecccaf7db4204a685ac6d02126cfdf1af6df",
+      "posterTimestamp": 2,
+      "posterBytes": 97356,
+      "posterSha256": "4ee88b27c37490c7c0ee66d944fa5e773892b2e88c48f157ea071e32fb99f319",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 6,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve the anonymous masons, elder tears and woman watching, with mixed joy and grief. The central worker holds the same block on his shoulder; inspected hands, wrists, arms and scaffold are coherent. No portrait is assigned to Jeshua or Zerubbabel.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Rebuilding-the-Altar-and-Foundation-v1-web.mp4",
+        "etag": "\"b034d03379d623be49cd16f2fc1a11ab\""
+      }
+    },
+    {
+      "title": "Opposition and Delay",
+      "book": "Ezra",
+      "passage": "Ezra 4:1 - 4:24",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Opposition-and-Delay-v1-web.mp4",
+      "poster": "/assets/story-video-opposition-and-delay-poster-v1.webp",
+      "posterAlt": "Anonymous representatives face one another beside unfinished masonry. An imagined scene.",
+      "description": "This selects the temple opposition in Ezra 4:1-5, without equating it with the chapter's later city correspondence.",
+      "reference": "/assets/story-opposition-and-delay-v1.webp",
+      "referenceSha256": "5d5a0f121aa54243cda68fa517601100f274bd53395bbc9ea439e706b86ed000",
+      "actualFlowIngredients": [
+        "reference-4.png"
+      ],
+      "uploadReferenceSha256": "010827826de41a11c9a85702df867d772afb2c20cc741152c82be51707420625",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Opposition at the unfinished temple, selecting Ezra 4:1-5. Animate the actual reference: the seated builder slightly lowers his open hand and the opposing visitor settles his open palms while they regard one another. Keep the scroll rolled on the table; no one writes or swaps it. Preserve distinct brown faces, natural dark curls and beards, work linen, colored visitor garments and stable fingers and seated limbs. These are anonymous representatives, not Cyrus, Ezra or a later king; do not conflate later city letters with this earlier temple exchange. Overcast blue-gray natural light and realistic limestone, wood and cloth. No conflict, threat or newly arriving character. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Men discussing at unfinished temple",
+      "credits": 12,
+      "bytes": 2201525,
+      "sha256": "a3f2ffbc210ecb86e95e5707cdb747d0ec1affc0a7daf9864c8a120c9452e877",
+      "duration": 5,
+      "originalBytes": 4468421,
+      "originalSha256": "a4cfbed7781359db1f300e5401228967bb72d5929f7fec4ee325ede9b279bbe6",
+      "posterTimestamp": 2,
+      "posterBytes": 69758,
+      "posterSha256": "9c48767346851fb0195f9524fc60fb2e1cea29b8feeb4ce57d97cb54cff276ec",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 5,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve distinct anonymous builder and visitor faces, natural hair and garments. Open hands lower, rolled scroll remains on the table, and inspected fingers and seated limbs are coherent. The scene illustrates early temple opposition without identifying later kings or conflating the later letters.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Opposition-and-Delay-v1-web.mp4",
+        "etag": "\"85c112166fc5730ee6a1f92dd052c39d\""
+      }
+    },
+    {
+      "title": "The Temple Completed",
+      "book": "Ezra",
+      "passage": "Ezra 5:1 - 6:22",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Temple-Completed-v1-web.mp4",
+      "poster": "/assets/story-video-the-temple-completed-poster-v1.webp",
+      "posterAlt": "Families celebrate beside the completed temple. An imagined scene.",
+      "description": "This selects the completed temple celebration in Ezra 6:15-18; the musicians and instruments are imagined details.",
+      "reference": "/assets/story-the-temple-completed-v1.webp",
+      "referenceSha256": "a52631ae71a61bf077748117b6f4a3ee935936c206117d9fa345e9cc59051050",
+      "actualFlowIngredients": [
+        "reference-5.png"
+      ],
+      "uploadReferenceSha256": "fa3741c08ba4827911c4241f85d47d5b50311738f8ffaeb8e6ea89937d8749d5",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "The completed temple celebration, selecting Ezra 6:15-18. Animate the actual reference: the foreground drummer makes one gentle controlled tap on the same drum while neighboring adults make small joyful movements. Keep the blue-clad woman and the child's faces and bodies stable without adding people. Preserve brown faces, natural curls, ages, instruments, grips, wrists and fingers. The musicians are anonymous and their instruments are imagined details, not a claim about the dedication's exact ensemble. No lip-synchronized singing, new lettering or crowns. Natural clear blue daylight, green trees and realistic limestone, linen and drum skin. Do not transform the temple architecture or claim this is already completed in Ezra 5. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Temple celebration drummer tappi…",
+      "credits": 12,
+      "bytes": 2988008,
+      "sha256": "37cd20d4ab2d44ba407f21897dd4160d911c43402e21dcc8a42fae43d0f13912",
+      "duration": 6,
+      "originalBytes": 4631291,
+      "originalSha256": "21ab18e0b4812c7242cc6daa6cb396db84241fa169bf4edd139dcc3f2de079b4",
+      "posterTimestamp": 2,
+      "posterBytes": 76004,
+      "posterSha256": "8b7c48a023e053c37e6d7892618e098b6a06023449b00aa12d21934730d06785",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 6,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve anonymous musicians, families, age and clothing, drum/lyre geometry, hands and fingers. The temple entrance remains compatible with the reference. Instruments and this celebration are imagined details, not an exact inventory of the dedication ensemble.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-The-Temple-Completed-v1-web.mp4",
+        "etag": "\"7d22f98022760c141e85312c44a14a83\""
+      }
+    },
+    {
+      "title": "Ezra Comes to Jerusalem",
+      "book": "Ezra",
+      "passage": "Ezra 7:1 - 8:36",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezra-Comes-to-Jerusalem-v1-web.mp4",
+      "poster": "/assets/story-video-ezra-comes-to-jerusalem-poster-v1.webp",
+      "posterAlt": "Ezra leads a loaded donkey beside travelers and a river. An imagined scene.",
+      "description": "This selects the journey in Ezra 8:21-32, not all the events of Ezra 7-8.",
+      "reference": "/assets/story-ezra-comes-to-jerusalem-v1.webp",
+      "referenceSha256": "c348b5e3a47a7d8d297b03608a3f583d840cd423316823c8858b65f7fdf077fd",
+      "actualFlowIngredients": [
+        "reference-6.png"
+      ],
+      "uploadReferenceSha256": "16256fe890127c3ad5a008412424744a6918baf3cde82a38a268e335248c12d0",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Ezra's journey to Jerusalem, selecting Ezra 8:21-32. Animate the actual reference: Ezra keeps his right hand around the staff and his left on the donkey's lead while he and the travelers take one careful step along the river bank. Preserve his mature brown face, prominent brow and nose, natural dark-gray curls, full graying beard, average build and cream headcloth and robe, matching the approved later prayer portrait. Keep each anonymous family member distinct; do not identify the child or woman as Ezra's named relatives. Stable donkey ears, muzzle, legs, halter, packs, fingers and feet. Cool natural blue-gray daylight and green riverbank, realistic cloth and water, no sepia grade. No mounted Ezra or escort army. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Ezra walking along river bank",
+      "credits": 12,
+      "bytes": 4362648,
+      "sha256": "4abbe264196eb678e8fdec8a6dfe0f81128033cd1488bd44cee0f278318f02ba",
+      "duration": 6,
+      "originalBytes": 7465515,
+      "originalSha256": "55f1ce411a7539772d00b1ef94515c755b765025a733ec5ef81f367380270fa5",
+      "posterTimestamp": 2,
+      "posterBytes": 67240,
+      "posterSha256": "00a695fec45852739646d9f4e56778356e474a598dbd8340d657414fbd25ab65",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 6,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve Ezra's mature brown face, prominent brow/nose, graying beard, natural curls under cream headcloth, and body build. Compared with the prayer portrait and later approved reader; the later reader is plausibly grayer, with no exact birth age asserted. Staff, halter, hands, feet and donkey anatomy are coherent in inspected samples. Anonymous travelers remain anonymous.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Ezra-Comes-to-Jerusalem-v1-web.mp4",
+        "etag": "\"8b4de0499270673bd54b2bd6992c87be\""
+      }
+    },
+    {
+      "title": "Ezra and Mixed Marriages",
+      "book": "Ezra",
+      "passage": "Ezra 9:1 - 10:44",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezra-and-Mixed-Marriages-v1-web.mp4",
+      "poster": "/assets/story-video-ezra-and-mixed-marriages-poster-v1.webp",
+      "posterAlt": "Ezra sits in distress with open palms before a rain-soaked gathering. An imagined scene.",
+      "description": "This selects Ezra's distress and a gathering in Ezra 9-10; rain belongs to 10:9, and no forced departure is shown.",
+      "reference": "/assets/story-ezra-and-mixed-marriages-v1.webp",
+      "referenceSha256": "ea148c511a0153db98c3ea398b069a60745f12a631b9608ec03bf35390476e87",
+      "actualFlowIngredients": [
+        "reference-7.png"
+      ],
+      "uploadReferenceSha256": "c75c73d685e4472505df7be953fa1896b13a6d287bb3cfaf974c5077a26bb011",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Ezra's distress and the gathering, selecting Ezra 9-10, with rain from Ezra 10:9. Animate the actual approved reference: the seated Ezra lowers his gaze and brings his open palms slightly inward without joining or changing his hands. The assembled people listen quietly; no one is expelled, struck or labeled guilty by appearance. Preserve his mature brown complexion, prominent brow and nose, dark-gray natural curls, full graying beard and build from the approved journey portrait, now without its head covering. Stable fingers, knees and all anonymous women, men and children, with no new family relationship invented. Cool rain and restrained warm doorway light, realistic wet stone and woven cloth. This seated imagined moment is not a claim about the kneeling posture in Ezra 9:5. No dialogue or text. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Ezra lowers gaze in rain",
+      "credits": 12,
+      "bytes": 3009373,
+      "sha256": "69c103af1b2afede84359177a7512cbd6f8fa1ed6807038fb229592c8e13484c",
+      "duration": 5,
+      "originalBytes": 5840414,
+      "originalSha256": "185b60b8df4dbc422387ed0e2162b7f8f7330322c4c4d0e92f48681296cf090e",
+      "posterTimestamp": 2,
+      "posterBytes": 95620,
+      "posterSha256": "f644dbe73b2deac24ccf0c71ca694248730f4cb2818771a9418e80dd9a0f26db",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 5,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve the approved Ezra prayer face, dark-gray natural curls, graying beard and mature build, compared with his journey portrayal. Both open hands, separate fingers, seated limbs and nearby listeners remain coherent. Rain belongs to Ezra 10:9 within the Story span; no expulsions or violent acts are depicted.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Ezra-and-Mixed-Marriages-v1-web.mp4",
+        "etag": "\"fe70514036351d5b68d61f564e44eb1a\""
+      }
+    },
+    {
+      "title": "Nehemiah's Prayer and Commission",
+      "book": "Nehemiah",
+      "passage": "Nehemiah 1:1 - 2:10",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Nehemiah-s-Prayer-and-Commission-v2-web.mp4",
+      "poster": "/assets/story-video-nehemiah-s-prayer-and-commission-poster-v2.webp",
+      "posterAlt": "A bronze cup and sealed letter sit in a Persian courtyard. An imagined scene.",
+      "description": "An imagined cup and royal letter illustrate the court setting in Nehemiah 2:1-9. No conversation is depicted.",
+      "reference": "/assets/chapter-nehemiah-02-opening-v1.webp",
+      "referenceSha256": "2f85adf2f7527788b498b72bbdb5d4c8f3b1c31ed28ec07f56b40aaa952b184b",
+      "originalStoryReference": "/assets/story-nehemiah-s-prayer-and-commission-v1.webp",
+      "actualFlowIngredients": [
+        "reference-8-palace-objects.png"
+      ],
+      "uploadReferenceSha256": "60bff9b2b570e354eb41511fa34bf274383975d3724212038055f837ad0efbdf",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Animate this approved people-free ancient Persian courtyard still life, illustrating the cupbearer's role and royal letters in Nehemiah 2:1-9. Keep the sealed rolled letter and bronze cup exactly where they are on the wooden table; a slight breeze moves the distant leaves and subtle ripples cross the cup's surface. Preserve the cylinder seal, scroll cord, cup geometry, blue glazed wall, stone columns and green landscape. No people, body parts, portraits, faces, royal names or animals appear, even in reflections. No readable text or invented quotation, no moving objects or magical effects. Cool natural daylight, realistic wood, stone and metal, restrained camera push. This selects symbolic court objects, not a depiction of the conversation. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Animating Persian courtyard stil…",
+      "credits": 12,
+      "rejectedRequest": {
+        "reason": "Flow prominent-person filter; no clip produced. No retry of that portrait.",
+        "originalPrompt": "Nehemiah asks Artaxerxes for leave, selecting Nehemiah 2:1-6. Animate the actual reference: Nehemiah holds the same cup level in one hand and keeps his other hand on his chest, bowing his head slightly; the seated ruler gives one restrained attentive nod. Preserve Nehemiah's medium-brown face, prominent nose, dense dark natural curls, dark beard, lean-average adult build and cream-blue court clothing, consistent with the approved later wall and debt scenes over the short narrative interval. Preserve Artaxerxes's distinct brown face, black beard, broad build, purple robe and gold crown; he is not Cyrus. No drinking, cup handoff, newly appearing queen or written words. Coherent hands, cup, elbows and seated legs. Natural cool court daylight, restrained metal reflections and realistic stone and cloth. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+        "actualFlowIngredients": [
+          "reference-8.png"
+        ]
+      },
+      "bytes": 1811739,
+      "sha256": "c31cfb4de91cc0e1ff103dd68c1bf762fe9caacb6314b5cd1f5438154c4f5e36",
+      "duration": 5,
+      "originalBytes": 3566827,
+      "originalSha256": "22e2032bc780e5e2260b6174fde50ef8a76cfa0aec4c372c41ae42db0641a5b1",
+      "posterTimestamp": 2,
+      "posterBytes": 69842,
+      "posterSha256": "0e2606ba0ccac2d2c2e7f43fd756160462dfe8b339487a50aa1a31aa55a99382",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 5,
+      "fullLocalDecode": "passed",
+      "visualReview": "The portrait request was declined by Flow and was not retried. The accepted alternative uses the actual approved chapter-2 people-free cup-and-letter image. Full-size sample and 1fps sheet retain the bronze cup, tied scroll and seal, blue glazed wall and natural courtyard light. No face, body part or readable quotation is introduced. This symbolic still life does not depict the court conversation.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Nehemiah-s-Prayer-and-Commission-v2-web.mp4",
+        "etag": "\"beb8c2ba217a7889186ccf763a800f41\""
+      }
+    },
+    {
+      "title": "Rebuilding the Wall",
+      "book": "Nehemiah",
+      "passage": "Nehemiah 2:11 - 4:23",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Rebuilding-the-Wall-v1-web.mp4",
+      "poster": "/assets/story-video-rebuilding-the-wall-poster-v1.webp",
+      "posterAlt": "Nehemiah rides beside partially rebuilt walls and lamp bearers. An imagined scene.",
+      "description": "This selects the broad wall-work setting in Nehemiah 2:11-4:23, not the timing of the initial secret inspection.",
+      "reference": "/assets/story-rebuilding-the-wall-v1.webp",
+      "referenceSha256": "6ae76bec5697d3514a83a3929f0f6971eecf5eaa5b1f8b1943011eb1f2ff866b",
+      "actualFlowIngredients": [
+        "reference-9.png"
+      ],
+      "uploadReferenceSha256": "835d41921f914fc230ec1ceedfddbb4d6bfe5993c31ace359a759a29981ce79f",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Nehemiah among the Jerusalem wall works, selecting the broad rebuilding story Nehemiah 2:11-4:23. Animate the actual reference: mounted Nehemiah keeps his hands on the reins as the donkey shifts weight and takes one cautious step beside the broken masonry. The nearby lamp bearers remain still and the background workers make only small movements. This illustrates the broad wall-work setting, not a claim that workers were present during the first secret inspection. Preserve Nehemiah's medium-brown face, prominent nose, dark natural curls, dark beard, mature build and recognizable identity from the approved court and debt scenes. Stable animal legs and ears, reins, feet, hands and lamps; no extra torch or fall. Blue moonlight with restrained warm lamps, realistic stone and cloth, no new king, named companion or readable lettering. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Man inspecting wall reconstruction",
+      "credits": 12,
+      "bytes": 3290932,
+      "sha256": "500f35a1e77f101d470e95e205ee8460e63af8664b18f9c01b573acc500b7179",
+      "duration": 6,
+      "originalBytes": 5410303,
+      "originalSha256": "deff4c30a6c3005917a65140b0ae8f08cb56ffddbc3ab66fcbda139fc85d314f",
+      "posterTimestamp": 2,
+      "posterBytes": 75912,
+      "posterSha256": "d029c8292189d755bd4de939ba76f15bcf4c814de0b368537f677af899a4cf78",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 6,
+      "fullLocalDecode": "passed",
+      "visualReview": "Full-size sample and 1fps sheet preserve Nehemiah's brown face, strong brow/nose, dark curls, beard and adult build, compared with the court, debt and later reform portraits. No unsupported aging within the short rebuilding interval. Donkey, reins, hands, feet, lamps and walls remain coherent in inspected samples. This is an imagined wall-work setting, not an assertion that builders attended the initial secret inspection.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Rebuilding-the-Wall-v1-web.mp4",
+        "etag": "\"9a0e122661313aeef31c7a8bb8ecd201\""
+      }
+    },
+    {
+      "title": "Debt Relief",
+      "book": "Nehemiah",
+      "passage": "Nehemiah 5:1 - 5:19",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Debt-Relief-v2-web.mp4",
+      "poster": "/assets/story-video-debt-relief-poster-v2.webp",
+      "posterAlt": "Nehemiah addresses an anonymous creditor and gathered households. An imagined scene.",
+      "description": "This selects Nehemiah's debt-relief appeal in Nehemiah 5:6-13, without identifying the creditor as a king.",
+      "reference": "/assets/story-debt-relief-v1.webp",
+      "referenceSha256": "c40bca181413339613029c6f04740257f4d2f12c891d62111b937e2e0993f174",
+      "actualFlowIngredients": [
+        "reference-10.png"
+      ],
+      "uploadReferenceSha256": "b24865ff61b714e12f45cfb8083dcaf876cd85ff6c173d3fdeb4394751475dbf",
+      "referenceConversion": "Lossless PNG of the actual approved artwork, supplied through Flow's normal image chooser as the final generation ingredient.",
+      "prompt": "Animate this exact approved image without redesigning it: the debt-relief appeal in Nehemiah 5:6-13. Nehemiah on the right makes only a slight attentive head inclination; his raised right palm remains raised in exactly the same position and his left hand stays down. The creditor on the left keeps the open scroll in his right hand and tied bag in his left, with both held still in their original positions for the entire shot. No handoff, closing scroll, disappearing bag, walking, new object or dialogue. Preserve every original face, natural dark curls, brown complexion, beard, age, clothing, seated listener, hand and finger exactly, especially Nehemiah's strong brow and nose matching his other approved portraits. Only subtle leaf motion and a very slow camera drift; all hands and props remain still. Natural cool shade, blue sky and green leaves, realistic skin, stone and linen. Selective imagined appeal scene, not a full retelling. No text, captions, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Grounded lifelike realism, not a painting or glossy fantasy. Preserve the uploaded reference identities, age, anatomy, geometry and lighting; restrained camera drift, one continuous shot, no scene cuts.",
+      "flowDisplayName": "Nehemiah addressing creditor for…",
+      "credits": 24,
+      "rejectedTake": {
+        "path": "batch12/originals/BibleLens-Debt-Relief-v1-original.mp4",
+        "reason": "The bag disappears and the scroll changes hands, contrary to the intended fixed props.",
+        "credits": 12
+      },
+      "bytes": 2480776,
+      "sha256": "db676caeefe8c8aede8302485bfd9fee47d6ef465ad30661ce95a97e0d16383f",
+      "duration": 5,
+      "originalBytes": 4986620,
+      "originalSha256": "56f5fefd3ec843005bb23534e3dd37d1b403be715e5043ddd796a7c8615bd5d4",
+      "posterTimestamp": 2,
+      "posterBytes": 83046,
+      "posterSha256": "a3c1f6b394e2f629112f9c891b202bbdae7c84f1aed02d8b037100d42fc3a0f1",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 5,
+      "fullLocalDecode": "passed",
+      "visualReview": "The original prop-changing take remains inactive and preserved. The replacement full-size sample and 1fps sheet retain Nehemiah's recognizable brown face, dark natural curls and beard, mature build and gray-blue mantle. The anonymous creditor keeps the same open scroll and tied bag; Nehemiah's raised palm stays separate. Inspected hands, fingers, wrists, props and listeners remain coherent, with no disappearing bag or invented royal identity.",
+      "audioListeningReview": false,
+      "publicPlayback": "PASS: actual built app with real public R2 URL in Chromium/WebKit, 390px and 820px; advancing playback, loop/mute, changing-frame seeks and offline fallback. No physical-device or audio-listening claim.",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Debt-Relief-v2-web.mp4",
+        "etag": "\"7e7b71994f0815a5181383577e02631d\""
+      }
+    }
+  ],
+  "verification": {
+    "releasePreparation": "PASS: unchanged npm run release:prepare",
+    "postMobileImageChecks": "PASS: npm run check:images, existing intentional 1 Samuel 7 close pair retained",
+    "publicFiles": {
+      "passed": 10,
+      "total": 10,
+      "checks": [
+        "size",
+        "SHA-256",
+        "full decode"
+      ]
+    },
+    "hostedPosterOrigins": {
+      "passed": 80,
+      "total": 80,
+      "sourceCommit": "b8a061c149e6574b7ae49ce050e22ad7b27662f1"
+    },
+    "applicationPlayback": {
+      "passed": 40,
+      "total": 40,
+      "engines": [
+        "Chromium",
+        "WebKit"
+      ],
+      "widths": [
+        390,
+        820
+      ]
+    },
+    "localPlayback": {
+      "initialPassed": 38,
+      "total": 40,
+      "initialFailures": [
+        {
+          "engine": "webkit",
+          "width": 390,
+          "file": "BibleLens-The-Fall-of-Judah-and-Cyrus-s-Decree-v1-web.mp4",
+          "status": "FAIL",
+          "error": "page.waitForFunction: Timeout 30000ms exceeded."
+        },
+        {
+          "engine": "webkit",
+          "width": 390,
+          "file": "BibleLens-Cyrus-s-Decree-and-the-Return-v1-web.mp4",
+          "status": "FAIL",
+          "error": "page.waitForFunction: Timeout 30000ms exceeded."
+        }
+      ],
+      "focusedRetests": [
+        {
+          "file": "batch12-local-browser-focused.log",
+          "passed": 4
+        },
+        {
+          "file": "batch12-local-browser-return-focused.log",
+          "passed": 4
+        }
+      ],
+      "interpretation": "Both initial phone WebKit timeouts passed unchanged focused retests. Original failure records retained; cause not established."
+    },
+    "worker": {
+      "windowsBytes": 62385361,
+      "unchangedLimitBytes": 66060288,
+      "headroomBytes": 3674927,
+      "macBytes": "pending Mac preparation; do not raise or bypass limit"
+    },
+    "version": "1.1.0",
+    "buildNumber": 425,
+    "sourceHash": "e3592f477b646a5780d9889c478f1c93f2f4a96fcd1e0ed4f37645fe1283be7a",
+    "publication": {
+      "status": "published",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "sitesVersion": 416,
+      "sitesVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_cabba78f8e848191962976984cb028ac",
+      "sitesSourceCommit": "d2fba33fb804182d1fc2bce3e87ea4b853da8b90",
+      "deploymentId": "appgdep_6af765250de48191bb6d45c22ea380f5",
+      "canonicalRuntimeAndVerificationCommit": "3156c0bf8472e868fa66835c64088ccc26c37c2f",
+      "releaseVerification": "PASS",
+      "livePosters": {
+        "passed": 90,
+        "total": 90,
+        "checks": [
+          "source bytes",
+          "offline native bundle bytes",
+          "live bytes"
+        ]
+      },
+      "macSigningAndDeviceInstallation": "pending separate parent-managed Mac handoff"
+    },
+    "nativeSigningAndInstallation": "separately parent-managed; not performed here",
+    "audioListeningReview": false,
+    "physicalDevicePlayback": false
+  }
+}

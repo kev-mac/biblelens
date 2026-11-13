@@ -145,7 +145,10 @@
   if(!membership)return '';
   const stories=(membership.stories||[]).map(story=>`<a class="verse-membership-tag" data-membership="story" href="${esc(story.href)}" aria-label="Open story: ${esc(story.title)}">${esc(story.title)}</a>`);
   const commands=membership.commandments||[];
-  if(commands.length)stories.push(`<span class="verse-membership-tag" data-membership="commandment" title="${esc(commands.join(', '))}" aria-label="Commandment: ${esc(commands.join(', '))}">COMMANDMENT</span>`);
+  if(commands.length){
+   const query=commands.length===1?'code='+encodeURIComponent(commands[0]):'codes='+encodeURIComponent(commands.join(','));
+   stories.push(`<a class="verse-membership-tag" data-membership="commandment" href="#commandments?${esc(query)}" title="${esc(commands.join(', '))}" aria-label="Open ${commands.length===1?'commandment':'commandments'}: ${esc(commands.join(', '))}">COMMANDMENT</a>`);
+  }
   return stories.join(' ');
  }
  function evidenceSummaryHtml(group,ref){

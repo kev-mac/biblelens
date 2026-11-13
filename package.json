@@ -1,7 +1,7 @@
 {
   "name": "scripture-lens",
   "version": "1.1.0",
-  "buildNumber": 422,
+  "buildNumber": 426,
   "private": true,
   "type": "module",
   "scripts": {
@@ -56,6 +56,7 @@
     "check:collection-layout:browser": "node scripts/check-collection-layout-browser.mjs",
     "check:collection-layout:mobile": "node scripts/check-collection-layout-browser.mjs --mobile",
     "check:videos:exodus": "node scripts/check-exodus-videos-browser.mjs",
+    "check:commandments:browser": "node scripts/check-commandment-navigation-browser.mjs",
     "check:assessment-tags": "node scripts/check-assessment-tags.mjs",
     "check:assessment-tags:browser": "node scripts/check-assessment-tags-browser.mjs",
     "check:translation": "node scripts/check-translation.mjs",
