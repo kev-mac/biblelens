@@ -1,0 +1,35 @@
+{
+  "batch": 1,
+  "createdAtUtc": "2026-11-13T03:52:06.735Z",
+  "records": [
+    {
+      "title": "The Birth and Rescue of Moses",
+      "passage": "Exodus 2:1-10",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Birth-and-Rescue-of-Moses-v1-web.mp4",
+      "poster": "/assets/story-video-the-birth-and-rescue-of-moses-poster-v1.webp",
+      "posterAlt": "An Egyptian woman opens a woven basket holding a wrapped infant among Nile reeds. An imagined scene.",
+      "description": "A woman in linen kneels among reeds and opens a woven basket. A wrapped infant rests inside. An attendant leans closer as a girl watches nearby. Ripples move across the Nile.",
+      "credits": 12,
+      "reference": "/assets/story-the-birth-and-rescue-of-moses-v1.webp",
+      "originalSha256": "1361189ee2d76e8907a7988491677bf3ce591a468c078e68bd397013dc6e2310",
+      "bytes": 5389579,
+      "sha256": "d793d61b237209dcec1aa6b702cbea8c1010778814e08c7031587aaa8e6b1f8b",
+      "duration": 8.042667,
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "posterTimestamp": 2,
+      "posterBytes": 84380,
+      "posterSha256": "5c89dc83abf15d980a67d14cb573f9e9d37c796e8178b429a09389b1b8fe5369",
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "etag": "1252820868f1075f655b96ab2c42618d"
+      },
+      "localDecode": "passed",
+      "visualReview": "Full-size reference compared with source frames at0,2,3,4,6,7seconds and final compressed poster. Principal woman and girl remain recognizable; safe wrapped infant and coherent basket lid action, no sampled obvious anatomy defect. Selective discovery moment, not full story retelling.",
+      "audioListeningReview": false,
+      "publicPlayback": "not verified; explicitly nonblocking per owner"
+    }
+  ]
+}
