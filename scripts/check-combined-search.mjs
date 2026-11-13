@@ -80,6 +80,9 @@ if(fs.existsSync('dist/server/index.js')){
   assert.equal(found.passages[0].url,'#read/11/6/28');assert(found.passages.some(row=>row.url==='#read/24/4/10'));
   for(const row of found.passages){const chapter=await(await worker.fetch(new Request('https://search.example.org/api/chapter?book='+row.book+'&chapter='+row.chapter),{},{})).json();assert(chapter.verses.some(verse=>verse.n===row.verse),'Every reference must open a real verse');}
  }
+ for(const message of ['did Israelites eat their own children?','did ancient Israelites eat their sons?','cannibalism in Israel','did Israelites boil their children?']){
+  const related=await(await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message})}),{},{})).json();assert.equal(related.mode,'concept',message);assert.equal(related.sources[0].url,'#read/11/6/28',message);
+ }
  for(const message of ['did Egyptians eat their children?','did imaginary Zorg eat their children?']){
   const absent=await(await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message})}),{},{})).json();assert.equal(absent.mode,'missing');assert.equal(absent.sources.length,0);
  }

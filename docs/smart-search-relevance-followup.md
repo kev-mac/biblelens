@@ -1,7 +1,8 @@
 # Search relevance and formatting follow-up
 
-Unpublished correction to build 427, requested after Kevin tested
-**did Israelites eat their children?** No new release number is assigned here.
+Correction prepared for build 428 after Kevin tested build 427 with
+**did Israelites eat their children?** Publication status is recorded separately
+after deployment succeeds.
 
 ## Reproduction and cause
 
@@ -57,7 +58,30 @@ Local checks: `build`, `check:combined-search`,
 Readability is the existing report-only audit, with pre-existing flagged items.
 No real OpenAI calls or additional API charges were incurred in this follow-up.
 
-Publication, a new shared build number and any new live owner canary must be
-coordinated with the parent and other release work. The live website remains
-build 427 until that separate release. No private data, credentials, Flow tabs,
-video files or original dirty checkout were changed.
+## Does this improve searches overall?
+
+Formatting, direct-answer instructions, relationship-preserving query planning
+and the request to omit unrelated contrasts apply to every online answer.
+The local retrieval correction is a reviewed concept rule covering this subject
+and several phrasings. It does not introduce a general relation parser, new
+embeddings, or a new ranking algorithm for unrelated local questions. Other
+semantic searches still depend on the six earlier reviewed concepts, query
+expansion and the existing lexical matcher.
+
+The unchanged 50-query evaluation covers 12 reference queries, eight people,
+six places, ten claim questions, six topics and eight spelling variants. On
+the correction it found a reviewed useful hit for 50/50 queries, an original
+expected target for 48/50, and 114/160 expected targets overall. Only 26/50
+had a useful result in the first five aggregate rows; 34/50 returned every
+expected target. These are the same headline counts as build 427. This is
+regression evidence, not measured overall ranking improvement. Topic recall
+remains limited: 6/26 original expected topic targets were retrieved.
+
+The added relation regressions cover the exact question and variants about
+own children, sons, boiling and cannibalism, as well as unsupported actors and
+ordinary manna questions. These use actual packaged sources; provider wording
+is mocked. There is no claim of universal meaning-based understanding.
+
+Publication and a live owner canary are coordinated with the parent and other
+release work. No private data, credentials, Flow tabs, video files or original
+dirty checkout were changed.
