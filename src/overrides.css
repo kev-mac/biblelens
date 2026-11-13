@@ -3820,3 +3820,37 @@ html body.lens-app #chat-view .chat-starter-grid button{padding:20px;min-height:
 html body.lens-app #chat-view .chat-starter-grid button b{display:none}
 html body.lens-app #main :is(#characters-view,#places-view,#commandments-view).directory-hub .list-meta-row{min-height:24px;margin:0 0 16px;padding:0 2px;flex-wrap:wrap}
 html body.lens-app #main :is(#characters-view,#places-view,#commandments-view).directory-hub .list-meta-row .directory-results{margin:0;font:inherit;color:inherit;white-space:normal}
+
+/* Reader and collection annotation polish. */
+html body.lens-app > footer a.brand[href="#method"] {font-size:.6rem;line-height:1.35;}
+html body.lens-app #main #commandments-view .commandment-tags {display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin:4px 0;}
+html body.lens-app #main #commandments-view #commandments-list .commandment-tags :is(.commandment-number,.commandment-topic) {display:inline-block;width:auto;margin:0;padding:2px 5px;border:1px solid currentColor;border-radius:4px;background:rgba(var(--theme-rgb),.08);color:var(--directory-accent);font:600 .68rem/1.25 var(--ui-font);}
+/* Honor the existing light theme, including the masthead and bottom navigation. */
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) {background:var(--lens-paper);color:var(--lens-ink);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lensMasthead {background:var(--lens-paper);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) .lens-brand .explore-brand-name {color:var(--lens-ink);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) .explore-brand-name b {color:#2563a8;}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lens-settings {color:var(--lens-muted);}
+html body.lens-app:not(.dark) #explore-view {--lens-ink:#172033;--lens-muted:#526079;--lens-rule:#cbd5e1;--lens-link:#4056cf;--lens-focus:#4056cf;color:var(--lens-ink);background:radial-gradient(ellipse at 0 0,#e9e4ff88,transparent 55%);}
+html body.lens-app:not(.dark) #explore-view .browse-heading {background-image:linear-gradient(100deg,#176793,#6949b0 55%);border-color:#6949b0;}
+html body.lens-app:not(.dark) #explore-view .browse-intro {color:var(--lens-muted);}
+html body.lens-app:not(.dark) #explore-view .ux-explore-search {background:var(--lens-surface);border-color:var(--lens-rule);}
+html body.lens-app:not(.dark) #explore-view :is(#ux-explore-search,.ux-explore-submit,.explore-search-shortcuts a) {color:var(--lens-ink);}
+html body.lens-app:not(.dark) #explore-view #ux-explore-search::placeholder {color:var(--lens-muted);}
+html body.lens-app:not(.dark) #explore-view .explore-search-shortcuts svg {background:#4056cf0c;}
+html body.lens-app:not(.dark) #explore-view a.ux-topic {background:var(--lens-surface);}
+html body.lens-app:not(.dark) #explore-view a.ux-topic::after {background:linear-gradient(180deg,transparent 20%,#ffffff00 35%,var(--lens-surface) 75%);}
+html body.lens-app:not(.dark) #explore-view .ux-tile-copy strong {color:var(--lens-ink);}
+html body.lens-app:not(.dark) #explore-view .ux-tile-copy small {color:var(--lens-muted);}
+html body.lens-app:not(.dark) #explore-view :is(a,button,input,summary):focus-visible {outline-color:var(--lens-focus);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lensMasthead nav.lens-primary {background:var(--lens-surface);border-color:var(--lens-rule);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lensMasthead .lens-primary a:not([aria-current]) {color:var(--lens-muted);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lensMasthead .lens-primary a[aria-current=page] {color:var(--lens-link);}
+html body.lens-app:not(.dark):has(#explore-view:not([hidden])) #lensMasthead .lens-primary a[aria-current=page] svg {color:var(--lens-link);}
+
+html body.lens-app #chapter-text .verse-body .verse-membership-tag{display:inline-block;min-height:0;min-width:0;height:auto;width:auto;max-width:100%;margin:0 3px 0 0;padding:1px 3px;border:1px solid currentColor;border-radius:4px;background:transparent;font:500 .5rem/1.2 var(--ui-font);letter-spacing:.01em;vertical-align:middle;text-decoration:none;white-space:normal;color:#7040a4}
+html body.lens-app.dark #chapter-text .verse-body .verse-membership-tag{color:#c5abff}
+html body.lens-app #chapter-text .verse-body .verse-membership-tag[data-membership=commandment]{color:#846600}
+html body.lens-app.dark #chapter-text .verse-body .verse-membership-tag[data-membership=commandment]{color:#facc15}
+html body.lens-app #lensReadingBar #lens-focus .ux-evidence-label{font:500 .5rem/1.2 var(--ui-font);letter-spacing:.01em;padding:1px 3px;border:1px solid currentColor;border-radius:4px;background:transparent}
+html body.lens-app #lens-focus .ux-evidence-label::before{content:none;display:none}

@@ -25,7 +25,7 @@ const categoryFilters=new Set(['bookmark']);
 function filterCategory(item){if(item.mode==='commandments')return 'commandments';return ({H:'academic',G:'T'}[item.tag]||item.tag)||(item.mode==='questions'?'Q':['science','history'].includes(item.mode)?'academic':item.mode);}
 function categoryRank(item){return ['bookmark','T','V','commandments','Q','academic','contradictions'].indexOf(filterCategory(item));}
 const comparisonModes=['history','contradictions','science','questions','commandments'];
-const comparisonLabels={bookmark:'Bookmark',history:'Academic',contradictions:'Text Comparisons',science:'Academic',questions:'Questions',commandments:'Laws'};
+const comparisonLabels={bookmark:'Bookmark',history:'Academic',contradictions:'Text Comparisons',science:'Academic',questions:'Questions',commandments:'Commandments'};
 const languageTags={H:{label:'Academic',tone:'academic'},G:{label:'Translation',tone:'translation'},T:{label:'Translation',tone:'translation'},V:{label:'Violation',tone:'violation'},Q:{label:'Questions',tone:'question'}};
 function recordTags(item){return [...new Set(Array.isArray(item.activeTags)?item.activeTags:Array.isArray(item.tags)?item.tags:item.tag?[item.tag]:[])].filter((t,i,a)=>languageTags[t]&&a.indexOf(t)===i);}
 function witnessLabel(item){return (item.tags||[item.tag]).some(t=>['H','G','T'].includes(t))&&item.witness?item.witness+': ':'';}
@@ -243,7 +243,7 @@ function comparisonStatus(){
  if(records.some(r=>!r||r.status==='loading')){status.innerHTML=storiesFilterButton()+'<span class="loading-state">Loading category tags…</span>';return;}
  const count=new Set(records.flatMap((r,index)=>(r.items||[]).filter(item=>visibleComparison({...item,mode:comparisonModes[index]})).map(item=>item.id||`${comparisonModes[index]}:${item.title||''}:${item.summary}`))).size;
  const all=records.flatMap((r,index)=>(r.items||[]).map(item=>({...item,mode:comparisonModes[index]}))).filter(visibleComparison);
- const categories=[['T','Translation','translation'],['commandments','Laws','commandments'],['Q','Questions','question'],['academic','Academic','academic'],['contradictions','Contradictory','contradictions']];
+ const categories=[['T','Translation','translation'],['commandments','Commandments','commandments'],['Q','Questions','question'],['academic','Academic','academic'],['contradictions','Contradictory','contradictions']];
  status.innerHTML=storiesFilterButton()+chapterBookmarkButton()+categories.map(([key,label,tone])=>{const matches=all.filter(item=>recordTags(item).length?recordTags(item).some(tag=>filterCategory({tag})===key):filterCategory(item)===key);const total=new Set(matches.filter(item=>item.placementRole!=='context').map(item=>item.id||item.title||item.summary)).size;return `<button type="button" class="agreement category-filter ${tone}" data-category-filter="${key}" data-brightness="${matches.some(item=>item.placementRole!=='context')?'open':'empty'}" aria-pressed="${comparisonCategoryOpen(key)}" aria-label="${label}: ${total} summaries" title="${label}: ${total} summaries" ${!total&&!comparisonCategoryOpen(key)?'disabled':''} ><span class="filter-icon">${categoryIcon(key)}${total?`<span class="filter-badge" aria-hidden="true">${total}</span>`:""}</span><span class="filter-copy"><span class="filter-label">${label}</span>${total?` <span class="filter-count">${total}</span>`:""}</span></button>`}).join('');
 }
 const comparisonJobs=new Map();

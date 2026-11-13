@@ -920,7 +920,7 @@ html body.lens-app .chapter-bottom { border-top: 1px solid var(--lens-rule); pad
 html body.lens-app .chapter-bottom button { width: 44px; height: 44px; padding: 11px; flex: none; }
 html body.lens-app .chapter-bottom button svg { width: 20px; height: 20px; color: var(--lens-ink); }
 html body.lens-app > footer { align-items: center; gap: 20px; }
-html body.lens-app > footer .brand { color: var(--lens-link); font-size: .8125rem; letter-spacing: 0; text-decoration: none; min-height: 44px; }
+html body.lens-app > footer .brand { color: var(--lens-link); font-size: .6rem; letter-spacing: 0; text-decoration: none; min-height: 44px; }
 html body.lens-app > footer small { font-size: .75rem; }
 html body.lens-app #toast { z-index: 100; border-radius: 16px; border: 1px solid transparent; background: var(--lens-ink); color: var(--lens-paper); max-width: calc(100vw - 32px); text-align: center; }
 @media (max-width: 760px) {

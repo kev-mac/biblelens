@@ -62,7 +62,7 @@
  const main = el('main');
  const contextNav=document.createElement('nav');contextNav.className='lens-context';contextNav.setAttribute('aria-label','Page navigation');contextNav.hidden=true;main.prepend(contextNav);
  let searchParent='explore';
- const labels={read:'Read',explore:'Explore',inspect:'Inspect',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',lost:'Other Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Laws',method:'Method & Sources',chat:'Ask the Text'};
+ const labels={read:'Read',explore:'Explore',inspect:'Inspect',debates:'Contradictions',debate:'Question',notebook:'Saved',search:'Search',stories:'Stories',lost:'Other Books',characters:'People',places:'Places',evidence:'Text Comparisons',timeline:'Timeline',commandments:'Commandments',method:'Method & Sources',chat:'Ask the Text'};
  const roots={read:'#read',explore:'#discover',debates:'#questions',notebook:'#notebook'};
  function primary(){
   if(view==='search'||view==='chat')return searchParent;
@@ -115,7 +115,7 @@
   let nav=dialog.querySelector('.ux-dialog-path');
   if(!nav){nav=document.createElement('nav');nav.className='ux-dialog-path';nav.setAttribute('aria-label','Breadcrumb');const button=document.createElement('button');button.type='button';button.textContent='Back';button.setAttribute('aria-label','Back');button.onclick=()=>dialog.id==='character-sheet'?dialog.dispatchEvent(new Event('person-context-back')):dialog.close();nav.append(button,document.createElement('span'));dialog.prepend(nav);}
   nav.querySelector('button').hidden=dialog.dataset.contextBack!=='true';
-  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Laws',timeline:'History & Timeline'}[view];
+  const collection={characters:'People',places:'Places',stories:'Stories',commandments:'Commandments',timeline:'History & Timeline'}[view];
   const path=[primary()==='debates'?'Questions':labels[primary()]||'Explore',collection,title].filter(Boolean).join(' › ');
   if(nav.lastElementChild.textContent!==path)nav.lastElementChild.textContent=path;
  }}
@@ -271,7 +271,7 @@
     if(card.classList.contains('story-card'))continue;card.classList.add('story-card');
     const title=card.querySelector('h2,h3');title?.classList.add('story-title');
     const summary=card.querySelector('.character-summary,.comparison-summary>p');summary?.classList.add('story-summary');
-    card.querySelector('.commandment-number')?.classList.add('passage-badge');
+    // Commandment metadata uses its own tags, not scripture-passage styling.
    }
   }
   evidenceCollectionLinks();

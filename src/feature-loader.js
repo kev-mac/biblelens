@@ -63,7 +63,7 @@
   if(required.every(name=>loaded.has(name))){routing=null;document.getElementById('route-loading')?.setAttribute('hidden','');document.getElementById('main')?.removeAttribute('aria-busy');return false;}
   if(routing?.hash===hash)return true;
   const job={hash};routing=job;
-  const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Laws':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Events':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
+ const label=/^#(?:compare|investigation)/.test(hash)?'Compare Passages':/^#read/.test(hash)?'Read':/^#search/.test(hash)?'Search':/^#commandments/.test(hash)?'Commandments':/^#(?:people|characters)/.test(hash)?'People':/^#places/.test(hash)?'Places':/^#timeline/.test(hash)?'Timeline':/^#stories/.test(hash)?'Events':/^#debate\//.test(hash)?'Question':/^#questions/.test(hash)?'Text Comparisons':/^#notebook/.test(hash)?'Saved':'Explore';
   const context=document.querySelector('#header-context');if(context)context.textContent=label;const nav=document.querySelector('.lens-context');if(nav){nav.hidden=false;nav.innerHTML='<h1>'+label+'</h1>';}document.title=label+' · zLenz: Bible';document.querySelector('#lens-settings')?.setAttribute('aria-label','Settings for '+label);
   queueMicrotask(async()=>{
    if(routing!==job||location.hash!==hash)return;

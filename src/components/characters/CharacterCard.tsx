@@ -117,5 +117,5 @@ export function PersonContact(profile: CharacterProfile & {roles?: {role:string;
  const body=element('div','character-contact-body');
  body.append(ProfileBiography(profile));
  body.append(ProfileSections(profile));
- const profileAction=element('a','person-profile-action','View full profile');profileAction.href='#characters/'+encodeURIComponent(profile.id);profileAction.setAttribute('aria-label','View full profile for '+profile.name);body.append(profileAction);card.append(body);return card;
+ card.append(body);return card;
 }

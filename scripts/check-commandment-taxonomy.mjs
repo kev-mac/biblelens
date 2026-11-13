@@ -37,7 +37,7 @@ for(const state of [{polarity:['Negative'],topics:['Business']},{polarity:['Posi
  const expected=catalog.records.filter(r=>Object.entries(state).every(([k,vs])=>vs.some(v=>[].concat(r.taxonomy[k]).includes(v))));
  assert.deepEqual(Array.from(filter(state),r=>r.code),expected.map(r=>r.code));
 }
-assert(!html.includes('commandment-tag'));assert(!code.includes('--tag-rgb'));
+assert(html.includes('class="commandment-tags"'));assert(!html.includes('commandment-code-help'));assert(!html.includes('Positive commandment'));assert(html.includes('View Text'));assert(!code.includes('--tag-rgb'));
 assert(code.includes('items.slice(0,visibleCount)'));assert(code.includes('visibleCount+=24'));
 const built=await (await import('./built-worker.mjs')).default.fetch(new Request('https://test/commandments.js'),{},{});assert((await built.text()).includes('N365'),'The full catalog must reach the built web bundle');
 console.log('PASS: all 613 unique commandment identities, 248/365 partitions, retained-source consistency, exact packaged KJV quotations, valid passage/lens routes, AND/OR facets, escaped cards and bounded incremental rendering.');
