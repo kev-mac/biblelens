@@ -1,8 +1,10 @@
 # App and web search trial
 
-This branch is based on canonical build 426 (`b985cc34`). It adds a real
-OpenAI integration, but has not been published or verified with the hosted key.
-Coordinate the next build number and release with the active video work.
+Published as app build **427**, Sites version **418**, on 2026-11-13. The real
+owner-only OpenAI trial succeeded using the existing hidden runtime key.
+Reading remains public. Online answers remain restricted to the approved owner
+until Kevin revisits the provider and billing choice before public release.
+See [the release record](smart-search-build427-release.md) for live evidence.
 
 ## Behavior
 
@@ -31,7 +33,8 @@ OpenAI request receives selected public app sources and performs web search.
 
 This is query expansion plus grounded retrieval, not an embedding/vector index.
 It adds no embedding dataset or initial indexing bill. Broad semantic recall
-depends on the rewrite and existing corpus search, and needs live evaluation.
+depends on the rewrite and existing corpus search. One live acceptance question
+has been verified; broader semantic recall still needs evaluation.
 Curated offline concepts cover only the six subjects listed above.
 
 ## Privacy and trial limits
@@ -74,27 +77,23 @@ Official documentation consulted:
 [pricing](https://developers.openai.com/api/docs/pricing).
 Web search is listed at $10 per 1,000 calls plus model tokens. Token use and
 failed/aborted requests can affect charges; the API billing account is the
-source of truth. Tests in this branch use mocks and incurred no API charges.
+source of truth. Automated provider tests use mocks. The separate live canary
+submitted one real question: 8,613 input tokens, 333 output tokens and one web
+search call. Its estimated cost is $0.01103 at the consulted published rates;
+the account invoice was not accessed.
 
 ## Release handoff
 
-1. Compare the latest GitHub and Site sources and integrate with current work.
-   The Windows scratch mirror checkout ran out of disk and was removed; this
-   branch has not established whether the current Site has independent edits.
-2. Select the next shared build number. Run the normal checks and prepare both
-   web and native bundles from the same committed source.
-3. Sites runtime environment revision **2** now contains the existing hidden
-   `OPENAI_API_KEY` and a secret `BIBLELENS_AI_ALLOWED_EMAILS` set to the verified
-   Site owner. No key value was read or changed. A subsequent deployment applies
-   that revision. The key's validity/model access remain unverified.
-4. Apply the generated additive D1 migrations `0001_common_rocket_raccoon.sql`
-   and `0002_tough_celestials.sql` through the normal Sites release workflow.
-5. Before claiming the feature works live, verify an approved owner's web
-   submission, real web citations, provider usage, and an unapproved/anonymous
-   rejection. Then verify online native access with a paired device and its
-   offline fallback. Do not broaden access before Kevin revisits public billing.
-6. Complete the repository's publication, signed-assets, installation and
-   `release:verify` steps. This branch does not independently publish.
+The prior published build 426 and canonical source matched before staging.
+Build 427 was prepared from one clean committed source for web and native.
+Sites version 418 uses environment revision **2**, retaining the existing hidden
+`OPENAI_API_KEY` and the verified owner's secret trial allowlist. The key value
+was never read or changed. Both generated additive migrations were applied.
+
+The live owner question, real app links, web PDF, mobile layout, usage record
+and anonymous rejection were verified. Device installation is coordinated
+separately. Signed assets and live online access from a paired physical device
+remain unverified. Do not broaden access before Kevin revisits public billing.
 
 ## Validation
 
@@ -118,7 +117,8 @@ The combined browser tests passed in Chromium at 320, 390, 820 and 1440 pixels.
 The existing search browser suite also passed on web at those widths and on the
 offline native bundle at 390 and 820 pixels. WebKit was not run. Native build,
 offline worker checks, sync checks and release packaging checks passed. These
-are local tests, not signed-device installation or hosted-provider verification.
+are local tests. The separate hosted-provider canary is recorded above;
+signed-device installation remains pending.
 
 The baseline 50-search suite returned useful results for all 50 queries and
 matched at least one expected target in 48. It retrieved 114 of 160 expected
