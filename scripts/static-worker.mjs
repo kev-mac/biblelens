@@ -19,7 +19,7 @@ export function lazyStringTable(table) {
 
 // Default: compressed lazy assets preserve the existing Sites ESM contract.
 // Opt-in static mode removes their bytes and needs Cloudflare's ASSETS binding.
-export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}, preparedAssets) {
+export function splitWorker(source, output = 'dist', external = false, publicArtwork = {}, preparedAssets, publicTranslations = {}) {
   // Reuse the build's asset table without allocating and parsing another full
   // artwork payload. Stream the same JSON bytes to preserve immutable prefixes.
   const assetBounds = text => {
@@ -146,7 +146,7 @@ async function prepareAssets(request,env){
   const chapterPaths=new Map(Object.keys(data.CHAPTERS).map(key=>[prefix+'chapters/'+key.replace(':','-')+'.json',key]));
   const compressed={},aliases={},bodies=new Map();
   for(const [url,asset]of Object.entries(assets)){
-    if(!external&&(url===offline||chapterPaths.has(url)||publicArtwork[url]))continue;
+    if(!external&&(url===offline||chapterPaths.has(url)||publicArtwork[url]||publicTranslations[url]))continue;
     const route=url==='/'?'/index.html':url;
     const body=encodeEmbeddedAsset(gzipSync(asset.encoding==='base64'?Buffer.from(asset.body,'base64'):Buffer.from(asset.body),{level:9}));
     if(bodies.has(body))aliases[route]=bodies.get(body);
@@ -177,11 +177,14 @@ const EMBEDDED_ASSETS={async fetch(request){
   // Keep the response policy on every route, including release and lazy APIs.
   source=source.replace('export default {async fetch', 'const packagedWorker={async fetch');
   const artworkLoader=fs.readFileSync('worker/public-artwork.mjs','utf8').replace('export async function','async function');
-  source+=`\nconst PUBLIC_ARTWORK=${JSON.stringify(external?{}:publicArtwork)};
+  const translationLoader=fs.readFileSync('worker/public-translation.mjs','utf8').replace('export async function','async function');
+  source+=`\nconst PUBLIC_TRANSLATIONS=${JSON.stringify(external?{}:publicTranslations)};
+${translationLoader}
+const PUBLIC_ARTWORK=${JSON.stringify(external?{}:publicArtwork)};
 ${artworkLoader}
 export default {async fetch(request,env,ctx){
- const art=PUBLIC_ARTWORK[new URL(request.url).pathname];
- const response=art?await publicArtworkResponse(request,art,ctx):await packagedWorker.fetch(request,env,ctx);
+ const pathname=new URL(request.url).pathname,art=PUBLIC_ARTWORK[pathname],translation=PUBLIC_TRANSLATIONS[pathname];
+ const response=translation?await publicTranslationResponse(request,translation,ctx):art?await publicArtworkResponse(request,art,ctx):await packagedWorker.fetch(request,env,ctx);
  const headers=new Headers(response.headers);
  headers.set('content-security-policy-report-only',ASSETS['/'].csp);
  headers.set('content-security-policy',"object-src 'none'; base-uri 'none'; form-action 'self'; worker-src 'self'");

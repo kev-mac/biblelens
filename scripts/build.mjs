@@ -1,4 +1,5 @@
 import {hostedArtwork} from './hosted-artwork.mjs';
+import {translationAssets} from './translation-assets.mjs';
 import {storyVideos} from './story-videos.mjs';
 import {validateChapterImages} from './chapter-images.mjs';
 import {validateQuestionPassages} from './question-passages.mjs';
@@ -120,6 +121,9 @@ for(const name of ['reference-cache','shared-ui','chapter-cache']){
 }
 assets['/person-identity.js']={type:'application/javascript; charset=utf-8',body:fs.readFileSync('src/person-identity.js','utf8')};
 for(const [name,entry] of [['reader-links','reader-links'],['reference-links','reference-links'],['places-directory','places-directory-entry']]){const bundle=await build({entryPoints:['src/'+entry+'.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});assets['/'+name+'.js']={type:'application/javascript; charset=utf-8',body:bundle.outputFiles[0].text};}
+const translationBundle=await build({entryPoints:['src/translation.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
+assets['/translation.js']={type:'application/javascript; charset=utf-8',body:translationBundle.outputFiles[0].text};
+const publicTranslations=translationAssets(assets);
 const placesBundle=await build({entryPoints:['src/places.js'],bundle:true,write:false,format:'iife',platform:'browser',target:['safari17','chrome119']});
 assets['/places.js']={type:'application/javascript; charset=utf-8',body:placesBundle.outputFiles[0].text};
 // Pinned browser distribution; retain module-relative worker URLs for web and iOS.
@@ -201,7 +205,7 @@ export const mobileBundle={assets,engine:worker.replace('/*__STUDIES__*/[]',()=>
 // Reuse prepared assets instead of writing and reparsing a full artwork Worker.
 worker=mobileBundle.engine;if(worker.includes('/*__'))throw Error('Unresolved build placeholder');
 fs.rmSync('dist',{recursive:true,force:true});fs.mkdirSync('dist/server',{recursive:true});fs.mkdirSync('dist/.openai',{recursive:true});fs.copyFileSync('.openai/hosting.json','dist/.openai/hosting.json');if(fs.existsSync('drizzle'))fs.cpSync('drizzle','dist/.openai/drizzle',{recursive:true});
-splitWorker(worker,'dist',process.env.BIBLELENS_STATIC_ASSETS==='1',hostedArtwork(),assets);console.log('Lazy Worker:',fs.statSync('dist/server/index.js').size,'bytes; assets: dist/client');
+splitWorker(worker,'dist',process.env.BIBLELENS_STATIC_ASSETS==='1',hostedArtwork(),assets,publicTranslations);console.log('Lazy Worker:',fs.statSync('dist/server/index.js').size,'bytes; assets: dist/client');
 
 // Every build checks packaged retrieval and conversational responses without external requests.
 await import('./check-chat-reliability.mjs');

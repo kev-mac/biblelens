@@ -3854,3 +3854,26 @@ html body.lens-app #chapter-text .verse-body .verse-membership-tag[data-membersh
 html body.lens-app.dark #chapter-text .verse-body .verse-membership-tag[data-membership=commandment]{color:#facc15}
 html body.lens-app #lensReadingBar #lens-focus .ux-evidence-label{font:500 .5rem/1.2 var(--ui-font);letter-spacing:.01em;padding:1px 3px;border:1px solid currentColor;border-radius:4px;background:transparent}
 html body.lens-app #lens-focus .ux-evidence-label::before{content:none;display:none}
+
+@layer overrides.design {
+ #translation-dialog.translation-dialog { box-sizing:border-box; width:min(960px,calc(100vw - 24px)); max-width:calc(100vw - 24px); max-height:calc(100dvh - 32px); padding:20px; overflow:auto; overscroll-behavior:contain; color:var(--ink); }
+ #translation-dialog .sheet-heading { display:flex; align-items:start; justify-content:space-between; gap:12px; }
+ #translation-dialog h2 { font-size:1.3rem; margin:0 0 12px; overflow-wrap:anywhere; }
+ #translation-dialog button,#translation-dialog select { min-height:44px; }
+ #translation-dialog h3 { font-size:1rem; margin:20px 0 8px; }
+ #translation-dialog blockquote { margin:8px 0; padding:12px; border-inline-start:3px solid currentColor; }
+ #translation-dialog p { line-height:1.55; }
+ #translation-dialog .translation-edition-label { display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+ #translation-dialog .translation-edition-label select { max-width:100%; }
+ #translation-dialog .translation-tiles { display:flex; flex-wrap:wrap; justify-content:flex-start; gap:8px; padding:0; margin:16px 0; list-style:none; direction:ltr; }
+ #translation-dialog .translation-tile { display:flex; flex-direction:column; justify-content:flex-start; align-items:stretch; gap:7px; flex:1 1 130px; min-width:0; max-width:100%; padding:12px 10px; border:1px solid color-mix(in srgb,currentColor 25%,transparent); border-radius:8px; text-align:center; overflow-wrap:anywhere; }
+ #translation-dialog .translation-english { font-weight:650; line-height:1.5; }
+ #translation-dialog .translation-language { font-size:.72rem; opacity:.8; }
+ #translation-dialog .translation-original { display:block; font-size:1.5rem; line-height:1.8; unicode-bidi:isolate; white-space:normal; }
+ #translation-dialog .translation-transliteration { display:block; line-height:1.6; unicode-bidi:isolate; }
+ #translation-dialog .translation-gap { font-size:.85rem; line-height:1.5; }
+ #translation-dialog .translation-sources,#translation-dialog .translation-notes { padding:12px 0; border-top:1px solid color-mix(in srgb,currentColor 25%,transparent); }
+ #translation-dialog summary { cursor:pointer; min-height:44px; display:list-item; }
+ @media(max-width:420px){#translation-dialog.translation-dialog{padding:16px;}#translation-dialog .translation-tile{flex-basis:110px;}}
+}
+

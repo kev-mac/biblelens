@@ -14,7 +14,7 @@ export async function shellStyles(assets){
  const path='/assets/views.'+assetDigest(body).slice(0,16)+'.css';assets[path]={type:'text/css; charset=utf-8',body};
  // workspace.section() composes these IDs at runtime, beyond token extraction.
  const studyHTML='<section id="search-view" class="lens-workspace"></section><section id="notebook-view" class="lens-workspace"></section>'+element(assets['/'].body,'read-view')+element(assets['/'].body,'chat-view')+[...assets['/'].body.matchAll(/<dialog\b[\s\S]*?<\/dialog>/g)].map(match=>match[0]).join('');
- const studyContent=[...content,{raw:studyHTML,extension:'html'},...['reader','passage','workspace','atlas-reader','stories','story-video','citations','navigation','sync','release','device-local-ai','people-links'].map(name=>({raw:fs.readFileSync('src/'+name+'.js','utf8'),extension:'js'}))];
+ const studyContent=[...content,{raw:studyHTML,extension:'html'},...['reader','translation','translation-core','passage','workspace','atlas-reader','stories','story-video','citations','navigation','sync','release','device-local-ai','people-links'].map(name=>({raw:fs.readFileSync('src/'+name+'.js','utf8'),extension:'js'}))];
  const [{css:studyCSS}]=await new PurgeCSS().purge({content:studyContent,css:[{raw:full}],safelist:{standard:[/^(?:dark|lens-app|native-ios|mobile-editing|keyboard-navigation|merge-picker-inputs)$/],greedy:[/data-/]}});
  const studyBody=transformSync(studyCSS,{loader:'css',minify:true,target:['safari17','chrome119']}).code;
  const studyPath='/assets/study.'+assetDigest(studyBody).slice(0,16)+'.css';assets[studyPath]={type:'text/css; charset=utf-8',body:studyBody};

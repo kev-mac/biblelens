@@ -1,6 +1,6 @@
 import {assetDigest,classicScriptBundle,classicScriptHashes} from './startup-assets.mjs';
 export const featureSources={
- study:['reader-links.js','reader-data.js','passage.js','story-video.js','stories.js','reader.js','workspace.js','atlas-reader.js','citations.js'],
+ study:['reader-links.js','reader-data.js','passage.js','story-video.js','stories.js','reader.js','translation.js','workspace.js','atlas-reader.js','citations.js'],
  evidence:['marked.js','categories.js'],
  debates:['debates.js'],
  characters:['characters.js'],
