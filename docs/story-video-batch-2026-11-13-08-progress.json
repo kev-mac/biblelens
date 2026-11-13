@@ -1,0 +1,187 @@
+{
+  "batch": 8,
+  "status": "incomplete; export blocker",
+  "flowProject": "https://flow.google.com/project/baedd237-3385-4f6a-9e82-43ec28fdcf53",
+  "baselineCommit": "0459f4192c990721278322c8534e9fe039841ef7",
+  "model": "Omni 1.1 Flash 720p 8s 16:9 x1",
+  "startingAiCredits": 1800,
+  "endingAiCredits": 1680,
+  "totalCredits": 120,
+  "flowCredits": 0,
+  "generated": 10,
+  "localReviewed": 2,
+  "activated": 0,
+  "audioListeningReview": false,
+  "records": [
+    {
+      "title": "Solomon's Wisdom",
+      "book": "1 Kings",
+      "passage": "1 Kings 3:1 - 4:34",
+      "reference": "/assets/story-solomon-s-wisdom-v1.webp",
+      "referenceSha256": "fe1d60efee76d1f74b3f62cc60c979f22fbd7d30db5c1c414a099d0dfa3ab24d",
+      "actualFlowIngredients": [
+        "story-solomon-s-wisdom-v1.webp"
+      ],
+      "flowDisplayName": "Solomon listening to two women",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "The Temple Built",
+      "book": "1 Kings",
+      "passage": "1 Kings 5:1 - 8:66",
+      "reference": "/assets/story-the-temple-built-v2.webp",
+      "referenceSha256": "410a96700f6bc19433f28d0b98286427edc7f47ceff539acd458b3bfb5336c6c",
+      "actualFlowIngredients": [
+        "story-the-temple-built-v2.webp"
+      ],
+      "flowDisplayName": "Solomon observing temple constru…",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "The Queen of Sheba and Solomon's Decline",
+      "book": "1 Kings",
+      "passage": "1 Kings 9:1 - 11:43",
+      "reference": "/assets/story-the-queen-of-sheba-and-solomon-s-decline-v1.webp",
+      "referenceSha256": "f9b24087408785e84233b213cb8ea456a66455152e8be3e98b36646f2bc6b798",
+      "actualFlowIngredients": [
+        "story-the-queen-of-sheba-and-solomon-s-decline-v1.webp"
+      ],
+      "flowDisplayName": "Queen visits Solomon in courtyard",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "The Kingdom Divides",
+      "book": "1 Kings",
+      "passage": "1 Kings 12:1 - 12:33",
+      "reference": "/assets/story-the-kingdom-divides-v1.webp",
+      "referenceSha256": "3395a3970aaeafc6cbf75f7319b9cf6db854b5e5fdcee838327daf2221e97287",
+      "actualFlowIngredients": [
+        "story-the-kingdom-divides-v1.webp"
+      ],
+      "flowDisplayName": "Rehoboam listens to elders",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "The Man of God from Judah",
+      "book": "1 Kings",
+      "passage": "1 Kings 13:1 - 14:31",
+      "reference": "/assets/story-the-man-of-god-from-judah-v1.webp",
+      "referenceSha256": "5e8278918af8545f59e979b061127918e974ec2f0b834593e5b1f01912ba83ef",
+      "actualFlowIngredients": [
+        "story-the-man-of-god-from-judah-v1.webp"
+      ],
+      "flowDisplayName": "Prophet confronts Jeroboam at altar",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "Zimri's Coup and Omri's Rise",
+      "book": "1 Kings",
+      "passage": "1 Kings 16:8 - 16:28",
+      "reference": "/assets/story-zimri-s-coup-and-omri-s-rise-v1.webp",
+      "referenceSha256": "4991f38e695d1690d4fdcb4b9fd9b0d63752772a8c7af658adffec4bc5e54eeb",
+      "actualFlowIngredients": [
+        "story-zimri-s-coup-and-omri-s-rise-v1.webp"
+      ],
+      "flowDisplayName": "Omri oversees Samaria site const…",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "Elijah and the Drought",
+      "book": "1 Kings",
+      "passage": "1 Kings 17:1 - 17:24",
+      "reference": "/assets/story-elijah-and-the-drought-v1.webp",
+      "referenceSha256": "0089c81bb28dae94129038572ecf9707f74eb61cb1a1fa5f41cc8a13606c6168",
+      "actualFlowIngredients": [
+        "story-elijah-and-the-drought-v1.webp"
+      ],
+      "flowDisplayName": "Raven feeding Elijah by brook",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "Elijah on Mount Carmel",
+      "book": "1 Kings",
+      "passage": "1 Kings 18:1 - 18:46",
+      "reference": "/assets/story-elijah-on-mount-carmel-v1.webp",
+      "referenceSha256": "1e9423e5fea54920c0dc1af952350c521e7c7bda07a5613f64ce4e09fa593776",
+      "actualFlowIngredients": [
+        "story-elijah-on-mount-carmel-v1.webp"
+      ],
+      "flowDisplayName": "Elijah praying at Mount Carmel",
+      "credits": 12,
+      "status": "generated in Flow; export and visual review pending"
+    },
+    {
+      "title": "Elijah at Horeb",
+      "book": "1 Kings",
+      "passage": "1 Kings 19:1 - 19:21",
+      "reference": "/assets/story-elijah-at-horeb-v1.webp",
+      "referenceSha256": "ff2e41b107f1cf8399e6f05be0a9a165c4f35056750842779675d7b55e3c97be",
+      "actualFlowIngredients": [
+        "story-elijah-at-horeb-v1.webp"
+      ],
+      "flowDisplayName": "Prophet lifting gaze at dawn",
+      "credits": 12,
+      "status": "reviewed local; uploaded to R2 staging only; not activated",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Elijah-at-Horeb-v1-web.mp4",
+      "bytes": 1707503,
+      "sha256": "9703a8938856f16f9e6e7770a74361bde441d35f8a00e69042d02249d6151a8d",
+      "duration": 5,
+      "originalBytes": 3699431,
+      "originalSha256": "37d17ca5e2a24709403d78e749cb8268ebd5528e0d783a908bb5a6ac75cbb587",
+      "posterBytes": 33146,
+      "posterSha256": "4d7c3e7e7dc18ee0bc3b4428ad5cd1b48f805a581846b7c07588c84fa9f2c6c9",
+      "posterTimestamp": 2,
+      "description": "Elijah lowers his mantle and lifts his gaze at the cave entrance. This selective illustration concerns 1 Kings 19:11-13, not a visible portrayal of God or the call of Elisha.",
+      "posterAlt": "Elijah holds his rough mantle at the cave entrance in dawn light. An imagined scene.",
+      "visualReview": "Full-size two-second frame and 1fps contact sheet retain the approved angular weathered brown face, prominent nose, gray-black natural curls and full beard, lean sturdy build and rough mantle. He lowers the mantle during the scene; the description does not claim his face remains covered. Fingers, hand, arm and cloth remain coherent in the inspected frames. Natural blue-lavender dawn and stone are retained. No visible divine figure or definite identity break observed.",
+      "fullOriginalAndWebDecode": "passed",
+      "upload": {
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Elijah-at-Horeb-v1-web.mp4",
+        "status": "Uploaded",
+        "etag": "\"ac679c6d7f7e0af80e1bdde28a8bbaf1\""
+      },
+      "localBrowserVerification": "Chromium and WebKit, phone and iPad widths, advancing playback/pause/two changed-frame seeks passed"
+    },
+    {
+      "title": "Naboth's Vineyard",
+      "book": "1 Kings",
+      "passage": "1 Kings 21:1 - 21:29",
+      "reference": "/assets/story-naboth-s-vineyard-v1.webp",
+      "referenceSha256": "8dcbb8e7315114291c837173f778d3d42b9813905da0463d3f8eac87e611bcad",
+      "actualFlowIngredients": [
+        "story-naboth-s-vineyard-v1.webp"
+      ],
+      "flowDisplayName": "Elijah confronts Ahab in vineyard",
+      "credits": 12,
+      "status": "reviewed local; uploaded to R2 staging only; not activated",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Naboth-s-Vineyard-v1-web.mp4",
+      "bytes": 2892767,
+      "sha256": "5c6265361c29f3f21b63c7813b84472e9d336a26de1daa21ea5e60f4ab69e49d",
+      "duration": 5,
+      "originalBytes": 5983917,
+      "originalSha256": "c661e2ad6c3f46d1a5a0d77c8d2cd4057d77681ad48d10febfb75c25c7258ba4",
+      "posterBytes": 81324,
+      "posterSha256": "cf36198f36759e3c049f03769459fea7e54aae83da29b2cad645b5e56e2a442a",
+      "posterTimestamp": 2,
+      "description": "Elijah lowers his hand while Ahab looks down in the vineyard. This illustrates the confrontation in 1 Kings 21:17-20; Naboth, Jezebel and the killing are not shown.",
+      "posterAlt": "Elijah confronts Ahab among the grapevines. An imagined scene.",
+      "visualReview": "Full-size two-second frame and 1fps sheet preserve distinct Elijah and Ahab faces, natural hair, body builds and clothing. Elijah retains angular weathered brown face, graying curls and beard and rough mantle. Ahab retains the broad brown face, circlet and burgundy cloth; gray is subtle in the lower beard and temple hair, and must be compared again against the active later Ahab/Micaiah v2 before final batch activation. Visible hands and limbs remain coherent. No violence or new people shown.",
+      "fullOriginalAndWebDecode": "passed",
+      "upload": {
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-Naboth-s-Vineyard-v1-web.mp4",
+        "status": "Uploaded",
+        "etag": "\"b8ef76d97ad64ab41f758d1b3808777e\""
+      },
+      "localBrowserVerification": "Chromium and WebKit, phone and iPad widths, advancing playback/pause/two changed-frame seeks passed"
+    }
+  ]
+}
