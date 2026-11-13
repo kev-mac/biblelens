@@ -947,3 +947,9 @@ Ten selective illustrations from Deuteronomy 31 through Joshua 10 use actual app
 Full local decoding and sampled full-size reference comparisons passed. Audio was technically decoded but not listening-reviewed; sampled inspection does not certify every motion frame. Public playback is tested where available, but inability to verify it alone is nonblocking by the owner’s explicit instruction. Native signing and installation are handed to the separate Mac session.
 
 The Jordan take was replaced after the passage check: priests now remain stationary as families cross (Joshua 3:17). Earlier takes remain inactive and preserved. The correction adds 12 credits, for 132 total and an observed ending balance of 2,292 AI credits.
+
+## Fourth ten-video batch (2026-11-13)
+
+Ten selective illustrations from Joshua 11 through Judges 9 use actual approved Story artwork as Flow ingredients. Joshua ages plausibly at Shechem; Caleb and Phinehas remain distinct. Anonymous families and messengers stay anonymous. The Abimelech story depicts Jotham. The first Gideon take was rejected for switching hands; its replacement keeps the torch in his left hand and horn in his right. Prior originals and all 75 ready videos are preserved.
+
+Final clips run five to seven seconds, trimmed to useful action. Actual-frame posters are below 100 KB. Local full-file decoding and sampled full-size comparisons passed. Audio was technically decoded but not listening-reviewed; samples do not certify every motion frame. Public playback is tested where available, but its absence alone is nonblocking under the owner’s instruction. No MP4 is bundled; shared source preserves all Reader artwork, summaries and offline fallbacks. Signing and installation are handed to a separate Mac session.
