@@ -3877,3 +3877,16 @@ html body.lens-app #lens-focus .ux-evidence-label::before{content:none;display:n
  @media(max-width:420px){#translation-dialog.translation-dialog{padding:16px;}#translation-dialog .translation-tile{flex-basis:110px;}}
 }
 
+/* App results remain first; online citations are always visible and tappable. */
+.combined-privacy,.combined-provenance,.combined-status{font-size:.85rem;line-height:1.5;color:var(--muted,#687182)}
+.combined-answer{margin-block:1rem;padding:1rem;border:1px solid currentColor;border-radius:12px}
+.combined-answer h3{margin:0 0 .4rem;font-size:1rem}
+.combined-answer-text{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}
+.combined-citation{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.combined-answer a{position:relative;z-index:1}
+html body.lens-app #lens-search-overlay .lens-search-form>#lens-web-search{flex:none;width:auto;min-height:44px;padding-inline:10px;font-size:.85rem;white-space:nowrap}
+@media(max-width:600px){
+ html body.lens-app #lens-search-overlay #lens-search-form.lens-search-form{flex-wrap:wrap}
+ html body.lens-app #lens-search-overlay .lens-search-form>#lens-web-search{order:3;flex-basis:100%;width:100%}
+ html body.lens-app #lens-search-overlay #lens-search-form>[data-search-cancel]{font-size:14px;min-width:44px;padding-inline:0}
+}

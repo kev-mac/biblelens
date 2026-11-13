@@ -124,9 +124,9 @@ async function prepareAssets(request,env){
  const path=new URL(request.url).pathname;
  if(path==='/reference/people.json')await loadPack('PEOPLE');
  if(path==='/reference/topics.json')await loadPack('TOPICS');
- if(['/api/search','/api/chat','/api/categories','/api/marked-comparisons','/api/comparisons','/api/debates','/api/debate'].includes(path))await loadPack('EVIDENCE');
- if(['/api/search','/api/chat','/api/categories'].includes(path))await loadPack('PEOPLE');
- if(['/api/search','/api/chat'].includes(path)){
+ if(['/api/search','/api/chat','/api/answer','/api/categories','/api/marked-comparisons','/api/comparisons','/api/debates','/api/debate'].includes(path))await loadPack('EVIDENCE');
+ if(['/api/search','/api/chat','/api/answer','/api/categories'].includes(path))await loadPack('PEOPLE');
+ if(['/api/search','/api/chat','/api/answer'].includes(path)){
   await Promise.all(['TOPICS','SEARCH','VOCABULARY'].map(loadPack));
   if(!packRequests.has('index'))packRequests.set('index',readPack(SEARCH_PACKS).then(index=>Object.assign(MINI_INDEX,index)).catch(error=>{packRequests.delete('index');throw error;}));
   await packRequests.get('index');
