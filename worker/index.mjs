@@ -185,6 +185,9 @@ async function workspaceSearch(message,edition='kjv',includeLost=false){
  const literalRefs=queryReferences(query),concept=!literalRefs.length?BibleLensConcepts.lookup(query):null;
  const scope=namedBooks(query),refs=literalRefs.length?literalRefs:BibleLensConcepts.references(query,BOOKS).filter(ref=>!scope.length||scope.some(book=>book.id===ref.book));
  if(concept)result.concept={id:concept.id,label:concept.label,terms:concept.terms};
+ // A subject/object relation cannot fall back to an unordered bag of words.
+ // Unsupported actors/qualifiers stay unresolved rather than inheriting examples.
+ if(concept?.strict&&!literalRefs.length&&!refs.length)return result;
  // A book name on its own opens its beginning; topical searches retain their terms.
  const bookOnly=!refs.length&&scope.length===1&&canonicalBookNames(query).trim().toLowerCase()===scope[0].name.toLowerCase();
  const targets=refs.length?refs:bookOnly?[{book:scope[0].id,chapter:1,first:null,last:null}]:[...(includeLost?searchPassages(query,true,true,true,true):[]),...searchPassages(query,true,true,includeLost)];
@@ -208,7 +211,7 @@ async function workspaceSearch(message,edition='kjv',includeLost=false){
   }
   if(result.passages.length===24){result.limited=true;break;}
  }
- const research=matchingResearch(query,13,false,true);result.limited||=research.length>12;result.research=research.slice(0,12);
+ const research=matchingResearch(concept?.strict&&refs.length?refs.map(referenceLabel).join('; '):query,13,false,true);result.limited||=research.length>12;result.research=research.slice(0,12);
  result.total={passages:result.passages.length,research:result.research.length};
  return result;
 }
@@ -235,7 +238,8 @@ async function searchReply(message,book,ch,selected,previousQuestion='',edition=
  const explicit=queryReferences(message);
  if(!explicit.length&&BibleLensConcepts.lookup(message)){
   const result=await workspaceSearch(message,edition),passages=result.passages;
-  if(passages.length)return {answer:'These passages describe '+result.concept.label+'. Open them to read the context.',details:'Concept matches use reviewed passage leads. They are examples, not a complete list or a historical verdict.',sources:passages.map(({text,...row},index)=>({...row,id:index+1})),evidence:passages.slice(0,8),mode:'concept',modelEligible:true,selected};
+  if(passages.length)return {answer:BibleLensConcepts.lookup(message).description||'These passages describe '+result.concept.label+'. Open them to read the context.',details:'Concept matches use reviewed passage leads. They are examples, not a complete list or a historical verdict.',sources:passages.map(({text,...row},index)=>({...row,id:index+1})),evidence:passages.slice(0,8),mode:'concept',modelEligible:true,selected};
+  if(BibleLensConcepts.lookup(message).strict)return {answer:'I could not find a close app match for the subject you named. Try a passage reference or submit an online question.',details:'The app has related passages, but they do not establish this claim about the named subject.',sources:[],evidence:[],mode:'missing',modelEligible:false,selected};
  }
  const directed=await answerIntent(message,previousQuestion,edition);if(directed)return {...directed,selected};
  if(explicit.length>=2)return comparisonReply(message,explicit,edition);
@@ -345,6 +349,13 @@ function publicStorySources(query){
 }
 async function publicAnswerContext(query,edition,queries=[]){
  const rows=[],scope=namedBooks(query).map(book=>book.name);
+ const concept=BibleLensConcepts.lookup(query);
+ if(concept?.strict&&!queryReferences(query).length){
+  const local=await workspaceSearch(query,edition);
+  // Preserve reviewed relevant sources and their order. Broader model rewrites
+  // must not reintroduce food, Passover or other word-only matches.
+  return local.passages.map(row=>({...row,kind:row.kind+'; '+concept.label}));
+ }
  for(const lead of [...new Set([query,...queries])].slice(0,4)){
   const phrase=scope.length&&lead!==query?lead+' in '+scope.join(' and '):lead;
   const local=await searchReply(phrase,-1,-1,[],'',edition);

@@ -3881,7 +3881,10 @@ html body.lens-app #lens-focus .ux-evidence-label::before{content:none;display:n
 .combined-privacy,.combined-provenance,.combined-status{font-size:.85rem;line-height:1.5;color:var(--muted,#687182)}
 .combined-answer{margin-block:1rem;padding:1rem;border:1px solid currentColor;border-radius:12px}
 .combined-answer h3{margin:0 0 .4rem;font-size:1rem}
-.combined-answer-text{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65}
+.combined-answer-text{overflow-wrap:anywhere;line-height:1.65}
+.combined-answer-text p,.combined-answer-text ul{margin:.65em 0}
+.combined-answer-text h4{font-size:1em;margin:1em 0 .4em}
+.combined-answer-text ul{padding-inline-start:1.4em}
 .combined-citation{font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .combined-answer a{position:relative;z-index:1}
 html body.lens-app #lens-search-overlay .lens-search-form>#lens-web-search{flex:none;width:auto;min-height:44px;padding-inline:10px;font-size:.85rem;white-space:nowrap}

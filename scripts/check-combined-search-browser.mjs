@@ -12,7 +12,8 @@ globalThis.fetch=async(url,init)=>{
  assert.equal(url,'https://api.openai.com/v1/responses','No external requests except the mocked provider');providerCalls++;
  const request=JSON.parse(init.body);
  if(!request.tools)return Response.json({status:'completed',usage:{input_tokens:10,output_tokens:10},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:'{"queries":["water becomes wine","Jesus calms a storm"]}'}]}]});
- return Response.json({status:'completed',usage:{input_tokens:50,output_tokens:30},output:[{type:'web_search_call',status:'completed'},{type:'message',role:'assistant',content:[{type:'output_text',text:'From zLenz: Read the app passages [A1].\nFrom the web: Source.',annotations:[{type:'url_citation',start_index:51,end_index:57,title:'Reference overview',url:'https://www.britannica.com/topic/miracle'}]}]}]});
+ const text='### From zLenz\n**Read** the app passages [A1].\n### From the web\nSource.';
+ return Response.json({status:'completed',usage:{input_tokens:50,output_tokens:30},output:[{type:'web_search_call',status:'completed'},{type:'message',role:'assistant',content:[{type:'output_text',text,annotations:[{type:'url_citation',start_index:text.indexOf('Source.'),end_index:text.length,title:'Reference overview',url:'https://www.britannica.com/topic/miracle'}]}]}]});
 };
 const server=http.createServer(async(req,res)=>{
  try{
@@ -52,6 +53,19 @@ try{
   // Another account isolates the chat quota from the two preceding searches.
   user+='-chat';await page.locator('#chat-input').fill('show me examples of miracles');await page.locator('#chat-send').click();await page.locator('#chat-messages .combined-citation').first().waitFor();
   assert(await page.locator('#chat-messages .message-body').filter({hasText:'These passages describe'}).count());assert.equal(errors.length,0,errors.join('\n'));
+  user+='-relation';await page.locator('#chat-input').fill('did Israelites eat their children?');await page.locator('#chat-send').click();
+  await page.waitForFunction(()=>document.querySelectorAll('#chat-messages .combined-answer').length===2);
+  const relation=page.locator('#chat-messages .chat-message.assistant').last();
+  assert((await relation.locator('.message-body').first().textContent()).includes('Some describe events; others warn'));
+  assert(!(await relation.locator('.message-body').first().textContent()).includes('manna'));
+  assert.equal(await relation.locator('.combined-answer-text h4').first().textContent(),'From zLenz');
+  assert.equal(await relation.locator('.combined-answer-text strong').first().textContent(),'Read');
+  assert(!(await relation.locator('.combined-answer-text').textContent()).includes('###'));assert(!(await relation.locator('.combined-answer-text').textContent()).includes('**'));
+  const actualCitation=relation.locator('.combined-citation[href="#read/11/6/28"]');assert.equal(await actualCitation.count(),1);
+  assert(await relation.evaluate(node=>node.scrollWidth<=node.clientWidth+2),'Formatted answer must fit its card');
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Formatted answer must fit the viewport');
+  await relation.screenshot({path:'.release/combined-search/relation-'+width+'.png'});
+  await actualCitation.click();await page.waitForFunction(()=>location.hash==='#read/11/6/28'&&readingBook===11&&readingChapter===6&&reading?.verses?.some(row=>row.n===28));
   results.push({width,metrics,errors});await context.close();
  }
  fs.writeFileSync('.release/combined-search/browser-results.json',JSON.stringify({results,providerCalls,onlineRequests,liveApiRequests:0},null,2));

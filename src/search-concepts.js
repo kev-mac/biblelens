@@ -3,6 +3,7 @@
 // retrieval leads, not claims about historical events or exhaustive coverage.
 const BibleLensConcepts=(()=>{
  const concepts=[
+  {id:'child-consumption',label:'accounts and warnings about eating children',pattern:/\bcannibalis(?:m|tic)\b|\b(?:eat|ate|eaten|eating|boil(?:ed|ing)?|devour(?:ed|ing)?)\s+(?:(?:their|his|her|our|your|own|the|of|flesh|young)\s+){0,5}(?:children|child|sons?|daughters?|bab(?:y|ies))\b/i,terms:['eat','children','famine','siege'],refs:['2 Kings 6:28-29','Lamentations 4:10','Lamentations 2:20','Leviticus 26:29','Deuteronomy 28:53-57','Jeremiah 19:9'],strict:true,description:'These passages concern people eating children during famine or siege. Some describe events; others warn what could happen. Open each passage to check its setting.'},
   {id:'healing',label:'healing',pattern:/\b(?:heal(?:ing|ed|ings)?|cur(?:e|es|ed)|restore sight|made? (?:the )?(?:blind|lame|sick))\b/i,terms:['heal','healing','blind','sick','leper'],refs:['Mark 2:9-12','John 9:6-7','Luke 17:13-16']},
   {id:'miracles',label:'acts often called miracles',pattern:/\b(?:miracles?|miraculous|supernatural|signs and wonders|extraordinary acts)\b/i,terms:['miracle','miracles','healing','raised','feeding','wine','sea'],refs:['John 2:7-10','Mark 4:38-41','Mark 6:41-44','John 11:41-44','Exodus 14:21-24']},
   {id:'forgiveness',label:'forgiveness',pattern:/\b(?:forgiv(?:e|en|ing|eness)|pardon(?:ed|ing)?|letting go of (?:anger|resentment))\b/i,terms:['forgive','forgiveness','mercy','debt'],refs:['Matthew 18:21-35','Luke 15:11-32','Luke 23:34']},
@@ -18,6 +19,7 @@ const BibleLensConcepts=(()=>{
    const pattern=new RegExp('\\b'+book.name+'\\b','gi');if(pattern.test(remainder)){scope.push(book);remainder=remainder.replace(pattern,' ');}
   }
   remainder=remainder.replace(concept.pattern,' ').replace(/\b(?:show|me|examples?|of|some|find|verses?|stories?|passages?|about|the|bible|biblical|in|from|please|give|list|what|where|which|are|is|can|you|tell|acts?|called|events?|and|people|does|say|says|happened)\b/gi,' ');
+  if(concept.strict)remainder=remainder.replace(/\b(?:did|do|ever|really|actually|was|were|there|any|ancient|israelites?|israel|judeans?|judah|jews|hebrews|during|a|famine|sieges?|starvation|hunger|parents?|mothers?|women)\b/gi,' ');
   // A general example set must not silently ignore a named person, place or
   // other qualifier. Narrow questions retain lexical/online semantic retrieval.
   if(remainder.replace(/[^a-z0-9]/gi,''))return [];

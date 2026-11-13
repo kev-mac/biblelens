@@ -57,6 +57,8 @@ f.env.BIBLELENS_AI_ALLOWED_EMAILS='changed-owner@example.org';assert.equal((awai
 const client={window:{},navigator:{onLine:true},document:{documentElement:{classList:{contains:()=>false}},querySelector:()=>null},localStorage:{getItem(){throw Error('Browser answers must not read storage');}},URL,AbortController,setTimeout,clearTimeout,fetch:async(url,options)=>{assert.equal(url,'/api/answer');assert.deepEqual(JSON.parse(options.body),{query:'miracles',edition:'kjv'});return Response.json(result);}};
 vm.createContext(client);vm.runInContext(fs.readFileSync('src/combined-search.js','utf8'),client);const api=client.window.BibleLensCombined;assert.equal((await api.answer('miracles','kjv')).status,'ready');
 const html=api.render({status:'ready',parts:[{text:'<script>bad()</script>'},{text:'Citation',sourceType:'web',url:'javascript:bad()'},{text:'Web source',sourceType:'web',url:'https://www.britannica.com/topic/miracle'}]});assert(!html.includes('<script>'));assert(!html.includes('javascript:'));assert(html.includes('rel="noopener noreferrer"'));assert(html.includes('combined-citation'));client.navigator.onLine=false;client.fetch=forbidden;assert.equal((await api.answer('miracles','kjv')).status,'offline');
+const formatted=api.render({status:'ready',parts:[{text:'### From zLenz\n**A report** in '},{text:'zLenz: 2 Kings 6:28',sourceType:'app',url:'#read/11/6/28'},{text:'.\n\n### From the web\n- **Context** and <unsafe>\n[bad](javascript:alert(1)) <img src=x onerror=alert(1)>'}]});
+assert(formatted.includes('<h4>From zLenz</h4>'));assert(formatted.includes('<strong>A report</strong>'));assert(formatted.includes('<ul><li><strong>Context</strong>'));assert(!formatted.includes('###'));assert(!formatted.includes('**'));assert(!formatted.includes('<img'));assert(!formatted.includes('href="javascript:'));assert(formatted.includes('href="#read/11/6/28"'));
 const workspace=fs.readFileSync('src/workspace.js','utf8');assert(!workspace.split('\n').find(line=>line.includes("addEventListener('input',()=>")).includes('submitOnlineSearch'));assert(workspace.includes("el('lens-web-search').addEventListener('click'"));
 const bridge=vm.createContext({});vm.runInContext(fs.readFileSync('src/person-identity.js','utf8')+'\n'+fs.readFileSync('src/search-core.js','utf8')+'\n'+fs.readFileSync('src/search-concepts.js','utf8'),bridge);bridge.catalog=JSON.parse(fs.readFileSync('data/books.json','utf8'));assert.equal(vm.runInContext('BibleLensConcepts.references("miracles in 1 John",catalog).length',bridge),0,'Do not confuse John and 1 John');
 console.log('PASS: mocked semantic planning + cited app/web answers; privacy, auth, safe links, cache, SQLite quotas, provider failure/timeout, native pairing, policy revocation and offline client. Zero live API requests.');
@@ -67,6 +69,23 @@ if(fs.existsSync('dist/server/index.js')){
   if(query==='show miracles in John')assert(data.passages.every(row=>row.book===42));
   if(query==='show me examples of miracles'){assert(data.passages.some(row=>!row.text.toLowerCase().includes('miracle')));assert(data.passages.some(row=>row.text.toLowerCase().includes('wine')));}
  }
+ // Regression: subject/object meaning must outrank word overlap with manna.
+ for(const edition of ['kjv','web','asv']){
+  const message='did Israelites eat their children?';
+  const local=await (await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message,edition})}),{},{})).json();
+  assert.equal(local.mode,'concept');assert(local.answer.includes('Some describe events; others warn'));
+  assert.equal(local.sources[0].url,'#read/11/6/28');assert(local.evidence[0].text.toLowerCase().includes('son'));
+  assert(!local.sources.some(row=>row.url.startsWith('#read/1/16/')));
+  const found=await (await worker.fetch(new Request('https://search.example.org/api/search?q='+encodeURIComponent(message)+'&edition='+edition),{},{})).json();
+  assert.equal(found.passages[0].url,'#read/11/6/28');assert(found.passages.some(row=>row.url==='#read/24/4/10'));
+  for(const row of found.passages){const chapter=await(await worker.fetch(new Request('https://search.example.org/api/chapter?book='+row.book+'&chapter='+row.chapter),{},{})).json();assert(chapter.verses.some(verse=>verse.n===row.verse),'Every reference must open a real verse');}
+ }
+ for(const message of ['did Egyptians eat their children?','did imaginary Zorg eat their children?']){
+  const absent=await(await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message})}),{},{})).json();assert.equal(absent.mode,'missing');assert.equal(absent.sources.length,0);
+ }
+ const food=await(await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:'did Israelites eat manna?'})}),{},{})).json();assert(food.answer.toLowerCase().includes('manna'),'An ordinary food question retains its meaning');
+ f=fixture();const relationSpy=providerSpy(),priorFetch=globalThis.fetch;globalThis.fetch=relationSpy.fetchImpl;
+ try{const data=await(await worker.fetch(request(f.user,{query:'did Israelites eat their children?'}),f.env,{})).json();assert.equal(data.status,'ready');const supplied=JSON.parse(relationSpy.calls[1].input).publicAppSources;assert.equal(supplied[0].url,'#read/11/6/28');assert(supplied.some(row=>row.text.toLowerCase().includes('eat')));assert(supplied.every(row=>!row.url.startsWith('#read/1/')&&!row.url.startsWith('#stories/')),'Irrelevant model rewrites must not contaminate this relation');assert(relationSpy.calls[1].instructions.includes('warning alone is not evidence'));}finally{globalThis.fetch=priorFetch;}
  // Exercise the actual lazy production route with a mocked provider.
  f=fixture();const integrated=providerSpy(),oldFetch=globalThis.fetch;globalThis.fetch=integrated.fetchImpl;
  try{const response=await worker.fetch(request(f.user),f.env,{});assert.equal((await response.json()).status,'ready');const sources=JSON.parse(integrated.calls[1].input).publicAppSources;assert(sources.some(row=>row.url.startsWith('#read/')&&row.text));assert(sources.some(row=>row.url.startsWith('#stories/')&&row.text));}finally{globalThis.fetch=oldFetch;}
