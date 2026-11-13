@@ -7,7 +7,7 @@ import worker from './built-worker.mjs';
 const sqlite=new DatabaseSync(':memory:');
 for(const file of fs.readdirSync('drizzle').filter(file=>file.endsWith('.sql')))sqlite.exec(fs.readFileSync('drizzle/'+file,'utf8'));
 const DB={prepare(sql){return {bind(...args){return {async first(){return sqlite.prepare(sql).get(...args)||null;},async run(){return sqlite.prepare(sql).run(...args);}};}};}};
-const realFetch=globalThis.fetch;let providerCalls=0,onlineRequests=0,user='browser-trial';
+const realFetch=globalThis.fetch;let providerCalls=0,onlineRequests=0,user='browser-trial',evaluationEnabled=false;
 globalThis.fetch=async(url,init)=>{
  assert.equal(url,'https://api.openai.com/v1/responses','No external requests except the mocked provider');providerCalls++;
  const request=JSON.parse(init.body);
@@ -20,7 +20,7 @@ const server=http.createServer(async(req,res)=>{
   const url=new URL(req.url,'http://127.0.0.1:'+server.address().port),headers=new Headers(req.headers);headers.set('oai-authenticated-user-id',user);
   const chunks=[];for await(const chunk of req)chunks.push(chunk);
   if(url.pathname==='/api/answer')onlineRequests++;
-  const response=await worker.fetch(new Request(url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})}),{DB,OPENAI_API_KEY:'test-only-not-a-real-provider-key',BIBLELENS_AI_ALLOWED_USERS:user},{});
+  const response=await worker.fetch(new Request(url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})}),{DB,OPENAI_API_KEY:'test-only-not-a-real-provider-key',BIBLELENS_AI_ALLOWED_USERS:user,...(evaluationEnabled?{BIBLELENS_AI_EVALUATION_ENABLED:'1'}:{})},{});
   res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));
  }catch(error){res.writeHead(500);res.end(error.message);}
 });
@@ -71,6 +71,7 @@ try{
   await actualCitation.click();await page.waitForFunction(()=>location.hash==='#read/11/6/28-29'&&readingBook===11&&readingChapter===6&&reading?.verses?.some(row=>row.n===28));
   results.push({width,metrics,errors});await context.close();
  }
+ evaluationEnabled=true;user='browser-evaluation';const qaContext=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'}),qaPage=await qaContext.newPage();await qaContext.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());const paidBefore=providerCalls;await qaPage.goto(base+'/retrieval-evaluation.html');await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();await qaPage.waitForFunction(()=>document.querySelector('#status').textContent.includes('5 cases processed'));assert.equal(providerCalls,paidBefore+5,'One explicit evaluation group uses five planner calls');assert(await qaPage.getByRole('button',{name:'Download evaluation results',exact:true}).isEnabled());await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();assert((await qaPage.locator('#status').textContent()).includes('Wait '));assert.equal(providerCalls,paidBefore+5,'Evaluation must wait after a group');await qaContext.close();
  fs.writeFileSync('.release/combined-search/browser-results.json',JSON.stringify({results,providerCalls,onlineRequests,liveApiRequests:0},null,2));
  console.log('PASS: 320/390/820/1440px browser layout, app-first results, no paid request while typing, single click/Enter submission, inline source labels, stale-result reset and default chat integration. Provider mocked; zero live API requests.');
 }finally{await browser.close();await new Promise(resolve=>server.close(resolve));globalThis.fetch=realFetch;sqlite.close();}

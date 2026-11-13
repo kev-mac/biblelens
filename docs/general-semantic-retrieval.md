@@ -133,3 +133,9 @@ Provider replies in the automated tests were mocked. WebKit was not run. No real
 API calls or new charges occurred in this implementation phase. Full release
 preparation with a new shared build number remains part of the coordinated
 deployment, followed by the real evaluation above.
+
+The final resolver tests also require an empty semantic plan to yield no app
+context, without inheriting a subject patch or raw-query commentary. Commentary
+leads retain the original book scope and link to the actual app detail record.
+The local browser test runs one evaluation group of five mocked planner calls
+and verifies that an immediate second click makes no additional calls.

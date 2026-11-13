@@ -26,6 +26,7 @@ const cases=[
 ];
 try{
  for(const [query,reference,url]of cases){plan={queries:[],passages:[reference],topics:[]};const result=await(await retrieve(query)).json();assert.equal(result.status,'ready',query);assert.equal(result.appResults[0].url,url,query);assert(result.appResults[0].text,query);assert.equal(result.usage.responseCalls,1);assert.equal(result.usage.webCalls,0);assert.equal(result.retrieval.method,'model-guided-corpus');}
+ plan={queries:[],passages:[],topics:[]};assert.equal((await(await retrieve('did Israelites eat their children?')).json()).appResults.length,0,'An empty semantic plan cannot inherit a subject patch or unrelated word-only commentary');
  plan={queries:[],passages:['John 3:999','https://attacker.example/a','Genesis 0:1'],topics:['INVENTED SUBJECT']};assert.equal((await(await retrieve('unsupported premise')).json()).appResults.length,0);
  plan={queries:[],passages:['John 3:16'],topics:[]};let result=await(await retrieve('a question specifically in 1 John')).json();assert(!result.appResults.some(row=>row.url.startsWith('#read/42/')),'Original book scope survives a model mistake');
  result=await(await retrieve('John 4:1')).json();assert.equal(result.appResults[0].url,'#read/42/4/1','Explicit requested verse survives unrelated model proposals');

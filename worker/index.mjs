@@ -352,6 +352,10 @@ async function semanticAppContext(query,edition,plan){
  const allowed=ref=>(!scope.size||scope.has(ref.book))&&(!explicit.length||explicit.some(original=>referenceOverlaps(original,ref)))&&(ref.book<66||scope.has(ref.book));
  const rows=[],seen=new Set();
  const add=source=>{if(source.text&&!seen.has(source.url)){rows.push(source);seen.add(source.url);}};
+ const addResearch=record=>{
+  if((scope.size||explicit.length)&&!record.refs.some(allowed))return;
+  add({label:record.title,url:record.kind==='annotation'?'#debate/'+encodeURIComponent(record.id):record.url,kind:'Packaged editorial analysis',text:[record.summary,record.reasoning,record.scope].filter(Boolean).join('\n'),recordId:record.id,recordKind:record.kind});
+ };
  const resolve=async(reference,origin)=>{
   if(typeof reference!=='string'||reference.length>80||!/^[\w\s.:,\-\u2013\u2014]+$/.test(reference))return;
   const refs=queryReferences(reference);if(!refs.length||refs.length>3)return;
@@ -383,10 +387,11 @@ async function semanticAppContext(query,edition,plan){
  // Resolve editorial records and stories from actual app references, keeping
  // their attribution. Original lexical matches cannot displace semantic leads.
  const referenceQuery=rows.slice(0,6).map(row=>row.label).join('; ');
- for(const record of (referenceQuery?matchingResearch(referenceQuery,3):matchingResearch(query,3,false,true)))add({label:record.title,url:record.url,kind:'Packaged editorial analysis',text:[record.summary,record.reasoning,record.scope].filter(Boolean).join('\n'),recordId:record.id,recordKind:record.kind});
+ for(const record of (referenceQuery?matchingResearch(referenceQuery,3):[]))addResearch(record);
  if(referenceQuery)for(const story of publicStorySources(referenceQuery).slice(0,1))add(story);
  for(const phrase of (plan.queries||[]).slice(0,3)){
   if(rows.length>=12)break;
+  for(const record of matchingResearch(phrase,1,false,true))addResearch(record);
   const local=await workspaceSearch(scope.size?phrase+' in '+[...scope].map(id=>BOOKS[id].name).join(' and '):phrase,edition);
   for(const row of local.passages.slice(0,2))if(allowed({book:row.book,chapter:row.chapter,first:row.verse,last:row.verse}))add(row);
  }
