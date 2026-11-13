@@ -65,12 +65,27 @@ const hostedStoryReplacements=[
  "/assets/story-paul-s-first-journey-v2.webp"
 ];
 
+// Selected, already-reviewed video posters use the existing immutable public
+// image handler. Native builds continue to package their exact source bytes.
+export function hostedVideoPosters(manifest, videos) {
+ const selected=manifest.videoPosters||[];
+ assert(Array.isArray(selected),'Hosted video posters must be an explicit array');
+ assert.equal(new Set(selected).size,selected.length,'Duplicate hosted video poster');
+ const active=new Set(Object.values(videos).filter(video=>video.status==='ready').map(video=>video.poster));
+ for(const src of selected){
+  assert.match(src,/^\/assets\/story-video-[a-z0-9-]+-poster-v\d+\.webp$/,'Only versioned video posters can use this list');
+  assert(active.has(src),'Hosted video poster must belong to an active reviewed video: '+src);
+ }
+ return selected;
+}
+
 export function hostedArtwork() {
  const manifest=JSON.parse(fs.readFileSync('data/hosted-artwork.json','utf8'));
+ const videoPosters=hostedVideoPosters(manifest,JSON.parse(fs.readFileSync('data/story-videos.json','utf8')));
  const result={};
  assert.match(manifest.sourceCommit,/^[a-f0-9]{40}$/,'Pin public artwork to an immutable source commit');
  for(const src of manifest.assets){
-  if(!hostedStoryReplacements.includes(src))assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges|1-samuel|2-samuel|1-kings|2-kings|1-chronicles|2-chronicles|ezra|nehemiah|esther|job|proverbs|ecclesiastes|song-of-solomon|isaiah|jeremiah|lamentations|ezekiel|daniel|hosea|joel|amos|obadiah|jonah|micah|nahum|habakkuk|zephaniah|haggai|zechariah|malachi|matthew|mark|luke|john|acts|romans|1-corinthians|2-corinthians|galatians|ephesians|philippians|colossians|1-thessalonians|2-thessalonians|1-timothy|2-timothy|titus|philemon|hebrews|james|1-peter|2-peter|1-john|2-john|3-john|jude|revelation)-\d{2}-(?:opening-)?v\d+|psalms-\d{3}-opening-v\d+)\.webp$/);
+  if(!hostedStoryReplacements.includes(src)&&!videoPosters.includes(src))assert.match(src,/^\/assets\/chapter-(?:genesis-\d{2}-(?:opening-v\d+|v[2-9]\d*)|(?:exodus|leviticus|numbers|deuteronomy|joshua|judges|1-samuel|2-samuel|1-kings|2-kings|1-chronicles|2-chronicles|ezra|nehemiah|esther|job|proverbs|ecclesiastes|song-of-solomon|isaiah|jeremiah|lamentations|ezekiel|daniel|hosea|joel|amos|obadiah|jonah|micah|nahum|habakkuk|zephaniah|haggai|zechariah|malachi|matthew|mark|luke|john|acts|romans|1-corinthians|2-corinthians|galatians|ephesians|philippians|colossians|1-thessalonians|2-thessalonians|1-timothy|2-timothy|titus|philemon|hebrews|james|1-peter|2-peter|1-john|2-john|3-john|jude|revelation)-\d{2}-(?:opening-)?v\d+|psalms-\d{3}-opening-v\d+)\.webp$/);
   assert(!result[src],'Duplicate hosted artwork');
   const bytes=fs.readFileSync('src'+src);assert(bytes.length>0&&bytes.length<250000);
   result[src]={url:'https://raw.githubusercontent.com/kev-mac/biblelens/'+manifest.sourceCommit+'/src'+src,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};
@@ -85,6 +100,7 @@ export function hostedArtwork() {
  const storyImages=JSON.parse(fs.readFileSync('data/story-images.json','utf8'));
  const activeStorySources=new Set(Object.values(storyImages).map(art=>art.src));
  for(const src of hostedStoryReplacements){assert(activeStorySources.has(src),'Hosted Story replacement must remain active: '+src);expected.push(src);}
- assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every new Genesis and Exodus–Revelation chapter image uses the checked public source');
+ expected.push(...videoPosters);
+ assert.deepEqual(Object.keys(result).sort(),expected.sort(),'Every selected chapter, Story and video poster uses the checked public source');
  return result;
 }
