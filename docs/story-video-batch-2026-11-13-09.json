@@ -23,7 +23,7 @@
       "reference": "/assets/story-ahab-and-micaiah-v2.webp",
       "referenceSha256": "716939bc42c60bb2176acb63ef0b3ab4c7b5ca641af3cf90f991c71d2b7c8e26",
       "actualFlowIngredients": [
-        "story-ahab-and-micaiah-v2.webp"
+        "reference-1.png"
       ],
       "flowDisplayName": "Micaiah addressing Ahab and Jeho…",
       "credits": 12,
@@ -41,13 +41,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size two-second sample and 1fps sheet preserve Ahab’s mature brown face, gray-streaked curls and beard, burgundy mantle and circlet. Jehoshaphat stays distinct in teal. Micaiah retains the v2 graying face and coarse mantle rather than being assigned Elijah’s identity. Visible hands, staff, seated bodies and crowd are coherent in samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Ahab-and-Micaiah-v1-web.mp4",
         "etag": "\"1cdbdd1524b158a99973c6fa2bb11c1c\""
-      }
+      },
+      "uploadReferenceSha256": "7655919f94f42837f319fe3be2f03acf092ef075ceaa773c3c570688c44a2113",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Elijah Taken Up",
@@ -62,7 +64,7 @@
       "reference": "/assets/story-elijah-taken-up-v1.webp",
       "referenceSha256": "42e3b0dd95cfa918edbac01dab17b2fbe10ed21c70a9ecf2edb34ea02a82388e",
       "actualFlowIngredients": [
-        "story-elijah-taken-up-v1.webp"
+        "reference-2.png"
       ],
       "flowDisplayName": "Elijah ascends in whirlwind",
       "credits": 12,
@@ -80,13 +82,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet preserve Elisha’s bald crown, dark side curls, brown complexion, build, linen and mantle. Elijah remains tiny and distant; facial identity is not verifiable at that scale. The clouds, river, hands and cloth remain coherent in inspected frames. No new deity or burning person appears.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Elijah-Taken-Up-v1-web.mp4",
         "etag": "\"4c05bd470a7a01e2389fc486440a867d\""
-      }
+      },
+      "uploadReferenceSha256": "88afb6f9ff93f7055f588c077754e5bdc4eb201f096e040211325bd334ac48e9",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Elisha and Moab",
@@ -101,7 +105,7 @@
       "reference": "/assets/story-elisha-and-moab-v1.webp",
       "referenceSha256": "709df7baf25fb60e37cc99110c81a20124ae278f290e92e4c1322bdd73e8d1ba",
       "actualFlowIngredients": [
-        "story-elisha-and-moab-v1.webp"
+        "reference-3.png"
       ],
       "flowDisplayName": "Water advancing in camp trenches",
       "credits": 12,
@@ -119,13 +123,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet preserve Elisha’s angular brown face, bald crown, dark side curls, graying beard and rough mantle. Men kneel or approach the existing trenches with coherent hands and limbs in samples. Dawn light and the imagined camp remain compatible; the scene does not depict the later sacrifice or battle.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Elisha-and-Moab-v1-web.mp4",
         "etag": "\"919d3913e9bc8e9a2aaa76c9414c5988\""
-      }
+      },
+      "uploadReferenceSha256": "4b9261dbd72db5858d9297b2baaea867ea08817f68e4c2a6df78cb56006e2b58",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "The Widow's Oil and the Shunammite's Son",
@@ -140,7 +146,7 @@
       "reference": "/assets/story-the-widow-s-oil-and-the-shunammite-s-son-v2.webp",
       "referenceSha256": "ae8101028d1b55d36e78c480768b21398d8a4951c8590acd42372b585943aa74",
       "actualFlowIngredients": [
-        "story-the-widow-s-oil-and-the-shunammite-s-son-v2.webp"
+        "reference-4.png"
       ],
       "flowDisplayName": "Widow pours oil for sons",
       "credits": 12,
@@ -158,13 +164,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size two- and four-second samples and 1fps sheet retain the mother’s brown face, braids, teal covering and both boys’ distinct faces, tight curls and proportions. Door stays closed; no adult observer is introduced. Oil flows from the pitcher rim into the jar, and visible hands, handles and bodies remain coherent in samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-The-Widow-s-Oil-and-the-Shunammite-s-Son-v1-web.mp4",
         "etag": "\"432b25c230850aea30e312f229ec76df\""
-      }
+      },
+      "uploadReferenceSha256": "87811af64f2791021fb04d1422f24884227bbb6488741423589798ff3cfaade6",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Naaman Healed",
@@ -179,7 +187,7 @@
       "reference": "/assets/story-naaman-healed-v1.webp",
       "referenceSha256": "6e9b29770d2f68fdc2aee6579f0d19fd1abd3c02fbaea2bd6fbc219fbd0b68c6",
       "actualFlowIngredients": [
-        "story-naaman-healed-v1.webp"
+        "reference-5.png"
       ],
       "flowDisplayName": "Naaman washes hands in river",
       "credits": 12,
@@ -197,13 +205,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet retain Naaman’s brown face, natural curls, full beard, sturdy build and wet linen. Servants remain distinct and no attendant is labeled Elisha. Hands, river, reeds and the distant horse remain coherent in inspected samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Naaman-Healed-v1-web.mp4",
         "etag": "\"f783b977fb35ecee4887aec1904649db\""
-      }
+      },
+      "uploadReferenceSha256": "f1ee937d4ffaa0d4292948eb8c7ad0b83cda325978b7959e2914d9fd5f774046",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Elisha and the Arameans",
@@ -218,7 +228,7 @@
       "reference": "/assets/story-elisha-and-the-arameans-v1.webp",
       "referenceSha256": "eb49f95d8b66b9cf5e76561de92ba4c62ab8129e37547f0fb26184dd6c8b5ae9",
       "actualFlowIngredients": [
-        "story-elisha-and-the-arameans-v1.webp"
+        "reference-6.png"
       ],
       "flowDisplayName": "Man reaching for floating axe",
       "credits": 12,
@@ -236,13 +246,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet retain Elisha’s brown angular face, bald crown, side curls, beard and mantle, comparable with the Moab scene. The younger man stays distinct. The iron head remains detached from the handle and floating; hands, pointing finger, limbs and water remain coherent in samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Elisha-and-the-Arameans-v1-web.mp4",
         "etag": "\"2f870e1c9abf13c7a3ef65cdb22cdb3a\""
-      }
+      },
+      "uploadReferenceSha256": "59d9599239bac177dfcda7d5d11fe6d2e28d00b8ada6acb8fa5434d4f9b06a06",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Jehu's Revolt",
@@ -257,7 +269,7 @@
       "reference": "/assets/story-jehu-s-revolt-v2.webp",
       "referenceSha256": "b5f1ee3fa1e92e7388db6ddfbe0ad4492ead9de3143215144b374499c0059082",
       "actualFlowIngredients": [
-        "story-jehu-s-revolt-v2.webp"
+        "reference-7.png"
       ],
       "flowDisplayName": "Messenger anoints Jehu indoors",
       "credits": 12,
@@ -275,13 +287,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet preserve Jehu’s brown face, tight curls, beard and broad adult build. The slim clean-shaven messenger stays distinct. Door remains closed; no officers appear. The flask, oil stream, hands, seated limbs and cloth are coherent in samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Jehu-s-Revolt-v1-web.mp4",
         "etag": "\"b7992f878a501658eb433475d817f3fc\""
-      }
+      },
+      "uploadReferenceSha256": "911f16658ac7a8ce63d85afd1399f73b14e0b0573ce6388080d95d5230c4459c",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Athaliah and Joash",
@@ -296,7 +310,7 @@
       "reference": "/assets/story-athaliah-and-joash-v1.webp",
       "referenceSha256": "4ebc0e47ad1833e8bab543e3b51ecce59dde56e82c614bca7ee19837059355e6",
       "actualFlowIngredients": [
-        "story-athaliah-and-joash-v1.webp"
+        "reference-8.png"
       ],
       "flowDisplayName": "Priest crowning young child",
       "credits": 12,
@@ -314,13 +328,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet preserve child Joash’s brown face, soft curls and child proportions, plus Jehoiada’s gray beard, older face and linen headdress. The other priest keeps the scroll. Hands, circlet, bodies and witnesses remain coherent in inspected samples. This child is distinct from Jehoash of Israel in the later scene.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Athaliah-and-Joash-v1-web.mp4",
         "etag": "\"be1c7b62de5366b01da68e5e8ae89a77\""
-      }
+      },
+      "uploadReferenceSha256": "9930bb9eda89c58407e88dbc3c4be4cc213da5575b014eb5e7460c773b30c025",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "Elisha's Death and Israel's Victories",
@@ -335,7 +351,7 @@
       "reference": "/assets/story-elisha-s-death-and-israel-s-victories-v1.webp",
       "referenceSha256": "fafa89e083b7a9ab22b43ef53ba20847ad136e010cce7404f3646734924dd5f1",
       "actualFlowIngredients": [
-        "story-elisha-s-death-and-israel-s-victories-v1.webp"
+        "reference-9.png"
       ],
       "flowDisplayName": "Elisha guiding king with bow",
       "credits": 12,
@@ -353,13 +369,15 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet retain the elderly Elisha’s brown face, bald crown, gray side curls and long gray beard; substantial aging follows intervening reigns without assigning an exact age. Adult Jehoash of Israel remains distinct from child Joash of Judah. Visible overlapping hands, bow, arrow and limbs are coherent in samples; the arrow is held rather than released.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Elisha-s-Death-and-Israel-s-Victories-v1-web.mp4",
         "etag": "\"4d5ecb1d8e37e5b3953e42f69f537da2\""
-      }
+      },
+      "uploadReferenceSha256": "370b4561d9e46b93bf48a46c49df27893e326f109b340cbdabeffa4bc735f4a8",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     },
     {
       "title": "The Fall of Samaria",
@@ -374,7 +392,7 @@
       "reference": "/assets/story-the-fall-of-samaria-v1.webp",
       "referenceSha256": "1cc06d2e7aba1c51f16bf9a6d2860e6bdb22ac734e207ed2e38af808f43f53c1",
       "actualFlowIngredients": [
-        "story-the-fall-of-samaria-v1.webp"
+        "reference-10.png"
       ],
       "flowDisplayName": "Family leaving Samaria through gate",
       "credits": 12,
@@ -392,13 +410,41 @@
       "fullLocalDecode": "passed",
       "visualReview": "Full-size sample and 1fps sheet retain distinct brown faces, natural curls, ages, joined hands, bundles, staff and plain clothing. The family is anonymous, not assigned to earlier patriarchs or later Jerusalem exiles. Feet, limbs, bundles and distant stationary soldiers remain coherent in inspected samples.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; owner permits release if unavailable",
+      "publicPlayback": "PASS: exact public bytes, hash and full decode; actual-app Chromium/WebKit phone/iPad advancing playback, loop/mute, two changed-frame seeks and offline fallback.",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-The-Fall-of-Samaria-v1-web.mp4",
         "etag": "\"74535109779ac509a6990f4f21c5c62f\""
-      }
+      },
+      "uploadReferenceSha256": "34083907147ad7221230d6cfc944bc38479971ac00d70901dfd1f12abaa968d8",
+      "referenceConversion": "Lossless PNG of the actual approved Story image, uploaded through the normal Flow file chooser."
     }
-  ]
+  ],
+  "verification": {
+    "atUtc": "2026-11-13T17:11:05.621Z",
+    "candidate": {
+      "canonicalCommit": "2afefdcd9ae115beefc3b1d66db847cbd588e8bc",
+      "version": "1.1.0",
+      "buildNumber": 422,
+      "sourceHash": "30eb9e2b4010bf6c0c0e3e3544e2da4d8c3c9ba892aa77e5b72699ad9ba7b624"
+    },
+    "workerBytes": 64871405,
+    "workerBudget": 66060288,
+    "workerHeadroom": 1188883,
+    "localEncodingCases": 40,
+    "actualApplicationPublicPlaybackCases": 40,
+    "publicFileHashAndDecodeCases": 10,
+    "immutablePosterDownloads": 30,
+    "hostedBlobCount": 1177,
+    "checks": [
+      "advancing playback",
+      "loop and initial mute",
+      "two settled changing-frame seeks",
+      "offline fallback",
+      "shared web/native source fingerprint"
+    ],
+    "audioListeningReview": false,
+    "physicalDevicePlayback": false
+  }
 }
