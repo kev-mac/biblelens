@@ -1,6 +1,6 @@
 {
   "batch": 8,
-  "status": "incomplete; export blocker",
+  "status": "Superseded: all ten exports recovered through normal Flow UI, reviewed, uploaded and integrated. See completed batch evidence.",
   "flowProject": "https://flow.google.com/project/baedd237-3385-4f6a-9e82-43ec28fdcf53",
   "baselineCommit": "0459f4192c990721278322c8534e9fe039841ef7",
   "model": "Omni 1.1 Flash 720p 8s 16:9 x1",
@@ -183,5 +183,7 @@
       },
       "localBrowserVerification": "Chromium and WebKit, phone and iPad widths, advancing playback/pause/two changed-frame seeks passed"
     }
-  ]
+  ],
+  "historicalSnapshot": true,
+  "supersededBy": "docs/story-video-batch-2026-11-13-08.json"
 }
