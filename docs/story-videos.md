@@ -945,3 +945,5 @@ All ten final encodes fully decode, use conservative H.264 Main 3.1 with one-sec
 Ten selective illustrations from Deuteronomy 31 through Joshua 10 use actual approved Story images as Flow ingredients. The two Joshua commissions retain distinct passage associations. Moses and Joshua remain separate identities. Story-led trims remove unnecessary holds. Versioned actual-frame posters are below 100 KB. Reader images, summaries, offline fallback art and all 65 previous ready videos are unchanged. No MP4 is bundled.
 
 Full local decoding and sampled full-size reference comparisons passed. Audio was technically decoded but not listening-reviewed; sampled inspection does not certify every motion frame. Public playback is tested where available, but inability to verify it alone is nonblocking by the owner’s explicit instruction. Native signing and installation are handed to the separate Mac session.
+
+The Jordan take was replaced after the passage check: priests now remain stationary as families cross (Joshua 3:17). Earlier takes remain inactive and preserved. The correction adds 12 credits, for 132 total and an observed ending balance of 2,292 AI credits.
