@@ -34,10 +34,15 @@
   }
   return html+(list?'</ul>':'');
  }
- function render(result){
+ function renderAppResults(result){
+  if(result?.status!=='ready'||!result.retrieval)return '';
+  const rows=(Array.isArray(result.appResults)?result.appResults:[]).filter(row=>safeLink(row.url)).slice(0,8);
+  return '<section class="combined-app-results" aria-label="App passages selected by meaning"><h3>From the app</h3><p class="combined-provenance">Selected by meaning · Read the sources to check the answer</p>'+(rows.length?rows.map(row=>'<article class="combined-app-source"><a class="combined-citation" href="'+escape(safeLink(row.url))+'"'+(row.url.startsWith('https:')?' target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer"':'')+'>'+escape(row.label)+'</a><p class="combined-provenance">'+escape(row.kind||'App source')+'</p><p>'+escape(String(row.text||'').slice(0,360))+(String(row.text||'').length>360?'…':'')+'</p></article>').join(''):'<p>The online answer did not identify supporting app passages. Try local search or check the web sources below.</p>')+'</section>';
+ }
+ function render(result,{includeAppResults=true}={}){
   if(result?.status!=='ready')return '<p class="combined-status" role="status">'+escape(result?.message||'Online answers are unavailable. App search is available.')+'</p>';
   const text=formattedParts(result.parts);
-  return '<section class="combined-answer" aria-label="OpenAI answer with app and web sources"><h3>OpenAI · App + Web</h3><p class="combined-provenance">AI answer · Check the linked sources'+(result.cached?' · Recent answer':'')+'</p><div class="combined-answer-text">'+text+'</div></section>';
+  return (includeAppResults?renderAppResults(result):'')+'<section class="combined-answer" aria-label="OpenAI answer with app and web sources"><h3>OpenAI · App + Web</h3><p class="combined-provenance">AI answer · Check the linked sources'+(result.cached?' · Recent answer':'')+'</p><div class="combined-answer-text">'+text+'</div></section>';
  }
  async function answer(query,edition,{signal}={}){
   query=String(query||'').trim();
@@ -57,7 +62,7 @@
   }catch{return {status:'unavailable',message:controller.signal.aborted?'The online answer timed out or was cancelled. App results are still available.':'Online answers could not load. App results are still available.'};}
   finally{clearTimeout(timer);signal?.removeEventListener('abort',abort);}
  }
- window.BibleLensCombined={answer,render,safeLink};
+ window.BibleLensCombined={answer,render,renderAppResults,safeLink};
  document.addEventListener?.('DOMContentLoaded',()=>{
   const access=document.getElementById('online-trial-access');if(!access)return;
   if(isNative()){access.textContent='Use online search on the website first. Then connect this device in Settings > Cloud Sync.';return;}

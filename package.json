@@ -61,7 +61,7 @@
     "check:assessment-tags:browser": "node scripts/check-assessment-tags-browser.mjs",
     "check:translation": "node scripts/check-translation.mjs",
     "check:translation:browser": "node scripts/check-translation-browser.mjs",
-    "check:combined-search": "node scripts/check-combined-search.mjs",
+    "check:combined-search": "node scripts/check-combined-search.mjs && node scripts/check-semantic-retrieval.mjs",
     "check:combined-search:browser": "node scripts/check-combined-search-browser.mjs"
   },
   "devDependencies": {

@@ -123,6 +123,7 @@ try{
  assert.equal(externalRequests,0);
 }finally{globalThis.fetch=originalFetch;}
 const summarize=cases=>({queries:cases.length,found:cases.filter(row=>row.found).length,expectedHit:cases.filter(row=>row.expectedHit).length,complete:cases.filter(row=>row.complete).length,expectedFound:cases.reduce((sum,row)=>sum+row.expectedFound,0),expectedTotal:cases.reduce((sum,row)=>sum+row.expectedTotal,0),top5:cases.filter(row=>row.firstGoodRank&&row.firstGoodRank<=5).length,visibleTop5:cases.filter(row=>row.firstVisibleRank!==null&&row.firstVisibleRank<=5).length});
+for(const row of rows.filter(row=>['person','place'].includes(row.category)))assert(row.firstVisibleRank!==null&&row.firstVisibleRank<=5,row.id+': named profiles must appear before incidental verse matches');
 const times=rows.map(row=>row.elapsedMs).sort((a,b)=>a-b);
 const report={summary:summarize(rows),byCategory:Object.fromEntries([...new Set(rows.map(row=>row.category))].map(category=>[category,summarize(rows.filter(row=>row.category===category))])),timing:{medianMs:times[Math.floor(times.length/2)],p95Ms:times[Math.ceil(times.length*.95)-1],maxMs:times.at(-1)},externalRequests,cases:rows};
 const args=process.argv.slice(2),reportPath=args[args.indexOf('--report')+1];

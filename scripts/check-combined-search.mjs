@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 import {DatabaseSync} from 'node:sqlite';
-import {aiPublicContext,combinedSearchRequest,parseSearchResponse,safeSearchUrl} from '../worker/combined-search.mjs';
+import {aiPublicContext,combinedSearchRequest,parseSearchResponse,safeSearchUrl,parseSemanticPlan} from '../worker/combined-search.mjs';
 // Fake provider responses only. No live API requests or real credentials.
 let fixtureId=0;
 const key='test-only-not-a-real-provider-key';
@@ -16,8 +16,8 @@ function fixture(){
 function request(user,input={query:'show me examples of miracles',edition:'web'},headers={}){return new Request('https://zlens.example.org/api/answer',{method:'POST',headers:{origin:'https://zlens.example.org','content-type':'application/json','x-biblelens-ai':'1',...(user?{'oai-authenticated-user-id':user}:{}),...headers},body:JSON.stringify(input)});}
 const context=[{label:'John 2:9',url:'#read/42/2/9',kind:'Scripture · WEB',text:'The ruler of the feast tasted the water now become wine.'}];
 const providerData=()=>({status:'completed',usage:{input_tokens:40,output_tokens:20},output:[{type:'web_search_call',status:'completed'},{type:'message',role:'assistant',content:[{type:'output_text',text:'From zLenz: water becomes wine [A1].\nFrom the web: History source.',annotations:[{type:'url_citation',start_index:51,end_index:65,url:'https://www.britannica.com/topic/miracle',title:'Miracle overview'}]}]}]});
-const planData=()=>({status:'completed',usage:{input_tokens:10,output_tokens:5},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify({queries:['water becomes wine','Jesus feeding a crowd','Jesus calms a storm']})}]}]});
-function providerSpy(){const calls=[];return {calls,fetchImpl:async(url,options)=>{assert.equal(url,'https://api.openai.com/v1/responses');assert.equal(options.headers.authorization,'Bearer '+key);calls.push(JSON.parse(options.body));return Response.json(calls.at(-1).tools?providerData():planData());}};}
+const planData=()=>({status:'completed',usage:{input_tokens:10,output_tokens:5},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify({queries:['water becomes wine','Jesus feeding a crowd','Jesus calms a storm'],passages:['John 2:7-10','Mark 4:38-41'],topics:['MIRACLES']})}]}]});
+function providerSpy(){const calls=[];return {calls,fetchImpl:async(url,options)=>{assert.equal(url,'https://api.openai.com/v1/responses');assert.equal(options.headers.authorization,'Bearer '+key);calls.push(JSON.parse(options.body));if(calls.at(-1).tools)return Response.json(providerData());const plan=planData();if(/children/i.test(calls.at(-1).input))plan.output[0].content[0].text=JSON.stringify({queries:[],passages:['2 Kings 6:28-29','Lamentations 4:10'],topics:['CANNIBALISM']});return Response.json(plan);}};}
 let externalCalls=0;const forbidden=async()=>{externalCalls++;throw Error('Unexpected provider request');};
 let f=fixture();
 for(const [req,env,status]of [[request(f.user),{},503],[request(null),f.env,401],[request('other'),f.env,401],[request(f.user,{query:'x',history:['PRIVATE NOTE']}),f.env,400],[request(f.user,{query:'x'.repeat(1201)}),f.env,400],[request(f.user,{query:'x'},{origin:'https://attacker.example.org'}),f.env,403]])assert.equal((await combinedSearchRequest(req,env,async()=>context,{fetchImpl:forbidden})).status,status);
@@ -88,7 +88,7 @@ if(fs.existsSync('dist/server/index.js')){
  }
  const food=await(await worker.fetch(new Request('https://search.example.org/api/chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:'did Israelites eat manna?'})}),{},{})).json();assert(food.answer.toLowerCase().includes('manna'),'An ordinary food question retains its meaning');
  f=fixture();const relationSpy=providerSpy(),priorFetch=globalThis.fetch;globalThis.fetch=relationSpy.fetchImpl;
- try{const data=await(await worker.fetch(request(f.user,{query:'did Israelites eat their children?'}),f.env,{})).json();assert.equal(data.status,'ready');const supplied=JSON.parse(relationSpy.calls[1].input).publicAppSources;assert.equal(supplied[0].url,'#read/11/6/28');assert(supplied.some(row=>row.text.toLowerCase().includes('eat')));assert(supplied.every(row=>!row.url.startsWith('#read/1/')&&!row.url.startsWith('#stories/')),'Irrelevant model rewrites must not contaminate this relation');assert(relationSpy.calls[1].instructions.includes('warning alone is not evidence'));}finally{globalThis.fetch=priorFetch;}
+ try{const data=await(await worker.fetch(request(f.user,{query:'did Israelites eat their children?'}),f.env,{})).json();assert.equal(data.status,'ready');const supplied=JSON.parse(relationSpy.calls[1].input).publicAppSources;assert.equal(supplied[0].url,'#read/11/6/28-29');assert(supplied.some(row=>row.text.toLowerCase().includes('eat')));assert(!supplied.some(row=>row.url.startsWith('#read/1/16/')||row.url.startsWith('#stories/exodus/the-passover')),'App candidates must be grounded in resolved semantic leads');assert(relationSpy.calls[1].instructions.includes('warning alone is not evidence'));}finally{globalThis.fetch=priorFetch;}
  // Exercise the actual lazy production route with a mocked provider.
  f=fixture();const integrated=providerSpy(),oldFetch=globalThis.fetch;globalThis.fetch=integrated.fetchImpl;
  try{const response=await worker.fetch(request(f.user),f.env,{});assert.equal((await response.json()).status,'ready');const sources=JSON.parse(integrated.calls[1].input).publicAppSources;assert(sources.some(row=>row.url.startsWith('#read/')&&row.text));assert(sources.some(row=>row.url.startsWith('#stories/')&&row.text));}finally{globalThis.fetch=oldFetch;}

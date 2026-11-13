@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Owner retrieval evaluation · zLenz</title>
+<style>body{max-width:760px;margin:32px auto;padding:0 20px;font:16px/1.6 system-ui,sans-serif;background:#0c1018;color:#e8edf7}button,a{font:inherit;color:inherit}button{min-height:44px;padding:8px 16px;margin:8px 12px 8px 0}button:disabled{opacity:.5}pre{white-space:pre-wrap;overflow-wrap:anywhere}small{color:#b1bdd0}</style>
+<h1>Owner retrieval evaluation</h1><p>This runs the fixed, public 50-question search benchmark. Each click submits up to five questions to OpenAI for app retrieval only. It makes no web searches and generates no answers.</p>
+<p>Only the approved trial owner can run it, while the separate evaluation switch is enabled. Each case can run once for this evaluation version. Failures remain counted. The normal search allowance is preserved; the Site-wide ceiling still applies.</p>
+<p><small>The complete run permits at most 50 model requests with 600 output tokens each. Estimated model cost is below $0.10 at the consulted rates. The API invoice remains the source of truth. Notes, history and expected answers are never submitted.</small></p>
+<button id="run">Run next five questions</button><button id="download" disabled>Download evaluation results</button><p id="status" role="status">Ready. No API calls have been made.</p><pre id="log"></pre>
+<script>
+const cases=/*__SEMANTIC_BENCHMARK__*/[],results=[];let cursor=0,lastGroup=0,busy=false;
+const run=document.getElementById('run'),status=document.getElementById('status'),log=document.getElementById('log'),download=document.getElementById('download');
+run.onclick=async()=>{
+ if(busy||cursor>=cases.length)return;const wait=61000-(Date.now()-lastGroup);if(wait>0){status.textContent='Wait '+Math.ceil(wait/1000)+' seconds before the next group.';return;}
+ busy=true;run.disabled=true;lastGroup=Date.now();
+ try{for(let count=0;count<5&&cursor<cases.length;count++){
+  const row=cases[cursor++];status.textContent='Retrieving '+row.id+' of '+cases.length+'.';let result;
+  try{const response=await fetch('/api/retrieval-evaluation',{method:'POST',headers:{'content-type':'application/json','x-biblelens-ai':'1'},body:JSON.stringify({query:row.query,edition:'kjv'}),signal:AbortSignal.timeout(35000)});result=await response.json();}catch{result={status:'unavailable',message:'The request failed. It will not be retried automatically.'};}
+  results.push({id:row.id,query:row.query,...result});log.textContent+=row.id+': '+result.status+' · '+(result.appResults?.length||0)+' app sources\n';download.disabled=false;
+  if(result.status!=='ready'){status.textContent=row.id+': '+result.message;break;}
+ }
+ if(results.at(-1)?.status==='ready')status.textContent=cursor===cases.length?'Evaluation complete. Download the results.':cursor+' cases processed. Wait one minute before the next group.';
+ }finally{lastGroup=Date.now();busy=false;run.disabled=cursor>=cases.length;}
+};
+download.onclick=()=>{const report={schemaVersion:1,evaluation:'semantic-v1',mode:'real-hosted-planner',edition:'kjv',generatedAt:new Date().toISOString(),results};const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)],{type:'application/json'}));link.download='zlenz-semantic-evaluation.json';link.click();URL.revokeObjectURL(link.href);};
+</script></html>

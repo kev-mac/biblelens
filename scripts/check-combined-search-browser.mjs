@@ -11,7 +11,7 @@ const realFetch=globalThis.fetch;let providerCalls=0,onlineRequests=0,user='brow
 globalThis.fetch=async(url,init)=>{
  assert.equal(url,'https://api.openai.com/v1/responses','No external requests except the mocked provider');providerCalls++;
  const request=JSON.parse(init.body);
- if(!request.tools)return Response.json({status:'completed',usage:{input_tokens:10,output_tokens:10},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:'{"queries":["water becomes wine","Jesus calms a storm"]}'}]}]});
+ if(!request.tools)return Response.json({status:'completed',usage:{input_tokens:10,output_tokens:10},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify(/children/i.test(request.input)?{queries:[],passages:['2 Kings 6:28-29','Lamentations 4:10'],topics:[]}:{queries:['water becomes wine','Jesus calms a storm'],passages:['John 2:7-10'],topics:[]})}]}]});
  const text='### From zLenz\n**Read** the app passages [A1].\n### From the web\nSource.';
  return Response.json({status:'completed',usage:{input_tokens:50,output_tokens:30},output:[{type:'web_search_call',status:'completed'},{type:'message',role:'assistant',content:[{type:'output_text',text,annotations:[{type:'url_citation',start_index:text.indexOf('Source.'),end_index:text.length,title:'Reference overview',url:'https://www.britannica.com/topic/miracle'}]}]}]});
 };
@@ -33,11 +33,14 @@ try{
   await context.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
   await page.goto(base+'/#search');const input=page.locator('#lens-search-input');await input.waitFor({state:'visible'});
   assert(await input.evaluate(node=>{const style=getComputedStyle(node),canvas=document.createElement('canvas'),context=canvas.getContext('2d');context.font=style.font;return context.measureText(node.placeholder).width<=node.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);}), 'The empty search placeholder fits');
+  await input.fill('Mary Magdalene');await page.waitForFunction(()=>document.querySelector('#lens-search-results')?.firstElementChild?.id==='lens-results-people');
+  await input.fill('where is nineveh');await page.waitForFunction(()=>document.querySelector('#lens-search-results')?.firstElementChild?.id==='lens-results-places');assert.equal(onlineRequests,before,'Profile intent remains local');
   await input.fill('show me examples of miracles');
   await page.waitForFunction(()=>document.querySelector('#lens-search-results')?.textContent.includes('John 2:'));
   assert.equal(onlineRequests,before,'Typing must never request paid search');
   await page.locator('#lens-web-search').click();await page.locator('#lens-web-results .combined-citation').first().waitFor();
   assert.equal(onlineRequests,before+1);assert(await page.locator('#lens-web-results a').filter({hasText:'Web:'}).count());
+  assert(await page.locator('#lens-semantic-results .combined-app-source').count());
   assert(await page.locator('#lens-search-results').evaluate(node=>!!(node.compareDocumentPosition(document.querySelector('#lens-web-results'))&Node.DOCUMENT_POSITION_FOLLOWING)));
   const metrics=await page.locator('#lens-search-form').evaluate(node=>({width:node.clientWidth,scroll:node.scrollWidth,input:document.querySelector('#lens-search-input').getBoundingClientRect().width,button:document.querySelector('#lens-web-search').getBoundingClientRect().width}));
   assert(metrics.scroll<=metrics.width+2,JSON.stringify(metrics));assert(metrics.input>=90,JSON.stringify(metrics));
@@ -47,25 +50,25 @@ try{
   await passageLink.click();await page.waitForFunction(hash=>location.hash===hash,href);await page.waitForFunction(({book,chapter})=>typeof readingBook!=='undefined'&&readingBook===book&&readingChapter===chapter&&reading?.verses?.length,{book:Number(ref[1]),chapter:Number(ref[2])});
   await page.goto(base+'/#search');await input.waitFor({state:'visible'});
   // New text invalidates the previous online result. Enter submits once.
-  await input.fill('feeding a crowd');assert.equal(await page.locator('#lens-web-results').textContent(),'');await input.press('Enter');await page.locator('#lens-web-results .combined-citation').first().waitFor();assert.equal(onlineRequests,before+2);
+  await input.fill('feeding a crowd');assert.equal(await page.locator('#lens-web-results').textContent(),'');assert.equal(await page.locator('#lens-semantic-results').textContent(),'');await input.press('Enter');await page.locator('#lens-web-results .combined-citation').first().waitFor();assert.equal(onlineRequests,before+2);
   fs.mkdirSync('.release/combined-search',{recursive:true});await page.screenshot({path:'.release/combined-search/search-'+width+'.png'});
   await input.press('Escape');await page.goto(base+'/#chat');await page.locator('#chat-input').waitFor({state:'visible'});
   // Another account isolates the chat quota from the two preceding searches.
   user+='-chat';await page.locator('#chat-input').fill('show me examples of miracles');await page.locator('#chat-send').click();await page.locator('#chat-messages .combined-citation').first().waitFor();
-  assert(await page.locator('#chat-messages .message-body').filter({hasText:'These passages describe'}).count());assert.equal(errors.length,0,errors.join('\n'));
+  assert(await page.locator('#chat-messages .combined-app-results').count());assert.equal(errors.length,0,errors.join('\n'));
   user+='-relation';await page.locator('#chat-input').fill('did Israelites eat their children?');await page.locator('#chat-send').click();
   await page.waitForFunction(()=>document.querySelectorAll('#chat-messages .combined-answer').length===2);
   const relation=page.locator('#chat-messages .chat-message.assistant').last();
-  assert((await relation.locator('.message-body').first().textContent()).includes('Some describe events; others warn'));
+  assert((await relation.locator('.message-body').first().textContent()).includes('2 Kings 6:28'));assert(!(await relation.locator('.message-body').first().textContent()).includes('These passages concern'));
   assert(!(await relation.locator('.message-body').first().textContent()).includes('manna'));
   assert.equal(await relation.locator('.combined-answer-text h4').first().textContent(),'From zLenz');
   assert.equal(await relation.locator('.combined-answer-text strong').first().textContent(),'Read');
   assert(!(await relation.locator('.combined-answer-text').textContent()).includes('###'));assert(!(await relation.locator('.combined-answer-text').textContent()).includes('**'));
-  const actualCitation=relation.locator('.combined-citation[href="#read/11/6/28"]');assert.equal(await actualCitation.count(),1);
+  const actualCitation=relation.locator('.combined-answer-text .combined-citation[href="#read/11/6/28-29"]');assert.equal(await actualCitation.count(),1);
   assert(await relation.evaluate(node=>node.scrollWidth<=node.clientWidth+2),'Formatted answer must fit its card');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Formatted answer must fit the viewport');
   await relation.screenshot({path:'.release/combined-search/relation-'+width+'.png'});
-  await actualCitation.click();await page.waitForFunction(()=>location.hash==='#read/11/6/28'&&readingBook===11&&readingChapter===6&&reading?.verses?.some(row=>row.n===28));
+  await actualCitation.click();await page.waitForFunction(()=>location.hash==='#read/11/6/28-29'&&readingBook===11&&readingChapter===6&&reading?.verses?.some(row=>row.n===28));
   results.push({width,metrics,errors});await context.close();
  }
  fs.writeFileSync('.release/combined-search/browser-results.json',JSON.stringify({results,providerCalls,onlineRequests,liveApiRequests:0},null,2));

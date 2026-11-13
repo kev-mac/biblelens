@@ -7,6 +7,10 @@ until Kevin revisits the provider and billing choice before public release.
 See the [initial release record](smart-search-build427-release.md) and
 [build 428 correction and evaluation](smart-search-relevance-followup.md).
 
+The separate [general retrieval implementation](general-semantic-retrieval.md)
+is staged after build 428. Its model recall has not been measured live yet;
+the documentation below describes the published trial.
+
 ## Behavior
 
 - Typing searches the app. It never calls OpenAI.
