@@ -1,10 +1,11 @@
 # App and web search trial
 
-Published as app build **427**, Sites version **418**, on 2026-11-13. The real
+Published as app build **428**, Sites version **419**, on 2026-11-13. The real
 owner-only OpenAI trial succeeded using the existing hidden runtime key.
 Reading remains public. Online answers remain restricted to the approved owner
 until Kevin revisits the provider and billing choice before public release.
-See [the release record](smart-search-build427-release.md) for live evidence.
+See the [initial release record](smart-search-build427-release.md) and
+[build 428 correction and evaluation](smart-search-relevance-followup.md).
 
 ## Behavior
 
@@ -19,8 +20,9 @@ See [the release record](smart-search-build427-release.md) for live evidence.
 
 ## Meaning-based retrieval
 
-`src/search-concepts.js` supplies reviewed passage leads for six concepts:
-miracles, healing, forgiveness, resurrection, feeding crowds and generosity.
+`src/search-concepts.js` supplies reviewed passage leads for seven concepts:
+miracles, healing, forgiveness, resurrection, feeding crowds, generosity and
+accounts or warnings about eating children during famine or siege.
 The bridge works offline, respects explicit references and book scope, and
 finds real text even when the query word does not occur in a verse. These are
 examples, not exhaustive lists or historical verdicts.
@@ -35,7 +37,8 @@ This is query expansion plus grounded retrieval, not an embedding/vector index.
 It adds no embedding dataset or initial indexing bill. Broad semantic recall
 depends on the rewrite and existing corpus search. One live acceptance question
 has been verified; broader semantic recall still needs evaluation.
-Curated offline concepts cover only the six subjects listed above.
+Curated offline concepts cover only the seven subjects listed above. Build 428
+adds a specific relation rule; it does not replace general local ranking.
 
 ## Privacy and trial limits
 
