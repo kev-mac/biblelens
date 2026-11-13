@@ -1,6 +1,25 @@
 'use strict';
 // Bundled from the retained, public-domain historical enumeration.
 const COMMANDMENTS = /*__COMMANDMENTS__*/[];
+// Preserve historical identities. Reading order is a separate, stable view of
+// the catalog, based on each entry's primary Torah passage (not its NT links).
+const COMMANDMENT_BOOK_ORDER=['Genesis','Exodus','Leviticus','Numbers','Deuteronomy'];
+function commandmentTextPosition(item){
+ const match=/^(.+) (\d+):(\d+)$/.exec(item.passage);
+ const book=match?COMMANDMENT_BOOK_ORDER.indexOf(match[1]):-1;
+ return [book<0?Infinity:book,Number(match?.[2]||0),Number(match?.[3]||0),item.id];
+}
+const COMMANDMENTS_IN_TEXT_ORDER=[...COMMANDMENTS].sort((a,b)=>{
+ const left=commandmentTextPosition(a),right=commandmentTextPosition(b);
+ for(let i=0;i<left.length;i++)if(left[i]!==right[i])return left[i]-right[i];
+ return 0;
+});
+const COMMANDMENT_SEQUENCE=new Map(COMMANDMENTS_IN_TEXT_ORDER.map((item,index)=>[item.code,index+1]));
+function commandmentRouteCodes(hash){
+ const [path,query='']=hash.split('?');if(path!=='#commandments')return [];
+ const params=new URLSearchParams(query),valid=new Set(COMMANDMENTS.map(item=>item.code));
+ return [...new Set((params.get('codes')||params.get('code')||'').split(',').filter(code=>valid.has(code)))];
+}
 const COMMANDMENT_FACETS = {
  polarity:['Positive','Negative'],sphere:['God','Humanity'],
  applicability:['Universal / Today','Temple Era Only','Land of Israel Only','Specific Roles','Context dependent'],
@@ -53,7 +72,7 @@ async function loadCommandmentContext(panel,reference){
 function commandmentCard(item) {
  const prefix='commandment-'+item.id,title=commandmentDirective(item.title);
  const control=(key,label,paths)=>`<button type="button" class="person-section-toggle action-link" data-commandment-section aria-expanded="false" aria-controls="${esc(prefix)}-${key}" id="${esc(prefix)}-${key}-toggle"><span class="person-section-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths}</svg></span><span class="person-section-label">${label}</span></button>`;
- return `<article class="commandment-card" data-commandment-reference="${esc(item.passage)}"><div class="commandment-card-heading"><h2>${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="commandment-tags"><span class="commandment-number">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span>${item.taxonomy.topics.map(topic=>`<span class="commandment-topic">${esc(topic)}</span>`).join('')}</div><div class="story-footer">${item.lens?.length?`<span>${item.lens.length.toLocaleString()} linked New Testament ${item.lens.length===1?'text':'texts'}</span>`:''}${control('context','View Text','')}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
+ return `<article class="commandment-card" data-commandment-code="${esc(item.code)}" data-commandment-sequence="${COMMANDMENT_SEQUENCE.get(item.code)}" data-commandment-reference="${esc(item.passage)}"><div class="commandment-card-heading"><h2><span class="commandment-sequence" aria-label="Number ${COMMANDMENT_SEQUENCE.get(item.code)} in biblical order">#${COMMANDMENT_SEQUENCE.get(item.code)}</span> ${esc(title)}</h2></div><div class="commandment-summary"><p>${commandmentPassageLink(item.passage)} <q>${esc(item.summary)}</q></p></div><div class="commandment-tags"><span class="commandment-number" title="Traditional catalog ID, not biblical order">${esc(item.code)} · ${esc(item.taxonomy.polarity)}</span>${item.taxonomy.topics.map(topic=>`<span class="commandment-topic">${esc(topic)}</span>`).join('')}</div><div class="story-footer">${item.lens?.length?`<span>${item.lens.length.toLocaleString()} linked New Testament ${item.lens.length===1?'text':'texts'}</span>`:''}${control('context','View Text','')}</div><section class="person-section-panel commandment-context" id="${esc(prefix)}-context" aria-labelledby="${esc(prefix)}-context-toggle" hidden></section>${item.lens?.length?`<section class="person-section-panel commandment-lens" id="${esc(prefix)}-lens" aria-labelledby="${esc(prefix)}-lens-toggle" hidden><h3>New Testament Lens</h3>${item.lens.map(link=>`<div class="commandment-lens-item">${commandmentPassageLink(link.reference)}<p><b>${esc(link.type)}:</b> ${esc(link.description)}</p></div>`).join('')}</section>`:''}</article>`;
 }
 async function initCommandments() {
  const root=document.querySelector('#commandments-view');if(!root)return;
@@ -64,7 +83,7 @@ async function initCommandments() {
  matrix.innerHTML=Object.entries(COMMANDMENT_FACETS).map(([dimension,values])=>`<fieldset><legend>${dimension[0].toUpperCase()+dimension.slice(1)}</legend><div class="commandments-options">${values.map(value=>`<button type="button" class="secondary commandment-facet-toggle filter-pill" data-commandment-dimension="${dimension}" data-value="${esc(value)}" aria-pressed="false"><span>${esc(value)}</span></button>`).join('')}</div></fieldset>`).join('');
  search.placeholder=`Search ${COMMANDMENTS.length} commandments, passages…`;
  const chips=document.createElement('nav');chips.className='directory-categories filter-carousel';chips.setAttribute('aria-label','Commandment topics');root.querySelector('.results-line').before(chips);
- let visibleCount=24;
+ let visibleCount=24,selectedCodes=[];
  function render() {
   chips.replaceChildren(...['All',...COMMANDMENT_FACETS.topics].map(value=>{
    const button=document.createElement('button');button.type='button';button.className='filter-pill';
@@ -72,7 +91,7 @@ async function initCommandments() {
    button.textContent=value+' ('+(value==='All'?COMMANDMENTS.length:COMMANDMENTS.filter(item=>item.taxonomy.topics.includes(value)).length)+')';
    button.onclick=()=>{filters.topics=value==='All'?[]:[value];visibleCount=24;render();};return button;
   }));
-  const items=filterCommandments(COMMANDMENTS,filters,search.value).filter(item=>!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase());
+  const items=filterCommandments(COMMANDMENTS_IN_TEXT_ORDER,filters,search.value).filter(item=>(!selectedCodes.length||selectedCodes.includes(item.code))&&(!/^\s*[PN]\d+\s*$/i.test(search.value)||item.code===search.value.trim().toUpperCase()));
   document.querySelector('#commandments-list').innerHTML=items.length?items.slice(0,visibleCount).map(commandmentCard).join('')+(items.length>visibleCount?'<button type="button" id="commandments-load-more">Show More</button>':''):'<p class="empty">No matching commandments. Try fewer filters or reset your search.</p>';
   document.querySelector('#commandments-count').textContent=`Showing ${items.length?1:0}–${Math.min(visibleCount,items.length)} of ${items.length} commandments`;
   for(const button of matrix.querySelectorAll('[data-commandment-dimension]')){
@@ -83,7 +102,7 @@ async function initCommandments() {
   }
   const count=Object.values(filters).reduce((sum,values)=>sum+values.length,0);
   more.setAttribute('aria-label',`Filter commandments${count?' ('+count+')':''}`);
-  document.querySelector('#commandments-reset').hidden=!count&&!search.value;
+  document.querySelector('#commandments-reset').hidden=!count&&!search.value&&!selectedCodes.length;
   document.querySelector('#commandments-done').textContent=`Show ${items.length} ${items.length===1?'Result':'Results'}`;
  }
  function toggle(dimension,value,enabled) {
@@ -103,9 +122,9 @@ async function initCommandments() {
 
  });
  matrix.addEventListener('click',event=>{const button=event.target.closest('[data-commandment-dimension]');if(button&&!button.disabled)toggle(button.dataset.commandmentDimension,button.dataset.value,!filters[button.dataset.commandmentDimension].includes(button.dataset.value));});
- search.addEventListener('input',()=>{visibleCount=24;render();});
+ search.addEventListener('input',()=>{selectedCodes=[];visibleCount=24;render();});
  function clear(){visibleCount=24;Object.keys(filters).forEach(key=>{filters[key]=[];});render();}
- document.querySelector('#commandments-reset').onclick=()=>{search.value='';clear();};
+ document.querySelector('#commandments-reset').onclick=()=>{search.value='';selectedCodes=[];clear();};
  document.querySelector('#commandments-clear').onclick=clear;
  more.onclick=()=>{sheet.showModal();more.setAttribute('aria-expanded','true');document.body.classList.add('commandments-filter-open');};
  const close=()=>sheet.close();
@@ -123,7 +142,10 @@ async function initCommandments() {
   const ref=readRef(button.dataset.commandmentPassage);if(!ref){toast('Passage reader is still loading. Please try again.');return;}
   storiesActive=false;renderStoriesView();setView('read',false);loadChapter(ref.book,ref.chapter,ref.verse);
  });
- function followRoute(){if(!location.hash.startsWith('#commandments'))return;const code=new URLSearchParams(location.hash.split('?')[1]||'').get('code');if(code&&COMMANDMENTS.some(item=>item.code===code)){search.value=code;clear();}}
+ function followRoute(){
+  if(location.hash.split('?')[0]!=='#commandments')return;
+  selectedCodes=commandmentRouteCodes(location.hash);search.value='';clear();
+ }
  window.addEventListener('hashchange',followRoute);
  render();followRoute();
 }
