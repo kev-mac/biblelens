@@ -319,19 +319,97 @@
         "status": "matched",
         "bytes": 1170397,
         "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
-        "verifiedAtUtc": "2026-11-13T04:21:50.8253930Z"
+        "verifiedAtUtc": "2026-11-13T04:21:50.825393Z"
       }
-    }
-  ],
-  "updatedAtUtc": "2026-11-13T04:20:14.069Z",
-  "holds": [
+    },
     {
       "title": "Korah's Rebellion",
-      "reason": "First candidate changed Aaron identity; close-framed replacement rendered but not downloaded or quality-reviewed yet."
+      "passage": "Numbers 16:1-17:13",
+      "credits": 24,
+      "sceneReference": "/assets/story-korah-s-rebellion-v2.webp",
+      "actualFlowIngredients": [],
+      "localVisualReview": "passed",
+      "visualReview": "Version 1 rejected for Aaron identity drift and never activated. Version 2 shows only elderly hands, cream sleeves and a flowering almond rod on a wooden surface; no identifiable named face. Full-size frames at0,3,6seconds and all eight one-second samples inspected: coherent hands, grip and branch. Selective confirmation by the blossoming rod after the rebellion, without depicting violence or claiming a verified likeness. Natural cool light, no visible text or watermark in samples.",
+      "posterAlt": "Elderly hands lift a wooden rod bearing almond blossoms and green fruit. An imagined scene.",
+      "description": "Hands lift a wooden rod from a table. White flowers and green almonds grow along its branches. The hands turn the rod in the light.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Korahs-Rebellion-v2-web.mp4",
+        "etag": "341af357fbf3261d055e46ee50717e06"
+      },
+      "publicPlayback": "pending exact-app browser check; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Korahs-Rebellion-v2-web.mp4",
+      "poster": "/assets/story-video-korahs-rebellion-poster-v2.webp",
+      "bytes": 2813260,
+      "sha256": "20969241d4cbea07684d4e79b7c97c87238ec5b2b65a94e42c23aa9d0a12ea95",
+      "originalBytes": 3857305,
+      "originalSha256": "85b58fa7f545d04b1363b24837ad797d1bdb7a7ab1b484ee69a424830a300b88",
+      "duration": 8.042667,
+      "sourceTrimStart": 0,
+      "posterTimestamp": 2,
+      "posterBytes": 29830,
+      "posterSha256": "3ba37ada684f5f918c0d5cbdbb9c661fb823fbefd9cd30b733222046010671dc",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 2813260,
+        "sha256": "20969241d4cbea07684d4e79b7c97c87238ec5b2b65a94e42c23aa9d0a12ea95",
+        "verifiedAtUtc": "2026-11-13T04:52:35.6828358Z"
+      }
     },
     {
       "title": "Edom Refuses Passage and Aaron Dies",
-      "reason": "Initial generation failed with provider refund notice; replacement rendered but not downloaded or quality-reviewed yet."
+      "passage": "Numbers 20:14-29",
+      "credits": 12,
+      "sceneReference": "/assets/story-edom-refuses-passage-and-aaron-dies-v2.webp",
+      "actualFlowIngredients": [],
+      "localVisualReview": "passed",
+      "visualReview": "Initial provider failure refunded. Replacement shows a close-framed robe transfer against a rocky mountain; eyes and facial structure remain outside the frame. A lower beard edge is visible, without an identifiable Eleazar portrait. Full-size frames at0,3,6seconds and all eight one-second samples inspected: plausible hands, support and cloth movement, varied natural blue dusk. Selective investiture moment, not Edom's refusal or Aaron's death. No violence, visible text or watermark in samples.",
+      "posterAlt": "Elderly hands settle a blue robe with gold edging over a man's linen tunic. An imagined scene.",
+      "description": "Hands place a blue robe over a man's linen tunic. The cloth settles across his shoulders. Rocky hills rise behind him in the evening light.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Edom-Refuses-Passage-and-Aaron-Dies-v2-web.mp4",
+        "etag": "084be0b9583e07767dd1b7e0c6892b6b"
+      },
+      "publicPlayback": "pending exact-app browser check; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Edom-Refuses-Passage-and-Aaron-Dies-v2-web.mp4",
+      "poster": "/assets/story-video-edom-refuses-passage-and-aaron-dies-poster-v2.webp",
+      "bytes": 3658908,
+      "sha256": "11bcccae6723578f55c3bdf2a5fa03191fb74cf69a41ec74fde1f46907d276dc",
+      "originalBytes": 4999478,
+      "originalSha256": "2f83b9cb476fa60d9cedcfa5cc86591ef2bf81ddbc98d705a07aa02df8e9bf66",
+      "duration": 8.042667,
+      "sourceTrimStart": 0,
+      "posterTimestamp": 2,
+      "posterBytes": 37032,
+      "posterSha256": "008c113ef9d127476cc2cecbd776a8e6a779ef322087a38cc4aebb7c5accdd81",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 3658908,
+        "sha256": "11bcccae6723578f55c3bdf2a5fa03191fb74cf69a41ec74fde1f46907d276dc",
+        "verifiedAtUtc": "2026-11-13T04:52:36.3900921Z"
+      }
     }
-  ]
+  ],
+  "updatedAtUtc": "2026-11-13T04:52:17.764Z",
+  "holds": [],
+  "creditLedger": {
+    "startingAI": 2686,
+    "endingAI": 2554,
+    "netUsed": 132,
+    "flowBalance": 0,
+    "includesRejectedKorahVersion1": true,
+    "failedMountHorRefunded": true,
+    "verifiedAtUtc": "2026-11-13T04:47:00Z"
+  }
 }
