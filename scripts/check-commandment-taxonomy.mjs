@@ -6,11 +6,31 @@ import {validateCommandmentsCatalog} from './commandments-catalog.mjs';
 const catalog=JSON.parse(fs.readFileSync('data/commandments-catalog.json','utf8'));
 assert.equal(validateCommandmentsCatalog(),613);
 const code=fs.readFileSync('src/commandments.js','utf8');
-const context={document:{querySelector:()=>null},esc:value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))};
+const context={URLSearchParams,document:{querySelector:()=>null},esc:value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))};
 installChapterFixture(context);vm.createContext(context);
-vm.runInContext(code.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(catalog.records))+'\nthis.records=COMMANDMENTS;this.facets=COMMANDMENT_FACETS;',context);
+vm.runInContext(code.replace('/*__COMMANDMENTS__*/[]',JSON.stringify(catalog.records))+'\nthis.records=COMMANDMENTS;this.facets=COMMANDMENT_FACETS;this.ordered=COMMANDMENTS_IN_TEXT_ORDER;this.sequence=COMMANDMENT_SEQUENCE;',context);
 const filter=(state,query='')=>context.filterCommandments(context.records,state,query);
 assert.equal(context.records.length,613);
+assert.equal(context.ordered[0].code,'P212');
+assert.equal(context.ordered[0].passage,'Genesis 1:28');
+assert.equal(context.sequence.get('P212'),1);
+assert.equal(new Set(context.ordered.map(item=>item.id)).size,613);
+assert.deepEqual(new Set(context.ordered.map(item=>item.id)),new Set(catalog.records.map(item=>item.id)),'No catalog identities lost or rewritten');
+for(let i=1;i<context.ordered.length;i++){
+ const a=context.commandmentTextPosition(context.ordered[i-1]),b=context.commandmentTextPosition(context.ordered[i]);
+ const firstDifference=a.findIndex((value,index)=>value!==b[index]);
+ assert(firstDifference<0||a[firstDifference]<b[firstDifference],'All 613 entries must be in book/chapter/verse order, with a stable tie break');
+}
+for(const state of [{},{polarity:['Positive']},{polarity:['Negative']},{topics:['Family']}]){
+ const rows=context.filterCommandments(context.ordered,state);
+ assert(rows.every((item,index)=>!index||context.sequence.get(rows[index-1].code)<context.sequence.get(item.code)),'Filtering preserves full-catalog biblical order');
+}
+assert.deepEqual(Array.from(context.commandmentRouteCodes('#commandments?code=P212')),['P212']);
+assert.deepEqual(Array.from(context.commandmentRouteCodes('#commandments?codes=P212%2CP215%2CP212%2Cmissing')),['P212','P215']);
+assert.deepEqual(Array.from(context.commandmentRouteCodes('#commandments?code=P21')),['P21'],'Legacy single-code links remain exact');
+assert.equal(context.commandmentRouteCodes('#commandments').length,0);
+assert.equal(context.commandmentRouteCodes('#read?code=P212').length,0);
+assert.equal(context.commandmentRouteCodes('#commandments?code=P999').length,0);
 assert.deepEqual(catalog.records.map(r=>r.id),Array.from({length:613},(_,i)=>i+1));
 assert.deepEqual(catalog.records.map(r=>r.code),[...Array.from({length:248},(_,i)=>'P'+(i+1)),...Array.from({length:365},(_,i)=>'N'+(i+1))]);
 assert.equal(filter({polarity:['Positive']}).length,248);assert.equal(filter({polarity:['Negative']}).length,365);
