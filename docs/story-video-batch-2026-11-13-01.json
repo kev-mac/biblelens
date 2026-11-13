@@ -29,7 +29,309 @@
       "localDecode": "passed",
       "visualReview": "Full-size reference compared with source frames at0,2,3,4,6,7seconds and final compressed poster. Principal woman and girl remain recognizable; safe wrapped infant and coherent basket lid action, no sampled obvious anatomy defect. Selective discovery moment, not full story retelling.",
       "audioListeningReview": false,
-      "publicPlayback": "not verified; explicitly nonblocking per owner"
+      "publicPlayback": "not verified; explicitly nonblocking per owner",
+      "publicByteVerification": "Downloaded exact public object,5389579bytes,SHA256d793d61b237209dcec1aa6b702cbea8c1010778814e08c7031587aaa8e6b1f8b matches",
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 5389579,
+        "sha256": "d793d61b237209dcec1aa6b702cbea8c1010778814e08c7031587aaa8e6b1f8b",
+        "verifiedAtUtc": "2026-11-13T04:21:45.6296789Z"
+      }
+    },
+    {
+      "title": "Counting the Camp",
+      "passage": "Numbers 1:1-54",
+      "credits": 12,
+      "sceneReference": "/assets/story-counting-the-camp-v2.webp",
+      "actualFlowIngredients": [
+        "approved-moses-portrait-reference.png",
+        "approved-aaron-portrait-reference.png"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Full-size source reference compared with final frames at0,3,6seconds and final compressed poster. Moses remains taller with a longer beard; Aaron has a shorter beard and distinct striped cloak. Counting hands, stones and camp setting have no obvious sampled defect. Selective census scene, not a complete narration of Numbers1.",
+      "posterAlt": "Hands arrange small stones into counted groups on a stone surface. An imagined scene.",
+      "description": "Moses and Aaron stand beside camp elders who count small stones. Close views show hands sorting the stones into groups. The elders continue their work beside the tents.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Counting-the-Camp-v1-web.mp4",
+        "etag": "c5d4407b21a3a7c149d91fecad1de405"
+      },
+      "publicPlayback": "not yet tested; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Counting-the-Camp-v1-web.mp4",
+      "poster": "/assets/story-video-counting-the-camp-poster-v1.webp",
+      "bytes": 2672390,
+      "sha256": "d6b403ed743873e18462931c7c67d4645cb48995da8ed98f771010dd73d1e0a4",
+      "originalBytes": 3687060,
+      "originalSha256": "93d71d20fbfd6bb0836cc7b4e7918be7f4f4fe010c70d49299633ba9faa6f1b6",
+      "duration": 8.042667,
+      "posterTimestamp": 2,
+      "posterBytes": 36094,
+      "posterSha256": "f000651bb3b19de5e328e02ab792790491adfb22b530c2677487b559e38857a8",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 2672390,
+        "sha256": "d6b403ed743873e18462931c7c67d4645cb48995da8ed98f771010dd73d1e0a4",
+        "verifiedAtUtc": "2026-11-13T04:21:46.6640118Z"
+      }
+    },
+    {
+      "title": "Offerings and the Passover at Sinai",
+      "passage": "Numbers 7:1-9:23",
+      "credits": 12,
+      "sceneReference": "/assets/story-offerings-and-the-passover-at-sinai-v1.webp",
+      "actualFlowIngredients": [
+        "story-building-the-tabernacle-v1.webp"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Full-size frames at0,3,6seconds show three anonymous bearers from behind, carrying a silver-colored bowl and a woven basket toward colored sanctuary curtains. No identifiable named cast added. Vessels, cloth and visible arm/hand support remain coherent in samples. Natural midday light. Selective dedication-offerings moment; Passover meal and other rituals omitted.",
+      "posterAlt": "Three men carry offerings toward the tabernacle courtyard. An imagined scene.",
+      "description": "Three men walk toward a courtyard hung with blue and red cloth. One carries a metal bowl and another holds a woven basket. The entrance curtains move gently as they approach.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Offerings-and-the-Passover-at-Sinai-v1-web.mp4",
+        "etag": "bf940389600393929a0e8b3aa657c2ad"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Offerings-and-the-Passover-at-Sinai-v1-web.mp4",
+      "poster": "/assets/story-video-offerings-and-the-passover-at-sinai-poster-v1.webp",
+      "bytes": 3941889,
+      "sha256": "523fe419b2b335d0eaadeb1e34f1980f026bb4db03a52abded1198e29f7cb6e5",
+      "originalBytes": 5455781,
+      "originalSha256": "344072958f1b554d5ec0fddaf92093363938ce646a417554a15f568745ed052d",
+      "duration": 8.042667,
+      "posterTimestamp": 2,
+      "posterBytes": 41498,
+      "posterSha256": "cbada89b683dd97641d2899f31c8ff1d7b20cd8eea54fd5c042e96f7158cdfb7",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 3941889,
+        "sha256": "523fe419b2b335d0eaadeb1e34f1980f026bb4db03a52abded1198e29f7cb6e5",
+        "verifiedAtUtc": "2026-11-13T04:21:47.3879398Z"
+      }
+    },
+    {
+      "title": "Leaving Sinai and the Complaints",
+      "passage": "Numbers 10:11-11:35",
+      "credits": 12,
+      "sceneReference": "/assets/story-leaving-sinai-and-the-complaints-v1.webp",
+      "actualFlowIngredients": [
+        "approved-moses-portrait-reference.png"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Full-size frames at0,3,6seconds retain Moses' gray curls, long beard, rust cloak and staff. Unnamed elders and resting families have no obvious sampled anatomy defect. Birds cross the overcast sky at the end. Selective complaint/listening moment; departure, fire, elders' Spirit episode and plague not shown.",
+      "posterAlt": "Moses listens to elders beside resting families in a rocky camp. An imagined scene.",
+      "description": "Elders gather around Moses in a rocky camp. He listens with his staff in hand while families rest nearby. Small birds cross the cloudy sky as the camera moves closer.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Leaving-Sinai-and-the-Complaints-v1-web.mp4",
+        "etag": "e154ca456500f2a4d72231ead1477a9c"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Leaving-Sinai-and-the-Complaints-v1-web.mp4",
+      "poster": "/assets/story-video-leaving-sinai-and-the-complaints-poster-v1.webp",
+      "bytes": 2969665,
+      "sha256": "b46feb9d9bba070a7a28b063b6c9adea5229549d609a0bbb6192b8ba213838a6",
+      "originalBytes": 4184881,
+      "originalSha256": "2a0ea74e7e9d69b2bc3b3e2c372e1fd3a4d29ad98a436c3beceb23fcd04625f0",
+      "duration": 8.042667,
+      "posterTimestamp": 2,
+      "posterBytes": 46126,
+      "posterSha256": "2a3222aeba5842661a1a2c33806b63a350719d54c370c3cccb3b7323cc9ab122",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 2969665,
+        "sha256": "b46feb9d9bba070a7a28b063b6c9adea5229549d609a0bbb6192b8ba213838a6",
+        "verifiedAtUtc": "2026-11-13T04:21:48.0427856Z"
+      }
+    },
+    {
+      "title": "Miriam and Aaron Speak Against Moses",
+      "passage": "Numbers 12:1-16",
+      "credits": 12,
+      "sceneReference": "/assets/story-miriam-and-aaron-speak-against-moses-v2.webp",
+      "actualFlowIngredients": [
+        "approved-moses-portrait-reference.png",
+        "approved-aaron-portrait-reference.png"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Full-size frames at0,3,6seconds plus32samples at4fps reviewed. Moses retains gray curls, rust cloak, long beard and staff. Aaron remains a gray-haired older man with a shorter beard and striped robe. Miriam stays entirely rear-facing under a blue hood, with no face or hair exposed in the32sampled frames; no claim of a newly verified Miriam likeness. Selective questioning scene; illness, healing and divine speech omitted.",
+      "posterAlt": "A hooded woman faces Moses and Aaron outside a large tent. An imagined scene.",
+      "description": "A woman seen from behind gestures toward Moses and Aaron outside a tent. Moses holds his staff and listens. Aaron turns toward him as the camera moves closer.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Miriam-and-Aaron-Speak-Against-Moses-v1-web.mp4",
+        "etag": "52f78ff74fd89826648b7f14e2ed988f"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Miriam-and-Aaron-Speak-Against-Moses-v1-web.mp4",
+      "poster": "/assets/story-video-miriam-and-aaron-speak-against-moses-poster-v1.webp",
+      "bytes": 2430031,
+      "sha256": "c3e9252a5a24b3dee5cab8b9c2b502306d1b20fcad6bce60db4f4f880d6f8984",
+      "originalBytes": 3511521,
+      "originalSha256": "ffde0ea6b9364237efe0258ab9969f3bed90feea47a94c1f472beb96a6be5bd5",
+      "duration": 8.042667,
+      "posterTimestamp": 2,
+      "posterBytes": 34282,
+      "posterSha256": "4e126c9755ba3217a8a52caa9721851661b7666f641784560a1e48fd3fab2235",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 2430031,
+        "sha256": "c3e9252a5a24b3dee5cab8b9c2b502306d1b20fcad6bce60db4f4f880d6f8984",
+        "verifiedAtUtc": "2026-11-13T04:21:48.5903443Z"
+      }
+    },
+    {
+      "title": "The Twelve Spies",
+      "passage": "Numbers 13:1-14:45",
+      "credits": 12,
+      "sceneReference": "/assets/story-the-twelve-spies-v1.webp",
+      "actualFlowIngredients": [],
+      "portrayalScope": "Anonymous scouts seen from behind with no identifiable named face; not assigned to Joshua or Caleb. Text-faithful composition allowed by AGENTS when actual identity ingredient is unavailable.",
+      "localVisualReview": "passed",
+      "visualReview": "Full-size frames at0,3,6seconds show exactly two foreground carriers with a single rigid pole and an attached grape cluster. Heads remain rear-facing; no named face is invented. The visible grip, shoulders, legs and hanging fruit are coherent in samples. Selective return-with-fruit moment; report, rebellion and failed invasion omitted.",
+      "posterAlt": "Two scouts carry a heavy grape cluster on a wooden pole through a vineyard. An imagined scene.",
+      "description": "Two scouts carry a large cluster of grapes between them on a wooden pole. Other travelers walk ahead along the vineyard path. The fruit sways gently as the carriers move.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-The-Twelve-Spies-v1-web.mp4",
+        "etag": "b1940150678ff1f22cc5e8c66608e986"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Twelve-Spies-v1-web.mp4",
+      "poster": "/assets/story-video-the-twelve-spies-poster-v1.webp",
+      "bytes": 5828842,
+      "sha256": "53c9adaa6ebc41f049de45fffc2db01c1439b3c5b87424080121fc8c18319bfc",
+      "originalBytes": 7307688,
+      "originalSha256": "b784baed205ec9f71607b0bef8411cd94b5e7b53c50e253baa634110c5dda7f2",
+      "duration": 8.042667,
+      "posterTimestamp": 2,
+      "posterBytes": 65152,
+      "posterSha256": "a0ae216fcea5b9994d39f0892ed392982e87f31d02ce232ae4cc7739951afc1c",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 5828842,
+        "sha256": "53c9adaa6ebc41f049de45fffc2db01c1439b3c5b87424080121fc8c18319bfc",
+        "verifiedAtUtc": "2026-11-13T04:21:49.4310825Z"
+      }
+    },
+    {
+      "title": "Water from the Rock at Meribah",
+      "passage": "Numbers 20:1-13",
+      "credits": 12,
+      "sceneReference": "/assets/story-water-from-the-rock-at-meribah-v1.webp",
+      "actualFlowIngredients": [
+        "approved-moses-water-portrait-reference.png",
+        "approved-aaron-portrait-reference.png"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Full-size frames at0,3,6seconds preserve the gray-curled Moses with long beard, brown skin, rust cloak and staff. Aaron stays behind him and is softer in focus; no definite identity break observed in samples. Hands, jars and water flow are coherent. Selective provision scene after the striking; no striking action or divine response shown.",
+      "posterAlt": "People fill clay jars beneath water flowing from a rock beside Moses and Aaron. An imagined scene.",
+      "description": "Water flows from a rock into a shallow pool. People kneel to fill clay jars while Moses and Aaron watch. The camera moves closer to Moses holding his staff.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-Water-from-the-Rock-at-Meribah-v1-web.mp4",
+        "etag": "a371de841b6fc66528311d3df3c4aa6d"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Water-from-the-Rock-at-Meribah-v1-web.mp4",
+      "poster": "/assets/story-video-water-from-the-rock-at-meribah-poster-v1.webp",
+      "bytes": 4176984,
+      "sha256": "75a4d83f058742d0d9cdde14ef745b6ba9e777aaf9ee8bbd37abb319939f990d",
+      "originalBytes": 5717325,
+      "originalSha256": "cd84eaa7ad67ba6fb12c9a57b165669a26ab17ac1abc65b30d5c7e542c928466",
+      "duration": 8.042667,
+      "sourceTrimStart": 0,
+      "posterTimestamp": 2,
+      "posterBytes": 70466,
+      "posterSha256": "540fee886a0483126886123c9d2c20aeb80c2b346b08461973bf4e98c97d0e63",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 4176984,
+        "sha256": "75a4d83f058742d0d9cdde14ef745b6ba9e777aaf9ee8bbd37abb319939f990d",
+        "verifiedAtUtc": "2026-11-13T04:21:50.1749891Z"
+      }
+    },
+    {
+      "title": "The Bronze Serpent",
+      "passage": "Numbers 21:4-9",
+      "credits": 12,
+      "sceneReference": "/assets/story-the-bronze-serpent-v1.webp",
+      "actualFlowIngredients": [
+        "approved-moses-portrait-reference.png"
+      ],
+      "localVisualReview": "passed",
+      "visualReview": "Original full-size samples and the trimmed five-second contact sheet inspected. Moses retains his recognizable gray curls, long beard and rust cloak. The bronze snake is a rigid metallic figure fixed around a pole; no sampled living-animal movement. The initial three-second shot with changing black letterbox bars was removed, keeping the purposeful Moses-to-symbol camera move. No bite, illness or healing is shown. Final compressed poster inspected.",
+      "posterAlt": "A bronze snake is fixed near the top of a wooden pole against a blue evening sky. An imagined scene.",
+      "description": "Moses holds a tall pole beside people gathered at dusk. The camera moves upward to a bronze snake fixed near the top.",
+      "upload": {
+        "confirmed": true,
+        "key": "BibleLens-The-Bronze-Serpent-v1-web.mp4",
+        "etag": "ece1ddbf021a67c8c749d78d34dc047e"
+      },
+      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Bronze-Serpent-v1-web.mp4",
+      "poster": "/assets/story-video-the-bronze-serpent-poster-v1.webp",
+      "bytes": 1170397,
+      "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
+      "originalBytes": 2939813,
+      "originalSha256": "90fcc73cd71211a59dea13fd59a4dfb149612919d7737d55e6b6dd70177eec0e",
+      "duration": 5.043,
+      "sourceTrimStart": 3,
+      "posterTimestamp": 3,
+      "posterBytes": 8328,
+      "posterSha256": "cac4b013c61d84cf4ead907d15d7b21122c39f0dbaf515fbe62011bc22a86dfa",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "fullLocalDecode": "passed",
+      "audioListeningReview": false,
+      "publicFileVerification": {
+        "status": "matched",
+        "bytes": 1170397,
+        "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
+        "verifiedAtUtc": "2026-11-13T04:21:50.8253930Z"
+      }
+    }
+  ],
+  "updatedAtUtc": "2026-11-13T04:20:14.069Z",
+  "holds": [
+    {
+      "title": "Korah's Rebellion",
+      "reason": "First candidate changed Aaron identity; close-framed replacement rendered but not downloaded or quality-reviewed yet."
+    },
+    {
+      "title": "Edom Refuses Passage and Aaron Dies",
+      "reason": "Initial generation failed with provider refund notice; replacement rendered but not downloaded or quality-reviewed yet."
     }
   ]
 }
