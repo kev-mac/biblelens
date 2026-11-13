@@ -681,7 +681,26 @@
     "version": "1.1.0",
     "buildNumber": 425,
     "sourceHash": "e3592f477b646a5780d9889c478f1c93f2f4a96fcd1e0ed4f37645fe1283be7a",
-    "publication": "pending",
+    "publication": {
+      "status": "published",
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "sitesVersion": 416,
+      "sitesVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_cabba78f8e848191962976984cb028ac",
+      "sitesSourceCommit": "d2fba33fb804182d1fc2bce3e87ea4b853da8b90",
+      "deploymentId": "appgdep_6af765250de48191bb6d45c22ea380f5",
+      "canonicalRuntimeAndVerificationCommit": "3156c0bf8472e868fa66835c64088ccc26c37c2f",
+      "releaseVerification": "PASS",
+      "livePosters": {
+        "passed": 90,
+        "total": 90,
+        "checks": [
+          "source bytes",
+          "offline native bundle bytes",
+          "live bytes"
+        ]
+      },
+      "macSigningAndDeviceInstallation": "pending separate parent-managed Mac handoff"
+    },
     "nativeSigningAndInstallation": "separately parent-managed; not performed here",
     "audioListeningReview": false,
     "physicalDevicePlayback": false

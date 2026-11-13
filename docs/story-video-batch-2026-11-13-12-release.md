@@ -21,3 +21,9 @@ Flow moved from 1,300 to 1,168 AI credits, with 0 Flow credits: 132 observed cre
 - Windows Worker: 62,385,361 bytes. Unchanged limit: 66,060,288; headroom: 3,674,927 bytes. Mac must measure its own package. This explicitly addresses build 424's cross-platform overrun without raising the limit.
 
 Publication, live verification, Mac signing and device installation remain pending at this checkpoint.
+
+## Published completion
+
+Build **425** is public at https://scripture-lens.kvn-mcgwn.chatgpt.site. Sites saved version **416**, source `d2fba33fb804182d1fc2bce3e87ea4b853da8b90`, deployment `appgdep_6af765250de48191bb6d45c22ea380f5` succeeded. GitHub main advanced without force to `3156c0bf8472e868fa66835c64088ccc26c37c2f` before this report-only checkpoint. `release:verify` passed: live, canonical source, Sites mirror and offline assets have the same release identity. All **90** checked live posters match source and native bytes.
+
+No physical-device installation, launch, playback or audio-listening verification was performed here. Parent owns the Mac signing/install handoff and must check its actual Worker size against the unchanged 66,060,288-byte limit. Do not bypass it. Source fingerprint remains `e3592f477b646a5780d9889c478f1c93f2f4a96fcd1e0ed4f37645fe1283be7a`.
