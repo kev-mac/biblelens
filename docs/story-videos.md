@@ -933,3 +933,9 @@ not listening-reviewed, and the samples do not certify every motion frame.
 Kevin authorized continuing when public playback alone cannot be verified.
 This isolated integration does not itself publish or install a release; the
 release owner combines it with the pending annotation and subsequent video work.
+
+## Second ten-video batch (2026-11-13)
+
+Ten selective illustrations from Victories over Sihon and Og through Moses Recalls the Second Tablets were generated using actual approved Story images as Flow ingredients. They retain the existing player and offline fallback art. Final videos last about five to eight seconds, following the useful action rather than a fixed target. The first well scene was rejected for a leaking jar and identity drift; its face-free replacement depicts the well and landscape. Earlier originals remain local.
+
+All ten final encodes fully decode, use conservative H.264 Main 3.1 with one-second keyframes and no B frames, and have zero-based re-encoded AAC timelines. Versioned posters are actual reviewed frames below 100 KB. Full-size samples and 1fps contact sheets were compared with the supplied references. Audio was technically decoded but not listening-reviewed; sampled review does not certify every motion frame. The audit records each selective scene and what it omits. Public streaming verification, if unavailable, is nonblocking by the owner's explicit instruction. Native signing and device installation require the separate Mac handoff.
