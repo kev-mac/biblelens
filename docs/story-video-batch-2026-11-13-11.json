@@ -442,7 +442,17 @@
     "sourceHash": "42bd3b71d0ed86fc93b415f9a7f74b1881478f303247c562657d471b6905acb0",
     "physicalDevices": "Parent-managed; no install or playback claim",
     "audioListeningReview": false,
-    "publication": "Held for parent coordination; not yet published",
-    "liveReleaseVerify": "Pending after publication"
+    "publication": {
+      "status": "succeeded",
+      "build": 424,
+      "url": "https://scripture-lens.kvn-mcgwn.chatgpt.site",
+      "sitesVersion": 415,
+      "sitesSourceCommit": "aa7882372cd0ed2df62c950a1a124b6e4e7424dc",
+      "savedVersionId": "appgprj_6acba627a6cc8191932fbbc47db8895d~appgver_a100af40a4c48191b8e724635ee35f07",
+      "deploymentId": "appgdep_6af75dc5c74081918607c3091715351c",
+      "canonicalReleaseCommit": "25b4444eb07ee6361682c8ac7b500f5d7970f847"
+    },
+    "liveReleaseVerify": "PASS: live site, canonical source, offline mobile assets and Sites mirror match build 424 fingerprint",
+    "livePosters": "50/50 exact live/source/offline-native poster comparisons passed"
   }
 }
