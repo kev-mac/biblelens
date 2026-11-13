@@ -908,3 +908,28 @@ The MP4 tests exercise expansion, collapse, looping, pause/resume and mute state
 YouTube retains its native controls and trusted-source command validation.
 Real browser/device playback must still be verified before release; deterministic
 fixtures do not prove media decoding or physical iOS behavior.
+
+## Six Exodus and Leviticus videos (2026-11-13 integration)
+
+The Golden Calf, Moses Sees God's Glory, Building the Tabernacle, Aaron and His
+Sons Are Ordained, Nadab and Abihu, and The Blasphemer Stoned now have ready MP4
+records. The existing 39 records remain unchanged, making 45 ready videos in
+this integration. Each new public R2 object downloaded successfully on the
+OmniBook and decoded fully without errors. Durations are approximately eight
+seconds. `docs/story-video-batch-2026-11-13-six.json` records the exact object
+names, byte lengths, SHA-256 hashes, passages, reference artwork and poster times.
+
+Each idle poster is an actual frame from its video, stored as a versioned
+1280x720 WebP below 100 KB. Five frames per clip were inspected and selected
+frames were compared at full size with the approved Story artwork. Descriptions
+follow the visible scenes. Nadab and Abihu's deaths remain offscreen; the
+Blasphemer clip depicts a hearing and custody, not the stoning. These selective
+illustrations do not claim to retell every event in the passages.
+
+Story references, Reader images, summaries, player code and offline fallbacks
+are unchanged. MP4 files remain remote and are not bundled. The web and native
+outputs use the shared manifest and posters. Audio decoded technically but was
+not listening-reviewed, and the samples do not certify every motion frame.
+Kevin authorized continuing when public playback alone cannot be verified.
+This isolated integration does not itself publish or install a release; the
+release owner combines it with the pending annotation and subsequent video work.
