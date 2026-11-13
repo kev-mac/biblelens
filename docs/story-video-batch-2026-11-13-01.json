@@ -295,31 +295,32 @@
       "description": "Moses holds a tall pole beside people gathered at dusk. The camera moves upward to a bronze snake fixed near the top.",
       "upload": {
         "confirmed": true,
-        "key": "BibleLens-The-Bronze-Serpent-v1-web.mp4",
-        "etag": "ece1ddbf021a67c8c749d78d34dc047e"
+        "key": "BibleLens-The-Bronze-Serpent-v2-web.mp4",
+        "etag": "0f7e7fa9a8dc543294c9abb0852dd8b7"
       },
-      "publicPlayback": "not verified; owner permits progress without public playback verification",
+      "publicPlayback": "focused recheck pending",
       "status": "ready",
       "provider": "mp4",
-      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Bronze-Serpent-v1-web.mp4",
-      "poster": "/assets/story-video-the-bronze-serpent-poster-v1.webp",
-      "bytes": 1170397,
-      "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Bronze-Serpent-v2-web.mp4",
+      "poster": "/assets/story-video-the-bronze-serpent-poster-v2.webp",
+      "bytes": 1122634,
+      "sha256": "e20ed8c5f71081a82d6891adaa8f845c920457722edf7ed43348fec6ed2a2a30",
       "originalBytes": 2939813,
       "originalSha256": "90fcc73cd71211a59dea13fd59a4dfb149612919d7737d55e6b6dd70177eec0e",
-      "duration": 5.043,
+      "duration": 5.042,
       "sourceTrimStart": 3,
       "posterTimestamp": 3,
       "posterBytes": 8328,
       "posterSha256": "cac4b013c61d84cf4ead907d15d7b21122c39f0dbaf515fbe62011bc22a86dfa",
-      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, copied AAC",
+      "encoding": "1280x720 24fps H264 Main3.1, no Bframes, GOP24, faststart, timestamp-reset AAC",
       "fullLocalDecode": "passed",
       "audioListeningReview": false,
+      "timestampRepair": "Copied the identical H264 video stream; decoded and re-encoded AAC after resetting its timestamps to zero. Corrects Windows WebKit reading the pre-trim audio timeline. No additional Flow generation.",
       "publicFileVerification": {
         "status": "matched",
-        "bytes": 1170397,
-        "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
-        "verifiedAtUtc": "2026-11-13T04:21:50.825393Z"
+        "bytes": 1122634,
+        "sha256": "e20ed8c5f71081a82d6891adaa8f845c920457722edf7ed43348fec6ed2a2a30",
+        "verifiedAtUtc": "2026-11-13T05:04:12.3823370Z"
       }
     },
     {
@@ -401,7 +402,7 @@
       }
     }
   ],
-  "updatedAtUtc": "2026-11-13T04:52:17.764Z",
+  "updatedAtUtc": "2026-11-13T05:04:11.769Z",
   "holds": [],
   "creditLedger": {
     "startingAI": 2686,
@@ -411,5 +412,13 @@
     "includesRejectedKorahVersion1": true,
     "failedMountHorRefunded": true,
     "verifiedAtUtc": "2026-11-13T04:47:00Z"
-  }
+  },
+  "supersededAssets": [
+    {
+      "title": "The Bronze Serpent",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Bronze-Serpent-v1-web.mp4",
+      "sha256": "09e41512f9e34ce4d8ca9d501808be181d3ad721b234ef66e1ec3110ac8df5dc",
+      "reason": "Windows WebKit reads the original pre-trim audio timeline, reporting8.043 seconds instead of5.043. Replaced with reset AAC timestamps; H264 video stream preserved exactly."
+    }
+  ]
 }
