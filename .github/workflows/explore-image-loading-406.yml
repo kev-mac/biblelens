@@ -1,0 +1,159 @@
+name: Build 406 Explore image loading checks
+on:
+  pull_request:
+    branches: [main]
+    paths: [.github/workflows/explore-image-loading-406.yml]
+permissions:
+  contents: read
+concurrency:
+  group: explore-images-406-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: false
+jobs:
+  images:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/explore-image-checks-406'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - name: Verify frozen source and preserved production content
+        run: |
+          git merge-base --is-ancestor 36d56f4cd5d2cc0d131a02d0682db5be87513c4c HEAD
+          git diff --exit-code 36d56f4cd5d2cc0d131a02d0682db5be87513c4c HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research
+          git diff --exit-code 59efd771ab426d9ab4cfbb0680b7aba59f628d1c HEAD -- data research db drizzle ios android package-lock.json capacitor.config.json .openai/hosting.json src/index.html src/overrides.css worker/public-artwork.mjs
+          test -z "$(git diff --name-only --diff-filter=DMR 59efd771ab426d9ab4cfbb0680b7aba59f628d1c HEAD -- 'src/assets/*.webp')"
+          mkdir -p .release/explore-images-406
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {releaseInfo} from './scripts/release-info.mjs';
+          const release=releaseInfo();assert.equal(release.buildNumber,406);assert.equal(release.sourceHash,'f6d96af4f2c90a8d510a001c413e97c2f85a78baacc73a5da06475f1c3aca402');fs.writeFileSync('.release/explore-images-406/source-release.json',JSON.stringify(release,null,2)+'\n');
+          fs.writeFileSync('.release/explore-images-406/source-opening-receipt.json',JSON.stringify({project_id:'appgprj_6acba627a6cc8191932fbbc47db8895d',commit_sha:'c073a3915b5f639ca159f227c4a77f3d7b60b627',officialHelper:'sites 1.1.4 site-workflow.mjs',exitCode:0,clean:true,verifiedBy:'coordinator on actual canonical and mirror trees before implementation',verifiedRelease:{version:'1.1.0',buildNumber:405,sourceHash:'8b830d2339008190e290ec310f23c7787871da42ac7cf69a065729f7dd15f863'},audience:'public',siteVersion:398,reopenBeforePublication:'coordinator-owned mirror; no Mac operation in this workflow'},null,2)+'\n');
+          JS
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Install required browsers on this separate runner
+        run: npx --no-install playwright install --with-deps chromium webkit
+      - name: Require Chromium sandboxing
+        run: |
+          cat > .release/explore-images-406/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';const launch=chromium.launch.bind(chromium);chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+      - name: Full exact-source shared release preparation
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/explore-images-406/release-prepare.log
+      - name: Actual image validators, bytes, offline parity and retained content
+        run: |
+          node scripts/check-explore-assets.mjs --mobile 2>&1 | tee .release/explore-images-406/explore-assets.log
+          npm run check:images 2>&1 | tee .release/explore-images-406/image-parity.log
+          node scripts/check-contradiction-bundles.mjs 2>&1 | tee .release/explore-images-406/review-parity.log
+      - name: Build accepted 405 baseline without changing it
+        run: |
+          git worktree add --detach .release/baseline-405 59efd771ab426d9ab4cfbb0680b7aba59f628d1c
+          ln -s "$GITHUB_WORKSPACE/node_modules" .release/baseline-405/node_modules
+          npm --prefix .release/baseline-405 run build 2>&1 | tee .release/explore-images-406/baseline-build.log
+      - name: Open exact generated Workers on runner loopback
+        id: preview
+        run: |
+          BIBLELENS_QA_PORT=8787 node scripts/serve-image-qa.mjs > .release/explore-images-406/after-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-images-406/after.pid
+          BIBLELENS_BUILD_ROOT="$GITHUB_WORKSPACE/.release/baseline-405" BIBLELENS_QA_PORT=8788 node scripts/serve-image-qa.mjs > .release/explore-images-406/before-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-images-406/before.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {setTimeout} from 'node:timers/promises';
+          const expected=JSON.parse(fs.readFileSync('.release/explore-images-406/source-release.json'));
+          for(const [port,release]of [[8787,expected],[8788,{version:'1.1.0',buildNumber:405,sourceHash:'8b830d2339008190e290ec310f23c7787871da42ac7cf69a065729f7dd15f863'}]]){let ready=false;for(let i=0;i<100;i++){try{const r=await fetch(`http://127.0.0.1:${port}/release.json`,{signal:AbortSignal.timeout(2000)});assert(r.ok);assert.deepEqual(await r.json(),release);ready=true;break;}catch{await setTimeout(200);}}assert(ready,'Exact preview unavailable '+port);}
+          JS
+      - name: Fresh-process generated decode benchmarks
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        run: |
+          BIBLELENS_IMAGE_PHASE=before BIBLELENS_BUILD_ROOT="$GITHUB_WORKSPACE/.release/baseline-405" node scripts/benchmark-explore-worker.mjs 2>&1 | tee .release/explore-images-406/benchmark-before.log
+          BIBLELENS_IMAGE_PHASE=after node scripts/benchmark-explore-worker.mjs 2>&1 | tee .release/explore-images-406/benchmark-after.log
+      - name: Cold and warm actual 405 browser baseline
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8788
+          BIBLELENS_IMAGE_PHASE: before
+        run: node scripts/check-explore-image-loading-browser.mjs 2>&1 | tee .release/explore-images-406/performance-before.log
+      - name: Cold, warm, hidden-view and cache checks on final 406
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+          BIBLELENS_IMAGE_PHASE: after
+        run: node scripts/check-explore-image-loading-browser.mjs 2>&1 | tee .release/explore-images-406/performance-after.log
+      - name: Bounded current public baseline and failed-response diagnostics
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: https://scripture-lens.kvn-mcgwn.chatgpt.site
+          BIBLELENS_IMAGE_PHASE: live
+        run: node scripts/check-explore-image-loading-browser.mjs 2>&1 | tee .release/explore-images-406/live-baseline.log
+      - name: Retained 56-case responsive Explore matrix on accepted grid
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+        run: node scripts/check-explore-annotations-browser.mjs 2>&1 | tee .release/explore-images-406/explore-matrix.log
+      - name: Existing grid, shortcuts and full-detail matrix
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-images-406/require-sandbox.mjs
+        run: node scripts/check-explore-carousels.mjs 2>&1 | tee .release/explore-images-406/grid-matrix.log
+      - name: Stop only these owned test servers
+        if: always()
+        run: |
+          for stage in before after; do
+            if test -f ".release/explore-images-406/$stage.pid"; then kill "$(cat ".release/explore-images-406/$stage.pid")" 2>/dev/null || true; fi
+          done
+      - name: Package only the successful final candidate
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/explore-images-406/source-release.json')),candidate=JSON.parse(fs.readFileSync('.release/candidate.json')),{canonicalCommit,...release}=candidate;assert.deepEqual(release,expected);assert.deepEqual(releaseInfo(),expected);for(const f of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(f)),expected);
+          const read=f=>JSON.parse(fs.readFileSync(f)),before=read('.release/explore-image-loading/before/matrix.json'),after=read('.release/explore-image-loading/after/matrix.json'),grid=read('.release/browse/matrix.json'),annotations=read('.release/explore-annotations/matrix.json'),live=read('.release/explore-image-loading/live/matrix.json');assert.equal(before.length,8);assert(before.every(r=>r.status==='CAPTURED'));assert.equal(after.length,8);assert(after.every(r=>r.status==='PASS'));assert.equal(grid.length,6);assert.equal(annotations.length,56);assert([...grid,...annotations].every(r=>r.status==='PASS'));
+          const summary=after.map(row=>({engine:row.engine,width:row.width,height:row.height,dpr:row.dpr,before:before.find(r=>r.engine===row.engine&&r.width===row.width&&r.dpr===row.dpr).visits.map(v=>({name:v.name,requests:v.networkImageRequests,bytes:v.networkImageBytes,decodedMs:v.decodedMs})),after:row.visits.map(v=>({name:v.name,requests:v.networkImageRequests,bytes:v.networkImageBytes,decodedMs:v.decodedMs})),hiddenAfter:row.hidden.map(v=>({route:v.route,requests:v.networkImageRequests,bytes:v.networkImageBytes}))}));fs.writeFileSync('.release/explore-images-406/performance-summary.json',JSON.stringify(summary,null,2)+'\n');console.log('ACTUAL IMAGE COMPARISON',JSON.stringify(summary));
+          const worker=fs.readFileSync('dist/server/index.js');fs.writeFileSync('.release/explore-images-406/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'36d56f4cd5d2cc0d131a02d0682db5be87513c4c',baselineCommit:'59efd771ab426d9ab4cfbb0680b7aba59f628d1c',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),beforeCases:8,afterCases:8,annotationCases:56,gridCases:6,liveBaseline:live.map(r=>({engine:r.engine,width:r.width,status:r.status,error:r.error})),screenshotsVisuallyInspected:false,signedNativeAssetsVerified:false,nativeInstall:'coordinator pending; no publication in CI'},null,2)+'\n');
+          JS
+          tar -czf .release/explore-images-406/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/explore-images-406/prepared-bundles.tar.gz > .release/explore-images-406/prepared-bundles.sha256
+      - name: Retain exact tested bundles without publication
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: build-406-image-loading-bundles-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-images-406/source-release.json
+            .release/explore-images-406/prepared-manifest.json
+            .release/explore-images-406/source-opening-receipt.json
+            .release/explore-images-406/prepared-bundles.tar.gz
+            .release/explore-images-406/prepared-bundles.sha256
+          include-hidden-files: true
+          retention-days: 7
+      - name: Retain measurements, failed-response bodies and screenshots
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: build-406-image-loading-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-images-406/*.log
+            .release/explore-images-406/*.json
+            .release/explore-images-406/*.sha256
+            .release/explore-image-loading/**
+            .release/explore-annotations/**
+            .release/browse/**
+          include-hidden-files: true
+          retention-days: 7
