@@ -5,7 +5,7 @@ import worker from './built-worker.mjs';
 import {parseSemanticPlan} from '../worker/combined-search.mjs';
 const db=new DatabaseSync(':memory:');for(const file of fs.readdirSync('drizzle').filter(file=>file.endsWith('.sql')))db.exec(fs.readFileSync('drizzle/'+file,'utf8'));
 const DB={prepare(sql){return{bind(...args){return{async first(){return db.prepare(sql).get(...args)||null;},async run(){return db.prepare(sql).run(...args);}};}};}};
-const env={DB,OPENAI_API_KEY:'test-only-not-a-real-api-key',BIBLELENS_AI_ALLOWED_USERS:'semantic-tester'};
+const env={DB,BIBLELENS_SEMANTIC_RETRIEVAL_ENABLED:'1',OPENAI_API_KEY:'test-only-not-a-real-api-key',BIBLELENS_AI_ALLOWED_USERS:'semantic-tester'};
 const oldFetch=globalThis.fetch;let plan={queries:[],passages:[],topics:[]},calls=0,userCount=0;
 const reply=()=>({status:'completed',usage:{input_tokens:20,output_tokens:30},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify(plan)}]}]});
 globalThis.fetch=async(url,options)=>{assert.equal(url,'https://api.openai.com/v1/responses');const body=JSON.parse(options.body);assert(!body.tools,'Retrieval must not request web search');assert.equal(body.store,false);assert.equal(body.max_output_tokens,600);assert(!options.body.includes('PRIVATE NOTE'));calls++;return Response.json(reply());};

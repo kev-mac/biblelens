@@ -11,7 +11,7 @@ function fixture(){
  const sqlite=new DatabaseSync(':memory:');
  for(const file of fs.readdirSync('drizzle').filter(file=>file.endsWith('.sql')))sqlite.exec(fs.readFileSync('drizzle/'+file,'utf8'));
  const DB={prepare(sql){return {bind(...args){return {async first(){return sqlite.prepare(sql).get(...args)||null;},async run(){return sqlite.prepare(sql).run(...args);}};}};}};
- const user='trial-user-'+(++fixtureId);return {sqlite,user,env:{OPENAI_API_KEY:key,BIBLELENS_AI_ALLOWED_USERS:user,DB}};
+ const user='trial-user-'+(++fixtureId);return {sqlite,user,env:{BIBLELENS_SEMANTIC_RETRIEVAL_ENABLED:'1',OPENAI_API_KEY:key,BIBLELENS_AI_ALLOWED_USERS:user,DB}};
 }
 function request(user,input={query:'show me examples of miracles',edition:'web'},headers={}){return new Request('https://zlens.example.org/api/answer',{method:'POST',headers:{origin:'https://zlens.example.org','content-type':'application/json','x-biblelens-ai':'1',...(user?{'oai-authenticated-user-id':user}:{}),...headers},body:JSON.stringify(input)});}
 const context=[{label:'John 2:9',url:'#read/42/2/9',kind:'Scripture · WEB',text:'The ruler of the feast tasted the water now become wine.'}];

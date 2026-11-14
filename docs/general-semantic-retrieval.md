@@ -1,5 +1,13 @@
 # General meaning-based app retrieval
 
+**Paid evaluation paused on 2026-11-14 at Kevin's request.** The 50-query live
+evaluation made zero model requests and zero web calls, with $0 observed cost.
+The runtime evaluation flag was never enabled and remains absent at environment
+revision 2. The published Site remains version 419 / build 428. Do not resume
+billable tests without a new instruction. A default-off semantic rollout gate
+is preserved locally; it is not deployed and still needs its local regression
+pass before use.
+
 This is staged work after build 428. It is not published and has not yet been
 measured with real model plans. Do not describe the mock tests as evidence of
 broad semantic recall.

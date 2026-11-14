@@ -20,7 +20,7 @@ const server=http.createServer(async(req,res)=>{
   const url=new URL(req.url,'http://127.0.0.1:'+server.address().port),headers=new Headers(req.headers);headers.set('oai-authenticated-user-id',user);
   const chunks=[];for await(const chunk of req)chunks.push(chunk);
   if(url.pathname==='/api/answer')onlineRequests++;
-  const response=await worker.fetch(new Request(url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})}),{DB,OPENAI_API_KEY:'test-only-not-a-real-provider-key',BIBLELENS_AI_ALLOWED_USERS:user,...(evaluationEnabled?{BIBLELENS_AI_EVALUATION_ENABLED:'1'}:{})},{});
+  const response=await worker.fetch(new Request(url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})}),{DB,BIBLELENS_SEMANTIC_RETRIEVAL_ENABLED:'1',OPENAI_API_KEY:'test-only-not-a-real-provider-key',BIBLELENS_AI_ALLOWED_USERS:user,...(evaluationEnabled?{BIBLELENS_AI_EVALUATION_ENABLED:'1'}:{})},{});
   res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()));
  }catch(error){res.writeHead(500);res.end(error.message);}
 });
