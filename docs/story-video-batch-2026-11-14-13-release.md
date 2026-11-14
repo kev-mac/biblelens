@@ -19,3 +19,13 @@ The complete unchanged `npm run release:prepare` passed, including shared web/mo
 Candidate version 1.1.0, build 429. Runtime commit `f6b57f4afbf6529335f40522d077762170bc5d03`; source fingerprint `3b0317191cb3a066c0e8c49717e2943cc379e2633ef4b5400bd39c11bf9bbb15`. Web and offline identities match. Worker size 63,794,425 bytes, 2,265,863 bytes below the unchanged 66,060,288-byte cap. Mac must measure its own package and compare the signed assets before installation.
 
 The source branch is pushed. No merge into main, publication, live-site verification, native signing, installation or device launch occurred here. The Wall Completed remains generated in Flow but absent from Downloads and the manifest. The nine-video candidate is independently verified; the ten-video production batch is still incomplete. Parent must coordinate publication and can add the missing reviewed clip before release. Do not regenerate it or discard the originals.
+
+## Nine-video publication completed
+
+The owner authorized proceeding with the nine received videos without waiting for the wall clip. Canonical main was freshly fetched and remained at `1fea4efc`, with the candidate two commits ahead and zero behind. It was safely advanced to `7bb5662b915b826ab5a6ac45244dc68fb4db400d` without force. Current source and Sites were compared again; no newer independent work was overwritten.
+
+Build **429** is public at https://scripture-lens.kvn-mcgwn.chatgpt.site. Sites saved version **420**, source `5e97f202585547f7d4c6157cfa1f8cfb7c53f372`, deployment `appgdep_6af7c0f85bc48191a799493ec0778189` succeeded. Runtime environment revision 2 was preserved. `npm run release:verify` passed: live, canonical source, Sites mirror and prepared offline assets match fingerprint `3b0317191cb3a066c0e8c49717e2943cc379e2633ef4b5400bd39c11bf9bbb15`. All nine new live posters match source and offline bytes.
+
+**174 videos are now active; 109 stories still lack an active video.** The already-generated Wall Completed clip is one of those 109 and still awaits download/review. Do not regenerate it. Credits last observed: 1,048 AI and zero Flow; no further generation or spending occurred during this integration.
+
+Mac signing, its independent size check, signed/offline asset comparison, installation and physical-device launches remain parent-managed and were not performed here. Do not claim the devices are on 429 yet. This documentation checkpoint does not change the release fingerprint.
