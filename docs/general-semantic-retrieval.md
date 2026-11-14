@@ -5,8 +5,13 @@ evaluation made zero model requests and zero web calls, with $0 observed cost.
 The runtime evaluation flag was never enabled and remains absent at environment
 revision 2. The published Site remains version 419 / build 428. Do not resume
 billable tests without a new instruction. A default-off semantic rollout gate
-is preserved locally; it is not deployed and still needs its local regression
-pass before use.
+is preserved locally; it is not deployed. Local regression checks now pass;
+real model selection and answer quality remain unmeasured.
+
+The subsequent [grounded search review](grounded-search-improvements.md) records
+the Moses investigation follow-up, complete-quotation gates, precise app links,
+offline lifespan retrieval, held-out cases and current limitations. No billable
+testing or production rollout was performed for that work.
 
 This is staged work after build 428. It is not published and has not yet been
 measured with real model plans. Do not describe the mock tests as evidence of

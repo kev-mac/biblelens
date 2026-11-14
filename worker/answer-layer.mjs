@@ -16,6 +16,63 @@ function referencePeople(){
  }
  return peopleLookup;
 }
+
+// A relation, not a list of people/answers: resolve any indexed person's total
+// lifespan from the selected edition's wording. A birth/appointment age is not
+// a lifespan, and a failed lookup says nothing about absence from the Bible.
+function lifespanQuestion(message){
+ const text=String(message).replace(/[’`]/g,"'").replace(/[?.!]+$/,'').trim();
+ const patterns=[/^how (?:long|many years) did (.+?) live$/i,/^how old (?:was|is) (.+?) when (?:he|she|they) died$/i,/^(?:what was |what is )?(.+?)'s (?:age at death|lifespan)$/i,/^what (?:was|is) the (?:lifespan|age at death) of (.+)$/i];
+ const match=patterns.map(pattern=>pattern.exec(text)).find(Boolean);
+ if(!match)return null;
+ return {name:match[1].trim(),death:/\b(?:died|death)\b/i.test(text)};
+}
+const lifespanCache=new Map();
+function closePersonName(left,right,limit=2){
+ left=normalizedName(left);right=normalizedName(right);if(Math.abs(left.length-right.length)>limit)return false;
+ let row=Array.from({length:right.length+1},(_,index)=>index);
+ for(let i=1;i<=left.length;i++){const next=[i];for(let j=1;j<=right.length;j++)next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(left[i-1]===right[j-1]?0:1));row=next;}
+ return row.at(-1)<=limit;
+}
+function lifespanPeople(question){return (referencePeople().get(normalizedName(question.name))||[]).filter(person=>closePersonName(person.name,question.name));}
+async function lifespanPassages(question,edition='kjv'){
+ const cacheKey=edition+':'+normalizedName(question.name)+':'+question.death;
+ if(lifespanCache.has(cacheKey))return lifespanCache.get(cacheKey);
+ const people=lifespanPeople(question),found=new Map();
+ for(const person of people.slice(0,8)){
+  // Broad imported titles such as Lord, Son and King are not person names.
+  // Only close spelling forms may bind an age to a named subject here.
+  const name='(?:'+[...new Set([person.name,...person.aliases])].filter(alias=>alias&&closePersonName(person.name,alias,1)).map(escapedPattern).join('|')+')',seen=new Set();
+  // Imported entity references supply candidates only; the verse must confirm
+  // the named subject, total years and death/life relation in its own wording.
+  const candidates=[...person.refs,...searchPassages(person.name+' years',true).map(ref=>[ref.book,ref.chapter,ref.verse])];
+  for(const [book,ch,n]of candidates){
+   const key=book+':'+ch;if(seen.has(key))continue;seen.add(key);
+   const data=await chapter(book,ch);if(!data)continue;
+   for(const verse of data.verses){
+    const text=scriptureText(verse,edition);if(!text||!new RegExp('\\b'+name+'\\b','i').test(text)||!/\byears?\b/i.test(text))continue;
+    const number='(?:\\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand)';
+    if(!new RegExp('\\b'+number+'\\b','i').test(text))continue;
+    const death=/\bdied\b/i.test(text),total=/\ball (?:the )?days\b|\bwhole age\b|\bthese (?:were|are) (?:the )?years of (?:the )?life\b|\bthese (?:were|are) the days of the years of\b|\bthe years of (?:his|her) life,? were\b/i.test(text);
+    const adjacent=data.verses.filter(v=>Math.abs(v.n-verse.n)===1).map(v=>scriptureText(v,edition)).join(' ');
+    const adjacentDeath=new RegExp('\\b'+name+'\\b[^.;!?]{0,65}\\bdied\\b','i').test(adjacent);
+    const age=/\byears? old\b/i.test(text)||new RegExp('\\bthe days of '+name+' were\\b','i').test(text);
+    if(!(total||(death||adjacentDeath)&&age)||question.death&&!death&&!adjacentDeath||/\bbegat\b|\bbore\b|\bborn\b/i.test(text)&&!death)continue;
+    // Reject another person's age in the same verse (e.g. a named father).
+    if(!new RegExp('\\b'+name+"(?:'s)?\\b[^.!?]{0,160}\\byears?\\b",'i').test(text))continue;
+    const url='#read/'+book+'/'+ch+'/'+verse.n;
+    found.set(url,{book,chapter:ch,verse:verse.n,label:data.name+' '+ch+':'+verse.n,url,text,kind:scriptureKind(edition),score:death?2:1});
+   }
+  }
+ }
+ const result=[...found.values()].sort((a,b)=>b.score-a.score||a.book-b.book||a.chapter-b.chapter||a.verse-b.verse).slice(0,6);
+ if(lifespanCache.size>=32)lifespanCache.delete(lifespanCache.keys().next().value);lifespanCache.set(cacheKey,result);return result;
+}
+async function lifespanReply(question,edition){
+ const passages=await lifespanPassages(question,edition);
+ if(!passages.length)return referenceResponse('I did not find a passage that establishes '+question.name+"'s age at death or total lifespan. This does not establish that the Bible is silent about it.",[],[],{mode:'missing',answerability:'insufficient'});
+ return referenceResponse(passages[0].label+': "'+passages[0].text+'"',passages,[],{mode:'fact',answerability:'quoted-evidence'});
+}
 function familyQuestion(message,previous=''){
  const scope=namedBooks(message).map(b=>b.id);
  let input=message.toLowerCase().replace(/[’‘]/g,"'").replace(/[?.!]+$/,'').replace(/^(?:and |what about )/,'').trim();
@@ -180,6 +237,7 @@ async function namedPassageReply(message,edition='kjv'){
 async function answerIntent(message,previous,edition='kjv'){
  const intent=questionIntent(message);
  if(intent.violence)return violenceReply(message,edition);
+ const lifespan=lifespanQuestion(message);if(lifespan&&!queryReferences(message).length)return lifespanReply(lifespan,edition);
  const family=familyQuestion(message,previous);if(family)return familyReply(family,edition);
  if(!queryReferences(message).length){const named=await namedStoryReply(message,edition)||await namedPassageReply(message,edition);if(named)return named;}
  // Explicit passages retain priority over topic routing. Carry the food subject

@@ -1,0 +1,2157 @@
+{
+  "observedAt": "2026-11-14",
+  "purpose": "Read-only investigation, not a semantic model evaluation",
+  "productionArtifact": {
+    "path": ".release/sites-mirror/dist/server/index.js",
+    "version": "1.1.0",
+    "buildNumber": 428,
+    "sourceHash": "ba927ea485f20df8b2c8c0d619dc182cdd41d44143093b1283e5f4cee90ab141",
+    "fileSha256": "d812546d222636069f14060bc0fc932b97003fd8eb1833236543a881ef9f82b3"
+  },
+  "stagedArtifact": {
+    "path": "dist/server/index.js",
+    "version": "1.1.0",
+    "buildNumber": 428,
+    "sourceHash": "469f93eb9e3f5810f0315eb3cab07adf7e508129a1a495456cdf874cf063ae55",
+    "note": "Previously built staged artifact; not the published Site and not the later pause-gate source commit"
+  },
+  "counts": {
+    "realProviderCalls": 0,
+    "realWebCalls": 0,
+    "costUSD": 0,
+    "localQueries": 14,
+    "positiveTargets": 13,
+    "localAnswerExpectedSource": 8,
+    "libraryExpectedSource": 7,
+    "mockedProviderResponses": 24
+  },
+  "rows": [
+    {
+      "query": "how long did Moses live",
+      "expectedAppVerse": "#read/4/34/7",
+      "expectedText": {
+        "kjv": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "asv": "And Moses was a hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "web": "Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Exodus 19:13: “There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": false,
+        "citations": [
+          {
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13"
+          },
+          {
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13"
+          },
+          {
+            "label": "Joshua 13:21",
+            "url": "#read/5/13/21"
+          },
+          {
+            "label": "Exodus 19:14",
+            "url": "#read/1/19/14"
+          },
+          {
+            "label": "Numbers 14:26",
+            "url": "#read/3/14/26"
+          },
+          {
+            "label": "Numbers 14:27",
+            "url": "#read/3/14/27"
+          },
+          {
+            "label": "Numbers 14:28",
+            "url": "#read/3/14/28"
+          },
+          {
+            "label": "Numbers 20:14",
+            "url": "#read/3/20/14"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13",
+            "text": "There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount."
+          },
+          {
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13",
+            "text": "And that their children, which have not known any thing, may hear, and learn to fear the Lord your God, as long as ye live in the land whither ye go over Jordan to possess it."
+          },
+          {
+            "label": "Joshua 13:21",
+            "url": "#read/5/13/21",
+            "text": "And all the cities of the plain, and all the kingdom of Sihon king of the Amorites, which reigned in Heshbon, whom Moses smote with the princes of Midian, Evi, and Rekem, and Zur, and Hur, and Reba, which were dukes of Sihon, dwelling in the country."
+          },
+          {
+            "label": "Exodus 19:14",
+            "url": "#read/1/19/14",
+            "text": "And Moses went down from the mount unto the people, and sanctified the people; and they washed their clothes."
+          },
+          {
+            "label": "Numbers 14:26",
+            "url": "#read/3/14/26",
+            "text": "And the Lord spake unto Moses and unto Aaron, saying,"
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": [
+          {
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13",
+            "text": "There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount."
+          },
+          {
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13",
+            "text": "And that their children, which have not known any thing, may hear, and learn to fear the Lord your God, as long as ye live in the land whither ye go over Jordan to possess it."
+          },
+          {
+            "label": "Deuteronomy 1:6",
+            "url": "#read/4/1/6",
+            "text": "The Lord our God spake unto us in Horeb, saying, Ye have dwelt long enough in this mount:"
+          },
+          {
+            "label": "Numbers 20:15",
+            "url": "#read/3/20/15",
+            "text": "How our fathers went down into Egypt, and we have dwelt in Egypt a long time; and the Egyptians vexed us, and our fathers:"
+          },
+          {
+            "label": "Joshua 24:7",
+            "url": "#read/5/24/7",
+            "text": "And when they cried unto the Lord, he put darkness between you and the Egyptians, and brought the sea upon them, and covered them; and your eyes have seen what I have done in Egypt: and ye dwelt in the wilderness a long season."
+          }
+        ]
+      }
+    },
+    {
+      "query": "How old was Moses when he died?",
+      "expectedAppVerse": "#read/4/34/7",
+      "expectedText": {
+        "kjv": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "asv": "And Moses was a hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "web": "Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Deuteronomy 34:7: “And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7"
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38"
+          },
+          {
+            "label": "Numbers 3:39",
+            "url": "#read/3/3/39"
+          },
+          {
+            "label": "Numbers 3:40",
+            "url": "#read/3/3/40"
+          },
+          {
+            "label": "Deuteronomy 34:5",
+            "url": "#read/4/34/5"
+          },
+          {
+            "label": "2 Kings 14:6",
+            "url": "#read/11/14/6"
+          },
+          {
+            "label": "2 Chronicles 25:4",
+            "url": "#read/13/25/4"
+          },
+          {
+            "label": "Job 14:8",
+            "url": "#read/17/14/8"
+          },
+          {
+            "label": "Exodus 1:8 — Which kings of Egypt were the Pharaohs of the oppression and the exodus?",
+            "url": "https://ebible.org/eng-kjv/EXO01.htm"
+          },
+          {
+            "label": "Exodus 2: KJV",
+            "url": "https://ebible.org/eng-kjv/EXO02.htm"
+          },
+          {
+            "label": "Exodus 5: KJV",
+            "url": "https://ebible.org/eng-kjv/EXO05.htm"
+          },
+          {
+            "label": "1 Kings 6: KJV",
+            "url": "https://ebible.org/eng-kjv/1KI06.htm"
+          },
+          {
+            "label": "1 Kings 11: KJV",
+            "url": "https://ebible.org/eng-kjv/1KI11.htm"
+          },
+          {
+            "label": "2 Kings 23: KJV",
+            "url": "https://ebible.org/eng-kjv/2KI23.htm"
+          },
+          {
+            "label": "Jeremiah 44: KJV",
+            "url": "https://ebible.org/eng-kjv/JER44.htm"
+          },
+          {
+            "label": "Exodus 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+            "url": "https://bolls.life/get-text/WLC/2/1/"
+          },
+          {
+            "label": "Exodus 1: Brenton Greek edition of the Septuagint",
+            "url": "https://ebible.org/grcbrent/EXO01.htm"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "text": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38",
+            "text": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
+          },
+          {
+            "label": "Numbers 3:39",
+            "url": "#read/3/3/39",
+            "text": "All that were numbered of the Levites, which Moses and Aaron numbered at the commandment of the Lord, throughout their families, all the males from a month old and upward, were twenty and two thousand."
+          },
+          {
+            "label": "Numbers 3:40",
+            "url": "#read/3/3/40",
+            "text": "And the Lord said unto Moses, Number all the firstborn of the males of the children of Israel from a month old and upward, and take the number of their names."
+          },
+          {
+            "label": "Deuteronomy 34:5",
+            "url": "#read/4/34/5",
+            "text": "So Moses the servant of the Lord died there in the land of Moab, according to the word of the Lord."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "2 Chronicles 25:4",
+            "url": "#read/13/25/4",
+            "text": "But he slew not their children, but did as it is written in the law in the book of Moses, where the Lord commanded, saying, The fathers shall not die for the children, neither shall the children die for the fathers, but every man shall die for his own sin."
+          },
+          {
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "text": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38",
+            "text": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
+          },
+          {
+            "label": "2 Kings 14:6",
+            "url": "#read/11/14/6",
+            "text": "But the children of the murderers he slew not: according unto that which is written in the book of the law of Moses, wherein the Lord commanded, saying, The fathers shall not be put to death for the children, nor the children be put to death for the fathers; but every man shall be put to death for his own sin."
+          },
+          {
+            "label": "Numbers 26:61",
+            "url": "#read/3/26/61",
+            "text": "And Nadab and Abihu died, when they offered strange fire before the Lord."
+          }
+        ]
+      }
+    },
+    {
+      "query": "What was Moses’s age at death?",
+      "expectedAppVerse": "#read/4/34/7",
+      "expectedText": {
+        "kjv": "And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "asv": "And Moses was a hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.",
+        "web": "Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Exodus 2:11: “And it came to pass in those days, when Moses was grown, that he went out unto his brethren, and looked on their burdens: and he spied an Egyptian smiting an Hebrew, one of his brethren.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": false,
+        "citations": [
+          {
+            "label": "Exodus 2:11",
+            "url": "#read/1/2/11"
+          },
+          {
+            "label": "Leviticus 8:15",
+            "url": "#read/2/8/15"
+          },
+          {
+            "label": "Leviticus 8:23",
+            "url": "#read/2/8/23"
+          },
+          {
+            "label": "Numbers 25:5",
+            "url": "#read/3/25/5"
+          },
+          {
+            "label": "Numbers 31:7",
+            "url": "#read/3/31/7"
+          },
+          {
+            "label": "Deuteronomy 4:46",
+            "url": "#read/4/4/46"
+          },
+          {
+            "label": "Joshua 12:6",
+            "url": "#read/5/12/6"
+          },
+          {
+            "label": "Joshua 13:21",
+            "url": "#read/5/13/21"
+          },
+          {
+            "label": "Deuteronomy 11:2 — Eyewitness address needs to be read alongside the census generation limits",
+            "url": "https://ebible.org/eng-kjv/DEU11.htm"
+          },
+          {
+            "label": "Numbers 26 · census criteria and generation",
+            "url": "https://ebible.org/eng-kjv/NUM26.htm"
+          },
+          {
+            "label": "Deuteronomy 29 · primary text",
+            "url": "https://ebible.org/eng-kjv/DEU29.htm"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Exodus 2:11",
+            "url": "#read/1/2/11",
+            "text": "And it came to pass in those days, when Moses was grown, that he went out unto his brethren, and looked on their burdens: and he spied an Egyptian smiting an Hebrew, one of his brethren."
+          },
+          {
+            "label": "Leviticus 8:15",
+            "url": "#read/2/8/15",
+            "text": "And he slew it; and Moses took the blood, and put it upon the horns of the altar round about with his finger, and purified the altar, and poured the blood at the bottom of the altar, and sanctified it, to make reconciliation upon it."
+          },
+          {
+            "label": "Leviticus 8:23",
+            "url": "#read/2/8/23",
+            "text": "And he slew it; and Moses took of the blood of it, and put it upon the tip of Aaron's right ear, and upon the thumb of his right hand, and upon the great toe of his right foot."
+          },
+          {
+            "label": "Numbers 25:5",
+            "url": "#read/3/25/5",
+            "text": "And Moses said unto the judges of Israel, Slay ye every one his men that were joined unto Baalpeor."
+          },
+          {
+            "label": "Numbers 31:7",
+            "url": "#read/3/31/7",
+            "text": "And they warred against the Midianites, as the Lord commanded Moses; and they slew all the males."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": [
+          {
+            "label": "Joshua 12:6",
+            "url": "#read/5/12/6",
+            "text": "Them did Moses the servant of the Lord and the children of Israel smite: and Moses the servant of the Lord gave it for a possession unto the Reubenites, and the Gadites, and the half tribe of Manasseh."
+          },
+          {
+            "label": "2 Kings 14:6",
+            "url": "#read/11/14/6",
+            "text": "But the children of the murderers he slew not: according unto that which is written in the book of the law of Moses, wherein the Lord commanded, saying, The fathers shall not be put to death for the children, nor the children be put to death for the fathers; but every man shall be put to death for his own sin."
+          },
+          {
+            "label": "Joshua 11:17",
+            "url": "#read/5/11/17",
+            "text": "Even from the mount Halak, that goeth up to Seir, even unto Baalgad in the valley of Lebanon under mount Hermon: and all their kings he took, and smote them, and slew them."
+          },
+          {
+            "label": "Joshua 13:21",
+            "url": "#read/5/13/21",
+            "text": "And all the cities of the plain, and all the kingdom of Sihon king of the Amorites, which reigned in Heshbon, whom Moses smote with the princes of Midian, Evi, and Rekem, and Zur, and Hur, and Reba, which were dukes of Sihon, dwelling in the country."
+          },
+          {
+            "label": "2 Chronicles 25:4",
+            "url": "#read/13/25/4",
+            "text": "But he slew not their children, but did as it is written in the law in the book of Moses, where the Lord commanded, saying, The fathers shall not die for the children, neither shall the children die for the fathers, but every man shall die for his own sin."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how long did Abraham live",
+      "expectedAppVerse": "#read/0/25/7",
+      "expectedText": {
+        "kjv": "And these are the days of the years of Abraham's life which he lived, an hundred threescore and fifteen years.",
+        "asv": "And these are the days of the years of Abraham’s life which he lived, a hundred threescore and fifteen years.",
+        "web": "These are the days of the years of Abraham’s life which he lived: one hundred seventy-five years."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Genesis 20:1: “And Abraham journeyed from thence toward the south country, and dwelled between Kadesh and Shur, and sojourned in Gerar.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": false,
+        "citations": [
+          {
+            "label": "Genesis 20:1",
+            "url": "#read/0/20/1"
+          },
+          {
+            "label": "Ezekiel 33:24",
+            "url": "#read/25/33/24"
+          },
+          {
+            "label": "Matthew 22:32",
+            "url": "#read/39/22/32"
+          },
+          {
+            "label": "1 Peter 3:6",
+            "url": "#read/59/3/6"
+          },
+          {
+            "label": "Genesis 20:2",
+            "url": "#read/0/20/2"
+          },
+          {
+            "label": "Deuteronomy 1:6",
+            "url": "#read/4/1/6"
+          },
+          {
+            "label": "Deuteronomy 1:8",
+            "url": "#read/4/1/8"
+          },
+          {
+            "label": "Luke 20:37",
+            "url": "#read/41/20/37"
+          },
+          {
+            "label": "Exodus 12:40 — Four hundred and thirty years in Egypt — or in Egypt and Canaan? And 400, or 430?",
+            "url": "https://ebible.org/eng-kjv/EXO12.htm"
+          },
+          {
+            "label": "Genesis 15: KJV",
+            "url": "https://ebible.org/eng-kjv/GEN15.htm"
+          },
+          {
+            "label": "Acts 7: KJV",
+            "url": "https://ebible.org/eng-kjv/ACT07.htm"
+          },
+          {
+            "label": "Galatians 3: KJV",
+            "url": "https://ebible.org/eng-kjv/GAL03.htm"
+          },
+          {
+            "label": "Exodus 12: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+            "url": "https://bolls.life/get-text/WLC/2/12/"
+          },
+          {
+            "label": "Genesis 15: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+            "url": "https://bolls.life/get-text/WLC/1/15/"
+          },
+          {
+            "label": "Exodus 12: Brenton Greek edition of the Septuagint",
+            "url": "https://ebible.org/grcbrent/EXO12.htm"
+          },
+          {
+            "label": "Genesis 15: Brenton Greek edition of the Septuagint",
+            "url": "https://ebible.org/grcbrent/GEN15.htm"
+          },
+          {
+            "label": "Acts 7: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+            "url": "https://bolls.life/get-text/TISCH/44/7/"
+          },
+          {
+            "label": "Acts 7: Greek New Testament, Textus Receptus (bolls.life)",
+            "url": "https://bolls.life/get-text/TR/44/7/"
+          },
+          {
+            "label": "Galatians 3: Greek New Testament, Tischendorf 8th edition (bolls.life)",
+            "url": "https://bolls.life/get-text/TISCH/48/3/"
+          },
+          {
+            "label": "Galatians 3: Greek New Testament, Textus Receptus (bolls.life)",
+            "url": "https://bolls.life/get-text/TR/48/3/"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Genesis 20:1",
+            "url": "#read/0/20/1",
+            "text": "And Abraham journeyed from thence toward the south country, and dwelled between Kadesh and Shur, and sojourned in Gerar."
+          },
+          {
+            "label": "Ezekiel 33:24",
+            "url": "#read/25/33/24",
+            "text": "Son of man, they that inhabit those wastes of the land of Israel speak, saying, Abraham was one, and he inherited the land: but we are many; the land is given us for inheritance."
+          },
+          {
+            "label": "Matthew 22:32",
+            "url": "#read/39/22/32",
+            "text": "I am the God of Abraham, and the God of Isaac, and the God of Jacob? God is not the God of the dead, but of the living."
+          },
+          {
+            "label": "1 Peter 3:6",
+            "url": "#read/59/3/6",
+            "text": "Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well, and are not afraid with any amazement."
+          },
+          {
+            "label": "Genesis 20:2",
+            "url": "#read/0/20/2",
+            "text": "And Abraham said of Sarah his wife, She is my sister: and Abimelech king of Gerar sent, and took Sarah."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": [
+          {
+            "label": "Deuteronomy 1:6",
+            "url": "#read/4/1/6",
+            "text": "The Lord our God spake unto us in Horeb, saying, Ye have dwelt long enough in this mount:"
+          },
+          {
+            "label": "Ezekiel 33:24",
+            "url": "#read/25/33/24",
+            "text": "Son of man, they that inhabit those wastes of the land of Israel speak, saying, Abraham was one, and he inherited the land: but we are many; the land is given us for inheritance."
+          },
+          {
+            "label": "1 Peter 3:6",
+            "url": "#read/59/3/6",
+            "text": "Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well, and are not afraid with any amazement."
+          },
+          {
+            "label": "Genesis 20:1",
+            "url": "#read/0/20/1",
+            "text": "And Abraham journeyed from thence toward the south country, and dwelled between Kadesh and Shur, and sojourned in Gerar."
+          },
+          {
+            "label": "Matthew 22:32",
+            "url": "#read/39/22/32",
+            "text": "I am the God of Abraham, and the God of Isaac, and the God of Jacob? God is not the God of the dead, but of the living."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how old was Sarah when she died",
+      "expectedAppVerse": "#read/0/23/1",
+      "expectedText": {
+        "kjv": "And Sarah was an hundred and seven and twenty years old: these were the years of the life of Sarah.",
+        "asv": "And the life of Sarah was a hundred and seven and twenty years: these were the years of the life of Sarah.",
+        "web": "Sarah lived one hundred twenty-seven years. This was the length of Sarah’s life."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Genesis 21:7: “And she said, Who would have said unto Abraham, that Sarah should have given children suck? for I have born him a son in his old age.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": false,
+        "citations": [
+          {
+            "label": "Genesis 21:7",
+            "url": "#read/0/21/7"
+          },
+          {
+            "label": "Genesis 24:36",
+            "url": "#read/0/24/36"
+          },
+          {
+            "label": "Genesis 24:67",
+            "url": "#read/0/24/67"
+          },
+          {
+            "label": "Romans 4:19",
+            "url": "#read/44/4/19"
+          },
+          {
+            "label": "Genesis 17:17",
+            "url": "#read/0/17/17"
+          },
+          {
+            "label": "Genesis 18:11",
+            "url": "#read/0/18/11"
+          },
+          {
+            "label": "Genesis 18:12",
+            "url": "#read/0/18/12"
+          },
+          {
+            "label": "Genesis 18:13",
+            "url": "#read/0/18/13"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Genesis 21:7",
+            "url": "#read/0/21/7",
+            "text": "And she said, Who would have said unto Abraham, that Sarah should have given children suck? for I have born him a son in his old age."
+          },
+          {
+            "label": "Genesis 24:36",
+            "url": "#read/0/24/36",
+            "text": "And Sarah my master's wife bare a son to my master when she was old: and unto him hath he given all that he hath."
+          },
+          {
+            "label": "Genesis 24:67",
+            "url": "#read/0/24/67",
+            "text": "And Isaac brought her into his mother Sarah's tent, and took Rebekah, and she became his wife; and he loved her: and Isaac was comforted after his mother's death."
+          },
+          {
+            "label": "Romans 4:19",
+            "url": "#read/44/4/19",
+            "text": "And being not weak in faith, he considered not his own body now dead, when he was about an hundred years old, neither yet the deadness of Sarah's womb:"
+          },
+          {
+            "label": "Genesis 17:17",
+            "url": "#read/0/17/17",
+            "text": "Then Abraham fell upon his face, and laughed, and said in his heart, Shall a child be born unto him that is an hundred years old? and shall Sarah, that is ninety years old, bear?"
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Genesis 24:67",
+            "url": "#read/0/24/67",
+            "text": "And Isaac brought her into his mother Sarah's tent, and took Rebekah, and she became his wife; and he loved her: and Isaac was comforted after his mother's death."
+          },
+          {
+            "label": "Romans 4:19",
+            "url": "#read/44/4/19",
+            "text": "And being not weak in faith, he considered not his own body now dead, when he was about an hundred years old, neither yet the deadness of Sarah's womb:"
+          },
+          {
+            "label": "Genesis 24:36",
+            "url": "#read/0/24/36",
+            "text": "And Sarah my master's wife bare a son to my master when she was old: and unto him hath he given all that he hath."
+          },
+          {
+            "label": "Genesis 21:7",
+            "url": "#read/0/21/7",
+            "text": "And she said, Who would have said unto Abraham, that Sarah should have given children suck? for I have born him a son in his old age."
+          },
+          {
+            "label": "Genesis 25:8",
+            "url": "#read/0/25/8",
+            "text": "Then Abraham gave up the ghost, and died in a good old age, an old man, and full of years; and was gathered to his people."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how old was Joseph when he died",
+      "expectedAppVerse": "#read/0/50/26",
+      "expectedText": {
+        "kjv": "So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt.",
+        "asv": "So Joseph died, being a hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt.",
+        "web": "So Joseph died, being one hundred ten years old, and they embalmed him, and he was put in a coffin in Egypt."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Genesis 50:26: “So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Genesis 50:26",
+            "url": "#read/0/50/26"
+          },
+          {
+            "label": "Genesis 27:2",
+            "url": "#read/0/27/2"
+          },
+          {
+            "label": "Genesis 48:21",
+            "url": "#read/0/48/21"
+          },
+          {
+            "label": "Genesis 50:24",
+            "url": "#read/0/50/24"
+          },
+          {
+            "label": "Exodus 1:6",
+            "url": "#read/1/1/6"
+          },
+          {
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7"
+          },
+          {
+            "label": "Joshua 24:29",
+            "url": "#read/5/24/29"
+          },
+          {
+            "label": "Job 14:8",
+            "url": "#read/17/14/8"
+          },
+          {
+            "label": "Exodus 1:8 — Which kings of Egypt were the Pharaohs of the oppression and the exodus?",
+            "url": "https://ebible.org/eng-kjv/EXO01.htm"
+          },
+          {
+            "label": "Exodus 2: KJV",
+            "url": "https://ebible.org/eng-kjv/EXO02.htm"
+          },
+          {
+            "label": "Exodus 5: KJV",
+            "url": "https://ebible.org/eng-kjv/EXO05.htm"
+          },
+          {
+            "label": "1 Kings 6: KJV",
+            "url": "https://ebible.org/eng-kjv/1KI06.htm"
+          },
+          {
+            "label": "1 Kings 11: KJV",
+            "url": "https://ebible.org/eng-kjv/1KI11.htm"
+          },
+          {
+            "label": "2 Kings 23: KJV",
+            "url": "https://ebible.org/eng-kjv/2KI23.htm"
+          },
+          {
+            "label": "Jeremiah 44: KJV",
+            "url": "https://ebible.org/eng-kjv/JER44.htm"
+          },
+          {
+            "label": "Exodus 1: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+            "url": "https://bolls.life/get-text/WLC/2/1/"
+          },
+          {
+            "label": "Exodus 1: Brenton Greek edition of the Septuagint",
+            "url": "https://ebible.org/grcbrent/EXO01.htm"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Genesis 50:26",
+            "url": "#read/0/50/26",
+            "text": "So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt."
+          },
+          {
+            "label": "Genesis 27:2",
+            "url": "#read/0/27/2",
+            "text": "And he said, Behold now, I am old, I know not the day of my death:"
+          },
+          {
+            "label": "Genesis 48:21",
+            "url": "#read/0/48/21",
+            "text": "And Israel said unto Joseph, Behold, I die: but God shall be with you, and bring you again unto the land of your fathers."
+          },
+          {
+            "label": "Genesis 50:24",
+            "url": "#read/0/50/24",
+            "text": "And Joseph said unto his brethren, I die: and God will surely visit you, and bring you out of this land unto the land which he sware to Abraham, to Isaac, and to Jacob."
+          },
+          {
+            "label": "Exodus 1:6",
+            "url": "#read/1/1/6",
+            "text": "And Joseph died, and all his brethren, and all that generation."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Genesis 50:26",
+            "url": "#read/0/50/26",
+            "text": "So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt."
+          },
+          {
+            "label": "Matthew 2:15",
+            "url": "#read/39/2/15",
+            "text": "And was there until the death of Herod: that it might be fulfilled which was spoken of the Lord by the prophet, saying, Out of Egypt have I called my son."
+          },
+          {
+            "label": "Joshua 24:29",
+            "url": "#read/5/24/29",
+            "text": "And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old."
+          },
+          {
+            "label": "Job 14:8",
+            "url": "#read/17/14/8",
+            "text": "Though the root thereof wax old in the earth, and the stock thereof die in the ground;"
+          },
+          {
+            "label": "Genesis 48:21",
+            "url": "#read/0/48/21",
+            "text": "And Israel said unto Joseph, Behold, I die: but God shall be with you, and bring you again unto the land of your fathers."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how long did Joshua live",
+      "expectedAppVerse": "#read/5/24/29",
+      "expectedText": {
+        "kjv": "And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old.",
+        "asv": "And it came to pass after these things, that Joshua the son of Nun, the servant of Jehovah, died, being a hundred and ten years old.",
+        "web": "After these things, Joshua the son of Nun, the servant of the LORD, died, being one hundred ten years old."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Joshua 9:13: “And these bottles of wine, which we filled, were new; and, behold, they be rent: and these our garments and our shoes are become old by reason of the very long journey.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": false,
+        "citations": [
+          {
+            "label": "Joshua 9:13",
+            "url": "#read/5/9/13"
+          },
+          {
+            "label": "Joshua 9:15",
+            "url": "#read/5/9/15"
+          },
+          {
+            "label": "Joshua 9:11",
+            "url": "#read/5/9/11"
+          },
+          {
+            "label": "Joshua 9:12",
+            "url": "#read/5/9/12"
+          },
+          {
+            "label": "Joshua 9:14",
+            "url": "#read/5/9/14"
+          },
+          {
+            "label": "Joshua 9:22",
+            "url": "#read/5/9/22"
+          },
+          {
+            "label": "Joshua 9:23",
+            "url": "#read/5/9/23"
+          },
+          {
+            "label": "Joshua 9:24",
+            "url": "#read/5/9/24"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Joshua 9:13",
+            "url": "#read/5/9/13",
+            "text": "And these bottles of wine, which we filled, were new; and, behold, they be rent: and these our garments and our shoes are become old by reason of the very long journey."
+          },
+          {
+            "label": "Joshua 9:15",
+            "url": "#read/5/9/15",
+            "text": "And Joshua made peace with them, and made a league with them, to let them live: and the princes of the congregation sware unto them."
+          },
+          {
+            "label": "Joshua 9:11",
+            "url": "#read/5/9/11",
+            "text": "Wherefore our elders and all the inhabitants of our country spake to us, saying, Take victuals with you for the journey, and go to meet them, and say unto them, We are your servants: therefore now make ye a league with us."
+          },
+          {
+            "label": "Joshua 9:12",
+            "url": "#read/5/9/12",
+            "text": "This our bread we took hot for our provision out of our houses on the day we came forth to go unto you; but now, behold, it is dry, and it is mouldy:"
+          },
+          {
+            "label": "Joshua 9:14",
+            "url": "#read/5/9/14",
+            "text": "And the men took of their victuals, and asked not counsel at the mouth of the Lord."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": [
+          {
+            "label": "Joshua 9:13",
+            "url": "#read/5/9/13",
+            "text": "And these bottles of wine, which we filled, were new; and, behold, they be rent: and these our garments and our shoes are become old by reason of the very long journey."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how old was Methuselah when he died",
+      "expectedAppVerse": "#read/0/5/27",
+      "expectedText": {
+        "kjv": "And all the days of Methuselah were nine hundred sixty and nine years: and he died.",
+        "asv": "and all the days of Methuselah were nine hundred sixty and nine years: and he died.",
+        "web": "All the days of Methuselah were nine hundred sixty-nine years, then he died."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Genesis 5:27: “And all the days of Methuselah were nine hundred sixty and nine years: and he died.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Genesis 5:27",
+            "url": "#read/0/5/27"
+          },
+          {
+            "label": "Genesis 5:20",
+            "url": "#read/0/5/20"
+          },
+          {
+            "label": "Genesis 5:21",
+            "url": "#read/0/5/21"
+          },
+          {
+            "label": "Genesis 5:22",
+            "url": "#read/0/5/22"
+          },
+          {
+            "label": "Genesis 5:25",
+            "url": "#read/0/5/25"
+          },
+          {
+            "label": "Genesis 5:26",
+            "url": "#read/0/5/26"
+          },
+          {
+            "label": "Genesis 5:19",
+            "url": "#read/0/5/19"
+          },
+          {
+            "label": "Genesis 5:23",
+            "url": "#read/0/5/23"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Genesis 5:27",
+            "url": "#read/0/5/27",
+            "text": "And all the days of Methuselah were nine hundred sixty and nine years: and he died."
+          },
+          {
+            "label": "Genesis 5:20",
+            "url": "#read/0/5/20",
+            "text": "And all the days of Jared were nine hundred sixty and two years: and he died."
+          },
+          {
+            "label": "Genesis 5:21",
+            "url": "#read/0/5/21",
+            "text": "And Enoch lived sixty and five years, and begat Methuselah:"
+          },
+          {
+            "label": "Genesis 5:22",
+            "url": "#read/0/5/22",
+            "text": "And Enoch walked with God after he begat Methuselah three hundred years, and begat sons and daughters:"
+          },
+          {
+            "label": "Genesis 5:25",
+            "url": "#read/0/5/25",
+            "text": "And Methuselah lived an hundred eighty and seven years, and begat Lamech."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Genesis 5:27",
+            "url": "#read/0/5/27",
+            "text": "And all the days of Methuselah were nine hundred sixty and nine years: and he died."
+          },
+          {
+            "label": "Genesis 5:21",
+            "url": "#read/0/5/21",
+            "text": "And Enoch lived sixty and five years, and begat Methuselah:"
+          }
+        ]
+      }
+    },
+    {
+      "query": "how old was Aaron when he died",
+      "expectedAppVerse": "#read/3/33/39",
+      "expectedText": {
+        "kjv": "And Aaron was an hundred and twenty and three years old when he died in mount Hor.",
+        "asv": "And Aaron was a hundred and twenty and three years old when he died in mount Hor.",
+        "web": "Aaron was one hundred twenty-three years old when he died in Mount Hor."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Numbers 33:39: “And Aaron was an hundred and twenty and three years old when he died in mount Hor.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Numbers 33:39",
+            "url": "#read/3/33/39"
+          },
+          {
+            "label": "Leviticus 16:1",
+            "url": "#read/2/16/1"
+          },
+          {
+            "label": "Leviticus 16:2",
+            "url": "#read/2/16/2"
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38"
+          },
+          {
+            "label": "Numbers 3:39",
+            "url": "#read/3/3/39"
+          },
+          {
+            "label": "Numbers 4:19",
+            "url": "#read/3/4/19"
+          },
+          {
+            "label": "Numbers 33:38",
+            "url": "#read/3/33/38"
+          },
+          {
+            "label": "Deuteronomy 10:6",
+            "url": "#read/4/10/6"
+          },
+          {
+            "label": "1 Chronicles 24:28 — “Of Mahli came Eleazar, who had no sons” — Brenton’s Greek adds a second name, Ithamar",
+            "url": "https://ebible.org/eng-kjv/1CH24.htm"
+          },
+          {
+            "label": "1 Chronicles 24: Hebrew, Westminster Leningrad Codex (WLC) digital text",
+            "url": "https://bolls.life/get-text/WLC/13/24/"
+          },
+          {
+            "label": "1 Chronicles 24: Brenton Greek edition of the Septuagint",
+            "url": "https://ebible.org/grcbrent/1CH24.htm"
+          },
+          {
+            "label": "1 Chronicles — NETS (English reading)",
+            "url": "https://septuaginta.uni-goettingen.de/static/ioscs/pdf/nets/13-1suppl-nets.pdf"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Numbers 33:39",
+            "url": "#read/3/33/39",
+            "text": "And Aaron was an hundred and twenty and three years old when he died in mount Hor."
+          },
+          {
+            "label": "Leviticus 16:1",
+            "url": "#read/2/16/1",
+            "text": "And the Lord spake unto Moses after the death of the two sons of Aaron, when they offered before the Lord, and died;"
+          },
+          {
+            "label": "Leviticus 16:2",
+            "url": "#read/2/16/2",
+            "text": "And the Lord said unto Moses, Speak unto Aaron thy brother, that he come not at all times into the holy place within the vail before the mercy seat, which is upon the ark; that he die not: for I will appear in the cloud upon the mercy seat."
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38",
+            "text": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
+          },
+          {
+            "label": "Numbers 3:39",
+            "url": "#read/3/3/39",
+            "text": "All that were numbered of the Levites, which Moses and Aaron numbered at the commandment of the Lord, throughout their families, all the males from a month old and upward, were twenty and two thousand."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Numbers 33:39",
+            "url": "#read/3/33/39",
+            "text": "And Aaron was an hundred and twenty and three years old when he died in mount Hor."
+          },
+          {
+            "label": "Numbers 3:38",
+            "url": "#read/3/3/38",
+            "text": "But those that encamp before the tabernacle toward the east, even before the tabernacle of the congregation eastward, shall be Moses, and Aaron and his sons, keeping the charge of the sanctuary for the charge of the children of Israel; and the stranger that cometh nigh shall be put to death."
+          },
+          {
+            "label": "Numbers 26:61",
+            "url": "#read/3/26/61",
+            "text": "And Nadab and Abihu died, when they offered strange fire before the Lord."
+          },
+          {
+            "label": "Joshua 24:29",
+            "url": "#read/5/24/29",
+            "text": "And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old."
+          },
+          {
+            "label": "Numbers 4:19",
+            "url": "#read/3/4/19",
+            "text": "But thus do unto them, that they may live, and not die, when they approach unto the most holy things: Aaron and his sons shall go in, and appoint them every one to his service and to his burden:"
+          }
+        ]
+      }
+    },
+    {
+      "query": "how old was Jesus when he died",
+      "expectedAppVerse": null,
+      "expectedText": null,
+      "localReply": {
+        "mode": "passage",
+        "answer": "Job 14:8: “Though the root thereof wax old in the earth, and the stock thereof die in the ground;”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": null,
+        "citations": [
+          {
+            "label": "Job 14:8",
+            "url": "#read/17/14/8"
+          },
+          {
+            "label": "Job 42:17",
+            "url": "#read/17/42/17"
+          },
+          {
+            "label": "John 11:25",
+            "url": "#read/42/11/25"
+          },
+          {
+            "label": "Acts 21:13",
+            "url": "#read/43/21/13"
+          },
+          {
+            "label": "Romans 6:3",
+            "url": "#read/44/6/3"
+          },
+          {
+            "label": "Romans 6:11",
+            "url": "#read/44/6/11"
+          },
+          {
+            "label": "2 Corinthians 4:10",
+            "url": "#read/46/4/10"
+          },
+          {
+            "label": "2 Corinthians 4:11",
+            "url": "#read/46/4/11"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Job 14:8",
+            "url": "#read/17/14/8",
+            "text": "Though the root thereof wax old in the earth, and the stock thereof die in the ground;"
+          },
+          {
+            "label": "Job 42:17",
+            "url": "#read/17/42/17",
+            "text": "So Job died, being old and full of days."
+          },
+          {
+            "label": "John 11:25",
+            "url": "#read/42/11/25",
+            "text": "Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:"
+          },
+          {
+            "label": "Acts 21:13",
+            "url": "#read/43/21/13",
+            "text": "Then Paul answered, What mean ye to weep and to break mine heart? for I am ready not to be bound only, but also to die at Jerusalem for the name of the Lord Jesus."
+          },
+          {
+            "label": "Romans 6:3",
+            "url": "#read/44/6/3",
+            "text": "Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death?"
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": null,
+        "top5": [
+          {
+            "label": "Matthew 9:18",
+            "url": "#read/39/9/18",
+            "text": "While he spake these things unto them, behold, there came a certain ruler, and worshipped him, saying, My daughter is even now dead: but come and lay thy hand upon her, and she shall live."
+          },
+          {
+            "label": "Romans 6:3",
+            "url": "#read/44/6/3",
+            "text": "Know ye not, that so many of us as were baptized into Jesus Christ were baptized into his death?"
+          },
+          {
+            "label": "2 Corinthians 5:17",
+            "url": "#read/46/5/17",
+            "text": "Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new."
+          },
+          {
+            "label": "Revelation 20:4",
+            "url": "#read/65/20/4",
+            "text": "And I saw thrones, and they sat upon them, and judgment was given unto them: and I saw the souls of them that were beheaded for the witness of Jesus, and for the word of God, and which had not worshipped the beast, neither his image, neither had received his mark upon their foreheads, or in their hands; and they lived and reigned with Christ a thousand years."
+          },
+          {
+            "label": "John 21:18",
+            "url": "#read/42/21/18",
+            "text": "Verily, verily, I say unto thee, When thou wast young, thou girdest thyself, and walkedst whither thou wouldest: but when thou shalt be old, thou shalt stretch forth thy hands, and another shall gird thee, and carry thee whither thou wouldest not."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how tall was Goliath",
+      "expectedAppVerse": "#read/8/17/4",
+      "expectedText": {
+        "kjv": "And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.",
+        "asv": "And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.",
+        "web": "A champion out of the camp of the Philistines named Goliath of Gath, whose height was six cubits and a span went out."
+      },
+      "localReply": {
+        "mode": "topic",
+        "answer": "Nave’s index connects your question with goliath. 1 Samuel 17:4 says: “And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "1 Samuel 17:4",
+            "url": "#read/8/17/4"
+          },
+          {
+            "label": "1 Samuel 21:9",
+            "url": "#read/8/21/9"
+          },
+          {
+            "label": "1 Samuel 22:10",
+            "url": "#read/8/22/10"
+          },
+          {
+            "label": "1 Chronicles 20:5",
+            "url": "#read/12/20/5"
+          },
+          {
+            "label": "Nave’s Topical Bible: GOLIATH",
+            "url": "https://ccel.org/ccel/nave/bible.g.html#g-p967.2"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "1 Samuel 17:4",
+            "url": "#read/8/17/4",
+            "text": "And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span."
+          },
+          {
+            "label": "1 Samuel 21:9",
+            "url": "#read/8/21/9",
+            "text": "And the priest said, The sword of Goliath the Philistine, whom thou slewest in the valley of Elah, behold, it is here wrapped in a cloth behind the ephod: if thou wilt take that, take it: for there is no other save that here. And David said, There is none like that; give it me."
+          },
+          {
+            "label": "1 Samuel 22:10",
+            "url": "#read/8/22/10",
+            "text": "And he enquired of the Lord for him, and gave him victuals, and gave him the sword of Goliath the Philistine."
+          },
+          {
+            "label": "1 Chronicles 20:5",
+            "url": "#read/12/20/5",
+            "text": "And there was war again with the Philistines; and Elhanan the son of Jair slew Lahmi the brother of Goliath the Gittite, whose spear staff was like a weaver's beam."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": []
+      }
+    },
+    {
+      "query": "how much was Joseph sold for",
+      "expectedAppVerse": "#read/0/37/28",
+      "expectedText": {
+        "kjv": "Then there passed by Midianites merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmeelites for twenty pieces of silver: and they brought Joseph into Egypt.",
+        "asv": "And there passed by Midianites, merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmaelites for twenty pieces of silver. And they brought Joseph into Egypt.",
+        "web": "Midianites who were merchants passed by, and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmaelites for twenty pieces of silver. The merchants brought Joseph into Egypt."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Genesis 37:28: “Then there passed by Midianites merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmeelites for twenty pieces of silver: and they brought Joseph into Egypt.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Genesis 37:28",
+            "url": "#read/0/37/28"
+          },
+          {
+            "label": "Genesis 41:56",
+            "url": "#read/0/41/56"
+          },
+          {
+            "label": "Genesis 42:6",
+            "url": "#read/0/42/6"
+          },
+          {
+            "label": "Genesis 45:4",
+            "url": "#read/0/45/4"
+          },
+          {
+            "label": "Genesis 47:20",
+            "url": "#read/0/47/20"
+          },
+          {
+            "label": "Psalms 105:17",
+            "url": "#read/18/105/17"
+          },
+          {
+            "label": "Acts 7:9",
+            "url": "#read/43/7/9"
+          },
+          {
+            "label": "Genesis 37:27",
+            "url": "#read/0/37/27"
+          },
+          {
+            "label": "Genesis 37:36 — Who sold Joseph to Potiphar?",
+            "url": "https://ebible.org/eng-kjv/GEN37.htm"
+          },
+          {
+            "label": "Genesis 39: Potiphar’s purchase",
+            "url": "https://ebible.org/eng-kjv/GEN39.htm"
+          },
+          {
+            "label": "Genesis 25: Midian genealogy",
+            "url": "https://ebible.org/eng-kjv/GEN25.htm"
+          },
+          {
+            "label": "Genesis 16: Ishmael genealogy",
+            "url": "https://ebible.org/eng-kjv/GEN16.htm"
+          },
+          {
+            "label": "Judges 8: both group labels",
+            "url": "https://ebible.org/eng-kjv/JDG08.htm"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Genesis 37:28",
+            "url": "#read/0/37/28",
+            "text": "Then there passed by Midianites merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmeelites for twenty pieces of silver: and they brought Joseph into Egypt."
+          },
+          {
+            "label": "Genesis 41:56",
+            "url": "#read/0/41/56",
+            "text": "And the famine was over all the face of the earth: and Joseph opened all the storehouses, and sold unto the Egyptians; and the famine waxed sore in the land of Egypt."
+          },
+          {
+            "label": "Genesis 42:6",
+            "url": "#read/0/42/6",
+            "text": "And Joseph was the governor over the land, and he it was that sold to all the people of the land: and Joseph's brethren came, and bowed down themselves before him with their faces to the earth."
+          },
+          {
+            "label": "Genesis 45:4",
+            "url": "#read/0/45/4",
+            "text": "And Joseph said unto his brethren, Come near to me, I pray you. And they came near. And he said, I am Joseph your brother, whom ye sold into Egypt."
+          },
+          {
+            "label": "Genesis 47:20",
+            "url": "#read/0/47/20",
+            "text": "And Joseph bought all the land of Egypt for Pharaoh; for the Egyptians sold every man his field, because the famine prevailed over them: so the land became Pharaoh's."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Psalms 105:17",
+            "url": "#read/18/105/17",
+            "text": "He sent a man before them, even Joseph, who was sold for a servant:"
+          },
+          {
+            "label": "Acts 7:9",
+            "url": "#read/43/7/9",
+            "text": "And the patriarchs, moved with envy, sold Joseph into Egypt: but God was with him,"
+          },
+          {
+            "label": "Genesis 47:20",
+            "url": "#read/0/47/20",
+            "text": "And Joseph bought all the land of Egypt for Pharaoh; for the Egyptians sold every man his field, because the famine prevailed over them: so the land became Pharaoh's."
+          },
+          {
+            "label": "Genesis 45:4",
+            "url": "#read/0/45/4",
+            "text": "And Joseph said unto his brethren, Come near to me, I pray you. And they came near. And he said, I am Joseph your brother, whom ye sold into Egypt."
+          },
+          {
+            "label": "Genesis 37:28",
+            "url": "#read/0/37/28",
+            "text": "Then there passed by Midianites merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmeelites for twenty pieces of silver: and they brought Joseph into Egypt."
+          }
+        ]
+      }
+    },
+    {
+      "query": "how many pieces of silver did Judas receive",
+      "expectedAppVerse": "#read/39/26/15",
+      "expectedText": {
+        "kjv": "And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver.",
+        "asv": "and said, What are ye willing to give me, and I will deliver him unto you? And they weighed unto him thirty pieces of silver.",
+        "web": "and said, “What are you willing to give me if I deliver him to you?” So they weighed out for him thirty pieces of silver."
+      },
+      "localReply": {
+        "mode": "passage",
+        "answer": "Matthew 27:3: “Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the thirty pieces of silver to the chief priests and elders,”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Matthew 27:3",
+            "url": "#read/39/27/3"
+          },
+          {
+            "label": "Song of Solomon 8:11",
+            "url": "#read/21/8/11"
+          },
+          {
+            "label": "Luke 15:8",
+            "url": "#read/41/15/8"
+          },
+          {
+            "label": "Acts 19:19",
+            "url": "#read/43/19/19"
+          },
+          {
+            "label": "Matthew 26:15",
+            "url": "#read/39/26/15"
+          },
+          {
+            "label": "Matthew 27:5",
+            "url": "#read/39/27/5"
+          },
+          {
+            "label": "Luke 15:9",
+            "url": "#read/41/15/9"
+          },
+          {
+            "label": "Acts 9:13",
+            "url": "#read/43/9/13"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Matthew 27:3",
+            "url": "#read/39/27/3",
+            "text": "Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the thirty pieces of silver to the chief priests and elders,"
+          },
+          {
+            "label": "Song of Solomon 8:11",
+            "url": "#read/21/8/11",
+            "text": "Solomon had a vineyard at Baalhamon; he let out the vineyard unto keepers; every one for the fruit thereof was to bring a thousand pieces of silver."
+          },
+          {
+            "label": "Luke 15:8",
+            "url": "#read/41/15/8",
+            "text": "Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?"
+          },
+          {
+            "label": "Acts 19:19",
+            "url": "#read/43/19/19",
+            "text": "Many of them also which used curious arts brought their books together, and burned them before all men: and they counted the price of them, and found it fifty thousand pieces of silver."
+          },
+          {
+            "label": "Matthew 26:15",
+            "url": "#read/39/26/15",
+            "text": "And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": true,
+        "top5": [
+          {
+            "label": "Matthew 27:3",
+            "url": "#read/39/27/3",
+            "text": "Then Judas, which had betrayed him, when he saw that he was condemned, repented himself, and brought again the thirty pieces of silver to the chief priests and elders,"
+          },
+          {
+            "label": "Acts 19:19",
+            "url": "#read/43/19/19",
+            "text": "Many of them also which used curious arts brought their books together, and burned them before all men: and they counted the price of them, and found it fifty thousand pieces of silver."
+          },
+          {
+            "label": "Matthew 26:15",
+            "url": "#read/39/26/15",
+            "text": "And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver."
+          },
+          {
+            "label": "Song of Solomon 8:11",
+            "url": "#read/21/8/11",
+            "text": "Solomon had a vineyard at Baalhamon; he let out the vineyard unto keepers; every one for the fruit thereof was to bring a thousand pieces of silver."
+          },
+          {
+            "label": "Luke 15:8",
+            "url": "#read/41/15/8",
+            "text": "Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?"
+          }
+        ]
+      }
+    },
+    {
+      "query": "how many days did it rain during the flood",
+      "expectedAppVerse": "#read/0/7/12",
+      "expectedText": {
+        "kjv": "And the rain was upon the earth forty days and forty nights.",
+        "asv": "And the rain was upon the earth forty days and forty nights.",
+        "web": "It rained on the earth forty days and forty nights."
+      },
+      "localReply": {
+        "mode": "topic",
+        "answer": "Nave’s index connects your question with rain. Ezra 10:13 says: “But the people are many, and it is a time of much rain, and we are not able to stand without, neither is this a work of one day or two: for we are many that have transgressed in this thing.”",
+        "modelEligible": true,
+        "expectedVerseAmongCitations": true,
+        "citations": [
+          {
+            "label": "Ezra 10:13",
+            "url": "#read/14/10/13"
+          },
+          {
+            "label": "Genesis 7:4",
+            "url": "#read/0/7/4"
+          },
+          {
+            "label": "Genesis 7:10",
+            "url": "#read/0/7/10"
+          },
+          {
+            "label": "Genesis 7:12",
+            "url": "#read/0/7/12"
+          },
+          {
+            "label": "Nave’s Topical Bible: RAIN",
+            "url": "https://ccel.org/ccel/nave/bible.r.html#r-p66.2"
+          }
+        ],
+        "evidence": [
+          {
+            "label": "Ezra 10:13",
+            "url": "#read/14/10/13",
+            "text": "But the people are many, and it is a time of much rain, and we are not able to stand without, neither is this a work of one day or two: for we are many that have transgressed in this thing."
+          },
+          {
+            "label": "Genesis 7:4",
+            "url": "#read/0/7/4",
+            "text": "For yet seven days, and I will cause it to rain upon the earth forty days and forty nights; and every living substance that I have made will I destroy from off the face of the earth."
+          },
+          {
+            "label": "Genesis 7:10",
+            "url": "#read/0/7/10",
+            "text": "And it came to pass after seven days, that the waters of the flood were upon the earth."
+          },
+          {
+            "label": "Genesis 7:12",
+            "url": "#read/0/7/12",
+            "text": "And the rain was upon the earth forty days and forty nights."
+          }
+        ]
+      },
+      "library": {
+        "expectedVerseAmongResults": false,
+        "top5": []
+      }
+    }
+  ],
+  "mockedOnline": {
+    "note": "Plans and answers supplied by this diagnostic, not generated by a real provider; only context assembly and citation resolution were tested",
+    "scenarios": [
+      {
+        "name": "published-empty-rewrite",
+        "query": "how long did Moses live",
+        "plan": {
+          "queries": []
+        },
+        "status": "ready",
+        "simulatedCalls": 2,
+        "exactMosesSource": false,
+        "anyMosesAge": false,
+        "supplied": [
+          {
+            "id": "A1",
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A2",
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A3",
+            "label": "The Cycle of the Judges · Judges 2:6 - 3:6",
+            "url": "#stories/judges/the-cycle-of-the-judges",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A4",
+            "label": "Exodus 19:8–18",
+            "url": "#read/1/19",
+            "hasMosesAge": false
+          }
+        ],
+        "parts": [
+          {
+            "text": "No supplied app source establishes his age. Web: "
+          },
+          {
+            "text": "Web: Deuteronomy 34",
+            "label": "Deuteronomy 34",
+            "url": "https://www.biblegateway.com/passage/?search=Deuteronomy+34&version=KJV",
+            "sourceType": "web"
+          },
+          {
+            "text": "\n\n"
+          }
+        ]
+      },
+      {
+        "name": "published-lifespan-rewrite",
+        "query": "how long did Moses live ",
+        "plan": {
+          "queries": [
+            "Moses lifespan age",
+            "Moses length of life"
+          ]
+        },
+        "status": "ready",
+        "simulatedCalls": 2,
+        "exactMosesSource": false,
+        "anyMosesAge": false,
+        "supplied": [
+          {
+            "id": "A1",
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A2",
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A3",
+            "label": "The Cycle of the Judges · Judges 2:6 - 3:6",
+            "url": "#stories/judges/the-cycle-of-the-judges",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A4",
+            "label": "Exodus 19:8–18",
+            "url": "#read/1/19",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A5",
+            "label": "Joshua 1:5",
+            "url": "#read/5/1/5",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A6",
+            "label": "Joshua 4:14",
+            "url": "#read/5/4/14",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A7",
+            "label": "The Line of Seth · Genesis 4:25 - 5:32",
+            "url": "#stories/genesis/the-line-of-seth",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A8",
+            "label": "Revelation 15:1–8",
+            "url": "#read/65/15",
+            "hasMosesAge": false
+          }
+        ],
+        "parts": [
+          {
+            "text": "No supplied app source establishes his age. Web: "
+          },
+          {
+            "text": "Web: Deuteronomy 34",
+            "label": "Deuteronomy 34",
+            "url": "https://www.biblegateway.com/passage/?search=Deuteronomy+34&version=KJV",
+            "sourceType": "web"
+          },
+          {
+            "text": "\n\n"
+          }
+        ]
+      },
+      {
+        "name": "published-wording-rewrite",
+        "query": "how long did Moses live?",
+        "plan": {
+          "queries": [
+            "Moses died years old"
+          ]
+        },
+        "status": "ready",
+        "simulatedCalls": 2,
+        "exactMosesSource": true,
+        "anyMosesAge": true,
+        "supplied": [
+          {
+            "id": "A1",
+            "label": "Exodus 19:13",
+            "url": "#read/1/19/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A2",
+            "label": "Deuteronomy 31:13",
+            "url": "#read/4/31/13",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A3",
+            "label": "The Cycle of the Judges · Judges 2:6 - 3:6",
+            "url": "#stories/judges/the-cycle-of-the-judges",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A4",
+            "label": "Exodus 19:8–18",
+            "url": "#read/1/19",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A5",
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "hasMosesAge": true
+          },
+          {
+            "id": "A6",
+            "label": "Genesis 25:8",
+            "url": "#read/0/25/8",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A7",
+            "label": "A New Census and Joshua Appointed · Numbers 26:1 - 27:23",
+            "url": "#stories/numbers/a-new-census-and-joshua-appointed",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A8",
+            "label": "Deuteronomy 34:2–12",
+            "url": "#read/4/34",
+            "hasMosesAge": true
+          }
+        ],
+        "parts": [
+          {
+            "text": "Moses was 120 "
+          },
+          {
+            "text": "zLenz: Deuteronomy 34:7",
+            "id": "A5",
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "kind": "Primary scripture text · KJV",
+            "sourceType": "app"
+          },
+          {
+            "text": " Web: "
+          },
+          {
+            "text": "Web: Deuteronomy 34",
+            "label": "Deuteronomy 34",
+            "url": "https://www.biblegateway.com/passage/?search=Deuteronomy+34&version=KJV",
+            "sourceType": "web"
+          },
+          {
+            "text": "\n\n"
+          }
+        ]
+      },
+      {
+        "name": "staged-reference-plan",
+        "query": "how long did Moses live",
+        "plan": {
+          "queries": [],
+          "passages": [
+            "Deuteronomy 34:7"
+          ],
+          "topics": []
+        },
+        "status": "ready",
+        "simulatedCalls": 2,
+        "exactMosesSource": true,
+        "anyMosesAge": true,
+        "supplied": [
+          {
+            "id": "A1",
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "hasMosesAge": true
+          },
+          {
+            "id": "A2",
+            "label": "Moses’s inability to lead and his undiminished vigor",
+            "url": "#debate/deuteronomy-moses-capacity-and-vigor",
+            "hasMosesAge": false
+          },
+          {
+            "id": "A3",
+            "label": "The Death of Moses · Deuteronomy 34:1 - 34:12",
+            "url": "#stories/deuteronomy/the-death-of-moses",
+            "hasMosesAge": false
+          }
+        ],
+        "parts": [
+          {
+            "text": "Moses was 120 "
+          },
+          {
+            "text": "zLenz: Deuteronomy 34:7",
+            "id": "A1",
+            "label": "Deuteronomy 34:7",
+            "url": "#read/4/34/7",
+            "kind": "Primary scripture text · KJV",
+            "sourceType": "app"
+          },
+          {
+            "text": " Web: "
+          },
+          {
+            "text": "Web: Deuteronomy 34",
+            "label": "Deuteronomy 34",
+            "url": "https://www.biblegateway.com/passage/?search=Deuteronomy+34&version=KJV",
+            "sourceType": "web"
+          },
+          {
+            "text": "\n\n"
+          }
+        ]
+      },
+      {
+        "name": "staged-unsupported-empty-plan",
+        "query": "how old was Jesus when he died",
+        "plan": {
+          "queries": [],
+          "passages": [],
+          "topics": []
+        },
+        "status": "ready",
+        "simulatedCalls": 2,
+        "exactMosesSource": false,
+        "anyMosesAge": false,
+        "supplied": [],
+        "parts": [
+          {
+            "text": "No supplied app source establishes his age. Web: "
+          },
+          {
+            "text": "Web: Deuteronomy 34",
+            "label": "Deuteronomy 34",
+            "url": "https://www.biblegateway.com/passage/?search=Deuteronomy+34&version=KJV",
+            "sourceType": "web"
+          },
+          {
+            "text": "\n\n"
+          }
+        ]
+      }
+    ]
+  },
+  "onDeviceShapeCheck": {
+    "note": "Synthetic unsupported claim accepted by JavaScript shape/citation-ID guard. The device model itself was not run.",
+    "input": {
+      "question": "how long did Moses live",
+      "context": [],
+      "sources": [
+        {
+          "id": "1",
+          "label": "Exodus 19:13",
+          "text": "There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount."
+        },
+        {
+          "id": "2",
+          "label": "Deuteronomy 31:13",
+          "text": "And that their children, which have not known any thing, may hear, and learn to fear the Lord your God, as long as ye live in the land whither ye go over Jordan to possess it."
+        },
+        {
+          "id": "3",
+          "label": "Joshua 13:21",
+          "text": "And all the cities of the plain, and all the kingdom of Sihon king of the Amorites, which reigned in Heshbon, whom Moses smote with the princes of Midian, Evi, and Rekem, and Zur, and Hur, and Reba, which were dukes of Sihon, dwelling in the country."
+        }
+      ]
+    },
+    "unsupportedAnswerAccepted": {
+      "answer": "The Bible does not say how long Moses lived. [1]",
+      "sourceIds": [
+        "1"
+      ]
+    }
+  },
+  "stagedResolver": {
+    "note": "Expected references deliberately injected into mocked plans. This does not measure semantic recall or answer correctness.",
+    "cases": 14,
+    "passed": 14,
+    "rows": [
+      {
+        "query": "how long did Moses live",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Deuteronomy 34:7"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/4/34/7",
+        "actualSource": {
+          "label": "Deuteronomy 34:7",
+          "url": "#read/4/34/7",
+          "text": "Deuteronomy 34:7. And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+        },
+        "passed": true
+      },
+      {
+        "query": "How old was Moses when he died?",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Deuteronomy 34:7"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/4/34/7",
+        "actualSource": {
+          "label": "Deuteronomy 34:7",
+          "url": "#read/4/34/7",
+          "text": "Deuteronomy 34:7. And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+        },
+        "passed": true
+      },
+      {
+        "query": "What was Moses’s age at death?",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Deuteronomy 34:7"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/4/34/7",
+        "actualSource": {
+          "label": "Deuteronomy 34:7",
+          "url": "#read/4/34/7",
+          "text": "Deuteronomy 34:7. And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated."
+        },
+        "passed": true
+      },
+      {
+        "query": "how long did Abraham live",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 25:7"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/25/7",
+        "actualSource": {
+          "label": "Genesis 25:7",
+          "url": "#read/0/25/7",
+          "text": "Genesis 25:7. And these are the days of the years of Abraham's life which he lived, an hundred threescore and fifteen years."
+        },
+        "passed": true
+      },
+      {
+        "query": "how old was Sarah when she died",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 23:1"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/23/1",
+        "actualSource": {
+          "label": "Genesis 23:1",
+          "url": "#read/0/23/1",
+          "text": "Genesis 23:1. And Sarah was an hundred and seven and twenty years old: these were the years of the life of Sarah."
+        },
+        "passed": true
+      },
+      {
+        "query": "how old was Joseph when he died",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 50:26"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/50/26",
+        "actualSource": {
+          "label": "Genesis 50:26",
+          "url": "#read/0/50/26",
+          "text": "Genesis 50:26. So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt."
+        },
+        "passed": true
+      },
+      {
+        "query": "how long did Joshua live",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Joshua 24:29"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/5/24/29",
+        "actualSource": {
+          "label": "Joshua 24:29",
+          "url": "#read/5/24/29",
+          "text": "Joshua 24:29. And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old."
+        },
+        "passed": true
+      },
+      {
+        "query": "how old was Methuselah when he died",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 5:27"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/5/27",
+        "actualSource": {
+          "label": "Genesis 5:27",
+          "url": "#read/0/5/27",
+          "text": "Genesis 5:27. And all the days of Methuselah were nine hundred sixty and nine years: and he died."
+        },
+        "passed": true
+      },
+      {
+        "query": "how old was Aaron when he died",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Numbers 33:39"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/3/33/39",
+        "actualSource": {
+          "label": "Numbers 33:39",
+          "url": "#read/3/33/39",
+          "text": "Numbers 33:39. And Aaron was an hundred and twenty and three years old when he died in mount Hor."
+        },
+        "passed": true
+      },
+      {
+        "query": "how old was Jesus when he died",
+        "providedPlan": {
+          "queries": [],
+          "passages": [],
+          "topics": []
+        },
+        "expectedSource": null,
+        "actualSource": null,
+        "passed": true
+      },
+      {
+        "query": "how tall was Goliath",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "1 Samuel 17:4"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/8/17/4",
+        "actualSource": {
+          "label": "1 Samuel 17:4",
+          "url": "#read/8/17/4",
+          "text": "1 Samuel 17:4. And there went out a champion out of the camp of the Philistines, named Goliath, of Gath, whose height was six cubits and a span."
+        },
+        "passed": true
+      },
+      {
+        "query": "how much was Joseph sold for",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 37:28"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/37/28",
+        "actualSource": {
+          "label": "Genesis 37:28",
+          "url": "#read/0/37/28",
+          "text": "Genesis 37:28. Then there passed by Midianites merchantmen; and they drew and lifted up Joseph out of the pit, and sold Joseph to the Ishmeelites for twenty pieces of silver: and they brought Joseph into Egypt."
+        },
+        "passed": true
+      },
+      {
+        "query": "how many pieces of silver did Judas receive",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Matthew 26:15"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/39/26/15",
+        "actualSource": {
+          "label": "Matthew 26:15",
+          "url": "#read/39/26/15",
+          "text": "Matthew 26:15. And said unto them, What will ye give me, and I will deliver him unto you? And they covenanted with him for thirty pieces of silver."
+        },
+        "passed": true
+      },
+      {
+        "query": "how many days did it rain during the flood",
+        "providedPlan": {
+          "queries": [],
+          "passages": [
+            "Genesis 7:12"
+          ],
+          "topics": []
+        },
+        "expectedSource": "#read/0/7/12",
+        "actualSource": {
+          "label": "Genesis 7:12",
+          "url": "#read/0/7/12",
+          "text": "Genesis 7:12. And the rain was upon the earth forty days and forty nights."
+        },
+        "passed": true
+      }
+    ]
+  },
+  "mobileLinkCheck": {
+    "mode": "local-published-worker-mobile-browser",
+    "realProviderCalls": 0,
+    "externalWorkerRequests": 0,
+    "blockedBrowserRequests": 0,
+    "rows": [
+      {
+        "width": 320,
+        "hash": "#read/4/34/7",
+        "verseText": "7Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone. The Death of Moses TEXT COMPARISONS",
+        "passed": true
+      },
+      {
+        "width": 390,
+        "hash": "#read/4/34/7",
+        "verseText": "7Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone. The Death of Moses TEXT COMPARISONS",
+        "passed": true
+      }
+    ]
+  },
+  "existing50QueryOverlap": []
+}

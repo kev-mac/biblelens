@@ -24,6 +24,7 @@
   }).join('');
   let html='',list=false;
   for(const line of lines){
+   while(line.length>1&&line[0].text==='')line.shift();
    const first=line[0],prefix=first?.text?.match(/^(#{1,6})\s+|^\s*(?:[-*]|\d+[.)])\s+/);
    if(prefix)first.text=first.text.slice(prefix[0].length);
    const content=inline(line),bullet=prefix&&!prefix[1];

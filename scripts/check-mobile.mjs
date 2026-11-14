@@ -50,10 +50,12 @@ try{
  assert.equal(sermon.mode,'named-passage');assert.match(sermon.answer,/Matthew 5–7/);
  for(const chapter of [5,6,7])assert(sermon.sources.some(source=>source.url==='#read/39/'+chapter));
  const input=conversationInput('Explain John 3:16',john,[{role:'user',content:'Who is speaking?'}]);assert(input.sources.length);
- const output=JSON.stringify({answer:'This passage describes God’s love and the promise of life.',sourceIds:[input.sources[0].id]});assert(conversationalResult(output,input));
+ const output=JSON.stringify({answer:'This passage describes God’s love and the promise of life.',sourceIds:[input.sources[0].id]});assert.equal(conversationalResult(output,input),null,'A free paraphrase is not grounded by an existing citation ID');assert(conversationalResult(JSON.stringify({answer:input.sources[0].text,sourceIds:[input.sources[0].id]}),input));
  assert.equal(conversationalResult(JSON.stringify({answer:'An unsupported citation appears here.',sourceIds:['invented']}),input),null);
  assert.equal(conversationalResult(JSON.stringify({answer:'Visit https://example.test for this answer.',sourceIds:[input.sources[0].id]}),input),null);
  assert.equal(conversationInput('can we eat shark',shark),null,'Qualified dietary answer cannot be overwritten by a model');
+ const lifespan=await(await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message:'how long did Moses live',edition:'web'})})).json();assert.equal(lifespan.sources[0].url,'#read/4/34/7');assert.equal(lifespan.answerability,'quoted-evidence');assert(lifespan.answer.includes('one hundred twenty'));
+ const unknownAge=await(await target.fetch('/api/chat',{method:'POST',body:JSON.stringify({message:'how old was Jesus when he died',edition:'web'})})).json();assert.equal(unknownAge.answerability,'insufficient');assert.equal(unknownAge.sources.length,0);
  const controller=new AbortController();controller.abort();await assert.rejects(target.fetch('/api/books',{signal:controller.signal}),{name:'AbortError'});
  assert.equal(networkCalls,0,'Reading, comparisons and chat must never reach a server');
 }finally{restore();}

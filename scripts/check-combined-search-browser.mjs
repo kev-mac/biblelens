@@ -12,7 +12,7 @@ globalThis.fetch=async(url,init)=>{
  assert.equal(url,'https://api.openai.com/v1/responses','No external requests except the mocked provider');providerCalls++;
  const request=JSON.parse(init.body);
  if(!request.tools)return Response.json({status:'completed',usage:{input_tokens:10,output_tokens:10},output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify(/children/i.test(request.input)?{queries:[],passages:['2 Kings 6:28-29','Lamentations 4:10'],topics:[]}:{queries:['water becomes wine','Jesus calms a storm'],passages:['John 2:7-10'],topics:[]})}]}]});
- const text='### From zLenz\n**Read** the app passages [A1].\n### From the web\nSource.';
+ const sources=JSON.parse(request.input).publicAppSources;const text='[APP_EVIDENCE]\n'+JSON.stringify({status:sources.length?'supported':'insufficient',excerpts:sources.slice(0,1).map(source=>({id:source.id,quote:source.text.slice(0,800)}))})+'\n[WEB]\nSource.';
  return Response.json({status:'completed',usage:{input_tokens:50,output_tokens:30},output:[{type:'web_search_call',status:'completed'},{type:'message',role:'assistant',content:[{type:'output_text',text,annotations:[{type:'url_citation',start_index:text.indexOf('Source.'),end_index:text.length,title:'Reference overview',url:'https://www.britannica.com/topic/miracle'}]}]}]});
 };
 const server=http.createServer(async(req,res)=>{
@@ -25,12 +25,19 @@ const server=http.createServer(async(req,res)=>{
  }catch(error){res.writeHead(500);res.end(error.message);}
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base='http://127.0.0.1:'+server.address().port;
+async function fulfillLocal(route){
+ if(new URL(route.request().url()).origin!==base)return route.abort();
+ const incoming=route.request(),headers=new Headers(incoming.headers());headers.set('oai-authenticated-user-id',user);
+ if(new URL(incoming.url()).pathname==='/api/answer')onlineRequests++;
+ const response=await worker.fetch(new Request(incoming.url(),{method:incoming.method(),headers,...(incoming.method()==='POST'?{body:incoming.postDataBuffer()}:{})}),{DB,BIBLELENS_SEMANTIC_RETRIEVAL_ENABLED:'1',OPENAI_API_KEY:'test-only-not-a-real-provider-key',BIBLELENS_AI_ALLOWED_USERS:user,...(evaluationEnabled?{BIBLELENS_AI_EVALUATION_ENABLED:'1'}:{})},{});
+ await route.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:Buffer.from(await response.arrayBuffer())});
+}
 const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:process.platform==='win32'?{executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}:{})}),results=[];
 try{
  for(const width of [320,390,820,1440]){
   user='browser-trial-'+width;const before=onlineRequests,context=await browser.newContext({viewport:{width,height:900},serviceWorkers:'block',reducedMotion:'reduce'}),page=await context.newPage(),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
-  await context.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
+  await context.route('**/*',fulfillLocal);
   await page.goto(base+'/#search');const input=page.locator('#lens-search-input');await input.waitFor({state:'visible'});
   assert(await input.evaluate(node=>{const style=getComputedStyle(node),canvas=document.createElement('canvas'),context=canvas.getContext('2d');context.font=style.font;return context.measureText(node.placeholder).width<=node.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);}), 'The empty search placeholder fits');
   await input.fill('Mary Magdalene');await page.waitForFunction(()=>document.querySelector('#lens-search-results')?.firstElementChild?.id==='lens-results-people');
@@ -62,7 +69,7 @@ try{
   assert((await relation.locator('.message-body').first().textContent()).includes('2 Kings 6:28'));assert(!(await relation.locator('.message-body').first().textContent()).includes('These passages concern'));
   assert(!(await relation.locator('.message-body').first().textContent()).includes('manna'));
   assert.equal(await relation.locator('.combined-answer-text h4').first().textContent(),'From zLenz');
-  assert.equal(await relation.locator('.combined-answer-text strong').first().textContent(),'Read');
+  assert((await relation.locator('.combined-answer-text').textContent()).includes('2 Kings 6:28'),'The answer contains a verified app excerpt');
   assert(!(await relation.locator('.combined-answer-text').textContent()).includes('###'));assert(!(await relation.locator('.combined-answer-text').textContent()).includes('**'));
   const actualCitation=relation.locator('.combined-answer-text .combined-citation[href="#read/11/6/28-29"]');assert.equal(await actualCitation.count(),1);
   assert(await relation.evaluate(node=>node.scrollWidth<=node.clientWidth+2),'Formatted answer must fit its card');
@@ -71,7 +78,7 @@ try{
   await actualCitation.click();await page.waitForFunction(()=>location.hash==='#read/11/6/28-29'&&readingBook===11&&readingChapter===6&&reading?.verses?.some(row=>row.n===28));
   results.push({width,metrics,errors});await context.close();
  }
- evaluationEnabled=true;user='browser-evaluation';const qaContext=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'}),qaPage=await qaContext.newPage();await qaContext.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());const paidBefore=providerCalls;await qaPage.goto(base+'/retrieval-evaluation.html');await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();await qaPage.waitForFunction(()=>document.querySelector('#status').textContent.includes('5 cases processed'));assert.equal(providerCalls,paidBefore+5,'One explicit evaluation group uses five planner calls');assert(await qaPage.getByRole('button',{name:'Download evaluation results',exact:true}).isEnabled());await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();assert((await qaPage.locator('#status').textContent()).includes('Wait '));assert.equal(providerCalls,paidBefore+5,'Evaluation must wait after a group');await qaContext.close();
+ evaluationEnabled=true;user='browser-evaluation';const qaContext=await browser.newContext({viewport:{width:390,height:844},serviceWorkers:'block'}),qaPage=await qaContext.newPage();await qaContext.route('**/*',fulfillLocal);const paidBefore=providerCalls;await qaPage.goto(base+'/retrieval-evaluation.html');await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();await qaPage.waitForFunction(()=>document.querySelector('#status').textContent.includes('5 cases processed'));assert.equal(providerCalls,paidBefore+5,'One explicit evaluation group uses five planner calls');assert(await qaPage.getByRole('button',{name:'Download evaluation results',exact:true}).isEnabled());await qaPage.getByRole('button',{name:'Run next five questions',exact:true}).click();assert((await qaPage.locator('#status').textContent()).includes('Wait '));assert.equal(providerCalls,paidBefore+5,'Evaluation must wait after a group');await qaContext.close();
  fs.writeFileSync('.release/combined-search/browser-results.json',JSON.stringify({results,providerCalls,onlineRequests,liveApiRequests:0},null,2));
  console.log('PASS: 320/390/820/1440px browser layout, app-first results, no paid request while typing, single click/Enter submission, inline source labels, stale-result reset and default chat integration. Provider mocked; zero live API requests.');
 }finally{await browser.close();await new Promise(resolve=>server.close(resolve));globalThis.fetch=realFetch;sqlite.close();}

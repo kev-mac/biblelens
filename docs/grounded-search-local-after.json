@@ -1,0 +1,453 @@
+{
+  "kind": "offline-retrieval-and-mocked-provider",
+  "realProviderCalls": 0,
+  "realWebCalls": 0,
+  "unexpectedNetwork": 0,
+  "simulatedProviderCalls": 23,
+  "offlinePositiveCases": 24,
+  "offlinePositivePass": 24,
+  "unsupportedCases": 11,
+  "lateHeldOut": {
+    "positive": [
+      "How many years did Ishmael live?",
+      "What was Terah's age at death?"
+    ],
+    "uncertainty": [
+      "how old was Miriam when she died",
+      "how long did David live",
+      "how long did Elizabeth live",
+      "how long did Rachel live"
+    ]
+  },
+  "semanticResolutionFixtures": 13,
+  "semanticRecallMeasured": false,
+  "baseline": {
+    "artifact": {
+      "version": "1.1.0",
+      "buildNumber": 428,
+      "sourceHash": "ba927ea485f20df8b2c8c0d619dc182cdd41d44143093b1283e5f4cee90ab141"
+    },
+    "supportingSource": 10,
+    "leadingTarget": 1,
+    "libraryFirst": 1
+  },
+  "after": {
+    "artifact": {
+      "version": "1.1.0",
+      "buildNumber": 428,
+      "sourceHash": "dae3f495ad068f1a39a00b211f0b93b25bd6b925e66329dd7086c614351caaf6"
+    },
+    "supportingSource": 24,
+    "leadingTarget": 24,
+    "libraryFirst": 24
+  },
+  "rows": [
+    {
+      "query": "how long did Adam live",
+      "target": "#read/0/5/5",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/5",
+        "answer": "Genesis 5:5: \"And all the days that Adam lived were nine hundred and thirty years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/45/15/45",
+        "answer": "Genesis 2:19: “And out of the ground the Lord God formed every beast of the field, and every fowl of the air; and brought them unto Adam to see what he would call them: and whatsoever Adam called every living creature, that was the name thereof.”"
+      }
+    },
+    {
+      "query": "how long did Seth live",
+      "target": "#read/0/5/8",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/8",
+        "answer": "Genesis 5:8: \"And all the days of Seth were nine hundred and twelve years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/6",
+        "answer": "Genesis 5:3: “And Adam lived an hundred and thirty years, and begat a son in his own likeness, and after his image; and called his name Seth:”"
+      }
+    },
+    {
+      "query": "how long did Enos live",
+      "target": "#read/0/5/11",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/11",
+        "answer": "Genesis 5:11: \"And all the days of Enos were nine hundred and five years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/9",
+        "answer": "Genesis 5:6: “And Seth lived an hundred and five years, and begat Enos:”"
+      }
+    },
+    {
+      "query": "how long did Cainan live",
+      "target": "#read/0/5/14",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/14",
+        "answer": "Genesis 5:14: \"And all the days of Cainan were nine hundred and ten years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/9",
+        "answer": "Genesis 5:9: “And Enos lived ninety years, and begat Cainan:”"
+      }
+    },
+    {
+      "query": "how long did Mahalaleel live",
+      "target": "#read/0/5/17",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/17",
+        "answer": "Genesis 5:17: \"And all the days of Mahalaleel were eight hundred ninety and five years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/12",
+        "answer": "Genesis 5:12: “And Cainan lived seventy years and begat Mahalaleel:”"
+      }
+    },
+    {
+      "query": "how long did Jared live",
+      "target": "#read/0/5/20",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/20",
+        "answer": "Genesis 5:20: \"And all the days of Jared were nine hundred sixty and two years: and he died.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/17/27/6",
+        "answer": "Genesis 5:15: “And Mahalaleel lived sixty and five years, and begat Jared:”"
+      }
+    },
+    {
+      "query": "how long did Lamech live",
+      "target": "#read/0/5/31",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/31",
+        "answer": "Genesis 5:31: \"And all the days of Lamech were seven hundred seventy and seven years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/25",
+        "answer": "Genesis 5:25: “And Methuselah lived an hundred eighty and seven years, and begat Lamech.”"
+      }
+    },
+    {
+      "query": "how long did Methuselah live",
+      "target": "#read/0/5/27",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/27",
+        "answer": "Genesis 5:27: \"And all the days of Methuselah were nine hundred sixty and nine years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/21",
+        "answer": "Genesis 5:21: “And Enoch lived sixty and five years, and begat Methuselah:”"
+      }
+    },
+    {
+      "query": "how long did Noah live",
+      "target": "#read/0/9/29",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/9/29",
+        "answer": "Genesis 9:29: \"And all the days of Noah were nine hundred and fifty years: and he died.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/60/2/5",
+        "answer": "Genesis 5:30: “And Lamech lived after he begat Noah five hundred ninety and five years, and begat sons and daughters:”"
+      }
+    },
+    {
+      "query": "how long did Abraham live",
+      "target": "#read/0/25/7",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/25/7",
+        "answer": "Genesis 25:7: \"And these are the days of the years of Abraham's life which he lived, an hundred threescore and fifteen years.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/4/1/6",
+        "answer": "Genesis 20:1: “And Abraham journeyed from thence toward the south country, and dwelled between Kadesh and Shur, and sojourned in Gerar.”"
+      }
+    },
+    {
+      "query": "how long did Isaac live",
+      "target": "#read/0/35/28",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/35/28",
+        "answer": "Genesis 35:28: \"And the days of Isaac were an hundred and fourscore years.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/4/1/6",
+        "answer": "Genesis 26:8: “And it came to pass, when he had been there a long time, that Abimelech king of the Philistines looked out at a window, and saw, and, behold, Isaac was sporting with Rebekah his wife.”"
+      }
+    },
+    {
+      "query": "how long did Jacob live",
+      "target": "#read/0/47/28",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/47/28",
+        "answer": "Genesis 47:28: \"And Jacob lived in the land of Egypt seventeen years: so the whole age of Jacob was an hundred forty and seven years.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/4/1/6",
+        "answer": "Genesis 25:27: “And the boys grew: and Esau was a cunning hunter, a man of the field; and Jacob was a plain man, dwelling in tents.”"
+      }
+    },
+    {
+      "query": "how long did Sarah live",
+      "target": "#read/0/23/1",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/23/1",
+        "answer": "Genesis 23:1: \"And Sarah was an hundred and seven and twenty years old: these were the years of the life of Sarah.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/20/1",
+        "answer": "Genesis 17:17: “Then Abraham fell upon his face, and laughed, and said in his heart, Shall a child be born unto him that is an hundred years old? and shall Sarah, that is ninety years old, bear?”"
+      }
+    },
+    {
+      "query": "how long did Joseph live",
+      "target": "#read/0/50/26",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/50/26",
+        "answer": "Genesis 50:26: \"So Joseph died, being an hundred and ten years old: and they embalmed him, and he was put in a coffin in Egypt.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/5/18/5",
+        "answer": "Exodus 19:13: “There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount.”"
+      }
+    },
+    {
+      "query": "how long did Moses live",
+      "target": "#read/4/34/7",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/4/34/7",
+        "answer": "Deuteronomy 34:7: \"And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/1/19/13",
+        "answer": "Exodus 19:13: “There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount.”"
+      }
+    },
+    {
+      "query": "how long did Aaron live",
+      "target": "#read/3/33/39",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/3/33/39",
+        "answer": "Numbers 33:39: \"And Aaron was an hundred and twenty and three years old when he died in mount Hor.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/5/24/7",
+        "answer": "Exodus 19:13: “There shall not an hand touch it, but he shall surely be stoned, or shot through; whether it be beast or man, it shall not live: when the trumpet soundeth long, they shall come up to the mount.”"
+      }
+    },
+    {
+      "query": "how long did Joshua live",
+      "target": "#read/5/24/29",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/5/24/29",
+        "answer": "Joshua 24:29: \"And it came to pass after these things, that Joshua the son of Nun, the servant of the Lord, died, being an hundred and ten years old.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/5/9/13",
+        "answer": "Joshua 9:13: “And these bottles of wine, which we filled, were new; and, behold, they be rent: and these our garments and our shoes are become old by reason of the very long journey.”"
+      }
+    },
+    {
+      "query": "how long did Jehoiada live",
+      "target": "#read/13/24/15",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/13/24/15",
+        "answer": "2 Chronicles 24:15: \"But Jehoiada waxed old, and was full of days when he died; an hundred and thirty years old was he when he died.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/10/1/32",
+        "answer": "2 Samuel 23:15: “And David longed, and said, Oh that one would give me drink of the water of the well of Bethlehem, which is by the gate!”"
+      }
+    },
+    {
+      "query": "How old was Moses when he died?",
+      "target": "#read/4/34/7",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/4/34/7",
+        "answer": "Deuteronomy 34:7: \"And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/13/25/4",
+        "answer": "Deuteronomy 34:7: “And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.”"
+      }
+    },
+    {
+      "query": "What was Moses’s age at death?",
+      "target": "#read/4/34/7",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/4/34/7",
+        "answer": "Deuteronomy 34:7: \"And Moses was an hundred and twenty years old when he died: his eye was not dim, nor his natural force abated.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/5/12/6",
+        "answer": "Exodus 2:11: “And it came to pass in those days, when Moses was grown, that he went out unto his brethren, and looked on their burdens: and he spied an Egyptian smiting an Hebrew, one of his brethren.”"
+      }
+    },
+    {
+      "query": "What is the lifespan of Sarah?",
+      "target": "#read/0/23/1",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/23/1",
+        "answer": "Genesis 23:1: \"And Sarah was an hundred and seven and twenty years old: these were the years of the life of Sarah.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/23/1",
+        "answer": "Genesis 18:10: “And he said, I will certainly return unto thee according to the time of life; and, lo, Sarah thy wife shall have a son. And Sarah heard it in the tent door, which was behind him.”"
+      }
+    },
+    {
+      "query": "How many years did Methuselah live?",
+      "target": "#read/0/5/27",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/5/27",
+        "answer": "Genesis 5:27: \"And all the days of Methuselah were nine hundred sixty and nine years: and he died.\""
+      },
+      "before": {
+        "supportingSource": true,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/5/21",
+        "answer": "Genesis 5:21: “And Enoch lived sixty and five years, and begat Methuselah:”"
+      }
+    },
+    {
+      "query": "How many years did Ishmael live?",
+      "target": "#read/0/25/17",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/25/17",
+        "answer": "Genesis 25:17: \"And these are the years of the life of Ishmael, an hundred and thirty and seven years: and he gave up the ghost and died; and was gathered unto his people.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": "#read/0/25/7",
+        "answer": "Genesis 17:18: “And Abraham said unto God, O that Ishmael might live before thee!”"
+      }
+    },
+    {
+      "query": "What was Terah's age at death?",
+      "target": "#read/0/11/32",
+      "after": {
+        "supportingSource": true,
+        "leadingTarget": true,
+        "libraryFirst": "#read/0/11/32",
+        "answer": "Genesis 11:32: \"And the days of Terah were two hundred and five years: and Terah died in Haran.\""
+      },
+      "before": {
+        "supportingSource": false,
+        "leadingTarget": false,
+        "libraryFirst": null,
+        "answer": "Nave’s index connects your question with terah. Genesis 11:24 says: “And Nahor lived nine and twenty years, and begat Terah:”"
+      }
+    }
+  ],
+  "mosesEndToEnd": {
+    "note": "Actual local answer route with an intentionally wrong mocked planner lead; correct evidence wins. Provider answers and web citation are simulated.",
+    "realProviderCalls": 0,
+    "simulatedCalls": 2,
+    "supplied": [
+      {
+        "id": "A1",
+        "label": "Deuteronomy 34:7",
+        "url": "#read/4/34/7"
+      }
+    ],
+    "status": "ready",
+    "evidenceStatus": "quoted-evidence",
+    "appResults": [
+      {
+        "label": "Deuteronomy 34:7",
+        "url": "#read/4/34/7",
+        "kind": "Primary scripture text · WEB",
+        "text": "Moses was one hundred twenty years old when he died. His eye was not dim, nor his strength gone.",
+        "sourceType": "app"
+      }
+    ]
+  }
+}

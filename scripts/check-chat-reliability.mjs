@@ -29,11 +29,11 @@ const cases=[
  ['Explain 1 John 3:16','#read/61/3','laid down his life'],
  ['Who was Ruth?','#read/7/1','Ruth']
 ];
-for(const [question,url,words]of cases){const sources=await ctx.gather(question,4,31,[]);assert(sources.some(s=>s.url===url&&s.text.includes(words)),`Missing known passage: ${question}`);if(/in Exodus|is exodus/i.test(question))assert(sources.filter(s=>s.kind.startsWith('Primary')).every(s=>s.url.startsWith('#read/1/')),`Lost book scope: ${question}`);}
+for(const [question,url,words]of cases){const sources=await ctx.gather(question,4,31,[]);assert(sources.some(s=>(s.url===url||s.url.startsWith(url+'/'))&&s.text.includes(words)),`Missing known passage: ${question}`);if(/in Exodus|is exodus/i.test(question))assert(sources.filter(s=>s.kind.startsWith('Primary')).every(s=>s.url.startsWith('#read/1/')),`Lost book scope: ${question}`);}
 assert.deepEqual(Array.from(ctx.books('Explain 1 John 3:16'),b=>b.id),[61]);
 const normal=await ctx.gather('Did Moses kill anyone in Exodus?',4,31,[]),broader=await ctx.gather('Did Moses kill anyone in Exodus?',4,31,[],'',true);assert(broader.reduce((n,s)=>n+s.text.length,0)>normal.reduce((n,s)=>n+s.text.length,0));
-const follow=await ctx.gather('who did moses kill? did he kill a soldier beating a slave?',4,31,[],'who did moses kill?');assert(follow.some(s=>s.url==='#read/1/2'));
-const cainFollow=await ctx.gather("what was cain's punishment for killing abel? was he afraid?",0,1,[],"what was cain's punishment for killing abel?");assert(cainFollow.some(s=>s.url==='#read/0/4'&&s.text.includes('every one that findeth me shall slay me')));
+const follow=await ctx.gather('who did moses kill? did he kill a soldier beating a slave?',4,31,[],'who did moses kill?');assert(follow.some(s=>s.url==='#read/1/2'||s.url.startsWith('#read/1/2/')));
+const cainFollow=await ctx.gather("what was cain's punishment for killing abel? was he afraid?",0,1,[],"what was cain's punishment for killing abel?");assert(cainFollow.some(s=>(s.url==='#read/0/4'||s.url.startsWith('#read/0/4/'))&&s.text.includes('every one that findeth me shall slay me')));
 
 const old=globalThis.fetch;let calls=0;
 globalThis.fetch=async()=>{calls++;throw Error('Packaged Chat must never access external services');};
