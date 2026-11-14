@@ -1,0 +1,9 @@
+# Batch 13 completion: The Wall Completed
+
+Build 430 adds only the recovered final batch-13 video atop GitHub main `12305e463481d91e56677ba5e2a2ffd49f462641` (build 429). The original was recovered from the owner's authorized Flow-only Google Takeout export, identified by media ID, title, project and SHA-256. No regeneration, additional credit spending, or batch-14 media is included. The Takeout archive, metadata and original remain preserved outside the repository.
+
+The seven-second compatibility MP4 and its actual two-second poster were reviewed against the approved wall artwork. The scene illustrates builders approaching the completed gate in Nehemiah 6:15-16. It is imagined artwork, not historical evidence or a full retelling. The anonymous builders retain their blue, green and brown mantles, tools and basket. The left builder is bareheaded after the opening frames. No recurring named identity is portrayed. Original and final full decoding passed; full-size samples and contact sheets were inspected. Audio was technically decoded but not listening-reviewed; sampled inspection does not certify every motion frame.
+
+The existing bucket-scoped R2 connection confirmed the 6,998,218-byte upload. The manifest adds only this video and a 95,876-byte poster; all 174 previous ready records remain unchanged. Reader and offline fallback art remain unchanged. The app now has 175 active story videos and 108 remaining. Batch 13's ten generated videos are all received and integrated. Credits were last observed at 1,048 AI; the balance was not rechecked during recovery.
+
+Release checks, public playback, publication and post-publication parity are pending at this source checkpoint. The existing Worker cap remains unchanged. Parent coordinates Mac signing, independent size verification, signed/offline asset comparison, ready-device installation and launches. This Windows checkpoint makes no device-installation claim.

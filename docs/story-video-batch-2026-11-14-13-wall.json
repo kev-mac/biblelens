@@ -1,0 +1,59 @@
+{
+  "batch": 13,
+  "build": 430,
+  "baselineCommit": "12305e463481d91e56677ba5e2a2ffd49f462641",
+  "createdAtUtc": "2026-11-14T13:52:32.988Z",
+  "records": [
+    {
+      "title": "The Wall Completed",
+      "book": "Nehemiah",
+      "passage": "Nehemiah 6:1 - 7:5",
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Wall-Completed-v1-web.mp4",
+      "poster": "/assets/story-video-the-wall-completed-poster-v1.webp",
+      "posterAlt": "Three builders approach the completed Jerusalem gate. An imagined scene.",
+      "description": "This selects the completed wall in Nehemiah 6:15-16, not the entire account of opposition and registration.",
+      "reference": "/assets/story-the-wall-completed-v2.webp",
+      "referenceSha256": "b35a53af518ee347d6b00acb2b0d4e197c19ef744bd8d22bce7e889047427768",
+      "actualFlowIngredients": [
+        "reference-1.png"
+      ],
+      "prompt": "The Jerusalem wall is finished, Nehemiah 6:15-16. Animate this exact approved reference: three anonymous adult builders walk one careful step toward the completed gate. Retain the left worker's tool, middle worker's basket and right worker's mallet on his shoulder, with stable grips and believable weight. Keep all natural brown complexions, dark curls, ages, proportions, sandals and blue, green and brown mantles. They are anonymous, not new portraits of Nehemiah. No extra people, switching hands, opening gate leaves, falling masonry or legible writing. Natural blue daylight and green grass, realistic limestone and timber. Grounded lifelike realism, not a painting or glossy fantasy. No captions, text, logos, optional visible watermark, speech, dialogue, narration or music. Quiet natural location ambience only. Preserve actual uploaded reference identities, age, anatomy, geometry and lighting. One continuous restrained shot, subtle camera drift, no scene cuts.",
+      "flowDisplayName": "Builders walk toward completed gate",
+      "credits": 12,
+      "bytes": 6998218,
+      "sha256": "2a8a0519108ccb7300ee9f0fab4f35afa5708a72e039cc8642f80f169a743c38",
+      "duration": 7,
+      "originalBytes": 10929919,
+      "originalSha256": "9c0a598cbc03587ac644f8b73e80eead343857d49ffbe7ea31968a6f585bc209",
+      "posterTimestamp": 2,
+      "posterSourceTimestamp": 2,
+      "posterBytes": 95876,
+      "posterSha256": "9788050ae5cd283e64cdeeebb446e7061c8ab0bd8eed72168a82162b52dcfa4f",
+      "encoding": "1280x720 H264 Main3.1, no Bframes, GOP24, faststart, zero-based AAC",
+      "sourceTrimStart": 0,
+      "maxDuration": 7,
+      "fullLocalDecode": "passed",
+      "visualReview": "Recovered original identified by Takeout metadata and SHA-256, without regeneration. Approved reference and original/final contact sheets compared; full-size final frames at two and five seconds inspected. Three anonymous adult builders retain blue, green and brown mantles, tools/basket, plausible limbs and setting. Natural daylight and completed gate match the selected Nehemiah 6:15-16 moment. The left builder is bareheaded after the opening frames; these are anonymous builders, with no unresolved recurring named identity break. Final selects seven seconds of the continuous approach. Full original and final decode passed. Audio technically decoded but not listening-reviewed; sampled review does not certify every motion frame.",
+      "audioListeningReview": false,
+      "recovery": {
+        "mediaId": "ed14c5cd-2aa5-41e1-9beb-de1d5cc11d23",
+        "mediaTitle": "Builders walk toward completed gate",
+        "projectId": "446b811c-3e5f-49f5-be9e-c906b69d592d",
+        "method": "Owner-authorized Google Takeout recovery; original preserved; no regeneration"
+      },
+      "upload": {
+        "status": "confirmed",
+        "bucket": "biblelens-videos",
+        "key": "BibleLens-The-Wall-Completed-v1-web.mp4",
+        "etag": "\"6040e092259f2135cb08187e05e37044\""
+      }
+    }
+  ],
+  "ready": 175,
+  "remaining": 108,
+  "newGenerationCredits": 0,
+  "lastObservedAiCredits": 1048,
+  "creditBalanceNotRechecked": true
+}
