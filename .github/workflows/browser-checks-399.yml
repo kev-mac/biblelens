@@ -1,0 +1,274 @@
+name: Build 399 browser checks
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/browser-checks-399.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-399-browser-checks-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: false
+
+jobs:
+  browser-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/browser-checks-399'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 40
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+      BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+    steps:
+      - name: Check out the reviewed source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify exact build 399 source
+        run: |
+          git merge-base --is-ancestor 0ad1d007bf99dc5c8263592d75f176cd8b456d1d HEAD
+          git cat-file -e fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895^{commit}
+          git diff --exit-code fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895 HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle
+          mkdir -p .release/browser-ci
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {releaseInfo} from './scripts/release-info.mjs';
+          const release=releaseInfo();
+          assert.equal(release.buildNumber,399);
+          // Every fingerprint input matches the frozen source commit above.
+          // Preserve that identity through all release preparation and archives.
+          console.log('Pinned source commit: fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895');
+          fs.writeFileSync('.release/browser-ci/source-release.json',JSON.stringify(release,null,2)+'\n');
+          console.log(release);
+          JS
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Install browsers on this separate GitHub runner
+        id: browsers
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Require the Chromium sandbox for every browser check
+        run: |
+          cat > .release/browser-ci/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';
+          const launch=chromium.launch.bind(chromium);
+          chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+          node --check .release/browser-ci/require-sandbox.mjs
+
+      - name: Run the complete required release preparation
+        id: prepare
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/browser-ci/release-prepare.log
+
+      - name: Retain a required preparation failure immediately
+        if: ${{ !cancelled() && steps.prepare.outcome == 'failure' }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-399-preparation-failure-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/release-prepare.log
+            .release/browser-ci/source-release.json
+          retention-days: 7
+          include-hidden-files: true
+
+      - name: Verify all eighteen reviews in web and actual offline bundles
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: node scripts/check-contradiction-bundles.mjs 2>&1 | tee .release/browser-ci/contradiction-bundles.log
+
+      - name: Check shared Story and chapter image parity
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' && steps.prepare.outcome != 'skipped' }}
+        run: npm run check:images 2>&1 | tee .release/browser-ci/images.log
+
+      # A failed gate remains a failed job. Collect the UI results as well when
+      # the exact built bundle exists; this never accepts or publishes a release.
+      - name: Open the exact built app on runner loopback
+        id: preview
+        if: ${{ !cancelled() && steps.browsers.outcome == 'success' && steps.prepare.outcome != 'skipped' }}
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const source=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),source);
+          JS
+          node scripts/serve.mjs > .release/browser-ci/server.log 2>&1 &
+          printf '%s\n' "$!" > .release/browser-ci/server.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {setTimeout} from 'node:timers/promises';
+          const expected=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          let ready=false;
+          for(let attempt=0;attempt<100;attempt++){
+            try{
+              const response=await fetch('http://127.0.0.1:8787/release.json',{signal:AbortSignal.timeout(2000)});
+              assert(response.ok);assert.deepEqual(await response.json(),expected);ready=true;break;
+            }catch{await setTimeout(200);}
+          }
+          assert(ready,'The exact build 399 preview did not become ready.');
+          JS
+
+      - name: Check inline evidence pills in Chromium and WebKit
+        id: evidence
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-evidence-tags-browser.mjs 2>&1 | tee .release/browser-ci/evidence-pills.log
+
+      - name: Check reader controls on phones, iPad and desktop
+        id: reader
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.evidence.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-reader-annotations-browser.mjs 2>&1 | tee .release/browser-ci/reader-controls.log
+
+      - name: Verify new and retained review context windows in all three editions
+        id: contexts
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.reader.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-contradiction-reviews-browser.mjs 2>&1 | tee .release/browser-ci/contradiction-context.log
+
+      - name: Check directory alphabet geometry and real interactions
+        id: rail
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.contexts.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-directory-letter-rail-browser.mjs 2>&1 | tee .release/browser-ci/directory-letter-rail.log
+
+      - name: Inspect rendered compact-control styles
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.rail.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: |
+          node --input-type=module <<'JS' | tee .release/browser-ci/compact-style-diagnostics.log
+          import {chromium,webkit} from 'playwright';
+          for(const [engine,type] of Object.entries({chromium,webkit})){
+            const browser=await type.launch();
+            try{
+              for(const width of [320,601]){
+              const page=await browser.newPage({viewport:{width,height:1184}});
+              await page.goto('http://127.0.0.1:8787/#read/0/1');
+              await page.locator('#verse-3 [data-lens-category=academic]').waitFor();
+              console.log(engine,width,JSON.stringify(await page.evaluate(()=>{
+                const properties=['height','min-height','box-sizing','font','font-size','line-height','padding','appearance'];
+                const selectors=['#ux-chapter-picker','#verse-3 .verse-study-pill'];
+                return selectors.map(selector=>{
+                  const node=document.querySelector(selector),style=getComputedStyle(node),rules=[];
+                  function walk(list,conditions=[]){for(const rule of list){
+                    if(rule.selectorText&&node.matches(rule.selectorText)){
+                      const declarations=Object.fromEntries(properties.filter(property=>rule.style.getPropertyValue(property)).map(property=>[property,rule.style.getPropertyValue(property)]));
+                      if(Object.keys(declarations).length)rules.push({selector:rule.selectorText,conditions,declarations});
+                    }else if(rule.cssRules)walk(rule.cssRules,[...conditions,rule.conditionText||rule.name||rule.constructor.name]);
+                  }}
+                  for(const sheet of document.styleSheets)walk(sheet.cssRules);
+                  return {selector,rootFont:getComputedStyle(document.documentElement).fontSize,box:node.getBoundingClientRect().toJSON(),computed:Object.fromEntries(properties.map(property=>[property,style.getPropertyValue(property)])),rules};
+                });
+              })),null,2);
+              await page.close();
+              }
+            }finally{await browser.close();}
+          }
+          JS
+
+      - name: Retain an earlier browser failure before the remaining matrices
+        if: ${{ !cancelled() && failure() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-399-earlier-failure-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/*.log
+            .release/browser-ci/source-release.json
+            .release/reader-annotations/**
+            .release/evidence-tags/**
+            .release/contradiction-reviews/**
+            .release/directory-letter-rail/**
+          retention-days: 7
+          include-hidden-files: true
+
+      - name: Check Explore search and responsive portrait/landscape tiles
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' && steps.rail.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/browser-ci/require-sandbox.mjs
+        run: node scripts/check-explore-annotations-browser.mjs 2>&1 | tee .release/browser-ci/explore.log
+
+      - name: Stop this job's preview
+        if: always()
+        run: |
+          if test -f .release/browser-ci/server.pid; then
+            kill "$(cat .release/browser-ci/server.pid)" 2>/dev/null || true
+          fi
+
+      - name: Retain the exact verified public bundles
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/browser-ci/source-release.json'));
+          const {canonicalCommit,...prepared}=JSON.parse(fs.readFileSync('.release/candidate.json'));
+          assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
+          const worker=fs.readFileSync('dist/server/index.js');
+          fs.writeFileSync('.release/browser-ci/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'fb8fcfe5ef20d87c8ba8afa9c86a8d0c2aa77895',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),signedNativeAssets:false},null,2)+'\n');
+          JS
+          tar -czf .release/browser-ci/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/browser-ci/prepared-bundles.tar.gz > .release/browser-ci/prepared-bundles.sha256
+
+      - name: Retain the accepted bundles separately from visual results
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-399-verified-bundles-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/source-release.json
+            .release/browser-ci/prepared-manifest.json
+            .release/browser-ci/prepared-bundles.tar.gz
+            .release/browser-ci/prepared-bundles.sha256
+            www/release.json
+            dist/client/release.json
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: error
+
+      - name: Retain public test results and release identities
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-399-browser-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/browser-ci/*.log
+            .release/browser-ci/source-release.json
+            .release/browser-ci/prepared-manifest.json
+            .release/browser-ci/prepared-bundles.sha256
+            .release/explore-annotations/**
+            .release/reader-annotations/**
+            .release/evidence-tags/**
+            .release/contradiction-reviews/**
+            .release/directory-letter-rail/**
+            www/release.json
+            dist/client/release.json
+          retention-days: 7
+          include-hidden-files: true
+          if-no-files-found: warn
