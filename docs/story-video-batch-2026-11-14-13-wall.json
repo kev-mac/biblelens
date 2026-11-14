@@ -48,12 +48,115 @@
         "bucket": "biblelens-videos",
         "key": "BibleLens-The-Wall-Completed-v1-web.mp4",
         "etag": "\"6040e092259f2135cb08187e05e37044\""
-      }
+      },
+      "publicPlayback": "passed in Chromium and WebKit phone/tablet app cases"
     }
   ],
   "ready": 175,
   "remaining": 108,
   "newGenerationCredits": 0,
   "lastObservedAiCredits": 1048,
-  "creditBalanceNotRechecked": true
+  "creditBalanceNotRechecked": true,
+  "wallCompletionVerification": {
+    "publicObject": {
+      "title": "The Wall Completed",
+      "status": "PASS",
+      "bytes": 6998218,
+      "sha256": "2a8a0519108ccb7300ee9f0fab4f35afa5708a72e039cc8642f80f169a743c38",
+      "decode": "full public decode passed"
+    },
+    "browser": {
+      "source": {
+        "version": "1.1.0",
+        "buildNumber": 430,
+        "sourceHash": "0adc66de5de83e6cb52d70904aad4e7418a18601da0384709a70e433debb7468"
+      },
+      "scope": "Real public R2 playback in the exact built app, phone/tablet browser viewports; no physical-device/audio-listening claim.",
+      "results": [
+        {
+          "engine": "chromium",
+          "width": 390,
+          "title": "The Wall Completed",
+          "status": "PASS",
+          "metadata": {
+            "width": 1280,
+            "height": 720,
+            "duration": 7,
+            "muted": true,
+            "loop": true,
+            "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Wall-Completed-v1-web.mp4"
+          },
+          "checks": [
+            "actual public playback",
+            "loop/mute",
+            "two settled changing-frame seeks",
+            "offline fallback"
+          ]
+        },
+        {
+          "engine": "chromium",
+          "width": 820,
+          "title": "The Wall Completed",
+          "status": "PASS",
+          "metadata": {
+            "width": 1280,
+            "height": 720,
+            "duration": 7,
+            "muted": true,
+            "loop": true,
+            "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Wall-Completed-v1-web.mp4"
+          },
+          "checks": [
+            "actual public playback",
+            "loop/mute",
+            "two settled changing-frame seeks",
+            "offline fallback"
+          ]
+        },
+        {
+          "engine": "webkit",
+          "width": 390,
+          "title": "The Wall Completed",
+          "status": "PASS",
+          "metadata": {
+            "width": 324,
+            "height": 182,
+            "duration": 7.022,
+            "muted": true,
+            "loop": true,
+            "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Wall-Completed-v1-web.mp4"
+          },
+          "checks": [
+            "actual public playback",
+            "loop/mute",
+            "two settled changing-frame seeks",
+            "offline fallback"
+          ]
+        },
+        {
+          "engine": "webkit",
+          "width": 820,
+          "title": "The Wall Completed",
+          "status": "PASS",
+          "metadata": {
+            "width": 754,
+            "height": 424,
+            "duration": 7.022,
+            "muted": true,
+            "loop": true,
+            "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Wall-Completed-v1-web.mp4"
+          },
+          "checks": [
+            "actual public playback",
+            "loop/mute",
+            "two settled changing-frame seeks",
+            "offline fallback"
+          ]
+        }
+      ],
+      "finishedAt": "2026-11-14T13:55:04.151Z"
+    },
+    "postMobileImages": "passed; unchanged intentional 1 Samuel 7 close pair",
+    "physicalDevices": "Parent-managed; not installed or tested by this session"
+  }
 }
