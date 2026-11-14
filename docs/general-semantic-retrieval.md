@@ -139,3 +139,7 @@ context, without inheriting a subject patch or raw-query commentary. Commentary
 leads retain the original book scope and link to the actual app detail record.
 The local browser test runs one evaluation group of five mocked planner calls
 and verifies that an immediate second click makes no additional calls.
+
+Reference-boundary checks also passed for precise verses, whole-chapter model
+proposals and cross-chapter ranges. Resolved commentary retains its named
+witness, limits and alternative reading before longer reasoning text.

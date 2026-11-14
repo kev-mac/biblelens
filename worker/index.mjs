@@ -354,24 +354,36 @@ async function semanticAppContext(query,edition,plan){
  const add=source=>{if(source.text&&!seen.has(source.url)){rows.push(source);seen.add(source.url);}};
  const addResearch=record=>{
   if((scope.size||explicit.length)&&!record.refs.some(allowed))return;
-  add({label:record.title,url:record.kind==='annotation'?'#debate/'+encodeURIComponent(record.id):record.url,kind:'Packaged editorial analysis',text:[record.summary,record.reasoning,record.scope].filter(Boolean).join('\n'),recordId:record.id,recordKind:record.kind});
+  const text=[(record.witness?record.witness+': ':'')+record.summary,record.scope?'Limits: '+record.scope:'',record.alternativeReading?'Other reading: '+record.alternativeReading:'',record.reasoning].filter(Boolean).join('\n');
+  add({label:record.title,url:record.kind==='annotation'?'#debate/'+encodeURIComponent(record.id):record.url,kind:'Packaged editorial analysis',text,recordId:record.id,recordKind:record.kind});
  };
  const resolve=async(reference,origin)=>{
   if(typeof reference!=='string'||reference.length>80||!/^[\w\s.:,\-\u2013\u2014]+$/.test(reference))return;
   const refs=queryReferences(reference);if(!refs.length||refs.length>3)return;
+  const crossChapter=/\d+:\d+\s*[-\u2013\u2014]\s*\d+:\d+/.test(canonicalBookNames(reference)),pending=[];let total=0;
   for(const ref of refs){
-   if(!allowed(ref)||ref.first!==null&&(ref.first<1||ref.last<ref.first||ref.last-ref.first>5))continue;
-   const data=await chapter(ref.book,ref.chapter);if(!data)continue;
-   const first=ref.first??1,last=ref.last??Math.min(data.verses.length,6);
-   const verses=data.verses.filter(verse=>verse.n>=first&&verse.n<=last&&scriptureText(verse,edition));
+   if(!allowed(ref)||ref.first!==null&&(ref.first<1||ref.last<ref.first))return;
+   const data=await chapter(ref.book,ref.chapter);if(!data)return;
+   // A vague chapter proposal must not displace an explicit requested verse.
+   if(ref.first===null&&explicit.some(original=>original.book===ref.book&&original.chapter===ref.chapter&&original.first!==null))return;
+   const first=ref.first??data.verses.find(verse=>scriptureText(verse,edition))?.n;
+   const last=ref.first===null?first+5:crossChapter&&ref.last===199?data.verses.at(-1).n:ref.last??first;
+   if(first===undefined||last-first>5)return;
+   let verses=data.verses.filter(verse=>verse.n>=first&&verse.n<=last&&scriptureText(verse,edition));
    // A suggestion is not a source. Every requested verse must exist in this edition.
-   if(verses.length!==last-first+1)continue;
-   const actual={...ref,first,last},text=verses.map(verse=>data.name+' '+ref.chapter+':'+verse.n+'. '+scriptureText(verse,edition)).join('\n');
-   add({label:referenceLabel(actual),url:referenceUrl(actual),kind:scriptureKind(edition),text,retrievalOrigin:origin});
+   if(ref.first!==null&&verses.length!==last-first+1)return;
+   if(ref.first===null)verses=verses.filter((verse,index)=>verse.n===first+index);
+   if(!verses.length||(total+=verses.length)>6)return;
+   const actual={...ref,first:verses[0].n,last:verses.at(-1).n},text=verses.map(verse=>data.name+' '+ref.chapter+':'+verse.n+'. '+scriptureText(verse,edition)).join('\n');
+   pending.push({label:referenceLabel(actual),url:referenceUrl(actual),kind:scriptureKind(edition),text,retrievalOrigin:origin});
   }
+  for(const source of pending)add(source);
  };
  for(const reference of (plan.passages||[]).slice(0,8))await resolve(reference,'Semantic passage lead resolved against app text');
- if(!rows.length)for(const ref of explicit.slice(0,3))await resolve(referenceLabel(ref),'Explicit user reference');
+ if(!rows.length)for(const ref of explicit.slice(0,3)){
+  const data=await chapter(ref.book,ref.chapter),last=ref.last===199?data?.verses.at(-1)?.n:ref.last;
+  await resolve(referenceLabel({...ref,last}),'Explicit user reference');
+ }
  // Topic headings resolve to the existing attributed index. They never create
  // references from model text or add a hand-written subject-specific route.
  if(!explicit.length)for(const name of (plan.topics||[]).slice(0,3)){
