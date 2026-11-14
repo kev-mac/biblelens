@@ -29,3 +29,7 @@ Build **429** is public at https://scripture-lens.kvn-mcgwn.chatgpt.site. Sites 
 **174 videos are now active; 109 stories still lack an active video.** The already-generated Wall Completed clip is one of those 109 and still awaits download/review. Do not regenerate it. Credits last observed: 1,048 AI and zero Flow; no further generation or spending occurred during this integration.
 
 Mac signing, its independent size check, signed/offline asset comparison, installation and physical-device launches remain parent-managed and were not performed here. Do not claim the devices are on 429 yet. This documentation checkpoint does not change the release fingerprint.
+
+## Final wall clip recovered and published
+
+The pending wall clip was subsequently recovered from the owner's authorized Takeout export, reviewed and uploaded without regeneration. Build **430**, Sites version **421**, completes all ten batch-13 videos. There are now **175 active videos and 108 remaining stories**. Full checks and post-publication live/offline parity passed. See `story-video-batch-2026-11-14-13-wall-release.md` for the exact source fingerprint, commits, deployment, media review and parent-managed device-installation handoff. Earlier pending statements above are historical.

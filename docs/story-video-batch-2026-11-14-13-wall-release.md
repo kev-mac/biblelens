@@ -19,3 +19,11 @@ Production contains 283 visible stories: 276 base catalog entries plus seven inj
 The full unchanged `npm run release:prepare` passed, including shared web/mobile builds, regression checks, readability, search and translation browser probes, sync, release packaging and mobile checks. Version 1.1.0 build 430 has source fingerprint `0adc66de5de83e6cb52d70904aad4e7418a18601da0384709a70e433debb7468`. The self-contained Worker is 63,914,738 bytes, 2,145,550 bytes below the unchanged 66,060,288-byte limit. Web and offline source identities agree. Fresh GitHub and Sites checks found no independent advances over build 429.
 
 Publication and live parity are still pending in this checkpoint. Mac signing, signed-asset comparison, installation and launches remain parent-managed.
+
+## Publication completed
+
+Build **430** is public at https://scripture-lens.kvn-mcgwn.chatgpt.site. Sites saved version **421**, source `0c9ec6215120721a45ec57aee0cbf53bcd74f35d`, deployment `appgdep_6af86981dd048191a11d0cdef6e0bd9e` succeeded on 2026-11-14. Runtime environment revision 2 and the public audience were preserved. GitHub main safely fast-forwarded from `12305e463481d91e56677ba5e2a2ffd49f462641` to reviewed checkpoint `96d8b04b15be5cfdc84220d992283df803a43656`, without force or competing upstream commits. Runtime source was committed at `dda2d51484a7fa2a9a170d9e053e11407ede85b3`.
+
+Post-publication `npm run release:verify` passed: live, canonical, Sites mirror and offline assets match fingerprint `0adc66de5de83e6cb52d70904aad4e7418a18601da0384709a70e433debb7468`. The live poster exactly matches source and offline bytes. All ten batch-13 videos are now active; the app has **175 videos and 108 remaining stories**. No batch-14 work or new generation was performed.
+
+Parent must complete Mac signing, independent package-size measurement, signed/public versus www comparison, installation and launch attempts on ready devices. This session did not install or physically test build 430. Documentation-only checkpoints preserve the release fingerprint.
