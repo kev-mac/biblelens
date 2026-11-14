@@ -11,3 +11,11 @@ The nine uploads are confirmed by the existing bucket-scoped R2 connection. Post
 Current candidate: 174 active story videos, 109 stories without an active video. One additional generated batch-13 video awaits download. Public byte/decode checks, final build/browser tests, publication, Mac signing, and device installation are pending. Lack of public playback verification alone is nonblocking under the owner's instruction, but known defects still require correction.
 
 Parent coordinates publication ordering and Mac installation. Do not claim a published or installed build from this checkpoint.
+
+## Verified nine-video candidate
+
+The complete unchanged `npm run release:prepare` passed, including shared web/mobile builds, regressions, sync, release packaging, search Chromium/WebKit probes, translation and combined-search checks, and mobile checks. Post-mobile `check:images` passed, with inherited report-only readability findings and the unchanged intentional 1 Samuel 7 close pair. Nine exact public R2 files match their source sizes and SHA-256 and fully decode. All 36 real-app public playback cases passed in Chromium and WebKit at phone/tablet sizes: advancing playback, loop/mute, two settled changing-frame seeks, and offline fallback.
+
+Candidate version 1.1.0, build 429. Runtime commit `f6b57f4afbf6529335f40522d077762170bc5d03`; source fingerprint `3b0317191cb3a066c0e8c49717e2943cc379e2633ef4b5400bd39c11bf9bbb15`. Web and offline identities match. Worker size 63,794,425 bytes, 2,265,863 bytes below the unchanged 66,060,288-byte cap. Mac must measure its own package and compare the signed assets before installation.
+
+The source branch is pushed. No merge into main, publication, live-site verification, native signing, installation or device launch occurred here. The Wall Completed remains generated in Flow but absent from Downloads and the manifest. The nine-video candidate is independently verified; the ten-video production batch is still incomplete. Parent must coordinate publication and can add the missing reviewed clip before release. Do not regenerate it or discard the originals.

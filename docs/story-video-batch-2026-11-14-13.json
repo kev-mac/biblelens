@@ -43,12 +43,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "The original cuts to a closer reading scene after about two seconds. Final starts at 2.1s to exclude the jump. The mature gray-curled Ezra remains recognizable, with plausible aging from Ezra; scroll, fingers and crowd inspected. Script-like marks are imagined, not a source quotation. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Ezra-Reads-the-Law-v1-web.mp4",
         "etag": "\"fd8a79d43342da689e97f65f9c547e20\""
+      },
+      "publicVerification": {
+        "title": "Ezra Reads the Law",
+        "status": "PASS",
+        "bytes": 2472771,
+        "sha256": "b20039fd4e1220453a6c857460d850786081d0093062e3c6d71d525d77db0b30",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -84,12 +91,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Two groups remain on separate wall paths. Anonymous musicians retain reference faces and blue/cream clothing, natural curls, instruments and coherent grips. Final ends after the restrained playing action; no fall or new named identity. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-The-Dedication-of-Jerusalem-s-Wall-v1-web.mp4",
         "etag": "\"726ef7f1736a999103181bec460e1ae9\""
+      },
+      "publicVerification": {
+        "title": "The Dedication of Jerusalem’s Wall",
+        "status": "PASS",
+        "bytes": 4218971,
+        "sha256": "10f092435f9dc28116a64ca9b138ede713f8ce67e4a078d44c71cd3732172ff4",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -125,12 +139,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Nehemiah retains the approved face, dark curls, beard and blue mantle. Gatekeepers keep their bar, merchants and donkey remain outside; visible fingers, legs and bags inspected. Final ends after his gesture and the gatekeepers settle. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Nehemiah-s-Reforms-v1-web.mp4",
         "etag": "\"f561f06cc3dd8f60bfc177e525db384a\""
+      },
+      "publicVerification": {
+        "title": "Nehemiah's Reforms",
+        "status": "PASS",
+        "bytes": 3096806,
+        "sha256": "ba3e7aa07950bfc9fccaafc297706e1f4e7eec7d6d710a84ba7575466967c6b8",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -166,12 +187,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Vashti remains distinct from Esther, with approved curls, jewelry and purple wrap. Her refusal gesture and messenger response remain nonviolent; hands, attendants and evening setting inspected. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Vashti-Deposed-v1-web.mp4",
         "etag": "\"2803074ffcef10cb8f209b439f38e0ba\""
+      },
+      "publicVerification": {
+        "title": "Vashti Deposed",
+        "status": "PASS",
+        "bytes": 3036361,
+        "sha256": "14ada8ad68d78ca49940b1eb5bb3264313ceff235bab1ab161385784fdef1e80",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -207,12 +235,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Original cuts to another coronation angle. Final uses only the later continuous shot from 3s, avoiding the shot transition. Esther and Ahasuerus remain recognizable; the crown and both hands settle coherently. Exact crown design and palace are imagined details. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Esther-Becomes-Queen-v1-web.mp4",
         "etag": "\"df907ccce85091bdc82d4e4c00d7cf48\""
+      },
+      "publicVerification": {
+        "title": "Esther Becomes Queen",
+        "status": "PASS",
+        "bytes": 2544120,
+        "sha256": "5681e0aa0d412008714e066434486b58fbea37e43d4a455cf6e94a4ff519b4aa",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -248,12 +283,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "The older sackcloth figure is Mordecai, the blue court figure is an anonymous messenger, not Haman. Esther remains at the window. Faces, palms, staff and nearby guards inspected; no newly invented confrontation. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Haman-s-Plot-v1-web.mp4",
         "etag": "\"afe7063725210428569acabd149e07a5\""
+      },
+      "publicVerification": {
+        "title": "Haman's Plot",
+        "status": "PASS",
+        "bytes": 2894073,
+        "sha256": "25ab736d9ccfc23858b78a0f70d85d6c15524cb3ccbd615c974a95396b14f6d0",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -289,12 +331,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Esther and Ahasuerus compared with coronation references; Haman stays the separate red-clad man. Single restrained appeal gesture; fingers, cups, food and crowns remain coherent in sampled motion. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Esther-s-Banquets-v1-web.mp4",
         "etag": "\"39d727e05a676217180fdc02f7247214\""
+      },
+      "publicVerification": {
+        "title": "Esther's Banquets",
+        "status": "PASS",
+        "bytes": 2737656,
+        "sha256": "3927f84975756118e830babc445eb4e2c7c79a78af0c362c1edf00bd73c53058",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -330,12 +379,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Anonymous multigenerational families retain faces, curls and scarves. Both women support the food basket through the exchange, with stable bread and fruit; this depicts Purim gift sharing, not battle. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-The-Jews-Delivered-and-Purim-v1-web.mp4",
         "etag": "\"d5faf3572b0b2e51aa14341698522c52\""
+      },
+      "publicVerification": {
+        "title": "The Jews Delivered and Purim",
+        "status": "PASS",
+        "bytes": 4645529,
+        "sha256": "ae45898b5de79e43f1945a3c052361404086965c5ebb9b005fc4b693027f9f87",
+        "decode": "full public decode passed"
       }
     },
     {
@@ -371,12 +427,19 @@
       "fullLocalDecode": "passed",
       "visualReview": "Older Job and three tan/blue/rust-wrapped friends match the approved anchor, without assigning uncertain friend names. Hands stay at the knee, all four remain seated, and feet, bowl and tree remain coherent. Full-size sample at two seconds and 1fps original/final contact sheets inspected against the actual approved reference; audio technically decoded but not listening-reviewed. Sampled inspection does not certify every motion frame.",
       "audioListeningReview": false,
-      "publicPlayback": "pending; unavailable public playback alone is nonblocking per owner",
+      "publicPlayback": "Passed Chromium/WebKit phone/tablet, advancing playback, settled changing-frame seeks, loop/mute and offline fallback",
       "upload": {
         "status": "confirmed",
         "bucket": "biblelens-videos",
         "key": "BibleLens-Job-s-Testing-v1-web.mp4",
         "etag": "\"e9d66bb5ba1c946b0046826e6a404fdb\""
+      },
+      "publicVerification": {
+        "title": "Job's Testing",
+        "status": "PASS",
+        "bytes": 2922106,
+        "sha256": "8ef932a8038248cf617e7f7a6037d1fced6addf68d6c68437addebe6fa31dbe0",
+        "decode": "full public decode passed"
       }
     }
   ],
@@ -389,5 +452,17 @@
     }
   ],
   "ready": 174,
-  "remaining": 109
+  "remaining": 109,
+  "verification": {
+    "fullUnchangedReleasePreparation": "passed",
+    "postMobileImages": "passed",
+    "publicFiles": "9/9 exact sizes/SHA256 and full decoding passed",
+    "publicAppPlayback": "36/36 passed",
+    "sourceHash": "3b0317191cb3a066c0e8c49717e2943cc379e2633ef4b5400bd39c11bf9bbb15",
+    "workerBytes": 63794425,
+    "workerLimit": 66060288,
+    "workerHeadroom": 2265863,
+    "physicalDevices": "not signed/installed here",
+    "audioListeningReview": false
+  }
 }
