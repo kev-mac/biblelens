@@ -1,0 +1,17 @@
+# Batch 14 release evidence
+
+Ten new videos cover Elihu Speaks through Jeremiah and Pashhur. They were generated in Flow project ac81027d-aa1f-45db-96ed-695146cd0da6, recovered from the owner's authorized Flow-only Takeout, and matched using exact media IDs and their metadata. No regeneration or blocked delivery-host workaround was used. Originals and export archives remain preserved.
+
+The provenance JSON records prompts, approved artwork inputs, hashes, durations, scopes, upload receipts and sampled visual reviews. All ten originals and final web files fully decoded. Every public R2 object was downloaded and matched to its reviewed local byte length and SHA-256 before a further full decode. Final videos total 28,400,581 bytes and 55 seconds, with individual runtimes of 5 or 6 seconds. Ten actual-frame posters total 751,596 bytes, each below 100KB. Videos stay online; existing Story artwork remains the offline/error fallback and Reader art is unchanged.
+
+Visual review inspected eight one-second samples per original and selected frames at full size alongside actual approved references. Extra full-size samples checked Elihu's lowered hands, the potter's working hands and Jeremiah's lowered hands. No obvious anatomy or identity break was found in inspected samples. This is sampled visual review, not an assertion that every frame was manually examined. Audio was not listened to. Isaiah's Call intentionally selects the empty smoke-filled sanctuary in Isaiah 6:1-4; no deity, named figure or rejected coal-contact output is activated.
+
+GitHub main ea61d42882c510cbf32019ec549818afdd873a14 (build430) and Sites source 0c9ec6215120721a45ec57aee0cbf53bcd74f35d matched all 3451 shared source files before changes. The 175 previous video records remain unchanged. Batch 14 adds 10 ready records for 185 ready videos of 283, leaving 98. Runtime source is commit f4127209; build 431 fingerprint 79bbe306e6270a7af1b64d36ffcb8659c747a5ef68662a8ac5bf1660e6da2431.
+
+The self-contained Worker is 64,857,472 bytes, below the unchanged 66,060,288-byte cap with 1,202,816 bytes of headroom. Future batches should use the established checked hosted-poster process before embedded posters exhaust that headroom. The MP4s themselves are not packaged in the app or Worker.
+
+Release preparation, phone/tablet Chromium/WebKit public playback, publication and live verification are recorded below after completion. Native signing, signed-public versus www comparison, installed build numbers and launch attempts belong to the parent-managed Mac release session; this Windows session does not claim them. The Mac was left untouched as instructed.
+
+Required release:prepare passed, including shared web/mobile build, check, check:sync, check:release and check:mobile. This includes the existing smart-search browser regressions. Post-mobile check:images passed; its pre-existing close image pair in 1 Samuel7:0/7:2 remains reported and unchanged. Readability passed in its existing report-only mode with baseline findings.
+
+All40 actual-public application video cases passed: Chromium and WebKit,390px phone and820px tablet viewports, every new video. Each checked autoplay after opening, actual advancing media, exact public URL, expected dimensions/duration, loop/mute, two settled changing-frame seeks and offline fallback. These are desktop browser viewports, not physical iPhone/iPad installation or listened-audio certification. No preview server remained after tests.
