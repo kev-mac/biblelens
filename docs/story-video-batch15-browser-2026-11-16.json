@@ -1,0 +1,412 @@
+{
+  "source": {
+    "version": "1.1.0",
+    "buildNumber": 433,
+    "sourceHash": "6cbeba53588e273d96530371812995bc17bc7816e07bf4bc05e8be97f54ee5a6"
+  },
+  "results": [
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "Hananiah's False Prophecy",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "time": 0.422751,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup",
+        "actual offline image fallback"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "The Scroll Burned",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "time": 0.418552,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "Jeremiah in the Cistern",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "time": 0.412189,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "Ezekiel's Vision and Commission",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "time": 0.414414,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "The Glory Leaves the Temple",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "time": 0.421668,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "The Death of Ezekiel's Wife",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "time": 0.410834,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "Ezekiel Is Shown the Temple in a Vision",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "time": 0.417505,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "phone",
+      "title": "Daniel and His Friends in Babylon",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "time": 0.411963,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "chromium",
+      "size": "ipad",
+      "title": "Daniel and His Friends in Babylon",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "time": 0.417301,
+        "duration": 8.042,
+        "width": 1280,
+        "height": 720,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "Hananiah's False Prophecy",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "time": 0.415291,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup",
+        "actual offline image fallback"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "The Scroll Burned",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "time": 0.4157077,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "Jeremiah in the Cistern",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "time": 0.415166,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "Ezekiel's Vision and Commission",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "time": 0.4366868,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "The Glory Leaves the Temple",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "time": 0.4212077,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "The Death of Ezekiel's Wife",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "time": 0.4258119,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "Ezekiel Is Shown the Temple in a Vision",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "time": 0.4273327,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "phone",
+      "title": "Daniel and His Friends in Babylon",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "time": 0.424041,
+        "duration": 8.064,
+        "width": 324,
+        "height": 182,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    },
+    {
+      "engine": "webkit",
+      "size": "ipad",
+      "title": "Daniel and His Friends in Babylon",
+      "status": "PASS",
+      "decoded": {
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "time": 0.4342285,
+        "duration": 8.064,
+        "width": 754,
+        "height": 424,
+        "loop": true,
+        "muted": true
+      },
+      "checks": [
+        "real public MP4 decode and advancing playback",
+        "pause and seek",
+        "mute/unmute properties",
+        "responsive layout",
+        "navigation cleanup"
+      ]
+    }
+  ],
+  "paidRequests": [],
+  "limits": [
+    "Browser phone/tablet viewports are not physical-device verification.",
+    "Playback is real public R2 decoding; mute properties are tested without an audio listening review."
+  ]
+}

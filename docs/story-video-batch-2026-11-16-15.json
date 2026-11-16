@@ -1,0 +1,837 @@
+{
+  "batch": 15,
+  "integrationAt": "2026-11-16T16:12:06.544Z",
+  "baselineCommit": "e1f505657bbfb8f9c3f70db2fb23627ade96f767",
+  "buildNumber": 433,
+  "flowProject": "https://flow.google.com/project/bb2ab16c-8f6f-4290-a25e-862c41c57a9e",
+  "model": "Omni 1.1 Flash",
+  "generationSettings": {
+    "resolution": "720p",
+    "seconds": 8,
+    "aspectRatio": "16:9",
+    "outputCount": 1,
+    "creditsEach": 12
+  },
+  "historicalGenerationCredits": {
+    "startingFlow": 50,
+    "startingAI": 978,
+    "endingFlow": 0,
+    "endingAI": 908,
+    "netUsed": 120,
+    "noPurchase": true,
+    "observedAt": "2026-11-15T20:50:06.624Z"
+  },
+  "newPaidGenerationOrApiCalls": 0,
+  "ready": 193,
+  "remaining": 90,
+  "totalIncludingLegacy": 283,
+  "originalsPreserved": true,
+  "audioListeningReview": false,
+  "continuousPlaybackReviewed": false,
+  "reviewEvidence": [
+    {
+      "file": "recovery/review-checkpoint-20261116.md",
+      "sha256": "f146eda2681a10d43a4f3fd011c7df316cf414fd6babe4a4d42f32bdaa25dd1b"
+    },
+    {
+      "file": "recovery/review-late-20261116.md",
+      "sha256": "da7594a1904e3db7a442e729a2af07753fba4dd81d4d8c97db5cbce3bebd5d76"
+    }
+  ],
+  "records": [
+    {
+      "order": 1,
+      "title": "Hananiah's False Prophecy",
+      "book": "Jeremiah",
+      "passage": "Jeremiah 28:1 - 28:17",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "poster": "/assets/story-video-hananiah-s-false-prophecy-poster-v1.webp",
+        "posterAlt": "Hananiah holds a broken yoke while Jeremiah listens. An imagined scene.",
+        "description": "This selects the broken yoke in Jeremiah 28:10-11. The later prophecy and death are not shown."
+      },
+      "key": "BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+      "reference": "/assets/story-hananiah-s-false-prophecy-v1.webp",
+      "referenceSha256": "dcd45e9509477dd3ce3e21d36c2377c37af628b990401bcc25e456679332d2c6",
+      "actualFlowIngredients": [
+        "reference-1.png"
+      ],
+      "prompt": "Hananiah holds the broken yoke before Jeremiah, selecting Jeremiah 28:10-11. Animate this exact approved reference. The distinct man at right, Hananiah, holds both already-broken wooden pieces steady and raises his chin slightly. Jeremiah at left lowers his open hands slightly and listens; retain his medium-brown complexion, prominent nose, dense dark curls, full dark beard and lean mature build. Keep the anonymous listening crowd still and distinct. The yoke is already broken: do not break, reconnect or reshape it, switch roles or add people. Natural blue midday sky and limestone light. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Hananiah holds the already broken yoke while Jeremiah listens.",
+      "selectedVerses": "Jeremiah 28:10-11",
+      "sceneLimits": "Keep both prophets distinct; avoid a break/morph effect or new king.",
+      "flowDisplayName": "Hananiah holds broken yoke befor…",
+      "original": {
+        "file": "BibleLens-Hananiah-s-False-Prophecy-v1-original.mp4",
+        "bytes": 4870273,
+        "sha256": "34cc6e8b671e97565685f74be2bdb43707624c3f8a5d1f051fb7b647e06ff90f"
+      },
+      "web": {
+        "file": "BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "bytes": 3909383,
+        "sha256": "34dec068d1e011004904a928c4db37c6c2bed1aa1acd245c6cdf708efc224bdb",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-hananiah-s-false-prophecy-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+      "posterAlt": "Hananiah holds a broken yoke while Jeremiah listens. An imagined scene.",
+      "description": "This selects the broken yoke in Jeremiah 28:10-11. The later prophecy and death are not shown.",
+      "publicVerification": {
+        "title": "Hananiah's False Prophecy",
+        "key": "BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Hananiah-s-False-Prophecy-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:09:50.692Z",
+        "bytes": 3909383,
+        "sha256": "34dec068d1e011004904a928c4db37c6c2bed1aa1acd245c6cdf708efc224bdb",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "3909383",
+          "accept-ranges": "bytes",
+          "etag": "\"82422ddd08d846f12fca87963965fb4c\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:36 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/3909383",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 2,
+      "title": "The Scroll Burned",
+      "book": "Jeremiah",
+      "passage": "Jeremiah 36:1 - 36:32",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "poster": "/assets/story-video-the-scroll-burned-poster-v1.webp",
+        "posterAlt": "Baruch writes beside Jeremiah. An imagined scene.",
+        "description": "This selects the replacement scroll in Jeremiah 36:32. The king burning the earlier scroll is not shown."
+      },
+      "key": "BibleLens-The-Scroll-Burned-v1-web.mp4",
+      "reference": "/assets/story-the-scroll-burned-v1.webp",
+      "referenceSha256": "6deddc004b1bddb7c6dd78fc6ef2899efa0a55d2845f8793a882a1c2335ae430",
+      "actualFlowIngredients": [
+        "reference-2.png"
+      ],
+      "prompt": "Baruch writes the replacement scroll while Jeremiah dictates, selecting Jeremiah 36:32. Animate this exact approved reference. Younger Baruch at left makes a few small writing strokes with the same reed; his other hand keeps the scroll steady. Mature Jeremiah seated behind him at right lowers his open hand slightly. Preserve Baruch's brown face, dense dark curls and dark beard, distinct from Jeremiah's prominent nose, graying curls and fuller gray beard. The brazier flame flickers; blue winter daylight enters the window. No king appears and no scroll burns: this is the replacement dictation. Do not create legible words or change scroll rods, bowls or hand grips. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Baruch writes the replacement scroll beside Jeremiah.",
+      "selectedVerses": "Jeremiah 36:32",
+      "sceneLimits": "Approved art depicts dictation, not the burning; Baruch is the left-hand younger scribe.",
+      "flowDisplayName": "Baruch writes scroll from dictation",
+      "original": {
+        "file": "BibleLens-The-Scroll-Burned-v1-original.mp4",
+        "bytes": 3864207,
+        "sha256": "f419a126b897658e23a9fe64a824d5ab7983f674143214eedc9dc82f99469c63"
+      },
+      "web": {
+        "file": "BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "bytes": 3058601,
+        "sha256": "df37b8ee2f08139f4dcb28c26489674efb2c49af58a34943bb03bc6607ddcf3e",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-the-scroll-burned-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-The-Scroll-Burned-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Scroll-Burned-v1-web.mp4",
+      "posterAlt": "Baruch writes beside Jeremiah. An imagined scene.",
+      "description": "This selects the replacement scroll in Jeremiah 36:32. The king burning the earlier scroll is not shown.",
+      "publicVerification": {
+        "title": "The Scroll Burned",
+        "key": "BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Scroll-Burned-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:09:57.429Z",
+        "bytes": 3058601,
+        "sha256": "df37b8ee2f08139f4dcb28c26489674efb2c49af58a34943bb03bc6607ddcf3e",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "3058601",
+          "accept-ranges": "bytes",
+          "etag": "\"278f31d4f5bca3584c7afe857f418743\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:54 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/3058601",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 3,
+      "title": "Jeremiah in the Cistern",
+      "book": "Jeremiah",
+      "passage": "Jeremiah 37:1 - 38:28",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "poster": "/assets/story-video-jeremiah-in-the-cistern-poster-v1.webp",
+        "posterAlt": "Ebed-melech and a helper lift Jeremiah from the cistern. An imagined scene.",
+        "description": "This selects the rescue in Jeremiah 38:11-13. The helper remains unnamed; the earlier arrest is not shown."
+      },
+      "key": "BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+      "reference": "/assets/story-jeremiah-in-the-cistern-v2.webp",
+      "referenceSha256": "d3622a4f3ca4c196ce577dbe91a8c55f4d64dc1122c72943066da05760fedb1a",
+      "actualFlowIngredients": [
+        "reference-3.png"
+      ],
+      "prompt": "Ebed-melech and an unnamed helper rescue Jeremiah from the cistern, selecting Jeremiah 38:11-13. Animate this exact approved corrected reference. Make one brief gentle upward movement of Jeremiah, only a few centimeters, as the two rescuers keep their existing rope grips stable. Preserve older Jeremiah's brown face, prominent nose, gray curls and beard, and both helpers' distinct faces, curls, headwrap and builds. Keep both cloth pads between ropes and Jeremiah's body beneath his armpits, his wrists free and rope paths continuous. No knot relocation, hand exchange, slipping, falling, distress or added rescuer. Natural blue-gray overcast light. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Ebed-melech and the unnamed helper begin a short, steady lift.",
+      "selectedVerses": "Jeremiah 38:11-13",
+      "sceneLimits": "Keep cloth padding under both armpits, wrists free, rope paths coherent; helper is not Baruch.",
+      "flowDisplayName": "Rescuing Jeremiah from the cistern",
+      "original": {
+        "file": "BibleLens-Jeremiah-in-the-Cistern-v1-original.mp4",
+        "bytes": 5443726,
+        "sha256": "9ffc4d8bb2690806284701b19027daf3558507b5e12783db0d5412d985474ecc"
+      },
+      "web": {
+        "file": "BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "bytes": 4210567,
+        "sha256": "1aefe206d096f6ced89525dced145e70823d1bcaea97dc2978d338ae8bac9613",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-jeremiah-in-the-cistern-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+      "posterAlt": "Ebed-melech and a helper lift Jeremiah from the cistern. An imagined scene.",
+      "description": "This selects the rescue in Jeremiah 38:11-13. The helper remains unnamed; the earlier arrest is not shown.",
+      "publicVerification": {
+        "title": "Jeremiah in the Cistern",
+        "key": "BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Jeremiah-in-the-Cistern-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:01.235Z",
+        "bytes": 4210567,
+        "sha256": "1aefe206d096f6ced89525dced145e70823d1bcaea97dc2978d338ae8bac9613",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "4210567",
+          "accept-ranges": "bytes",
+          "etag": "\"2545105a2ee8834f74b4e5b6a8cb5e07\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:37 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/4210567",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 5,
+      "title": "Ezekiel's Vision and Commission",
+      "book": "Ezekiel",
+      "passage": "Ezekiel 1:1 - 3:27",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "poster": "/assets/story-video-ezekiel-s-vision-and-commission-poster-v1.webp",
+        "posterAlt": "Ezekiel watches a storm approach beside the canal. An imagined scene.",
+        "description": "This selects the storm setting in Ezekiel 1:1-4. The later creatures and commission are not shown."
+      },
+      "key": "BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+      "reference": "/assets/story-ezekiel-s-vision-and-commission-v2.webp",
+      "referenceSha256": "1ea81fb8455d8cecadb8b867b3462eabd6d89846eb75c161098c56d1b85f4b64",
+      "actualFlowIngredients": [
+        "reference-5.png"
+      ],
+      "prompt": "Ezekiel watches the storm by the Chebar canal, selecting the opening setting of Ezekiel 1:1-4. Animate this exact approved reference. Keep the kneeling prophet nearly still, seen from the same rear/profile angle, his palm resting on the bank beside the same closed scroll. Preserve his brown complexion, natural dark curls, beard silhouette and lean build. Dark blue-gray clouds move slowly while natural bright light filters through them; canal ripples and reeds move gently. Do not turn him into a new frontal portrait, add a human divine figure, face in the clouds, wheels, new creatures or fire strike. This selects the opening setting, not the whole vision. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Ezekiel watches the storm approach by the canal.",
+      "selectedVerses": "Ezekiel 1:1-4",
+      "sceneLimits": "Select the opening setting; do not invent creatures or a new divine portrait from this reference.",
+      "flowDisplayName": "Prophet watching storm by canal",
+      "original": {
+        "file": "BibleLens-Ezekiel-s-Vision-and-Commission-v1-original.mp4",
+        "bytes": 4471983,
+        "sha256": "009c3f1f86f754c73c56b6870c7808edb73b5511028183acb905b3ba6dd7b23a"
+      },
+      "web": {
+        "file": "BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "bytes": 3789800,
+        "sha256": "f67c49af00b409d84d8c5923d701189f90b1ccf3ac29d7e9fe78cbb0ec4f85dd",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-ezekiel-s-vision-and-commission-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+      "posterAlt": "Ezekiel watches a storm approach beside the canal. An imagined scene.",
+      "description": "This selects the storm setting in Ezekiel 1:1-4. The later creatures and commission are not shown.",
+      "publicVerification": {
+        "title": "Ezekiel's Vision and Commission",
+        "key": "BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-s-Vision-and-Commission-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:05.783Z",
+        "bytes": 3789800,
+        "sha256": "f67c49af00b409d84d8c5923d701189f90b1ccf3ac29d7e9fe78cbb0ec4f85dd",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "3789800",
+          "accept-ranges": "bytes",
+          "etag": "\"ba48bf54a7a9d95153f0dd21f845c94b\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:36 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/3789800",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 6,
+      "title": "The Glory Leaves the Temple",
+      "book": "Ezekiel",
+      "passage": "Ezekiel 8:1 - 11:25",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "poster": "/assets/story-video-the-glory-leaves-the-temple-poster-v1.webp",
+        "posterAlt": "Ezekiel watches a bright cloud beyond the temple gate. An imagined scene.",
+        "description": "This selects the departure in Ezekiel 11:22-23. The temple design is imagined; earlier events are not shown."
+      },
+      "key": "BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+      "reference": "/assets/story-the-glory-leaves-the-temple-v1.webp",
+      "referenceSha256": "7301e5dcc2a173969c64abd09d701cdd4f409ec3c684815dbf2431da76191dd0",
+      "actualFlowIngredients": [
+        "reference-6.png"
+      ],
+      "prompt": "Ezekiel watches the glory depart toward the eastern hills, selecting Ezekiel 11:22-23. Animate this exact approved reference. Keep the prophet at left standing still in the same rear/profile pose, with his brown face, dark curls, beard and lean build recognizable. A luminous cloud drifts slowly farther toward the hills above the city. His cloak hem moves slightly; temple masonry, gates and his lowered hand remain stable. Retain natural violet-blue sky and warm late daylight without a sepia grade. No deity body or face, new person, attack, city fire or new architectural claim. This is an imagined selected departure moment. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Ezekiel watches the luminous cloud beyond the temple gate.",
+      "selectedVerses": "Ezekiel 11:22-23",
+      "sceneLimits": "Selected departure moment, with no added violence or literal claim about an exact historical temple plan.",
+      "flowDisplayName": "Prophet watches glowing cloud de…",
+      "original": {
+        "file": "BibleLens-The-Glory-Leaves-the-Temple-v1-original.mp4",
+        "bytes": 3827567,
+        "sha256": "d5eacec5dcb91874f99492e0e59423c514c75473a87246fb4ce88a731dba319e"
+      },
+      "web": {
+        "file": "BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "bytes": 3089063,
+        "sha256": "23f4c4cc4856572a2026d8da89a530cdc0a2afbee23e72f3834fe0ac44c83b82",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-the-glory-leaves-the-temple-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+      "posterAlt": "Ezekiel watches a bright cloud beyond the temple gate. An imagined scene.",
+      "description": "This selects the departure in Ezekiel 11:22-23. The temple design is imagined; earlier events are not shown.",
+      "publicVerification": {
+        "title": "The Glory Leaves the Temple",
+        "key": "BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Glory-Leaves-the-Temple-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:07.578Z",
+        "bytes": 3089063,
+        "sha256": "23f4c4cc4856572a2026d8da89a530cdc0a2afbee23e72f3834fe0ac44c83b82",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "3089063",
+          "accept-ranges": "bytes",
+          "etag": "\"969e526efb8a2f75f334081e26ec52da\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:54 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/3089063",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 7,
+      "title": "The Death of Ezekiel's Wife",
+      "book": "Ezekiel",
+      "passage": "Ezekiel 24:15 - 24:27",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "poster": "/assets/story-video-the-death-of-ezekiel-s-wife-poster-v1.webp",
+        "posterAlt": "Ezekiel stands beside an empty chair as a neighbor listens. An imagined scene.",
+        "description": "This selects the aftermath in Ezekiel 24:17-19. His wife is absent; the neighbor is not his wife."
+      },
+      "key": "BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+      "reference": "/assets/story-the-death-of-ezekiel-s-wife-v2.webp",
+      "referenceSha256": "e960db62d2232f388afe9fda22b32a0b83defe8054440eedb0303d86ab5408c8",
+      "actualFlowIngredients": [
+        "reference-7.png"
+      ],
+      "prompt": "Ezekiel stands beside an empty chair after his loss, selecting Ezekiel 24:17-19. Animate this exact approved corrected reference. He keeps his linen headwrap on, his hands clasped in the same position and his head gently bowed, with only subtle breathing. Preserve his mature brown face, natural graying curls and beard and lean build. The neighbor in the doorway remains a distinct living listener; she is not his deceased wife. Keep the chair empty and folded shawl still. A small oil flame flickers against natural blue dusk. No deathbed, corpse, injury, headdress removal or new person. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Ezekiel remains with his head covering on beside the empty chair while a neighbor listens.",
+      "selectedVerses": "Ezekiel 24:17-19",
+      "sceneLimits": "Neighbor is not his wife; preserve the corrected v2 headwrap, empty chair and folded shawl.",
+      "flowDisplayName": "Ezekiel stands beside empty chair",
+      "original": {
+        "file": "BibleLens-The-Death-of-Ezekiel-s-Wife-v1-original.mp4",
+        "bytes": 3473349,
+        "sha256": "207ba8b5b5a9eef1fb3895d675d701438152d912183b77231b3ef7c984269ab1"
+      },
+      "web": {
+        "file": "BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "bytes": 2661116,
+        "sha256": "1498ee1be73e19588ab1f6c80581ca117f9e56f20de42487f644da84703d1b21",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-the-death-of-ezekiel-s-wife-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+      "posterAlt": "Ezekiel stands beside an empty chair as a neighbor listens. An imagined scene.",
+      "description": "This selects the aftermath in Ezekiel 24:17-19. His wife is absent; the neighbor is not his wife.",
+      "publicVerification": {
+        "title": "The Death of Ezekiel's Wife",
+        "key": "BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-The-Death-of-Ezekiel-s-Wife-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:08.503Z",
+        "bytes": 2661116,
+        "sha256": "1498ee1be73e19588ab1f6c80581ca117f9e56f20de42487f644da84703d1b21",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "2661116",
+          "accept-ranges": "bytes",
+          "etag": "\"19be10a3ecee2cf08ed97d733b947f7a\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:51 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/2661116",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 9,
+      "title": "Ezekiel Is Shown the Temple in a Vision",
+      "book": "Ezekiel",
+      "passage": "Ezekiel 40:1 - 40:4",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "poster": "/assets/story-video-ezekiel-is-shown-the-temple-in-a-vision-poster-v1.webp",
+        "posterAlt": "A guide holds a measuring reed as Ezekiel listens. An imagined scene.",
+        "description": "This selects the guide at the gate in Ezekiel 40:1-4. The later temple measurements are not shown."
+      },
+      "key": "BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+      "reference": "/assets/story-ezekiel-is-shown-the-temple-in-a-vision-v1.webp",
+      "referenceSha256": "32f6b61ad8347fdf6d432a8ce82b7571fbc2e05165d91861cc5dbcf89bd9e4dd",
+      "actualFlowIngredients": [
+        "reference-9.png"
+      ],
+      "prompt": "Ezekiel listens to the guide at the temple gate in his vision, selecting Ezekiel 40:1-4. Animate this exact approved reference. Keep Ezekiel kneeling at left, viewed from the same rear/profile angle; he is older in exile year twenty-five, not newly youthful. The separate standing guide keeps the long measuring reed upright in the same hand and inclines his head slightly toward the gate. Keep both figures' existing faces, curls, beards, garments and builds; never exchange their roles. Subtle cloth movement in clear blue daylight. Keep the immense stone gateway and tiny distant people stable. No new measurement graphics or claim of an exact archaeological reconstruction. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "Ezekiel listens to the distinct guide holding the measuring reed at the gate.",
+      "selectedVerses": "Ezekiel 40:1-4",
+      "sceneLimits": "Preserve older Ezekiel; guide is not Ezekiel; chapter40 is exile year25, not a younger reset.",
+      "flowDisplayName": "Ezekiel listens to temple guide",
+      "original": {
+        "file": "BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-original.mp4",
+        "bytes": 4572476,
+        "sha256": "4c805c3d4052a6d5bb7b6853fc28ee721c149cc1ac50564bb5c8f774abdf04a1"
+      },
+      "web": {
+        "file": "BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "bytes": 3720066,
+        "sha256": "2a5c92d51849c69b8c58deccfda0bfef73fc6b57e98f38bc02edb9d4258609c9",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-ezekiel-is-shown-the-temple-in-a-vision-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+      "posterAlt": "A guide holds a measuring reed as Ezekiel listens. An imagined scene.",
+      "description": "This selects the guide at the gate in Ezekiel 40:1-4. The later temple measurements are not shown.",
+      "publicVerification": {
+        "title": "Ezekiel Is Shown the Temple in a Vision",
+        "key": "BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Ezekiel-Is-Shown-the-Temple-in-a-Vision-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:09.564Z",
+        "bytes": 3720066,
+        "sha256": "2a5c92d51849c69b8c58deccfda0bfef73fc6b57e98f38bc02edb9d4258609c9",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "3720066",
+          "accept-ranges": "bytes",
+          "etag": "\"2c19b92229ad220a3e06d9540e628638\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:36 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/3720066",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    },
+    {
+      "order": 10,
+      "title": "Daniel and His Friends in Babylon",
+      "book": "Daniel",
+      "passage": "Daniel 1:1 - 1:21",
+      "proposedEntry": {
+        "status": "ready",
+        "provider": "mp4",
+        "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "poster": "/assets/story-video-daniel-and-his-friends-in-babylon-poster-v1.webp",
+        "posterAlt": "Four young Judeans sit with vegetables and water. An imagined scene.",
+        "description": "This selects the meal in Daniel 1:12-16. The four youths remain distinct; the official is not the king."
+      },
+      "key": "BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+      "reference": "/assets/story-daniel-and-his-friends-in-babylon-v1.webp",
+      "referenceSha256": "ee0dd6a1ec544d6dcbae2e7759a8cdf8e5af1ebab4482f687706a5ac7b42e670",
+      "actualFlowIngredients": [
+        "reference-10.png"
+      ],
+      "prompt": "Four young Judeans request vegetables and water from the steward, selecting Daniel 1:12-14. Animate this exact approved reference. The leftmost seated youth makes one slight open-palm gesture while keeping his bowl stable; the other three seated young men listen with their existing bowls and grips unchanged. The distinct official at right keeps his hand at his chin and gives a small thoughtful nod. Preserve all five different brown faces, natural curls, youthful versus mature ages and builds, the four clothing colors and the official's blue garment and headband. Do not invent a precise name-to-face assignment among the four, add a king, pour, eat, pass bowls or create extra fingers. Natural blue courtyard light, green leaves, realistic glazed brick. Grounded lifelike realism, natural varied light, believable faces, linen, stone and wood, not painting, cartoon or glossy fantasy. Preserve every uploaded reference identity, age, complexion, natural hair texture, build, anatomy and scene geometry. No added text, captions, logos, optional watermark, speech, lip sync, narration or music; quiet natural location ambience only. One continuous restrained shot with subtle camera drift, no cuts or filler. Keep hands, fingers, limbs and all held objects coherent.",
+      "selectedScene": "The four young Judeans sit with vegetables and water.",
+      "selectedVerses": "Daniel 1:12-16",
+      "sceneLimits": "Preserve each actual-reference face; do not invent a secure name-to-face assignment or introduce the king.",
+      "flowDisplayName": "Four youths requesting water veg…",
+      "original": {
+        "file": "BibleLens-Daniel-and-His-Friends-in-Babylon-v1-original.mp4",
+        "bytes": 5554333,
+        "sha256": "f68732749b963fc50d93e80d26fbf47aac6252508a81029d0c20789464a0f0c6"
+      },
+      "web": {
+        "file": "BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "bytes": 4746150,
+        "sha256": "c45944792cb0263eabe43659811b7c7cc00f9713b927aa18f6086134c651c1fa",
+        "duration": 8.042,
+        "videoDuration": 8,
+        "audioDuration": 8.042,
+        "codec": "H.264 Main level3.1, no Bframes; AAC 48kHz stereo",
+        "fastStart": {
+          "moov": 32,
+          "mdat": 5506
+        }
+      },
+      "poster": "/assets/story-video-daniel-and-his-friends-in-babylon-poster-v1.webp",
+      "fullLocalDecode": "passed again for original and web, including audio stream",
+      "visualReview": "passed within sampled scope; actual references, full-size frames and 32 samples per clip at 4fps",
+      "audioListeningReview": false,
+      "upload": {
+        "method": "Normal Cloudflare dashboard upload to existing biblelens-videos bucket",
+        "ownerSessionConfirmation": "8/8 files uploaded; all files successfully uploaded",
+        "credentialOrConfigurationChanges": false,
+        "key": "BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4"
+      },
+      "publicPlayback": "not performed",
+      "activeInApp": true,
+      "status": "ready",
+      "provider": "mp4",
+      "src": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+      "posterAlt": "Four young Judeans sit with vegetables and water. An imagined scene.",
+      "description": "This selects the meal in Daniel 1:12-16. The four youths remain distinct; the official is not the king.",
+      "publicVerification": {
+        "title": "Daniel and His Friends in Babylon",
+        "key": "BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "url": "https://pub-9f1a7f52c7d046daba4df355a08ed8cd.r2.dev/BibleLens-Daniel-and-His-Friends-in-Babylon-v1-web.mp4",
+        "status": "verified",
+        "verifiedAt": "2026-11-16T16:10:11.556Z",
+        "bytes": 4746150,
+        "sha256": "c45944792cb0263eabe43659811b7c7cc00f9713b927aa18f6086134c651c1fa",
+        "headers": {
+          "content-type": "video/mp4",
+          "content-length": "4746150",
+          "accept-ranges": "bytes",
+          "etag": "\"5110ed47ca0c79817bbd07c46a986d51\"",
+          "cache-control": null,
+          "access-control-allow-origin": null,
+          "last-modified": "Mon, 16 Nov 2026 16:07:42 GMT"
+        },
+        "rangeStatus": 206,
+        "contentRange": "bytes 0-1023/4746150",
+        "decode": "Public bytes exactly match the retained fully decoded derivative"
+      }
+    }
+  ],
+  "holds": [
+    {
+      "order": 4,
+      "title": "The Fall of Jerusalem and Flight to Egypt",
+      "passage": "Jeremiah 39:1 - 43:13",
+      "reason": "Object continuity failure: a second staff appears in the other hand. Preserve the original; do not activate or regenerate."
+    },
+    {
+      "order": 8,
+      "title": "The Valley of Dry Bones",
+      "passage": "Ezekiel 37:1 - 37:28",
+      "reason": "Selected two-stick sign loses steady alignment: sticks separate into a V, then approach. Preserve the original; do not activate or regenerate."
+    }
+  ],
+  "additionalExistingHostedPosters": {
+    "sourceCommit": "b8a061c149e6574b7ae49ce050e22ad7b27662f1",
+    "records": [
+      {
+        "title": "Noah and the Flood",
+        "poster": "/assets/story-video-noah-and-the-flood-poster-v1.webp",
+        "bytes": 52980,
+        "sha256": "3ad4e73948b9243153689f70a5396741fec4a700407bddee1dcb420ffaa265c3"
+      },
+      {
+        "title": "The Family of Noah",
+        "poster": "/assets/story-video-the-family-of-noah-poster-v1.webp",
+        "bytes": 13286,
+        "sha256": "71443f5d45d4cbc33872746410d020b70c5b07606f65b43d3f67d9d5cdb7280c"
+      },
+      {
+        "title": "The Tower of Babel",
+        "poster": "/assets/story-video-the-tower-of-babel-poster-v1.webp",
+        "bytes": 16278,
+        "sha256": "e0a1dfcfa1011d73471999dbacc4baeb4a9409a7315182876ac2b915474855b5"
+      },
+      {
+        "title": "The Call of Abram",
+        "poster": "/assets/story-video-the-call-of-abram-poster-v1.webp",
+        "bytes": 67874,
+        "sha256": "a0ab956325c01e1e8319a4a7078a87b926184258c35f4c4f68c6534fbc374d83"
+      },
+      {
+        "title": "Abram and Lot",
+        "poster": "/assets/story-video-abram-and-lot-poster-v1.webp",
+        "bytes": 17060,
+        "sha256": "8c55f4924734a9b4f2d6ce3374d45eedc420842c3a1751af3c08f4dbf67ed496"
+      },
+      {
+        "title": "Abraham and Sarah’s Covenant",
+        "poster": "/assets/story-video-abraham-and-sarah-s-covenant-poster-v1.webp",
+        "bytes": 50282,
+        "sha256": "b1325bd68a7f5fa7923d7b50f4836779aa0294273803d9f37a04fdb63ddd6988"
+      },
+      {
+        "title": "Lot Leaves Sodom",
+        "poster": "/assets/story-video-lot-leaves-sodom-poster-v1.webp",
+        "bytes": 72010,
+        "sha256": "aa6709a3bb8459f688e6b9ec14ee642be6d6e487038248ce6696257e2c8a2dc3"
+      },
+      {
+        "title": "Isaac and Rebekah",
+        "poster": "/assets/story-video-isaac-and-rebekah-poster-v1.webp",
+        "bytes": 36658,
+        "sha256": "ae53c449badab4cf973dc37c83d25652729aa3a5660127d28b850ef1639648e1"
+      },
+      {
+        "title": "Jacob and Esau",
+        "poster": "/assets/story-video-jacob-and-esau-poster-v1.webp",
+        "bytes": 39824,
+        "sha256": "ef7b0da71bbc6be8b6d814b2c163a7b7ec775dc9a49db399b7bfec0416bbe030"
+      },
+      {
+        "title": "Jacob’s Household",
+        "poster": "/assets/story-video-jacob-s-household-poster-v1.webp",
+        "bytes": 53650,
+        "sha256": "ec52e606f27c72f24c8ff030ea66c820fe818b9bae6b58c99465c08ae863c51f"
+      },
+      {
+        "title": "Jacob Returns to Canaan",
+        "poster": "/assets/story-video-jacob-returns-to-canaan-poster-v1.webp",
+        "bytes": 57130,
+        "sha256": "ce8428af162adda6027cb114e2f9ba0c95d1b50cfab5bc339b7283a43b0d1560"
+      },
+      {
+        "title": "Dinah at Shechem",
+        "poster": "/assets/story-video-dinah-at-shechem-poster-v1.webp",
+        "bytes": 48476,
+        "sha256": "e6c251af54fcc38e060a213a636b3332d56b0c760567d27bd345bb20fbbf6f3c"
+      },
+      {
+        "title": "The Death of Rachel",
+        "poster": "/assets/story-video-the-death-of-rachel-poster-v1.webp",
+        "bytes": 67574,
+        "sha256": "3ace1cb1ba7453025c55b6e97ef43f5c1d4ea3b7dcaa4eb7ec49f1229c682c4d"
+      },
+      {
+        "title": "Israel Oppressed in Egypt",
+        "poster": "/assets/story-video-israel-oppressed-in-egypt-poster-v1.webp",
+        "bytes": 44448,
+        "sha256": "281edc74791d62a5af1e06181ad3f17b3514775990041120467bf65d336b3193"
+      },
+      {
+        "title": "Joseph and His Brothers",
+        "poster": "/assets/story-video-joseph-and-his-brothers-poster-v1.webp",
+        "bytes": 10344,
+        "sha256": "e5190c484745cf03549b5a0340377f0bbb770fa33496727c064c99134aac554c"
+      },
+      {
+        "title": "Joseph in Egypt",
+        "poster": "/assets/story-video-joseph-in-egypt-poster-v1.webp",
+        "bytes": 37420,
+        "sha256": "10397abf7361fc75cb19b88126c9f0579d9b3c1c358bb7d105b5e00166a61074"
+      },
+      {
+        "title": "Judah and Tamar",
+        "poster": "/assets/story-video-judah-and-tamar-poster-v1.webp",
+        "bytes": 34256,
+        "sha256": "3de02514a238d994adf7ad2f5427c88d10a81dca36d923e069728ffc003d748d"
+      },
+      {
+        "title": "Moses Flees to Midian",
+        "poster": "/assets/story-video-moses-flees-to-midian-poster-v1.webp",
+        "bytes": 33566,
+        "sha256": "afb7789aa1b165218bc90b6e9db8f8a2c5b6f3fdd94fc0f398e82c249d260d89"
+      },
+      {
+        "title": "Moses Returns to Egypt",
+        "poster": "/assets/story-video-moses-returns-to-egypt-poster-v1.webp",
+        "bytes": 28454,
+        "sha256": "bee21a94d8d586b08301a0ac691ccf0a44cb7b5b09d00327fc90a96d22b2176e"
+      },
+      {
+        "title": "Jacob Blesses His Family",
+        "poster": "/assets/story-video-jacob-blesses-his-family-poster-v1.webp",
+        "bytes": 10494,
+        "sha256": "3725a3ce484cbbd83811ef2780d462ed96b7dbbfece2e697a8f510b71c76702f"
+      }
+    ],
+    "sourceAndNativeBytesPreserved": true
+  },
+  "totals": {
+    "webBytes": 29184746,
+    "posterBytes": 557256,
+    "containerSeconds": 64.336
+  },
+  "releaseStatus": "Video activation prepared in build 433; publication and device verification are tracked in the release handoff."
+}
