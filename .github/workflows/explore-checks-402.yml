@@ -1,0 +1,183 @@
+name: "Build 402 Explore comparison checks"
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/explore-checks-402.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: explore-402-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: false
+
+jobs:
+  explore-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/explore-checks-402'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+      BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+    steps:
+      - name: Check out frozen build 402 source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify exact product source and preserved build 401 data
+        run: |
+          git merge-base --is-ancestor c34cf3178abe8403977a25431a810f0130d9ca2c HEAD
+          git diff --exit-code c34cf3178abe8403977a25431a810f0130d9ca2c HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research
+          git diff --exit-code 9c4dee52ff66c01c10a3f30420d7f21d74e85322 HEAD -- data worker ios android package-lock.json capacitor.config.json .openai/hosting.json db drizzle research
+          mkdir -p .release/explore-402
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {releaseInfo} from './scripts/release-info.mjs';
+          const release=releaseInfo();assert.equal(release.buildNumber,402);assert.equal(release.sourceHash,'ff4463907cb1ca89830974c21bf83ad514e43f733b7d7ba8a50ece757ec66544');fs.writeFileSync('.release/explore-402/source-release.json',JSON.stringify(release,null,2)+'\n');console.log(release);
+          JS
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Install Chromium and WebKit on the separate runner
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Require Chromium sandboxing
+        run: |
+          cat > .release/explore-402/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';const launch=chromium.launch.bind(chromium);chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+          node --check .release/explore-402/require-sandbox.mjs
+
+      - name: Run required final-source shared release preparation
+        id: prepare
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-402/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/explore-402/release-prepare.log
+
+      - name: Verify all preserved reviews in actual web and offline workers
+        run: node scripts/check-contradiction-bundles.mjs 2>&1 | tee .release/explore-402/review-parity.log
+
+      - name: Verify exact branding and artwork parity
+        run: |
+          node scripts/check-branding.mjs --built 2>&1 | tee .release/explore-402/branding.log
+          npm run check:images 2>&1 | tee .release/explore-402/images.log
+
+      - name: Build actual accepted build 401 for a fresh before rendering
+        run: |
+          git worktree add --detach .release/baseline-401 9c4dee52ff66c01c10a3f30420d7f21d74e85322
+          ln -s "$GITHUB_WORKSPACE/node_modules" .release/baseline-401/node_modules
+          npm --prefix .release/baseline-401 run build 2>&1 | tee .release/explore-402/baseline-build.log
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          const source=fs.readFileSync('.release/baseline-401/scripts/serve.mjs','utf8');assert(source.includes('const port=8787;'));assert(source.includes("import worker from './built-worker.mjs';"));
+          // An ignored QA adapter changes only its listen port and relative import.
+          // Accepted baseline source and its actual production bundle stay intact.
+          fs.mkdirSync('.release/baseline-401/.release',{recursive:true});fs.writeFileSync('.release/baseline-401/.release/serve-8788.mjs',source.replace('const port=8787;','const port=8788;').replace("import worker from './built-worker.mjs';","import worker from '../scripts/built-worker.mjs';"));
+          JS
+
+      - name: Open exact before and after builds on runner loopback
+        id: preview
+        run: |
+          node scripts/serve.mjs > .release/explore-402/after-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-402/after-server.pid
+          (cd .release/baseline-401 && exec node .release/serve-8788.mjs) > .release/explore-402/before-server.log 2>&1 &
+          printf '%s\n' "$!" > .release/explore-402/before-server.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {setTimeout} from 'node:timers/promises';
+          const final=JSON.parse(fs.readFileSync('.release/explore-402/source-release.json')),before={version:'1.1.0',buildNumber:401,sourceHash:'80ea78e29c620b0e1aeb3cfefc215fdc8729234ff7cd87032184865f44be361a'};
+          for(const [port,expected]of [[8787,final],[8788,before]]){let ready=false;for(let attempt=0;attempt<100;attempt++){try{const r=await fetch(`http://127.0.0.1:${port}/release.json`,{signal:AbortSignal.timeout(2000)});assert(r.ok);assert.deepEqual(await r.json(),expected);ready=true;break;}catch{await setTimeout(200);}}assert(ready,'Exact preview identity unavailable on '+port);}
+          assert.deepEqual(JSON.parse(fs.readFileSync('www/release.json')),final);
+          JS
+
+      - name: Capture actual build 401 before geometry and screenshots
+        id: before
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-402/require-sandbox.mjs
+          BIBLELENS_PREVIEW_URL: http://127.0.0.1:8788
+          BIBLELENS_COMPARISON_PHASE: before
+        run: node scripts/check-explore-refinements-browser.mjs 2>&1 | tee .release/explore-402/before.log
+
+      - name: Compare build 402 and exercise inset search and gestures
+        id: after
+        if: ${{ !cancelled() && steps.before.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-402/require-sandbox.mjs
+          BIBLELENS_COMPARISON_PHASE: after
+        run: node scripts/check-explore-refinements-browser.mjs 2>&1 | tee .release/explore-402/after.log
+
+      - name: Retain and extend all responsive Explore annotation regressions
+        id: annotations
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-402/require-sandbox.mjs
+        run: node scripts/check-explore-annotations-browser.mjs 2>&1 | tee .release/explore-402/annotations.log
+
+      - name: Exercise existing carousel destinations and large text
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/explore-402/require-sandbox.mjs
+        run: node scripts/check-explore-carousels.mjs 2>&1 | tee .release/explore-402/carousels.log
+
+      - name: Stop only these owned previews
+        if: always()
+        run: |
+          for stage in before after; do
+            if test -f ".release/explore-402/$stage-server.pid"; then kill "$(cat ".release/explore-402/$stage-server.pid")" 2>/dev/null || true; fi
+          done
+
+      - name: Package only the successful final candidate
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/explore-402/source-release.json')),candidate=JSON.parse(fs.readFileSync('.release/candidate.json')),{canonicalCommit,...release}=candidate;assert.deepEqual(release,expected);assert.deepEqual(releaseInfo(),expected);
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
+          const before=JSON.parse(fs.readFileSync('.release/explore-comparison/before/matrix.json')),after=JSON.parse(fs.readFileSync('.release/explore-comparison/after/matrix.json')),annotations=JSON.parse(fs.readFileSync('.release/explore-annotations/matrix.json'));assert.equal(before.length,28);assert.equal(after.length,28);assert.equal(annotations.length,56);for(const rows of [before,after,annotations])assert(rows.every(row=>row.status==='PASS'));
+          const worker=fs.readFileSync('dist/server/index.js');fs.writeFileSync('.release/explore-402/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'c34cf3178abe8403977a25431a810f0130d9ca2c',baselineCommit:'9c4dee52ff66c01c10a3f30420d7f21d74e85322',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),comparisonBefore:28,comparisonAfter:28,annotationCases:56,screenshotsVisuallyInspected:false,signedNativeAssets:false},null,2)+'\n');
+          JS
+          tar -czf .release/explore-402/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/explore-402/prepared-bundles.tar.gz > .release/explore-402/prepared-bundles.sha256
+
+      - name: Retain exact tested bundles without publication
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-402-verified-bundles-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-402/source-release.json
+            .release/explore-402/prepared-manifest.json
+            .release/explore-402/prepared-bundles.tar.gz
+            .release/explore-402/prepared-bundles.sha256
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Retain actual before and after captures and results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-402-explore-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/explore-402/*.log
+            .release/explore-402/*.json
+            .release/explore-402/*.sha256
+            .release/explore-comparison/**
+            .release/explore-annotations/**
+            .release/carousels/**
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
