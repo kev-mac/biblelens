@@ -12,11 +12,11 @@ assert(html.includes('<details class="study-library" hidden inert>'));assert(htm
 assert(read('src/reader.js').includes('${esc(b.name)}</span>'),'Picker retains full book names');
 const readerSource=read('src/reader.js'),bookGrid={value:'0',innerHTML:''};
 const pickerContext={books:[...JSON.parse(read('data/books.json')),...JSON.parse(read('data/lost-books/books.json'))],passagePicker:{dataset:{},querySelectorAll:()=>[]},$:selector=>bookGrid,esc:value=>String(value),requestAnimationFrame:()=>{}};
-vm.createContext(pickerContext);vm.runInContext(readerSource.slice(readerSource.indexOf('function passageBookAbbreviation('),readerSource.indexOf('function setPassageStep(')),pickerContext);
+vm.createContext(pickerContext);vm.runInContext(readerSource.slice(readerSource.indexOf('const BOOK_CITATION_ABBREVIATIONS='),readerSource.indexOf('function compactCitation('))+readerSource.slice(readerSource.indexOf('function passageBookAbbreviation('),readerSource.indexOf('function setPassageStep(')),pickerContext);
 for(const [group,first,last,count] of [['old','Genesis','Malachi',39],['new','Matthew','Revelation',27]]){
  pickerContext.renderPassageBooks(group);assert.equal((bookGrid.innerHTML.match(/type="radio"/g)||[]).length,count);assert(bookGrid.innerHTML.includes('>'+first+'</span>'));assert(bookGrid.innerHTML.includes('>'+last+'</span>'));
 }
-pickerContext.renderPassageBooks('old');assert(bookGrid.innerHTML.includes('aria-label="Song of Solomon"')&&bookGrid.innerHTML.includes('data-book-short="Song"'),'Full accessible names and existing standard abbreviations');
+pickerContext.renderPassageBooks('old');assert(bookGrid.innerHTML.includes('aria-label="Song of Solomon"')&&bookGrid.innerHTML.includes('data-book-short="Son"'),'Full accessible names and existing standard abbreviations');
 assert(!atlas.includes('fitPassageLabel')&&!atlas.includes('style.fontSize'),'Do not shrink the type to make names fit');
 const labels=[{dataset:{bookFull:'Genesis',bookShort:'Gen'},clientWidth:64,textContent:'Genesis'},{dataset:{bookFull:'Deuteronomy',bookShort:'Deut'},clientWidth:64,textContent:'Deuteronomy'}];
 const fitGrid={clientWidth:300,dataset:{},querySelectorAll:()=>labels};
@@ -25,6 +25,7 @@ Object.assign(pickerContext,{passagePicker:{open:true,dataset:{step:'book'}},$:(
 pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'abbreviated');assert.deepEqual(labels.map(label=>label.textContent),['Gen','Deut'],'One non-fitting name abbreviates every label');
 labels.forEach(label=>label.clientWidth=120);pickerContext.fitPassageBookLabels();assert.equal(fitGrid.dataset.bookLabels,'full');assert.deepEqual(labels.map(label=>label.textContent),['Genesis','Deuteronomy'],'Widening restores all full names');
 assert(atlas.includes('id="ux-chapter-picker" aria-label="Choose chapter" aria-haspopup="dialog" aria-controls="passage-picker"'));
+assert(atlas.includes('openPassagePicker(event.currentTarget)'),'The reading-bar picker passes its actual button as the focus return target');
 assert(readerSource.includes('passagePickerOpener?.isConnected')&&readerSource.includes('opener?.focus({preventScroll:true})'),'Return focus to the actual passage-picker opener, including floating navigation');
 const geometry=shell.slice(shell.indexOf('function measureWorkspaceHeader(){'),shell.indexOf('const headerObserver='));
 const styles=new Map(),bodyStyles=new Map();let headerHeight=64,barHeight=52;
@@ -49,6 +50,11 @@ assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker'
 assert.equal(declaration('html body.lens-app #ux-chapter-picker .ux-picker-book','white-space'),'normal');
 assert.match(declaration('html body.lens-app #passage-picker .passage-book-grid','grid-template-columns'),/auto-fit/);
 assert.match(declaration('html body.lens-app #passage-picker .passage-number-grid','grid-template-columns'),/max\(44px,2\.5rem\)/);
+const canonical='html body.lens-app #passage-picker:is([data-testament="old"],[data-testament="new"])';
+assert.equal(declaration(canonical+' .passage-book-grid','grid-template-columns'),'repeat(5,minmax(0,1fr))');
+assert.equal(declaration(canonical+' .passage-book-grid .passage-number span','min-height'),'40px');
+assert.match(declaration('html body.lens-app #passage-picker #passage-chapter-grid','grid-template-columns'),/max\(24px,calc\(\(100% - 36px\)\/10\)\)/);
+assert.equal(declaration('html body.lens-app #passage-picker #passage-chapter-grid .passage-number span','border-radius'),'50%');
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number','min-height'),'44px');
 assert.equal(declaration('html body.lens-app #passage-picker .passage-number span','border-radius'),'var(--control-radius,12px)');
 assert.equal(declaration('html body.lens-app #passage-picker #passage-reference-go','width'),'auto','The Go button must override the narrow-screen form button width so the input has room');
@@ -62,4 +68,4 @@ const storySource=read('src/stories.js').split('let storiesActive=')[0].replace(
 const storyCtx={esc:value=>String(value).replaceAll('<','&lt;').replaceAll('>','&gt;')};vm.createContext(storyCtx);vm.runInContext(storySource,storyCtx);
 const figure=storyCtx.storyIllustration('A <title>','reader');assert(figure.includes('<figcaption>A &lt;title&gt;</figcaption>'));assert(figure.includes('alt="Imagined scene: source description"'),'Retain descriptive alt text');assert(!storyCtx.storyIllustration('A <title>').includes('<figcaption>'));
 assert.equal(declaration('html body.lens-app #lensReadingBar #ux-chapter-picker','outline'),'none','Chapter link uses a non-box focus cue');
-console.log('PASS: single settings entry, safe-area/header geometry, wrapping 44px picker, unadorned links with focus cues, escaped actual captions, hidden reader records and retained comparison routes. Browser layout is a separate check.');
+console.log('PASS: single settings entry, safe-area/header geometry, compact book/chapter picker and 44px reference/verse controls, unadorned links with focus cues, escaped actual captions, hidden reader records and retained comparison routes. Browser layout is a separate check.');

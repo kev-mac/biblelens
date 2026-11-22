@@ -413,7 +413,7 @@ async function updatePassagePickerVerses(preferred=1){
 function updatePassagePickerChapters(chapter=1){const book=books[Number($('#passage-book').value)];passageNumberGrid('passage-chapter',Array.from({length:book.chapters},(_,i)=>i+1),chapter);}
 function passageBookAbbreviation(book){
  const extra={66:'Tob',67:'Jdt',68:'AddEsth',69:'Wis',70:'Sir',71:'Bar',72:'Song3',73:'Sus',74:'Bel',75:'1Macc',76:'2Macc',77:'1Esd',78:'PrMan',79:'2Esd',80:'GThom',81:'GPhil',82:'GTruth',83:'GMary',84:'GJudas',85:'SJames'};
- return extra[book.id]||book.code||book.name;
+ return BOOK_CITATION_ABBREVIATIONS[book.id]||extra[book.id]||book.code||book.name;
 }
 function fitPassageBookLabels(){
  const grid=$('#passage-book-grid');if(!passagePicker?.open||passagePicker.dataset.step!=='book'||!grid?.clientWidth)return;

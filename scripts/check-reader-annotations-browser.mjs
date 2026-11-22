@@ -98,13 +98,15 @@ try{for(const [engine,type] of Object.entries({chromium,webkit})){
     await page.keyboard.press('Tab');assert.equal(await page.evaluate(()=>document.activeElement.id),'passage-reference-go');await page.keyboard.press('Shift+Tab');assert.equal(await page.evaluate(()=>document.activeElement.id),'passage-reference');
     assert.equal(await page.locator('#passage-book-grid input').count(),39);assert.equal(await page.getByRole('radio',{name:'Song of Solomon',exact:true}).count(),1,'Full book names remain accessible in abbreviated mode');
     const choices=await page.locator('#passage-book-grid label').evaluateAll(nodes=>nodes.map(n=>({w:n.getBoundingClientRect().width,h:n.getBoundingClientRect().height,scroll:n.firstElementChild.nextElementSibling.scrollWidth,client:n.firstElementChild.nextElementSibling.clientWidth,radius:getComputedStyle(n.firstElementChild.nextElementSibling).borderRadius})));
-    assert(choices.every(n=>n.w>=44&&n.h>=44&&n.scroll<=n.client+1&&n.radius==='12px'));
+    assert(choices.every(n=>n.w>=44&&n.h>=40&&n.scroll<=n.client+1&&n.radius==='12px'));
+    assert.equal(await page.locator('#passage-book-grid').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(/\s+/).length),5);
     for(const [group,count]of [['new',27],['lost',20],['old',39]]){await page.locator(`[data-book-testament="${group}"]`).click();assert.equal(await page.locator('#passage-book-grid input').count(),count);await checkBookLabels(page);}
     assert(await page.locator('.passage-steps button').evaluateAll(nodes=>nodes.every(node=>{const s=getComputedStyle(node);return ['Top','Right','Bottom','Left'].every(side=>parseFloat(s['border'+side+'Width'])>=1)&&s.borderTopStyle==='solid'&&s.borderRadius==='12px';})),'All three step controls have consistent borders');
     await page.locator('[data-passage-step="chapter"]').click();assert.equal(await page.locator('#passage-chapter-grid input').count(),40,'All Exodus chapters retained');
-    assert(await page.locator('#passage-chapter-grid label').evaluateAll(nodes=>nodes.every(n=>{const r=n.getBoundingClientRect();return r.width>=44&&r.height>=44;})));
+    assert.equal(await page.locator('#passage-chapter-grid').evaluate(n=>getComputedStyle(n).gridTemplateColumns.split(/\s+/).length),10);
+    assert(await page.locator('#passage-chapter-grid label').evaluateAll(nodes=>nodes.every(n=>{const r=n.getBoundingClientRect();return r.width>=24&&r.height>=24&&Math.abs(r.width-r.height)<1&&getComputedStyle(n.lastElementChild).borderRadius==='50%';})));
     await page.keyboard.press('Escape');
-    assert.equal(await page.evaluate(()=>document.activeElement.id),'ux-chapter-picker');
+    await page.waitForFunction(()=>!document.querySelector('#passage-picker[open]')&&document.activeElement?.id==='ux-chapter-picker');
     await page.locator('#lensMasthead .ux-search').click();await page.locator('#lens-search-overlay[open]').waitFor();
     const search=page.locator('#lens-search-input'),searchBox=await search.boundingBox();assert(searchBox.width>=160&&searchBox.height>=44,'Global Search also retains a readable input');
     await search.click();await page.keyboard.type('mercy');assert.equal(await search.inputValue(),'mercy');assert.equal(await page.evaluate(()=>document.activeElement.id),'lens-search-input');

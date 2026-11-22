@@ -3452,6 +3452,30 @@ html body.lens-app #passage-picker .passage-number span {
  white-space:normal;word-break:normal;overflow-wrap:anywhere;hyphens:none;overflow:visible;
 }
 html body.lens-app #passage-picker .passage-book-grid .passage-number span {font-size:.75rem;white-space:nowrap;word-break:normal;overflow-wrap:normal;hyphens:none;}
+/* Restore the historical canonical book and chapter grids without changing the verse or Other Books collection controls. */
+html body.lens-app #passage-picker:is([data-testament="old"],[data-testament="new"]) .passage-book-grid {
+ grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;
+}
+html body.lens-app #passage-picker:is([data-testament="old"],[data-testament="new"]) .passage-book-grid .passage-number {
+ min-width:0;min-height:40px;
+}
+html body.lens-app #passage-picker:is([data-testament="old"],[data-testament="new"]) .passage-book-grid .passage-number span {
+ min-width:0;min-height:40px;padding:4px 2px;font-size:.8125rem;
+}
+html body.lens-app #passage-picker #passage-chapter-grid {
+ /* Ten chapter columns when there is room, with a 24px minimum per target. */
+ grid-template-columns:repeat(auto-fill,minmax(max(24px,calc((100% - 36px)/10)),1fr));gap:4px;
+}
+html body.lens-app #passage-picker #passage-chapter-grid .passage-number {
+ min-width:24px;min-height:24px;
+}
+html body.lens-app #passage-picker #passage-chapter-grid .passage-number span {
+ min-width:24px;min-height:24px;height:auto;aspect-ratio:1;padding:0;border-radius:50%;
+}
+html body.lens-app #passage-picker:is([data-testament="old"],[data-testament="new"]) .passage-book-grid input:not(:checked)+span,
+html body.lens-app #passage-picker #passage-chapter-grid input:not(:checked)+span {
+ border-color:var(--lens-rule);background:color-mix(in srgb,var(--lens-control-bg) 93%,var(--lens-ink));
+}
 html body.lens-app #passage-picker .passage-number input:focus-visible+span {outline:3px solid var(--lens-focus);outline-offset:1px;}
 html body.lens-app #passage-picker .passage-number input:checked+span {border:1px solid var(--lens-link);background:var(--lens-link-soft);}
 html body.lens-app #passage-picker .lost-picker-heading {grid-column:1/-1;margin:8px 0 4px;}

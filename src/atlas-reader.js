@@ -27,7 +27,7 @@
   readingBar.append(document.getElementById('lens-focus'));
   document.querySelector('.lens-reading-actions').hidden=true;
   const control=id=>document.getElementById(id);
-  control('ux-chapter-picker').onclick=()=>chapter.querySelector('.passage-heading-picker')?.click();
+  control('ux-chapter-picker').onclick=event=>{if(reading)openPassagePicker(event.currentTarget);};
   for(const [id,step] of [['ux-font-less',-5],['ux-font-more',5]])control(id).onclick=()=>{const slider=control('reader-font');slider.value=String(Math.max(85,Math.min(150,Number(slider.value)+step)));slider.dispatchEvent(new Event('input'));slider.dispatchEvent(new Event('change'));};
   control('ux-font-style').onclick=()=>{const select=control('app-font-family');select.value=['lora','georgia'].includes(readerPreferences.appFont)?'inter':'lora';select.dispatchEvent(new Event('change'));updateControls();};
   control('ux-prev').onclick=()=>control('prev-bottom').click();control('ux-next').onclick=()=>control('next-bottom').click();
