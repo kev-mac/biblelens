@@ -1,0 +1,163 @@
+name: "Build 401 bounded contradiction checks"
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/workflows/contradiction-checks-401.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contradiction-401-${{ github.event.pull_request.number }}-${{ github.event.pull_request.head.sha }}
+  cancel-in-progress: false
+
+jobs:
+  contradiction-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/contradiction-checks-401'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 35
+    defaults:
+      run:
+        shell: bash
+    env:
+      CI: 'true'
+      BIBLELENS_PREVIEW_URL: http://127.0.0.1:8787
+    steps:
+      - name: Check out the frozen source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Verify exact content source and preserved build 400 UI
+        run: |
+          git merge-base --is-ancestor a4e5e3d8334c395de8cfe826fbd95524a0f1097f HEAD
+          git diff --exit-code a4e5e3d8334c395de8cfe826fbd95524a0f1097f HEAD -- package.json package-lock.json capacitor.config.json .openai/hosting.json src worker data scripts db drizzle ios android research/b4/wording-proposals.json research/notes/contradiction-integration-batch-401.json research/notes/contradiction-integration-validation-build-401.json
+          git diff --exit-code b5e89a902202edfc723fa6a46fe01e4374f9039c HEAD -- src worker ios android capacitor.config.json db drizzle data/books.json data/chapters.json
+          mkdir -p .release/contradiction-401
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {releaseInfo} from './scripts/release-info.mjs';
+          const release=releaseInfo();assert.equal(release.buildNumber,401);assert.equal(release.sourceHash,'80ea78e29c620b0e1aeb3cfefc215fdc8729234ff7cd87032184865f44be361a');
+          fs.writeFileSync('.release/contradiction-401/source-release.json',JSON.stringify(release,null,2)+'\n');console.log(release);
+          JS
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Install Chromium and WebKit on the separate runner
+        run: npx --no-install playwright install --with-deps chromium webkit
+
+      - name: Require Chromium sandboxing
+        run: |
+          cat > .release/contradiction-401/require-sandbox.mjs <<'JS'
+          import {chromium} from 'playwright';const launch=chromium.launch.bind(chromium);chromium.launch=options=>launch({...options,chromiumSandbox:true});
+          JS
+          node --check .release/contradiction-401/require-sandbox.mjs
+
+      - name: Run all required shared release preparation checks
+        id: prepare
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/contradiction-401/require-sandbox.mjs
+        run: npm run release:prepare 2>&1 | tee .release/contradiction-401/release-prepare.log
+
+      - name: Verify current draft boundaries without applying B4
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: |
+          node --input-type=module <<'JS' | tee .release/contradiction-401/draft-boundary.log
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {b4Proposals,b4Content} from './scripts/b4-neutral.mjs';import {framingAudit} from './scripts/check-neutral-framing.mjs';
+          const current=JSON.parse(fs.readFileSync('research/b4/wording-proposals.json')),baseline=JSON.parse(execFileSync('git',['show','b5e89a902202edfc723fa6a46fe01e4374f9039c:research/b4/wording-proposals.json'],{maxBuffer:16*1024*1024}));
+          assert.equal(current.ownerAccepted,false);assert.deepEqual(current.collections,baseline.collections);assert.deepEqual(current,b4Proposals());assert.equal(b4Content('data/evidence.json',{}),fs.readFileSync('data/evidence.json','utf8'));
+          const framing=framingAudit();assert.deepEqual(framing.violations,[]);assert.deepEqual(framing.renames,[]);console.log('PASS: B4 remains unaccepted, original proposal collections intact, production overlay excluded and current framing clean.');
+          JS
+
+      - name: Verify all twenty-four reviews in actual web and offline workers
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: node scripts/check-contradiction-bundles.mjs 2>&1 | tee .release/contradiction-401/bundle-parity.log
+
+      - name: Verify unchanged zLenz branding metadata
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: node scripts/check-branding.mjs --built 2>&1 | tee .release/contradiction-401/branding.log
+
+      - name: Verify shared artwork parity
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: npm run check:images 2>&1 | tee .release/contradiction-401/images.log
+
+      - name: Open exact built web preview on runner loopback
+        id: preview
+        if: ${{ !cancelled() && steps.prepare.outcome == 'success' }}
+        run: |
+          node scripts/serve.mjs > .release/contradiction-401/server.log 2>&1 &
+          printf '%s\n' "$!" > .release/contradiction-401/server.pid
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {setTimeout} from 'node:timers/promises';
+          const expected=JSON.parse(fs.readFileSync('.release/contradiction-401/source-release.json'));let ready=false;
+          for(let attempt=0;attempt<100;attempt++){try{const r=await fetch('http://127.0.0.1:8787/release.json',{signal:AbortSignal.timeout(2000)});assert(r.ok);assert.deepEqual(await r.json(),expected);ready=true;break;}catch{await setTimeout(200);}}
+          assert(ready,'Exact build 401 preview unavailable');assert.deepEqual(JSON.parse(fs.readFileSync('www/release.json')),expected);
+          JS
+
+      - name: Test new and retained real-record context windows in three editions
+        id: contexts
+        if: ${{ !cancelled() && steps.preview.outcome == 'success' }}
+        env:
+          NODE_OPTIONS: --import=${{ github.workspace }}/.release/contradiction-401/require-sandbox.mjs
+        run: node scripts/check-contradiction-reviews-browser.mjs 2>&1 | tee .release/contradiction-401/contexts.log
+
+      - name: Stop this job's preview
+        if: always()
+        run: |
+          if test -f .release/contradiction-401/server.pid; then
+            kill "$(cat .release/contradiction-401/server.pid)" 2>/dev/null || true
+          fi
+
+      - name: Record exact candidate identity and package built bundles
+        if: success()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import {releaseInfo} from './scripts/release-info.mjs';
+          const expected=JSON.parse(fs.readFileSync('.release/contradiction-401/source-release.json'));const {canonicalCommit,...prepared}=JSON.parse(fs.readFileSync('.release/candidate.json'));assert.deepEqual(prepared,expected);assert.deepEqual(releaseInfo(),expected);
+          for(const file of ['dist/client/release.json','www/release.json'])assert.deepEqual(JSON.parse(fs.readFileSync(file)),expected);
+          const cases=JSON.parse(fs.readFileSync('.release/contradiction-reviews/matrix.json'));assert.equal(cases.length,228);const records=JSON.parse(fs.readFileSync('data/evidence.json')).filter(r=>r.contradictionReview);assert.equal(records.length,24);const worker=fs.readFileSync('dist/server/index.js');
+          fs.writeFileSync('.release/contradiction-401/prepared-manifest.json',JSON.stringify({release:expected,ciCommit:canonicalCommit,canonicalSourceBase:'a4e5e3d8334c395de8cfe826fbd95524a0f1097f',workerBytes:worker.length,workerSha256:createHash('sha256').update(worker).digest('hex'),reviews:records.map(r=>r.id),contextCases:cases.length,requestedDisplayName:'zLenz: Bible',signedNativeAssets:false,sourceScriptsExecuted:false},null,2)+'\n');
+          JS
+          tar -czf .release/contradiction-401/prepared-bundles.tar.gz dist www .release/candidate.json
+          sha256sum .release/contradiction-401/prepared-bundles.tar.gz > .release/contradiction-401/prepared-bundles.sha256
+
+      - name: Retain tested bundles without publishing
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-401-verified-bundles-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/contradiction-401/source-release.json
+            .release/contradiction-401/prepared-manifest.json
+            .release/contradiction-401/prepared-bundles.tar.gz
+            .release/contradiction-401/prepared-bundles.sha256
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Retain actual screenshots and honest check results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: build-401-contradiction-results-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .release/contradiction-401/*.log
+            .release/contradiction-401/source-release.json
+            .release/contradiction-401/prepared-manifest.json
+            .release/contradiction-401/prepared-bundles.sha256
+            .release/contradiction-reviews/**
+            research/notes/contradiction-integration-batch-401.json
+            research/notes/contradiction-integration-validation-build-401.json
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
